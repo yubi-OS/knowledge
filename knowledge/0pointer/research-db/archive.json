@@ -1,0 +1,130 @@
+{
+ "run_date": "2026-09-29",
+ "ref": "0pointer",
+ "request": "research the 0pointer blog (Lennart Poettering, 0pointer.net)",
+ "skill": "knowledge-corpus-mint v1 (second run; searXNG healthy post-fix)",
+ "outline_jev_task_id": "ta42df4c-b62c-4fe7-b30a-7b4204ea398c",
+ "outline_jev_cost_usd": "0.000148176",
+ "outline": [
+  {
+   "slug": "01-fitting-everything-together",
+   "scope": "The 'Fitting Everything Together' OS architecture vision: one OS, one systemd, the role of immutable /usr, and how the pieces relate",
+   "score": 1.78
+  },
+  {
+   "slug": "02-uki-pcr-trusted-boot",
+   "scope": "UKI, PCR, and the trusted boot chain: unified kernel images, TPM-measured boot, secure boot policy, systemd-stub measurements",
+   "score": 1.48
+  },
+  {
+   "slug": "03-dps-and-repart",
+   "scope": "Discoverable Partitions Specification and systemd-repart: partition grammar, first-boot provisioning, A/B partition sets",
+   "score": 1.53
+  },
+  {
+   "slug": "04-luks2-hardware-unlock",
+   "scope": "Unlocking LUKS2 volumes with hardware: TPM2 PCR policies, FIDO2 hmac-secret, PKCS#11, the 0pointer v248/v249 essays' threat model",
+   "score": 1.09
+  },
+  {
+   "slug": "05-authenticated-boot-encryption",
+   "scope": "Authenticated Boot and Disk Encryption on Linux: the threat model essay that underpins verified /usr and encrypted state separation",
+   "score": 1.53
+  },
+  {
+   "slug": "06-stateless-factory-reset",
+   "scope": "Stateless systems and factory reset: /etc merging, factory-reset mechanics, why stateless beats mutable state",
+   "score": 1.02
+  },
+  {
+   "slug": "07-portable-services-sysext",
+   "scope": "Portable services, sysext/confext overlays, and nspawn as a dev/test/build substrate running off a signed image",
+   "score": 0.82
+  },
+  {
+   "slug": "09-modern-systemd-features",
+   "scope": "The v254-v261 wave: sysupdate A/B, soft-reboot, run0, live updates (LUO/KHO), ukify, and what each changes for image-mode OSes",
+   "score": 1.28
+  },
+  {
+   "slug": "10-mkosi-casync-ammutable",
+   "scope": "Build and delivery tooling: mkosi image construction, casync content addressing, and the Ammutable direction",
+   "score": 0.93
+  }
+ ],
+ "dropped_outline": [
+  "08-systemd-homed"
+ ],
+ "dig_summary": {
+  "docs_dug": 9,
+  "queries": 18,
+  "results_collected": 108,
+  "note": "searXNG healthy after the 2026-09-29 engine-diversity fix; all 18 queries returned results"
+ },
+ "quality_weights": {
+  "n": 108,
+  "mean": 0.487,
+  "hi_ge_0.8": 37
+ },
+ "total_jev_cost_usd": 0.012602,
+ "author_stats": {
+  "01-fitting-everything-together": {
+   "sources_used": 7,
+   "primary_sources": 6,
+   "jev_weighted_claims": 22,
+   "gaps": "none"
+  },
+  "02-uki-pcr-trusted-boot": {
+   "sources_used": 5,
+   "primary_sources": 3,
+   "jev_weighted_claims": 2,
+   "gaps": "rollback-protection current systemd status not verified"
+  },
+  "03-dps-and-repart": {
+   "sources_used": 6,
+   "primary_sources": 6,
+   "jev_weighted_claims": 26,
+   "gaps": "none"
+  },
+  "04-luks2-hardware-unlock": {
+   "sources_used": 4,
+   "primary_sources": 2,
+   "jev_weighted_claims": 7,
+   "gaps": "oddlama bypass post cited from snippet only"
+  },
+  "05-authenticated-boot-encryption": {
+   "sources_used": 6,
+   "primary_sources": 1,
+   "jev_weighted_claims": 4,
+   "gaps": "none"
+  },
+  "06-stateless-factory-reset": {
+   "sources_used": 5,
+   "primary_sources": 2,
+   "jev_weighted_claims": 12,
+   "gaps": "/usr/share/etc never adopted (reported as unsettled proposal)"
+  },
+  "07-portable-services-sysext": {
+   "sources_used": 6,
+   "primary_sources": 5,
+   "jev_weighted_claims": 0,
+   "gaps": "none"
+  },
+  "09-modern-systemd-features": {
+   "sources_used": 19,
+   "primary_sources": 11,
+   "jev_weighted_claims": 9,
+   "gaps": "sysupdate intro version + run0 polkit details marked version-sensitive"
+  },
+  "10-mkosi-casync-ammutable": {
+   "sources_used": 10,
+   "primary_sources": 8,
+   "jev_weighted_claims": 4,
+   "gaps": "Ammutable has no verifiable product yet; casync URL corrected from 404"
+  }
+ },
+ "endpoints": {
+  "jev": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "searxng": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng"
+ }
+}

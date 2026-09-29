@@ -1,0 +1,166 @@
+{
+ "doc": "02-uki-pcr-trusted-boot",
+ "queries": [
+  {
+   "query": "systemd UKI unified kernel image PCR measured boot",
+   "n_results": 75,
+   "error": null,
+   "top": [
+    {
+     "title": "Early Boot, UEFI, and Measured Boot | systemd/systemd | DeepWiki",
+     "url": "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+     "engines": [
+      "yandex",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "This document provides a detailed technical overview of systemd's early boot components on UEFI systems, emphasizing the UEFI boot manager (systemd-boot), the Unified Kernel Images (UKI) with the syst",
+     "jev_quality_noul": 0.1,
+     "jev_task_id": "ta632e36-38ef-471e-95b5-cb3b0974970c"
+    },
+    {
+     "title": "UAPI.5 Unified Kernel Images | UAPI Group Specifications",
+     "url": "https://uapi-group.org/specifications/specs/unified_kernel_image/",
+     "engines": [
+      "google cse",
+      "resulthunter",
+      "seznam"
+     ],
+     "snippet": "The systemd-measure tool can be used to generate and sign .pcrsig. In various contexts it is useful to support multiple different configurations (\u201cprofiles\u201d) an UKI may be booted into.\"UAPI.5 Unified ",
+     "jev_quality_noul": 0.41,
+     "jev_task_id": "ta632e36-38ef-471e-95b5-cb3b0974970c"
+    },
+    {
+     "title": "Unified kernel image - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Unified_kernel_image",
+     "engines": [
+      "duckduckgo web",
+      "google cse",
+      "google",
+      "seznam",
+      "resulthunter"
+     ],
+     "snippet": "If a UKI file is located on a different FAT32 partition, use uuid(PARTUUID) with the PARTUUID instead: ... /Arch Linux protocol: efi path: uuid(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx):/EFI/Linux/arch-li",
+     "jev_quality_noul": 0.67,
+     "jev_task_id": "ta632e36-38ef-471e-95b5-cb3b0974970c"
+    },
+    {
+     "title": "Unified kernel image - Gentoo Wiki",
+     "url": "https://wiki.gentoo.org/wiki/Unified_kernel_image",
+     "engines": [
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "First one needs a \"stub loader\", which is provided by systemd-stub. Openrc users have to install sys-apps/systemd-utils, and systemd users need the boot USE flag on sys-apps/systemd. To generate a Uni",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "ta036800-82cd-4b5b-89f3-600aafb5f5b6"
+    },
+    {
+     "title": "Unified Kernel Image and Measured Boot Hardening",
+     "url": "https://www.systemshardening.com/articles/linux/uki-secure-boot-hardening/",
+     "engines": [
+      "google",
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "May 1, 2026 \u2014 Harden Linux boot integrity with Unified Kernel Images, systemd-boot, and TPM2 PCR policy binding to replace legacy GRUB+LUKS measured-boot flows.\"The initramfs can no longer be swapped ",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "ta036800-82cd-4b5b-89f3-600aafb5f5b6"
+    },
+    {
+     "title": "Brave New Trusted Boot World - 0pointer.net",
+     "url": "https://0pointer.net/blog/brave-new-trusted-boot-world.html",
+     "engines": [
+      "google cse",
+      "wiby",
+      "google",
+      "yandex"
+     ],
+     "snippet": "Measurement of UKI components and boot phases. OS Vendor. Zero. Yes (at UKI build time). 12. Measurement of kernel command line, additional kernel runtime configuration such as systemd credentials, sy",
+     "jev_quality_noul": 0.16,
+     "jev_task_id": "ta036800-82cd-4b5b-89f3-600aafb5f5b6"
+    }
+   ]
+  },
+  {
+   "query": "systemd-stub secure boot TPM PCR signing essay",
+   "n_results": 85,
+   "error": null,
+   "top": [
+    {
+     "title": "TPM2 PCR Measurements Made by systemd",
+     "url": "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "This measurement is also performed by systemd-stub (see below), so that systems that boot a UKI directly, bypassing systemd-boot, still get it. Whichever component runs first performs the measurement ",
+     "jev_quality_noul": 0.93,
+     "jev_task_id": "ta036800-82cd-4b5b-89f3-600aafb5f5b6"
+    },
+    {
+     "title": "linux - Does a signed TPM2 PCR policy verify the EFI code similarly to secure boot? - Information Security Stack Exchange",
+     "url": "https://security.stackexchange.com/questions/282109/does-a-signed-tpm2-pcr-policy-verify-the-efi-code-similarly-to-secure-boot",
+     "engines": [
+      "yandex",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "Yes, the OS also measures into PCR11, but this happens afterwards and cannot revert the changes made by the firmware. So if you want an attack against the TPM-sealed key through PCR11, then you need m",
+     "jev_quality_noul": 0.92,
+     "jev_task_id": "ta036800-82cd-4b5b-89f3-600aafb5f5b6"
+    },
+    {
+     "title": "Brave New Trusted Boot World - 0pointer.net",
+     "url": "https://0pointer.net/blog/brave-new-trusted-boot-world.html",
+     "engines": [
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "The systemd-stub (or short: sd-stub) ... in the UKI Image Generation section above. The systemd-cryptenroll and systemd-cryptsetup tools can be used to bind a LUKS2 encrypted file system volume to a T",
+     "jev_quality_noul": 0.93,
+     "jev_task_id": "ta6c1619-7e2c-4580-a06a-a28f537b8416"
+    },
+    {
+     "title": "Trusted Platform Module - Athena OS",
+     "url": "https://athenaos.org/en/security/tpm/",
+     "engines": [
+      "google",
+      "resulthunter",
+      "seznam"
+     ],
+     "snippet": "March 31, 2026 \u2014 PCR11 changes throughout the boot phases to then back to its original value. It means that if you directly add 11 in --tpm2-pcrs=, it won\u2019t apply autounlock. For this reason Athena si",
+     "jev_quality_noul": 0.93,
+     "jev_task_id": "ta6c1619-7e2c-4580-a06a-a28f537b8416"
+    },
+    {
+     "title": "Understanding NvPCRs in systemd v262 | blog katexochen",
+     "url": "https://katexochen.aro.bz/posts/systemd-v262-nvpcrs/",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "systemd answers TPM PCR scarcity with additional PCR-like registers allocated in the TPM's NV memory, with an anchoring design that was reworked in v262. In this hands-on deep dive, we rebuild a syste",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "ta6c1619-7e2c-4580-a06a-a28f537b8416"
+    },
+    {
+     "title": "TPM2 and Measured Boot | systemd/systemd | DeepWiki",
+     "url": "https://deepwiki.com/systemd/systemd/8.1-tpm2-and-measured-boot",
+     "engines": [
+      "resulthunter",
+      "yahoo"
+     ],
+     "snippet": "August 26, 2026 \u2014 This document covers systemd's integration with TPM2 (Trusted Platform Module 2.0) for measured boot, attestation, and secure system state tracking. The focus is on PCR (Platform Con",
+     "jev_quality_noul": 0.24,
+     "jev_task_id": "ta6c1619-7e2c-4580-a06a-a28f537b8416"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "doc": "06-stateless-factory-reset",
+ "queries": [
+  {
+   "query": "systemd factory reset stateless systems 0pointer",
+   "n_results": 72,
+   "error": null,
+   "top": [
+    {
+     "title": "Factory Reset, Stateless Systems, Reproducible Systems & Verifiable Systems",
+     "url": "https://0pointer.net/blog/projects/stateless.html",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "seznam",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "With systemd now being at the core of so many distributions and deeply involved in bringing up and maintaining the system we came to the conclusion that we should attempt to add generic support for se",
+     "jev_quality_noul": 0.89,
+     "jev_task_id": "tae2a8f0-1589-4fc1-b9b5-80ffe71bf2de"
+    },
+    {
+     "title": "Factory Reset - systemd.io",
+     "url": "https://systemd.io/FACTORY_RESET/",
+     "engines": [
+      "resulthunter",
+      "seznam",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "The factory-reset-now.target unit is started at boot whenever a factory reset is requested for the boot. A factory reset may be requested via a kernel command line option (systemd.factory_reset=1) or ",
+     "jev_quality_noul": 0.89,
+     "jev_task_id": "tae2a8f0-1589-4fc1-b9b5-80ffe71bf2de"
+    },
+    {
+     "title": "systemd/docs/FACTORY_RESET.md at main \u00b7 systemd/systemd",
+     "url": "https://github.com/systemd/systemd/blob/main/docs/FACTORY_RESET.md",
+     "engines": [
+      "google",
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "In various scenarios it is important to be able to reset operating systems back into a \"factory state\", i.e. where all state, user data and configuration is reset so that it resembles the system state",
+     "jev_quality_noul": 0.87,
+     "jev_task_id": "tae2a8f0-1589-4fc1-b9b5-80ffe71bf2de"
+    },
+    {
+     "title": "systemd-factory-reset (8) - Linux manual page - man7.org",
+     "url": "https://www.man7.org/linux/man-pages/man8/systemd-factory-reset.8.html",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "FactoryResetRequest Set whenever a factory reset is requested from the next boot, deleted once the factory reset is complete. Contains JSON data describing the requesting OS, in order to avoid confusi",
+     "jev_quality_noul": 0.91,
+     "jev_task_id": "tae2a8f0-1589-4fc1-b9b5-80ffe71bf2de"
+    },
+    {
+     "title": "System and Service Manager",
+     "url": "https://systemd.io/",
+     "engines": [
+      "bing",
+      "seznam"
+     ],
+     "snippet": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control gro",
+     "jev_quality_noul": 0.54,
+     "jev_task_id": "tae2a8f0-1589-4fc1-b9b5-80ffe71bf2de"
+    },
+    {
+     "title": "Fitting Everything Together - 0pointer.net",
+     "url": "https://0pointer.net/blog/fitting-everything-together.html",
+     "engines": [
+      "google cse",
+      "google"
+     ],
+     "snippet": "We can implement factory reset easily: erase the root file system and reboot. The hermetic OS in /usr/ has all the information it needs to set up the root file ...",
+     "jev_quality_noul": 0.89,
+     "jev_task_id": "ta8cf045-1ca8-45b6-be14-752edb9a6974"
+    }
+   ]
+  },
+  {
+   "query": "ConditionNeedsUpdate usr merge factory reset",
+   "n_results": 87,
+   "error": null,
+   "top": [
+    {
+     "title": "Factory Reset, Stateless Systems, Reproducible Systems & Verifiable...",
+     "url": "https://0pointer.net/blog/projects/stateless.html",
+     "engines": [
+      "yandex",
+      "google cse",
+      "google",
+      "seznam"
+     ],
+     "snippet": "Of course, very likely downstream distributions might need to alter this default list, add new entries and possibly map specific users to particular numeric UIDs. A new condition ConditionNeedsUpdate=",
+     "jev_quality_noul": 0.87,
+     "jev_task_id": "ta8cf045-1ca8-45b6-be14-752edb9a6974"
+    },
+    {
+     "title": "systemd-update-done.service (8) \u2014 Linux manual page",
+     "url": "https://www.man7.org/linux/man-pages/man8/systemd-update-done.8.html",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "Services that shall run after offline upgrades of /usr/ should order themselves before systemd-update-done.service, and use the ConditionNeedsUpdate= (see systemd.unit (5)) condition to make sure to r",
+     "jev_quality_noul": 0.89,
+     "jev_task_id": "ta8cf045-1ca8-45b6-be14-752edb9a6974"
+    },
+    {
+     "title": "systemd-update-done (8) \u2014 Arch manual pages",
+     "url": "https://man.archlinux.org/man/systemd-update-done.8.en",
+     "engines": [
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "This requires that updates to /usr/ ... time of /usr/, for example by invoking touch(1) on it. Note that if the systemd.condition_needs_update= kernel command line option is used it overrides the Cond",
+     "jev_quality_noul": 0.7,
+     "jev_task_id": "ta8cf045-1ca8-45b6-be14-752edb9a6974"
+    },
+    {
+     "title": "pacman - system update - what is msg \"Arming...\" / Arch Linux Forums",
+     "url": "https://bbs.archlinux.org/viewtopic.php?id=222673",
+     "engines": [
+      "yandex",
+      "google"
+     ],
+     "snippet": "Feb 2, 2017 \u00b7 A new condition ConditionNeedsUpdate= has been added. With this mechanism it is possible to conditionalize execution of services depending on ...Pacman Error message [Solved] - Arch Linu",
+     "jev_quality_noul": 0.48,
+     "jev_task_id": "ta8cf045-1ca8-45b6-be14-752edb9a6974"
+    },
+    {
+     "title": "systemd-factory-reset",
+     "url": "https://distributions.freedesktop.org/software/systemd/man/systemd-factory-reset@.service.html",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "Set whenever a factory reset is requested from the next boot, deleted once the factory reset is complete. Contains JSON data describing the requesting OS, in order to avoid confusion in multi-boot sys",
+     "jev_quality_noul": 0.9,
+     "jev_task_id": "tab7e0ea-4325-4e33-b59e-9f52483c4f41"
+    },
+    {
+     "title": "systemd-update-done.service - freedesktop.org",
+     "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-update-done.service.html",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "Note that if the systemd.condition_needs_update= kernel command line option is used it overrides the ConditionNeedsUpdate= unit condition checks. In that case systemd-update-done.service will not rese",
+     "jev_quality_noul": 0.89,
+     "jev_task_id": "tab7e0ea-4325-4e33-b59e-9f52483c4f41"
+    }
+   ]
+  }
+ ]
+}
