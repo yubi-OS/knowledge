@@ -1,75 +1,67 @@
-# yubiOS Architecture Overview: An Immutable Base
+# yubiOS Architecture Overview: Immutable Image-Mode Linux with bootc, mkosi, and systemd
 
-yubiOS is an immutable, bootc-delivered Linux OS that treats the owner's YubiKey 5 as the user-facing identity, unlock, and authorization boundary (https://github.com/yubi-OS/yubiOS/blob/main/README.md). Its mission is "to build AI resilient systems using AI": because the OS is heavily built and reviewed with AI assistance, every layer must be verified before it runs rather than trusted at authorship time (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md). This doc covers the architecture of that immutability: image-mode Linux built from bootc and mkosi, the bootc + composefs and mkosi + systemd-repart lanes, the signed UKI boot chain, A/B atomic upgrades, the state split, and why an immutable base is the load-bearing wall of a security-focused OS.
+yubiOS is an immutable, bootc-delivered Linux OS that treats the owner's YubiKey 5 as the user-facing identity, unlock, and authorization boundary, built so that every layer is verified before it runs rather than trusted by provenance. The OS is delivered as a multi-arch OCI image, installed onto a discoverable-partitions disk layout, verified at boot through signed UKIs, dm-verity, and composefs fs-verity, and updated through atomic A/B upgrades with automatic rollback. The design goal is stated bluntly in the mission: an AI-resilient system where a poisoned contribution, wherever it came from, either fails verification or never had the authority to matter (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md). This doc explains the architecture: image-mode delivery, the two build paths, the immutable root, first-boot provisioning, day-2 upgrades, and why immutability is the foundation of the security model.
 
-## The four layers yubiOS composes
+## Why image mode
 
-The README states the architecture as a composition of four designs (https://github.com/yubi-OS/yubiOS/blob/main/README.md):
+yubiOS follows the bootc design: the OCI container image is the unit of OS delivery, and day-2 upgrades are a registry pull followed by an atomic switch (https://github.com/yubi-OS/yubiOS/blob/main/README.md). This aligns with where the Fedora ecosystem is heading: the Fedora Image Mode Phase 2 (2026) initiative establishes bootc-derived OCI artifacts as first-class Fedora citizens, with all atomic (immutable) OS variants delivered as layered bootable OCI images (0.81) (https://fedoraproject.org/wiki/Initiatives/Image_Mode,_Phase_2_(2026)), and the bootc ecosystem drew dedicated conference tracks at DevConf.CZ and Flock to Fedora 2026 (0.81) (https://bootc.dev/blog/2026-jul-07-conference-talks-devconf-flock-2026/). Image mode inverts the classical model: instead of mutating a running system package by package, you build a new image, verify it, and atomically switch to it. That inversion is what makes the rest of yubiOS's trust chain enforceable.
 
-1. **ParticleOS ethos** (systemd/particleos): immutable `/usr`, UKIs, dm-verity, composefs, systemd-boot.
-2. **bootc design** (bootc-dev/bootc): an OCI container image as the OS delivery unit, with day-2 upgrades via registry pull.
-3. **systemd image model** (Poettering's "Fitting Everything Together" essay, the project's primary design reference): Discoverable Partition Specification (DPS) partitions, systemd-repart first-boot partitioning, A/B sysupdate, systemd-homed per-user encryption.
-4. **YubiKey owner-control plane** (FIDO2 / PIV / OATH): owner-held authorization for signing, unlock, SSH, PAM, and app 2FA.
+## Two build paths, one overlay
 
-The first three layers are exactly the modern image-mode Linux stack. Fedora's own Image Mode initiative treats bootc-derived OCI artifacts as first-class OS citizens (https://fedoraproject.org/wiki/Initiatives/Image_Mode,_Phase_2_(2026), weight 0.70), which is the ecosystem yubiOS draws its delivery model from.
+yubiOS maintains both a mkosi path and a bootc path, sharing the same `usr/` overlay tree with identical runtime behavior (ADR-006, https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md):
 
-## What "immutable" means here
+- The mkosi path follows the particleos ethos: it builds a partitioned disk image (`Format=disk`, `SplitArtifacts=uki,partitions`) with a Unified Kernel Image and verity, and the UKI is signed at build time via systemd-sbsign with `SecureBoot=yes` and `SignExpectedPcr=no` (https://github.com/yubi-OS/yubiOS/blob/main/mkosi.conf).
+- The bootc path builds the production OCI image from a `Containerfile`, deployable via `bootc install to-filesystem` (ADR-006, https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md).
 
-In an image-mode OS the OS content lives entirely in `/usr`, mounted read-only and verified; the `ostree=` style kernel argument locates the deployment root at boot (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-file-systems-in-image-mode-for-rhel, weight 0.83). bootc's filesystem contract is the same split: `/usr` immutable and machine-independent, `/var` carrying mutable state (https://bootc.dev/bootc/filesystem.html, weight 0.07).
+The kernel command line is kept identical across both paths: `root=dissect mount.usr=dissect rw audit=0` is set in `mkosi.conf` and mirrored in the bootc install config, so both paths produce byte-identical kernel cmdlines at runtime (https://github.com/yubi-OS/yubiOS/blob/main/mkosi.conf, https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md, ADR-032). The published artifact is `docker.io/0mniteck/yubios` with `latest` plus immutable per-commit tags for `linux/amd64` and `linux/arm64`, each build shipping SLSA provenance and SBOM attestations (https://github.com/yubi-OS/yubiOS/blob/main/README.md).
 
-yubiOS's mission document turns this into a security property: "Immutable means auditable. `/usr` is verified; mutable state is explicit" (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md). Every byte of `/usr` is validated on read by dm-verity, and every UKI is signed by a key on hardware the owner physically holds (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md).
+## The immutable root: composefs and dm-verity
 
-## Two build lanes, one architecture
+Every byte of `/usr` is validated on read by dm-verity, and every UKI is signed by a key on hardware the owner physically holds (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md). The base is a digest-pinned `quay.io/fedora/fedora-bootc:45` image (https://github.com/yubi-OS/yubiOS/blob/main/PINNED.md). ADR-007 chooses composefs over a dm-verity-checked EROFS partition for the read-only root: composefs provides a cryptographically verified directory tree via fs-verity, the backing store is signed by systemd-repart's verity support, and the roothash is embedded in the UKI kernel command line at build time so tampering is detected before any userspace runs (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md). Composefs relies on fs-verity and the EROFS kernel driver to provide a read-only, integrity-checked mount (0.84) (https://ubos.tech/news/modernizing-linux-deployments-with-ostree-and-bootc/), and bootc systems follow the immutable-OS concept of separating read-only `/usr` from mutable `/var` (0.35) (https://docs.fedoraproject.org/en-US/bootc/getting-started/), symlinking the `/opt` parts that need persistence into `/var` where needed (0.54) (https://bootc.dev/bootc/filesystem.html).
 
-The repo carries both delivery models, and they are deliberately separate lanes:
+The composefs storage model is precise: the physical sysroot stays a writable, fs-verity-capable filesystem such as ext4 (created with the `verity` feature) or Btrfs; composefs metadata-only EROFS images live under `/composefs/images/<digest>` with file content under `/composefs/objects` and deployment state under `/state/deploy`; a strict `composefs=<128-hex SHA-512 digest>` kernel argument (no optional `?` marker) anchors the deployment, and `--allow-missing-verity` is forbidden in production (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md). dm-verity and composefs are not the same mechanism: dm-verity authenticates a fixed block-device image and belongs to the mkosi/systemd-repart path, while native bootc composefs verifies individual files with fs-verity (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md). Version-sensitive: as of the 2026-07-22 note, the pinned Fedora 45 base carries bootc 1.16.3, and the sealed-UKI flow (kernel/rootfs split via `bootc container split-kernel-and-rootfs`, which first appears in bootc v1.16.4) is a gated promotion path, not yet a required production step (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md).
 
-**Bootc composefs lane.** yubiOS publishes a pre-launch multi-arch bootc OCI image on Docker Hub and installs it with `bootc install to-filesystem` onto a systemd-repart-created DPS layout (https://github.com/yubi-OS/yubiOS/blob/main/README.md). The composefs variant combines `to-filesystem` with the composefs backend: the physical sysroot stays a writable, fs-verity-capable filesystem (ext4 with the `verity` feature or Btrfs); EROFS is used only for composefs metadata images stored under `/composefs/images/<digest>`, with file content under `/composefs/objects` and deployment state under `/state/deploy`. Each file is verified by fs-verity, and the composefs digest (a 128-hex SHA-512 value) is bound into the signed UKI kernel command line, so an unsealed `composefs=?` reference is rejected by CI (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md). This is the composefs model originally proposed for OSTree: a signed, digest-addressed root composed from content-addressed objects (https://blogs.gnome.org/alexl/2022/06/02/using-composefs-in-ostree/, weight 0.66; https://travier.github.io/ostree/composefs/, weight 0.75). As of the 2026-07-22 note, CI workflow run 29884493346 proved a strict fs-verity composefs install with a traditional BLS entry; a sealed UKI promotion path was still gated because the pinned Fedora 45 base resolved to bootc 1.16.3 while `split-kernel-and-rootfs` first appears in bootc 1.16.4 (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md).
+## First boot: repart, DPS, and enrollment
 
-**Mkosi partitioned-image lane.** `mkosi.conf` describes itself as the "particleos ethos" lane and produces a disk image (`Format=disk`, `ImageId=yubiOS`, `SplitArtifacts=uki,partitions`) with a dissect-root kernel command line (`root=dissect`, `mount.usr=dissect`, `rw`) and build-time UKI signing (`SecureBoot=yes`) (https://github.com/yubi-OS/yubiOS/blob/main/mkosi.conf). The README's local build path compiles the pinned EDK2/StandaloneMM, OP-TEE/fTPM, TF-A, and U-Boot firmware sources and "builds and verifies the SoftHSM PKCS#11-signed mkosi UKI and disk payload" (https://github.com/yubi-OS/yubiOS/blob/main/README.md). Importantly, the two integrity models are not interchangeable: native bootc composefs verifies individual files with fs-verity, while dm-verity authenticates a fixed block-device image and belongs to the mkosi/systemd-repart path (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md).
+yubiOS follows the Discoverable Partitions Specification with no `/etc/fstab` (ADR-010, https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md), the "Fitting Everything Together" model of hermetic `/usr`, DPS partitions, first-boot `systemd-repart`, A/B sysupdate, and systemd-homed (https://github.com/yubi-OS/yubiOS/blob/main/README.md). ADR-012 ships a minimal disk image (ESP plus `/usr` A only); all remaining partitions are created and encrypted by systemd-repart running from the initrd on first boot, so the LUKS2 root key is generated on the target device and never exists on a build host or in transit. The live image is the installer: `dd` the shipped image to a USB stick and it is the installer. Factory reset is the inverse operation, erasing and recreating the state partitions with fresh keys (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md). On first boot, `yubiOS-enroll.service` walks through PIV slot 9c Secure Boot signing, FIDO2 hmac-secret disk encryption, `ed25519-sk` SSH resident keys, and pam-u2f registration, each step skippable and independently re-runnable (https://github.com/yubi-OS/yubiOS/blob/main/README.md).
 
-## The boot and trust chain
+## A/B atomic upgrades with automatic rollback
 
-The trust anchor is deliberately not a TPM. ADR-001 makes the YubiKey 5 the sole trust anchor because TPMs are OEM-controlled and can carry vendor keys the user never sees; ADR-002 signs Secure Boot UKIs with YubiKey PIV slot 9c via PKCS#11 and `systemd-sbsign` over CCID; ADR-003 uses LUKS2 with `systemd-cryptenroll --fido2-device=auto` for disk unlock, with no TPM slot (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md). A useful architectural consequence: FIDO2 enrollment does not bind to PCR hash values, so OS updates never require re-enrollment of disk unlock secrets, unlike TPM PCR policies that break on every kernel or initrd change (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md). The signed UKI is the pin that holds the rest together: the UKI command line binds the exact composefs digest, and boot assessment / sysupdate then selects between verified deployments (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md; https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md).
+Updates are the most dangerous system operation, so ADR-013 uses systemd-sysupdate for A/B partition updates with Boot Assessment counters embedded in UKI filenames. Each update downloads 4 artifacts: the new `/usr` partition, its verity data partition, its PKCS#7 signature partition, and a new UKI into the ESP. The new UKI filename carries a boot counter (for example `yubiOS_0.9+3`); systemd-boot decrements the counter on each boot attempt, and if it reaches zero the entry is excluded and the system falls back to the previous version. On a successful boot, userspace calls `bootctl set-boot-good` to strip the counter and mark the entry permanently good; version selection is automatic via `strverscmp()` on partition labels and UKI filenames (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md, https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT). Day-2 operations on the bootc path are the same shape: `bootc switch` and `bootc upgrade` pull a new OCI image and commit it atomically (https://github.com/yubi-OS/yubiOS/blob/main/README.md). Atomic updates with instant rollback are exactly the property bootc was built to deliver (0.89) (https://lucaberton.com/blog/bootc-immutable-linux-update-rollback-2026/).
 
-ARM64 is the primary platform because it is where yubiOS can own the firmware stack below the UKI: owner-provisioned board root, TF-A, OP-TEE, fTPM, U-Boot UEFI, systemd-boot, signed UKI, verified `/usr` (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md; ADR-018 and ADR-021 in https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md). x86-64 remains supported above the UKI, but its firmware and optional TPM are OEM trust anchors (https://github.com/yubi-OS/yubiOS/blob/main/README.md).
+## Why an immutable base matters
 
-## A/B atomic upgrades
+Three reasons, all sourced from the project's own doctrine:
 
-Upgrades are atomic image swaps, not package mutations. The systemd image model gives A/B sysupdate (https://github.com/yubi-OS/yubiOS/blob/main/README.md), and ADR-016 names "A/B partition updates via systemd-sysupdate and Boot Assessment" as the baseline, while tracking systemd v261's live-update kexec handover (LUO/KHO) as a possible future server/appliance path rather than the default (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md). On the bootc side, day-2 updates are a registry pull of a new OCI image, and ADR-015 pins the base image by digest with `PINNED.md` as the live source of truth, never a mutable tag (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md). Build integrity is enforced before any layer runs: an OPA/Rego build policy rejects mutable tags, and builds ship SLSA provenance and SBOM attestations (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md).
+1. **Verification replaces trust.** Nothing in yubiOS asks you to trust an author, human or machine. A digest-pinned base, an OPA/Rego build policy that rejects mutable tags, SLSA provenance plus SBOM attestations, dm-verity on `/usr`, and owner-held UKI signing mean a poisoned contribution fails verification instead of shipping (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md, https://github.com/yubi-OS/yubiOS/blob/main/PINNED.md). Reproducibility is checked directly: `repro-production` and `repro-dev` modes perform two no-cache builds with separate BuildKit daemons and require the manifest, config, and layer bytes to match (https://github.com/yubi-OS/yubiOS/blob/main/README.md).
+2. **Rollback de-risks updates.** An update that bricks the machine is a security failure as much as a reliability failure. A/B partitions plus Boot Assessment counters mean a bad update self-reverts before it can lock an owner out (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md).
+3. **Auditable immutability is a mission non-negotiable.** "Immutable means auditable: `/usr` is verified; mutable state is explicit," and if a feature needs a security exception to exist, it gets cut (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md).
 
-## Why an immutable base matters for a security-focused OS
-
-Four reasons, all traceable in the repo:
-
-1. **Verification becomes total, not sampled.** A mutable root can only be scanned for drift; a composefs/dm-verity root is checked on every read, so a poisoned file either fails verification or was never in the image (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md).
-2. **Rollback is free.** A/B deployments mean a bad update is a boot-selection choice, which matters for an OS whose unlock secrets deliberately survive updates without re-enrollment (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md).
-3. **The trust chain ends at a digest.** Digest-pinned base images plus the signed UKI binding the composefs digest mean the entire running OS is answerable to two owner-verifiable artifacts (https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md; https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md).
-4. **Supply-chain gates have something to gate.** The OPA/Rego build policy and provenance attestations only mean anything because the artifact they describe is the thing that boots, unchanged (https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md).
-
-The broader ecosystem is converging on the same shape: image-mode Fedora, bootc, and OSTree deployment are all moving toward digest-addressed, verified roots (https://news.ycombinator.com/item?id=47189625, weight 0.69). yubiOS's differentiator is not the immutability itself but where the root of trust lives: with the owner's YubiKey, not with an OEM.
-
-## Gaps
-
-The exact current status of the sealed-UKI promotion gate (post 2026-07-22) and whether the pinned base now exposes bootc 1.16.4 capabilities was not re-verified for this doc; consult PINNED.md and the latest refs notes for live state.
+The residual honesty note: the current bootc composefs install is classified as strict fs-verity plus an unsealed BLS entry, because the digest anchor still lives in mutable BLS configuration rather than a signed UKI command line; the sealed promotion gate requires signed UKI plus systemd-boot signatures, Secure Boot enabled on real hardware, and a negative tamper boot (https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md).
 
 ## Sources considered
 
 Used:
-- https://github.com/yubi-OS/yubiOS/blob/main/README.md (primary)
-- https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md (primary)
-- https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md (primary)
-- https://github.com/yubi-OS/yubiOS/blob/main/mkosi.conf (primary)
-- https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md (primary)
-- https://fedoraproject.org/wiki/Initiatives/Image_Mode,_Phase_2_(2026) (jev 0.70)
-- https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-file-systems-in-image-mode-for-rhel (jev 0.83)
-- https://bootc.dev/bootc/filesystem.html (jev 0.07)
-- https://blogs.gnome.org/alexl/2022/06/02/using-composefs-in-ostree/ (jev 0.66)
-- https://travier.github.io/ostree/composefs/ (jev 0.75)
-- https://news.ycombinator.com/item?id=47189625 (jev 0.69)
+- https://github.com/yubi-OS/yubiOS/blob/main/README.md (primary repo)
+- https://github.com/yubi-OS/yubiOS/blob/main/docs/MISSION.md (primary repo)
+- https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md (primary repo)
+- https://github.com/yubi-OS/yubiOS/blob/main/refs/bootc-composefs-sealed-flow-2026-07-22.md (primary repo)
+- https://github.com/yubi-OS/yubiOS/blob/main/mkosi.conf (primary repo)
+- https://github.com/yubi-OS/yubiOS/blob/main/PINNED.md (primary repo)
+- https://github.com/yubi-OS/yubiOS/blob/main/docs/ADR.md#adr-032 (kernel+rootfs split, via ADR.md)
+- https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT (cited by ADR-013)
+- https://fedoraproject.org/wiki/Initiatives/Image_Mode,_Phase_2_(2026) (dig 0.81)
+- https://bootc.dev/blog/2026-jul-07-conference-talks-devconf-flock-2026/ (dig 0.81)
+- https://ubos.tech/news/modernizing-linux-deployments-with-ostree-and-bootc/ (dig 0.84)
+- https://lucaberton.com/blog/bootc-immutable-linux-update-rollback-2026/ (dig 0.89)
+- https://docs.fedoraproject.org/en-US/bootc/getting-started/ (dig 0.35)
+- https://bootc.dev/bootc/filesystem.html (dig 0.54)
+- https://github.com/bootc-dev/bootc/blob/v1.16.4/docs/src/man/bootc-install-to-filesystem.8.md (cited by sealed-flow note)
 
 Rejected:
-- https://fedoraproject.org/wiki/Changes/DNFAndBootcInImageModeFedora (irrelevant, DNF5 packaging detail)
-- https://www.mauromorales.com/posts/fedora-sivlerblue/ (anecdote, no yubiOS claim)
-- https://bootc.dev/bootc/building/guidance.html (unused, image authoring guidance)
-- https://bootc.dev/blog/2026-jul-07-conference-talks-devconf-flock-2026/ (event news, no architecture claim)
-- https://bootc.dev/bootc/internals/bootc_lib/install/index.html (Rust internals, superseded by repo ref doc)
+- https://www.bigiron.cc/guides/immutable-server-distros-2026-microos-vs-coreos-vs-bootc (aggregator, dig 0.15)
+- https://news.ycombinator.com/item?id=47189625 (comment thread, dig 0.11)
+- https://a-cup-of.coffee/blog/ostree-bootc/ (low weight blog, dig 0.23)
+- https://cfp.fedoraproject.org/flock-to-fedora-2026/talk/3PHYFQ/ (talk listing, dig 0.27)
+- https://docs.centos.org/automotive-sig-documentation/features-and-concepts/con_ostree/ (low weight, dig 0.29)
+- https://ostreedev.github.io/ostree/composefs/ (superseded ostree-backend approach, dig 0.11)
