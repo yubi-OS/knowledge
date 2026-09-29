@@ -1,0 +1,139 @@
+{
+ "doc": "01-architecture-overview",
+ "queries": [
+  {
+   "query": "bootc image mode immutable os fedora 2026",
+   "n_results": 25,
+   "error": null,
+   "top": [
+    {
+     "title": "Initiatives/Image Mode, Phase 2 (2026) - Fedora Project Wiki",
+     "url": "https://fedoraproject.org/wiki/Initiatives/Image_Mode,_Phase_2_(2026)",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "To establish bootc-derived OCI artifacts as first-class citizens in the Fedora ecosystem, with all atomic (immutable) operating system variants delivered as layered bootable OCI artifacts, built using",
+     "jev_quality_noul": 0.7,
+     "jev_task_id": "tada81b1-3180-49c6-abea-5cc5f632fa66"
+    },
+    {
+     "title": "bootc ecosystem at DevConf.CZ and Flock to Fedora 2026",
+     "url": "https://bootc.dev/blog/2026-jul-07-conference-talks-devconf-flock-2026/",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "Fedora bootc: Building and Operating Image-Based Systems (Gursewak Mangat, 25 min; slides) \u2014 A practical introduction to bootc for Fedora contributors, demonstrating how bootc's container-native appro",
+     "jev_quality_noul": 0.68,
+     "jev_task_id": "tada81b1-3180-49c6-abea-5cc5f632fa66"
+    },
+    {
+     "title": "DNF and bootc in Image Mode Fedora variants",
+     "url": "https://fedoraproject.org/wiki/Changes/DNFAndBootcInImageModeFedora",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "To start we will provide the DNF5 package alongside rpm-ostree, giving sysadmins and users the ability to use DNF on their container builds and unlocked systems running image-based Fedora variants. We",
+     "jev_quality_noul": 0.31,
+     "jev_task_id": "tada81b1-3180-49c6-abea-5cc5f632fa66"
+    },
+    {
+     "title": "Fedora Silverblue: First Impressions from Someone Building an ...",
+     "url": "https://www.mauromorales.com/posts/fedora-sivlerblue/",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "The other way to modify the system is not to change the running system at all, but to create a new version of the immutable image based on the current image plus our desired changes. Fedora's solution",
+     "jev_quality_noul": 0.78,
+     "jev_task_id": "tada81b1-3180-49c6-abea-5cc5f632fa66"
+    },
+    {
+     "title": "Building images - bootc",
+     "url": "https://bootc.dev/bootc/building/guidance.html",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "Some software supports generic ... derivation (the way OCI containers work) - it is supported and encouraged to put configuration files in /usr (instead of /etc) where possible, because then the state",
+     "jev_quality_noul": 0.1,
+     "jev_task_id": "tada81b1-3180-49c6-abea-5cc5f632fa66"
+    },
+    {
+     "title": "r/linux on Reddit: Fedora Atomic bootc Migration Setup -- A New ...",
+     "url": "https://www.reddit.com/r/linux/comments/1sgegqf/fedora_atomic_bootc_migration_setup_a_new_flow/",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "Note: all features implemented in the script could be done manually. In that case, in general, you start in project directory, rebuild the image with the initial build command, bootc update (assuming ",
+     "jev_quality_noul": 0.07,
+     "jev_task_id": "taed8149-4f4a-480b-9591-79f7f010ac4f"
+    }
+   ]
+  },
+  {
+   "query": "ostree bootc composefs immutable os architecture",
+   "n_results": 20,
+   "error": null,
+   "top": [
+    {
+     "title": "Filesystem - bootc",
+     "url": "https://bootc.dev/bootc/filesystem.html",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "However, for maximum immutability the best approach is simply to symlink just the parts of the /opt needed into /var. See the section on /opt in Image building and configuration guidance for a more co",
+     "jev_quality_noul": 0.07,
+     "jev_task_id": "taed8149-4f4a-480b-9591-79f7f010ac4f"
+    },
+    {
+     "title": "Chapter 15. Managing file systems in image mode for RHEL | Using ...",
+     "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-file-systems-in-image-mode-for-rhel",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "The system uses the ostree=kernel argument to find the deployment root. ... It is preferred to keep all operating system content in /usr, but not strictly required. Directories such as /bin will work ",
+     "jev_quality_noul": 0.83,
+     "jev_task_id": "taed8149-4f4a-480b-9591-79f7f010ac4f"
+    },
+    {
+     "title": "Using composefs with OSTree | ostreedev/ostree",
+     "url": "https://travier.github.io/ostree/composefs/",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "After committing, run ostree --sign with the private key. Throw away the private key. When a transient key is used this way, that ties the initrd with the userspace part from the commit. This means ea",
+     "jev_quality_noul": 0.75,
+     "jev_task_id": "taed8149-4f4a-480b-9591-79f7f010ac4f"
+    },
+    {
+     "title": "bootc_lib::install - Rust",
+     "url": "https://bootc.dev/bootc/internals/bootc_lib/install/index.html",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "State: Immutable global state for the installation, including source image info, SELinux state, configuration, and composefs options. RootSetup: Represents the prepared root filesystem, including moun",
+     "jev_quality_noul": 0.5,
+     "jev_task_id": "taed8149-4f4a-480b-9591-79f7f010ac4f"
+    },
+    {
+     "title": "Using Composefs in OSTree \u2013 Alexander Larsson",
+     "url": "https://blogs.gnome.org/alexl/2022/06/02/using-composefs-in-ostree/",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "The basic idea of composefs is that we have a set of content files and then we want to create directories with files based on it. The way ostree does this is to create an actual directory tree with ha",
+     "jev_quality_noul": 0.66,
+     "jev_task_id": "taa44991-0562-4d8b-8d53-8397b38086ae"
+    },
+    {
+     "title": "Bootc and OSTree: Modernizing Linux System Deployment | Hacker News",
+     "url": "https://news.ycombinator.com/item?id=47189625",
+     "engines": [
+      "brave"
+     ],
+     "snippet": "We're working in this space with Project Bluefin: https://github.com/projectbluefin/dakota \u00b7 Both approaches are indeed competitive, but you can also leverage both to achieve the same thing. We're exp",
+     "jev_quality_noul": 0.69,
+     "jev_task_id": "taa44991-0562-4d8b-8d53-8397b38086ae"
+    }
+   ]
+  }
+ ]
+}

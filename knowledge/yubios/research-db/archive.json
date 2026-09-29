@@ -1,0 +1,102 @@
+{
+ "run_date": "2026-09-29",
+ "ref": "yubios",
+ "request": "a yubiOS knowledge space",
+ "skill": "knowledge-corpus-mint v1 (first live validation)",
+ "outline_jev_task_id": "taa05380-4822-4d38-973c-5b529dcf61ce",
+ "outline_jev_cost_usd": "0.00009408",
+ "outline": [
+  {
+   "slug": "01-architecture-overview",
+   "scope": "Immutable OS architecture: bootc + mkosi + systemd, image-mode Linux, A/B atomic upgrades",
+   "score": 1.68,
+   "conf": 0.52
+  },
+  {
+   "slug": "02-yubikey-trust-boundaries",
+   "scope": "YubiKey as sole root of trust: PIV slot 9c Secure Boot signing, LUKS2 FIDO2 cryptenroll, SSH, PAM, homed",
+   "score": 1.99,
+   "conf": 0.98
+  },
+  {
+   "slug": "03-boot-chain-and-ukis",
+   "scope": "UKIs, sealed Secure Boot, dm-verity/composefs integrity stack, measured boot",
+   "score": 1.57,
+   "conf": 0.36
+  },
+  {
+   "slug": "04-supply-chain-gates",
+   "scope": "Digest pinning, OPA/Rego build policies, cosign + SLSA L3 + Rekor v2 attestations",
+   "score": 1.28,
+   "conf": 0.54
+  },
+  {
+   "slug": "05-arm64-hardware-path",
+   "scope": "RK3588 board path: TF-A/OP-TEE/U-Boot, fTPM, DDR/TPL blob constraints",
+   "score": 0.83,
+   "conf": 0.67
+  },
+  {
+   "slug": "06-ci-and-test-infrastructure",
+   "scope": "Self-hosted ARM64 runners, VM test lanes, reproducible builds, operational playbooks",
+   "score": 0.93,
+   "conf": 0.82
+  }
+ ],
+ "dig_summary": {
+  "docs_dug": 6,
+  "queries": 12,
+  "results_collected": 12,
+  "engine_suspensions": [
+   "02-yubikey-trust-boundaries",
+   "03-boot-chain-and-ukis",
+   "04-supply-chain-gates",
+   "05-arm64-hardware-path",
+   "06-ci-and-test-infrastructure"
+  ],
+  "note": "searXNG engines (brave/duckduckgo/google-cse) suspended for rate limits during the run; only doc 01 collected results. Docs 02-06 authored via direct primary-source verification (yubi-OS/yubiOS repo + upstream docs), per the skill's fallback rule."
+ },
+ "quality_weights": {
+  "n": 12,
+  "mean": 0.512,
+  "hi_ge_0.8": 1
+ },
+ "total_jev_cost_usd": 0.00136,
+ "author_stats": {
+  "01-architecture-overview": {
+   "sources_used": 11,
+   "primary_sources": 5,
+   "jev_weighted_claims": 5,
+   "gaps": "sealed-UKI promotion gate status not re-verified post 2026-07-22"
+  },
+  "02-yubikey-trust-boundaries": {
+   "sources_used": 16,
+   "primary_sources": 9,
+   "gaps": "none"
+  },
+  "03-boot-chain-and-ukis": {
+   "sources_used": 15,
+   "primary_sources": 12,
+   "gaps": "PCR golden-value and sealed-LUKS2 assertions scoped but not implemented (stated in doc)"
+  },
+  "04-supply-chain-gates": {
+   "sources_used": 12,
+   "primary_sources": 10,
+   "gaps": "searXNG unavailable; keyless/Rekor-v2 signing and L3 isolation are open items per repo sources"
+  },
+  "05-arm64-hardware-path": {
+   "sources_used": 11,
+   "primary_sources": 10,
+   "gaps": "searXNG unavailable; relies on repo primary sources; OMN-37 omitted (not found in fetched repo docs)"
+  },
+  "06-ci-and-test-infrastructure": {
+   "sources_used": 21,
+   "primary_sources": 17,
+   "gaps": "rock1 hardware model cited from workspace inventory, not repo"
+  }
+ },
+ "endpoints": {
+  "jev": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "searxng": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng"
+ }
+}
