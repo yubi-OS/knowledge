@@ -1,0 +1,168 @@
+{
+ "doc": "02-journald-logging",
+ "queries": [
+  {
+   "query": "journalctl filtering persistent journal storage configuration",
+   "n_results": 76,
+   "error": null,
+   "top": [
+    {
+     "title": "Configure Persistent Systemd Journal Storage on Linux [Guide]",
+     "url": "https://computingforgeeks.com/persistent-systemd-journal-linux/",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "gmx",
+      "google cse",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "March 25, 2026 \u2014 List all recorded boots to see how far back your journal history goes: ... Each line shows a boot ID with the time range. The current boot is index 0, previous boot is -1, and so on: ",
+     "jev_quality_noul": 0.06,
+     "jev_task_id": "tab64983-f075-42c9-ac59-83c3658fb7e3"
+    },
+    {
+     "title": "How To Use journalctl to View and Manipulate systemd... | DigitalOcean",
+     "url": "https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs",
+     "engines": [
+      "yandex",
+      "google cse",
+      "google",
+      "gmx"
+     ],
+     "snippet": "Apr 26, 2026 \u00b7 You can enable persistent logging by creating /var/log/journal and configuring journald.conf accordingly. The journal's storage footprint can be ...Key Takeaways \u00b7 How to Filter systemd",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "tab64983-f075-42c9-ac59-83c3658fb7e3"
+    },
+    {
+     "title": "Enable persistent storage for the systemd journal log \u00b7 GitHub",
+     "url": "https://gist.github.com/JPvRiel/b7c185833da32631fa6ce65b40836887",
+     "engines": [
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "More config options such as MaxLevelStore can help control how fast storage is consumed. mkdir -p /var/log/journal systemd-tmpfiles --create --prefix /var/log/journal systemctl restart systemd-journal",
+     "jev_quality_noul": 0.33,
+     "jev_task_id": "tab64983-f075-42c9-ac59-83c3658fb7e3"
+    },
+    {
+     "title": "How to Configure systemd-journald for Persistent Logging on Ubuntu",
+     "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-journald-for-persistent-logging-on-ubuntu/view",
+     "engines": [
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "March 2, 2026 \u2014 With Storage=auto, the directory must exist; with Storage=persistent, journald creates it if needed. # Check current storage mode journalctl --disk-usage # Identify where journals are ",
+     "jev_quality_noul": 0.17,
+     "jev_task_id": "ta3059ec-54c7-4a5f-9c4b-8e9afd3e0566"
+    },
+    {
+     "title": "How to enable persistent logging for the systemd journal - Red Hat Customer Portal",
+     "url": "https://access.redhat.com/solutions/696893",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "July 16, 2025 \u2014 Still in /etc/systemd/ folder override configurations can be placed like this. # cat /etc/systemd/journald.conf [Journal] Storage=persistent \u00b7 With the storage option persistent, data ",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "ta3059ec-54c7-4a5f-9c4b-8e9afd3e0566"
+    },
+    {
+     "title": "systemd/Journal - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Systemd/Journal",
+     "engines": [
+      "brave",
+      "yandex",
+      "google cse",
+      "gmx",
+      "seznam",
+      "resulthunter"
+     ],
+     "snippet": "July 9, 2026 \u2014 This is useful to make logs easier to sift through, because journalctl can struggle displaying logs in real-time if there are too many of them... Non-option arguments enable filtering b",
+     "jev_quality_noul": 0.86,
+     "jev_task_id": "ta3059ec-54c7-4a5f-9c4b-8e9afd3e0566"
+    }
+   ]
+  },
+  {
+   "query": "journald rate limiting structured logging fields",
+   "n_results": 90,
+   "error": null,
+   "top": [
+    {
+     "title": "How to Manage Systemd Journal Size on Ubuntu - OneUptime",
+     "url": "https://oneuptime.com/blog/post/2026-01-15-manage-systemd-journal-size-ubuntu/view",
+     "engines": [
+      "brave",
+      "yandex",
+      "google cse",
+      "gmx",
+      "resulthunter"
+     ],
+     "snippet": "January 15, 2026 \u2014 # Override rate limiting for a specific service sudo systemctl edit myapp.service # Add these lines in the editor [Service] LogRateLimitIntervalSec=0 LogRateLimitBurst=0 \u00b7 Configure",
+     "jev_quality_noul": 0.75,
+     "jev_task_id": "ta3059ec-54c7-4a5f-9c4b-8e9afd3e0566"
+    },
+    {
+     "title": "journalctl Configuration for Log Analysis - CubePath Docs",
+     "url": "https://cubepath.com/docs/monitoring-logging/journalctl-configuration-for-log-analysis",
+     "engines": [
+      "gmx",
+      "google cse"
+     ],
+     "snippet": "Jan 11, 2026 ... Unlike traditional text-based logging systems, journald stores logs in a binary format with rich metadata, enabling sophisticated filtering,\u00a0...",
+     "jev_quality_noul": 0.16,
+     "jev_task_id": "ta3059ec-54c7-4a5f-9c4b-8e9afd3e0566"
+    },
+    {
+     "title": "Expert Guide to Advanced Log Management in Linux - Medium",
+     "url": "https://linuxgd.medium.com/expert-guide-to-advanced-log-management-in-linux-2b860438c256",
+     "engines": [
+      "gmx",
+      "google cse"
+     ],
+     "snippet": "Dec 11, 2025 ... ... structured, correlated log fields. 5\ufe0f\u20e3 Systemd Journald Resource ... # Enable rate limiting to prevent log flooding from malicious or buggy\u00a0...",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "ta0bac0a-aa48-4496-8cac-e2fac9d9e5a0"
+    },
+    {
+     "title": "Journald input | Beats - Elastic",
+     "url": "https://www.elastic.co/docs/reference/beats/filebeat/filebeat-input-journald",
+     "engines": [
+      "gmx",
+      "google cse"
+     ],
+     "snippet": "To read this log data Filebeat calls journalctl to read from the journal, therefore Filebeat needs permission to execute journalctl . Warning. The Wolfi-based\u00a0...",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "ta0bac0a-aa48-4496-8cac-e2fac9d9e5a0"
+    },
+    {
+     "title": "Ubuntu VPS Log Management with Logrotate and Journald | MassiveGRID Blog",
+     "url": "https://massivegrid.com/blog/ubuntu-vps-log-management/",
+     "engines": [
+      "google cse",
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "February 27, 2026 \u2014 Key characteristics of journald: Binary storage format \u2014 you must use journalctl to read it \u00b7 Structured metadata \u2014 each log entry includes fields like unit name, PID, priority, ti",
+     "jev_quality_noul": 0.21,
+     "jev_task_id": "ta0bac0a-aa48-4496-8cac-e2fac9d9e5a0"
+    },
+    {
+     "title": "How To Change Log Rate Limiting In Linux",
+     "url": "https://www.rootusers.com/how-to-change-log-rate-limiting-in-linux/",
+     "engines": [
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "March 23, 2016 \u2014 In this particular case we have a DNS server running Bind which is logging all DNS queries. 7124 messages were suppressed and dropped (not logged) because they were coming in too fast",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "ta0bac0a-aa48-4496-8cac-e2fac9d9e5a0"
+    }
+   ]
+  }
+ ]
+}

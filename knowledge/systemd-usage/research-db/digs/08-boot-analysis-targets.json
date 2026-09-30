@@ -1,0 +1,169 @@
+{
+ "doc": "08-boot-analysis-targets",
+ "queries": [
+  {
+   "query": "systemd-analyze blame critical-chain boot debugging",
+   "n_results": 72,
+   "error": null,
+   "top": [
+    {
+     "title": "systemd-analyze: Debug and Optimize Your Linux Boot Time | LinuxBlog.io",
+     "url": "https://linuxblog.io/systemd-analyze-debug-optimize-linux-boot/",
+     "engines": [
+      "duckduckgo web",
+      "google cse",
+      "google",
+      "seznam",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "March 16, 2026 \u2014 The blame output shows total time per unit, but it does not tell you which units were blocking others. For that, use critical-chain:\"If your Linux system takes longer to boot than you",
+     "jev_quality_noul": 0.1,
+     "jev_task_id": "tab27f2c-6b83-481f-8c86-7d26f390aec9"
+    },
+    {
+     "title": "Stop Guessing Why Linux Boots Slowly: Practical `systemd-analyze` for Real Bottlenecks - DEV Community",
+     "url": "https://dev.to/lyraalishaikh/stop-guessing-why-linux-boots-slowly-practical-systemd-analyze-for-real-bottlenecks-4kij",
+     "engines": [
+      "google",
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "May 14, 2026 \u2014 mkdir -p ~/boot-profiles stamp=$(date +%F-%H%M%S) { echo \"## $stamp\" systemd-analyze time echo systemd-analyze blame | head -n 20 echo systemd-analyze critical-chain } > ~/boot-profiles",
+     "jev_quality_noul": 0.13,
+     "jev_task_id": "tad06f0d-d9a4-4207-ad28-0d7e26aee6db"
+    },
+    {
+     "title": "systemd-analyze - Freedesktop.org",
+     "url": "https://www.freedesktop.org/software/systemd/man/systemd-analyze.html",
+     "engines": [
+      "google cse",
+      "google"
+     ],
+     "snippet": "systemd-analyze may be used to determine system boot-up performance statistics and retrieve other state and tracing information from the system and service ...",
+     "jev_quality_noul": 0.13,
+     "jev_task_id": "tad06f0d-d9a4-4207-ad28-0d7e26aee6db"
+    },
+    {
+     "title": "How to Use systemd-analyze to Diagnose Slow Boot Times on RHEL",
+     "url": "https://oneuptime.com/blog/post/2026-03-04-systemd-analyze-diagnose-slow-boot-rhel-9/view",
+     "engines": [
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "March 4, 2026 \u2014 # Show recorded startup timing for a specific service systemd-analyze blame | grep sshd # Check what a service is waiting for systemd-analyze critical-chain sshd.service\"The blame list",
+     "jev_quality_noul": 0.96,
+     "jev_task_id": "tad06f0d-d9a4-4207-ad28-0d7e26aee6db"
+    },
+    {
+     "title": "systemd-analyze(1) - Arch Linux manual pages",
+     "url": "https://man.archlinux.org/man/systemd-analyze.1.en",
+     "engines": [
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "Example 2. Show which units took ...dm-cleanup-db.service 3ms sys-kernel-config.mount \u00b7 This command prints a tree of the time-critical chain of units (for each of the specified UNITs or for the defau",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "tad06f0d-d9a4-4207-ad28-0d7e26aee6db"
+    },
+    {
+     "title": "systemd-analyze - freedesktop.org",
+     "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-analyze.html",
+     "engines": [
+      "resulthunter",
+      "duckduckgo web"
+     ],
+     "snippet": "Example 2. Show which units took ...dm-cleanup-db.service 3ms sys-kernel-config.mount \u00b7 This command prints a tree of the time-critical chain of units (for each of the specified UNITs or for the defau",
+     "jev_quality_noul": 0.83,
+     "jev_task_id": "tad06f0d-d9a4-4207-ad28-0d7e26aee6db"
+    }
+   ]
+  },
+  {
+   "query": "systemd rescue emergency target stuck boot troubleshooting",
+   "n_results": 74,
+   "error": null,
+   "top": [
+    {
+     "title": "Diagnosing Boot Problems - Systemd",
+     "url": "https://systemd.io/DEBUGGING/",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "seznam",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "Note that in the emergency shell ... issues that can be resolved in the emergency shell are bad lines in /etc/fstab. After fixing /etc/fstab, run systemctl daemon-reload to let systemd refresh its vie",
+     "jev_quality_noul": 0.91,
+     "jev_task_id": "tac06741-2977-443b-bb43-be0c7a1e51f7"
+    },
+    {
+     "title": "Chapter 3. Booting into a target system state | Using systemd unit files to customize and optimize your system | Red Hat Enterprise Linux | 10 | Red Hat Documentation",
+     "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_systemd_unit_files_to_customize_and_optimize_your_system/booting-into-a-target-system-state",
+     "engines": [
+      "google",
+      "resulthunter",
+      "yahoo"
+     ],
+     "snippet": "To troubleshoot or recover the system, you can temporarily change the current target without rebooting the system. To switch to a different target, use the systemctl isolate command. By selecting or c",
+     "jev_quality_noul": 0.92,
+     "jev_task_id": "tac06741-2977-443b-bb43-be0c7a1e51f7"
+    },
+    {
+     "title": "Systemd Emergency & Rescue Targets Boot Guide - LinuxConfig.org",
+     "url": "https://linuxconfig.org/how-to-boot-ubuntu-18-04-into-emergency-and-rescue-mode",
+     "engines": [
+      "yandex",
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "September 21, 2025 \u2014 If you now press CTRL-x or F10, the system will boot in to emergency mode: ... This is the systemd target that can be associated to the old single user mode. Unlike what happens w",
+     "jev_quality_noul": 0.91,
+     "jev_task_id": "tac06741-2977-443b-bb43-be0c7a1e51f7"
+    },
+    {
+     "title": "Resolving Systemd Boot Issues: Common Problems and Solutions | Master DevOps Tools & Best Practices - DevOps Knowledge Hub",
+     "url": "https://devops.aibit.im/en/article/resolving-systemd-boot-issues",
+     "engines": [
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "Once in a usable shell (rescue mode, emergency mode, or live environment with chroot), you can check the status of all systemd units. ... This command lists all units that failed to start. For detaile",
+     "jev_quality_noul": 0.17,
+     "jev_task_id": "tac06741-2977-443b-bb43-be0c7a1e51f7"
+    },
+    {
+     "title": "Rescuing a Linux System Stuck in Emergency Mode: A Step-by-Step Recovery Guide -",
+     "url": "https://linuxtransfer.com/post/2026-06-03-rescuing-a-linux-system-stuck-in-emergency-mo/",
+     "engines": [
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "June 3, 2026 \u2014 If you are unable to rescue the system using the Emergency Mode, you can try using a rescue disk. A rescue disk is a bootable disk that provides a minimal environment for troubleshootin",
+     "jev_quality_noul": 0.11,
+     "jev_task_id": "tac06741-2977-443b-bb43-be0c7a1e51f7"
+    },
+    {
+     "title": "How to determine exactly why Systemd enters emergency mode",
+     "url": "https://unix.stackexchange.com/questions/326493/how-to-determine-exactly-why-systemd-enters-emergency-mode",
+     "engines": [
+      "google cse",
+      "google"
+     ],
+     "snippet": "Nov 28, 2016 \u00b7 If you search through the unit files, there are only a very few ways for the boot to fall back to emergency.target . It's usually when a .mount ...How to force systemd enter in emergenc",
+     "jev_quality_noul": 0.22,
+     "jev_task_id": "tac14c01-9a07-4f3e-8189-9451f6f9ee2b"
+    }
+   ]
+  }
+ ]
+}

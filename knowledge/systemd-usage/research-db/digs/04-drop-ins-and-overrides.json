@@ -1,0 +1,180 @@
+{
+ "doc": "04-drop-ins-and-overrides",
+ "queries": [
+  {
+   "query": "systemctl edit drop-in override directory ordering",
+   "n_results": 67,
+   "error": null,
+   "top": [
+    {
+     "title": "How to Override systemd Service Parameters with Drop-In Files on Ubuntu",
+     "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-override-systemd-service-parameters-with-drop-in-files-on-ubuntu/view",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "March 2, 2026 \u2014 # Creates a full copy in /etc/systemd/system/ that overrides the package version sudo systemctl edit --full nginx.service \u00b7 This copies the entire unit to /etc/systemd/system/nginx.ser",
+     "jev_quality_noul": 0.07,
+     "jev_task_id": "tab5e408-49db-4d40-bd02-799b4bc68053"
+    },
+    {
+     "title": "How to override systemd unit file settings? - Unix & Linux Stack Exchange",
+     "url": "https://unix.stackexchange.com/questions/398540/how-to-override-systemd-unit-file-settings",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "October 17, 2017 \u2014 If you want to remove dependencies, you have to override the entire unit. To override the entire unit, use systemctl edit --full, this will make a copy in /etc if there is none yet ",
+     "jev_quality_noul": 0.16,
+     "jev_task_id": "tab5e408-49db-4d40-bd02-799b4bc68053"
+    },
+    {
+     "title": "configuration - How do I override or configure systemd services? - Ask Ubuntu",
+     "url": "https://askubuntu.com/questions/659267/how-do-i-override-or-configure-systemd-services",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "google cse",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "Instead, systemd allows you to override these files by creating appropriate files in /etc/systemd/system/. For a given service foo, the package would provide /lib/systemd/system/foo.service.\"Packages ",
+     "jev_quality_noul": 0.27,
+     "jev_task_id": "tab5e408-49db-4d40-bd02-799b4bc68053"
+    },
+    {
+     "title": "How to edit a systemd unit override - Simplified Guide",
+     "url": "https://www.simplified.guide/systemd/unit-edit-override",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "Editing a systemd override changes how one unit starts, stops, or inherits limits without copying the vendor unit into /etc/ and taking ownership of the whole file. That is the safer path when a packa",
+     "jev_quality_noul": 0.19,
+     "jev_task_id": "tab5e408-49db-4d40-bd02-799b4bc68053"
+    },
+    {
+     "title": "Modify systemd Config Without Touching Upstream Unit File | Baeldung on Linux",
+     "url": "https://www.baeldung.com/linux/systemd-modify-config",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "September 24, 2023 \u2014 $ systemctl status sshd \u25cf ... that our change is taken into account. We can make our work easier by using the edit verb of the systemctl command. It\u2019ll create the services directo",
+     "jev_quality_noul": 0.22,
+     "jev_task_id": "ta819bb9-3eef-4139-a0ff-113baf38bfdf"
+    },
+    {
+     "title": "Systemctl Edit Service (Systemd Drop-In Override) - LaptopJudge",
+     "url": "https://laptopjudge.com/systemctl-edit-service/",
+     "engines": [
+      "yandex",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "Creating and Editing Drop-In Overrides. A drop-in is a separate configuration fragment that systemd reads alongside the main unit. The command systemctl edit <unit> creates the correct directory and o",
+     "jev_quality_noul": 0.24,
+     "jev_task_id": "ta819bb9-3eef-4139-a0ff-113baf38bfdf"
+    }
+   ]
+  },
+  {
+   "query": "systemd drop-in filename lexicographic sort override trap",
+   "n_results": 89,
+   "error": null,
+   "top": [
+    {
+     "title": "systemd-system.conf(5) - Linux manual page - man7.org",
+     "url": "https://man7.org/linux/man-pages/man5/systemd-system.conf.5.html",
+     "engines": [
+      "google",
+      "resulthunter",
+      "seznam",
+      "brave"
+     ],
+     "snippet": "In addition to the main configuration file, drop-in configuration snippets are read from /usr/lib/systemd/*.conf.d/, /usr/local/lib/systemd/*.conf.d/, and /etc/systemd/*.conf.d/. Those drop-ins have h",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "ta819bb9-3eef-4139-a0ff-113baf38bfdf"
+    },
+    {
+     "title": "How to Override systemd Service Parameters with Drop-In Files on Ubuntu",
+     "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-override-systemd-service-parameters-with-drop-in-files-on-ubuntu/view",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "March 2, 2026 \u2014 Files are applied in lexicographic order.\"Files are applied in lexicographic order.\"\"When you need to change how a systemd service behaves, the temptation is to edit the unit file dire",
+     "jev_quality_noul": 0.92,
+     "jev_task_id": "ta819bb9-3eef-4139-a0ff-113baf38bfdf"
+    },
+    {
+     "title": "linux - What is a drop-in file? What is a drop-in directory? How to edit systemd service - Stack Overflow",
+     "url": "https://stackoverflow.com/questions/59842743/what-is-a-drop-in-file-what-is-a-drop-in-directory-how-to-edit-systemd-service",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "I want to change how a custom systemd service works. systemctl edit serviceName This edits /etc/systemd/system/serviceName.d/override.conf file. Override.conf is called a drop-in file and serviceN...\"",
+     "jev_quality_noul": 0.15,
+     "jev_task_id": "ta819bb9-3eef-4139-a0ff-113baf38bfdf"
+    },
+    {
+     "title": "systemd-system.conf(5) \u2014 systemd \u2014 Debian unstable \u2014 Debian Manpages",
+     "url": "https://manpages.debian.org/unstable/systemd/systemd-system.conf.5.en.html",
+     "engines": [
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "3 weeks ago \u2014 In addition to the main configuration file, drop-in configuration snippets are read from /usr/lib/systemd/*.conf.d/, /usr/local/lib/systemd/*.conf.d/, and /etc/systemd/*.conf.d/. Those d",
+     "jev_quality_noul": 0.92,
+     "jev_task_id": "taadb135-7683-4ba9-b4ad-ff32d02ad8a7"
+    },
+    {
+     "title": "Understanding Drop-in Overrides in systemd: When Parameters Accumulate ...",
+     "url": "https://dev.to/redrum_yot/understanding-drop-in-overrides-in-systemd-when-parameters-accumulate-vs-override-3noi",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "When working with systemd units, you often want to override or tweak an existing unit file without rewriting it entirely. That's where drop-in overrides come in. But there's a subtle behavior many peo",
+     "jev_quality_noul": 0.92,
+     "jev_task_id": "taadb135-7683-4ba9-b4ad-ff32d02ad8a7"
+    },
+    {
+     "title": "systemd.unit",
+     "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html",
+     "engines": [
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "The usual rules apply: multiple drop-in files with different names are applied in lexicographic order, regardless of which of the directories they reside in, so a file in type.d/ applies to a unit onl",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "taadb135-7683-4ba9-b4ad-ff32d02ad8a7"
+    }
+   ]
+  }
+ ]
+}

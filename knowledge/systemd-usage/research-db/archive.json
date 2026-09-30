@@ -1,0 +1,133 @@
+{
+ "run_date": "2026-09-30",
+ "ref": "systemd-usage",
+ "request": "a systemd usage knowledge corpus (practical operator-focused)",
+ "skill": "knowledge-corpus-mint v1.1 (Phase 0 preflight gate active)",
+ "preflight": {
+  "searxng": {
+   "results": 161,
+   "suspended_engines": [],
+   "healthy": true
+  },
+  "jev": {
+   "healthy": true,
+   "cost": "0.000023268"
+  }
+ },
+ "outline_jev_task_id": "taab5176-a362-4128-abe6-fd3f611d037a",
+ "outline_jev_cost_usd": "0.000140784",
+ "outline": [
+  {
+   "slug": "01-units-and-systemctl",
+   "scope": "Unit files and systemctl in practice: unit types, enable/disable/mask verbs, lifecycle states, WantedBy, unit file lookup order",
+   "score": 2
+  },
+  {
+   "slug": "02-journald-logging",
+   "scope": "journald in practice: journalctl filtering, persistent journal, structured fields, rate limiting, log forwarding",
+   "score": 1.3
+  },
+  {
+   "slug": "03-timers-and-scheduling",
+   "scope": "Timers instead of cron: OnCalendar/OnUnitActiveSec, Persistent=, randomized delays, timer debugging",
+   "score": 1.03
+  },
+  {
+   "slug": "04-drop-ins-and-overrides",
+   "scope": "Drop-ins and overrides: systemctl edit, drop-in directory semantics, lex-sort ordering trap, daemon-reload discipline",
+   "score": 1.11
+  },
+  {
+   "slug": "05-service-hardening-sandboxing",
+   "scope": "Service sandboxing: ProtectSystem/ProtectHome, DynamicUser, systemd-analyze security scores, practical hardening workflow",
+   "score": 0.98
+  },
+  {
+   "slug": "06-network-and-resolved",
+   "scope": "networkd + resolved usage: .network/.netdev/.link files, networkctl, DNS/mDNS config, debugging connectivity",
+   "score": 0.89
+  },
+  {
+   "slug": "07-cgroups-resource-control",
+   "scope": "Resource control: slices, CPUQuota/MemoryMax/IOWeight, systemd-cgtop, delegation for containers",
+   "score": 1.01
+  },
+  {
+   "slug": "08-boot-analysis-targets",
+   "scope": "Boot analysis and targets: systemd-analyze blame/critical-chain, targets vs runlevels, rescue/emergency modes, debugging stuck boots",
+   "score": 1
+  }
+ ],
+ "dropped_outline": [
+  "09-cryptenroll-credentials",
+  "10-nspawn-homed-practical"
+ ],
+ "dropped_note": "09-cryptenroll-credentials and 10-nspawn-homed-practical dropped by jev outline validation (0.53/0.45): both topics are already covered in the yubios corpus (docs 02 and 05)",
+ "dig_summary": {
+  "docs_dug": 8,
+  "queries": 16,
+  "results_collected": 96,
+  "engine_suspensions": [],
+  "note": "searXNG healthy throughout; freedesktop man pages served 200 directly to all 8 author subagents (no mirror fallback needed)"
+ },
+ "quality_weights": {
+  "n": 96,
+  "mean": 0.364,
+  "hi_ge_0.8": 21
+ },
+ "total_jev_cost_usd": 0.011336,
+ "author_stats": {
+  "01-units-and-systemctl": {
+   "sources_used": 9,
+   "primary_sources": 5,
+   "jev_weighted_claims": 4,
+   "gaps": "none"
+  },
+  "02-journald-logging": {
+   "sources_used": 6,
+   "primary_sources": 4,
+   "jev_weighted_claims": 2,
+   "gaps": "none"
+  },
+  "03-timers-and-scheduling": {
+   "sources_used": 13,
+   "primary_sources": 5,
+   "jev_weighted_claims": 6,
+   "gaps": "systemd-crontab-generator is a third-party project, noted inline"
+  },
+  "04-drop-ins-and-overrides": {
+   "sources_used": 12,
+   "primary_sources": 8,
+   "jev_weighted_claims": 4,
+   "gaps": "none"
+  },
+  "05-service-hardening-sandboxing": {
+   "sources_used": 5,
+   "primary_sources": 2,
+   "jev_weighted_claims": 2,
+   "gaps": "man pages do not annotate Added-in-version for several sandboxing directives; no version claims made for those"
+  },
+  "06-network-and-resolved": {
+   "sources_used": 12,
+   "primary_sources": 10,
+   "jev_weighted_claims": 2,
+   "gaps": "none"
+  },
+  "07-cgroups-resource-control": {
+   "sources_used": 10,
+   "primary_sources": 8,
+   "jev_weighted_claims": 5,
+   "gaps": "none"
+  },
+  "08-boot-analysis-targets": {
+   "sources_used": 18,
+   "primary_sources": 9,
+   "jev_weighted_claims": 7,
+   "gaps": "none"
+  }
+ },
+ "endpoints": {
+  "jev": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "searxng": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng"
+ }
+}
