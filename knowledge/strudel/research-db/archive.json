@@ -1,0 +1,1167 @@
+{
+ "corpus": "strudel",
+ "minted_at": "2026-09-30T23:13:00.299379+00:00",
+ "preflight": {
+  "searxng": {
+   "endpoint": "GET .../webhook/searxng?endpoint=search&qs=q%3Dstrudel%26format%3Djson",
+   "http": 200,
+   "results": 125,
+   "note": "IP-level suspensions persist on some engines (brave, duckduckgo, qwant); diversity carries the query set",
+   "timestamp": "2026-09-30T23:03Z"
+  },
+  "jev": {
+   "endpoint": "POST steady-orbit.systems-a.workers.dev/api/decide",
+   "http": 200,
+   "probe_noul": 0.41,
+   "cost": 2.8224e-05,
+   "task_id": "ta970782-b0ab-4c79-8c0f-b70a8f72dde3",
+   "model": "typesafe/jev-1.13-20260917"
+  }
+ },
+ "outline_validation": {
+  "docs": [
+   [
+    "01-overview-ecosystem",
+    "What Strudel is, TidalCycles lineage, Codeberg move, ecosystem (awesome-strudel, songs collection, nvim controller)"
+   ],
+   [
+    "02-repl-mechanics",
+    "The strudel.cc REPL: evaluate/stop keys, code fields, live update workflow, editor behavior"
+   ],
+   [
+    "03-mini-notation",
+    "The complete Mini-Notation rhythm syntax: space, :x, ~/-, <>/[]/*//, commas, @, !"
+   ],
+   [
+    "04-sounds-banks-samples",
+    "sound(), drum letters, drum machine banks, sample numbers, loading custom samples"
+   ],
+   [
+    "05-notes-scales-tempo",
+    "note() letters/numbers, n()+scale degrees, setcpm tempo model, tuning"
+   ],
+   [
+    "06-audio-effects",
+    "lpf, vowel, gain, delay, room, pan, speed, ADSR envelopes, patterning effect params"
+   ],
+   [
+    "07-signals-modulation",
+    "sine/saw/square/tri/rand/perlin signals, .range(), .slow() on signals, .segment()"
+   ],
+   [
+    "08-pattern-effects",
+    "Tidal-specific transforms: rev, jux, add, ply, off, multiple tempos"
+   ],
+   [
+    "09-hardware-integrations",
+    "MIDI and OSC as sequencer output, MQTT motor patterning (Inventor 2040W)"
+   ],
+   [
+    "10-livecoding-practice",
+    "Performance/teaching practice: workshop path, algorave usage, community resources"
+   ]
+  ],
+  "validation": {
+   "01-overview-ecosystem": 1.38,
+   "02-repl-mechanics": 1.97,
+   "03-mini-notation": 1.99,
+   "04-sounds-banks-samples": 1.95,
+   "05-notes-scales-tempo": 1.98,
+   "06-audio-effects": 1.94,
+   "07-signals-modulation": 1.78,
+   "08-pattern-effects": 1.78,
+   "09-hardware-integrations": 0.95,
+   "10-livecoding-practice": 0.86
+  },
+  "task_ids": [
+   "ta89807a-3f6e-47c3-a8e9-2a4a197256f3",
+   "ta605cd4-793d-4221-b232-2de75c457673"
+  ],
+  "jev_cost": 0.00019924800000000001
+ },
+ "items": [
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Strudel REPL",
+   "url": "https://strudel.cc/",
+   "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.63
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q0",
+   "ri": 1,
+   "title": "Getting Started \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/getting-started/",
+   "snippet": "These pages will introduce you to Strudel, a web-based live coding environment that implements the Tidal Cycles algorithmic pattern language. Strudel is a version of Tidal Cycles written in JavaScript, initiated by Alex McLean and Felix Roos in 2022.\"Then edit the text so it reads s(\"bd sd cp hh\") and click the refresh icon. Congratulations, you have now live coded your first Strudel pattern! With",
+   "jev": 0.64
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q0",
+   "ri": 2,
+   "title": "GitHub - tidalcycles/strudel: MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript \u00b7 GitHub",
+   "url": "https://github.com/tidalcycles/strudel",
+   "snippet": "MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript - tidalcycles/strudel\"Live coding patterns on the web https://strudel.cc/ Development has moved to https://codeberg.org/uzu/strudel\"",
+   "jev": 0.63
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Live code with Tidal Cycles | Tidal Cycles",
+   "url": "https://tidalcycles.org/",
+   "snippet": "Tidal is using SuperCollider, another ... of patterns of time known as Uzulangs, including the web-based Strudel environment. Tidal Cycles allows you to make patterns with code....\"Tidal is using SuperCollider, another open-source software, for synthesis and MIDI. Tidal has inspired a open source family of similar environments adopting its model of patterns of time known as Uzulangs, including the",
+   "jev": 0.62
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q0",
+   "ri": 4,
+   "title": "live.strudel.cc",
+   "url": "https://live.strudel.cc/examples/",
+   "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.64
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Strudel vs Tidal Strudel",
+   "url": "https://strudel.cc/learn/strudel-vs-tidal/",
+   "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.61
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q1",
+   "ri": 0,
+   "title": "Strudel REPL",
+   "url": "https://strudel.cc/",
+   "snippet": "Strudel is a music live coding environment for the browser, It is free and open-source and made for beginners and experts alike.",
+   "jev": 0.62
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q1",
+   "ri": 1,
+   "title": "uzu/strudel: Web-based environment for live coding algorithmic patterns ...",
+   "url": "https://codeberg.org/uzu/strudel",
+   "snippet": "strudel - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript\"Codeberg has changed its Terms of Use. View complete changes. LLM-generated content is being restricted. View change or read the blog post \u00b7 Cryptocurrency projects are no longer allowed. View change Dismiss ... Web-based environment for live coding algorithmic patterns,",
+   "jev": 0.61
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q1",
+   "ri": 2,
+   "title": "Live code with Tidal Cycles | Tidal Cycles",
+   "url": "https://tidalcycles.org/",
+   "snippet": "Tidal Cycles (or 'Tidal' for short) is a free/open source live coding environment for algorithmic patterns, written in Haskell.Tidal has inspired a open source family of similar environments adopting its model of patterns of time known as Uzulangs, including the web-based Strudel environment.",
+   "jev": 0.61
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Algorave",
+   "url": "https://algorave.com/",
+   "snippet": "Sep 16, 2026 \u00b7 Live coding meets unorthodox DJing with Nesso, Kuthi Jin, Olbos and y22o - The Grey Space in the Middle, The Hague Netherlands 2021/12/21 - Solstice Algorave - Dina, Sheffield United Kingdom",
+   "jev": 0.61
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q1",
+   "ri": 4,
+   "title": "Strudel vs Tidal Cycles vs Sonic Pi vs Chuck vs Auwen: Which Live Coding System Fits Your Flow? | Soniare",
+   "url": "https://www.soniare.net/blog/live-coding-systems-comparison",
+   "snippet": "September 10, 2025 \u2014 But for those who click with it, Tidal offers unmatched depth for algorithmic composition and has inspired countless algorave performances worldwide. Strudel is essentially Tidal Cycles reimagined for the web.\"Let's break down five powerful options: Strudel, Tidal Cycles, Sonic Pi, Chuck, and Soniare's Auwen, each offering its own philosophy on how code should become music. Ti",
+   "jev": 0.64
+  },
+  {
+   "slug": "01-overview-ecosystem",
+   "qk": "q1",
+   "ri": 5,
+   "title": "The Cleanest Strudel Live Coding Session Yet | AlgoRave Vol. 2 - YouTube",
+   "url": "https://www.youtube.com/watch?v=dFOstvsQcHI",
+   "snippet": "June 19, 2025 \u2014 \ud83c\udfa7 Learning The Wires | Strudel Live Coding Session Vol. 2 #algorave #livecoding #strudelJoin me as I build a full track live in Strudel.js \u2014 a browser-based...",
+   "jev": 0.63
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Getting Started \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/workshop/getting-started/",
+   "snippet": "It is an official port of the Tidal Cycles pattern language to JavaScript. You don\u2019t need to know JavaScript or Tidal Cycles to make music with Strudel. This interactive tutorial will guide you through the basics of Strudel. The best place to actually make music with Strudel is the Strudel REPL\"It is an official port of the Tidal Cycles pattern language to JavaScript. You don\u2019t need to know JavaSc",
+   "jev": 0.64
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q0",
+   "ri": 1,
+   "title": "REPL - Strudel",
+   "url": "https://strudel.cc/technical-manual/repl/",
+   "snippet": "The control flow of the REPL follows 3 basic steps: The user writes and updates code. Each update transpiles and evaluates it to create a Pattern instance\"While Strudel can be used as a library in any JavaScript codebase, its main, reference user interface is the Strudel REPL1, which is a browser-based live coding environment. This live code editor is dedicated to manipulating Strudel patterns whi",
+   "jev": 0.64
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q0",
+   "ri": 2,
+   "title": "Strudel REPL",
+   "url": "https://strudel.cc/",
+   "snippet": "To get started: 1. hit play - 2. change something - 3. hit update To get started, check out the interactive tutorial. Also feel free to join the discord channel to ask any questions, give feedback or just say hello. about strudel is a JavaScript version of tidalcycles, which is a popular live coding language for music, written in Haskell.",
+   "jev": 0.63
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Getting Started Strudel",
+   "url": "https://strudel.cc/learn/getting-started/",
+   "snippet": "Strudel REPL and MiniREPL The main place to actually make music with Strudel is the Strudel REPL (what is a REPL?), but in these pages you will also encounter interactive \"MiniREPLs\" where you can listen to and edit Strudel patterns.",
+   "jev": 0.72
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Using Strudel in your Project \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/technical-manual/project-start/",
+   "snippet": "Using an iframe is the most easy way to embed a strudel tune. You can embed any pattern of your choice via an iframe and the URL of the pattern of your choice: <iframe src=\"https://strudel.cc/?xwWRfuCE8TAR\" width=\"600\" height=\"300\"></iframe> ...\"For more info on this package, see the @strudel/repl README. The above approach assumes you want to use the builtin codemirror editor.\"\"Using an iframe is",
+   "jev": 0.74
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Strudel Basics Strudel - Strudel REPL - Pattern Club",
+   "url": "https://strudel.patternclub.org/workshop/strudel-basics/",
+   "snippet": "We can use brackets after the name of a sound to define a Euclidian rhythm - Strudel will try to space the first number of events over the second number of steps: ... Try experimenting with different values. If you\u2019ve made it this far then well done!!! You can graduate to the main REPL and keep practicing - click go to REPL in the top right :)\"We can use brackets after the name of a sound to defin",
+   "jev": 0.73
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q1",
+   "ri": 0,
+   "title": "Vim Shortcuts \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/technical-manual/vim/",
+   "snippet": "If an error occurs, reload the page to reset editor state and try again. To add custom keybindings the Vim object can be used (either from within a pattern or in a prebake script) ... // Map 'jk' to Escape in normal mode Vim.map('jk', '<Esc>', 'insert'); // Map 'U' to :w (Evaluate the current code) Vim.map('U', ':w<CR>', 'normal'); // Map 'Q' to :q \u2014 Stop/pause playback Vim.map('Q', ':q<CR>', 'nor",
+   "jev": 0.71
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Coding syntax \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/code/",
+   "snippet": "It is a handy way to quickly turn code on and off. Try uncommenting this line by deleting // and refreshing the pattern. You can also use the keyboard shortcut cmd-/ to toggle comments on and off.\"The // in the example above is a line comment, resulting in the delay function being ignored. It is a handy way to quickly turn code on and off. Try uncommenting this line by deleting // and refreshing t",
+   "jev": 0.72
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q1",
+   "ri": 2,
+   "title": "REPL - Strudel",
+   "url": "https://strudel.cc/technical-manual/repl/",
+   "snippet": "Besides a UI for playback control and meta information, the main part of the REPL interface is the code editor powered by CodeMirror. In it, the user can edit and evaluate pattern code live, using one of the available synthesis outputs to create music and/or sound art.\"Besides a UI for playback control and meta information, the main part of the REPL interface is the code editor powered by CodeMirr",
+   "jev": 0.52
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Strudel editor shortcuts for international keyboards \u00b7 Issue #901 \u00b7 tidalcycles/strudel",
+   "url": "https://github.com/tidalcycles/strudel/issues/901",
+   "snippet": "January 12, 2024 \u2014 Ctrl+Enter to play and update Ctrl+: to stop Cmd+= to zoom in (Chrome) - no way to comment/uncomment\"Strudel editor shortcuts for international keyboards#901 \u00b7 Copy link \u00b7 pierredewilde \u00b7 opened \u00b7 on Jan 12, 2024 \u00b7 Issue body actions \u00b7 In Strudel REPL, shortcuts for QUERTY keyboards are \u00b7 Ctrl+Enter to play and update Ctrl+. to stop Cmd+/ to comment/uncomment \u00b7\"\"In Strudel REPL,",
+   "jev": 0.53
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q1",
+   "ri": 4,
+   "title": "GitHub - gruvw/strudel.nvim: A Neovim based strudel.cc controller, live coding using Strudel from Neovim. \u00b7 GitHub",
+   "url": "https://github.com/gruvw/strudel.nvim",
+   "snippet": "STRUDEL_TOGGLE - Toggle playback (play/stop) in Strudel. STRUDEL_UPDATE - Trigger the Update button (evaluate code).\"Toggle playback (the Play/Stop button) in the Strudel editor. ... Trigger code evaluation (the Update button) in the Strudel editor.\"\"Strudel error reporting - Reports Strudel evaluation errors back into Neovim (by default). Custom CSS injection - Optionally inject your own CSS into",
+   "jev": 0.54
+  },
+  {
+   "slug": "02-repl-mechanics",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Vim Shortcuts Strudel - blamy.github.io",
+   "url": "https://blamy.github.io/strudel/technical-manual/vim/",
+   "snippet": "[vim] :w \u2014 evaluating code [repl] evaluate via event [eval] code updated :q \u2014 Stop/pause playback Triggers the same stop action as Alt+. Useful to quickly stop scheduling without leaving Vim mode Triggers the same stop action as Alt+. Useful to quickly stop scheduling without leaving Vim mode gc \u2014 Toggle line comments for the current ...",
+   "jev": 0.51
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Mini Notation \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/mini-notation/",
+   "snippet": "You can also use regular double quotes (\") for single line mini-notation, as we have done already.\"This page just explains the entirety of the Mini-Notation syntax. If you are just getting started with Strudel, you can learn the basics of the Mini-Notation in a more practical manner in the workshop.\"\"This is perhaps counter-intuitive if you are used to adding notes in a sequencer or piano roll and",
+   "jev": 0.52
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q0",
+   "ri": 1,
+   "title": "REPL \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/technical-manual/repl/",
+   "snippet": "In the same tradition, Strudel can add a transpilation step to simplify the user code in the context of live coding. For example, the Strudel REPL lets the user create mini-notation patterns using just double quoted strings, while single quoted strings remain what they are:\"While Strudel can be used as a library in any JavaScript codebase, its main, reference user interface is the Strudel REPL1, w",
+   "jev": 0.74
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q0",
+   "ri": 2,
+   "title": "Coding Syntax - Strudel",
+   "url": "https://strudel.cc/learn/code/",
+   "snippet": "Ok, so what about the content inside the quotes (e.g. \"c a f e\")? In JavaScript, as in most programming languages, this content is referred to as being a string. A string is simply a sequence of individual characters. In TidalCycles, double quoted strings are used to write patterns using the mini-notation, and you may hear the phrase pattern string from time to time. If you want to create a regula",
+   "jev": 0.73
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Technical Manual \u00b7 tidalcycles/strudel Wiki - GitHub",
+   "url": "https://github.com/tidalcycles/strudel/wiki/Technical-Manual",
+   "snippet": "Shift will most likely be replaced with acorn in the future, see https://github.com/tidalcycles/strudel/issues/174 \u00b7 Another important part of the user code is the mini notation, which allows to express rhythms in a short manner.\"MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript - tidalcycles/strudel\"\"Shift wi",
+   "jev": 0.72
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Strudel Basics Strudel - Strudel REPL - Pattern Club",
+   "url": "https://strudel.patternclub.org/workshop/strudel-basics/",
+   "snippet": "The green writing inside the speech marks has its own set of rules for defining patterns. We call this the \u2018mininotation\u2019 and it\u2019s the core of coding in Strudel.\"You can change the number in brackets after fast or slow to change how much we speed up or slow down by. You can even pattern that number using the mininotation! ... It might seem like something a bit weird is happening here - basically S",
+   "jev": 0.73
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Creating Patterns Strudel",
+   "url": "https://strudel.cc/learn/factories/",
+   "snippet": "Creating Patterns. The following functions will return a pattern. These are the equivalents used by the Mini Notation: function, mini. cat(x, y), \"<x y>\". seq(x ...",
+   "jev": 0.74
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q1",
+   "ri": 0,
+   "title": "Mini Notation | Tidal Cycles",
+   "url": "https://tidalcycles.org/docs/reference/mini_notation/",
+   "snippet": "May 21, 2026 \u2014 Mini-notation is the name of a special notation used for writing patterns of various sort (notes, samples, parameters). To use the mini-notation, use a string delimited by quotation marks: \"\". Internally, the mini-notation is actually parsed and understood as a shortcut for a function that ...\"Mini-notation is the name of a special notation used for writing patterns of various sort ",
+   "jev": 0.06
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Mini notation syntax - TidalCycles userbase",
+   "url": "https://userbase.tidalcycles.org/Mini_notation_syntax.html",
+   "snippet": "Mini notation syntax. Create a pattern grouping d1 $ s \"[bd sd] hh\" Play multiple patterns at the same time. Repeat a pattern d1 $ s \"bd*2 sd\" Slow down a ...",
+   "jev": 0.05
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q1",
+   "ri": 2,
+   "title": "Mini-Notation Reference | tidalcycles/tidal-doc | DeepWiki",
+   "url": "https://deepwiki.com/tidalcycles/tidal-doc/3.2-mini-notation-reference",
+   "snippet": "May 16, 2026 \u00b7 The mini-notation is not just a string; it is a compact representation of Tidal's functional pattern combinators. The following diagram illustrates how a mini-notation string is processed into the internal Pattern representation.",
+   "jev": 0.05
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Workshop | Tidal Cycles",
+   "url": "https://tidalcycles.org/docs/patternlib/tutorials/workshop/",
+   "snippet": "May 21, 2026 \u2014 We can also schedule patterns across cycles using < and >: d1 $ sound \"bd <sd cp arpy>\" d1 $ sound \"<bd sn> <sd [cp cp]> <bd [cp cp]>\" The syntax we are using in these examples is called mini-notation, and can be used in many places within Tidal, not only the sound function.\"We can also schedule patterns across cycles using < and >: d1 $ sound \"bd \" d1 $ sound \" \" The syntax we are ",
+   "jev": 0.06
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q1",
+   "ri": 4,
+   "title": "Core Concepts: Patterns and Mini-Notation | tidalcycles/tidal-doc ...",
+   "url": "https://deepwiki.com/tidalcycles/tidal-doc/3-core-concepts:-patterns-and-mini-notation",
+   "snippet": "May 16, 2026 \u00b7 This page provides a high-level overview of the fundamental abstractions that power TidalCycles. At its core, Tidal is a functional reactive engine that treats music as a continuous stream of events defined by time. This is achieved through the Pattern data type and a domain-specific language (DSL) known as \"mini-notation.\"",
+   "jev": 0.06
+  },
+  {
+   "slug": "03-mini-notation",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Chicken Tikka Masala Recipe - Swasthi's Recipes",
+   "url": "https://www.indianhealthyrecipes.com/chicken-tikka-masala/",
+   "snippet": "May 9, 2024 \u00b7 This Chicken Tikka Masala is spicy, creamy, flavorful and crazy delicious! You won\u2019t want to stop with one serving! My \u2026",
+   "jev": 0.6
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Samples - Strudel",
+   "url": "https://strudel.cc/learn/samples/",
+   "snippet": "If we open the sounds tab and then ... RolandTR808_hh etc.. ... Behind the scenes, bank will just prepend the drum machine name to the sample name with _ to get the full name....\"This of course only works because the name after _ (bd, sd etc..) is standardized. Also note that some banks won\u2019t have samples for all sounds! If we open the sounds tab again, followed by tab drum machines, there is also",
+   "jev": 0.61
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q0",
+   "ri": 1,
+   "title": "First Sounds - Strudel",
+   "url": "https://strudel.cc/workshop/first-sounds/",
+   "snippet": "Try different sound / sample number combinations. ... Now you know how to use different sounds. For now we\u2019ll stick to this little selection of sounds, but we\u2019ll find out how to load your own sounds later. By default, Strudel comes with a wide selection of drum sounds: ... Try out different drum sounds! To change the sound character of our drums, we can use bank to change the drum machine...\"Try d",
+   "jev": 0.62
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q0",
+   "ri": 2,
+   "title": "Samples Strudel - GitHub Pages",
+   "url": "https://urswilke.github.io/strudel/learn/samples/",
+   "snippet": "Selecting sounds also works inside the mini notation, using \u201d:\u201d like this: s(\"bd:1 bd:2,hh:0 hh:1 hh:2 hh:3\").bank(\"RolandTR909\") You can load your own sample map using the samples function.\"Here, we are using the s function to play back different default samples (bd, sd, hh and misc) to get a drum beat. For drum sounds, strudel uses the comprehensive tidal-drum-machines library, with the followin",
+   "jev": 0.62
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Notes \ud83d\ude80 Strudel Docs",
+   "url": "https://patterns.slab.org/learn/samples/",
+   "snippet": "These sounds come from Strudel\u2019s in-built default \u201csample map\u201d. To know which sounds are available, open the default sample map. You can load your own sample map using the samples function.\"length (number|Pattern): 1 = whole sample, .5 = half sample, .25 = quarter sample etc.. ... In the style of classic drum-machines, cut will stop a playing sample as soon as another samples with in same cutgroup",
+   "jev": 0.6
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q0",
+   "ri": 4,
+   "title": "strudel-samples.txt - glfmn.io",
+   "url": "https://glfmn.io/presentations/algorave-2/",
+   "snippet": "The bank function works by putting the name of the sample bank with an _ at the front of sample names. bank: s(\"bd*2\").bank(\"RolandTR808\") explicit: s(\"RolandTR808_bd*2\").late(1/4) Find sample banks in the drum machine tab of the sounds window. Not all sample banks support the same percussion ...\"The bank function works by putting the name of the sample bank with an _ at the front of sample names.",
+   "jev": 0.48
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Drum Machines | calvinw/strudel-llm-docs | DeepWiki",
+   "url": "https://deepwiki.com/calvinw/strudel-llm-docs/7.3-drum-machines",
+   "snippet": "December 29, 2025 \u2014 These samples are digital recordings of sounds from vintage hardware drum machines manufactured between the 1970s and 1990s. The library contains over 2,800 individual drum sounds from approximately 80 different drum machines.\"This document provides a complete reference for all classic drum machine samples available in the Strudel sound library. These samples are digital record",
+   "jev": 0.48
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q1",
+   "ri": 0,
+   "title": "Samples - Strudel",
+   "url": "https://strudel.cc/learn/samples/",
+   "snippet": "Selecting sounds also works inside the mini notation, using \u201c:\u201d like this: s(\"bd*4,hh:0 hh:1 hh:2 hh:3 hh:4 hh:5 hh:6 hh:7\") .bank(\"RolandTR909\") You can load a non-standard sample map using the samples function.\"While it saves resources, it can also lead to sounds not being audible the first time they are triggered, because the sound is still loading. This might be fixed in the future \u00b7 If we ope",
+   "jev": 0.48
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Notes \ud83d\ude80 Strudel Docs",
+   "url": "https://patterns.slab.org/learn/samples/",
+   "snippet": "These sounds come from Strudel\u2019s in-built default \u201csample map\u201d. To know which sounds are available, open the default sample map. You can load your own sample map using the samples function.\"When you load your own samples, you can choose the names that you will then refer to in your pattern string inside the s function.\"\"Let\u2019s see another example, this time based on the following GitHub repo: https",
+   "jev": 0.47
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q1",
+   "ri": 2,
+   "title": "strudel-samples.txt - glfmn.io",
+   "url": "https://glfmn.io/presentations/algorave-2/",
+   "snippet": "A presentation on loading and manipulating samples with strudel. ... Breakbeats! ... strudel has lots of awesome ways to modulate, loop, chop, and process samples; kind of like having a Digitakt in your browser. Playing a sample is the same as playing a sound; in fact, most sounds we have already played with are samples: ... All the percussion we have used thus far are samples. We can choose diffe",
+   "jev": 0.47
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Sounds - Strudel",
+   "url": "https://strudel.cc/learn/sounds/",
+   "snippet": "Strudel is a music live coding environment for the browser ... s can trigger audio samples, where a sound file is loaded in the background and played back:.",
+   "jev": 0.58
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q1",
+   "ri": 4,
+   "title": "Samples Strudel - GitHub Pages",
+   "url": "https://urswilke.github.io/strudel/learn/samples/",
+   "snippet": "When you load your own samples, you can choose the names that you will then refer to in your pattern string inside the s function. Compare with this example\u00a0...",
+   "jev": 0.6
+  },
+  {
+   "slug": "04-sounds-banks-samples",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Loading Custom Samples | blakkd/strudel_documentation | DeepWiki",
+   "url": "https://deepwiki.com/blakkd/strudel_documentation/5.2-loading-custom-samples",
+   "snippet": "Feb 2, 2026 \u00b7 Purpose and Scope This document explains how to load custom audio samples into Strudel from various sources. Strudel provides multiple mechanisms for importing samples beyond the built-in sample banks, including GitHub repositories, Freesound.org queries, custom URLs, local file uploads, and a Node.js development server.",
+   "jev": 0.58
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Tonal Functions - Strudel",
+   "url": "https://strudel.cc/learn/tonal/",
+   "snippet": "The scale name must be written without spaces (because it would be interpreted as a multi-step pattern otherwise). If your scale name includes spaces, replace them with colons. The root note defaults to octave 3, if no octave number is given.\"The scale name must be written without spaces (because it would be interpreted as a multi-step pattern otherwise). If your scale name includes spaces, replac",
+   "jev": 0.59
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q0",
+   "ri": 1,
+   "title": "First Notes \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/workshop/first-notes/",
+   "snippet": "note(\"<[c2 c3]*4 [bb1 bb2]*4 [f2 f3]*4 [eb2 eb3]*4>\") .sound(\"gm_synth_bass_1\") .lpf(800) // <-- we'll learn about this soon ... n(`< [~ 0] 2 [0 2] [~ 2] [~ 0] 1 [0 1] [~ 1] [~ 0] 3 [0 3] [~ 3] [~ 0] 2 [0 2] [~ 2] >*4`).scale(\"C4:minor\") .sound(\"gm_synth_strings_1\")\"Finding the right notes can be difficult.. Scales are here to help:\"\"If you have no idea what these scale mean, don\u2019t worry. These ar",
+   "jev": 0.6
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q0",
+   "ri": 2,
+   "title": "Notes - Strudel",
+   "url": "https://strudel.cc/learn/notes/",
+   "snippet": "Notes names can be notated with the note letter, followed by the octave number.\"Pitches are an important building block in many musical traditions. In Strudel, pitches can be expressed as note names, note numbers or frequencies.\"\"Notes names can be notated with the note letter, followed by the octave number.\"\"note: letter notation, good for those who are familiar with western music theory:\"\"note: ",
+   "jev": 0.6
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Tonal API Strudel - GitHub Pages",
+   "url": "https://urswilke.github.io/strudel/learn/tonal/",
+   "snippet": "Turns numbers into notes in the scale (zero indexed).\"All the available scale names can be found here. Transposes notes inside the scale by the number of steps:\"\"Turns numbers into notes in the scale (zero indexed).\"\"Note that the scale root is octaved here.\"\"Transposes all notes to the given number of semitones:\"",
+   "jev": 0.6
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Tonal Functions Strudel",
+   "url": "https://felixroos.github.io/strudel/learn/tonal/",
+   "snippet": "Turns numbers into notes in the scale (zero indexed). Also sets scale for other scale operations, like Pattern#scaleTranspose. A scale consists of a root note (e.g. c4, c, f#, bb4) followed by semicolon (':') and then a scale type. The root note defaults to octave 3, if no octave number is given.",
+   "jev": 0.6
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Strudel Tutorial - Lars Kobbe",
+   "url": "https://larkob.github.io/strudel/tutorial/",
+   "snippet": "Transposes notes inside the scale by the number of steps: Turns chord symbols into voicings, using the smoothest voice leading possible: Turns chord symbols into root notes of chords in given octave. Together with edit, struct and voicings, this can be used to create a basic backing track: ...\"Transposes notes inside the scale by the number of steps: Turns chord symbols into voicings, using the sm",
+   "jev": 0.6
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q1",
+   "ri": 0,
+   "title": "Understanding Cycles - Strudel",
+   "url": "https://strudel.cc/understand/cycles/",
+   "snippet": "You can use the setcps method to set the global tempo in cycles per second. setcpm(x) is the same as setcps(x / 60).\"Tempo is based on perception. The choice of sounds also has an impact on the tempo feel. This is why the same CPS can produce different perceived tempos. If you\u2019re familiar with BPM, you can use the setcpm method to set the global tempo in cycles per minute:\"\"You can use the setcps ",
+   "jev": 0.59
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Making Music with Code: A Beginner's Guide to Strudel",
+   "url": "https://alexcodesart.com/making-music-with-code-a-beginners-guide-to-strudel/",
+   "snippet": "April 20, 2026 \u2014 In Strudel, tempo is measured in cycles per minute. We control this with the setcpm() function. ... Here we slow the rhythm down slightly. Because Strudel organizes music around cycles instead of traditional BPM, it becomes very easy to stretch ...\"In Strudel, tempo is measured in cycles per minute. We control this with the setcpm() function. ... Here we slow the rhythm down sligh",
+   "jev": 0.45
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q1",
+   "ri": 2,
+   "title": "Beats, Bytes, and Basslines: An Introduction to Live Coding Music with Strudel CC | by Valentin Binjacar | Mirakl Tech Blog",
+   "url": "https://mirakl.tech/beats-bytes-and-basslines-an-introduction-to-live-coding-with-strudel-cc-4d378e86d5b7",
+   "snippet": "July 16, 2025 \u2014 const dbank = \"tr909\" // Set the tempo to 140 BPM setCps(140/60/4) // $: is a shortcut to create and play a pattern on its own line. It serves the same purpose as our stack() function here. // This layer creates a pulsing white noise rhythm. $: s(\"white!16\") .decay(sine.fast(4).range(0.05, .14)) .gain(0.4) .sometimesBy(0.1, x => x.ply(\"2 | 4\")) // This layer creates a kick pattern ",
+   "jev": 0.46
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Samples Strudel",
+   "url": "https://strudel.cc/learn/samples/",
+   "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.43
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q1",
+   "ri": 4,
+   "title": "Decomposer: Learning to Decompile Symbolic Music to Programs",
+   "url": "https://arxiv.org/pdf/2607.01849",
+   "snippet": "If the header is missing, use setcpm(120/4).STRUDEL-SYNTH Generation System Instruction. You are an expert live coder specializing in Strudel, a JavaScript-based platform that ports the TidalCycles pattern language to the web.",
+   "jev": 0.44
+  },
+  {
+   "slug": "05-notes-scales-tempo",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Global Tempo Control | blakkd/strudel_documentation | DeepWiki",
+   "url": "https://deepwiki.com/blakkd/strudel_documentation/8.1-global-tempo-control",
+   "snippet": "February 2, 2026 \u2014 At this tempo: A 4-beat pattern like note(\"c d e f\") plays each note for 0.125 seconds ... Immediate Update: The tempo clock value updates instantly when setcpm() or setcps() is called.\"If no tempo is explicitly set, Strudel uses a default value: ... This corresponds to a moderate tempo where one cycle completes in 0.5 seconds. At this tempo: A 4-beat pattern like note(\"c d e f\"",
+   "jev": 0.46
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Audio effects \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/effects/",
+   "snippet": "\u26a0\ufe0f There is only one delay and reverb per orbit, so please be aware that if you attempt to change the parameters on two patterns pointing to the same orbit, it can lead to unpredictable results.\"The duck effect affects the volume of all signals in the orbit ... Orbits are the way in which outputs are handled in Strudel. They also prescribe which delay and reverb to associate with the dry signal.\"\"",
+   "jev": 0.49
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q0",
+   "ri": 1,
+   "title": "Audio effects Strudel Docs - patterns.slab.org",
+   "url": "https://patterns.slab.org/learn/effects/",
+   "snippet": "Sets the time of the delay effect. ... Sets the level of the signal that is fed back into the delay. Caution: Values >= 1 will result in a signal that gets louder and louder! Don't do it ... Sets the level of reverb.\"Wether you\u2019re using a synth or a sample, you can apply any of the following built-in audio effects. As you might suspect, the effects can be chained together, and they accept a patter",
+   "jev": 0.49
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q0",
+   "ri": 2,
+   "title": "First Effects \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/workshop/first-effects/",
+   "snippet": "Try some delay values between 0 and 1.\"Try some delay values between 0 and 1.\"\"Add a delay too!\"\"What happens if you use .delay(\".8:.125\") ?\"\"What happens if you use .delay(\".8:.06:.8\") ?\"",
+   "jev": 0.5
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Time-Based Effects | blakkd/strudel_documentation | DeepWiki",
+   "url": "https://deepwiki.com/blakkd/strudel_documentation/6.6-time-based-effects",
+   "snippet": "Feb 2, 2026 \u00b7 The reverb effect simulates acoustic space by creating dense, diffuse echoes that model sound reflections in an environment. In Strudel, reverb processes the output after delay in the global effects chain.",
+   "jev": 0.49
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Orbits and Global Effects | blakkd/strudel_documentation | DeepWiki",
+   "url": "https://deepwiki.com/blakkd/strudel_documentation/6.7-orbits-and-global-effects",
+   "snippet": "Feb 2, 2026 \u00b7 Relevant source files Purpose and Scope This document explains Strudel's orbit system, which provides routing destinations where multiple patterns can share delay and reverb effects. Orbits are the mechanism for applying global effects that persist across pattern events, as opposed to local effects that are applied to individual sound events.",
+   "jev": 0.49
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Strudel REPL",
+   "url": "https://strudel.cc/",
+   "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.5
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q1",
+   "ri": 0,
+   "title": "superdough - npm",
+   "url": "https://www.npmjs.com/package/superdough",
+   "snippet": "January 18, 2026 \u2014 superdough is a simple web audio sampler and synth, intended for live coding. It is the default output of strudel.\"It expects a strudel.json file to be present at the root of the given repository, which declares the sample paths in the repo. The format is also expected to be the same as explained above. Initializes audio and makes sure it is playable after the first click in the",
+   "jev": 0.52
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Strudel Dough",
+   "url": "https://dough.strudel.cc/",
+   "snippet": "what is dough? dough is a monolithic audio engine for live coding, written in a single c file. it is designed after superdough, the audio engine behind strudel.",
+   "jev": 0.51
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q1",
+   "ri": 2,
+   "title": "SuperDough Audio Engine | blakkd/strudel | DeepWiki",
+   "url": "https://deepwiki.com/blakkd/strudel/4.1-superdough-audio-engine",
+   "snippet": "Feb 7, 2026 \u00b7 The SuperDough Audio Engine is the central audio dispatcher in Strudel that converts Pattern events (Haps) into Web Audio API calls. It serves as the bridge between the declarative Pattern system and the imperative Web Audio API, handling sound source selection, audio chain construction, effect routing, and resource management.",
+   "jev": 0.5
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Effects and Processing | blakkd/strudel | DeepWiki",
+   "url": "https://deepwiki.com/blakkd/strudel/4.3-effects-and-processing",
+   "snippet": "Feb 7, 2026 \u00b7 This document describes the effect processing system in Strudel's SuperDough audio engine. It covers the effect chain architecture, available effect types, parameter controls, and the nested FX array",
+   "jev": 0.51
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q1",
+   "ri": 4,
+   "title": "Strudel Blog - dough",
+   "url": "https://strudel.cc/blog/",
+   "snippet": "The synth engine has gotten a lot of love + a name: superdough encapsulates the web audio based synth / sampler / fx engine into a reusable package, which is already used by Topos.\"The synth engine has gotten a lot of love + a name: superdough encapsulates the web audio based synth / sampler / fx engine into a reusable package, which is already used by Topos.\"\"The audio engine has gotten a lot of ",
+   "jev": 0.83
+  },
+  {
+   "slug": "06-audio-effects",
+   "qk": "q1",
+   "ri": 5,
+   "title": "strudel/webaudio - npm",
+   "url": "https://www.npmjs.com/package/@strudel/webaudio",
+   "snippet": "This package contains helpers to make music with strudel and the Web Audio API. It is a thin binding to superdough.\"This package contains helpers to make music with strudel and the Web Audio API. It is a thin binding to superdough.\"\"Read more in the docs about samples, synths and effects.\"",
+   "jev": 0.84
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Low-frequency oscillators (LFO) \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/lfo/",
+   "snippet": "You can change the shape of the modulation with shape. The default is triangle, but other shapes are available too: s(\"saw\") .lpf(800) .lfo({r: 2, shape: \"<triangle sine ramp saw square>\"})\"A low frequency oscillator (or short LFO) is a common way on synthesizers to continuously modulate various signals. This documentation is an interactive version of glossing\u2019s tutorial https://www.youtube.com/wa",
+   "jev": 0.84
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q0",
+   "ri": 1,
+   "title": "Audio effects \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/effects/",
+   "snippet": "This allows you to play subtle or huge filter modulations just the same by only increasing or decreasing the depth. note(\"[c eb g <f bb>](3,8,<0 1>)\".sub(12)) .s(\"<sawtooth>/64\") .lpf(sine.range(300,2000).slow(16)) .lpa(0.005) .lpd(perlin.r...\"The frequency sweep range of the lfo for the phaser effect. Defaults to 2000 \u00b7 phasersweep (number|Pattern): most useful values are between 0 and 4000 \u00b7 n(r",
+   "jev": 0.83
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q0",
+   "ri": 2,
+   "title": "First Effects \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/workshop/first-effects/",
+   "snippet": "We can change the modulation speed with slow / fast: note(\"<[c2 c3]*4 [bb1 bb2]*4 [f2 f3]*4 [eb2 eb3]*4>\") .sound(\"sawtooth\") .lpf(sine.range(100, 2000).slow(4)) The whole modulation will now take 8 cycles to repeat.\"The basic waveforms for signals are sine, saw, square, tri \ud83c\udf0a \u00b7 Try also random signals rand and perlin! The gain is visualized as transparency in the pianoroll. setting a range \u00b7 By d",
+   "jev": 0.83
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Synths \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/synths/",
+   "snippet": "note(\"c2 eb2 f2 g2\") // also supports freq .s(\"{z_sawtooth z_tan z_noise z_sine z_square}%4\") .zrand(0) // randomization // zzfx envelope .attack(0.001) .decay(0.1) .sustain(.8) .release(.1) // special zzfx params .curve(1) // waveshape 1-3 .slide(0) // +/- pitch slide .deltaSlide(0) // +/- pitch slide (?) .noise(0) // make it dirty .zmod(0) // fm speed .zcrush(0) // bit crush 0 - 1 .zdelay(0) // ",
+   "jev": 0.75
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Advanced Synth Design - ANU School of Computing",
+   "url": "https://comp.anu.edu.au/courses/comp4350/lectures/08-synth2/",
+   "snippet": "We can create a similar synth in Strudel by using the sawtooth oscillator sound, and applying low pass filter and envelope effects.\"tl;dr: to do feedback phase-modulation synthesis in Strudel, you should use CSound, and see this paper \u00b7 await loadCSound` giSine ftgen 0, 0, 8192, 10, 1 ; makes a sine tone table instr feedback_PM kCarFreq = p4 kFeedbackAmountEnv linseg 0, 2, 0.2, 0.1, 0.3, 0.8, 0.2,",
+   "jev": 0.75
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Signals \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/signals/",
+   "snippet": "A sawtooth signal between 0 and 1. note(\"<c3 [eb3,g3] g2 [g3,bb3]>*8\") .clip(saw.slow(2)) ... A sine signal between 0 and 1.\"A sawtooth signal between 0 and 1. note(\"*8\") .clip(saw.slow(2)) ... A sine signal between 0 and 1.\"\"n(stack(sine,cosine).segment(16).range(0,15)) .scale(\"C:minor\") A triangle signal between 0 and 1. ... A square signal between 0 and 1. ... A continuous pattern of random num",
+   "jev": 0.76
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q1",
+   "ri": 0,
+   "title": "Continuous Signals - Strudel",
+   "url": "https://strudel.cc/learn/signals/",
+   "snippet": "Signals are patterns with continuous values, meaning they have theoretically infinite steps.\"A square signal between 0 and 1. ... A continuous pattern of random numbers, between 0 and 1.\"\"Signals are patterns with continuous values, meaning they have theoretically infinite steps.\"",
+   "jev": 0.74
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Time Modifiers \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/time-modifiers/",
+   "snippet": "Like iter, but plays the subdivisions in reverse order. Known as iter' in tidalcycles ... The ply function repeats each event the given number of times. ... Samples the pattern at a rate of n events per cycle. Useful for turning a continuous pattern into a discrete one.\"Like iter, but plays the subdivisions in reverse order. Known as iter' in tidalcycles ... The ply function repeats each event the",
+   "jev": 0.74
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q1",
+   "ri": 2,
+   "title": "Live code with Tidal Cycles | Tidal Cycles",
+   "url": "https://tidalcycles.org/",
+   "snippet": "Dec 21, 2023 \u00b7 Tidal is using SuperCollider, another open-source software, for synthesis and MIDI. Tidal has inspired a open source family of similar environments adopting its model of patterns of time known as Uzulangs, including the web-based Strudel environment.",
+   "jev": 0.85
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Patterns \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/technical-manual/patterns/",
+   "snippet": "Its patterns are abstract entities that represent flows of time as functions, adapting a technique called pure functional reactive programming. Taking a time span as its input, a Pattern can output a set of events that happen within that time span.\"Patterns are the essence of Tidal. Its patterns are abstract entities that represent flows of time as functions, adapting a technique called pure funct",
+   "jev": 0.84
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q1",
+   "ri": 4,
+   "title": "Strudel vs Tidal \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/strudel-vs-tidal/",
+   "snippet": "Strudel is written in JavaScript, while Tidal is written in Haskell. This difference is most obvious when looking at the syntax: iter 4 $ every 3 (||+ n \"10 20\") $ (n \"0 1 3\") # s \"triangle\" # crush 4 \u00b7 One could express that pattern to Strudel like so:\"Strudel is written in JavaScript, while Tidal is written in Haskell. This difference is most obvious when looking at the syntax: iter 4 $ every 3 ",
+   "jev": 0.85
+  },
+  {
+   "slug": "07-signals-modulation",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Pattern Alignment Strudel",
+   "url": "https://strudel.cc/technical-manual/alignment/",
+   "snippet": "Pattern Alignment & Combination One core aspect of Strudel, inherited from Tidal, is the flexible way that patterns can be combined, irrespective of their structure. Its declarative approach means a live coder does not have to think about the details of how this is done, only what is to be done.",
+   "jev": 0.85
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Pattern Effects - Strudel",
+   "url": "https://strudel.cc/workshop/pattern-effects/",
+   "snippet": "$: n(\"0 [2 4] <3 5> [~ <4 1>]\".add(\"<0 [0,2,4]>\")) .scale(\"C5:minor\") .sound(\"gm_xylophone\") .room(.4).delay(.125) $: note(\"c2 [eb3,g3]\".add(\"<0 <1 -1>>\")) .adsr(\"[.1 0]:.2:[1 0]\") .sound(\"gm_acoustic_bass\") .room(.5) $: n(\"0 1 [2 3] 2\").sound(\"jazz\").jux(rev) ply \u00b7 sound(\"hh hh, bd rim [~ cp] rim\").bank(\"RolandTR707\").ply(2) this is like writing: sound(\"hh*2 hh*2, bd*2 rim*2 [~ cp*2] rim*2\").bank",
+   "jev": 0.85
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q0",
+   "ri": 1,
+   "title": "Audio effects \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/effects/",
+   "snippet": "The jux function creates strange stereo effects, by applying a function to a pattern, but only in the right-hand channel.\"The jux function creates strange stereo effects, by applying a function to a pattern, but only in the right-hand channel.\"\"\u26a0\ufe0f There is only one delay and reverb per orbit, so please be aware that if you attempt to change the parameters on two patterns pointing to the same orbit",
+   "jev": 0.49
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q0",
+   "ri": 2,
+   "title": "More Music x Code Workshop \ud83d\ude80 Strudel",
+   "url": "https://strudel.patternclub.org/workshop/functions/",
+   "snippet": "We then turn it into a different pattern by feeding it into the iter(4) function. Then it gets turned into a different pattern again when we feed it into the fast(\"<2 3>\") function, and finds its final form that we hear, after being fed it into ...\"Now the sound(\"bd hh sd hh\") pattern is being fed into jux, which in turn feeds it into fast(2) (but only on one speaker or earphone - that\u2019s what \u2018jux",
+   "jev": 0.52
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Patterns \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/technical-manual/patterns/",
+   "snippet": "This means that in theory there ... transforming patterns, so how is this done? The answer is, by replacing the pattern with a new one, that calls the old one....\"This temporal placement is the result of the sequence function, which divides its arguments equally over one cycle. If an argument is an array, the same rule applies to that part of the cycle. In the example, e3 and g3 are divided equall",
+   "jev": 0.49
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Audio effects \ud83d\ude80 Strudel Docs",
+   "url": "https://patterns.slab.org/learn/effects/",
+   "snippet": "Sets the velocity from 0 to 1. ... things sound like vowels. ... The jux function creates strange stereo effects, by applying a function to a pattern, but only in the right-hand channel....\"q (number|Pattern): resonance factor between 0 and 50 \u00b7 s(\"bd sd,hh*4\").cutoff(2000).resonance(\"\") Wave shaping distortion. CAUTION: it might get loud ... Sets the velocity from 0 to 1. Is multiplied together w",
+   "jev": 0.5
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Pattern Effects Strudel - june.kim",
+   "url": "https://www.june.kim/jamdojo/workshop/pattern-effects/",
+   "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.5
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q1",
+   "ri": 0,
+   "title": "GitHub - tidalcycles/strudel: MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript \u00b7 GitHub",
+   "url": "https://github.com/tidalcycles/strudel",
+   "snippet": "MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript - tidalcycles/strudel\"Live coding patterns on the web https://strudel.cc/\"",
+   "jev": 0.73
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Strudel: How TidalCycles' Pattern Algebra Was Reimagined for the Web",
+   "url": "https://starlog.is/articles/ai-dev-tools/tidalcycles-strudel",
+   "snippet": "May 8, 2026 \u00b7 A technical exploration of Strudel's JavaScript port of TidalCycles, examining how functional pattern combinators and temporal recursion enable algorithmic live coding in the browser.",
+   "jev": 0.73
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q1",
+   "ri": 2,
+   "title": "Home \u00b7 tidalcycles/strudel Wiki \u00b7 GitHub",
+   "url": "https://github.com/tidalcycles/strudel/wiki",
+   "snippet": "Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript - tidalcycles/strudel",
+   "jev": 0.72
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Strudel REPL",
+   "url": "https://strudel.cc/",
+   "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.72
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q1",
+   "ri": 4,
+   "title": "TidalCycles and friends - GitHub",
+   "url": "https://github.com/tidalcycles",
+   "snippet": "MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript \u00b7 tidalcycles/strudel's past year of commit activity\"MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript \u00b7 tidalcycles/strudel's past year of commit activity\"",
+   "jev": 0.74
+  },
+  {
+   "slug": "08-pattern-effects",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Strudel Blog - dough",
+   "url": "https://strudel.cc/blog/",
+   "snippet": "May 1, 2025 ... Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.",
+   "jev": 0.79
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q0",
+   "ri": 0,
+   "title": "MIDI, OSC & MQTT \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/input-output/",
+   "snippet": "Strudel supports MIDI without any ... to receive MIDI control change messages. The output is a function that accepts a midi cc value to query as well as (optionally) a midi channel...\"It is also possible to pattern other things with Strudel, such as software and hardware synthesisers with MIDI, other software using Open Sound Control/OSC (including the SuperDirt synthesiser commonly used with Stru",
+   "jev": 0.8
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q0",
+   "ri": 1,
+   "title": "MIDI & OSC Strudel - GitHub Pages",
+   "url": "https://urswilke.github.io/strudel/learn/input-output/",
+   "snippet": "The default audio output of Strudel uses the Web Audio API. It is also possible to use Strudel with MIDI and OSC / SuperDirt instead.\"Strudel is a music live coding editor that brings TidalCycles to the browser.\"\"If you now hear sound, congratulations! If not, you can get help on the #strudel channel in the TidalCycles discord. Sends each hap as an OSC message, which can be picked up by SuperColli",
+   "jev": 0.8
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q0",
+   "ri": 2,
+   "title": "Frequently Asked Questions \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/faq/",
+   "snippet": "Strudel can send MIDI and OSC, which are protocols for communicating musical information.\"Strudel can send MIDI and OSC, which are protocols for communicating musical information.\"\"Can be used instead of [] like this: \"1 6 7 8 . 2 . 3 . 4\" is the same as \"[1 6 7 8] 2 3 4\" - silence ~ also silence x not silence (for the use in struct, any non-silence symbol works there) b decrease by one semitone, ",
+   "jev": 0.79
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Csound Strudel",
+   "url": "https://strudel.cc/learn/csound/",
+   "snippet": "Using CSound with Strudel. Strudel has experimental support for csound, using @csound/browser. Importing .orc files. To use existing csound instruments,\u00a0...",
+   "jev": 0.79
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Integrating Strudel with WebAssembly build of Csound \u00b7 tidalcycles/strudel \u00b7 Discussion #270",
+   "url": "https://github.com/tidalcycles/strudel/discussions/270",
+   "snippet": "It is MIDI semantics but with more precision. > > Sorry for the csound noob question, but is there an alternative to using > a linear list of p values? > Strudel uses a list of 100+ possible controls which can be sequenced via > patterns. It would be rather tedious if those needed to be lined up in a > long list of p values (where most would be undefined). For example, > superdirt / supercollider ",
+   "jev": 0.44
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q0",
+   "ri": 5,
+   "title": "Strudel x TouchDesigner OSC Audio Reactivity Tutorial - YouTube",
+   "url": "https://www.youtube.com/watch?v=tsUoHGFyHRs",
+   "snippet": "Nov 30, 2025 ... Learn how to connect Strudel (live-coded music) to TouchDesigner using OSC, and how to build audio reactive visual. Links : Strudel Repo\u00a0...",
+   "jev": 0.44
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q1",
+   "ri": 0,
+   "title": "MIDI, OSC & MQTT \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/learn/input-output/",
+   "snippet": "Strudel does not yet support receiving messages over MQTT, only sending them.\"It is also possible to pattern other things with Strudel, such as software and hardware synthesisers with MIDI, other software using Open Sound Control/OSC (including the SuperDirt synthesiser commonly used with Strudel\u2019s sibling TidalCycles), or the MQTT \u2018internet of things\u2019 protocol.\"\"MQTT is a lightweight network prot",
+   "jev": 0.44
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Controlling motors with Strudel",
+   "url": "https://strudel.cc/workshop/motors/",
+   "snippet": "We\u2019re going to use a microcontroller for this, called an \u201cInventor 2040W\u201d, which is a Pico W with extra ports added including some for controlling motors. Feel free to gloss over these!\"We\u2019re going to use a microcontroller for this, called an \u201cInventor 2040W\u201d, which is a Pico W with extra ports added including some for controlling motors. Feel free to gloss over these! The Inventor 2040W connects ",
+   "jev": 0.43
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q1",
+   "ri": 2,
+   "title": "Lights Strudel - strudel.patternclub.org",
+   "url": "https://strudel.patternclub.org/workshop/lights/",
+   "snippet": "It\u2019s running some code that listens for messages using an \u201cInternet of Things\u201d network protocol (called MQTT). When it receives a message, it flashes a light. It connects to a small server (running software called \u2018mosquitto\u2019) in our ...\"It\u2019s running some code that listens for messages using an \u201cInternet of Things\u201d network protocol (called MQTT). When it receives a message, it flashes a light. It ",
+   "jev": 0.44
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Controlling motors with Strudel",
+   "url": "https://strudel.patternclub.org/workshop/motors/",
+   "snippet": "It\u2019s running some code that listens for messages using an \u201cInternet of Things\u201d network protocol (called MQTT). When it receives a message, it moves a motor. It connects to a small server (running software called \u2018mosquitto\u2019) in our studio.\"It\u2019s running some code that listens for messages using an \u201cInternet of Things\u201d network protocol (called MQTT). When it receives a message, it moves a motor. It ",
+   "jev": 0.54
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q1",
+   "ri": 4,
+   "title": "\ud83c\udf00 Strudel Blog",
+   "url": "https://strudel.patternclub.org/blog/",
+   "snippet": "MQTT - if password isn\u2019t provided, prompt for one by @yaxu in https://github.com/tidalcycles/strudel/pull/1249\"Adding vibrato to base oscillators by @Bubobubobubobubo in https://codeberg.org/uzu/strudel/pulls/693 \u00b7 Thanks to @daslyfe and @vasilymilovidov , the desktop app now has its own rust based MIDI and OSC integrations, which do not depend on browser APIs! You can see superdough, superdirt vi",
+   "jev": 0.55
+  },
+  {
+   "slug": "09-hardware-integrations",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Movement with Strudel Strudel - utcsheffield.github.io",
+   "url": "https://utcsheffield.github.io/makerclub-strudel/workshop/motors/",
+   "snippet": "Strudel is made for making music, but it\u2019s possible to pattern other things with it, including motors. We\u2019re going to use a microcontroller for this, called an \u201c Inventor 2040W \u201d, which is a Pico W with extra ports added including some for controlling motors.",
+   "jev": 0.54
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q0",
+   "ri": 0,
+   "title": "Getting Started \ud83d\ude80 Strudel",
+   "url": "https://strudel.cc/workshop/getting-started/",
+   "snippet": "live code music: make music with code in real time \u00b7 algorithmic composition: compose music using tidal\u2019s unique approach to pattern manipulation \u00b7 teaching: focussing on a low barrier of entry, Strudel is a good fit for teaching music and code at the same time.\"live code music: make music with code in real time \u00b7 algorithmic composition: compose music using tidal\u2019s unique approach to pattern mani",
+   "jev": 0.54
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q0",
+   "ri": 1,
+   "title": "Lucy Cheesman \u2013 Learn how to make music through live coding - YouTube",
+   "url": "https://www.youtube.com/watch?v=QRJ0xrjLj6A",
+   "snippet": "Mar 7, 2025 \u00b7 Learn live coding techniques to make your own music on Strudel. For this tutorial you will need a laptop and the Strudel workshop website. What You Will Learn The basics of live coding usingStrudel.",
+   "jev": 0.55
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q0",
+   "ri": 2,
+   "title": "Beats, Bytes, and Basslines: An Introduction to Live Coding Music with Strudel CC | by Valentin Binjacar | Mirakl Tech Blog",
+   "url": "https://mirakl.tech/beats-bytes-and-basslines-an-introduction-to-live-coding-with-strudel-cc-4d378e86d5b7",
+   "snippet": "July 16, 2025 \u2014 Beats, Bytes, and Basslines: An Introduction to Live Coding Music with Strudel CC By Valentin Binjacar Analytics Engineer at Mirakl I\u2019ve been producing music for the past 15 years, working on a lot \u2026\"In this article, I\u2019ll give a quick overview of what live coding music is, mention a few artists worth checking out, and walk you through how to create a simple loop using Strudel CC, a",
+   "jev": 0.27
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q0",
+   "ri": 3,
+   "title": "Live Coding For Music With Strudel.cc (Beginners) - YouTube",
+   "url": "https://www.youtube.com/watch?v=tKeJhjvTabc",
+   "snippet": "November 10, 2025 \u2014 LiveCoding music is kind of insane but I\u2019m eager to learn more! One day i\u2019m going to have the craziest amen breaks rolling out this thing \ud83e\udd77\ud83d\udc8e Groovin in G h...",
+   "jev": 0.28
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q0",
+   "ri": 4,
+   "title": "Learn to Live Code in Strudel / The Boundaries Between Beats and ...",
+   "url": "https://musichackspace.org/courses/live-coding-pushing-the-boundaries-of-dance-music-in-strudel",
+   "snippet": "Apr 24, 2024 ... The workshop explored examples of strudel code which examined the limits and boundaries of dance music, and the kinds of code changes that\u00a0...",
+   "jev": 0.28
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q0",
+   "ri": 5,
+   "title": "[PDF] Teaching Strudel to young girls: Realizing live coding through ...",
+   "url": "https://research.chalmers.se/publication/541425/file/541425_Fulltext.pdf",
+   "snippet": "organizing and teaching coding for music making workshops that aim to introduce young girls to programming. The teaching philosophy hereacknowledges\u00a0...",
+   "jev": 0.28
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q1",
+   "ri": 0,
+   "title": "GitHub - alienmind/algorave: Strudel.cc experiment for music making",
+   "url": "https://github.com/alienmind/algorave",
+   "snippet": "A locally running MCP server from the amazing strudel-mcp-server \u00b7 A companion web app for easy picking up examples and integrate everything together \u00b7 This \"hub\" aims to integrate a conglomerate of useful tools for Algorave:\"A locally running MCP server from the amazing strudel-mcp-server \u00b7 A companion web app for easy picking up examples and integrate everything together \u00b7 This \"hub\" aims to int",
+   "jev": 0.27
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q1",
+   "ri": 1,
+   "title": "Algorave: Creating music with code - Deep Tech Mag",
+   "url": "https://deeptechmagazine.com/features/algorave-creating-music-with-code/",
+   "snippet": "January 26, 2026 \u2014 Prejudices where Algorave acts ... into a practice that reminds us that technology does not have to be opaque to be powerful. It can be playful, expressive, and deeply human. Here, the dance floor becomes a site of inquiry. The machine listens back. And the future of performance is typed, one line at a time. Learn more on Algorave, Switch Angel, Kindohm, Strudel and Tidal ...\"Pr",
+   "jev": 0.67
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q1",
+   "ri": 2,
+   "title": "intro-to-algorave.txt - glfmn.io",
+   "url": "https://glfmn.io/presentations/algorave/",
+   "snippet": "Heavy Lifting (AKA Lucy) and Graham Dunning are contributors to Tidal Cycles and have lots of performances available online. ... DJ_Dave on Sonic Pi and Char Stiles writing GLSL for visuals (pretty hardcore!). ... DJ_Dave and Switch Angel (Jade) collaborating on a single. Switch Angel is local to the Boston Area. ... Talented footwork producer/live coder and contributor to Hydra and Tidal Cycles. ",
+   "jev": 0.66
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q1",
+   "ri": 3,
+   "title": "Showcase Strudel - dough",
+   "url": "https://strudel.cc/intro/showcase/",
+   "snippet": "froos @ Algorave 10th Birthday stream letSeaTstrudeL @ solstice stream 2023 CCC @ solstice stream 2023 yaxu & olivia - Algorithmic Pattern Live Stream A first foray into combining (an early version) strudel and hydra, using flok for collaborative coding.",
+   "jev": 0.67
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q1",
+   "ri": 4,
+   "title": "Livecoding and Algoraves: When Code Becomes a Live Instrument",
+   "url": "https://www.mattcurrent.org/blog/livecoding-algorave-realtime-performance-art/",
+   "snippet": "Inside an Algorave Livecoding sits in the same broader family of real-time creative practice covered in our creative coding for beginners guide, though the performance context sets it apart. An algorave typically occupies a club or small venue rather than a conference hall.",
+   "jev": 0.65
+  },
+  {
+   "slug": "10-livecoding-practice",
+   "qk": "q1",
+   "ri": 5,
+   "title": "Algorave",
+   "url": "https://algorave.com/",
+   "snippet": "Sep 16, 2026 \u00b7 2026/07/30 - Sidney and Matilda, Sheffield United Kingdom More information 2026/05/02 - Grrrnd zero, Vaulx-en-Velin, Lyon France More information 2026/04/28 - Lambdasonic, Ghent Belgium More information 2026/04/27 - Folklore, London United Kingdom More information 2026/04/25 - Live Code Music + Visual Performance Location: Hotel Willa Saturday ...",
+   "jev": 0.64
+  }
+ ],
+ "jev_calls": 24,
+ "jev_cost": 0.0024590159999999996,
+ "jev_retries": 0
+}

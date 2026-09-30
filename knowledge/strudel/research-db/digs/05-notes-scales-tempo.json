@@ -1,0 +1,72 @@
+{
+ "q0": {
+  "query": "strudel note scale function tutorial",
+  "results": [
+   {
+    "title": "Tonal Functions - Strudel",
+    "url": "https://strudel.cc/learn/tonal/",
+    "snippet": "The scale name must be written without spaces (because it would be interpreted as a multi-step pattern otherwise). If your scale name includes spaces, replace them with colons. The root note defaults to octave 3, if no octave number is given.\"The scale name must be written without spaces (because it would be interpreted as a multi-step pattern otherwise). If your scale name includes spaces, replac"
+   },
+   {
+    "title": "First Notes \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/workshop/first-notes/",
+    "snippet": "note(\"<[c2 c3]*4 [bb1 bb2]*4 [f2 f3]*4 [eb2 eb3]*4>\") .sound(\"gm_synth_bass_1\") .lpf(800) // <-- we'll learn about this soon ... n(`< [~ 0] 2 [0 2] [~ 2] [~ 0] 1 [0 1] [~ 1] [~ 0] 3 [0 3] [~ 3] [~ 0] 2 [0 2] [~ 2] >*4`).scale(\"C4:minor\") .sound(\"gm_synth_strings_1\")\"Finding the right notes can be difficult.. Scales are here to help:\"\"If you have no idea what these scale mean, don\u2019t worry. These ar"
+   },
+   {
+    "title": "Notes - Strudel",
+    "url": "https://strudel.cc/learn/notes/",
+    "snippet": "Notes names can be notated with the note letter, followed by the octave number.\"Pitches are an important building block in many musical traditions. In Strudel, pitches can be expressed as note names, note numbers or frequencies.\"\"Notes names can be notated with the note letter, followed by the octave number.\"\"note: letter notation, good for those who are familiar with western music theory:\"\"note: "
+   },
+   {
+    "title": "Tonal API Strudel - GitHub Pages",
+    "url": "https://urswilke.github.io/strudel/learn/tonal/",
+    "snippet": "Turns numbers into notes in the scale (zero indexed).\"All the available scale names can be found here. Transposes notes inside the scale by the number of steps:\"\"Turns numbers into notes in the scale (zero indexed).\"\"Note that the scale root is octaved here.\"\"Transposes all notes to the given number of semitones:\""
+   },
+   {
+    "title": "Tonal Functions Strudel",
+    "url": "https://felixroos.github.io/strudel/learn/tonal/",
+    "snippet": "Turns numbers into notes in the scale (zero indexed). Also sets scale for other scale operations, like Pattern#scaleTranspose. A scale consists of a root note (e.g. c4, c, f#, bb4) followed by semicolon (':') and then a scale type. The root note defaults to octave 3, if no octave number is given."
+   },
+   {
+    "title": "Strudel Tutorial - Lars Kobbe",
+    "url": "https://larkob.github.io/strudel/tutorial/",
+    "snippet": "Transposes notes inside the scale by the number of steps: Turns chord symbols into voicings, using the smoothest voice leading possible: Turns chord symbols into root notes of chords in given octave. Together with edit, struct and voicings, this can be used to create a basic backing track: ...\"Transposes notes inside the scale by the number of steps: Turns chord symbols into voicings, using the sm"
+   }
+  ]
+ },
+ "q1": {
+  "query": "strudel setcpm tempo tuning systems",
+  "results": [
+   {
+    "title": "Understanding Cycles - Strudel",
+    "url": "https://strudel.cc/understand/cycles/",
+    "snippet": "You can use the setcps method to set the global tempo in cycles per second. setcpm(x) is the same as setcps(x / 60).\"Tempo is based on perception. The choice of sounds also has an impact on the tempo feel. This is why the same CPS can produce different perceived tempos. If you\u2019re familiar with BPM, you can use the setcpm method to set the global tempo in cycles per minute:\"\"You can use the setcps "
+   },
+   {
+    "title": "Making Music with Code: A Beginner's Guide to Strudel",
+    "url": "https://alexcodesart.com/making-music-with-code-a-beginners-guide-to-strudel/",
+    "snippet": "April 20, 2026 \u2014 In Strudel, tempo is measured in cycles per minute. We control this with the setcpm() function. ... Here we slow the rhythm down slightly. Because Strudel organizes music around cycles instead of traditional BPM, it becomes very easy to stretch ...\"In Strudel, tempo is measured in cycles per minute. We control this with the setcpm() function. ... Here we slow the rhythm down sligh"
+   },
+   {
+    "title": "Beats, Bytes, and Basslines: An Introduction to Live Coding Music with Strudel CC | by Valentin Binjacar | Mirakl Tech Blog",
+    "url": "https://mirakl.tech/beats-bytes-and-basslines-an-introduction-to-live-coding-with-strudel-cc-4d378e86d5b7",
+    "snippet": "July 16, 2025 \u2014 const dbank = \"tr909\" // Set the tempo to 140 BPM setCps(140/60/4) // $: is a shortcut to create and play a pattern on its own line. It serves the same purpose as our stack() function here. // This layer creates a pulsing white noise rhythm. $: s(\"white!16\") .decay(sine.fast(4).range(0.05, .14)) .gain(0.4) .sometimesBy(0.1, x => x.ply(\"2 | 4\")) // This layer creates a kick pattern "
+   },
+   {
+    "title": "Samples Strudel",
+    "url": "https://strudel.cc/learn/samples/",
+    "snippet": "Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript."
+   },
+   {
+    "title": "Decomposer: Learning to Decompile Symbolic Music to Programs",
+    "url": "https://arxiv.org/pdf/2607.01849",
+    "snippet": "If the header is missing, use setcpm(120/4).STRUDEL-SYNTH Generation System Instruction. You are an expert live coder specializing in Strudel, a JavaScript-based platform that ports the TidalCycles pattern language to the web."
+   },
+   {
+    "title": "Global Tempo Control | blakkd/strudel_documentation | DeepWiki",
+    "url": "https://deepwiki.com/blakkd/strudel_documentation/8.1-global-tempo-control",
+    "snippet": "February 2, 2026 \u2014 At this tempo: A 4-beat pattern like note(\"c d e f\") plays each note for 0.125 seconds ... Immediate Update: The tempo clock value updates instantly when setcpm() or setcps() is called.\"If no tempo is explicitly set, Strudel uses a default value: ... This corresponds to a moderate tempo where one cycle completes in 0.5 seconds. At this tempo: A 4-beat pattern like note(\"c d e f\""
+   }
+  ]
+ }
+}
