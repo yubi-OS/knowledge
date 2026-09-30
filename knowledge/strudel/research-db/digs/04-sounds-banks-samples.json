@@ -1,0 +1,72 @@
+{
+ "q0": {
+  "query": "strudel sound function drum machine banks samples",
+  "results": [
+   {
+    "title": "Samples - Strudel",
+    "url": "https://strudel.cc/learn/samples/",
+    "snippet": "If we open the sounds tab and then ... RolandTR808_hh etc.. ... Behind the scenes, bank will just prepend the drum machine name to the sample name with _ to get the full name....\"This of course only works because the name after _ (bd, sd etc..) is standardized. Also note that some banks won\u2019t have samples for all sounds! If we open the sounds tab again, followed by tab drum machines, there is also"
+   },
+   {
+    "title": "First Sounds - Strudel",
+    "url": "https://strudel.cc/workshop/first-sounds/",
+    "snippet": "Try different sound / sample number combinations. ... Now you know how to use different sounds. For now we\u2019ll stick to this little selection of sounds, but we\u2019ll find out how to load your own sounds later. By default, Strudel comes with a wide selection of drum sounds: ... Try out different drum sounds! To change the sound character of our drums, we can use bank to change the drum machine...\"Try d"
+   },
+   {
+    "title": "Samples Strudel - GitHub Pages",
+    "url": "https://urswilke.github.io/strudel/learn/samples/",
+    "snippet": "Selecting sounds also works inside the mini notation, using \u201d:\u201d like this: s(\"bd:1 bd:2,hh:0 hh:1 hh:2 hh:3\").bank(\"RolandTR909\") You can load your own sample map using the samples function.\"Here, we are using the s function to play back different default samples (bd, sd, hh and misc) to get a drum beat. For drum sounds, strudel uses the comprehensive tidal-drum-machines library, with the followin"
+   },
+   {
+    "title": "Notes \ud83d\ude80 Strudel Docs",
+    "url": "https://patterns.slab.org/learn/samples/",
+    "snippet": "These sounds come from Strudel\u2019s in-built default \u201csample map\u201d. To know which sounds are available, open the default sample map. You can load your own sample map using the samples function.\"length (number|Pattern): 1 = whole sample, .5 = half sample, .25 = quarter sample etc.. ... In the style of classic drum-machines, cut will stop a playing sample as soon as another samples with in same cutgroup"
+   },
+   {
+    "title": "strudel-samples.txt - glfmn.io",
+    "url": "https://glfmn.io/presentations/algorave-2/",
+    "snippet": "The bank function works by putting the name of the sample bank with an _ at the front of sample names. bank: s(\"bd*2\").bank(\"RolandTR808\") explicit: s(\"RolandTR808_bd*2\").late(1/4) Find sample banks in the drum machine tab of the sounds window. Not all sample banks support the same percussion ...\"The bank function works by putting the name of the sample bank with an _ at the front of sample names."
+   },
+   {
+    "title": "Drum Machines | calvinw/strudel-llm-docs | DeepWiki",
+    "url": "https://deepwiki.com/calvinw/strudel-llm-docs/7.3-drum-machines",
+    "snippet": "December 29, 2025 \u2014 These samples are digital recordings of sounds from vintage hardware drum machines manufactured between the 1970s and 1990s. The library contains over 2,800 individual drum sounds from approximately 80 different drum machines.\"This document provides a complete reference for all classic drum machine samples available in the Strudel sound library. These samples are digital record"
+   }
+  ]
+ },
+ "q1": {
+  "query": "strudel custom samples sample bank loading",
+  "results": [
+   {
+    "title": "Samples - Strudel",
+    "url": "https://strudel.cc/learn/samples/",
+    "snippet": "Selecting sounds also works inside the mini notation, using \u201c:\u201d like this: s(\"bd*4,hh:0 hh:1 hh:2 hh:3 hh:4 hh:5 hh:6 hh:7\") .bank(\"RolandTR909\") You can load a non-standard sample map using the samples function.\"While it saves resources, it can also lead to sounds not being audible the first time they are triggered, because the sound is still loading. This might be fixed in the future \u00b7 If we ope"
+   },
+   {
+    "title": "Notes \ud83d\ude80 Strudel Docs",
+    "url": "https://patterns.slab.org/learn/samples/",
+    "snippet": "These sounds come from Strudel\u2019s in-built default \u201csample map\u201d. To know which sounds are available, open the default sample map. You can load your own sample map using the samples function.\"When you load your own samples, you can choose the names that you will then refer to in your pattern string inside the s function.\"\"Let\u2019s see another example, this time based on the following GitHub repo: https"
+   },
+   {
+    "title": "strudel-samples.txt - glfmn.io",
+    "url": "https://glfmn.io/presentations/algorave-2/",
+    "snippet": "A presentation on loading and manipulating samples with strudel. ... Breakbeats! ... strudel has lots of awesome ways to modulate, loop, chop, and process samples; kind of like having a Digitakt in your browser. Playing a sample is the same as playing a sound; in fact, most sounds we have already played with are samples: ... All the percussion we have used thus far are samples. We can choose diffe"
+   },
+   {
+    "title": "Sounds - Strudel",
+    "url": "https://strudel.cc/learn/sounds/",
+    "snippet": "Strudel is a music live coding environment for the browser ... s can trigger audio samples, where a sound file is loaded in the background and played back:."
+   },
+   {
+    "title": "Samples Strudel - GitHub Pages",
+    "url": "https://urswilke.github.io/strudel/learn/samples/",
+    "snippet": "When you load your own samples, you can choose the names that you will then refer to in your pattern string inside the s function. Compare with this example\u00a0..."
+   },
+   {
+    "title": "Loading Custom Samples | blakkd/strudel_documentation | DeepWiki",
+    "url": "https://deepwiki.com/blakkd/strudel_documentation/5.2-loading-custom-samples",
+    "snippet": "Feb 2, 2026 \u00b7 Purpose and Scope This document explains how to load custom audio samples into Strudel from various sources. Strudel provides multiple mechanisms for importing samples beyond the built-in sample banks, including GitHub repositories, Freesound.org queries, custom URLs, local file uploads, and a Node.js development server."
+   }
+  ]
+ }
+}

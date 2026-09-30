@@ -1,0 +1,72 @@
+{
+ "q0": {
+  "query": "strudel signals modulation sine saw lfo",
+  "results": [
+   {
+    "title": "Low-frequency oscillators (LFO) \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/learn/lfo/",
+    "snippet": "You can change the shape of the modulation with shape. The default is triangle, but other shapes are available too: s(\"saw\") .lpf(800) .lfo({r: 2, shape: \"<triangle sine ramp saw square>\"})\"A low frequency oscillator (or short LFO) is a common way on synthesizers to continuously modulate various signals. This documentation is an interactive version of glossing\u2019s tutorial https://www.youtube.com/wa"
+   },
+   {
+    "title": "Audio effects \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/learn/effects/",
+    "snippet": "This allows you to play subtle or huge filter modulations just the same by only increasing or decreasing the depth. note(\"[c eb g <f bb>](3,8,<0 1>)\".sub(12)) .s(\"<sawtooth>/64\") .lpf(sine.range(300,2000).slow(16)) .lpa(0.005) .lpd(perlin.r...\"The frequency sweep range of the lfo for the phaser effect. Defaults to 2000 \u00b7 phasersweep (number|Pattern): most useful values are between 0 and 4000 \u00b7 n(r"
+   },
+   {
+    "title": "First Effects \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/workshop/first-effects/",
+    "snippet": "We can change the modulation speed with slow / fast: note(\"<[c2 c3]*4 [bb1 bb2]*4 [f2 f3]*4 [eb2 eb3]*4>\") .sound(\"sawtooth\") .lpf(sine.range(100, 2000).slow(4)) The whole modulation will now take 8 cycles to repeat.\"The basic waveforms for signals are sine, saw, square, tri \ud83c\udf0a \u00b7 Try also random signals rand and perlin! The gain is visualized as transparency in the pianoroll. setting a range \u00b7 By d"
+   },
+   {
+    "title": "Synths \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/learn/synths/",
+    "snippet": "note(\"c2 eb2 f2 g2\") // also supports freq .s(\"{z_sawtooth z_tan z_noise z_sine z_square}%4\") .zrand(0) // randomization // zzfx envelope .attack(0.001) .decay(0.1) .sustain(.8) .release(.1) // special zzfx params .curve(1) // waveshape 1-3 .slide(0) // +/- pitch slide .deltaSlide(0) // +/- pitch slide (?) .noise(0) // make it dirty .zmod(0) // fm speed .zcrush(0) // bit crush 0 - 1 .zdelay(0) // "
+   },
+   {
+    "title": "Advanced Synth Design - ANU School of Computing",
+    "url": "https://comp.anu.edu.au/courses/comp4350/lectures/08-synth2/",
+    "snippet": "We can create a similar synth in Strudel by using the sawtooth oscillator sound, and applying low pass filter and envelope effects.\"tl;dr: to do feedback phase-modulation synthesis in Strudel, you should use CSound, and see this paper \u00b7 await loadCSound` giSine ftgen 0, 0, 8192, 10, 1 ; makes a sine tone table instr feedback_PM kCarFreq = p4 kFeedbackAmountEnv linseg 0, 2, 0.2, 0.1, 0.3, 0.8, 0.2,"
+   },
+   {
+    "title": "Signals \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/learn/signals/",
+    "snippet": "A sawtooth signal between 0 and 1. note(\"<c3 [eb3,g3] g2 [g3,bb3]>*8\") .clip(saw.slow(2)) ... A sine signal between 0 and 1.\"A sawtooth signal between 0 and 1. note(\"*8\") .clip(saw.slow(2)) ... A sine signal between 0 and 1.\"\"n(stack(sine,cosine).segment(16).range(0,15)) .scale(\"C:minor\") A triangle signal between 0 and 1. ... A square signal between 0 and 1. ... A continuous pattern of random num"
+   }
+  ]
+ },
+ "q1": {
+  "query": "tidal continuous pattern signals strudel",
+  "results": [
+   {
+    "title": "Continuous Signals - Strudel",
+    "url": "https://strudel.cc/learn/signals/",
+    "snippet": "Signals are patterns with continuous values, meaning they have theoretically infinite steps.\"A square signal between 0 and 1. ... A continuous pattern of random numbers, between 0 and 1.\"\"Signals are patterns with continuous values, meaning they have theoretically infinite steps.\""
+   },
+   {
+    "title": "Time Modifiers \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/learn/time-modifiers/",
+    "snippet": "Like iter, but plays the subdivisions in reverse order. Known as iter' in tidalcycles ... The ply function repeats each event the given number of times. ... Samples the pattern at a rate of n events per cycle. Useful for turning a continuous pattern into a discrete one.\"Like iter, but plays the subdivisions in reverse order. Known as iter' in tidalcycles ... The ply function repeats each event the"
+   },
+   {
+    "title": "Live code with Tidal Cycles | Tidal Cycles",
+    "url": "https://tidalcycles.org/",
+    "snippet": "Dec 21, 2023 \u00b7 Tidal is using SuperCollider, another open-source software, for synthesis and MIDI. Tidal has inspired a open source family of similar environments adopting its model of patterns of time known as Uzulangs, including the web-based Strudel environment."
+   },
+   {
+    "title": "Patterns \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/technical-manual/patterns/",
+    "snippet": "Its patterns are abstract entities that represent flows of time as functions, adapting a technique called pure functional reactive programming. Taking a time span as its input, a Pattern can output a set of events that happen within that time span.\"Patterns are the essence of Tidal. Its patterns are abstract entities that represent flows of time as functions, adapting a technique called pure funct"
+   },
+   {
+    "title": "Strudel vs Tidal \ud83d\ude80 Strudel",
+    "url": "https://strudel.cc/learn/strudel-vs-tidal/",
+    "snippet": "Strudel is written in JavaScript, while Tidal is written in Haskell. This difference is most obvious when looking at the syntax: iter 4 $ every 3 (||+ n \"10 20\") $ (n \"0 1 3\") # s \"triangle\" # crush 4 \u00b7 One could express that pattern to Strudel like so:\"Strudel is written in JavaScript, while Tidal is written in Haskell. This difference is most obvious when looking at the syntax: iter 4 $ every 3 "
+   },
+   {
+    "title": "Pattern Alignment Strudel",
+    "url": "https://strudel.cc/technical-manual/alignment/",
+    "snippet": "Pattern Alignment & Combination One core aspect of Strudel, inherited from Tidal, is the flexible way that patterns can be combined, irrespective of their structure. Its declarative approach means a live coder does not have to think about the details of how this is done, only what is to be done."
+   }
+  ]
+ }
+}
