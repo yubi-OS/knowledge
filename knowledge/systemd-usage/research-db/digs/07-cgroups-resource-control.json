@@ -1,0 +1,175 @@
+{
+ "doc": "07-cgroups-resource-control",
+ "queries": [
+  {
+   "query": "systemd cgroup slices CPUQuota MemoryMax resource control",
+   "n_results": 68,
+   "error": null,
+   "top": [
+    {
+     "title": "systemd.resource-control - Freedesktop.org",
+     "url": "https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html",
+     "engines": [
+      "google cse",
+      "google",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "The resource control configuration options are configured in the [Slice], [Scope], [Service], [Socket], [Mount], or [Swap] sections, depending on the unit type. In addition, options which control reso",
+     "jev_quality_noul": 0.05,
+     "jev_task_id": "ta325ad3-7d44-4f61-9b1f-8fe9a44ed0a6"
+    },
+    {
+     "title": "Comprehensive Guide to Systemd Cgroups for Resource Limiting and Isolation | Master DevOps Tools & Best Practices - DevOps Knowledge Hub",
+     "url": "https://devops.aibit.im/en/article/systemd-cgroups-resource-limiting-isolation-guide",
+     "engines": [
+      "yandex",
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "[Unit] Description=Batch Processing Slice [Slice] # Limit total CPU for all jobs in this slice to 1 core CPUQuota=100% # Limit total memory to 4GB MemoryMax=4G\"Understand Cgroup v1 vs. v2: Systemd sup",
+     "jev_quality_noul": 0.95,
+     "jev_task_id": "ta325ad3-7d44-4f61-9b1f-8fe9a44ed0a6"
+    },
+    {
+     "title": "How to Set Up systemd Resource Control with MemoryMax on Ubuntu",
+     "url": "https://oneuptime.com/blog/post/2026-03-02-setup-systemd-resource-control-memorymax-ubuntu/view",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "March 2, 2026 \u2014 [Unit] Description=Batch Processing Slice [Slice] # All services in this slice share a memory limit MemoryMax=4G CPUQuota=200% ... Multiple services sharing the batch.slice collectivel",
+     "jev_quality_noul": 0.13,
+     "jev_task_id": "ta325ad3-7d44-4f61-9b1f-8fe9a44ed0a6"
+    },
+    {
+     "title": "cgroups v2 resource limits with systemd - FDC Servers",
+     "url": "https://fdcservers.net/blog/cgroups-v2-resource-limits-with-systemd",
+     "engines": [
+      "yandex",
+      "google cse",
+      "google",
+      "seznam",
+      "resulthunter"
+     ],
+     "snippet": "June 3, 2026 \u2014 [Slice] CPUQuota=200% CPUWeight=150 MemoryHigh=3584M MemoryMax=4096M MemorySwapMax=0 IOReadBandwidthMax=/dev/sda 200M TasksMax=512\"A cgroup with child cgroups cannot directly host proce",
+     "jev_quality_noul": 0.19,
+     "jev_task_id": "ta35c73e-e709-477b-825e-43b1a7a9432a"
+    },
+    {
+     "title": "systemd.resource-control(5) - Linux manual page - man7.org",
+     "url": "https://man7.org/linux/man-pages/man5/systemd.resource-control.5.html",
+     "engines": [
+      "google cse",
+      "google",
+      "seznam"
+     ],
+     "snippet": "Enabling and disabling controllers Controllers in the cgroup hierarchy are hierarchical, and resource control is realized by distributing resource assignments between siblings in branches of the cgrou",
+     "jev_quality_noul": 0.2,
+     "jev_task_id": "ta35c73e-e709-477b-825e-43b1a7a9432a"
+    },
+    {
+     "title": "systemd, per-user cpu and/or memory limits - Server Fault",
+     "url": "https://serverfault.com/questions/874274/systemd-per-user-cpu-and-or-memory-limits",
+     "engines": [
+      "google cse",
+      "google"
+     ],
+     "snippet": "Sep 18, 2017 \u00b7 Cgroups, limit memory per user, set cgroup limits for systemd user slices? Systemd CPUQuota for User Slice not workingcpu usage - How CPUQuota works in systemd - Server FaultLimiting re",
+     "jev_quality_noul": 0.94,
+     "jev_task_id": "ta35c73e-e709-477b-825e-43b1a7a9432a"
+    }
+   ]
+  },
+  {
+   "query": "systemd-cgtop delegation cgroups containers",
+   "n_results": 63,
+   "error": null,
+   "top": [
+    {
+     "title": "systemd and Cgroup Integration - Linux Kernel Internals",
+     "url": "https://kernel-internals.org/cgroups/systemd-cgroups/",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "# systemd has created: /sys/fs/cgroup/system.slice/containerd.service/ # Delegate=yes means containerd owns this subtree.\"Container Isolation \u2014 how Docker/containerd use delegation \u00b7 Cgroup War Storie",
+     "jev_quality_noul": 0.12,
+     "jev_task_id": "ta35c73e-e709-477b-825e-43b1a7a9432a"
+    },
+    {
+     "title": "Control Group APIs and Delegation - systemd",
+     "url": "https://systemd.io/CGROUP_DELEGATION/",
+     "engines": [
+      "resulthunter",
+      "seznam",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "In this mode the administrator can use the usual systemd resource management and reporting commands individually on those containers. By turning on Delegate= for these scopes or services you make it p",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "ta35c73e-e709-477b-825e-43b1a7a9432a"
+    },
+    {
+     "title": "systemd/docs/CGROUP_DELEGATION.md at main \u00b7 systemd/systemd",
+     "url": "https://github.com/systemd/systemd/blob/main/docs/CGROUP_DELEGATION.md",
+     "engines": [
+      "google",
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "In this mode the administrator ... individually on those containers. By turning on Delegate= for these scopes or services you make it possible to run cgroup-enabled programs in your containers, for ex",
+     "jev_quality_noul": 0.94,
+     "jev_task_id": "tab27f2c-6b83-481f-8c86-7d26f390aec9"
+    },
+    {
+     "title": "Systemd delegation and a manually controlled cgroup subhierarchy - Unix & Linux Stack Exchange",
+     "url": "https://unix.stackexchange.com/questions/804670/systemd-delegation-and-a-manually-controlled-cgroup-subhierarchy",
+     "engines": [
+      "duckduckgo web",
+      "google",
+      "seznam",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "February 23, 2026 \u2014 A systemd .service unit can have Delegate=yes set, but it has a process attached to its cgroup, so it cannot contain sub-cgroups.\"If systemd is in place, it managed a system-wide t",
+     "jev_quality_noul": 0.94,
+     "jev_task_id": "tab27f2c-6b83-481f-8c86-7d26f390aec9"
+    },
+    {
+     "title": "cgroups - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Cgroups",
+     "engines": [
+      "yandex",
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "June 27, 2026 \u2014 On systemd systems, the root cgroup is managed by systemd, making any change not by systemd a violation of this rule (or, as it's not enforced, recommendation), unless when Delegate= i",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "tab27f2c-6b83-481f-8c86-7d26f390aec9"
+    },
+    {
+     "title": "systemd - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Systemd",
+     "engines": [
+      "bing",
+      "seznam"
+     ],
+     "snippet": "Systemd tracks processes using the Linux kernel's cgroups subsystem instead of using process identifiers (PIDs); thus, daemons cannot \"escape\" systemd, not even by double- forking.",
+     "jev_quality_noul": 0.41,
+     "jev_task_id": "tab27f2c-6b83-481f-8c86-7d26f390aec9"
+    }
+   ]
+  }
+ ]
+}

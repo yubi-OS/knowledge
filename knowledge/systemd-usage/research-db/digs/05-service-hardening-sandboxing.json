@@ -1,0 +1,171 @@
+{
+ "doc": "05-service-hardening-sandboxing",
+ "queries": [
+  {
+   "query": "systemd service sandboxing ProtectSystem ProtectHome hardening",
+   "n_results": 72,
+   "error": null,
+   "top": [
+    {
+     "title": "systemd service sandboxing and security hardening 101 - Ctrl blog",
+     "url": "https://www.ctrl.blog/entry/systemd-service-hardening/",
+     "engines": [
+      "brave",
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "seznam",
+      "resulthunter"
+     ],
+     "snippet": "January 14, 2020 \u2014 NAME DESCRIPTION EXPOSURE \u2717 PrivateDevices Service potentially has access to hardware devices 0.2 \u2713 PrivateTmp Service has no access to other software's temporary files \u2717 ProtectCon",
+     "jev_quality_noul": 0.44,
+     "jev_task_id": "taadb135-7683-4ba9-b4ad-ff32d02ad8a7"
+    },
+    {
+     "title": "Sandboxing Systemd Services - ejaaskel",
+     "url": "https://ejaaskel.dev/sandboxing-systemd-services/",
+     "engines": [
+      "brave",
+      "google cse",
+      "google",
+      "seznam",
+      "resulthunter"
+     ],
+     "snippet": "February 8, 2026 \u2014 The access to the file systems ... (PrivateTmp=). At the core of the file system sandboxing is ProtectSystem=. This allows setting the core directories of the system as read-only...",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "taadb135-7683-4ba9-b4ad-ff32d02ad8a7"
+    },
+    {
+     "title": "How to Configure systemd Service Hardening on Ubuntu - OneUptime",
+     "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-hardening-on-ubuntu/view",
+     "engines": [
+      "google cse",
+      "google",
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "March 2, 2026 \u2014 # /etc/systemd/system/nginx.service.d/hardening.conf [Service] # Make the entire filesystem read-only, then selectively allow writes ProtectSystem=strict # With strict, only the API fi",
+     "jev_quality_noul": 0.15,
+     "jev_task_id": "ta05b2b0-53b0-4cd4-8810-0165258555f1"
+    },
+    {
+     "title": "Mastering systemd: Securing and sandboxing applications and services",
+     "url": "https://www.redhat.com/en/blog/mastering-systemd",
+     "engines": [
+      "google cse",
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "November 20, 2025 \u2014 First, create a systemd drop-in to add the security options. For Red Hat Enterprise Linux 8, run: ... [Service] ProtectSystem=strict ProtectHome=yes PrivateDevices=yes ProtectKerne",
+     "jev_quality_noul": 0.16,
+     "jev_task_id": "ta05b2b0-53b0-4cd4-8810-0165258555f1"
+    },
+    {
+     "title": "Lock Down systemd Services (Sandboxing) \u00b7 Linux Junkies",
+     "url": "https://linuxjunkies.org/guides/lock-down-systemd-services",
+     "engines": [
+      "yandex",
+      "resulthunter",
+      "duckduckgo web",
+      "brave"
+     ],
+     "snippet": "June 7, 2026 \u2014 ProtectSystem=full \u2014 adds /etc to the read-only set on top of the default. ProtectHome=true \u2014 home directories appear empty to the process.\"ProtectSystem=full \u2014 adds /etc to the read-on",
+     "jev_quality_noul": 0.61,
+     "jev_task_id": "ta05b2b0-53b0-4cd4-8810-0165258555f1"
+    },
+    {
+     "title": "How to Configure systemd Service Sandboxing on Ubuntu",
+     "url": "https://oneuptime.com/blog/post/2026-03-02-configure-systemd-service-sandboxing-ubuntu/view",
+     "engines": [
+      "yandex",
+      "resulthunter",
+      "brave"
+     ],
+     "snippet": "March 2, 2026 \u2014 Services that need to write outside their application data directories should explicitly allow only the required paths with ReadWritePaths. ProtectHome prevents the service from access",
+     "jev_quality_noul": 0.16,
+     "jev_task_id": "ta05b2b0-53b0-4cd4-8810-0165258555f1"
+    }
+   ]
+  },
+  {
+   "query": "systemd-analyze security exposure level DynamicUser",
+   "n_results": 68,
+   "error": null,
+   "top": [
+    {
+     "title": "Securing systemd Services | SUSE Linux Enterprise Server 15 SP6",
+     "url": "https://documentation.suse.com/smart/security/html/systemd-securing/index.html",
+     "engines": [
+      "yandex",
+      "google cse",
+      "resulthunter"
+     ],
+     "snippet": "August 28, 2026 \u2014 > systemd-analyze security systemd-logind.service NAME DESCRIPTION EXPOSURE \u2717 PrivateNetwork= Service has access to the host's network 0.5 \u2717 User=/DynamicUser= Service runs as root u",
+     "jev_quality_noul": 0.15,
+     "jev_task_id": "ta05b2b0-53b0-4cd4-8810-0165258555f1"
+    },
+    {
+     "title": "How to address results of `systemd-analyze security`? - Ask Ubuntu",
+     "url": "https://askubuntu.com/questions/1182494/how-to-address-results-of-systemd-analyze-security",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "October 20, 2019 \u2014 It is recommended to enable this ... the services actually require access to the user's private data. This setting is implied if DynamicUser= is set....\"systemd-analyze security SER",
+     "jev_quality_noul": 0.17,
+     "jev_task_id": "tac14e49-aeab-4508-89b2-e8aff747f0c1"
+    },
+    {
+     "title": "Linux-Security-Hardening/systemd.adoc at master - GitHub",
+     "url": "https://github.com/Yuvraj1507/Linux-Security-Hardening/blob/master/systemd.adoc",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "systemd-analyze and systemd_scan.sh Since systemd version 240, systemd-analyze has the security option for analyzing the security and sandboxing settings of services in order to determine an exposure ",
+     "jev_quality_noul": 0.18,
+     "jev_task_id": "tac14e49-aeab-4508-89b2-e8aff747f0c1"
+    },
+    {
+     "title": "systemd-analyze - Freedesktop.org",
+     "url": "https://www.freedesktop.org/software/systemd/man/systemd-analyze.html",
+     "engines": [
+      "google cse",
+      "google"
+     ],
+     "snippet": "The command checks for various security-related service settings, assigning each a numeric \"exposure level\" value, depending on how important a setting is. It ...",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "tac14e49-aeab-4508-89b2-e8aff747f0c1"
+    },
+    {
+     "title": "systemd-analyze provides long list of security improvements ... - GitHub",
+     "url": "https://github.com/qualcomm/fastrpc/issues/344",
+     "engines": [
+      "google",
+      "duckduckgo web"
+     ],
+     "snippet": "Hi While working on #333, I discovered a systemd tool providing feedback on security features that daemons can make use of: $ systemd-analyze security cdsprpcd.service NAME DESCRIPTION EXPOSURE R...",
+     "jev_quality_noul": 0.95,
+     "jev_task_id": "tac14e49-aeab-4508-89b2-e8aff747f0c1"
+    },
+    {
+     "title": "Writing a Secure Systemd Service with Sandboxing and Dynamic Users | nickb.dev",
+     "url": "https://nickb.dev/blog/writing-a-secure-systemd-service-with-sandboxing-and-dynamic-users/",
+     "engines": [
+      "google cse",
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "[Unit] Description=A dynamic DNS client Wants=network-online.target After=network.target network-online.target [Service] Type=oneshot DynamicUser=yes ExecStart=/usr/bin/dness -c /etc/dness/dness.conf ",
+     "jev_quality_noul": 0.11,
+     "jev_task_id": "tac14e49-aeab-4508-89b2-e8aff747f0c1"
+    }
+   ]
+  }
+ ]
+}

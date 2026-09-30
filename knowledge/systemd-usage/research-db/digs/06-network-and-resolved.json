@@ -1,0 +1,173 @@
+{
+ "doc": "06-network-and-resolved",
+ "queries": [
+  {
+   "query": "systemd-networkd networkctl configuration files tutorial",
+   "n_results": 71,
+   "error": null,
+   "top": [
+    {
+     "title": "systemd-networkd - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Systemd-networkd",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "seznam",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "It is worth noting that in order to change only some aspects of an interface behavior, one is required to first edit one or more configuration files in /etc/systemd/network/. When networkd is configur",
+     "jev_quality_noul": 0.63,
+     "jev_task_id": "ta71b501-516d-486f-9bc3-55a235501499"
+    },
+    {
+     "title": "Network configuration using systemd-networkd - Akamai cloud computing",
+     "url": "https://techdocs.akamai.com/cloud-computing/docs/network-configuration-using-systemd-networkd",
+     "engines": [
+      "duckduckgo web",
+      "google cse",
+      "google",
+      "seznam",
+      "resulthunter"
+     ],
+     "snippet": "March 1, 2026 \u2014 Default configuration file: /etc/systemd/network/05-eth0.network. * When systemd-networkd brings up the network interfaces, the configuration files are processed alpha-numerically.\"Ubu",
+     "jev_quality_noul": 0.67,
+     "jev_task_id": "ta71b501-516d-486f-9bc3-55a235501499"
+    },
+    {
+     "title": "Configure systemd-networkd \u00b7 Linux Junkies",
+     "url": "https://linuxjunkies.org/guides/configure-systemd-networkd",
+     "engines": [
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "June 7, 2026 \u2014 On desktops with both wired and ... Do I need to reboot after changing .network files? No. Run 'sudo networkctl reload' to pick up changes immediately....\"Can I run systemd-networkd and",
+     "jev_quality_noul": 0.17,
+     "jev_task_id": "ta71b501-516d-486f-9bc3-55a235501499"
+    },
+    {
+     "title": "systemd - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Systemd",
+     "engines": [
+      "bing",
+      "seznam"
+     ],
+     "snippet": "Networkd is a daemon to handle the configuration of the network interfaces; in version 209, when it was first integrated, support was limited to statically assigned addresses and basic support for bri",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "ta71b501-516d-486f-9bc3-55a235501499"
+    },
+    {
+     "title": "How to Create .network Files in systemd-networkd - OneUptime",
+     "url": "https://oneuptime.com/blog/post/2026-03-20-create-network-file-systemd-networkd/view",
+     "engines": [
+      "google",
+      "resulthunter"
+     ],
+     "snippet": "March 20, 2026 \u2014 sudo systemctl restart systemd-networkd ... files match interfaces with [Match] directives (by name, MAC, or driver) and configure them with [Network] (addresses, DNS, DHCP), [Route] ",
+     "jev_quality_noul": 0.17,
+     "jev_task_id": "ta71b501-516d-486f-9bc3-55a235501499"
+    },
+    {
+     "title": "Network Configuration with Systemd-networkd on Ubuntu/Debian - Power Sysadmin Blog",
+     "url": "https://poweradm.com/systemd-network-config-linux/",
+     "engines": [
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "October 26, 2023 \u2014 $ sudo systemctl enable systemd-networkd $ sudo systemctl start systemd-networkd \u00b7 Check the status of the network interfaces: $ networkctl list \u00b7 View network settings: $ networkct",
+     "jev_quality_noul": 0.14,
+     "jev_task_id": "ta004d8c-a533-4fca-9195-51e89253bc7d"
+    }
+   ]
+  },
+  {
+   "query": "systemd-resolved DNS configuration debugging",
+   "n_results": 85,
+   "error": null,
+   "top": [
+    {
+     "title": "Systemd-resolved - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Systemd-resolved",
+     "engines": [
+      "duckduckgo web",
+      "yandex",
+      "google cse",
+      "google",
+      "seznam",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "Tip To check the DNS currently in use by systemd-resolved, run resolvectl status. systemd-resolved will work out of the box with a network manager using /etc/resolv.conf. No particular configuration i",
+     "jev_quality_noul": 0.15,
+     "jev_task_id": "ta004d8c-a533-4fca-9195-51e89253bc7d"
+    },
+    {
+     "title": "How to troubleshoot DNS with systemd-resolved? - Unix & Linux Stack Exchange",
+     "url": "https://unix.stackexchange.com/questions/328131/how-to-troubleshoot-dns-with-systemd-resolved",
+     "engines": [
+      "duckduckgo web",
+      "google cse",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "December 5, 2016 \u2014 In order to get more information from resolved we need just one command: sudo resolvectl log-level debug instead of editing configuration files. Though that information is useful to",
+     "jev_quality_noul": 0.83,
+     "jev_task_id": "ta004d8c-a533-4fca-9195-51e89253bc7d"
+    },
+    {
+     "title": "How to Fix DNS Resolution Errors with systemd-resolved - OneUptime",
+     "url": "https://oneuptime.com/blog/post/2026-03-20-fix-dns-systemd-resolved/view",
+     "engines": [
+      "duckduckgo web",
+      "google cse",
+      "google",
+      "yahoo",
+      "resulthunter"
+     ],
+     "snippet": "March 20, 2026 \u2014 # View DNS statistics (cache hit rate, etc.): resolvectl statistics # Flush all DNS caches: resolvectl flush-caches # Watch DNS queries in real-time (enable logging): resolvectl log-l",
+     "jev_quality_noul": 0.17,
+     "jev_task_id": "ta004d8c-a533-4fca-9195-51e89253bc7d"
+    },
+    {
+     "title": "Set Up systemd-resolved Cleanly \u00b7 Linux Junkies",
+     "url": "https://linuxjunkies.org/guides/set-up-systemd-resolved",
+     "engines": [
+      "resulthunter",
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "June 7, 2026 \u2014 Enable systemd-resolved's stub listener, configure DNS-over-TLS, set up conditional forwarding for split-horizon DNS, and debug with resolvectl.\"Expected output contains something like:",
+     "jev_quality_noul": 0.13,
+     "jev_task_id": "ta004d8c-a533-4fca-9195-51e89253bc7d"
+    },
+    {
+     "title": "systemd - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Systemd",
+     "engines": [
+      "bing",
+      "seznam"
+     ],
+     "snippet": "Systemd is a software suite for system and service management on Linux built to unify service configuration and behavior across Linux distributions. Its main component is an init system used to bootst",
+     "jev_quality_noul": 0.2,
+     "jev_task_id": "ta325ad3-7d44-4f61-9b1f-8fe9a44ed0a6"
+    },
+    {
+     "title": "Debugging DNS Resolution with systemd-resolved on Linux",
+     "url": "https://devopsaitoolkit.com/blog/debugging-dns-resolution-with-systemd-resolved/",
+     "engines": [
+      "duckduckgo web",
+      "yahoo"
+     ],
+     "snippet": "Jun 14, 2026 \u00b7 systemd-resolved quietly took over DNS on most modern distros. Here's how it actually resolves names, and how to debug it when resolution mysteriously breaks.",
+     "jev_quality_noul": 0.2,
+     "jev_task_id": "ta325ad3-7d44-4f61-9b1f-8fe9a44ed0a6"
+    }
+   ]
+  }
+ ]
+}
