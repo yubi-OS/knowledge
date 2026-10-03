@@ -1,0 +1,35 @@
+{
+  "doc": "02-riks-arc-length-continuation.md",
+  "corpus": "snapback-continuation-methods",
+  "dug_at": "2026-10-03T03:05Z",
+  "queries": [
+    "Riks method arc length continuation nonlinear analysis",
+    "Crisfield arc length method finite element limit point"
+  ],
+  "dig_endpoint": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=...",
+  "results": [
+    { "id": "wiki-arclength", "title": "Arc-length method - Wikipedia", "url": "https://en.wikipedia.org/wiki/Arc-length_method", "query": "a", "noul": 0.72, "snippet": "Arc-length method, also known as the Riks method; developed independently by Wempner and Riks in the 1970s, reformulated by Crisfield; traces equilibrium paths beyond limit points; Phi=0 cylindrical, Phi=1 spherical constraint forms." },
+    { "id": "abaqus-wustl", "title": "6.2.4 Unstable collapse and postbuckling analysis (ABAQUS v6.6 manual)", "url": "https://classes.engineering.wustl.edu/2009/spring/mase5513/abaqus/docs/v6.6/books/usb/pt03ch06s02at03.html", "query": "a", "noul": 0.82, "snippet": "ABAQUS/Standard Riks procedure for unstable collapse and postbuckling; Newton's method; 1% strain extrapolation; full page fetch failed on TLS cert error, snippet only." },
+    { "id": "crisfield-wiley-1983", "title": "An arc-length method including line searches and accelerations - Crisfield 1983 IJNME", "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.1620190902", "query": "b", "noul": 0.94, "snippet": "Crisfield 1983: line searches introduced into the arc-length solution procedure to compute an optimum scalar step at each iteration." },
+    { "id": "rg-trusses-positional", "title": "Geometrically static analysis of trusses using the arc-length method and the positional FEM formulation", "url": "https://www.researchgate.net/publication/269394472", "query": "b", "noul": 0.65, "snippet": "Arc-length method is a commonly used technique for solution of equilibrium paths, bifurcation points and limit points related to snap-through (2014)." },
+    { "id": "rg-riks-arclength", "title": "The Riks method and Arc length method", "url": "https://www.researchgate.net/publication/334082942", "query": "a", "noul": 0.14, "snippet": "The Riks method uses the load magnitude as an additional unknown; it solves simultaneously for loads and displacements; another quantity measures progress." },
+    { "id": "physicsbase-blog", "title": "How to solve past a limit point - arc-length", "url": "https://www.physicsbase.ai/blog-arclength.html", "query": "b", "noul": 0.08, "snippet": "Crisfield's arc-length method traces the full snap-through path of the von Mises truss past the limit point load control cannot cross." },
+    { "id": "scribd-limitpoints", "title": "Arc Length Method For Passing Limit Points (user upload)", "url": "https://www.scribd.com/document/344952577", "query": "b", "noul": 0.05, "snippet": "Crisfield proposes evaluating the scalar product of successive displacement corrections and choosing the root with the smallest angle." },
+    { "id": "scribd-riks-abaqus", "title": "Riks Method for Static Analysis in Abaqus (user upload)", "url": "https://www.scribd.com/doc/98805119/Riks-Method", "query": "a", "noul": 0.04, "snippet": "Riks method models unstable collapse and postbuckling in Abaqus; load magnitude treated as an unknown." },
+    { "id": "truegeometry-blog", "title": "What is the Arc-Length Method (Riks Method)", "url": "https://blog.truegeometry.com/api/exploreHTML/2de94d6914ad80f638e9657b5b62cc58.exploreHTML", "query": "a", "noul": 0.03, "snippet": "Auto-generated SEO page describing the arc-length method by Fredrik Riks for tracing load-displacement response." },
+    { "id": "youtube-riks", "title": "Riks - YouTube (Swedish news channel)", "url": "https://www.youtube.com/c/Riksstudios", "query": "a", "noul": 0.01, "snippet": "Unrelated Swedish news channel." }
+  ],
+  "jev": {
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "task_id": "ta4a2061-ce70-456d-b68b-d20f8da16d2e",
+    "consumed": "0.000167664",
+    "requests": 1,
+    "retries": 0,
+    "note": "First attempt returned 422 (missing state field), does not count as a scored call; corrected schema per defapi-jev references/api.md and succeeded in one request with 11 noul questions."
+  },
+  "unverified": [
+    "Exact ABAQUS quote 'static stabilization ... follow the load-displacement response past a limit point' (vendor docs fetch failed, certificate error)",
+    "Crisfield updated/normal-plane variant attribution",
+    "Pseudo-arc-length (Keller-type) formulation"
+  ]
+}
