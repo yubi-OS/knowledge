@@ -1,0 +1,54 @@
+{
+  "doc": "06-lean-mathlib-formalization-path.md",
+  "queries": [
+    "mathlib convolution integral Lean 4 formalization",
+    "Laplace transform Lean 4 mathlib formalization"
+  ],
+  "results": [],
+  "preflight_ref": "2026-10-02-run",
+  "searxng_status": {
+    "note": "searXNG dig layer returned HTTP 500 on both queries, 6 attempts total (3 per query with 30s backoff between retries). No dig results available; doc claims rest entirely on direct primary-source verification via the GitHub API (MASTER GIT SU) and mathlib4 generated docs, both verified 2026-10-03.",
+    "attempts_per_query": 3
+  },
+  "verification": {
+    "method": "GitHub REST API (repo contents + code search) and mathlib4_docs HTML pages, checked 2026-10-03",
+    "repo": "leanprover-community/mathlib4 (4216 stars, pushed 2026-10-03)",
+    "verified_present": [
+      "Mathlib/Analysis/Convolution.lean (73 decls scanned: ConvolutionExistsAt, ConvolutionExists, noncomputable def convolution, convolution_def, convolution_mul, convolution_smul, convolution_symm, convolution_flip, support_convolution_subset, ConvolutionExists.of_memLp_memLp, continuousOn_convolution_right_with_param; no identity/inverse/Young)",
+      "Mathlib/Analysis/ODE/{Basic,DiscreteGronwall,ExistUnique,Gronwall,PicardLindelof,Transform}.lean (ODE_solution_unique family; exists_eq_forall_mem_Icc_eq_picard)",
+      "Mathlib/Analysis/MellinTransform.lean (MellinConvergent, mellin, mellinInv) + Mathlib/Analysis/MellinInversion.lean",
+      "Mathlib/Analysis/SpecialFunctions/Exp.lean",
+      "Mathlib/Analysis/Normed/Algebra/MatrixExponential.lean (via Matrix.exp code-search hit)"
+    ],
+    "verified_absent": [
+      "Laplace transform: Mathlib/MeasureTheory/Function/LaplaceTransform.lean -> 404; code search LaplaceTransform -> 0 results; 'laplace' only incidental comment mentions",
+      "Volterra: code search -> 0 results",
+      "Titchmarsh: code search -> only docs/1000.yaml metadata",
+      "Duhamel: code search -> only docs/undergrad.yaml metadata",
+      "Prony: code search -> 0 results"
+    ],
+    "unverified": [
+      "Declaration-level detail inside Mathlib/Analysis/Normed/Algebra/MatrixExponential.lean (file existence verified via code search only)"
+    ]
+  },
+  "jev": {
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "typesafe/jev-1.13-20260917",
+    "successful_calls": 1,
+    "task_id": "ta49eff4-cc82-46df-bb3b-07e56db6723f",
+    "cost_usd": "0.00013104",
+    "weights": {
+      "quality_0_gh_repo": 0.96,
+      "quality_1_conv_docs": 0.95,
+      "quality_2_conv_file": 0.94,
+      "quality_3_picard_docs": 0.94,
+      "quality_4_ode_dir": 0.92,
+      "quality_5_mellin_docs": 0.94,
+      "quality_6_mellin_file": 0.94,
+      "quality_7_exp_docs": 0.95,
+      "quality_8_laplace_absence_search": 0.48
+    },
+    "failed_attempts": "3 HTTP 422 (wrong payload shape: missing state field) before correction; no cost incurred",
+    "write_fallback": "Primary path session/visco-mint/ was blocked for this subagent; both files written under session/subagent/mint1/linear-viscoelasticity/"
+  }
+}
