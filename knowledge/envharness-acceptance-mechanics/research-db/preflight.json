@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-02",
+  "searxng": {
+    "probe_query": "systemd",
+    "results": 118,
+    "unresponsive_count": 11,
+    "note": "healthy; brave/ddg/google/qwant IP-blocked as known; correct query shape is ?endpoint=search&qs=<urlencoded>"
+  },
+  "jev_decide": {
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "status": 200,
+    "model": "typesafe/jev-1.13-20260917",
+    "smoke_task_id": "tacdb777-f8dd-4ab7-97ee-975eb6efb34f",
+    "smoke_cost": "0.000023184",
+    "note": "worker path healthy; direct api.defapi.org account-scoping 403 remains open (separate path, does not affect this run)"
+  }
+}
