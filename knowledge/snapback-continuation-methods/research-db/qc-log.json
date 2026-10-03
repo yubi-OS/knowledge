@@ -1,0 +1,81 @@
+{
+  "run": "viscoelastic-data-layout mints, 2026-10-02",
+  "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "model": "typesafe/jev-1.13-20260917",
+  "orchestrator_calls": [
+    {
+      "call": "mint2-4 outline triage (outline2 verdict 1.04 mixed)",
+      "task_id": "ta118174-aaee-42d0-86da-66d55cf4cc94",
+      "cost": "0.00006048",
+      "answers": {
+        "outline2_load_bearing": {
+          "type": "score",
+          "score": 1.04,
+          "legend": {
+            "0": "mostly padding",
+            "1": "mixed, trim some",
+            "2": "all load-bearing"
+          },
+          "probabilities": {
+            "0": 0.39,
+            "1": 0.18,
+            "2": 0.43
+          },
+          "confidence": 0
+        }
+      }
+    }
+  ],
+  "author_lane_calls": [
+    {
+      "doc": "01",
+      "task_ids": [
+        "ta29fb75-4e24-416e-ba06-c51cbd36b4b7"
+      ],
+      "cost_usd_total": "0.000236628",
+      "results_weighted": null
+    },
+    {
+      "doc": "02",
+      "task_ids": [
+        "tac432cc-edeb-4d99-90e9-2c77e709b883",
+        "tae11205-43af-4c6d-bb45-1b05d60daedd"
+      ],
+      "cost_usd_total": "0.000205884",
+      "results_weighted": 10
+    },
+    {
+      "doc": "03",
+      "task_ids": [
+        "ta9c3694-2d54-4fdc-bf03-e7b8286f64ab"
+      ],
+      "cost_usd_total": "0.000272",
+      "results_weighted": 12
+    },
+    {
+      "doc": "04",
+      "task_ids": [
+        "tae2c055-"
+      ],
+      "cost_usd_total": "0.00020202",
+      "results_weighted": 15
+    },
+    {
+      "doc": "05",
+      "task_ids": [
+        "ta7f3620-a175-424c-97de-fa390b5a7da5"
+      ],
+      "cost_usd_total": "0.000223944",
+      "results_weighted": 12
+    },
+    {
+      "doc": "06",
+      "task_ids": [
+        "ta4178f0-2638-4ed6-bc7e-8429f6250963"
+      ],
+      "cost_usd_total": "0.000182364",
+      "results_weighted": null
+    }
+  ],
+  "notes": "repair: this qc-log was omitted from the PR #7 push (assembly-script crash); task lineage for lanes 01/03/05 recorded from lane reports, 02/04/06 from digs files"
+}
