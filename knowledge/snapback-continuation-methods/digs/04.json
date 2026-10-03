@@ -1,0 +1,48 @@
+{
+  "doc": "04-creep-buckling-viscoelastic-stability.md",
+  "corpus_ref": "snapback-continuation-methods",
+  "queries": [
+    "creep buckling viscoelastic column stability critical load time",
+    "viscoelastic stability delayed instability correspondence principle failure",
+    "creep buckling design code timber sustained load duration factor eurocode (supplemental, standards sub-claim)"
+  ],
+  "results": [
+    {"title": "Creep buckling of viscoelastic structures (Int J Solids Structures)", "url": "https://www.sciencedirect.com/science/article/pii/002076839390004Q", "query": 1, "jev_weight": 0.69},
+    {"title": "Creep buckling of nonlinear viscoelastic columns (Acta Mechanica)", "url": "https://link.springer.com/article/10.1007/BF01176353", "query": 1, "jev_weight": 0.69},
+    {"title": "Buckling of Columns in the Presence of Creep (Aeronautical Journal)", "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/74C1DB9ECA18392F755C1AD44BAAEE38/S0001925900010180a.pdf/buckling_of_columns_in_the_presence_of_creep.pdf", "query": 1, "jev_weight": 0.69},
+    {"title": "Nonlinear Effects in Creep Buckling Analysis of Columns (J Eng Mech 1985)", "url": "https://ascelibrary.org/doi/10.1061/%28ASCE%290733-9399%281985%29111%3A6%28757%29", "query": 1, "jev_weight": 0.68},
+    {"title": "Delayed buckling of spherical shells due to viscoelasticity (arXiv 2104.02554)", "url": "https://hal.science/hal-03337846/file/2104.02554.pdf", "query": 1, "jev_weight": 0.68},
+    {"title": "Buckling of viscoelastic spherical shells (Hutchinson group review)", "url": "https://groups.seas.harvard.edu/hutchinson/papers/2022-8-BucklingViscoelasticshells.pdf", "query": 1, "jev_weight": 0.68},
+    {"title": "Predicting delayed instabilities in viscoelastic solids (Science Advances)", "url": "https://www.science.org/doi/10.1126/sciadv.abb2948", "query": 2, "jev_weight": 0.68},
+    {"title": "Predicting delayed instabilities in viscoelastic solids (PMC open access)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7473665/", "query": 2, "jev_weight": 0.68},
+    {"title": "Delayed instabilities in viscoelastic solids through a metric description (arXiv 1711.09491)", "url": "https://arxiv.org/abs/1711.09491", "query": 2, "jev_weight": 0.68},
+    {"title": "The Elastic-Viscoelastic Correspondence Principle for FGMs, Revisited (J Appl Mech 2003)", "url": "https://asmedigitalcollection.asme.org/appliedmechanics/article/70/3/359/450329/The-Elastic-Viscoelastic-Correspondence-Principle", "query": 2, "jev_weight": 0.69},
+    {"title": "Engineering Viscoelasticity (MIT 3.11, Roylance)", "url": "https://web.mit.edu/course/3/3.11/www/modules/visco.pdf", "query": 2, "jev_weight": 0.67},
+    {"title": "Viscoelasticity (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Viscoelasticity", "query": 2, "jev_weight": 0.69},
+    {"title": "Eurocode 5: Design of timber structures (JRC portal)", "url": "https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-5-design-timber-structures", "query": 3, "jev_weight": null},
+    {"title": "Long-term creep behavior of timber columns (Eng Structures)", "url": "https://www.sciencedirect.com/science/article/pii/S0141029622013591", "query": 3, "jev_weight": null},
+    {"title": "Creep in Timber: Research Overview and Comparison between Code Provisions", "url": "https://www.researchgate.net/publication/331984808_Creep_in_Timber_Research_Overview_and_Comparison_between_Code_Provisions", "query": 3, "jev_weight": null}
+  ],
+  "jev_calls": [
+    {"endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide", "task_id": "tae2c055-b096-4bb4-8a51-56bea2849330", "consumed": "0.00020202", "results_weighted": 12, "model": "typesafe/jev-1.13-20260917", "timestamp": "2026-10-03T03:04:00Z", "note": "1 prior attempt returned HTTP 422 (missing instructions field) before the successful call; no cost incurred"}
+  ],
+  "verification": {
+    "verified": [
+      "creep buckling = instability at finite critical time under constant load below instantaneous Euler load (Cambridge critical-time formulae; IJSS 1993 imperfection growth under constant end load)",
+      "mechanism: creep lowers effective critical load over time; initial imperfections grow via hereditary integrals; safe load limit exists below which process stabilizes (ASCE 1985)",
+      "Rabotnov-Shesterikov critical-load vs Hoff critical-time criteria are correlated (Acta Mechanica)",
+      "correspondence principle does not transfer to stability: Urbach-Efrati stationarity + transient acquired stability two-result theory (Science Advances / arXiv); FGM correspondence-principle failure (J Appl Mech 2003)",
+      "codes handle creep via load duration and service classes (Eurocode 5) rather than explicit creep buckling clauses"
+    ],
+    "unverified": [
+      "Laplace-plane pole-movement mechanism (transform inversion moves poles, stable transformed solution maps to unstable time-domain response) - consistent with retrieved theory but not stated in any retrieved source",
+      "clause-level creep buckling safety format text in EN 1995-1-1"
+    ]
+  },
+  "write_location_note": "subagent write access to /var/workspace/session/visco-mint/snapback-continuation-methods/ became read-only (Errno 30) mid-run; q1 and q2 raw dig JSONs were persisted to that digs/ dir before the restriction, q3 raw could not be (curl write error 23 / read-only fs). Doc + this record written to /var/workspace/session/subagent/mint2/ per fallback instruction.",
+  "raw_files": {
+    "shared_digs": ["04_q1_raw.json", "04_q2_raw.json"],
+    "local_dir": "/var/workspace/session/subagent/mint2/"
+  },
+  "timestamp": "2026-10-03T03:08:00Z"
+}
