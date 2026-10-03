@@ -1,0 +1,127 @@
+{
+  "doc": "05-decision-engine-mechanics-from-harness-data.md",
+  "corpus": "envharness-acceptance-mechanics",
+  "run_date": "2026-10-03",
+  "queries": [
+    "binary incidence matrix evaluation traces agent benchmark analysis",
+    "formal verification evaluation harness contracts Lean"
+  ],
+  "selection_note": "searxng returned 67 and 70 results; raw top-6 of query 1 was mostly dictionary/converter junk, so the 6 most on-topic results per query were taken as 'top 6' and all 12 were weighted in one jev request",
+  "jev": {
+    "recorded_task_id": "ta427de4-dfe5-441b-a709-223b0831f8b9",
+    "recorded_cost": "0.000205716",
+    "calls_made": 3,
+    "detail": "call 1: payload shape wrong, 422 x3, not recorded; call 2: executed, task_id ta9b2936-932c-4549-8eaa-ceb661724d2e, cost 0.000203532, raw top-6 weighting, discarded in favor of the targeted selection; call 3 (recorded): task_id ta427de4-dfe5-441b-a709-223b0831f8b9, cost 0.000205716. Total consumed: 0.000409248. No 429/5xx retries needed.",
+    "quality_note": "weights came back flat (0.32-0.34) across all 12 items including obvious junk (rapidtables, merriam-webster), i.e. no separation this batch; external sources are therefore treated as corroboration-only and load-bearing claims cite the internal program refs doc"
+  },
+  "results": [
+    {
+      "id": "r0",
+      "query": "binary incidence matrix evaluation traces agent benchmark analysis",
+      "title": "TraceDance: Automated System for Building Agent Behavior Benchmarks from Deployment Traces (arXiv 2609.33295)",
+      "url": "https://arxiv.org/abs/2609.33295",
+      "noul": 0.33,
+      "used": true
+    },
+    {
+      "id": "r1",
+      "query": "binary incidence matrix evaluation traces agent benchmark analysis",
+      "title": "TraceDance project page",
+      "url": "https://zhishanq.github.io/TraceDance/",
+      "noul": 0.33,
+      "used": true
+    },
+    {
+      "id": "r2",
+      "query": "binary incidence matrix evaluation traces agent benchmark analysis",
+      "title": "Agent evaluation and testing: benchmarks, traces, and the eval flywheel (kunwar.page ch.135)",
+      "url": "https://www.kunwar.page/chapter/135-agent-evaluation-and-testing-benchmarks-traces-and-the-eval-flywheel",
+      "noul": 0.32,
+      "used": true
+    },
+    {
+      "id": "r3",
+      "query": "binary incidence matrix evaluation traces agent benchmark analysis",
+      "title": "Trace datasets for agentic AI and automated agent evaluation (Innodata, vendor marketing)",
+      "url": "https://innodata.com/trace-datasets-for-agentic-ai/",
+      "noul": 0.34,
+      "used": false
+    },
+    {
+      "id": "r4",
+      "query": "binary incidence matrix evaluation traces agent benchmark analysis",
+      "title": "Binary to Text Translator (RapidTables, off-topic)",
+      "url": "https://www.rapidtables.com/convert/number/binary-to-ascii.html",
+      "noul": 0.33,
+      "used": false
+    },
+    {
+      "id": "r5",
+      "query": "binary incidence matrix evaluation traces agent benchmark analysis",
+      "title": "TraceDance turns agent deployment traces into behavioral benchmarks (CCTest article)",
+      "url": "https://cctest.ai/en/articles/tracedance-turns-agent-deployment-traces-into-behavioral-benchmarks",
+      "noul": 0.34,
+      "used": false
+    },
+    {
+      "id": "r6",
+      "query": "formal verification evaluation harness contracts Lean",
+      "title": "formal_bench_demo: runnable Lean 4 formal verification of contract behavior",
+      "url": "https://github.com/lfglabs-dev/formal_bench_demo",
+      "noul": 0.33,
+      "used": true
+    },
+    {
+      "id": "r7",
+      "query": "formal verification evaluation harness contracts Lean",
+      "title": "A Metaprogramming Framework for Formal Verification (Lean tactic paper, lean-lang.org)",
+      "url": "https://lean-lang.org/papers/tactic.pdf",
+      "noul": 0.33,
+      "used": true
+    },
+    {
+      "id": "r8",
+      "query": "formal verification evaluation harness contracts Lean",
+      "title": "FORMAL definition (Merriam-Webster, off-topic)",
+      "url": "https://www.merriam-webster.com/dictionary/formal",
+      "noul": 0.32,
+      "used": false
+    },
+    {
+      "id": "r9",
+      "query": "formal verification evaluation harness contracts Lean",
+      "title": "Harnessing Code Agents for Automatic Software Verification (arXiv 2607.06341)",
+      "url": "https://arxiv.org/html/2607.06341v1",
+      "noul": 0.33,
+      "used": true
+    },
+    {
+      "id": "r10",
+      "query": "formal verification evaluation harness contracts Lean",
+      "title": "Lean 4 Formal Proofs: Why OpenAI's Cost Collapse Matters (explainx.ai blog)",
+      "url": "https://explainx.ai/blog/lean-4-formal-proof-cost-collapse-navier-stokes-2026",
+      "noul": 0.34,
+      "used": false
+    },
+    {
+      "id": "r11",
+      "query": "formal verification evaluation harness contracts Lean",
+      "title": "Formal Verification With Lean: an introduction (daniellowengrub.com)",
+      "url": "https://www.daniellowengrub.com/blog/2026/04/30/lean",
+      "noul": 0.34,
+      "used": true
+    }
+  ],
+  "considered_unweighted": [
+    {
+      "title": "permute::utils: permuting a binary incidence matrix keeping margins",
+      "url": "https://statlab.github.io/permute/_modules/permute/utils.html",
+      "reason": "beyond the top-6 cut; not weighted, not cited"
+    },
+    {
+      "title": "arules transactions-class: binary incidence matrix for transactions",
+      "url": "https://www.rdocumentation.org/packages/arules/versions/1.6-3/topics/transactions-class",
+      "reason": "beyond the top-6 cut; not weighted, not cited"
+    }
+  ]
+}

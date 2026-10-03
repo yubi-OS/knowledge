@@ -1,0 +1,48 @@
+{
+  "doc": "02-acceptance-statistics-matched-nulls.md",
+  "corpus_ref": "envharness-acceptance-mechanics",
+  "generated_at": "2026-10-03T03:15:00Z",
+  "dig": {
+    "engine": "searXNG via n8n searxng-proxy (https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=...)",
+    "user_agent": "omni-agent/1.0",
+    "queries": [
+      "permutation test null distribution acceptance criteria evaluation",
+      "reward hacking agent evaluation Goodhart law benchmark"
+    ],
+    "results_per_query": 6,
+    "total_results": 12
+  },
+  "jev_weighting": {
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "question": "Is result #k a high-quality authoritative source worth citing? (true=primary/authoritative, false=aggregator/forum/marketing)",
+    "requests": 1,
+    "questions_per_request": 12,
+    "task_id": "tac432cc-edeb-4d99-90e9-2c77e709b883",
+    "consumed": "0.000205716"
+  },
+  "results": [
+    { "i": 0, "url": "https://en.wikipedia.org/wiki/Permutation_test", "title": "Permutation test - Wikipedia", "jev": 0.79, "verdict": "primary (reference)" },
+    { "i": 1, "url": "https://www.geeksforgeeks.org/machine-learning/permutation-tests-in-machine-learning/", "title": "Permutation tests in Machine Learning - GeeksforGeeks", "jev": 0.16, "verdict": "secondary (mechanics only)" },
+    { "i": 2, "url": "https://douglasyao.github.io/blogs/2020/09/25/intuition-behind-permutation-testing.html", "title": "Understanding permutation testing - Douglas Yao", "jev": 0.13, "verdict": "secondary (intuition)" },
+    { "i": 3, "url": "https://www.jwilber.me/permutationtest/", "title": "Permutation Test: Visual Explanation - Jared Wilber", "jev": 0.14, "verdict": "rejected (tutorial)" },
+    { "i": 4, "url": "https://www.numberanalytics.com/blog/ultimate-guide-permutation-tests-stats", "title": "Ultimate Guide to Permutation Tests in Stats", "jev": 0.11, "verdict": "rejected (SEO tutorial)" },
+    { "i": 5, "url": "https://www.statology.org/complete-guide-to-permutation-tests-when-to-use-them-and-why/", "title": "Complete Guide to Permutation Tests - Statology", "jev": 0.17, "verdict": "rejected (tutorial aggregator)" },
+    { "i": 6, "url": "https://www.linkedin.com/pulse/reward-hacking-ai-evals-goodharts-law-benchmark-hidden-reddy-ngz7f", "title": "Reward Hacking in AI Evals - LinkedIn pulse", "jev": 0.08, "verdict": "rejected (op-ed)" },
+    { "i": 7, "url": "https://agentmarketcap.ai/blog/2026/08/05/goodharts-law-agent-benchmark-trust", "title": "Goodhart's Law Comes for Every Benchmark You Trust", "jev": 0.11, "verdict": "rejected (marketing blog)" },
+    { "i": 8, "url": "https://aisecurityandsafety.org/en/guides/reward-hacking/", "title": "Reward Hacking & Goodhart's Law in AI (2026)", "jev": 0.21, "verdict": "secondary" },
+    { "i": 9, "url": "https://trust.armalo.ai/labs/research/2026-03-17-goodharts-law-agent-evaluation-gaming", "title": "Goodhart's Law in AI Agent Evaluation - Arma Labs", "jev": 0.25, "verdict": "secondary" },
+    { "i": 10, "url": "https://tdwi.org/blogs/ai-101/2026/05/goodharts-law-and-ai.aspx", "title": "Goodhart's Law and AI - TDWI", "jev": 0.16, "verdict": "secondary" },
+    { "i": 11, "url": "https://en.wikipedia.org/wiki/Reward_hacking", "title": "Reward hacking - Wikipedia", "jev": 0.71, "verdict": "primary (reference)" }
+  ],
+  "program_sources": [
+    {
+      "url": "https://github.com/yubi-OS/yubiOS/blob/main/refs/envharness-lean-replacement-audit-2026-09-01.md",
+      "role": "ground truth for envharness mechanics (raw window means, no randomization, no margin preservation, no deflection floor)",
+      "jev": null,
+      "note": "program-internal source audit, not jev-scored"
+    }
+  ],
+  "unverified": [
+    "No dedicated literature on harness-specific null-standardized acceptance statistics was surfaced by this dig; the envharness-specific episode x failure-axis matrix formulation is marked in-doc as this program's proposal."
+  ]
+}

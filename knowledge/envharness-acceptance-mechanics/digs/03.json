@@ -1,0 +1,58 @@
+{
+  "doc": "03-reward-hacking-goodhart-loops.md",
+  "corpus": "envharness-acceptance-mechanics",
+  "run_date": "2026-10-02",
+  "queries": [
+    {
+      "q": "reward hacking specification gaming reinforcement learning examples",
+      "endpoint": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3D...",
+      "total_results": 70,
+      "top_results": [
+        { "id": "A1", "title": "Reward Hacking in Reinforcement Learning | Lil'Log", "url": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/", "jev_noul": 0.51 },
+        { "id": "A2", "title": "Reward hacking - Wikipedia", "url": "https://en.wikipedia.org/wiki/Reward_hacking", "jev_noul": 0.51 },
+        { "id": "A3", "title": "Specification Gaming & Reward Hacking: When AI Finds Shortcuts", "url": "https://aisecurityandsafety.org/en/guides/specification-gaming-guide/", "jev_noul": 0.52 },
+        { "id": "A4", "title": "When the Score Goes Up but the Job Isn't Done", "url": "https://agidoomsdayclock.com/articles/reward-hacking-real-examples.php", "jev_noul": 0.52 },
+        { "id": "A5", "title": "Specification Gaming and Reward Hacking: When AI Optimizes for the Wrong Goal", "url": "https://copilot-autogent.github.io/ai-security-blog/blog/specification-gaming-reward-hacking-wrong-goal/", "jev_noul": 0.52 },
+        { "id": "A6", "title": "Misaligned goals in artificial intelligence - HandWiki", "url": "https://handwiki.org/wiki/Misaligned_goals_in_artificial_intelligence", "jev_noul": 0.51 }
+      ]
+    },
+    {
+      "q": "Goodhart's law taxonomy Garrabrant proximal regression adversarial",
+      "total_results": 63,
+      "top_results": [
+        { "id": "B1", "title": "Categorizing Variants of Goodhart's Law (Manheim & Garrabrant)", "url": "https://arxiv.org/abs/1803.04585", "jev_noul": 0.52 },
+        { "id": "B2", "title": "Goodhart Taxonomy - LessWrong (Scott Garrabrant)", "url": "https://www.lesswrong.com/posts/EbFABnst8LsidYs5Y/goodhart-taxonomy", "jev_noul": 0.52 },
+        { "id": "B3", "title": "Categorizing Variants of Goodhart's Law - paper explanation", "url": "https://chromadream.github.io/random-research/categorizing-variants-goodharts-law.html", "jev_noul": 0.52 },
+        { "id": "B4", "title": "Goodhart's law - Wikipedia", "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law", "jev_noul": 0.51 },
+        { "id": "B5", "title": "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms", "url": "https://arxiv.org/html/2406.02900v1", "jev_noul": 0.51 },
+        { "id": "B6", "title": "Categorizing Goodhart - MIRI blog", "url": "https://intelligence.org/2018/03/27/categorizing-goodhart/", "jev_noul": 0.52 }
+      ]
+    }
+  ],
+  "jev": {
+    "endpoint": "POST https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "typesafe/jev-1.13-20260917",
+    "task_id": "tae11205-43af-4c6d-bb45-1b05d60daedd",
+    "id": "gen-dec-1790997232-NBLLgN9cGEGuPO7b05D1",
+    "consumed": 0.000205884,
+    "input_tokens": 2451,
+    "output_tokens": 220,
+    "attempts": 2,
+    "note": "first attempt 422 (wrong request shape: missing state/questions); second attempt 200 with 12 noul answers, all 0.51-0.52"
+  },
+  "verification": {
+    "verified": [
+      { "url": "https://arxiv.org/abs/1803.04585", "claim": "Manheim & Garrabrant formalize Garrabrant's four Goodhart mechanisms" },
+      { "url": "https://arxiv.org/abs/1606.06565", "claim": "Amodei et al, Concrete Problems in AI Safety" },
+      { "url": "https://arxiv.org/abs/2210.10760", "claim": "Gao et al, Scaling Laws for Reward Model Overoptimization" },
+      { "url": "https://arxiv.org/abs/2406.02900", "claim": "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms" },
+      { "url": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/", "claim": "Reward Hacking in Reinforcement Learning survey post" },
+      { "url": "https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/", "claim": "DeepMind specification gaming catalogue (Krakovna et al)" },
+      { "url": "https://www.lesswrong.com/posts/EbFABnst8LsidYs5Y/goodhart-taxonomy", "claim": "Four mechanisms named regressional, extremal, causal, adversarial; regressional definition quoted verbatim" }
+    ],
+    "unverified": [
+      { "claim": "Karwowski et al, 'Goodhart's Law in Reinforcement Learning' survey", "reason": "arXiv API returned 429/503 on 3 attempts; candidate arXiv id 2310.09158 resolved to an unrelated paper" }
+    ],
+    "correction": "Task brief named the taxonomy 'proximal/regressive/extentional/adversarial'; verified names are regressional/extremal/causal/adversarial."
+  }
+}
