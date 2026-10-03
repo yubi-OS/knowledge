@@ -1,0 +1,25 @@
+{
+  "doc": "01-envharness-architecture.md",
+  "query": "google research envharness arXiv 2608.19880",
+  "endpoint": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=<urlencoded>",
+  "fetched_at_utc": "2026-10-03T03:15:00Z",
+  "total_results": 47,
+  "kept_top6": [
+    {"rank": 1, "url": "https://arxiv.org/abs/2608.19880", "title": "EnvHarness: Awakening Static Worlds for Agent Learning - arXiv abstract page", "jev_noul": 0.77},
+    {"rank": 2, "url": "https://github.com/google-research/envharness", "title": "GitHub - google-research/envharness", "jev_noul": 0.92},
+    {"rank": 3, "url": "https://arxiv.org/pdf/2608.19880", "title": "EnvHarness paper PDF, arXiv 2608.19880", "jev_noul": 0.89},
+    {"rank": 4, "url": "https://envharness.com/", "title": "EnvHarness project webpage", "jev_noul": 0.79},
+    {"rank": 5, "url": "https://arxiv.org/html/2608.19880", "title": "EnvHarness HTML full text, arXiv 2608.19880", "jev_noul": 0.88},
+    {"rank": 6, "url": "https://huggingface.co/papers/2608.19880", "title": "HuggingFace paper page - EnvHarness", "jev_noul": 0.09}
+  ],
+  "jev_decide": {
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "typesafe/jev-1.13-20260917",
+    "task_id": "ta907616-77ae-4ca3-b3a0-578b74f14087",
+    "request_id": "gen-dec-1790997287-cKg1anBYR0gmXmDNhdkS",
+    "questions": {"q1": 0.77, "q2": 0.92, "q3": 0.89, "q4": 0.79, "q5": 0.88, "q6": 0.09},
+    "usage": {"input_tokens": 1257, "output_tokens": 106, "cost": 0.000105588},
+    "consumed": "0.000105588"
+  },
+  "repo_state": {"commit": "fab7d57441", "latest_commit_at": "2026-08-21T06:27:16Z", "tree_path_count": 242}
+}

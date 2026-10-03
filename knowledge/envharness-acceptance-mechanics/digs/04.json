@@ -1,0 +1,25 @@
+{
+  "doc": "04-evaluation-time-dependence-windows.md",
+  "corpus": "envharness-acceptance-mechanics",
+  "run_date": "2026-10-03",
+  "queries": [
+    "trailing window moving average drift evaluation metric lag",
+    "concept drift monitoring recovery baseline machine learning"
+  ],
+  "results": [
+    {"id": "r0", "query": "trailing window moving average drift evaluation metric lag", "title": "Advanced techniques for metric views - Databricks on AWS", "url": "https://docs.databricks.com/aws/en/uc-semantics/metric-views/advanced-techniques", "noul": 0.9, "used": true},
+    {"id": "r1", "query": "trailing window moving average drift evaluation metric lag", "title": "What is the lag associated with Moving Average smoothing?", "url": "https://stats.stackexchange.com/questions/499091/what-is-the-lag-associated-with-moving-average-smoothing", "noul": 0.07, "used": "corroboration only"},
+    {"id": "r2", "query": "trailing window moving average drift evaluation metric lag", "title": "Windowed Mean Drift Exponentially Weighted Moving Average Control Chart", "url": "https://onlinelibrary.wiley.com/doi/10.1002/qre.70167", "noul": 0.93, "used": true},
+    {"id": "r3", "query": "trailing window moving average drift evaluation metric lag", "title": "Moving Averages: Smoothing a Series Without Smoothing Away the Truth", "url": "https://michaelnocito.github.io/analyst-prep-kit/guides/moving-averages/", "noul": 0.08, "used": "corroboration only"},
+    {"id": "r4", "query": "trailing window moving average drift evaluation metric lag", "title": "TRAILING Definition & Meaning - Merriam-Webster", "url": "https://www.merriam-webster.com/dictionary/trailing", "noul": 0.06, "used": false, "excluded": "irrelevant dictionary entry"},
+    {"id": "r5", "query": "trailing window moving average drift evaluation metric lag", "title": "Evaluation metrics | IBM Cloud Pak for Data as a Service", "url": "https://dataplatform.cloud.ibm.com/docs/content/wsj/model/wos-evaluation-metrics.html?context=analytics", "noul": 0.79, "used": true, "verified_by_fetch": true},
+    {"id": "r6", "query": "concept drift monitoring recovery baseline machine learning", "title": "Handling concept drift in deep learning applications for process monitoring", "url": "https://www.sciencedirect.com/science/article/pii/S2212827123006789", "noul": 0.89, "used": true},
+    {"id": "r7", "query": "concept drift monitoring recovery baseline machine learning", "title": "Nilanjana1508/concept-drift-monitoring-system - GitHub", "url": "https://github.com/Nilanjana1508/concept-drift-monitoring-system", "noul": 0.13, "used": false, "excluded": "unverified repo demo"},
+    {"id": "r8", "query": "concept drift monitoring recovery baseline machine learning", "title": "DriftGuard: A Hierarchical Framework for Concept Drift Detection and Remediation in Supply Chain Forecasting", "url": "https://arxiv.org/html/2601.08928v1", "noul": 0.88, "used": true, "verified_by_fetch": "arxiv.org/abs/2601.08928 title + abstract"},
+    {"id": "r9", "query": "concept drift monitoring recovery baseline machine learning", "title": "Machine learning based concept drift detection for predictive maintenance", "url": "https://www.sciencedirect.com/science/article/pii/S0360835219304905", "noul": 0.93, "used": true},
+    {"id": "r10", "query": "concept drift monitoring recovery baseline machine learning", "title": "Day 69: Monitoring Models in Production - Concept Drift and Retraining", "url": "https://medium.com/@bhatadithya54764118/day-69-monitoring-models-in-production-concept-drift-and-retraining-70833a35df16", "noul": 0.05, "used": false, "excluded": "marketing blog"},
+    {"id": "r11", "query": "concept drift monitoring recovery baseline machine learning", "title": "CONCEPT Definition & Meaning - Merriam-Webster", "url": "https://www.merriam-webster.com/dictionary/concept", "noul": 0.06, "used": false, "excluded": "irrelevant dictionary entry"}
+  ],
+  "jev_call": {"endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide", "status": 200, "model": "typesafe/jev-1.13-20260917", "task_id": "ta8b8285-1a11-4cfc-98e8-4785f594f5e7", "gen_id": "gen-dec-1790997218-F9MID6KfDc4JMGG7Z8mm", "consumed": 0.000250656, "input_tokens": 2984, "output_tokens": 234},
+  "note": "Initial 2 POST attempts returned 422 (missing state; questions as array instead of object); resolved using the refs-refresh-sweep skill batch shape (state object + questions object keyed noul_i). 1 successful call, no retries needed."
+}
