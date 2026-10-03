@@ -1,0 +1,177 @@
+{
+  "run": "viscoelastic-data-layout mints, 2026-10-02",
+  "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "model": "typesafe/jev-1.13-20260917",
+  "orchestrator_calls": [
+    {
+      "call": "ideate_solo_variation_scoring + regime_assumption + ship_order",
+      "task_id": "ta8e709f-747e-47e1-bbb5-f0cd5970ccbe",
+      "cost": "0.000077112",
+      "answers": {
+        "v1_gate_as_material": {
+          "type": "score",
+          "score": 0.98,
+          "legend": {
+            "0": "padding",
+            "1": "useful vocabulary",
+            "2": "load-bearing framing"
+          },
+          "probabilities": {
+            "0": 0.21,
+            "1": 0.6,
+            "2": 0.19
+          },
+          "confidence": 0.41
+        },
+        "v2_full_suite": {
+          "type": "score",
+          "score": 1.25,
+          "legend": {
+            "0": "premature",
+            "1": "worthwhile later",
+            "2": "load-bearing next step"
+          },
+          "probabilities": {
+            "0": 0.16,
+            "1": 0.44,
+            "2": 0.4
+          },
+          "confidence": 0.16
+        },
+        "v3_lead_elasticity": {
+          "type": "score",
+          "score": 0.92,
+          "legend": {
+            "0": "premature",
+            "1": "worthwhile later",
+            "2": "load-bearing next step"
+          },
+          "probabilities": {
+            "0": 0.29,
+            "1": 0.5,
+            "2": 0.21
+          },
+          "confidence": 0.25
+        },
+        "v4_ledger_hysteresis": {
+          "type": "score",
+          "score": 1.37,
+          "legend": {
+            "0": "padding",
+            "1": "useful secondary metric",
+            "2": "load-bearing next step"
+          },
+          "probabilities": {
+            "0": 0.04,
+            "1": 0.55,
+            "2": 0.41
+          },
+          "confidence": 0.32
+        },
+        "v5_creep_recovery_test": {
+          "type": "score",
+          "score": 1.33,
+          "legend": {
+            "0": "not valuable",
+            "1": "worth piloting",
+            "2": "load-bearing next step"
+          },
+          "probabilities": {
+            "0": 0.04,
+            "1": 0.58,
+            "2": 0.38
+          },
+          "confidence": 0.37
+        },
+        "linear_regime_assumption": {
+          "type": "noul",
+          "noul": 0.65
+        },
+        "mvp_ordering": {
+          "type": "choice",
+          "choice": "mvp_first",
+          "probabilities": {
+            "docs_only": 0.01,
+            "endpoints_first": 0.02,
+            "mvp_first": 0.97
+          },
+          "confidence": 0.96
+        }
+      }
+    },
+    {
+      "call": "mint1 linear-viscoelasticity outline validation",
+      "task_id": "ta2defd1-30c0-4dfb-bf23-9af7c76ece98",
+      "cost": "0.000064176",
+      "answers": {
+        "outline_load_bearing": {
+          "type": "score",
+          "score": 1.67,
+          "legend": {
+            "0": "mostly padding",
+            "1": "mixed, trim some",
+            "2": "all load-bearing"
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.3,
+            "2": 0.69
+          },
+          "confidence": 0.51
+        },
+        "doc06_needed": {
+          "type": "noul",
+          "noul": 0.77
+        },
+        "doc07_needed": {
+          "type": "noul",
+          "noul": 0.66
+        }
+      }
+    }
+  ],
+  "author_lane_calls": [
+    {
+      "doc": "01",
+      "task_ids": [],
+      "cost_usd_total": null,
+      "results_weighted": 24
+    },
+    {
+      "doc": "02",
+      "task_ids": [],
+      "cost_usd_total": null,
+      "results_weighted": 12
+    },
+    {
+      "doc": "03",
+      "task_ids": [],
+      "cost_usd_total": null,
+      "results_weighted": 15
+    },
+    {
+      "doc": "04",
+      "task_ids": [],
+      "cost_usd_total": null,
+      "results_weighted": 0
+    },
+    {
+      "doc": "05",
+      "task_ids": [],
+      "cost_usd_total": null,
+      "results_weighted": 12
+    },
+    {
+      "doc": "06",
+      "task_ids": [],
+      "cost_usd_total": null,
+      "results_weighted": 0
+    },
+    {
+      "doc": "07",
+      "task_ids": [],
+      "cost_usd_total": null,
+      "results_weighted": 12
+    }
+  ]
+}
