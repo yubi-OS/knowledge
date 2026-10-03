@@ -1,0 +1,148 @@
+{
+  "experiment": "Creep-recovery (load-unload) replay of jev-corpus RSI round 3 (refs/ corpus)",
+  "date": "2026-10-02",
+  "pinned_base": "379a9f2a2030a3de03a78eaecb9fad064e4840c9 (244 refs docs)",
+  "pr_head": "79641cf5f70842c626551a4ee520d7e36988801b (PR #278, closed unmerged)",
+  "scoring": {
+    "lanes": 8,
+    "docs": 244,
+    "rubric": "12 NSS axes, >=2 distinct evidence hits -> 1, prefer-0; quotes recorded per credited axis",
+    "column_sums_replay": {
+      "audience": 69,
+      "inputs": 188,
+      "outputs": 191,
+      "mode": 101,
+      "assumption_set": 209,
+      "adjacent_problems": 188,
+      "failure_modes": 207,
+      "lifecycle": 146,
+      "composition": 225,
+      "knowledge_sources": 222,
+      "calibration": 195,
+      "recursion": 146
+    },
+    "column_sums_recorded": {
+      "audience": 69,
+      "inputs": 167,
+      "outputs": 173,
+      "mode": 107,
+      "assumption_set": 153,
+      "adjacent_problems": 147,
+      "failure_modes": 178,
+      "lifecycle": 155,
+      "composition": 227,
+      "knowledge_sources": 210,
+      "calibration": 179,
+      "recursion": 113
+    },
+    "density_replay": 0.7128,
+    "density_recorded": 0.641,
+    "intra_scorer_agreement_on_5_base_docs": "60/60 axes identical between first pass and independent rescore"
+  },
+  "audits": [
+    {
+      "matrix": "M0 (re-scored baseline)",
+      "v2": 0.4268,
+      "z": 7.202,
+      "dbc": -16.884,
+      "run_id": "cr_8d58079cba6bbd9f",
+      "cached_repeat": "identical run_id + values (deterministic)"
+    },
+    {
+      "matrix": "M10 (load: 9 of 10 documented flips applied; 1 collision - round11-ledger-state x assumption_set already credited by the re-scoring)",
+      "v2": 0.4203,
+      "z": 7.929,
+      "dbc": -14.318,
+      "run_id": "cr_7a7af5fc20573ee4"
+    },
+    {
+      "matrix": "M_persist (5 edited docs' rows replaced by blind independent head-state scores)",
+      "v2": 0.4178,
+      "z": 6.244,
+      "dbc": -13.664,
+      "run_id": "cr_4958b6985eef7248"
+    },
+    {
+      "matrix": "M_unload (base text re-scored)",
+      "note": "identical to M0 (60/60); audit input hash identical -> cached leg"
+    }
+  ],
+  "findings": {
+    "F1_scorer_variance": {
+      "offset_dbc": 5.77,
+      "statement": "replayed baseline dBc -16.88 vs recorded -11.11 on the IDENTICAL corpus at the identical SHA; the sign gate judged a +0.64 effect inside a +/-5.8 grader-pass noise band"
+    },
+    "F2_load_sign": {
+      "delta_dbc": 2.566,
+      "statement": "load leg moved +2.57 (toward null), same sign as round 3's recorded +0.64: in this frame, cell flips mechanically move dBc toward the null regardless of text quality"
+    },
+    "F3_recovery_trivial": {
+      "R": 1.0,
+      "statement": "under a deterministic scorer the text-revert unload returns the matrix exactly; R is trivially 1 and cannot separate edit classes"
+    },
+    "F4_persistence": {
+      "persisted": "9/9",
+      "delta_dbc_persist": 3.22,
+      "statement": "every applied flip survives blind independent re-grading of the loaded text, and the measured level moves FURTHER from baseline (+3.22), not back toward it: round 3's axis-fills were substantive enough to persist; the regression was the corpus-level response direction, not cell fragility"
+    },
+    "F5_prediction_vs_realized": {
+      "expected_per_candidate": [
+        11.5,
+        10.84,
+        10.44,
+        10.1,
+        10.12,
+        10.07,
+        10.34,
+        10.17,
+        10.14,
+        9.79
+      ],
+      "realized_per_cycle": [
+        0.16,
+        0.01,
+        0.44,
+        -0.1,
+        0.4,
+        -0.07,
+        -0.39,
+        0.24,
+        0.28,
+        -0.32
+      ],
+      "total_realized": 0.65,
+      "hysteresis_sum_abs": 102.86,
+      "hysteresis_mean_per_cycle": 10.29,
+      "statement": "the lens overpredicted per-candidate dBc effect by ~2 orders of magnitude; sum |predicted - realized| across the round is 102.9 dBc-units - the dissipation metric the outcomes ledger was designed to catch"
+    }
+  },
+  "jev_qc": {
+    "task_id": "ta2687dc-26ae-4e58-95b5-bca58c34b4f0",
+    "cost": "0.000078708",
+    "interpretation_quality": {
+      "score": 1.59,
+      "verdict": "sound with caveats (0.60 P(sound))"
+    },
+    "persist_beats_R": {
+      "noul": 0.92
+    },
+    "gate_noise_risk": {
+      "noul": 0.89
+    }
+  },
+  "instrument_implications": [
+    "The discriminating measurement is persistence-under-independent-re-grading, not text-revert R (jev 0.92). /api/jev/corpus/visco should lead with a re-grade leg.",
+    "The per-cycle dBc sign gate must pin the scoring prompt and re-score only edited rows (AGENT.md lesson 5), now quantified: grader-pass offset 5.77 dBc vs effect size 0.64 (jev 0.89).",
+    "Hysteresis (predicted vs realized) belongs on the outcomes ledger rollup; round 3's 102.9 dBc-units of prediction dissipation is the shape of the metric.",
+    "Recovery fraction R becomes non-trivial only with a rate-dependent or stochastic scorer; deterministic scoring collapses the elastic/plastic distinction into the persistence test."
+  ],
+  "artifacts": [
+    "matrices/M0.json",
+    "matrices/M10.json",
+    "matrices/M_unload.json",
+    "matrices/M_persist.json",
+    "audit-results.json",
+    "jev-qc-replay.json",
+    "score-lanes 1-8 in session (subagent dirs)"
+  ]
+}
