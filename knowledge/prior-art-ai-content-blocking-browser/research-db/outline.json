@@ -1,0 +1,215 @@
+{
+ "topic": "Prior art for AI-content-blocking browsers: search-layer and extension-layer AI image/content filters, their failure modes, and the landscape a provenance-gated browser enters",
+ "subtopics": [
+  {
+   "nn": "t01-search-layer-ai-filters",
+   "slug": "search-layer-ai-filters",
+   "scope": "Search-layer AI filters: DuckDuckGo hide-AI-images, the noai surface, blocklist mechanics, and the classifier cost rejection.",
+   "seed_queries": [
+    "DuckDuckGo filter out AI images search results blocklist",
+    "DuckDuckGo why we built AI image filter whack-a-mole duck tales"
+   ]
+  },
+  {
+   "nn": "t02-extension-layer-ai-filters",
+   "slug": "extension-layer-ai-filters",
+   "scope": "Extension-layer AI filters: AI Content Shield, AI Blocker, Is Generated, and adjacent feature-blockers and agent-detectors.",
+   "seed_queries": [
+    "browser extension block AI generated images content Chrome",
+    "AI Content Shield BrowserBlock AI browser extension hide AI overviews"
+   ]
+  },
+  {
+   "nn": "t03-ai-text-detector-failures",
+   "slug": "ai-text-detector-failures",
+   "scope": "AI text detector failures: OpenAI classifier shutdown, Writer sunset, and the FTC v Workado accuracy findings.",
+   "seed_queries": [
+    "OpenAI AI text classifier discontinued low accuracy 2023",
+    "FTC Workado Content At Scale AI detector accuracy deceptive claims"
+   ]
+  },
+  {
+   "nn": "t04-detection-extension-maintenance",
+   "slug": "detection-extension-maintenance",
+   "scope": "Detection-extension maintenance failure: the Mozilla Deep Fake Detector retirement and why detection add-ons rot.",
+   "seed_queries": [
+    "Mozilla Deep Fake Detector extension discontinued June 2025",
+    "AI detection browser extension maintenance burden model churn retirement"
+   ]
+  },
+  {
+   "nn": "t05-community-blocklists",
+   "slug": "community-blocklists",
+   "scope": "Community blocklist substrate: uBlock Origin anti-AI lists, their curation models, and their structural limits.",
+   "seed_queries": [
+    "uBlock Origin HUGE AI blocklist curated list sites",
+    "uSloplist anti AI slop blocklist false positive policy"
+   ]
+  },
+  {
+   "nn": "t06-c2pa-security-analysis",
+   "slug": "c2pa-security-analysis",
+   "scope": "C2PA formal-methods security analysis: the Krawetz ePrint findings and their consequences for manifest validation.",
+   "seed_queries": [
+    "C2PA provenance security analysis IACR eprint Krawetz",
+    "C2PA manifest signature validation weaknesses certificate revocation exclusion"
+   ]
+  },
+  {
+   "nn": "t07-provenance-academic-and-browser",
+   "slug": "provenance-academic-and-browser",
+   "scope": "Provenance in academia and in the browser: ICWSM trust study, AMP, DASH C2PA, and the Digimarc C2PA extension.",
+   "seed_queries": [
+    "C2PA content credentials browser extension Digimarc validation",
+    "provenance labels perceived credibility news study ICWSM"
+   ]
+  },
+  {
+   "nn": "t08-engine-layer-gap-and-allow-side",
+   "slug": "engine-layer-gap-and-allow-side",
+   "scope": "The engine-layer gap and allow-side enforcement: Not By AI badge, platform signals, and why no engine-layer gate shipped.",
+   "seed_queries": [
+    "Not By AI badge human created content certification",
+    "browser engine level AI content filter Chromium provenance rendering"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.7458,
+    "probabilities": {
+     "0": 0.0509,
+     "1": 0.1523,
+     "2": 0.7968
+    },
+    "confidence": 0.491,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7602,
+    "probabilities": {
+     "0": 0.0383,
+     "1": 0.1631,
+     "2": 0.7986
+    },
+    "confidence": 0.4986,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.3424,
+    "probabilities": {
+     "0": 0.1149,
+     "1": 0.4279,
+     "2": 0.4572
+    },
+    "confidence": 0.108,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.234,
+    "probabilities": {
+     "0": 0.1249,
+     "1": 0.5163,
+     "2": 0.3588
+    },
+    "confidence": 0.1164,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.1233,
+    "probabilities": {
+     "0": 0.1655,
+     "1": 0.5457,
+     "2": 0.2888
+    },
+    "confidence": 0.1129,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.6837,
+    "probabilities": {
+     "0": 0.0566,
+     "1": 0.2031,
+     "2": 0.7403
+    },
+    "confidence": 0.3887,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.7969,
+    "probabilities": {
+     "0": 0.0423,
+     "1": 0.1184,
+     "2": 0.8393
+    },
+    "confidence": 0.5803,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.7367,
+    "probabilities": {
+     "0": 0.0589,
+     "1": 0.1454,
+     "2": 0.7957
+    },
+    "confidence": 0.4865,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1258,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "t01-search-layer-ai-filters",
+   "t02-extension-layer-ai-filters",
+   "t03-ai-text-detector-failures",
+   "t04-detection-extension-maintenance",
+   "t05-community-blocklists",
+   "t06-c2pa-security-analysis",
+   "t07-provenance-academic-and-browser",
+   "t08-engine-layer-gap-and-allow-side"
+  ]
+ }
+}
