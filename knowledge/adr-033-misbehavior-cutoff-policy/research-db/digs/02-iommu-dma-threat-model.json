@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "iommu-dma-threat-model",
+  "queries_attempted": [
+    {
+      "query": "IOMMU DMA attacks GPU passthrough security",
+      "attempt": 1,
+      "raw_results": 61,
+      "kept": 6
+    },
+    {
+      "query": "Thunderbolt DMA attack external DMA protection IOMMU",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://laptopjudge.com/what-is-gpu-dma-and-iommu-memory-access/",
+    "https://security.stackexchange.com/questions/162122/gpu-passthrough-security",
+    "https://www.intel.com/content/dam/develop/external/us/en/documents/intel-whitepaper-using-iommu-for-dma-protection-in-uefi-820238.pdf",
+    "https://thunderclap.io/wp-content/uploads/2024/01/thunderclap-paper-ndss2019.pdf",
+    "https://www.usenix.org/system/files/usenixsecurity24-wang-xingkai.pdf",
+    "https://techlasi.com/savvy/how-to-enable-iommu-in-bios-guide/",
+    "https://learn.microsoft.com/en-us/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt",
+    "https://undercodetesting.com/thunderbolt-dma-attacks-how-hackers-read-ram-and-how-to-stop-them/",
+    "https://thunderclap.io/wp-content/uploads/2024/01/thunderclap-paper-ndss2019.pdf",
+    "https://gse.kz/en/blog/dma-protection-kernel-dma-bios-thunderbolt",
+    "https://thunderclap.io/",
+    "https://thunderspy.io/ts2.html"
+  ],
+  "outcome": null,
+  "scope": "The IOMMU/DMA threat model for GPU passthrough: why DMA from a device can read host memory and exfiltrate secrets without touching the network."
+}

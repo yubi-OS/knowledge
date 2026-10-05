@@ -1,0 +1,2624 @@
+[
+  {
+    "query": "vfio-user protocol device virtualization libvfio-user QEMU",
+    "title": "vfio-user \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "snippet": "For example, SPDK includes a virtual PCI NVMe controller implementation; by setting up a vfio-user UNIX socket between QEMU and SPDK, a VM can send NVMe I/O to the SPDK process. Presuming a suitable vfio-user server has opened a socket at /tmp/vfio-user.sock, a device can be configured with for example: --device '{\"driver\": \"vfio-user-pci\",\"socket\": {\"path\": \"/tmp/vfio-user.sock\", \"type\": \"unix\"}}",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.7775,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7775
+      },
+      "usage": {
+        "input_tokens": 157.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user protocol device virtualization libvfio-user QEMU",
+    "title": "vfio-user Protocol Specification \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "snippet": "Some source definitions in VFIO are re-used for vfio-user. The main idea is to allow a virtual device to function in a separate process in the same host over a UNIX domain socket.\"These capabilities are returned in the region info reply in a list similar to PCI capabilities in a PCI device\u2019s configuration space. A region can be memory-mappable in whole or in part. When only a subset of a region ca",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.9531,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9531
+      },
+      "usage": {
+        "input_tokens": 157.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user protocol device virtualization libvfio-user QEMU",
+    "title": "vfio-user client in QEMU 10.1 - John Levon's blog",
+    "url": "https://movementarian.org/blog/posts/2025-08-27-vfio-user-client-in-qemu/",
+    "snippet": "August 27, 2025 \u2014 By re-using this nvmf subsystem in SPDK, alongside libvfio-user, we can emulate a high-performance virtualized NVMe controller for use by a VM. From the guest VM\u2019s operating system, it looks just like a \u201creal\u201d NVMe card, but on the host, it\u2019s using the vfio-user protocol along with memory sharing, ioeventfds, irqfds, etc. to talk to an SPDK server. While I was responsible for get",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.5507,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5507
+      },
+      "usage": {
+        "input_tokens": 157.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user protocol device virtualization libvfio-user QEMU",
+    "title": "libvfio-user - Git at Google",
+    "url": "https://qemu.googlesource.com/libvfio-user/",
+    "snippet": "vfio-user is a framework that allows implementing PCI devices in userspace. Clients (such as qemu) talk the vfio-user protocol over a UNIX socket to a server. This library, libvfio-user, provides an API for implementing such servers.\"The kernel headers are necessary because VFIO structs and defines are reused. ... Finally build your program and link with libvfio-user.so. Step-by-step instructions ",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.852,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.852
+      },
+      "usage": {
+        "input_tokens": 157.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user protocol device virtualization libvfio-user QEMU",
+    "title": "GitHub - nutanix/libvfio-user: framework for emulating devices in userspace \u00b7 GitHub",
+    "url": "https://github.com/nutanix/libvfio-user",
+    "snippet": "vfio-user is a framework that allows implementing PCI devices in userspace. Clients (such as qemu) talk the vfio-user protocol over a UNIX socket to a server. This library, libvfio-user, provides an API for implementing such servers.\"The kernel headers are necessary because VFIO structs and defines are reused. ... Finally build your program and link with libvfio-user.so. Step-by-step instructions ",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.7918,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7918
+      },
+      "usage": {
+        "input_tokens": 157.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user protocol device virtualization libvfio-user QEMU",
+    "title": "libvfio-user - qemu.googlesource.com",
+    "url": "https://qemu.googlesource.com/libvfio-user/+/a8242d117118d5191dad69a96e28a21d66fe8b50/README.md",
+    "snippet": "vfio-user is a framework that allows implementing PCI devices in userspace. Clients (such as qemu talk the vfio-user protocol over a UNIX socket to a server. This library, libvfio-user, provides an API for implementing such servers.\"In the future we plan to make libvfio-user multi-threaded. The library (and the protocol) are actively under development, and should not be considered a stable API or ",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.7329,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7329
+      },
+      "usage": {
+        "input_tokens": 163.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user server DMA mediation device isolation hypervisor",
+    "title": "vfio-user Protocol Specification \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "snippet": "The main idea is to allow a virtual device to function in a separate process in the same host over a UNIX domain socket. A UNIX domain socket (AF_UNIX) is chosen because file descriptors can be trivially sent over it, which in turn allows: Sharing of client memory for DMA with the server.\"Some source definitions in VFIO are re-used for vfio-user. The main idea is to allow a virtual device to funct",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.935,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.935
+      },
+      "usage": {
+        "input_tokens": 163.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user server DMA mediation device isolation hypervisor",
+    "title": "VFIO Internals - Linux Kernel Internals",
+    "url": "https://kernel-internals.org/iommu/vfio-internals/",
+    "snippet": "It uses the IOMMU to enforce memory access isolation while giving the userspace driver (or hypervisor) direct access to device MMIO, interrupts, and DMA. ... VM device passthrough: QEMU/KVM passes a physical NIC, GPU, or NVMe to a guest. Userspace drivers: DPDK binds NICs to VFIO for kernel-bypass ...\"It uses the IOMMU to enforce memory access isolation while giving the userspace driver (or hyperv",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4586,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4586
+      },
+      "usage": {
+        "input_tokens": 163.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user server DMA mediation device isolation hypervisor",
+    "title": "VFIO - \u201cVirtual Function I/O\u201d \u2014 The Linux Kernel documentation",
+    "url": "https://www.kernel.org/doc/html/latest/driver-api/vfio.html",
+    "snippet": "VFIO Mediated devices. VFIO - \u201cVirtual Function I/O\u201d. Acceptance criteria for vfio-pci device specific driver variants.IOMMUFD UAPI is available for VFIO device cdev to pin and map user memory with the ability to retrieve physical addresses for DMA command submission.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.9344,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9344
+      },
+      "usage": {
+        "input_tokens": 163.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user server DMA mediation device isolation hypervisor",
+    "title": "GitHub - nutanix/libvfio-user: framework for emulating devices in ...",
+    "url": "https://github.com/nutanix/libvfio-user",
+    "snippet": "vfio-user is a framework that allows implementing PCI devices in userspace. Clients (such as qemu) talk the vfio-user protocol over a UNIX socket to a server. This library, libvfio-user, provides an API for implementing such servers. VFIO is a kernel facility for providing secure access to PCI devices in userspace (including pass-through to a VM).",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.7893,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7893
+      },
+      "usage": {
+        "input_tokens": 163.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user server DMA mediation device isolation hypervisor",
+    "title": "VFIO - \"Virtual Function I/O\" \u2014 The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/driver-api/vfio.html",
+    "snippet": "Newer systems (POWER8 with IODA2) ... groups per a VFIO container. The hardware supports so called DMA windows - the PCI address range within which DMA transfer is allowed, any attempt to access address space out of the window leads to the whole PE isolation....\"Newer systems (POWER8 with IODA2) have improved hardware design which allows to remove this limitation and have multiple IOMMU groups per",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8601,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8601
+      },
+      "usage": {
+        "input_tokens": 163.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "vfio-user server DMA mediation device isolation hypervisor",
+    "title": "VFIO Device Passthrough - Linux Kernel Internals",
+    "url": "https://kernel-internals.org/virtualization/vfio/",
+    "snippet": "But the kernel's own documentation ... + IOMMUFD model \u2014 covered after the classic walkthrough below. An IOMMU group is the smallest set of devices that must be isolated together for DMA safety....\"But the kernel's own documentation is explicit that it's a legacy interface being superseded: \"Eventually the vfio_iommu_type1 driver, as well as the legacy vfio container and group model is intended to",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3211,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3211
+      },
+      "usage": {
+        "input_tokens": 163.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU DMA attacks GPU passthrough security",
+    "title": "What Is Gpu Dma And Iommu Memory Access (pcie Passthrough)",
+    "url": "https://laptopjudge.com/what-is-gpu-dma-and-iommu-memory-access/",
+    "snippet": "Sep 24, 2026 \u00b7 Discover GPU DMA and IOMMU memory access in PCIe passthrough. Learn how these technologies enhance performance and security in computing.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1385,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1385
+      },
+      "usage": {
+        "input_tokens": 163.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU DMA attacks GPU passthrough security",
+    "title": "linux - GPU passthrough security - Information Security Stack Exchange",
+    "url": "https://security.stackexchange.com/questions/162122/gpu-passthrough-security",
+    "snippet": "For example, this could be used ... computation. This feature carries two types of security risks: direct memory access and hardware infection. Direct memory access is only relevant to device passthrough not using ...\"3 Are paravirtualized drivers a security risk? 33 How do big cloud providers guard against VM escape attacks? 4 Can USB ethernet passthrough to a KVM virtual machine isolate network-",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.0835,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0835
+      },
+      "usage": {
+        "input_tokens": 163.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU DMA attacks GPU passthrough security",
+    "title": "white paper Firmware Security DMA Protection in UEFI A Tour Beyond BIOS:",
+    "url": "https://www.intel.com/content/dam/develop/external/us/en/documents/intel-whitepaper-using-iommu-for-dma-protection-in-uefi-820238.pdf",
+    "snippet": "UEFI firmware should use the IOMMU to resist DMA attack.\"The IOMMU is an attractive feature for protecting UEFI firmware against DMA attacks.\"\"UEFI firmware should use the IOMMU to resist DMA attack.\"\"IOMMU engines. ... Remap the DMA Buffer.\"\"IOMMU translation table. ... After that the DMA buffer can be used by a device.\"",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8885,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8885
+      },
+      "usage": {
+        "input_tokens": 163.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU DMA attacks GPU passthrough security",
+    "title": "PDF Thunderclap: Exploring Vulnerabilities in Operating System IOMMU ...",
+    "url": "https://thunderclap.io/wp-content/uploads/2024/01/thunderclap-paper-ndss2019.pdf",
+    "snippet": "The complex vulnerability space for IOMMU-exposed shared memory available to DMA-enabled peripherals allows attackers to extract private data (sniffing cleartext VPN traffic) and hijack kernel control flow (launching a root shell) in seconds using devices such as USB-C projectors or power adapters.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8377,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8377
+      },
+      "usage": {
+        "input_tokens": 166.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU DMA attacks GPU passthrough security",
+    "title": "PDF D a : A Lightweight Pointer Integrity-based Secure ... - USENIX",
+    "url": "https://www.usenix.org/system/files/usenixsecurity24-wang-xingkai.pdf",
+    "snippet": "Abstract IOMMU has been introduced to thwart DMA attacks. How-ever, the performance degradation prevents it from being en-abled on most systems. Even worse, recent studies show that IOMMU is still vulnerable to sub-page and deferred invalida-tion attacks, posing threats to systems with IOMMU enabled. This paper aims to provide a lightweight and secure so-lution to defend against DMA attacks ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.913,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.913
+      },
+      "usage": {
+        "input_tokens": 166.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU DMA attacks GPU passthrough security",
+    "title": "How to Enable IOMMU in BIOS (Step-by-Step Guide 2026)",
+    "url": "https://techlasi.com/savvy/how-to-enable-iommu-in-bios-guide/",
+    "snippet": "February 27, 2026 \u2014 Once IOMMU is active, you unlock GPU passthrough, protect your system from DMA attacks, and give virtual machines real hardware isolation.\"For full GPU passthrough setup on Proxmox, the official Proxmox Wiki is the best next resource: https://pve.proxmox.com/wiki/PCI_Passthrough \u00b7 When IOMMU is on, every DMA (Direct Memory Access) request from a device goes through the IOMMU fi",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.131,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.131
+      },
+      "usage": {
+        "input_tokens": 166.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Thunderbolt DMA attack external DMA protection IOMMU",
+    "title": "Kernel DMA Protection | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt",
+    "snippet": "Windows uses the system Input/Output Memory Management Unit (IOMMU) to block external peripherals from starting and performing DMA, unless the drivers for these peripherals support memory isolation (such as DMA-remapping).\"Kernel DMA Protection feature doesn't protect against DMA attacks via 1394/FireWire, PCMCIA, CardBus, or ExpressCard. Windows uses the system Input/Output Memory Management Unit",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.9299,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9299
+      },
+      "usage": {
+        "input_tokens": 166.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Thunderbolt DMA attack external DMA protection IOMMU",
+    "title": "Thunderbolt DMA Attacks: How Hackers Read RAM and How to Stop Them",
+    "url": "https://undercodetesting.com/thunderbolt-dma-attacks-how-hackers-read-ram-and-how-to-stop-them/",
+    "snippet": "Aug 4, 2025 \u00b7 Introduction: Direct Memory Access (DMA) attacks via Thunderbolt ports allow attackers to bypass operating system security and directly read a computer\u2019s RAM. This exploit leverages PCIe device access, making systems vulnerable if IOMMU (Input-Output Memory Management Unit) protection is disabled.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.182,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.182
+      },
+      "usage": {
+        "input_tokens": 166.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Thunderbolt DMA attack external DMA protection IOMMU",
+    "title": "PDF Thunderclap: Exploring Vulnerabilities in Operating System IOMMU ...",
+    "url": "https://thunderclap.io/wp-content/uploads/2024/01/thunderclap-paper-ndss2019.pdf",
+    "snippet": "attacks are within their threat model and announced Windows \u00b7 10 Kernel DMA Protection [44], where the IOMMU is enabled \u00b7 in \ufb01rmware [69] and Windows uses it for protection against \u00b7 Thunderbolt devices (only).\"1: Thunderbolt dock with FPGA implant, an implementation ... Fig. 2: The IOMMU translates I/O virtual to physical addresses and applies access control, similar to how the MMU translates ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8348,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8348
+      },
+      "usage": {
+        "input_tokens": 160.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Thunderbolt DMA attack external DMA protection IOMMU",
+    "title": "Protecting Against DMA Attacks: Kernel DMA Protection, BIOS and Thunderbolt | GSE",
+    "url": "https://gse.kz/en/blog/dma-protection-kernel-dma-bios-thunderbolt",
+    "snippet": "December 10, 2025 \u2014 Kernel DMA Protection in Windows uses the IOMMU (VT-d on Intel or AMD\u2011Vi on AMD) to restrict direct memory access by devices. The idea is that a connected suspicious peripheral shouldn't be able to read RAM before the system applies security ...\"As a result documentation claims protection from DMA attacks, but in practice a device can still access memory via an external bus. Th",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1769,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1769
+      },
+      "usage": {
+        "input_tokens": 160.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Thunderbolt DMA attack external DMA protection IOMMU",
+    "title": "Thunderclap",
+    "url": "https://thunderclap.io/",
+    "snippet": "Feb 27, 2019 \u00b7 With IOMMU usage enabled, operating systems can protect against DMA attacks by restricting memory access to peripherals that perform legitimate functions and only allowing access to non-sensitive regions of memory.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.5741,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5741
+      },
+      "usage": {
+        "input_tokens": 160.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Thunderbolt DMA attack external DMA protection IOMMU",
+    "title": "Thunderspy 2: Kernel DMA Protection for Unpatched Thunderbolt Systems",
+    "url": "https://thunderspy.io/ts2.html",
+    "snippet": "Changing this value on older systems, ... use the IOMMU features of the CPU to partition the memory. Systems booted this way behave the same way as systems that support kDMAp natively, both in terms of functionality as well as defense. We tested that Thunderbolt access continues to work for ...\"Changing this value on older systems, which do not natively claim support for kDMAp, makes the operating",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.6931,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6931
+      },
+      "usage": {
+        "input_tokens": 160.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response escalation severity levels tiered policy",
+    "title": "Incident Severity Levels: How to Classify, Escalate, and Respond",
+    "url": "https://inventivehq.com/blog/incident-severity-levels-classification-guide",
+    "snippet": "March 10, 2026 \u2014 The other half is ensuring the right people are reached through the right channels at the right speed. An escalation policy maps each severity level to a specific notification workflow. Tier 1 -- Immediate responder.\"Response target: Triaged within 1 week. Added to backlog. Who gets notified: Logged in the ticketing system. Reviewed during regular planning. Defining severity level",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1488,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1488
+      },
+      "usage": {
+        "input_tokens": 160.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response escalation severity levels tiered policy",
+    "title": "Incident Severity Levels: SEV1 to SEV5 Explained (+ a Priority Matrix)",
+    "url": "https://blog.invgate.com/incident-severity-levels",
+    "snippet": "January 12, 2026 \u2014 SLAs define the response and resolution commitments between IT teams and customers or business units. When the severity levels defined in the matrix correspond with the timelines and escalation paths established in the SLA, teams can respond to incidents with consistency and transparency.\"Improve communication with users, stakeholders, and other response teams. Support consisten",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3517,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3517
+      },
+      "usage": {
+        "input_tokens": 156.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response escalation severity levels tiered policy",
+    "title": "Incident Severity Escalation Levels Stop Your Next Crisis",
+    "url": "https://msspsecurity.com/incident-severity-escalation-levels/",
+    "snippet": "April 23, 2026 \u2014 Clear severity levels (P1-P4) dictate ... on concrete business impact. A tiered SOC structure divides labor efficiently, ensuring the right expertise engages at the right time to contain threats faster....\"Before building or improving your escalation framework, it helps to understand the main ideas behind incident severity escalation levels. Clear severity levels (P1-P4) dictate y",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2357,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2357
+      },
+      "usage": {
+        "input_tokens": 156.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response escalation severity levels tiered policy",
+    "title": "Escalation policies for effective incident management | Atlassian",
+    "url": "https://www.atlassian.com/incident-management/on-call/escalation-policies",
+    "snippet": "June 9, 2026 \u2014 Using Jira Service Management, responders can escalate incidents within the incident ticket. Responders have access to workflows to guide the resolution process and can enact automation, or customize actions as needed. Designating a severity level can direct responders to the appropriate workflow. Other companies, like Google, put an SRE in charge of incidents and that person is res",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.6139,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6139
+      },
+      "usage": {
+        "input_tokens": 156.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response escalation severity levels tiered policy",
+    "title": "Incident Escalation Matrix: Definition, Format, Levels, and Examples",
+    "url": "https://clearfeed.ai/blogs/incident-escalation-matrix",
+    "snippet": "July 29, 2026 \u2014 Make escalation levels explicit as \u201ctiers of responsibility,\u201d not job titles. A clean approach is: Define what L1, L2, and L3 mean in your context (first response, specialist triage, deep engineering, leadership).\"Make escalation levels explicit as \u201ctiers of responsibility,\u201d not job titles. A clean approach is: Define what L1, L2, and L3 mean in your context (first response, specia",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2318,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2318
+      },
+      "usage": {
+        "input_tokens": 156.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response escalation severity levels tiered policy",
+    "title": "Severity Levels & Escalation Paths | Incident Commander Field Guide",
+    "url": "https://incidentcommandhq.com/severity-escalation",
+    "snippet": "Framework for severity classification and escalation during incidents. When to page, who to call, and how to de-escalate.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3503,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3503
+      },
+      "usage": {
+        "input_tokens": 156.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "adaptive security response graduated enforcement escalation model",
+    "title": "What Is Graduated Response Policy? Definition & Examples",
+    "url": "https://nhimg.org/glossary/graduated-response-policy/",
+    "snippet": "Aug 21, 2026 \u00b7 A graduated response policy is a tiered enforcement model that applies proportionate action based on the assessed level of risk. Rather than treating every policy breach as identical, it distinguishes between low-confidence events that justify observation, medium-risk events that warrant coaching or restricted access, and high-confidence events ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2776,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2776
+      },
+      "usage": {
+        "input_tokens": 157.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "adaptive security response graduated enforcement escalation model",
+    "title": "What Is Adaptive Enforcement? Definition & Examples",
+    "url": "https://nhimg.org/glossary/adaptive-enforcement/",
+    "snippet": "Sep 14, 2026 \u00b7 Security Implications Adaptive enforcement matters because many security failures begin when organisations apply the same response to every event. If everything is blocked, users look for workarounds, shadow systems, or less visible channels. If everything is allowed, sensitive activity passes without enough scrutiny.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1665,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1665
+      },
+      "usage": {
+        "input_tokens": 157.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "adaptive security response graduated enforcement escalation model",
+    "title": "Mayoral election in Boston, Massachusetts (September 14, 2021 primary election)",
+    "url": "https://ballotpedia.org/Mayoral_election_in_Boston,_Massachusetts_(September_14,_2021_primary_election)",
+    "snippet": "Michelle Wu and Annissa Essaibi George advanced from the nonpartisan mayoral primary election in Boston, Massachusetts, on September 14, 2021. Seven candidates ran in the race",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3224,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3224
+      },
+      "usage": {
+        "input_tokens": 157.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "adaptive security response graduated enforcement escalation model",
+    "title": "Login - Adaptive Insights",
+    "url": "https://login.adaptiveinsights.com/app",
+    "snippet": "WORKDAY ADAPTIVE PLANNING Username or Email * Password * Remember Username Forgot Password",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.0393,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0393
+      },
+      "usage": {
+        "input_tokens": 157.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "adaptive security response graduated enforcement escalation model",
+    "title": "draft-das-agentic-adaptive-authorization-00 - Adaptive Authorization...",
+    "url": "https://datatracker.ietf.org/doc/draft-das-agentic-adaptive-authorization/",
+    "snippet": "Adaptive Authorization for Agentic AI: Graduated and Escalated Execution Control for Critical Infrastructure draft-das-agentic-adaptive-authorization-00. Status. Email expansions.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3762,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3762
+      },
+      "usage": {
+        "input_tokens": 157.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "adaptive security response graduated enforcement escalation model",
+    "title": "Graduated Response Strategy | Brimco",
+    "url": "https://brimco.io/terms/g/graduated-response-strategy/",
+    "snippet": "The Graduated Response Strategy is a risk management protocol that escalates actions against cyber threats or policy violations based on severity. It aims to systematically address incidents with proportionate measures, starting with less intrusive steps and progressing to more severe ones as needed.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4213,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4213
+      },
+      "usage": {
+        "input_tokens": 163.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "GPU DMA anomaly detection hypervisor monitoring",
+    "title": "GitHub - can1357/hvdetecc: Collection of hypervisor detections",
+    "url": "https://github.com/can1357/hvdetecc",
+    "snippet": "This project demonstrates various techniques for detecting the presence of a hypervisor or virtual machine monitor (VMM) on x86-64 systems. It explores common pitfalls in VMX (Intel Virtualization Technology) and SVM (AMD Secure Virtual Machine) based VM monitor implementations, as well as the underlying hardware implementation, and how they ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4076,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4076
+      },
+      "usage": {
+        "input_tokens": 163.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "GPU DMA anomaly detection hypervisor monitoring",
+    "title": "DCGM GPU Monitoring: Prometheus, Grafana, Alerts - ComputingForGeeks",
+    "url": "https://computingforgeeks.com/nvidia-gpu-monitoring-dcgm-prometheus-grafana/",
+    "snippet": "Aug 28, 2026 \u00b7 Set up NVIDIA GPU monitoring with DCGM exporter, Prometheus and Grafana. Tested alert rules for GPU utilisation, memory, power and thermal health.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1343,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1343
+      },
+      "usage": {
+        "input_tokens": 163.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "GPU DMA anomaly detection hypervisor monitoring",
+    "title": "GitHub - GPUprobe/gpuprobe-daemon: Lightweight daemon for monitoring ...",
+    "url": "https://github.com/GPUprobe/gpuprobe-daemon",
+    "snippet": "GPU monitoring and debugging traditionally requires either heavyweight profiling tools like Nsight (which significantly impacts performance), or high-level monitoring solutions like DCGM (which lack granular insights into application behavior). This creates a gap for developers who need detailed GPU runtime information without the overhead of full profiling or code instrumentation. GPUprobe ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4555,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4555
+      },
+      "usage": {
+        "input_tokens": 163.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "GPU DMA anomaly detection hypervisor monitoring",
+    "title": "PDF Hypervisor Anomaly Detection - jorge-cardoso.github.io",
+    "url": "https://jorge-cardoso.github.io/systems/aiops/2023-12-20_Hypervisor_Anomaly_Detection_Lecture.pdf",
+    "snippet": "Indirect approach to detect hypervisor failures by monitoring VMs Fig. Several time-series generated by several VMs running in the same hypervisor Insight. Resource saturation of VMs suddenly changes, within a window w, when an hypervisor is malfunctioning",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.5051,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5051
+      },
+      "usage": {
+        "input_tokens": 163.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "GPU DMA anomaly detection hypervisor monitoring",
+    "title": "Fix \"Hypervisor Detected\" Error in FC 26 Fast - YouTube",
+    "url": "https://www.youtube.com/watch?v=QladkyxvkSo",
+    "snippet": "\u041e \u0441\u0435\u0440\u0432\u0438\u0441\u0435 \u041f\u0440\u0435\u0441\u0441\u0435 \u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 \u0421\u0432\u044f\u0437\u0430\u0442\u044c\u0441\u044f \u0441 \u043d\u0430\u043c\u0438 \u0410\u0432\u0442\u043e\u0440\u0430\u043c \u0420\u0435\u043a\u043b\u0430\u043c\u043e\u0434\u0430\u0442\u0435\u043b\u044f\u043c...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1058,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1058
+      },
+      "usage": {
+        "input_tokens": 161.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "GPU DMA anomaly detection hypervisor monitoring",
+    "title": "GPU Monitoring for ML: nvidia-smi, DCGM, and Production\u2026",
+    "url": "https://www.spheron.network/blog/gpu-monitoring-for-ml/",
+    "snippet": "Most AI teams run GPUs below 70% utilization. Learn nvidia-smi commands, PyTorch memory profiling, DCGM with Prometheus, and Grafana dashboards for GPU clusters.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4913,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4913
+      },
+      "usage": {
+        "input_tokens": 161.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "virtual machine malicious workload detection false positives behavioral monitoring",
+    "title": "Multimodal-based abnormal behavior detection method in virtualization ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0167404824002104",
+    "snippet": "Virtualization technology is at the core of cloud computing, and abnormal behavior exhibited by virtual machines (VMs) running in cloud environment is one of the primary causes of platform disruption. Traditional methods for detecting VM anomalies in cloud platform currently face multiple challenges, including privacy protection and semantic gap.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.7821,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7821
+      },
+      "usage": {
+        "input_tokens": 161.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "virtual machine malicious workload detection false positives behavioral monitoring",
+    "title": "A Comprehensive Analysis of Secure Attack Detection on Virtual Machines ...",
+    "url": "https://ieeexplore.ieee.org/document/10872108",
+    "snippet": "A Virtual Machine (VM) is a software-based simulation of a physical computer that runs an operating system and applications. The VM can run multiple functions on a single physical machine. Secure attack detection on VMs utilizes implementation techniques to detect and monitor malicious activities in the cloud environment.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8814,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8814
+      },
+      "usage": {
+        "input_tokens": 161.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "virtual machine malicious workload detection false positives behavioral monitoring",
+    "title": "Dynamic Malware Analysis - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/ethical-hacking/dynamic-malware-analysis/",
+    "snippet": "Jul 27, 2026 \u00b7 False Positives: Certain legitimate software generates alerts. Manual Analysis Needed: Experts are required to verify behavioral patterns. Practices for Effective Dynamic Malware Analysis By implementing these best practices, organizations can enhance threat detection and strengthen their cybersecurity defenses.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1072,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1072
+      },
+      "usage": {
+        "input_tokens": 161.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "virtual machine malicious workload detection false positives behavioral monitoring",
+    "title": "VirtualDJ - Download VirtualDJ",
+    "url": "https://virtualdj.com/download/",
+    "snippet": "VirtualDJ works for every type of DJ, with or without hardware. Works with the most popular controllers and mixers on the market \u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8487,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8487
+      },
+      "usage": {
+        "input_tokens": 155.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "virtual machine malicious workload detection false positives behavioral monitoring",
+    "title": "On Benchmarking Intrusion Detection Systems in",
+    "url": "https://arxiv.org/pdf/1410.1160",
+    "snippet": "We dene the workload type and workload characteristics for each guest VM as elements of the workload prole of the monitoring landscape.Virtual machine monitor-based lightweight intrusion detection. SIGOPS Operating Systems Review, 45(2):38\u201353, July 2011.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.5517,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5517
+      },
+      "usage": {
+        "input_tokens": 155.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "virtual machine malicious workload detection false positives behavioral monitoring",
+    "title": "Malicious behavior identification using Dual Attention Based dense bi ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0167404825001075",
+    "snippet": "Jul 1, 2025 \u00b7 This paper proposes a deep learning approach to enhance malicious behaviour detection in cloud environments. Initially, the input data undergoes pre-processing using Min-Max Normalization, Missing Value Imputation, and Data Reduction to eliminate noise and inconsistencies.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.6921,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6921
+      },
+      "usage": {
+        "input_tokens": 155.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "QEMU qcow2 snapshot VM state capture forensics",
+    "title": "Virtual Machine Forensics: Extracting Data from VMs and Snapshot Files ...",
+    "url": "https://kandibrian.com/articles/virtual-machine-forensics-snapshot-extraction.html",
+    "snippet": "A complete how-to guide on extracting forensic evidence from virtual machines and snapshots \u2014 VMware VMDK, Hyper-V VHDX, VirtualBox VDI, KVM/QEMU qcow2, snapshot chains, memory files, vmss2core, and analysis with Volatility 3.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.268,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.268
+      },
+      "usage": {
+        "input_tokens": 155.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "QEMU qcow2 snapshot VM state capture forensics",
+    "title": "Disk Images \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/images.html",
+    "snippet": "VM snapshots VM snapshots are snapshots of the complete virtual machine including CPU state, RAM, device state and the content of all the writable disks. In order to use VM snapshots, you must have at least one non removable and writable block device using the qcow2 disk image format. Normally this device is the first virtual hard drive.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.5558,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5558
+      },
+      "usage": {
+        "input_tokens": 155.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "QEMU qcow2 snapshot VM state capture forensics",
+    "title": "Documentation/CreateSnapshot - QEMU",
+    "url": "https://wiki.qemu.org/Documentation/CreateSnapshot",
+    "snippet": "Apr 1, 2023 \u00b7 Snapshots in QEMU are images that refer to an original image using Redirect-on-Write [1] to avoid changing the original image. If you want to create a snapshot of an existing image called centos-cleaninstall.img, create a new QCow2 file using the -b flag to indicate a backing file.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8588,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8588
+      },
+      "usage": {
+        "input_tokens": 147.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "QEMU qcow2 snapshot VM state capture forensics",
+    "title": "qcow2-forensic - securityronin.github.io",
+    "url": "https://securityronin.github.io/qcow2-forensic/",
+    "snippet": "qcow2-forensic Pure-Rust QCOW2 forensics: read any QEMU/KVM/libvirt disk image, and flag what an examiner needs to know about it \u2014 in two lines. QCOW2 images hide things a raw dd never would: a backing file the evidence silently depends on, internal snapshots of earlier guest states, an encryption header, or QEMU's own dirty / corrupt flags.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.496,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.496
+      },
+      "usage": {
+        "input_tokens": 147.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "QEMU qcow2 snapshot VM state capture forensics",
+    "title": "QEMU",
+    "url": "https://www.qemu.org/",
+    "snippet": "Full-system emulation Run operating systems for any machine, on any supported architecture",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.9293,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9293
+      },
+      "usage": {
+        "input_tokens": 147.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "QEMU qcow2 snapshot VM state capture forensics",
+    "title": "Qcow2 Image File Format \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/interop/qcow2.html",
+    "snippet": "Byte 0 - 3: magic QCOW magic string (\"QFI \\xfb \") 4 - 7: version Version number (valid values are 2 and 3) 8 - 15: backing_file_offset Offset into the image file at which the backing file name is stored (NB: The string is not null\u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.9141,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9141
+      },
+      "usage": {
+        "input_tokens": 147.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "libvirt snapshot memory state forensic analysis virtualization",
+    "title": "Snapshots - libvirt",
+    "url": "https://libvirt.org/kbase/snapshots.html",
+    "snippet": "libvirt takes snapshot of the VM memory if requested. If a live snapshot is requested (VIR_DOMAIN_SNAPSHOT_CREATE_LIVE) the VM runs until the memory snapshot phase completes and is then paused.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8666,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8666
+      },
+      "usage": {
+        "input_tokens": 147.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "libvirt snapshot memory state forensic analysis virtualization",
+    "title": "Virtual Machine Forensics: Extracting Data from VMs and Snapshot Files",
+    "url": "https://kandibrian.com/articles/virtual-machine-forensics-snapshot-extraction.html",
+    "snippet": "A complete how-to guide on extracting forensic evidence from virtual machines and snapshots \u2014 VMware VMDK, Hyper-V VHDX, VirtualBox VDI, snapshot chains, memory files, and analysis with Volatility.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2803,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2803
+      },
+      "usage": {
+        "input_tokens": 155.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "libvirt snapshot memory state forensic analysis virtualization",
+    "title": "Virtual Machine Forensics: How to Acquire and Analyze VM Evidence",
+    "url": "https://behindthecrimescene.com/virtual-machine-forensics-how-to-acquire-and-analyze-vm-evidence",
+    "snippet": "Master the process of virtual machine forensics. Learn how to acquire and analyze VM evidence, handle memory dumps, and utilize snapshots for digital investigations.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4175,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4175
+      },
+      "usage": {
+        "input_tokens": 155.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "libvirt snapshot memory state forensic analysis virtualization",
+    "title": "Snapshot XML format - libvirt",
+    "url": "https://libvirt.org/formatsnapshot.html",
+    "snippet": "libvirt, virtualization, virtualization API Snapshot XML \u00b6 Snapshots are one form of domain state capture. There are several types of snapshots: disk snapshot Contents of disks (whether a subset or all disks associated with the domain) are saved at a given point of time, and can be restored back to that state. On a running guest, a disk snapshot is likely to be only crash-consistent rather ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8655,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8655
+      },
+      "usage": {
+        "input_tokens": 155.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "libvirt snapshot memory state forensic analysis virtualization",
+    "title": "Allrecipes | Recipes, How-Tos, Videos and More",
+    "url": "https://www.allrecipes.com/",
+    "snippet": "Everyday recipes with ratings and reviews by home cooks like you. Find easy dinner ideas, healthy recipes, plus helpful cooking tips \u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.0198,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0198
+      },
+      "usage": {
+        "input_tokens": 155.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "libvirt snapshot memory state forensic analysis virtualization",
+    "title": "Snapshots - libvirt",
+    "url": "https://wiki.libvirt.org/Snapshots.html",
+    "snippet": "Desired functionality \u00b6 Right now, libvirt can save domain memory ('virsh save', which boils down to an outgoing migration command to qemu), or save domain disk state ('virsh snapshot', which requires all disk images to be qcow2, and boils down to the savevm monitor command [qemu does the work] if a guest is running or img snapshot -c if the guest is offline), but not both. Misunderstanding ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.738,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.738
+      },
+      "usage": {
+        "input_tokens": 155.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "structured ideation lenses SCAMPER systematic variation generation",
+    "title": "SCAMPER Design Thinking Technique: Complete Guide & Examples",
+    "url": "https://www.imd.org/blog/innovation/scamper-method-design-thinking/",
+    "snippet": "The SCAMPER method stands as a powerful lateral thinking technique that challenges the status quo and helps explore new creative possibilities. This structured approach provides a systematic way to generate innovative ideas for products, services, or processes by examining them through different perspectives.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.3788,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3788
+      },
+      "usage": {
+        "input_tokens": 151.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "structured ideation lenses SCAMPER systematic variation generation",
+    "title": "SCAMPER: practical guide | Methodfield",
+    "url": "https://methodfield.com/en/tools/scamper",
+    "snippet": "SCAMPER is a structured ideation method built around seven lenses: Substitute: replace a component, actor, material, rule or channel.The challenge then produces cosmetic variants. Scoring during generation. Early judgement suppresses range and participation.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.398,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.398
+      },
+      "usage": {
+        "input_tokens": 151.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "structured ideation lenses SCAMPER systematic variation generation",
+    "title": "SCAMPER: Generate, Screen And Test Process Ideas",
+    "url": "https://www.learnleansigma.com/guides/scamper-creative-thinking/",
+    "snippet": "Sep 28, 2026 \u00b7 SCAMPER is a structured set of ideation prompts used to explore alternative ways to change an existing product, service, process or idea. It gives people several lenses for asking \u201cwhat else could we do?\u201d without pretending that the answers are already good solutions.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.4483,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4483
+      },
+      "usage": {
+        "input_tokens": 151.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "structured ideation lenses SCAMPER systematic variation generation",
+    "title": "Structured \u2014 Daily Planner",
+    "url": "https://structured.app/",
+    "snippet": "Structured combines all your tasks, calendar events, and focus sessions in one beautifully designed timeline.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.1303,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1303
+      },
+      "usage": {
+        "input_tokens": 151.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "structured ideation lenses SCAMPER systematic variation generation",
+    "title": "SCAMPER Decision Framework: How It Works... | Faster Than Normal",
+    "url": "https://fasterthannormal.co/decision-tools/scamper",
+    "snippet": "SCAMPER. Systematically generate variations by Substituting, Combining, Adapting, Modifying, Putting to other use, Eliminating, Reversing. Complexity. Time required30-60 min.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2627,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2627
+      },
+      "usage": {
+        "input_tokens": 151.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "structured ideation lenses SCAMPER systematic variation generation",
+    "title": "Use SCAMPER and other prompts to vary ideas | Divergent\u2026",
+    "url": "https://www.ixcoach.com/practices/divergent-thinking/scamper-prompts",
+    "snippet": "Use prompts when free generation stalls, to break out of the cluster you\u2019re stuck in. Evidence Structured ideation prompts like SCAMPER are practitioner tools consistent with the finding that directed cues broaden the idea space and counter fixation. Mechanistic, not a separately trialed protocol.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.3477,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3477
+      },
+      "usage": {
+        "input_tokens": 158.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "idea scoring rubric criteria decision matrix prioritization",
+    "title": "Idea Matrix: A Framework for Effective Idea Evaluation",
+    "url": "https://qmarkets.net/resources/article/idea-matrix/",
+    "snippet": "Jan 21, 2026 \u00b7 Explore what an idea matrix is, its role in idea management, and how to use it to enhance evaluation and prioritization.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.1729,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1729
+      },
+      "usage": {
+        "input_tokens": 158.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "idea scoring rubric criteria decision matrix prioritization",
+    "title": "Idea Scoring Matrix: The Ultimate Guide to Evaluating and Prioritising ...",
+    "url": "https://www.emerge-creatives.com/post/idea-scoring-matrix-the-ultimate-guide-to-evaluating-and-prioritising-ideas",
+    "snippet": "What Is an Idea Scoring Matrix? An Idea Scoring Matrix is a decision-support tool used to evaluate several ideas against the same set of criteria. Imagine a team considering five possible product concepts. Instead of debating which one \"feels strongest\", the team might compare all five against customer value, strategic fit, business potential, feasibility and risk.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2076,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2076
+      },
+      "usage": {
+        "input_tokens": 158.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "idea scoring rubric criteria decision matrix prioritization",
+    "title": "How To Prioritize Ideas Using The Evaluation Matrix",
+    "url": "https://mybusinessnotes.com/management/prioritize-ideas-evaluation-matrix/",
+    "snippet": "Nov 21, 2024 \u00b7 Learn how to prioritize ideas effectively with the Idea Evaluation Matrix. Maximize impact and feasibility for smarter decision-making.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2148,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2148
+      },
+      "usage": {
+        "input_tokens": 158.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "idea scoring rubric criteria decision matrix prioritization",
+    "title": "The Java and Kotlin IDE for You and Your Agents - JetBrains",
+    "url": "https://www.jetbrains.com/idea/",
+    "snippet": "Everything you need is already part of IntelliJ IDEA. Work with databases, test APIs, profile applications, and more without leaving \u2026",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.0736,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0736
+      },
+      "usage": {
+        "input_tokens": 158.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "idea scoring rubric criteria decision matrix prioritization",
+    "title": "Prioritization Frameworks: Guide and Templates \u00b7 Ducalis.io",
+    "url": "https://hello.ducalis.io/prioritization-frameworks/all-prioritization-templates",
+    "snippet": "The best ideas on prioritization and decisions on what to do next.Ducalis.io allows you to create a complex prioritization framework you can use both as a weighted decision matrix and action priority matrix and switch the criteria focus in no time. Try our matrix templates.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.1781,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1781
+      },
+      "usage": {
+        "input_tokens": 157.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "idea scoring rubric criteria decision matrix prioritization",
+    "title": "Priority Level Assignment Strategies",
+    "url": "https://www.linkedin.com/top-content/productivity/task-prioritization-methods/priority-level-assignment-strategies/",
+    "snippet": "Not only did I meet my deadlines, but my team also became more cohesive and efficient. Some popular prioritization strategies that have helped me and many others include: Eisenhower Matrix, which categorizes tasks into four quadrants based\u2026",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.0362,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0362
+      },
+      "usage": {
+        "input_tokens": 157.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response kill versus contain tradeoff forensics",
+    "title": "Comparison Study of Digital Forensics Analysis Techniques; Findings ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050918317769",
+    "snippet": "Jan 1, 2018 \u00b7 Research activities conducted on incident response process, explaining how digital forensics fits in the examination phase [15]. During incident response, the team is working against time to identify, contain, examine and understand the attack nature and components to stop the attack while keeping the normal original work uninterrupted when ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3346,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3346
+      },
+      "usage": {
+        "input_tokens": 157.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response kill versus contain tradeoff forensics",
+    "title": "INCIDENT Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/incident",
+    "snippet": "5 days ago \u00b7 The meaning of INCIDENT is an occurrence of an action or situation that is a separate unit of experience : happening. \u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.5593,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5593
+      },
+      "usage": {
+        "input_tokens": 157.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response kill versus contain tradeoff forensics",
+    "title": "DFIR Training",
+    "url": "https://www.dfir.training/",
+    "snippet": "Digital Forensics & Incident Response Training, Tools, Events, and Resources. DFIR.training is a curated resource for the digital forensics and incident response community. Start with the upcoming events below, or browse Training, Tools, and the Library to find what you need.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3753,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3753
+      },
+      "usage": {
+        "input_tokens": 157.4,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response kill versus contain tradeoff forensics",
+    "title": "Kill-Switch, Containment, and Incident Response",
+    "url": "https://www.compelframework.org/articles/kill-switch-containment-and-incident-response",
+    "snippet": "Containment is the last line of safety. This article teaches the specialist to design deterministic kill-switches that survive agent refusal, to architect containment boundaries (network, filesystem, tool-scope, time- budget), and to operate incident response against agentic-specific incident classes including runaway loops, unauthorised tool use, multi-agent collusion, and deceptive behaviour.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4083,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4083
+      },
+      "usage": {
+        "input_tokens": 166.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response kill versus contain tradeoff forensics",
+    "title": "Digital Forensics and Incident Response (DFIR) | Sygnia",
+    "url": "https://www.sygnia.co/blog/digital-forensics-and-incident-response/",
+    "snippet": "Learn what Digital Forensics and Incident Response (DFIR) is, and how Sygnia identifies, investigates, and stops cyber threats to keep your business secure.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.5441,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5441
+      },
+      "usage": {
+        "input_tokens": 166.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "incident response kill versus contain tradeoff forensics",
+    "title": "Forensics and Evidence Handling | cybersecurity101.net",
+    "url": "https://cybersecurity101.net/learn/incident-response/forensics-evidence-handling/",
+    "snippet": "Jul 5, 2026 \u00b7 Learn forensics and evidence handling in incident response: chain of custody, disk and memory capture, logs, time sync, legal sensitivity, and storage.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2437,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2437
+      },
+      "usage": {
+        "input_tokens": 166.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "machine learning model signing provenance supply chain verification",
+    "title": "ML Model Provenance: Signing and Verification Guide",
+    "url": "https://aidefense.dev/posts/securing-the-ml-model-supply-chain/",
+    "snippet": "May 23, 2026 \u00b7 Learn how model provenance, Sigstore signing, SLSA attestations, safe formats, and load-time verification secure the ML supply chain.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3833,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3833
+      },
+      "usage": {
+        "input_tokens": 166.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "machine learning model signing provenance supply chain verification",
+    "title": "Launch of Model Signing v1.0: OpenSSF AI/ML Working Group Secure\u2026",
+    "url": "https://openssf.org/blog/2025/04/04/launch-of-model-signing-v1-0-openssf-ai-ml-working-group-secures-the-machine-learning-supply-chain/",
+    "snippet": "We are pleased to announce the launch of version 1.0 of the model-signing project, an OpenSSF project developed in the past year as part of the OpenSSF A\u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.8658,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8658
+      },
+      "usage": {
+        "input_tokens": 166.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "machine learning model signing provenance supply chain verification",
+    "title": "ML Supply Chain Security: Model Provenance and Signing",
+    "url": "https://kindatechnical.com/mlops-guide/ml-supply-chain-security-model-provenance-and-signing.html",
+    "snippet": "Learn how to secure the ML model supply chain with provenance tracking, cryptographic signing, SBOM for models, and defenses against model tampering and trojan attacks.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3062,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3062
+      },
+      "usage": {
+        "input_tokens": 155.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "machine learning model signing provenance supply chain verification",
+    "title": "ML Model Provenance: Signing, SBOMs, and Verifying the AI You Deploy ...",
+    "url": "https://copilot-autogent.github.io/ai-security-blog/blog/ml-model-provenance-signing-sboms-verification/",
+    "snippet": "This is the verification gap. The supply chain attack surfaceis well-documented. The defense-side question \u2014 how do you verify a model is what it claims to be before you run it? \u2014 is where the tooling is still catching up. What Model Cards Do and Don\u2019t Verify Model cards are the most common provenance document in the current ecosystem.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2789,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2789
+      },
+      "usage": {
+        "input_tokens": 155.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "machine learning model signing provenance supply chain verification",
+    "title": "Machine - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Machine",
+    "snippet": "A machine is a thermodynamic system that uses power to apply forces and control movement to perform an action. The term is \u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.0528,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0528
+      },
+      "usage": {
+        "input_tokens": 155.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "machine learning model signing provenance supply chain verification",
+    "title": "NLnet; Current projects",
+    "url": "https://nlnet.nl/project/current.html",
+    "snippet": "that Scale Analysis and verification of real-world cryptographic protocols DrFed Web-based development and debugging platform for ActivityPub Draupnir Moderation bot for Matrix se",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2409,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2409
+      },
+      "usage": {
+        "input_tokens": 155.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "architecture decision record context decision alternatives consequences",
+    "title": "Architecture Decision Record (ADR) Template | ArchMan",
+    "url": "https://archman.dev/docs/checklists-and-templates/adr-template",
+    "snippet": "Dec 1, 2025 \u00b7 Template for documenting architecture decisions including context, rationale, consequences, and alternatives. Enables searchable decision history and informed future decisions.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3541,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3541
+      },
+      "usage": {
+        "input_tokens": 155.6,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "architecture decision record context decision alternatives consequences",
+    "title": "GitHub - architecture-decision-record/architecture-decision-record...",
+    "url": "https://github.com/architecture-decision-record/architecture-decision-record",
+    "snippet": "An architecture decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences. An architecture decision (AD) is a software design choice that addresses a significant requirement.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.4718,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4718
+      },
+      "usage": {
+        "input_tokens": 153.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "architecture decision record context decision alternatives consequences",
+    "title": "Maintain an architecture decision record (ADR) - Microsoft ...",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "snippet": "An architecture decision record (ADR) is one of the most important deliverables of a solution architect. Your architecture is the accumulation of its decisions, so the ADR is effectively a record of how and why the system came to be its current shape. The ADR documents all key decisions, including alternatives that you ruled out, for architecturally significant requirements. Only include ...",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.9506,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9506
+      },
+      "usage": {
+        "input_tokens": 153.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "architecture decision record context decision alternatives consequences",
+    "title": "Architecture Decision Record (ADR): Template + Examples 2026",
+    "url": "https://docsio.co/blog/architecture-decision-record",
+    "snippet": "Apr 30, 2026 \u00b7 An architecture decision record is a short document that captures one significant technical choice, the context that forced it, and the consequences of going that way.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.3961,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3961
+      },
+      "usage": {
+        "input_tokens": 153.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "architecture decision record context decision alternatives consequences",
+    "title": "Architecture - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Architecture",
+    "snippet": "Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art. Historical \u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.0888,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0888
+      },
+      "usage": {
+        "input_tokens": 153.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "architecture decision record context decision alternatives consequences",
+    "title": "Architectural Decision Records \u2014 Normandy 0.1.0 documentation",
+    "url": "https://mozilla.github.io/normandy/adrs/index.html",
+    "snippet": "An architecture decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences. An ar\u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.6298,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6298
+      },
+      "usage": {
+        "input_tokens": 153.8,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "minimum viable product validation assumptions experiment design",
+    "title": "PDF FULL GUIDE - MVP Experiment Canvas - by Bram Kanstein",
+    "url": "https://www.europeanacademy.com/wp-content/uploads/2024/05/MVP-Experiment-Canvas-guide.pdf",
+    "snippet": "The MVP Experiment Canvas - FULL GUIDE A free and practical framework that offers you a structured approach for designing and launching Minimum Viable Products to validate your business ideas.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.2003,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2003
+      },
+      "usage": {
+        "input_tokens": 157.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "minimum viable product validation assumptions experiment design",
+    "title": "Minimum viable product - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Minimum_viable_product",
+    "snippet": "\"The minimum viable product is that version of a new product a team uses to collect the maximum amount of validated learning about customers with the least effort.\"[2] The definition's use of the words maximum and minimum means it is not formulaic.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1089,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1089
+      },
+      "usage": {
+        "input_tokens": 157.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "minimum viable product validation assumptions experiment design",
+    "title": "MVP Test: How to validate a minimum viable product",
+    "url": "https://excited.agency/blog/mvp-testing",
+    "snippet": "Jul 22, 2025 \u00b7 Why test a minimum viable product Testing an MVP helps you validate assumptions before committing serious time and budget. It\u2019s a low-risk way to check if your product idea has a future.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.1134,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1134
+      },
+      "usage": {
+        "input_tokens": 157.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "minimum viable product validation assumptions experiment design",
+    "title": "How to Conduct a Lean Startup Experiment for Validation",
+    "url": "https://startupshortcut.com/knowledge-base/how-to-run-lean-startup-experiments-for-rapid-validation",
+    "snippet": "Jun 6, 2026 \u00b7 A lean startup experiment is a structured test, often using a minimum viable product (MVP), to rapidly validate the riskiest assumptions about your business with real customers.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.0934,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0934
+      },
+      "usage": {
+        "input_tokens": 157.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "minimum viable product validation assumptions experiment design",
+    "title": "Quality and Minimum Viable Products | by Manik Rathee | Medium",
+    "url": "https://medium.com/worth-to-read/94cebdc85463",
+    "snippet": "Quality and Minimum Viable Products The Place For Design And UX In Startup Products Creators. Makers. Designers. Engineers. Regardless of title, we all h\u2026",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.049,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.049
+      },
+      "usage": {
+        "input_tokens": 157.2,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "minimum viable product validation assumptions experiment design",
+    "title": "MINIMUM Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/minimum",
+    "snippet": "3 days ago \u00b7 The meaning of MINIMUM is the least quantity assignable, admissible, or possible. How to use minimum in a sentence.",
+    "collected_at": "2026-10-05T03:37:33Z",
+    "weight": 0.9242,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9242
+      },
+      "usage": {
+        "input_tokens": 214.0,
+        "output_tokens": 0.0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "design thinking divergent thinking convergent evaluation innovation process",
+    "title": "The Design-Thinking Process: Based on Two Main Types of Thinking ...",
+    "url": "https://jorgeivangaviria.com/designthinking-en/the-design-thinking-process-based-on-two-main-types-of-thinking-divergent-and-convergent/",
+    "snippet": "Convergent Thinking: The Refiner of Innovation in Design Thinking Convergent thinking, the analytical counterpart to divergence, focuses on synthesizing information to arrive at a single, optimal solution. It\u2019s the evaluator\u2014logical, evaluative, and decisive\u2014excelling in pattern recognition and criteria-based selection.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.3245,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3245
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "design thinking divergent thinking convergent evaluation innovation process",
+    "title": "Divergent and convergent thinking | Digital.gov",
+    "url": "https://digital.gov/guides/hcd/design-operations/thinking/",
+    "snippet": "Divergent and convergent thinking models The design phase is made up of successive cycles of convergent and divergent thinking. This means that, as you move through the design phase, you will have to flow between thinking generatively, and creatively, and analytically, and reductively.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.8566,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8566
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "design thinking divergent thinking convergent evaluation innovation process",
+    "title": "Balancing Divergent and Convergent Thinking in Design",
+    "url": "https://innovation-creativity.com/balancing-divergent-and-convergent-thinking-in-design/",
+    "snippet": "Mastering the dance between divergent and convergent thinking isn\u2019t about having innate talent; it\u2019s about employing the right tools and frameworks to guide your process. Fortunately, the innovation landscape is rich with methodologies designed to facilitate this crucial balance.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2382,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2382
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "design thinking divergent thinking convergent evaluation innovation process",
+    "title": "Divergent vs Convergent Thinking in Design Thinking",
+    "url": "https://designthinkerlabs.com/guides/divergent-vs-convergent-thinking",
+    "snippet": "Apr 6, 2026 \u00b7 Understand the two complementary thinking modes that drive every stage of design thinking, with practical techniques for switching between them.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2499,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2499
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "design thinking divergent thinking convergent evaluation innovation process",
+    "title": "The Synergy of Diverge and Converge in Design Thinking",
+    "url": "https://voltagecontrol.com/articles/the-synergy-of-diverge-and-converge-in-design-thinking/",
+    "snippet": "The Role of Diverge and Converge in Design Thinking The cyclical process of diverging and converging is fundamental to design thinking, ensuring a thorough exploration of the problem space and the generation of creative solutions, followed by a critical assessment and synthesis of these ideas into practical and innovative outcomes.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2384,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2384
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "design thinking divergent thinking convergent evaluation innovation process",
+    "title": "Convergent Design Vs Divergent Design",
+    "url": "https://design-encyclopedia.com/?T=Convergent+Design+Vs+Divergent+Design",
+    "snippet": "Convergent Design vs Divergent Design is a fundamental concept in design thinking that distinguishes two complementary approaches to problem-solving and ideation. Convergent design is a focused, analytical process that aims to narrow down a set of ideas or solutions to arrive at the most viable, practical, and effective option. It involves evaluating, testing, and refining ideas based on ...",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2124,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2124
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "RICE framework prioritization scoring reach impact confidence effort",
+    "title": "RICE Scoring Model for Prioritization in Product Management",
+    "url": "https://www.geeksforgeeks.org/product-management/rice-scoring-model/",
+    "snippet": "May 2, 2026 \u00b7 RICE Score : (Reach x Impact x Confidence) / Effort To calculate the Reach, Impact, Confidence and Effort for each initiative , the product managers work together with relevant teams to estimate these factors.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2595,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2595
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "RICE framework prioritization scoring reach impact confidence effort",
+    "title": "RICE Scoring Model | Glossary | ProductPlan",
+    "url": "https://www.productplan.com/glossary/rice-scoring-model",
+    "snippet": "What is the RICE Scoring Model for Prioritization? The RICE scoring model is a prioritization framework designed to help product managers determine which products, features, and other initiatives to put on their roadmaps by scoring these items according to four factors. These factors, which form the acronym RICE, are reach, impact, confidence, and effort. Using a scoring model such as RICE can ...",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.4474,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4474
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "RICE framework prioritization scoring reach impact confidence effort",
+    "title": "How to Use the RICE Framework for Better Prioritization",
+    "url": "https://productschool.com/blog/product-fundamentals/rice-framework",
+    "snippet": "Jun 3, 2024 \u00b7 The RICE framework is a prioritization tool used in product management to evaluate projects based on Reach, Impact, Confidence, and Effort. It helps in making data-driven decisions to prioritize initiatives that offer the highest value.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.3046,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3046
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "RICE framework prioritization scoring reach impact confidence effort",
+    "title": "RICE Prioritization Framework for Product Managers [+Examples]",
+    "url": "https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/",
+    "snippet": "RICE score: a simple tool for prioritization. RICE: Four factors for assessing priority. How is a RICE score calculated?Project 1: We have quantitative metrics for reach, user research for impact, and an engineering estimate for effort. This project gets a 100% confidence score.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2637,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2637
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "RICE framework prioritization scoring reach impact confidence effort",
+    "title": "RICE Prioritization: Framework, Formula & Template (2026) \u2014 Kayako",
+    "url": "https://kayako.com/blog/rice-prioritization/",
+    "snippet": "Jul 22, 2026 \u00b7 RICE prioritization is a scoring framework that ranks product initiatives by four factors: Reach, Impact, Confidence, and Effort. Each initiative gets a score calculated as Reach multiplied by Impact multiplied by Confidence, divided by Effort.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2941,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2941
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "RICE framework prioritization scoring reach impact confidence effort",
+    "title": "RICE Prioritization Framework: How to Score Product Ideas (2026 Guide)",
+    "url": "https://www.koji.so/docs/rice-prioritization-framework",
+    "snippet": "Master the RICE scoring framework (Reach, Impact, Confidence, Effort) for product prioritization. Includes the formula, worked examples, free template, and how customer research transforms Confidence scores.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2654,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2654
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "weighted decision matrix engineering tradeoff analysis alternatives",
+    "title": "7.8: Evaluate Trade-offs - Engineering LibreTexts",
+    "url": "https://eng.libretexts.org/Bookshelves/Introductory_Engineering/Introduction_to_Engineering_-_Thinking_Like_an_Engineer/07%3A_The_Engineering_Design_Process/7.08%3A_Evaluate_Trade-offs",
+    "snippet": "7.8 Step 5 \u2014 Evaluate Trade-offs Trade-offs are the core of design. You rarely improve everything simultaneously: thicker bracket \u2192 more strength but more mass; lower resistance \u2192 more current but more power; shallower cable angle \u2192 lower structure but higher tension. A decision matrix is the standard engineering tool for comparing alternatives against multiple criteria. It makes ...",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2769,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2769
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "weighted decision matrix engineering tradeoff analysis alternatives",
+    "title": "Decision Matrix in Engineering Projects: How to Build One",
+    "url": "https://a3aengenharia.com/en-us/content/technical-articles/decision-matrix-engineering-projects-criteria-weights-alternatives/",
+    "snippet": "Learn how to build an engineering decision matrix with criteria, weights, scales, evidence, normalization, and sensitivity analysis across alternatives.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.1767,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1767
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "weighted decision matrix engineering tradeoff analysis alternatives",
+    "title": "Decision Matrix Template for Engineering Teams",
+    "url": "https://www.em-tools.io/frameworks/decision-making-matrix",
+    "snippet": "Sep 28, 2026 \u00b7 Build a weighted decision matrix for technology and architecture choices. Score options against criteria to make trade-offs visible and decisions clear.",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.2491,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2491
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "weighted decision matrix engineering tradeoff analysis alternatives",
+    "title": "Transformer (machine learning model)",
+    "url": "https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)",
+    "snippet": "A transformer is a deep learning model that adopts the mechanism of attention, differentially weighting the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV)",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.32,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.32
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "weighted decision matrix engineering tradeoff analysis alternatives",
+    "title": "\u200eInstagram App - App Store",
+    "url": "https://apps.apple.com/cn/app/instagram/id389801252",
+    "snippet": "\u5728 App Store \u4e0b\u8f7d\u201cInstagram, Inc.\u201d\u7684\u201cInstagram\u201d\u3002\u67e5\u770b\u622a\u5c4f\u3001\u8bc4\u5206\u53ca\u8bc4\u8bba\u3001\u7528\u6237\u63d0\u793a\u4ee5\u53ca\u66f4\u591a\u7c7b\u4f3c\u201cInstagram\u201d\u7684 App\u3002",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.3019,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3019
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "weighted decision matrix engineering tradeoff analysis alternatives",
+    "title": "The Anatomy of a Search Engine",
+    "url": "http://infolab.stanford.edu/~backrub/google.html",
+    "snippet": "We considered several alternatives for encoding position, font, and capitalization -- simple encoding (a triple of integers), a compact encoding (a hand optimized allocation of bi",
+    "collected_at": "2026-10-05T03:39:22Z",
+    "weight": 0.3241,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3241
+      },
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null
+  }
+]
