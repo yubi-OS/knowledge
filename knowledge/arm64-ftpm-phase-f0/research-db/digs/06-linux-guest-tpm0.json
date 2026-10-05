@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "linux-guest-tpm0",
+ "scope": "Linux guest integration: TEE and OP-TEE config, the tpm_ftpm_tee module, /dev/tpm0 and /dev/tpmrm0 appearing, and a successful TPM2_Startup",
+ "queries_attempted": [
+  {
+   "query": "tpm_ftpm_tee Linux OP-TEE fTPM driver",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": 6
+  },
+  {
+   "query": "Linux TPM device /dev/tpm0 /dev/tpmrm0 tpm2 startup",
+   "attempt": 1,
+   "raw_results": 28,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.kernel.org/doc/html/latest/security/tpm/tpm_ftpm_tee.html",
+  "https://www.kernel.org/doc/html/v5.5/security/tpm/tpm_ftpm_tee.html",
+  "https://github.com/torvalds/linux/blob/master/drivers/char/tpm/tpm_ftpm_tee.c",
+  "https://en.wikipedia.org/wiki/Trusted_Platform_Module",
+  "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+  "https://docs.kernel.org/6.1/security/tpm/tpm_ftpm_tee.html",
+  "https://en.hwlibre.com/complete-guide-to-dev-tpm0-dev-tpmrm0-and-the-tpm2_pcrread-and-tpm2_pcr_extend-commands-in-linux/",
+  "https://linuxvox.com/blog/trusted-platform-module-linux/",
+  "https://linuxvox.com/blog/linux-tpm/",
+  "https://sportsbook.caesars.com/select-state",
+  "https://wiki.archlinux.org/title/Trusted_Platform_Module",
+  "https://bbs.archlinux.org/viewtopic.php?id=296699"
+ ],
+ "outcome": "authored"
+}

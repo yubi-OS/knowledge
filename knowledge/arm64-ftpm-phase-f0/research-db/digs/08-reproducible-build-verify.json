@@ -1,0 +1,36 @@
+{
+ "nn": "08",
+ "slug": "reproducible-build-verify",
+ "scope": "The reproducible build script over the pinned OP-TEE qemu_v8 manifest set plus pinned ms-tpm-20-ref, and the in-guest verify-tpm0-pcr-extend.sh done condition",
+ "queries_attempted": [
+  {
+   "query": "OP-TEE manifest reproducible build QEMU TF-A U-Boot pinned revisions",
+   "attempt": 1,
+   "raw_results": 37,
+   "kept": 6
+  },
+  {
+   "query": "QEMU ARM64 boot automation TPM verification test script",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://optee.readthedocs.io/en/latest/building/devices/qemu.html",
+  "https://github.com/OP-TEE/manifest",
+  "https://www.trustedfirmware.org/projects/op-tee/",
+  "https://www.op.gg/?main=index",
+  "https://github.com/chxrbh/OP-TEE-QEMU-Simulation",
+  "https://distrinet-tacos.github.io/documentation/optee/qemu/build.html",
+  "https://documentation.ubuntu.com/core/how-to-guides/manage-ubuntu-core/test-on-qemu/",
+  "https://www.qemu.org/docs/master/devel/testing/main.html",
+  "https://www.qemu.org/docs/master/system/target-arm.html",
+  "https://www.qemu.org/",
+  "https://computingforgeeks.com/enable-tpm-on-kvm-and-install-windows/",
+  "https://community-scripts.org/"
+ ],
+ "outcome": "authored"
+}

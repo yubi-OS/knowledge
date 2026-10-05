@@ -1,0 +1,36 @@
+{
+ "nn": "07",
+ "slug": "pcr-conventions-measured-boot",
+ "scope": "TCG measured boot PCR allocation used by the plan: PCRs 0,1 for firmware, 7 for Secure Boot policy, 8,9 for kernel and initramfs, 10 for IMA, 16 as the resettable verifier PCR",
+ "queries_attempted": [
+  {
+   "query": "TCG PC Client platform firmware profile PCR index 0 1 7 measured boot",
+   "attempt": 1,
+   "raw_results": 37,
+   "kept": 6
+  },
+  {
+   "query": "Linux IMA measurement list PCR 10 boot aggregate",
+   "attempt": 1,
+   "raw_results": 30,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://trustedcomputinggroup.org/wp-content/uploads/TCG-PC-Client-Platform-Firmware-Profile-Version-1.06-Revision-52_pub-1.pdf",
+  "https://trustedcomputinggroup.org/resource/pc-client-specific-platform-firmware-profile-specification/",
+  "https://help.zededa.com/hc/en-us/articles/43295940828827-TPM-PCR-Index-Security-Implications",
+  "https://trustedcomputinggroup.org/wp-content/uploads/TCG_PCClient_PFP_r1p05_v23_pub.pdf",
+  "https://www.tcgplayer.com/",
+  "https://trustedcomputinggroup.org/wp-content/uploads/PC-ClientSpecific_Platform_Profile_for_TPM_2p0_Systems_v21.pdf",
+  "https://sourceforge.net/p/linux-ima/wiki/Home/",
+  "https://ima-doc.readthedocs.io/en/latest/ima-concepts.html",
+  "https://keylime.dev/blog/2019/04/02/running-IMA-on-keylime.html",
+  "https://ima-doc.readthedocs.io/en/latest/event-log-format.html",
+  "https://store.queenonline.com/",
+  "https://linux-ima.sourceforge.net/linux-ima-measurements.html"
+ ],
+ "outcome": "authored"
+}

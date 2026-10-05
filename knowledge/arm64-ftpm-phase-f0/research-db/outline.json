@@ -1,0 +1,239 @@
+{
+ "topic": "QEMU ARM64 bring-up for firmware TPM (fTPM) testing, the Phase F0 plan for emulating ARM64 secure-world firmware with fTPM support, OP-TEE, and measured boot in VMs (ADR-018 context)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "tfa-qemu-aarch64",
+   "scope": "ARM Trusted Firmware-A as BL1/BL2/BL31 on QEMU ARM64 with SPD=opteed, FIP packaging, and the non-secure to secure handoff that anchors the whole chain",
+   "seed_queries": [
+    "Trusted Firmware-A QEMU aarch64 PLAT qemu SPD opteed",
+    "TF-A OP-TEE QEMU BL31 BL32 BL33 boot chain FIP"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "optee-qemu-armv8a",
+   "scope": "OP-TEE OS as BL32 on QEMU virt using the vexpress-qemu_armv8a platform, opteed dispatch, and secure-world bring-up specifics",
+   "seed_queries": [
+    "OP-TEE OS vexpress-qemu_armv8a QEMU virt platform",
+    "OP-TEE qemu_v8 build run BL31 opteed QEMU"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "ftpm-early-ta",
+   "scope": "ms-tpm-20-ref built as an OP-TEE Early TA, its fixed UUID, Early TA embedding in BL32, and RPMB-backed persistent NV storage",
+   "seed_queries": [
+    "ms-tpm-20-ref OP-TEE fTPM early TA UUID",
+    "fTPM RPMB NV storage OP-TEE trusted application"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "rpmb-bootstrap-hazard",
+   "scope": "The first persistent NV write to RPMB happening before tee-supplicant is available, and the initramfs or deferral strategies that avoid a bricked NV state",
+   "seed_queries": [
+    "tee-supplicant RPMB early boot fTPM initramfs",
+    "OP-TEE RPMB supplicant boot order hazard"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "uboot-bl33-measured-boot",
+   "scope": "U-Boot as BL33 in UEFI mode with CONFIG_TPM2_FTPM_TEE and CONFIG_MEASURED_BOOT, extending PCRs for kernel, DTB and initramfs through the fTPM TA",
+   "seed_queries": [
+    "U-Boot tpm2_ftpm_tee driver measured boot TPM",
+    "U-Boot EFI loader measured boot PCR extend TPM2"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "linux-guest-tpm0",
+   "scope": "Linux guest integration: TEE and OP-TEE config, the tpm_ftpm_tee module, /dev/tpm0 and /dev/tpmrm0 appearing, and a successful TPM2_Startup",
+   "seed_queries": [
+    "tpm_ftpm_tee Linux OP-TEE fTPM driver",
+    "Linux TPM device /dev/tpm0 /dev/tpmrm0 tpm2 startup"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "pcr-conventions-measured-boot",
+   "scope": "TCG measured boot PCR allocation used by the plan: PCRs 0,1 for firmware, 7 for Secure Boot policy, 8,9 for kernel and initramfs, 10 for IMA, 16 as the resettable verifier PCR",
+   "seed_queries": [
+    "TCG PC Client platform firmware profile PCR index 0 1 7 measured boot",
+    "Linux IMA measurement list PCR 10 boot aggregate"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "reproducible-build-verify",
+   "scope": "The reproducible build script over the pinned OP-TEE qemu_v8 manifest set plus pinned ms-tpm-20-ref, and the in-guest verify-tpm0-pcr-extend.sh done condition",
+   "seed_queries": [
+    "OP-TEE manifest reproducible build QEMU TF-A U-Boot pinned revisions",
+    "QEMU ARM64 boot automation TPM verification test script"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "ftpm-yubikey-trust-split",
+   "scope": "Why the fTPM owns platform integrity and attestation while the YubiKey stays the disk-unlock root via FIDO2 hmac-secret and LUKS2, and the danger of merging them",
+   "seed_queries": [
+    "FIDO2 hmac-secret LUKS2 disk unlock YubiKey",
+    "TPM attestation measured boot versus hardware token root of trust"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8177,
+    "probabilities": {
+     "0": 0.0348,
+     "1": 0.1128,
+     "2": 0.8524
+    },
+    "confidence": 0.6108,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.8217,
+    "probabilities": {
+     "0": 0.0319,
+     "1": 0.1144,
+     "2": 0.8537
+    },
+    "confidence": 0.6143,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8446,
+    "probabilities": {
+     "0": 0.0305,
+     "1": 0.0944,
+     "2": 0.8751
+    },
+    "confidence": 0.6635,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.4593,
+    "probabilities": {
+     "0": 0.0938,
+     "1": 0.3532,
+     "2": 0.553
+    },
+    "confidence": 0.1591,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.8317,
+    "probabilities": {
+     "0": 0.0338,
+     "1": 0.1007,
+     "2": 0.8655
+    },
+    "confidence": 0.6406,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.8301,
+    "probabilities": {
+     "0": 0.0341,
+     "1": 0.1017,
+     "2": 0.8642
+    },
+    "confidence": 0.6375,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.5265,
+    "probabilities": {
+     "0": 0.0774,
+     "1": 0.3188,
+     "2": 0.6038
+    },
+    "confidence": 0.2084,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.5479,
+    "probabilities": {
+     "0": 0.0794,
+     "1": 0.2933,
+     "2": 0.6273
+    },
+    "confidence": 0.2287,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.9755,
+    "probabilities": {
+     "0": 0.2497,
+     "1": 0.5252,
+     "2": 0.2251
+    },
+    "confidence": 0.0833,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1983,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
