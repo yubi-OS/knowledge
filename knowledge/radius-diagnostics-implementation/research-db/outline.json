@@ -1,0 +1,263 @@
+{
+ "topic": "radius diagnostics implementation for corpus placement: diagnostic-only isolation-radius profiles, transition intervals, and the verification approach for a frozen-frame wayfinder instrument",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "radius-clearance-statistics",
+   "scope": "Isolation radius fundamentals: nearest-neighbour clearances c_i via the same Math.hypot chord function as the core, the strict edge test d<r, the I(r) indicator count with ties remaining isolated.",
+   "seed_queries": [
+    "nearest neighbor distance indicator function classification threshold",
+    "strict inequality boundary classification point cloud isolation"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "clipped-integral-normalization",
+   "scope": "S_R = sum of min(R, c_i) as the clipped integral of I(r), and S_R/N reported separately so changing corpus size stays visible.",
+   "seed_queries": [
+    "clipped integral cumulative indicator function threshold sweep",
+    "normalized count statistic sample size dependence"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "transition-interval-grid",
+   "scope": "Fixed diagnostic grid 0.075, 0.085, 0.095, 0.105, 0.115; maximal same-delta same-sign transition intervals containing 0.095 within domain [0,2]; right-endpoint cells instead of midpoints; explicit brackets, domain endpoints and named witnesses with an 8-witness cap.",
+   "seed_queries": [
+    "step function transition interval detection discrete grid",
+    "floating point cell endpoint versus midpoint classification boundary"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "float64-boundary-hazards",
+   "scope": "Float64 boundary correctness: Math.hypot chord distances, adjacent Float64 breakpoints, the midpoint rounding hazard where a midpoint can round to the excluded left boundary, and why cells use their right endpoint.",
+   "seed_queries": [
+    "Math.hypot floating point accuracy distance computation",
+    "IEEE 754 double midpoint rounding adjacent representable values"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "diagnostic-only-scope",
+   "scope": "What the feature deliberately does not do: no new physical field, ranking score, keep/delete rule or forecast claim; intervals are relative to computed distances, not confidence intervals or exact-arithmetic proofs; missing displacement/error bounds give an unavailable/undetermined state; invalid or overflowing requests fail before model work; radius/grid overrides are rejected.",
+   "seed_queries": [
+    "diagnostic instrumentation separate from production scoring design",
+    "fail closed validation missing bounds undetermined state"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "lean-kernel-proof",
+   "scope": "Kernel obligations: RadiusBounds.lean compiling on Lean 4.33.0, 18 declarations covering complementarity, threshold equality, antitonicity, count bounds, conditional perturbation bands and integer clipped bounds, the printed-axiom checker over radius-scope.json, and the CI run.",
+   "seed_queries": [
+    "Lean 4 theorem proving interval inequality verification",
+    "formal verification monotonicity and count bounds step function"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "api-surface-enrichment",
+   "scope": "API surface: map.radius_profile on new maps and previews, radius_comparison in baseline and candidate results, the compare endpoint, read-time enrichment of legacy v0.2 saved maps with radius_profile_unavailable on failure, and unchanged storage packing of radius fields.",
+   "seed_queries": [
+    "API backward compatibility optional metadata enrichment legacy records",
+    "read time enrichment immutable records versus write time"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "ui-presentation-constraints",
+   "scope": "UI presentation: profiles, canonical counts, fractions, clipped and normalized areas, correctly bracketed transition intervals, named boundary witnesses with total/shown counts, explicit handling of missing or legacy profiles, escaped markup, and the deliberate absence of any radius slider or best-radius picker.",
+   "seed_queries": [
+    "displaying computed intervals with correct bracketing user interface",
+    "avoiding false precision scientific data user interface design"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "verification-suites",
+   "scope": "Verification architecture: the 76/76 radius suite over maps 66-76 including permutations, rotations, coincidences, strict ties and witness caps; 43/43 preview suite; 10,201 integer rectangle cases; 1,024 simple graphs across 533 degree sequences with a degenerate isolate-count null; storage 8 checks and the 1,404,802 byte packing budget; browser suites 59/59 and 86/86; fresh-context review PASS.",
+   "seed_queries": [
+    "property based testing permutation invariance geometric classifier",
+    "golden master regression testing frozen legacy behavior"
+   ]
+  },
+  {
+   "nn": 10,
+   "slug": "historical-record-corrections",
+   "scope": "Record corrections and live verification: dated errata to the historical GL note (b=c Lyapunov functional, 2/9 isotropic covariance floor), the completed round-three map76 record (176 items, 64 isolates, V2=0.31855) and its census duplicates, PR 233 merge, byte-identical core assets, and the live preview receipts with canonical deltas and 422 rejections.",
+   "seed_queries": [
+    "Ginzburg Landau Lyapunov functional equal coefficients stability",
+    "post merge production verification canonical hash smoke test"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.7517,
+    "probabilities": {
+     "0": 0.0583,
+     "1": 0.1318,
+     "2": 0.8099
+    },
+    "confidence": 0.5151,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.776,
+    "probabilities": {
+     "0": 0.0499,
+     "1": 0.1242,
+     "2": 0.8259
+    },
+    "confidence": 0.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.7978,
+    "probabilities": {
+     "0": 0.0382,
+     "1": 0.1257,
+     "2": 0.8361
+    },
+    "confidence": 0.5744,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.5635,
+    "probabilities": {
+     "0": 0.0758,
+     "1": 0.2848,
+     "2": 0.6394
+    },
+    "confidence": 0.2435,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.7589,
+    "probabilities": {
+     "0": 0.0478,
+     "1": 0.1455,
+     "2": 0.8067
+    },
+    "confidence": 0.5113,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.6497,
+    "probabilities": {
+     "0": 0.0737,
+     "1": 0.203,
+     "2": 0.7233
+    },
+    "confidence": 0.3548,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.6229,
+    "probabilities": {
+     "0": 0.094,
+     "1": 0.1892,
+     "2": 0.7168
+    },
+    "confidence": 0.3377,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.2101,
+    "probabilities": {
+     "0": 0.1787,
+     "1": 0.4325,
+     "2": 0.3888
+    },
+    "confidence": 0.0552,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.9072,
+    "probabilities": {
+     "0": 0.0258,
+     "1": 0.0412,
+     "2": 0.933
+    },
+    "confidence": 0.8093,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.6316,
+    "probabilities": {
+     "0": 0.515,
+     "1": 0.3385,
+     "2": 0.1465
+    },
+    "confidence": 0.1019,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1821,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ]
+ }
+}
