@@ -1,0 +1,38 @@
+{
+  "nn": 5,
+  "slug": "build-pipeline-seams",
+  "scope": "Where the split touches the yubiOS build: new yubios-uki bake target, Containerfile.uki FROM scratch pattern, CI extraction in ci_mkosi-installer.yml, and install config kargs in 50-yubiOS.toml.",
+  "queries_attempted": [
+    {
+      "query": "docker buildx bake extra OCI artifact target scratch image",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "bootc install config toml kargs customization",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/guides/bake/",
+    "https://docs.docker.com/reference/cli/docker/buildx/bake/",
+    "https://github.com/docker/buildx/issues/1484",
+    "https://www.docker.com/",
+    "https://heisiwu.net/build/bake/targets/",
+    "https://oneuptime.com/blog/post/2026-08-03-publish-multiple-images-multi-stage-dockerfile-buildx-bake/view",
+    "https://www.mankier.com/5/bootc-install-config",
+    "https://osbuild.org/docs/developer-guide/projects/osbuild/modules/stages/org.osbuild.bootc.install.config/",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-kernel-arguments-in-bootc-systems",
+    "https://deepwiki.com/bootc-dev/bootc/5.2-configuration-files",
+    "https://github.com/bootc-dev/bootc",
+    "https://jmarrero.github.io/bootc/man/bootc-install-config.5.html"
+  ],
+  "results_kept_weighted_0_5": 6,
+  "results_weighted_total": 12,
+  "outcome": "authored"
+}

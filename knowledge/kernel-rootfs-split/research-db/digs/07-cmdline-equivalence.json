@@ -1,0 +1,38 @@
+{
+  "nn": 7,
+  "slug": "cmdline-equivalence",
+  "scope": "Kernel command line parity between the mkosi-built UKI and bootc's auto-generated UKI: root=dissect, mount.usr=dissect, composefs kargs, and verifying the .cmdline PE section.",
+  "queries_attempted": [
+    {
+      "query": "bootc composefs kernel command line root=dissect mount.usr=dissect",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "UKI cmdline PE section verify objdump sbverify",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://deepwiki.com/bootc-dev/bootc/5.3-kernel-command-line",
+    "https://github.com/bootc-dev/bootc",
+    "https://docs.fedoraproject.org/en-US/bootc/filesystem/",
+    "https://bootc-dev.github.io/bootc//man/bootc-root-setup.service.5.html",
+    "https://www.mankier.com/5/bootc-root-setup.service",
+    "https://github.com/bootc-dev/bootc/releases",
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+    "https://www.man7.org/linux//man-pages/man1/ukify.1.html",
+    "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+    "https://ukagilityinternational.com/",
+    "https://discourse.ubuntu.com/t/how-to-inspect-kernel-efi-uki-universal-kernel-image-binary/38266"
+  ],
+  "results_kept_weighted_0_5": 6,
+  "results_weighted_total": 12,
+  "outcome": "authored"
+}

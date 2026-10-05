@@ -1,0 +1,224 @@
+{
+  "topic": "kernel and rootfs split for immutable OS images (yubiOS ADR-032): research and design behind splitting kernel from root filesystem, surveyed alternatives, upstream sources, and the phase 1/phase 2 cut",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "artifact-split-principle",
+      "scope": "Why kernel and rootfs should be independently addressable build artifacts in an immutable OS: monolithic OCI vs separated artifacts, the per-artifact tag scheme, and what ADR-006/013/022 already imply.",
+      "seed_queries": [
+        "bootc image mode separate kernel artifact UKI rootfs",
+        "immutable OS kernel separate from rootfs build artifacts"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "blsconfig-uki-key",
+      "scope": "bootc v1.16.3 BLSConfig uki key (PR #2269): EFIKey enum, efi vs uki lines, systemd-boot vs grub emission, EFI/Linux/bootc directory and BLS .conf naming.",
+      "seed_queries": [
+        "bootc BLSConfig uki key EFIKey systemd-boot",
+        "boot loader specification uki field BLS config"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "bootc-v1164-kernel-split",
+      "scope": "bootc v1.16.4 and beyond: UKI Cleanup (PR #2200), user-provided kargs (PR #2305), and the split-kernel-and-rootfs subcommand that keeps /kernel outside the digested rootfs.",
+      "seed_queries": [
+        "bootc split-kernel-and-rootfs subcommand",
+        "bootc 1.16.4 UKI cleanup user kargs"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "mkosi-split-artifacts",
+      "scope": "The mkosi path: DPS-partitioned disk image with embedded UKI, SplitArtifacts=uki,partitions, and extracting the signed UKI as a standalone artifact.",
+      "seed_queries": [
+        "mkosi SplitArtifacts uki unified kernel image",
+        "mkosi discoverable partitions specification disk image UKI"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "build-pipeline-seams",
+      "scope": "Where the split touches the yubiOS build: new yubios-uki bake target, Containerfile.uki FROM scratch pattern, CI extraction in ci_mkosi-installer.yml, and install config kargs in 50-yubiOS.toml.",
+      "seed_queries": [
+        "docker buildx bake extra OCI artifact target scratch image",
+        "bootc install config toml kargs customization"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "install-time-wiring-options",
+      "scope": "Phase 2 install-time UKI wiring options: mirroring the bootc secureboot-keys loader-entries intake, a first-boot systemd unit, or bumping the base image to bootc v1.16.4+; tradeoffs and sequencing.",
+      "seed_queries": [
+        "bootc install secureboot-keys /usr/lib/bootc/install",
+        "systemd first-boot unit populate ESP UKI after install"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "cmdline-equivalence",
+      "scope": "Kernel command line parity between the mkosi-built UKI and bootc's auto-generated UKI: root=dissect, mount.usr=dissect, composefs kargs, and verifying the .cmdline PE section.",
+      "seed_queries": [
+        "bootc composefs kernel command line root=dissect mount.usr=dissect",
+        "UKI cmdline PE section verify objdump sbverify"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "ab-update-kernel-separability",
+      "scope": "A/B update model with a separable kernel: ADR-013's 4-artifact update (usr partition, verity data, PKCS#7 signature, UKI in ESP) and how systemd-sysupdate handles independent kernel artifacts.",
+      "seed_queries": [
+        "systemd sysupdate UKI A B partition update immutable",
+        "ostree bootc update kernel deployment boot entry"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8663,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0391,
+          "1": 0.0554,
+          "2": 0.9055
+        },
+        "confidence": 0.7367
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.4599,
+          "2": 0.3701
+        },
+        "confidence": 0.0661
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.4861,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1187,
+          "1": 0.2766,
+          "2": 0.6047
+        },
+        "confidence": 0.1844
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.5632,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0984,
+          "1": 0.24,
+          "2": 0.6616
+        },
+        "confidence": 0.2575
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.3715,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1322,
+          "1": 0.3641,
+          "2": 0.5037
+        },
+        "confidence": 0.1056
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.415,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1228,
+          "1": 0.3395,
+          "2": 0.5377
+        },
+        "confidence": 0.1292
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.4875,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1187,
+          "1": 0.2752,
+          "2": 0.6061
+        },
+        "confidence": 0.1858
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.5608,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0802,
+          "1": 0.2788,
+          "2": 0.641
+        },
+        "confidence": 0.2426
+      }
+    },
+    "usage": {
+      "input_tokens": 1351,
+      "output_tokens": 0
+    },
+    "requested_at": "2026-10-05T08:42:19.143Z",
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

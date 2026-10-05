@@ -1,0 +1,38 @@
+{
+  "nn": 1,
+  "slug": "artifact-split-principle",
+  "scope": "Why kernel and rootfs should be independently addressable build artifacts in an immutable OS: monolithic OCI vs separated artifacts, the per-artifact tag scheme, and what ADR-006/013/022 already imply.",
+  "queries_attempted": [
+    {
+      "query": "bootc image mode separate kernel artifact UKI rootfs",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "immutable OS kernel separate from rootfs build artifacts",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://docs.centos.org/automotive-sig-documentation/building/con_bootc-image-building/",
+    "https://androidmobiles.org/customizing-android-boot-building-your-own-systemd-boot-uki-with-custom-kernel-modules/",
+    "https://github.com/EmilyCSh/Unified-Kernel-Image",
+    "https://github.com/bootc-dev/bootc",
+    "https://bootc.dev/bootc/man/bootc-container.8.html",
+    "https://deepwiki.com/Dstack-TEE/dstack/7.3-image-assembly-and-artifact-pipeline",
+    "https://gist.github.com/Darkness4/8e334ab7d972336cfef4d587c63a514b",
+    "https://www.immutable.com/",
+    "https://github.com/ading2210/shimboot",
+    "https://www.chromium.org/chromium-os/developer-library/guides/kernel/kernel-development/",
+    "https://kairos.io/docs/architecture/immutable/"
+  ],
+  "results_kept_weighted_0_5": 6,
+  "results_weighted_total": 12,
+  "outcome": "authored"
+}

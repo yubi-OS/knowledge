@@ -1,0 +1,38 @@
+{
+  "nn": 8,
+  "slug": "ab-update-kernel-separability",
+  "scope": "A/B update model with a separable kernel: ADR-013's 4-artifact update (usr partition, verity data, PKCS#7 signature, UKI in ESP) and how systemd-sysupdate handles independent kernel artifacts.",
+  "queries_attempted": [
+    {
+      "query": "systemd sysupdate UKI A B partition update immutable",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "ostree bootc update kernel deployment boot entry",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://nixcademy.com/posts/immutable-ab-system-partitions-with-nixos-for-ota-updates-with-systemd-sysupdate/",
+    "https://x86.lol/generic/2024/08/28/systemd-sysupdate.html",
+    "https://github.com/applicative-systems/nixos-appliance-ota-update",
+    "https://discourse.nixos.org/t/small-nixos-appliances-with-over-the-air-updates-using-systemd-sysupdate/71669",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://deepwiki.com/systemd/particleos/8.3-ab-partition-management",
+    "https://linuxcent.com/atomic-os-updates-explained/",
+    "https://github.com/ostreedev/ostree/blob/main/docs/bootloaders.md",
+    "https://ostreedev.github.io/ostree/atomic-upgrades/",
+    "https://docs.fedoraproject.org/en-US/bootc/rpm-ostree/",
+    "https://ostreedev.github.io/ostree/introduction/",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-file-systems-in-image-mode-for-rhel"
+  ],
+  "results_kept_weighted_0_5": 7,
+  "results_weighted_total": 12,
+  "outcome": "authored"
+}
