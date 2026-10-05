@@ -1,0 +1,69 @@
+{
+  "nn": "07",
+  "slug": "on-miss-playbook",
+  "scope": "The response playbook when a fork has drifted: rebase or merge upstream, pin bump process, security backport urgency, and CVE-driven prioritization.",
+  "queries_attempted": [
+    {
+      "query": "fork falls behind upstream rebase update process maintenance",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "security patch backport urgency fork cve prioritization",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "git fork sync upstream rebase official documentation",
+      "attempt": 2,
+      "raw_results": 36,
+      "kept": 6
+    },
+    {
+      "query": "cisa known exploited vulnerabilities prioritize patching deadline",
+      "attempt": 2,
+      "raw_results": 65,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig too weak: subtopic 07 returned 0/12 results with weight >= 0.5; subtopic 08 (marginal-scored) returned 1/12 high-weight with off-topic noise",
+      "new_queries": [
+        "git fork sync upstream rebase official documentation",
+        "cisa known exploited vulnerabilities prioritize patching deadline"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://codersnexus.com/tutorials/github-complete-course/keeping-a-fork-in-sync-upstream-fetch-rebasing",
+    "https://thoughtbot.com/blog/keeping-a-github-fork-updated",
+    "https://github.com/orgs/community/discussions/153608",
+    "https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github",
+    "https://mrsaynothing.dev/en/blog/2026-09-06/git-sync-fork-with-upstream",
+    "https://git-fork.com/",
+    "https://www.armorcode.com/blog/vulnerability-prioritization-guide",
+    "https://safeguard.sh/resources/blog/security-patch-prioritization-framework",
+    "https://www.armorcode.com/blog/vulnerability-prioritization-framework",
+    "https://fc.prod.support.office.com/en-us/f1/topic/807608ee-3de2-4498-8e7c-eb10d655567f?context=%7B%22themeid%22%3A%220%22%2C%22issasfeedbackenabled%22%3A%22true%22%2C%22isassistedhelpenabled%22%3A%220%22%2C%22isdeeplinkingenabled%22%3A%220%22%7D&isassistedhelpenabled=0&isdeeplinkingenabled=0&issasfeedbackenabled=true&ns=NULL&officeversionbuild=0&officeversionmajor=16&officeversionminor=0&officeversionupdate=0&shownav=true&themeid=0",
+    "https://arxiv.org/html/2609.31004",
+    "https://thehgtech.com/guides/cve-prioritization-patch-management.html",
+    "https://docs.github.com/en/pull-requests/how-tos/work-with-forks/syncing-a-fork",
+    "https://git-scm.com/docs/git-rebase",
+    "https://git-scm.com/",
+    "http://softwareswirl.blogspot.com/2009/08/upstream-rebase-just-works-if-history.html",
+    "https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github",
+    "https://docs.algosource.in/git-github/syncing",
+    "https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk",
+    "https://cybersecuritynews.com/cisa-patch-vulnerabilities-3-days/",
+    "https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+    "https://www.cisa.gov/",
+    "https://www.wiz.io/blog/detect-and-prioritize-cisa-known-exploited-vulnerabilities-kev-with-wiz",
+    "https://www.linkedin.com/posts/derickjdavis_cisa-rewrites-federal-patching-requirements-activity-7471203979557875712-BuUM"
+  ],
+  "outcome": "pending"
+}

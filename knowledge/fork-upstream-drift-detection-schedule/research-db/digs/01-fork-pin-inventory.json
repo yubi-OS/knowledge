@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "fork-pin-inventory",
+  "scope": "Maintaining the fork inventory and PINNED.md as the source of truth for pinned SHAs, plus the fork-to-upstream map file that drives the check.",
+  "queries_attempted": [
+    {
+      "query": "PINNED.md pinned commit SHA fork tracking github",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "fork to upstream mapping yaml pinned SHA inventory file",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/sapasapasapa/gha-pinner",
+    "https://www.romainlespinasse.dev/posts/github-actions-commit-sha-pinning/",
+    "https://stackoverflow.com/questions/78903499/how-do-i-pin-an-action-to-a-specific-sha",
+    "https://pinnedgolf.com/",
+    "https://docs.github.com/en/pull-requests/reference/commits",
+    "https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/pinning-an-issue-to-your-repository",
+    "https://stackoverflow.com/questions/78903499/how-do-i-pin-an-action-to-a-specific-sha",
+    "https://www.romainlespinasse.dev/posts/github-actions-commit-sha-pinning/",
+    "https://github.com/mheap/pin-github-action",
+    "https://git-fork.com/",
+    "https://github.com/suanova/upstream-semantic-sync",
+    "https://kubernetes.io/docs/reference/labels-annotations-taints/"
+  ],
+  "outcome": "pending"
+}

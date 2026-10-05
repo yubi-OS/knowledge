@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "verdicts-thresholds",
+  "scope": "Verdict classification (synced / minor-lag / drifted) and choosing a commit-count threshold that balances noise against CVE risk.",
+  "queries_attempted": [
+    {
+      "query": "stale pin drift threshold alerting software dependency lag",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "commit lag threshold alerting repository monitoring noise",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.dsstream.com/post/model-monitoring-in-production",
+    "https://github.com/mizcausevic-dev/dependency-drift-watch",
+    "https://www.ainomam.com/post/data-drift-detection-20260811",
+    "https://neelmishra.github.io/blog/mlops/monitoring/feature-drift.html",
+    "https://www.merriam-webster.com/dictionary/stale",
+    "https://arxiv.org/html/2510.22815",
+    "https://docs.cloud.google.com/monitoring/alerts/using-alerting-ui",
+    "https://devactivity.com/insights/streamlining-git-tracking-github-s-new-feature-tackles-commit-noise/",
+    "https://dredyson.com/the-data-analytics-case-for-cursor-ide-git-commit-lag-a-complete-developer-analytics-guide-to-etl-pipeline-monitoring-power-bi-kpi-tracking-and-data-driven-ide-performance-intelligence/",
+    "https://www.merriam-webster.com/dictionary/commit",
+    "https://www.youtube.com/watch?v=TKD-pcGTZG8",
+    "https://github.com/edgar-mercado/alert-noise-prediction"
+  ],
+  "outcome": "pending"
+}
