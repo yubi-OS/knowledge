@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "drift-report-formats",
+  "scope": "Output formats for drift reports: human text, machine JSON, SARIF for code-scanning integration, plus artifact naming and retention.",
+  "queries_attempted": [
+    {
+      "query": "sarif format github code scanning upload",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "github actions artifact retention policy json report",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/integrate-with-existing-tools/upload-sarif-file",
+    "https://docs.github.com/en/code-security/concepts/code-scanning/sarif-files",
+    "https://github.com/github/codeql-action/blob/main/upload-sarif/action.yml",
+    "https://mitsubishiforum.com/forum/eclipse-frequently-asked-question-section-58/head-bolt-torque-specs-16796/",
+    "https://github.com/devinschumacher/github-docs/blob/main/content/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github.md",
+    "https://github.com/sarif-kit/sarif-kit",
+    "https://docs.github.com/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization",
+    "https://github.com/actions/upload-artifact",
+    "https://docs.github.com/en/enterprise-server@3.18/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization",
+    "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses/",
+    "https://www.getorchestra.io/guides/githubaction-set-artifact-and-log-retention-settin",
+    "https://github.com/"
+  ],
+  "outcome": "pending"
+}

@@ -1,0 +1,70 @@
+{
+  "nn": "08",
+  "slug": "threshold-tuning-lifecycle",
+  "scope": "Tuning the drift threshold from baseline data and the phased rollout of a drift-detection automation (ship, observe, tighten).",
+  "queries_attempted": [
+    {
+      "query": "tuning alert thresholds from baseline monitoring data",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "phased rollout automation threshold tightening observability",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "alert threshold tuning baseline data reduce false positives sre",
+      "attempt": 2,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "phased rollout automation start observe tighten threshold",
+      "attempt": 2,
+      "raw_results": 39,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig too weak: subtopic 07 returned 0/12 results with weight >= 0.5; subtopic 08 (marginal-scored) returned 1/12 high-weight with off-topic noise",
+      "new_queries": [
+        "alert threshold tuning baseline data reduce false positives sre",
+        "phased rollout automation start observe tighten threshold"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.logicmonitor.com/platform/dynamic-thresholds",
+    "https://www.idera.com/blogs/sql-server-alert-fatigue-a-practical-workflow-for-tuning-alert-thresholds-with-dynamic-baselines/",
+    "https://oneuptime.com/blog/post/2026-02-06-reduce-alert-fatigue-opentelemetry-thresholds/view",
+    "https://docs.getmontecarlo.com/docs/tuning-thresholds",
+    "https://www.internettoolset.com/monitoring/alert-threshold-calculator",
+    "https://www.musicca.com/tuner",
+    "https://docs.digicert.com/zf/trust-architecture-playbook/automation-pillar/phased-automation-rollout.html",
+    "https://www.digitalapplied.com/blog/agent-observability-rollout-30-60-90-day-plan-2026",
+    "https://www.genealogy.com/forum/surnames/topics/feagin/379/",
+    "https://teisoftllc.com/web-security-operations/bot-management-strategies-without-friction/",
+    "https://docs.runway.team/using-runway/release-schedule",
+    "https://www.researchgate.net/publication/378439061_Phased_Rollout_Configuration_A_Comprehensive_Approach_for_Feature_Releases_in_Software_Systems",
+    "https://oneuptime.com/blog/post/2026-02-06-reduce-alert-fatigue-opentelemetry-thresholds/view",
+    "https://www.decryptiondigest.com/blog/siem-alert-tuning-reduce-false-positives",
+    "https://www.alerrt.org/",
+    "https://completions.io/alert-noise-reduction",
+    "https://hyperping.com/blog/reduce-false-positive-monitoring-alerts",
+    "https://github.com/Innovation-In-Software/bc-sre-ai/blob/main/modules/module-10-monitoring-and-aiops/labs/10.5-tuning-a-baseline-to-reduce-false-positives.md",
+    "https://docs.digicert.com/en/trust-lifecycle-manager/get-started/trust-architecture-playbook/automation-pillar/phased-automation-rollout.html",
+    "https://docs.keeper.io/keeperpam/endpoint-privilege-manager/setup/policy-phased-rollout-planning",
+    "https://docs.digicert.com/zf/trust-architecture-playbook/automation-pillar/phased-automation-rollout.html",
+    "https://teisoftllc.com/web-security-operations/bot-management-strategies-without-friction/",
+    "https://patents.google.com/patent/EP1473607A1/en",
+    "https://www.luciq.ai/blog/automated-mobile-app-rollout"
+  ],
+  "outcome": "skipped",
+  "skip_reason": "marginal outline score (0.98) and dig did not come back strong after 2 dig attempts (18 queries): 1 of 24 results weighted >= 0.5, heavy off-topic noise (guitar tuner, genealogy, patents)"
+}

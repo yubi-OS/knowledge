@@ -1,0 +1,36 @@
+{
+  "nn": "09",
+  "slug": "sibling-drift-patterns",
+  "scope": "The same drift-detection pattern applied to other pin types: container base image digests, pinned GitHub Action SHAs, and dependency lockfiles.",
+  "queries_attempted": [
+    {
+      "query": "docker base image digest pinning staleness check automation",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "pinned github action sha drift dependabot update detection",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+    "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+    "https://how2.sh/posts/how-to-devops-pin-docker-base-images/",
+    "https://www.docker.com/",
+    "https://oneuptime.com/blog/post/2026-02-08-how-to-pin-package-versions-in-dockerfiles-for-reproducible-builds/view",
+    "https://www.stepcodex.com/en/issue/docker-automate-base-image-digest-updates",
+    "https://tomodahinata.com/en/blog/dependabot-github-actions-sha-pinning-supply-chain-security-guide",
+    "https://www.romainlespinasse.dev/posts/pin-github-actions-skill/",
+    "https://github.com/dependabot/dependabot-core/issues/7913",
+    "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/auto-update-actions",
+    "https://pinnedgolf.com/",
+    "https://github.com/dependabot/dependabot-core"
+  ],
+  "outcome": "pending"
+}
