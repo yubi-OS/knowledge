@@ -1,0 +1,248 @@
+{
+  "topic": "external benchmarks and comparison sources for security/OS products - how to select, cite, and bound claims against third-party benchmarks and market data",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "source-taxonomy",
+      "scope": "Classifying third-party sources into source classes (primary/official, commercial market-research vendor, aggregator, press, forum) and what each class can honestly support.",
+      "seed_queries": [
+        "primary source versus market research report credibility citing security benchmarks",
+        "technology market sizing methodology market research vendors credibility"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "breach-cost-benchmarks",
+      "scope": "Breach-cost benchmarks such as the IBM Cost of a Data Breach report and how a directional cost-of-status-quo number differs from a customer-specific savings claim.",
+      "seed_queries": [
+        "IBM Cost of a Data Breach Report 2025 phishing initial attack vector average cost",
+        "average cost data breach phishing credential compromise industry report"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "market-sizing-variance",
+      "scope": "Commercial market-research estimates for the FIDO2 hardware security key market: how vendor-to-vendor variance forces range framing instead of single figures.",
+      "seed_queries": [
+        "FIDO2 hardware security key market size 2025 2034 forecast CAGR",
+        "hardware authentication token market research estimates comparison vendors"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "vendor-pricing-benchmarks",
+      "scope": "Live, checkable vendor retail pricing (YubiKey 5 Series) as the strongest class of hardware-cost benchmark and its refresh discipline.",
+      "seed_queries": [
+        "YubiKey 5 series official price store NFC 5Ci",
+        "hardware security key retail price YubiKey Nitrokey comparison"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "regulatory-guidance-sources",
+      "scope": "Government and standards-body guidance (NIST SP 800-63B, CISA, OMB M-22-09) as citation sources for phishing-resistant MFA and what such citations cannot imply.",
+      "seed_queries": [
+        "NIST SP 800-63B phishing resistant authenticator verifier impersonation resistance",
+        "CISA OMB memorandum phishing resistant MFA federal agencies FIDO2 gold standard"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "claim-boundaries",
+      "scope": "Drawing explicit use-for and do-not-use-for boundaries on each benchmark so directional third-party data is never read as product evidence.",
+      "seed_queries": [
+        "misuse of third party benchmark claims in product marketing boundaries",
+        "avoid overclaiming product benefits external market data citation discipline"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "refresh-cadence",
+      "scope": "Refresh cadence and staleness management for cited external sources: annual reports, live retail prices, and periodically revised government guidance.",
+      "seed_queries": [
+        "citation staleness refresh cadence market data annual reports",
+        "documenting retrieval dates sources freshness policy documentation"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "number-reconciliation",
+      "scope": "Reconciling conflicting numbers between internal worksheets and external benchmarks (the stale hardware-cost floor problem) without silently overwriting either.",
+      "seed_queries": [
+        "reconciling conflicting statistics between business documents process",
+        "conflicting market estimates ranges reconcile numbers citation"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "citation-lists",
+      "scope": "Building the reusable citation and benchmark table plus dependency map that lets future business docs cite instead of inventing numbers.",
+      "seed_queries": [
+        "reusable citation benchmark table documentation practice marketing claims",
+        "source provenance tracking product marketing claims approved sources list"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.7878,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0458,
+          "1": 0.1206,
+          "2": 0.8336
+        },
+        "confidence": 0.5674
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.4054,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.081,
+          "1": 0.4326,
+          "2": 0.4864
+        },
+        "confidence": 0.1454
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.1892,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.4907,
+          "2": 0.3493
+        },
+        "confidence": 0.0826
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.7283,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.059,
+          "1": 0.1538,
+          "2": 0.7872
+        },
+        "confidence": 0.4703
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8461,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0308,
+          "1": 0.0923,
+          "2": 0.8769
+        },
+        "confidence": 0.6676
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.8933,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0279,
+          "1": 0.0509,
+          "2": 0.9212
+        },
+        "confidence": 0.7779
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.4775,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0771,
+          "1": 0.3683,
+          "2": 0.5546
+        },
+        "confidence": 0.1737
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.3971,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1102,
+          "1": 0.3825,
+          "2": 0.5073
+        },
+        "confidence": 0.1237
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.5815,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0863,
+          "1": 0.2459,
+          "2": 0.6678
+        },
+        "confidence": 0.2708
+      }
+    },
+    "usage": {
+      "input_tokens": 2234,
+      "output_tokens": 846
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
