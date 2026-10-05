@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3Dsystemd",
+    "probe_results": {
+      "http_status": 200,
+      "elapsed_ms": 8605,
+      "n_results": 83,
+      "first_title": "systemd - Wikipedia"
+    },
+    "unresponsive_engines": [
+      "brave (Suspended)",
+      "duckduckgo (CAPTCHA)",
+      "fastbot (Suspended)",
+      "fireball (Suspended)",
+      "gmx (CAPTCHA)",
+      "google (Suspended)",
+      "google cse (Suspended)",
+      "qwant (CAPTCHA)",
+      "resulthunter (Suspended)",
+      "searchmysite (Suspended)",
+      "seznam (timeout)",
+      "yacy (timeout)",
+      "yep (Suspended)"
+    ]
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "type": "noul",
+      "noul": 0.9524
+    },
+    "usage": {
+      "input_tokens": 160,
+      "output_tokens": 0
+    }
+  }
+}

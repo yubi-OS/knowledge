@@ -1,0 +1,275 @@
+{
+  "topic": "point-to-point latent mapping for unlabeled corpora: binarization, sphere placement, null models, certificates, and deployment",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "keys-and-identity",
+      "scope": "Identity keys for unlabeled corpus items: content hashing (FNV-1a, SHA-256), ordinal injectivity, and collision classes.",
+      "seed_queries": [
+        "FNV-1a hash algorithm 64-bit collisions",
+        "content hash SHA-256 data identity deduplication"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "binarization-rules",
+      "scope": "Binarizing continuous vectors under a stated rule: median splits, quantile thresholds, sign rules, and why the rule must be pinned for comparability.",
+      "seed_queries": [
+        "median split dichotomization continuous variable statistics",
+        "principal component analysis high dimensional data reduction"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "sphere-placement",
+      "scope": "Placement of items on the 2-sphere: PCA top-2, stereographic lift, pole reference, geodesic and chordal distance.",
+      "seed_queries": [
+        "stereographic projection sphere plane formula",
+        "great circle distance chordal distance unit sphere"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "hamming-spectra",
+      "scope": "Krawtchouk polynomials and the Hamming association scheme: spectra of binary data and the hypercube graph.",
+      "seed_queries": [
+        "Krawtchouk polynomials association scheme",
+        "hypercube graph spectrum eigenvalues"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "spherical-harmonics",
+      "scope": "Spherical harmonic power spectra for point sets on the 2-sphere: expansion, angular power spectrum, decay under smoothing.",
+      "seed_queries": [
+        "spherical harmonics power spectrum coefficients",
+        "spherical harmonic expansion angular correlation function"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "metropolis-samplers",
+      "scope": "Metropolis-Hastings chains on discrete state spaces: acceptance ratios, detailed balance, flux symmetry and convergence diagnostics.",
+      "seed_queries": [
+        "Metropolis Hastings algorithm detailed balance acceptance probability",
+        "MCMC convergence diagnostics acceptance rate"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "curveball-nulls",
+      "scope": "Fixed-margin null models for binary matrices: curveball swap algorithms versus permutation, admissibility of null variance.",
+      "seed_queries": [
+        "Curveball algorithm randomization binary matrices",
+        "null model ecological binary matrices swap algorithm fixed margins"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "verified-identities",
+      "scope": "Lean theorem proving and exact arithmetic: what verified identities certify versus what floating point measurements measure.",
+      "seed_queries": [
+        "Lean 4 theorem proving mathlib verified mathematics",
+        "floating point error exact arithmetic numerical verification"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "edge-transport",
+      "scope": "Slerp and geodesic interpolation on the sphere: bridge edges between points, monotone distance along rungs, antipodal handling.",
+      "seed_queries": [
+        "slerp spherical linear interpolation formula",
+        "quaternion slerp geodesic interpolation antipodal"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "worker-deployment",
+      "scope": "Deployment of deterministic numeric pipelines on Cloudflare: Workers AI embeddings, D1 persistence, isomorphic browser/Worker modules.",
+      "seed_queries": [
+        "Cloudflare Workers AI embeddings models",
+        "Cloudflare D1 database Workers binding"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.7132,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0665,
+          "1": 0.1538,
+          "2": 0.7797
+        },
+        "confidence": 0.454
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8922,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0225,
+          "1": 0.0628,
+          "2": 0.9147
+        },
+        "confidence": 0.7618
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.8611,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0298,
+          "1": 0.0793,
+          "2": 0.8909
+        },
+        "confidence": 0.7012
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.3857,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1487,
+          "1": 0.3169,
+          "2": 0.5344
+        },
+        "confidence": 0.1122
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.4736,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1185,
+          "1": 0.2895,
+          "2": 0.592
+        },
+        "confidence": 0.1725
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.3532,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1562,
+          "1": 0.3344,
+          "2": 0.5094
+        },
+        "confidence": 0.0936
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.8263,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.033,
+          "1": 0.1078,
+          "2": 0.8592
+        },
+        "confidence": 0.6265
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.3977,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1482,
+          "1": 0.3058,
+          "2": 0.546
+        },
+        "confidence": 0.1203
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.3472,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1393,
+          "1": 0.3743,
+          "2": 0.4864
+        },
+        "confidence": 0.0942
+      },
+      "t10": {
+        "type": "score",
+        "score": 1.4663,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1114,
+          "1": 0.3109,
+          "2": 0.5777
+        },
+        "confidence": 0.1642
+      }
+    },
+    "usage": {
+      "input_tokens": 1656,
+      "output_tokens": 0
+    },
+    "http_status": 200,
+    "requested_at": "2026-10-05T12:42:14.945Z",
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "dropped": []
+  }
+}
