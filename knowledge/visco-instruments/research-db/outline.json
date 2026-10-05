@@ -1,0 +1,120 @@
+{
+  "topic": "viscoelastic instruments as corpus-audit API surfaces: persistence-under-regrading, hysteresis rollups, Prony-series relaxation fits, and snapback detection exposed on a worker, with the build record of shipping them",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "persistence-under-regrading",
+      "scope": "The /visco/persistence route: auditing base and loaded score matrices internally, measuring which flipped cells persist under caller-supplied independent re-graded rows, and reporting the inter-pass scorer offset.",
+      "seed_queries": [
+        "inter-rater reliability agreement persistence of annotation changes",
+        "test-retest reliability scoring consistency regrading measurement"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "hysteresis-rollups",
+      "scope": "The /visco/hysteresis route: closing supersedes chains in an outcomes ledger and rolling up sum/mean absolute predicted-minus-realized error per round, including the correct empty-ledger shape.",
+      "seed_queries": [
+        "hysteresis viscoelasticity loading unloading energy dissipation",
+        "rolling error metrics forecast evaluation cumulative absolute error"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "prony-relaxation-fits",
+      "scope": "The /visco/prony route: fitting a Prony relaxation series over a runs history with a deterministic tau grid plus non-negative least squares, K <= 3 arms, time basis selection, and honest fit-quality reporting (r2).",
+      "seed_queries": [
+        "Prony series viscoelastic stress relaxation modulus fitting",
+        "non-negative least squares exponential sum fitting relaxation spectrum"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "snapback-detection",
+      "scope": "The /visco/snapback route: sign-inversion detection on predicted-vs-realized series, emitting gate_input verdicts (halt_round / continue) that advise but never auto-action, matching the Python fixture exactly on recorded rounds.",
+      "seed_queries": [
+        "snap-back instability structural testing load reversal",
+        "change point detection sign change time series monitoring"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "fixture-parity-instrument-system",
+      "scope": "tools/visco-instruments/ as the system of record: verify_visco.py, generate_fixtures.py, CONTRACTS.md, JSON fixtures, and the fixture-parity-tested JS port (jev-visco-math.js) that is never re-derived.",
+      "seed_queries": [
+        "golden master testing fixtures cross-language implementation parity",
+        "reference implementation porting TypeScript Python contract testing"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "parallel-build-lanes",
+      "scope": "The full-stack build: Lane A (Python source of record, 15/15 selftest, 102.86 hysteresis anchor), Lane B (JS port, 9/9 parity first run), Lane C (routes, builtins, ledger schema discovery), and the advisor lane reconciling 5 contract ambiguities including two runtime-crashing bugs.",
+      "seed_queries": [
+        "parallel development lanes software build integration advisor",
+        "contract-first development cross-module interface reconciliation"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "worker-deploy-modules-api",
+      "scope": "Deploying the 37-part steady-orbit worker via the Cloudflare modules API: overlaying a NEW jev-visco-math.js part, rebuilding metadata from live settings, preserving 13 bindings and two cron schedules, and the etag-recorded 2026-10-03 deploy.",
+      "seed_queries": [
+        "Cloudflare Workers modules API multipart upload deploy bindings",
+        "Cloudflare Workers cron triggers preserve metadata deployment"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "live-e2e-verification",
+      "scope": "Post-deploy verification: the corpus selftest gaining visco parity checks, live snapback reproducing the Python fixture on round-3 series, honest low r2 on mixed history, the empty-ledger no_data shape, and a live persistence run.",
+      "seed_queries": [
+        "end-to-end API verification production smoke testing",
+        "deployment verification selftest suite health checks"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "design-decisions-deferrals",
+      "scope": "The jev-qualified design decisions carried into v1 (persistence-first 0.83, Python source of record 0.88, deterministic Prony 0.82, builtins 0.89, scope 0.97) and the documented out-of-scope list including the rate-dependent scorer deferral.",
+      "seed_queries": [
+        "architecture decision records scope deferral v1",
+        "deterministic scoring versus LLM grading evaluation pipelines"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "viscoelastic-foundations",
+      "scope": "The physics grounding the instrument names: linear viscoelasticity, creep and recovery, stress relaxation, Prony-series representation, and hysteresis loops, as the vocabulary the API surface borrows for corpus auditing.",
+      "seed_queries": [
+        "linear viscoelasticity creep recovery Boltzmann superposition principle",
+        "viscoelastic materials stress relaxation hysteresis loop definition"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": { "type": "score", "score": 1.389, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.1071, "1": 0.3969, "2": 0.496 }, "confidence": 0.1226 },
+      "t02": { "type": "score", "score": 1.7001, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.065, "1": 0.1698, "2": 0.7652 }, "confidence": 0.4278 },
+      "t03": { "type": "score", "score": 1.7547, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.0579, "1": 0.1294, "2": 0.8127 }, "confidence": 0.5208 },
+      "t04": { "type": "score", "score": 1.3103, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.1458, "1": 0.3982, "2": 0.456 }, "confidence": 0.0817 },
+      "t05": { "type": "score", "score": 0.8044, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.4026, "1": 0.3904, "2": 0.207 }, "confidence": 0.036 },
+      "t06": { "type": "score", "score": 0.5031, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.5868, "1": 0.3233, "2": 0.0899 }, "confidence": 0.1854 },
+      "t07": { "type": "score", "score": 1.5634, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.1062, "1": 0.2242, "2": 0.6696 }, "confidence": 0.2649 },
+      "t08": { "type": "score", "score": 0.9305, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.3112, "1": 0.4471, "2": 0.2417 }, "confidence": 0.0328 },
+      "t09": { "type": "score", "score": 0.9077, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.2757, "1": 0.5409, "2": 0.1834 }, "confidence": 0.1033 },
+      "t10": { "type": "score", "score": 0.943, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }, "probabilities": { "0": 0.3018, "1": 0.4534, "2": 0.2448 }, "confidence": 0.0349 }
+    },
+    "usage": { "input_tokens": 1660, "output_tokens": 0 },
+    "requested_at": "2026-10-05T17:14:00Z"
+  },
+  "dropped": [],
+  "kept": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]
+}

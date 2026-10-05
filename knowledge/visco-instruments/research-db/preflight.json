@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": [
+      {
+        "query": "linear viscoelasticity creep recovery",
+        "status": 200,
+        "ms": 8981,
+        "result_count": 40,
+        "sample": {
+          "title": "PDF Essentials of Linear Viscoelasticity - Brown University",
+          "url": "https://appliedmath.brown.edu/sites/default/files/fractional/12%20EssentialsofLinearViscoelasticity.pdf"
+        }
+      },
+      {
+        "query": "Prony series relaxation modulus",
+        "status": 200,
+        "ms": 3635,
+        "result_count": 47,
+        "sample": {
+          "title": "4.8. Viscoelasticity - Ansys",
+          "url": "https://ansyshelp.ansys.com/public/////////Views/Secured/corp/v242/en/ans_mat/evis.html"
+        }
+      }
+    ],
+    "unresponsive_engines": [
+      [
+        "brave",
+        "too many requests"
+      ],
+      [
+        "duckduckgo",
+        "CAPTCHA"
+      ],
+      [
+        "fastbot",
+        "access denied"
+      ],
+      [
+        "fireball",
+        "access denied"
+      ],
+      [
+        "gmx",
+        "CAPTCHA"
+      ],
+      [
+        "google",
+        "access denied"
+      ],
+      [
+        "google cse",
+        "too many requests"
+      ],
+      [
+        "qwant",
+        "CAPTCHA"
+      ],
+      [
+        "resulthunter",
+        "too many requests"
+      ],
+      [
+        "searchmysite",
+        "access denied"
+      ],
+      [
+        "seznam",
+        "timeout"
+      ],
+      [
+        "yacy",
+        "timeout"
+      ],
+      [
+        "yep",
+        "access denied"
+      ]
+    ]
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "type": "noul",
+      "noul": 0.0676
+    }
+  }
+}

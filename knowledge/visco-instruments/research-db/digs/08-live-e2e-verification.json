@@ -1,0 +1,68 @@
+{
+  "nn": "08",
+  "slug": "live-e2e-verification",
+  "scope": "Post-deploy verification: the corpus selftest gaining visco parity checks, live snapback reproducing the Python fixture on round-3 series, honest low r2 on mixed history, the empty-ledger no_data shape, and a live persistence run.",
+  "queries_attempted": [
+    {
+      "query": "end-to-end API verification production smoke testing",
+      "attempt": 1,
+      "raw_results": 58,
+      "kept": 6
+    },
+    {
+      "query": "deployment verification selftest suite health checks",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "post-deployment smoke test critical paths production",
+      "attempt": 2,
+      "raw_results": 65,
+      "kept": 6
+    },
+    {
+      "query": "automated deployment health checks verification gates",
+      "attempt": 2,
+      "raw_results": 63,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt-1 dig too thin: only 1 high-weight relevant source; rest low weight or off-topic",
+      "new_queries": [
+        "post-deployment smoke test critical paths production",
+        "automated deployment health checks verification gates"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.testmuai.com/learning-hub/smoke-testing/",
+    "https://flasqo.com/guides/smoke-testing/",
+    "https://inferensys.com/glossary/tool-calling-and-api-execution/automated-api-testing-suites/smoke-testing",
+    "https://www.endclothing.com/us",
+    "https://en.wikipedia.org/wiki/Software_testing",
+    "https://archive.fosdem.org/2017/schedule/day/sunday/",
+    "https://github.com/Djones-qa/deployment-verification-suite",
+    "https://helpmetest.com/blog/deployment-verification-testing-guide/",
+    "https://zetcode.com/terms-testing/deployment-verification/",
+    "https://qapractices.com/checklists/post-deployment-verification-checklist/",
+    "https://www.merriam-webster.com/dictionary/deployment",
+    "https://selftest.mededtech.ru/",
+    "https://beefed.ai/en/post-deploy-smoke-test-checklist",
+    "https://helpmetest.com/blog/smoke-testing-checklist-after-deploy/",
+    "https://www.asectech.org/posts/understanding-smoke-testing-for-prod",
+    "https://www.devopstraininginstitute.com/blog/12-post-deployment-validation-steps-in-cicd",
+    "https://helpmetest.com/blog/smoke-testing-after-deployment/",
+    "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/approvals/gates?view=azure-devops",
+    "https://www.grizzlypeaksoftware.com/library/deployment-gates-and-pre-deployment-approvals-erqe6g8n",
+    "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops",
+    "https://handwiki.org/wiki/Company:Verifone",
+    "https://acis.eoir.justice.gov/",
+    "https://gokairo.dev/"
+  ],
+  "outcome": "authored"
+}
