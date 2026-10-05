@@ -1,0 +1,248 @@
+{
+  "topic": "aligning post-quantum migration timelines: crypto-agility planning, standardization milestones, and how an OS project should sequence PQ adoption against upstream signals",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "timeline-fragmentation",
+      "scope": "Why post-quantum migration splits into independent transport, signature, and verification timelines and why their convergence is the real ship gate.",
+      "seed_queries": [
+        "post-quantum migration TLS signatures verification separate timelines coordination",
+        "crypto-agility migration sequencing transport versus code signing post-quantum"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "standardization-milestones",
+      "scope": "The NIST FIPS 203/204/205 and IETF milestone map: what became final when, and which RFCs and drafts define PQ TLS and PQ signatures.",
+      "seed_queries": [
+        "NIST FIPS 203 FIPS 204 FIPS 205 final post-quantum standards release",
+        "IETF TLS hybrid post-quantum key exchange X25519MLKEM768 draft RFC status"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "crypto-agility-design",
+      "scope": "Crypto-agility as an architectural principle: designing OS-level systems so algorithms can be swapped without re-architecture, and what NIST guidance says.",
+      "seed_queries": [
+        "crypto-agility design principles architecture post-quantum migration",
+        "NIST crypto agility guidance migrating cryptographic algorithms systems"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "transport-timeline-state",
+      "scope": "Current state of the PQ transport timeline: OpenSSL 3.5 native ML-KEM, Go X25519MLKEM768 defaults, large-scale deployments like Cloudflare.",
+      "seed_queries": [
+        "OpenSSL 3.5 ML-KEM post-quantum TLS release",
+        "Go 1.24 X25519MLKEM768 default post-quantum key exchange"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "signature-timeline-state",
+      "scope": "Current state of the PQ signature timeline: ML-DSA / FIPS 204 support in cosign, Sigstore, and hardware keys like YubiKey PIV.",
+      "seed_queries": [
+        "ML-DSA FIPS 204 signatures cosign Sigstore support",
+        "YubiKey PIV post-quantum ML-DSA support firmware roadmap"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "verification-timeline-state",
+      "scope": "Current state of the PQ verification timeline: slsa-verifier and cosign verify algorithm coverage, and why verification lags signing.",
+      "seed_queries": [
+        "slsa-verifier signature algorithm support post-quantum",
+        "cosign verify post-quantum signature verification Sigstore bundle algorithms"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "upstream-signal-tracking",
+      "scope": "How an OS project tracks upstream signals (release notes, RFC milestones, vendor roadmaps, CI experiments) and translates them into adoption sequencing.",
+      "seed_queries": [
+        "tracking open source dependency roadmaps release milestones adoption planning",
+        "IETF draft milestone states tracking standards adoption planning"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "harvest-now-threat-model",
+      "scope": "The harvest-now-decrypt-later threat model versus later signature forgery: why the two PQ timelines carry different urgency for long-lived OS artifacts.",
+      "seed_queries": [
+        "harvest now decrypt later threat model post-quantum migration urgency",
+        "long-lived artifact signature forgery post-quantum store now decrypt later signatures"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "os-sequencing-strategy",
+      "scope": "Sequencing PQ adoption for an OS project: what to enable first, how to handle partial PQ states, and the danger of shipping PQ transport ahead of PQ artifact integrity.",
+      "seed_queries": [
+        "operating system post-quantum migration plan sequencing secure boot chain",
+        "Linux distribution post-quantum readiness migration plan 2025 2030"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8358,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0419,
+          "1": 0.0804,
+          "2": 0.8777
+        },
+        "confidence": 0.6679
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.9223,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.016,
+          "1": 0.0458,
+          "2": 0.9382
+        },
+        "confidence": 0.824
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.776,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0477,
+          "1": 0.1285,
+          "2": 0.8238
+        },
+        "confidence": 0.5461
+      },
+      "t04": {
+        "type": "score",
+        "score": 0.8586,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.386,
+          "1": 0.3694,
+          "2": 0.2446
+        },
+        "confidence": 0.0179
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.155,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2579,
+          "1": 0.3292,
+          "2": 0.4129
+        },
+        "confidence": 0.0181
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.0914,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2571,
+          "1": 0.3943,
+          "2": 0.3486
+        },
+        "confidence": 0.0146
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.8492,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0321,
+          "1": 0.0866,
+          "2": 0.8813
+        },
+        "confidence": 0.6779
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.1132,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.172,
+          "1": 0.5427,
+          "2": 0.2853
+        },
+        "confidence": 0.1082
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.9035,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0275,
+          "1": 0.0415,
+          "2": 0.931
+        },
+        "confidence": 0.8039
+      }
+    },
+    "usage": {
+      "input_tokens": 1357,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

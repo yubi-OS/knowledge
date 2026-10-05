@@ -1,0 +1,58 @@
+{
+  "nn": "07",
+  "slug": "upstream-signal-tracking",
+  "scope": "How an OS project tracks upstream signals (release notes, RFC milestones, vendor roadmaps, CI experiments) and translates them into adoption sequencing.",
+  "queries_attempted": [
+    {
+      "query": "tracking open source dependency roadmaps release milestones adoption planning",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "IETF draft milestone states tracking standards adoption planning",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "IETF internet draft lifecycle from working group adoption to RFC publication process",
+      "attempt": 2,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "software project release notes changelog as planning signal tracking upstream dependency changes",
+      "attempt": 2,
+      "raw_results": 55,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "original dig thin on substantive primary sources",
+      "new_queries": [
+        "IETF internet draft lifecycle from working group adoption to RFC publication process",
+        "software project release notes changelog as planning signal tracking upstream dependency changes"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://airfocus.com/product/roadmaps/",
+    "https://authors.ietf.org/en/rfc-publication-process",
+    "https://chairs.ietf.org/documents/lifecycle",
+    "https://chairs.ietf.org/en/documents",
+    "https://contribute.cncf.io/projects/best-practices/community/contributor-growth/open-source-roadmaps/",
+    "https://datatracker.ietf.org/doc/draft-geng-grow-bmp-monitor-options/",
+    "https://datatracker.ietf.org/doc/draft-ietf-opsawg-collected-data-manifest/",
+    "https://datatracker.ietf.org/doc/help/state/draft-stream-ietf/",
+    "https://linear.app/changelog/2026-06-18-agent-assisted-project-updates",
+    "https://www.ietf.org/archive/id/draft-carpenter-gendispatch-rfc7221bis-02.html",
+    "https://www.ietf.org/archive/id/draft-schinazi-update-on-milestones-03.html",
+    "https://www.ietf.org/proceedings/123/slides/slides-123-procon-milestones-00.pdf"
+  ],
+  "outcome": "authored",
+  "skip_reason": "no results could be scored after redos"
+}
