@@ -1,0 +1,36 @@
+{
+ "nn": 1,
+ "slug": "container-isolation-basics",
+ "scope": "What a rootless podman container isolates: user/mount/PID/network namespaces, cgroups, the default seccomp profile, and which threats the container wall answers (escape, escalation, image tampering).",
+ "queries_attempted": [
+  {
+   "query": "podman rootless containers isolation namespaces seccomp",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "container security threat model namespaces cgroups seccomp",
+   "attempt": 2,
+   "raw_results": 58,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2026-02-02-podman-security-configuration/view",
+  "https://www.redhat.com/en/blog/rootless-containers-podman",
+  "https://github.com/oneuptime/blog/tree/master/posts/2026-02-02-podman-security-configuration",
+  "https://deepwiki.com/containers/podman/8-rootless-containers",
+  "https://deepwiki.com/podman-container-tools/podman/4.3-security:-selinux-seccomp-and-capabilities",
+  "https://en.wikipedia.org/wiki/OS-level_virtualization",
+  "https://safeguard.sh/resources/blog/container-isolation-with-namespaces-cgroups-and-seccomp",
+  "https://safeguard.sh/resources/blog/container-isolation-best-practices",
+  "https://culpur.net/2026/04/07/container-escape-prevention-kernel-namespaces-seccomp-and-apparmor-deep-dive/",
+  "https://timesofcloud.com/linux-container-security-namespaces-cgroups-seccomp/",
+  "https://handwiki.org/wiki/Software:Container_Linux",
+  "https://www.containerstore.com/welcome.htm?msockid=385d7d9e26d56fa804576a7727226ea9"
+ ],
+ "outcome": "authored"
+}

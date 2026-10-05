@@ -1,0 +1,36 @@
+{
+ "nn": 3,
+ "slug": "vm-boundary-kvm",
+ "scope": "The VM boundary (QEMU/KVM, bcvk): hardware virtualization isolation vs containers, libvirt default NAT network virbr0, ephemeral disk images, and why a VM answers threats containers cannot.",
+ "queries_attempted": [
+  {
+   "query": "QEMU KVM virtual machine isolation vs containers threat model",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "libvirt default network virbr0 NAT isolation",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/kata-containers/kata-containers/blob/main/docs/threat-model/threat-model.md",
+  "https://www.fosslinux.com/162244/why-containers-are-not-virtual-machines-shared-kernel-isolation-escapes.htm",
+  "https://northflank.com/blog/kvm-vs-qemu",
+  "http://browser.geekbench.com/v6/cpu/baseline/6633748",
+  "https://www.qemu.org/",
+  "https://lwn.net/Archives/GuestIndex/",
+  "https://wiki.libvirt.org/Networking.html",
+  "https://wiki.libvirt.org/VirtualNetworking.html",
+  "https://jamielinux.com/docs/libvirt-networking-handbook/nat-based-network.html",
+  "https://www.tripadvisor.com/Hotels-g60750-San_Diego_California-Hotels.html",
+  "http://bugzilla.redhat.com/show_bug.cgi?id=235961",
+  "https://linuxconfig.org/how-to-use-bridged-networking-with-libvirt-and-kvm"
+ ],
+ "outcome": "authored"
+}

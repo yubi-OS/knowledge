@@ -1,0 +1,36 @@
+{
+ "nn": 7,
+ "slug": "privilege-crossings",
+ "scope": "Privilege model across modes: rootless user namespaces as the container/nspawn constant, sudo/KVM escalation for VM rows, and per-mode seccomp application (podman default profile, nspawn --system-call-filter, unit SystemCallFilter=@system-service).",
+ "queries_attempted": [
+  {
+   "query": "podman default seccomp profile containers",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "systemd SystemCallFilter system-service seccomp unit",
+   "attempt": 2,
+   "raw_results": 38,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.podman.io/en/v4.3/markdown/options/seccomp-policy.html",
+  "https://oneuptime.com/blog/post/2026-03-18-use-custom-seccomp-profile-podman/view",
+  "https://kubernetes.io/docs/tutorials/security/seccomp/",
+  "https://podman.io/docs/installation",
+  "https://docs.podman.io/en/v4.6.1/markdown/options/seccomp-policy.html",
+  "https://podman.io/",
+  "https://linux-audit.com/systemd/settings/units/systemcallfilter/",
+  "https://www.systemshardening.com/articles/linux/seccomp-bpf-non-container/",
+  "https://www.bigiron.cc/guides/seccomp-profiles-the-syscall-firewall-for-your-services",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://systemd.io/",
+  "https://dev.to/aomiqaza/systemd-service-sandboxing-restricting-process-capability-system-calls-2klk"
+ ],
+ "outcome": "authored"
+}

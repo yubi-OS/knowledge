@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "unit-sandbox-directives",
+ "scope": "The systemd unit sandbox as a persistent-daemon boundary: SystemCallFilter, PrivateTmp, RuntimeDirectory, ProtectSystem/ProtectHome, NoNewPrivileges, and what each directive answers.",
+ "queries_attempted": [
+  {
+   "query": "systemd service sandboxing SystemCallFilter PrivateTmp ProtectSystem",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "systemd unit hardening directives RuntimeDirectory NoNewPrivileges",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://linuxjunkies.org/guides/lock-down-systemd-services",
+  "https://stackharbor.com/en/knowledge-base/systemd-service-hardening/",
+  "https://wiki.archlinux.org/title/Systemd/Sandboxing",
+  "https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/",
+  "https://dev.to/aomiqaza/systemd-service-sandboxing-restricting-process-capability-system-calls-2klk",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+  "https://linux-audit.com/systemd/settings/units/nonewprivileges/",
+  "https://www.bigiron.cc/guides/systemd-service-hardening-directives-a-deep-dive",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://linuxjunkies.org/guides/lock-down-systemd-services",
+  "https://www.linuxjournal.com/content/systemd-service-strengthening"
+ ],
+ "outcome": "authored"
+}

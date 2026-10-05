@@ -1,0 +1,223 @@
+{
+ "topic": "isolation boundaries by execution mode: how container, nspawn, VM, and unit modes differ in what they isolate and which threats each boundary answers",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "container-isolation-basics",
+   "scope": "What a rootless podman container isolates: user/mount/PID/network namespaces, cgroups, the default seccomp profile, and which threats the container wall answers (escape, escalation, image tampering).",
+   "seed_queries": [
+    "podman rootless containers isolation namespaces seccomp",
+    "container security threat model namespaces cgroups seccomp"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "nspawn-ephemeral-mode",
+   "scope": "systemd-nspawn as a boundary: user namespace mapping with --private-users, ephemeral overlay mode (--ephemeral), boot-in-container, and discard-at-exit semantics.",
+   "seed_queries": [
+    "systemd-nspawn isolation private-users ephemeral",
+    "systemd-nspawn --ephemeral --boot security boundary"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "vm-boundary-kvm",
+   "scope": "The VM boundary (QEMU/KVM, bcvk): hardware virtualization isolation vs containers, libvirt default NAT network virbr0, ephemeral disk images, and why a VM answers threats containers cannot.",
+   "seed_queries": [
+    "QEMU KVM virtual machine isolation vs containers threat model",
+    "libvirt default network virbr0 NAT isolation"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "unit-sandbox-directives",
+   "scope": "The systemd unit sandbox as a persistent-daemon boundary: SystemCallFilter, PrivateTmp, RuntimeDirectory, ProtectSystem/ProtectHome, NoNewPrivileges, and what each directive answers.",
+   "seed_queries": [
+    "systemd service sandboxing SystemCallFilter PrivateTmp ProtectSystem",
+    "systemd unit hardening directives RuntimeDirectory NoNewPrivileges"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "mode-semantics-cleanup",
+   "scope": "Execution mode semantics: one-shot (--rm), ephemeral (--ephemeral), persistent (systemd unit), destructive one-shot (disk flash); lifetime, cleanup contract, and exit-rc propagation per mode.",
+   "seed_queries": [
+    "docker run --rm cleanup semantics exit code",
+    "systemd-nspawn ephemeral overlay discarded on exit"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "mode-hazards-idempotency",
+   "scope": "Mode-specific hazards: state leaks after interrupted cleanup (orphaned network namespaces, virbr0 left UP), restart-expectation bugs under PrivateTmp/RuntimeDirectory, and confirmation gates for destructive one-shot modes (bootc install to-disk vs to-filesystem).",
+   "seed_queries": [
+    "bootc install to-disk destructive wipe confirmation",
+    "systemd RuntimeDirectory removed on stop state loss"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "privilege-crossings",
+   "scope": "Privilege model across modes: rootless user namespaces as the container/nspawn constant, sudo/KVM escalation for VM rows, and per-mode seccomp application (podman default profile, nspawn --system-call-filter, unit SystemCallFilter=@system-service).",
+   "seed_queries": [
+    "podman default seccomp profile containers",
+    "systemd SystemCallFilter system-service seccomp unit"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "observers-and-secrets",
+   "scope": "Where observers and secrets sit relative to boundaries: eBPF measurement daemons (Falco, Tetragon) running in persistent mode to observe containers and VMs, eBPF visibility limits inside VMs, and keeping hardware secrets (YubiKey) outside every boundary.",
+   "seed_queries": [
+    "Tetragon Falco eBPF security monitoring containers visibility",
+    "eBPF runtime security monitoring host vs VM boundary"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8765,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0302,
+     "1": 0.0631,
+     "2": 0.9067
+    },
+    "confidence": 0.7405
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.3463,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1153,
+     "1": 0.423,
+     "2": 0.4617
+    },
+    "confidence": 0.108
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.8255,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0299,
+     "1": 0.1147,
+     "2": 0.8554
+    },
+    "confidence": 0.6186
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.7905,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0464,
+     "1": 0.1168,
+     "2": 0.8368
+    },
+    "confidence": 0.5742
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.0915,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.182,
+     "1": 0.5445,
+     "2": 0.2735
+    },
+    "confidence": 0.1066
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.1595,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1905,
+     "1": 0.4595,
+     "2": 0.35
+    },
+    "confidence": 0.0549
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.481,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0923,
+     "1": 0.3343,
+     "2": 0.5734
+    },
+    "confidence": 0.1736
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.2405,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.164,
+     "1": 0.4316,
+     "2": 0.4044
+    },
+    "confidence": 0.0651
+   }
+  },
+  "usage": {
+   "input_tokens": 1205,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ }
+}
