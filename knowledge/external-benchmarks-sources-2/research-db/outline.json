@@ -1,0 +1,239 @@
+{
+ "topic": "the refreshed external benchmarks and comparison sources register: checklist-driven source selection, retrieval dating, and claim boundaries for benchmark citations",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "checklist-driven-source-selection",
+   "scope": "The OMN-80 five-item checklist workflow for external benchmark sources: accuracy/relevance review, directional-vs-self-evidence separation, explicit validation notes, refresh tracking, and a reusable citation register as a repeatable method.",
+   "seed_queries": [
+    "source citation checklist accuracy validation retrieval date",
+    "benchmark citation hygiene workflow directional evidence"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "breach-cost-benchmarks",
+   "scope": "Cost-of-data-breach benchmarks (IBM Cost of a Data Breach 2025, phishing as initial vector, USD 4.8M) as directional status-quo-cost evidence with annual refresh cadence.",
+   "seed_queries": [
+    "IBM cost of a data breach report 2025 phishing initial attack vector 4.8 million",
+    "IBM data breach report 2025 methodology 600 organizations"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "security-key-market-sizing",
+   "scope": "FIDO2 hardware security key market size and growth estimates (2025 value, 2034 projections, CAGR range) from commercial market-research vendors, with vendor-to-vendor variance and range caveats.",
+   "seed_queries": [
+    "FIDO2 hardware security key market size 2025 forecast 2034 CAGR",
+    "hardware authentication key market research report vendors estimate"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "vendor-market-share",
+   "scope": "Yubico market position estimates (value share vs unit-volume share) from vendor reports, used as context for hardware root-of-trust choice and naming/trademark risk, never for self share claims.",
+   "seed_queries": [
+    "Yubico market share FIDO2 hardware keys unit volume",
+    "YubiKey dominant vendor hardware authenticator market share"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "hardware-cost-validation",
+   "scope": "Live retail price validation for YubiKey 5 Series (US and EU store pricing), the checkable-number discipline, and the unreconciled 25-dollar worksheet floor flagged to its owner rather than silently corrected.",
+   "seed_queries": [
+    "Yubico official store YubiKey 5 series price USD",
+    "YubiKey 5 NFC 5C 5Ci price EUR official retail"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "regulatory-tailwind",
+   "scope": "Federal and regulatory push toward phishing-resistant MFA: OMB M-22-09, NIST SP 800-63B, CISA fact sheet, FIDO Alliance government guidance, and the certification claim boundary.",
+   "seed_queries": [
+    "OMB memorandum M-22-09 phishing resistant MFA federal agencies",
+    "NIST SP 800-63B phishing resistance verifier impersonation CISA gold standard"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "claim-boundaries",
+   "scope": "The directional-benchmark vs product-evidence boundary: what-it-supports / do-not-use-for pairs, misuse patterns (attributing benchmark figures to a product with zero customers), and per-claim validation notes.",
+   "seed_queries": [
+    "claim boundary directional benchmark misuse market share zero customers",
+    "benchmark citation what it supports do not use for discipline"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "refresh-cadence-and-source-aging",
+   "scope": "Per-benchmark refresh cadence (annual light check vs before-every-citation), retrieval dating discipline, sources needing refresh or replacement, and weakest-source handling for vendor forecasts.",
+   "seed_queries": [
+    "market research report refresh cadence stale citation policy",
+    "source aging retrieval date documentation benchmark hygiene"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "citation-register-dependencies",
+   "scope": "The reusable citation register table structure (source, use-for, do-not-use-for) and its dependency map into pricing, ROI, and funding-target docs.",
+   "seed_queries": [
+    "reusable citation register table benchmark sources template",
+    "citation register downstream pricing roi dependency"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.7015,
+    "probabilities": {
+     "0": 0.0765,
+     "1": 0.1454,
+     "2": 0.7781
+    },
+    "confidence": 0.4485,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.3805,
+    "probabilities": {
+     "0": 0.1105,
+     "1": 0.3985,
+     "2": 0.491
+    },
+    "confidence": 0.1181,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.9477,
+    "probabilities": {
+     "0": 0.2017,
+     "1": 0.6489,
+     "2": 0.1494
+    },
+    "confidence": 0.226,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.8993,
+    "probabilities": {
+     "0": 0.2139,
+     "1": 0.6729,
+     "2": 0.1132
+    },
+    "confidence": 0.267,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.5851,
+    "probabilities": {
+     "0": 0.1025,
+     "1": 0.21,
+     "2": 0.6875
+    },
+    "confidence": 0.2909,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.7905,
+    "probabilities": {
+     "0": 0.0576,
+     "1": 0.0942,
+     "2": 0.8482
+    },
+    "confidence": 0.5973,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.9129,
+    "probabilities": {
+     "0": 0.0268,
+     "1": 0.0334,
+     "2": 0.9398
+    },
+    "confidence": 0.8275,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.8484,
+    "probabilities": {
+     "0": 0.0343,
+     "1": 0.083,
+     "2": 0.8827
+    },
+    "confidence": 0.6808,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.6277,
+    "probabilities": {
+     "0": 0.0932,
+     "1": 0.1859,
+     "2": 0.7209
+    },
+    "confidence": 0.3444,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1695,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
