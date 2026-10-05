@@ -1,0 +1,224 @@
+{
+  "topic": "consolidating Docker image builds into a single docker-bake HCL file - multi-target bake definitions as the single source of truth for image variants and their CI wiring",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "bake-hcl-source-of-truth",
+      "scope": "The Bake HCL file model itself: targets, groups, inheritance (inherits), variables and user-defined functions, and how a single committed file becomes the single source of truth for all image variants.",
+      "seed_queries": [
+        "docker bake HCL file targets groups inheritance reference",
+        "docker bake HCL variables user-defined functions build args"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "target-contexts",
+      "scope": "target.contexts and target:<name> named build contexts: how a bake target consumes another target as a build context, e.g. a dev Containerfile consuming the internal production image target instead of a local tag workaround.",
+      "seed_queries": [
+        "docker bake target contexts target name build context",
+        "docker bake additional contexts compose files named contexts"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "build-policy",
+      "scope": "Docker Build Policies inside bake: the target.policy attribute (filename, reset, strict), fail-closed OPA/Rego contracts applied to every exported target, and inheritance of a shared _policy target.",
+      "seed_queries": [
+        "docker buildx bake policy attribute rego build policy",
+        "docker build policy reset strict OPA rego buildx"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "exporters",
+      "scope": "Bake target outputs: registry exporter vs docker/oci exporters as per-target output properties, letting one target emit local Docker output for CI and registry output for publish runs.",
+      "seed_queries": [
+        "docker bake registry exporter docker exporter output",
+        "docker buildx exporters types image oci docker registry"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "builder-selection",
+      "scope": "Builder selection mechanics: buildx create --use writes the active builder into the invoking Docker configuration, while bake --builder overrides it; user-scoped named builders (e.g. hardened) created in the same Docker configuration that invokes bake.",
+      "seed_queries": [
+        "docker buildx create --use builder selection docker config",
+        "docker buildx bake --builder flag override"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "entitlements-devices",
+      "scope": "Privileged build entitlements: explicit --allow daemon and invocation grants, RUN --device needing labs syntax and CDI-registered devices, and why /dev/kvm lanes stay host-workflow responsibilities.",
+      "seed_queries": [
+        "docker build entitlement privileged buildx allow",
+        "dockerfile RUN --device CDI labs syntax buildx"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ci-boundary",
+      "scope": "The bake/Actions responsibility split: which orchestrated lanes map to which bake targets or groups, what stays in GitHub Actions (runner selection, imagetools index assembly, source mutation, artifact transfer, mkosi, bcvk/Podman, KVM), and bake's limits as a model.",
+      "seed_queries": [
+        "docker bake github actions ci single file consolidation",
+        "docker bake what it does not model github actions responsibilities"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "static-validation",
+      "scope": "Static validation before CI: resolving targets with bake --print, rendering local and PUSH variants per architecture, checking tag invariants, inheritance output shapes, and workflow YAML reconciliation.",
+      "seed_queries": [
+        "docker buildx bake --print resolve check without building",
+        "docker bake validate targets tags static validation ci"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.892,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0255,
+          "1": 0.057,
+          "2": 0.9175
+        },
+        "confidence": 0.7687
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.5507,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0764,
+          "1": 0.2965,
+          "2": 0.6271
+        },
+        "confidence": 0.2305
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.1307,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2181,
+          "1": 0.433,
+          "2": 0.3489
+        },
+        "confidence": 0.0352
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.2041,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1607,
+          "1": 0.4745,
+          "2": 0.3648
+        },
+        "confidence": 0.0761
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.9695,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2378,
+          "1": 0.555,
+          "2": 0.2072
+        },
+        "confidence": 0.1113
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.3195,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.7371,
+          "1": 0.2063,
+          "2": 0.0566
+        },
+        "confidence": 0.3836
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.6359,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0622,
+          "1": 0.2397,
+          "2": 0.6981
+        },
+        "confidence": 0.323
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.382,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1096,
+          "1": 0.3988,
+          "2": 0.4916
+        },
+        "confidence": 0.1191
+      }
+    },
+    "usage": {
+      "input_tokens": 1222,
+      "output_tokens": 0
+    },
+    "requested_at": "2026-10-05T07:41:52Z",
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

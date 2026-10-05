@@ -1,0 +1,33 @@
+{
+  "nn": "02",
+  "slug": "target-contexts",
+  "scope": "target.contexts and target:<name> named build contexts: how a bake target consumes another target as a build context, e.g. a dev Containerfile consuming the internal production image target instead of a local tag workaround.",
+  "queries_attempted": [
+    {
+      "query": "docker bake target contexts target name build context",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "docker bake additional contexts compose files named contexts",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/build/bake/contexts/",
+    "https://docs.docker.com/build/bake/targets/",
+    "https://stackoverflow.com/questions/74316155/docker-compose-pass-named-contexts-to-docker-file",
+    "https://www.docker.com/",
+    "https://docker.ubitools.com/build/bake/targets/",
+    "https://www.docker.com/blog/dockerfiles-now-support-multiple-build-contexts/",
+    "https://www.tvaidyan.com/2024/12/05/contexts-and-additional-contexts-in-docker-compose/",
+    "https://planet.kernel.org/",
+    "https://docs.docker.com/build/bake/reference/"
+  ],
+  "outcome": "authored"
+}

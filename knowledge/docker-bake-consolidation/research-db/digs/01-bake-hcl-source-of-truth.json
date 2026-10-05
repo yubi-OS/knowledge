@@ -1,0 +1,33 @@
+{
+  "nn": "01",
+  "slug": "bake-hcl-source-of-truth",
+  "scope": "The Bake HCL file model itself: targets, groups, inheritance (inherits), variables and user-defined functions, and how a single committed file becomes the single source of truth for all image variants.",
+  "queries_attempted": [
+    {
+      "query": "docker bake HCL file targets groups inheritance reference",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "docker bake HCL variables user-defined functions build args",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/build/bake/reference/",
+    "https://oneuptime.com/blog/post/2026-02-08-how-to-write-docker-bake-hcl-files/view",
+    "https://docs.docker.com/build/bake/inheritance/",
+    "https://www.docker.com/",
+    "https://github.com/docker/docs/diffs/0?base_sha=78ee529adcb726fe98578ee45162abd057b82da6&head_user=chrsalx&name=main&pull_number=18226&sha1=78ee529adcb726fe98578ee45162abd057b82da6&sha2=d51e9575b47acd997a85979357ce640f6792da91&short_path=853e647&w=false",
+    "https://docs.docker.com/build/bake/inheritance",
+    "https://docs.docker.com/build/bake/funcs/",
+    "https://docs.docker.com/build/bake/funcs",
+    "https://acchapm1.github.io/tutorials/Docker-Bake/docker-bake-deep-dive"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,35 @@
+{
+  "nn": "06",
+  "slug": "entitlements-devices",
+  "scope": "Privileged build entitlements: explicit --allow daemon and invocation grants, RUN --device needing labs syntax and CDI-registered devices, and why /dev/kvm lanes stay host-workflow responsibilities.",
+  "queries_attempted": [
+    {
+      "query": "docker build entitlement privileged buildx allow",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "dockerfile RUN --device CDI labs syntax buildx",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/reference/cli/docker/buildx/build/",
+    "https://github.com/docker/buildx",
+    "https://stackoverflow.com/questions/48098671/build-with-docker-and-privileged",
+    "https://www.docker.com/",
+    "https://github.com/docker/buildx/discussions/2869",
+    "https://github.com/docker/buildx/blob/master/docs/reference/buildx_build.md",
+    "https://docs.docker.com/build/building/cdi.md",
+    "https://docs.docker.com/build/building/cdi/",
+    "https://github.com/thatrobotdev/docker-docs/blob/main/content/manuals/build/building/cdi.md",
+    "https://docs.docker.com/reference/dockerfile/",
+    "https://www.docker.com/blog/new-dockerfile-capabilities-v1-7-0/"
+  ],
+  "outcome": "authored"
+}

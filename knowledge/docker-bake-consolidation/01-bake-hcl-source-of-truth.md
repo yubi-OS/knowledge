@@ -1,0 +1,27 @@
+# The Bake HCL file as a single source of truth
+
+Scope: the Bake file model itself, targets, groups, inheritance, variables, and user-defined functions, and why one committed HCL file can carry every image variant a CI system builds.
+
+A Bake file defines workflows that `docker buildx bake` runs. It accepts three formats: HCL, JSON, or a YAML Compose file. By default Bake searches a fixed lookup order: `compose.yaml`, then `compose.yml`, `docker-compose.yml`, `docker-compose.yaml`, `docker-bake.json`, `docker-bake.hcl`, and then the `.override` variants. When several files match, they merge into one definition, and later files in the lookup order win for a defined list of override attributes: `target.cache-to`, `target.dockerfile-inline`, `target.dockerfile`, `target.output`, `target.platforms`, `target.pull`, `target.tags`, and `target.target`. All other attributes merge ([Bake file reference, w 0.96](https://docs.docker.com/build/bake/reference/)).
+
+Because HCL is the preferred format, and because only HCL exposes the full feature set, a project that wants one authoritative build definition should standardize on a single `docker-bake.hcl` and avoid the merge path entirely. The reference is explicit that HCL lets you use features the JSON and YAML formats do not support ([Bake file reference, w 0.96](https://docs.docker.com/build/bake/reference/)).
+
+## Targets are build invocations
+
+A target reflects a single `docker build` invocation. A group invokes multiple build targets at once, and groups take precedence over targets if both exist with the same name ([Bake file reference, w 0.96](https://docs.docker.com/build/bake/reference/); [Bake targets, w 0.95](https://docs.docker.com/build/bake/targets/)). This is the property that makes a Bake file a good single source of truth for image variants: each variant is a named, inspectable target, and each build lane in CI maps to one target or one group.
+
+The target attribute list is broad and stable: `args`, `annotations`, `attest`, `cache-from`, `cache-to`, `call`, `context`, `contexts`, `dockerfile`, `dockerfile-inline`, `entitlements`, `inherits`, `labels`, `matrix`, `output`, `platforms`, `policy`, `pull`, `secret`, `ssh`, `tags`, `target`, and more ([Bake file reference, w 0.96](https://docs.docker.com/build/bake/reference/); [bake-reference.md, w 0.96](https://github.com/docker/buildx/blob/master/docs/bake-reference.md)). Everything a build invocation needs is representable, which is why consolidating scattered `docker build` command lines into targets loses no expressiveness for ordinary builds.
+
+## Inheritance keeps variants small
+
+The `inherits` attribute lets a target pull attributes from other targets, and the list form means one target can compose a base target plus a release target. When inherited attributes conflict, the target that appears last in the `inherits` list takes precedence ([Bake file reference, w 0.96](https://docs.docker.com/build/bake/reference/); [Inheritance in Bake, w 0.96](https://docs.docker.com/build/bake/inheritance/)). In the yubiOS consolidation this composes into a deliberate pattern: one shared `_image-export` target owns the output shape (Docker exporter for local CI builds, registry exporter for publish runs), and each concrete variant inherits it, so export behavior is defined exactly once ([yubiOS source doc, refs/docker-bake-consolidation-2026-07-17.md]).
+
+## Variables and functions
+
+HCL supports `variable` blocks with defaults, descriptions, and explicit typing. Primitive types are `string`, `number`, and `bool`; complex types use type constructors like `list()`, `map()`, and `object()`. Variables can be overridden through environment variables, with CSV as the canonical form and JSON via a `_JSON` suffix for complex values ([Bake file reference, w 0.96](https://docs.docker.com/build/bake/reference/)). Built-in variables include `BAKE_CMD_CONTEXT` and `BAKE_LOCAL_PLATFORM` ([Bake file reference, w 0.96](https://docs.docker.com/build/bake/reference/)).
+
+User-defined functions extend the file beyond static attributes, letting a team express tag composition or platform logic once instead of repeating it per target ([Functions, w 0.87](https://docs.docker.com/build/bake/funcs/)). In practice, migrating from bash-scripted builds to a declarative Bake file is a documented pattern with real adoption ([Docker Bake in Practice, w 0.84](https://dev.to/gde/docker-bake-in-practice-part-1-from-bash-scripts-to-declarative-builds-3d1e)).
+
+## What this means for consolidation
+
+A single HCL file can own: every production and test-only image variant (as targets), the invocation groups each workflow calls, per-architecture platform lists and tags, labels, cache behavior, policy enforcement, and output destinations. Command-line overrides still exist for exceptional runs through `--set` and `--push`/`--load` shorthands ([docker buildx bake, w 0.96](https://docs.docker.com/reference/cli/docker/buildx/bake/); [Overriding configurations, w 0.92](https://docs.docker.com/build/bake/overrides/)), but the committed file is the reviewed, diffable contract. The yubiOS design takes exactly this posture: `yubiOS-bake.hcl` is the single source of truth for all Docker build invocations in the non-`ci_fork*` workflow chain, with the GitHub Actions layer retaining only what Bake cannot model ([yubiOS source doc, refs/docker-bake-consolidation-2026-07-17.md]).
