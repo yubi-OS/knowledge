@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "prompt-intake",
+ "scope": "Untrusted prompt intake: POST /api/jev/tasks with payload.prompt up to 8000 chars, one 70b call proposes actions over the policy tool list, proposals pass the same validation and deterministic gate as caller-supplied actions, verbatim storage, delimiting, no URL interpolation.",
+ "queries_attempted": [
+  {
+   "query": "LLM prompt injection untrusted user input mitigation agent",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "AI agent proposed actions require human approval gate pattern",
+   "attempt": 2,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+  "https://dev.to/pockit_tools/llm-prompt-injection-attacks-the-complete-security-guide-for-developers-building-ai-applications-bg9",
+  "https://www.sciencedirect.com/org/science/article/pii/S1546221826001384",
+  "https://en.wikipedia.org/wiki/Large_language_model",
+  "https://dev.to/tamizuddin/prompt-injection-is-the-new-sql-injection-a-practical-developers-guide-to-securing-ai-agents-28ji",
+  "https://sjramblings.io/understanding-llm-prompt-injection/",
+  "https://arcjet.com/learn/human-approval-gates-agent-actions",
+  "https://oasbit.com/news/ai-agent-development/when-ai-agent-needs-human-approval-before-action",
+  "https://www.mindstudio.ai/blog/gate-pattern-ai-agents-prepare-not-submit",
+  "https://en.wikipedia.org/wiki/Deep_learning",
+  "https://openai.com/",
+  "http://www.conlang.info/wordfreq.html"
+ ],
+ "outcome": "authored"
+}

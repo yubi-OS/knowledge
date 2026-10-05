@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "cron-scheduler",
+ "scope": "Cron scheduling on the worker: cron trigger every 5 minutes runs the scheduler tick, interval automations fire with compare-and-set on last_fired_at, per-interval idempotency keys on created tasks, lost tick acceptable vs double fire unacceptable.",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Workers cron triggers scheduled handler",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "distributed cron idempotency compare and set last fired deduplication",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/workers/runtime-apis/handlers/scheduled/",
+  "https://developers.cloudflare.com/workers/configuration/cron-triggers/",
+  "https://crongenerator.dev/cron-cloudflare/",
+  "https://blog.cloudflare.com/introducing-cron-triggers-for-cloudflare-workers/",
+  "https://reintech.io/blog/setting-up-cloudflare-workers-cron-triggers",
+  "https://dev.to/hrishiksh/schedule-cloudflare-worker-using-cron-triggers-2glp",
+  "https://codelit.io/blog/distributed-job-scheduling",
+  "https://pushkarkumar-dev.github.io/system-design/distributed-job-scheduler/",
+  "https://hld.handbook.academy/curriculum/case-studies/job-scheduler/",
+  "https://www.merriam-webster.com/dictionary/distributed",
+  "https://sre.google/sre-book/distributed-periodic-scheduling/",
+  "https://aloknecessary.in/blogs/idempotency-distributed-systems/"
+ ],
+ "outcome": "authored"
+}
