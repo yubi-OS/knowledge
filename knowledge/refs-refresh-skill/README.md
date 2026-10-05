@@ -33,4 +33,4 @@ Knowledge corpus minted 2026-10-05 from yubi-OS/yubiOS `refs/refs-refresh-skill-
 
 ## Verification
 
-VERIFIED: files 23, research-db 14 parse, weights 156/156
+VERIFIED: files 23, research-db 13 parse, weights 156/156
