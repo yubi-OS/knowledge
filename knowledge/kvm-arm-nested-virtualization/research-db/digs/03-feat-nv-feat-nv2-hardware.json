@@ -1,0 +1,33 @@
+{
+  "nn": "03",
+  "slug": "feat-nv-feat-nv2-hardware",
+  "scope": "FEAT_NV vs FEAT_NV2 architectural difference (VNCR_EL2 addressing change), the ARM64_HAS_NESTED_VIRT cpufeature, and the hardware matrix: Apple M2, Neoverse-N2, Cortex-A710/A715/A720 vs Cortex-A53/A55/A76 and Graviton 2.",
+  "queries_attempted": [
+    {
+      "query": "FEAT_NV2 nested virtualization ARMv8.4 CPUs support list",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "Apple M2 KVM nested virtualization Linux ARM FEAT_NV2 support",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 3
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.systemonchips.com/nested-virtualization-support-in-arm-cpus-current-limitations-and-future-prospects/",
+    "https://lwn.net/Articles/921783/",
+    "https://lwn.net/Articles/928426/",
+    "https://www.merriam-webster.com/dictionary/feat",
+    "http://lore.kernel.org/kvm/86le8g86t6.wl-maz@kernel.org/T/",
+    "https://community.arm.com/forums/f/architectures-and-processors-forum/54629/nested-virtualization-support",
+    "https://apple.stackexchange.com/questions/466761/is-nested-virtualization-is-supported-by-apple-silicon-chips-m2-m3",
+    "https://www.apple.com/",
+    "https://lore.kernel.org/all/86jzqayq2q.wl-maz@kernel.org/"
+  ],
+  "outcome": "authored"
+}

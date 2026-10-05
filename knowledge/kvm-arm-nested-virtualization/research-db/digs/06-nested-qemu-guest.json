@@ -1,0 +1,35 @@
+{
+  "nn": "06",
+  "slug": "nested-qemu-guest",
+  "scope": "Running nested guests with qemu-system-aarch64 -M virt -cpu host -enable-kvm: the L0/L1/L2 recipe, in-guest kernel cmdline, and the QEMU SYSREG_<IDREG>_<FIELD> ID-register masking surface including KVM_CAP_ARM_WRITABLE_IMP_ID_REGS.",
+  "queries_attempted": [
+    {
+      "query": "qemu-system-aarch64 nested virtualization KVM guest virt machine host cpu",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "QEMU arm64 CPU ID register override writable id registers KVM capability",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 5
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://computingforgeeks.com/how-to-enable-nested-virtualization-on-kvm-qemu/",
+    "https://www.virtual-pc.com/how-to-enable-nested-virtualization-in-kvm-on-linux/",
+    "https://www.howtogeek.com/devops/how-to-enable-nested-kvm-virtualization/",
+    "https://www.kernel.org/doc/html/v5.7/virt/kvm/running-nested-guests.html",
+    "https://www.qemu.org/",
+    "https://github.com/lima-vm/lima/issues/4498",
+    "https://docs.kernel.org/virt/kvm/arm/vcpu-features.html",
+    "https://lwn.net/Articles/876275/",
+    "https://laptopjudge.com/windows-11-on-android-run-arm-via-termux/",
+    "https://lists.gnu.org/archive/html/qemu-arm/2026-09/index.html",
+    "https://www.mail-archive.com/qemu-devel@nongnu.org/msg1219778.html"
+  ],
+  "outcome": "authored"
+}

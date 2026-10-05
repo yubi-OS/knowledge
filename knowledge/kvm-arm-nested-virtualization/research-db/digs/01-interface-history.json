@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "interface-history",
+  "scope": "The three nested-virt selection mechanisms in ARM KVM history: the 2017-2018 prototype sysfs knob /sys/module/kvm_arm/parameters/nested, the Linux 6.2 upstream landing of the 68-patch v7 series, and the 2024-10 kvm-arm.mode doc consolidation; why the old module-parameter path is stale.",
+  "queries_attempted": [
+    {
+      "query": "/sys/module/kvm_arm/parameters/nested arm KVM nested virtualization module parameter sysfs",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "KVM arm64 nested virtualization upstream Linux 6.2 patch series Marc Zyngier",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.fedoraproject.org/en-US/quick-docs/using-nested-virtualization-in-kvm/",
+    "https://www.virtual-pc.com/how-to-enable-nested-virtualization-in-kvm-on-linux/",
+    "https://www.kernel.org/doc/html/v5.7/virt/kvm/running-nested-guests.html",
+    "http://fedoraproject.org/wiki/QA:Testcase_KVM_nested_virt",
+    "https://fileinfo.com/extension/sys",
+    "https://serverfault.com/questions/1036113/l0-kvm-and-win10-l1-nested-virtualization-not-working-windows-boot-loop",
+    "https://marc.info/?l=kvm&m=175378332614995",
+    "https://marc.info/?l=kvm&m=170055774032652",
+    "https://aviatrix.ai/threat-research-center/linux-kernel-cve-2026-89775-arm64-kvm-nested-virtualization/",
+    "https://lkml.org/lkml/2026/9/6/384",
+    "https://support.microsoft.com/en-us/windows/experience/enable-virtualization-on-windows",
+    "https://www.youtube.com/watch?v=Ox6YSdJAm1s"
+  ],
+  "outcome": "authored"
+}

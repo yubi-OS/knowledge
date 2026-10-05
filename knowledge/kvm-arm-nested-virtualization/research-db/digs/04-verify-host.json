@@ -1,0 +1,64 @@
+{
+  "nn": "04",
+  "slug": "verify-host",
+  "scope": "How to verify nested KVM state on a running ARM64 host: kernel cmdline, dmesg KVM mode reporting, cpufeature evidence, lsmod/module-builtin distinctions, and why the old sysfs path is absent on modern kernels.",
+  "queries_attempted": [
+    {
+      "query": "check nested virtualization enabled KVM ARM64 host dmesg kvm-arm.mode",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "verify KVM arm hypervisor mode nvhe protected nested running system",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "kvm-arm.mode nested dmesg VHE NV2 mode initialized successfully",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 4
+    },
+    {
+      "query": "KVM arm64 nested virtualization check host supports FEAT_NV2 boot",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 3
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig: ARM-specific claims (dmesg mode report, cmdline enablement) backed only by low-weight sources",
+      "new_queries": [
+        "kvm-arm.mode nested dmesg VHE NV2 mode initialized successfully",
+        "KVM arm64 nested virtualization check host supports FEAT_NV2 boot"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://serverfault.com/questions/1098604/how-to-check-if-kvm-nested-virtualization-is-supported-on-arm64-processor",
+    "https://discussion.fedoraproject.org/t/nested-virtualization/179358",
+    "https://docs.fedoraproject.org/en-US/quick-docs/using-nested-virtualization-in-kvm/",
+    "https://computingforgeeks.com/how-to-enable-nested-virtualization-on-kvm-qemu/",
+    "https://www.virtual-pc.com/how-to-enable-nested-virtualization-in-kvm-on-linux/",
+    "https://symbolsdb.com/check-mark-symbol",
+    "https://www.kernel.org/doc/html/next/virt/kvm/arm/pkvm.html",
+    "https://lkml.org/lkml/2024/10/24/1791",
+    "https://deepwiki.com/torvalds/linux/7.3-kvm-on-arm64:-sysreg-emulation-nested-and-vgic",
+    "https://www.e-verify.gov/",
+    "https://deepwiki.com/tjeznach/linux/3.3-kvm-on-arm64-architecture",
+    "https://docs.kernel.org/7.1/virt/kvm/arm/pkvm.html",
+    "https://lwn.net/Articles/877175/",
+    "https://support.microsoft.com/en-us/windows/experience/enable-virtualization-on-windows",
+    "https://lists.openwrt.org/pipermail/linux-arm-kernel/2023-May/837104.html",
+    "https://www.pk-sharma.com/briefing/linux-arm64-kvm-nested-escape-exposure",
+    "https://lwn.net/Articles/928426/",
+    "https://www.systemonchips.com/nested-virtualization-support-in-arm-cpus-current-limitations-and-future-prospects/",
+    "https://freenode.net/article/kvm-arm64-nested-virt-flaw-allows-guest-escape-to-host"
+  ],
+  "outcome": "authored"
+}
