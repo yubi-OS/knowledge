@@ -1,0 +1,216 @@
+{
+  "topic": "metrics and reporting for an early-stage open-source project",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "decision-tied-metrics",
+      "scope": "Metric-to-decision mapping: choosing metrics that each drive a concrete decision instead of vanity reporting in early-stage open-source projects.",
+      "seed_queries": [
+        "vanity metrics versus decision metrics open source projects",
+        "metrics drive decisions lean startup project health"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "public-health-artifacts",
+      "scope": "Public project-health metrics derivable from existing repo artifacts: blocker counts, CI lane pass/fail per architecture, ADR cadence, dependency pin staleness.",
+      "seed_queries": [
+        "open source repository health signals blockers CI pass rate",
+        "architecture decision records cadence tracking ADR process"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "honest-unmeasurable",
+      "scope": "Honest flagging of not-yet-measurable metrics: adoption, community trust, telemetry-by-design constraints, download and pull counts.",
+      "seed_queries": [
+        "docker hub pull count api repository statistics",
+        "open source adoption metrics limitations privacy no telemetry"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "business-health-offers",
+      "scope": "Business-health metrics tied to an offer catalog: readiness-gate-to-offer ratio, paid-pilot count and outcome, SLA adherence, funding secured versus targeted.",
+      "seed_queries": [
+        "paid pilot validation pricing hypothesis startup metrics",
+        "SLA response time adherence tracking small service business"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "cadence-owner",
+      "scope": "Reporting cadence and ownership at single-founder scale: weekly informal checks versus event-driven review, no invented owner roles.",
+      "seed_queries": [
+        "metrics review cadence solo founder startup",
+        "event driven versus periodic metrics review"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "thresholds-scope",
+      "scope": "Threshold-setting discipline and out-of-scope boundaries: recording that a metric matters versus picking target numbers, no dashboards before data exists.",
+      "seed_queries": [
+        "setting metric targets too early startup anti-pattern",
+        "premature instrumentation dashboards before data"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "oss-health-industry",
+      "scope": "Industry-standard OSS project-health measurement: CHAOSS metrics, OpenSSF scorecard, devstats as prior art for what to track.",
+      "seed_queries": [
+        "CHAOSS metrics open source project health",
+        "OpenSSF scorecard metrics devstats"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "funding-signal-metrics",
+      "scope": "Funding and pilot signal metrics for early-stage open-source: grant pipelines, pilot customers, community growth proxies without telemetry.",
+      "seed_queries": [
+        "open source sustainability funding metrics",
+        "early stage open source monetization pilot customers"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7428,
+        "probabilities": {
+          "0": 0.0517,
+          "1": 0.1537,
+          "2": 0.7946
+        },
+        "confidence": 0.4864,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 0.2036,
+        "probabilities": {
+          "0": 0.8645,
+          "1": 0.0674,
+          "2": 0.0681
+        },
+        "confidence": 0.6349,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.226,
+        "probabilities": {
+          "0": 0.1566,
+          "1": 0.4608,
+          "2": 0.3826
+        },
+        "confidence": 0.0749,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 0.6514,
+        "probabilities": {
+          "0": 0.5499,
+          "1": 0.2488,
+          "2": 0.2013
+        },
+        "confidence": 0.1072,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.3642,
+        "probabilities": {
+          "0": 0.1477,
+          "1": 0.3404,
+          "2": 0.5119
+        },
+        "confidence": 0.0996,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.1308,
+        "probabilities": {
+          "0": 0.2282,
+          "1": 0.4128,
+          "2": 0.359
+        },
+        "confidence": 0.027,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.3389,
+        "probabilities": {
+          "0": 0.1501,
+          "1": 0.3609,
+          "2": 0.489
+        },
+        "confidence": 0.0878,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.4305,
+        "probabilities": {
+          "0": 0.1303,
+          "1": 0.3088,
+          "2": 0.5609
+        },
+        "confidence": 0.1404,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1052,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "02"
+    ],
+    "kept": [
+      "01",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
