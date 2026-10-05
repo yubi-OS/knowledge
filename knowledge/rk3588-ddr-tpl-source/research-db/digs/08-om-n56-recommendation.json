@@ -1,0 +1,30 @@
+{
+ "nn": 8,
+ "slug": "08-om-n56-recommendation",
+ "scope": "The OMN-56 recommendation: build-time pull with fail-closed sha256 pinning, the user-fetch alternative, and open items.",
+ "queries_attempted": [
+  {
+   "query": "u-boot rockchip build flow rkbin ddr bin FIT packaging",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "ARM trusted firmware build RK3588 ddr blob CI fetch",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.armsom.org/advanced-manual/rockchip-boot",
+  "https://github.com/schneid-l/u-boot-rockchip",
+  "https://github.com/barban-dev/u-boot-radxa-rock-4d",
+  "https://deepwiki.com/edk2-porting/edk2-rk3588/6.3-arm-trusted-firmware-integration",
+  "https://github.com/edk2-porting/edk2-rk3588",
+  "https://github.com/ARM-software/arm-trusted-firmware/blob/master/plat/rockchip/rk3588/drivers/secure/secure.c"
+ ],
+ "outcome": "authored"
+}

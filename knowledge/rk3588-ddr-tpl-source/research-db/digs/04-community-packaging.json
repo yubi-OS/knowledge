@@ -1,0 +1,27 @@
+{
+ "nn": 4,
+ "slug": "04-community-packaging",
+ "scope": "Community build environments that package RK3588 firmware from rkbin: Radxa, Docker toolchains, Nix flakes, edk2, distro-level.",
+ "queries_attempted": [
+  {
+   "query": "rk3588-firmware-flake nix rkbin firmware",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "rock5-toolchain docker rkbin u-boot build rockchip",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/blark/rk3588-firmware-flake",
+  "https://wiki.radxa.com/Rock5/guide/build-u-boot-on-5b",
+  "https://wiki.radxa.com/Rock5/guide/build-debian-from-debos-radxa"
+ ],
+ "outcome": "authored"
+}

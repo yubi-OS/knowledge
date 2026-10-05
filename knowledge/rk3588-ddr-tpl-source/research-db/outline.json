@@ -1,0 +1,215 @@
+{
+ "topic": "RK3588 DDR/TPL binary redistribution: licensing, blob provenance, pinnable and redistributable paths, and the B-RK3588-TPL blocker",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "01-tpl-ddr-boot-role",
+   "scope": "What the RK3588 TPL/DDR blob is, its role in the boot chain, and why it is not U-Boot code.",
+   "seed_queries": [
+    "Rockchip RK3588 boot chain TPL SPL U-Boot DDR init",
+    "RK3588 DDR init binary what is TPL bootloader"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "02-rkbin-source-landscape",
+   "scope": "The rkbin repository as the single upstream source: layout, blob variants, forks and mirrors, licensing picture.",
+   "seed_queries": [
+    "rockchip-linux rkbin github repository ddr bin blobs",
+    "rkbin rk3588 ddr blob variants license proprietary"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "03-open-boot-chain-status",
+   "scope": "Which RK3588 boot-chain stages are open (BL31 TF-A, BL32 OP-TEE, BL33 U-Boot) and which remain closed (TPL/DDR).",
+   "seed_queries": [
+    "Collabora almost fully open source boot chain Rockchip RK3588",
+    "RK3588 TF-A BL31 OP-TEE U-Boot mainline boot stages open source"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "04-community-packaging",
+   "scope": "Community build environments that package RK3588 firmware from rkbin: Radxa, Docker toolchains, Nix flakes, edk2, distro-level.",
+   "seed_queries": [
+    "rk3588-firmware-flake nix rkbin firmware",
+    "rock5-toolchain docker rkbin u-boot build rockchip"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "05-distribution-options",
+   "scope": "The five candidate acquisition and distribution models for the blob and what the evidence says about each.",
+   "seed_queries": [
+    "redistribute rockchip rkbin blobs license binary firmware",
+    "embedded linux distro binary blob redistribution policy vendor firmware"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "06-pinning-supply-chain",
+   "scope": "Supply-chain pinning of build-time-fetched binaries: sha256 pinning, fail-closed builds, SLSA provenance discipline.",
+   "seed_queries": [
+    "sha256 pin binary blob build fail closed supply chain CI",
+    "digest pinning build inputs reproducible embedded OS supply chain"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "07-open-ddr-init-efforts",
+   "scope": "Open-source DDR init efforts for Rockchip SoCs: community progress, feasibility, and the timeline outlook.",
+   "seed_queries": [
+    "open source DDR initialization Rockchip RK3588 reverse engineering blob",
+    "rk3588 open source SPL DDR init progress community"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "08-om-n56-recommendation",
+   "scope": "The OMN-56 recommendation: build-time pull with fail-closed sha256 pinning, the user-fetch alternative, and open items.",
+   "seed_queries": [
+    "u-boot rockchip build flow rkbin ddr bin FIT packaging",
+    "ARM trusted firmware build RK3588 ddr blob CI fetch"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.9073,
+    "probabilities": {
+     "0": 0.0228,
+     "1": 0.0471,
+     "2": 0.9301
+    },
+    "confidence": 0.8017,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.9111,
+    "probabilities": {
+     "0": 0.0188,
+     "1": 0.0512,
+     "2": 0.93
+    },
+    "confidence": 0.8018,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.84,
+    "probabilities": {
+     "0": 0.0338,
+     "1": 0.0924,
+     "2": 0.8738
+    },
+    "confidence": 0.6598,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.1971,
+    "probabilities": {
+     "0": 0.132,
+     "1": 0.539,
+     "2": 0.329
+    },
+    "confidence": 0.1243,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.9248,
+    "probabilities": {
+     "0": 0.0184,
+     "1": 0.0385,
+     "2": 0.9431
+    },
+    "confidence": 0.837,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.392,
+    "probabilities": {
+     "0": 0.1151,
+     "1": 0.3778,
+     "2": 0.5071
+    },
+    "confidence": 0.1197,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.1351,
+    "probabilities": {
+     "0": 0.1428,
+     "1": 0.5793,
+     "2": 0.2779
+    },
+    "confidence": 0.1498,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.7353,
+    "probabilities": {
+     "0": 0.0702,
+     "1": 0.1244,
+     "2": 0.8054
+    },
+    "confidence": 0.5037,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1299,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ }
+}
