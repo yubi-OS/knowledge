@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "fido2-authentication",
+ "scope": "FIDO2/YubiKey authentication via the hmac-secret extension: enrollment flags, COSE algorithms, enrollment rough edges, and the single-device limitation.",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "homectl fido2-device client-pin user-presence enrollment",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://github.com/nyancient/fido2-luks",
+  "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://unix.stackexchange.com/a/755439",
+  "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://www.yubico.com/authentication-standards/fido2/",
+  "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071/3",
+  "https://github.com/systemd/systemd/issues/24281",
+  "https://www.reddit.com/r/yubikey/comments/15vdmaj/fido2_user_presence_required/",
+  "https://github.com/systemd/systemd/issues/43342"
+ ],
+ "outcome": "authored"
+}

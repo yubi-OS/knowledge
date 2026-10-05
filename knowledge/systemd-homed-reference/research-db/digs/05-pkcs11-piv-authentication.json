@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "pkcs11-piv-authentication",
+ "scope": "PKCS#11/PIV token authentication: token URIs and PIV slot selection, the YKCS11 module, the pre-auth identity advantage, and known failure modes.",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "homectl pkcs11-token-uri auto PIV slot private key",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+  "https://www.reddit.com/r/archlinux/comments/jzds2o/systemdhomed_small_issues/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "http://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://www.yubico.com/authentication-standards/smart-card/",
+  "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+  "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071",
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://ghostunnel.dev/docs/certificates/hsm-pkcs11/",
+  "https://www.reddit.com/r/duckduckgo/top/",
+  "https://stackoverflow.com/questions/78624111/failed-to-enumerate-slots-in-pkcs11",
+  "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html"
+ ],
+ "outcome": "authored"
+}

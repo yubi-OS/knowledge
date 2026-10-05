@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "storage-backends",
+ "scope": "The five storage backends (luks, fscrypt, subvolume, directory, cifs), how each mounts, and homed.conf defaults DefaultStorage/DefaultFileSystemType.",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://www.bigiron.cc/guides/systemd-homed-for-multi-user-servers-the-2026-verdict",
+  "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+  "https://systemd.io/HOME_DIRECTORY/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+  "https://freedesktop.org/software/systemd/man/homed.conf.html",
+  "https://man.archlinux.org/man/core/systemd/homed.conf.5.en",
+  "https://fapopedia.net/one-woman-s-wilderness-nude-leaks/",
+  "https://manpages.ubuntu.com/manpages/noble/man5/homed.conf.d.5.html",
+  "https://www.man7.org/linux/man-pages/man5/homed.conf.d.5.html",
+  "https://www.abclinuxu.cz/poradna/unix/show/492716"
+ ],
+ "outcome": "authored"
+}
