@@ -1,0 +1,173 @@
+{
+ "topic": "verification-chain",
+ "subtopics": [
+  {
+   "slug": "01-owner-signed-uki-piv",
+   "scope": "Owner-signed UKI: signing the unified kernel image with a YubiKey PIV key"
+  },
+  {
+   "slug": "02-uefi-secure-boot-owner-enrollment",
+   "scope": "UEFI Secure Boot owner enrollment: PK, KEK, db, dbx"
+  },
+  {
+   "slug": "03-dm-verity-root-hash-pinning",
+   "scope": "dm-verity root hash pinning: the kernel refuses a mismatched /usr"
+  },
+  {
+   "slug": "04-composefs-signed-digests",
+   "scope": "composefs signed digests: carrying verification into the runtime image"
+  },
+  {
+   "slug": "05-digest-pinned-base-images-opa-policy",
+   "scope": "Digest-pinned base images under an OPA build policy"
+  },
+  {
+   "slug": "06-rejected-tpm-rooted-chain",
+   "scope": "Rejected alternative: the TPM-rooted trust anchor"
+  },
+  {
+   "slug": "07-rejected-shim-mok-vendor-keys",
+   "scope": "Rejected alternatives: shim+MOK and the vendor-key chain"
+  },
+  {
+   "slug": "08-rejected-unsigned-uki-dm-verity",
+   "scope": "Rejected alternative: unsigned UKI with dm-verity only"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.7625,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.056,
+     "1": 0.1255,
+     "2": 0.8185
+    },
+    "confidence": 0.5333
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.8835,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0235,
+     "1": 0.0695,
+     "2": 0.907
+    },
+    "confidence": 0.742
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.7734,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0444,
+     "1": 0.1377,
+     "2": 0.8179
+    },
+    "confidence": 0.5348
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.248,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1187,
+     "1": 0.5146,
+     "2": 0.3667
+    },
+    "confidence": 0.12
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.2313,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1846,
+     "1": 0.3996,
+     "2": 0.4158
+    },
+    "confidence": 0.05
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.9037,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2477,
+     "1": 0.6009,
+     "2": 0.1514
+    },
+    "confidence": 0.1681
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.1617,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1687,
+     "1": 0.5009,
+     "2": 0.3304
+    },
+    "confidence": 0.0827
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.0431,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2228,
+     "1": 0.5113,
+     "2": 0.2659
+    },
+    "confidence": 0.0727
+   }
+  },
+  "usage": {
+   "input_tokens": 1056,
+   "output_tokens": 0
+  },
+  "note": "re-scored 2026-10-05 for the record under the v2 score metric; docs already shipped under the v1 outline"
+ }
+}
