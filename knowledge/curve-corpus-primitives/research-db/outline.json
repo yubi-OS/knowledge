@@ -1,0 +1,173 @@
+{
+ "topic": "curve-corpus-primitives",
+ "subtopics": [
+  {
+   "slug": "01-learned-primitive-bases",
+   "scope": "Learned primitive bases"
+  },
+  {
+   "slug": "02-binary-coverage-vectors-pca",
+   "scope": "Binary coverage vectors and PCA"
+  },
+  {
+   "slug": "03-stereographic-lift-sphere",
+   "scope": "Stereographic lift onto the sphere"
+  },
+  {
+   "slug": "04-spherical-harmonic-ridge-fits",
+   "scope": "Spherical-harmonic ridge fits"
+  },
+  {
+   "slug": "05-null-models-corpus-geometry",
+   "scope": "Null models for corpus geometry"
+  },
+  {
+   "slug": "06-sparse-cells-lens-generation",
+   "scope": "Sparse cells and lens generation"
+  },
+  {
+   "slug": "07-rejected-alternatives",
+   "scope": "Rejected alternatives"
+  },
+  {
+   "slug": "08-audit-boundaries-flip-conditions",
+   "scope": "Audit boundaries and flip conditions"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.5386,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1168,
+     "1": 0.2278,
+     "2": 0.6554
+    },
+    "confidence": 0.2426
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.2026,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2041,
+     "1": 0.3891,
+     "2": 0.4068
+    },
+    "confidence": 0.0378
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.2432,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1876,
+     "1": 0.3816,
+     "2": 0.4308
+    },
+    "confidence": 0.0496
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.9476,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3128,
+     "1": 0.4269,
+     "2": 0.2603
+    },
+    "confidence": 0.0218
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.0191,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2319,
+     "1": 0.5171,
+     "2": 0.251
+    },
+    "confidence": 0.0763
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.0898,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2654,
+     "1": 0.3794,
+     "2": 0.3552
+    },
+    "confidence": 0.0108
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.7102,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3918,
+     "1": 0.5061,
+     "2": 0.1021
+    },
+    "confidence": 0.1302
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.8557,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3616,
+     "1": 0.4211,
+     "2": 0.2173
+    },
+    "confidence": 0.033
+   }
+  },
+  "usage": {
+   "input_tokens": 1002,
+   "output_tokens": 0
+  },
+  "note": "re-scored 2026-10-05 for the record under the v2 score metric; docs already shipped under the v1 outline"
+ }
+}
