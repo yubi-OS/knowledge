@@ -1,0 +1,98 @@
+{
+  "nn": 7,
+  "slug": "operational-cost-pq-signatures",
+  "scope": "Operational impact of PQ signatures on verification pipelines: signature and key sizes, verification latency, registry and CI costs.",
+  "queries_attempted": [
+    {
+      "query": "ML-DSA signature size verification performance benchmarks",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "Benchmarking ML-DSA Signature Generation: Understanding Rejection ...",
+          "url": "https://blog.amongbytes.com/posts/20260223-mldsa-benchmarking/20260223-mldsa-benchmarking.html",
+          "content": "In this post, we’ll explore what rejection sampling means for ML-DSA benchmarking, share concrete performance metrics, and discuss best practices for measuring signing speed on constrained cryptographic modules.In this post, we’ll explore what rejection sampling means for ML-DSA benchmarking, share concrete performance metrics, and discuss best practices for measuring signing speed on constrained cryptographic modules."
+        },
+        {
+          "title": "Comparing ML-DSA-87 vs ML-DSA-65 vs ML-DSA-44 - CryptoDecoded",
+          "url": "https://cryptodecoded.net/comparing-ml-dsa-87-vs-ml-dsa-65-vs-ml-dsa-44/",
+          "content": "Signature Generation is fastest at lower levels (ML-DSA-44), making it ideal for authentication-heavy apps. Verification performance is consistent across levels, though slightly slower at higher security.Signature Generation is fastest at lower levels (ML-DSA-44), making it ideal for authentication-heavy apps. Verification performance is consistent across levels, though slightly slower at higher security."
+        },
+        {
+          "title": "Post-Quantum Cryptography Benchmarks 2026: ML-KEM, ML-DSA, SLH-DSA, FN ...",
+          "url": "https://quantumsequrity.com/blog/pqc-benchmarks-2026",
+          "content": "This is an original benchmark study of every post-quantum cryptography algorithm QNSQY ships, measured on one machine, on one day, with the method published alongside the numbers. It covers the NIST-standardized lattice schemes (ML-KEM, ML-DSA), the hash-based schemes (SLH-DSA, LMS), the NTRU-lattice signature FN-DSA (Falcon), and the code-based KEM HQC, plus the hybrid variants that pair them ...This is an original benchmark study of every post-quantum cryptography algorithm QNSQY ships, measured on one machine, on one day, with the method published alongside the numbers. It covers the NIST-standardized lattice schemes (ML-KEM, ML-DSA), the hash-based schemes (SLH-DSA, LMS), the NTRU-lattic"
+        },
+        {
+          "title": "Efficiently Measuring ML-DSA Signing Performance",
+          "url": "https://semiiphub.com/pulse/expert-perspectives/efficiently-measuring-ml-dsa-signing-performance",
+          "content": "The median number of loop iterations is 3 (ML-DSA-44 and ML-DSA-87) or 4 (ML-DSA-65), but a significant minority of signatures take 10 or more iterations. For benchmarks, that means the few signatures that take a very long time contribute disproportionately to the average."
+        },
+        {
+          "title": "GitHub - zerorisc/mldsa-sign-bench: Scripts and modifications ...",
+          "url": "https://github.com/zerorisc/mldsa-sign-bench",
+          "content": "ML-DSA Sign Benchmarking Test Sets Accurately benchmarking ML-DSA signatures is hard, at least if you don't want to run huge numbers of tests. But it doesn't have to be! These scripts select specific ML-DSA signing inputs (message, randomness input, and secret key) that will have performance profiles close to average, or to a target percentile."
+        },
+        {
+          "title": "Benchmarking NIST-Standardised ML-KEM and ML-DSA on ARM ...",
+          "url": "https://arxiv.org/pdf/2603.19340",
+          "content": "This paper focuses on the two lattice-based standards (ML-KEM and ML-DSA); the hash-based SLH-DSA (FIPS 205) has fundamentally different performance characteristics—large signatures and deterministic but slow signing—warranting a separate study.This paper focuses on the two lattice-based standards (ML-KEM and ML-DSA); the hash-based SLH-DSA (FIPS 205) has fundamentally different performance characteristics—large signatures and deterministic but slow signing—warranting a separate study."
+        }
+      ]
+    },
+    {
+      "query": "post-quantum signatures impact artifact size CI CD",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "Post-Quantum Artifact Signing in CI/CD: Migrating cosign and Sigstore ...",
+          "url": "https://www.systemshardening.com/articles/cicd/post-quantum-artifact-signing/",
+          "content": "Software supply chain signatures using ECDSA-P256 or RSA are vulnerable to quantum 'harvest-now-verify-later' attacks — an adversary could forge signatures retroactively. Sigstore's roadmap includes ML-DSA support, and cosign already supports custom PQC signing keys via providers. This guide implements hybrid ML-DSA artifact signing, plans the Sigstore PQC migration, and maintains backward ..."
+        },
+        {
+          "title": "Toward Quantum-Resilient Software Supply Chains: A DevSecOps Case Study ...",
+          "url": "https://ieeexplore.ieee.org/document/11500303",
+          "content": "Software supply-chain security has become a central concern due to the pervasive reuse of third-party dependencies, automated CI/CD pipelines, and the increasing number of attacks targeting build systems and artifact distribution channels. In parallel, emerging quantum computing capabilities threaten the long-term security of widely deployed public-key signatures (e.g., RSA/ECDSA) used to ..."
+        },
+        {
+          "title": "Artifact Signing: Dual, Post-Quantum/Traditional Hybrid ...",
+          "url": "https://pqcc.org/artifact-signing-dual-post-quantum-traditional-hybrid-signatures-and-downgrades/",
+          "content": "Summary: This document discusses how new digital signatures (e.g. quantum-resistant) can be introduced in common artifact/software/firmware signing technologies. It addresses topics related to downgrades when using multiple signatures for backwards compatibility. It also covers how existing artifact signing standards can support hybrid solutions with multiple cryptographic families used ...Summary: This document discusses how new digital signatures (e.g. quantum-resistant) can be introduced in common artifact/software/firmware signing technologies. It addresses topics related to downgrades when using multiple signatures for backwards compatibility. It also covers how existing artifact signin"
+        },
+        {
+          "title": "(PDF) Toward Quantum-Resilient Software Supply Chains: A ... - ResearchGate",
+          "url": "https://www.researchgate.net/publication/401123787_Toward_Quantum-Resilient_Software_Supply_Chains_A_DevSecOps_Case_Study_with_Hybrid_Post-Quantum_Artifact_Signing",
+          "content": "The proposed approach introduces deterministic artifact manifests combined with hybrid cryptographic signatures integrating classical signatures with post-quantum signatures based on CRYSTALS ..."
+        },
+        {
+          "title": "Post-Quantum Cryptography Integration in CI/CD Pipelines: Future ...",
+          "url": "https://computerfraudsecurity.com/index.php/journal/article/download/662/445/1266",
+          "content": "Abstract The advent of quantum computing poses an existential threat to classical cryptographic algorithms underpinning modern DevOps workflows. This paper explores the integration of post-quantum cryptography (PQC) into CI/CD pipelines to safeguard code signing, artifact validation, and dependency management against quantum attacks. Aligned with NIST's ongoing standardization efforts, we ..."
+        },
+        {
+          "title": "Hydrogen isotope biogeochemistry",
+          "url": "https://handwiki.org/wiki/Biology:Hydrogen_isotope_biogeochemistry",
+          "content": "Hydrogen isotope biogeochemistry is the scientific study of biological, geological, and chemical processes in the environment using the distribution and relative abundance of hydrogen isotopes. There are two stable isotopes of hydrogen, protium H and deuterium H, which vary in relative abundance on the order of hundreds of permil"
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://blog.amongbytes.com/posts/20260223-mldsa-benchmarking/20260223-mldsa-benchmarking.html",
+    "https://cryptodecoded.net/comparing-ml-dsa-87-vs-ml-dsa-65-vs-ml-dsa-44/",
+    "https://quantumsequrity.com/blog/pqc-benchmarks-2026",
+    "https://semiiphub.com/pulse/expert-perspectives/efficiently-measuring-ml-dsa-signing-performance",
+    "https://github.com/zerorisc/mldsa-sign-bench",
+    "https://arxiv.org/pdf/2603.19340",
+    "https://www.systemshardening.com/articles/cicd/post-quantum-artifact-signing/",
+    "https://ieeexplore.ieee.org/document/11500303",
+    "https://pqcc.org/artifact-signing-dual-post-quantum-traditional-hybrid-signatures-and-downgrades/",
+    "https://www.researchgate.net/publication/401123787_Toward_Quantum-Resilient_Software_Supply_Chains_A_DevSecOps_Case_Study_with_Hybrid_Post-Quantum_Artifact_Signing",
+    "https://computerfraudsecurity.com/index.php/journal/article/download/662/445/1266",
+    "https://handwiki.org/wiki/Biology:Hydrogen_isotope_biogeochemistry"
+  ],
+  "outcome": "authored"
+}
