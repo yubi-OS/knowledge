@@ -1,0 +1,81 @@
+{
+  "nn": "07",
+  "slug": "format-compliance-sweeps",
+  "scope": "Corpus-native format specification as the frozen check: driving a 112/112 format-compliance sweep from the corpus's own spec (kebab-case names, description limits, required sections).",
+  "queries_attempted": [
+    {
+      "query": "automated linting style guide enforcement consistency large codebase",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "documentation as code schema validation CI gate",
+      "attempt": 1,
+      "raw_results": 74,
+      "kept": 6
+    },
+    {
+      "query": "markdown linting documentation style guide CI enforcement",
+      "attempt": 2,
+      "raw_results": 38,
+      "kept": 6
+    },
+    {
+      "query": "vale prose linter documentation quality gate",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "markdown linting documentation style guide CI enforcement",
+      "attempt": 3,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "vale prose linter documentation quality gate",
+      "attempt": 3,
+      "raw_results": 44,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 3,
+      "reason": "attempt 2 dig completed but container restart interrupted before results were persisted to the archive; re-ran the same replacement queries",
+      "new_queries": [
+        "markdown linting documentation style guide CI enforcement",
+        "vale prose linter documentation quality gate"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.sitepoint.com/automated-style-guides-enforcing-coding-standards-with-continue-ci/",
+    "https://dasroot.net/posts/2026/03/code-quality-automation-linters-formatters-pre-commit-hooks/",
+    "https://blog.pixelfreestudio.com/how-to-use-linters-for-enforcing-code-standards/",
+    "https://mindfulchase.com/deep-dives/monorepo-fundamentals-deep-dives-into-unified-codebases/automating-code-quality-checks-in-monorepos-with-linting-and-formatting.html",
+    "https://acis.eoir.justice.gov/",
+    "https://www.youtube.com/watch?v=NNH2vmRHn0s",
+    "https://codex.danielvaughan.com/2026/05/16/codex-cli-automated-code-documentation-generation-docstrings-jsdoc-sphinx-ci-pipelines/",
+    "https://paperquire.com/blog/ci-cd-docs-pipeline/",
+    "https://ekline.io/blog/from-vale-to-a-quality-gate-that-ships-evolving-ci-cd-for-documentation-in-2026",
+    "https://handwiki.org/wiki/Software:List_of_unit_testing_frameworks",
+    "https://en.m.wikipedia.org/wiki/Documentation",
+    "https://vmfunc.re/blog/persona/",
+    "https://blog.markdowntools.com/posts/markdown-linting-quality-assurance-complete-guide",
+    "https://buildwithfern.com/post/docs-linting-guide",
+    "https://dasroot.net/posts/2026/03/markdown-linting-style-guides-technical-teams/",
+    "https://www.mintlify.com/library/documentation-linting",
+    "https://deepwiki.com/influxdata/docs-v2/6.2-linting-and-style-enforcement",
+    "https://www.markdownskill.com/en/blog/complete-markdown-linting-guide",
+    "https://nikhilajain.com/did-you-know/docs-as-code/vale-lint-docs-like-code/",
+    "https://github.com/vale-cli/vale",
+    "https://grafana.com/docs/writers-toolkit/review/lint-prose/",
+    "https://vale.sh/",
+    "https://github.com/legioncodeinc/vibe-coding-tools/blob/main/.claude/skills/technical-writing-craft-stinger/research/external/08-vale-linter-prose-quality.md",
+    "https://weesholapara.com/blog/vale-linter-as-a-github-actions-merge-gate---a-practical-guide"
+  ],
+  "outcome": "authored"
+}

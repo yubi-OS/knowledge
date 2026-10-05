@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "instrument-bugs-stale-state",
+  "scope": "Driver bugs from stale in-memory state versus committed ground truth: rebuild from the committed tree, transition guards, 409 persisted:false fail-closed design.",
+  "queries_attempted": [
+    {
+      "query": "stale cache in-memory state bug rebuild from source of truth",
+      "attempt": 1,
+      "raw_results": 75,
+      "kept": 6
+    },
+    {
+      "query": "precondition checking fail fast guard clauses API design",
+      "attempt": 1,
+      "raw_results": 60,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/lenaxia/LLMSafeSpaces/issues/792",
+    "https://buglyst.com/learn/failure-modes/stale-cache-entry",
+    "https://martinuke0.github.io/posts/2026-05-18-how-the-mesi-protocol-resolves-stale-cache-states/",
+    "https://humzakt.github.io/blog/two-cache-layers-stale-data.html",
+    "https://www.merriam-webster.com/dictionary/stale",
+    "https://dev.to/sri2614/caching-strategies-make-backends-fast-without-melting-the-database-4hpi",
+    "https://engineersofai.com/docs/python/python-foundation/control-flow-and-logic/guard-clauses-and-defensive-logic",
+    "https://www.stacklesson.com/dotnet-fullstack-tutorial/cs-control-flow/ch02-lesson-05-logical-operators-and-guard-clauses/",
+    "https://learn.microsoft.com/en-us/dotnet/communitytoolkit/diagnostics/guard",
+    "https://medium.com/@sezerlucianturkmen/guard-clauses-and-fail-fast-your-secret-weapons-for-java-development-4e3cc89ab1f",
+    "https://granit-fx.dev/dotnet/architecture/patterns/guard-clause/",
+    "https://stackoverflow.com/questions/77300161/getting-precondition-check-failed-when-using-gmail-api-with-a-service-account"
+  ],
+  "outcome": "authored"
+}

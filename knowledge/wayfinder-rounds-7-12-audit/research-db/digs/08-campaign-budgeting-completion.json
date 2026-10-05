@@ -1,0 +1,81 @@
+{
+  "nn": "08",
+  "slug": "campaign-budgeting-completion",
+  "scope": "Budgeting campaigns by failing items rather than fixed cycle counts; handling budget shortfalls and post-round fixups without mixing them into round records.",
+  "queries_attempted": [
+    {
+      "query": "technical debt reduction strategy prioritization batching",
+      "attempt": 1,
+      "raw_results": 37,
+      "kept": 6
+    },
+    {
+      "query": "test suite flaky failures budget fixing prioritization",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6
+    },
+    {
+      "query": "software maintenance allocation fixing backlog percentage budget",
+      "attempt": 2,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "issue triage prioritization backlog burn down engineering time",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "software maintenance allocation fixing backlog percentage budget",
+      "attempt": 3,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "issue triage prioritization backlog burn down engineering time",
+      "attempt": 3,
+      "raw_results": 55,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 3,
+      "reason": "attempt 2 dig completed but container restart interrupted before results were persisted to the archive; re-ran the same replacement queries",
+      "new_queries": [
+        "software maintenance allocation fixing backlog percentage budget",
+        "issue triage prioritization backlog burn down engineering time"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://ctaio.dev/en/guides/technical-debt-prioritization/",
+    "https://leanware.co/insights/technical-debt-management-best-practices",
+    "https://docs.gitscrum.com/en/best-practices/technical-debt-prioritization",
+    "https://ttb.software/2026/03/06/technical-debt-prioritization-framework-startups/",
+    "https://www.linkedin.com/pulse/technical-debt-strategic-prioritization-framework-preksha-shah-n65yc",
+    "https://fastercapital.com/content/Prioritization-Techniques--Technical-Debt-Assessment--Managing-Risks--Technical-Debt-Assessment-for-Prioritization.html",
+    "https://www.testmuai.com/learning-hub/flaky-test/",
+    "https://inferensys.com/prompts/code-review-and-bug-triage-prompts/flaky-test-and-test-reliability-prompts/test-suite-de-flaking-prioritization-prompt",
+    "https://scrolltest.com/eliminating-flaky-tests-root-causes-detection-permanent-fixes-guide/",
+    "https://blog.testunity.com/fix-flaky-tests-first-steps-guide/",
+    "https://www.testacademy.dev/learn/how-to-fix-flaky-tests",
+    "https://app.thetestingacademy.com/blog/how-to-fix-flaky-tests",
+    "https://pegotec.net/software-maintenance-cost-percentage-2026-industry-benchmarks/",
+    "https://azterion.com/en-us/software-maintenance-cost/",
+    "https://www.numberanalytics.com/blog/ultimate-guide-budget-allocation-software-maintenance",
+    "https://www.linkedin.com/pulse/software-maintenance-cost-percentage-2026-industry-benchmarks-3otwc/",
+    "https://ballotpedia.org/United_States_Senate_election_in_Colorado,_2020",
+    "https://en.wikipedia.org/wiki/Software",
+    "https://plane.so/blog/what-is-issue-triage-process-and-priority-levels",
+    "https://www.augmentcode.com/guides/ai-backlog-grooming",
+    "https://upstat.io/blog/incident-backlog-management",
+    "https://issuu.com/",
+    "https://apple-tree.life/~michael/blog/2019/",
+    "https://www.atlassian.com/agile/tutorials/burndown-charts"
+  ],
+  "outcome": "authored"
+}

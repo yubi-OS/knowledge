@@ -1,0 +1,81 @@
+{
+  "nn": "02",
+  "slug": "drift-checks-live-findings",
+  "scope": "Periodic drift checks against live systems surfacing actionable findings: stale digests, retirement conditions met but register stale, moved counts, unblocked version floors.",
+  "queries_attempted": [
+    {
+      "query": "dependency drift detection stale pinning supply chain monitoring",
+      "attempt": 1,
+      "raw_results": 65,
+      "kept": 6
+    },
+    {
+      "query": "configuration drift detection continuous compliance tools",
+      "attempt": 1,
+      "raw_results": 59,
+      "kept": 6
+    },
+    {
+      "query": "digest pinning container base image drift build break",
+      "attempt": 2,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "renovate dependabot dependency update automation pinning",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "digest pinning container base image drift build break",
+      "attempt": 3,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "renovate dependabot dependency update automation pinning",
+      "attempt": 3,
+      "raw_results": 38,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 3,
+      "reason": "attempt 2 dig completed but container restart interrupted before results were persisted to the archive; re-ran the same replacement queries",
+      "new_queries": [
+        "digest pinning container base image drift build break",
+        "renovate dependabot dependency update automation pinning"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://arxiv.org/html/2601.08928v1",
+    "https://github.com/dimasqiramadhani/software-supply-chain-monitoring/blob/main/docs/08-dependency-drift-detection.md",
+    "https://repohelm.com/blog/detecting-supply-chain-drift-across-200-repos",
+    "https://www.threads.net/@nagoya_seitai_simizu/post/DTUwfrJkfd7/embed",
+    "https://nhimg.org/glossary/dependency-drift/",
+    "https://www.systemshardening.com/articles/cicd/dependency-pinning/",
+    "https://www.devopstraininginstitute.com/blog/12-configuration-drift-tools-for-devops-teams",
+    "https://www.controlup.com/platform/configuration-drift-prevention/",
+    "https://drata.com/learn/agent-gov/continuous-drift-detection",
+    "https://kindatechnical.com/devops/lesson-84-configuration-drift-detection-and-remediation-strategies.html",
+    "https://open-audit.com/network-configuration-management/",
+    "https://cataam.com/compare/best-continuous-compliance-monitoring/",
+    "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+    "https://www.linkedin.com/pulse/hardening-containers-building-truly-immutable-images-sha-ateeb-aslam-0sgxf",
+    "https://how2.sh/posts/how-to-devops-pin-docker-base-images/",
+    "https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/",
+    "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+    "https://www.merriam-webster.com/dictionary/digest",
+    "https://github.com/renovatebot/renovate/blob/main/docs/usage/dependency-pinning.md",
+    "https://github.com/renovatebot/renovate",
+    "https://oneuptime.com/blog/post/2026-01-25-dependency-update-automation/view",
+    "https://infra.furybee.org/articles/renovate-dependabot-automated-dependency-updates/",
+    "https://docs.renovatebot.com/dependency-pinning/",
+    "https://rafter.so/blog/renovate-vs-dependabot"
+  ],
+  "outcome": "authored"
+}
