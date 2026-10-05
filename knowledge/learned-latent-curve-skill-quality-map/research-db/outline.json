@@ -1,0 +1,215 @@
+{
+  "topic": "learned latent curves as 1-D to 384-D embeddings for skill corpora: mapping a skill corpus into a high-dimensional learned latent space for quality assessment and coverage measurement",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "fourier-curve-model-form",
+      "scope": "Model form z(t) = a0 + sum of sin/cos terms with k shared learned frequencies and per-dim coefficients; closed-form ridge at fixed frequencies plus Adam on frequencies; parameter count k + D(1+2k).",
+      "seed_queries": [
+        "learned frequencies Fourier feature embedding closed form ridge regression",
+        "sinusoidal latent curve model embedding shared frequencies per dimension"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "one-d-coordinate-t",
+      "scope": "How the single scalar coordinate t is derived for each item: PCA top-1 of the quality feature matrix, rank-uniformization, angular scaling, learned projection head with collapse guard.",
+      "seed_queries": [
+        "PCA first principal component document ordering scalar coordinate embedding",
+        "quantile transform rank uniformization feature scaling embedding"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "target-pipelines-short-documents",
+      "scope": "Building the 384-D target vectors for a short-document corpus: why L2-normalized TF-IDF plus truncated SVD plus seeded QR lift produced near-orthogonal noise, and how co-occurrence SVD word embeddings recovered semantic structure.",
+      "seed_queries": [
+        "co-occurrence matrix SVD word embeddings short documents",
+        "TF-IDF truncated SVD embeddings orthogonal poor similarity small corpus"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "quality-feature-extraction",
+      "scope": "Extracting per-item quality features for a skill corpus: structural counts (bytes, lines, headings, bullets, code blocks, tables, links), semantic flags (verification, antipatterns, changelog), metadata binaries, keyword-family densities, zero-variance pruning.",
+      "seed_queries": [
+        "documentation quality metrics structural features headings code blocks",
+        "agent skill file quality assessment heuristic features"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "validation-methodology",
+      "scope": "Validating an embedding fit on a tiny corpus: fixed holdout with holdout R2 and cosine, leave-one-out prediction from t alone, K sweep, and the parameter-count-versus-N-times-D overfitting regime.",
+      "seed_queries": [
+        "leave-one-out cross validation embedding model cosine similarity",
+        "overfitting small sample high dimensional regression degrees of freedom"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "diagnostic-discipline-pc1",
+      "scope": "Interpreting diagnostic red flags correctly: PC1 below 40 percent as a flag about the target pipeline rather than the curve dimensionality; ablation matrix experiments to separate model failure from target failure.",
+      "seed_queries": [
+        "PCA explained variance ratio interpretation low variance first component",
+        "diagnosing model failure versus feature pipeline failure ablation machine learning"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "embedding-dimensionality-rank-limits",
+      "scope": "Dimensionality bookkeeping when lifting embeddings: 60-D SVD basis to 384-D via seeded orthonormal QR projection, effective rank capped by N minus 1, whitening and L2 normalization effects.",
+      "seed_queries": [
+        "random projection low rank embedding dimensionality Johnson Lindenstrauss",
+        "effective rank embedding matrix singular values whitening"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "when-not-to-use-alternatives",
+      "scope": "The do-not-use list and the alternatives: sentence transformers for larger corpora, UMAP and t-SNE for pairwise distance preservation, splines for monotone fits, random Fourier features and positional encoding as different tools, 2-D surfaces when intrinsic dimensionality is higher.",
+      "seed_queries": [
+        "sentence transformers versus SVD embeddings small corpus",
+        "UMAP t-SNE preserve pairwise distances limitations alternatives"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.8309,
+        "probabilities": {
+          "0": 0.0375,
+          "1": 0.094,
+          "2": 0.8685
+        },
+        "confidence": 0.6467,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.8126,
+        "probabilities": {
+          "0": 0.0315,
+          "1": 0.1244,
+          "2": 0.8441
+        },
+        "confidence": 0.5935,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.2625,
+        "probabilities": {
+          "0": 0.1306,
+          "1": 0.4763,
+          "2": 0.3931
+        },
+        "confidence": 0.0977,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.728,
+        "probabilities": {
+          "0": 0.0416,
+          "1": 0.1888,
+          "2": 0.7696
+        },
+        "confidence": 0.4445,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.7166,
+        "probabilities": {
+          "0": 0.043,
+          "1": 0.1973,
+          "2": 0.7597
+        },
+        "confidence": 0.4268,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.5544,
+        "probabilities": {
+          "0": 0.0713,
+          "1": 0.303,
+          "2": 0.6257
+        },
+        "confidence": 0.2326,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.4565,
+        "probabilities": {
+          "0": 0.0748,
+          "1": 0.3939,
+          "2": 0.5313
+        },
+        "confidence": 0.1645,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.156,
+        "probabilities": {
+          "0": 0.1236,
+          "1": 0.5967,
+          "2": 0.2797
+        },
+        "confidence": 0.1743,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1318,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

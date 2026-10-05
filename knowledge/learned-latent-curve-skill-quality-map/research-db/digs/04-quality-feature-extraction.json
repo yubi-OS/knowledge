@@ -1,0 +1,71 @@
+{
+ "nn": "04",
+ "slug": "quality-feature-extraction",
+ "scope": "Extracting per-item quality features for a skill corpus: structural counts (bytes, lines, headings, bullets, code blocks, tables, links), semantic flags (verification, antipatterns, changelog), metadata binaries, keyword-family densities, zero-variance pruning.",
+ "queries_attempted": [
+  {
+   "query": "documentation quality metrics structural features headings code blocks",
+   "attempt": 1,
+   "raw_results": 6
+  },
+  {
+   "query": "software documentation quality assessment metrics survey academic",
+   "attempt": 2,
+   "raw_results": 62
+  },
+  {
+   "query": "static analysis of markdown documentation structure readability tools",
+   "attempt": 2,
+   "raw_results": 47
+  },
+  {
+   "query": "agent skill file quality assessment heuristic features",
+   "attempt": 1,
+   "raw_results": 6
+  },
+  {
+   "query": "evaluating LLM agent skills quality framework rubric",
+   "attempt": 2,
+   "raw_results": 45
+  },
+  {
+   "query": "agent skill description quality triggers evaluation benchmark",
+   "attempt": 2,
+   "raw_results": 46
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 results mostly off-topic (structural beam video, marketing blogs); retry with academic/survey phrasing",
+   "new_queries": [
+    "software documentation quality assessment metrics survey academic",
+    "static analysis of markdown documentation structure readability tools"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 results mostly off-topic (Copilot product page, skills marketplace listing); retry with LLM-agent-skill phrasing",
+   "new_queries": [
+    "evaluating LLM agent skills quality framework rubric",
+    "agent skill description quality triggers evaluation benchmark"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://ieeexplore.ieee.org/document/10173973",
+  "https://ualberta.scholaris.ca/bitstreams/e8264404-750b-4e4c-97e9-b41eae16d4ea/download",
+  "https://dl.acm.org/doi/10.1145/3368089.3417045",
+  "https://en.m.wikipedia.org/wiki/Software",
+  "https://en.wikiversity.org/wiki/Plan-driven_software_development",
+  "http://www.arisa.se/files/WELL-10b.pdf",
+  "https://github.com/gcamilo/skill-eval",
+  "https://autorubric.org/docs/cookbook/agent-skill-evaluation/",
+  "https://qaskills.sh/blog/rubric-based-llm-evaluation-guide-2026",
+  "https://www.merriam-webster.com/dictionary/evaluate",
+  "https://github.com/pravin-kedar/pravin-kedar",
+  "https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/llm-rubric/"
+ ],
+ "outcome": "authored"
+}
