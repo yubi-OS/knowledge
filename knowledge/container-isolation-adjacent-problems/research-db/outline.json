@@ -1,0 +1,173 @@
+{
+ "topic": "container-isolation-adjacent-problems",
+ "subtopics": [
+  {
+   "slug": "01-rootless-builds",
+   "scope": "Rootless container image builds"
+  },
+  {
+   "slug": "02-nspawn-dev-environment",
+   "scope": "systemd-nspawn on a signed image: the dev environment boundary"
+  },
+  {
+   "slug": "03-ephemeral-vm-testing",
+   "scope": "Ephemeral VMs: the whole-OS test boundary"
+  },
+  {
+   "slug": "04-unit-sandboxing-seccomp",
+   "scope": "Unit sandboxing and seccomp: the service-confinement boundary"
+  },
+  {
+   "slug": "05-boundary-matrix",
+   "scope": "Which boundary answers which threat"
+  },
+  {
+   "slug": "06-integrity-vs-isolation",
+   "scope": "Integrity versus isolation versus privilege minimisation"
+  },
+  {
+   "slug": "07-verification-prerequisite",
+   "scope": "The verification chain: digest admission as the prerequisite of container trust"
+  },
+  {
+   "slug": "08-vm-passthrough-extensions",
+   "scope": "Device passthrough at the VM boundary"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.4654,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1088,
+     "1": 0.317,
+     "2": 0.5742
+    },
+    "confidence": 0.1631
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.1512,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1594,
+     "1": 0.53,
+     "2": 0.3106
+    },
+    "confidence": 0.1042
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.4015,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1171,
+     "1": 0.3643,
+     "2": 0.5186
+    },
+    "confidence": 0.1231
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.5286,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0874,
+     "1": 0.2965,
+     "2": 0.6161
+    },
+    "confidence": 0.2126
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.8271,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0379,
+     "1": 0.0971,
+     "2": 0.865
+    },
+    "confidence": 0.6387
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.4898,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1017,
+     "1": 0.3067,
+     "2": 0.5916
+    },
+    "confidence": 0.1815
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.4928,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0839,
+     "1": 0.3394,
+     "2": 0.5767
+    },
+    "confidence": 0.1822
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.9137,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2371,
+     "1": 0.6122,
+     "2": 0.1507
+    },
+    "confidence": 0.1806
+   }
+  },
+  "usage": {
+   "input_tokens": 1049,
+   "output_tokens": 0
+  },
+  "note": "re-scored 2026-10-05 for the record under the v2 score metric; docs already shipped under the v1 outline"
+ }
+}

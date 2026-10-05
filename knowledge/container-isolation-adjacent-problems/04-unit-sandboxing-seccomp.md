@@ -1,0 +1,29 @@
+# Unit sandboxing and seccomp: the service-confinement boundary
+
+Scope: confining individual services with systemd unit sandboxing (PrivateDevices=, RestrictNamespaces=, SystemCallFilter= seccomp allowlists) and systemd-analyze security, and why running every service in a container is not the answer.
+
+## What the boundary is
+
+The fourth isolation question is the narrowest: a single long-running service on the immutable host. The chosen boundary is declarative unit sandboxing, expressed in the unit file itself rather than in a separate runtime. Systemd's SystemCallFilter unit setting aims to prevent misuse of syscalls that are not needed for the normal functioning of a process or its children, using seccomp to define which syscalls are allowed [https://linux-audit.com/systemd/settings/units/systemcallfilter/, weight: low]. RestrictNamespaces is a systemd unit sandboxing setting, available since systemd 233, that controls whether namespace creation is allowed [https://linux-audit.com/systemd/settings/units/restrictnamespaces/, weight: high]. These compose with filesystem and device directives such as PrivateDevices= to shrink what a compromised service can touch.
+
+The core primitives are the same ones containers are built from. Namespaces define what a process can see, cgroups define what it can consume, and seccomp defines what it can ask the kernel to do [https://chkrishnatej.dev/posts/isolation-for-containers/, weight: high]. Unit sandboxing simply applies those primitives per service, declared statically, instead of per container, applied by a daemon at start time. That declarative property is the argument for it on an immutable host: the hardening lives in the same reviewed artifact as the service definition.
+
+## Measurement: systemd-analyze security
+
+Sandboxing without measurement drifts. systemd-analyze security reports the name, description, and an exposure rating for each service, demonstrating the consumption of available security settings and generating a weighted exposure score from how isolated the service is [https://www.redhat.com/en/blog/mastering-systemd, weight: high]. The tool analyzes the security and sandboxing settings of one or more services [https://www.linuxjournal.com/content/systemd-service-strengthening, weight: high], and generates a report about security exposure for each service present in the distribution, which lets you check the improvements applied directive by directive [https://github.com/alegrey91/systemd-service-hardening, weight: high]. Hardening is applied by creating a service override file; never modify the base service file directly, as it gets overwritten on package updates [https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-hardening-on-ubuntu/view, weight: low].
+
+Directives are not free-form: sandboxing restricts the application, so not all directives can be used at once. A web server, for example, should not use PrivateNetwork=true since it usually needs network access; systemd-analyze security generates a score to guide which restrictions each unit can absorb [https://wiki.archlinux.org/title/Systemd/Sandboxing, weight: high]. Systemd has numerous powerful security features that tend to go underutilised, especially in service files [https://ejaaskel.dev/sandboxing-systemd-services/, weight: high], which is the practical argument for the boundary: the capability already exists on every unit, waiting to be used.
+
+## Why not a container per service
+
+The rejected alternative is running every service in its own container. Two reasons ground the rejection. First, on an immutable host a per-service container means a second image lineage per service, doubling what must be built, signed, and verified, for services that already share the host's verified /usr. Second, and structurally: unit sandboxing keeps the service visible to systemd-analyze security. Wrapping a service in a container hides the unit from that measurement; the exposure score stops being an accurate report of what the process can do, because the container runtime adds its own namespace and seccomp layer that the unit-file tooling does not see. On a host whose security story is "declared and measured", hiding the boundary from the measurement tool defeats the purpose.
+
+Systemd itself anchors the measurement story: it keeps track of processes using Linux control groups, and provides socket and D-Bus activation for starting services [https://systemd.io/, weight: high].
+
+## What a seccomp allowlist answers
+
+A SystemCallFilter allowlist answers a kernel-surface threat. A 2019 runc escape bypassed every default namespace boundary anyway, and Docker's default seccomp profile blocks roughly 44 of the more than 300 Linux syscalls [https://safeguard.sh/resources/blog/container-isolation-best-practices, weight: high]. Kernel bugs let an adversary escape isolation, and new local privilege escalation bugs appear every year; seccomp-bpf is the additional mechanism that filters what system calls a process can invoke [https://css.csail.mit.edu/6.5660/2026/lec/l02-isolation.txt, weight: high]. The implication for the unit boundary: namespaces alone are not a complete answer, and shrinking the syscall surface is the layer that catches what namespaces miss. That is why the seccomp allowlist, not just namespace directives, is part of the chosen boundary.
+
+## Limits
+
+Unit sandboxing shares the host /usr and the host kernel with the service. If a service genuinely needs a different /usr than the host image, the signal on an immutable host is to ship a sysext rather than a container; if it needs a different kernel or network stack entirely, that is a case for the container or VM boundaries. The unit boundary is for the common case: the service is part of the image's own OS and needs to be confined within it.
