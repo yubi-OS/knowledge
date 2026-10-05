@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "slsa-provenance-continuity",
+  "scope": "SLSA provenance requirements that break under refederation: invocation configSource.uri consistency, the build identity claim, and what a verifier must accept to treat a refederated builder as a continuation of the same build lineage.",
+  "queries_attempted": [
+    {
+      "query": "SLSA provenance predicate invocation configSource build definition",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "SLSA build level requirements builder identity verification attestation",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://devmoran.github.io/slsa/provenance/v0.2",
+    "https://slsa.dev/spec/v1.0/provenance",
+    "https://slsa.dev/spec/v0.1/provenance",
+    "https://slsa.dev/",
+    "https://marklodato.github.io/slsa/provenance/v0.2",
+    "https://slsa.dev/spec/v0.2/provenance",
+    "https://deepwiki.com/slsa-framework/slsa/4.2-build-requirements-and-verification",
+    "https://slsa.dev/spec/v1.2/",
+    "https://www.decryptiondigest.com/blog/slsa-software-supply-chain-framework-guide",
+    "https://slsa.dev/",
+    "https://slsa.dev/spec/v1.2/build-provenance",
+    "https://slsa.dev/spec/v1.2/build-requirements"
+  ],
+  "outcome": "authored"
+}

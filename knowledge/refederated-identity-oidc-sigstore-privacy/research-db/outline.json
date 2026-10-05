@@ -1,0 +1,273 @@
+{
+  "topic": "re-federated identity in OIDC and Sigstore - multi-federation as a privacy lever for transparency-log and artifact-attestation ecosystems",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "federated-unfederated-refederated",
+      "scope": "The three cloud-identity trust patterns (unfederated, federated, refederated) ordered by trust centralization, and the rule that refederation must explicitly revoke or supersede the old trust rather than just add the new one.",
+      "seed_queries": [
+        "federated vs unfederated identity single sign-on OIDC SAML trust model",
+        "identity federation migration revoke old issuer trust chain relying party"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "oidc-refederation-mechanics",
+      "scope": "The concrete relying-party-side changes that constitute OIDC refederation: new issuer URL and JWKS, new client registration, changed claims, changed sub values, updated aud/iss allowlists; plus common triggers: issuer migration, org merge, IdP deprecation, trust revocation.",
+      "seed_queries": [
+        "OpenID Connect issuer change discovery document JWKS rotation relying party",
+        "OIDC client registration migration new identity provider claims change sub claim"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "sigstore-fulcio-rekor-refederation",
+      "scope": "How the Sigstore attestation layer behaves when the OIDC provider changes: Fulcio issues short-lived X.509 certs bound to OIDC identity claims, Rekor logs all certs and signatures, and a new issuer forces trust-list updates and a subject-identity break that needs out-of-band bridging.",
+      "seed_queries": [
+        "Sigstore Fulcio OIDC token short-lived certificate signing identity",
+        "Rekor transparency log certificate verification trust root OIDC provider"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "workload-identity-ci-oidc",
+      "scope": "CI and workload OIDC federation: GitHub Actions OIDC tokens, Google Cloud Workload Identity Federation, self-hosted runners such as Tekton, and what changes when the workload signing identity issuer anchor shifts.",
+      "seed_queries": [
+        "GitHub Actions OIDC token workload identity federation keyless signing",
+        "Google Cloud Workload Identity Federation OIDC token exchange CI"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "rekor-v2-sharding-cross-issuer",
+      "scope": "Rekor v2 tile-based transparency log model: sharding that can hold entries from multiple issuers, witness quorum configuration recognizing multiple CA roots, and the Rekor v1 versus v2 difference for cross-issuer attestation.",
+      "seed_queries": [
+        "Rekor v2 tile based transparency log sigstore specification",
+        "transparency log sharding witness cosignature multiple log authorities"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "slsa-provenance-continuity",
+      "scope": "SLSA provenance requirements that break under refederation: invocation configSource.uri consistency, the build identity claim, and what a verifier must accept to treat a refederated builder as a continuation of the same build lineage.",
+      "seed_queries": [
+        "SLSA provenance predicate invocation configSource build definition",
+        "SLSA build level requirements builder identity verification attestation"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "multifederation-privacy-lever",
+      "scope": "The conditional privacy effect of multi-federation: when it helps (different IdPs per RP, no global stable identifier, minimum claims, rotated scoped identifiers) and when it hurts (email reuse across providers, provider correlation of logins, composite attestations).",
+      "seed_queries": [
+        "federated identity privacy multiple identity providers unlinkability correlation",
+        "identity federation privacy risks email address cross provider tracking"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "pairwise-subjects-sd-jwt",
+      "scope": "The primitives of the strongest anonymity scheme: pairwise per-audience subject identifiers salted with a user secret, SD-JWT selective disclosure of only the claims an RP needs, and per-transaction claim scoping that defeats replay.",
+      "seed_queries": [
+        "OIDC pairwise subject identifier public subject audience salted",
+        "SD-JWT selective disclosure JWT IETF draft oauth claims"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "trust-model-constraints",
+      "scope": "The privacy-preserving multi-federation trust model as an auditable constraint set: N independent IdPs, one-IdP-per-RP binding, per-RP sub issuance, RP storage of pseudonymous IDs only, plus the MUST, MUST NOT, and NEVER bans on shared identifiers and composite identities.",
+      "seed_queries": [
+        "pseudonymous identifiers trust model design identity providers compromise",
+        "selective disclosure verifiable credentials trust framework design constraints"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "supply-chain-multibuilder-privacy",
+      "scope": "Applying pairwise workload identities and per-event short-lived certs to artifact-attestation ecosystems: multiple independent CI sources without a single trust-anchor point of compromise, and unlinkable builders contributing to the same artifact.",
+      "seed_queries": [
+        "sigstore keyless signing multiple CI systems trust root supply chain",
+        "supply chain attestation builder identity unlinkability short-lived certificates"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.5768,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0845,
+          "1": 0.2542,
+          "2": 0.6613
+        },
+        "confidence": 0.2636
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8092,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0317,
+          "1": 0.1274,
+          "2": 0.8409
+        },
+        "confidence": 0.5865
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.7337,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.1663,
+          "2": 0.7837
+        },
+        "confidence": 0.4665
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.2523,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1522,
+          "1": 0.4433,
+          "2": 0.4045
+        },
+        "confidence": 0.075
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5391,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0824,
+          "1": 0.296,
+          "2": 0.6216
+        },
+        "confidence": 0.2211
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.1646,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1579,
+          "1": 0.5196,
+          "2": 0.3225
+        },
+        "confidence": 0.0984
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.8925,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0286,
+          "1": 0.0503,
+          "2": 0.9211
+        },
+        "confidence": 0.7777
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.4267,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0955,
+          "1": 0.3822,
+          "2": 0.5223
+        },
+        "confidence": 0.1419
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.5185,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1016,
+          "1": 0.2783,
+          "2": 0.6201
+        },
+        "confidence": 0.2084
+      },
+      "t10": {
+        "type": "score",
+        "score": 1.3945,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1118,
+          "1": 0.3818,
+          "2": 0.5064
+        },
+        "confidence": 0.122
+      }
+    },
+    "usage": {
+      "input_tokens": 1503,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  }
+}
