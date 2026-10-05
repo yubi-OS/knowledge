@@ -1,0 +1,77 @@
+{
+ "nn": "08",
+ "slug": "refresh-cadence-and-source-aging",
+ "scope": "Per-benchmark refresh cadence (annual light check vs before-every-citation), retrieval dating discipline, sources needing refresh or replacement, and weakest-source handling for vendor forecasts.",
+ "queries_attempted": [
+  {
+   "query": "market research report refresh cadence stale citation policy",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "source aging retrieval date documentation benchmark hygiene",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "how often should market research data be refreshed report staleness",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 5
+  },
+  {
+   "query": "benchmark data refresh cadence policy stale statistics",
+   "attempt": 2,
+   "raw_results": 58,
+   "kept": 5
+  },
+  {
+   "query": "market statistics validity period how long data stays current",
+   "attempt": 3,
+   "raw_results": 61,
+   "kept": 5
+  },
+  {
+   "query": "when do industry benchmarks expire data freshness lifecycle",
+   "attempt": 3,
+   "raw_results": 57,
+   "kept": 5
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin / largely off-topic (junk results, weak weights); redo with different queries",
+   "new_queries": [
+    "how often should market research data be refreshed report staleness",
+    "benchmark data refresh cadence policy stale statistics"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "attempt 2 redo still thin / mostly off-topic; one more redo with different queries",
+   "new_queries": [
+    "market statistics validity period how long data stays current",
+    "when do industry benchmarks expire data freshness lifecycle"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://hginsights.com/wp-content/uploads/2026/09/HG-Insights-Insight-Report_-How-Often-Should-Market-Intelligence-Actually-Refresh_.pdf",
+  "https://hginsights.com/resource/insight-reports/how-often-should-market-intelligence-actually-refresh/",
+  "https://leadsnow.ai/how-often-update-content-ai-search-freshness/",
+  "https://www.marketwatch.com/",
+  "https://gemini.google/us/overview/canvas/?hl=en",
+  "https://www.csas.cz/cs/research/analyza/en/ER3003",
+  "https://staffingcarehome.com/research/home-care-client-discharge-documentation-benchmark",
+  "https://www.hfma.org/wp-content/uploads/2023/10/2023-Edition-MAP-Keys.pdf",
+  "https://thesource.jfs.ohio.gov/",
+  "https://www.cpubenchmark.net/CPU_mega_page.html",
+  "https://patents.google.com/patent/US20020069102A1/en",
+  "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-58/subpart-J/section-58.190"
+ ],
+ "outcome": "authored"
+}
