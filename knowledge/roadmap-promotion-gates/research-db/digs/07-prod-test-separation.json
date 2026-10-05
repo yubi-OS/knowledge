@@ -1,0 +1,69 @@
+{
+  "nn": "07",
+  "slug": "prod-test-separation",
+  "scope": "Declaring whether promoted work touches production artifacts, dev/test artifacts, installer artifacts, firmware artifacts, or lab-only outputs.",
+  "queries_attempted": [
+    {
+      "query": "separation of production staging test artifacts and environments",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "firmware installer artifact classification production versus lab outputs",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "ITIL change management separate test and production systems",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "artifact promotion pipeline between dev staging and production environments",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "attempt 1 dig too thin: most results weighted below 0.5, not enough authoritative backing to author honestly",
+      "new_queries": [
+        "ITIL change management separate test and production systems",
+        "artifact promotion pipeline between dev staging and production environments"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.linkedin.com/pulse/guide-dev-test-staging-production-environments-george-lebbos",
+    "https://softwarepatternslexicon.com/iam-basics-and-permission-models/cloud-and-saas-iam/environment-separation-dev-test-staging-production/",
+    "https://seckindinc.substack.com/p/understanding-software-environments",
+    "https://www.merriam-webster.com/dictionary/separation",
+    "https://dev.to/clearpathsecurity/preventing-secret-leakage-in-cicd-environments-3de2",
+    "https://www.aem.live/docs/staging",
+    "https://beefed.ai/en/iec-62304-firmware-compliance-guide",
+    "https://dojofive.com/wp-content/uploads/2024/11/DojoFive-Whitepaper-IEC62304-ovember2024.pdf",
+    "https://github.com/EZ32Inc/ai-embedded-lab/blob/master/docs/specs/ael_artifact_classification_rules_v1.md",
+    "https://enlil.com/blog/iec-62304-classifications-explained/",
+    "https://en.wikipedia.org/wiki/Firmware",
+    "https://www.youtube.com/watch?v=3I9Gq97Lafo",
+    "https://iseoblue.com/iso-27001/annex-a/control-8-31/",
+    "https://www.simplilearn.com/itil-change-management-article",
+    "https://www.isms.online/iso-27001/annex-a-2022/8-31-separation-of-development-test-production-environments-2022/",
+    "https://www.atlassian.com/itsm/change-management",
+    "https://www.isms.online/iso-27002/control-8-31-separation-of-development-test-and-production-environments/",
+    "https://hightable.io/iso27001-annex-a-8-31-separation-of-development-test-and-production-environments/",
+    "https://khimananda.com/blog/infrastructure-promotion-pipelines-dev-to-prod",
+    "https://beefed.ai/en/artifact-promotion-pipeline-dev-to-prod",
+    "https://docs.devopspilot.com/jfrog/tutorials/build-info-promotion/",
+    "https://learn.programmingline.com/learn/cicd/cicd-staging-production-promotion",
+    "https://vinaykanamarlapudi.medium.com/deployment-choice-code-promotion-vs-artifact-promotion-1c13727f184b",
+    "https://www.merriam-webster.com/dictionary/artifact"
+  ],
+  "outcome": "authored"
+}
