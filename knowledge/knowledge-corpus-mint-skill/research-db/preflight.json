@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=",
+    "probe_results": 40,
+    "unresponsive_engines": []
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "note": "initial probe POST returned 502; subsequent outline-validation POST returned 200 with 9 scored answers (scores 1.0606 to 1.9517), confirming the endpoint healthy",
+      "probe_status": 502,
+      "validation_status": 200
+    }
+  }
+}

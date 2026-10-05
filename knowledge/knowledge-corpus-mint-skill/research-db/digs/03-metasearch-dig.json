@@ -1,0 +1,42 @@
+{
+  "nn": "03",
+  "slug": "metasearch-dig",
+  "scope": "Running web research digs through a self-hosted SearXNG metasearch proxy: query formulation, result capture (title, url, content), rate limiting and pacing, batching, and engine health probing.",
+  "queries_attempted": [
+    {
+      "query": "SearXNG API JSON search results documentation",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "self-hosted SearXNG proxy webhook integration",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://docs.searxng.org/dev/search_api.html",
+    "https://docs.searxng.org/dev/engines/json_engine.html",
+    "https://github.com/searxng/searxng/blob/master/docs/dev/search_api.rst",
+    "https://github.com/searxng/searxng",
+    "https://seirdy.one/posts/2021/03/10/search-engines-with-own-indexes/",
+    "https://github.com/ihor-sokoliuk/mcp-searxng/blob/main/docs/self-hosted-searxng.md",
+    "https://github.com/GridexX/SearXNG-Self-Hosted/",
+    "https://www.bitdoze.com/searxng-self-host-privacy-search/",
+    "https://dasroot.net/posts/2026/03/self-hosted-search-searxng-installation-configuration/",
+    "https://github.com/loonylabs-dev/searxng-proxy",
+    "https://www.self.inc/",
+    "https://github.com/maxwell-feng/dsh-searxng-web"
+  ],
+  "outcome": "authored"
+}

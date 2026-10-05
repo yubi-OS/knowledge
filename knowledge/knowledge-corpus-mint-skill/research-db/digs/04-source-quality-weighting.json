@@ -1,0 +1,42 @@
+{
+  "nn": "04",
+  "slug": "source-quality-weighting",
+  "scope": "Weighting every collected search result by source authority before citation: primary versus aggregator judgment, probability-as-weight semantics, and redo-on-failure contracts for the weighting call.",
+  "queries_attempted": [
+    {
+      "query": "evaluating web source credibility primary sources versus aggregators",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "automated source quality scoring research pipeline",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://www.scribbr.com/working-with-sources/evaluating-sources/",
+    "https://usingsources.fas.harvard.edu/evaluating-web-sources-0",
+    "https://owl.purdue.edu/owl/research_and_citation/conducting_research/evaluating_sources_of_information/evaluating_digital_sources.html",
+    "https://www.merriam-webster.com/dictionary/evaluate",
+    "https://www.scribbr.com/working-with-sources/credible-sources/",
+    "https://usingsources.fas.harvard.edu/sites/g/files/omnuum4606/files/sources/files/evaluating_sources.pdf",
+    "https://www.nature.com/articles/s41598-026-60947-3",
+    "https://handwiki.org/wiki/Software:List_of_RNA-Seq_bioinformatics_tools",
+    "https://www.merriam-webster.com/dictionary/automated",
+    "http://protinfo.compbio.buffalo.edu/cando/",
+    "https://autoriax.com/compare/autoriax-vs-grandranker/",
+    "https://github.com/grammy-jiang/research-pipeline"
+  ],
+  "outcome": "authored"
+}

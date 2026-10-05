@@ -1,0 +1,42 @@
+{
+  "nn": "05",
+  "slug": "parallel-subagent-authoring",
+  "scope": "Fanning out one author subagent per doc: the returned-markdown contract, citation discipline where every factual claim carries its source and weight, the thin-dig redo rule, and skip-as-gap.",
+  "queries_attempted": [
+    {
+      "query": "LLM multi-agent fan out parallel writing subagents",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "grounded generation citations every claim sourced LLM",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://explainx.ai/blog/multi-agent-orchestration-patterns-guide-2026",
+    "https://www.agentpatterns.ai/patterns/multi-agent/sub-agents-fan-out/",
+    "https://www.glukhov.org/ai-systems/architecture/multi-agent-orchestration-patterns/",
+    "https://en.wikipedia.org/wiki/Large_language_model",
+    "https://prompt.networkershome.com/prompt/api-fan-out/",
+    "https://developers.llamaindex.ai/python/framework/understanding/agent/multi_agent/",
+    "https://edtek.ai/kb/citation-grounded-llm/",
+    "https://www.zeroentropy.dev/concepts/grounded-generation/",
+    "https://dev.to/dev48v/grounding-and-citations-making-llm-answers-you-can-actually-verify-255i",
+    "https://store.steampowered.com/app/962130/Grounded/",
+    "https://blog.prompt20.com/posts/ai-hallucinations/",
+    "https://www.ustavprava.cz/ll-m/"
+  ],
+  "outcome": "authored"
+}
