@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "api-safety-operator-interface",
+  "scope": "API safety and the operator interface: preflight numeric validation and baseline-conflict checks, 768-D vectors direct, seed 0 preserved, 409 for legacy baselines, bounded bodies, no exposed stacks, and the UI additions for comparison and hypotheses.",
+  "queries_attempted": [
+    {
+      "query": "REST API input validation error handling 409 conflict preflight",
+      "attempt": 1,
+      "raw_results": 40,
+      "kept": 6
+    },
+    {
+      "query": "web application stack trace exposure information disclosure prevention",
+      "attempt": 2,
+      "raw_results": 54,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://devgex.com/en/article/00003551",
+    "https://http.dev/409",
+    "https://apiguide.dev/status-codes/409/",
+    "https://stackoverflow.com/questions/3290182/which-status-code-should-i-use-for-failed-validations-or-invalid-duplicates",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/409",
+    "https://www.cloudthat.com/resources/blog/rest-api-design-best-practices-for-validation-and-error-handling",
+    "https://www.acunetix.com/vulnerabilities/web/stack-trace-disclosure-asp-net/",
+    "https://www.geeksforgeeks.org/ethical-hacking/information-disclosure/",
+    "https://devsecopsschool.com/blog/stack-trace-disclosure/",
+    "https://codeql.github.com/codeql-query-help/java/java-stack-trace-exposure/",
+    "https://www.invicti.com/web-application-vulnerabilities/stack-trace-disclosure-asp-net",
+    "https://splorix.com/glossary/stack-trace-exposure"
+  ],
+  "outcome": "authored"
+}

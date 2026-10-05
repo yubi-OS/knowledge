@@ -1,0 +1,273 @@
+{
+  "topic": "auditing a latent-space corpus wayfinder: engineering defects found and repaired, corrections applied, the evidence standard for real-edit success, and what remains unproven",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "frozen-coordinates-baseline",
+      "scope": "How the v0.2 audit freezes fitted coordinates: baseline_id reuses the actual stored frame while frame_id and instrument_id are checked independently of the changed input fingerprint, because seed-only reuse cannot pin a fitted coordinate system.",
+      "seed_queries": [
+        "reproducible machine learning baseline fixed random seed limitations",
+        "deterministic inference model version pinning caching"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "full-text-ingestion-pipeline",
+      "scope": "Full-text measurement and ingestion hardening: Unicode-safe 400-byte chunks, BGE mean-pooling with byte weighting and L2 normalization, content-keyed SHA256 caching, and a TAR parser that validates checksums, PAX headers, and budgets.",
+      "seed_queries": [
+        "BGE embedding model mean pooling chunking long documents",
+        "tar archive format PAX header checksum validation truncated payloads"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "input-change-observability",
+      "scope": "Distinguishing changed input from changed binary geometry: quantization-silent edits, the run 46 to 47 evidence chain, and why a stationary dot cannot prove an edit was ignored.",
+      "seed_queries": [
+        "quantization rounding hides small vector changes floating point",
+        "embedding cache invalidation content hash change detection"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "non-destructive-recommendations",
+      "scope": "Removing destructive recommendations: isolation no longer authorizes deleting a source, outliers are review-only, synthetic ADD uses one row, and candidates stay hypotheses with content inspection and a task check.",
+      "seed_queries": [
+        "destructive automation safeguards human approval irreversibility",
+        "outlier detection review workflow false positives triage"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "semantic-honesty",
+      "scope": "Semantic honesty in interpretation: azimuthal sectors as anonymous numbers, the twelve NSS axes as an unvalidated lens, no PCA angle proving a semantic defect, and pole-shift sign no longer deciding edit quality.",
+      "seed_queries": [
+        "interpreting PCA axes semantic meaning pitfalls",
+        "geometric proxies versus validated semantic labels text corpora"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "numerical-correctness-core",
+      "scope": "Numerical correctness repairs: covariance-trace normalization in V2, the rank gate as measurement not identity, MH detailed balance separated from stochastic flux, stable stationary normalization, SLERP antipode handling, and identity-failure abort before persistence.",
+      "seed_queries": [
+        "Metropolis-Hastings detailed balance stationary distribution conditions",
+        "slerp interpolation antipodal points singularity quaternion numerical"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "sampler-correctness",
+      "scope": "Sampler correctness: replacing the successful-move stopping rule with a symmetric checkerboard-switch chain with self-loops and attempted-proposal counting, margin preservation, the honest not-full-Curveball statement, and finite mixing still unproved.",
+      "seed_queries": [
+        "switch chain checkerboard Markov chain contingency table row column margins",
+        "Curveball double edge swap zero diagonal adjacency graph sampling mixing"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "api-safety-operator-interface",
+      "scope": "API safety and the operator interface: preflight numeric validation and baseline-conflict checks, 768-D vectors direct, seed 0 preserved, 409 for legacy baselines, bounded bodies, no exposed stacks, and the UI additions for comparison and hypotheses.",
+      "seed_queries": [
+        "REST API input validation error handling 409 conflict preflight",
+        "web application stack trace exposure information disclosure prevention"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "spectral-selection-rules-boundaries",
+      "scope": "Raman and infrared boundaries: dipole versus polarizability derivatives, the Placzek depolarization ratio, why the wayfinder cannot claim spectral measurement, and the recorded negative results retained.",
+      "seed_queries": [
+        "Raman depolarization ratio Placzek polarizability derivative formula",
+        "Raman infrared mutual exclusion rule centrosymmetric molecules"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "evidence-standard-benchmarks",
+      "scope": "The evidence standard: why Addendum 12 rungs are not 10 independent graded trials, separating test passage from predictive usefulness, the EnvHarness discipline, the frozen held-out benchmark design, and the explicit limitation list.",
+      "seed_queries": [
+        "software tests passing insufficient evidence predictive evaluation benchmark",
+        "held out evaluation pre-registration blinded grading agent benchmark design"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6225,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0844,
+          "1": 0.2087,
+          "2": 0.7069
+        },
+        "confidence": 0.3256
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.0741,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2394,
+          "1": 0.4472,
+          "2": 0.3134
+        },
+        "confidence": 0.0333
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.3388,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1537,
+          "1": 0.3538,
+          "2": 0.4925
+        },
+        "confidence": 0.0871
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.0262,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2803,
+          "1": 0.4133,
+          "2": 0.3064
+        },
+        "confidence": 0.0149
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.3935,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1347,
+          "1": 0.3371,
+          "2": 0.5282
+        },
+        "confidence": 0.1161
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.6585,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0797,
+          "1": 0.1821,
+          "2": 0.7382
+        },
+        "confidence": 0.3767
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.2633,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1814,
+          "1": 0.3739,
+          "2": 0.4447
+        },
+        "confidence": 0.0557
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.0501,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2302,
+          "1": 0.4895,
+          "2": 0.2803
+        },
+        "confidence": 0.0567
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.1175,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2064,
+          "1": 0.4698,
+          "2": 0.3238
+        },
+        "confidence": 0.0522
+      },
+      "t10": {
+        "type": "score",
+        "score": 1.8674,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0304,
+          "1": 0.0719,
+          "2": 0.8977
+        },
+        "confidence": 0.718
+      }
+    },
+    "usage": {
+      "input_tokens": 1522,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  }
+}
