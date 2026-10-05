@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "rpmb-bootstrap-hazard",
+ "scope": "The first persistent NV write to RPMB happening before tee-supplicant is available, and the initramfs or deferral strategies that avoid a bricked NV state",
+ "queries_attempted": [
+  {
+   "query": "tee-supplicant RPMB early boot fTPM initramfs",
+   "attempt": 1,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "OP-TEE RPMB supplicant boot order hazard",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/OP-TEE/optee_os/issues/7339",
+  "https://github.com/OP-TEE/optee_os/issues/5766",
+  "https://lkml.org/lkml/2024/5/29/418",
+  "https://my.clevelandclinic.org/health/diagnostics/4992-echocardiogram-transesophageal-tee",
+  "https://ubuntu.com/blog/tpm-backed-full-disk-encryption-is-coming-to-ubuntu",
+  "https://groups.google.com/g/isar-users/c/p1gy2z-RV4I",
+  "https://github.com/10GiC10V38/jetson-ima-attestation",
+  "https://www.linaro.org/blog/linaro-enables-op-tee-rpmb-access-directly-from-the-linux-kernel/",
+  "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "https://deepwiki.com/OP-TEE/optee_client/2.2.2-rpmb-storage",
+  "https://www.mail-archive.com/u-boot@lists.u-boot-project.org/msg05222.html",
+  "https://lwn.net/Articles/1043529/"
+ ],
+ "outcome": "authored"
+}

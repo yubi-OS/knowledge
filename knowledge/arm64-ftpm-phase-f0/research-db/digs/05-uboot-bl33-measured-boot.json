@@ -1,0 +1,33 @@
+{
+ "nn": "05",
+ "slug": "uboot-bl33-measured-boot",
+ "scope": "U-Boot as BL33 in UEFI mode with CONFIG_TPM2_FTPM_TEE and CONFIG_MEASURED_BOOT, extending PCRs for kernel, DTB and initramfs through the fTPM TA",
+ "queries_attempted": [
+  {
+   "query": "U-Boot tpm2_ftpm_tee driver measured boot TPM",
+   "attempt": 1,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "U-Boot EFI loader measured boot PCR extend TPM2",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://bootlin.com/blog/measured-boot-with-a-tpm-2-0-in-u-boot/",
+  "https://docs.u-boot-project.org/en/latest/usage/measured_boot.html",
+  "https://github.com/frank-w/u-boot/blob/2026-07-bpi/drivers/tpm/tpm2_ftpm_tee.c",
+  "https://www.youtube.com/",
+  "https://docs.u-boot.org/en/latest/usage/measured_boot.html",
+  "https://lists.denx.de/pipermail/u-boot/2026-May/618310.html",
+  "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+  "https://stackoverflow.com/questions/58975879/extending-pcr-of-tpm2-0-during-boot-by-using-buildroot-with-uboot",
+  "http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html"
+ ],
+ "outcome": "authored"
+}
