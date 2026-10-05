@@ -1,0 +1,36 @@
+{
+ "nn": 5,
+ "slug": "idempotency-and-resume",
+ "scope": "Why a non-idempotent one-shot measurement breaks resume-from-suspend (PCR extend on every re-run) and how pure-function one-shots stay safe across re-runs",
+ "queries_attempted": [
+  {
+   "query": "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+   "attempt": 1,
+   "raw_results": 87,
+   "kept": 6
+  },
+  {
+   "query": "idempotent boot integrity measurement re-run pure function",
+   "attempt": 1,
+   "raw_results": 88,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://stackoverflow.com/questions/59352618/tpm-pcr-event-vs-pcr-extend",
+  "https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+  "https://www.dell.com/support/kbdoc/en-us/000204144/tpm-pcr-validation-error-causing-bitlocker-recovery-at-boot",
+  "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+  "https://tpm2-tools.readthedocs.io/en/latest/man/tss2_pcrextend.1/",
+  "https://talkingpointsmemo.com/",
+  "https://stackoverflow.com/questions/4801282/are-idempotent-functions-the-same-as-pure-functions",
+  "https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation",
+  "https://stackoverflow.com/questions/40296211/what-is-the-difference-between-an-idempotent-and-a-deterministic-function",
+  "https://en.wikipedia.org/wiki/Idempotence",
+  "https://d3fend.mitre.org/technique/d3f:TPMBootIntegrity/",
+  "https://foojay.io/today/idempotent-spring-boot-starter/"
+ ],
+ "outcome": "authored"
+}

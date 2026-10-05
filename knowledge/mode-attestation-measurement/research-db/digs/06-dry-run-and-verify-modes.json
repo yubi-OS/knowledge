@@ -1,0 +1,80 @@
+{
+ "nn": 6,
+ "slug": "dry-run-and-verify-modes",
+ "scope": "sbverify --cert, veritysetup verify, chipsec_main --list, and rules --validate as dry-run modes: what each proves in CI and what it cannot prove about the booted system",
+ "queries_attempted": [
+  {
+   "query": "chipsec_main --list platform security checks",
+   "attempt": 1,
+   "raw_results": 74,
+   "kept": 6
+  },
+  {
+   "query": "sbverify cert signature verification what it proves",
+   "attempt": 1,
+   "raw_results": 75,
+   "kept": 6
+  },
+  {
+   "query": "sbverify --list vs --cert flag dry run UEFI",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "sbverify --list vs --cert flag dry run UEFI",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "CHIPSEC module result PASSED FAILED DEPRECATED ERROR",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "CHIPSEC module result PASSED FAILED DEPRECATED ERROR",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "CHIPSEC module result PASSED FAILED DEPRECATED ERROR",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "seed dig returned one off-topic result and duplicated sbverify manpages; redone with different queries via Sauna websearch",
+   "new_queries": [
+    "sbverify --list vs --cert flag dry run UEFI",
+    "CHIPSEC module result PASSED FAILED DEPRECATED ERROR"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/chipsec/chipsec",
+  "https://chipsec.github.io/",
+  "https://www.scribd.com/document/341786677/Chipsec-Manual",
+  "https://blackhat.com/docs/us-14/materials/arsenal/us-14-Bulygin-CHIPSEC-Slides.pdf",
+  "https://www.nfl.com/careers/",
+  "https://github.com/chipsec/chipsec/blob/chipsec2/chipsec-manual.pdf",
+  "https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en",
+  "https://www.mankier.com/1/sbverify",
+  "https://manpages.org/sbverify",
+  "https://manpages.opensuse.org/Tumbleweed/sbsigntools/sbverify.1.en.html",
+  "https://unix.stackexchange.com/questions/636263/how-to-verify-signed-uefi-binaries",
+  "https://man.uex.se/1/sbverify",
+  "https://man.archlinux.org/man/sbverify.1",
+  "https://manpages.debian.org/bookworm/sbsigntool/sbverify.1.en.html",
+  "https://chipsec.github.io/usage/Interpreting-Results.html",
+  "https://github.com/chipsec/chipsec/blob/272a3c7cf8435a341dc9083f1f1c60349bab9322/chipsec_main.py",
+  "https://github.com/chipsec/chipsec/wiki/Vulnerabilities-and-CHIPSEC-Modules"
+ ],
+ "outcome": "authored"
+}

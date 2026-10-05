@@ -1,0 +1,36 @@
+{
+ "nn": 2,
+ "slug": "daemon-resident-measurement",
+ "scope": "fTPM measurement into PCRs by an OP-TEE TA as the daemon-resident event-driven mode: append-only per boot, reset on reboot, no exit code, the event log is the output",
+ "queries_attempted": [
+  {
+   "query": "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+   "attempt": 1,
+   "raw_results": 86,
+   "kept": 6
+  },
+  {
+   "query": "TCG2 measured boot event log PCR extend append-only reboot",
+   "attempt": 1,
+   "raw_results": 86,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/OP-TEE/optee_ftpm",
+  "https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html",
+  "https://trustedfirmware-a.readthedocs.io/en/latest/design_documents/measured_boot_poc.html",
+  "https://deepwiki.com/OP-TEE/optee_ftpm/8.1-event-logging-and-measured-boot",
+  "https://github.com/microsoft/MSRSec/blob/master/TAs/optee_ta/fTPM/README.md",
+  "https://trustedfirmware-a.readthedocs.io/en/v2.12/design_documents/measured_boot_poc.html",
+  "https://learn.microsoft.com/en-us/troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes",
+  "https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html",
+  "https://trustedcomputinggroup.org/resource/tcg-efi-protocol-specification/",
+  "https://raymo200915.github.io/2025/05/02/spl-measured-boot.html",
+  "https://deepwiki.com/nxp-imx/uboot-imx/5.5-uefi-tcg2-tpm2-measurement",
+  "https://trustedcomputinggroup.org/wp-content/uploads/TCG-Guidance-Integrity-Measurements-Event-Log-Processing_v1_r0p118_24feb2022-1.pdf"
+ ],
+ "outcome": "authored"
+}

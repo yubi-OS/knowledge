@@ -1,0 +1,101 @@
+{
+ "nn": 3,
+ "slug": "runtime-detection-daemons",
+ "scope": "Falco and Tetragon as streaming runtime detection daemons under systemd Type=notify: SIGTERM clean stop, restart on failure, streaming output as the deliverable",
+ "queries_attempted": [
+  {
+   "query": "Falco Tetragon runtime security daemon systemd Type=notify",
+   "attempt": 1,
+   "raw_results": 78,
+   "kept": 6
+  },
+  {
+   "query": "Tetragon tracing policy rules validate streaming events",
+   "attempt": 1,
+   "raw_results": 68,
+   "kept": 6
+  },
+  {
+   "query": "Falco daemon exit codes systemd restart",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "Falco daemon exit codes systemd restart",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "Falco daemon exit codes systemd restart",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "Falco daemon exit codes systemd restart",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "Falco daemon exit codes systemd restart",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "tetragon.yaml validate CLI flag non-kubernetes",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "tetragon.yaml validate CLI flag non-kubernetes",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "tetragon.yaml validate CLI flag non-kubernetes",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "seed dig returned mostly low-weight marketing/blog results; redone with different queries via Sauna websearch after searxng engine throttling degraded result quality",
+   "new_queries": [
+    "Falco daemon exit codes systemd restart",
+    "tetragon.yaml validate CLI flag non-kubernetes"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2026-01-07-ebpf-security-monitoring-falco-tetragon/view",
+  "https://www.ramnode.com/guides/falco-tetragon",
+  "https://kubernetes.ae/falco-vs-tetragon/",
+  "https://protego.me/courses/kubernetes-security/k8s-l17-runtime-security",
+  "https://kubernetes.ae/container-runtime-security-2026/",
+  "https://labhub.hopto.org/blog/linux/2026-06-13-ebpf-security-tetragon-falco-lsm?lang=en",
+  "https://tetragon.io/docs/concepts/tracing-policy/",
+  "https://cilium.io/blog/2025/09/16/kernel-basics-for-tetragon/",
+  "https://tetragon.io/docs/concepts/events/",
+  "https://labs.iximiuz.com/tutorials/introduction-to-tetragon",
+  "https://tetragon.io/docs/concepts/tracing-policy/example/",
+  "https://medium.com/@alex.ivenin/kubernetes-runtime-security-with-tetragon-16fa069a98db",
+  "https://github.com/juju4/ansible-falco/blob/master/templates/systemd-falco.service.j2",
+  "https://github.com/falcosecurity/falco/issues/2476",
+  "https://falco.org/docs/troubleshooting/start-up-error/",
+  "https://github.com/falcosecurity/falco/pull/3939",
+  "https://falco.org/docs/concepts/outputs/forwarding/",
+  "https://tetragon.io/docs/reference/tracing-policy/",
+  "https://tetragon.io/docs/installation/package/",
+  "https://github.com/cilium/tetragon/pull/1521"
+ ],
+ "outcome": "authored"
+}

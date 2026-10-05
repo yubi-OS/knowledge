@@ -1,0 +1,87 @@
+{
+ "nn": 7,
+ "slug": "interactive-vs-batch-mode",
+ "scope": "Attestation steps run non-interactive everywhere; the single interactive moment is YubiKey FIDO2 touch during boot unlock; CI batch mode preserves the rc=77 SKIP contract under set +e",
+ "queries_attempted": [
+  {
+   "query": "non-interactive CI secure boot verification script exit codes",
+   "attempt": 1,
+   "raw_results": 92,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 YubiKey touch prompt boot unlock",
+   "attempt": 1,
+   "raw_results": 64,
+   "kept": 6
+  },
+  {
+   "query": "sbverify --list list signatures don't verify",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "sbverify --list list signatures don't verify",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "sbverify --list list signatures don't verify",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "FIDO2 touch prompt LUKS unlock boot systemd-cryptenroll",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "FIDO2 touch prompt LUKS unlock boot systemd-cryptenroll",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  },
+  {
+   "query": "FIDO2 touch prompt LUKS unlock boot systemd-cryptenroll",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 1
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "seed dig returned mostly weak forum results for the interactive axis; redone with different queries via Sauna websearch",
+   "new_queries": [
+    "sbverify --list list signatures don't verify",
+    "FIDO2 touch prompt LUKS unlock boot systemd-cryptenroll"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/DanielMYT/secureboot-scripts",
+  "https://dojofive.com/blog/how-ci-pipeline-scripts-and-exit-codes-interact/",
+  "https://www.technibble.com/forums/resources/powershell-scripts-to-analyze-2023-secure-boot-certificate.34/",
+  "https://deploymentbunny.com/2026/05/07/check-secureboot-ps1-script-updated/",
+  "https://vdan.cz/cisco/ucs/how-to-run-secure-boot-validation-script-on-an-esxi-host/",
+  "https://www.debian.org/doc/manuals/debian-reference/index.en.html",
+  "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/fido2.html",
+  "https://docs.anduinos.com/Skills/Secret-Management/Use-Yubikey-To-Unlock-LUKS.html",
+  "https://unix.stackexchange.com/questions/751251/fido2-yubikey-to-unlock-luks-from-command-line",
+  "https://github.com/bertogg/fido2luks",
+  "https://bbs.archlinux.org/viewtopic.php?id=276892",
+  "https://discourse.ubuntu.com/t/how-to-inspect-kernel-efi-uki-universal-kernel-image-binary/38266",
+  "https://unix.stackexchange.com/questions/753526/verifying-a-signature-of-an-efi-binary",
+  "https://unix.stackexchange.com/questions/126094/how-to-query-efi-signature",
+  "https://freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/"
+ ],
+ "outcome": "authored"
+}
