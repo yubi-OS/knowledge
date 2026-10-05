@@ -1,0 +1,23 @@
+# 03 - The human approval loop and approval bindings
+
+Scope: the human approval loop: approval bindings (actor, target, payload hash, limits, expiry, policy version), the review queue, and binding-mismatch failure classes.
+
+## Why approvals must be bound, not just granted
+
+The failure mode that makes naive approval flows dangerous is drift between what was approved and what was executed. The fix is to bind the approval to the exact action: record what the human saw and signed, then verify the outgoing dispatch matches it byte for byte. Stanley Cyang's writeup on human approval for AI agents argues exactly this: approval should be bound to the precise action parameters, and the executor must re-check that binding at dispatch time, otherwise an approval silently becomes a blanket license (source: https://stanleycyang.com/writing/human-approval-for-ai-agents, weight 0.69).
+
+The deployed Jev controller does this with approval binding records. When the gate classifies an action as approval-required, it parks the action in a human review queue and creates an approval row that binds the actor, the target, the payload hash, the action limits, an expiry, and the policy version the approval was issued under (source: system of record). On approve, the approval row is re-passed through the gate, so a stale approval whose policy version has since been tightened cannot dispatch. On deny, the action fails closed and the task proceeds down its failure path.
+
+## What the binding covers and why it matters
+
+The payload hash is the heart of the binding. In the deployed implementation the binding hash covers method, URL, and body, which is stricter than the gate's own body-only hash; the two hashes are deliberately not cross-compared today, and unifying them is a recorded invariant before approval rows are ever passed into gateAction (source: system of record). The lesson generalizes: two hash scopes inside one system is a latent mismatch class, and an unawaited hash computation in the review path would have failed every approval with a binding mismatch, a bug caught during integration (source: system of record). Hashing is cheap and silent; forgetting to await it produces denials that look like policy decisions but are actually implementation bugs.
+
+Production approval-gate implementations document the same requirement from the operator side: the approval artifact must carry enough context (who approved what, against which payload, until when) that a later reviewer can replay the decision (source: https://github.com/renezander030/agent-approval-gate, weight 0.39, weak backing). The human-in-the-loop flow pattern literature likewise treats expiry as a first-class approval field, because approvals granted for an action executed hours later under different conditions are stale by definition (source: https://www.agentnative.dev/patterns/human-in-the-loop-approval-flow-pattern-for-ai-agents, weight 0.44, weak backing).
+
+## The review queue and below-review-floor actions
+
+Not every action needs a human. The controller's understand stage produces a risk classification, and actions below the review floor proceed without approval while everything at or above the floor parks in the queue. In the first live run, understand classified the digest task as communication work below the review floor, the gate split the task's two actions so that `http.fetch` proceeded while `http.post` required approval, and the approval was bound, approved, and re-passed the gate before dispatch (source: system of record). Risk-tiered approval is the difference between a review queue that is usable and one that becomes noise: agent control implementations consistently report that asking humans to approve everything trains them to approve blindly (source: https://stanleycyang.com/writing/human-approval-for-ai-agents, weight 0.69).
+
+## Failure classes to design against
+
+Three binding-mismatch classes recur across implementations. First, scope mismatch: the approval covers one shape of action but the executor sends a different one; a hash over method, URL, and body makes this detectable. Second, temporal mismatch: the approval expired or the policy changed; version and expiry fields make this detectable. Third, actor mismatch: a different identity attempts to use the approval; the bound actor field makes this detectable. All three must resolve to deny, and the denial should be distinguishable in the audit trail from a policy denial, because one means "the human said no or conditions changed" and the other means "an integrity check failed," which is a different investigation entirely.
