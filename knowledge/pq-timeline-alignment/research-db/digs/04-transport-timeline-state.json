@@ -1,0 +1,27 @@
+{
+  "nn": "04",
+  "slug": "transport-timeline-state",
+  "scope": "Current state of the PQ transport timeline: OpenSSL 3.5 native ML-KEM, Go X25519MLKEM768 defaults, large-scale deployments like Cloudflare.",
+  "queries_attempted": [
+    {
+      "query": "OpenSSL 3.5 ML-KEM post-quantum TLS release",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "Go 1.24 X25519MLKEM768 default post-quantum key exchange",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.1_release_notes/overview",
+    "https://github.com/anupsv/NewHope-Golang"
+  ],
+  "outcome": "authored",
+  "skip_reason": "no results could be scored after redos"
+}

@@ -1,0 +1,32 @@
+{
+  "nn": "06",
+  "slug": "verification-timeline-state",
+  "scope": "Current state of the PQ verification timeline: slsa-verifier and cosign verify algorithm coverage, and why verification lags signing.",
+  "queries_attempted": [
+    {
+      "query": "slsa-verifier signature algorithm support post-quantum",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "cosign verify post-quantum signature verification Sigstore bundle algorithms",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/slsa-framework/slsa-verifier",
+    "https://www.nsa.gov/cybersecurity/post-quantum-cryptography-resource-hub/",
+    "https://arxiv.org/html/2508.16078v1",
+    "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "https://github.com/sigstore/cosign",
+    "https://docs.sigstore.dev/cosign/",
+    "https://docs.sigstore.dev/cosign/verifying/"
+  ],
+  "outcome": "authored",
+  "skip_reason": "no results could be scored after redos"
+}

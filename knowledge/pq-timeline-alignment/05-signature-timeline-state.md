@@ -1,0 +1,25 @@
+# 05 - Signature timeline state
+
+Scope: current state of the PQ signature timeline: ML-DSA / FIPS 204 support in cosign, Sigstore, and hardware keys like YubiKey PIV.
+
+## The algorithm is final; the tooling is not
+
+The signature timeline starts from a completed standard. FIPS 204, the Module-Lattice-Based Digital Signature Standard, specifies ML-DSA, a set of algorithms for generating and verifying digital signatures, and NIST states ML-DSA is believed to be secure even against adversaries equipped with a quantum computer (https://csrc.nist.gov/pubs/fips/204/final, weight 0.97; the published standard PDF is at https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf, weight 0.91; the earlier initial public draft is at https://csrc.nist.gov/pubs/fips/204/ipd, weight 0.59). So the missing piece on this timeline is not the algorithm; it is every layer between the algorithm and a signed, verifiable artifact.
+
+## Signing tooling: cosign and Sigstore
+
+The supply-chain signing stack is in transition. A migration-focused writeup states the core facts: software supply chain signatures using ECDSA-P256 or RSA are vulnerable to harvest-now-verify-later attacks, in which an adversary forges signatures retroactively once a quantum computer exists; Sigstore's roadmap includes ML-DSA support, and cosign already supports custom PQC signing keys via providers (https://www.systemshardening.com/articles/cicd/post-quantum-artifact-signing/, weight 0.55).
+
+The primary Sigstore documentation describes the current capability: cosign signs software artifacts and records signatures in a tamper-resistant public log (https://docs.sigstore.dev/cosign/, weight 0.93). The cosign repository states a property that matters for migration: cosign can store and retrieve signatures in any format, from any algorithm (https://github.com/sigstore/cosign, weight 0.70). That storage-layer flexibility is what makes a future ML-DSA signing path possible without a format break, but storage flexibility is not algorithm support: producing an ML-DSA signature through the standard cosign flow is the milestone this timeline is still waiting on. The verification-side docs describe the general verification flow for signed artifacts, blobs, and container images (https://docs.sigstore.dev/cosign/verifying/verify/, weight 0.62; https://docs.sigstore.dev/cosign/verifying/, weight 0.75).
+
+## Hardware roots of trust: the PIV drafts
+
+The hardware layer is moving through standards drafts. NIST has released initial working drafts of proposed updates to the Personal Identity Verification (PIV) standards to support post-quantum cryptography; the drafts identify the changes expected to be needed to use the ML-DSA digital signature algorithm and the ML-KEM key encapsulation mechanism (https://www.nist.gov/news-events/news/2026/06/working-drafts-post-quantum-cryptography-updates-piv-standards, weight 0.86; CSRC announcement dated June 2026 at https://csrc.nist.gov/News/2026/pqc-updates-to-piv-standards-working-drafts, weight 0.95). A secondary analysis notes the scale this touches: the drafts introduce ML-DSA and ML-KEM into the PIV credential ecosystem that underpins identity verification for US federal employees and contractors (https://postquantum.com/security-pqc/nist-piv-pqc-working-drafts/, weight 0.40, weak backing).
+
+The status word matters: these are working drafts, not finals. An OS project depending on PIV-class hardware keys for disk unlock or attestation cannot yet assume an ML-DSA-capable key; the credential standard that would define it is still in draft.
+
+Vendor motion is visible but early. Yubico has demoed an early prototype of post-quantum signatures running on a hardware security key, described as functionally unremarkable from the user's perspective: touch the device, produce a signature (https://www.yubico.com/blog/future-proofing-authentication-a-look-at-the-future-of-post-quantum-cryptography/, weight 0.61). The YubiKey 5 Series firmware 5.4 release ships expanded methods for PIV management and CMS integration (https://www.yubico.com/blog/yubikey-firmware-update-yubikey-5-series-with-firmware-5-4/, weight 0.97); that release is about CMS and provisioning, not post-quantum algorithms, and should be read as evidence of the firmware delivery cadence rather than of PQ capability.
+
+## Where the timeline actually stands
+
+Summing the layers: the algorithm is final (weight 0.97), the signing stack has a roadmap plus a provider extension path (weight 0.55) with the standard flow not yet producing ML-DSA signatures, and the hardware credential standard is in working drafts (weights 0.86 and 0.95) with vendor prototypes (weight 0.61). Every layer is in motion and no layer is done. For an OS project this means timeline 2 has no shippable end-to-end configuration yet: a signature produced today with ML-DSA cannot be issued by the mainstream cosign flow or anchored in a final hardware credential standard. Sequencing decisions that assume timeline 2 is close should price in the PIV draft cycle, which is the slowest-moving component identified here.
