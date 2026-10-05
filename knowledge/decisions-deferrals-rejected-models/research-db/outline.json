@@ -1,0 +1,239 @@
+{
+ "topic": "engineering decision registers: how to record decisions, deferrals, and rejected models with rationale so choices can be re-derived later, and how to contradiction-check a decision log",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "adr-decision-records",
+   "scope": "How to record a single engineering decision (ADR/Nygard, MADR, Y-statements) with the required fields (context, decision, consequences)",
+   "seed_queries": [
+    "architecture decision record Nygard template",
+    "MADR lightweight architecture decision record format"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "rejected-alternatives",
+   "scope": "Recording rejected models and alternatives with rationale, including rejected-as-primary-path versus never-viable",
+   "seed_queries": [
+    "documenting rejected alternatives in architecture decisions",
+    "decision record options considered and rejected rationale"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "deferred-decisions-evidence-gates",
+   "scope": "Explicit deferral of decisions pending evidence, with unblock criteria and sequencing dependencies",
+   "seed_queries": [
+    "deferring design decisions until more information is available",
+    "deferred decisions pending evidence engineering"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "rationale-rederivation",
+   "scope": "Making decisions re-derivable later by recording context, criteria, and forces",
+   "seed_queries": [
+    "recording decision rationale so future engineers can reconstruct why",
+    "why software decisions need recorded rationale not just outcome"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "contradiction-checking",
+   "scope": "Contradiction-checking a decision log against other decisions and governing documents, and distinguishing contradictions from sequencing dependencies",
+   "seed_queries": [
+    "checking consistency of architecture decision records",
+    "decision log contradiction conflict between decisions"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "lifecycle-supersession",
+   "scope": "Decision record lifecycle: status fields, supersession, promotion from draft, and re-check triggers",
+   "seed_queries": [
+    "ADR status superseded deprecated lifecycle",
+    "when to supersede an architecture decision record"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "reusable-schema",
+   "scope": "Reusable lightweight schemas and row patterns for decision registers (tables like Decision/Source and Rejected-model/Why/Source)",
+   "seed_queries": [
+    "decision log template table schema engineering",
+    "engineering decision register lightweight template"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "provenance-traceability",
+   "scope": "Linking every decision to its authoritative source (issue, PR, document) so it can be checked later",
+   "seed_queries": [
+    "linking decisions to issues and pull requests traceability",
+    "decision provenance software documentation traceability"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "decision-authority",
+   "scope": "Decision authority and ownership: who decides and avoiding competing governance frames",
+   "seed_queries": [
+    "decision ownership who decides architecture governance",
+    "single decision maker engineering governance"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8695,
+    "probabilities": {
+     "0": 0.0278,
+     "1": 0.0749,
+     "2": 0.8973
+    },
+    "confidence": 0.7174,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.8599,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.0801,
+     "2": 0.8899
+    },
+    "confidence": 0.6989,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8946,
+    "probabilities": {
+     "0": 0.0216,
+     "1": 0.0622,
+     "2": 0.9162
+    },
+    "confidence": 0.7657,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.6102,
+    "probabilities": {
+     "0": 0.0676,
+     "1": 0.2547,
+     "2": 0.6777
+    },
+    "confidence": 0.2932,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.3305,
+    "probabilities": {
+     "0": 0.0995,
+     "1": 0.4705,
+     "2": 0.43
+    },
+    "confidence": 0.1243,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.6002,
+    "probabilities": {
+     "0": 0.0625,
+     "1": 0.2748,
+     "2": 0.6627
+    },
+    "confidence": 0.2779,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.4932,
+    "probabilities": {
+     "0": 0.0981,
+     "1": 0.3106,
+     "2": 0.5913
+    },
+    "confidence": 0.1836,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.5319,
+    "probabilities": {
+     "0": 0.0761,
+     "1": 0.3159,
+     "2": 0.608
+    },
+    "confidence": 0.2129,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.1471,
+    "probabilities": {
+     "0": 0.1758,
+     "1": 0.5013,
+     "2": 0.3229
+    },
+    "confidence": 0.0797,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1357,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ }
+}
