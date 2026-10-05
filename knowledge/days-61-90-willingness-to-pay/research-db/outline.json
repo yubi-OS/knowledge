@@ -1,0 +1,215 @@
+{
+ "topic": "testing willingness to pay in days 61-90 of an early-stage GTM plan - pricing experiments, commitments, and evidence standards before scaling",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "paid-pilot-design",
+   "scope": "Designing a small paid pilot (25-50 nodes on disposable or non-critical systems) as the willingness-to-pay instrument: node count bounds, system class, customer selection, and why unpaid pilots fail as WTP evidence.",
+   "seed_queries": [
+    "paid pilot program design early stage B2B willingness to pay",
+    "paid pilot vs free pilot B2B SaaS validation evidence"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "pricing-experiment-methods",
+   "scope": "Established pricing experiment methods for early-stage B2B (Van Westendorp, Gabor-Granger, conjoint, price A/B tests) and the evidence quality each produces.",
+   "seed_queries": [
+    "Van Westendorp Gabor-Granger pricing research B2B",
+    "B2B SaaS pricing experiments methods validation"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "commitment-evidence-ladder",
+   "scope": "The ladder of buyer commitment signals (letter of intent, paid pilot, paid deployment, renewal) and what each rung actually proves about willingness to pay.",
+   "seed_queries": [
+    "letter of intent paid pilot commitment B2B startup",
+    "customer commitment evidence ladder LOI paid pilot renewal"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "pilot-metrics-instrumentation",
+   "scope": "Instrumenting a pilot so end-of-phase numbers are defensible: per-metric instruments (timestamp logs, boot logs, timed drills, support logs) and source data versus estimates.",
+   "seed_queries": [
+    "pilot program metrics instrumentation time tracking support tickets",
+    "startup pilot success metrics defensible measurement"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "pilot-economics-and-pricing",
+   "scope": "Setting the pilot price from a revenue and cost model: per-node pricing structure, and why a pilot must be priced rather than free custom engineering.",
+   "seed_queries": [
+    "B2B pilot pricing per node paid pilot pricing strategy",
+    "paid pilot vs free custom engineering early stage startup"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "roi-readout-evidence-standard",
+   "scope": "Building the confidential customer ROI readout: baseline worksheet comparison, honest reporting of misses, and the evidence standard distinguishing measured results from projections.",
+   "seed_queries": [
+    "customer ROI report pilot results template B2B",
+    "pilot readout honest reporting metrics vs baseline"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "day90-decision-framework",
+   "scope": "The four-path end-of-phase decision (proceed to second pilot, narrow the offer, change target segment, pause commercial hiring) and the evidence threshold that selects each.",
+   "seed_queries": [
+    "startup pilot decision framework proceed narrow pivot pause",
+    "when to kill or scale paid pilot decision criteria"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.3085,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1895,
+     "1": 0.3125,
+     "2": 0.498
+    },
+    "confidence": 0.0723
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.8504,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0297,
+     "1": 0.0903,
+     "2": 0.88
+    },
+    "confidence": 0.6753
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.8233,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0383,
+     "1": 0.1,
+     "2": 0.8617
+    },
+    "confidence": 0.6309
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.4568,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.109,
+     "1": 0.3252,
+     "2": 0.5658
+    },
+    "confidence": 0.1566
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.4366,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1368,
+     "1": 0.2898,
+     "2": 0.5734
+    },
+    "confidence": 0.1472
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.5809,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0853,
+     "1": 0.2485,
+     "2": 0.6662
+    },
+    "confidence": 0.2693
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.4664,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.6121,
+     "1": 0.3094,
+     "2": 0.0785
+    },
+    "confidence": 0.2148
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.8036,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0435,
+     "1": 0.1093,
+     "2": 0.8472
+    },
+    "confidence": 0.5973
+   }
+  },
+  "usage": {
+   "input_tokens": 1233,
+   "output_tokens": 0
+  },
+  "dropped": [
+   "case-study-permission-bounds"
+  ],
+  "kept": [
+   "paid-pilot-design",
+   "pricing-experiment-methods",
+   "commitment-evidence-ladder",
+   "pilot-metrics-instrumentation",
+   "pilot-economics-and-pricing",
+   "roi-readout-evidence-standard",
+   "day90-decision-framework"
+  ]
+ }
+}
