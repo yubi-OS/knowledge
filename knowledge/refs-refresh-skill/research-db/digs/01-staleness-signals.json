@@ -1,0 +1,44 @@
+{
+ "nn": 1,
+ "slug": "staleness-signals",
+ "scope": "Enumerating the corpus and blending document age with topic-movement triage into a refresh priority rank.",
+ "queries_attempted": [
+  {
+   "query": "stale documentation detection signals docs-as-code",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "documentation decay freshness measurement research",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "wiki rot stale docs git timestamp detection",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "documentation freshness signals age last reviewed",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig contaminated with off-topic results (fish freshness papers) and low weights; needed topical staleness sources",
+   "new_queries": [
+    "wiki rot stale docs git timestamp detection",
+    "documentation freshness signals age last reviewed"
+   ]
+  }
+ ],
+ "results_kept": [],
+ "outcome": "authored"
+}

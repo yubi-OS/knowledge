@@ -1,0 +1,247 @@
+{
+ "topic": "the refs refresh sweep skill: conceptualization and validating run of a process that refreshes a documentation corpus with decision-model triage, metasearch digs, weighted results, and cited PR landings",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "staleness-signals",
+   "scope": "Enumerating the corpus and blending document age with topic-movement triage into a refresh priority rank.",
+   "seed_queries": [
+    "stale documentation detection signals docs-as-code",
+    "documentation decay freshness measurement research",
+    "wiki rot stale docs git timestamp detection",
+    "documentation freshness signals age last reviewed"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "decision-model-triage",
+   "scope": "Routing corpus triage through a typesafe decision model and reading its honest calibration as a finding.",
+   "seed_queries": [
+    "LLM as judge calibration triage ranking",
+    "DefAPI jev typesafe decision model"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "searxng-digs",
+   "scope": "Running refresh digs through a self-hosted searXNG metasearch proxy and handling engine suspension under parallel load.",
+   "seed_queries": [
+    "searXNG JSON API self-hosted metasearch engine",
+    "searXNG engines suspended rate limiting"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "result-weighting",
+   "scope": "Weighting every search result with a decision model so primary sources separate from aggregators before entry to the research db.",
+   "seed_queries": [
+    "LLM source quality assessment citation filtering",
+    "search result relevance filtering LLM evaluation"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "research-db",
+   "scope": "Persisting a typed research db (archive, per-doc digs, interfaces) so every claim carries provenance and survives crashes.",
+   "seed_queries": [
+    "AI research provenance JSON schema persistence",
+    "agent workflow checkpoint persistence crash recovery"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "subagent-fanout",
+   "scope": "Fanning out one subagent per top-ranked doc to open one draft PR each, with honest no-change verdicts and a working merge path.",
+   "seed_queries": [
+    "parallel subagent orchestration fan-out patterns",
+    "GitHub API merge draft pull request fast-forward"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "git-data-api-push",
+   "scope": "Driving the GitHub push chain (blob, tree, commit, ref, draft PR) in one shell call against platform quirks.",
+   "seed_queries": [
+    "GitHub Git Data API create blob tree commit",
+    "GitHub REST API draft pull request PAT limitations"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "rate-limit-ops",
+   "scope": "Operational hardening: User-Agent against Cloudflare 1010, shared decision-model caps with backoff, ephemeral sandbox filesystems.",
+   "seed_queries": [
+    "Cloudflare error 1010 browser integrity user agent",
+    "API rate limit 429 backoff shared quota",
+    "Cloudflare Browser Integrity Check blocks API clients user agent header",
+    "HTTP 429 retry-after exponential backoff production rate limiting"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "validation-cadence",
+   "scope": "What the end-to-end validating run proved in cost and throughput, and the re-run cadence.",
+   "seed_queries": [
+    "automated documentation refresh pipeline case study",
+    "docs-as-code continuous freshness cadence",
+    "quarterly documentation review cadence governance",
+    "small language model routing cost per token economics",
+    "quarterly audit cycle cadence compliance schedule",
+    "upstream release monitoring changelog dependency update automation"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.6982,
+    "probabilities": {
+     "0": 0.0506,
+     "1": 0.2006,
+     "2": 0.7488
+    },
+    "confidence": 0.4052,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.928,
+    "probabilities": {
+     "0": 0.0143,
+     "1": 0.0433,
+     "2": 0.9424
+    },
+    "confidence": 0.8352,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.7626,
+    "probabilities": {
+     "0": 0.0347,
+     "1": 0.1681,
+     "2": 0.7972
+    },
+    "confidence": 0.4976,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.8076,
+    "probabilities": {
+     "0": 0.0331,
+     "1": 0.1261,
+     "2": 0.8408
+    },
+    "confidence": 0.5859,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.3678,
+    "probabilities": {
+     "0": 0.1142,
+     "1": 0.4038,
+     "2": 0.482
+    },
+    "confidence": 0.1126,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.839,
+    "probabilities": {
+     "0": 0.0321,
+     "1": 0.0969,
+     "2": 0.871
+    },
+    "confidence": 0.6537,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.3262,
+    "probabilities": {
+     "0": 0.1252,
+     "1": 0.4233,
+     "2": 0.4515
+    },
+    "confidence": 0.098,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.3679,
+    "probabilities": {
+     "0": 0.0964,
+     "1": 0.4394,
+     "2": 0.4642
+    },
+    "confidence": 0.1268,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.381,
+    "probabilities": {
+     "0": 0.1015,
+     "1": 0.416,
+     "2": 0.4825
+    },
+    "confidence": 0.1243,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1563,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9"
+  ]
+ }
+}

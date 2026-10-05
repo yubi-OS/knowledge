@@ -1,0 +1,44 @@
+{
+ "nn": 8,
+ "slug": "rate-limit-ops",
+ "scope": "Operational hardening: User-Agent against Cloudflare 1010, shared decision-model caps with backoff, ephemeral sandbox filesystems.",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare error 1010 browser integrity user agent",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "API rate limit 429 backoff shared quota",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare Browser Integrity Check blocks API clients user agent header",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "HTTP 429 retry-after exponential backoff production rate limiting",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig had only 1 result above 0.5 (Cloudflare 1010 support doc); needed official user-agent blocking docs",
+   "new_queries": [
+    "Cloudflare Browser Integrity Check blocks API clients user agent header",
+    "HTTP 429 retry-after exponential backoff production rate limiting"
+   ]
+  }
+ ],
+ "results_kept": [],
+ "outcome": "authored"
+}

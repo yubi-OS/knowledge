@@ -1,0 +1,23 @@
+{
+ "nn": 6,
+ "slug": "subagent-fanout",
+ "scope": "Fanning out one subagent per top-ranked doc to open one draft PR each, with honest no-change verdicts and a working merge path.",
+ "queries_attempted": [
+  {
+   "query": "parallel subagent orchestration fan-out patterns",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "GitHub API merge draft pull request fast-forward",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}

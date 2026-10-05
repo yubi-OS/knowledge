@@ -1,0 +1,65 @@
+{
+ "nn": 9,
+ "slug": "validation-cadence",
+ "scope": "What the end-to-end validating run proved in cost and throughput, and the re-run cadence.",
+ "queries_attempted": [
+  {
+   "query": "automated documentation refresh pipeline case study",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "docs-as-code continuous freshness cadence",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "quarterly documentation review cadence governance",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "small language model routing cost per token economics",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "quarterly audit cycle cadence compliance schedule",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "upstream release monitoring changelog dependency update automation",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig thin: max on-topic weight 0.59, most results off-topic or aggregator-class",
+   "new_queries": [
+    "quarterly documentation review cadence governance",
+    "small language model routing cost per token economics"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "redo1 still thin: max on-topic weight 0.62 weakly relevant; on-topic primary results absent",
+   "new_queries": [
+    "quarterly audit cycle cadence compliance schedule",
+    "upstream release monitoring changelog dependency update automation"
+   ]
+  }
+ ],
+ "results_kept": [],
+ "outcome": "skipped",
+ "skip_reason": "dig too thin to author honestly after 2 redos; only weakly relevant sources above 0.5 (NLnet 0.58, Azure pipeline sample 0.59, Merriam-Webster 0.62). Per REDO RULE the doc is skipped rather than padded."
+}
