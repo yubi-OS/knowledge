@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "argv-execution-safety",
+ "scope": "Argv-array remote execution with shell=False, why no shell strings cross the wire, injection surface analysis, and the bash -c escape hatch",
+ "queries_attempted": [
+  {
+   "query": "subprocess.run shell False command injection prevention argv list security",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "shell injection vulnerability API design command execution argv array",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://runebook.dev/en/docs/python/library/subprocess/security-considerations",
+  "https://openpython.org/articles/python-subprocess-run-shell-commands",
+  "https://docs.semgrep.dev/cheat-sheets/python-command-injection",
+  "https://www.pythonpool.com/python-run-shell-command/",
+  "https://www.kbb.com/toyota/rav4/2011/sport-suv-4d/?msockid=1049afd695916f060c55b83f94806ec2",
+  "https://orbisappsec.com/blog/command-injection",
+  "https://offensive360.com/blog/command-injection-vulnerabilities/",
+  "https://techearl.com/os-command-injection",
+  "https://awjunaid.com/devsecops/api-injection-attacks-explained-sql-nosql-command-and-code-injection-prevention-guide/",
+  "https://security.gentoo.org/glsa/202009-16",
+  "https://www.shell.us/",
+  "https://www.startupdefense.io/cyberattacks/command-injection"
+ ],
+ "outcome": "authored"
+}

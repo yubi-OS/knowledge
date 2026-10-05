@@ -1,0 +1,239 @@
+{
+  "topic": "driving shell commands on remote machines from an agent during debugging - Tailscale Funnel + bearer-auth HTTP bridge, argv-array remote execution, and replacing slow CI round-trips with live shell access",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "ci-roundtrip-latency",
+      "scope": "Why the dispatch-wait-log-fix-re-dispatch CI cycle costs 15-45 min per iteration and what live shell access replaces",
+      "seed_queries": [
+        "GitHub Actions workflow dispatch wait logs debug cycle slow feedback loop",
+        "CI round-trip latency debugging hardware runner feedback loop fix verify"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "tailscale-funnel-ingress",
+      "scope": "Using Tailscale Funnel to give a private machine a public TLS-terminated HTTPS URL without opening ports",
+      "seed_queries": [
+        "Tailscale Funnel expose local server public internet TLS how it works",
+        "Tailscale Funnel vs Tailscale Serve ingress differences TLS termination"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "bearer-auth-bridge-design",
+      "scope": "The minimal stdlib Python bridge: BaseHTTPRequestHandler, hmac.compare_digest bearer check, subprocess.run, about 50 LOC, zero dependencies",
+      "seed_queries": [
+        "python http.server BaseHTTPRequestHandler JSON POST handler bearer token check",
+        "hmac.compare_digest constant time token comparison python example"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "argv-execution-safety",
+      "scope": "Argv-array remote execution with shell=False, why no shell strings cross the wire, injection surface analysis, and the bash -c escape hatch",
+      "seed_queries": [
+        "subprocess.run shell False command injection prevention argv list security",
+        "shell injection vulnerability API design command execution argv array"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "agent-connection-proxy",
+      "scope": "Registering the bridge as an agent-side connection with bearer auth and a proxy that injects Authorization so calls stay plain curl POST /run",
+      "seed_queries": [
+        "AI agent custom API connection bearer token credential proxy injection",
+        "curl POST bearer token automation tool calling remote API"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "alternatives-considered",
+      "scope": "Rejected options and why: mcp-proxy with no inbound auth, npm mcp-proxy X-API-Key, Cloudflare Tunnel + Access, mTLS, joining the tailnet, Funnel ACLs",
+      "seed_queries": [
+        "mcp-proxy sparfenyuk authentication security HTTP stdio",
+        "cloudflare tunnel vs tailscale funnel exposing service comparison"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ops-hardening-rotation",
+      "scope": "Operational posture: token stored mode 600 on target, localhost-only listen, nohup logging, non-ephemeral Tailscale auth keys, rotation triggers",
+      "seed_queries": [
+        "api bearer token storage rotation best practices server file permissions",
+        "tailscale auth key ephemeral reusable pre-approved node expiry funnel"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "limitations-workarounds",
+      "scope": "No PTY, no per-call env vars, no pipes or && or glob expansion at the bridge, one bearer per machine; bash -c workarounds and ttyd for interactive shells",
+      "seed_queries": [
+        "subprocess no pty limitations remote command execution API design",
+        "ttyd web terminal browser remote shell interactive"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "live-probe-debug-workflow",
+      "scope": "The debug pattern itself: seconds-scale probes (bcvk --version, uname, ip a), interface state like virbr0/docker0 DOWN as debug signal, versus 15-45 min CI round-trips",
+      "seed_queries": [
+        "remote debugging hardware in the loop single board computer probe commands",
+        "github actions self hosted runner debug live ssh instead of logs"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.5686,
+        "probabilities": {
+          "0": 0.0938,
+          "1": 0.2439,
+          "2": 0.6623
+        },
+        "confidence": 0.2605,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.7335,
+        "probabilities": {
+          "0": 0.0426,
+          "1": 0.1813,
+          "2": 0.7761
+        },
+        "confidence": 0.4555,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.8681,
+        "probabilities": {
+          "0": 0.0273,
+          "1": 0.0773,
+          "2": 0.8954
+        },
+        "confidence": 0.7127,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.821,
+        "probabilities": {
+          "0": 0.0356,
+          "1": 0.1078,
+          "2": 0.8566
+        },
+        "confidence": 0.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.1043,
+        "probabilities": {
+          "0": 0.2437,
+          "1": 0.4083,
+          "2": 0.348
+        },
+        "confidence": 0.0208,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.836,
+        "probabilities": {
+          "0": 0.2553,
+          "1": 0.6534,
+          "2": 0.0913
+        },
+        "confidence": 0.2507,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.856,
+        "probabilities": {
+          "0": 0.2534,
+          "1": 0.6373,
+          "2": 0.1093
+        },
+        "confidence": 0.2234,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.305,
+        "probabilities": {
+          "0": 0.0964,
+          "1": 0.5023,
+          "2": 0.4013
+        },
+        "confidence": 0.134,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.74,
+        "probabilities": {
+          "0": 0.0505,
+          "1": 0.1589,
+          "2": 0.7906
+        },
+        "confidence": 0.4792,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1441,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

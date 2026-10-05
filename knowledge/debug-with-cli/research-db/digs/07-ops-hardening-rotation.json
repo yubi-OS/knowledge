@@ -1,0 +1,36 @@
+{
+ "nn": "07",
+ "slug": "ops-hardening-rotation",
+ "scope": "Operational posture: token stored mode 600 on target, localhost-only listen, nohup logging, non-ephemeral Tailscale auth keys, rotation triggers",
+ "queries_attempted": [
+  {
+   "query": "api bearer token storage rotation best practices server file permissions",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "tailscale auth key ephemeral reusable pre-approved node expiry funnel",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://auth0.com/docs/secure/tokens/token-best-practices",
+  "https://www.reform.app/blog/storing-oauth-tokens-securely-tips",
+  "https://en.wikipedia.org/wiki/API",
+  "https://apidog.com/blog/bearer-token-nodejs-express/",
+  "https://www.newsoftwares.net/blog/protecting-oauth-tokens-jwts-rotation-revocation-storage/",
+  "https://knowledgelib.io/software/patterns/api-key-management/2026",
+  "https://tailscale.com/docs/features/access-control/auth-keys",
+  "https://tailscale.com/docs/features/ephemeral-nodes",
+  "https://docs.tailscale.com/",
+  "https://tailscale.com/",
+  "https://github.com/tailscale/tailscale/issues/14115",
+  "https://www.reddit.com/r/Tailscale/comments/106lrju/tailscale_key_expires_on_reboot/"
+ ],
+ "outcome": "authored"
+}

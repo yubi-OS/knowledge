@@ -1,0 +1,36 @@
+{
+ "nn": "09",
+ "slug": "live-probe-debug-workflow",
+ "scope": "The debug pattern itself: seconds-scale probes (bcvk --version, uname, ip a), interface state like virbr0/docker0 DOWN as debug signal, versus 15-45 min CI round-trips",
+ "queries_attempted": [
+  {
+   "query": "remote debugging hardware in the loop single board computer probe commands",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "github actions self hosted runner debug live ssh instead of logs",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/probe-rs/probe-rs",
+  "https://github.com/Adancurusul/embedded-debugger-mcp",
+  "https://www.cosmiclearn.com/embeddedc/jtag-swd-debugging.php",
+  "https://remotedesktop.google.com/",
+  "http://mumble.net/~jar/pubs/secureos/secureos.html",
+  "https://www.youtube.com/watch?v=evEig9jmPUA",
+  "https://github.com/marketplace/actions/debug-with-ssh",
+  "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/monitor-and-troubleshoot",
+  "https://github.com/luchihoratiu/debug-via-ssh",
+  "https://github.com/",
+  "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+  "https://info.blacksmith.sh/task/blog/debug-failing-github-actions-job-live-runner-access"
+ ],
+ "outcome": "authored"
+}

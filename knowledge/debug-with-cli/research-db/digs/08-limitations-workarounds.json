@@ -1,0 +1,36 @@
+{
+ "nn": "08",
+ "slug": "limitations-workarounds",
+ "scope": "No PTY, no per-call env vars, no pipes or && or glob expansion at the bridge, one bearer per machine; bash -c workarounds and ttyd for interactive shells",
+ "queries_attempted": [
+  {
+   "query": "subprocess no pty limitations remote command execution API design",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "ttyd web terminal browser remote shell interactive",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.python.org/3/library/subprocess.html",
+  "https://github.com/pexpect/ptyprocess",
+  "https://docs.python.org/3.12/library/asyncio-subprocess.html",
+  "https://clever.com/in/springbranchisd/",
+  "https://firefox-source-docs.mozilla.org/toolkit/modules/subprocess/toolkit_modules/subprocess/index.html",
+  "https://stackoverflow.com/questions/9808714/control-the-number-of-subprocesses-using-to-call-external-commands-in-python",
+  "https://tsl0922.github.io/ttyd/",
+  "https://www.tecmint.com/ttyd-share-linux-terminal-over-web/",
+  "https://computingforgeeks.com/share-linux-terminal-over-web-using-ttyd/",
+  "https://github.com/tsl0922/ttyd",
+  "https://www.npmjs.com/package/nocache",
+  "https://github.com/tsl0922/ttyd/issues/1537"
+ ],
+ "outcome": "authored"
+}
