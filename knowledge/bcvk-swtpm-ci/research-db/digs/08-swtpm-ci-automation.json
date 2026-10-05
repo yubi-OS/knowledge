@@ -1,0 +1,84 @@
+{
+ "nn": "08",
+ "slug": "swtpm-ci-automation",
+ "scope": "The TPM2 software stack's emulator support, libvirt/Nova/diskimage-builder precedents, and swtpm+QEMU composition with bcvk ephemeral VMs in CI.",
+ "queries_attempted": [
+  {
+   "query": "swtpm QEMU GitHub Actions CI virtual TPM testing",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": [
+    "https://github.com/puzzleos/uefi-dev",
+    "https://www.qemu.org/docs/master/specs/tpm.html",
+    "https://github.com/tompreston/qemu-ovmf-swtpm",
+    "https://www.earth.li/~noodles/blog/2024/07/qemu-uefi-testing.html",
+    "https://survivetheark.com/index.php?/forums/topic/331737-nitrado-server-help-tek-engrams/",
+    "https://github.com/anpep/qemu-tpm-measurement"
+   ]
+  },
+  {
+   "query": "automated TPM testing continuous integration virtual TPM",
+   "attempt": 1,
+   "raw_results": 53,
+   "kept": []
+  },
+  {
+   "query": "TPM 2.0 emulator tpm2-software stack testing",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": [
+    "https://github.com/tpm2-software/tpm2-tss",
+    "https://tpm2-tss.readthedocs.io/en/latest/index.html",
+    "https://tpm2-software.github.io/",
+    "https://docs.openstack.org/diskimage-builder/latest/elements/tpm-emulator/README.html",
+    "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+    "https://tpm2-software.github.io/2020/10/19/TPM2-Device-Emulation-With-QEMU.html"
+   ]
+  },
+  {
+   "query": "libvirt swtpm TPM backend domain configuration",
+   "attempt": 2,
+   "raw_results": 42,
+   "kept": [
+    "https://libvirt.org/formatdomain.html",
+    "https://www.bigiron.cc/guides/windows-11-guests-on-libvirt-virtio-swtpm-and-ovmf",
+    "https://docs.openstack.org/nova/latest/admin/emulated-tpm.html",
+    "https://documentation.suse.com/sles/15-SP4/html/SLES-all/tpm.html",
+    "https://documentation.suse.com/sles/15-SP6/html/SLES-all/tpm.html",
+    "https://weathernews.jp/"
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 second query ('automated TPM testing continuous integration virtual TPM') returned almost entirely off-topic results; dig judged too thin",
+   "new_queries": [
+    "TPM 2.0 emulator tpm2-software stack testing",
+    "libvirt swtpm TPM backend domain configuration"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/puzzleos/uefi-dev",
+  "https://www.qemu.org/docs/master/specs/tpm.html",
+  "https://github.com/tompreston/qemu-ovmf-swtpm",
+  "https://www.earth.li/~noodles/blog/2024/07/qemu-uefi-testing.html",
+  "https://survivetheark.com/index.php?/forums/topic/331737-nitrado-server-help-tek-engrams/",
+  "https://github.com/anpep/qemu-tpm-measurement",
+  "https://github.com/tpm2-software/tpm2-tss",
+  "https://tpm2-tss.readthedocs.io/en/latest/index.html",
+  "https://tpm2-software.github.io/",
+  "https://docs.openstack.org/diskimage-builder/latest/elements/tpm-emulator/README.html",
+  "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+  "https://tpm2-software.github.io/2020/10/19/TPM2-Device-Emulation-With-QEMU.html",
+  "https://libvirt.org/formatdomain.html",
+  "https://www.bigiron.cc/guides/windows-11-guests-on-libvirt-virtio-swtpm-and-ovmf",
+  "https://docs.openstack.org/nova/latest/admin/emulated-tpm.html",
+  "https://documentation.suse.com/sles/15-SP4/html/SLES-all/tpm.html",
+  "https://documentation.suse.com/sles/15-SP6/html/SLES-all/tpm.html",
+  "https://weathernews.jp/"
+ ],
+ "outcome": "authored"
+}

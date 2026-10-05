@@ -1,0 +1,50 @@
+{
+ "nn": "03",
+ "slug": "guest-kernel-tpm-plumbing",
+ "scope": "tpm_tis and tpm_crb guest drivers, the /dev/tpm0 and /dev/tpmrm0 device nodes, and kernel config implications for VM tests.",
+ "queries_attempted": [
+  {
+   "query": "tpm_tis tpm_crb kernel driver /dev/tpm0 /dev/tpmrm0",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": [
+    "https://bbs.archlinux.org/viewtopic.php?id=296699",
+    "https://www.kernel.org/doc/html/latest/security/tpm/tpm_tis.html",
+    "https://github.com/torvalds/linux/blob/master/drivers/char/tpm/tpm_tis.c",
+    "https://dri.freedesktop.org/docs/drm/security/tpm/tpm_tis.html",
+    "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+    "https://www.kernel.org/doc/html/latest/security/tpm/index.html"
+   ]
+  },
+  {
+   "query": "Linux kernel TPM 2.0 subsystem device nodes char driver",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": [
+    "https://github.com/torvalds/linux/blob/master/drivers/char/tpm/tpm_tis.c",
+    "https://www.kernel.org/doc/html/latest/security/tpm/index.html",
+    "https://www.linux-drivers.com/driver/drivers/char/tpm/",
+    "https://linux-kernel-labs.github.io/refs/heads/master/labs/device_drivers.html",
+    "https://github.com/srajiv/tpm",
+    "https://www.atitesting.com/"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://bbs.archlinux.org/viewtopic.php?id=296699",
+  "https://www.kernel.org/doc/html/latest/security/tpm/tpm_tis.html",
+  "https://github.com/torvalds/linux/blob/master/drivers/char/tpm/tpm_tis.c",
+  "https://dri.freedesktop.org/docs/drm/security/tpm/tpm_tis.html",
+  "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+  "https://www.kernel.org/doc/html/latest/security/tpm/index.html",
+  "https://github.com/torvalds/linux/blob/master/drivers/char/tpm/tpm_tis.c",
+  "https://www.kernel.org/doc/html/latest/security/tpm/index.html",
+  "https://www.linux-drivers.com/driver/drivers/char/tpm/",
+  "https://linux-kernel-labs.github.io/refs/heads/master/labs/device_drivers.html",
+  "https://github.com/srajiv/tpm",
+  "https://www.atitesting.com/"
+ ],
+ "outcome": "authored"
+}
