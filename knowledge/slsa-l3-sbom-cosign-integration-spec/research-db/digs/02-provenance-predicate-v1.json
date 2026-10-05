@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "provenance-predicate-v1",
+ "scope": "The layered shape of a SLSA v1.0 provenance attestation (DSSE envelope, in-toto Statement v1, provenance predicate) and the v0.2 versus v1.0 difference.",
+ "queries_attempted": [
+  {
+   "query": "SLSA provenance v1.0 predicate buildDefinition runDetails",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "in-toto Statement v1 DSSE envelope attestation format",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://slsa.dev/spec/v1.0/provenance",
+  "https://deepwiki.com/slsa-framework/slsa-github-generator/10-slsa-provenance-format",
+  "https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/provenance_v1/",
+  "https://deepwiki.com/slsa-framework/slsa/3.1-provenance-format",
+  "https://slsa.dev/spec/v1.0-rc2/provenance",
+  "https://github.com/k2gl/slsa-provenance",
+  "https://github.com/in-toto/attestation/blob/main/spec/v1/envelope.md",
+  "https://safeguard.sh/resources/blog/in-toto-attestation-formats-review",
+  "https://docs.cimon.build/provenance/attestation-content",
+  "https://in-toto.io/docs/specs/",
+  "https://docs.cimon.build/provenance/supported-formats",
+  "https://in-toto.io/Statement/v1"
+ ],
+ "outcome": "authored"
+}

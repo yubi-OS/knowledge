@@ -1,0 +1,34 @@
+{
+ "nn": "07",
+ "slug": "verifier-gate",
+ "scope": "Verifying SLSA provenance and SBOM attestations: slsa-verifier, cosign verify-attestation, actions/attest-build-provenance, and verifier gate boundaries.",
+ "queries_attempted": [
+  {
+   "query": "slsa-verifier verify-artifact provenance-path source-uri builder-id",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "cosign verify-attestation slsaprovenance GitHub Actions",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/slsa-framework/slsa-verifier",
+  "https://slsa.dev/spec/v1.0/verifying-artifacts",
+  "https://www.systemshardening.com/articles/cicd/slsa-build-provenance/",
+  "https://clearpathsecurity.co.uk/generating-and-verifying-slsa-build-provenance-for-artifacts/",
+  "https://slsa.dev/spec/v1.2/verifying-artifacts",
+  "https://how2.sh/posts/how-to-add-slsa-build-provenance-in-github-actions/",
+  "https://blog.stephane-robert.info/en/docs/pipeline-cicd/github/securite/verifier-attestations/",
+  "https://www.rentwithcosign.com/",
+  "https://github.com/marketplace/actions/nais-slsa-provenance-action",
+  "https://github.com/actions/attest-build-provenance"
+ ],
+ "outcome": "authored"
+}

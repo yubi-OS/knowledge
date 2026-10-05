@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "spdx-sbom-syft",
+ "scope": "Generating SPDX-format SBOMs with Syft from images and filesystems and attaching them as cosign spdxjson attestations, with coverage caveats.",
+ "queries_attempted": [
+  {
+   "query": "Syft generate SPDX 2.3 JSON SBOM container image",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "cosign attest spdxjson SBOM attestation",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/anchore/syft",
+  "https://sbomgenerator.com/tools/syft",
+  "https://reestwick.github.io/sbomgen/tutorials/containers/creating-syft-sbom/creating-syft-sbom.html",
+  "https://oss.anchore.com/docs/reference/syft/cli/",
+  "https://oneuptime.com/blog/post/2026-01-25-sbom-generation-syft/view",
+  "https://anchore.com/sbom/how-to-generate-an-sbom-with-free-open-source-tools/",
+  "https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-sign-an-sbom-with-cosign/",
+  "https://oss.anchore.com/docs/guides/sbom/attestation/",
+  "https://secure-pipelines.com/ci-cd-security/lab-sbom-pipeline-generate-attest-verify-syft-cosign/",
+  "https://docs.sigstore.dev/policy-controller/sample-policies/",
+  "https://github.com/sigstore/cosign/blob/main/doc/cosign_attest.md",
+  "https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html"
+ ],
+ "outcome": "authored"
+}

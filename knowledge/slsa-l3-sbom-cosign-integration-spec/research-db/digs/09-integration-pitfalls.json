@@ -1,0 +1,30 @@
+{
+ "nn": "09",
+ "slug": "integration-pitfalls",
+ "scope": "CI integration pitfalls: id-token permissions and scoping, identity pinning, generator/verifier version lockstep, Rekor v2 cosign floor, public-log disclosure.",
+ "queries_attempted": [
+  {
+   "query": "GitHub Actions id-token permission cosign keyless error",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "slsa-github-generator pinned version upgrade verifier mismatch",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://stackoverflow.com/questions/72183048/what-is-the-permission-scope-of-id-token-in-github-action",
+  "https://github.com/",
+  "https://github.blog/changelog/2023-02-02-github-actions-updating-the-default-github_token-permissions-to-read-only/",
+  "https://github.com/slsa-framework/slsa",
+  "https://deepwiki.com/slsa-framework/slsa-github-generator/12-troubleshooting",
+  "https://deepwiki.com/slsa-framework/slsa-github-generator/13-migration-guides"
+ ],
+ "outcome": "authored"
+}
