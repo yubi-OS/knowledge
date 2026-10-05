@@ -1,0 +1,2077 @@
+[
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc composefs backend sealed images experimental",
+    "title": "Composefs Backend | bootc-dev/bootc | DeepWiki",
+    "url": "https://deepwiki.com/bootc-dev/bootc/2.3.2-composefs-backend",
+    "snippet": "This document describes the Composefs backend, an experimental storage backend for bootc that uses composefs (composite filesystem) with EROFS images and fsverity verification. The Composefs backend provides enhanced integrity guarantees, native UKI (Unified Kernel Image) support, and sealed image capabilities compared to the default OSTree ...This document describes the Composefs backend, an experimental storage backend for bootc that uses composefs (composite filesystem) with EROFS images and ",
+    "collected_at": "2026-10-05T13:26:58.718Z",
+    "weight": 0.5629,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Composefs Backend | bootc-dev/bootc | DeepWiki' (https://deepwiki.com/bootc-dev/bootc/2.3.2-composefs-backend) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5629
+      },
+      "usage": {
+        "input_tokens": 808,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:43.485Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc composefs backend sealed images experimental",
+    "title": "composefs backend - bootc",
+    "url": "https://bootc.dev/bootc/experimental-composefs.html",
+    "snippet": "There is a --composefs-backend option for bootc install to explicitly select a composefs backend apart from sealed images; this is not as heavily tested yet. Known Issues. The composefs backend is experimental; on-disk formats are subject to change.",
+    "collected_at": "2026-10-05T13:26:58.718Z",
+    "weight": 0.9299,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'composefs backend - bootc' (https://bootc.dev/bootc/experimental-composefs.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9299
+      },
+      "usage": {
+        "input_tokens": 808,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:43.485Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc composefs backend sealed images experimental",
+    "title": "agentic-workflows-ci-sandbox/docs/src/experimental-composefs ... - GitHub",
+    "url": "https://github.com/bootc-dev/agentic-workflows-ci-sandbox/blob/main/docs/src/experimental-composefs.md",
+    "snippet": "The composefs backend is an experimental alternative storage backend that uses composefs-rs instead of ostree for storing and managing bootc system deployments. Status: Experimental, but close to stabilization! We are committed to in-place upgrades from all systems deployed since bootc 1.16.0. The ...The composefs backend is an experimental alternative storage backend that uses composefs-rs instead of ostree for storing and managing bootc system deployments. Status: Experimental, but close to st",
+    "collected_at": "2026-10-05T13:26:58.718Z",
+    "weight": 0.3336,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'agentic-workflows-ci-sandbox/docs/src/experimental-composefs ... - GitHub' (https://github.com/bootc-dev/agentic-workflows-ci-sandbox/blob/main/docs/src/experimental-composefs.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3336
+      },
+      "usage": {
+        "input_tokens": 808,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:43.485Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc composefs backend sealed images experimental",
+    "title": "Image sealing with composefs :: *scratch* - scrivano.org",
+    "url": "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+    "snippet": "bootc is the primary consumer of composefs for bootable container images. Image build workflow # bootc uses a multi-stage build process to create sealed images: ... The circular dependency is broken by emptying /boot before computing the digest. The UKI (which lives in /boot) embeds the digest, but the digest is computed without the UKI present.bootc is the primary consumer of composefs for bootable container images. Image build workflow # bootc uses a multi-stage build process to create sealed ",
+    "collected_at": "2026-10-05T13:26:58.718Z",
+    "weight": 0.3305,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Image sealing with composefs :: *scratch* - scrivano.org' (https://scrivano.org/posts/2026-06-05-sealing-with-composefs/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3305
+      },
+      "usage": {
+        "input_tokens": 808,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:43.485Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc composefs backend sealed images experimental",
+    "title": "bootc-dev.github.io/content/blog/2026-may-06-sealed-images-building.md ...",
+    "url": "https://github.com/bootc-dev/bootc-dev.github.io/blob/main/content/blog/2026-may-06-sealed-images-building.md",
+    "snippet": "The chicken-and-egg problem Building a sealed image has a complication that isn't immediately obvious. Recall from the first post that the composefs digest is embedded in the UKI's kernel command line, and the UKI lives in the image under /boot.",
+    "collected_at": "2026-10-05T13:26:58.718Z",
+    "weight": 0.6455,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'bootc-dev.github.io/content/blog/2026-may-06-sealed-images-building.md ...' (https://github.com/bootc-dev/bootc-dev.github.io/blob/main/content/blog/2026-may-06-sealed-images-building.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6455
+      },
+      "usage": {
+        "input_tokens": 808,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:43.485Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc composefs backend sealed images experimental",
+    "title": "Chapter 12. Cryptographic sealing of bootc images (Technology Preview)",
+    "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/cryptographic-sealing-of-bootc-images-technology-preview",
+    "snippet": "You can deploy the sealed bootc image by using standard methods to ensure seamless compatibility with target systems. When your image includes a UKI and systemd-boot, the system automatically detects the composefs backend.You can deploy the sealed bootc image by using standard methods to ensure seamless compatibility with target systems. When your image includes a UKI and systemd-boot, the system automatically detects the composefs backend.",
+    "collected_at": "2026-10-05T13:26:58.718Z",
+    "weight": 0.9425,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Chapter 12. Cryptographic sealing of bootc images (Technology Preview)' (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/cryptographic-sealing-of-bootc-images-technology-preview) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9425
+      },
+      "usage": {
+        "input_tokens": 806,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:45.914Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc signed UKI composefs digest kernel cmdline secure boot",
+    "title": "Boot signed Linux with no bootloader config: unified kernel images and ...",
+    "url": "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+    "snippet": "Build and enroll Unified Kernel Images with automatic Secure Boot signing for systemd-boot, retiring fiddly bootloader configuration on Linux.Build and enroll Unified Kernel Images with automatic Secure Boot signing for systemd-boot, retiring fiddly bootloader configuration on Linux.",
+    "collected_at": "2026-10-05T13:27:02.510Z",
+    "weight": 0.2516,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Boot signed Linux with no bootloader config: unified kernel images and ...' (https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2516
+      },
+      "usage": {
+        "input_tokens": 806,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:45.914Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc signed UKI composefs digest kernel cmdline secure boot",
+    "title": "rhel-bootc-examples/sealing at main · redhat-cop/rhel-bootc ...",
+    "url": "https://github.com/redhat-cop/rhel-bootc-examples/tree/main/sealing",
+    "snippet": "This example builds a CentOS Stream 10 bootc host that boots with the bootc composefs backend. A signed Unified Kernel Image (UKI) embeds the composefs digest of the root filesystem. At boot: UEFI Secure Boot verifies the UKI signature against enrolled keys The kernel starts with composefs=<digest> in the command line The initramfs mounts the root as a composefs overlay with verity=require ...This example builds a CentOS Stream 10 bootc host that boots with the bootc composefs backend. A signed ",
+    "collected_at": "2026-10-05T13:27:02.510Z",
+    "weight": 0.8431,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'rhel-bootc-examples/sealing at main · redhat-cop/rhel-bootc ...' (https://github.com/redhat-cop/rhel-bootc-examples/tree/main/sealing) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8431
+      },
+      "usage": {
+        "input_tokens": 806,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:45.914Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc signed UKI composefs digest kernel cmdline secure boot",
+    "title": "bootc-dev/bootc: Boot and upgrade via container images - GitHub",
+    "url": "https://github.com/bootc-dev/bootc",
+    "snippet": "Boot and upgrade via container images. Contribute to bootc-dev/bootc development by creating an account on GitHub.Boot and upgrade via container images. Contribute to bootc-dev/bootc development by creating an account on GitHub.",
+    "collected_at": "2026-10-05T13:27:02.510Z",
+    "weight": 0.7881,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'bootc-dev/bootc: Boot and upgrade via container images - GitHub' (https://github.com/bootc-dev/bootc) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7881
+      },
+      "usage": {
+        "input_tokens": 806,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:45.914Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc signed UKI composefs digest kernel cmdline secure boot",
+    "title": "bootc",
+    "url": "https://bootc.dev/blog/2026-may-06-sealed-images-building/",
+    "snippet": "Assembles a UKI containing the kernel, initramfs, and a command line that includes composefs=<digest>.The UKI inside is signed with our Secure Boot key and embeds a composefs digest that covers every file in the operating system.",
+    "collected_at": "2026-10-05T13:27:02.510Z",
+    "weight": 0.7619,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'bootc' (https://bootc.dev/blog/2026-may-06-sealed-images-building/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7619
+      },
+      "usage": {
+        "input_tokens": 806,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:45.914Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc signed UKI composefs digest kernel cmdline secure boot",
+    "title": "How to Build and Verify a Unified Kernel Image for UEFI Linux Boot",
+    "url": "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+    "snippet": "How to Build and Verify a Unified Kernel Image for UEFI Linux Boot A distribution-aware UKI workflow covering kernel, initrd, command line, os-release, Secure Boot signing, inspection, rollout, and rollback verification.How to Build and Verify a Unified Kernel Image for UEFI Linux Boot A distribution-aware UKI workflow covering kernel, initrd, command line, os-release, Secure Boot signing, inspection, rollout, and rollback verification.",
+    "collected_at": "2026-10-05T13:27:02.510Z",
+    "weight": 0.6635,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to Build and Verify a Unified Kernel Image for UEFI Linux Boot' (https://danielcosenza.com/posts/lx-howto-unified-kernel-image/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6635
+      },
+      "usage": {
+        "input_tokens": 809,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:48.617Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "01",
+    "slug": "bootc-composefs-backend",
+    "query": "bootc signed UKI composefs digest kernel cmdline secure boot",
+    "title": "bootc",
+    "url": "https://bootc.dev/",
+    "snippet": "The container image includes a Linux kernel (in e.g. /usr/lib/modules), which is used to boot. At runtime on a target system, the base userspace is not itself running in a \"container\" by default.The container image includes a Linux kernel (in e.g. /usr/lib/modules), which is used to boot. At runtime on a target system, the base userspace is not itself running in a \"container\" by default.",
+    "collected_at": "2026-10-05T13:27:02.510Z",
+    "weight": 0.7735,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'bootc' (https://bootc.dev/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7735
+      },
+      "usage": {
+        "input_tokens": 809,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:48.617Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "Red Hat RHEL sealed images composefs fsverity UKI integrity",
+    "title": "Trust at every layer: How sealed images extend OS integrity from boot ...",
+    "url": "https://www.redhat.com/en/blog/how-sealed-images-red-hat-enterprise-linux-extend-os-integrity-boot-runtime",
+    "snippet": "Sealed images extend verification into the immutable OS image itself, with file-level precision. Using composefs and fs-verity, a cryptographic digest of the OS container image is embedded directly in the signed UKI at build time. At runtime, every file you or your team added to that image is individually verified against that digest.Sealed images extend verification into the immutable OS image itself, with file-level precision. Using composefs and fs-verity, a cryptographic digest of the OS con",
+    "collected_at": "2026-10-05T13:27:12.106Z",
+    "weight": 0.7877,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trust at every layer: How sealed images extend OS integrity from boot ...' (https://www.redhat.com/en/blog/how-sealed-images-red-hat-enterprise-linux-extend-os-integrity-boot-runtime) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7877
+      },
+      "usage": {
+        "input_tokens": 809,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:48.617Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "Red Hat RHEL sealed images composefs fsverity UKI integrity",
+    "title": "Chapter 12. Cryptographic sealing of bootc images (Technology Preview)",
+    "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/cryptographic-sealing-of-bootc-images-technology-preview",
+    "snippet": "You can seal a RHEL bootc container image by computing a cryptographic digest of the root file system and embedding it in a signed Unified Kernel Image (UKI). The sealed image provides end-to-end integrity verification from firmware through the file system at boot time.You can seal a RHEL bootc container image by computing a cryptographic digest of the root file system and embedding it in a signed Unified Kernel Image (UKI). The sealed image provides end-to-end integrity verification from firmwa",
+    "collected_at": "2026-10-05T13:27:12.106Z",
+    "weight": 0.9234,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Chapter 12. Cryptographic sealing of bootc images (Technology Preview)' (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/cryptographic-sealing-of-bootc-images-technology-preview) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9234
+      },
+      "usage": {
+        "input_tokens": 809,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:48.617Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "Red Hat RHEL sealed images composefs fsverity UKI integrity",
+    "title": "Image sealing with composefs :: *scratch* - scrivano.org",
+    "url": "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+    "snippet": "Composefs achieves whole-filesystem integrity verification through image sealing: a single cryptographic digest authenticates an entire filesystem, covering both file contents and metadata (directory structure, permissions, ownership, symlinks, and xattrs). This goes further than fs-verity alone, which can only verify individual file contents, and avoids the fixed-partition requirement of dm ...Composefs achieves whole-filesystem integrity verification through image sealing: a single cryptograph",
+    "collected_at": "2026-10-05T13:27:12.106Z",
+    "weight": 0.3047,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Image sealing with composefs :: *scratch* - scrivano.org' (https://scrivano.org/posts/2026-06-05-sealing-with-composefs/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3047
+      },
+      "usage": {
+        "input_tokens": 809,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:48.617Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "Red Hat RHEL sealed images composefs fsverity UKI integrity",
+    "title": "GitHub - composefs/composefs: The reliability of disk images ...",
+    "url": "https://github.com/composefs/composefs",
+    "snippet": "The composefs project combines several underlying Linux features to provide a very flexible mechanism to support read-only mountable filesystem trees, stacking on top of an underlying \"lower\" Linux filesystem. The \"tagline\" for this project is \"The reliability of disk images, the flexibility of ...The composefs project combines several underlying Linux features to provide a very flexible mechanism to support read-only mountable filesystem trees, stacking on top of an underlying \"lower\" Linux fil",
+    "collected_at": "2026-10-05T13:27:12.106Z",
+    "weight": 0.8819,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - composefs/composefs: The reliability of disk images ...' (https://github.com/composefs/composefs) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8819
+      },
+      "usage": {
+        "input_tokens": 795,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:51.229Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "Red Hat RHEL sealed images composefs fsverity UKI integrity",
+    "title": "reddit",
+    "url": "https://www.reddit.com/r/reddit/wiki/index/",
+    "snippet": "r/reddit: The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, …",
+    "collected_at": "2026-10-05T13:27:12.106Z",
+    "weight": 0.0333,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'reddit' (https://www.reddit.com/r/reddit/wiki/index/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0333
+      },
+      "usage": {
+        "input_tokens": 795,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:51.229Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "Red Hat RHEL sealed images composefs fsverity UKI integrity",
+    "title": "bootc",
+    "url": "https://bootc.dev/blog/2026-may-07-sealed-images-deploying/",
+    "snippet": "Sealed images: deploying and verifying a sealed image. In the previous post we built a sealed, signed container image. Now it's time to deploy it to a virtual machine and verify that the full security chain is active. bcvk: a tool for running bootc VMs.",
+    "collected_at": "2026-10-05T13:27:12.106Z",
+    "weight": 0.6853,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'bootc' (https://bootc.dev/blog/2026-may-07-sealed-images-deploying/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6853
+      },
+      "usage": {
+        "input_tokens": 795,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:51.229Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "RHEL image mode sealed UKI tech preview 2026",
+    "title": "Chapter 12. Cryptographic sealing of bootc images (Technology Preview ...",
+    "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/cryptographic-sealing-of-bootc-images-technology-preview",
+    "snippet": "You can seal a RHEL bootc container image by computing a cryptographic digest of the root file system and embedding it in a signed Unified Kernel Image (UKI). The sealed image provides end-to-end integrity verification from firmware through the file system at boot time.You can seal a RHEL bootc container image by computing a cryptographic digest of the root file system and embedding it in a signed Unified Kernel Image (UKI). The sealed image provides end-to-end integrity verification from firmwa",
+    "collected_at": "2026-10-05T13:27:21.726Z",
+    "weight": 0.9325,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Chapter 12. Cryptographic sealing of bootc images (Technology Preview ...' (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/cryptographic-sealing-of-bootc-images-technology-preview) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9325
+      },
+      "usage": {
+        "input_tokens": 795,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:51.229Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "RHEL image mode sealed UKI tech preview 2026",
+    "title": "Trust at every layer: How sealed images extend OS integrity from boot ...",
+    "url": "https://www.redhat.com/en/blog/how-sealed-images-red-hat-enterprise-linux-extend-os-integrity-boot-runtime",
+    "snippet": "How it works Secure boot and a signed unified kernel image already verify the boot chain: Bootloader, kernel, initramfs. Sealed images extend verification into the immutable OS image itself, with file-level precision. Using composefs and fs-verity, a cryptographic digest of the OS container image is embedded directly in the signed UKI at build ...How it works Secure boot and a signed unified kernel image already verify the boot chain: Bootloader, kernel, initramfs. Sealed images extend verificat",
+    "collected_at": "2026-10-05T13:27:21.726Z",
+    "weight": 0.7661,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trust at every layer: How sealed images extend OS integrity from boot ...' (https://www.redhat.com/en/blog/how-sealed-images-red-hat-enterprise-linux-extend-os-integrity-boot-runtime) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7661
+      },
+      "usage": {
+        "input_tokens": 795,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:51.229Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "RHEL image mode sealed UKI tech preview 2026",
+    "title": "Image mode for Red Hat Enterprise Linux",
+    "url": "https://developers.redhat.com/products/rhel/image-mode",
+    "snippet": "Image mode lets you use container technologies to build, deploy, and manage Red Hat® Enterprise Linux®. It's the downstream product of the upstream open source bootc Fedora project. Originally included as part of Red Hat Enterprise Linux 9.6 and 10, image mode uses the bootc tool and command to encapsulate runtimes, drivers, dependencies, and applications across any environment—bare metal ...Image mode lets you use container technologies to build, deploy, and manage Red Hat® Enterprise Linux®. I",
+    "collected_at": "2026-10-05T13:27:21.726Z",
+    "weight": 0.8818,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Image mode for Red Hat Enterprise Linux' (https://developers.redhat.com/products/rhel/image-mode) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8818
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:53.704Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "RHEL image mode sealed UKI tech preview 2026",
+    "title": "Security is Getting Harder: Here's Why Image Mode for RHEL Helps",
+    "url": "https://developers.redhat.com/blog/2026/06/15/security-getting-harder-heres-why-image-mode-rhel-helps",
+    "snippet": "If your environment requires non-disruptive kernel updates for extended uptime windows, continue with package-based RHEL with live patching for now. Image Mode is best suited for workloads where planned reboots are acceptable, or where you can design for high availability with rolling updates across multiple instances. Hybrid approaches are fine.If your environment requires non-disruptive kernel updates for extended uptime windows, continue with package-based RHEL with live patching for now. Ima",
+    "collected_at": "2026-10-05T13:27:21.726Z",
+    "weight": 0.8042,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Security is Getting Harder: Here's Why Image Mode for RHEL Helps' (https://developers.redhat.com/blog/2026/06/15/security-getting-harder-heres-why-image-mode-rhel-helps) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8042
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:53.704Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "RHEL image mode sealed UKI tech preview 2026",
+    "title": "Chapter 1. Introducing image mode for RHEL - Red Hat",
+    "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/introducing-image-mode-for-rhel_using-image-mode-for-rhel-to-build-deploy-and-manage-operating-systems",
+    "snippet": "Using image mode for RHEL to build, deploy, and manage operating systems Providing feedback on Red Hat documentation 1. Introducing image mode for RHEL Introducing image mode for RHEL 1.1. Benefits of image mode for RHEL 1.2. Prerequisites 1.3. Additional resources 2. Building and testing RHEL bootc images Building and testing RHEL bootc images 2.1. Building and configuring bootc-based images ...Using image mode for RHEL to build, deploy, and manage operating systems Providing feedback on Red Ha",
+    "collected_at": "2026-10-05T13:27:21.726Z",
+    "weight": 0.9402,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Chapter 1. Introducing image mode for RHEL - Red Hat' (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/introducing-image-mode-for-rhel_using-image-mode-for-rhel-to-build-deploy-and-manage-operating-systems) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9402
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:53.704Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "02",
+    "slug": "rhel-sealed-images",
+    "query": "RHEL image mode sealed UKI tech preview 2026",
+    "title": "Extending Red Hat Unified Kernel Images By Using Addons",
+    "url": "https://www.redhat.com/en/blog/extending-red-hat-unified-kernel-images-using-addons",
+    "snippet": "Aug 2, 2024 · With the advent of Confidential Virtual Machines (CVMs) in RHEL, a new challenge has emerged: Extending the Red Hat UKI (Unified Kernel Image) more safely and without compromising its security footprint.",
+    "collected_at": "2026-10-05T13:27:21.726Z",
+    "weight": 0.7139,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Extending Red Hat Unified Kernel Images By Using Addons' (https://www.redhat.com/en/blog/extending-red-hat-unified-kernel-images-using-addons) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7139
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:53.704Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "systemd-cryptenroll FIDO2 LUKS2 unlock hmac-secret",
+    "title": "systemd-cryptenroll - ArchWiki",
+    "url": "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "snippet": "From systemd-cryptenroll (1): systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot. systemd-cryptenroll allows enrolling smartcards, FIDO2 tokens and Trusted Platform Module security chips into LUKS devices, as well as regular passphrases. These devices are later unlocked by ...From systemd-cryptenroll (1): systemd-cryptenroll is a tool for enrolling hardware security tokens and dev",
+    "collected_at": "2026-10-05T13:27:25.422Z",
+    "weight": 0.5034,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'systemd-cryptenroll - ArchWiki' (https://wiki.archlinux.org/title/Systemd-cryptenroll) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5034
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:28:53.704Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "systemd-cryptenroll FIDO2 LUKS2 unlock hmac-secret",
+    "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+    "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "snippet": "Use systemd-cryptenroll on LUKS2 volumes to add TPM2, FIDO2, PKCS#11, and recovery-key unlock methods, store token metadata in the LUKS2 JSON area, and wire boot unlock through crypttab.Use systemd-cryptenroll on LUKS2 volumes to add TPM2, FIDO2, PKCS#11, and recovery-key unlock methods, store token metadata in the LUKS2 JSON area, and wire boot unlock through crypttab.",
+    "collected_at": "2026-10-05T13:27:25.422Z",
+    "weight": 0.541,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key' (https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.541
+      },
+      "usage": {
+        "input_tokens": 867,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:09.032Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "systemd-cryptenroll FIDO2 LUKS2 unlock hmac-secret",
+    "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+    "url": "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+    "snippet": "Unlocking with FIDO2. So, let's see how this fits together in the FIDO2 case. Most likely this is what you want to use if you have one of these fancy FIDO2 tokens (which need to implement the hmac-secret extension, as mentioned).",
+    "collected_at": "2026-10-05T13:27:25.422Z",
+    "weight": 0.9502,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248' (https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9502
+      },
+      "usage": {
+        "input_tokens": 867,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:09.032Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "systemd-cryptenroll FIDO2 LUKS2 unlock hmac-secret",
+    "title": "Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...",
+    "url": "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+    "snippet": "systemd-cryptenroll is the operator tool for binding LUKS2 volumes to hardware factors systemd already understands at boot: TPM2 chips, FIDO2 tokens (hmac-secret), PKCS#11 smartcards, plus computer-generated recovery keys. Unlock metadata lives in the LUKS2 JSON token area. At boot, systemd-cryptsetup + /etc/crypttab consume it.systemd-cryptenroll is the operator tool for binding LUKS2 volumes to hardware factors systemd already understands at boot: TPM2 chips, FIDO2 tokens (hmac-secret), PKCS#1",
+    "collected_at": "2026-10-05T13:27:25.422Z",
+    "weight": 0.1616,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...' (https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1616
+      },
+      "usage": {
+        "input_tokens": 867,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:09.032Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "systemd-cryptenroll FIDO2 LUKS2 unlock hmac-secret",
+    "title": "systemd-cryptenroll",
+    "url": "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+    "snippet": "Description ¶ systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot. Specifically, it supports tokens and credentials of the following kind to be enrolled:Description ¶ systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot. Specifically, it supports tokens and credentials",
+    "collected_at": "2026-10-05T13:27:25.422Z",
+    "weight": 0.981,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'systemd-cryptenroll' (https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.981
+      },
+      "usage": {
+        "input_tokens": 867,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:09.032Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "systemd-cryptenroll FIDO2 LUKS2 unlock hmac-secret",
+    "title": "systemd-cryptenroll (1) - Linux manual page - man7.org",
+    "url": "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+    "snippet": "NAME top systemd-cryptenroll - Enroll PKCS#11, FIDO2, TPM2 token/devices to LUKS2 encrypted volumes SYNOPSIS top systemd-cryptenroll [OPTIONS...] [DEVICE] DESCRIPTION top systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot. Specifically, it supports tokens and credentials of the ...NAME top systemd-cryptenroll - Enroll PKCS#11, FIDO2, TPM2 token/devices to LUKS2 encrypted volumes S",
+    "collected_at": "2026-10-05T13:27:25.422Z",
+    "weight": 0.4536,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'systemd-cryptenroll (1) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4536
+      },
+      "usage": {
+        "input_tokens": 867,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:09.032Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "LUKS2 hardware token unlock systemd 248 TPM2 PKCS11",
+    "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+    "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "snippet": "Use systemd-cryptenroll on LUKS2 volumes to add TPM2, FIDO2, PKCS#11, and recovery-key unlock methods, store token metadata in the LUKS2 JSON area, and wire boot unlock through crypttab.Use systemd-cryptenroll on LUKS2 volumes to add TPM2, FIDO2, PKCS#11, and recovery-key unlock methods, store token metadata in the LUKS2 JSON area, and wire boot unlock through crypttab.",
+    "collected_at": "2026-10-05T13:27:29.406Z",
+    "weight": 0.546,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key' (https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.546
+      },
+      "usage": {
+        "input_tokens": 865,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:11.462Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "LUKS2 hardware token unlock systemd 248 TPM2 PKCS11",
+    "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+    "url": "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+    "snippet": "With the upcoming systemd v248 the systemd-cryptsetup component of systemd (which is responsible for assembling encrypted volumes during boot) gained direct support for unlocking encrypted storage with three types of security hardware:",
+    "collected_at": "2026-10-05T13:27:29.406Z",
+    "weight": 0.9496,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248' (https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9496
+      },
+      "usage": {
+        "input_tokens": 865,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:11.462Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "LUKS2 hardware token unlock systemd 248 TPM2 PKCS11",
+    "title": "systemd-cryptenroll - ArchWiki",
+    "url": "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "snippet": "From systemd-cryptenroll (1): systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot. systemd-cryptenroll allows enrolling smartcards, FIDO2 tokens and Trusted Platform Module security chips into LUKS devices, as well as regular passphrases. These devices are later unlocked by ...From systemd-cryptenroll (1): systemd-cryptenroll is a tool for enrolling hardware security tokens and dev",
+    "collected_at": "2026-10-05T13:27:29.406Z",
+    "weight": 0.7978,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'systemd-cryptenroll - ArchWiki' (https://wiki.archlinux.org/title/Systemd-cryptenroll) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7978
+      },
+      "usage": {
+        "input_tokens": 865,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:11.462Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "LUKS2 hardware token unlock systemd 248 TPM2 PKCS11",
+    "title": "GitHub - justanotherkiwi/LUKS2-TPM-Auto-Unlock: The script ...",
+    "url": "https://github.com/justanotherkiwi/LUKS2-TPM-Auto-Unlock",
+    "snippet": "A Linux helper script for configuring BitLocker-style TPM auto-unlock for encrypted LUKS2 root volumes. The script detects the running Linux distribution, checks the boot and TPM environment, identifies the encrypted root volume, validates that it is LUKS2, enrols the TPM2 into the LUKS2 header using systemd-cryptenroll, updates /etc/crypttab ...A Linux helper script for configuring BitLocker-style TPM auto-unlock for encrypted LUKS2 root volumes. The script detects the running Linux distributio",
+    "collected_at": "2026-10-05T13:27:29.406Z",
+    "weight": 0.2952,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - justanotherkiwi/LUKS2-TPM-Auto-Unlock: The script ...' (https://github.com/justanotherkiwi/LUKS2-TPM-Auto-Unlock) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2952
+      },
+      "usage": {
+        "input_tokens": 865,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:11.462Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "LUKS2 hardware token unlock systemd 248 TPM2 PKCS11",
+    "title": "Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...",
+    "url": "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+    "snippet": "systemd-cryptenroll is the operator tool for binding LUKS2 volumes to hardware factors systemd already understands at boot: TPM2 chips, FIDO2 tokens (hmac-secret), PKCS#11 smartcards, plus computer-generated recovery keys. Unlock metadata lives in the LUKS2 JSON token area. At boot, systemd-cryptsetup + /etc/crypttab consume it.",
+    "collected_at": "2026-10-05T13:27:29.406Z",
+    "weight": 0.1429,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...' (https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1429
+      },
+      "usage": {
+        "input_tokens": 865,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:11.462Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "03",
+    "slug": "luks2-hardware-unlock",
+    "query": "LUKS2 hardware token unlock systemd 248 TPM2 PKCS11",
+    "title": "knowledge/knowledge/0pointer/04-luks2-hardware-unlock.md at ...",
+    "url": "https://github.com/yubi-OS/knowledge/blob/main/knowledge/0pointer/04-luks2-hardware-unlock.md",
+    "snippet": "Unlocking LUKS2 Volumes with Hardware: TPM2, FIDO2, PKCS#11 systemd 248 made hardware-backed disk unlocking a first-class citizen of systemd-cryptsetup. The three token types buy three different security properties: FIDO2 tokens (via the hmac-secret extension) turn a plug-in USB device into a possession factor you carry on your keyring, with zero token modification and zero per-volume ...Unlocking LUKS2 Volumes with Hardware: TPM2, FIDO2, PKCS#11 systemd 248 made hardware-backed disk unlocking a",
+    "collected_at": "2026-10-05T13:27:29.406Z",
+    "weight": 0.6524,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'knowledge/knowledge/0pointer/04-luks2-hardware-unlock.md at ...' (https://github.com/yubi-OS/knowledge/blob/main/knowledge/0pointer/04-luks2-hardware-unlock.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6524
+      },
+      "usage": {
+        "input_tokens": 765,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:13.142Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "secureblue sealed UKI immutable Linux",
+    "title": "secureblue: A security-focused desktop and server Linux operating system.",
+    "url": "https://secureblue.dev/",
+    "snippet": "However, the security architecture of desktop Linux is broadly and significantly lacking. The goal of secureblue is to build a maximally secure Linux operating system by proactively increasing defenses against the exploitation of both known and unknown vulnerabilities, while avoiding sacrificing usability for most use cases where possible.",
+    "collected_at": "2026-10-05T13:27:33.230Z",
+    "weight": 0.606,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'secureblue: A security-focused desktop and server Linux operating system.' (https://secureblue.dev/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.606
+      },
+      "usage": {
+        "input_tokens": 765,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:13.142Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "secureblue sealed UKI immutable Linux",
+    "title": "GitHub - secureblue/secureblue: A security-focused desktop and server ...",
+    "url": "https://github.com/secureblue/secureblue",
+    "snippet": "secureblue is a a security-focused desktop and server Linux operating system. It is built using BlueBuild and shipped as a set of OCI bootable containers, using Fedora Atomic Desktop 's base images as a starting point. For more information, visit the secureblue website.",
+    "collected_at": "2026-10-05T13:27:33.230Z",
+    "weight": 0.6949,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - secureblue/secureblue: A security-focused desktop and server ...' (https://github.com/secureblue/secureblue) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6949
+      },
+      "usage": {
+        "input_tokens": 765,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:13.142Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "secureblue sealed UKI immutable Linux",
+    "title": "FAQ | secureblue",
+    "url": "https://secureblue.dev/faq",
+    "snippet": "Project information Why secureblue? secureblue is a collaborative effort to ship a maximally secure Linux operating system. It leverages bootable container technology to build on top of Fedora Atomic, avoiding the need to become a distro in the traditional sense. secureblue has benefitted massively by not being a distro, and instead shipping as bootable OCI container images. This has meant a ...",
+    "collected_at": "2026-10-05T13:27:33.230Z",
+    "weight": 0.5151,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'FAQ | secureblue' (https://secureblue.dev/faq) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5151
+      },
+      "usage": {
+        "input_tokens": 765,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:13.142Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "secureblue sealed UKI immutable Linux",
+    "title": "GitHub - SRugina/secureblue-sealed: An experiment in getting ...",
+    "url": "https://github.com/SRugina/secureblue-sealed",
+    "snippet": "secureblue, sealed An experiment in getting secureblue to boot from a UKI via systemd-boot, with bootc's composefs native backend providing fs-verity. Note: \"sealed\" is a slight misnomer, since the UKI and systemd-boot are not Secure Boot signed to keep the focus on the rest of the setup.",
+    "collected_at": "2026-10-05T13:27:33.230Z",
+    "weight": 0.5753,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - SRugina/secureblue-sealed: An experiment in getting ...' (https://github.com/SRugina/secureblue-sealed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5753
+      },
+      "usage": {
+        "input_tokens": 765,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:13.142Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "secureblue sealed UKI immutable Linux",
+    "title": "Secureblue - Atomic Fedora Hardening - Tool Suggestions - Privacy...",
+    "url": "https://discuss.privacyguides.net/t/secureblue-atomic-fedora-hardening/16086",
+    "snippet": "The secureblue project is a set of changes applied to the Fedora Silverblue/Kinoite project in an attempt to secure it as much as possible without sacrificing usability. It can be easily applied with just a few commands using rpm-ostree to rebase the system.",
+    "collected_at": "2026-10-05T13:27:33.230Z",
+    "weight": 0.1971,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Secureblue - Atomic Fedora Hardening - Tool Suggestions - Privacy...' (https://discuss.privacyguides.net/t/secureblue-atomic-fedora-hardening/16086) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1971
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:15.144Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "secureblue sealed UKI immutable Linux",
+    "title": "Immutablue - Modern, Immutable Linux",
+    "url": "https://immutablue.io/",
+    "snippet": "Computing Reimagined An easy, modular, and customizable immutable Linux experience. Break free from fragile systems. Embrace reliability without sacrificing power.",
+    "collected_at": "2026-10-05T13:27:33.230Z",
+    "weight": 0.5862,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Immutablue - Modern, Immutable Linux' (https://immutablue.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5862
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:15.144Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "Kairos trusted boot UKI TPM immutable Linux",
+    "title": "Trusted Boot Installations | Kairos",
+    "url": "https://kairos.io/docs/v4.2.0/installation/trustedboot/",
+    "snippet": "Learn how to enable Trusted Boot with Secure Boot, full disk encryption, and measured boot to protect systems from tampering.",
+    "collected_at": "2026-10-05T13:27:42.910Z",
+    "weight": 0.8716,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Boot Installations | Kairos' (https://kairos.io/docs/v4.2.0/installation/trustedboot/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8716
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:15.144Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "Kairos trusted boot UKI TPM immutable Linux",
+    "title": "Trusted boot - Kairos",
+    "url": "https://kairos.io/provider-kubernetes-docs/trusted-boot/",
+    "snippet": "A fresh UKI install and a UKI state reset both converge with no manual step. This was validated on a secure-boot VM with an emulated TPM. The same release also fixed the bundled image import on UKI nodes, where the read-only root filesystem is world-writable by mode and the import refused it outright. Air-gapped trusted boot installs work.",
+    "collected_at": "2026-10-05T13:27:42.910Z",
+    "weight": 0.7577,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted boot - Kairos' (https://kairos.io/provider-kubernetes-docs/trusted-boot/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7577
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:15.144Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "Kairos trusted boot UKI TPM immutable Linux",
+    "title": "Secure Boot and TPM Integration | kairos-io/kairos | DeepWiki",
+    "url": "https://deepwiki.com/kairos-io/kairos/6.2-secure-boot-and-tpm-integration",
+    "snippet": "Jan 4, 2026 · This page documents the Secure Boot integration in Kairos, covering how Kairos implements and tests UEFI Secure Boot with Unified Kernel Images (UKI). For information about building UKI images, see UKI Build Process.",
+    "collected_at": "2026-10-05T13:27:42.910Z",
+    "weight": 0.292,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Secure Boot and TPM Integration | kairos-io/kairos | DeepWiki' (https://deepwiki.com/kairos-io/kairos/6.2-secure-boot-and-tpm-integration) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.292
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:15.144Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "Kairos trusted boot UKI TPM immutable Linux",
+    "title": "Kairos Academies | Free St. Louis Public Charter School",
+    "url": "https://www.kairosacademies.org/",
+    "snippet": "We believe this is our opportunity, our Kairos, to re-imagine what school can be. With a personalized support system built around …",
+    "collected_at": "2026-10-05T13:27:42.910Z",
+    "weight": 0.58,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Kairos Academies | Free St. Louis Public Charter School' (https://www.kairosacademies.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.58
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:17.218Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "Kairos trusted boot UKI TPM immutable Linux",
+    "title": "kairos#4038 QA: kairos-agent bootentry --select on a real UKI/Trusted...",
+    "url": "https://gist.github.com/ci-robbot/82756ef3a8d7c27c5fe2c3de3bf8bb74",
+    "snippet": "TRUSTED_BOOT=true, MODEL=generic, VERSION=v4.3.0-qa4038. (kairos master 2461c1faa, kairos-init v0.17.3, shipped agent v2.31.4). ISO : quay.io/kairos/auroraboot:v0.27.0 build-uki --output-type iso. --extra-cmdline \"stylus.registration\". keys from kairos/tests/assets/keys.",
+    "collected_at": "2026-10-05T13:27:42.910Z",
+    "weight": 0.1511,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'kairos#4038 QA: kairos-agent bootentry --select on a real UKI/Trusted...' (https://gist.github.com/ci-robbot/82756ef3a8d7c27c5fe2c3de3bf8bb74) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1511
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:17.218Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "04",
+    "slug": "immutable-os-competitors",
+    "query": "Kairos trusted boot UKI TPM immutable Linux",
+    "title": "Trusted Boot Implementation | kairos-io/kairos-docs | DeepWiki",
+    "url": "https://deepwiki.com/kairos-io/kairos-docs/4.2-trusted-boot-implementation",
+    "snippet": "Implementation Overview Kairos Trusted Boot implementation leverages Unified Kernel Images (UKI) combined with systemd-boot to create a tamper-resistant boot environment. The system uses TPM-based measurements and Secure Boot signatures to ensure system integrity from firmware through user-space execution.",
+    "collected_at": "2026-10-05T13:27:42.910Z",
+    "weight": 0.3821,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Boot Implementation | kairos-io/kairos-docs | DeepWiki' (https://deepwiki.com/kairos-io/kairos-docs/4.2-trusted-boot-implementation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3821
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:17.218Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware root of trust secure boot measured boot Linux blog",
+    "title": "Building a Hardware Root of Trust: From Secure Boot to TEE",
+    "url": "https://hwsecurity.net/blog/hardware-root-of-trust/",
+    "snippet": "Mar 30, 2026 · A comprehensive look at how modern SoCs build trust from the first instruction — Boot ROM, Secure Boot, Measured Boot, and Trusted Execution Environments.",
+    "collected_at": "2026-10-05T13:27:46.706Z",
+    "weight": 0.4299,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Building a Hardware Root of Trust: From Secure Boot to TEE' (https://hwsecurity.net/blog/hardware-root-of-trust/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4299
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:17.218Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware root of trust secure boot measured boot Linux blog",
+    "title": "Hardware Root of Trust Explained: Secure Boot, TPM 2.0 (2026)",
+    "url": "https://www.servnetuk.com/learn/hardware-root-of-trust-secure-boot-explained",
+    "snippet": "Root-of-trust functions in NVIDIA Jetson fTPM flow On this page 01 What Is a Hardware Root of Trust, and Why It Matters in 2026 02 Secure Boot, Measured Boot and TPM 2.0 — Untangling the Terms 03 The Different Types of HRoT Implementation 04 The Supply-Chain Angle: Why Firmware Is the New Target 05 A Worked Scenario: Verifying What Actually ...",
+    "collected_at": "2026-10-05T13:27:46.706Z",
+    "weight": 0.1781,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Hardware Root of Trust Explained: Secure Boot, TPM 2.0 (2026)' (https://www.servnetuk.com/learn/hardware-root-of-trust-secure-boot-explained) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1781
+      },
+      "usage": {
+        "input_tokens": 826,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:17.218Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware root of trust secure boot measured boot Linux blog",
+    "title": "Secure Boot and Hardware Trust: The Foundation of Security (Part 5)",
+    "url": "https://tharunaditya.github.io/blog/2026/02/09/syssec-05-secure-boot/",
+    "snippet": "Feb 9, 2026 · We’ve journeyed from protection rings through buffer overflows, privilege escalation, rootkits, and now hardware trust. Understanding these fundamentals is essential for any security professional.",
+    "collected_at": "2026-10-05T13:27:46.706Z",
+    "weight": 0.5888,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Secure Boot and Hardware Trust: The Foundation of Security (Part 5)' (https://tharunaditya.github.io/blog/2026/02/09/syssec-05-secure-boot/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5888
+      },
+      "usage": {
+        "input_tokens": 813,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:19.320Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware root of trust secure boot measured boot Linux blog",
+    "title": "Firefox",
+    "url": "https://handwiki.org/wiki/Software:Firefox",
+    "snippet": "Mozilla Firefox or simply Firefox is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko rendering engine to display web pages, which implements current and anticipated web standards",
+    "collected_at": "2026-10-05T13:27:46.706Z",
+    "weight": 0.0721,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Firefox' (https://handwiki.org/wiki/Software:Firefox) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0721
+      },
+      "usage": {
+        "input_tokens": 813,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:19.320Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware root of trust secure boot measured boot Linux blog",
+    "title": "Besser Ace Hardware in Little Rock | Hardware Store in Little Rock, AR ...",
+    "url": "https://www.acehardware.com/store-details/15476?msockid=0eb423944941651e3c8d347d486a6400",
+    "snippet": "Shop at Besser Ace Hardware at 1015 Main St, Little Rock, AR, 72202 for all your grill, hardware, home improvement, lawn and …",
+    "collected_at": "2026-10-05T13:27:46.706Z",
+    "weight": 0.026,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Besser Ace Hardware in Little Rock | Hardware Store in Little Rock, AR ...' (https://www.acehardware.com/store-details/15476?msockid=0eb423944941651e3c8d347d486a6400) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.026
+      },
+      "usage": {
+        "input_tokens": 813,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:19.320Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware root of trust secure boot measured boot Linux blog",
+    "title": "Brave New Trusted Boot World",
+    "url": "http://0pointer.net/blog/brave-new-trusted-boot-world.html",
+    "snippet": "leaves the signing hardware) and does not require frequent roll-over. Proposed Construction Central to the proposed design is the concept of a Unified Kernel Image (UKI) . These U",
+    "collected_at": "2026-10-05T13:27:46.706Z",
+    "weight": 0.7552,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Brave New Trusted Boot World' (http://0pointer.net/blog/brave-new-trusted-boot-world.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7552
+      },
+      "usage": {
+        "input_tokens": 813,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:19.320Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "confidential computing immutable nodes attestation SEV-SNP TDX",
+    "title": "Confidential Computing: Intel TDX, AMD SEV, and the",
+    "url": "https://stealthcloud.ai/cloud-paradigms/confidential-computing-deep-dive/",
+    "snippet": "May 18, 2026 · A technical deep dive into confidential computing hardware, covering Intel TDX, AMD SEV-SNP, ARM CCA, attestation protocols, and the Confidential Computing Consortium's work to standardize hardware-enforced data protection.",
+    "collected_at": "2026-10-05T13:27:50.342Z",
+    "weight": 0.3667,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Confidential Computing: Intel TDX, AMD SEV, and the' (https://stealthcloud.ai/cloud-paradigms/confidential-computing-deep-dive/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3667
+      },
+      "usage": {
+        "input_tokens": 813,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:19.320Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "confidential computing immutable nodes attestation SEV-SNP TDX",
+    "title": "Confidential VMs Explained: An Empirical Analysis of AMD SEV-SNP and ...",
+    "url": "https://dl.acm.org/doi/10.1145/3726854.3727280",
+    "snippet": "This work presents a detailed empirical analysis of two leading CVM technologies: AMD Secure Encrypted Virtualization--Secure Nested Paging (SEV-SNP) and Intel Trust Domain Extensions (TDX). We review their microarchitectural components and conduct a thorough performance evaluation across various aspects, including memory management, computational and I/O performance, and attestation ...",
+    "collected_at": "2026-10-05T13:27:50.342Z",
+    "weight": 0.9003,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Confidential VMs Explained: An Empirical Analysis of AMD SEV-SNP and ...' (https://dl.acm.org/doi/10.1145/3726854.3727280) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9003
+      },
+      "usage": {
+        "input_tokens": 829,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:21.667Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "confidential computing immutable nodes attestation SEV-SNP TDX",
+    "title": "Verify SEV-SNP and TDX Hosts Before Installing Confidential Containers",
+    "url": "https://oneuptime.com/blog/post/2026-09-12-verify-sev-snp-tdx-host-prerequisites/view",
+    "snippet": "Sep 12, 2026 · Check firmware, host kernel support, confidential VM launch, and attestation prerequisites before deploying CoCo onto AMD SEV-SNP or Intel TDX nodes.",
+    "collected_at": "2026-10-05T13:27:50.342Z",
+    "weight": 0.1461,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Verify SEV-SNP and TDX Hosts Before Installing Confidential Containers' (https://oneuptime.com/blog/post/2026-09-12-verify-sev-snp-tdx-host-prerequisites/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1461
+      },
+      "usage": {
+        "input_tokens": 829,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:21.667Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "confidential computing immutable nodes attestation SEV-SNP TDX",
+    "title": "Confidential Computing Explained: Intel TDX vs AMD SEV-SNP 2026",
+    "url": "https://www.servnetuk.com/learn/confidential-computing-explained",
+    "snippet": "Confidential computing explained for UK buyers: how Intel TDX and AMD SEV-SNP encrypt data in use, real overhead numbers, GDPR fit, and cost trade-offs.",
+    "collected_at": "2026-10-05T13:27:50.342Z",
+    "weight": 0.1202,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Confidential Computing Explained: Intel TDX vs AMD SEV-SNP 2026' (https://www.servnetuk.com/learn/confidential-computing-explained) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1202
+      },
+      "usage": {
+        "input_tokens": 829,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:21.667Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "confidential computing immutable nodes attestation SEV-SNP TDX",
+    "title": "CONFIDENTIAL Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/confidential",
+    "snippet": "The meaning of CONFIDENTIAL is intended for or restricted to the use of a particular person, group, or class : private, secret. How …",
+    "collected_at": "2026-10-05T13:27:50.342Z",
+    "weight": 0.0781,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'CONFIDENTIAL Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/confidential) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0781
+      },
+      "usage": {
+        "input_tokens": 829,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:21.667Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "confidential computing immutable nodes attestation SEV-SNP TDX",
+    "title": "Confidential Containers on Kubernetes: AMD SEV-SNP, Intel TDX, and the ...",
+    "url": "https://www.systemshardening.com/articles/kubernetes/confidential-containers/",
+    "snippet": "Standard runc containers run unprotected even when SEV-SNP / TDX is available. Without an attestation gate, a workload could be deployed onto a misconfigured node where confidential mode is silently disabled. Image trust is decoupled from runtime trust; an attacker who can replace the image bytes between attestation and execution wins.",
+    "collected_at": "2026-10-05T13:27:50.342Z",
+    "weight": 0.3697,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Confidential Containers on Kubernetes: AMD SEV-SNP, Intel TDX, and the ...' (https://www.systemshardening.com/articles/kubernetes/confidential-containers/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3697
+      },
+      "usage": {
+        "input_tokens": 829,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:21.667Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "YubiKey platform identity root operating system boot signing",
+    "title": "FIDO2-first immutable OS — HSM/U2F as the root of trust",
+    "url": "https://github.com/yubi-OS/yubiOS",
+    "snippet": "A YubiKey provides the signing, unlock, SSH, PAM, and application-2FA boundary, while TPM/fTPM measurement and firmware state remain separate platform-integrity signals where they are useful.",
+    "collected_at": "2026-10-05T13:28:04.002Z",
+    "weight": 0.5204,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'FIDO2-first immutable OS — HSM/U2F as the root of trust' (https://github.com/yubi-OS/yubiOS) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5204
+      },
+      "usage": {
+        "input_tokens": 786,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:23.696Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "YubiKey platform identity root operating system boot signing",
+    "title": "GitHub - sandrokeil/yubikey-full-disk-encryption-secure-boot-uefi ...",
+    "url": "https://github.com/sandrokeil/yubikey-full-disk-encryption-secure-boot-uefi",
+    "snippet": "This repository contains a step-by-step tutorial to create a full disk encryption setup with two factor authentication (2FA) via YubiKey. It contains: YubiKey encrypted root (/) and home (/home) folder on separated partitions Encrypted /boot partition UEFI Secure boot (self signed boot loader) YubiKey authentication for user login Currently ...",
+    "collected_at": "2026-10-05T13:28:04.002Z",
+    "weight": 0.6797,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - sandrokeil/yubikey-full-disk-encryption-secure-boot-uefi ...' (https://github.com/sandrokeil/yubikey-full-disk-encryption-secure-boot-uefi) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6797
+      },
+      "usage": {
+        "input_tokens": 786,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:23.696Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "YubiKey platform identity root operating system boot signing",
+    "title": "YubiKey 5 | System Transparency",
+    "url": "https://docs.system-transparency.org/st-1.3.0/docs/how-to/secure-boot/sign-efi-applications/yubikey/",
+    "snippet": "Sign EFI applications with YubiKey 5 # Preliminaries # Generate Secure Boot keys on a YubiKey 5.",
+    "collected_at": "2026-10-05T13:28:04.002Z",
+    "weight": 0.8127,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'YubiKey 5 | System Transparency' (https://docs.system-transparency.org/st-1.3.0/docs/how-to/secure-boot/sign-efi-applications/yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8127
+      },
+      "usage": {
+        "input_tokens": 786,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:23.696Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "YubiKey platform identity root operating system boot signing",
+    "title": "YubiKey Personalization Tool | Yubico",
+    "url": "https://www.yubico.com/support/download/yubikey-personalization-tools/",
+    "snippet": "The YubiKey Personalization Tool provides the ability to perform batch programming, check firmware, and custom configure your YubiKey. Learn more today.",
+    "collected_at": "2026-10-05T13:28:04.002Z",
+    "weight": 0.8005,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'YubiKey Personalization Tool | Yubico' (https://www.yubico.com/support/download/yubikey-personalization-tools/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8005
+      },
+      "usage": {
+        "input_tokens": 786,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:23.696Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "YubiKey platform identity root operating system boot signing",
+    "title": "Yubico | YubiKey Strong Two Factor Authentication",
+    "url": "https://www.yubico.com/",
+    "snippet": "Get the YubiKey, the #1 security key, offering strong two factor authentication from industry leader Yubico.",
+    "collected_at": "2026-10-05T13:28:04.002Z",
+    "weight": 0.5348,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Yubico | YubiKey Strong Two Factor Authentication' (https://www.yubico.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5348
+      },
+      "usage": {
+        "input_tokens": 786,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:23.696Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "YubiKey platform identity root operating system boot signing",
+    "title": "How To Set Up Yubikey For DoD Websites And... - YouTube",
+    "url": "https://www.youtube.com/watch?v=gg3TiCifk2U",
+    "snippet": "Set Up Yubikey - Yubikey is a family of hardware-based security devices that provide a highly secure and convenient way for users to authenticate and secure their digital identities.",
+    "collected_at": "2026-10-05T13:28:04.002Z",
+    "weight": 0.2133,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How To Set Up Yubikey For DoD Websites And... - YouTube' (https://www.youtube.com/watch?v=gg3TiCifk2U) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2133
+      },
+      "usage": {
+        "input_tokens": 874,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:25.646Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "FIDO2 replace TPM2 platform identity owner-held key",
+    "title": "Securing FDO Credentials in the TPM - FIDO Alliance",
+    "url": "https://fidoalliance.org/specs/FDO/securing-fdo-in-tpm-v1.0-rd-20231010/securing-fdo-in-tpm-v1.0-rd-20231010.html",
+    "snippet": "The owner's server attests to the device using the Ownership Voucher. The device attestations use public key signatures that can be computed in a TPM, based on keys stored in the TPM. Once the device/server attestation is complete, the FDO device and server set up an encrypted tunnel, over which additional \"FSIM\" protocols (aka.",
+    "collected_at": "2026-10-05T13:28:13.806Z",
+    "weight": 0.7485,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Securing FDO Credentials in the TPM - FIDO Alliance' (https://fidoalliance.org/specs/FDO/securing-fdo-in-tpm-v1.0-rd-20231010/securing-fdo-in-tpm-v1.0-rd-20231010.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7485
+      },
+      "usage": {
+        "input_tokens": 874,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:25.646Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "FIDO2 replace TPM2 platform identity owner-held key",
+    "title": "FIDO2 Hardware Security Key Setup: 12 Steps [2026]",
+    "url": "https://tech-insider.org/fido2-hardware-security-key-setup-2026/",
+    "snippet": "Sep 5, 2026 · Set up FIDO2 hardware security keys in 12 steps and close the Pass-the-Passkey and CVE-2026-34348 gap in synced passkeys.",
+    "collected_at": "2026-10-05T13:28:13.806Z",
+    "weight": 0.0962,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'FIDO2 Hardware Security Key Setup: 12 Steps [2026]' (https://tech-insider.org/fido2-hardware-security-key-setup-2026/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0962
+      },
+      "usage": {
+        "input_tokens": 874,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:25.646Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "FIDO2 replace TPM2 platform identity owner-held key",
+    "title": "GitHub - psanford/tpm-fido: A WebAuthn/U2F token protected by a TPM (Go ...",
+    "url": "https://github.com/psanford/tpm-fido",
+    "snippet": "Implementation details tpm-fido uses the TPM 2.0 API. The overall design is as follows: On registration tpm-fido generates a new P256 primary key under the Owner hierarchy on the TPM. To ensure that the key is unique per site and registration, tpm-fido generates a random 20 byte seed for each registration.",
+    "collected_at": "2026-10-05T13:28:13.806Z",
+    "weight": 0.6718,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - psanford/tpm-fido: A WebAuthn/U2F token protected by a TPM (Go ...' (https://github.com/psanford/tpm-fido) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6718
+      },
+      "usage": {
+        "input_tokens": 874,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:25.646Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "FIDO2 replace TPM2 platform identity owner-held key",
+    "title": "What Is FIDO2? | Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=362c73f1ef1a68183d9d6418eeb169a0",
+    "snippet": "What is FIDO2? Learn the basics of FIDO2 passwordless authentication, including how it works and helps protect individuals and …",
+    "collected_at": "2026-10-05T13:28:13.806Z",
+    "weight": 0.832,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What Is FIDO2? | Microsoft Security' (https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=362c73f1ef1a68183d9d6418eeb169a0) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.832
+      },
+      "usage": {
+        "input_tokens": 874,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:25.646Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "FIDO2 replace TPM2 platform identity owner-held key",
+    "title": "iPhone Security Keys - iOS 16.3 Changes/Features - YouTube",
+    "url": "https://www.youtube.com/watch?v=QITBqdeYssQ",
+    "snippet": "Hardware Security Key supports comes to iPhone. I show you how to set up two FIDO certified keys, and how to authenticate with hardware security keys. This, and other changes and features for iOS 16.3, and a revisit with a few iOS 16.2 features as well.",
+    "collected_at": "2026-10-05T13:28:13.806Z",
+    "weight": 0.0908,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'iPhone Security Keys - iOS 16.3 Changes/Features - YouTube' (https://www.youtube.com/watch?v=QITBqdeYssQ) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0908
+      },
+      "usage": {
+        "input_tokens": 382,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:57.708Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "07",
+    "slug": "yubikey-platform-identity-novelty",
+    "query": "FIDO2 replace TPM2 platform identity owner-held key",
+    "title": "Secure Encrypted Storage Setup with LUKS2, TPM2, FIDO2, and Btrfs",
+    "url": "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+    "snippet": "Aug 20, 2026 · User keys are derived from passphrases, FIDO2 security keys, TPMs or smart cards. The multi-layer approach allows users to change their passphrase without re-encrypting the whole block device. Key slots can contain information to verify user passphrases or other types of keys.",
+    "collected_at": "2026-10-05T13:28:13.806Z",
+    "weight": 0.1929,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Secure Encrypted Storage Setup with LUKS2, TPM2, FIDO2, and Btrfs' (https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1929
+      },
+      "usage": {
+        "input_tokens": 382,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:29:57.709Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware secure boot chain measured boot attestation operating system",
+    "title": "Firmware measured boot and host attestation | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation",
+    "snippet": "Jul 20, 2026 · Learn how Azure uses firmware measured boot and host attestation to help verify host integrity and security before workloads run.",
+    "collected_at": "2026-10-05T13:30:48.219Z",
+    "weight": 0.9248,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Firmware measured boot and host attestation | Microsoft Learn' (https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9248
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware secure boot chain measured boot attestation operating system",
+    "title": "Secure the Windows boot process | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process",
+    "snippet": "The PC's firmware logs the boot process, and Windows can send it to a trusted server that can objectively assess the PC's health. Figure 1 shows the Windows startup process. Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage: Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip.",
+    "collected_at": "2026-10-05T13:30:48.219Z",
+    "weight": 0.9429,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Secure the Windows boot process | Microsoft Learn' (https://learn.microsoft.com/en-us/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9429
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware secure boot chain measured boot attestation operating system",
+    "title": "Device Attestation with TPM & Secure Boot - beefed.ai",
+    "url": "https://beefed.ai/en/device-attestation-tpm-secure-boot",
+    "snippet": "Step-by-step guide to implement hardware-backed attestation using TPM, secure boot, and measured boot to ensure device identity and firmware integrity.",
+    "collected_at": "2026-10-05T13:30:48.219Z",
+    "weight": 0.3403,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Device Attestation with TPM & Secure Boot - beefed.ai' (https://beefed.ai/en/device-attestation-tpm-secure-boot) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3403
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware secure boot chain measured boot attestation operating system",
+    "title": "12 · Attestation & Measured Boot - BootChain — Secure Boot Study (MCU → ...",
+    "url": "https://sprchuoi.github.io/securebootloader/12-attestation-measured-boot/",
+    "snippet": "Measured boot Instead of (or in addition to) blocking unauthorized code, each stage records a hash (\"measurement\") of the next stage into a tamper-evident, append-only log/register before executing it — even if execution isn't blocked on failure (useful for auditing / TEE attestation more than strict secure boot).",
+    "collected_at": "2026-10-05T13:30:48.219Z",
+    "weight": 0.4118,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '12 · Attestation & Measured Boot - BootChain — Secure Boot Study (MCU → ...' (https://sprchuoi.github.io/securebootloader/12-attestation-measured-boot/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4118
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "hardware secure boot chain measured boot attestation operating system",
+    "title": "Besser Ace Hardware in Little Rock | Hardware Store in Little Rock, AR ...",
+    "url": "https://www.acehardware.com/store-details/15476?msockid=2c681471abac683218d20398aafd6979",
+    "snippet": "Shop at Besser Ace Hardware at 1015 Main St, Little Rock, AR, 72202 for all your grill, hardware, home improvement, lawn and …",
+    "collected_at": "2026-10-05T13:30:48.219Z",
+    "weight": 0.0341,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Besser Ace Hardware in Little Rock | Hardware Store in Little Rock, AR ...' (https://www.acehardware.com/store-details/15476?msockid=2c681471abac683218d20398aafd6979) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0341
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "Trusted Computing Group root of trust Linux platform firmware TPM",
+    "title": "Welcome To Trusted Computing Group | Trusted Computing Group",
+    "url": "https://trustedcomputinggroup.org/",
+    "snippet": "Welcome To Trusted Computing Group The Trusted Computing Group (TCG) is a not-for-profit organization formed to develop, define and promote open, vendor-neutral, global industry specifications and standards, supportive of a hardware-based root of trust, for interoperable trusted computing platforms.TCG's core technologies include specifications and standards for the Trusted Platform Module ...",
+    "collected_at": "2026-10-05T13:30:57.955Z",
+    "weight": 0.8268,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Welcome To Trusted Computing Group | Trusted Computing Group' (https://trustedcomputinggroup.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8268
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "Trusted Computing Group root of trust Linux platform firmware TPM",
+    "title": "TPM 2.0 Library - Trusted Computing Group",
+    "url": "https://trustedcomputinggroup.org/resource/tpm-library-specification/",
+    "snippet": "Trusted Platform Module Library Specification, Family “2.0”, Level 00, Revision 01.83 – March 2024 1. Part 1: Architecture 2. Part 2: Structures 3. Part 3: Commands 4. Part 3: Commands – Code 5. Part 4: Supporting Routines 6. Part 4: Supporting Routines – Code JTC 1, a joint committee of the International Organization for Standardization, or ISO, a...",
+    "collected_at": "2026-10-05T13:30:57.955Z",
+    "weight": 0.8919,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TPM 2.0 Library - Trusted Computing Group' (https://trustedcomputinggroup.org/resource/tpm-library-specification/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8919
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "Trusted Computing Group root of trust Linux platform firmware TPM",
+    "title": "Trusted Platform Module documentation — The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/security/tpm/index.html",
+    "snippet": "Trusted Platform Module documentation ¶ TPM Event Log Introduction UEFI event log References TPM Security Introduction Snooping and Alteration Attacks against the bus Measurement (PCR) Integrity Secrets Guarding Establishing Initial Trust with the TPM Stacking Trust Session Properties Protection Types Null Primary Key Certification in Userspace",
+    "collected_at": "2026-10-05T13:30:57.955Z",
+    "weight": 0.9263,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Platform Module documentation — The Linux Kernel documentation' (https://docs.kernel.org/security/tpm/index.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9263
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "Trusted Computing Group root of trust Linux platform firmware TPM",
+    "title": "TPM Archives - Schneier on Security",
+    "url": "https://www.schneier.com/tag/tpm/",
+    "snippet": "Abstract: Trusted Platform Module (TPM) serves as a hardware-based root of trust that protects cryptographic keys from privileged system and physical adv…",
+    "collected_at": "2026-10-05T13:30:57.955Z",
+    "weight": 0.7497,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TPM Archives - Schneier on Security' (https://www.schneier.com/tag/tpm/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7497
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "Trusted Computing Group root of trust Linux platform firmware TPM",
+    "title": "Trusted Computing",
+    "url": "https://handwiki.org/wiki/Trusted_Computing",
+    "snippet": "Trusted Computing (TC) is a technology developed and promoted by the Trusted Computing Group. The term is taken from the field of trusted systems and has a specialized meaning that is distinct from the field of Confidential Computing",
+    "collected_at": "2026-10-05T13:30:57.955Z",
+    "weight": 0.1163,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Computing' (https://handwiki.org/wiki/Trusted_Computing) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1163
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  },
+  {
+    "nn": "06",
+    "slug": "hardware-root-of-trust-formal",
+    "query": "Trusted Computing Group root of trust Linux platform firmware TPM",
+    "title": "Trusted Health — Get matched to flexible jobs",
+    "url": "https://www.trustedhealth.com/",
+    "snippet": "3 days ago · You work at the facility, but Trusted is your employer. We handle paperwork, benefits, and payroll, and support you the …",
+    "collected_at": "2026-10-05T13:30:57.955Z",
+    "weight": 0.0266,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Health — Get matched to flexible jobs' (https://www.trustedhealth.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0266
+      },
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T13:31:00.488Z"
+    },
+    "redo_of": null
+  }
+]

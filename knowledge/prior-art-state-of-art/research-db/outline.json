@@ -1,0 +1,190 @@
+{
+  "topic": "a prior-art convergence scan for an immutable-OS project: bootc composefs backends, RHEL sealed container images, and LUKS2 hardware unlock upstream state, establishing what the state of the art already covers",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "bootc-composefs-backend",
+      "scope": "Upstream bootc composefs backend: how sealed images are produced (composefs digest embedded in the signed UKI cmdline), experimental-to-stabilization status, and fsverity-vs-dm-verity as the sealing primitive.",
+      "seed_queries": [
+        "bootc composefs backend sealed images experimental",
+        "bootc signed UKI composefs digest kernel cmdline secure boot"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "rhel-sealed-images",
+      "scope": "Red Hat sealed images (RHEL 10.x tech preview): end-to-end integrity for image-mode RHEL via composefs + fsverity + signed UKI, vendor-managed keys, and why it is the closest enterprise cousin.",
+      "seed_queries": [
+        "Red Hat RHEL sealed images composefs fsverity UKI integrity",
+        "RHEL image mode sealed UKI tech preview 2026"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "luks2-hardware-unlock",
+      "scope": "LUKS2 hardware unlock upstream state: systemd-cryptenroll (systemd 248+) enrolling FIDO2 / TPM2 / PKCS#11 tokens, the FIDO2 hmac-secret extension, and distro-level support (NixOS, Fedora).",
+      "seed_queries": [
+        "systemd-cryptenroll FIDO2 LUKS2 unlock hmac-secret",
+        "LUKS2 hardware token unlock systemd 248 TPM2 PKCS11"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "immutable-os-competitors",
+      "scope": "Competing immutable-OS stacks that ship a sealed/trusted boot story: secureblue-sealed and Kairos trusted boot, and how their primitive stacks compare (signed UKI, TPM2 vs YubiKey, composefs).",
+      "seed_queries": [
+        "secureblue sealed UKI immutable Linux",
+        "Kairos trusted boot UKI TPM immutable Linux"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "hardware-root-of-trust-formal",
+      "scope": "Formal and industrial treatments of hardware root of trust for Linux systems: vendor secure-boot stories, academic surveys, and the confidential-computing (SEV-SNP, TDX) boundary where design spaces diverge.",
+      "seed_queries": [
+        "hardware root of trust secure boot measured boot Linux blog",
+        "confidential computing immutable nodes attestation SEV-SNP TDX"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "yubikey-platform-identity-novelty",
+      "scope": "The owner-held YubiKey as platform identity root: why no public project stacks it (TPM2 is the default everywhere, FIDO2 hmac-secret only landed in systemd 248 in 2021), and the resulting novelty claim.",
+      "seed_queries": [
+        "YubiKey platform identity root operating system boot signing",
+        "FIDO2 replace TPM2 platform identity owner-held key"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0435,
+          "1": 0.1503,
+          "2": 0.8062
+        },
+        "confidence": 0.5117
+      },
+      "t02": {
+        "type": "score",
+        "score": 2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0138,
+          "1": 0.0729,
+          "2": 0.9133
+        },
+        "confidence": 0.7594
+      },
+      "t03": {
+        "type": "score",
+        "score": 2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0306,
+          "1": 0.2196,
+          "2": 0.7498
+        },
+        "confidence": 0.417
+      },
+      "t04": {
+        "type": "score",
+        "score": 1,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2731,
+          "1": 0.5628,
+          "2": 0.1641
+        },
+        "confidence": 0.1274
+      },
+      "t05": {
+        "type": "score",
+        "score": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.6148,
+          "1": 0.2955,
+          "2": 0.0897
+        },
+        "confidence": 0.21
+      },
+      "t06": {
+        "type": "score",
+        "score": 1,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3882,
+          "1": 0.5166,
+          "2": 0.0952
+        },
+        "confidence": 0.1399
+      },
+      "t07": {
+        "type": "score",
+        "score": 1,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2508,
+          "1": 0.4466,
+          "2": 0.3026
+        },
+        "confidence": 0.0309
+      }
+    },
+    "usage": {
+      "input_tokens": 1182,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "05"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "06",
+      "07"
+    ]
+  }
+}

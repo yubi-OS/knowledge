@@ -1,0 +1,32 @@
+{
+  "nn": "07",
+  "slug": "yubikey-platform-identity-novelty",
+  "scope": "The owner-held YubiKey as platform identity root: why no public project stacks it (TPM2 is the default everywhere, FIDO2 hmac-secret only landed in systemd 248 in 2021), and the resulting novelty claim.",
+  "queries_attempted": [
+    {
+      "query": "YubiKey platform identity root operating system boot signing",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "FIDO2 replace TPM2 platform identity owner-held key",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/yubi-OS/yubiOS",
+    "https://github.com/sandrokeil/yubikey-full-disk-encryption-secure-boot-uefi",
+    "https://docs.system-transparency.org/st-1.3.0/docs/how-to/secure-boot/sign-efi-applications/yubikey/",
+    "https://www.yubico.com/support/download/yubikey-personalization-tools/",
+    "https://www.yubico.com/",
+    "https://fidoalliance.org/specs/FDO/securing-fdo-in-tpm-v1.0-rd-20231010/securing-fdo-in-tpm-v1.0-rd-20231010.html",
+    "https://github.com/psanford/tpm-fido",
+    "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=362c73f1ef1a68183d9d6418eeb169a0"
+  ],
+  "outcome": "authored"
+}
