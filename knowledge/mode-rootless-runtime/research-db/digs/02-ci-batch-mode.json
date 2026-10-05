@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "ci-batch-mode",
+  "scope": "Unattended batch execution on ephemeral CI runners: a runner user whose rootless store is not visible to tools like bcvk, PATH appended not replaced, NO_COLOR and --quiet for non-TTY output, idempotency across runner restarts.",
+  "queries_attempted": [
+    {
+      "query": "GitHub Actions rootless podman runner user XDG_RUNTIME_DIR",
+      "attempt": 1,
+      "raw_results": 62,
+      "kept": 6
+    },
+    {
+      "query": "CI non-interactive shell NO_COLOR quiet mode hangs on prompt",
+      "attempt": 1,
+      "raw_results": 94,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.linkedin.com/pulse/how-run-rootless-podman-service-github-actions-%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BC%D0%B8%D1%88%D0%B0%D1%80%D0%BE%D0%B2",
+    "https://oneuptime.com/blog/post/2026-03-18-configure-rootless-podman-ci-environments/view",
+    "https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md",
+    "https://github.com/podman-container-tools/podman/issues/13338",
+    "https://github.com/podman-container-tools/podman/discussions/21016",
+    "https://www.golinuxcloud.com/rootless-podman/",
+    "https://www.oscli.dev/docs/non-interactive-and-ci",
+    "https://github.com/vitejs/vite/issues/1673",
+    "https://github.com/openai/codex/issues/1340",
+    "https://learn.chatgpt.com/docs/non-interactive-mode",
+    "https://clig.dev/",
+    "https://unix.stackexchange.com/questions/277130/bash-c-and-noninteractive-shell"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "daemon-mode-systemd",
+  "scope": "Long-lived rootless daemons under systemd: podman.socket as a user unit, DynamicUser where possible, ExecSearchPath for PATH resolution, NoNewPrivileges=yes, journald instead of a TTY, Restart=on-failure semantics.",
+  "queries_attempted": [
+    {
+      "query": "systemd user socket podman.socket rootless podman",
+      "attempt": 1,
+      "raw_results": 57,
+      "kept": 6
+    },
+    {
+      "query": "systemd DynamicUser ExecSearchPath NoNewPrivileges service hardening",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://oneuptime.com/blog/post/2026-03-18-enable-podman-socket-rootless-users/view",
+    "https://www.redhat.com/en/blog/painless-services-implementing-serverless-rootless-podman-and-systemd",
+    "https://www.linkedin.com/pulse/how-run-rootless-podman-service-github-actions-%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%BC%D0%B8%D1%88%D0%B0%D1%80%D0%BE%D0%B2",
+    "https://unix.stackexchange.com/questions/714167/best-practices-for-running-a-rootless-container-as-a-systemd-service-with-user",
+    "https://github.com/podman-desktop/podman-desktop/issues/10677",
+    "https://github.com/podman-container-tools/podman/blob/main/docs/tutorials/socket_activation.md",
+    "https://mylinux.work/guides/systemd-hardening/",
+    "https://linux-audit.com/systemd/settings/units/nonewprivileges/",
+    "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+    "https://stackharbor.com/en/knowledge-base/systemd-service-hardening/",
+    "https://linuxdork.com/blog/systemd-service-hardening/",
+    "https://systemd.io/"
+  ],
+  "outcome": "authored"
+}
