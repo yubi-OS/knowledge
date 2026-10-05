@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "chromium-rust-toolchain-cipd",
+  "queries_attempted": [
+    {
+      "query": "chromium rust toolchain CIPD package platforms Linux_arm64",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "chromium DEPS rust_toolchain cipd platforms",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/chromium/chromium/blob/main/docs/toolchain_support.md",
+    "https://github.com/jasonrandrews/build-chromium-linux-arm64",
+    "https://chromium.googlesource.com/chromium/src/tools/+/4607797c74146b9287c2837f6567a7f7af08ed01/rust/",
+    "https://www.chromium.org/getting-involved/download-chromium/",
+    "https://github.com/Custom-Chromium/chromium-with-custom-fingerprint/blob/main/DEPS",
+    "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/cipd_and_3pp.md",
+    "https://chromium.googlesource.com/chromium/src/tools/+/4607797c74146b9287c2837f6567a7f7af08ed01/rust/",
+    "https://github.com/chromium/chromium/blob/main/DEPS",
+    "https://chromium.googlesource.com/chromium/src/+/main/tools/rust/",
+    "https://issues.chromium.org/issues/470138209",
+    "https://www.chromium.org/getting-involved/download-chromium/",
+    "https://rust-lang.org/tools/install/"
+  ],
+  "outcome": "authored",
+  "scope": "How Chromium packages its rust toolchain: the rust-toolchain CIPD platform variants (Linux_x64, Mac, Mac_arm64, Win), no Linux_arm64 variant, and cc_bindings_from_rs shipping inside the toolchain tarball."
+}

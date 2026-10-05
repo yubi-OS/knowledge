@@ -1,0 +1,28 @@
+# 02. The distribution gap: nobody ships cc_bindings_from_rs binaries
+
+Scope: the ecosystem-wide absence of prebuilt cc_bindings_from_rs binaries on any architecture, why that is by design, and what adjacent tools do ship instead.
+
+## Zero releases, by design
+
+The single most load-bearing observation is on crubit's own releases page: "There aren't any releases here" (source: https://github.com/google/crubit/releases, w=0.83). This is not an oversight that a maintainer will fix next week; the README explains the deployment posture: "Crubit currently expects deep integration with the build system, and is difficult to deploy to environments dissimilar to Google's monorepo. We do not have our tooling set up to accept external contributions at this time" (source: https://github.com/google/crubit, w=0.87). The Chromium-hosted mirror of the upstream repo carries the same note, adding that external contributions are accepted but may be difficult to integrate for tooling reasons (source: https://chromium.googlesource.com/external/github.com/google/crubit/+/refs/heads/upstream/main/, w=0.68).
+
+The consequence is that the only sanctioned way to obtain the tool is to build it. The official documentation routes every user through a source build: "You can build cc_bindings_from_rs, which allows Rust code to be called from C++, using cargo build --bin cc_bindings_from_rs" (source: https://crubit.rs/index.html, w=0.76), with the detailed cargo instructions at the cargo_build page (source: https://crubit.rs/overview/cargo_build.html, w=0.87) and the C++-side tool documented at the building page (source: https://crubit.rs/cpp/building.html, w=0.76).
+
+## The Chromium-shaped exception
+
+There is exactly one distribution channel for a compiled cc_bindings_from_rs, and it is Chromium's own toolchain package. The Chromium build system installs crubit binaries into the rust toolchain output directory during toolchain packaging; the build script's install loop reads `CRUBIT_BINS = ['cc_bindings_from_rs']` and copies each binary into `RUST_TOOLCHAIN_OUT_DIR` (source: https://chromium.googlesource.com/chromium/src/+/refs/heads/lkgr-android-internal/tools/rust/build_crubit.py, w=0.83). Chromium's docs confirm the packaging outcome: the tool lives inside `//third_party/rust-toolchain` (source: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/rust/cpp_api_from_rust.md, w=0.91). That package, however, is published only for the host platforms Chromium's toolchain builders target, and no Linux_arm64 variant exists (see doc 05). So even the one channel that ships binaries does not cover aarch64 hosts.
+
+## The contrast with cbindgen
+
+The gap is easier to see against a neighboring tool that does ship everywhere. Mozilla's cbindgen generates C/C++11 headers for Rust libraries exposing a public C API (source: https://github.com/mozilla/cbindgen, w=0.60), and it is packaged: Fedora ships `rust-cbindgen` with subpackages for devel variants (source: https://packages.fedoraproject.org/pkgs/rust-cbindgen/, w=0.76), and both Nixpkgs (source: https://nixos.org/nixos/packages.html, w=0.50, weak) and the Debian package index (source: https://packages.debian.org/, w=0.46, weak) are the front doors a user would search for such a package. No equivalent exists for cc_bindings_from_rs: there is no Fedora, Debian, Nixpkgs, Alpine, Gentoo, AUR, or Homebrew package of it. The internal survey behind this corpus checked each of those package indexes and found crubit absent on every architecture (source: internal record, yubiOS refs/ cc-bindings-from-rs-aarch64-2026-09-26, unweighted). This corpus cannot independently re-verify each negative; the checkable public facts are the zero-release page and the build-from-source documentation, and both agree with the internal survey.
+
+## Why the gap persists
+
+Two structural reasons follow from the sources:
+
+1. The toolchain coupling. crubit binaries are only meaningful against a matching rustc: the C++-side tool documents explicit paths for clang and LLVM headers and static libraries that Crubit's cargo build must use (source: https://crubit.rs/cpp/building.html, w=0.76). Shipping a standalone binary would couple it to one rustc build forever, which conflicts with the "deep integration with the build system" posture quoted above (source: https://github.com/google/crubit, w=0.87).
+2. The Chromium toolchain monopoly. The only producer of packaged crubit binaries is Chromium's `tools/rust` pipeline, which builds the tool as part of a toolchain rollout that also builds LLVM for rustc and Clang for bindgen and crubit (source: https://chromium.googlesource.com/chromium/src/tools/rust/, w=0.61). Nobody outside that pipeline has published an artifact.
+
+## What this means for an aarch64 builder
+
+An aarch64 host has no prebuilt `cc_bindings_from_rs` to download from any of: GitHub releases (none exist, source: https://github.com/google/crubit/releases, w=0.83), a Linux distro (no packages, internal survey), or Chromium's CIPD toolchain (no Linux_arm64 variant, see doc 05). The internal survey also found the practical proof point: when a native linux-aarch64 Chromium build downloaded the pinned toolchain, its `bin/cc_bindings_from_rs` was an x86_64 ELF and the build died with an exec format error (source: internal record, yubiOS refs/ cc-bindings-from-rs-aarch64-2026-09-26, unweighted). Building the binary natively on the aarch64 host is therefore not one option among several; it is the only route.

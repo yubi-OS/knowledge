@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "build-crubit-py-arch-detection",
+  "queries_attempted": [
+    {
+      "query": "chromium build_crubit.py CRUBIT_BINS arm64 sysroot",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "chromium issue 351793625 crubit all host platforms",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://chromium.googlesource.com/chromium/src/+/main/docs/linux/chromium_arm.md",
+    "https://chromium.googlesource.com/chromium/src/tools/rust/",
+    "https://github.com/webrtc-uwp/chromium-build/blob/master/linux/sysroot_scripts/install-sysroot.py",
+    "https://github.com/chromium/chromium/blob/main/docs/linux/sysroot.md",
+    "https://www.chromium.org/getting-involved/download-chromium/",
+    "https://chromium.googlesource.com/chromium/src/+/HEAD/tools/rust/build_crubit.py",
+    "https://issues.chromium.org/issues/351793625",
+    "https://issues.chromium.org/issues/351793625/resources",
+    "https://bugs.chromium.org/p/chromium/issues/list",
+    "http://bugs.python.org/issue19554",
+    "https://www.chromium.org/getting-involved/download-chromium/",
+    "https://www.chromium.org/for-testers/faq/"
+  ],
+  "outcome": "authored",
+  "scope": "Chromium tools/rust/build_crubit.py: host-arch auto-detection for the Debian sysroot, the CRUBIT_BINS list at tag 141, and tracking bug 351793625 for building crubit on all host platforms."
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "distribution-gap-no-prebuilt-binaries",
+  "queries_attempted": [
+    {
+      "query": "crubit cc_bindings_from_rs prebuilt binary download release",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "cc_bindings_from_rs package debian nixpkgs fedora",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/google/crubit/tree/main/cc_bindings_from_rs",
+    "https://crubit.rs/cpp/building.html",
+    "https://www.edmunds.com/used-acura-ilx/?msockid=3f02e49b8eb66553201af3728f946444",
+    "https://github.com/Toast552/CrubiT",
+    "https://chromium.googlesource.com/external/github.com/google/crubit/+/refs/heads/upstream/main/",
+    "https://crubit.rs/cpp/",
+    "https://nixos.org/",
+    "https://github.com/mozilla/cbindgen",
+    "https://packages.fedoraproject.org/pkgs/rust-cbindgen/",
+    "https://nixos.org/nixos/packages.html",
+    "https://creativecommons.org/",
+    "https://packages.debian.org/"
+  ],
+  "outcome": "authored",
+  "scope": "The ecosystem-wide absence of prebuilt cc_bindings_from_rs binaries: zero GitHub releases, no CIPD or GCS artifacts, no distro packages on any architecture, forcing source builds."
+}
