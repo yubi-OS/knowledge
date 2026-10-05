@@ -1,0 +1,31 @@
+{
+  "nn": "02",
+  "slug": "digest-resolution-tooling",
+  "scope": "Resolving the new digest with registry tooling (crane, skopeo, docker buildx imagetools inspect) and recording the multi-arch index digest rather than a child.",
+  "queries_attempted": [
+    {
+      "query": "crane digest vs skopeo inspect multi-arch index digest",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "docker buildx imagetools inspect manifest list digest",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/reference/cli/docker/buildx/imagetools/",
+    "https://docs.docker.com/reference/cli/docker/buildx/imagetools/inspect/",
+    "https://github.com/docker/buildx/blob/master/docs/reference/buildx_imagetools_inspect.md",
+    "https://docs.docker.com/reference/cli/docker/buildx/imagetools/inspect",
+    "https://hummingbird-project.io/docs/background/containers/security-labels-and-metadata/",
+    "https://alexandre-vazquez.com/skopeo-crane-regctl-container-image-tools/",
+    "https://eng.d2iq.com/blog/a-tale-of-two-container-image-tools-skopeo-and-crane/"
+  ],
+  "outcome": "authored"
+}

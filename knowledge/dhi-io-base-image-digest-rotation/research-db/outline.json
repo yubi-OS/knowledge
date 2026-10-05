@@ -1,0 +1,223 @@
+{
+  "topic": "base image digest rotation for supply-chain-pinned container builds: how to rotate approved FROM digests in a rego-gated pipeline while keeping the build policy coherent",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "digest-pinning-fundamentals",
+      "scope": "Why FROM lines are pinned by immutable digest instead of mutable tags, and how multi-arch OCI index digests differ from per-arch child digests.",
+      "seed_queries": [
+        "docker FROM digest pinning immutable tag mutable supply chain",
+        "oci image index digest vs platform manifest digest multi-arch"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "digest-resolution-tooling",
+      "scope": "Resolving the new digest with registry tooling (crane, skopeo, docker buildx imagetools inspect) and recording the multi-arch index digest rather than a child.",
+      "seed_queries": [
+        "crane digest vs skopeo inspect multi-arch index digest",
+        "docker buildx imagetools inspect manifest list digest"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "build-policy-coherence",
+      "scope": "Keeping an OPA/Rego Docker Build Policy coherent across a rotation: approved registries, canonical digest-pinned FROM, provenance requirements, and what denies the new pin.",
+      "seed_queries": [
+        "docker buildx build policy rego input image ref canonical digest",
+        "docker build policy rego approved registries FROM digest rule"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "rotation-automation",
+      "scope": "Automating the refresh cadence: Dependabot and Renovate digest-pin updates, updatecli, and scheduled workflows that open the bump PR.",
+      "seed_queries": [
+        "dependabot docker digest pin base image update",
+        "renovate pin docker digests update manager"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "candidate-verification-gate",
+      "scope": "Smoke-gating a candidate digest before landing the pin: cosign signature and attestation verification, SBOM and provenance checks, and a container boot smoke test.",
+      "seed_queries": [
+        "cosign verify container image digest attestation signature",
+        "verify sbom slsa provenance base image before upgrade"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "pin-source-of-truth-drift",
+      "scope": "Single source of truth for approved digests (a PINNED.md-style pin file), keeping the consuming Containerfile in lockstep, and using commit messages as the audit trail.",
+      "seed_queries": [
+        "single source of truth pinned image digests containerfile drift",
+        "central pin file dockerfile digest drift supply chain"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "rollback-immutability",
+      "scope": "Rollback semantics: digests are immutable and rotation is additive, reverting the pin to the old digest, and treating a moved or mutated digest as an incident.",
+      "seed_queries": [
+        "docker registry digest immutability rollback pinned image",
+        "digest mismatch manifest changed registry incident"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "provenance-attestation-continuity",
+      "scope": "Keeping SLSA provenance, Sigstore signatures, and transparency-log coverage continuous across a rotation: verifying the new base image digest carries its attestations.",
+      "seed_queries": [
+        "slsa provenance base image attestation verify new digest",
+        "sigstore rekor container image transparency log attestation"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8153,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0399,
+          "1": 0.1049,
+          "2": 0.8552
+        },
+        "confidence": 0.616
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.5001,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.058,
+          "1": 0.3839,
+          "2": 0.5581
+        },
+        "confidence": 0.1933
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.898,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0193,
+          "1": 0.0634,
+          "2": 0.9173
+        },
+        "confidence": 0.7688
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.6051,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0591,
+          "1": 0.2768,
+          "2": 0.6641
+        },
+        "confidence": 0.2818
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5706,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.063,
+          "1": 0.3034,
+          "2": 0.6336
+        },
+        "confidence": 0.2462
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.6362,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0635,
+          "1": 0.2368,
+          "2": 0.6997
+        },
+        "confidence": 0.3246
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.331,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.096,
+          "1": 0.477,
+          "2": 0.427
+        },
+        "confidence": 0.1286
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.2861,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1191,
+          "1": 0.4757,
+          "2": 0.4052
+        },
+        "confidence": 0.107
+      }
+    },
+    "usage": {
+      "input_tokens": 1356,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

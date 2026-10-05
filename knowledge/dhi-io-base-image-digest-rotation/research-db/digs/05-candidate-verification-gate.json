@@ -1,0 +1,31 @@
+{
+  "nn": "05",
+  "slug": "candidate-verification-gate",
+  "scope": "Smoke-gating a candidate digest before landing the pin: cosign signature and attestation verification, SBOM and provenance checks, and a container boot smoke test.",
+  "queries_attempted": [
+    {
+      "query": "cosign verify container image digest attestation signature",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "verify sbom slsa provenance base image before upgrade",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "https://blog.sigstore.dev/how-to-verify-container-images-with-kyverno-using-kms-cosign-and-workload-identity-1e07d2b85061/",
+    "https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html",
+    "https://docs.docker.com/build/metadata/attestations/sbom/",
+    "https://appropri8.com/blog/2026/01/20/provenance-first-cicd-slsa-sbom/",
+    "https://www.golinuxcloud.com/cosign-sign-verify-container-images/",
+    "https://docs.jasonachkardiab.com/devsecops/supply-chain-sbom-signing/"
+  ],
+  "outcome": "authored"
+}

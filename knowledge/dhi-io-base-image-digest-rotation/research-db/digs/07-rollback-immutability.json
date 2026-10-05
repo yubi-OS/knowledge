@@ -1,0 +1,30 @@
+{
+  "nn": "07",
+  "slug": "rollback-immutability",
+  "scope": "Rollback semantics: digests are immutable and rotation is additive, reverting the pin to the old digest, and treating a moved or mutated digest as an incident.",
+  "queries_attempted": [
+    {
+      "query": "docker registry digest immutability rollback pinned image",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "digest mismatch manifest changed registry incident",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/dhi/explore/security-concepts/immutability/",
+    "https://access.redhat.com/solutions/6300121",
+    "https://access.redhat.com/solutions/6568941",
+    "https://github.com/moby/buildkit/issues/2963",
+    "https://runbook.academy/courses/docker/runbooks/docker-runbook-roll-back-compose-stack/",
+    "https://stackoverflow.com/questions/55407999/docker-pulling-an-image-by-digest-that-internally-uses-a-tag"
+  ],
+  "outcome": "authored"
+}
