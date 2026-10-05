@@ -1,0 +1,248 @@
+{
+  "topic": "Strudel live coding",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "repl-getting-started",
+      "scope": "What Strudel is, the strudel.cc browser REPL, evaluation keybindings, and the getting-started path.",
+      "seed_queries": [
+        "strudel.cc getting started REPL live coding browser",
+        "strudel live coding tutorial evaluate ctrl enter REPL"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "mini-notation-rhythm",
+      "scope": "Mini-Notation syntax for rhythms: sequences, rests, sub-sequences, alternates, elongation, polyrhythms, sample numbers.",
+      "seed_queries": [
+        "strudel mini notation syntax tutorial",
+        "strudel mininotation rhythm syntax documentation"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "sounds-drums-banks",
+      "scope": "The sound catalog: s() sounds, drum samples, sample banks, sample numbers, gain shaping.",
+      "seed_queries": [
+        "strudel s() sound samples banks documentation",
+        "strudel drum samples catalog sample number"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "notes-and-scales",
+      "scope": "note(), n(), scales, scale/chord helpers, note sequencing, elongate and replicate for note patterns.",
+      "seed_queries": [
+        "strudel notes scales n() documentation",
+        "strudel first notes scales tutorial"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "effects-and-signals",
+      "scope": "Audio effects (lpf, vowel, gain, adsr, delay, room, pan, speed) and continuous signals for smooth modulation.",
+      "seed_queries": [
+        "strudel effects lpf vowel delay room pan speed documentation",
+        "strudel signals saw sine smooth modulation tutorial"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "pattern-transformations",
+      "scope": "rev, jux, add, ply, off and other pattern functions; multiple tempos; how transformations compose.",
+      "seed_queries": [
+        "strudel pattern effects rev jux ply off documentation",
+        "strudel pattern transformations multiple tempos tutorial"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "pattern-stacks",
+      "scope": "stack() for layering patterns, building complete tunes, arranging parts into a full piece.",
+      "seed_queries": [
+        "strudel stack function layering patterns tutorial",
+        "strudel stack multiple patterns full tune"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "hardware-motors",
+      "scope": "MQTT-driven motor patterning on hardware (Inventor 2040W) from the motors chapter.",
+      "seed_queries": [
+        "strudel motors MQTT Inventor 2040W",
+        "strudel hardware motor patterning workshop"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "workshop-curriculum",
+      "scope": "The full workshop chain (getting-started through recap), canonical function and syntax tables, and the source repo location (Codeberg vs archived GitHub).",
+      "seed_queries": [
+        "strudel workshop chapters curriculum strudel.cc",
+        "strudel codeberg uzu source repository tidalcycles archived"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.9162,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0228,
+          "1": 0.0382,
+          "2": 0.939
+        },
+        "confidence": 0.8255
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.9444,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0119,
+          "1": 0.0319,
+          "2": 0.9562
+        },
+        "confidence": 0.8734
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.8607,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.028,
+          "1": 0.0834,
+          "2": 0.8886
+        },
+        "confidence": 0.6961
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8625,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0235,
+          "1": 0.0905,
+          "2": 0.886
+        },
+        "confidence": 0.6906
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8698,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0298,
+          "1": 0.0706,
+          "2": 0.8996
+        },
+        "confidence": 0.7227
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.8739,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0267,
+          "1": 0.0727,
+          "2": 0.9006
+        },
+        "confidence": 0.7255
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.8789,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0294,
+          "1": 0.0622,
+          "2": 0.9084
+        },
+        "confidence": 0.7448
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.727,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3513,
+          "1": 0.5703,
+          "2": 0.0784
+        },
+        "confidence": 0.1823
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.6345,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0675,
+          "1": 0.2305,
+          "2": 0.702
+        },
+        "confidence": 0.3258
+      }
+    },
+    "usage": {
+      "input_tokens": 1290,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

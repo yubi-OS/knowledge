@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": {
+      "status": 200,
+      "results": 94,
+      "sample": [
+        "https://strudel.cc/",
+        "https://strudel.cc/learn/getting-started/",
+        "https://codeberg.org/uzu/strudel"
+      ]
+    },
+    "unresponsive_engines": []
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "status": 200,
+      "body": "{\"model\":\"clef\",\"answers\":{\"probe\":{\"type\":\"noul\",\"noul\":0.9647}},\"usage\":{\"input_tokens\":161,\"output_tokens\":0}}"
+    }
+  }
+}
