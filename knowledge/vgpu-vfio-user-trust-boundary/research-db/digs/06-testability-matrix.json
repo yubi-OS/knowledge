@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "testability-matrix",
+  "scope": "What is testable where: hosted GitHub runners (Azure VMs, no nested virt, no IOMMU) versus self-hosted KVM runners versus bare metal for IOMMU passthrough and vendor vGPU.",
+  "queries_attempted": [
+    {
+      "query": "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "vfio pci passthrough requires real IOMMU hardware testing bare metal",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/actions/runner-images/issues/12933",
+    "https://docs.github.com/en/actions/reference/runners/larger-runners",
+    "https://actuated.com/blog/kvm-in-github-actions",
+    "https://github.com/orgs/community/discussions/40345",
+    "https://deniscooper.co.uk/github-actions-self-hosted-runners-azure/",
+    "https://github.com/actions/runner-images/issues/183",
+    "https://proxmox.rdem-systems.com/en/blog/proxmox-hardware-passthrough-gpu-usb-pci/",
+    "https://stackharbor.com/en/knowledge-base/gpu-passthrough-vfio-iommu/",
+    "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+    "https://www.reddit.com/r/SexWorkers/comments/hwdhzd/xhamster_ad_revenue_worth_it/",
+    "https://cyberpulstech.com/proxmox-gpu-passthrough-iommu-pcie-bifurcation-guide-2026/",
+    "https://github.com/ipaqmaster/vfio"
+  ],
+  "outcome": "authored"
+}

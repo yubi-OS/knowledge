@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "adr-rules-policy",
+  "scope": "Candidate ADR-024 policy rules: virtio-gpu only by default, passthrough as an opt-in documented deviation gated on IOMMU isolation, vfio-user socket 0600 VMM-user-owned, and the GPU-independent unlock invariant.",
+  "queries_attempted": [
+    {
+      "query": "GPU passthrough IOMMU group isolation requirements before assigning device",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "device assignment policy documented deviation opt-in security baseline",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://laptopjudge.com/vfio-pci-gpu-passthrough/",
+    "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+    "https://pve.proxmox.com/wiki/Pci_passthrough",
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/display/iommu-based-gpu-isolation",
+    "https://stackharbor.com/en/knowledge-base/gpu-passthrough-vfio-iommu/",
+    "https://medium.com/@armestonaidoost/kvm-gpu-passthrough-with-vfio-a-production-focused-guide-de432ca2a12b",
+    "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/configure-baselines",
+    "https://www.reddit.com/r/MSIntune/comments/1b30d9o/best_way_to_handle_deviations_to_baseline_config/",
+    "https://techcommunity.microsoft.com/discussions/microsoft-intune/guidance-on-applying-security-baselines/4365571",
+    "https://www.securityscriptographer.com/2026/06/deploying-security-baselines-in.html",
+    "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/ref-windows-mdm-settings",
+    "https://www.merriam-webster.com/dictionary/device"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "virtio-gpu-default",
+  "scope": "virtio-gpu as the default yubiOS image device model: paravirtualized emulation owned by the hypervisor, no new trust peer, and why the default image ships nothing else.",
+  "queries_attempted": [
+    {
+      "query": "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+      "attempt": 1,
+      "raw_results": 58,
+      "kept": 6
+    },
+    {
+      "query": "virtio-gpu-pci device emulation guest kernel DRM driver",
+      "attempt": 1,
+      "raw_results": 63,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.qemu.org/docs/master/system/devices/virtio/virtio-gpu.html",
+    "https://www.qemu.org/docs/master/system/devices/virtio/index.html",
+    "https://wiki.archlinux.org/title/QEMU/Guest_graphics_acceleration",
+    "https://qemu.eu/doc/10.1/system/devices/virtio-gpu.html",
+    "https://gist.github.com/peppergrayxyz/fdc9042760273d137dddd3e97034385f",
+    "https://github.com/litecreator/virtio-gpu-macos",
+    "https://www.qemu.org/docs/master/system/devices/virtio/virtio-gpu.html",
+    "https://qemu.readthedocs.io/en/v8.2.10/system/devices/virtio-gpu.html",
+    "https://wiki.archlinux.org/title/QEMU/Guest_graphics_acceleration",
+    "https://qemu.eu/doc/10.1/system/devices/virtio-gpu.html",
+    "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/virtio/virtgpu_drv.c",
+    "https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers"
+  ],
+  "outcome": "authored"
+}

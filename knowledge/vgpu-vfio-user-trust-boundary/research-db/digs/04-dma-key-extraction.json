@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "dma-key-extraction",
+  "scope": "DMA-capable peripherals as a memory-disclosure primitive against unsealed secrets: what an untranslated device can read from kernel memory and why the IOMMU is the enforcing boundary.",
+  "queries_attempted": [
+    {
+      "query": "GPU DMA attack read kernel memory without IOMMU translation",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "DMA attacks extract disk encryption keys from RAM vulnerable peripherals",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/romainbreault1000-alt/dma-threat-model-lab",
+    "https://vlsitrainers.com/pcie-dma-and-iommu/",
+    "https://learn.microsoft.com/en-us/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt",
+    "https://splineuser.github.io/posts/iommu-bypass/",
+    "https://cyberinsider.com/new-gpubreach-attack-achieves-root-access-via-memory-corruption/",
+    "https://en.wikipedia.org/wiki/Direct_memory_access",
+    "https://www.kroll.com/en/publications/cyber/what-is-dma-attack-understanding-mitigating-threat",
+    "https://en.wikipedia.org/wiki/DMA_attack",
+    "https://x-phy.com/glossary/dma-understanding-the-risks-and-defenses/",
+    "https://thunderclap.io/physical-dma-based-security-attacks-on-windows-11-evolution-risks-and-modern-defenses/",
+    "https://emb3d.mitre.org/threats/TID-107.html",
+    "https://www.pentestpartners.com/security-blog/direct-memory-access-dma-attacks-risks-techniques-and-mitigations-in-hardware-hacking/"
+  ],
+  "outcome": "authored"
+}

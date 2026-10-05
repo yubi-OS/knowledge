@@ -1,0 +1,2702 @@
+[
+  {
+    "query": "Linux kernel VFIO iommufd device cdev VFIO_DEVICE_BIND_IOMMUFD documentation",
+    "title": "VFIO - \u201cVirtual Function I/O\u201d \u2014 The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/driver-api/vfio.html",
+    "snippet": "The cdev only works with IOMMUFD. Both VFIO drivers and applications must adapt to the new cdev security model which requires using VFIO_DEVICE_BIND_IOMMUFD to claim DMA ownership before starting to actually use the device.\"Once BIND succeeds then a VFIO device can be fully accessed by the user. VFIO device cdev doesn\u2019t rely on VFIO group/container/iommu drivers. Hence those modules can be fully c",
+    "collected_at": "2026-10-05",
+    "weight": 0.9429,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9429
+      },
+      "usage": {
+        "input_tokens": 773,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "Linux kernel VFIO iommufd device cdev VFIO_DEVICE_BIND_IOMMUFD documentation",
+    "title": "IOMMUFD BACKEND usage with VFIO \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/devel/vfio-iommufd.html",
+    "snippet": "VFIO AddressSpace/Memory +-------+ ... | iommufd | | vfio legacy | | container | | container | +-------+------+ +--------+----------+ | | | /dev/iommu | /dev/vfio/vfio | /dev/vfio/devices/vfioX | /dev/vfio/$group_id Userspace | | ============+============================+=========================== Kernel | device fd | +---------------+ | group/container fd | (BIND_IOMMUFD | ...\"VFIO AddressSpace/",
+    "collected_at": "2026-10-05",
+    "weight": 0.9521,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9521
+      },
+      "usage": {
+        "input_tokens": 773,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "Linux kernel VFIO iommufd device cdev VFIO_DEVICE_BIND_IOMMUFD documentation",
+    "title": "IOMMUFD \u2014 The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/next/userspace-api/iommufd.html",
+    "snippet": "The second approach directly extends VFIO to support a new set of device-centric user API based on aforementioned IOMMUFD kernel API. It requires userspace change but better matches the IOMMUFD API semantics and easier to support new iommufd features when comparing it to the first approach.The second approach directly extends VFIO to support a new set of device-centric user API based on aforementi",
+    "collected_at": "2026-10-05",
+    "weight": 0.8912,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8912
+      },
+      "usage": {
+        "input_tokens": 773,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "Linux kernel VFIO iommufd device cdev VFIO_DEVICE_BIND_IOMMUFD documentation",
+    "title": "VFIO Device Passthrough - Linux Kernel Internals",
+    "url": "https://kernel-internals.org/virtualization/vfio/",
+    "snippet": "The device cdev only works with IOMMUFD, not the legacy container: instead of VFIO_GROUP_SET_CONTAINER/VFIO_SET_IOMMU, userspace opens /dev/iommu and claims DMA ownership of the device with VFIO_DEVICE_BIND_IOMMUFD before it can be used.\"Documentation about Linux kernel internals, design decisions, and the journey of contributing\"\"But the kernel's own documentation is explicit that it's a legacy i",
+    "collected_at": "2026-10-05",
+    "weight": 0.3353,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3353
+      },
+      "usage": {
+        "input_tokens": 773,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "Linux kernel VFIO iommufd device cdev VFIO_DEVICE_BIND_IOMMUFD documentation",
+    "title": "VFIO Internals - Linux Kernel Internals",
+    "url": "https://kernel-internals.org/iommu/vfio-internals/",
+    "snippet": "/* include/linux/vfio.h */ struct vfio_device { struct device *dev; const struct vfio_device_ops *ops; struct vfio_group *group; /* IOMMU binding is via iommufd_device in 6.x+ */ /* ... */ }; /* drivers/vfio/vfio.h -- private to the VFIO core, not the public header above */ struct vfio_group { struct device dev; struct cdev cdev; refcount_t drivers; unsigned int container_users; struct iommu_group",
+    "collected_at": "2026-10-05",
+    "weight": 0.296,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.296
+      },
+      "usage": {
+        "input_tokens": 773,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "Linux kernel VFIO iommufd device cdev VFIO_DEVICE_BIND_IOMMUFD documentation",
+    "title": "Add vfio_device cdev for iommufd support - LWN.net",
+    "url": "https://lwn.net/Articles/922356/",
+    "snippet": "February 6, 2023 \u2014 Thanks, Yi Liu Yi Liu (14): vfio: Allocate per device file structure vfio: Refine vfio file kAPIs vfio: Accept vfio device file in the driver facing kAPI kvm/vfio: Rename kvm_vfio_group to prepare for accepting vfio device fd kvm/vfio: Accept vfio device file from userspace vfio: Pass struct vfio_device_file * to vfio_device_open/close() vfio: Block device access via device fd u",
+    "collected_at": "2026-10-05",
+    "weight": 0.8078,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8078
+      },
+      "usage": {
+        "input_tokens": 780,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "vfio legacy container group deprecation iommufd migration kernel docs",
+    "title": "VFIO - \u201cVirtual Function I/O\u201d \u2014 The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/driver-api/vfio.html",
+    "snippet": "It intends to be the portal of ... interface for existing VFIO_TYPE1v2_IOMMU use cases. Eventually the vfio_iommu_type1 driver, as well as the legacy vfio container and group model is intended to be deprecated......\"Both VFIO drivers and applications must adapt to the new cdev security model which requires using VFIO_DEVICE_BIND_IOMMUFD to claim DMA ownership before starting to actually use the de",
+    "collected_at": "2026-10-05",
+    "weight": 0.9598,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9598
+      },
+      "usage": {
+        "input_tokens": 780,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "vfio legacy container group deprecation iommufd migration kernel docs",
+    "title": "IOMMUFD BACKEND usage with VFIO \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/devel/vfio-iommufd.html",
+    "snippet": "While the legacy kernel interface is group-centric, the new iommufd interface is device-centric, relying on device fd and iommufd. To support both interfaces in the QEMU VFIO device, introduce a base container to abstract the common part of VFIO legacy and iommufd container.\"VFIO AddressSpace/Memory +-------+ +----------+ +-----+ +-----+ | pci | | platform | | ap | | ccw | +---+---+ +----+-----+ +",
+    "collected_at": "2026-10-05",
+    "weight": 0.9249,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9249
+      },
+      "usage": {
+        "input_tokens": 780,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "vfio legacy container group deprecation iommufd migration kernel docs",
+    "title": "VFIO Device Passthrough - Linux Kernel Internals",
+    "url": "https://kernel-internals.org/virtualization/vfio/",
+    "snippet": "But the kernel's own documentation is explicit that it's a legacy interface being superseded: \"Eventually the vfio_iommu_type1 driver, as well as the legacy vfio container and group model is intended to be deprecated,\" in favor of a newer device-cdev + IOMMUFD model \u2014 covered after the classic ...\"But the kernel's own documentation is explicit that it's a legacy interface being superseded: \"Eventu",
+    "collected_at": "2026-10-05",
+    "weight": 0.4164,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4164
+      },
+      "usage": {
+        "input_tokens": 780,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "vfio legacy container group deprecation iommufd migration kernel docs",
+    "title": "VFIO device migration \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/devel/migration/vfio.html",
+    "snippet": "The VFIO migration code uses a VM state change handler to change the VFIO device state when the VM state changes from running to not-running, and vice versa. Similarly, a migration state change handler is used to trigger a transition of the VFIO device state when certain changes of the migration state occur.The VFIO migration code uses a VM state change handler to change the VFIO device state when",
+    "collected_at": "2026-10-05",
+    "weight": 0.7227,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7227
+      },
+      "usage": {
+        "input_tokens": 780,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "vfio legacy container group deprecation iommufd migration kernel docs",
+    "title": "AMC Theatres",
+    "url": "https://www.amctheatres.com/movie-theatres/seattle-tacoma/amc-pacific-place-11",
+    "snippet": "We would like to show you a description here but the site won\u2019t allow us.",
+    "collected_at": "2026-10-05",
+    "weight": 0.6192,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6192
+      },
+      "usage": {
+        "input_tokens": 769,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "vfio legacy container group deprecation iommufd migration kernel docs",
+    "title": "IOMMUFD \u2014 The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/userspace-api/iommufd.html",
+    "snippet": "IOMMUFD is the user API to control the IOMMU subsystem as it relates to managing IO page tables from userspace using file descriptors. It intends to be general and consumable by any driver that wants to expose DMA to userspace. These drivers are eventually expected to deprecate any internal IOMMU logic they may already/historically implement (e.g. vfio_iommu_type1.c).\"First is a VFIO compatible wa",
+    "collected_at": "2026-10-05",
+    "weight": 0.8592,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8592
+      },
+      "usage": {
+        "input_tokens": 769,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "01",
+    "slug": "vfio-pci-kernel-iommufd"
+  },
+  {
+    "query": "vfio-user protocol specification qemu AF_UNIX DMA_MAP negotiation",
+    "title": "vfio-user Protocol Specification \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "snippet": "On AF_UNIX sockets, the file descriptor must be passed as SCM_RIGHTS type ancillary data. A command to map over an existing region must be failed by the server with EEXIST set in the error field in the reply. There is no payload in the reply message. This command message is sent by the client ...\"Some source definitions in VFIO are re-used for vfio-user. The main idea is to allow a virtual device ",
+    "collected_at": "2026-10-05",
+    "weight": 0.8788,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8788
+      },
+      "usage": {
+        "input_tokens": 769,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "vfio-user protocol specification qemu AF_UNIX DMA_MAP negotiation",
+    "title": "vfio-user \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "snippet": "QEMU includes a vfio-user client. The vfio-user specification allows for implementing (PCI) devices in userspace outside of QEMU; it is similar to vhost-user in this respect (see vhost-user back ends), but can emulate arbitrary PCI devices, not just virtio. Whereas vfio is handled by the host ...\"Whereas vfio is handled by the host kernel, vfio-user, while similar in implementation, is handled ent",
+    "collected_at": "2026-10-05",
+    "weight": 0.7717,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7717
+      },
+      "usage": {
+        "input_tokens": 769,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "vfio-user protocol specification qemu AF_UNIX DMA_MAP negotiation",
+    "title": "vfio-user \u2014 QEMU documentation",
+    "url": "https://qemu.eu/doc/10.1/system/devices/vfio-user.html",
+    "snippet": "QEMU includes a vfio-userclient. The vfio-userspecification allows for implementing (PCI) devices in userspace outside of QEMU; it is similar to vhost-userin this respect (see vhost-user back ends), but can emulate arbitrary PCI devices, not just virtio. Whereas vfiois handled by the host kernel, vfio-user, while similar in implementation, is handled entirely in userspace. For example, SPDK ...QEM",
+    "collected_at": "2026-10-05",
+    "weight": 0.5573,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5573
+      },
+      "usage": {
+        "input_tokens": 769,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "vfio-user protocol specification qemu AF_UNIX DMA_MAP negotiation",
+    "title": "GitHub - nutanix/libvfio-user: framework for emulating devices in...",
+    "url": "https://github.com/nutanix/libvfio-user",
+    "snippet": "vfio-user is a framework that allows implementing PCI devices in userspace. Clients (such as qemu) talk the vfio-user protocol over a UNIX socket to a server. This library, libvfio-user, provides an API for implementing such servers. VFIO is a kernel facility for providing secure access to PCI devices in userspace (including pass-through to a VM).vfio-user is a framework that allows implementing P",
+    "collected_at": "2026-10-05",
+    "weight": 0.885,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.885
+      },
+      "usage": {
+        "input_tokens": 781,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "vfio-user protocol specification qemu AF_UNIX DMA_MAP negotiation",
+    "title": "DuckDuckGo - Reddit",
+    "url": "https://www.reddit.com/r/duckduckgo/top/",
+    "snippet": "Dec 10, 2010 \u00b7 We like to keep the DuckDuckGo subreddit friendly, suitable for children (13+), and free of political discussion that \u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.0281,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0281
+      },
+      "usage": {
+        "input_tokens": 781,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "vfio-user protocol specification qemu AF_UNIX DMA_MAP negotiation",
+    "title": "vfio-user \u2014 QEMU 10.0.94 documentation",
+    "url": "https://qemu-stsquad.readthedocs.io/en/latest/system/devices/vfio-user.html",
+    "snippet": "Whereas vfio is handled by the host kernel, vfio-user, while similar in implementation, is handled entirely in userspace. For example, SPDK includes a virtual PCI NVMe controller implementation; by setting up a vfio-user UNIX socket between QEMU and SPDK, a VM can send NVMe I/O to the SPDK process.Whereas vfio is handled by the host kernel, vfio-user, while similar in implementation, is handled en",
+    "collected_at": "2026-10-05",
+    "weight": 0.8467,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8467
+      },
+      "usage": {
+        "input_tokens": 781,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "libvfio-user protocol version negotiation region info irq client server",
+    "title": "GitHub - nutanix/libvfio-user: framework for emulating devices in userspace \u00b7 GitHub",
+    "url": "https://github.com/nutanix/libvfio-user",
+    "snippet": "The library abstracts most of the complexity around representing the device. Applications using libvfio-user provide a description of the device (eg. region and IRQ information) and as set of callbacks which are invoked by libvfio-user when ...\"The library abstracts most of the complexity around representing the device. Applications using libvfio-user provide a description of the device (eg. regio",
+    "collected_at": "2026-10-05",
+    "weight": 0.9229,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9229
+      },
+      "usage": {
+        "input_tokens": 781,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "libvfio-user protocol version negotiation region info irq client server",
+    "title": "vfio-user Protocol Specification \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "snippet": "This command message is sent by the client to the server to query for information about device interrupt types. The VFIO IRQ info structure is defined in <linux/vfio.h> (struct vfio_irq_info).\"The client uses VFIO_USER_DEVICE_GET_IRQ_INFO messages to query the server for the device\u2019s interrupt types. The interrupt types are specific to the bus the device is attached to, and the client is expected ",
+    "collected_at": "2026-10-05",
+    "weight": 0.8964,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8964
+      },
+      "usage": {
+        "input_tokens": 781,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "libvfio-user protocol version negotiation region info irq client server",
+    "title": "libvfio-user - qemu.googlesource.com",
+    "url": "https://qemu.googlesource.com/libvfio-user/+/a8242d117118d5191dad69a96e28a21d66fe8b50/README.md",
+    "snippet": "Applications using libvfio-user provide a description of the device (eg. region and IRQ information) and as set of callbacks which are invoked by libvfio-user when those regions are accessed.Applications using libvfio-user provide a description of the device (eg. region and IRQ information) and as set of callbacks which are invoked by libvfio-user when those regions are accessed.",
+    "collected_at": "2026-10-05",
+    "weight": 0.9047,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9047
+      },
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "libvfio-user protocol version negotiation region info irq client server",
+    "title": "Protocol Overview | nutanix/libvfio-user | DeepWiki",
+    "url": "https://deepwiki.com/nutanix/libvfio-user/1.2-protocol-overview",
+    "snippet": "When implementing a vfio-user server using libvfio-user, there are several important considerations: Socket Disconnection Handling: The server must appropriately handle client disconnection, cleaning up resources but potentially preserving device state.When implementing a vfio-user server using libvfio-user, there are several important considerations: Socket Disconnection Handling: The server must",
+    "collected_at": "2026-10-05",
+    "weight": 0.26,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.26
+      },
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "libvfio-user protocol version negotiation region info irq client server",
+    "title": "vfio-user \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "snippet": "For example, SPDK includes a virtual PCI NVMe controller implementation; by setting up a vfio-user UNIX socket between QEMU and SPDK, a VM can send NVMe I/O to the SPDK process. Presuming a suitable vfio-user server has opened a socket at /tmp/vfio-user.sock, a device can be configured with for example: ... See libvfio-user for further information.For example, SPDK includes a virtual PCI NVMe cont",
+    "collected_at": "2026-10-05",
+    "weight": 0.9341,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9341
+      },
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "libvfio-user protocol version negotiation region info irq client server",
+    "title": "Used 2011 Toyota RAV4 - Kelley Blue Book",
+    "url": "https://www.kbb.com/toyota/rav4/2011/?msockid=27dcff583aa6650123a3e8b13bed6471",
+    "snippet": "Get current 2011 RAV4 fair market price, depreciation, trade-in, and resale values from the trusted experts at Kelley Blue Book.",
+    "collected_at": "2026-10-05",
+    "weight": 0.0324,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0324
+      },
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "02",
+    "slug": "vfio-user-protocol"
+  },
+  {
+    "query": "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+    "title": "VirtIO GPU \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/devices/virtio/virtio-gpu.html",
+    "snippet": "This document explains the setup and usage of the virtio-gpu device. The virtio-gpu device provides a GPU and display controller paravirtualized using VirtIO.\"The VGA ones are prefixed with virtio-vga or vhost-user-vga while the non-VGA ones are prefixed with virtio-gpu or vhost-user-gpu. The VGA ones always use the PCI interface, but for the non-VGA ones, the user can further pick between MMIO or",
+    "collected_at": "2026-10-05",
+    "weight": 0.838,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.838
+      },
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+    "title": "VirtIO Devices \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/devices/virtio/index.html",
+    "snippet": "VirtIO Devices VirtIO devices are paravirtualized devices designed to be efficient to emulate and virtualize. Unless you are specifically trying to exercise a driver for some particular hardware they are the recommended device models to use for virtual machines. The VirtIO specification is an open standard managed by OASIS.VirtIO Devices VirtIO devices are paravirtualized devices designed to be ef",
+    "collected_at": "2026-10-05",
+    "weight": 0.9301,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9301
+      },
+      "usage": {
+        "input_tokens": 799,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+    "title": "QEMU/Guest graphics acceleration - ArchWiki",
+    "url": "https://wiki.archlinux.org/title/QEMU/Guest_graphics_acceleration",
+    "snippet": "April 11, 2026 \u2014 [2] virtio-gpu is a paravirtualized 3d accelerated graphics driver, similar to non-graphics virtio drivers (see virtio driver information and virtio Windows guest drivers). For Linux guests, virtio-gpu is fairly mature, having been available since Linux kernel version 4.4 and QEMU version 2.6.\"Venus is a Virtio-GPU protocol for Vulkan command serialization. It is available since Q",
+    "collected_at": "2026-10-05",
+    "weight": 0.8528,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8528
+      },
+      "usage": {
+        "input_tokens": 799,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+    "title": "virtio-gpu \u2014 QEMU documentation",
+    "url": "https://qemu.eu/doc/10.1/system/devices/virtio-gpu.html",
+    "snippet": "Backends: QEMU provides a 2D virtio-gpu backend, and two accelerated backends: virglrenderer (\u2018gl\u2019 device label) and rutabaga_gfx (\u2018rutabaga\u2019 device label). There is a vhost-user backend that runs the graphics stack in a separate process for improved isolation. Interfaces: QEMU further categorizes virtio-gpu device variants based on the interface exposed to the guest. The interfaces ...Backends: Q",
+    "collected_at": "2026-10-05",
+    "weight": 0.8481,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8481
+      },
+      "usage": {
+        "input_tokens": 799,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+    "title": "QEMU with VirtIO GPU Vulkan Support \u00b7 GitHub",
+    "url": "https://gist.github.com/peppergrayxyz/fdc9042760273d137dddd3e97034385f",
+    "snippet": "With its latest reales qemu added the Venus patches so that virtio-gpu now support venus encapsulation for vulkan. This is one more piece to the puzzle towards full Vulkan support. An outdated blog post on clollabora described in 2021 how to enable 3D acceleration of Vulkan applications in QEMU through the Venus experimental Vulkan driver for VirtIO-GPU with a local development environment ...With",
+    "collected_at": "2026-10-05",
+    "weight": 0.1367,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1367
+      },
+      "usage": {
+        "input_tokens": 799,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+    "title": "GitHub - litecreator/virtio-gpu-macos: A paravirtualized graphics...",
+    "url": "https://github.com/litecreator/virtio-gpu-macos",
+    "snippet": "A paravirtualized graphics driver for macOS QEMU/KVM guests that implements the VirtIO GPU protocol, enabling near-native graphics performance without GPU passthrough.A paravirtualized graphics driver for macOS QEMU/KVM guests that implements the VirtIO GPU protocol, enabling near-native graphics performance without GPU passthrough.",
+    "collected_at": "2026-10-05",
+    "weight": 0.6215,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6215
+      },
+      "usage": {
+        "input_tokens": 799,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "virtio-gpu-pci device emulation guest kernel DRM driver",
+    "title": "VirtIO GPU \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/devices/virtio/virtio-gpu.html",
+    "snippet": "virtio-gpu requires a guest Linux kernel built with the CONFIG_DRM_VIRTIO_GPU option.\"Interfaces: QEMU further categorizes virtio-gpu device variants based on the interface exposed to the guest. The interfaces can be classified into VGA and non-VGA variants. The VGA ones are prefixed with virtio-vga or vhost-user-vga while the non-VGA ones are prefixed with virtio-gpu or vhost-user-gpu. The VGA on",
+    "collected_at": "2026-10-05",
+    "weight": 0.9276,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9276
+      },
+      "usage": {
+        "input_tokens": 807,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "virtio-gpu-pci device emulation guest kernel DRM driver",
+    "title": "virtio-gpu \u2014 QEMU 8.2.10 documentation",
+    "url": "https://qemu.readthedocs.io/en/v8.2.10/system/devices/virtio-gpu.html",
+    "snippet": "virtio-gpu requires a guest Linux kernel built with the CONFIG_DRM_VIRTIO_GPU option.\"Device Emulation \u00b7 virtio-gpu \u00b7 Edit on GitLab \u00b7 This document explains the setup and usage of the virtio-gpu device. The virtio-gpu device paravirtualizes the GPU and display controller. virtio-gpu requires a guest Linux kernel built with the CONFIG_DRM_VIRTIO_GPU option. QEMU virtio-gpu device variants come in ",
+    "collected_at": "2026-10-05",
+    "weight": 0.9263,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9263
+      },
+      "usage": {
+        "input_tokens": 807,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "virtio-gpu-pci device emulation guest kernel DRM driver",
+    "title": "QEMU/Guest graphics acceleration - ArchWiki",
+    "url": "https://wiki.archlinux.org/title/QEMU/Guest_graphics_acceleration",
+    "snippet": "Virgil3d virtio-gpu paravirtualized device driver [2] virtio-gpu is a paravirtualized 3d accelerated graphics driver, similar to non-graphics virtio drivers (see virtio driver information and virtio Windows guest drivers).Virgil3d virtio-gpu paravirtualized device driver [2] virtio-gpu is a paravirtualized 3d accelerated graphics driver, similar to non-graphics virtio drivers (see virtio driver in",
+    "collected_at": "2026-10-05",
+    "weight": 0.7839,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7839
+      },
+      "usage": {
+        "input_tokens": 807,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "virtio-gpu-pci device emulation guest kernel DRM driver",
+    "title": "virtio-gpu \u2014 QEMU documentation",
+    "url": "https://qemu.eu/doc/10.1/system/devices/virtio-gpu.html",
+    "snippet": "virtio-gpu This document explains the setup and usage of the virtio-gpu device. The virtio-gpu device paravirtualizes the GPU and display controller. Linux kernel support virtio-gpu requires a guest Linux kernel built with the CONFIG_DRM_VIRTIO_GPU option. QEMU virtio-gpu variants QEMU virtio-gpu device variants come in the following form:virtio-gpu This document explains the setup and usage of th",
+    "collected_at": "2026-10-05",
+    "weight": 0.6741,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6741
+      },
+      "usage": {
+        "input_tokens": 807,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "virtio-gpu-pci device emulation guest kernel DRM driver",
+    "title": "linux/drivers/gpu/drm/virtio/virtgpu_drv.c at master \u00b7 torvalds/linux",
+    "url": "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/virtio/virtgpu_drv.c",
+    "snippet": "#include <drm/drm_print.h> \u00b7 #include \"virtgpu_drv.h\" \u00b7 #define PCI_DEVICE_ID_VIRTIO_GPU 0x1050 \u00b7 \u00b7 static const struct drm_driver driver; \u00b7 static int virtio_gpu_modeset = -1; \u00b7 MODULE_PARM_DESC(modeset, \"Disable/Enable modesetting\"); module_param_named(modeset, virtio_gpu_modeset, int, 0400); \u00b7\"#include \u00b7 #include \"virtgpu_drv.h\" \u00b7 #define PCI_DEVICE_ID_VIRTIO_GPU 0x1050 \u00b7 \u00b7 static const struct ",
+    "collected_at": "2026-10-05",
+    "weight": 0.8805,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8805
+      },
+      "usage": {
+        "input_tokens": 807,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "virtio-gpu-pci device emulation guest kernel DRM driver",
+    "title": "Windows VirtIO Drivers - Proxmox VE",
+    "url": "https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers",
+    "snippet": "VirtIO Drivers are paravirtualized drivers for kvm/Linux. In short, they enable direct access to devices and peripherals for virtual machines using them, instead of slower, emulated, ones.",
+    "collected_at": "2026-10-05",
+    "weight": 0.9048,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9048
+      },
+      "usage": {
+        "input_tokens": 792,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "03",
+    "slug": "virtio-gpu-default"
+  },
+  {
+    "query": "GPU DMA attack read kernel memory without IOMMU translation",
+    "title": "romainbreault1000-alt/dma-threat-model-lab - GitHub",
+    "url": "https://github.com/romainbreault1000-alt/dma-threat-model-lab",
+    "snippet": "Direct Memory Access (DMA) enables bus-master devices to read/write physical memory without invoking the kernel syscall table. This repo collects lab notes, diagrams, and detection heuristics from controlled hardware research\u2014not distributable bypass tooling. Use case: Understand why software-only anti-tamper fails when memory is touched from outside the CPU trust boundary.",
+    "collected_at": "2026-10-05",
+    "weight": 0.2447,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2447
+      },
+      "usage": {
+        "input_tokens": 792,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "GPU DMA attack read kernel memory without IOMMU translation",
+    "title": "PCIe DMA and IOMMU Explained - Your VLSI Journey Starts Here",
+    "url": "https://vlsitrainers.com/pcie-dma-and-iommu/",
+    "snippet": "DMA and IOMMU How PCIe devices initiate Direct Memory Access, why unrestricted DMA is a critical security and reliability risk, how the IOMMU translates device-visible IOVA addresses to physical memory, the structure of IOMMU remapping tables, ATS-based translation caching, and how DMA isolation scales in Gen 6 AI and virtualised infrastructure.DMA and IOMMU How PCIe devices initiate Direct Memory",
+    "collected_at": "2026-10-05",
+    "weight": 0.2502,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2502
+      },
+      "usage": {
+        "input_tokens": 792,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "GPU DMA attack read kernel memory without IOMMU translation",
+    "title": "Kernel DMA Protection | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt",
+    "snippet": "These devices are DMA-capable, and can access system memory and perform read and write operations without the need for the system processor's involvement. This capability is the reason behind the exceptional performance of PCI devices, but it also makes them susceptible to drive-by DMA attacks.",
+    "collected_at": "2026-10-05",
+    "weight": 0.8889,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8889
+      },
+      "usage": {
+        "input_tokens": 792,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "GPU DMA attack read kernel memory without IOMMU translation",
+    "title": "IOMMU Bypass: Finding Potential Misconfiguration",
+    "url": "https://splineuser.github.io/posts/iommu-bypass/",
+    "snippet": "These sections are interesting because they are reserved by the firmware for these two devices so that they can DMA into these sections without requiring the normal IOMMU translation. These two ranges are device specific, therefore this range isn\u2019t the universal IOMMU DMA Translation accessible range but rather just for the two devices we see.These sections are interesting because they are reserve",
+    "collected_at": "2026-10-05",
+    "weight": 0.4951,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4951
+      },
+      "usage": {
+        "input_tokens": 792,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "GPU DMA attack read kernel memory without IOMMU translation",
+    "title": "New GPUBreach attack achieves root access via memory corruption",
+    "url": "https://cyberinsider.com/new-gpubreach-attack-achieves-root-access-via-memory-corruption/",
+    "snippet": "The attack then targets memory-safety vulnerabilities in the NVIDIA kernel driver, triggering out-of-bounds writes and ultimately achieving an arbitrary kernel write primitive. This chain allows attackers to spawn a root shell on the host system without disabling IOMMU, a protection widely recommended and deployed to mitigate DMA attacks.",
+    "collected_at": "2026-10-05",
+    "weight": 0.3669,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3669
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "GPU DMA attack read kernel memory without IOMMU translation",
+    "title": "Direct memory access",
+    "url": "https://en.wikipedia.org/wiki/Direct_memory_access",
+    "snippet": "Direct memory access (DMA) is a feature of computer systems and allows certain hardware subsystems to access main system memory independently of the central processing unit (CPU). Without DMA, when the CPU is using programmed input/output, it is typically fully occupied for the entire duration of the read or write operation, and is thus unavailable",
+    "collected_at": "2026-10-05",
+    "weight": 0.166,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.166
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "DMA attacks extract disk encryption keys from RAM vulnerable peripherals",
+    "title": "What Is a DMA Attack? Analysis & Mitigation| Kroll",
+    "url": "https://www.kroll.com/en/publications/cyber/what-is-dma-attack-understanding-mitigating-threat",
+    "snippet": "A DMA attack is a type of cyberattack that allows an attacker to gain direct access to a computer\u2019s memory. DMA attacks take advantage of a feature of modern computers that allow certain devices, such as external hard drives, graphics cards or network cards, to access the computer\u2019s memory directly, without the participation of the processor.A DMA attack is a type of cyberattack that allows an att",
+    "collected_at": "2026-10-05",
+    "weight": 0.7891,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7891
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "DMA attacks extract disk encryption keys from RAM vulnerable peripherals",
+    "title": "DMA attack - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/DMA_attack",
+    "snippet": "Systems may still be vulnerable to a DMA attack by an external device if they have a FireWire, ExpressCard, Thunderbolt or other expansion port that, like PCI and PCI Express in general, connects attached devices directly to the physical\u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.0957,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0957
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "DMA attacks extract disk encryption keys from RAM vulnerable peripherals",
+    "title": "DMA Attacks Explained: Risks, Prevention & Protection",
+    "url": "https://x-phy.com/glossary/dma-understanding-the-risks-and-defenses/",
+    "snippet": "DMA attacks are hardware-based attacks that exploit Direct Memory Access to access a device\u2019s RAM through interfaces like Thunderbolt, USB4, PCIe, and FireWire. They can bypass operating system security, steal sensitive data, extract encryption keys, or inject malicious code. Organisations can reduce DMA attack risks by enabling IOMMU or Kernel DMA Protection, restricting unused ports ...DMA attac",
+    "collected_at": "2026-10-05",
+    "weight": 0.1688,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1688
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "DMA attacks extract disk encryption keys from RAM vulnerable peripherals",
+    "title": "Physical DMA-Based Security Attacks on Windows 11: Evolution, Risks ...",
+    "url": "https://thunderclap.io/physical-dma-based-security-attacks-on-windows-11-evolution-risks-and-modern-defenses/",
+    "snippet": "DMA-based physical attacks represent a persistent and evolving threat, even in modern operating systems such as Windows 11. While significant progress has been made in mitigating these risks through technologies like IOMMU, Kernel DMA Protection, and virtualization-based security, the fundamental challenge of hardware-level access remains.",
+    "collected_at": "2026-10-05",
+    "weight": 0.4147,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4147
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "DMA attacks extract disk encryption keys from RAM vulnerable peripherals",
+    "title": "TID-107 | MITRE EMB3D\u2122",
+    "url": "https://emb3d.mitre.org/threats/TID-107.html",
+    "snippet": "TID-107: Unauthorized Direct Memory Access (DMA) Threat Description If separate discrete chips/peripherals that have access to the same physical memory, a threat actor with access to one peripheral could perform a Direct Memory Access (DMA) attack to maliciously read/write memory from a connected chip or peripheral.",
+    "collected_at": "2026-10-05",
+    "weight": 0.4826,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4826
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "DMA attacks extract disk encryption keys from RAM vulnerable peripherals",
+    "title": "Direct Memory Access (DMA) attacks. Risks, techniques, and mitigations ...",
+    "url": "https://www.pentestpartners.com/security-blog/direct-memory-access-dma-attacks-risks-techniques-and-mitigations-in-hardware-hacking/",
+    "snippet": "TL;DR Direct Memory Access (DMA) attacks are a powerful class of attack that give read and write access to the memory of a target system, bypassing the main CPU to gain kernel privileges. We became interested in DMA attacks for expanding the toolkit for rooting embedded devices. A lot of embedded systems run Linux, and a lot of Linux distros are vulnerable to DMA attacks by default. Though ...TL;D",
+    "collected_at": "2026-10-05",
+    "weight": 0.6587,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6587
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "04",
+    "slug": "dma-key-extraction"
+  },
+  {
+    "query": "GPU passthrough IOMMU group isolation requirements before assigning device",
+    "title": "VFIO PCI GPU Passthrough (Device Binding) - LaptopJudge",
+    "url": "https://laptopjudge.com/vfio-pci-gpu-passthrough/",
+    "snippet": "GPU passthrough assigns a physical PCIe graphics device to a virtual machine through vfio-pci. The reliable process is to enable IOMMU, identify the GPU's PCI address and group, prevent the host driver from claiming it, bind the device early, and verify the result. Hardware isolation matters as much as software configuration, especially on laptops and single-GPU systems.",
+    "collected_at": "2026-10-05",
+    "weight": 0.2473,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2473
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "GPU passthrough IOMMU group isolation requirements before assigning device",
+    "title": "GPU Passthrough Setup: IOMMU/VFIO Guide [2026]",
+    "url": "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+    "snippet": "Sep 25, 2026 \u00b7 Set up GPU passthrough with IOMMU and VFIO on Proxmox VE 9.2 in 13 steps, from BIOS config to fixing Nvidia Code 43 and CPU pinning.",
+    "collected_at": "2026-10-05",
+    "weight": 0.1466,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1466
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "GPU passthrough IOMMU group isolation requirements before assigning device",
+    "title": "PCI Passthrough - Proxmox VE",
+    "url": "https://pve.proxmox.com/wiki/Pci_passthrough",
+    "snippet": "PCI passthrough allows you to use a physical PCI device (graphics card, network card) inside a VM (KVM virtualization only). If you \"PCI passthrough\" a device, the device is not available to the host anymore. Note that VMs with passed-through devices cannot be migrated. Requirements This is a list of basic requirements adapted from the Arch wiki CPU requirements Your CPU has to support ...PCI pass",
+    "collected_at": "2026-10-05",
+    "weight": 0.8686,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8686
+      },
+      "usage": {
+        "input_tokens": 816,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "GPU passthrough IOMMU group isolation requirements before assigning device",
+    "title": "IOMMU-based GPU Isolation - Windows drivers | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/display/iommu-based-gpu-isolation",
+    "snippet": "IOMMU-based GPU isolation is a technique used to enhance system security and stability by managing how GPUs access system memory. This article describes WDDM's IOMMU-based GPU isolation feature for IOMMU-capable devices, and how developers can implement it in their graphics drivers.",
+    "collected_at": "2026-10-05",
+    "weight": 0.824,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.824
+      },
+      "usage": {
+        "input_tokens": 816,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "GPU passthrough IOMMU group isolation requirements before assigning device",
+    "title": "GPU passthrough with VFIO and IOMMU \u2014 the working procedure",
+    "url": "https://stackharbor.com/en/knowledge-base/gpu-passthrough-vfio-iommu/",
+    "snippet": "A complete VFIO/IOMMU passthrough setup \u2014 IOMMU enable, IOMMU group inspection, vfio-pci driver bind, and the libvirt XML that gets a GPU into a guest. PCI passthrough using VFIO and the IOMMU lets a virtual machine take exclusive control of a physical PCI device \u2014 most commonly a GPU for ML/render workloads, sometimes an NVMe drive or NIC.",
+    "collected_at": "2026-10-05",
+    "weight": 0.228,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.228
+      },
+      "usage": {
+        "input_tokens": 816,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "GPU passthrough IOMMU group isolation requirements before assigning device",
+    "title": "KVM GPU Passthrough with VFIO: A Production-Focused Guide",
+    "url": "https://medium.com/@armestonaidoost/kvm-gpu-passthrough-with-vfio-a-production-focused-guide-de432ca2a12b",
+    "snippet": "A dependable KVM GPU passthrough design starts with hardware isolation, not virtual machine XML. Validate the IOMMU boundary, identify every device function, and establish deterministic vfio-pci ...",
+    "collected_at": "2026-10-05",
+    "weight": 0.0547,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0547
+      },
+      "usage": {
+        "input_tokens": 816,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "device assignment policy documented deviation opt-in security baseline",
+    "title": "Configure security baseline policies in Microsoft Intune - Microsoft ...",
+    "url": "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/configure-baselines",
+    "snippet": "Deploy security baselines that establish a default and recommended security postures on Windows devices you manage with Microsoft Intune.Deploy security baselines that establish a default and recommended security postures on Windows devices you manage with Microsoft Intune.",
+    "collected_at": "2026-10-05",
+    "weight": 0.1638,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1638
+      },
+      "usage": {
+        "input_tokens": 816,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "device assignment policy documented deviation opt-in security baseline",
+    "title": "Best way to handle deviations to baseline config assigned to all devices",
+    "url": "https://www.reddit.com/r/MSIntune/comments/1b30d9o/best_way_to_handle_deviations_to_baseline_config/",
+    "snippet": "New config \"Windows - CIS Security Baseline - L1 - Subset - Device\" contains the settings with the deviation value as needed on the subset of devices Assignment: Include the subset devices Personally, I'm most fond of option 2 as it give the least additional administrative effort - especially in the long run when the baseline is reviewed and ...New config \"Windows - CIS Security Baseline - L1 - Su",
+    "collected_at": "2026-10-05",
+    "weight": 0.0373,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0373
+      },
+      "usage": {
+        "input_tokens": 817,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "device assignment policy documented deviation opt-in security baseline",
+    "title": "Guidance on Applying Security Baselines | Microsoft Community Hub",
+    "url": "https://techcommunity.microsoft.com/discussions/microsoft-intune/guidance-on-applying-security-baselines/4365571",
+    "snippet": "If we later want to remove these Security Baseline settings from specific devices, is it sufficient to simply remove those devices from the assignment, or will additional steps be required? Alternatively, similar settings can be applied via Devices > Configuration Profiles by creating a custom policy from scratch.If we later want to remove these Security Baseline settings from specific devices, is",
+    "collected_at": "2026-10-05",
+    "weight": 0.6829,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6829
+      },
+      "usage": {
+        "input_tokens": 817,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "device assignment policy documented deviation opt-in security baseline",
+    "title": "Deploying Security Baselines in Microsoft Intune",
+    "url": "https://www.securityscriptographer.com/2026/06/deploying-security-baselines-in.html",
+    "snippet": "Apply Intune security baselines to harden Windows endpoints, and learn how baseline conflicts and versioning behave.Apply Intune security baselines to harden Windows endpoints, and learn how baseline conflicts and versioning behave.",
+    "collected_at": "2026-10-05",
+    "weight": 0.1589,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1589
+      },
+      "usage": {
+        "input_tokens": 817,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "device assignment policy documented deviation opt-in security baseline",
+    "title": "Windows MDM security baseline settings reference for Microsoft Intune",
+    "url": "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/ref-windows-mdm-settings",
+    "snippet": "Security Baseline for Windows, version 25H2 The settings in this baseline are taken from the Windows 11 version 25H2 security baseline as found in the Security Compliance Toolkit and Baselines from the Microsoft Download Center, and include only the settings that apply to Windows devices managed through Intune.",
+    "collected_at": "2026-10-05",
+    "weight": 0.95,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.95
+      },
+      "usage": {
+        "input_tokens": 817,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "device assignment policy documented deviation opt-in security baseline",
+    "title": "DEVICE Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/device",
+    "snippet": "Sep 28, 2026 \u00b7 The meaning of DEVICE is something devised or contrived. How to use device in a sentence.",
+    "collected_at": "2026-10-05",
+    "weight": 0.09,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.09
+      },
+      "usage": {
+        "input_tokens": 817,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "05",
+    "slug": "adr-rules-policy"
+  },
+  {
+    "query": "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+    "title": "Documentation Request: Nested Virtualization Support in GitHub-hosted ...",
+    "url": "https://github.com/actions/runner-images/issues/12933",
+    "snippet": "Background Most online resources and community discussions suggest that nested virtualization is not possible in GitHub Actions due to: Runners already being VMs in Azure Security restrictions in CI environments General assumptions about virtualization limitations Working Example I have a working proof-of-concept that successfully:Background Most online resources and community discussions suggest ",
+    "collected_at": "2026-10-05",
+    "weight": 0.3055,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3055
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+    "title": "Larger runners reference - GitHub Docs",
+    "url": "https://docs.github.com/en/actions/reference/runners/larger-runners",
+    "snippet": "Limitations for macOS larger runners All actions provided by GitHub are compatible with arm64 GitHub-hosted runners. However, community actions may not be compatible with arm64 and need to be manually installed at runtime. Nested-virtualization is not supported due to the limitation of Apple's Virtualization Framework. Networking capabilities such as Azure private networking and assigning ...Limit",
+    "collected_at": "2026-10-05",
+    "weight": 0.8169,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8169
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+    "title": "How to run KVM guests in your GitHub Actions - Dan.com",
+    "url": "https://actuated.com/blog/kvm-in-github-actions",
+    "snippet": "With Actuated we make it possible to launch a Virtual Machine (VM) within a GitHub Action. Jobs are launched in isolated VMs just like GitHub hosted runners but with support for nested virtualization.With Actuated we make it possible to launch a Virtual Machine (VM) within a GitHub Action. Jobs are launched in isolated VMs just like GitHub hosted runners but with support for nested virtualization.",
+    "collected_at": "2026-10-05",
+    "weight": 0.4484,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4484
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+    "title": "Larger runners and nested virtualization \u00b7 Discussion #40345...",
+    "url": "https://github.com/orgs/community/discussions/40345",
+    "snippet": "Body. Do larger runners support nested virtualization? According to documentation regular GitHub hosted runners use dv2 series Azure VMs which do not support nested virtualization, however, I cannot find anything on larger runners.",
+    "collected_at": "2026-10-05",
+    "weight": 0.3034,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3034
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+    "title": "Self-Hosted GitHub Actions Runners On Azure",
+    "url": "https://deniscooper.co.uk/github-actions-self-hosted-runners-azure/",
+    "snippet": "GitHub-hosted runners can't reach private Azure resources. Learn how to deploy self-hosted runners on Azure as a shared platform across your landing zones.GitHub-hosted runners can't reach private Azure resources. Learn how to deploy self-hosted runners on Azure as a shared platform across your landing zones.",
+    "collected_at": "2026-10-05",
+    "weight": 0.1962,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1962
+      },
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+    "title": "Enable nested virtualization \u00b7 Issue #183 \u00b7 actions/runner-images",
+    "url": "https://github.com/actions/runner-images/issues/183",
+    "snippet": "Dec 19, 2019 \u00b7 I don't know which is the hypervisor used to spin the VMs, but enabling nested virtualization would be a great enhancement. For example, this way we could build Vagrant boxes in GitHub Actions.",
+    "collected_at": "2026-10-05",
+    "weight": 0.3579,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3579
+      },
+      "usage": {
+        "input_tokens": 830,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "vfio pci passthrough requires real IOMMU hardware testing bare metal",
+    "title": "GPU, USB and PCI Passthrough on Proxmox: IOMMU/VFIO Guide",
+    "url": "https://proxmox.rdem-systems.com/en/blog/proxmox-hardware-passthrough-gpu-usb-pci/",
+    "snippet": "Proxmox GPU, USB and PCI Passthrough: The Complete IOMMU / VFIO Guide Assign an NVIDIA or AMD GPU, a USB controller, a network card or any PCI device directly to a Proxmox VM \u2014 with near bare-metal performance. This guide covers IOMMU configuration, VFIO, common pitfalls and real-world use cases.Proxmox GPU, USB and PCI Passthrough: The Complete IOMMU / VFIO Guide Assign an NVIDIA or AMD GPU, a US",
+    "collected_at": "2026-10-05",
+    "weight": 0.6038,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6038
+      },
+      "usage": {
+        "input_tokens": 830,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "vfio pci passthrough requires real IOMMU hardware testing bare metal",
+    "title": "GPU passthrough with VFIO and IOMMU \u2014 the working procedure",
+    "url": "https://stackharbor.com/en/knowledge-base/gpu-passthrough-vfio-iommu/",
+    "snippet": "A complete VFIO/IOMMU passthrough setup \u2014 IOMMU enable, IOMMU group inspection, vfio-pci driver bind, and the libvirt XML that gets a GPU into a guest.A complete VFIO/IOMMU passthrough setup \u2014 IOMMU enable, IOMMU group inspection, vfio-pci driver bind, and the libvirt XML that gets a GPU into a guest.",
+    "collected_at": "2026-10-05",
+    "weight": 0.2753,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2753
+      },
+      "usage": {
+        "input_tokens": 830,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "vfio pci passthrough requires real IOMMU hardware testing bare metal",
+    "title": "GPU Passthrough Setup: IOMMU/VFIO Guide [2026]",
+    "url": "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+    "snippet": "Running Windows inside a virtual machine used to mean giving up your GPU's real performance. Not anymore. GPU passthrough, built on IOMMU and VFIO, hands a physical graphics card directly to a guest VM so it renders games, CUDA workloads, or CAD software at close to bare-metal speed. This tutorial walks through the full 2026 setup on Proxmox VE 9.2, from checking your motherboard's IOMMU ...",
+    "collected_at": "2026-10-05",
+    "weight": 0.185,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.185
+      },
+      "usage": {
+        "input_tokens": 830,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "vfio pci passthrough requires real IOMMU hardware testing bare metal",
+    "title": "Xhamster ad revenue worth it? : r/SexWorkers - Reddit",
+    "url": "https://www.reddit.com/r/SexWorkers/comments/hwdhzd/xhamster_ad_revenue_worth_it/",
+    "snippet": "Jul 23, 2020 \u00b7 We have stayed away from and kept everything else separate from our xhamster account. We hadn't logged on for \u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.0223,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0223
+      },
+      "usage": {
+        "input_tokens": 830,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "vfio pci passthrough requires real IOMMU hardware testing bare metal",
+    "title": "Proxmox GPU Passthrough: Hardware Guide | CyberPulsTech",
+    "url": "https://cyberpulstech.com/proxmox-gpu-passthrough-iommu-pcie-bifurcation-guide-2026/",
+    "snippet": "/etc/modules. vfio vfio_iommu_type1 vfio_pci vfio_virqfd. 3. Blacklist Host Drivers.PCIe Device Flags: In the Proxmox Hardware GUI, add the GPU as a raw PCI Device with: All Functions: Checked (passes both the VGA video block and HDMI audio controller together).",
+    "collected_at": "2026-10-05",
+    "weight": 0.3497,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3497
+      },
+      "usage": {
+        "input_tokens": 822,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "vfio pci passthrough requires real IOMMU hardware testing bare metal",
+    "title": "GitHub - ipaqmaster/vfio: A script for easy pci and usb\u2026",
+    "url": "https://github.com/ipaqmaster/vfio",
+    "snippet": "A script for easy pci and usb passthrough along with disks, iso's and other useful flags for quick tinkering with less of a headache. I use it for VM gaming and other PCI/LiveCD/PXE/VM/RawImage testing given the script's accessibility\u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.4294,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4294
+      },
+      "usage": {
+        "input_tokens": 822,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "06",
+    "slug": "testability-matrix"
+  },
+  {
+    "query": "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+    "title": "vfio-user client in QEMU 10.1 - John Levon's blog",
+    "url": "https://movementarian.org/blog/posts/2025-08-27-vfio-user-client-in-qemu/",
+    "snippet": "The recent release of QEMU 10.1 now comes with its very own vfio-user client. You can try this out yourself relatively easily - please give it a go! 1 vfio-user is a framework that allows implementing PCI devices in userspace. Clients (such as QEMU) talk the vfio-user protocol over a UNIX socket to a device server; it looks something like this: To implement a virtual device for a guest VM ...The r",
+    "collected_at": "2026-10-05",
+    "weight": 0.8046,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8046
+      },
+      "usage": {
+        "input_tokens": 822,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+    "title": "vfio-user \u2014 QEMU 10.1.50 documentation",
+    "url": "https://qemu-stsquad.readthedocs.io/en/docs-next/system/devices/vfio-user.html",
+    "snippet": "Whereas vfio is handled by the host kernel, vfio-user, while similar in implementation, is handled entirely in userspace. For example, SPDK includes a virtual PCI NVMe controller implementation; by setting up a vfio-user UNIX socket between QEMU and SPDK, a VM can send NVMe I/O to the SPDK process.Whereas vfio is handled by the host kernel, vfio-user, while similar in implementation, is handled en",
+    "collected_at": "2026-10-05",
+    "weight": 0.8887,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8887
+      },
+      "usage": {
+        "input_tokens": 822,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+    "title": "vfio-user \u2014 QEMU documentation",
+    "url": "https://qemu.eu/doc/10.1/system/devices/vfio-user.html",
+    "snippet": "QEMU includes a vfio-userclient. The vfio-userspecification allows for implementing (PCI) devices in userspace outside of QEMU; it is similar to vhost-userin this respect (see vhost-user back ends), but can emulate arbitrary PCI devices, not just virtio. Whereas vfiois handled by the host kernel, vfio-user, while similar in implementation, is handled entirely in userspace. For example, SPDK ...QEM",
+    "collected_at": "2026-10-05",
+    "weight": 0.9157,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9157
+      },
+      "usage": {
+        "input_tokens": 822,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+    "title": "vfio-user \u2014 QEMU documentation",
+    "url": "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "snippet": "QEMU includes a vfio-user client. The vfio-user specification allows for implementing (PCI) devices in userspace outside of QEMU; it is similar to vhost-user in this respect (see vhost-user back ends), but can emulate arbitrary PCI devices, not just virtio.",
+    "collected_at": "2026-10-05",
+    "weight": 0.927,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.927
+      },
+      "usage": {
+        "input_tokens": 778,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+    "title": "qemu usage walkthrough",
+    "url": "https://qemu.googlesource.com/libvfio-user/+/HEAD/docs/qemu.md",
+    "snippet": "Start the gpio server process: ... Starting the client Our client in this case will be a Linux image with the pci-idio-16 kernel driver. Let's grab the images: ... Now use the qemu you've built to start the VM as follows: ... Log in to this VM as root (no password). We should be able to interact with the device: ... and the server should output ...Start the gpio server process: ... Starting the cl",
+    "collected_at": "2026-10-05",
+    "weight": 0.8056,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8056
+      },
+      "usage": {
+        "input_tokens": 778,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+    "title": "libvfio-user - Git at Google",
+    "url": "https://qemu.googlesource.com/libvfio-user/",
+    "snippet": "libvfio-user vfio-user is a framework that allows implementing PCI devices in userspace. Clients (such as qemu) talk the vfio-user protocol over a UNIX socket to a server. This library, libvfio-user, provides an API for implementing such servers. VFIO is a kernel facility for providing secure access to PCI devices in userspace (including pass-through to a VM). With vfio-user, instead of ...libvfio",
+    "collected_at": "2026-10-05",
+    "weight": 0.8289,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8289
+      },
+      "usage": {
+        "input_tokens": 778,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "libvfio-user nutanix meson build samples gpio-pci-idio-16",
+    "title": "GitHub - nutanix/libvfio-user: framework for emulating devices in ...",
+    "url": "https://github.com/nutanix/libvfio-user",
+    "snippet": "This library, libvfio-user, provides an API for implementing such servers. VFIO is a kernel facility for providing secure access to PCI devices in userspace (including pass-through to a VM).This library, libvfio-user, provides an API for implementing such servers. VFIO is a kernel facility for providing secure access to PCI devices in userspace (including pass-through to a VM).",
+    "collected_at": "2026-10-05",
+    "weight": 0.8047,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8047
+      },
+      "usage": {
+        "input_tokens": 778,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "libvfio-user nutanix meson build samples gpio-pci-idio-16",
+    "title": "libvfio-user/docs/qemu.md at master \u00b7 nutanix/libvfio-user \u00b7 GitHub",
+    "url": "https://github.com/nutanix/libvfio-user/blob/master/docs/qemu.md",
+    "snippet": "Contribute to nutanix/libvfio-user development by creating an account on GitHub.qemu usage walkthrough. In this walk-through, we'll use a buildroot image VM along with the gpio sample server to emulate a very simple GPIO device.",
+    "collected_at": "2026-10-05",
+    "weight": 0.8002,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8002
+      },
+      "usage": {
+        "input_tokens": 778,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "libvfio-user nutanix meson build samples gpio-pci-idio-16",
+    "title": "GPIO PCI Device | nutanix/libvfio-user | DeepWiki",
+    "url": "https://deepwiki.com/nutanix/libvfio-user/5.2-gpio-pci-device",
+    "snippet": "This page explains the GPIO PCI Device sample implementation included with libvfio-user. This sample demonstrates how to create a simple PCI device that simulates a GPIO controller, providing a practical example of userspace PCI device emulation using the libvfio-user library.This page explains the GPIO PCI Device sample implementation included with libvfio-user. This sample demonstrates how to cr",
+    "collected_at": "2026-10-05",
+    "weight": 0.4927,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4927
+      },
+      "usage": {
+        "input_tokens": 841,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "libvfio-user nutanix meson build samples gpio-pci-idio-16",
+    "title": "samples/meson.build - libvfio-user - Git at Google",
+    "url": "https://qemu.googlesource.com/libvfio-user/+/HEAD/samples/meson.build",
+    "snippet": "qemu / libvfio-user / HEAD /. / samples /meson.build blob: 9807a77adfeceecf3af9fc5d2282038536e9003a [file] client_sources = [ 'client.c', '../lib/migration.c', '../lib/tran.c', '../lib/tran_sock.c', ] client_deps = [ json_c_dep, thread_dep, ] client = executable( 'client', client_sources, c_args: common_cflags, dependencies: client_deps,",
+    "collected_at": "2026-10-05",
+    "weight": 0.557,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.557
+      },
+      "usage": {
+        "input_tokens": 841,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "libvfio-user nutanix meson build samples gpio-pci-idio-16",
+    "title": "Cloud Hypervisor VFIO-user HOWTO \u2014 Cloud Hypervisor...",
+    "url": "https://intelkevinputnam.github.io/cloud-hypervisor-docs-HTML/docs/vfio-user.html",
+    "snippet": "Cloud Hypervisor VFIO-user HOWTO VFIO-user is an experimental protocol for allowing devices to be implemented in another process and communicate over a socket; ie.e VFIO-user is to VFIO as virtio is to vhost-user.Cloud Hypervisor VFIO-user HOWTO VFIO-user is an experimental protocol for allowing devices to be implemented in another process and communicate over a socket; ie.e VFIO-user is to VFIO a",
+    "collected_at": "2026-10-05",
+    "weight": 0.5805,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5805
+      },
+      "usage": {
+        "input_tokens": 841,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "libvfio-user nutanix meson build samples gpio-pci-idio-16",
+    "title": "libvfio-user - qemu.googlesource.com",
+    "url": "https://qemu.googlesource.com/libvfio-user/+/a8242d117118d5191dad69a96e28a21d66fe8b50/README.md",
+    "snippet": "You\u2018ll probably also need to build the gpio-pci-idio-16 kernel module yourself - it\u2019s part of the standard Linux kernel, but not usually built and shipped on x86.You\u2018ll probably also need to build the gpio-pci-idio-16 kernel module yourself - it\u2019s part of the standard Linux kernel, but not usually built and shipped on x86.",
+    "collected_at": "2026-10-05",
+    "weight": 0.8542,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8542
+      },
+      "usage": {
+        "input_tokens": 841,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "07",
+    "slug": "ci-implementation"
+  },
+  {
+    "query": "vfio device assignment failure modes broken IOMMU isolation recovery",
+    "title": "VFIO - \u201cVirtual Function I/O\u201d \u2014 The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/driver-api/vfio.html",
+    "snippet": "VFIO - \u201cVirtual Function I/O\u201d [1] \u00b6 Many modern systems now provide DMA and interrupt remapping facilities to help ensure I/O devices behave within the boundaries they\u2019ve been allotted. This includes x86 hardware with AMD-Vi and Intel VT-d, POWER systems with Partitionable Endpoints (PEs) and embedded PowerPC systems such as Freescale PAMU. The VFIO driver is an IOMMU/device agnostic ...VFIO - \u201cVi",
+    "collected_at": "2026-10-05",
+    "weight": 0.8705,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8705
+      },
+      "usage": {
+        "input_tokens": 841,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "vfio device assignment failure modes broken IOMMU isolation recovery",
+    "title": "GPU Passthrough Failures on Proxmox VE 9.x: IOMMU, VFIO, Reset Fixes ...",
+    "url": "https://vormox.com/blog/diagnosing-gpu-passthrough-failures-on-proxmox-ve-9-x-iommu-groups-vfio-binding-and-reset-quirks",
+    "snippet": "A practical troubleshooting guide to GPU passthrough failures on Proxmox VE 9.x: IOMMU group isolation, vfio-pci binding races, reset quirks, and real fixes\u2026A practical troubleshooting guide to GPU passthrough failures on Proxmox VE 9.x: IOMMU group isolation, vfio-pci binding races, reset quirks, and real fixes\u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.6901,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6901
+      },
+      "usage": {
+        "input_tokens": 847,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "vfio device assignment failure modes broken IOMMU isolation recovery",
+    "title": "VFIO Device Assignment | qemu/qemu | DeepWiki",
+    "url": "https://deepwiki.com/qemu/qemu/7.2-vfio-device-assignment",
+    "snippet": "VFIO device assignment allows a guest operating system to directly access physical hardware, providing near-native performance while maintaining isolation through the host's IOMMU (Input-Output Memory Management Unit). For information about paravirtual device implementations, see VirtIO Paravirtual Devices.",
+    "collected_at": "2026-10-05",
+    "weight": 0.5499,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5499
+      },
+      "usage": {
+        "input_tokens": 847,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "vfio device assignment failure modes broken IOMMU isolation recovery",
+    "title": "VFIO: Firmware has requested this device have a 1:1 IOMMU mapping",
+    "url": "https://forum.proxmox.com/threads/vfio-firmware-has-requested-this-device-have-a-1-1-iommu-mapping.184799/",
+    "snippet": "An April 1st bios update made my passthroughs fail with the \"Firmware has requested this device this device have a 1:1 IOMMU mapping, rejecting the device without a 1:1 mapping.An April 1st bios update made my passthroughs fail with the \"Firmware has requested this device this device have a 1:1 IOMMU mapping, rejecting the device without a 1:1 mapping.",
+    "collected_at": "2026-10-05",
+    "weight": 0.0368,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0368
+      },
+      "usage": {
+        "input_tokens": 847,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "vfio device assignment failure modes broken IOMMU isolation recovery",
+    "title": "VFIO - \u201cVirtual Function I/O\u201d \u2014 The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/6.0/driver-api/vfio.html",
+    "snippet": "VFIO - \u201cVirtual Function I/O\u201d 1 Many modern systems now provide DMA and interrupt remapping facilities to help ensure I/O devices behave within the boundaries they\u2019ve been allotted. This includes x86 hardware with AMD-Vi and Intel VT-d, POWER systems with Partitionable Endpoints (PEs) and embedded PowerPC systems such as Freescale PAMU. The VFIO driver is an IOMMU/device agnostic ...VFIO - \u201cVirtua",
+    "collected_at": "2026-10-05",
+    "weight": 0.9512,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9512
+      },
+      "usage": {
+        "input_tokens": 847,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "vfio device assignment failure modes broken IOMMU isolation recovery",
+    "title": "VFIO Device Passthrough - Linux Kernel Internals",
+    "url": "https://kernel-internals.org/virtualization/vfio/",
+    "snippet": "VFIO (Virtual Function I/O) provides a secure mechanism to expose PCI devices directly to userspace processes or VMs, bypassing the kernel driver. A guest VM with VFIO passthrough can access the device at near-native speed: Guest driver \u2192 virtio protocol \u2192 host vhost/QEMU \u2192 host kernel driver \u2192 hardware.",
+    "collected_at": "2026-10-05",
+    "weight": 0.3979,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3979
+      },
+      "usage": {
+        "input_tokens": 847,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "CI pinned dependency drift patch no longer applies fail loudly skip",
+    "title": "How to Debug CI Failures Caused by Dependency Drift, Lockfile Changes ...",
+    "url": "https://thesdet.com/how-to-debug-ci-failures-caused-by-dependency-drift-lockfile-changes-and-browser-version-mismatch/",
+    "snippet": "A practical guide to debug CI failures from dependency drift, lockfile changes, and browser version mismatch, with root-cause checks for SDETs and QA engineers. CI failures that show up after a harmless-looking package update are some of the most frustrating problems in test automation.",
+    "collected_at": "2026-10-05",
+    "weight": 0.2057,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2057
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "CI pinned dependency drift patch no longer applies fail loudly skip",
+    "title": "pnpm dep patches have no semantic drift guard \u2014 behavior ...",
+    "url": "https://github.com/kamp-us/phoenix/issues/3044",
+    "snippet": "Observation The repo maintains pnpm patches on deps (pnpm-workspace.yamlpatchedDependencies: @nkzw/fate@1.3.1, alchemy@2..-beta.59, react-fate@1.3.1, with a fourth planned on effect per wayfinder map #3031 / #3040). pnpm's version-keying gives mechanical drift protection (a pin bump with a stale patch key fails install loudly), but there is NO semantic drift guard: a patch that still applies ...",
+    "collected_at": "2026-10-05",
+    "weight": 0.398,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.398
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "CI pinned dependency drift patch no longer applies fail loudly skip",
+    "title": "Patch Release Broke CI: Semver And The Lockfile Fix",
+    "url": "https://sixteenpillars.com/why-did-a-patch-release-break-my-ci-overnight/",
+    "snippet": "Aug 13, 2026 \u00b7 A patch release broke CI overnight and nothing in your repo changed. Here is how to diff the lockfile, find the bumped transitive, and pin it with npm overrides.",
+    "collected_at": "2026-10-05",
+    "weight": 0.2117,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2117
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "CI pinned dependency drift patch no longer applies fail loudly skip",
+    "title": "Online Banking, Mortgages, Personal Loans, Investing | Citi.com",
+    "url": "https://www.citi.com/?msockid=3f581d17eaa160612f8f0afeeb1c61dc",
+    "snippet": "Citibank offers multiple banking services that help you find the right credit cards, open a bank account for checking, & savings, or \u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.0342,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0342
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "CI pinned dependency drift patch no longer applies fail loudly skip",
+    "title": "RE:Update dependency org.mock-server:mockserver-junit-jupiter to v7.6.0",
+    "url": "https://github.com/Athou/commafeed/pull/2269",
+    "snippet": "...200 . A skip (test filtered out, renamed, or Docker unusable) therefore fails the CI build loudly instead of reading as...dependency tree). Pinned org.jsoup:jsoup to 1.... no openssl CLI, no install-at-runtime step that would fail on an airgapped or proxied cluster). Phase 2's ClusterRole also gains the update verb, which the patch ...no longer aborts the other npm directories) and pinned js-ya",
+    "collected_at": "2026-10-05",
+    "weight": 0.2363,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2363
+      },
+      "usage": {
+        "input_tokens": 842,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "CI pinned dependency drift patch no longer applies fail loudly skip",
+    "title": "Dependency pinning that holds - lockfile, frozen install... | TIGZIG",
+    "url": "https://www.tigzig.com/agents-faq/how-do-i-pin-dependencies-so-they-stay-pinned",
+    "snippet": "Pinning fails quietly, so it takes three layers plus one people forget. Why one layer is not enough.Direct pins stop package.json drifting; the lockfile stops transitive deps drifting. Neither alone is enough.",
+    "collected_at": "2026-10-05",
+    "weight": 0.3075,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3075
+      },
+      "usage": {
+        "input_tokens": 850,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "08",
+    "slug": "failure-recovery"
+  },
+  {
+    "query": "NVIDIA vGPU mediated device passthrough requirements hypervisor",
+    "title": "Download The Official NVIDIA Drivers | NVIDIA",
+    "url": "https://www.nvidia.com/en-us/drivers/",
+    "snippet": "Download the latest official NVIDIA drivers to enhance your PC gaming experience and run apps faster.",
+    "collected_at": "2026-10-05",
+    "weight": 0.7653,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7653
+      },
+      "usage": {
+        "input_tokens": 850,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "NVIDIA vGPU mediated device passthrough requirements hypervisor",
+    "title": "NVIDIA vGPU on Proxmox VE: Mediated Devices Setup Guide ...",
+    "url": "https://vormox.com/blog/setting-up-nvidia-vgpu-mediated-devices-in-proxmox-ve",
+    "snippet": "Step-by-step guide to setting up NVIDIA vGPU mediated devices on Proxmox VE 8.4/9.x: host driver install, SR-IOV, PCI resource mapping, VM config, guest GRID\u2026Step-by-step guide to setting up NVIDIA vGPU mediated devices on Proxmox VE 8.4/9.x: host driver install, SR-IOV, PCI resource mapping, VM config, guest GRID\u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.3233,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3233
+      },
+      "usage": {
+        "input_tokens": 850,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "NVIDIA vGPU mediated device passthrough requirements hypervisor",
+    "title": "Using NVIDIA vGPU and GPU Pass-through on the Same ESXi Host - myBroadcom",
+    "url": "https://knowledge.broadcom.com/external/article/432926/using-nvidia-vgpu-and-gpu-passthrough-on.html",
+    "snippet": "The same document also states: \u201cA physical GPU can host NVIDIA vGPUs, or can be used for pass-through, but cannot do both at the same time.\u201d These statements indicate that GPU pass-through and NVIDIA vGPU can coexist on the same server platform, provided that a single physical GPU is not configured for both modes simultaneously.The same document also states: \u201cA physical GPU can host NVIDIA vGPUs, ",
+    "collected_at": "2026-10-05",
+    "weight": 0.8599,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8599
+      },
+      "usage": {
+        "input_tokens": 850,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "NVIDIA vGPU mediated device passthrough requirements hypervisor",
+    "title": "Chapter 16. Managing GPU devices in virtual machines - Red Hat",
+    "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_and_managing_virtualization/assembly_managing-gpu-devices-in-virtual-machines_configuring-and-managing-virtualization",
+    "snippet": "The vGPU feature makes it possible to divide a physical NVIDIA GPU device into multiple virtual devices, referred to as mediated devices. These mediated devices can then be assigned to multiple virtual machines (VMs) as virtual GPUs.",
+    "collected_at": "2026-10-05",
+    "weight": 0.8801,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8801
+      },
+      "usage": {
+        "input_tokens": 850,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "NVIDIA vGPU mediated device passthrough requirements hypervisor",
+    "title": "Nvidia - Official Site",
+    "url": "http://www.nvidia.com/page/home.html",
+    "snippet": "Artificial Intelligence Computing Leadership from NVIDIA: inventor of the GPU, which creates interactive graphics on laptops, \u2026",
+    "collected_at": "2026-10-05",
+    "weight": 0.5631,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5631
+      },
+      "usage": {
+        "input_tokens": 802,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "NVIDIA vGPU mediated device passthrough requirements hypervisor",
+    "title": "Whole GPU, Passthrough, vGPU, MIG, or... - Digital Thought Disruption",
+    "url": "https://digitalthoughtdisruption.com/2026/07/25/enterprise-gpu-allocation-decision-matrix/",
+    "snippet": "Passthrough means a hypervisor directly assigns the physical PCIe device to one VM. The guest driver owns the GPU from the workload perspective, and the NVIDIA vGPU Manager is bypassed.",
+    "collected_at": "2026-10-05",
+    "weight": 0.1615,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1615
+      },
+      "usage": {
+        "input_tokens": 802,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "Intel GVT-g deprecated archived upstream virgl Venus 3D virtio-gpu",
+    "title": "Virtio-GPU Venus \u2014 The Mesa 3D Graphics Library latest documentation",
+    "url": "https://docs.mesa3d.org/drivers/venus.html",
+    "snippet": "The hypervisor, host KVM, and the guest kernel work together to set up a write-back or write-combined guest mapping (see virtio_gpu_vram_mmap of the virtio-gpu kernel driver).The hypervisor, host KVM, and the guest kernel work together to set up a write-back or write-combined guest mapping (see virtio_gpu_vram_mmap of the virtio-gpu kernel driver).",
+    "collected_at": "2026-10-05",
+    "weight": 0.6927,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6927
+      },
+      "usage": {
+        "input_tokens": 802,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "Intel GVT-g deprecated archived upstream virgl Venus 3D virtio-gpu",
+    "title": "Intel GVT-g - ArchWiki",
+    "url": "https://wiki.archlinux.org/title/Intel_GVT-g",
+    "snippet": "Intel GVT-g is a deprecated technology that provides mediated device passthrough for Intel iGPUs on 5th generation (Broadwell) through 10th generation (Comet Lake) processors. It can be used to virtualize the GPU for multiple guest virtual machines, effectively providing near-native graphics performance in the virtual machine and still letting your host use the virtualized GPU normally. This ...In",
+    "collected_at": "2026-10-05",
+    "weight": 0.6266,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6266
+      },
+      "usage": {
+        "input_tokens": 802,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "Intel GVT-g deprecated archived upstream virgl Venus 3D virtio-gpu",
+    "title": "QEMU with VirtIO GPU Vulkan Support \u00b7 GitHub",
+    "url": "https://gist.github.com/peppergrayxyz/fdc9042760273d137dddd3e97034385f",
+    "snippet": "QEMU is a machine emulator VirGL is an OpenGL driver for VirtIO-GPU, available in Mesa. Venus is an experimental Vulkan driver for VirtIO-GPU, also available in Mesa. Virglrenderer is a library that enables hardware acceleration to VM guests, effectively translating commands from the two drivers just mentioned to either OpenGL or Vulkan.QEMU is a machine emulator VirGL is an OpenGL driver for Virt",
+    "collected_at": "2026-10-05",
+    "weight": 0.1612,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1612
+      },
+      "usage": {
+        "input_tokens": 802,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "Intel GVT-g deprecated archived upstream virgl Venus 3D virtio-gpu",
+    "title": "Graphics Virtualization Technologies Support for Each Intel\u00ae Graphics ...",
+    "url": "https://www.intel.com/content/www/us/en/support/articles/000093216/graphics/processor-graphics.html",
+    "snippet": "Intel has continued to push forward the graphics virtualization technologies on Intel\u00ae graphics processors. The latest of these technologies been Single Root IO Virtualization (SR-IOV) which replaced the previous Intel\u00ae Graphics Virtualization Technology -g (GVT-g). Current SR-IOV support is available for systems running Linux as the host operating system with Windows or Linux guest ...",
+    "collected_at": "2026-10-05",
+    "weight": 0.827,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.827
+      },
+      "usage": {
+        "input_tokens": 524,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "Intel GVT-g deprecated archived upstream virgl Venus 3D virtio-gpu",
+    "title": "GitHub - arehnman/yttrium-virtio-gpu: Yttrium d3d gpu driver for KVM ...",
+    "url": "https://github.com/arehnman/yttrium-virtio-gpu",
+    "snippet": "Yttrium brings hardware-accelerated Direct3D 9, 10, and 11, Vulkan, and OpenGL graphics to Windows guests using a paravirtualized VirtIO GPU. Its Direct3D driver uses the Venus protocol to carry graphics work to the host's Vulkan GPU without dedicating a physical GPU to the guest.Yttrium brings hardware-accelerated Direct3D 9, 10, and 11, Vulkan, and OpenGL graphics to Windows guests using a parav",
+    "collected_at": "2026-10-05",
+    "weight": 0.7964,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7964
+      },
+      "usage": {
+        "input_tokens": 524,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  },
+  {
+    "query": "Intel GVT-g deprecated archived upstream virgl Venus 3D virtio-gpu",
+    "title": "QEMU/Guest graphics acceleration - ArchWiki",
+    "url": "https://wiki.archlinux.org/title/QEMU/Guest_graphics_acceleration",
+    "snippet": "Virgil3d virtio-gpu paravirtualized device driver [2] virtio-gpu is a paravirtualized 3d accelerated graphics driver, similar to non-graphics virtio drivers (see virtio driver information and virtio Windows guest drivers).Virgil3d virtio-gpu paravirtualized device driver [2] virtio-gpu is a paravirtualized 3d accelerated graphics driver, similar to non-graphics virtio drivers (see virtio driver in",
+    "collected_at": "2026-10-05",
+    "weight": 0.8012,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8012
+      },
+      "usage": {
+        "input_tokens": 524,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05"
+    },
+    "redo_of": null,
+    "nn": "09",
+    "slug": "vendor-vgpu-3d"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "failure-recovery",
+  "scope": "Failure modes and recovery baseline: passthrough without a working IOMMU, over-exposed vfio-user socket, GPU state coupled into the unlock path, pinned CI input drift, and the research-to-enforcement promotion gate.",
+  "queries_attempted": [
+    {
+      "query": "vfio device assignment failure modes broken IOMMU isolation recovery",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "CI pinned dependency drift patch no longer applies fail loudly skip",
+      "attempt": 1,
+      "raw_results": 58,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.kernel.org/driver-api/vfio.html",
+    "https://vormox.com/blog/diagnosing-gpu-passthrough-failures-on-proxmox-ve-9-x-iommu-groups-vfio-binding-and-reset-quirks",
+    "https://deepwiki.com/qemu/qemu/7.2-vfio-device-assignment",
+    "https://forum.proxmox.com/threads/vfio-firmware-has-requested-this-device-have-a-1-1-iommu-mapping.184799/",
+    "https://docs.kernel.org/6.0/driver-api/vfio.html",
+    "https://kernel-internals.org/virtualization/vfio/",
+    "https://thesdet.com/how-to-debug-ci-failures-caused-by-dependency-drift-lockfile-changes-and-browser-version-mismatch/",
+    "https://github.com/kamp-us/phoenix/issues/3044",
+    "https://sixteenpillars.com/why-did-a-patch-release-break-my-ci-overnight/",
+    "https://www.citi.com/?msockid=3f581d17eaa160612f8f0afeeb1c61dc",
+    "https://github.com/Athou/commafeed/pull/2269",
+    "https://www.tigzig.com/agents-faq/how-do-i-pin-dependencies-so-they-stay-pinned"
+  ],
+  "outcome": "authored"
+}
