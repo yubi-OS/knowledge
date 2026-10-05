@@ -1,0 +1,35 @@
+{
+ "nn": "04",
+ "slug": "cosign-keyless-github-actions",
+ "scope": "cosign keyless signing from GitHub Actions: OIDC token, id-token permission, Fulcio certificates, Rekor logging, identity pinning at verify time.",
+ "queries_attempted": [
+  {
+   "query": "cosign keyless signing GitHub Actions OIDC id-token write",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "cosign verify certificate-identity GitHub Actions OIDC issuer",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.qcecuring.com/blog/sigstore-cosign-keyless-github-actions",
+  "https://oneuptime.com/blog/post/2026-08-11-secure-keyless-cosign-github-actions-pull-requests/view",
+  "https://github.com/chrisns/cosign-keyless-demo",
+  "https://github.com/oneuptime/blog/tree/master/posts/2026-08-11-secure-keyless-cosign-github-actions-pull-requests",
+  "https://secure-pipelines.com/ci-cd-security/lab-signing-verifying-container-images-cosign-github-actions/",
+  "https://dev.to/n3wt0n/sign-your-container-images-with-cosign-github-actions-and-github-container-registry-3mni",
+  "https://github.com/oneuptime/blog/tree/master/posts/2026-08-11-choose-cosign-certificate-identity-oidc-issuer",
+  "https://github.com/sigstore/cosign",
+  "https://codenote.net/en/posts/sigstore-cosign-keyless-signing-cli-artifacts-oidc-verification/",
+  "https://oneuptime.com/blog/post/2026-08-11-choose-cosign-certificate-identity-oidc-issuer/view",
+  "https://deepwiki.com/suzuki-shunsuke/verify-go-asset-action/5.4-oidc-identity-verification"
+ ],
+ "outcome": "authored"
+}

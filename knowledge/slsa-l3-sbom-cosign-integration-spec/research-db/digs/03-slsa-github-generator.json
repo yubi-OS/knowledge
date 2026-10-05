@@ -1,0 +1,34 @@
+{
+ "nn": "03",
+ "slug": "slsa-github-generator",
+ "scope": "The slsa-framework/slsa-github-generator reusable workflows (container and generic), their subject inputs, BYOB, and pinning discipline.",
+ "queries_attempted": [
+  {
+   "query": "slsa-github-generator generator_container_slsa3 reusable workflow",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "slsa-github-generator generator_generic_slsa3 base64-subjects",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/slsa-framework/slsa-github-generator",
+  "https://slsa.dev/blog/2023/02/slsa-github-workflows-container-ga",
+  "https://deepwiki.com/slsa-framework/slsa-github-generator/3.2-container-generator",
+  "https://github.com/slsa-framework/slsa-github-generator/blob/main/internal/builders/container/README.md",
+  "https://secure-pipelines.com/ci-cd-security/lab-generating-verifying-slsa-provenance-container-images/",
+  "https://slsa.dev/blog/2022/08/slsa-github-workflows-generic-ga",
+  "https://github.com/slsa-framework/slsa-github-generator/blob/main/internal/builders/generic/README.md",
+  "https://deepwiki.com/slsa-framework/slsa-github-generator/3.1-generic-generator",
+  "https://sourceforge.net/projects/slsa-github-generator.mirror/",
+  "https://slsa.dev/blog/2023/08/bring-your-own-builder-github"
+ ],
+ "outcome": "authored"
+}

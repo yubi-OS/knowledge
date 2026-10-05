@@ -1,0 +1,35 @@
+{
+ "nn": "08",
+ "slug": "builder-isolation-options",
+ "scope": "The isolation bar L3 sets and three builder paths: GitHub-hosted ephemeral, hardened self-hosted, and TEE-backed confidential containers.",
+ "queries_attempted": [
+  {
+   "query": "SLSA build isolation requirements hardened build service",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "confidential containers TEE build attestation",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://slsa.dev/spec/v1.2/build-requirements",
+  "https://slsa.dev/spec/v1.0/requirements",
+  "https://safeguard.sh/resources/blog/slsa-builder-requirements-production",
+  "https://github.com/slsa-framework/slsa/blob/main/spec/build-requirements.md",
+  "https://marklodato.github.io/slsa/spec/v1.0-rc1/levels",
+  "https://www.redhat.com/en/blog/understanding-confidential-containers-attestation-flow",
+  "https://confidentialcontainers.org/docs/attestation/",
+  "https://github.com/confidential-containers/attestation-service",
+  "https://deepwiki.com/confidential-containers/confidential-containers/3.2-attestation-system",
+  "https://confidentialcontainers.org/docs/attestation/policies/",
+  "https://www.merriam-webster.com/dictionary/confidential"
+ ],
+ "outcome": "authored"
+}

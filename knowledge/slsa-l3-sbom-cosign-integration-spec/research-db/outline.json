@@ -1,0 +1,239 @@
+{
+ "topic": "SLSA Build L3, SPDX SBOM, and cosign integration for CI workflows",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "slsa-v1-build-levels",
+   "scope": "What each SLSA v1.0 Build level requires, why Build L4 does not exist in v1.0, the Source track split, and the L3 isolation bar.",
+   "seed_queries": [
+    "SLSA v1.0 build track levels L1 L2 L3 requirements",
+    "SLSA v1.0 source track separate from build track"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "provenance-predicate-v1",
+   "scope": "The layered shape of a SLSA v1.0 provenance attestation (DSSE envelope, in-toto Statement v1, provenance predicate) and the v0.2 versus v1.0 difference.",
+   "seed_queries": [
+    "SLSA provenance v1.0 predicate buildDefinition runDetails",
+    "in-toto Statement v1 DSSE envelope attestation format"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "slsa-github-generator",
+   "scope": "The slsa-framework/slsa-github-generator reusable workflows (container and generic), their subject inputs, BYOB, and pinning discipline.",
+   "seed_queries": [
+    "slsa-github-generator generator_container_slsa3 reusable workflow",
+    "slsa-github-generator generator_generic_slsa3 base64-subjects"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "cosign-keyless-github-actions",
+   "scope": "cosign keyless signing from GitHub Actions: OIDC token, id-token permission, Fulcio certificates, Rekor logging, identity pinning at verify time.",
+   "seed_queries": [
+    "cosign keyless signing GitHub Actions OIDC id-token write",
+    "cosign verify certificate-identity GitHub Actions OIDC issuer"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "spdx-sbom-syft",
+   "scope": "Generating SPDX-format SBOMs with Syft from images and filesystems and attaching them as cosign spdxjson attestations, with coverage caveats.",
+   "seed_queries": [
+    "Syft generate SPDX 2.3 JSON SBOM container image",
+    "cosign attest spdxjson SBOM attestation"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "rekor-v2-transparency-log",
+   "scope": "Rekor v2 (rekor-tiles): tile-backed log, per-tile witness quorum, TUF endpoint discovery, the cosign version floor for Rekor v2 writes.",
+   "seed_queries": [
+    "Sigstore Rekor v2 tile-based transparency log inclusion proof",
+    "Rekor v2 witness quorum TUF SigningConfig cosign"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "verifier-gate",
+   "scope": "Verifying SLSA provenance and SBOM attestations: slsa-verifier, cosign verify-attestation, actions/attest-build-provenance, and verifier gate boundaries.",
+   "seed_queries": [
+    "slsa-verifier verify-artifact provenance-path source-uri builder-id",
+    "cosign verify-attestation slsaprovenance GitHub Actions"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "builder-isolation-options",
+   "scope": "The isolation bar L3 sets and three builder paths: GitHub-hosted ephemeral, hardened self-hosted, and TEE-backed confidential containers.",
+   "seed_queries": [
+    "SLSA build isolation requirements hardened build service",
+    "confidential containers TEE build attestation"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "integration-pitfalls",
+   "scope": "CI integration pitfalls: id-token permissions and scoping, identity pinning, generator/verifier version lockstep, Rekor v2 cosign floor, public-log disclosure.",
+   "seed_queries": [
+    "GitHub Actions id-token permission cosign keyless error",
+    "slsa-github-generator pinned version upgrade verifier mismatch"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8591,
+    "probabilities": {
+     "0": 0.0338,
+     "1": 0.0733,
+     "2": 0.8929
+    },
+    "confidence": 0.7057,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.8754,
+    "probabilities": {
+     "0": 0.0287,
+     "1": 0.0672,
+     "2": 0.9041
+    },
+    "confidence": 0.7341,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8662,
+    "probabilities": {
+     "0": 0.0329,
+     "1": 0.068,
+     "2": 0.8991
+    },
+    "confidence": 0.7211,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.936,
+    "probabilities": {
+     "0": 0.0191,
+     "1": 0.0258,
+     "2": 0.9551
+    },
+    "confidence": 0.8699,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.9173,
+    "probabilities": {
+     "0": 0.0219,
+     "1": 0.0388,
+     "2": 0.9393
+    },
+    "confidence": 0.8264,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.1468,
+    "probabilities": {
+     "0": 0.1665,
+     "1": 0.5202,
+     "2": 0.3133
+    },
+    "confidence": 0.0947,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.8389,
+    "probabilities": {
+     "0": 0.036,
+     "1": 0.0892,
+     "2": 0.8748
+    },
+    "confidence": 0.6619,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.5839,
+    "probabilities": {
+     "0": 0.0807,
+     "1": 0.2546,
+     "2": 0.6647
+    },
+    "confidence": 0.2696,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.7972,
+    "probabilities": {
+     "0": 0.0409,
+     "1": 0.121,
+     "2": 0.8381
+    },
+    "confidence": 0.5781,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1443,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
