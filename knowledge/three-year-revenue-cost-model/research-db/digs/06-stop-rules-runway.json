@@ -1,0 +1,50 @@
+{
+  "nn": "06",
+  "slug": "stop-rules-runway",
+  "scope": "Per-offer conversion kill thresholds, pricing redesign triggers, and runway exhaustion as the whole-model stop",
+  "queries_attempted": [
+    {
+      "query": "startup kill criteria stop rules when to stop an experiment",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "runway months formula burn rate capital exhaustion startup",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "startup runway calculation burn rate months of cash formula",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "premature scaling startup failure indicators spending discipline",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig too thin: top-weighted results were an unrelated AI video company, not capital runway",
+      "new_queries": [
+        "startup runway calculation burn rate months of cash formula",
+        "premature scaling startup failure indicators spending discipline"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.wallstreetprep.com/knowledge/burn-rate/",
+    "https://kruzeconsulting.com/blog/cash-burn-rate/",
+    "https://startupgenome.com/report/why-startups-fail-premature-scaling/why-startups-fail-premature-scaling",
+    "https://s3.amazonaws.com/startupcompass-public/StartupGenomeReport2_Why_Startups_Fail_v2.pdf",
+    "https://www.statstest.com/experiment-guardrails-stopping-rules-ramp-criteria-risk"
+  ],
+  "outcome": "authored"
+}
