@@ -1,0 +1,223 @@
+{
+  "topic": "endlessh (SSH tarpit) fit for OpenWrt routers: tarpit behavior, resource profile, integration constraints, and evaluation criteria for edge devices",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "tarpit-mechanism",
+      "scope": "How endlessh works: endless pre-authentication SSH banner, single-threaded poll loop, what it logs and what it never touches",
+      "seed_queries": [
+        "endlessh ssh tarpit how it works endless banner protocol",
+        "ssh tarpit design endless banner slow client"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "resource-profile",
+      "scope": "endlessh runtime resource profile: memory, CPU, connection model, MaxClients behavior, SO_RCVBUF guard, suitability for embedded routers",
+      "seed_queries": [
+        "endlessh memory usage cpu footprint small server",
+        "endlessh maxclients so_rcvbuf resource limits"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "config-and-controls",
+      "scope": "endlessh configuration knobs and runtime controls: config file options, CLI flags, signals (SIGHUP, SIGUSR1, SIGTERM), syslog logging",
+      "seed_queries": [
+        "endlessh config options delay maxlinelength maxclients port",
+        "endlessh signals sighup sigusr1 syslog logging verbose"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "openwrt-packaging-status",
+      "scope": "OpenWrt packaging landscape for endlessh: absence of official packages, custom feed options, existing packaging paths (docker images, distro packages)",
+      "seed_queries": [
+        "endlessh openwrt package",
+        "endlessh package feed router firmware embedded"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "procd-uci-integration",
+      "scope": "OpenWrt service integration patterns: procd init scripts, UCI config packaging, respawn, reload triggers, conffiles for a third-party daemon",
+      "seed_queries": [
+        "openwrt procd init script uci config service package best practices",
+        "openwrt packages procd_set_param respawn init script example"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "nftables-attribution",
+      "scope": "nftables/firewall4 redirect and DNAT with logging: preserving original destination for decoy attribution, log-before-redirect patterns on OpenWrt",
+      "seed_queries": [
+        "nftables redirect dnat log original destination address",
+        "openwrt firewall4 nftables log before dnat redirect port"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "edge-device-constraints",
+      "scope": "Router-class hardware constraints: RAM/flash budgets, memory ceilings and OOM behavior, lessons from OpenWrt services like banip on small devices",
+      "seed_queries": [
+        "openwrt low memory router constraints packages oom",
+        "openwrt banip memory usage small devices embedded"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "tarpit-vs-honeypot-evaluation",
+      "scope": "Evaluation criteria for SSH deception on edge devices: tarpit vs low/high-interaction honeypot (Cowrie), what to adopt and what to avoid on a router",
+      "seed_queries": [
+        "ssh tarpit vs honeypot cowrie comparison low interaction",
+        "honeypot embedded router device criteria low interaction"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6528,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0869,
+          "1": 0.1734,
+          "2": 0.7397
+        },
+        "confidence": 0.3772
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8788,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0271,
+          "1": 0.067,
+          "2": 0.9059
+        },
+        "confidence": 0.7388
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.5399,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0824,
+          "1": 0.2953,
+          "2": 0.6223
+        },
+        "confidence": 0.2219
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.7067,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0627,
+          "1": 0.1679,
+          "2": 0.7694
+        },
+        "confidence": 0.4361
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.7915,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0443,
+          "1": 0.1199,
+          "2": 0.8358
+        },
+        "confidence": 0.5724
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.5706,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0893,
+          "1": 0.2508,
+          "2": 0.6599
+        },
+        "confidence": 0.2595
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.7169,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.054,
+          "1": 0.1751,
+          "2": 0.7709
+        },
+        "confidence": 0.4418
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.5302,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0938,
+          "1": 0.2823,
+          "2": 0.6239
+        },
+        "confidence": 0.2167
+      }
+    },
+    "usage": {
+      "input_tokens": 1483,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

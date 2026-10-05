@@ -1,0 +1,38 @@
+{
+  "nn": "04",
+  "slug": "openwrt-packaging-status",
+  "scope": "OpenWrt packaging landscape for endlessh: absence of official packages, custom feed options, existing packaging paths (docker images, distro packages)",
+  "queries_attempted": [
+    {
+      "query": "endlessh openwrt package",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "endlessh package feed router firmware embedded",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://openwrt.org/packages/start",
+    "https://github.com/yubi-OS/yubiOS/blob/main/refs/endlessh-openwrt-fit-2026-07-17.md",
+    "https://forum.openwrt.org/t/closed-endlessh-is-an-ssh-tarpit/116332",
+    "https://github.com/openwrt/packages",
+    "https://github.com/skeeto/endlessh",
+    "https://www.npmjs.com/package/nocache",
+    "https://feed.craftedsignal.io/briefs/2026-08-zbtlink-endlessdoors-implant/",
+    "https://cyberinsider.com/chinese-zbtlink-wifi-routers-ship-with-endlessdoors-malware/",
+    "https://www.dugganusa.com/post/a-root-shell-shipped-from-the-factory-in-21-firmware-images-across-two-years-endlessdoors-was-never",
+    "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+    "https://openwrt.org/",
+    "https://www.instanttvchannel.com/news"
+  ],
+  "outcome": "authored"
+}
