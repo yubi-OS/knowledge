@@ -1,0 +1,36 @@
+{
+ "nn": 6,
+ "slug": "secure-boot-signing-pattern",
+ "scope": "Canonical Secure Boot signing pattern: SoftHSM token bootstrap, mkosi --secure-boot-key-source provider:pkcs11 with systemd-sbsign per ADR-008, sbverify gate before VM boot, mkosi.conf Validation block.",
+ "queries_attempted": [
+  {
+   "query": "mkosi secure boot systemd-sbsign pkcs11 provider softhsm",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  },
+  {
+   "query": "sbverify sbsign verify unified kernel image UKI secure boot certificate",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+  "https://deepwiki.com/systemd/mkosi/5.1-bootloader-configuration",
+  "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+  "https://github.com/systemd/mkosi/issues/3033",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html",
+  "https://man.archlinux.org/man/systemd-sbsign.1.en",
+  "https://wiki.archlinux.org/title/Unified_kernel_image",
+  "https://mylinux.work/guides/secure-boot-uki/",
+  "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+  "https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en",
+  "https://manpages.opensuse.org/Tumbleweed/sbsigntools/sbverify.1.en.html",
+  "https://edu4rdshl.dev/posts/uki-secure-boot-on-archlinux-systemd-boot-walkthrough/"
+ ],
+ "outcome": "authored"
+}

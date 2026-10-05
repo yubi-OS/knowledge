@@ -1,0 +1,35 @@
+{
+ "nn": 2,
+ "slug": "dind-patterns",
+ "scope": "Docker-in-docker patterns inside container jobs: rootless dockerd over a unix socket driven by docker buildx bake versus legacy inner-dind with --privileged --pid=host --ipc=host.",
+ "queries_attempted": [
+  {
+   "query": "docker buildx bake rootless dockerd unix socket CI container privileged",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "docker in docker privileged pid host ipc host install to disk bootc",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/engine/security/rootless/",
+  "https://blog.gntech.me/posts/2026-05-18-docker-rootless-mode/",
+  "https://docs.docker.com/engine/security/rootless/tips/",
+  "https://github.com/docker/buildx",
+  "https://en.wikipedia.org/wiki/Q",
+  "https://docs.docker.com/reference/cli/docker/buildx/bake/",
+  "https://github.com/bootc-dev/bootc/blob/main/docs/src/bootc-install.md",
+  "https://jmarrero.github.io/bootc/bootc-install.html",
+  "https://docs.kurtosis.com/running-privileged-containers/",
+  "https://desecurity.github.io/hacktricks/linux-hardening/privilege-escalation/docker-security/docker-privileged.html",
+  "https://github.com/andrew-weida/bootc-container-image-best-practices"
+ ],
+ "outcome": "authored"
+}

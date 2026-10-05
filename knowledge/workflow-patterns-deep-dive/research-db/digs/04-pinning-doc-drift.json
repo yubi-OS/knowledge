@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "pinning-doc-drift",
+ "scope": "Stale in-repo documentation (AGENTS.md, github-actions skill) drifting from the PINNED.md allowlist: superseded checkout SHA and container digest still documented, copy-paste re-introduction of drift, missing allowlist entries.",
+ "queries_attempted": [
+  {
+   "query": "documentation drift pinned versions supply chain security allowlist",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": 6
+  },
+  {
+   "query": "GitHub Actions pinned action versions stale documentation risk",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://appsecbrief.com/articles/npm-12-install-scripts-allowlist-supply-chain-defense-guide-2026/",
+  "https://www.ox.security/academy/supply-chain-pbom/preventing-future-supply-chain-attacks-the-ox-guide-to-version-pinning-installation-cooldown-and-defense-in-depth/",
+  "https://docs.bswen.com/blog/2026-03-31-npm-supply-chain-protection/",
+  "https://www.linkedin.com/pulse/your-most-consequential-dependency-one-you-have-least-dr-runli-guo-sqtdf",
+  "https://vulert.com/blog/dependency-pinning-vs-floating-versions/",
+  "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-993g-76c3-p5m4",
+  "https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions/",
+  "https://github.com/actions/stale",
+  "https://cheatsheetseries.owasp.org/cheatsheets/GitHub_Actions_Security_Cheat_Sheet.html",
+  "https://devopsil.com/articles/2026-03-22-github-actions-security-hardening",
+  "https://dev.to/jjoyneriv/i-pinned-31-github-actions-to-commit-shas-one-major-tag-was-two-versions-stale-b13",
+  "https://github.com/github/docs/issues/45370"
+ ],
+ "outcome": "authored"
+}

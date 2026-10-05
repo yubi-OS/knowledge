@@ -1,0 +1,36 @@
+{
+ "nn": 7,
+ "slug": "stub-divergence-analysis",
+ "scope": "How the sealed-UKI-VM workflow stub diverges from canonical: hardcoded slot vs --free, missing SOFTHSM2_CONF, engine:pkcs11 vs provider:pkcs11, wrong libsofthsm2.so path, no private key import, no cert generation.",
+ "queries_attempted": [
+  {
+   "query": "softhsm2 C_Initialize error 5 configuration environment sandbox",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "openssl pkcs11 engine deprecated pkcs11 provider migration",
+   "attempt": 1,
+   "raw_results": 31,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/softhsm/softHSMv2",
+  "https://stackoverflow.com/questions/53230852/error-creating-token-via-softhsm2-as-non-root-user-could-not-initialize-the-lib",
+  "https://manpages.debian.org/testing/softhsm2/softhsm2.conf.5.en.html",
+  "https://deepwiki.com/softhsm/SoftHSMv2/9.1-softhsm2-util",
+  "https://github.com/softhsm/SoftHSMv2",
+  "https://developers.tabapay.com/reference/sandbox",
+  "https://github.com/openssl-projects/pkcs11-provider",
+  "https://www.mankier.com/7/provider-pkcs11",
+  "https://gitlab.isc.org/isc-projects/bind9/-/issues/2996",
+  "https://github.com/openssl/openssl/discussions/24472",
+  "https://docs.openssl.org/3.2/man7/ossl-guide-migration/",
+  "https://docs.digicert.com/en/software-trust-manager/client-tools/signing-tools/third-party-signing-tool-integrations/configure-openssl-for-signing-with-pkcs11.html"
+ ],
+ "outcome": "authored"
+}

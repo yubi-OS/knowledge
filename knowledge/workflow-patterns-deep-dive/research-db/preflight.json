@@ -1,0 +1,33 @@
+{
+ "date": "2026-10-05",
+ "searxng": {
+  "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3D",
+  "probe_results": {
+   "status": "healthy",
+   "count": 51
+  },
+  "unresponsive_engines": []
+ },
+ "decide": {
+  "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "model": "clef",
+  "probe_answer": {
+   "request_ok": true,
+   "answers_returned": 9,
+   "sample": {
+    "score": 1.732,
+    "probabilities": {
+     "0": 0.0624,
+     "1": 0.1431,
+     "2": 0.7945
+    },
+    "confidence": 0.4833,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  }
+ }
+}

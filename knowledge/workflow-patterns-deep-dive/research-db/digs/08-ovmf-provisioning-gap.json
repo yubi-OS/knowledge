@@ -1,0 +1,35 @@
+{
+ "nn": 8,
+ "slug": "ovmf-provisioning-gap",
+ "scope": "The OVMF provisioning gap: OVMF_CODE.fd and OVMF_VARS.fd sourced from the edk2 build artifact, yubiOS ROTPK enrollment into OVMF db with virt-fw-vars, before QEMU Secure Boot tests.",
+ "queries_attempted": [
+  {
+   "query": "virt-fw-vars enroll secure boot db OVMF vars custom platform key",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  },
+  {
+   "query": "OVMF_CODE.fd OVMF_VARS.fd provisioning QEMU secure boot edk2 firmware artifact",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/rhuefi/qemu-ovmf-secureboot",
+  "https://pypi.org/project/virt-firmware/",
+  "https://github.com/rhuefi/qemu-ovmf-secureboot/blob/master/README.md",
+  "https://kernal.eu/posts/secure-booty/",
+  "https://man.archlinux.org/man/extra/virt-firmware/virt-fw-vars.1.en",
+  "https://manpages.debian.org/trixie/python3-virt-firmware/virt-fw-vars.1.en.html",
+  "https://github.com/tianocore/edk2/blob/master/OvmfPkg/README",
+  "https://www.kraxel.org/blog/2022/07/edk2-firmware-packaging/",
+  "https://docs.fedoraproject.org/en-US/quick-docs/uefi-with-qemu/",
+  "https://developer.fedoraproject.org/tools/virtualization/fetching-ovmf-uefi-from-the-correct-source.html",
+  "https://en.wikipedia.org/wiki/Q"
+ ],
+ "outcome": "authored"
+}
