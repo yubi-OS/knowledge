@@ -1,0 +1,248 @@
+{
+ "topic": "the WLF time-temperature superposition study applied to corpus policy evolution - reading policy version as the corpus temperature, shift factors, and how the study becomes executable once policy versions accumulate",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "wlf-equation-fundamentals",
+   "scope": "The Williams-Landel-Ferry equation itself: the log(a_T) = -C1*(T-Tref)/(C2+T-Tref) form, the universal constants C1 = 17.4 and C2 = 51.6 K at T_ref = T_g, and what shift factor a_T physically means.",
+   "seed_queries": [
+    "Williams Landel Ferry equation universal constants C1 17.4 C2 51.6 glass transition",
+    "WLF shift factor temperature dependence log time scale definition"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "time-temperature-superposition",
+   "scope": "Time-temperature superposition (TTS) as the broader principle: thermorheologically simple materials, master curve construction by horizontal log-time shifting, and when the principle holds or breaks.",
+   "seed_queries": [
+    "time temperature superposition master curve construction principle",
+    "thermorheologically simple material definition when superposition fails"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "policy-as-temperature",
+   "scope": "The mapping from the viscoelastic reading to a software corpus: policy version is the temperature, response curves (latencies, verdicts, retries) are the moduli, and invariant gate structure (gate shape, six terminal states, fail-closed rule) is the material that must not reshape.",
+   "seed_queries": [
+    "configuration policy versioning invariants software system behavior",
+    "treat configuration as control parameter analog system dynamics"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "shift-factor-measurement",
+   "scope": "The measurement method: segment response history into per-policy-version windows using an audit event log, build response curves per window (approve latency, verdict distribution, retry behavior, audit cadence), and compute per-version shift factors a_T(v) by superposition fitting along log time.",
+   "seed_queries": [
+    "time series segmentation by configuration version change point",
+    "shift factor estimation superposition fitting log time axis"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "simplicity-testing",
+   "scope": "Testing thermorheological simplicity on the worker gate: one shift factor per version must superpose ALL curves; if a version bump reshapes a curve (the v4 to v5 validator addition reshaping resend.send outcomes), the analog restricts to rate-only changes.",
+   "seed_queries": [
+    "time temperature superposition failure thermorheologically complex",
+    "distribution shift detection after feature release monitoring"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "policy-version-stamping",
+   "scope": "The proposed instrument: stamp policy_version on every jev_corpus_runs row and keep a compact append-only policy changelog (version, timestamp, diff summary) in a table the wipe protocol never touches, so the method becomes executable after about 2 policy versions of accumulation.",
+   "seed_queries": [
+    "append only changelog table schema design best practices",
+    "database schema version stamping observability audit"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "audit-log-wipe-resilience",
+   "scope": "The 2026-10-01 14:44Z data wipe as a case study: the audit event history was removed so policy-change timestamps are not reconstructable from D1, and the general problem of designing wipe-resistant durable ledgers for audit histories.",
+   "seed_queries": [
+    "audit log data loss incident reconstruction postmortem",
+    "immutable append only audit log storage design wipe"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "calibration-anchors",
+   "scope": "Standing calibration anchors: round 3 prediction-vs-realized dissipation of 102.86 dBc-units over 10 cycles as the hysteresis scale any future WLF comparison must beat before claiming policy-level effects, and effect-size thresholds before claiming a change mattered.",
+   "seed_queries": [
+    "minimum effect size threshold before claiming significant change",
+    "prediction calibration error budget baseline methodology"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "analogy-limits",
+   "scope": "The limits of the viscoelastic analogy: what the temperature metaphor hides, when physical analogies mislead software design, and the honest no-numbers reporting discipline (method-complete but data-blocked, no numbers claimed).",
+   "seed_queries": [
+    "physics analogy limits software engineering criticism",
+    "isomorphic modeling metaphor risk systems design"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.6257,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.092,
+     "1": 0.1903,
+     "2": 0.7177
+    },
+    "confidence": 0.3397
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.8063,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0337,
+     "1": 0.1262,
+     "2": 0.8401
+    },
+    "confidence": 0.5841
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.5036,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1135,
+     "1": 0.2694,
+     "2": 0.6171
+    },
+    "confidence": 0.1994
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.1966,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.181,
+     "1": 0.4413,
+     "2": 0.3777
+    },
+    "confidence": 0.0552
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.9124,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3071,
+     "1": 0.4735,
+     "2": 0.2194
+    },
+    "confidence": 0.05
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.3156,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1659,
+     "1": 0.3526,
+     "2": 0.4815
+    },
+    "confidence": 0.0755
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.8893,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3722,
+     "1": 0.3663,
+     "2": 0.2615
+    },
+    "confidence": 0.0116
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.2786,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1456,
+     "1": 0.4302,
+     "2": 0.4242
+    },
+    "confidence": 0.0793
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.3536,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1415,
+     "1": 0.3634,
+     "2": 0.4951
+    },
+    "confidence": 0.0958
+   }
+  },
+  "usage": {
+   "input_tokens": 1217,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
