@@ -1,0 +1,223 @@
+{
+  "topic": "attested bootc-to-libvirt-to-GPU-passthrough cutover (prior art and novelty verdict)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "bootc-digest-provenance",
+      "scope": "Digest-pinned bootable OCI images and build-time provenance: SLSA v1.0, cosign attestations, reproducibility, Fedora Image Mode Phase 2 and RHEL 10 bootc as production signals",
+      "seed_queries": [
+        "bootc bootable container image digest pinning SLSA provenance cosign",
+        "Fedora Image Mode Phase 2 bootc RHEL 10 image mode 2026"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "libvirt-gpu-mediation",
+      "scope": "QEMU/libvirt GPU mediation: VFIO mdev sysfs API, vfio-user protocol, vendor landscape (GVT-g archived, NVIDIA vendor VFIO, Nutanix libvfio-user)",
+      "seed_queries": [
+        "vfio-user QEMU libvirt GPU mediated device",
+        "Intel GVT-g archived NVIDIA vGPU VFIO mdev deprecation"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "attestation-resource-gating",
+      "scope": "Attestation-based resource gating stacks: IMA + dm-verity + TPM PCRs, EAR/AR4SI trust claims, CoCo Trustee/KBS policy model, AWS Nitro PCR-to-KMS",
+      "seed_queries": [
+        "Confidential Containers Trustee KBS EAR AR4SI attestation policy",
+        "IMA dm-verity TPM PCR measured boot attestation gate"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "boot-admission-policy",
+      "scope": "Single policy object design: Boot Admission Policy binding image digest, PCR/RTMR replay, and GPU binding claims; Trustee RVPS reference values; policy-gated cutover sequencing",
+      "seed_queries": [
+        "attestation policy reference value provider service RVPS Trustee",
+        "libvirt qemu hook pre-launch policy gate virtual machine"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "prior-art-chains",
+      "scope": "Closest prior-art chains: CoCo+nvtrust+Trustee (C2+C3 fused, C1 gap), bcvk+Keylime (C1+C2, unconditional GPU), Kata, Qubes sys-gui-gpu, Kyverno admission-time; coverage matrix",
+      "seed_queries": [
+        "Confidential Containers NVIDIA GPU attestation passthrough H100",
+        "Keylime measured boot QEMU guest attestation"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "novelty-verdict",
+      "scope": "Novelty verdict methodology: Graham v. John Deere layer decomposition (mechanism/trigger/policy), KSR 103 rationales A-F buildability, PHOSITA, secondary considerations, kill criteria",
+      "seed_queries": [
+        "KSR obviousness combination prior art rationales analysis",
+        "patent obviousness level of ordinary skill secondary considerations"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "yubios-integration-path",
+      "scope": "Integration path: extend ADR-031 with a boot-time attestation rule vs parallel ADR, child-issue slotting under a GPU trust boundary parent, staged v0 rollout (C1, C2, C3)",
+      "seed_queries": [
+        "architecture decision record extension versus new ADR policy decision",
+        "virtual machine GPU CI pipeline test attestation gate"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "open-problems",
+      "scope": "Open problems: workload identity shape (CoCo issue 54 debate), init-data binding for vfio-user, virtio-gpu bypass policy, replay protection for upgraded images, tamper-evident auditability",
+      "seed_queries": [
+        "confidential containers workload identity issue 54",
+        "vfio-user protocol security authentication open problems"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6476,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0697,
+          "1": 0.213,
+          "2": 0.7173
+        },
+        "confidence": 0.3471
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8855,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0262,
+          "1": 0.0621,
+          "2": 0.9117
+        },
+        "confidence": 0.7536
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.8295,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0411,
+          "1": 0.0883,
+          "2": 0.8706
+        },
+        "confidence": 0.6511
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.7484,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0511,
+          "1": 0.1494,
+          "2": 0.7995
+        },
+        "confidence": 0.4962
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.9272,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0187,
+          "1": 0.0353,
+          "2": 0.946
+        },
+        "confidence": 0.8447
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.6283,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0857,
+          "1": 0.2002,
+          "2": 0.7141
+        },
+        "confidence": 0.336
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.074,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1876,
+          "1": 0.5508,
+          "2": 0.2616
+        },
+        "confidence": 0.1105
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.601,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.259,
+          "2": 0.671
+        },
+        "confidence": 0.2833
+      }
+    },
+    "usage": {
+      "input_tokens": 1474,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

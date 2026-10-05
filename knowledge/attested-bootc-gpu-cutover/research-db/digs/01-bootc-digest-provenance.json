@@ -1,0 +1,36 @@
+{
+ "nn": "01",
+ "slug": "bootc-digest-provenance",
+ "scope": "Digest-pinned bootable OCI images and build-time provenance: SLSA v1.0, cosign attestations, reproducibility, Fedora Image Mode Phase 2 and RHEL 10 bootc as production signals",
+ "queries_attempted": [
+  {
+   "query": "bootc bootable container image digest pinning SLSA provenance cosign",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "Fedora Image Mode Phase 2 bootc RHEL 10 image mode 2026",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://sandeepkumarchaudhary.com/blog/cosign-slsa-and-provenance-container-trust-explained",
+  "https://docs.docker.com/dhi/explore/security-concepts/provenance/",
+  "https://martin.skoett.name/posts/2024/bootc-signed-images/",
+  "https://github.com/bootc-dev/bootc",
+  "https://github.com/andrew-weida/bootc-container-image-best-practices",
+  "https://ai-infrastructure.net/container-image-provenance/",
+  "https://developers.redhat.com/products/rhel/image-mode",
+  "https://fedoraproject.org/wiki/Initiatives/Image_Mode,_Phase_2_(2026)",
+  "https://fedoraproject.org/wiki/Initiatives/Image_Mode,_Phase_2_(2026)/project_planning",
+  "https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux-10/image-mode",
+  "https://fedoraproject.org/",
+  "https://developers.redhat.com/articles/2026/06/05/installing-red-hat-enterprise-linux-10-bootc-image-bootc"
+ ],
+ "outcome": "authored"
+}
