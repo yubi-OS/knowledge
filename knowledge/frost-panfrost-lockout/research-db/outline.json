@@ -1,0 +1,31 @@
+{
+  "topic": "staged design for Panfrost/RK GPU lockout",
+  "subtopics": [
+    {"nn": "01", "slug": "panfrost-driver-surface", "scope": "Panfrost driver architecture and per-DRM-file state (panfrost_file_priv, MMU context, job-manager contexts, supported Mali hardware) as the patch surface for policy work.", "seed_queries": ["panfrost DRM driver per-file MMU context job manager architecture", "panfrost_file_priv panfrost_device drm mali midgard bifrost valhall"]},
+    {"nn": "02", "slug": "submit-path-gating", "scope": "panfrost_ioctl_submit as the policy choke point: job push path, resolving job-manager contexts and BOs, and how a cgroup/context-aware submit gate would deny new jobs from a locked cgroup.", "seed_queries": ["panfrost_ioctl_submit job push drm ioctl implementation", "cgroup aware GPU job submission gating drm scheduler per client"]},
+    {"nn": "03", "slug": "cgroup-device-access", "scope": "cgroup v2 device controller with BPF_PROG_TYPE_CGROUP_DEVICE to deny render-node opens (Stage 0 lockout primitive) and its limits for already-open DRM files.", "seed_queries": ["cgroup v2 device controller BPF_PROG_TYPE_CGROUP_DEVICE deny device access", "restrict GPU render node /dev/dri access cgroup systemd device policy"]},
+    {"nn": "04", "slug": "device-memory-cgroup", "scope": "cgroup v2 dmem controller for device memory regions and DRM/TTM memory accounting; why Panfrost dmem accounting is unproven prototype work rather than an existing dependency.", "seed_queries": ["cgroup v2 dmem controller device memory regions drm", "drm ttm device memory cgroup accounting panfrost gem shmem"]},
+    {"nn": "05", "slug": "userspace-observability", "scope": "fdinfo/debugfs observability of open DRM files and engine usage (Stage 1): attributing suspected GPU load to a process or cgroup and isolating or terminating the owner-selected process group from userspace.", "seed_queries": ["drm fdinfo gpu engine usage per client debugfs statistics", "panfrost mesa fdinfo profiling gpu stats per process"]},
+    {"nn": "06", "slug": "rockchip-recovery-model", "scope": "Hardware-gated recovery options on RK3399/RK3588 after lockout: cgroup/context drain, per-GPU reset, full GPU power-cycle/reset, and what must be proven on board before claiming recovery.", "seed_queries": ["rockchip rk3588 rk3399 mali gpu reset recovery linux", "drm gpu recovery hang reset devcoredump panfrost job fault"]},
+    {"nn": "07", "slug": "secure-world-cutoff", "scope": "TF-A/OP-TEE firmware-assisted cutoff sketch: U-Boot reserved-memory handoff, narrow SMC/mailbox quarantine-GPU command, board-specific enforcement, and RPMB/fTPM persisted lockout state.", "seed_queries": ["OP-TEE TF-A SMC call firmware secure world enforcement arm", "OP-TEE RPMB secure storage persistent state fTPM nv counter"]},
+    {"nn": "08", "slug": "lockout-test-plan", "scope": "The Frost test plan and ADR trust boundary: false-positive control, active abuse, recovery, attribution, notification, escape of already-open DRM fds, and the Linux-classifies/secure-world-enforces split.", "seed_queries": ["gpu misbehavior detection testing false positive runaway workload", "adr trust boundary policy engine enforcement kernel secure world"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef",
+    "answers": {
+      "t01": {"type": "score", "score": 1.5305, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.1167, "1": 0.2362, "2": 0.6471}, "confidence": 0.2323},
+      "t02": {"type": "score", "score": 1.7561, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.049, "1": 0.1459, "2": 0.8051}, "confidence": 0.5078},
+      "t03": {"type": "score", "score": 1.2842, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.1981, "1": 0.3197, "2": 0.4822}, "confidence": 0.061},
+      "t04": {"type": "score", "score": 0.9326, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.3671, "1": 0.3332, "2": 0.2997}, "confidence": 0.0034},
+      "t05": {"type": "score", "score": 0.8312, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.311, "1": 0.5467, "2": 0.1423}, "confidence": 0.1238},
+      "t06": {"type": "score", "score": 1.449, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.1293, "1": 0.2925, "2": 0.5782}, "confidence": 0.1549},
+      "t07": {"type": "score", "score": 0.931, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.3432, "1": 0.3827, "2": 0.2741}, "confidence": 0.0091},
+      "t08": {"type": "score", "score": 1.4792, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}, "probabilities": {"0": 0.1142, "1": 0.2923, "2": 0.5935}, "confidence": 0.176}
+    },
+    "usage": {"input_tokens": 1065, "output_tokens": 0},
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08"]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nn": "04",
+  "slug": "device-memory-cgroup",
+  "scope": "cgroup v2 dmem controller for device memory regions and DRM/TTM memory accounting; why Panfrost dmem accounting is unproven prototype work rather than an existing dependency.",
+  "queries_attempted": [
+    {"query": "cgroup v2 dmem controller device memory regions drm", "attempt": 1, "raw_results": 44, "kept": 3},
+    {"query": "cgroup v2 dmem controller device memory regions drm", "attempt": 2, "raw_results": 56, "kept": 1},
+    {"query": "drm ttm device memory cgroup accounting panfrost gem shmem", "attempt": 1, "raw_results": 47, "kept": 2},
+    {"query": "drm ttm device memory cgroup accounting panfrost gem shmem", "attempt": 2, "raw_results": 47, "kept": 1}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.kernel.org/next/core-api/cgroup.html",
+    "https://cateee.net/lkddb/web-lkddb/CGROUP_DMEM.html",
+    "https://lwn.net/Articles/1000744/",
+    "https://dri.freedesktop.org/docs/drm/core-api/cgroup.html",
+    "https://www.kernel.org/doc/html/latest/gpu/drm-mm.html",
+    "https://deepwiki.com/allbilly/linux_drm/2.2-gem-memory-management-and-ttm",
+    "https://docs.kernel.org/gpu/drm-mm.html"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,29 @@
+{
+  "nn": "07",
+  "slug": "secure-world-cutoff",
+  "scope": "TF-A/OP-TEE firmware-assisted cutoff sketch: U-Boot reserved-memory handoff, narrow SMC/mailbox quarantine-GPU command, board-specific enforcement, and RPMB/fTPM persisted lockout state.",
+  "queries_attempted": [
+    {"query": "OP-TEE TF-A SMC call firmware secure world enforcement arm", "attempt": 1, "raw_results": 46, "kept": 4},
+    {"query": "OP-TEE TF-A SMC call firmware secure world enforcement arm", "attempt": 2, "raw_results": 36, "kept": 2},
+    {"query": "OP-TEE RPMB secure storage persistent state fTPM nv counter", "attempt": 1, "raw_results": 44, "kept": 5},
+    {"query": "OP-TEE RPMB secure storage persistent state fTPM nv counter", "attempt": 2, "raw_results": 34, "kept": 2}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://deepwiki.com/ARM-software/arm-trusted-firmware/6.1-secure-monitor-calls-(smc)",
+    "https://github.com/OP-TEE/optee_os/issues/7120",
+    "https://stackoverflow.com/questions/77163446/relation-between-op-tee-and-atf",
+    "https://github.com/OP-TEE/optee_os/issues/6299",
+    "https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html",
+    "https://docs.kernel.org/next/tee/op-tee.html",
+    "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+    "https://deepwiki.com/OP-TEE/optee_ftpm/6-storage-and-persistence",
+    "https://github.com/ForgeRock/optee-os/blob/master/documentation/secure_storage_rpmb.md",
+    "https://github.com/10GiC10V38/jetson-ima-attestation",
+    "https://deepwiki.com/OP-TEE/optee_client/2.2.2-rpmb-storage",
+    "https://github.com/OP-TEE/optee_docs/blob/master/architecture/secure_storage.rst",
+    "https://docs.nvidia.com/doca/archive/2-9-2/ftpm+over+op-tee/index.html"
+  ],
+  "outcome": "authored"
+}

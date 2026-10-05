@@ -1,0 +1,25 @@
+# Cgroup device access (Stage 0)
+
+Scope: cgroup v2 device controller with BPF_PROG_TYPE_CGROUP_DEVICE to deny render-node opens for a locked cgroup, and the hard limits that make this only a Stage 0 primitive.
+
+## How the v2 device controller works
+
+Cgroup v2 has no devices controller of its own. Device access control is implemented on top of cgroup BPF: a user creates BPF programs of type BPF_PROG_TYPE_CGROUP_DEVICE and attaches them to cgroups with the BPF_CGROUP_DEVICE flag; on each device access attempt the programs run and their return value decides the outcome (source: https://docs.kernel.org/admin-guide/cgroup-v2.html, jev weight 0.86). The program type is documented as the cgroup v2 variant of the device whitelist controller: it is called with a context describing the access attempt, and returning 0 fails the attempt with -EPERM (source: https://docs.ebpf.io/linux/program-type/BPF_PROG_TYPE_CGROUP_DEVICE/, jev weight 0.79). The Isovalent docs mirror states the trigger condition in user terms: the program executes when a process in the attached cgroup wishes to access a device node (source: https://github.com/isovalent/ebpf-docs/blob/master/docs/linux/program-type/BPF_PROG_TYPE_CGROUP_DEVICE.md, jev weight 0.86).
+
+The granularity is process groups by construction: put processes in a cgroup, attach a BPF program, and the policy applies to that whole group (source: https://eunomia.dev/tutorials/cgroup/, jev weight 0.53). Unlike classic controllers, the v2 device controller exposes no interface files; everything is BPF (source: https://dropbear.xyz/2023/05/23/devices-with-cgroup-v2/, jev weight 0.56). For contrast, the cgroup v1 device whitelist tracked and enforced open and mknod restrictions with allow/deny entries of type, major, minor and access fields (source: https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/devices.html, jev weight 0.80). A third-party explainer describing v2's BPF_CGROUP_DEVICE as the v1 replacement scored below the citation threshold in this pass (source: https://kernel-internals.org/cgroups/cgroup-bpf/, jev weight 0.38, weak backing), though the same fact is independently backed by the two primary sources above.
+
+## Stage 0 design
+
+Stage 0 of the lockout design is exactly this primitive: for a locked service or session cgroup, attach or update a BPF_PROG_TYPE_CGROUP_DEVICE program that returns 0 for opens of the DRM render nodes (the /dev/dri/renderD* devices). New render-node opens by anything in that cgroup then fail with -EPERM. systemd users can express device policy at unit level with DevicePolicy and DeviceAllow, which control access to specific device nodes with r, w and m permission letters (source: https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04, jev weight 0.47, weak backing). The generic pattern of restricting GPU access through device node permissions is widely described outside the kernel docs, but the sampled FAQ page is an aggregator (source: https://massedcompute.com/faq-answers/?question=How+do+I+restrict+access+to+NVIDIA+GPUs+for+specific+users+or+groups, jev weight 0.20, weak backing).
+
+## Evidence that node-level control is live and fragile
+
+The render nodes are a real and contested control point. systemd 258 shipped a regression that reset /dev/dri/renderD* permissions to root:root with mode 0600 on every boot, making the GPU inaccessible to non-root users and breaking Vulkan applications (source: https://github.com/systemd/systemd/issues/39110, jev weight 0.90). In container runtimes, the cgroup_device BPF filter created by systemd-managed cgroups can be created twice, and users patch the filter to add exactly the GPU device IDs a container may access (source: https://github.com/containers/crun/issues/1738, jev weight 0.39, weak backing). Both cases show Stage 0 policy must be written idempotently and verified after udev or runtime tooling touches the nodes.
+
+## The hard limit: open files are not covered
+
+The device whitelist primitive enforces open and mknod restrictions (source: https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/devices.html, jev weight 0.80). It does nothing to a DRM file descriptor that is already open. This is why the staged design treats Stage 0 as denial of future opens only, and why the test plan carries an explicit escape check: already-open DRM fds must not be able to continue submitting past the milestone being claimed. A community writeup describing an escalation ladder from throttle to reject for GPU overuse scored near zero on the quality metric in this pass (source: https://%C9%84%D5%B6%D5%A9.com/?p=1180, jev weight 0.04, weak backing) and is cited only as evidence that such ladders are commonly proposed, not as backing for the design.
+
+## What Stage 0 does not give you
+
+Stage 0 cannot stop an offending process that already holds a render node from submitting new jobs, cannot attribute past GPU load to a process, and cannot recover the GPU. Those gaps are what Stages 1 through 3 (observability and userspace isolation, submit gating, hardware-gated recovery) exist to close.
