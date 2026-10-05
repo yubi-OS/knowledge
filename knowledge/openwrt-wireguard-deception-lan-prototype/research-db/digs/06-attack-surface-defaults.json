@@ -1,0 +1,36 @@
+{
+ "nn": 6,
+ "slug": "attack-surface-defaults",
+ "scope": "Network defaults that keep the deception LAN attack surface minimal: WireGuard-zone-only listening, no WAN bind, no redirect of the real SSH endpoint, owner break-glass path",
+ "queries_attempted": [
+  {
+   "query": "honeypot network isolation firewall rules attack surface minimization",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 0
+  },
+  {
+   "query": "SSH honeypot network design protect real service from exposure",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 0
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.danharkey.com/posts/honeypot-isolation-controls-that-keep-attackers-contained",
+  "https://danharkey.com/posts/honeypot-isolation-best-practices-to-contain-risk-and-capture-threat-intelligence",
+  "https://www.kerndtbrothers.com/",
+  "https://www.techtarget.com/cybersecurity/definition/What-is-a-honeypot-How-it-protects-against-cyberattacks",
+  "https://www.o2.cz/podnikatele-a-firmy/bezpecnost/next-generation-firewall",
+  "https://www.kerndtbrothers.com/services-tools/account-services/digital-banking.html",
+  "https://steve-parker.org/articles/ssh-honeypot/",
+  "https://github.com/Srakawichi/cloud-ssh-honeypot",
+  "https://medium.com/@sr0504526/building-a-real-time-ssh-honeypot-monitoring-system-with-opencanary-and-flask-580df5a3556a",
+  "https://securehoney.net/",
+  "https://www.openssh.org/",
+  "https://www.youtube.com/watch?v=xa1L8ywvnN4"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,239 @@
+{
+ "topic": "a WireGuard-based SSH deception LAN prototype on OpenWrt (design plan only)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "wireguard-deception-segmentation",
+   "scope": "Designing a WireGuard-zone-segmented deception LAN on OpenWrt: zone topology, addressing, and confining decoys inside the mesh only",
+   "seed_queries": [
+    "OpenWrt WireGuard firewall zone segmented network design",
+    "WireGuard mesh VPN network segmentation honeypot design"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "endlessh-tarpit-backend",
+   "scope": "endlessh as the SSH tarpit backend: how it lures attackers, what it is not enough for, and why it fits OpenWrt",
+   "seed_queries": [
+    "endlessh SSH tarpit how it works protocol behavior",
+    "endlessh honeypot OpenWrt setup limitations"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "multihost-decoy-topology",
+   "scope": "Multi-host decoy topology across a WireGuard mesh: a consistent coordinated decoy surface so a probe against one host does not reveal the real host by omission",
+   "seed_queries": [
+    "multi host honeypot network decoy consistency design",
+    "cyber deception network topology avoid decoy detection omission"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "decoy-pool-planning",
+   "scope": "Mesh-wide decoy pool address planning: allocating decoy addresses from a shared plan rather than per-router pools to avoid structural tells",
+   "seed_queries": [
+    "honeypot IP address planning decoy network address allocation",
+    "network deception address space planning consistent decoy surface"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "coordination-without-controller",
+   "scope": "Coordinating decoy configuration across hosts without a central controller: a static owner-authored planning worksheet instead of a runtime sync protocol",
+   "seed_queries": [
+    "honeypot management without central controller static configuration",
+    "cyber deception coordination architecture avoid single point of compromise"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "attack-surface-defaults",
+   "scope": "Network defaults that keep the deception LAN attack surface minimal: WireGuard-zone-only listening, no WAN bind, no redirect of the real SSH endpoint, owner break-glass path",
+   "seed_queries": [
+    "honeypot network isolation firewall rules attack surface minimization",
+    "SSH honeypot network design protect real service from exposure"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "evidence-run-plan",
+   "scope": "The evidence-run plan for the prototype: per-host router config, firewall view, scan behavior, packet capture, service logs, plus a cross-host comparison step",
+   "seed_queries": [
+    "honeypot evaluation methodology evidence collection packet capture scan behavior",
+    "honeypot validation testing methodology SSH tarpit"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "notification-aggregation",
+   "scope": "Aggregating probe notifications across decoy hosts at the owner's existing notification point without adding new cross-host attack surface",
+   "seed_queries": [
+    "honeypot alert aggregation design low noise intrusion notification",
+    "log aggregation multiple honeypot sensors alerting design"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "failure-recovery-gates",
+   "scope": "Failure and recovery design plus promotion gates: respawn caps, fail to no-decoy-service behavior, and the evidence checklist needed before leaving design stage",
+   "seed_queries": [
+    "honeypot service failure safe design fail closed recovery",
+    "honeypot deployment readiness checklist promotion criteria evidence"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8485,
+    "probabilities": {
+     "0": 0.0359,
+     "1": 0.0798,
+     "2": 0.8843
+    },
+    "confidence": 0.6846,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7533,
+    "probabilities": {
+     "0": 0.041,
+     "1": 0.1646,
+     "2": 0.7944
+    },
+    "confidence": 0.4897,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.641,
+    "probabilities": {
+     "0": 0.0657,
+     "1": 0.2275,
+     "2": 0.7068
+    },
+    "confidence": 0.3334,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.5784,
+    "probabilities": {
+     "0": 0.075,
+     "1": 0.2716,
+     "2": 0.6534
+    },
+    "confidence": 0.2595,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.4672,
+    "probabilities": {
+     "0": 0.0881,
+     "1": 0.3566,
+     "2": 0.5553
+    },
+    "confidence": 0.1649,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.8573,
+    "probabilities": {
+     "0": 0.0341,
+     "1": 0.0745,
+     "2": 0.8914
+    },
+    "confidence": 0.7019,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.5089,
+    "probabilities": {
+     "0": 0.0945,
+     "1": 0.3022,
+     "2": 0.6033
+    },
+    "confidence": 0.1964,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.2281,
+    "probabilities": {
+     "0": 0.1266,
+     "1": 0.5187,
+     "2": 0.3547
+    },
+    "confidence": 0.1163,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.5442,
+    "probabilities": {
+     "0": 0.0697,
+     "1": 0.3163,
+     "2": 0.614
+    },
+    "confidence": 0.2228,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1456,
+   "output_tokens": 0
+  }
+ },
+ "dropped": [],
+ "kept": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ]
+}
