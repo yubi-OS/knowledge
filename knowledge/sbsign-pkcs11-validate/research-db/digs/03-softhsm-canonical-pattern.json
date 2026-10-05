@@ -1,0 +1,34 @@
+{
+  "nn": "03",
+  "slug": "softhsm-canonical-pattern",
+  "scope": "SoftHSM2 as the canonical software-token signing pattern for exercising the PKCS#11 signing path without hardware, including token init and URI construction.",
+  "queries_attempted": [
+    {
+      "query": "SoftHSM2 pkcs11 signing openssl softhsm2-util token init",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "softhsm2 PKCS11 URI test signing automation",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://deepwiki.com/softhsm/SoftHSMv2/9.1-softhsm2-util",
+    "https://github.com/softhsm/softHSMv2",
+    "https://github.com/PrimosTI/softhsm2",
+    "https://github.com/softhsm/SoftHSMv2",
+    "https://www.saela.eu/openssl/",
+    "https://azure.github.io/iot-identity-service/pkcs11/softhsm.html",
+    "https://cyberhashira.github.io/notes/pkcs11/SoftHSM2.html",
+    "https://github.com/Azure/azure-iot-sdk/blob/main/c/samples/authentication/hsm_pkcs11/README.md",
+    "https://stella-ops.org/docs/operations/softhsm2-test-environment/",
+    "https://hyperledger.github.io/fabric-sdk-node/release-1.4/tutorial-hsm-pkcs11.html"
+  ],
+  "outcome": "authored"
+}

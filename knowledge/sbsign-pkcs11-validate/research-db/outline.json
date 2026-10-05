@@ -1,0 +1,215 @@
+{
+  "topic": "sbsign PKCS#11 UKI signing and validation: the canonical SoftHSM signing pattern, cross-version token traps, and the verification recipe for YubiKey PIV signing in CI",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "systemd-sbsign-pkcs11-interface",
+      "scope": "systemd-sbsign as the modern signing interface: --private-key-source engine:pkcs11 and provider:pkcs11, the --private-key PKCS#11 URI, and how it signs PE/UKI artifacts.",
+      "seed_queries": [
+        "systemd-sbsign private-key-source engine pkcs11 PKCS11 URI",
+        "systemd-sbsign sign UKI unified kernel image PE signing"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "yubikey-piv-ykcs11",
+      "scope": "YubiKey PIV slot 9c as a Secure Boot signing key through the ykcs11 PKCS#11 module, and module discovery via p11-kit list-modules.",
+      "seed_queries": [
+        "ykcs11 YubiKey PIV PKCS11 module slot 9c sign",
+        "p11-kit list-modules ykcs11 YubiKey PKCS11 configuration"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "softhsm-canonical-pattern",
+      "scope": "SoftHSM2 as the canonical software-token signing pattern for exercising the PKCS#11 signing path without hardware, including token init and URI construction.",
+      "seed_queries": [
+        "SoftHSM2 pkcs11 signing openssl softhsm2-util token init",
+        "softhsm2 PKCS11 URI test signing automation"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "cross-version-token-traps",
+      "scope": "Cross-version PKCS#11 traps: OpenSSL 3 provider vs legacy engine split, p11-kit proxy behavior, and token/module version incompatibilities that break signing chains.",
+      "seed_queries": [
+        "openssl 3 pkcs11 provider vs engine p11-kit migration",
+        "PKCS11 module version incompatibility cross-version token problems"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "ukisign-verification-recipe",
+      "scope": "Verification recipe for signed UKI/PE artifacts: osslsigncode verify with CAfile, sbverify/sbattach corroboration, and what a clean verify output looks like.",
+      "seed_queries": [
+        "osslsigncode verify PE authenticode CAfile",
+        "sbverify sbattach verify UKI PE signature"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "mkosi-systemd-sbsign-integration",
+      "scope": "mkosi integration: SecureBootKeySource=engine:pkcs11 / provider:pkcs11 via systemd-sbsign in mkosi v27+, and how image builds pick up PKCS#11 keys.",
+      "seed_queries": [
+        "mkosi SecureBootKeySource engine pkcs11 systemd-sbsign",
+        "mkosi systemd-sbsign UKI signing PKCS11"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "yubikey-ci-signing-validation",
+      "scope": "Signing validation in CI: gates for hardware-key signing (YubiKey PIV present or skipped), software-token stand-ins, and the validate-then-corroborate pattern.",
+      "seed_queries": [
+        "YubiKey PIV signing CI runner hardware key secure boot",
+        "CI secure boot signing gate PKCS11 hardware token"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "legacy-sbsign-migration",
+      "scope": "Legacy sbsign --engine pkcs11 vs systemd-sbsign: why documentation converges on systemd-sbsign, and how historical sbsign usage is preserved as ADR context.",
+      "seed_queries": [
+        "sbsign openssl engine pkcs11 deprecated legacy",
+        "systemd-sbsign replaces sbsign unified kernel image"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.5828,
+        "probabilities": {
+          "0": 0.0933,
+          "1": 0.2306,
+          "2": 0.6761
+        },
+        "confidence": 0.2785,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.6982,
+        "probabilities": {
+          "0": 0.0513,
+          "1": 0.1993,
+          "2": 0.7494
+        },
+        "confidence": 0.406,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.9239,
+        "probabilities": {
+          "0": 0.0211,
+          "1": 0.0339,
+          "2": 0.945
+        },
+        "confidence": 0.8419,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.9007,
+        "probabilities": {
+          "0": 0.0227,
+          "1": 0.0539,
+          "2": 0.9234
+        },
+        "confidence": 0.784,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.8665,
+        "probabilities": {
+          "0": 0.0329,
+          "1": 0.0677,
+          "2": 0.8994
+        },
+        "confidence": 0.7219,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.9835,
+        "probabilities": {
+          "0": 0.1699,
+          "1": 0.6768,
+          "2": 0.1533
+        },
+        "confidence": 0.2656,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.7618,
+        "probabilities": {
+          "0": 0.045,
+          "1": 0.1483,
+          "2": 0.8067
+        },
+        "confidence": 0.5122,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.9239,
+        "probabilities": {
+          "0": 0.1857,
+          "1": 0.7047,
+          "2": 0.1096
+        },
+        "confidence": 0.3147,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1645,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

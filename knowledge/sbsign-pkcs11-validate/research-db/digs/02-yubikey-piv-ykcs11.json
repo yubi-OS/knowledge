@@ -1,0 +1,34 @@
+{
+  "nn": "02",
+  "slug": "yubikey-piv-ykcs11",
+  "scope": "YubiKey PIV slot 9c as a Secure Boot signing key through the ykcs11 PKCS#11 module, and module discovery via p11-kit list-modules.",
+  "queries_attempted": [
+    {
+      "query": "ykcs11 YubiKey PIV PKCS11 module slot 9c sign",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "p11-kit list-modules ykcs11 YubiKey PKCS11 configuration",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.yubico.com/yubico-piv-tool/YKCS11/",
+    "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+    "https://developers.yubico.com/yubico-piv-tool/YKCS11/Supported_applications/pkcs11tool.html",
+    "https://github.com/Yubico/yubico-piv-tool/blob/master/doc/YKCS11/Supported_applications/pkcs11tool.adoc",
+    "https://docs.yubico.com/software/yubikey/tools/pivtool/index.html",
+    "https://github.com/Yubico/yubico-piv-tool/blob/master/ykcs11/ykcs11.c",
+    "https://man.archlinux.org/man/p11-kit.8.en",
+    "https://github.com/p11-glue/p11-kit",
+    "https://manpages.opensuse.org/Tumbleweed/p11-kit-tools/p11-kit.8.en.html",
+    "https://github.com/Yubico/yubico-piv-tool/issues/92"
+  ],
+  "outcome": "authored"
+}

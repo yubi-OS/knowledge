@@ -1,0 +1,68 @@
+{
+  "nn": "04",
+  "slug": "cross-version-token-traps",
+  "scope": "Cross-version PKCS#11 traps: OpenSSL 3 provider vs legacy engine split, p11-kit proxy behavior, and token/module version incompatibilities that break signing chains.",
+  "queries_attempted": [
+    {
+      "query": "openssl 3 pkcs11 provider vs engine p11-kit migration",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "PKCS11 module version incompatibility cross-version token problems",
+      "attempt": 1,
+      "raw_results": 58,
+      "kept": 6
+    },
+    {
+      "query": "sbsign OpenSSL 3 engine pkcs11 regression load_privkey Ubuntu",
+      "attempt": 2,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "p11-kit pkcs11-provider systemd-sbsign engine provider difference",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig returned too few high-weight (noul >= 0.5) sources to author honestly; re-dug with different queries",
+      "new_queries": [
+        "sbsign OpenSSL 3 engine pkcs11 regression load_privkey Ubuntu",
+        "p11-kit pkcs11-provider systemd-sbsign engine provider difference"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://github.com/openssl-projects/pkcs11-provider",
+    "https://docs.openssl.org/3.0/man7/migration_guide/",
+    "https://www.openssl.org/",
+    "https://blog.hansenpartnership.com/converting-engines-to-openssl-3-providers/",
+    "https://mta.openssl.org/pipermail/openssl-users/2023-September/016737.html",
+    "https://www.mankier.com/7/provider-pkcs11",
+    "https://deepwiki.com/siemens/puppet-pam_pkcs11/8-troubleshooting",
+    "https://docs.oracle.com/javase/8/docs/technotes/guides/security/p11guide.html",
+    "https://blog.adamgamboa.dev/pkcs-11-provider-across-multiple-java-versions/",
+    "https://en.wikipedia.org/wiki/Firefox_version_history",
+    "https://www.npmjs.com/package/nocache",
+    "https://github.com/pyauth/python-pkcs11",
+    "https://www.mail-archive.com/ubuntu-bugs@lists.ubuntu.com/msg6298806.html",
+    "https://lists.ubuntu.com/archives/foundations-bugs/2026-July/550383.html",
+    "https://www.espn.com/",
+    "https://bugs.launchpad.net/ubuntu/+source/libp11/+bug/2158304",
+    "https://github.com/OpenSC/libp11",
+    "https://github.com/OpenSC/OpenSC/wiki/Using-pkcs11-tool-and-OpenSSL",
+    "https://github.com/p11-glue/p11-kit",
+    "https://docs.fedoraproject.org/en-US/packaging-guidelines/Pkcs11Support/",
+    "https://unoca.unmissions.org/sites/default/files/p11-_personal_history_profile_-_english.pdf",
+    "https://manpages.ubuntu.com/manpages/questing/man1/systemd-sbsign.1.html",
+    "https://p11-glue.github.io/p11-glue/p11-kit.html"
+  ],
+  "outcome": "authored"
+}

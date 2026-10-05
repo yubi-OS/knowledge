@@ -1,0 +1,33 @@
+{
+  "nn": "06",
+  "slug": "mkosi-systemd-sbsign-integration",
+  "scope": "mkosi integration: SecureBootKeySource=engine:pkcs11 / provider:pkcs11 via systemd-sbsign in mkosi v27+, and how image builds pick up PKCS#11 keys.",
+  "queries_attempted": [
+    {
+      "query": "mkosi SecureBootKeySource engine pkcs11 systemd-sbsign",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "mkosi systemd-sbsign UKI signing PKCS11",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+    "https://github.com/systemd/mkosi/issues/3033",
+    "https://man.archlinux.org/man/systemd-sbsign.1.en",
+    "https://github.com/yubi-OS/yubiOS/blob/main/refs/sbsign-pkcs11-validate-2026-07-23.md",
+    "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+    "https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md",
+    "https://0pointer.net/blog/",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html",
+    "https://deepwiki.com/systemd/mkosi/5.2-unified-kernel-images-(uki)"
+  ],
+  "outcome": "authored"
+}

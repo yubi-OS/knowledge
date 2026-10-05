@@ -1,0 +1,36 @@
+{
+  "nn": "07",
+  "slug": "yubikey-ci-signing-validation",
+  "scope": "Signing validation in CI: gates for hardware-key signing (YubiKey PIV present or skipped), software-token stand-ins, and the validate-then-corroborate pattern.",
+  "queries_attempted": [
+    {
+      "query": "YubiKey PIV signing CI runner hardware key secure boot",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "CI secure boot signing gate PKCS11 hardware token",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.yubico.com/software/yubikey/tools/pivtool/index.html",
+    "https://www.yubico.com/",
+    "https://community.nxp.com/t5/i-MX-Processors/HAB4-Secure-Boot-Keys-Stored-on-YubiKey-5-Nano/m-p/2149446",
+    "https://www.eidola.ai/docs/contributing/release-apple-signing-yubikey/",
+    "https://github.com/nodelibdev/hardware-keys",
+    "https://developers.yubico.com/PIV/Guides/PIV_Walk-Through.html",
+    "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+    "https://docs.sigstore.dev/cosign/signing/pkcs11/",
+    "https://stackoverflow.com/questions/77283793/code-signing-windows-exe-with-sectigo-hardware-token-safenet-authentication-cli",
+    "https://github.com/JETtech-Labs/code-sign",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/configuring-applications-to-use-cryptographic-hardware-through-pkcs-11_security-hardening",
+    "https://www.citi.com/?msockid=20aed1a49bab63aa3500c64d9a266242"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,66 @@
+{
+  "nn": "05",
+  "slug": "ukisign-verification-recipe",
+  "scope": "Verification recipe for signed UKI/PE artifacts: osslsigncode verify with CAfile, sbverify/sbattach corroboration, and what a clean verify output looks like.",
+  "queries_attempted": [
+    {
+      "query": "osslsigncode verify PE authenticode CAfile",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "sbverify sbattach verify UKI PE signature",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "sbverify --list verify unified kernel image signature output",
+      "attempt": 2,
+      "raw_results": 41,
+      "kept": 6
+    },
+    {
+      "query": "osslsigncode verify CAfile exit code chain of trust example",
+      "attempt": 2,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig returned too few high-weight (noul >= 0.5) sources to author honestly; re-dug with different queries",
+      "new_queries": [
+        "sbverify --list verify unified kernel image signature output",
+        "osslsigncode verify CAfile exit code chain of trust example"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://github.com/mtrojnar/osslsigncode",
+    "https://github.com/mtrojnar/osslsigncode/blob/master/osslsigncode.md",
+    "https://my-ssl.com/learn/how-to-verify-a-code-signature",
+    "https://learn.microsoft.com/en-us/windows/win32/secbp/understanding-pe-signatures",
+    "https://docs.digicert.com/zf/software-trust-manager/code-signing/sign-with-third-party-signing-tools/windows-applications/sign-authenticode-files-with-osslsigncode-using-openssl-pkcs11-engine.html",
+    "https://docs.clamav.net/appendix/Authenticode.html",
+    "https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en",
+    "https://man.uex.se/1/sbverify",
+    "https://manpages.org/sbverify",
+    "https://manpages.opensuse.org/Tumbleweed/sbsigntools/sbverify.1.en.html",
+    "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+    "https://www.cookwithmanali.com/sweet-spicy-tomato-chutney/",
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://unix.stackexchange.com/questions/636263/how-to-verify-signed-uefi-binaries",
+    "https://www.mankier.com/1/sbverify",
+    "https://copyninja.in/blog/enable_secureboot_ukify.html",
+    "https://stackoverflow.com/questions/25482199/verify-a-certificate-chain-using-openssl-verify",
+    "https://stackharbor.com/en/knowledge-base/openssl-verify-certificate-chain/",
+    "https://www.youtube.com/watch?v=uc4SrBJxO_k",
+    "https://stackoverflow.com/questions/77899291/osslsigncode-verify-fails-even-though-rootca-certificate-is-added-to-the-trust-s",
+    "https://docs.digicert.com/en/digicert-keylocker/client-tools/command-line-interface/third-party-signing-tool-integrations/osslsigncode.html"
+  ],
+  "outcome": "authored"
+}
