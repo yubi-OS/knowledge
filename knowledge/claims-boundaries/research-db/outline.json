@@ -1,0 +1,223 @@
+{
+  "topic": "Claims boundaries in security marketing: what a product's campaign surfaces may say versus what its threat model actually bounds, and how to keep public claims inside the verified envelope",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "claims-bounding-rule",
+      "scope": "The core discipline: a product may publicly claim only what its threat model can bound and its architecture can evidence, nothing stronger.",
+      "seed_queries": [
+        "security product marketing claims must match threat model bounds",
+        "security claims versus actual security guarantees threat model"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "overclaiming-language",
+      "scope": "Absolute and inflated security language (unhackable, secure by default, impenetrable) and why it collapses under scrutiny.",
+      "seed_queries": [
+        "unhackable security marketing overclaiming criticism",
+        "secure by default misleading security claim examples"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "regulatory-substantiation",
+      "scope": "Regulator and standards guidance on substantiating security claims: FTC enforcement, NIST and EU expectations for evidence behind public statements.",
+      "seed_queries": [
+        "FTC security claims substantiation enforcement cases",
+        "NIST guidance truthful vendor security claims evidence"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "threat-model-as-contract",
+      "scope": "Threat models as the bounding document: scope, assumptions, out-of-scope exclusions, and how an assurance case maps public claims to evidence.",
+      "seed_queries": [
+        "threat model document scope assumptions out of scope",
+        "security assurance case mapping claims to evidence"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "evidence-envelope",
+      "scope": "The verified envelope itself: architecture docs, measured boot and signed trust chains, certifications and attestations that bound what can be claimed.",
+      "seed_queries": [
+        "security architecture documentation supporting product claims",
+        "common criteria certification versus vendor marketing claims"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "status-labels",
+      "scope": "Maturity and status labeling: technical preview, groundwork, beta versus production support language in READMEs and SECURITY.md supported-versions tables.",
+      "seed_queries": [
+        "technical preview software status README security support",
+        "SECURITY.md supported versions production language"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "oss-campaign-messaging",
+      "scope": "How open-source security projects phrase campaign surfaces: taglines, launch pages, README claims for secure boot, immutable OS and identity-root stories.",
+      "seed_queries": [
+        "open source secure boot immutable OS project marketing claims",
+        "linux security project launch messaging tagline"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "claim-audit-checklist",
+      "scope": "Operationalizing the boundary: a pre-publication claim review process mapping each marketing claim to a bounded control or evidence artifact.",
+      "seed_queries": [
+        "security marketing claims review checklist process",
+        "marketing claim substantiation review security documentation"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8421,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0457,
+          "1": 0.0666,
+          "2": 0.8877
+        },
+        "confidence": 0.6919
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.3949,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1195,
+          "1": 0.366,
+          "2": 0.5145
+        },
+        "confidence": 0.1194
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.3417,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1399,
+          "1": 0.3786,
+          "2": 0.4815
+        },
+        "confidence": 0.0922
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8124,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0397,
+          "1": 0.1082,
+          "2": 0.8521
+        },
+        "confidence": 0.6091
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.7193,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0622,
+          "1": 0.1563,
+          "2": 0.7815
+        },
+        "confidence": 0.4586
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.1774,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1956,
+          "1": 0.4314,
+          "2": 0.373
+        },
+        "confidence": 0.0453
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.7583,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3889,
+          "1": 0.4639,
+          "2": 0.1472
+        },
+        "confidence": 0.0822
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.5172,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0903,
+          "1": 0.3022,
+          "2": 0.6075
+        },
+        "confidence": 0.2028
+      }
+    },
+    "usage": {
+      "input_tokens": 1226,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
