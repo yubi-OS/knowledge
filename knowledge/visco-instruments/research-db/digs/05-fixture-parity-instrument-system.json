@@ -1,0 +1,68 @@
+{
+  "nn": "05",
+  "slug": "fixture-parity-instrument-system",
+  "scope": "tools/visco-instruments/ as the system of record: verify_visco.py, generate_fixtures.py, CONTRACTS.md, JSON fixtures, and the fixture-parity-tested JS port (jev-visco-math.js) that is never re-derived.",
+  "queries_attempted": [
+    {
+      "query": "golden master testing fixtures cross-language implementation parity",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    },
+    {
+      "query": "reference implementation porting TypeScript Python contract testing",
+      "attempt": 1,
+      "raw_results": 56,
+      "kept": 6
+    },
+    {
+      "query": "approval testing golden master baseline comparison software",
+      "attempt": 2,
+      "raw_results": 36,
+      "kept": 6
+    },
+    {
+      "query": "shared conformance test vectors cross language implementations",
+      "attempt": 2,
+      "raw_results": 57,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt-1 dig too thin: only 1 high-weight relevant source; rest low weight or off-topic",
+      "new_queries": [
+        "approval testing golden master baseline comparison software",
+        "shared conformance test vectors cross language implementations"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Characterization_test",
+    "https://helpmetest.com/blog/golden-master-testing/",
+    "https://deepwiki.com/apache/paimon-rust/13.1-test-suites-and-fixtures",
+    "https://stackpractices.com/patterns/golden-master-testing-pattern/",
+    "http://octopusinvitro.gitlab.io/blog/code-and-tech/approval-testing",
+    "https://github.com/aadityat23/finverify-llm/issues/17",
+    "https://github.com/modelcontextprotocol/typescript-sdk",
+    "https://blog.modelcontextprotocol.io/posts/sdk-betas-2026-07-28/",
+    "https://dev.to/nicolas_vbgh/the-python-typescript-contract-3a8d",
+    "https://www.scribbr.com/citation/generator/",
+    "https://apple-tree.life/~michael/blog/2020/",
+    "https://github.com/glassBead-tc/python-to-typescript-assistant",
+    "https://helpmetest.com/blog/approval-testing-golden-master/",
+    "https://octopusinvitro.gitlab.io/blog/code-and-tech/approval-testing",
+    "https://florian-kraemer.net/software-architecture/2024/11/19/Approval-Testing-A-Test-Approach-to-legacy-Systems.html",
+    "https://cloudamite.com/characterization-testing/",
+    "https://qaskills.sh/blog/approval-testing-golden-master-guide",
+    "https://s402-protocol.org/guide/conformance",
+    "https://www.yinkoshield.com/knowledge-center/audit-and-evidence-formats/cross-language-test-vectors/",
+    "https://github.com/cyphera-labs/cyphera-conformance",
+    "https://swt3.ai/vectors/",
+    "https://handwiki.org/wiki/Scalable_Vector_Graphics",
+    "https://www.merriam-webster.com/thesaurus/shared"
+  ],
+  "outcome": "authored"
+}
