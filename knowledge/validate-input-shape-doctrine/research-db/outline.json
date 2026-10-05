@@ -1,0 +1,239 @@
+{
+ "topic": "the validate-input-shape doctrine and CI gate: validating workflow input shapes before dispatch, the doctrine behind it, and how the gate catches malformed inputs before CI burns runners",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "failure-mode-anatomy",
+   "scope": "the five 2026-07-26 to 07-30 dispatch and contract failures and the implicit-contract meta-pattern",
+   "seed_queries": [
+    "GitHub Actions workflow_dispatch undeclared input 422 error dispatcher",
+    "CI dispatcher workflow boolean input type mismatch failure debugging"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "doctrine-rules",
+   "scope": "the eight numbered doctrine rules: explicit inputs, explicit types, safe defaults, intersection, serialization, lex-sort, tag coverage, audit echo",
+   "seed_queries": [
+    "GitHub Actions workflow_dispatch inputs types string boolean choice environment",
+    "workflow_dispatch input default value best practices required"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "workflow-dispatch-api-contract",
+   "scope": "the GitHub workflow_dispatch REST API contract: input validation, HTTP 422 semantics, input types, and what actionlint cannot catch",
+   "seed_queries": [
+    "GitHub REST API create workflow dispatch event inputs validation documentation",
+    "actionlint workflow_dispatch input static analysis limitations"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "gate-architecture",
+   "scope": "the validate-input-shape composite action: static validator design contract, findings report schema, and fixture suite",
+   "seed_queries": [
+    "composite action GitHub Actions custom linter python validator",
+    "GitHub Actions workflow YAML JSON Schema validation"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "lex-sort-dropin-naming",
+   "scope": "systemd-tmpfiles, modprobe.d, udev rules.d, dracut.conf.d ordering semantics and the fire-after naming convention",
+   "seed_queries": [
+    "systemd-tmpfiles configuration files lexicographic order drop-in",
+    "modprobe.d udev rules.d dracut conf.d file ordering lexicographic override"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "tag-form-coverage",
+   "scope": "registry tag sets as a cross-workflow contract, manifest unknown pull failures, and metadata-action tag emission",
+   "seed_queries": [
+    "docker manifest unknown error pull tag missing CI",
+    "docker metadata-action tags sha tagging strategy semver"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "dispatcher-payload-intersection",
+   "scope": "intersecting dispatch payloads with declared target inputs, the audit echo pattern, dynamic-input limits, and the runtime schema-cache complement",
+   "seed_queries": [
+    "GitHub Actions reusable workflow inputs forwarding validation",
+    "workflow_dispatch only declared inputs API error intersection"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "validator-testing-strategy",
+   "scope": "fixtures, unit, integration, regression, and adversarial test layers for a static CI validator",
+   "seed_queries": [
+    "golden file fixture testing static analysis tools",
+    "YAML parser edge cases anchors aliases adversarial testing"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "phased-rollout",
+   "scope": "warn-only to required-for-new to required-for-all enforcement, branch protection coordination, and rollback design",
+   "seed_queries": [
+    "GitHub required status checks branch protection progressive rollout",
+    "linter rollout strategy warn only then error new code"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.1749,
+    "probabilities": {
+     "0": 0.2079,
+     "1": 0.4094,
+     "2": 0.3827
+    },
+    "confidence": 0.036,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.9553,
+    "probabilities": {
+     "0": 0.0113,
+     "1": 0.0222,
+     "2": 0.9665
+    },
+    "confidence": 0.9022,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.6885,
+    "probabilities": {
+     "0": 0.0613,
+     "1": 0.1889,
+     "2": 0.7498
+    },
+    "confidence": 0.4025,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.9323,
+    "probabilities": {
+     "0": 0.0154,
+     "1": 0.0369,
+     "2": 0.9477
+    },
+    "confidence": 0.8496,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.8607,
+    "probabilities": {
+     "0": 0.3327,
+     "1": 0.474,
+     "2": 0.1933
+    },
+    "confidence": 0.0591,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.3498,
+    "probabilities": {
+     "0": 0.1414,
+     "1": 0.3674,
+     "2": 0.4912
+    },
+    "confidence": 0.0944,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.7718,
+    "probabilities": {
+     "0": 0.0477,
+     "1": 0.1329,
+     "2": 0.8194
+    },
+    "confidence": 0.5372,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.5706,
+    "probabilities": {
+     "0": 0.0857,
+     "1": 0.258,
+     "2": 0.6563
+    },
+    "confidence": 0.257,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.462,
+    "probabilities": {
+     "0": 0.0979,
+     "1": 0.3421,
+     "2": 0.56
+    },
+    "confidence": 0.1603,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1380,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}

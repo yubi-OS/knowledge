@@ -1,0 +1,50 @@
+{
+ "nn": "05",
+ "slug": "lex-sort-dropin-naming",
+ "scope": "systemd-tmpfiles, modprobe.d, udev rules.d, dracut.conf.d ordering semantics and the fire-after naming convention",
+ "queries_attempted": [
+  {
+   "query": "systemd-tmpfiles configuration files lexicographic order drop-in",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": [
+    "https://www.baeldung.com/linux/systemd-tmpfiles-configure-temporary-files",
+    "https://www.man7.org/linux/man-pages/man8/systemd-tmpfiles.8.html",
+    "https://www.man7.org/linux/man-pages/man5/tmpfiles.d.5.html",
+    "https://www.freedesktop.org/software/systemd/man/251/systemd-tmpfiles.html",
+    "https://www.bigiron.cc/guides/systemd-drop-ins-overriding-a-unit-without-editing-the-package-file",
+    "https://en.wikipedia.org/wiki/Systemd"
+   ]
+  },
+  {
+   "query": "modprobe.d udev rules.d dracut conf.d file ordering lexicographic override",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": [
+    "https://www.man7.org/linux/man-pages/man5/dracut.conf.5.html",
+    "https://www.man7.org/linux/man-pages/man7/dracut.modules.7.html",
+    "https://people.redhat.com/~iwienand/dracut-web/man/dracut.modules.7.html",
+    "https://forum.endeavouros.com/t/udev-and-redhat-rules-skipped-by-dracut/41235",
+    "https://wiki.gentoo.org/wiki/Dracut",
+    "https://access.redhat.com/solutions/41278"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://access.redhat.com/solutions/41278",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://forum.endeavouros.com/t/udev-and-redhat-rules-skipped-by-dracut/41235",
+  "https://people.redhat.com/~iwienand/dracut-web/man/dracut.modules.7.html",
+  "https://wiki.gentoo.org/wiki/Dracut",
+  "https://www.baeldung.com/linux/systemd-tmpfiles-configure-temporary-files",
+  "https://www.bigiron.cc/guides/systemd-drop-ins-overriding-a-unit-without-editing-the-package-file",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-tmpfiles.html",
+  "https://www.man7.org/linux/man-pages/man5/dracut.conf.5.html",
+  "https://www.man7.org/linux/man-pages/man5/tmpfiles.d.5.html",
+  "https://www.man7.org/linux/man-pages/man7/dracut.modules.7.html",
+  "https://www.man7.org/linux/man-pages/man8/systemd-tmpfiles.8.html"
+ ],
+ "outcome": "authored"
+}
