@@ -1,0 +1,215 @@
+{
+  "topic": "rate-dependent scoring in corpus audits: why a deterministic scorer collapses recovery-fraction measurements to a constant, and the decision on multi-pass re-grading as the rate dimension",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "recovery-fraction-collapse",
+      "scope": "The F3 replay finding: a deterministic scorer re-grades identically, so recovery fraction R collapses to 1.0 and carries no rate information.",
+      "seed_queries": [
+        "LLM judge evaluation determinism temperature 0 reproducibility",
+        "deterministic measurement cannot measure variance degenerate metric"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "viscoelastic-instrument-analogy",
+      "scope": "Mapping creep/recovery and elastic vs plastic credit onto corpus-audit scoring, including the /visco/persistence endpoint and its regraded input shape.",
+      "seed_queries": [
+        "linear viscoelasticity creep recovery elastic plastic deformation",
+        "viscoelasticity creep and recovery test explanation"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "multi-pass-regrading-protocol",
+      "scope": "Option B: K independent grader passes (K >= 2) over edited rows only, with pass spread as the rate dimension feeding the existing persistence endpoint.",
+      "seed_queries": [
+        "inter-rater reliability multiple raters agreement measurement",
+        "self-consistency LLM evaluation multiple samples reliability"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "grader-noise-and-measurement-uncertainty",
+      "scope": "Grader variance as measurement noise: scorer_variance inter_pass_offset_dbc and per_pass_fractions, and the 0.64 dBc effect inside a 5.77 dBc grader-pass band.",
+      "seed_queries": [
+        "LLM-as-judge variance consistency reliability study",
+        "measurement uncertainty signal to noise ratio instrument"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "temperature-sampled-stochastic-scorers",
+      "scope": "Option C: sampling a grader at T > 0 as a noise-temperature instrument and the WLF shift analog, and why it was rejected for now.",
+      "seed_queries": [
+        "LLM temperature sampling parameter randomness explained",
+        "time temperature superposition WLF shift factor viscoelasticity"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "status-quo-persistence-first",
+      "scope": "Option A: keeping the deterministic scorer with persistence-first discipline (9/9 under blind re-grading), documenting R as trivially 1.",
+      "seed_queries": [
+        "blind grading regrading evaluation protocol education",
+        "limitations single measurement metric audit methodology"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "runbook-amendment-decision-governance",
+      "scope": "The decision itself: B shipped as a runbook amendment not code, its cost (2-4 grader lanes), the re-evaluation trigger, and the jev qualification record.",
+      "seed_queries": [
+        "architecture decision record lightweight process change",
+        "runbook documentation process amendment ops"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "inter-rater-reliability-prior-art",
+      "scope": "Measurement-theory grounding for multi-pass grading: test-retest reliability, intraclass correlation, Krippendorff alpha, and self-consistency sampling.",
+      "seed_queries": [
+        "intraclass correlation coefficient test retest reliability",
+        "Krippendorff alpha inter-rater reliability content analysis"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.6603,
+        "probabilities": {
+          "0": 0.0953,
+          "1": 0.1491,
+          "2": 0.7556
+        },
+        "confidence": 0.4033,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.1527,
+        "probabilities": {
+          "0": 0.1705,
+          "1": 0.5063,
+          "2": 0.3232
+        },
+        "confidence": 0.0849,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.6965,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.2035,
+          "2": 0.7465
+        },
+        "confidence": 0.4018,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.1167,
+        "probabilities": {
+          "0": 0.1709,
+          "1": 0.5415,
+          "2": 0.2876
+        },
+        "confidence": 0.1077,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.7256,
+        "probabilities": {
+          "0": 0.3498,
+          "1": 0.5748,
+          "2": 0.0754
+        },
+        "confidence": 0.1876,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.5506,
+        "probabilities": {
+          "0": 0.0841,
+          "1": 0.2812,
+          "2": 0.6347
+        },
+        "confidence": 0.2335,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.8726,
+        "probabilities": {
+          "0": 0.0289,
+          "1": 0.0696,
+          "2": 0.9015
+        },
+        "confidence": 0.7275,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.1361,
+        "probabilities": {
+          "0": 0.1523,
+          "1": 0.5593,
+          "2": 0.2884
+        },
+        "confidence": 0.1288,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1482,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
