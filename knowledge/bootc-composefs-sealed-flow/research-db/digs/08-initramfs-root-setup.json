@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "initramfs-root-setup",
+  "scope": "The initramfs side of the bootc composefs path: dracut module 51bootc, bootc-root-setup.service, opening and verifying the /sysroot/composefs repository, and assembling writable state.",
+  "queries_attempted": [
+    {
+      "query": "bootc dracut module 51bootc initramfs composefs",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "bootc-root-setup.service systemd unit initramfs",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.mankier.com/5/bootc-root-setup.service",
+    "https://github.com/bootc-dev/agentic-workflows-ci-sandbox/blob/main/docs/src/man/bootc-root-setup.service.5.md",
+    "https://jmarrero.github.io/bootc/man/bootc-setup-root-conf.5.html",
+    "https://github.com/bootc-dev/bootc",
+    "https://www.mankier.com/5/bootc-setup-root-conf",
+    "https://bootc.dev/bootc/man/bootc-root-setup.service.5.html",
+    "https://www.mankier.com/5/bootc-root-setup.service",
+    "https://github.com/bootc-dev/bootc/blob/main/docs/src/man/bootc-root-setup.service.5.md",
+    "https://github.com/bootc-dev/bootc",
+    "https://bootc.dev/bootc/man/bootc-root-setup.service.5.html",
+    "https://bootc.dev/bootc/filesystem.html",
+    "https://www.reddit.com/r/linuxquestions/comments/augd5k/whats_the_best_way_to_setupmanage_custom_systemd/"
+  ],
+  "outcome": "authored"
+}

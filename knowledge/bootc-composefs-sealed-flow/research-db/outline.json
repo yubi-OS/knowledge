@@ -1,0 +1,248 @@
+{
+  "topic": "the bootc composefs and sealed UKI boot flow — how composefs signed catalogs, dm-verity, and sealed UKIs compose into a verifiable immutable OS boot path",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "composefs-backend-layout",
+      "scope": "The bootc composefs backend: on-disk repository layout (/composefs/images, /composefs/objects, /state/deploy), EROFS metadata-only images, and digest naming rules from composefs-rs.",
+      "seed_queries": [
+        "bootc composefs backend repository layout images objects",
+        "composefs-rs repository format EROFS metadata image digest"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "fs-verity-integrity",
+      "scope": "fs-verity as the file-level integrity primitive behind composefs: Merkle tree enforcement, read-only semantics, ext4 verity feature and Btrfs support, fsverity tooling.",
+      "seed_queries": [
+        "linux fs-verity Merkle tree file integrity documentation",
+        "ext4 verity feature mkfs fsverity measure tool"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "verity-comparison",
+      "scope": "Comparison of dm-verity vs fs-verity vs composefs: which layer each authenticates, and why dm-verity belongs to the separate mkosi/systemd-repart block-image path rather than the bootc composefs path.",
+      "seed_queries": [
+        "dm-verity vs fs-verity comparison block device vs file",
+        "composefs dm-verity difference immutable os image"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "composefs-digest-boot-arg",
+      "scope": "The composefs kernel command line contract: strict composefs=<128-hex SHA-512 digest> vs the optional composefs=? marker, --allow-missing-verity, and why a strict digest in a mutable BLS entry is still unsealed.",
+      "seed_queries": [
+        "bootc composefs kernel argument digest allow-missing-verity",
+        "composefs kernel cmdline optional verity marker bootc"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "sealed-uki-chain",
+      "scope": "The sealed UKI boot chain: UKI assembly with ukify, signing via systemd-sbsign, placement in /boot/EFI/Linux, systemd-boot and firmware Secure Boot, and how the signed UKI command line anchors the composefs digest.",
+      "seed_queries": [
+        "ukify build signed UKI systemd-sbsign secure boot",
+        "unified kernel image secure boot chain systemd-boot EFI Linux"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "install-to-filesystem",
+      "scope": "bootc install to-filesystem with the composefs backend: writable target requirement, mkfs.ext4 -O verity, root-mount-spec, and how installation wires the composefs deployment.",
+      "seed_queries": [
+        "bootc install to-filesystem composefs backend",
+        "bootc install to-filesystem root-mount-spec ext4 verity"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "split-kernel-ukify-cli",
+      "scope": "The bootc container split-kernel-and-rootfs and bootc container ukify CLI contract (v1.16.4): --output vs --kernel-dir, ukify args after --, and the four-stage sealed-image build shape.",
+      "seed_queries": [
+        "bootc container split-kernel-and-rootfs command",
+        "bootc container ukify kernel-dir signtool"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "initramfs-root-setup",
+      "scope": "The initramfs side of the bootc composefs path: dracut module 51bootc, bootc-root-setup.service, opening and verifying the /sysroot/composefs repository, and assembling writable state.",
+      "seed_queries": [
+        "bootc dracut module 51bootc initramfs composefs",
+        "bootc-root-setup.service systemd unit initramfs"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "ci-promotion-gates",
+      "scope": "CI verification and promotion gates for a composefs install: offline smoke checks (fsverity measure, dump.erofs, BLS digest), Secure Boot on-target boot proof, bootc status --json, and negative tamper testing.",
+      "seed_queries": [
+        "bootc composefs CI smoke test fsverity measure",
+        "secure boot UKI bootc status json verification tamper"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.733,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0474,
+          "1": 0.1721,
+          "2": 0.7805
+        },
+        "confidence": 0.4615
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.5809,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.048,
+          "1": 0.3232,
+          "2": 0.6288
+        },
+        "confidence": 0.2533
+      },
+      "t03": {
+        "type": "score",
+        "score": 0.7478,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3646,
+          "1": 0.523,
+          "2": 0.1124
+        },
+        "confidence": 0.1286
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.5767,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0688,
+          "1": 0.2856,
+          "2": 0.6456
+        },
+        "confidence": 0.2546
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8364,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0376,
+          "1": 0.0884,
+          "2": 0.874
+        },
+        "confidence": 0.6596
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.2611,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1364,
+          "1": 0.4661,
+          "2": 0.3975
+        },
+        "confidence": 0.0908
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.8793,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2627,
+          "1": 0.5954,
+          "2": 0.1419
+        },
+        "confidence": 0.1655
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.5001,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.072,
+          "1": 0.3559,
+          "2": 0.5721
+        },
+        "confidence": 0.1887
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.9406,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2131,
+          "1": 0.6332,
+          "2": 0.1537
+        },
+        "confidence": 0.2049
+      }
+    },
+    "usage": {
+      "input_tokens": 1192,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

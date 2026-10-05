@@ -1,0 +1,36 @@
+{
+  "nn": "09",
+  "slug": "ci-promotion-gates",
+  "scope": "CI verification and promotion gates for a composefs install: offline smoke checks (fsverity measure, dump.erofs, BLS digest), Secure Boot on-target boot proof, bootc status --json, and negative tamper testing.",
+  "queries_attempted": [
+    {
+      "query": "bootc composefs CI smoke test fsverity measure",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "secure boot UKI bootc status json verification tamper",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/bootc-dev/bootc",
+    "https://deepwiki.com/bootc-dev/bootc/2.3.2-composefs-backend",
+    "https://jmarrero.github.io/bootc/internals/composefs/fsverity/index.html",
+    "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+    "https://bootc-dev.github.io/bootc/internals/composefs/fsverity/fn.measure_verity_opt.html",
+    "https://bootc.dev/bootc/experimental-composefs.html",
+    "https://github.com/Abhaykumar99/Secure-Kernel-Boot-Verification-System",
+    "https://deploymentbunny.com/2026/05/07/check-secureboot-ps1-script-updated/",
+    "https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation",
+    "https://www.npmjs.com/package/nocache",
+    "https://github.com/rkollataj/centos-bootc-cfs",
+    "https://unetbootin.github.io/"
+  ],
+  "outcome": "authored"
+}
