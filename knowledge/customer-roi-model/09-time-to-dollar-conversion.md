@@ -1,0 +1,23 @@
+# 09. Converting time savings to dollars
+
+Scope: Converting time-based line items to dollars using the customer's own labor rate: fully loaded hourly cost, hard versus soft savings, and the netting rules that keep time conversions honest.
+
+## The fully loaded rate, not the salary rate
+
+The yubiOS model requires the customer's internal hourly cost rate for the relevant staff as a baseline input, precisely so the formula does not guess an industry-average rate (internal reference: yubi-OS/yubiOS refs/customer-roi-model-2026-07-25.md). The correct quantity is the fully loaded hourly cost, which includes base pay, payroll taxes, benefits, equipment, and overhead, not the nominal salary divided by hours (Epic Calculators, Fully Loaded Employee Cost Calculator, https://epiccalculators.com/calculators/business/fully-loaded-employee-cost-calculator/, jev weight 0.52). Guides for US hiring costs make the same distinction between salary and true total cost including payroll taxes, benefits, and overhead (Glencoyne, https://www.glencoyne.com/guides/fully-loaded-cost-us-employee, jev weight 0.30, weak backing), and benchmark tools suggest a loaded-cost multiplier in the 1.25x to 1.4x range over base salary (Complete Calculators, https://completecalculators.com/calculators/finance/employee-cost-calculator, jev weight 0.09, weak backing). The multiplier is context, not an input: the number that goes in the formula is the customer's own figure.
+
+## Time saved times rate, with the standard formula
+
+The canonical ROI arithmetic for time conversion is well established in evaluation practice: monetary benefit is determined by time savings, for example from reductions in the number of people in meetings, the number of meetings, and meeting length, then compared against program costs to produce the ROI percentage (ROI Institute, Measuring the ROI in All Types of Programs and Projects, https://roiinstitute.net/wp-content/uploads/2021/11/Measuring-the-ROI-in-All-Types-of-Programs-and-Projects-A-Skill-Building-Workshop.pdf, jev weight 0.75). Workplace ROI calculators operationalize the same shape: fully-loaded hourly employee cost times hours saved per year, based on direct time saved (Humly, https://www.humly.com/roi, jev weight 0.27, weak backing). Automation calculators state the netting rule explicitly: convert time saved into dollars using an hourly rate, compare to software costs, and compute ROI from first-year net savings after subtracting recurring tool costs and one-time setup (AI Agent Store, https://aiagentstore.ai/free-tools/automation-roi-time-saved-calculator/, jev weight 0.24, weak backing).
+
+## Hard versus soft savings
+
+Not every time saving converts at the same credibility. Continuous improvement methodology separates hard savings, which show up in budgets, from soft savings, which do not, and warns that ROI presentations to financial stakeholders should classify them differently (Air Academy, Calculating the ROI: hard versus soft savings, https://airacad.com/calculating-the-roi-hard-vs-soft-savings/, jev weight 0.37, weak backing). For a pilot ROI model this maps onto the line items: enrollment time and audit evidence burden are plausibly hard, measurable reductions in hours the customer pays for; incident response time improvements are contingent on events that may not occur during the pilot, which makes their monetary value conditional rather than banked.
+
+## Unit consistency
+
+ROI calculators that handle multiple monetary inputs emphasize using one consistent currency for every input, with dollar symbols as display labels rather than conversion (SolveIndex, https://solveindex.com/software-roi-calculator, jev weight 0.31, weak backing). The same discipline applies at the rate level: every time-based line item in the formula must convert at the same named rate, stated by the customer, recorded with its source. Mixing rates across line items, for example a security engineer rate for incident response and an average company rate for enrollment, inflates the total without any customer saying so.
+
+## The honest conversion checklist
+
+Before a time-to-dollar conversion enters the pilot readout: the rate is the customer's own stated fully loaded rate; the rate's source (role and conversation) is recorded; the hours saved are measured from pilot logs, not estimated; the savings class (hard or soft) is labeled; recurring costs of the offer are subtracted after conversion; and the currency is consistent across all line items (Humly, https://www.humly.com/roi, jev weight 0.27, weak backing; AI Agent Store, https://aiagentstore.ai/free-tools/automation-roi-time-saved-calculator/, jev weight 0.24, weak backing; internal reference: yubi-OS/yubiOS refs/customer-roi-model-2026-07-25.md).

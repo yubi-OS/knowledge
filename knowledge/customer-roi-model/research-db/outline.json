@@ -1,0 +1,248 @@
+{
+  "topic": "customer ROI modeling for infrastructure products: formula structure, validation approach, and claim boundaries for ROI promises in early-stage sales",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "roi-formula-structure",
+      "scope": "How cost-of-alternative ROI formulas are structured for infrastructure products: per-line-item contributions, baseline minus measured, common-unit conversion.",
+      "seed_queries": [
+        "cost of doing nothing ROI formula enterprise software",
+        "cost of inaction calculation B2B IT infrastructure"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "baseline-data-collection",
+      "scope": "What pre-pilot customer baseline data to collect and how: discovery interviews, per-device costs, incident history, and treating missing data as a finding.",
+      "seed_queries": [
+        "customer discovery interview baseline metrics collection enterprise software",
+        "pre-pilot benchmarking customer current state data collection B2B"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "pilot-evidence-validation",
+      "scope": "Evidence discipline for validating ROI claims: named evidence sources, pilot logs, measured values only.",
+      "seed_queries": [
+        "pilot program success criteria evidence validation enterprise software",
+        "measuring pilot results customer evidence logs B2B SaaS"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "invalidation-and-negative-results",
+      "scope": "Invalidation rules: recording pilot-measured values that come back worse than baseline as negative contributions rather than excluded outliers.",
+      "seed_queries": [
+        "pilot failed to deliver expected ROI reporting honesty enterprise",
+        "negative results customer pilot lessons learned reporting"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "measured-vs-illustrative",
+      "scope": "Separating measured ROI from illustrative worked examples with placeholder numbers, and the labeling discipline that keeps placeholders from escaping their label.",
+      "seed_queries": [
+        "illustrative ROI example disclaimer sales methodology",
+        "worked example vs real case study marketing claims accuracy"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "claim-boundaries",
+      "scope": "Claim boundaries for external use: what a single-pilot ROI figure can and cannot be presented as.",
+      "seed_queries": [
+        "customer case study single customer claim generalization B2B marketing",
+        "ROI claims substantiation advertising compliance B2B"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "customer-data-confidentiality",
+      "scope": "Confidentiality and permission requirements for customer baseline and ROI data in readouts and derived public case studies.",
+      "seed_queries": [
+        "customer reference case study approval permission process B2B",
+        "sharing customer confidential metrics case study NDA"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "pilot-aggregation",
+      "scope": "When averaging ROI across multiple pilots is meaningful, sample-size judgment, and why premature aggregation misleads.",
+      "seed_queries": [
+        "case study sample size average savings claim statistics",
+        "aggregating pilot results across customers ROI"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "time-to-dollar-conversion",
+      "scope": "Converting time-based line items to dollars using the customer own stated labor rate rather than invented industry averages.",
+      "seed_queries": [
+        "fully loaded hourly employee cost calculation time savings ROI",
+        "converting time savings to dollars software ROI methodology"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t1": {
+        "type": "score",
+        "score": 1.8588,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0334,
+          "1": 0.0744,
+          "2": 0.8922
+        },
+        "confidence": 0.704
+      },
+      "t2": {
+        "type": "score",
+        "score": 1.8892,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0213,
+          "1": 0.0682,
+          "2": 0.9105
+        },
+        "confidence": 0.7511
+      },
+      "t3": {
+        "type": "score",
+        "score": 1.9065,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0201,
+          "1": 0.0533,
+          "2": 0.9266
+        },
+        "confidence": 0.7928
+      },
+      "t4": {
+        "type": "score",
+        "score": 1.4602,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.085,
+          "1": 0.3697,
+          "2": 0.5453
+        },
+        "confidence": 0.1618
+      },
+      "t5": {
+        "type": "score",
+        "score": 1.8167,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.043,
+          "1": 0.0972,
+          "2": 0.8598
+        },
+        "confidence": 0.6257
+      },
+      "t6": {
+        "type": "score",
+        "score": 1.8637,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.0763,
+          "2": 0.8937
+        },
+        "confidence": 0.7082
+      },
+      "t7": {
+        "type": "score",
+        "score": 1.1489,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1466,
+          "1": 0.5579,
+          "2": 0.2955
+        },
+        "confidence": 0.1301
+      },
+      "t8": {
+        "type": "score",
+        "score": 1.3275,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1059,
+          "1": 0.4607,
+          "2": 0.4334
+        },
+        "confidence": 0.1169
+      },
+      "t9": {
+        "type": "score",
+        "score": 1.7516,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0516,
+          "1": 0.1452,
+          "2": 0.8032
+        },
+        "confidence": 0.5033
+      }
+    },
+    "usage": {
+      "input_tokens": 1480,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

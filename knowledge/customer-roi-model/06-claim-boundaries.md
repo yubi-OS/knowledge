@@ -1,0 +1,23 @@
+# 06. Claim boundaries for external use
+
+Scope: What a pilot ROI figure can and cannot be presented as externally: substantiation requirements, generalization limits, and the disclosure duties that attach to any public claim.
+
+## The substantiation baseline
+
+The controlling norm for external ROI claims in US advertising is the FTC's substantiation doctrine: advertisers must have a reasonable basis for objective product claims before the claims are made, and the commission's policy statement keeps that prior-substantiation requirement in force with defined flexibility for post-claim evidence (FTC, Policy Statement Regarding Advertising Substantiation, https://www.ftc.gov/legal-library/browse/ftc-policy-statement-regarding-advertising-substantiation, jev weight 0.92). Practitioner material treats claim substantiation as a core part of the advertising legal compliance process, coordinated across marketing, research, and legal to determine what evidence supports each claim before publication (KTS Law, Advertising Claims Substantiation, https://ktslaw.com/-/media/Feature/Advertising-Claims/Advertising-Claims-Substantiation.pdf, jev weight 0.37, weak backing). For an early-stage vendor, this inverts the usual launch instinct: the ROI claim is only as good as the evidence file behind it at the moment it is spoken, not later.
+
+Platform enforcement already operationalizes this: advertising review flags vague ROI claims such as 10x your pipeline that lack substantiation (Optimize LinkedIn Ads, https://www.optimizelinkedinads.com/blogs/why-linkedin-ad-rejected, jev weight 0.12, weak backing), and buyer-side diligence asks vendors to produce the methodology behind claimed results, distinguishing sourced pipeline from influenced pipeline (The Starr Conspiracy, https://www.thestarrconspiracy.com/insights/faqs/how-to-validate-b2b-marketing-agency-roi-claims, jev weight 0.08, weak backing).
+
+## What a single-pilot figure is
+
+The yubiOS model's claim boundaries state the core rule: never present a single-pilot ROI figure as a general claim about what customers save with yubiOS; it is that one customer's measured result under their specific baseline and pilot scope (internal reference: yubi-OS/yubiOS refs/customer-roi-model-2026-07-25.md). The general ROI definition is stable (Investopedia, https://www.investopedia.com/terms/r/returnoninvestment.asp, jev weight 0.93), but the leap from a defined ratio to a promise about other customers' future results is where unsubstantiated generalization begins.
+
+Any bounded public case study derived from the model must state three things: pilot scale in fleet size, pilot duration, and that the baseline is one customer's self-reported figures, not an independently audited number (internal reference: yubi-OS/yubiOS refs/customer-roi-model-2026-07-25.md). This trio converts an unverifiable-sounding claim into a scoped one a reader can weigh.
+
+## Aggregation gates
+
+The model also forbids averaging ROI across multiple pilots until there are enough pilots for the average to be meaningful, explicitly leaving the minimum n to a statistics judgment by whoever runs the second and third pilot (internal reference: yubi-OS/yubiOS refs/customer-roi-model-2026-07-25.md). Advertising regulators reach the same place from the claim side: the UK Advertising Standards Authority considers substantiation claims case by case and advises marketers to ensure their sample is of a sufficient size to adequately support the claim being made (ASA, Substantiation: consumer surveys and sample claims, https://www.asa.org.uk/advice-online/substantiation-sampling-references-and-consumer-goods.html, jev weight 0.24, weak backing). The practical consequence: 2 pilots do not authorize an average savings claim; the claim vocabulary stays at this customer measured this until the sample justifies more.
+
+## Drafting discipline for external text
+
+Concretely, external ROI language should: name the customer scope and pilot duration in the same sentence as any number; mark self-reported baselines as self-reported; avoid present-tense general claims about savings; and keep the evidence file for every external number in the same repository as the claim, so the substantiation is auditable on request. A number that cannot name its source does not go external. These are the writing-level consequences of the FTC prior-substantiation rule and the case-study scoping rule taken together (FTC, https://www.ftc.gov/legal-library/browse/ftc-policy-statement-regarding-advertising-substantiation, jev weight 0.92; internal reference: yubi-OS/yubiOS refs/customer-roi-model-2026-07-25.md).
