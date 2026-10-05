@@ -1,0 +1,263 @@
+{
+  "topic": "roadmap promotion gates: required fields and evidence before FUTURE roadmap items move into active implementation",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "owner-deployment-target",
+      "scope": "Requiring every candidate change to name the exact board, VM, workflow, or deployment class it modifies before it can be promoted out of FUTURE.",
+      "seed_queries": [
+        "deployment target and ownership required fields change request software engineering",
+        "assigning an owner and target environment to roadmap items before implementation starts"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "trust-boundary",
+      "scope": "Decomposing each claim into the component that decides, the component that enforces, and the components that may be compromised without falsifying the claim.",
+      "seed_queries": [
+        "trust boundary security architecture decision point enforcement point compromised component",
+        "policy decision point versus policy enforcement point trust model design"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "evidence-target",
+      "scope": "Naming the concrete log, test, hardware run, packet capture, artifact, or attestation that will prove the promoted claim is true.",
+      "seed_queries": [
+        "evidence target proving engineering claims with test artifacts and attestations",
+        "defining acceptance evidence and proof obligations before building a feature"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "recovery-baseline",
+      "scope": "Documenting recovery from false positive, failed update, lockout, or broken boot before any feature that can lock an owner out is enabled by default.",
+      "seed_queries": [
+        "lockout recovery plan required before enabling security feature by default",
+        "break glass recovery and rollback planning for failed updates"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "pins-upstream",
+      "scope": "Declaring which upstream docs, commits, digests, and action SHAs are part of the claim being promoted, so the claim is checkable against its sources.",
+      "seed_queries": [
+        "dependency pinning digests for reproducible supply chain builds",
+        "pinned GitHub Actions SHAs and commit digests supply chain integrity"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "notification-retention",
+      "scope": "Specifying what owner notification or collected evidence is stored, where, for how long, and what is explicitly excluded from retention.",
+      "seed_queries": [
+        "security log retention policy storage duration and exclusions",
+        "audit evidence retention requirements and notification obligations"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "prod-test-separation",
+      "scope": "Declaring whether promoted work touches production artifacts, dev/test artifacts, installer artifacts, firmware artifacts, or lab-only outputs.",
+      "seed_queries": [
+        "separation of production staging test artifacts and environments",
+        "firmware installer artifact classification production versus lab outputs"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "ci-hardware-boundary",
+      "scope": "Deciding whether the work is testable without main CI or hardware, or is explicitly blocked on a named lane or board.",
+      "seed_queries": [
+        "hardware in the loop CI testing embedded boards dedicated lane",
+        "continuous integration without hardware access emulation and tradeoffs"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "promotion-lifecycle",
+      "scope": "The status progression FUTURE, planned, designed, implemented, and watch-listing for items that cannot yet name their gates.",
+      "seed_queries": [
+        "roadmap promotion criteria from backlog item to implementation gate",
+        "lifecycle states planned designed implemented definition of ready engineering"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "applied-case-studies",
+      "scope": "How published engineering practices implement pre-implementation gates, mapped onto constrained hardware-plus-CI projects like the source doc applications.",
+      "seed_queries": [
+        "engineering design review gates before implementation industry practice",
+        "architecture decision record process as a gate before writing code"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7936,
+        "probabilities": {
+          "0": 0.0488,
+          "1": 0.1089,
+          "2": 0.8423
+        },
+        "confidence": 0.5856,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.5808,
+        "probabilities": {
+          "0": 0.0813,
+          "1": 0.2567,
+          "2": 0.662
+        },
+        "confidence": 0.2662,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.9203,
+        "probabilities": {
+          "0": 0.0167,
+          "1": 0.0463,
+          "2": 0.937
+        },
+        "confidence": 0.8205,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.5779,
+        "probabilities": {
+          "0": 0.0692,
+          "1": 0.2836,
+          "2": 0.6472
+        },
+        "confidence": 0.2561,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.4992,
+        "probabilities": {
+          "0": 0.0786,
+          "1": 0.3436,
+          "2": 0.5778
+        },
+        "confidence": 0.1871,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.7542,
+        "probabilities": {
+          "0": 0.3456,
+          "1": 0.5546,
+          "2": 0.0998
+        },
+        "confidence": 0.1555,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.6809,
+        "probabilities": {
+          "0": 0.0714,
+          "1": 0.1763,
+          "2": 0.7523
+        },
+        "confidence": 0.4032,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.6885,
+        "probabilities": {
+          "0": 0.0556,
+          "1": 0.2003,
+          "2": 0.7441
+        },
+        "confidence": 0.3954,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.7121,
+        "probabilities": {
+          "0": 0.0555,
+          "1": 0.1769,
+          "2": 0.7676
+        },
+        "confidence": 0.4354,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t10": {
+        "score": 1.0381,
+        "probabilities": {
+          "0": 0.1495,
+          "1": 0.6629,
+          "2": 0.1876
+        },
+        "confidence": 0.2454,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1637,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  }
+}
