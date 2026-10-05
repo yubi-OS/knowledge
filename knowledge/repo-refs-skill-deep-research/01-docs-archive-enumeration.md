@@ -1,0 +1,27 @@
+# 01 - Enumerating and Refresh-Cycling a Docs Archive
+
+Scope: how a repository docs directory becomes a machine-readable corpus, how a full cold-start enumeration works over the GitHub REST API, and how incremental refresh keeps that corpus current without re-listing everything.
+
+## The enumeration primitive: GitHub Contents API
+
+The foundational fact for any docs-archive skill is that the GitHub Contents API caps recursive directory listing at 1,000 files per directory, and explicitly directs callers with larger needs to the Git Trees API (https://docs.github.com/en/rest/repos/contents, jev weight 0.95, high). The same endpoint documentation notes that download URLs expire and are meant to be used just once, which matters for any skill that caches file bodies across runs (https://docs.github.com/en/rest/repos/contents, jev weight 0.95, high). The Contents endpoints sit inside the broader repositories REST surface, which is the reference frame for everything a repo-audit skill touches (https://docs.github.com/en/rest/repos, jev weight 0.94, high).
+
+Practitioner threads fill in the operational texture, though they are forum sources and carry weak backing. Two Stack Overflow discussions establish that the recursive listing mode removes the need for one GET request per directory, but that per-file retrieval still requires individual calls unless the response carries download payloads directly (https://stackoverflow.com/questions/58840205/how-do-i-get-all-directory-and-files-in-my-github-repository-by-using-github-api, jev weight 0.07, weak; https://stackoverflow.com/questions/14731459/github-api-fetch-all-folders-and-files-in-single-get-request, jev weight 0.07, weak). Git's own directory-listing API documents the same enumeration problem in the local work tree, optionally honoring per-directory ignore files (https://git-scm.com/docs/api-directory-listing, jev weight 0.30, weak).
+
+## The size ceiling and what it means
+
+For an archive skill the 1,000-file ceiling is the key capacity number (https://docs.github.com/en/rest/repos/contents, jev weight 0.95, high). A corpus that stays under the cap can be enumerated in a single recursive listing call. A corpus that grows past it needs the Git Trees API path, which the official documentation names as the replacement (https://docs.github.com/en/rest/repos/contents, jev weight 0.95, high). This is the difference between a cold-start refresh that is one paginated GET and one that is a tree walk, and it should be a branch point in the skill rather than an assumption.
+
+## Incremental refresh: diff since last run
+
+After the first full enumeration, re-listing everything on every run wastes bandwidth and time. The GitBridge documentation describes incremental synchronization as syncing only changed files after an initial download, which significantly reduces both bandwidth usage and sync time (https://nevedomski.github.io/gitBridge/user-guide/incremental-sync/, jev weight 0.51, high). That is the exact shape of a "diff since last_run_timestamp" refresh mode: full listing once, changed-file detection after.
+
+The strongest authoritative analog for the batching discipline comes from dbt, whose incremental strategy documentation describes a microbatch mode intended for large datasets: the model is processed in multiple batches keyed on a configured event time column, which is more efficient and more resilient than processing in a single query (https://docs.getdbt.com/docs/build/incremental-strategy, jev weight 0.93, high). Translated to a docs archive: batch the refresh by modification date rather than replaying the entire directory, and a crashed run leaves a smaller, cleaner recovery surface.
+
+## Weak-backed analogies, labeled as such
+
+Two sources below the 0.5 threshold are useful as analogies only. Sublime Text's incremental diff documentation describes diff calculation that tracks each buffer modification as it is performed and does not require the file be stored in version control (https://www.sublimetext.com/docs/incremental_diff.html, jev weight 0.17, weak). The transferable idea is continuous tracking rather than periodic full recomputation, nothing more. A shell-script backup framework that performs incremental backups for repository servers illustrates the same pattern at the systems level (https://github.com/id774/deferred-sync, jev weight 0.31, weak).
+
+## What this means for a refs-archive skill
+
+The design conclusions follow directly from the sourced facts above. Cold start is one recursive Contents API listing (assuming the corpus is under the 1,000-file ceiling, checked against https://docs.github.com/en/rest/repos/contents, jev weight 0.95, high) followed by per-file body fetches, because per-file retrieval is unavoidable even when the listing is single-call (https://stackoverflow.com/questions/14731459/github-api-fetch-all-folders-and-files-in-single-get-request, jev weight 0.07, weak). Refresh is a diff since the stored last-run timestamp, syncing only changed files after the initial download, the GitBridge incremental pattern (https://nevedomski.github.io/gitBridge/user-guide/incremental-sync/, jev weight 0.51, high), batched by date in the dbt microbatch style so a failed run is resumable (https://docs.getdbt.com/docs/build/incremental-strategy, jev weight 0.93, high). And the moment the corpus could exceed 1,000 files, the skill should switch its enumeration path to the Git Trees API, per the official guidance (https://docs.github.com/en/rest/repos/contents, jev weight 0.95, high).

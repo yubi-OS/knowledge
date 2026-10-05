@@ -1,0 +1,27 @@
+# 04 - Sparse-Cell Detection on the Sphere
+
+Scope: finding underrepresented topics in a lifted corpus: nearest-neighbor isolation radii computed with kd-trees, equal-area partitioning of the sphere, and how to interpret an isolated file.
+
+## Isolation as outlier detection
+
+A sparse cell is an outlier in geometry, and outlier detection by nearest-neighbor distance is the standard instrument. The central difficulty is choosing the neighborhood parameter. Research on k-nearest-neighbor-based outlier detectors states that detector performance relies on the choice of k, that autonomous selection of the optimal k is poorly documented in the literature and very challenging, and that conventional methods prove ineffective and lack universality (https://dl.acm.org/doi/10.1016/j.patrec.2023.08.020, jev weight 0.86, high). The same work introduces a framework (KFC, built on neighborhood consistency, the requirement that an object and its k nearest neighbors should have consistent outlier scores) for automatically selecting k, and reviews optimum-k-searching methods published between 2000 and 2022 (https://www.sciencedirect.com/science/article/pii/S0167865523002404, jev weight 0.71, high).
+
+For detector choice, the scikit-learn benchmark suite compares local outlier factor and isolation forest on real-world datasets as the reference evaluation (https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_outlier_detection_bench.html, jev weight 0.87, high). For a docs corpus, the distance-threshold variant is the right family: a file is flagged when its nearest neighbor is farther than a chosen radius.
+
+## The nearest-neighbor machinery
+
+A kd-tree is the standard accelerator for these queries. A practitioner answer establishes the complexity expectations: nearest-neighbor queries against a kd-tree run in O(n log n) overall for n queries, and building the tree is itself O(n log n), fast enough for millions of points (https://stackoverflow.com/questions/14053456/algorithm-to-quickly-find-animals-away-from-the-herd/14053864, jev weight 0.02, weak). The weight is low because this is a forum answer, but the complexity claim is uncontroversial; treat it as practitioner experience, not citation-grade evidence.
+
+The isolation radius for a lifted corpus is a chordal distance on the sphere (approximately 0.095 in the reference design), and the KFC literature above is the reason to treat it as a measured parameter rather than a constant: the k-selection literature shows that fixed neighborhood choices are the known weakness of this detector family (https://dl.acm.org/doi/10.1016/j.patrec.2023.08.020, jev weight 0.86, high).
+
+## Equal-area partition of the sphere
+
+The complementary structure to nearest-neighbor isolation is a fixed partition of S2 into cells of equal area, so that "sparse" can also mean "a cell with no occupants." The geodesic-grid literature provides the construction. A published algorithm creates a geodesic grid by using slicing planes from a projection point to slice an icosahedral section of a sphere into a quasi-uniform grid of triangles with near equal area; geodesic grids are used in geophysics, meteorology, mapping, and geodesic domes (https://www.sciencedirect.com/science/article/pii/S0021999122000559, jev weight 0.90, high). A survey-style paper studies the applicability of constructions and software that partition the unit sphere into regions of equal area, assessing them through their citing works, papers, dissertations, and software (https://arxiv.org/pdf/2408.13434, jev weight 0.68, high).
+
+Hierarchical refinement is a solved pattern in operational statistics: the Japanese Statistics Bureau's grid system demarcates a primary area partition, divides it into 64 equal parts (8 by 8) vertically and horizontally to form a secondary partition, and subdivides again to the basic grid square (https://www.stat.go.jp/english/data/mesh/05.html, jev weight 0.78, high). The same recursive refinement over spherical rectangles exists as Leopardi's algorithm, described as a computationally efficient solution using recursive subdivision of spherical rectangles (https://www.tutorialpedia.org/blog/ls3-ns3-sphere-generation-algorithm-and-its-implementation/, jev weight 0.09, weak). The background concept is the geodesic grid built on polyhedron subdivision, usually the icosahedron (https://en.wikipedia.org/wiki/Geodesic_grid, jev weight 0.11, weak).
+
+## Interpreting an isolated file
+
+The two detection mechanisms answer two different questions. Nearest-neighbor isolation flags a file whose primitive coverage pattern is structurally unique relative to every other file. Equal-area cells flag regions of the primitive-combination space where no file sits at all. Both readings map to corpus actions: an isolated file either covers a topic no other document shares with the same shape (dispatch a fill) or is genuinely new ground (flag for review), and an empty cell is a topic-combination the corpus has never covered.
+
+The design warning comes directly from the k-selection literature: because autonomous radius selection is poorly documented and conventional methods are ineffective (https://dl.acm.org/doi/10.1016/j.patrec.2023.08.020, jev weight 0.86, high), the isolation radius should be validated against the corpus each cycle rather than inherited, and any automated k-selection should borrow the neighborhood-consistency principle (https://www.sciencedirect.com/science/article/pii/S0167865523002404, jev weight 0.71, high) rather than a bare heuristic.
