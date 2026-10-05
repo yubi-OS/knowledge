@@ -1,0 +1,34 @@
+{
+ "nn": "02",
+ "slug": "oci-container-repro",
+ "scope": "Deterministic container image builds with BuildKit/Buildx: epoch pass-through, timestamp clamping, fixed OCI metadata",
+ "queries_attempted": [
+  {
+   "query": "BuildKit reproducible builds rewrite-timestamp SOURCE_DATE_EPOCH",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "docker build deterministic OCI image created timestamp reproducible",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-set-up-docker-build-reproducibility-verification/view",
+  "https://github.com/moby/buildkit/blob/master/docs/build-repro.md",
+  "https://reproducible-builds.org/docs/source-date-epoch/",
+  "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "https://dangerzone.rocks/news/2026-03-02-repro-build/",
+  "https://www.speedtest.net/",
+  "https://stackoverflow.com/questions/53288388/how-to-do-deterministic-builds-of-docker-images",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://www.docker.com/",
+  "https://archive.fosdem.org/2023/schedule/event/container_reproducible_dockerfile/attachments/slides/5574/export/events/attachments/container_reproducible_dockerfile/slides/5574/FOSDEM2023_Bit_for_bit_reproducible_builds_with_Dockerfile.pdf"
+ ],
+ "outcome": "authored"
+}

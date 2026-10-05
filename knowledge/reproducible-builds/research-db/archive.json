@@ -1,0 +1,2486 @@
+[
+ {
+  "query": "SOURCE_DATE_EPOCH specification reproducible builds",
+  "title": "SOURCE_DATE_EPOCH specification - reproducible-builds.org",
+  "url": "https://reproducible-builds.org/specs/source-date-epoch/",
+  "snippet": "One can reasonably assume that all source timestamps are before SOURCE_DATE_EPOCH and all builds take place after it. This means we can efficiently both preserve source-based timestamps and omit build-specific timestamps, by rewriting timestamps more recent than SOURCE_DATE_EPOCH back to the latter.One can reasonably assume that all source timestamps are before SOURCE_DATE_EPOCH and all builds take place after it. This means we can efficiently both preserve source-based timestamps and omit build-specific timestamps, by rewriting timestamps more recent than SOURCE_DATE_EPOCH back to the latter.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.953,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH specification - reproducible-builds.org' (https://reproducible-builds.org/specs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.953
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH specification reproducible builds",
+  "title": "SOURCE_DATE_EPOCH - reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/source-date-epoch/",
+  "snippet": "SOURCE_DATE_EPOCH SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. In practice, SOURCE_DATE_EPOCH specifies the last modification of something, usually the source code, measured in the number seconds since the Unix epoch, ie.SOURCE_DATE_EPOCH SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. In practice, SOURCE_DATE_EPOCH specifies the last modification of something, usually the source code, measured in the number seconds since the Unix epoch, ie.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8715,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH - reproducible-builds.org' (https://reproducible-builds.org/docs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8715
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH specification reproducible builds",
+  "title": "Reproducible builds \u2014 The Linux Kernel documentation",
+  "url": "https://docs.kernel.org/kbuild/reproducible-builds.html",
+  "snippet": "Reproducible builds \u00b6 It is generally desirable that building the same source code with the same set of tools is reproducible, i.e. the output is always exactly the same. This makes it possible to verify that the build infrastructure for a binary distribution or embedded system has not been subverted. This can also make it easier to verify that a source or tool change does not make any ...Reproducible builds \u00b6 It is generally desirable that building the same source code with the same set of tools is reproducible, i.e. the output is always exactly the same. This makes it possible to verify that the build infrastructure for a binary distribution or embedded system has not been subverted. This can also make it easier to verify that a source or tool change does not make any ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9136,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds \u2014 The Linux Kernel documentation' (https://docs.kernel.org/kbuild/reproducible-builds.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9136
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH specification reproducible builds",
+  "title": "SOURCE_DATE_EPOCH \u2014 reproducible-builds.org",
+  "url": "https://rb.mapreri.org/site//de/docs/source-date-epoch/",
+  "snippet": "SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. Before implementing this, you should scan through our checklist to see if you can avoid implementing it.SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. Before implementing this, you should scan through our checklist to see if you can avoid implementing it.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.242,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH \u2014 reproducible-builds.org' (https://rb.mapreri.org/site//de/docs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.242
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH specification reproducible builds",
+  "title": "Reproducible Builds - Yocto Project",
+  "url": "https://wiki.yoctoproject.org/wiki/Reproducible_Builds",
+  "snippet": "For example, prelink will not use random addresses for libraries if BUILD_REPRODUCIBLE_BINARIES=\"1\". REPRODUCIBLE_TIMESTAMP_ROOTFS When building packages, various timestamps can be controlled by SOURCE_DATE_EPOCH. This, however, does not work for building images.For example, prelink will not use random addresses for libraries if BUILD_REPRODUCIBLE_BINARIES=\"1\". REPRODUCIBLE_TIMESTAMP_ROOTFS When building packages, various timestamps can be controlled by SOURCE_DATE_EPOCH. This, however, does not work for building images.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8449,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds - Yocto Project' (https://wiki.yoctoproject.org/wiki/Reproducible_Builds) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8449
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH specification reproducible builds",
+  "title": "SOURCE Definition & Meaning - Merriam-Webster",
+  "url": "https://www.merriam-webster.com/dictionary/source",
+  "snippet": "4 days ago \u00b7 The meaning of SOURCE is a generative force : cause. How to use source in a sentence. Synonym Discussion of Source.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5895,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/source) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5895
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH build tools best practices",
+  "title": "SOURCE_DATE_EPOCH \u2014 reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/source-date-epoch/",
+  "snippet": "SOURCE_DATE_EPOCH SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. In practice, SOURCE_DATE_EPOCH specifies the last modification of something, usually the source code, measured in the number seconds since the Unix epoch, ie.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8715,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH \u2014 reproducible-builds.org' (https://reproducible-builds.org/docs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8715
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH build tools best practices",
+  "title": "SOURCE_DATE_EPOCH specification - reproducible-builds.org",
+  "url": "https://reproducible-builds.org/specs/source-date-epoch/",
+  "snippet": "One can reasonably assume that all source timestamps are before SOURCE_DATE_EPOCH and all builds take place after it. This means we can efficiently both preserve source-based timestamps and omit build-specific timestamps, by rewriting timestamps more recent than SOURCE_DATE_EPOCH back to the latter.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.953,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH specification - reproducible-builds.org' (https://reproducible-builds.org/specs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.953
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH build tools best practices",
+  "title": "Reproducible builds with GitHub Actions | Docker Docs",
+  "url": "https://docs.docker.com/build/ci/github-actions/reproducible-builds/",
+  "snippet": "SOURCE_DATE_EPOCH is a standardized environment variable for instructing build tools to produce a reproducible output. Setting the environment variable for a build makes the timestamps in the image index, config, and file metadata reflect the specified Unix time. To set the environment variable in GitHub Actions, use the built-in env property on the build step. Unix epoch timestamps",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.936,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds with GitHub Actions | Docker Docs' (https://docs.docker.com/build/ci/github-actions/reproducible-builds/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.936
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH build tools best practices",
+  "title": "SOURCE Definition & Meaning - Merriam-Webster",
+  "url": "https://www.merriam-webster.com/dictionary/source",
+  "snippet": "4 days ago \u00b7 The meaning of SOURCE is a generative force : cause. How to use source in a sentence. Synonym Discussion of Source.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5895,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/source) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5895
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH build tools best practices",
+  "title": "buildkit/docs/build-repro.md at master \u00b7 moby/buildkit \u00b7 GitHub",
+  "url": "https://github.com/moby/buildkit/blob/master/docs/build-repro.md",
+  "snippet": "Any source type is supported, but how to pin a source depends on the type. SOURCE_DATE_EPOCH is the convention for pinning timestamps to a specific value. The Dockerfile frontend supports consuming the SOURCE_DATE_EPOCH value as a special build arg, since BuildKit 0.11.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9019,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'buildkit/docs/build-repro.md at master \u00b7 moby/buildkit \u00b7 GitHub' (https://github.com/moby/buildkit/blob/master/docs/build-repro.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9019
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SOURCE_DATE_EPOCH build tools best practices",
+  "title": "Reproducible Docker Builds with SOURCE_DATE_EPOCH",
+  "url": "https://www.mironsoft.de/en/blog/reproducible-docker-builds-with-source-date-epoch",
+  "snippet": "Reproducible Docker builds produce the same image digest from identical source code and identical configuration on every build, no matter when or on which machine the build ran. SOURCE_DATE_EPOCH eliminates the biggest source of noise behind non-determinism, the current timestamp embedded into every layer.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2679,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Docker Builds with SOURCE_DATE_EPOCH' (https://www.mironsoft.de/en/blog/reproducible-docker-builds-with-source-date-epoch) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2679
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "BuildKit reproducible builds rewrite-timestamp SOURCE_DATE_EPOCH",
+  "title": "How to Set Up Docker Build Reproducibility Verification",
+  "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-set-up-docker-build-reproducibility-verification/view",
+  "snippet": "BuildKit Reproducible Output. Docker BuildKit supports SOURCE_DATE_EPOCH as a special build argument. Buildx automatically propagates the environment variable, and BuildKit 0.13+ can rewrite file timestamps in exported images with rewrite-timestamp=true",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1211,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Set Up Docker Build Reproducibility Verification' (https://oneuptime.com/blog/post/2026-02-08-how-to-set-up-docker-build-reproducibility-verification/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1211
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "BuildKit reproducible builds rewrite-timestamp SOURCE_DATE_EPOCH",
+  "title": "buildkit/docs/build-repro.md at master \u00b7 moby/buildkit \u00b7 GitHub",
+  "url": "https://github.com/moby/buildkit/blob/master/docs/build-repro.md",
+  "snippet": "SOURCE_DATE_EPOCH is the convention for pinning timestamps to a specific value. The Dockerfile frontend supports consuming the SOURCE_DATE_EPOCH value as a special build arg, since BuildKit 0.11. Minimal support is also available on older BuildKit when using Dockerfile 1.5 frontend.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9019,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'buildkit/docs/build-repro.md at master \u00b7 moby/buildkit \u00b7 GitHub' (https://github.com/moby/buildkit/blob/master/docs/build-repro.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9019
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "BuildKit reproducible builds rewrite-timestamp SOURCE_DATE_EPOCH",
+  "title": "SOURCE_DATE_EPOCH - reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/source-date-epoch/",
+  "snippet": "SOURCE_DATE_EPOCH SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. In practice, SOURCE_DATE_EPOCH specifies the last modification of something, usually the source code, measured in the number seconds since the Unix epoch, ie.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8715,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH - reproducible-builds.org' (https://reproducible-builds.org/docs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8715
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "BuildKit reproducible builds rewrite-timestamp SOURCE_DATE_EPOCH",
+  "title": "Reproducible Builds for Container Images: Achieving Deterministic Output",
+  "url": "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "snippet": "Stripping Timestamps with Docker BuildKit Docker BuildKit supports the SOURCE_DATE_EPOCH environment variable, which overrides timestamps in the build process: ... Reproducible Builds with ko (Go Applications) ko builds Go applications into container images without a Dockerfile, and produces reproducible output by default: ... Reproducible ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5064,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds for Container Images: Achieving Deterministic Output' (https://www.systemshardening.com/articles/cicd/reproducible-builds/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5064
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "BuildKit reproducible builds rewrite-timestamp SOURCE_DATE_EPOCH",
+  "title": "Reproducing the reproducible images - dangerzone.rocks",
+  "url": "https://dangerzone.rocks/news/2026-03-02-repro-build/",
+  "snippet": "Works with Docker and Podman, and ensures that BuildKit is used under the hood. Pins BuildKit to a specific version. Enforces the usage of a source date epoch or a human-friendly timestamp. Removes some common sources of nondeterminism by rewriting timestamps and removing build provenance. It's our tested version of a static toolchain.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.4088,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducing the reproducible images - dangerzone.rocks' (https://dangerzone.rocks/news/2026-03-02-repro-build/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4088
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "BuildKit reproducible builds rewrite-timestamp SOURCE_DATE_EPOCH",
+  "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+  "url": "https://www.speedtest.net/",
+  "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0236,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Speedtest by Ookla - The Global Broadband Speed Test' (https://www.speedtest.net/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0236
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker build deterministic OCI image created timestamp reproducible",
+  "title": "Reproducible Builds for Container Images: Achieving Deterministic Output",
+  "url": "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "snippet": "Reproducible Builds for Container Images: Achieving Deterministic Output Problem Two builds from the same source code should produce the same container image. In practice, they almost never do. Timestamps embedded in image layers, non-deterministic package manager ordering, floating base image tags, and build-tool metadata all contribute to different image digests from identical inputs. This ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5064,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds for Container Images: Achieving Deterministic Output' (https://www.systemshardening.com/articles/cicd/reproducible-builds/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5064
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker build deterministic OCI image created timestamp reproducible",
+  "title": "How to do deterministic builds of Docker images? [closed]",
+  "url": "https://stackoverflow.com/questions/53288388/how-to-do-deterministic-builds-of-docker-images",
+  "snippet": "Nov 14, 2018 \u00b7 A docker image isn't a compiled binary. There is no way to guarantee the results of a stage will ever be able to be reproduced, so even if the datetime metadata was absent, it would not guarantee reproducible builds.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0488,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to do deterministic builds of Docker images? [closed]' (https://stackoverflow.com/questions/53288388/how-to-do-deterministic-builds-of-docker-images) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0488
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker build deterministic OCI image created timestamp reproducible",
+  "title": "How to Set Up Docker Build Reproducibility Verification",
+  "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-set-up-docker-build-reproducibility-verification/view",
+  "snippet": "Reproducible Docker builds mean that given the same source code and build instructions, any builder produces a bit-for-bit identical image. This guide shows you how to achieve reproducibility and verify it. Why Builds Are Not Reproducible by Default Several factors introduce non-determinism into Docker builds:",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1211,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Set Up Docker Build Reproducibility Verification' (https://oneuptime.com/blog/post/2026-02-08-how-to-set-up-docker-build-reproducibility-verification/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1211
+   },
+   "usage": {
+    "input_tokens": 793,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:51.367587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker build deterministic OCI image created timestamp reproducible",
+  "title": "Docker Desktop: The #1 Containerization Tool for Developers | Docker",
+  "url": "https://www.docker.com/products/docker-desktop/",
+  "snippet": "Docker Desktop is collaborative containerization software for developers. Get started and download Docker Desktop today on Mac, Windows, or Linux.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2223,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker Desktop: The #1 Containerization Tool for Developers | Docker' (https://www.docker.com/products/docker-desktop/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2223
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker build deterministic OCI image created timestamp reproducible",
+  "title": "Docker | Secure Sandboxes for AI Agents",
+  "url": "https://www.docker.com/",
+  "snippet": "Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply chain \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.347,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker | Secure Sandboxes for AI Agents' (https://www.docker.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.347
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:55.298637+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker build deterministic OCI image created timestamp reproducible",
+  "title": "[FOSDEM2023] Bit-for-bit reproducible builds with Dockerfile",
+  "url": "https://archive.fosdem.org/2023/schedule/event/container_reproducible_dockerfile/attachments/slides/5574/export/events/attachments/container_reproducible_dockerfile/slides/5574/FOSDEM2023_Bit_for_bit_reproducible_builds_with_Dockerfile.pdf",
+  "snippet": "Bit-for-bit reproducible builds with Dockerle. Deterministic timestamps and deterministic apt-get.\u2013 Timestamps of the les in tar layers \u2013 Timestamps in OCI Image Spec JSONs (\u201corg.opencontainers.image.created\u201d, etc.) \u2022 \u201captgettable\u201d packages.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.882,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '[FOSDEM2023] Bit-for-bit reproducible builds with Dockerfile' (https://archive.fosdem.org/2023/schedule/event/container_reproducible_dockerfile/attachments/slides/5574/export/events/attachments/container_reproducible_docker) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.882
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:55.298637+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds verify two builds compare bit-by-bit diffoscope",
+  "title": "Lab: Reproducible Container Builds \u2014 Pinning, Verifying & Diffing Images",
+  "url": "https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/",
+  "snippet": "Second build docker build --no-cache -t myapp:build2 . The --no-cache flag forces Docker to execute every layer from scratch, which is essential for this comparison.The Go binary is now bit-for-bit reproducible. Exercise 6: The Fully Reproducible Dockerfile.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.3707,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Lab: Reproducible Container Builds \u2014 Pinning, Verifying & Diffing Images' (https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3707
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:55.298637+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds verify two builds compare bit-by-bit diffoscope",
+  "title": "Tools - reproducible-builds.org",
+  "url": "https://reproducible-builds.org/tools/",
+  "snippet": "Tools Several tools are available to make your life easier when working on reproducible builds. Tools to compare build artifacts and/or detect nondeterminism Tools to make builds reproducible (by removing nondeterminism) Tools for rebuilding Orchestrators Rebuilder backends Clients/frontends Verifiers Misc Tools to compare build artifacts and/or detect nondeterminism diffoscope diffoscope will ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8552,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Tools - reproducible-builds.org' (https://reproducible-builds.org/tools/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8552
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:55.298637+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds verify two builds compare bit-by-bit diffoscope",
+  "title": "Achieving Bit-for-Bit Reproducible Builds in CI/CD",
+  "url": "https://www.kbytechnologies.com/devops-automation/achieving-bit-for-bit-reproducible-builds-in-ci-cd",
+  "snippet": "Jul 10, 2026 \u00b7 Enforcing reproducible builds across a large monorepo is not free. The double-build verification stage roughly doubles compute cost for every CI run that includes the gate, and hermetic toolchain pinning adds maintenance overhead every time a security patch lands upstream.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1594,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Achieving Bit-for-Bit Reproducible Builds in CI/CD' (https://www.kbytechnologies.com/devops-automation/achieving-bit-for-bit-reproducible-builds-in-ci-cd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1594
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:55.298637+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds verify two builds compare bit-by-bit diffoscope",
+  "title": "Reproducible Builds: Why Bit-for-Bit Identical Matters",
+  "url": "https://safeguard.sh/resources/blog/reproducible-builds-why-bit-for-bit-identical-matters",
+  "snippet": "Jul 29, 2026 \u00b7 A reproducible build produces a bit-for-bit identical artifact every time it is run from the same source, toolchain, and instructions \u2014 which turns \"trust our build server\" into \"verify our build server,\" because any independent party can rebuild and compare hashes.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.6481,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds: Why Bit-for-Bit Identical Matters' (https://safeguard.sh/resources/blog/reproducible-builds-why-bit-for-bit-identical-matters) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6481
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds verify two builds compare bit-by-bit diffoscope",
+  "title": "REPRODUCIBLE | English meaning - Cambridge Dictionary",
+  "url": "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "snippet": "To avoid problems due to over fitting and to ensure a reproducible solution, calculate multiple individual envelopes and use the \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0527,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'REPRODUCIBLE | English meaning - Cambridge Dictionary' (https://dictionary.cambridge.org/dictionary/english/reproducible) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0527
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds verify two builds compare bit-by-bit diffoscope",
+  "title": "Reproducible Builds | FMD",
+  "url": "https://fmd-foss.org/security/reproducibility/",
+  "snippet": "Reproducible Builds allow reviewers to audit the source code, and use bit-by-bit reproducibility to establish the causal link to the binary that is executed.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.6544,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds | FMD' (https://fmd-foss.org/security/reproducibility/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6544
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker image reproducibility test compare digests",
+  "title": "Lab: Reproducible Container Builds \u2014 Pinning, Verifying & Diffing Images",
+  "url": "https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/",
+  "snippet": "Mar 23, 2026 \u00b7 Hands-on lab for achieving reproducible container builds. Covers Docker digest pinning, build argument control, diffoscope comparison, BuildKit reproducibility, and CI/CD verification workflows.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.3707,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Lab: Reproducible Container Builds \u2014 Pinning, Verifying & Diffing Images' (https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3707
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:55.298637+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker image reproducibility test compare digests",
+  "title": "ry0y4n/ReproDocker-Doctor: Diagnose Docker image reproducibility...",
+  "url": "https://github.com/ry0y4n/ReproDocker-Doctor",
+  "snippet": "Diagnose Docker image reproducibility, classify differences, and get fix recommendations \u2014 all in one command.ReproDocker Doctor builds your image twice, compares the results, classifies every difference, and tells you exactly how to fix each one.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5015,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'ry0y4n/ReproDocker-Doctor: Diagnose Docker image reproducibility...' (https://github.com/ry0y4n/ReproDocker-Doctor) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5015
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker image reproducibility test compare digests",
+  "title": "Reproducible Builds for Container Images: Achieving Deterministic Output",
+  "url": "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "snippet": "Build the image twice (ideally on different machines) and compare digests: ... Multi-Architecture Reproducibility Multi-arch builds add complexity because each architecture produces a different binary: ... Expected Behaviour Building the same commit twice produces an image with the same digest All base images are pinned by digest with automated ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5064,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds for Container Images: Achieving Deterministic Output' (https://www.systemshardening.com/articles/cicd/reproducible-builds/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5064
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker image reproducibility test compare digests",
+  "title": "Image digests | Docker Docs",
+  "url": "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+  "snippet": "Learn how Docker Hardened Images help secure every stage of your software supply chain with signed metadata, provenance, and minimal attack surface.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.7792,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Image digests | Docker Docs' (https://docs.docker.com/dhi/explore/security-concepts/digests/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7792
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker image reproducibility test compare digests",
+  "title": "Reproducibility \u2014 pinned bases, deterministic layers \u00b7 Docker ...",
+  "url": "https://runbook.academy/courses/docker/lessons/docker-reproducibility/",
+  "snippet": "That changes the index digest between runs even when the image manifest is stable. When you are testing reproducibility, build with --provenance=false and compare containerimage.digest; add provenance back for the release build, and make your reproducibility claim about the image manifest rather than the index.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.6027,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducibility \u2014 pinned bases, deterministic layers \u00b7 Docker ...' (https://runbook.academy/courses/docker/lessons/docker-reproducibility/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6027
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:26:29.489783+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker image reproducibility test compare digests",
+  "title": "It\u2019s Not Just Timestamps: A Study on Docker Reproducibility",
+  "url": "https://arxiv.org/html/2602.17678",
+  "snippet": "Abstract. Reproducible container builds promise a simple integrity check for software supply chains: rebuild an image from its Dockerfile and compare hashes. We build a Docker measurement pipeline and apply it to a stratified sample of 2,000 GitHub repositories that contained a Dockerfile. We found that only 56% produce any buildable image, and just 2.7% of those are bitwise reproducible ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.7477,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'It\u2019s Not Just Timestamps: A Study on Docker Reproducibility' (https://arxiv.org/html/2602.17678) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7477
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:26:29.489783+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker .dockerignore build context minimal reproducible",
+  "title": "Build context | Docker Docs",
+  "url": "https://docs.docker.com/build/concepts/context/",
+  "snippet": "Use the following syntax to build an image using files on your local filesystem, while using a Dockerfile from stdin. The syntax uses the -f (or --file) option to specify the Dockerfile to use, and it uses a hyphen (-) as filename to instruct Docker to read the Dockerfile from stdin.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.7869,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Build context | Docker Docs' (https://docs.docker.com/build/concepts/context/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7869
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:26:29.489783+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker .dockerignore build context minimal reproducible",
+  "title": "Optimize Docker Offload usage | Docker Docs",
+  "url": "https://docs.docker.com/offload/optimize/",
+  "snippet": "Use .dockerignore files Choose slim base images Use multi-stage builds Fetch remote files during the build Leverage multi-threaded tools For general Dockerfile tips, see Building best practices. dockerignore files A .dockerignore file lets you specify which local files should not be included in the build context. Files excluded by these patterns won't be uploaded to Docker Offload during a ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1991,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Optimize Docker Offload usage | Docker Docs' (https://docs.docker.com/offload/optimize/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1991
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:26:29.489783+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker .dockerignore build context minimal reproducible",
+  "title": ".dockerignore Reference \u2014 Patterns, Precedence, and Common Mistakes",
+  "url": "https://dockerbuild.com/reference/dockerignore",
+  "snippet": "May 2, 2026 \u00b7 The .dockerignore file sits in the root of the build context and tells the Docker CLI which files and directories should not be sent to the daemon when a build is started.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2942,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '.dockerignore Reference \u2014 Patterns, Precedence, and Common Mistakes' (https://dockerbuild.com/reference/dockerignore) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2942
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:26:29.489783+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker .dockerignore build context minimal reproducible",
+  "title": "Docker | Secure Sandboxes for AI Agents",
+  "url": "https://www.docker.com/",
+  "snippet": "Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply chain \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.347,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker | Secure Sandboxes for AI Agents' (https://www.docker.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.347
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:55.298637+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker .dockerignore build context minimal reproducible",
+  "title": "Docker-compose and .dockerignore - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/53945934/docker-compose-and-dockerignore",
+  "snippet": "The build process is following: First docker cli packs the context (folder with Dockerfile if not specified explicitly) and sends it to docker daemon. Nothing outside this folder is sent. It is written explicitly for COPY command, which is used to put the context items into container",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.193,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker-compose and .dockerignore - Stack Overflow' (https://stackoverflow.com/questions/53945934/docker-compose-and-dockerignore) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.193
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:03.074843+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "docker .dockerignore build context minimal reproducible",
+  "title": "Docker Build Overview | Docker Docs",
+  "url": "https://docs.docker.com/build/concepts/overview",
+  "snippet": "While docker build invokes Buildx under the hood, there are subtle differences between this command and the canonical docker buildx build.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9513,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker Build Overview | Docker Docs' (https://docs.docker.com/build/concepts/overview) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9513
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:03.074843+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ldconfig aux-cache remove reproducible image build",
+  "title": "[Reproducible Builds] /var/cache/ldconfig/aux-cache file is not ...",
+  "url": "https://gitlab.com/cip-project/cip-core/isar-cip-core/-/issues/35",
+  "snippet": "[Reproducible Builds] /var/cache/ldconfig/aux-cache file is not reproducible Used diffoscope to check the reproducibility, a script is written here which uses diffoscope docker image to verify the reproducibility in isar-cip-core image, (Note: the script only works for isar-cip-core image and amd64 architecture, it needs improvement to generalize)",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.697,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '[Reproducible Builds] /var/cache/ldconfig/aux-cache file is not ...' (https://gitlab.com/cip-project/cip-core/isar-cip-core/-/issues/35) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.697
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:03.074843+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ldconfig aux-cache remove reproducible image build",
+  "title": "FS#73817 - [mkinitcpio] 31-2 allow reproducable builds if /var/cache ...",
+  "url": "https://bugs.archlinux.org/task/73817.html",
+  "snippet": "If /var/cache directory exists in ramdisk --> /var/cache/ldconfig/aux-cache is triggered by mkinitcpio ldconfig call. Remove that cache file, if it exists to restore reproducability. The file only speedsup rerunning ldconfig calls. Patch attached.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5673,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FS#73817 - [mkinitcpio] 31-2 allow reproducable builds if /var/cache ...' (https://bugs.archlinux.org/task/73817.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5673
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:03.074843+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ldconfig aux-cache remove reproducible image build",
+  "title": "Reproducing the reproducible images - dangerzone.rocks",
+  "url": "https://dangerzone.rocks/news/2026-03-02-repro-build/",
+  "snippet": "Reproducible container images Our repro-build repo has a CI job that builds Debian images from snapshot repos nightly and then rebuilds them immediately, to make sure that they are reproducible. This CI job reuses the helpers we mentioned above, and produces container images that you can independently reproduce and verify.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.4088,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducing the reproducible images - dangerzone.rocks' (https://dangerzone.rocks/news/2026-03-02-repro-build/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4088
+   },
+   "usage": {
+    "input_tokens": 781,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:53.384315+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ldconfig aux-cache remove reproducible image build",
+  "title": "linux - Purging and rebuilding ldconfig cache? - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/21758828/purging-and-rebuilding-ldconfig-cache",
+  "snippet": "I want to update the ldconfig cache to point to these newly built libs. I have tried using the ldconfig -c command, giving it my own .conf file. I also tried replacing the /etc/ld.so.conf file to point to the new path of libs. But even after doing this, when I check the cache using the ldconfig -p command , it is still showing the old libs.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1071,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'linux - Purging and rebuilding ldconfig cache? - Stack Overflow' (https://stackoverflow.com/questions/21758828/purging-and-rebuilding-ldconfig-cache) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1071
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:03.074843+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ldconfig aux-cache remove reproducible image build",
+  "title": "Used Trucks for Sale Near Me - Autotrader",
+  "url": "https://www.autotrader.com/cars-for-sale/truck?msockid=32f4a02ebd656ba924bcb7c7bcdb6ae1",
+  "snippet": "Used trucks and pickups for sale. Find compact, mid-size, full-size, 4x4, and heavy duty trucks for sale.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0434,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Used Trucks for Sale Near Me - Autotrader' (https://www.autotrader.com/cars-for-sale/truck?msockid=32f4a02ebd656ba924bcb7c7bcdb6ae1) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0434
+   },
+   "usage": {
+    "input_tokens": 792,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:05.143778+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ldconfig aux-cache remove reproducible image build",
+  "title": "Reproducible builds \u00b7 Issue #16044 \u00b7 docker-library/official-images",
+  "url": "https://github.com/docker-library/official-images/issues/16044",
+  "snippet": "Enabling reproducible builds for Docker Official Images will improve traceability of the image origins and will help assessment of supply chain security of the images./var/cache/ldconfig/aux-cache has to be removed too.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.4791,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds \u00b7 Issue #16044 \u00b7 docker-library/official-images' (https://github.com/docker-library/official-images/issues/16044) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4791
+   },
+   "usage": {
+    "input_tokens": 792,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:05.143778+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "mkosi SourceDateEpoch reproducible OS image build",
+  "title": "GitHub - systemd/mkosi: Build Bespoke OS Images",
+  "url": "https://github.com/systemd/mkosi",
+  "snippet": "mkosi \u2014 Build Bespoke OS Images A fancy wrapper around dnf --installroot, apt, pacman and zypper that generates customized disk images with a number of bells and whistles.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5089,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - systemd/mkosi: Build Bespoke OS Images' (https://github.com/systemd/mkosi) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5089
+   },
+   "usage": {
+    "input_tokens": 792,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:05.143778+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "mkosi SourceDateEpoch reproducible OS image build",
+  "title": "mkosi \u2014 Build Bespoke OS Images",
+  "url": "https://mkosi.systemd.io/",
+  "snippet": "mkosi \u2014 Build Bespoke OS Images A fancy wrapper around dnf --installroot, apt, pacman and zypper that generates customized disk images with a number of bells and whistles.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.6689,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'mkosi \u2014 Build Bespoke OS Images' (https://mkosi.systemd.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6689
+   },
+   "usage": {
+    "input_tokens": 792,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:05.143778+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "mkosi SourceDateEpoch reproducible OS image build",
+  "title": "Jelly's blog \u2013 Investigating creating reproducible images with\u2026",
+  "url": "https://vdwaa.nl/mkosi-reproducible-images.html",
+  "snippet": "I've blogged before about creating vagrant images using mkosi as part of an investigation to move image creation to mkosi but also as I will be giving a talk at All Systems Go about Arch Linux images mkosi and reproducibility. With reproducible images in this article I mean that anyone \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2677,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Jelly's blog \u2013 Investigating creating reproducible images with\u2026' (https://vdwaa.nl/mkosi-reproducible-images.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2677
+   },
+   "usage": {
+    "input_tokens": 792,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:05.143778+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "mkosi SourceDateEpoch reproducible OS image build",
+  "title": "GitHub - edgelesssys/reproducible-mkosi: Build bit-by-bit reproducible ...",
+  "url": "https://github.com/edgelesssys/reproducible-mkosi",
+  "snippet": "Reproducible mkosi Build bit-by-bit reproducible OS images mkosi is a tool for building customized OS images. This repository shows how to use Nix to pin mkosi and required tools and build bit-by-bit reproducible OS images.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.7285,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - edgelesssys/reproducible-mkosi: Build bit-by-bit reproducible ...' (https://github.com/edgelesssys/reproducible-mkosi) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7285
+   },
+   "usage": {
+    "input_tokens": 760,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:07.089691+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "mkosi SourceDateEpoch reproducible OS image build",
+  "title": "Reebok\u00ae Official Site | Life is Not a Spectator Sport",
+  "url": "https://www.reebok.com/",
+  "snippet": "Discover Reebok\u2019s iconic athletic shoes, apparel, and gear designed for performance, style, and comfort. Sign up for 15% off your \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0258,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reebok\u00ae Official Site | Life is Not a Spectator Sport' (https://www.reebok.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0258
+   },
+   "usage": {
+    "input_tokens": 760,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:07.089691+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "mkosi SourceDateEpoch reproducible OS image build",
+  "title": "mkosi - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Mkosi",
+  "snippet": "mkosi mkosi stands for Make Operating System Image, and is a tool for easily building customized OS images. It's a fancy Python wrapper around dnf, apt, pacman and zypper that may generate disk images with a number of bells and whistles. It has nifty features like: no_new_privileges to build images as an unpriviliged user",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8472,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'mkosi - ArchWiki' (https://wiki.archlinux.org/title/Mkosi) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8472
+   },
+   "usage": {
+    "input_tokens": 760,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:07.089691+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dracut reproducible mode deterministic initrd",
+  "title": "dracut (8) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man8/dracut.8.html",
+  "snippet": "NAME top dracut - low-level tool for generating an initramfs/initrd image SYNOPSIS top dracut [OPTION...] [<image> [<kernel version>]] DESCRIPTION top Create an initramfs <image> for the kernel with the version <kernel version>. If <kernel version> is omitted, then the version of the actual running kernel is used. If <image> is omitted or empty, the default location will be determined by the ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.4533,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dracut (8) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man8/dracut.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4533
+   },
+   "usage": {
+    "input_tokens": 760,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:07.089691+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dracut reproducible mode deterministic initrd",
+  "title": "dracut - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Dracut",
+  "snippet": "dracut uses a modular approach to build the initramfs (see dracut.modules (7)). All of dracut 's builtin modules are located in /lib/dracut/modules.d and can be listed with dracut --list-modules.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.6369,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dracut - ArchWiki' (https://wiki.archlinux.org/title/Dracut) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6369
+   },
+   "usage": {
+    "input_tokens": 760,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:07.089691+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dracut reproducible mode deterministic initrd",
+  "title": "Dracut - Gentoo Wiki",
+  "url": "https://wiki.gentoo.org/wiki/Dracut",
+  "snippet": "Jun 15, 2026 \u00b7 Dracut is an initramfs infrastructure and aims to have as little as possible hard-coded into the initramfs. Dracut originated from the Fedora Project and was ported to Gentoo in the 2010 Google Summer of Code.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.4395,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Dracut - Gentoo Wiki' (https://wiki.gentoo.org/wiki/Dracut) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4395
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:09.395056+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dracut reproducible mode deterministic initrd",
+  "title": "dracut 056 - The Linux Kernel Archives",
+  "url": "https://www.kernel.org/pub/linux/utils/boot/dracut/dracut.html",
+  "snippet": "dracut can also generate a more generic initramfs image (default mode). dracut's initramfs starts only with the device name of the root file system (or its UUID) and must discover everything else at boot time. A complex cascade of tasks must be performed to get the root file system mounted:",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.7374,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dracut 056 - The Linux Kernel Archives' (https://www.kernel.org/pub/linux/utils/boot/dracut/dracut.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7374
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:09.395056+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dracut reproducible mode deterministic initrd",
+  "title": "Rebuild Initramfs on Linux using Dracut - LinuxConfig.org",
+  "url": "https://linuxconfig.org/how-to-build-an-initramfs-using-dracut-on-linux",
+  "snippet": "Dracut is a tool used to build initramfs cpio archives. It originated, and is mainly used on Fedora and the other distributions that are part of the Red Hat family, but can be used also on community distributions like Gentoo, and Archlinux. The application functionalities are organized in modules. In order to list all the dracut modules available o...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1414,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Rebuild Initramfs on Linux using Dracut - LinuxConfig.org' (https://linuxconfig.org/how-to-build-an-initramfs-using-dracut-on-linux) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1414
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:09.395056+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dracut reproducible mode deterministic initrd",
+  "title": "dracut (software) - Wikipedia",
+  "url": "https://en.m.wikipedia.org/wiki/Dracut_(software)",
+  "snippet": "Dracut is a set of tools that provide enhanced functionality for automating the Linux boot process. The tool named dracut is used to \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1137,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dracut (software) - Wikipedia' (https://en.m.wikipedia.org/wiki/Dracut_(software)) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1137
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:09.395056+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "U-Boot reproducible builds SOURCE_DATE_EPOCH embedded",
+  "title": "Reproducible builds \u2014 Das U-Boot unknown version documentation",
+  "url": "https://docs.u-boot-project.org/en/latest/build/reproducible.html",
+  "snippet": "In order to achieve reproducible builds, timestamps used in the U-Boot build process have to be set to a fixed value. This is done using the SOURCE_DATE_EPOCH environment variable which specifies the number of seconds since 1970-01-01T00:00:00Z.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.7797,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds \u2014 Das U-Boot unknown version documentation' (https://docs.u-boot-project.org/en/latest/build/reproducible.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7797
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:09.395056+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "U-Boot reproducible builds SOURCE_DATE_EPOCH embedded",
+  "title": "u-boot/doc/build/reproducible.rst at master \u00b7 u-boot/u-boot ...",
+  "url": "https://github.com/u-boot/u-boot/blob/master/doc/build/reproducible.rst",
+  "snippet": "In order to achieve reproducible builds, timestamps used in the U-Boot build process have to be set to a fixed value. This is done using the SOURCE_DATE_EPOCH environment variable which specifies the number of seconds since 1970-01-01T00:00:00Z.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.883,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'u-boot/doc/build/reproducible.rst at master \u00b7 u-boot/u-boot ...' (https://github.com/u-boot/u-boot/blob/master/doc/build/reproducible.rst) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.883
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:11.277824+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "U-Boot reproducible builds SOURCE_DATE_EPOCH embedded",
+  "title": "SOURCE_DATE_EPOCH - reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/source-date-epoch/",
+  "snippet": "SOURCE_DATE_EPOCH SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. In practice, SOURCE_DATE_EPOCH specifies the last modification of something, usually the source code, measured in the number seconds since the Unix epoch, ie.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8715,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH - reproducible-builds.org' (https://reproducible-builds.org/docs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8715
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "U-Boot reproducible builds SOURCE_DATE_EPOCH embedded",
+  "title": "YouTube",
+  "url": "https://www.youtube.com/",
+  "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0476,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'YouTube' (https://www.youtube.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0476
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:11.277824+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "U-Boot reproducible builds SOURCE_DATE_EPOCH embedded",
+  "title": "https://tug.org/applications/pdftex/NEWS",
+  "url": "https://tug.org/applications/pdftex/NEWS",
+  "snippet": "- rename envvar SOURCE_DATE_EPOCH_TEX_PRIMITIVES to FORCE_SOURCE_DATE; no changes in functionality. - if the \\pdfpageattr token list contains the string &#34;/MediaBox&#34;, omitting outp",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.3586,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'https://tug.org/applications/pdftex/NEWS' (https://tug.org/applications/pdftex/NEWS) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3586
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:11.277824+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "U-Boot reproducible builds SOURCE_DATE_EPOCH embedded",
+  "title": "docs.u-boot.org",
+  "url": "https://docs.u-boot.org/en/stable/_sources/build/reproducible.rst.txt",
+  "snippet": "Reproducible builds =================== In order to achieve reproducible builds, timestamps used in the U-Boot build process have to be set to a fixed value. This is done using the SOURCE_DATE_EPOCH environment variable which specifies the number of seconds since 1970-01-01T00:00:00Z. Example ------- To build the sandbox with 2023-01-01T00:00:00Z as timestamp we can use: .. code-block:: bash ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8845,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'docs.u-boot.org' (https://docs.u-boot.org/en/stable/_sources/build/reproducible.rst.txt) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8845
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:11.277824+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "EDK2 reproducible builds deterministic firmware",
+  "title": "GitHub - tianocore/edk2: EDK II",
+  "url": "https://github.com/tianocore/edk2",
+  "snippet": "A modern, feature-rich, cross-platform firmware development environment for the UEFI and PI specifications from www.uefi.org. It is recommended to install this Python version to run the full set of scripts that enable CI in the project. Other Python requirements for build can be found in the EDK II Build Instructions.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5251,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - tianocore/edk2: EDK II' (https://github.com/tianocore/edk2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5251
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:11.277824+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "EDK2 reproducible builds deterministic firmware",
+  "title": "Reproducible Builds \u2014 a set of software development practices that ...",
+  "url": "https://reproducible-builds.org/",
+  "snippet": "Reproducible builds are a set of software development practices that create an independently-verifiable path from source to binary code. (Find out more) To learn how to deliver software that your users and contributors can run, rebuild and improve with confidence, refer to the getting started guide.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9661,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds \u2014 a set of software development practices that ...' (https://reproducible-builds.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9661
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "EDK2 reproducible builds deterministic firmware",
+  "title": "Releases \u00b7 tianocore/edk2 - GitHub",
+  "url": "https://github.com/tianocore/edk2/releases",
+  "snippet": "Aug 21, 2026 \u00b7 EDK II. Contribute to tianocore/edk2 development by creating an account on GitHub.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.5431,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Releases \u00b7 tianocore/edk2 - GitHub' (https://github.com/tianocore/edk2/releases) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5431
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "EDK2 reproducible builds deterministic firmware",
+  "title": "Build System | tianocore/edk2 | DeepWiki",
+  "url": "https://deepwiki.com/tianocore/edk2/2-build-system",
+  "snippet": "Build System Relevant source files Purpose and Scope The EDK II build system is a Python-based infrastructure that transforms platform description files and module source code into bootable UEFI firmware images. This document provides an overview of the build system architecture, key components, and the workflow from configuration to final firmware binary generation. For detailed information ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2643,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Build System | tianocore/edk2 | DeepWiki' (https://deepwiki.com/tianocore/edk2/2-build-system) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2643
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "EDK2 reproducible builds deterministic firmware",
+  "title": "Zimbra Web Client Sign In",
+  "url": "https://mail1.mediacombb.net/",
+  "snippet": "Zimbra provides open source server and client software for messaging and collaboration. To find out more visit https://www.zimbra.com.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0269,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Zimbra Web Client Sign In' (https://mail1.mediacombb.net/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0269
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "EDK2 reproducible builds deterministic firmware",
+  "title": "Reproducible builds - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Reproducible_builds",
+  "snippet": "Reproducible builds, also known as deterministic compilation, is a process of compiling software which ensures the resulting binary code can be reproduce\u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2137,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds - Wikipedia' (https://en.wikipedia.org/wiki/Reproducible_builds) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2137
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds signed artifacts keys excluded comparison guidance",
+  "title": "Reproducible Builds \u2014 a set of software development practices that ...",
+  "url": "https://reproducible-builds.org/",
+  "snippet": "Reproducible Builds ensure that the software you trust is both safe and verifiable. They do this by verifying that the binaries that you download match the original, untampered source code.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9661,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds \u2014 a set of software development practices that ...' (https://reproducible-builds.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9661
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds signed artifacts keys excluded comparison guidance",
+  "title": "Reproducible Builds Guide for 2026 \u2014 ByteLedger",
+  "url": "https://byteledger.vizleo.com/blog/reproducible-builds-guide-2026",
+  "snippet": "Jun 26, 2026 \u00b7 Reproducible means byte-identical output from the same source \u2014 anyone can verify the binary matches the code. It closes a real supply chain gap \u2014 signed artifacts prove who built something, not what it was built from. Timestamps and paths cause most non-determinism \u2014 and both have standard fixes.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1781,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds Guide for 2026 \u2014 ByteLedger' (https://byteledger.vizleo.com/blog/reproducible-builds-guide-2026) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1781
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:15.605991+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds signed artifacts keys excluded comparison guidance",
+  "title": "What is Reproducible Builds? Meaning, Architecture, Examples, Use Cases ...",
+  "url": "https://devsecopsschool.com/blog/reproducible-builds/",
+  "snippet": "What is Reproducible Builds? Reproducible Builds ensure that a given source state, configuration, and build environment produce byte-for-byte identical artifacts every time. They are not merely repeatable builds or consistent deployment practices; they focus on determinism, provenance, and verifiable equivalence across builds and environments. Key properties and constraints: Determinism: Same ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1835,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What is Reproducible Builds? Meaning, Architecture, Examples, Use Cases ...' (https://devsecopsschool.com/blog/reproducible-builds/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1835
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:15.605991+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds signed artifacts keys excluded comparison guidance",
+  "title": "Docs \u2014 reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/",
+  "snippet": "Build path System images Rust JVM Helm Define a build environment What's in a build environment? Recording the build environment Definition strategies Proprietary operating systems Distribute the environment Building from source Virtual machine drivers Formal definition Verification Cryptographic checksums Embedded signatures Sharing ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9662,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docs \u2014 reproducible-builds.org' (https://reproducible-builds.org/docs/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9662
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:15.605991+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds signed artifacts keys excluded comparison guidance",
+  "title": "REPRODUCIBLE | English meaning - Cambridge Dictionary",
+  "url": "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "snippet": "To avoid problems due to over fitting and to ensure a reproducible solution, calculate multiple individual envelopes and use the \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0527,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'REPRODUCIBLE | English meaning - Cambridge Dictionary' (https://dictionary.cambridge.org/dictionary/english/reproducible) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0527
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds signed artifacts keys excluded comparison guidance",
+  "title": "Temurin Reproducible Verification Build on Windows x64 | Adoptium",
+  "url": "https://adoptium.net/docs/reproducible-verification-builds/reproduce-windows-x64/",
+  "snippet": "Download and setup the Adoptium temurin-build reproducible build comparison tooling for Windows. Due to the Temurin \u201csigning signatures\u201d of the Windows .exe/dll\u2019s, processing is necessary to remove the unique digital signatures using the Windows signtool.exe tool.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8609,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Temurin Reproducible Verification Build on Windows x64 | Adoptium' (https://adoptium.net/docs/reproducible-verification-builds/reproduce-windows-x64/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8609
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:15.605991+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "btrfs mkfs UUID randomness reproducible filesystem image",
+  "title": "mkfs.btrfs (8) \u2014 BTRFS documentation",
+  "url": "https://btrfs.readthedocs.io/en/latest/mkfs.btrfs.html",
+  "snippet": "To create a reproducible image, pin the filesystem UUID with -U, set SOURCE_DATE_EPOCH and DETERMINISTIC_SEED, normalize source ownership, and start with a fresh target file. mkfs.btrfs copies uid and gid from the source tree and, like other mkfs tools, does not zero space it does not write:",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0599,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'mkfs.btrfs (8) \u2014 BTRFS documentation' (https://btrfs.readthedocs.io/en/latest/mkfs.btrfs.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0599
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:15.605991+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "btrfs mkfs UUID randomness reproducible filesystem image",
+  "title": "mkfs.btrfs (8) \u2014 Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man8/mkfs.btrfs.8.html",
+  "snippet": "NAME top mkfs.btrfs - create a btrfs filesystem SYNOPSIS top mkfs.btrfs [options] <device> [<device>...] DESCRIPTION top mkfs.btrfs is used to create the btrfs filesystem on a single or multiple devices. <device> is typically a block device but can be a file-backed image as well. Multiple devices are grouped by UUID of the filesystem. Before mounting such filesystem, the kernel module must ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.3692,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'mkfs.btrfs (8) \u2014 Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man8/mkfs.btrfs.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3692
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:17.188145+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "btrfs mkfs UUID randomness reproducible filesystem image",
+  "title": "mkfs.btrfs (8) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/mkfs.btrfs.8.en",
+  "snippet": "NAME mkfs.btrfs - create a btrfs filesystem SYNOPSIS mkfs.btrfs [options] <device> [<device>...] DESCRIPTION mkfs.btrfs is used to create the btrfs filesystem on a single or multiple devices. The device is typically a block device but can be a file-backed image as well. Multiple devices are grouped by UUID of the filesystem. Before mounting such filesystem, the kernel module must know all the ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8569,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'mkfs.btrfs (8) \u2014 Arch manual pages' (https://man.archlinux.org/man/mkfs.btrfs.8.en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8569
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:17.188145+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "btrfs mkfs UUID randomness reproducible filesystem image",
+  "title": "Gmail - Google Accounts",
+  "url": "https://accounts.google.com/login?service=mail",
+  "snippet": "Gmail is email that\u2019s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0206,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Gmail - Google Accounts' (https://accounts.google.com/login?service=mail) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0206
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:17.188145+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "btrfs mkfs UUID randomness reproducible filesystem image",
+  "title": "How to use the command 'mkfs.btrfs' (with examples)",
+  "url": "https://commandmasters.com/commands/mkfs.btrfs-linux/",
+  "snippet": "mkfs.btrfs: This command initiates the creation of a Btrfs filesystem on the specified device(s). --metadata single: This option sets how metadata (the ancillary data describing filesystem structures) is stored.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1573,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to use the command 'mkfs.btrfs' (with examples)' (https://commandmasters.com/commands/mkfs.btrfs-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1573
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:17.188145+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "btrfs mkfs UUID randomness reproducible filesystem image",
+  "title": "mkfs.btrfs(8) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man8/mkfs.btrfs.8.html",
+  "snippet": "Mkfs.btrfs is used to create the btrfs filesystem on a single or multiple devices. <device> is typically a block device but can be a file-backed image as well.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8199,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'mkfs.btrfs(8) - Linux manual page' (https://man7.org/linux/man-pages/man8/mkfs.btrfs.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8199
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:17.188145+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds immutable package repository snapshot dependency pinning",
+  "title": "How to Build Reproducible Docker Images with Locked Dependencies",
+  "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-build-reproducible-docker-images-with-locked-dependencies/view",
+  "snippet": "Operating system packages also need pinning for full reproducibility. Exact version pins are only reproducible while those versions remain available from the configured package repositories; for long-term rebuilds, use a snapshot repository such as snapshot.debian.org or an internal mirror.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.4159,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Build Reproducible Docker Images with Locked Dependencies' (https://oneuptime.com/blog/post/2026-02-08-how-to-build-reproducible-docker-images-with-locked-dependencies/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4159
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:21.079646+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds immutable package repository snapshot dependency pinning",
+  "title": "What is Dependency Pinning? Meaning, Architecture, Examples, Use Cases ...",
+  "url": "https://devsecopsschool.com/blog/dependency-pinning/",
+  "snippet": "Dependency pinning locks a software dependency to a specific version or immutable artifact. Analogy: like fastening a container lid with a serial-numbered seal to ensure the same contents every time. Formal: deterministic dependency resolution policy that maps build-time references to immutable versioned artifacts for reproducible deployments.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.1713,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What is Dependency Pinning? Meaning, Architecture, Examples, Use Cases ...' (https://devsecopsschool.com/blog/dependency-pinning/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1713
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:21.079646+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds immutable package repository snapshot dependency pinning",
+  "title": "Reproducible builds - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Reproducible_builds",
+  "snippet": "Reproducible builds, also known as deterministic compilation, is a process of building software which ensures the resulting binary code can be reproduced. Source code compiled deterministically will always output the same binary.[1][2][3].",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2137,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds - Wikipedia' (https://en.wikipedia.org/wiki/Reproducible_builds) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2137
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds immutable package repository snapshot dependency pinning",
+  "title": "Dependency Version Pinning for Reproducible Builds ... - GitHub",
+  "url": "https://github.com/orgs/autowarefoundation/discussions/6861",
+  "snippet": "Dependency Version Pinning for Reproducible Builds Goals Reproducible builds: Given the same commit, produce identical build environments regardless of when the build runs Backward compatibility: Default behavior (without opt-in flags) remains unchanged Low operational overhead: Lock files are auto-generated and updated via CI Flexibility: Developers use latest packages by default; locked ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.389,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Dependency Version Pinning for Reproducible Builds ... - GitHub' (https://github.com/orgs/autowarefoundation/discussions/6861) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.389
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:21.079646+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds immutable package repository snapshot dependency pinning",
+  "title": "Dependency Pinning: Definition, Security & Best Practices",
+  "url": "https://inferensys.com/glossary/preemptive-algorithmic-cybersecurity/ai-supply-chain-security/dependency-pinning",
+  "snippet": "Dependency pinning is the security practice of specifying an exact, immutable version\u2014often a specific release number or a cryptographic hash digest \u2014for every external library or package a project consumes. Rather than accepting a fuzzy version range (e.g., >=1.0), pinning ensures the build system retrieves an identical, bit-for-bit artifact every time, eliminating the risk of a remote ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2001,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Dependency Pinning: Definition, Security & Best Practices' (https://inferensys.com/glossary/preemptive-algorithmic-cybersecurity/ai-supply-chain-security/dependency-pinning) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2001
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:21.079646+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds immutable package repository snapshot dependency pinning",
+  "title": "REPRODUCIBLE | English meaning - Cambridge Dictionary",
+  "url": "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "snippet": "To avoid problems due to over fitting and to ensure a reproducible solution, calculate multiple individual envelopes and use the \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0527,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'REPRODUCIBLE | English meaning - Cambridge Dictionary' (https://dictionary.cambridge.org/dictionary/english/reproducible) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0527
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "rpm reproducible builds SOURCE_DATE_EPOCH deterministic",
+  "title": "Docs \u2014 reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/",
+  "snippet": "Achieve deterministic builds Commandments of reproducible builds Reproducibility Quickstart Guide Managing variance Variations in the build environment SOURCE_DATE_EPOCH Deterministic build systems Volatile inputs can disappear Stable order for inputs Stripping of unreproducible information Value initialization Version information Timestamps ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9662,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docs \u2014 reproducible-builds.org' (https://reproducible-builds.org/docs/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9662
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:15.605991+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "rpm reproducible builds SOURCE_DATE_EPOCH deterministic",
+  "title": "Reproducible builds - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Reproducible_builds",
+  "snippet": "Reproducible builds can act as part of a chain of trust; the source code can be signed, and deterministic compilation can prove that the binary was compiled from trusted source code.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2137,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds - Wikipedia' (https://en.wikipedia.org/wiki/Reproducible_builds) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2137
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "rpm reproducible builds SOURCE_DATE_EPOCH deterministic",
+  "title": "SOURCE_DATE_EPOCH - reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/source-date-epoch/",
+  "snippet": "SOURCE_DATE_EPOCH SOURCE_DATE_EPOCH is a standardised environment variable that distributions can set centrally and have build tools consume this in order to produce reproducible output. In practice, SOURCE_DATE_EPOCH specifies the last modification of something, usually the source code, measured in the number seconds since the Unix epoch, ie.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8715,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SOURCE_DATE_EPOCH - reproducible-builds.org' (https://reproducible-builds.org/docs/source-date-epoch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8715
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:49.490968+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "rpm reproducible builds SOURCE_DATE_EPOCH deterministic",
+  "title": "Timestamps \u2014 reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/timestamps/",
+  "snippet": "The Reproducible Builds effort proposed the Source_DATE_Epoch environment variable to address the problem. Tools that support it 1 will use its value\u2014a number of seconds since January 1st 1970, 00:00 UTC\u2014instead of the current date and time\u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9746,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Timestamps \u2014 reproducible-builds.org' (https://reproducible-builds.org/docs/timestamps/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9746
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:21.079646+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "rpm reproducible builds SOURCE_DATE_EPOCH deterministic",
+  "title": "Documentation \u2014 reproducible-builds.org",
+  "url": "https://rb.mapreri.org/site/docs/",
+  "snippet": "Achieve deterministic builds SOURCE_DATE_EPOCH Deterministic build systems Volatile inputs can disappear Stable order for inputs Value initialization Version information Timestamps Timezones Locales Archive metadata Stable order for outputs Randomness Build path System images JVM",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9032,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Documentation \u2014 reproducible-builds.org' (https://rb.mapreri.org/site/docs/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9032
+   },
+   "usage": {
+    "input_tokens": 320,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:23.164297+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "rpm reproducible builds SOURCE_DATE_EPOCH deterministic",
+  "title": "rpm.org - Home",
+  "url": "https://rpm.org/",
+  "snippet": "This is a release candidate of RPM 6.1, the first release to follow the new version semantics and release cycle as announced earlier. \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8289,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'rpm.org - Home' (https://rpm.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8289
+   },
+   "usage": {
+    "input_tokens": 320,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:23.164297+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPM BUILD_TIME reproducible package build deterministic",
+  "title": "Deterministic build systems \u2014 reproducible-builds.org",
+  "url": "https://reproducible-builds.org/docs/deterministic-build-systems/",
+  "snippet": "Deterministic build systems A software cannot easily be built reproducibly if the source varies depending on factors that are hard or impossible to control like the ordering of files on a filesystem or the current time. Drawing the line Which aspect of the build system needs to be made deterministic is deeply linked to what is defined as part of the build environment. For example, we assume ...Deterministic build systems A software cannot easily be built reproducibly if the source varies depending on factors that are hard or impossible to control like the ordering of files on a filesystem or the current time. Drawing the line Which aspect of the build system needs to be made deterministic is deeply linked to what is defined as part of the build environment. For example, we assume ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.946,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Deterministic build systems \u2014 reproducible-builds.org' (https://reproducible-builds.org/docs/deterministic-build-systems/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.946
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:50.071765+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPM BUILD_TIME reproducible package build deterministic",
+  "title": "Fedora Reproducible Builds",
+  "url": "https://docs.fedoraproject.org/en-US/reproducible-builds/",
+  "snippet": "The goal is to have \u201creproducible builds\u201d for rpms in Fedora and later the rest of the ecosystem. This would allow our users to be able to independently verify that the rpms have not been tampered with (either maliciously or by unreliable hardware): someone can do an independent rebuild of a package and confirm that they get identical binaries when building with the same versions of the ...The goal is to have \u201creproducible builds\u201d for rpms in Fedora and later the rest of the ecosystem. This would allow our users to be able to independently verify that the rpms have not been tampered with (either maliciously or by unreliable hardware): someone can do an independent rebuild of a package and confirm that they get identical binaries when building with the same versions of the ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9495,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Fedora Reproducible Builds' (https://docs.fedoraproject.org/en-US/reproducible-builds/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9495
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:50.071765+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPM BUILD_TIME reproducible package build deterministic",
+  "title": "rpm.org - Home",
+  "url": "https://rpm.org/",
+  "snippet": "This is a release candidate of RPM 6.1, the first release to follow the new version semantics and release cycle as announced earlier. \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.8289,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'rpm.org - Home' (https://rpm.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8289
+   },
+   "usage": {
+    "input_tokens": 320,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:28:23.164297+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPM BUILD_TIME reproducible package build deterministic",
+  "title": "Changes/ReproduciblePackageBuilds - Fedora Project Wiki",
+  "url": "https://fedoraproject.org/wiki/Changes/ReproduciblePackageBuilds",
+  "snippet": "Contingency deadline: No limit really. Blocks release? No. \ud83d\udd17 Documentation Fedora Reproducible Builds add-determinism macros.build-reproducibility add-determinism README \ud83d\udd17 Release Notes Fedora package builds are now more deterministic, bringing the distribution closer to the goal of achieving fully reproducible builds for all of its packages.Contingency deadline: No limit really. Blocks release? No. \ud83d\udd17 Documentation Fedora Reproducible Builds add-determinism macros.build-reproducibility add-determinism README \ud83d\udd17 Release Notes Fedora package builds are now more deterministic, bringing the distribution closer to the goal of achieving fully reproducible builds for all of its packages.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.741,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Changes/ReproduciblePackageBuilds - Fedora Project Wiki' (https://fedoraproject.org/wiki/Changes/ReproduciblePackageBuilds) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.741
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:50.071765+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPM BUILD_TIME reproducible package build deterministic",
+  "title": "Reproducible builds - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Reproducible_builds",
+  "snippet": "Reproducible builds, also known as deterministic compilation, is a process of building software which ensures the resulting binary code can be reproduced. Source code compiled deterministically will always output the same binary. [1][2][3]Reproducible builds, also known as deterministic compilation, is a process of building software which ensures the resulting binary code can be reproduced. Source code compiled deterministically will always output the same binary. [1][2][3]",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2137,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds - Wikipedia' (https://en.wikipedia.org/wiki/Reproducible_builds) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2137
+   },
+   "usage": {
+    "input_tokens": 752,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:27:13.655840+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPM BUILD_TIME reproducible package build deterministic",
+  "title": "Reproducible builds improvements \u00b7 rpm-software-management rpm ...",
+  "url": "https://github.com/rpm-software-management/rpm/discussions/2934",
+  "snippet": "Here's some thoughts about improving reproducible builds with rpm. The goal (for me) is to be able to reproduce a rpm given the source rpm. We currently have the following switches: %source_date_ep...Here's some thoughts about improving reproducible builds with rpm. The goal (for me) is to be able to reproduce a rpm given the source rpm. We currently have the following switches: %source_date_ep...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2373,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible builds improvements \u00b7 rpm-software-management rpm ...' (https://github.com/rpm-software-management/rpm/discussions/2934) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2373
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:50.071765+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds linux distributions repository snapshot snapshot.debian.org",
+  "title": "reproduce.debian.net",
+  "url": "https://reproduce.debian.net/",
+  "snippet": "reproduce.debian.net Attempts to bit-for-bit identically rebuild each Debian binary package found in the distribution archive, using the .buildinfo file produced when the buildd originally built the package. For each distributed package, rebuilderd calls debrebuild that calls debootsnap, mmdebstrap and finally sbuild to build that package within a user namespace. buildinfos.debian.net provides ...reproduce.debian.net Attempts to bit-for-bit identically rebuild each Debian binary package found in the distribution archive, using the .buildinfo file produced when the buildd originally built the package. For each distributed package, rebuilderd calls debrebuild that calls debootsnap, mmdebstrap and finally sbuild to build that package within a user namespace. buildinfos.debian.net provides ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.7746,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'reproduce.debian.net' (https://reproduce.debian.net/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7746
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:50.071765+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds linux distributions repository snapshot snapshot.debian.org",
+  "title": "GitHub - fepitre/debian-snapshot: Debian snapshot service written from ...",
+  "url": "https://github.com/fepitre/debian-snapshot",
+  "snippet": "Debian snapshot service written from scratch. This project intends to be used as a replacement of snapshot.debian.org. It is developed notably to address Reproducible Builds (see https://reproducible-builds.org/) goals. - fepitre/debian\u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.4377,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - fepitre/debian-snapshot: Debian snapshot service written from ...' (https://github.com/fepitre/debian-snapshot) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4377
+   },
+   "usage": {
+    "input_tokens": 627,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:52.274320+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds linux distributions repository snapshot snapshot.debian.org",
+  "title": "snapshot.debian.org",
+  "url": "https://snapshot.debian.org/",
+  "snippet": "snapshot.debian.org The snapshot archive is a wayback machine that allows access to old packages based on dates and version numbers. It consists of all past and current packages the Debian archive provides. The ability to install packages and view source code from any given date can be very helpful to developers and users. It provides a valuable resource for tracking down when regressions were ...",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9095,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'snapshot.debian.org' (https://snapshot.debian.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9095
+   },
+   "usage": {
+    "input_tokens": 627,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:52.274320+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds linux distributions repository snapshot snapshot.debian.org",
+  "title": "Reproducible Builds in January 2025 \u2014 reproducible-builds.org",
+  "url": "https://reproducible-builds.org/reports/2025-01/",
+  "snippet": "Announced at the recent Debian MiniDebConf in Toulouse, reproduce.debian.net is an instance of rebuilderd operated by the Reproducible Builds project. Powering that is rebuilderd, our server designed monitor the official package repositories of Linux distributions and attempt to reproduce the observed results there.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.9511,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Reproducible Builds in January 2025 \u2014 reproducible-builds.org' (https://reproducible-builds.org/reports/2025-01/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9511
+   },
+   "usage": {
+    "input_tokens": 627,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:52.274320+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds linux distributions repository snapshot snapshot.debian.org",
+  "title": "Linux Reproducible Builds: A Security-First Guide | MyUnix.org",
+  "url": "https://myunix.org/linux/linux-reproducible-builds/",
+  "snippet": "Learn how to implement Linux reproducible builds in 2026. Real commands, tooling, and verification steps for sysadmins and DevOps engineers.Learn how to implement Linux reproducible builds in 2026. Real commands, tooling, and verification steps for sysadmins and DevOps engineers.",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.2241,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Linux Reproducible Builds: A Security-First Guide | MyUnix.org' (https://myunix.org/linux/linux-reproducible-builds/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2241
+   },
+   "usage": {
+    "input_tokens": 627,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:29:52.274320+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "reproducible builds linux distributions repository snapshot snapshot.debian.org",
+  "title": "REPRODUCIBLE | English meaning - Cambridge Dictionary",
+  "url": "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "snippet": "To avoid problems due to over fitting and to ensure a reproducible solution, calculate multiple individual envelopes and use the \u2026",
+  "collected_at": "2026-10-05T14:35:00Z",
+  "weight": 0.0527,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'REPRODUCIBLE | English meaning - Cambridge Dictionary' (https://dictionary.cambridge.org/dictionary/english/reproducible) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0527
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T14:25:56.897068+00:00"
+  },
+  "redo_of": null
+ }
+]
