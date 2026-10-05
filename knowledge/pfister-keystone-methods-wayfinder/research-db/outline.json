@@ -1,0 +1,248 @@
+{
+  "topic": "Pfister keystone methods applied to a corpus wayfinder API: calibration and outcome instruments, the research ingest behind them, and the shipped API change they motivated",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "pfister-research-catalog",
+      "scope": "Tomas Pfister's arXiv record and its mapping onto google-research repos (tft, tabnet, fixmatch, uda, timesfm, CutPaste/SPADE, Distilling Step-by-Step, Chain of Agents) as the ingest substrate for the wayfinder transplant screen.",
+      "seed_queries": [
+        "Tomas Pfister Google Research arXiv papers",
+        "google-research tft tabnet fixmatch timesfm repositories"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "method-principles-constraints",
+      "scope": "The six cross-cutting lessons from the Pfister catalog (encode problem structure, selective labels, interpretability as a modeling constraint, explicit distribution shift, decision-centric evaluation, positive controls) restated as hard constraints.",
+      "seed_queries": [
+        "semi-supervised learning unlabeled data pseudo-labels consistency survey",
+        "forecasting evaluation uncertainty decision making pre-registration"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "synthetic-positive-controls",
+      "scope": "Normal-only anomaly detection needs a synthetic positive control: CutPaste self-supervised anomaly detection, SPADE, and how synthetic defects let a detector state its detection power.",
+      "seed_queries": [
+        "CutPaste self-supervised anomaly detection CVPR 2021",
+        "SPADE semi-supervised anomaly detection synthetic defects"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "transplant-screen-heuristics",
+      "scope": "The ideate-solo transplant screen: 8 variations scored on painkiller strength, switching cost, defensibility under a recorded do-not-do contract, and testability, with ship, defer, and reject verdicts.",
+      "seed_queries": [
+        "innovation idea selection criteria painkiller switching cost defensibility",
+        "falsifiability testability criteria evaluating research proposals"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "calibration-instrument",
+      "scope": "The calibration instrument POST /api/map/control: a fixed CutPaste-splice recipe, an exact-corpus baseline gate, per-control deltas measured through the real preview path, and quantization-silent readings.",
+      "seed_queries": [
+        "synthetic perturbation calibration false alarm rate measurement instrument",
+        "mutation testing fixed recipe deterministic seed coverage"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "outcome-ledger",
+      "scope": "The outcomes/1 append-only ledger: two-phase pre-registration (predicted_delta as pending, later verdict row with supersedes), a closed verdict vocabulary, refused score inputs, and contingency counts with no rates or z scores.",
+      "seed_queries": [
+        "preregistration registered reports predictions open science",
+        "append-only audit log event sourcing design immutable records"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "honesty-boundary",
+      "scope": "The honesty boundary: what instrument readings and ledger rows do and do not claim, preserved recorded negatives, and the line between an instrumentation outcome and task quality.",
+      "seed_queries": [
+        "construct validity measurement versus task performance evaluation",
+        "negative results preservation publication bias research integrity"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "deferred-variants-reframed",
+      "scope": "Deferred variants reframed inside the honesty boundary: V3 as axis-trial/1 leave-one-out predictability against a fixed-margin null with admitted:false hard-coded, V5 as consistency/1 stability readings with caller-supplied variants and no gating.",
+      "seed_queries": [
+        "leave-one-out nearest neighbor predictability permutation null fixed margins",
+        "test-time augmentation consistency stability agreement statistics"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "deployment-receipts",
+      "scope": "Deployment receipts as a verification discipline: byte-identical module rebuild checks, pre-upload snapshot comparison against the live worker, KV refresh, and a live smoke on a pinned frame with recorded hashes.",
+      "seed_queries": [
+        "reproducible builds byte-identical bundle esbuild verification",
+        "deployment smoke testing production verification checklist"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t1": {
+        "type": "score",
+        "score": 1.1963,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1068,
+          "1": 0.5901,
+          "2": 0.3031
+        },
+        "confidence": 0.1772
+      },
+      "t2": {
+        "type": "score",
+        "score": 1.6479,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0561,
+          "1": 0.24,
+          "2": 0.7039
+        },
+        "confidence": 0.3344
+      },
+      "t3": {
+        "type": "score",
+        "score": 1.2114,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1622,
+          "1": 0.4642,
+          "2": 0.3736
+        },
+        "confidence": 0.072
+      },
+      "t4": {
+        "type": "score",
+        "score": 0.9967,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.223,
+          "1": 0.5572,
+          "2": 0.2198
+        },
+        "confidence": 0.1128
+      },
+      "t5": {
+        "type": "score",
+        "score": 1.9258,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0176,
+          "1": 0.0391,
+          "2": 0.9433
+        },
+        "confidence": 0.8377
+      },
+      "t6": {
+        "type": "score",
+        "score": 1.7693,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0525,
+          "1": 0.1257,
+          "2": 0.8218
+        },
+        "confidence": 0.5408
+      },
+      "t7": {
+        "type": "score",
+        "score": 1.1373,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1895,
+          "1": 0.4836,
+          "2": 0.3269
+        },
+        "confidence": 0.065
+      },
+      "t8": {
+        "type": "score",
+        "score": 0.9023,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.267,
+          "1": 0.5636,
+          "2": 0.1694
+        },
+        "confidence": 0.1264
+      },
+      "t9": {
+        "type": "score",
+        "score": 1.1653,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1671,
+          "1": 0.5005,
+          "2": 0.3324
+        },
+        "confidence": 0.0834
+      }
+    },
+    "usage": {
+      "input_tokens": 1489,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
