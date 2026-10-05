@@ -1,0 +1,285 @@
+{
+ "topic": "post-quantum TLS adoption: X25519MLKEM768 deployment status across providers and browsers, measurement caveats, and migration considerations for TLS-terminating infrastructure",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "mlkem768-hybrid-mechanism",
+   "scope": "What X25519MLKEM768 is: the hybrid KEM construction, TLS 1.3 group identifiers (0x11ec, obsolete 0x6399/0xfe30), RFC 10024 spec details, HelloRetryRequest interaction.",
+   "seed_queries": [
+    "X25519MLKEM768 hybrid key agreement TLS 1.3 RFC 10024",
+    "ML-KEM X25519 hybrid TLS group 0x11ec draft-kwiatkowski-tls-ecdhe-mlkem"
+   ],
+   "score": 1.9004
+  },
+  {
+   "nn": 2,
+   "slug": "fips203-standardization",
+   "scope": "NIST standardization status: ML-KEM as FIPS 203 (finalized 2024-08-13), why no standardization risk remains, relationship between FIPS 203 and TLS hybrid groups.",
+   "seed_queries": [
+    "NIST FIPS 203 ML-KEM finalized standard August 2024",
+    "FIPS 203 ML-KEM TLS hybrid key exchange relation"
+   ],
+   "score": 1.3723
+  },
+  {
+   "nn": 3,
+   "slug": "client-side-adoption",
+   "scope": "Client/browser-side deployment: Chrome, Firefox, Safari PQ support, client-side share of TLS traffic over time (under 3% early 2024 to over 60% Feb 2026, about 70% by Sept 2026 per Cloudflare).",
+   "seed_queries": [
+    "Chrome Firefox Safari X25519MLKEM768 post-quantum TLS browser support",
+    "Cloudflare radar percentage client traffic post-quantum hybrid key agreement"
+   ],
+   "score": 1.9023
+  },
+  {
+   "nn": 4,
+   "slug": "cloudflare-deployment",
+   "scope": "Cloudflare deployment status: X25519MLKEM768 fully deployed edge-side, origin-side share (~10% early 2026 to ~15% Sept 2026), 2029 full-PQ roadmap, PQ-preferred/PQ-only origin tuning, per-domain visibility tooling.",
+   "seed_queries": [
+    "Cloudflare post-quantum cryptography X25519MLKEM768 origin deployment",
+    "Cloudflare post-quantum visibility origin adoption percentage blog"
+   ],
+   "score": 1.7971
+  },
+  {
+   "nn": 5,
+   "slug": "provider-ecosystem",
+   "scope": "Non-Cloudflare provider deployments: Google Cloud quantum-confidential TLS roadmap, AWS, CDN and load balancer PQ support, concentration vs adoption across the top million domains.",
+   "seed_queries": [
+    "Google Cloud post-quantum cryptography roadmap quantum-confidential TLS load balancer",
+    "post-quantum TLS adoption top 1 million domains survey 2026"
+   ],
+   "score": 1.2613
+  },
+  {
+   "nn": 6,
+   "slug": "library-support",
+   "scope": "TLS library support and defaults: OpenSSL 3.5 default hybrid groups and FIPS provider, Go 1.24/1.25/1.26 crypto/tls defaults and GODEBUG toggles, BoringSSL, GnuTLS 3.8.5 partial support.",
+   "seed_queries": [
+    "OpenSSL 3.5 ML-KEM default TLS supported groups X25519MLKEM768 FIPS provider",
+    "Go crypto/tls X25519MLKEM768 default GODEBUG tlsmlkem 1.24 1.26"
+   ],
+   "score": 1.7619
+  },
+  {
+   "nn": 7,
+   "slug": "measurement-caveats",
+   "scope": "Measurement caveats: how PQ adoption percentages are computed, HelloRetryRequest double-handshake effects, concentration vs adoption framing for the 49.22% top-million figure, snippet-only secondary reporting limits.",
+   "seed_queries": [
+    "post-quantum TLS adoption measurement methodology HelloRetryRequest double handshake",
+    "percentage HTTPS domains post-quantum key exchange methodology caveats"
+   ],
+   "score": 1.9077
+  },
+  {
+   "nn": 8,
+   "slug": "migration-guidance",
+   "scope": "Migration considerations for TLS-terminating infrastructure: origin catch-up lag, PQ-preferred vs PQ-only tuning, compatibility risk and fallback, harvest-now-decrypt-later motivation, compliance deadlines around 2030 quantum readiness.",
+   "seed_queries": [
+    "post-quantum TLS migration guidance reverse proxy origin server compatibility",
+    "harvest now decrypt later TLS migration quantum readiness deadline 2030"
+   ],
+   "score": 1.8956
+  },
+  {
+   "nn": 9,
+   "slug": "kyber-codepoint-history",
+   "scope": "History of the Kyber draft identifiers: X25519Kyber768Draft00 0x6399 and Kyber512 0xfe30, why they were replaced by ML-KEM code points, draft-to-RFC timeline.",
+   "seed_queries": [
+    "X25519Kyber768Draft00 0x6399 removed replaced X25519MLKEM768",
+    "Kyber draft TLS code point deprecation ML-KEM renamed"
+   ],
+   "score": 0.6933
+  },
+  {
+   "nn": 10,
+   "slug": "yubios-layering",
+   "scope": "Layered protection for hardware-token-centric systems: PQ TLS for transport plus classical PIV/FIDO2 hardware auth, YubiKey lacking native ML-KEM, which layers each defends.",
+   "seed_queries": [
+    "YubiKey post-quantum cryptography support ML-KEM PIV FIDO2 status",
+    "post-quantum TLS with hardware security key authentication layered defense"
+   ],
+   "score": 0.5782
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.9004,
+    "probabilities": {
+     "0": 0.0288,
+     "1": 0.0421,
+     "2": 0.9291
+    },
+    "confidence": 0.7988,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.3723,
+    "probabilities": {
+     "0": 0.0972,
+     "1": 0.4334,
+     "2": 0.4694
+    },
+    "confidence": 0.1265,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.9023,
+    "probabilities": {
+     "0": 0.0218,
+     "1": 0.0542,
+     "2": 0.924
+    },
+    "confidence": 0.7859,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.7971,
+    "probabilities": {
+     "0": 0.037,
+     "1": 0.1288,
+     "2": 0.8342
+    },
+    "confidence": 0.5707,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.2613,
+    "probabilities": {
+     "0": 0.1341,
+     "1": 0.4705,
+     "2": 0.3954
+    },
+    "confidence": 0.0936,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.7619,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.1381,
+     "2": 0.8119
+    },
+    "confidence": 0.5211,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.9077,
+    "probabilities": {
+     "0": 0.0244,
+     "1": 0.0434,
+     "2": 0.9322
+    },
+    "confidence": 0.8071,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.8956,
+    "probabilities": {
+     "0": 0.0251,
+     "1": 0.0542,
+     "2": 0.9207
+    },
+    "confidence": 0.7768,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.6933,
+    "probabilities": {
+     "0": 0.3681,
+     "1": 0.5706,
+     "2": 0.0613
+    },
+    "confidence": 0.1972,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.5782,
+    "probabilities": {
+     "0": 0.4894,
+     "1": 0.4429,
+     "2": 0.0677
+    },
+    "confidence": 0.1604,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 2005,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "conditional": [
+   {
+    "nn": 9,
+    "slug": "kyber-codepoint-history",
+    "note": "score 0.69 marginal, keep only if dig strong"
+   },
+   {
+    "nn": 10,
+    "slug": "yubios-layering",
+    "note": "score 0.58 marginal, keep only if dig strong"
+   }
+  ]
+ }
+}

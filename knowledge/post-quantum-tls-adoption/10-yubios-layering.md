@@ -1,0 +1,26 @@
+# 10. Layered protection: post-quantum TLS plus classical hardware authentication
+
+Scope: what each layer defends in a hardware-token-centric architecture, the state of PQC in PIV and FIDO2, and why the two layers are complementary rather than substitutes.
+
+## The two layers defend different things
+
+Post-quantum TLS and hardware-backed authentication are aimed at different failure modes, which is why they compose rather than compete. The TLS layer, once it negotiates X25519MLKEM768, protects the confidentiality of data in transit against a future quantum adversary; TLS is the backbone protocol protecting the confidentiality, authenticity, and integrity of communication channels (source: https://inria.hal.science/hal-04845617v1/document, weight 0.95). Hardware-backed authentication instead answers who the peer is and binds that identity to a physical device: the FIDO2/WebAuthn line evolved from U2F into the phishing-resistant authentication standard used across desktop and mobile platforms (source: https://www.yubico.com/blog/future-proofing-authentication-a-look-at-the-future-of-post-quantum-cryptography/, weight 0.57, marginal backing). TLS without hardware auth protects the channel to whoever holds the key; hardware auth without PQ TLS leaves long-lived traffic harvestable.
+
+## PIV and FIDO2 are still classical today
+
+The gap on the authentication side is documented by the standards bodies themselves. NIST's PIV PQC overview page summarizes the specification gaps that would need to be addressed to support post-quantum cryptography in the PIV environment, focusing on ML-DSA for digital signatures and ML-KEM for key establishment (source: https://pages.nist.gov/piv-standards/pqc-overview/, weight 0.93). In June 2026 NIST released initial working drafts of proposed updates to the PIV standards to support PQC, identifying the changes expected to be needed to use ML-DSA and ML-KEM with PIV (source: https://csrc.nist.gov/News/2026/pqc-updates-to-piv-standards-working-drafts, weight 0.94). Working drafts are not shipped hardware: the practical reading is that current PIV and FIDO2 hardware remains classical, and post-quantum authentication on a token is a future capability, not a present one.
+
+## The layered model
+
+The source corpus this corpus was minted from states the model directly: a YubiKey provides hardware-bound authentication, the post-quantum TLS layer on top handles harvest-now attacks on the transport, and the combination of hardware auth plus X25519MLKEM768 TLS is the layered protection. The threat model each addresses is distinct: the token defends against credential theft and phishing because its keys cannot leave the device, while the hybrid TLS group defends recorded ciphertext against future decryption (source: https://link.springer.com/article/10.1007/s44196-026-01526-2, weight 0.88, for the HNDL half). Neither layer substitutes for the other, and neither blocks the other's residual risk.
+
+## Guidance for TLS-based applications
+
+Application-facing guidance is converging on the same shape. The IETF UTA working group document for post-quantum TLS in applications highlights the new challenges for device manufacturers, application developers, and service providers, and offers best practices for quantum-ready usage profiles in TLS-using applications and supporting protocols such as DNS (source: https://www.ietf.org/archive/id/draft-ietf-uta-pqc-app-00.html, weight 0.90). Research programs continue to study the TLS-specific aspects of the transition (source: https://www.microsoft.com/en-us/research/project/post-quantum-tls/, weight 0.78).
+
+The operating conclusion: upgrade the transport first, because the tooling, standards, and provider defaults are ready now; treat token-level post-quantum authentication as a tracked dependency on the NIST PIV working drafts; and keep the two layers in separate threat-model buckets so neither masks the other's gaps.
+## Mapping the layers to the threats
+
+Concretely, in a system that terminates TLS on services fronted by hardware-token-authenticated operators: the transport layer's job after this corpus's migration guidance lands is that recorded session ciphertext is not decryptable later, which the hybrid groups deliver (source: https://www.rfc-editor.org/rfc/rfc10024.html, weight 0.91). The authentication layer's job is that the entity presenting credentials is the holder of a non-exportable key, which classical PIV and FIDO2 deliver today and which post-quantum PIV, still at working-draft stage, would extend (source: https://csrc.nist.gov/News/2026/pqc-updates-to-piv-standards-working-drafts, weight 0.94).
+
+Two residual risks survive the layering and deserve explicit tracking. An adversary who records traffic today and breaks the classical component of the hybrid would defeat the transport layer, which is why the hybrid keeps both components and why ML-KEM-only negotiations are not the goal. And an authentication flow that never upgrades to post-quantum signatures leaves identity-establishing handshakes classically signed, which is the gap NIST's PIV working drafts exist to close (source: https://pages.nist.gov/piv-standards/pqc-overview/, weight 0.93). Neither risk is closed by the other layer, which is the entire argument for keeping both in the threat model.

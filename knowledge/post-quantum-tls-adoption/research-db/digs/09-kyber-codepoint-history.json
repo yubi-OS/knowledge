@@ -1,0 +1,55 @@
+{
+ "nn": 9,
+ "slug": "kyber-codepoint-history",
+ "scope": "History of the Kyber draft identifiers: X25519Kyber768Draft00 0x6399 and Kyber512 0xfe30, why they were replaced by ML-KEM code points, draft-to-RFC timeline.",
+ "queries_attempted": [
+  {
+   "query": "X25519Kyber768Draft00 0x6399 removed replaced X25519MLKEM768",
+   "attempt": 1,
+   "raw_results": 4,
+   "kept": 4
+  },
+  {
+   "query": "Kyber draft TLS code point deprecation ML-KEM renamed",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "X25519Kyber768Draft00 code point 0x6399 TLS history Kyber",
+   "attempt": 2,
+   "raw_results": 5,
+   "kept": 4
+  },
+  {
+   "query": "Cloudflare Kyber draft experiment post-quantum TLS 2023 2024 history",
+   "attempt": 2,
+   "raw_results": 3,
+   "kept": 3
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "attempt-1 dig returned too few weighted>=0.5 results to author honestly",
+   "new_queries": [
+    "X25519Kyber768Draft00 code point 0x6399 TLS history Kyber",
+    "Cloudflare Kyber draft experiment post-quantum TLS 2023 2024 history"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.netmeister.org/blog/tls-hybrid-kex.html",
+  "https://github.com/openssl/openssl/issues/24622",
+  "https://datatracker.ietf.org/doc/html/draft-connolly-cfrg-xwing-kem-10",
+  "https://www.ietf.org/archive/id/draft-tls-westerbaan-xyber768d00-02.html",
+  "https://www.douglas.stebila.ca/research/papers/draft-tls-westerbaan-xyber768d00/",
+  "https://www.ietf.org/archive/id/draft-westerbaan-cfrg-hpke-xyber768d00-00.html",
+  "https://datatracker.ietf.org/doc/draft-tls-westerbaan-xyber768d00/00/",
+  "https://blog.cloudflare.com/experiment-with-pq/",
+  "https://blog.cloudflare.com/post-quantum-cryptography-ga/",
+  "https://pq.cloudflareresearch.com/"
+ ],
+ "outcome": "authored"
+}

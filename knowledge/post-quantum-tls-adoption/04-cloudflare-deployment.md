@@ -1,0 +1,30 @@
+# 04. Cloudflare deployment status: edge, origins, and the 2029 target
+
+Scope: Cloudflare's X25519MLKEM768 deployment across its edge and origin legs, the origin-side catch-up problem, per-domain visibility tooling, and the 2029 full post-quantum roadmap.
+
+## Edge-side status
+
+Cloudflare describes its post-quantum program as a deployment against harvest-now-decrypt-later attacks, and its SSL/TLS documentation is the primary reference for what is enabled where (source: https://developers.cloudflare.com/ssl/post-quantum-cryptography/, weight 0.95). On the public-facing leg, hybrid post-quantum key agreement is enabled on essentially all domains served through Cloudflare, and the company states it is rolling out support for post-quantum key agreement on the connection from Cloudflare to origins (source: https://pq.cloudflareresearch.com/, weight 0.94).
+
+The deployment has history: Cloudflare enabled X25519+Kyber as a beta for all websites and APIs served through Cloudflare in October 2022, and noted that the connection is only secured if the browser also supports post-quantum cryptography, because it takes two to tango; Chrome began slowly enabling X25519+Kyber by default starting August 2023 (source: https://blog.cloudflare.com/post-quantum-cryptography-ga/, weight 0.96). The company frames the July 2022 NIST announcement that Kyber would be standardized as the trigger for its experiment program (source: https://blog.cloudflare.com/experiment-with-pq/, weight 0.60, marginal backing).
+
+## Origin-side catch-up
+
+The origin leg is the laggard. The Cloudflare-to-origin documentation is the primary reference for post-quantum cryptography on that connection (source: https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-to-origin/, weight 0.95). Per the source corpus this corpus was minted from (yubiOS refs/post-quantum-tls-adoption-2026-07-23.md, refreshed 2026-07-23 and 2026-09-29), the origin-side PQ-preferred support share was about 10% of customer origins in early 2026, up from under 1% in early 2025, and rose to about 15% of origins by late September 2026 per the Cloudflare post-quantum visibility post (https://blog.cloudflare.com/post-quantum-visibility/, weight 0.95). The same corpus records that Cloudflare defaults to a HelloRetryRequest flow rather than PQ-only toward origins to reduce compatibility risk, with the behavior tunable to PQ-only, PQ-preferred, or off (source: https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-to-origin/, weight 0.95, mechanism detail from the source corpus).
+
+Client-side, the same visibility post reports about 70% of browser-generated traffic reaching Cloudflare is protected with hybrid ML-KEM (source: https://blog.cloudflare.com/post-quantum-visibility/, weight 0.95). The asymmetry between roughly 70% client and roughly 15% origin is the central deployment fact for anyone terminating TLS behind a proxy or CDN.
+
+## Visibility tooling
+
+In August 2026 Cloudflare shipped per-zone post-quantum key-exchange visibility: TLS Key Exchange cards in HTTP Traffic Analytics and key-exchange-group fields available in Logpush and Log Explorer. With these, an operator can build per-zone reports showing what percentage of inbound HTTPS traffic is protected by post-quantum key agreement, break the number down by hostname, path, user agent, or country, and push the data into a SIEM via any Logpush destination (source: https://developers.cloudflare.com/changelog/post/2026-08-20-pqc-key-exchange-visibility/, weight 0.74). The source corpus names the two log fields as ClientTLSKeyExchangeGroup and OriginTLSKeyExchangeGroup, matching the visitor-side and origin-side legs described above.
+
+## The 2029 target
+
+Cloudflare's roadmap targets full post-quantum security by 2029, a target the 2026-09-29 refresh of the source corpus reaffirms against the post-quantum-visibility post (https://blog.cloudflare.com/post-quantum-visibility/, weight 0.95) and the products roadmap page (https://blog.cloudflare.com/post-quantum-roadmap/, per the source corpus; the products matrix at developers.cloudflare.com stresses that a Cloudflare-side PQ checkmark delivers end-to-end post-quantum only when the peer also supports PQ). Separately, Cloudflare has published results from a year of enabling Automatic SSL/TLS across customer domains, which it frames as preparation for the next leap in internet security (source: https://blog.cloudflare.com/automatically-secure/, weight 0.84).
+
+For an operator the takeaways are: assume the edge leg is done, measure your own origin leg with the log fields now available, and treat any PQ-preferred default as a compatibility-tuned compromise you can tighten deliberately.
+## Reading Cloudflare's numbers as an operator
+
+Three numbers define the Cloudflare picture for anyone planning a migration: roughly 70% of browser-generated traffic on the visitor-to-Cloudflare leg, roughly 15% of origins on the Cloudflare-to-origin leg, and a 2029 target for full post-quantum security (sources: https://blog.cloudflare.com/post-quantum-visibility/, weight 0.95; source corpus roadmap citations). The gap between the first two is the actionable part. A site on Cloudflare gets post-quantum protection on the edge leg for free, but its stored-and-forwarded origin traffic is only as post-quantum as its own origin server, and the default HRR flow exists precisely because origin fleets break when forced.
+
+The visibility tooling turns this into a checklist item rather than a guess: the August 2026 key-exchange-group fields mean you can state, per hostname, what fraction of your inbound connections negotiated a hybrid group (source: https://developers.cloudflare.com/changelog/post/2026-08-20-pqc-key-exchange-visibility/, weight 0.74). Cloudflare's broader Automatic SSL/TLS program, which reported results across a year of enabling automatic configuration for millions of domains, is the template for how the company expects the remaining deployment gap to close without per-site operator action (source: https://blog.cloudflare.com/automatically-secure/, weight 0.84).
