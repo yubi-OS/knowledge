@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "yubios-workaround",
+  "scope": "The yubiOS CI workaround: pinned upstream QEMU commit, bind-mount of the QEMU prefix into the bcvk container, and the exact-error skip fallback.",
+  "queries_attempted": [
+    {
+      "query": "pinned QEMU commit CI self-hosted runner workaround",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "bind mount QEMU prefix into container ROM search path",
+      "attempt": 2,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.qemu.org/docs/master/devel/testing/ci.html",
+    "https://circleci.com/docs/guides/execution-runner/runner-overview/",
+    "https://pinnedgolf.com/",
+    "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+    "https://github.com/jimmykarily/ga-runner-qemu-self-hosted",
+    "https://github.com/Codevena/fixbuddy",
+    "https://docs.docker.com/engine/storage/bind-mounts/",
+    "https://github.com/qemus/qemu",
+    "https://github.com/DO-SAY-GO/qemu-docker",
+    "https://linuxconfig.org/how-to-mount-a-host-directory-inside-a-kvm-virtual-machine",
+    "https://www.merriam-webster.com/dictionary/bind",
+    "https://askubuntu.com/questions/4396/how-do-i-mount-a-qcow2-disk-image"
+  ],
+  "outcome": "authored"
+}

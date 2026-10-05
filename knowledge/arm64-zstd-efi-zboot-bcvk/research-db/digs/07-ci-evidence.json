@@ -1,0 +1,36 @@
+{
+  "nn": "07",
+  "slug": "ci-evidence",
+  "scope": "CI evidence: what run 29525332901 proved about the workaround reaching the guest and what still failed.",
+  "queries_attempted": [
+    {
+      "query": "ci_test-vm.yml ARM64 bcvk test-luks-fido2-ci",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "bootloader-update.service failure CI guest boot Fedora",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/bootc-dev/bcvk",
+    "https://circleci.com/docs/guides/execution-managed/using-arm/",
+    "https://skillsmp.com/creators/yubi-os/yubios/skills-bcvk-virtualization",
+    "https://www.citi.com/?msockid=314fda0dd7336ded29e4cde4d6436ced",
+    "https://www.youtube.com/watch?v=6PuvO3z7Lzg",
+    "https://github.com/TheMaxMur/RS-Key/blob/main/docs/testing.md",
+    "https://docs.fedoraproject.org/en-US/fedora-coreos/bootloader-updates/",
+    "https://docs.fedoraproject.org/en-US/bootc/bootloader-updates/",
+    "https://docs.stg.fedoraproject.org/en-US/bootc/bootloader-updates/",
+    "https://www.nfl.com/",
+    "https://github.com/ublue-os/ucore/issues/325",
+    "https://github.com/coreos/fedora-coreos-tracker/issues/2072"
+  ],
+  "outcome": "authored"
+}
