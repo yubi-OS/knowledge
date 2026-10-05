@@ -1,0 +1,240 @@
+{
+ "topic": "implementing proved mathematics inside a wayfinder instrument: kernel-checked ledgers, actual-text candidate previews, and how math diagnostics wire into a placement pipeline without authorizing edits themselves",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "lean-kernel-theorems",
+   "scope": "The eleven kernel-checked theorems in papers/data/lean/WayfinderBounds.lean on Lean 4.33.0: what stable_on, crossing_on_iff, add_isolation_delta, change_neighbour_ledger and their siblings certify as exact integer statements, and the explicit non-certifications (no semantic edit quality, no forecasting accuracy).",
+   "seed_queries": [
+    "Lean 4 kernel type checking theorem axiom dependencies",
+    "Lean theorem proving exact integer statements graph degree"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "proof-artifact-gate",
+   "scope": "The proof artifact gate around the Lean proofs: a scope manifest mapping theorem statements to runtime predicates, a checker that parses the kernel's printed axiom sets, rejects missing declarations, unknown axioms and proof placeholders, and CI gating on the proof commit (Lean CI run 34567362278).",
+   "seed_queries": [
+    "Lean print axioms theorem dependency CI check",
+    "proof artifacts scope manifest CI gate trusted kernel"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "signed-margins-roundoff",
+   "scope": "PM.projectionMargins signed margins: signed threshold clearance, axis norms shared once, per-input margins, the needs-roundoff-bound result without roundoff assumptions, undetermined near-threshold cases, caller-supplied optional roundoff_budget and perturbation_linf, and displaying stable state as conditional rather than certified.",
+   "seed_queries": [
+    "floating point roundoff error bound analysis threshold",
+    "numerical margin reporting undetermined need bound software"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "isolation-ledgers",
+   "scope": "PM.explainTransition exact local isolation ledgers: frame/instrument and full-precision point validation, the ADD isolation delta formula (indicator of new degree 0 minus previously isolated neighbours touched), CHANGE neighbour recompute (old degree minus old edge plus new edge), halt-before-persist on recount mismatch, not-applicable for multi-item changes and removals.",
+   "seed_queries": [
+    "graph degree isolation count vertex neighborhood change",
+    "independent recount certificate software diagnostics halt on mismatch"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "reduction-ratio",
+   "scope": "The reduction ratio diagnostic: observed over predicted isolation reduction exposed only for a strictly negative predicted delta, positive and zero predictions ineligible, framed as geometric model bookkeeping and never as calibrated confidence or task quality.",
+   "seed_queries": [
+    "trust region reduction ratio predicted observed optimization",
+    "predicted gain ratio diagnostic model quality distinction"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "preview-endpoint",
+   "scope": "POST /api/map/preview actual-text candidate preview: saved text baseline plus full resulting texts/names and one target action add or change, SHA256 validation of all unchanged sources before model work and full points/bits verification after, explicit errors for stale inputs, mismatched settings and anchor drift, ephemeral map with no repository, D1 or Vectorize writes, content-hash embedding cache may populate, storage outage returns 503 rather than false missing-baseline.",
+   "seed_queries": [
+    "SHA-256 content addressable verification immutable source hash",
+    "ephemeral preview endpoint no persistence side effect free API"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "storage-packing",
+   "scope": "Diagnostics storage packing: lossless tuple encoding so a 400x768 d=24 store takes 1,294,143 bytes instead of the 2,100,906-byte expanded JSON without precision loss or public schema change, the 1.9 MB safe storage cap with explicit failure instead of omitted diagnostics, every read path expanding back to the same public objects, legacy maps still readable.",
+   "seed_queries": [
+    "binary packing float32 tuple encoding storage versus JSON size",
+    "value size limit cloudflare workers storage 1.9 MB"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "verification-evidence-boundary",
+   "scope": "Verification before publication and the evidence boundary: the seven test suites (57 numerical, 36 API, 10 archive, 71 new math with 38,172 exhaustive graph cases and all ten recorded transitions, 41 preview, 7 storage, 60 browser), fresh-context adversarial review that exposed a D1 row-size regression before PASS, the ten exact historical ledger replays staying retrospective, three zero outcomes from unchanged CHANGE points and three ADDs joining connected neighbours, and the historical 4/10 sign agreement never relabeled as 10/10 prediction.",
+   "seed_queries": [
+    "adversarial code review fresh context large language model",
+    "retrospective validation versus prospective claim benchmark honesty"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "guide-encoding-safeguards",
+   "scope": "Guide and encoding safeguards: the map's copyable prompt includes the actual-text preview step, the homepage Copy agent guide button fetching the authoritative /AGENT.md instead of a second hardcoded recipe, independence from iframe loading including mobile, error and link on fetch/copy failure with success shown only after clipboard success or a verified fallback, byte-for-byte copied-text comparisons, and preserved UTF-8 assets plus legacy endpoints.",
+   "seed_queries": [
+    "single source of truth documentation fetch copy clipboard fallback",
+    "UTF-8 web asset serving clipboard API byte comparison"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.5862,
+    "probabilities": {
+     "0": 0.0793,
+     "1": 0.2552,
+     "2": 0.6655
+    },
+    "confidence": 0.2715,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.633,
+    "probabilities": {
+     "0": 0.0777,
+     "1": 0.2116,
+     "2": 0.7107
+    },
+    "confidence": 0.3339,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.7615,
+    "probabilities": {
+     "0": 0.4492,
+     "1": 0.3401,
+     "2": 0.2107
+    },
+    "confidence": 0.0428,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.4761,
+    "probabilities": {
+     "0": 0.1364,
+     "1": 0.2511,
+     "2": 0.6125
+    },
+    "confidence": 0.1852,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.6052,
+    "probabilities": {
+     "0": 0.556,
+     "1": 0.2827,
+     "2": 0.1613
+    },
+    "confidence": 0.1226,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.6531,
+    "probabilities": {
+     "0": 0.0748,
+     "1": 0.1973,
+     "2": 0.7279
+    },
+    "confidence": 0.3616,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.3192,
+    "probabilities": {
+     "0": 0.747,
+     "1": 0.1869,
+     "2": 0.0661
+    },
+    "confidence": 0.3959,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.6822,
+    "probabilities": {
+     "0": 0.0686,
+     "1": 0.1806,
+     "2": 0.7508
+    },
+    "confidence": 0.4016,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.136,
+    "probabilities": {
+     "0": 0.2374,
+     "1": 0.3891,
+     "2": 0.3735
+    },
+    "confidence": 0.0209,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1387,
+   "output_tokens": 0
+  },
+  "dropped": [
+   7
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9
+  ]
+ }
+}
