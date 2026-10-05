@@ -1,0 +1,173 @@
+{
+ "topic": "nspawn-boundary",
+ "subtopics": [
+  {
+   "slug": "01-nspawn-isolation-model",
+   "scope": "01. The nspawn isolation model"
+  },
+  {
+   "slug": "02-rootimage-image-rooted-containers",
+   "scope": "02. RootImage: image-rooted containers"
+  },
+  {
+   "slug": "03-ephemeral-layering",
+   "scope": "03. Ephemeral layering: --ephemeral and Overlay="
+  },
+  {
+   "slug": "04-boot-and-machine-lifecycle",
+   "scope": "04. --boot and machine lifecycle"
+  },
+  {
+   "slug": "05-portable-services-vs-nspawn",
+   "scope": "05. Portable services versus nspawn"
+  },
+  {
+   "slug": "06-hermetic-dev-environments",
+   "scope": "06. Hermetic dev environments on nspawn"
+  },
+  {
+   "slug": "07-nspawn-in-ci-pipelines",
+   "scope": "07. nspawn in CI pipelines"
+  },
+  {
+   "slug": "08-silent-failure-modes-and-compatibility",
+   "scope": "08. Silent failure modes and cross-version compatibility"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.9277,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0209,
+     "1": 0.0305,
+     "2": 0.9486
+    },
+    "confidence": 0.8517
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.7678,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0434,
+     "1": 0.1455,
+     "2": 0.8111
+    },
+    "confidence": 0.5215
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.5457,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0891,
+     "1": 0.2761,
+     "2": 0.6348
+    },
+    "confidence": 0.2307
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.8227,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0435,
+     "1": 0.0903,
+     "2": 0.8662
+    },
+    "confidence": 0.6405
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.0641,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2115,
+     "1": 0.5128,
+     "2": 0.2757
+    },
+    "confidence": 0.0756
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.2532,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.157,
+     "1": 0.4328,
+     "2": 0.4102
+    },
+    "confidence": 0.0704
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.2341,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1672,
+     "1": 0.4316,
+     "2": 0.4012
+    },
+    "confidence": 0.0628
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.4055,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1077,
+     "1": 0.379,
+     "2": 0.5133
+    },
+    "confidence": 0.128
+   }
+  },
+  "usage": {
+   "input_tokens": 1038,
+   "output_tokens": 0
+  },
+  "note": "re-scored 2026-10-05 for the record under the v2 score metric; docs already shipped under the v1 outline"
+ }
+}
