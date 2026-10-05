@@ -1,0 +1,248 @@
+{
+  "topic": "readiness gates and go-to-market for an early-stage security product",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "stage-gate-frameworks",
+      "scope": "Stage-gate models for new product introduction: how readiness gates act as go/no-go decision points with explicit entry and exit criteria.",
+      "seed_queries": [
+        "stage-gate new product development gate criteria",
+        "launch readiness gates go no-go decision criteria product"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "evidence-standards",
+      "scope": "What counts as acceptable evidence at a readiness gate: documented artifacts, audit-grade evidence, verification discipline, evidence currency.",
+      "seed_queries": [
+        "go no-go gate review evidence criteria decision",
+        "audit evidence standards artifact verification decision gate"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "security-audit-gate",
+      "scope": "Independent security review before commercial pilots: third-party audits, SOC 2 tiers, published report vs private attestation, enterprise procurement expectations.",
+      "seed_queries": [
+        "SOC 2 Type 1 vs Type 2 enterprise sales requirement",
+        "third-party security audit before enterprise pilot procurement"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "pricing-validity-gate",
+      "scope": "Validating list price with real priced proposals before scaling; how discounts and anchoring distort the financial model; willingness-to-pay evidence.",
+      "seed_queries": [
+        "B2B SaaS pricing validation willingness to pay early stage",
+        "list price discount risk financial model enterprise pricing"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "pilot-sow-gates",
+      "scope": "Paid pilot statements of work: scoping strictly to evidenced platforms and configurations, design partners, pilot exit criteria and readouts.",
+      "seed_queries": [
+        "paid pilot statement of work scope enterprise software",
+        "pilot exit criteria design partner enterprise B2B"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "reference-customer-gate",
+      "scope": "Case-study and reference agreements as the gate between pilot and expansion; the role a willing reference customer plays in the next discovery conversation.",
+      "seed_queries": [
+        "customer reference agreement case study B2B sales",
+        "reference customers enterprise sales credibility early stage"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "proof-first-sales-motion",
+      "scope": "A staged sales motion where each stage's proof preconditions the next; public proof artifacts (open repos, honest blocker lists) as the initial trust surface.",
+      "seed_queries": [
+        "open source transparency enterprise trust proof",
+        "evidence based selling enterprise security startup credibility"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "ga-readiness-assurance",
+      "scope": "General availability claims gated on production evidence; the shift from one-off pilot proof to recurring assurance (security review cadence, SLA history).",
+      "seed_queries": [
+        "general availability readiness criteria software production",
+        "recurring security assurance SLA enterprise renewal"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "gate-evidence-drift",
+      "scope": "Keeping gate evidence current: blocker tracking, same-day drift checks between dependent docs, staleness detection, review-gate discipline.",
+      "seed_queries": [
+        "stale documentation drift detection process engineering",
+        "decision gate review discipline status drift blockers"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.7401,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0607,
+          "1": 0.1386,
+          "2": 0.8007
+        },
+        "confidence": 0.4961
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0323,
+          "1": 0.1054,
+          "2": 0.8623
+        },
+        "confidence": 0.6335
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.8295,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0384,
+          "1": 0.0938,
+          "2": 0.8678
+        },
+        "confidence": 0.6451
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.5847,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0776,
+          "1": 0.2602,
+          "2": 0.6622
+        },
+        "confidence": 0.2684
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.7809,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0499,
+          "1": 0.1192,
+          "2": 0.8309
+        },
+        "confidence": 0.5605
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.6972,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0593,
+          "1": 0.1843,
+          "2": 0.7564
+        },
+        "confidence": 0.4145
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.6369,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0657,
+          "1": 0.2317,
+          "2": 0.7026
+        },
+        "confidence": 0.3274
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.7138,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0485,
+          "1": 0.1892,
+          "2": 0.7623
+        },
+        "confidence": 0.4289
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.3115,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1313,
+          "1": 0.4259,
+          "2": 0.4428
+        },
+        "confidence": 0.0921
+      }
+    },
+    "usage": {
+      "input_tokens": 1441,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
