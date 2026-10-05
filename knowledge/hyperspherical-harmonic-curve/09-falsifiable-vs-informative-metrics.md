@@ -1,0 +1,29 @@
+# 09 - Falsifiable vs Informative Metrics
+
+Scope: separating provable-but-uninformative delta claims (chi, H^k, holonomy, the vacuous epsilon_spec identity) from falsifiable load-bearing metrics, and silent-degradation detection in curve fits.
+
+## The distinction the design enforces
+
+The yubiOS design record splits its own motivation in two: three sources of provable delta between S^N and [0,1]^2, namely the conformal structure chi, the curvature invariants H^k, and holonomy, are mathematically true but not informative; they prove only that a different domain was chosen, not that the fit is good. The falsifiable claim, the matched-parameter ablation of doc 04, is the load-bearing one, and the record requires the written body to keep the two classes apart so a reviewer cannot conflate them (yubiOS design record, refs/hyperspherical-harmonic-curve 2026-08-05).
+
+The epistemic ground for this discipline is developed in the machine-learning methodology literature. Design principles for falsifiable, replicable, and reproducible ML research frame hypothesis design and statistical testing as first-class artifacts of the work rather than afterthoughts (https://arxiv.org/html/2405.18077v1, weight 0.72). Making statistical predictions machine-readable and easy to locate is proposed as a direct route to improving transparency, falsifiability, and rigor (https://journals.sagepub.com/doi/10.1177/2515245920970949, weight 0.83). A hypothesis-based framework for falsifiable explanations of ML models defines a falsifiable explanation as a hypothesis connecting a model-induced intermediate space with the data sample, which is structurally what the ablation does: it connects the manifold choice to a measurable holdout difference that could fail to appear (https://cdn.leonardodrs.com/uploads/wp-content/uploads/sites/3/2023/01/2023-A-framework-for-falsifiable-explanations-of-machine-learning-models-with-an-application-in-computational-pathology.pdf, weight 0.63). The general philosophical standard, that a statement is falsifiable if some observation could refute it (https://en.m.wikipedia.org/wiki/Falsifiability, weak backing, weight 0.27), is the floor the design builds above.
+
+## The vacuous identity and silent degradation
+
+The design record's concrete example of an uninformative metric is epsilon_spec: a spectral identity that holds for any smooth gamma in C2(S^N). Because it is an identity, it passes regardless of whether the fit degraded silently (yubiOS design record, refs/hyperspherical-harmonic-curve 2026-08-05). Silent degradation is the failure mode where every locally computed check stays green while the model's actual predictive quality decays; the replacement stack (pre-fit basis test, spectral-mass gate, holdout R2 with matched parameters) is chosen so at least one member can return negative.
+
+The spectral-mass gate watches two signatures with known meanings in the spectral-bias literature. Spectral bias, the tendency of learned function approximators to fit low frequencies first and struggle with high frequencies, is systematically studied in physics-informed and operator learning, where network architecture, activation functions, loss design, and optimization strategy jointly determine the frequency content a model can represent (https://www.sciencedirect.com/science/article/pii/S0045782526004299, weight 0.62). Treating training as a signal-processing problem makes the frequency-domain view operational: kernels act as frequency-domain filters and their spectra shape what the model learns (https://arxiv.org/pdf/2512.22192, weight 0.62). Constant collapse, the first signature the gate watches, is the low-frequency extreme: the fit degenerates toward a constant, which no residual-based check on the training data would necessarily flag but which a spectral-mass floor catches. Ringing, the second signature, is the high-frequency extreme. Spectral regularization as an inductive bias formalizes how a simplicity notion maps to frequency content (https://www.iro.umontreal.ca/~grabus/files/learnaut_specreg.pdf, weight 0.68), and eigenanalysis of idealized data measures can bound what real-world fits can learn at each frequency (https://arxiv.org/pdf/2406.02663v2, weight 0.76).
+
+## Gauge redundancy in learnable degree weights
+
+The design record freezes degree weights at 1 because a learnable w_l creates a gauge redundancy with the harmonic coefficients a_{:,l}: scaling w_l and rescaling the l-th coefficient block produces the same function, so the pair is unidentifiable and a spectral criterion that reads w_l becomes meaningless (yubiOS design record, refs/hyperspherical-harmonic-curve 2026-08-05). This is a parameterization identifiability problem, the same class of issue that makes regularization design delicate: the spectral regularization line of work attaches an inductive bias to a specific parameterization, and a redundant parameterization breaks the correspondence (https://www.iro.umontreal.ca/~grabus/files/learnaut_specreg.pdf, weight 0.68).
+
+## Provable but not informative, itemized
+
+For the record, the three geometry deltas the design classifies as true-but-uninformative (yubiOS design record, refs/hyperspherical-harmonic-curve 2026-08-05):
+
+1. chi: the conformal structure of S2 differs from the flat plane's; true, and a statement about the domain choice.
+2. H^k: curvature invariants of the sphere are nonzero where the plane's vanish; again a domain fact.
+3. holonomy: parallel transport around a loop on the sphere rotates vectors; on the plane it does not. The record notes holonomy is also hard to compute numerically, which is why the 1-jet interpretation B scored low on testability in the ideation pass of doc 08.
+
+None of the three can fail, so none can certify the variant. The ablation can. That asymmetry, not the mathematics, is what makes the fit claim load-bearing.

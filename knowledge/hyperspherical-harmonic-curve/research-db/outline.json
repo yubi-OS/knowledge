@@ -1,0 +1,239 @@
+{
+ "topic": "the Hyperspherical Harmonic Curve, a sphere-geometry variant of curve-guided corpus auditing using hyperspherical harmonics instead of flat Fourier surfaces, its design decisions and fitness test",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "laplace-beltrami-eigenbasis",
+   "scope": "The canonical hyperspherical harmonic basis for L2(S^N): eigenfunctions of the Laplace-Beltrami operator with eigenvalues -l(l+N-1), orthonormality, and why a canonical rather than learned basis shrinks parameter count at equal expressive power.",
+   "seed_queries": [
+    "spherical harmonics eigenfunctions Laplace-Beltrami operator sphere eigenvalues",
+    "hyperspherical harmonics S^n orthogonal basis functions"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "mobius-reparameterization",
+   "scope": "The learned Moebius reparameterization phi_theta in PSL(2,C) on the Riemann sphere: 6 real parameters, identity initialization, cross-ratio preservation as the falsifiable invariant, and why it carries the mechanism-layer novelty claim versus plain OLS harmonic regression.",
+   "seed_queries": [
+    "Mobius transformation PSL(2,C) Riemann sphere six real parameters",
+    "cross ratio invariance Mobius transformation"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "curve-guided-rsi-pipeline",
+   "scope": "The incumbent curve-guided-rsi pipeline being extended: 9-D binary primitive coverage of a skill corpus, the Stage-1 flat Fourier curve fit on [0,1]^2, and the full 5-stage audit loop the sphere variant swaps into.",
+   "seed_queries": [
+    "recursive self improvement agent skill corpus audit loop",
+    "polynomial regression surface fit residual analysis model selection"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "matched-parameter-ablation",
+   "scope": "Stage-5 verification as a matched-parameter ablation: the S2/L=3 variant versus flat Fourier k=2 and k=4 surfaces on one holdout split, and why this is the only fitness metric that can return negative.",
+   "seed_queries": [
+    "matched parameter count model comparison nested models holdout R2",
+    "statistical model selection adjusted R2 degrees of freedom"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "equal-area-partition-sparse-cells",
+   "scope": "Stage-2 sparse-cell detection on S2: equal-area partition into 441 cells, chordal neighbor radius r~0.095, and why reusing the incumbent flat grid r=0.05 would inflate the sparse-cell count and fake a pre/post improvement.",
+   "seed_queries": [
+    "equal area partition of sphere HEALPix Fibonacci lattice",
+    "chordal distance covering radius sphere tessellation"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "spherical-harmonics-software-pitfalls",
+   "scope": "Numerical implementation pitfalls: scipy.special.sph_harm deprecation and the sph_harm_y argument-order/convention pinning, coverage gaps in lie_learn and e3nn, and pre-fit epsilon_basis validation on a Monte Carlo sample.",
+   "seed_queries": [
+    "scipy sph_harm deprecated sph_harm_y migration",
+    "lie_learn e3nn spherical harmonics library implementation"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "n2-n3-gates",
+   "scope": "Choosing the manifold dimension: N=2 default versus N=3 gated by corpus size >= 90 items and PC3 >= 0.08, basis-function counts (16 vs 30 at L=3), and degrees-of-freedom floors in regression.",
+   "seed_queries": [
+    "PCA explained variance ratio third component threshold scree plot",
+    "number of spherical harmonics basis functions degree l 2l+1 dimension"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "variant-scoring-ideation",
+   "scope": "The ideation record: 4 interpretations (3-D parameter on S3, 1-jet differential, Blaschke products, hyperspherical harmonics) scored on a rubric, and the 10 advisor revisions that reshaped the design before implementation.",
+   "seed_queries": [
+    "Blaschke products unit disk approximation theory",
+    "structured ideation variant scoring matrix design rubric engineering"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "falsifiable-vs-informative-metrics",
+   "scope": "Separating provable-but-uninformative delta claims (chi, H^k, holonomy, the vacuous epsilon_spec identity) from falsifiable load-bearing metrics, and silent-degradation detection in curve fits.",
+   "seed_queries": [
+    "falsifiability machine learning evaluation predictive hypothesis testing",
+    "spectral bias degree weights regression gauge redundancy identifiability"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t1": {
+    "score": 1.8356,
+    "probabilities": {
+     "0": 0.0453,
+     "1": 0.0738,
+     "2": 0.8809
+    },
+    "confidence": 0.6753,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t2": {
+    "score": 1.8157,
+    "probabilities": {
+     "0": 0.0364,
+     "1": 0.1114,
+     "2": 0.8522
+    },
+    "confidence": 0.6099,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t3": {
+    "score": 1.609,
+    "probabilities": {
+     "0": 0.0706,
+     "1": 0.2498,
+     "2": 0.6796
+    },
+    "confidence": 0.2938,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t4": {
+    "score": 1.8508,
+    "probabilities": {
+     "0": 0.0326,
+     "1": 0.084,
+     "2": 0.8834
+    },
+    "confidence": 0.6827,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t5": {
+    "score": 1.7195,
+    "probabilities": {
+     "0": 0.0597,
+     "1": 0.1611,
+     "2": 0.7792
+    },
+    "confidence": 0.455,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t6": {
+    "score": 1.2111,
+    "probabilities": {
+     "0": 0.1226,
+     "1": 0.5437,
+     "2": 0.3337
+    },
+    "confidence": 0.133,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t7": {
+    "score": 1.4069,
+    "probabilities": {
+     "0": 0.0864,
+     "1": 0.4202,
+     "2": 0.4934
+    },
+    "confidence": 0.1412,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t8": {
+    "score": 0.9258,
+    "probabilities": {
+     "0": 0.2372,
+     "1": 0.5997,
+     "2": 0.1631
+    },
+    "confidence": 0.1637,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t9": {
+    "score": 1.6649,
+    "probabilities": {
+     "0": 0.0724,
+     "1": 0.1904,
+     "2": 0.7372
+    },
+    "confidence": 0.3775,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1912,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
