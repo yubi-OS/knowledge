@@ -1,0 +1,29 @@
+# Reference-call agreements
+
+Scope: the consent layer of the reference gate: what a reference agreement covers, what clauses it needs, and how case-study and name-use permissions are obtained and recorded.
+
+## What the agreement is
+
+A client reference agreement is a legal document that sets out the terms and conditions of using a client's name, logo, or other identifying information for marketing purposes, allowing the vendor to use the client's positive experiences to promote the business (w=0.136, weak backing) [https://oneflow.com/blog/how-to-write-a-client-reference-agreement/]. Contract-clause libraries show the standard shape: a customer reference clause establishes the terms under which a company may use the customer's name, logo, or details as a reference in marketing materials, case studies, or client lists, typically outlining whether the customer's consent is required before public use, the scope of permitted references, and any restrictions (w=0.297, weak backing) [https://www.lawinsider.com/clause/customer-reference].
+
+Public examples exist in the wild: Sitecore publishes its own customer reference agreement, which details what information the customer would be happy to share and what they consent to the vendor doing with those references (w=0.380, weak backing) [https://www.sitecore.com/legal/customer-reference-agreement]. For a launch gate, the artifact is the same class of document, signed and NDA-redacted before filing as gate evidence.
+
+## Consent before public use
+
+The gating principle across clause libraries is consent before use. A typical marketing-and-consent clause reads: the customer agrees that the vendor may use the customer's name and logo as a reference in marketing materials or general listings, subject to the customer's prior approval which will not be unreasonably withheld (w=0.207, weak backing) [https://www.lawinsider.com/clause/marketing-and-consent]. The mirror image exists too: no-publicity clauses prohibit any use of names or logos without prior written consent (w=0.095, weak backing) [https://afterpattern.com/clauses/use-of-logo]. A reference gate should therefore require the affirmative signed consent, not the absence of an objection.
+
+## Scope of use: logo, name, and channels
+
+Drafting guidance for customer-logo terms is specific about what the agreement must nail down: clear definition of usage rights, explicit written consent, and specified marketing channels to maintain brand integrity, with agreements addressing duration, permissible modifications, and termination procedures (w=0.467, weak backing) [https://aaronhall.com/drafting-legal-terms-for-use-of-customer-logos/]. Use-of-logo clauses in the wild specify the contexts in which the logo may be displayed, such as websites, marketing collateral, or press releases, and may require prior written consent for each (w=0.133, weak backing) [https://www.lawinsider.com/clause/use-of-logo]. Template release forms follow the same structure: permission to use a customer's logo and name across specified marketing surfaces, with expiration and approved assets enumerated (w=0.097, weak backing) [https://formswrite.com/templates/customer-logo-permission-form].
+
+For a reference-call gate specifically, the consent set is two items: consent to be named in the launch collateral, and consent to a reference call with prospects. Generic release-form practice covers the mechanics: release forms are legal documents used to obtain consent or permission before specific actions (w=0.128, weak backing) [https://www.jotform.com/form-templates/category/release-forms], and testimonial consent forms collect permission for use of testimonials in marketing materials (w=0.120, weak backing) [https://www.jotform.com/form-templates/testimonial-consent-form].
+
+## The case-study approval process
+
+Reference material usually starts as a case study, and the approval process is documented practice. A case study release form should be used to secure consent before writing and publishing, with one consent form per unique case study and the proposed use outlined to the customer (w=0.270, weak backing) [https://thecasestudycopywriter.com/wp-content/uploads/docs/case-study-release-form.pdf]. A six-step final-approval process runs: decide the approval vehicle (email approval or signed release), internal review, channel-partner review if applicable, customer review, and sign-off (w=0.177, weak backing) [https://copyengineer.com/6-steps-to-gaining-final-customer-approval-of-a-case-study/]. Timing matters too: permission should be requested at a defined point in the customer relationship rather than opportunistically (w=0.174, weak backing) [https://copyengineer.com/case-study-permission/].
+
+Process design also has a failure mode to engineer around: most B2B case studies do not die in the writing, they die in approval, in an email thread nobody owns, which is why no-login sign-off processes exist with explicit version history (w=0.252, weak backing) [https://storyvoice.io/blog/case-study-approval-process]. A gate-grade process assigns an owner to the approval thread and records the final sign-off date.
+
+## Why consent is worth its own evidence artifact
+
+B2B marketing practice makes the commercial case: customers are looking for results, and case studies providing real-world examples of success play an important role in B2B marketing (w=0.431, weak backing) [https://www.godfrey.com/insights/making-better-case-b2b-case-studies-5-tips-get-customers-board]. Because the reference is load-bearing for launch credibility, its permission must survive audit: marketing-consent practice reduces to two proof obligations, the exact words next to the consent and the ability to prove later that consent was actually given (w=0.310, weak backing) [https://consentpixel.com/blogs/marketing-consent/]. The gate evidence set is therefore the signed, redacted agreement plus the dated approval trail that produced it.
