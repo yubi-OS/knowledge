@@ -1,0 +1,2210 @@
+[
+ {
+  "query": "systemd-homed user record JSON NSS userdbctl passwd entries",
+  "title": "JSON User Records - systemd",
+  "url": "https://systemd.io/USER_RECORD/",
+  "snippet": "JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd are able to provide and consume records in a more extensible format of a dictionary of key/value pairs, encoded as JSON. Specifically: systemd-homed.service manages human user home directories and embeds these JSON records directly in the home ...JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd are able to provide and consume records in a more extensible format of a dictionary of key/value pairs, encoded as JSON. Specifically: systemd-homed.service manages human user home directories and embeds these JSON records directly in the home ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9307,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'JSON User Records - systemd' (https://systemd.io/USER_RECORD/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9307
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:45:58.551848+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed user record JSON NSS userdbctl passwd entries",
+  "title": "systemd-homed and JSON User/Group Record Support in Desktop Environments",
+  "url": "https://systemd.io/USERDB_AND_DESKTOPS/",
+  "snippet": "The rich user/group records userdb and systemd-homed support carry various fields of relevance to UIs that manage the local user database or parts thereof. In particular, most of the metadata accounts-daemon (also see below) supports is directly available in these JSON records.The rich user/group records userdb and systemd-homed support carry various fields of relevance to UIs that manage the local user database or parts thereof. In particular, most of the metadata accounts-daemon (also see below) supports is directly available in these JSON records.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9657,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed and JSON User/Group Record Support in Desktop Environments' (https://systemd.io/USERDB_AND_DESKTOPS/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9657
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:45:58.551868+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed user record JSON NSS userdbctl passwd entries",
+  "title": "userdbctl - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/247/userdbctl.html",
+  "snippet": "This is the primary entry point for user/group record clients, as it simplifies client side implementation substantially since they can ask a single service for lookups instead of asking all running services in parallel. userdbctl uses this service preferably, too, unless --with-nss= or --service= are used, in which case finer control over the ...This is the primary entry point for user/group record clients, as it simplifies client side implementation substantially since they can ask a single service for lookups instead of asking all running services in parallel. userdbctl uses this service preferably, too, unless --with-nss= or --service= are used, in which case finer control over the ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.796,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'userdbctl - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/247/userdbctl.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.796
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:45:58.551872+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed user record JSON NSS userdbctl passwd entries",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ...systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.6349,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6349
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:45:58.551875+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed user record JSON NSS userdbctl passwd entries",
+  "title": "JSON User Records - third-party-mirror.googlesource.com",
+  "url": "https://third-party-mirror.googlesource.com/systemd/+/refs/heads/master/docs/USER_RECORD.md",
+  "snippet": "This allows setting global limits on resource consumption by a specific user. nss-systemd is a glibc NSS module that synthesizes classic NSS records from these JSON records, providing full backwards compatibility with the classic UNIX APIs both for look-up and enumeration.This allows setting global limits on resource consumption by a specific user. nss-systemd is a glibc NSS module that synthesizes classic NSS records from these JSON records, providing full backwards compatibility with the classic UNIX APIs both for look-up and enumeration.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1488,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'JSON User Records - third-party-mirror.googlesource.com' (https://third-party-mirror.googlesource.com/systemd/+/refs/heads/master/docs/USER_RECORD.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1488
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:45:58.551879+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed user record JSON NSS userdbctl passwd entries",
+  "title": "nss-systemd (8) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man8/nss-systemd.8.html",
+  "snippet": "nss-systemd is a plug-in module for the GNU Name Service Switch (NSS) functionality of the GNU C Library (glibc), providing UNIX user and group name resolution for services implementing the User/Group Record Lookup API via Varlink [1], such as the system and service manager systemd (1) (for its DynamicUser= feature, see systemd.exec (5) for ...nss-systemd is a plug-in module for the GNU Name Service Switch (NSS) functionality of the GNU C Library (glibc), providing UNIX user and group name resolution for services implementing the User/Group Record Lookup API via Varlink [1], such as the system and service manager systemd (1) (for its DynamicUser= feature, see systemd.exec (5) for ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.822,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'nss-systemd (8) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man8/nss-systemd.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.822
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:02.048855+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd USER_RECORD JSON user record specification",
+  "title": "JSON User Records - systemd",
+  "url": "https://systemd.io/USER_RECORD/",
+  "snippet": "JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd are able to provide and consume records in a more extensible format of a dictionary of key/value pairs, encoded as JSON. Specifically: systemd-homed.service manages human user home directories and embeds these JSON records directly in the home ...JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd are able to provide and consume records in a more extensible format of a dictionary of key/value pairs, encoded as JSON. Specifically: systemd-homed.service manages human user home directories and embeds these JSON records directly in the home ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9236,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'JSON User Records - systemd' (https://systemd.io/USER_RECORD/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9236
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:02.048880+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd USER_RECORD JSON user record specification",
+  "title": "User Record Blob Directories - systemd.io",
+  "url": "https://systemd.io/USER_RECORD_BLOB_DIRS/",
+  "snippet": "User Record Blob Directories The blob directories are for storing binary or unstructured data that would otherwise be stored in JSON User Records. For instance, this includes image files such as the user\u2019s avatar picture. This data, like most of the user record, will be made publicly available to the system. The JSON User Record specifies the location of the blob directory via the ...User Record Blob Directories The blob directories are for storing binary or unstructured data that would otherwise be stored in JSON User Records. For instance, this includes image files such as the user\u2019s avatar picture. This data, like most of the user record, will be made publicly available to the system. The JSON User Record specifies the location of the blob directory via the ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9043,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'User Record Blob Directories - systemd.io' (https://systemd.io/USER_RECORD_BLOB_DIRS/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9043
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:02.048886+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd USER_RECORD JSON user record specification",
+  "title": "systemd-unix/docs/USER_RECORD.md at main - GitHub",
+  "url": "https://github.com/system-alphabet/systemd-unix/blob/main/docs/USER_RECORD.md",
+  "snippet": "JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd are able to provide and consume records in a more extensible format of a dictionary of key/value pairs, encoded as JSON.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.2919,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-unix/docs/USER_RECORD.md at main - GitHub' (https://github.com/system-alphabet/systemd-unix/blob/main/docs/USER_RECORD.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2919
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:02.048891+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd USER_RECORD JSON user record specification",
+  "title": "systemd-powersource/docs/USER_RECORD.md at main - GitHub",
+  "url": "https://github.com/LandenParke/systemd-powersource/blob/main/docs/USER_RECORD.md",
+  "snippet": "JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd are able to provide and consume records in a more extensible format of a dictionary of key/value pairs, encoded as JSON.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1311,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-powersource/docs/USER_RECORD.md at main - GitHub' (https://github.com/LandenParke/systemd-powersource/blob/main/docs/USER_RECORD.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1311
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:02.048895+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd USER_RECORD JSON user record specification",
+  "title": "System and Service Manager",
+  "url": "https://systemd.io/",
+  "snippet": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount\u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9441,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'System and Service Manager' (https://systemd.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9441
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:04.224823+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd USER_RECORD JSON user record specification",
+  "title": "JSON User Records",
+  "url": "https://systemd.io/USER_RECORD",
+  "snippet": "JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd a\u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8984,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'JSON User Records' (https://systemd.io/USER_RECORD) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8984
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:04.224845+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7248,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7248
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:04.224850+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+  "title": "systemd-homed for multi-user servers: the 2026 verdict - Big Iron",
+  "url": "https://www.bigiron.cc/guides/systemd-homed-for-multi-user-servers-the-2026-verdict",
+  "snippet": "Does systemd-homed's promise of portable, self-service, encrypted home directories actually hold up on a shared multi-user server? A walkthrough of how homed's LUKS-backed home areas, per-user resource properties, and password-driven key derivation actually work, why SSH public-key auth breaks the whole model, and a decision tree for when to use it, when to skip it, and when fscrypt is the ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1415,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed for multi-user servers: the 2026 verdict - Big Iron' (https://www.bigiron.cc/guides/systemd-homed-for-multi-user-servers-the-2026-verdict) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1415
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:04.224855+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+  "title": "systemd-homed: portable, encrypted home directories",
+  "url": "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+  "snippet": "systemd-homed: portable, encrypted home directories systemd-homed treats a user's home directory as a self-contained, encrypted unit. /home/amir isn't a regular directory; it's a LUKS-encrypted image (or a btrfs subvolume, or a directory with fscrypt) decrypted on login.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1371,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed: portable, encrypted home directories' (https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1371
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:04.224859+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+  "title": "Home Directories - systemd",
+  "url": "https://systemd.io/HOME_DIRECTORY/",
+  "snippet": "In case of the directory-based storage mechanisms (directory, subvolume and fscrypt) this is a bind mount. In case of cifs this is a CIFS network mount, and in case of the LUKS2 backend a regular block device mount of the file system contained in the LUKS2 image.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9009,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Home Directories - systemd' (https://systemd.io/HOME_DIRECTORY/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9009
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:06.308823+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.182,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.182
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:06.308841+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+  "title": "systemd/systemd-homed \u2014 Gentoo Wiki",
+  "url": "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+  "snippet": "storage=STORAGE Storage type to use (luks, fscrypt, directory, subvolume, cifs) LUKS Storage User Record Properties: -- fs-type=TYPE File system type to use in case of luks. storage (btrfs, ext4, xfs)",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7721,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/systemd-homed \u2014 Gentoo Wiki' (https://wiki.gentoo.org/wiki/Systemd/systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7721
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:06.308845+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4",
+  "title": "homed.conf - freedesktop.org",
+  "url": "https://freedesktop.org/software/systemd/man/homed.conf.html",
+  "snippet": "Added in version 246. DefaultFileSystemType= \u00b6 When using \" luks \" as storage (see above), selects the default file system to use inside the user's LUKS volume. Takes one of \" btrfs \", \" ext4 \" or \" xfs \". If not specified, defaults to \" btrfs \". This setting has no effect if a different storage mechanism is used.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.802,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homed.conf - freedesktop.org' (https://freedesktop.org/software/systemd/man/homed.conf.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.802
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:06.308848+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4",
+  "title": "homed.conf(5) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/core/systemd/homed.conf.5.en",
+  "snippet": "When using \"luks\" as storage (see above), selects the default file system to use inside the user's LUKS volume. Takes one of \"btrfs\", \"ext4\" or \"xfs\". If not specified, defaults to \"btrfs\". This setting has no effect if a different storage mechanism is used. The file system type selected on the homectlcommand line always takes precedence.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.6215,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homed.conf(5) \u2014 Arch manual pages' (https://man.archlinux.org/man/core/systemd/homed.conf.5.en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6215
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:06.308851+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4",
+  "title": "One Woman's Wilderness Nude Patreon Leaks 2026 - Fapopedia",
+  "url": "https://fapopedia.net/one-woman-s-wilderness-nude-leaks/",
+  "snippet": "Nude photos of One Woman's Wilderness. Patreon Leaks 2026. Uncensored photoset.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.024,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'One Woman's Wilderness Nude Patreon Leaks 2026 - Fapopedia' (https://fapopedia.net/one-woman-s-wilderness-nude-leaks/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.024
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:08.872655+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4",
+  "title": "Ubuntu Manpage: homed.conf, homed.conf.d - Home area/user...",
+  "url": "https://manpages.ubuntu.com/manpages/noble/man5/homed.conf.d.5.html",
+  "snippet": "homed.conf, homed.conf.d - Home area/user account manager configuration files.DefaultStorage=. The default storage to use for home areas. Takes one of \"luks\", \"fscrypt\", \"directory\", \"subvolume\"",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9535,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Ubuntu Manpage: homed.conf, homed.conf.d - Home area/user...' (https://manpages.ubuntu.com/manpages/noble/man5/homed.conf.d.5.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9535
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:08.872679+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4",
+  "title": "homed.conf (5) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man5/homed.conf.d.5.html",
+  "snippet": "DefaultFileSystemType= When using \"luks\" as storage (see above), selects the default file system to use inside the user's LUKS volume. Takes one of \"btrfs\", \"ext4\" or \"xfs\".",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7077,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homed.conf (5) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man5/homed.conf.d.5.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7077
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:08.872684+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4",
+  "title": "Rsync - migrace OS z Ext4 na Btrfs",
+  "url": "https://www.abclinuxu.cz/poradna/unix/show/492716",
+  "snippet": "Potvrzuji, sice to bylo asi pred 3(?) lety, ale byla to jedna (prvni) z mejch 2 zkusenosti testovani a zaroven \"zboreni\" Btrfs, kdyz sem se o tom pak nekdy zminoval, bylo mi od \"Btrfs Ultras\" \"naznaceno\" ze primej prevod ext4=>btrfs je\u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0678,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Rsync - migrace OS z Ext4 na Btrfs' (https://www.abclinuxu.cz/poradna/unix/show/492716) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0678
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:08.872689+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl create resize update commands systemd examples",
+  "title": "homectl: Create, remove, change or inspect home directories | ManKier",
+  "url": "https://www.mankier.com/1/homectl",
+  "snippet": "When invoked with the firstboot command, homectl supports the service credentials logic as implemented by ImportCredential= / LoadCredential= / SetCredential= (see systemd.exec (5) for details) .",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.4829,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl: Create, remove, change or inspect home directories | ManKier' (https://www.mankier.com/1/homectl) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4829
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:08.872693+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl create resize update commands systemd examples",
+  "title": "homectl (1) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+  "snippet": "NAME top homectl, systemd-homed-firstboot.service - Create, remove, change or inspect home directories SYNOPSIS top homectl [OPTIONS...] {COMMAND} [NAME...] DESCRIPTION top homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service (8) which manages home directories of users. Home directories managed by ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7814,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl (1) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man1/homectl.1.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7814
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:11.279753+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl create resize update commands systemd examples",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is: # homectl create username This command will create a user with the specified username, a free UID in range 60001-60513, create a group with the same name ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8595,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8595
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:11.279771+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl create resize update commands systemd examples",
+  "title": "homectl(1) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man1/homectl.1.html",
+  "snippet": "homectl, systemd-homed-firstboot.service - Create, remove, change. or inspect home directories.homectl may be used to create, remove, change or inspect a user's. home directory. It's primarily a command interfacing with.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7741,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl(1) - Linux manual page' (https://man7.org/linux/man-pages/man1/homectl.1.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7741
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:11.279775+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl create resize update commands systemd examples",
+  "title": "homectl command \u2014 examples & options | commands.sh",
+  "url": "https://www.commands.sh/homectl",
+  "snippet": "Create, remove, change, or inspect home directories using the systemd-homed service.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1578,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl command \u2014 examples & options | commands.sh' (https://www.commands.sh/homectl) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1578
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:11.279779+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl create resize update commands systemd examples",
+  "title": "Pinterest",
+  "url": "https://www.pinterest.com/",
+  "snippet": "Discover recipes, home ideas, style inspiration and other ideas to try.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0186,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Pinterest' (https://www.pinterest.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0186
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:11.279782+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl inspect export json migrate home directory",
+  "title": "systemd/systemd-homed - Gentoo wiki",
+  "url": "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+  "snippet": "May 8, 2026 \u00b7 If you need to move a systemd-homed user to a target system that already has other systemd-homed users, you need to export the JSON record of the user to be moved without its cryptographic signatures (i.e. --export-format=minimal) and use that export to recreate the user on the target system.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8076,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/systemd-homed - Gentoo wiki' (https://wiki.gentoo.org/wiki/Systemd/systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8076
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:13.453029+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl inspect export json migrate home directory",
+  "title": "homectl - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/homectl.html",
+  "snippet": "Description \u00b6 homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service(8) which manages home directories of users. Home directories managed by systemd-homed.service are self-contained, and thus include the user's full metadata record in the home's data storage itself, making them easy to migrate between ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9339,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/homectl.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9339
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:13.453047+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl inspect export json migrate home directory",
+  "title": "Converting Existing Users to systemd-homed",
+  "url": "https://systemd.io/CONVERTING_TO_HOMED/",
+  "snippet": "Consider reading through the homectl (1) manual page at this point, maybe there are a couple of other settings you want to set for your new account. In particular, look at --storage= and --disk-size=, in order to change how your home directory shall be stored (the default luks storage is recommended).",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8577,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Converting Existing Users to systemd-homed' (https://systemd.io/CONVERTING_TO_HOMED/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8577
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:13.453051+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl inspect export json migrate home directory",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is: # homectl create username This command will create a user with the specified username, a free UID in range 60001-60513, create a group with the same name ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.6317,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6317
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:13.453054+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl inspect export json migrate home directory",
+  "title": "Ultrawide porn? : r/ultrawidemasterrace - Reddit",
+  "url": "https://www.reddit.com/r/ultrawidemasterrace/comments/4vwz4h/ultrawide_porn/",
+  "snippet": "Ultrawide porn? I saw that x-art makes 21:9 porn on another thread. My question is if anyone else makes 21:9 porn. Godspeed \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.022,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Ultrawide porn? : r/ultrawidemasterrace - Reddit' (https://www.reddit.com/r/ultrawidemasterrace/comments/4vwz4h/ultrawide_porn/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.022
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:13.453057+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl inspect export json migrate home directory",
+  "title": "homectl(1) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/homectl.1",
+  "snippet": "homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service(8) whic\u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9184,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl(1) \u2014 Arch manual pages' (https://man.archlinux.org/man/homectl.1) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9184
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:15.787344+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+  "title": "Unlock LUKS volume with a YubiKey - Guy Rutenberg",
+  "url": "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "snippet": "Feb 17, 2022 \u00b7 Unlocking LUKS encrypted drives with a YubiKey has been supported since systemd 248. In Debian, systemd>=250 is required, as the feature has not been enabled in prior versions. This tutorial is geared towards YubiKeys, but it should work with slight modifications for any other FIDO2 token.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.2911,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlock LUKS volume with a YubiKey - Guy Rutenberg' (https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2911
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:15.787365+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+  "title": "GitHub - nyancient/fido2-luks: FIDO2 as strong single factor for LUKS ...",
+  "url": "https://github.com/nyancient/fido2-luks",
+  "snippet": "This package lets you use a FIDO2 token with the hmac-secret extension as a strong single factor for LUKS (Linux full disk encryption). Well-known examples of such tokens include all FIDO2 models of Yubikey, the Google Titan key, the Nitrokey FIDO2, any SoloKey, and any other Microsoft-compatible ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.5682,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - nyancient/fido2-luks: FIDO2 as strong single factor for LUKS ...' (https://github.com/nyancient/fido2-luks) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5682
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:15.787371+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+  "title": "Unlocking Encrypted Linux with a YubiKey | Miguel Hern\u00e1ndez",
+  "url": "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "snippet": "Sep 2, 2025 \u00b7 A step-by-step guide to upgrading a LUKS-encrypted Linux system to use a YubiKey for FIDO2-based unlocking, moving beyond traditional passphrases.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.2769,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking Encrypted Linux with a YubiKey | Miguel Hern\u00e1ndez' (https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2769
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:15.787376+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1183,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1183
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:15.787380+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+  "title": "FIDO2 (YubiKey) to unlock LUKS from command line - Unix & Linux \u2026",
+  "url": "https://unix.stackexchange.com/a/755439",
+  "snippet": "Following the example of how to add a FIDO2 key from a YubiKey, but I can't figure out how to use the YubiKey to unlock it form the command line. The inst\u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.3277,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 (YubiKey) to unlock LUKS from command line - Unix & Linux \u2026' (https://unix.stackexchange.com/a/755439) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3277
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:18.234070+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+  "title": "Configuring LUKS to work with YubiKey | Piotr Nowicki's Blog",
+  "url": "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+  "snippet": "Jun 17, 2024 \u00b7 How to configure LUKS (full disk encryption) to work with your YubiKey (FIDO2) so you can unlock your disk without typing password.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.3503,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Configuring LUKS to work with YubiKey | Piotr Nowicki's Blog' (https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3503
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:18.234090+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl fido2-device client-pin user-presence enrollment",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is: # homectl create username This command will create a user with the specified username, a free UID in range 60001-60513, create a group with the same name ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8574,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8574
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:18.234094+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl fido2-device client-pin user-presence enrollment",
+  "title": "FIDO2 Passwordless Authentication | YubiKey | Yubico",
+  "url": "https://www.yubico.com/authentication-standards/fido2/",
+  "snippet": "User verification (PIN/biometric) happens on the authenticator. How FIDO2 Delivers Phishing-Resistant Authentication.FIDO2 replaces the friction of remembering and typing complex passwords with a simple action like a touch (user presence) and biometric/PIN (user verification).",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.5683,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 Passwordless Authentication | YubiKey | Yubico' (https://www.yubico.com/authentication-standards/fido2/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5683
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:18.234097+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl fido2-device client-pin user-presence enrollment",
+  "title": "Problems with homectl and PKCS#11 (Yubikey 5)",
+  "url": "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071/3",
+  "snippet": "Dec 15, 2025 \u00b7 I would like to create a new user with an encrypted home via homectl. I would like to be able to authenticate with this user via PKCS#11 using my Yubikey and also decrypt the home directory with it.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0576,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Problems with homectl and PKCS#11 (Yubikey 5)' (https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071/3) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0576
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:18.234100+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl fido2-device client-pin user-presence enrollment",
+  "title": "homectl: operation on home user failed \u00b7 Issue #24281...",
+  "url": "https://github.com/systemd/systemd/issues/24281",
+  "snippet": "homectl, systemd-homed Expected behaviour you didn't see During setup of a new user with fido2 authentication, a password is requested. The process of choosing a password to finish the setup should not be time sensitive. Unexpected behaviour you saw After the fido2 device pin is entered and the user presence is confirmed, a password is requested.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8702,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl: operation on home user failed \u00b7 Issue #24281...' (https://github.com/systemd/systemd/issues/24281) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8702
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:20.985568+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl fido2-device client-pin user-presence enrollment",
+  "title": "FIDO2 user presence required : r/yubikey - Reddit",
+  "url": "https://www.reddit.com/r/yubikey/comments/15vdmaj/fido2_user_presence_required/",
+  "snippet": "I'm trying to setup systemd-cryptenroll to allow me to automatically decrypt my drive while I'm away for remote access, and I have everything setup except for the fact that my yubikey is mandating user presence. To be clear, I'm referring to fido2, not the OTP slots.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.029,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 user presence required : r/yubikey - Reddit' (https://www.reddit.com/r/yubikey/comments/15vdmaj/fido2_user_presence_required/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.029
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:20.985587+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl fido2-device client-pin user-presence enrollment",
+  "title": "cryptsetup: FIDO2 token requiring a client PIN masks -EAGAIN ... - GitHub",
+  "url": "https://github.com/systemd/systemd/issues/43342",
+  "snippet": "Aug 9, 2026 \u00b7 With two FIDO2 tokens enrolled on the same LUKS2 volume \u2014 one requiring a client PIN, one not \u2014 booting with only the no-PIN token plugged in should unlock on user presence alone, with no PIN prompt and no keystroke.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8155,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'cryptsetup: FIDO2 token requiring a client PIN masks -EAGAIN ... - GitHub' (https://github.com/systemd/systemd/issues/43342) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8155
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:20.985591+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+  "title": "PIV YKCS11 Module \u2014 YubiKey PIV Tool User Guide documentation",
+  "url": "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+  "snippet": "PIV YKCS11 Module Yubico YKCS11 is a PKCS#11 module that allows external applications to communicate with the PIV application running on a YubiKey. This module is based on version 2.40 of the PKCS#11 (Cryptoki) specifications. The complete specifications are available at oasis-open.org > PKCS #11 Cryptographic Token Interface Base Specification Version 2.40.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7985,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PIV YKCS11 Module \u2014 YubiKey PIV Tool User Guide documentation' (https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7985
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:20.985594+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+  "title": "systemd-homed small issues : r/archlinux - Reddit",
+  "url": "https://www.reddit.com/r/archlinux/comments/jzds2o/systemdhomed_small_issues/",
+  "snippet": "When running homectl --pkcs11-token-uri=list it says \"No suitable PKCS#11 tokens found.\", even though my yubikey is connected and I can use it to log in via SSH using PKCS#11. The hidraw device is loaded. It's not completely clear to me how to achieve the \"pluggable, home-on-a-stick\" functionality.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0426,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed small issues : r/archlinux - Reddit' (https://www.reddit.com/r/archlinux/comments/jzds2o/systemdhomed_small_issues/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0426
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:20.985598+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.6252,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6252
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:23.037799+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+  "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+  "url": "http://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "snippet": "# systemd-cryptenroll --pkcs11-token-uri = auto /dev/sda5 Just like the same command&#39;s invocation in the FIDO2 case this enrolls the security token as an additional way to unlock",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9117,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248' (http://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9117
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:23.037817+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+  "title": "The YubiKey as a PIV Compatible Smart Card | Yubico",
+  "url": "https://www.yubico.com/authentication-standards/smart-card/",
+  "snippet": "PIV Compatible Smart Cards. About the YubiKey and smart card capabilities.The YubiKey with PIV can work for public key authentication with OpenSSH through PKCS11. Primarily on Mac OS X or Linux systems with the OpenSC software installed.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.6105,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The YubiKey as a PIV Compatible Smart Card | Yubico' (https://www.yubico.com/authentication-standards/smart-card/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6105
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:23.037821+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+  "title": "systemd-homed | yubi-OS/yubiOS Agent Skill | SkillsMP",
+  "url": "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+  "snippet": "Creates, manages, and migrates systemd-homed home directories for yubiOS. Use when creating LUKS2-encrypted homes, enrolling YubiKey FIDO2 or PKCS#11/PIV authentication, configuring PAM for homed users, managing home migration between machines, or wiring suspend/resume key protection.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1369,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed | yubi-OS/yubiOS Agent Skill | SkillsMP' (https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1369
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:23.037824+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl pkcs11-token-uri auto PIV slot private key",
+  "title": "Problems with homectl and PKCS#11 (Yubikey 5) - Fedora Discussion",
+  "url": "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071",
+  "snippet": "I have tried a simple homectl command and still can't get any further: $ sudo homectl create user --pkcs11-token-uri=auto \ud83d\udd10 Please enter PIN for security token 'user-9d' in order to unlock home directory operation: \u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022 Successfully logged into security token 'user-9d'. Object field 'perMachine' has wrong type null, expected array. JSON field 'perMachine' is not an ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0387,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Problems with homectl and PKCS#11 (Yubikey 5) - Fedora Discussion' (https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0387
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:23.037828+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl pkcs11-token-uri auto PIV slot private key",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8741,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8741
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:25.861867+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl pkcs11-token-uri auto PIV slot private key",
+  "title": "HSM/PKCS#11 Support - Ghostunnel",
+  "url": "https://ghostunnel.dev/docs/certificates/hsm-pkcs11/",
+  "snippet": "The --pkcs11-module, --pkcs11-token-label, and --pkcs11-pin flags select the private key from the PKCS#11 module. You can also set these via environment variables (PKCS11_MODULE, PKCS11_TOKEN_LABEL, PKCS11_PIN) to keep the PIN off the command line. Note: --cert must point to the certificate chain matching the private key in the PKCS#11 module, with the leaf certificate first (see Certificate ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.2421,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'HSM/PKCS#11 Support - Ghostunnel' (https://ghostunnel.dev/docs/certificates/hsm-pkcs11/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2421
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:25.861885+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl pkcs11-token-uri auto PIV slot private key",
+  "title": "DuckDuckGo - Reddit",
+  "url": "https://www.reddit.com/r/duckduckgo/top/",
+  "snippet": "Dec 10, 2010 \u00b7 We like to keep the DuckDuckGo subreddit friendly, suitable for children (13+), and free of political discussion that \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0426,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'DuckDuckGo - Reddit' (https://www.reddit.com/r/duckduckgo/top/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0426
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:25.861890+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl pkcs11-token-uri auto PIV slot private key",
+  "title": "openssl - Failed to enumerate slots in pkcs#11 - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/78624111/failed-to-enumerate-slots-in-pkcs11",
+  "snippet": "However when I tried to create a CSR and sign it with the key in softhsm2, it cannot load the private key ... I have updated the pkcs11 path but everything else is the same, running the commands by hand it works to register the engine but attempting to sign fails.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0607,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'openssl - Failed to enumerate slots in pkcs#11 - Stack Overflow' (https://stackoverflow.com/questions/78624111/failed-to-enumerate-slots-in-pkcs11) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0607
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:25.861893+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "homectl pkcs11-token-uri auto PIV slot private key",
+  "title": "PIV YKCS11 Module \u2014 YubiKey PIV Tool User Guide documentation",
+  "url": "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+  "snippet": "The YubiKey only supports functions that require an asymmetric private key. Functions that do not, like encryption, signature verification, hashing and generation of a random number, are done by OpenSSL.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.797,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PIV YKCS11 Module \u2014 YubiKey PIV Tool User Guide documentation' (https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.797
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:25.861896+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam_systemd_home PAM configuration suspend lock home",
+  "title": "pam_systemd_home(8) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man8/pam_systemd_home.8.html",
+  "snippet": "pam_systemd_home and systemd-homed.service implement.) Turning this option on by default is highly recommended for.SYSTEMD_HOME_SUSPEND environment variable (see below), which. pam_systemd_home reads during initialization and sets for.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8499,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam_systemd_home(8) - Linux manual page' (https://man7.org/linux/man-pages/man8/pam_systemd_home.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8499
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:27.961924+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam_systemd_home PAM configuration suspend lock home",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "The suspend option can be used with pam_systemd_home.so entries in the files in /etc/pam.d/ to enable forget key on suspend. No session manager at the moment supports this feature.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.864,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.864
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:27.961957+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam_systemd_home PAM configuration suspend lock home",
+  "title": "Acute Care Hospitals & Outpatient Therapy | PAM Health",
+  "url": "https://pamhealth.com/",
+  "snippet": "PAM Health is committed to providing patients with the best care and outcomes. We offer both inpatient and outpatient therapy. Find \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0265,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Acute Care Hospitals & Outpatient Therapy | PAM Health' (https://pamhealth.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0265
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:27.961961+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam_systemd_home PAM configuration suspend lock home",
+  "title": "pam_systemd_home - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/249/pam_systemd_home.html",
+  "snippet": "Description \u00b6 pam_systemd_home ensures that home directories managed by systemd-homed.service are automatically activated (mounted) on user login, and are deactivated (unmounted) when the last session of the user ends.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8883,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam_systemd_home - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/249/pam_systemd_home.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8883
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:27.961964+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam_systemd_home PAM configuration suspend lock home",
+  "title": "pam_systemd_home(8) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/pam_systemd_home.8",
+  "snippet": "pam_systemd_home ensures that home directories managed by systemd-homed.service(8) are automatically activated (mounted) on user login, and are deactivated (unmounted) when the last session of the user ends.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.5945,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam_systemd_home(8) \u2014 Arch manual pages' (https://man.archlinux.org/man/pam_systemd_home.8) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5945
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:27.961967+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam_systemd_home PAM configuration suspend lock home",
+  "title": "pam_systemd_home - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/pam_systemd_home.html",
+  "snippet": "This setting may also be controlled via the $SYSTEMD_HOME_SUSPEND environment variable (see below), which pam_systemd_home reads during initialization and sets for sessions.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9496,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam_systemd_home - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/latest/pam_systemd_home.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9496
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:30.920209+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam systemd homed common-auth system-auth wiring example",
+  "title": "pam_systemd_home (8) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux//man-pages/man8/pam_systemd_home.8.html",
+  "snippet": "Here's an example PAM configuration fragment that permits users managed by systemd-homed.service to log in: #%PAM-1.0 -auth [success=done authtok_err=bad perm_denied=bad maxtries=bad default=ignore] pam_systemd_home.so auth sufficient pam_unix.so auth required pam_deny.so account required pam_nologin.so -account [success=done authtok_expired ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.6207,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam_systemd_home (8) - Linux manual page - man7.org' (https://www.man7.org/linux//man-pages/man8/pam_systemd_home.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6207
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:30.920231+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam systemd homed common-auth system-auth wiring example",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7256,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7256
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:30.920237+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam systemd homed common-auth system-auth wiring example",
+  "title": "pam_systemd_home - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/257/pam_systemd_home.html",
+  "snippet": "Description \u00b6 pam_systemd_home ensures that home directories managed by systemd-homed.service(8) are automatically activated (mounted) on user login, and are deactivated (unmounted) when the last session of the user ends. For such users, it also provides authentication (when per-user disk encryption is used, the disk encryption key is derived from the authentication credential supplied at ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8935,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam_systemd_home - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/257/pam_systemd_home.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8935
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:30.920243+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam systemd homed common-auth system-auth wiring example",
+  "title": "Acute Care Hospitals & Outpatient Therapy | PAM Health",
+  "url": "https://pamhealth.com/",
+  "snippet": "PAM Health is committed to providing patients with the best care and outcomes. We offer both inpatient and outpatient therapy. Find \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.0211,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Acute Care Hospitals & Outpatient Therapy | PAM Health' (https://pamhealth.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0211
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:30.920249+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam systemd homed common-auth system-auth wiring example",
+  "title": "How to Set Up systemd-homed for Modern User Management on...",
+  "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-systemd-homed-for-modern-user-management-on-ubuntu/view",
+  "snippet": "In common-session: session optional pam_systemd_home.so. The exact configuration depends on your PAM setup. The pam_systemd_home module handles activation of the home directory when the user authenticates. SSH Access with homed Users.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.3106,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Set Up systemd-homed for Modern User Management on...' (https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-systemd-homed-for-modern-user-management-on-ubuntu/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3106
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:33.440841+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "pam systemd homed common-auth system-auth wiring example",
+  "title": "systemd \u2013 Gentoo Wiki",
+  "url": "https://wiki.gentoo.org/wiki/Systemd",
+  "snippet": "Systemd is a modern SysV-style init and rc replacement for Linux systems. It is supported in Gentoo as an alternative init system.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.6938,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd \u2013 Gentoo Wiki' (https://wiki.gentoo.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6938
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:33.440860+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed migrate home directory another host signing key",
+  "title": "Converting Existing Users to systemd-homed",
+  "url": "https://systemd.io/CONVERTING_TO_HOMED/",
+  "snippet": "Preparations: make sure you run a distribution that has systemd-homed enabled and properly set up, including the necessary PAM and NSS configuration updates. Make sure you have enough disk space in /home/ for a (temporary) second copy of your home directory. Make sure to backup your home directory. Make sure to log out of your user account fully.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9638,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Converting Existing Users to systemd-homed' (https://systemd.io/CONVERTING_TO_HOMED/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9638
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:33.440866+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed migrate home directory another host signing key",
+  "title": "systemd/systemd-homed - Gentoo Wiki",
+  "url": "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+  "snippet": "Copy the home directory file from the homed directory location (/home by default) on the old system to the homed directory location on the new system. Copy the private.local and public.local files found under the /var/lib/systemd/home directory on the old system to the new system.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.5604,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/systemd-homed - Gentoo Wiki' (https://wiki.gentoo.org/wiki/Systemd/systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5604
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:33.440869+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed migrate home directory another host signing key",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Systemd records initialization instructions for each daemon in a configuration file (referred to as a \"unit file\") that uses a declarative language, replacing the traditionally used per-daemon startup shell scripts.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.089,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.089
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:33.440872+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed migrate home directory another host signing key",
+  "title": "How to Manage User Home Directories with systemd-homed on RHEL",
+  "url": "https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view",
+  "snippet": "systemd-homed is a service that manages user accounts and home directories as self-contained, portable, and optionally encrypted units. Unlike traditional user management with useradd, homed stores the user record with the home directory itself, making accounts easier to move between machines that trust the record's signing key.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.3426,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Manage User Home Directories with systemd-homed on RHEL' (https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3426
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:35.814161+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed migrate home directory another host signing key",
+  "title": "systemd-homed.service (8) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+  "snippet": "In order to migrate a home directory from a host \"foobar\" to another host \"quux\" it is hence sufficient to copy /var/lib/systemd/home/local.public from the host \"foobar\" to \"quux\", maybe calling the file on the destination /var/lib/systemd/home/foobar.public, reflecting the origin of the key.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8802,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed.service (8) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8802
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:35.814184+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed migrate home directory another host signing key",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7414,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7414
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:35.814189+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed local.private local.public Ed25519 signing records",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.4639,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4639
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:35.814193+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed local.private local.public Ed25519 signing records",
+  "title": "Home Directories - systemd",
+  "url": "https://systemd.io/HOME_DIRECTORY/",
+  "snippet": "Home Directories systemd-homed.service (8) manages home directories of regular (\"human\") users. Each directory it manages encapsulates both the data store and the user record of the user, so that it comprehensively describes the user account, and is thus naturally portable between systems without any further, external metadata. This document describes the format used by these home ...",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9646,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Home Directories - systemd' (https://systemd.io/HOME_DIRECTORY/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9646
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:35.814241+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed local.private local.public Ed25519 signing records",
+  "title": "systemd-homed.service (8) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+  "snippet": "Each home directory managed by systemd-homed.service synthesizes a local user and group. These are made available to the system using the User/Group Record Lookup API via Varlink [2], and thus may be browsed with userdbctl (1). systemd-homed.service also manages blob directories for each home directory it manages.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8589,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed.service (8) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8589
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:38.442026+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed local.private local.public Ed25519 signing records",
+  "title": "systemd-homed.service",
+  "url": "https://www.freedesktop.org/software/systemd/man/259/systemd-homed.service.html",
+  "snippet": "Description \u00b6 systemd-homed is a system service that may be used to create, remove, change or inspect home areas (directories and network mounts and real or loopback block devices with a filesystem, optionally encrypted). Most of systemd-homed 's functionality is accessible through the homectl(1) command.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.951,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed.service' (https://www.freedesktop.org/software/systemd/man/259/systemd-homed.service.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.951
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:38.442045+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed local.private local.public Ed25519 signing records",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1817,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1817
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:38.442049+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd-homed local.private local.public Ed25519 signing records",
+  "title": "JSON User Records",
+  "url": "https://systemd.io/USER_RECORD/",
+  "snippet": "as JSON. Specifically: systemd-homed.service manages human user home directories and embeds these JSON records directly in the home directory images (see Home Directories for deta",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.8305,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'JSON User Records' (https://systemd.io/USER_RECORD/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8305
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:38.442052+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd 258 homed home areas aliases quotas release notes",
+  "title": "Systemd v258 released - lwn.net",
+  "url": "https://lwn.net/Articles/1038458/",
+  "snippet": "Systemd v258 has been released with a long list of new features and changes; slice units now have basic workload management features, quotas for tmpfs have been added, the \" systemctl start \" command now has a verbose (-v) option, and more. This release also, finally, completely removes support for control groups v1 support.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.5364,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Systemd v258 released - lwn.net' (https://lwn.net/Articles/1038458/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5364
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:38.442055+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd 258 homed home areas aliases quotas release notes",
+  "title": "System and Service Manager",
+  "url": "https://systemd.io/",
+  "snippet": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount\u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9345,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'System and Service Manager' (https://systemd.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9345
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:40.593130+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd 258 homed home areas aliases quotas release notes",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Systemd records initialization instructions for each daemon in a configuration file (referred to as a \"unit file\") that uses a declarative language, replacing the traditionally used per-daemon startup shell scripts.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.212,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.212
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:40.593148+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd 258 homed home areas aliases quotas release notes",
+  "title": "Releases \u00b7 systemd/systemd - GitHub",
+  "url": "https://github.com/systemd/systemd/releases",
+  "snippet": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9392,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Releases \u00b7 systemd/systemd - GitHub' (https://github.com/systemd/systemd/releases) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9392
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:40.593152+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd 258 homed home areas aliases quotas release notes",
+  "title": "[systemd-devel] systemd 258 released - lists.freedesktop.org",
+  "url": "https://lists.freedesktop.org/archives/systemd-devel/2025-September/051670.html",
+  "snippet": "Note that these credentials are unrelated to similar credentials supported by systemd-homed. \"userdb load-credentials\" creates \"static\" user records via drop-in files in /run/userdb/ (and thus covers system users and suchlike) while systemd-homed creates only systemd-homed managed use (i.e. only regular users).",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.7645,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '[systemd-devel] systemd 258 released - lists.freedesktop.org' (https://lists.freedesktop.org/archives/systemd-devel/2025-September/051670.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7645
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:40.593156+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd 258 homed home areas aliases quotas release notes",
+  "title": "systemd-homed.service",
+  "url": "https://www.freedesktop.org/software/systemd/man/258/systemd-homed.html",
+  "snippet": "Description \u00b6 systemd-homed is a system service that may be used to create, remove, change or inspect home areas (directories and network mounts and real or loopback block devices with a filesystem, optionally encrypted). Most of systemd-homed 's functionality is accessible through the homectl(1) command.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9592,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed.service' (https://www.freedesktop.org/software/systemd/man/258/systemd-homed.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9592
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:40.593159+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd v261 homectl birth-date release notes homed",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "Utilities homectl homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is:",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.869,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.869
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:42.952972+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd v261 homectl birth-date release notes homed",
+  "title": "Systemd 261 & Liberated-systemd 261 Released | Altus Intel",
+  "url": "https://www.altusintel.com/public-yyr571/",
+  "snippet": "Jun 21, 2026 \u00b7 The homectl utility now has the \u2018\u2013birth-date\u2019 option to set the user\u2019s age. Support for the Linux kernel subsystems LUO and KHO has been added to the PID1 handler in systemd. This allows for full reboot and kernel update without stopping work or losing system state.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1313,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Systemd 261 & Liberated-systemd 261 Released | Altus Intel' (https://www.altusintel.com/public-yyr571/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1313
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:42.952990+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd v261 homectl birth-date release notes homed",
+  "title": "Releases \u00b7 systemd/systemd - GitHub",
+  "url": "https://github.com/systemd/systemd/releases",
+  "snippet": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9354,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Releases \u00b7 systemd/systemd - GitHub' (https://github.com/systemd/systemd/releases) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9354
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:42.952994+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd v261 homectl birth-date release notes homed",
+  "title": "System and Service Manager",
+  "url": "https://systemd.io/",
+  "snippet": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount\u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.875,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'System and Service Manager' (https://systemd.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.875
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:42.952998+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd v261 homectl birth-date release notes homed",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.1729,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1729
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:42.953001+00:00"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd v261 homectl birth-date release notes homed",
+  "title": "homectl - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/homectl.html",
+  "snippet": "homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service(8) which manages home directories of users.",
+  "collected_at": "2026-10-05T15:43:01.429276+00:00",
+  "weight": 0.9787,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'homectl - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/homectl.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9787
+   },
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:46:44.994604+00:00"
+  },
+  "redo_of": null
+ }
+]

@@ -1,0 +1,36 @@
+{
+ "nn": "07",
+ "slug": "migration-signing-keys",
+ "scope": "Moving homes between hosts: the Ed25519 signing key model under /var/lib/systemd/home, the copy-and-rescan flow, export-based migration, and key backup.",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed migrate home directory another host signing key",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "systemd-homed local.private local.public Ed25519 signing records",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://systemd.io/CONVERTING_TO_HOMED/",
+  "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view",
+  "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://systemd.io/HOME_DIRECTORY/",
+  "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+  "https://www.freedesktop.org/software/systemd/man/259/systemd-homed.service.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://systemd.io/USER_RECORD/"
+ ],
+ "outcome": "authored"
+}

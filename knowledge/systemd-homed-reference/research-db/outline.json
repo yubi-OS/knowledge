@@ -1,0 +1,223 @@
+{
+ "topic": "the systemd-homed reference: portable encrypted home directories, LUKS2 backing, FIDO2/PKCS#11 authentication, homectl operations, and the PAM integration",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "architecture-user-records",
+   "scope": "How systemd-homed makes the home carry its own identity: embedded JSON user record, NSS synthesis with no /etc/passwd, userdbctl, signed records, blob directories.",
+   "seed_queries": [
+    "systemd-homed user record JSON NSS userdbctl passwd entries",
+    "systemd USER_RECORD JSON user record specification"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "storage-backends",
+   "scope": "The five storage backends (luks, fscrypt, subvolume, directory, cifs), how each mounts, and homed.conf defaults DefaultStorage/DefaultFileSystemType.",
+   "seed_queries": [
+    "systemd-homed storage backends luks fscrypt subvolume cifs comparison",
+    "homed.conf DefaultStorage DefaultFileSystemType btrfs ext4"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "homectl-operations",
+   "scope": "The homectl command surface: create, update, resize, passwd, inspect and its -E/-EE export formats, and the activate/deactivate/lock/unlock lifecycle.",
+   "seed_queries": [
+    "homectl create resize update commands systemd examples",
+    "homectl inspect export json migrate home directory"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "fido2-authentication",
+   "scope": "FIDO2/YubiKey authentication via the hmac-secret extension: enrollment flags, COSE algorithms, enrollment rough edges, and the single-device limitation.",
+   "seed_queries": [
+    "systemd-homed FIDO2 hmac-secret YubiKey LUKS unlock",
+    "homectl fido2-device client-pin user-presence enrollment"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "pkcs11-piv-authentication",
+   "scope": "PKCS#11/PIV token authentication: token URIs and PIV slot selection, the YKCS11 module, the pre-auth identity advantage, and known failure modes.",
+   "seed_queries": [
+    "systemd-homed pkcs11 token URI PIV YubiKey smartcard",
+    "homectl pkcs11-token-uri auto PIV slot private key"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "pam-integration",
+   "scope": "pam_systemd_home PAM stack wiring across auth/account/password/session, bracketed control structure, and the suspend=1 key-material semantics.",
+   "seed_queries": [
+    "pam_systemd_home PAM configuration suspend lock home",
+    "pam systemd homed common-auth system-auth wiring example"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "migration-signing-keys",
+   "scope": "Moving homes between hosts: the Ed25519 signing key model under /var/lib/systemd/home, the copy-and-rescan flow, export-based migration, and key backup.",
+   "seed_queries": [
+    "systemd-homed migrate home directory another host signing key",
+    "systemd-homed local.private local.public Ed25519 signing records"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "version-evolution",
+   "scope": "What systemd v257 through v261 changed in the homed surface, and the still-open issue 28893 multi-FIDO2-device limitation.",
+   "seed_queries": [
+    "systemd 258 homed home areas aliases quotas release notes",
+    "systemd v261 homectl birth-date release notes homed"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8835,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.031,
+     "1": 0.0545,
+     "2": 0.9145
+    },
+    "confidence": 0.7603
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.841,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0303,
+     "1": 0.0983,
+     "2": 0.8714
+    },
+    "confidence": 0.6548
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.9452,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0147,
+     "1": 0.0254,
+     "2": 0.9599
+    },
+    "confidence": 0.8833
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.8325,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0327,
+     "1": 0.102,
+     "2": 0.8653
+    },
+    "confidence": 0.6402
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.6338,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0604,
+     "1": 0.2454,
+     "2": 0.6942
+    },
+    "confidence": 0.3186
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.8803,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.028,
+     "1": 0.0638,
+     "2": 0.9082
+    },
+    "confidence": 0.7447
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.7011,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0474,
+     "1": 0.2041,
+     "2": 0.7485
+    },
+    "confidence": 0.4063
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.1136,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1585,
+     "1": 0.5694,
+     "2": 0.2721
+    },
+    "confidence": 0.1351
+   }
+  },
+  "usage": {
+   "input_tokens": 1208,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
