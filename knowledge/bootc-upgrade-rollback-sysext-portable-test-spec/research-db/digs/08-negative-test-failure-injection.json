@@ -1,0 +1,68 @@
+{
+  "nn": "08",
+  "slug": "negative-test-failure-injection",
+  "scope": "negative-path test design for image-based OS lifecycle: deliberately corrupt upgrade images, assert signature verification rejection, and verify sandbox deny rules.",
+  "queries_attempted": [
+    {
+      "query": "bootc switch corrupt image failure recovery test",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": [
+        "https://www.cisco.com/c/en/us/support/docs/switches/catalyst-2950-series-switches/41845-192.html",
+        "https://www.ituonline.com/blogs/troubleshooting-cisco-router-and-switch-boot-failures/",
+        "https://community.cisco.com/t5/switching/recovering-catalyst-switches-from-a-corrupted-or-missing-image/td-p/1727123",
+        "https://github.com/bootc-dev/bootc",
+        "https://dredyson.com/how-im-using-my-experience-with-corrupted-immutable-deployments-to-make-money-as-a-freelance-developer-a-beginners-step-by-step-guide-to-landing-high-paying-linux-infrastructure-clients/",
+        "https://www.easeus.com/author/brithny.html"
+      ]
+    },
+    {
+      "query": "systemd-sysext signature verification rejection test",
+      "attempt": 2,
+      "raw_results": 46,
+      "kept": [
+        "https://itsfoss.com/systemd-sysext/",
+        "https://github.com/systemd/systemd/issues/33239",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/eb9bad1e-70b3-4f8d-a090-4ff15ee7b559",
+        "https://systemd.io/ENVIRONMENT/",
+        "https://kairos.io/docs/advanced/sys-extensions/"
+      ]
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "original queries returned off-topic results (network switch recovery guides, unrelated consumer software); negative-path sources for bootc/systemd missing",
+      "new_queries": [
+        "systemd-sysext verify signature extension image systemdverity",
+        "systemd boot assessment boot counting test automatic revert failed boot"
+      ]
+    }
+  ],
+  "outcome": "authored",
+  "results_kept": [
+    "https://www.cisco.com/c/en/us/support/docs/switches/catalyst-2950-series-switches/41845-192.html",
+    "https://www.ituonline.com/blogs/troubleshooting-cisco-router-and-switch-boot-failures/",
+    "https://community.cisco.com/t5/switching/recovering-catalyst-switches-from-a-corrupted-or-missing-image/td-p/1727123",
+    "https://github.com/bootc-dev/bootc",
+    "https://dredyson.com/how-im-using-my-experience-with-corrupted-immutable-deployments-to-make-money-as-a-freelance-developer-a-beginners-step-by-step-guide-to-landing-high-paying-linux-infrastructure-clients/",
+    "https://www.easeus.com/author/brithny.html",
+    "https://itsfoss.com/systemd-sysext/",
+    "https://github.com/systemd/systemd/issues/33239",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/eb9bad1e-70b3-4f8d-a090-4ff15ee7b559",
+    "https://systemd.io/ENVIRONMENT/",
+    "https://kairos.io/docs/advanced/sys-extensions/",
+    "https://microsoft.github.io/azure-linux-image-tools/imagecustomizer/concepts/sysext.html",
+    "https://www.freedesktop.org/software/systemd/man/systemd-sysext.html",
+    "https://man7.org/linux/man-pages/man8/systemd-sysext.8.html",
+    "https://kairos.io/docs/examples/trusted-boot-firmware-sysext/",
+    "https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT/",
+    "https://github.com/systemd/systemd/blob/main/docs/AUTOMATIC_BOOT_ASSESSMENT.md",
+    "https://src.rivoreo.one/systemd-stable/+/main/docs/AUTOMATIC_BOOT_ASSESSMENT.md",
+    "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+    "https://systemd.io/"
+  ]
+}

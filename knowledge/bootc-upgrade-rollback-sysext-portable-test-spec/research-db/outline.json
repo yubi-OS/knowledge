@@ -1,0 +1,216 @@
+{
+  "topic": "VM test spec for bootc lifecycle operations - bootc upgrade/rollback with diff checks, sysext attach/detach cycles, and portable-service activation tests",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "bootc-upgrade-semantics",
+      "scope": "bootc upgrade staging semantics: pulling new container images, --download-only staging, bootc status fields, and how a staged upgrade becomes the next bootable deployment.",
+      "seed_queries": [
+        "bootc upgrade --download-only staged deployment bootc status",
+        "bootc upgrade how container image becomes bootable ostree deployment"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "bootc-rollback-boot-assessment",
+      "scope": "bootc rollback and systemd automatic boot assessment: A/B deployment layout, boot counting on failed boots, and bootloader fallback to the previous deployment.",
+      "seed_queries": [
+        "systemd automatic boot assessment boot counting failed boot fallback",
+        "bootc rollback previous deployment boot loader specification"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "sysext-overlay-usr",
+      "scope": "systemd-sysext merging extension images onto /usr via overlayfs: refresh, list, merge and unmerge lifecycles, and image placement conventions.",
+      "seed_queries": [
+        "systemd-sysext refresh merge extension images /usr overlayfs",
+        "systemd extension images sysext confext discoverable disk image"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "portable-services-portablectl",
+      "scope": "portable services: portablectl attach, detach and list, the RootImage= unit wiring into /etc/systemd/system, and sandboxing profile selection.",
+      "seed_queries": [
+        "portablectl attach detach list portable services systemd",
+        "systemd portable services sandboxing profiles RootImage unit"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "homed-luks2-fido2",
+      "scope": "systemd-homed LUKS2-encrypted homes unlocked by FIDO2 hardware: homectl create, activate and deactivate, and moving homes between hosts.",
+      "seed_queries": [
+        "homectl create disk-encryption luks2 fido2-device systemd-homed",
+        "systemd-homed LUKS2 FIDO2 unlock home directory migration"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "bcvk-ephemeral-vm-harness",
+      "scope": "bcvk (bootc virtualization kit) ephemeral VMs as a CI test harness: run, stop and rm lifecycle, port forwarding, and USB device passthrough for hardware tests.",
+      "seed_queries": [
+        "bcvk bootc virtualization kit ephemeral VM testing",
+        "bootc VM testing qemu podman ephemeral runner"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ci-vm-workflow-integration",
+      "scope": "GitHub Actions lanes for VM tests: workflow_dispatch inputs, amd64 plus arm64 matrix with self-hosted KVM runners, lint gates, artifact upload, and orchestrator group routing.",
+      "seed_queries": [
+        "GitHub Actions workflow_dispatch matrix self-hosted arm64 KVM runner",
+        "GitHub Actions shellcheck artifact upload VM test workflow design"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "negative-test-failure-injection",
+      "scope": "negative-path test design for image-based OS lifecycle: deliberately corrupt upgrade images, assert signature verification rejection, and verify sandbox deny rules.",
+      "seed_queries": [
+        "bootc switch corrupt image failure recovery test",
+        "systemd-sysext signature verification rejection test"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.8758,
+        "probabilities": {
+          "0": 0.0315,
+          "1": 0.0612,
+          "2": 0.9073
+        },
+        "confidence": 0.7419,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.5119,
+        "probabilities": {
+          "0": 0.1153,
+          "1": 0.2575,
+          "2": 0.6272
+        },
+        "confidence": 0.2095,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 0.9749,
+        "probabilities": {
+          "0": 0.316,
+          "1": 0.3931,
+          "2": 0.2909
+        },
+        "confidence": 0.0085,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.7305,
+        "probabilities": {
+          "0": 0.0838,
+          "1": 0.1019,
+          "2": 0.8143
+        },
+        "confidence": 0.5207,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.0714,
+        "probabilities": {
+          "0": 0.9486,
+          "1": 0.0315,
+          "2": 0.0199
+        },
+        "confidence": 0.8517,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.4756,
+        "probabilities": {
+          "0": 0.1147,
+          "1": 0.295,
+          "2": 0.5903
+        },
+        "confidence": 0.173,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.1229,
+        "probabilities": {
+          "0": 0.1746,
+          "1": 0.528,
+          "2": 0.2974
+        },
+        "confidence": 0.0966,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.1702,
+        "probabilities": {
+          "0": 0.1514,
+          "1": 0.5269,
+          "2": 0.3217
+        },
+        "confidence": 0.1061,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1258,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "05"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
