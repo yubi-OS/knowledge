@@ -1,0 +1,217 @@
+{
+  "topic": "verifying SLSA provenance on tag-built images - the standing checklist for confirming that provenance attestations match the tag, digest, and builder expectations",
+  "source_file": "yubi-OS/yubiOS refs/slsa-provenance-tag-verification-2026-09-08.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "digest-not-tag",
+      "scope": "Why verification anchors on the immutable digest rather than the movable tag, and how to resolve a handed tag reference to its exact digest before any check runs.",
+      "seed_queries": [
+        "docker registry tag digest immutability tag mutation attack",
+        "resolve docker image tag to digest registry API skopeo inspect"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "attestation-discovery",
+      "scope": "Enumerating the attestations attached to a container image in the registry: cosign fetch-attestations, the OCI referrers/attestation-manifest layout, and confirming a SLSA provenance attestation actually exists.",
+      "seed_queries": [
+        "cosign fetch-attestations list image attestations registry",
+        "OCI image referrers API attestation manifest SLSA provenance storage"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "signature-verification",
+      "scope": "Verifying the attestation signature itself with cosign verify-attestation against the expected signer identity, including keyless Sigstore identity checks and treating unsigned or foreign-signed attestations as a hard fail.",
+      "seed_queries": [
+        "cosign verify-attestation keyless identity verification guide",
+        "sigstore fulcio rekor cosign verify attestation identity regex"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "predicate-inspection",
+      "scope": "Reading the SLSA provenance predicate body (buildDefinition, externalParameters, resolvedDependencies) and checking that recorded build inputs match the claim: pinned base image digest and source ref.",
+      "seed_queries": [
+        "SLSA provenance predicate v1 buildDefinition resolvedDependencies fields",
+        "verify provenance predicate build inputs base image digest source ref"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "builder-identity",
+      "scope": "Checking that the predicate's builder identity matches the expected builder (GitHub Actions SLSA generator builder.id, reusable workflow, buildType) and what a builder mismatch means.",
+      "seed_queries": [
+        "slsa-github-generator builder.id github actions provenance",
+        "verify builder identity SLSA provenance buildType github runner"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "slsa-verifier-check",
+      "scope": "Running slsa-verifier verify-image as the independent second check: source-uri, source-tag, expected-builder-id flags, and interpreting its failure modes.",
+      "seed_queries": [
+        "slsa-verifier verify-image source-tag expected builder id usage",
+        "slsa-verifier verify-image failure modes documentation"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "tag-built-semantics",
+      "scope": "Semantics specific to tag-built images: how source-tag matching in provenance differs from main-branch builds, tag-based verification limits, and when a tag-built artifact needs digest-level matching instead.",
+      "seed_queries": [
+        "slsa-github-generator tag build provenance source-tag verification",
+        "github actions release tag workflow SLSA provenance source-tag"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "failure-quarantine-record",
+      "scope": "Checklist discipline on failure: any failed step is a stop, failed artifacts are quarantined from bump and policy decisions, tool version skew checks before tampering conclusions, and recording verification evidence (digest, attestation digest, verifier, date).",
+      "seed_queries": [
+        "supply chain policy quarantine failed provenance verification artifact",
+        "software supply chain verification evidence record digest attestation audit"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.8088,
+        "probabilities": {
+          "0": 0.0457,
+          "1": 0.0998,
+          "2": 0.8545
+        },
+        "confidence": 0.6133,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.8749,
+        "probabilities": {
+          "0": 0.0284,
+          "1": 0.0684,
+          "2": 0.9032
+        },
+        "confidence": 0.732,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.8552,
+        "probabilities": {
+          "0": 0.0337,
+          "1": 0.0773,
+          "2": 0.889
+        },
+        "confidence": 0.696,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.6797,
+        "probabilities": {
+          "0": 0.0644,
+          "1": 0.1915,
+          "2": 0.7441
+        },
+        "confidence": 0.3917,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.7592,
+        "probabilities": {
+          "0": 0.0499,
+          "1": 0.141,
+          "2": 0.8091
+        },
+        "confidence": 0.5155,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.5458,
+        "probabilities": {
+          "0": 0.0818,
+          "1": 0.2906,
+          "2": 0.6276
+        },
+        "confidence": 0.2275,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.6218,
+        "probabilities": {
+          "0": 0.0652,
+          "1": 0.2478,
+          "2": 0.687
+        },
+        "confidence": 0.3064,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.5171,
+        "probabilities": {
+          "0": 0.0861,
+          "1": 0.3107,
+          "2": 0.6032
+        },
+        "confidence": 0.2017,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1517,
+      "output_tokens": 0
+    },
+    "requested_at": "2026-10-05T15:13:24Z",
+    "dropped": [],
+    "kept": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ]
+  }
+}

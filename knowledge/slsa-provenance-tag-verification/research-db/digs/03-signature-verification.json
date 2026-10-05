@@ -1,0 +1,98 @@
+{
+  "nn": "03",
+  "slug": "signature-verification",
+  "scope": "Verifying the attestation signature itself with cosign verify-attestation against the expected signer identity, including keyless Sigstore identity checks and treating unsigned or foreign-signed attestations as a hard fail.",
+  "queries_attempted": [
+    {
+      "query": "cosign verify-attestation keyless identity verification guide",
+      "attempt": 1,
+      "raw_results": 39,
+      "kept": [
+        {
+          "title": "Verifying Signatures - Sigstore",
+          "url": "https://docs.sigstore.dev/cosign/verifying/verify/",
+          "content": "When an artifact, blob, or container image is verified, the full potential of Sigstore to secure the software supply chain is achieved. Note: To verify a signed artifact or blob, first install Cosign, then follow the instructions below. The general verification format with the cosign verify command is as follows. cosign verify [--key <key path>|<key url>|<kms uri>] <image uri> Keyless ..."
+        },
+        {
+          "title": "cosign/doc/cosign_verify-attestation.md at main \u00b7 sigstore/cosign",
+          "url": "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-attestation.md",
+          "content": "verify cosign attestations on the image against the transparency log cosign verify-attestation <IMAGE> #.certificate-identity string The identity expected in a valid Fulcio certificate. Valid values include email address, DNS names, IP addresses, and URIs."
+        },
+        {
+          "title": "Container Image Signing and Verification: Complete Guide | CleanStart",
+          "url": "https://www.cleanstart.com/guide/container-image-signing-and-verification-complete-guide",
+          "content": "Modern signing workflows use keyless identity verification, short-lived certificates, and transparency logs instead of long-lived signing keys. Ref: Sigstore. Signature verification is only effective when enforced during deployment through admission controls and policy engines."
+        },
+        {
+          "title": "Cosign Image Signing [Key-Based and Keyless Verification]",
+          "url": "https://www.golinuxcloud.com/cosign-sign-verify-container-images/",
+          "content": "Verify keyless identity. Inspect verification output. Add attestations.Cosign attest and verify-attestation both support spdxjson as a recognized predicate type."
+        },
+        {
+          "title": "GitHub - sigstore/cosign: Code signing and transparency for containers ...",
+          "url": "https://github.com/sigstore/cosign",
+          "content": "Quick Start This shows how to: sign a container image with the default identity-based \"keyless signing\" method (see the documentation for more information) verify the container image explore broader keyless blob signing/verification flows in the Sigstore Cosign Quickstart"
+        },
+        {
+          "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
+          "url": "https://www.rentwithcosign.com/",
+          "content": "Whether you\u2019re a renter trying to qualify for an apartment or a landlord seeking reliable tenants, Cosign bridges the gap to make \u2026"
+        }
+      ]
+    },
+    {
+      "query": "sigstore fulcio rekor cosign verify attestation identity regex",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": [
+        {
+          "title": "Sigstore Explained: Keyless Signing with Cosign, Fulcio, and Rekor ...",
+          "url": "https://evertrust.io/guide/sigstore/",
+          "content": "Sigstore: Keyless Signing for Software Supply Chains Sigstore is an OpenSSF project that lets developers and CI pipelines sign software artifacts without managing long-lived private keys. It replaces signing keys hidden in HSMs and CI vaults with OIDC-based identity and short-lived certificates. This guide covers Fulcio, Rekor, Cosign, Gitsign, and how to run keyless signing in production."
+        },
+        {
+          "title": "Sigstore Keyless Signing and Cosign Verification: Fulcio, Rekor, and ...",
+          "url": "https://www.systemshardening.com/articles/cicd/sigstore-keyless-signing/",
+          "content": "Sigstore's keyless signing eliminates long-lived signing keys entirely. The signer (a CI workflow, a developer with a workload identity) authenticates via OIDC, receives a short-lived certificate from Fulcio (valid for 10 minutes), signs the artifact, and the signature is recorded in Rekor \u2014 an append-only transparency log."
+        },
+        {
+          "title": "Sigstore & Cosign: Signing and Attestation Best Practices",
+          "url": "https://beefed.ai/en/cosign-sigstore-signing-attestation",
+          "content": "Step-by-step best practices for using Sigstore (cosign, Fulcio, Rekor) to sign container images and attach provenance attestations."
+        },
+        {
+          "title": "Fulcio + Rekor \u201cSign a Blob\u201d with Cosign (Keyless & SECURE)",
+          "url": "https://no-bother.com/fulcio-rekor-sign-a-blob-with-cosign-keyless-secure/",
+          "content": "This BLOG shows how to sign an arbitrary file (\"blob\") with [cosign], using Sigstore's keyless flow backed by Fulcio (short-lived certs) and Rekor (transparency log). You'll also see how to verify the signature, inspect the certificate, look up the Rekor entry, and\u2014optionally\u2014do the same with a traditional (\"keyful\") keypair."
+        },
+        {
+          "title": "Sign and verify container images with Sigstore Cosign",
+          "url": "https://stackharbor.com/en/knowledge-base/cosign-container-image-signing-verification/",
+          "content": "Jul 31, 2026 \u00b7 Sign container images with Cosign: keyless signing through Fulcio and the Rekor transparency log, or a generated key pair, signing by digest, verifying with identity constraints in CI, attaching SBOM attestations, and blocking unsigned images at admission."
+        },
+        {
+          "title": "Home \u00b7 Sigstore",
+          "url": "https://www.sigstore.dev/",
+          "content": "Sigstore's goal is to improve supply chain technology for anyone using software dependencies. Sigstore is made for open source \u2026"
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-attestation.md",
+    "https://www.cleanstart.com/guide/container-image-signing-and-verification-complete-guide",
+    "https://www.golinuxcloud.com/cosign-sign-verify-container-images/",
+    "https://github.com/sigstore/cosign",
+    "https://www.rentwithcosign.com/",
+    "https://evertrust.io/guide/sigstore/",
+    "https://www.systemshardening.com/articles/cicd/sigstore-keyless-signing/",
+    "https://beefed.ai/en/cosign-sigstore-signing-attestation",
+    "https://no-bother.com/fulcio-rekor-sign-a-blob-with-cosign-keyless-secure/",
+    "https://stackharbor.com/en/knowledge-base/cosign-container-image-signing-verification/",
+    "https://www.sigstore.dev/"
+  ],
+  "outcome": "authored"
+}

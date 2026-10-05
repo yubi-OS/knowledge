@@ -1,0 +1,98 @@
+{
+  "nn": "05",
+  "slug": "builder-identity",
+  "scope": "Checking that the predicate's builder identity matches the expected builder (GitHub Actions SLSA generator builder.id, reusable workflow, buildType) and what a builder mismatch means.",
+  "queries_attempted": [
+    {
+      "query": "slsa-github-generator builder.id github actions provenance",
+      "attempt": 1,
+      "raw_results": 39,
+      "kept": [
+        {
+          "title": "GitHub - slsa-framework/slsa-github-generator: Language\u2026",
+          "url": "https://github.com/slsa-framework/slsa-github-generator",
+          "content": "This repository contains free tools to generate and verify SLSA Build Level 3 provenance for native GitHub projects using GitHub Actions. Developers can build their software using a secure process that protects against many supply chain attacks and tampering. Users of their software can verify a tamper-proof statement of the process to know how the software was created."
+        },
+        {
+          "title": "Build your own SLSA 3+ provenance builder on GitHub Actions",
+          "url": "https://slsa.dev/blog/2023/08/bring-your-own-builder-github",
+          "content": "The BYOB framework provides a set of GitHub Actions and workflows that helps builder authors generate provenance. Suppose you own a GitHub Action called MyAction and want to generate provenance showing that it ran on some input and generated some output, without having to trust the Workflow that called your Action."
+        },
+        {
+          "title": "slsa-github-generator module - github.com/slsa-framework/slsa-github ...",
+          "url": "https://pkg.go.dev/github.com/slsa-framework/slsa-github-generator",
+          "content": "Mar 21, 2024 \u00b7 This repository contains free tools to generate and verify SLSA Build Level 3 provenance for native GitHub projects using GitHub Actions. Developers can build their software using a secure process that protects against many supply chain attacks and tampering."
+        },
+        {
+          "title": "SLSA \u2022 Supply-chain Levels for Software Artifacts",
+          "url": "https://slsa.dev/",
+          "content": "Supply-chain Levels for Software Artifacts, or SLSA (\"salsa\"). It\u2019s a security framework, a checklist of standards and controls to \u2026"
+        },
+        {
+          "title": "SLSA Provenance Format | slsa-framework/slsa-github-generator",
+          "url": "https://deepwiki.com/slsa-framework/slsa-github-generator/10-slsa-provenance-format",
+          "content": "The slsa-github-generator produces provenance in two main formats depending on the builder and versionThe SLSA v0.2 provenance format is used by the Generic Generator, Go Builder, and Container Generator. The complete statement follows the SLSA v0.2 specification."
+        },
+        {
+          "title": "SLSA GitHub Generator download | SourceForge.net",
+          "url": "https://sourceforge.net/projects/slsa-github-generator.mirror/",
+          "content": "Feb 24, 2025 \u00b7 Download SLSA GitHub Generator for free. Language-agnostic SLSA provenance generation for Github Actions. This repository contains free tools to generate and verify SLSA Build Level 3 provenance for native GitHub projects using GitHub Actions. Developers can build their software using a secure process that protects against many supply chain attacks and tampering."
+        }
+      ]
+    },
+    {
+      "query": "verify builder identity SLSA provenance buildType github runner",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": [
+        {
+          "title": "GitHub - slsa-framework/slsa-github-generator: Language-agnostic SLSA ...",
+          "url": "https://github.com/slsa-framework/slsa-github-generator",
+          "content": "This repository contains free tools to generate and verify SLSA Build Level 3 provenance for native GitHub projects using GitHub Actions. Developers can build their software using a secure process that protects against many supply chain attacks and tampering. Users of their software can verify a tamper-proof statement of the process to know how the software was created."
+        },
+        {
+          "title": "GitHub - slsa-framework/slsa-verifier: Verify provenance from SLSA ...",
+          "url": "https://github.com/slsa-framework/slsa-verifier",
+          "content": "If you are verifying attestations for GitHub Actions, we suggest generating them with GitHub artifact attestations, a built-in solution for generating SLSA provenance on GitHub, and verifying them with gh attestation verify. Overview What is SLSA? What is provenance? What is slsa-verifier? Installation Compilation from source Option 1: Install ..."
+        },
+        {
+          "title": "SLSA Build Provenance: Verifying Supply Chain Integrity from Source to ...",
+          "url": "https://www.systemshardening.com/articles/cicd/slsa-build-provenance/",
+          "content": "SLSA (Supply-chain Levels for Software Artifacts) provides a graduated framework for proving that build artifacts were produced from expected source code via expected build processes. This article covers SLSA levels 1-4, in-toto attestations, SLSA provenance generation with GitHub Actions and Google Cloud Build, and verifying provenance at deployment time using policy engines."
+        },
+        {
+          "title": "SLSA Provenance Creation using GitHub Actions",
+          "url": "https://devopscube.com/slsa-provenance/",
+          "content": "slsa-github-generator is based on Build Your Own Builder (BYOB) framework. It isolates the provenance generation from the user-controlle build logic.SLSA provenance creation and verification workflow using Github Actions slsa-github-generator."
+        },
+        {
+          "title": "Facebook",
+          "url": "https://www.facebook.com/",
+          "content": "Connect and share with friends, family, and the world on Facebook."
+        },
+        {
+          "title": "SLSA \u2022 Provenance",
+          "url": "https://slsa.dev/spec/v0.2/provenance",
+          "content": "builder object, required. Identifies the entity that executed the invocation, which is trusted to have correctly performed the operation and populated this provenance. The identity MUST reflect the trust base that consumers care about. How detailed to be is a judgement call."
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/slsa-framework/slsa-github-generator",
+    "https://slsa.dev/blog/2023/08/bring-your-own-builder-github",
+    "https://pkg.go.dev/github.com/slsa-framework/slsa-github-generator",
+    "https://slsa.dev/",
+    "https://deepwiki.com/slsa-framework/slsa-github-generator/10-slsa-provenance-format",
+    "https://sourceforge.net/projects/slsa-github-generator.mirror/",
+    "https://github.com/slsa-framework/slsa-github-generator",
+    "https://github.com/slsa-framework/slsa-verifier",
+    "https://www.systemshardening.com/articles/cicd/slsa-build-provenance/",
+    "https://devopscube.com/slsa-provenance/",
+    "https://www.facebook.com/",
+    "https://slsa.dev/spec/v0.2/provenance"
+  ],
+  "outcome": "authored"
+}

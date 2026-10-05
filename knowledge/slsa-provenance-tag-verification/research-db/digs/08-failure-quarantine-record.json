@@ -1,0 +1,98 @@
+{
+  "nn": "08",
+  "slug": "failure-quarantine-record",
+  "scope": "Checklist discipline on failure: any failed step is a stop, failed artifacts are quarantined from bump and policy decisions, tool version skew checks before tampering conclusions, and recording verification evidence (digest, attestation digest, verifier, date).",
+  "queries_attempted": [
+    {
+      "query": "supply chain policy quarantine failed provenance verification artifact",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": [
+        {
+          "title": "What happens when an artifact is deployed without usable provenance?",
+          "url": "https://nhimg.org/faq/what-happens-when-an-artifact-is-deployed-without-usable-provenance/",
+          "content": "Usable provenance normally ties an artifact to its source repository, build process, signing identity, dependency inputs, and the conditions under which it was produced. When that chain is intact, a deployment system can compare what arrived against what was expected, then reject or quarantine mismatches before they reach production."
+        },
+        {
+          "title": "GitHub - dmetagame/quarantine: Fail-closed provenance verification and ...",
+          "url": "https://github.com/dmetagame/quarantine",
+          "content": "QUARANTINE is an action safety layer for AI systems. Before an AI-proposed action can execute, Quarantine uses HydraDB to prove that the supporting context has trustworthy, resolvable provenance. The model may interpret or propose content, but it cannot declare its own ancestry, trust, verification state, or authority; deterministic verification and the action gateway decide whether the system ..."
+        },
+        {
+          "title": "Quarantine pattern - Azure Architecture Center | Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/quarantine",
+          "content": "Have a process that validates the software for security before introducing it in your workload. During the process, each artifact undergoes thorough operational rigor that verifies it against specific conditions. Only after the artifact satisfies those conditions, the process marks it as trusted."
+        },
+        {
+          "title": "SUPPLY Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/supply",
+          "content": "2 days ago \u00b7 The meaning of SUPPLY is the quantity or amount (as of a commodity) needed or available. How to use supply in a \u2026"
+        },
+        {
+          "title": "Provenance Verification Runbook (Markdown), Editor testing test md",
+          "url": "https://www.testaroo.com/supply-chain/provenance/provenance-verification-runbook-markdown",
+          "content": "\u201cProvenance Verification Runbook (Markdown)\u201d is a deterministic Testaroo fixture for Editor testing, Conversion testing. Text-based files you can open, edit, and download directly in the browser editor. Documented properties for this file: seed 51200 \u00b7 LF \u00b7 Markdown."
+        },
+        {
+          "title": "AI-Powered Universal Artifact Registry | Harness",
+          "url": "https://www.harness.io/products/artifact-registry",
+          "content": "Secure, universal artifact management with AI-native support. Store Docker, Helm, npm, ML models, and more with built-in security and CI/CD integration."
+        }
+      ]
+    },
+    {
+      "query": "software supply chain verification evidence record digest attestation audit",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": [
+        {
+          "title": "Software Supply-chain Evidence: SBOMs, Provenance, Signing, and ...",
+          "url": "https://docs.jasonachkardiab.com/devsecops/supply-chain-sbom-signing/",
+          "content": "Jul 25, 2026 \u00b7 Address the output by cryptographic digest. Generate a current-format SBOM and SLSA provenance predicate, obtain an attestation through an approved identity/signing service, and store evidence with the artifact. Before promotion: apply the target environment's evidence, waiver, and approval policy."
+        },
+        {
+          "title": "Software provenance explained | DevSecOpsAtlas",
+          "url": "https://devsecopsatlas.com/guides/software-provenance-explained",
+          "content": "SLSA describes provenance as verifiable information that tracks an artifact through a software supply chain to where it came from. Its attestation model describes an attestation as authenticated, machine-readable metadata bound to one or more artifact subjects. The minimum useful provenance model A practical provenance record needs several identities that can be checked independently. Subject ..."
+        },
+        {
+          "title": "Evidence Collection | GRC and Audits in One Place - JFrog",
+          "url": "https://jfrog.com/evidence/",
+          "content": "Evidence Collection: A Single Source of SDLC Proof Without proven attestations, evolving regulations and supply chain risks create havoc. Capture all the context needed to accelerate software delivery and audits through a verifiable trail of signed evidence."
+        },
+        {
+          "title": "Software - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Software",
+          "content": "Software in a programming language is run through a compiler or interpreter to execute on the architecture's hardware. Over time, \u2026"
+        },
+        {
+          "title": "Re: [ANN][MYT] MYT \u0097 Privacy Settlement Layer for Machines | PoW | Fair Launch",
+          "url": "https://bitcointalk.org/index.php?topic=5577468.0",
+          "content": "MYT Machine v0.5.0 Released \u0097 Phase 4E: Agent Reputation We have officially released: MYT Machine v0.5.0 This release completes: Phase 4E \u0097 Agent Reputation Release: https://github.com/MYT-Core/MYT-Machine/releases/tag/v0.5.0 Final release commit: Code: ff1624ff6263bfd4142550391a381f96006a0413 The v0.5.0 tag points exactly to this reviewed commit. This is another major step in the MYT Machine ..."
+        },
+        {
+          "title": "SLSA Provenance: Verify the Software Supply Chain | isMalicious Blog",
+          "url": "https://ismalicious.com/posts/slsa-provenance-software-supply-chain",
+          "content": "Articlesupply chain security. SLSA Provenance: Verify the Software Supply Chain. Use SLSA provenance to trace artifacts to source and build systems, verify expectations, improve CI controls, and respond to tampering."
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://nhimg.org/faq/what-happens-when-an-artifact-is-deployed-without-usable-provenance/",
+    "https://github.com/dmetagame/quarantine",
+    "https://learn.microsoft.com/en-us/azure/architecture/patterns/quarantine",
+    "https://www.merriam-webster.com/dictionary/supply",
+    "https://www.testaroo.com/supply-chain/provenance/provenance-verification-runbook-markdown",
+    "https://www.harness.io/products/artifact-registry",
+    "https://docs.jasonachkardiab.com/devsecops/supply-chain-sbom-signing/",
+    "https://devsecopsatlas.com/guides/software-provenance-explained",
+    "https://jfrog.com/evidence/",
+    "https://en.wikipedia.org/wiki/Software",
+    "https://bitcointalk.org/index.php?topic=5577468.0",
+    "https://ismalicious.com/posts/slsa-provenance-software-supply-chain"
+  ],
+  "outcome": "authored"
+}
