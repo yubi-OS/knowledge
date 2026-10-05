@@ -4,863 +4,2303 @@
   "title": "Understanding rootless Podman's user namespace modes - Red Hat",
   "url": "https://www.redhat.com/en/blog/rootless-podman-user-namespace-modes",
   "snippet": "November 21, 2025 — $ podman run -d --rm ubi9 sleep ... the user namespace while in rootless mode allows you to customize the way you run containers to be easier to use and help make them more secure....\"Discover resources and tools to help you build, deliver, and manage cloud-native applications and services. ... Find solutions from our collaborative community of experts and technologies in the R",
-  "weight": "high",
+  "weight": 0.8756,
   "collected_at": "2026-10-05T02:28:46Z",
-  "jev_answer": 0.8698
+  "jev_answer": 0.8698,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Understanding rootless Podman's user namespace modes - Red Hat' (https://www.redhat.com/en/blog/rootless-podman-user-namespace-modes) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8756
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:56Z"
+  }
  },
  {
   "query": "rootless podman build user namespace security model",
   "title": "How to Use User Namespaces for Security in Podman - OneUptime",
   "url": "https://oneuptime.com/blog/post/2026-03-18-use-user-namespaces-security-podman/view",
   "snippet": "March 18, 2026 — Rootless Podman automatically uses user namespaces, but the user still needs subordinate UID/GID ranges configured in /etc/subuid and /etc/subgid.\"User namespaces are a cornerstone of Podman's security model. They ensure that even root inside a container does not automatically become root on the host. Rootless Podman uses user namespaces by default, making it a strong default for ",
-  "weight": "low",
+  "weight": 0.1959,
   "collected_at": "2026-10-05T02:28:46Z",
-  "jev_answer": 0.1578
+  "jev_answer": 0.1578,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Use User Namespaces for Security in Podman - OneUptime' (https://oneuptime.com/blog/post/2026-03-18-use-user-namespaces-security-podman/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1959
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:56Z"
+  }
  },
  {
   "query": "rootless podman build user namespace security model",
   "title": "Understanding user namespaces with rootless containers",
   "url": "https://access.redhat.com/articles/5946151",
   "snippet": "Dec 18, 2024 ... To check if your user namespace is properly mapping from your /etc/subuid or /etc/subgid files, you can use the podman unshare command to get ...",
-  "weight": "high",
+  "weight": 0.9125,
   "collected_at": "2026-10-05T02:28:46Z",
-  "jev_answer": 0.92
+  "jev_answer": 0.92,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Understanding user namespaces with rootless containers' (https://access.redhat.com/articles/5946151) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9125
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:56Z"
+  }
  },
  {
   "query": "rootless podman build user namespace security model",
   "title": "How to Set Up Rootless Podman for the First Time - OneUptime",
   "url": "https://oneuptime.com/blog/post/2026-03-17-set-up-rootless-podman-first-time/view",
   "snippet": "March 17, 2026 — Once configured, you can run Podman commands as your regular user without sudo, providing a significant security improvement. Rootless Podman uses Linux user namespaces to isolate containers, meaning a container escape does not automatically ...\"Once configured, you can run Podman commands as your regular user without sudo, providing a significant security improvement. Rootless Po",
-  "weight": "low",
+  "weight": 0.0832,
   "collected_at": "2026-10-05T02:28:46Z",
-  "jev_answer": 0.1361
+  "jev_answer": 0.1361,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Set Up Rootless Podman for the First Time - OneUptime' (https://oneuptime.com/blog/post/2026-03-17-set-up-rootless-podman-first-time/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0832
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:56Z"
+  }
  },
  {
   "query": "rootless podman build user namespace security model",
   "title": "Understanding Rootless Podman and Its Advantages - GeeksforGeeks",
   "url": "https://www.geeksforgeeks.org/devops/rootless-podman/",
   "snippet": "Jul 23, 2025 ... Security Advantages of Using Rootless Podman · Reduce the Risk of Privilege Escalation: Using user namespaces, Rootless Podman remaps the root ...",
-  "weight": "low",
+  "weight": 0.1586,
   "collected_at": "2026-10-05T02:28:46Z",
-  "jev_answer": 0.1295
+  "jev_answer": 0.1295,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Understanding Rootless Podman and Its Advantages - GeeksforGeeks' (https://www.geeksforgeeks.org/devops/rootless-podman/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1586
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:56Z"
+  }
  },
  {
   "query": "rootless podman build user namespace security model",
   "title": "How to Configure Podman Security - oneuptime.com",
   "url": "https://oneuptime.com/blog/post/2026-02-02-podman-security-configuration/view",
   "snippet": "February 2, 2026 — # Check kernel version (should be 4.18+ for full rootless support) uname -r # Verify user namespaces are enabled cat /proc/sys/user/max_user_namespaces # Should return a number greater than 0 # Check if newuidmap and newgidmap are installed which newuidmap newgidmap · Configure subordinate UID and GID ranges for your user. These ranges allow Podman to create containers with thei",
-  "weight": "low",
+  "weight": 0.3232,
   "collected_at": "2026-10-05T02:28:46Z",
-  "jev_answer": 0.359
+  "jev_answer": 0.359,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Configure Podman Security - oneuptime.com' (https://oneuptime.com/blog/post/2026-02-02-podman-security-configuration/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3232
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:58Z"
+  }
  },
  {
   "query": "rootless podman vs docker daemon rootful security comparison",
   "title": "Podman vs Docker 2026: Rootless Benchmarks & Migration",
   "url": "https://lucaberton.com/blog/podman-vs-docker-2026/",
   "snippet": "This is a practical comparison based on real production use, not vendor marketing. Includes rootful vs rootless performance data that most comparisons skip. Quick answer: Rootless adds ~25-30% to container startup overhead — i.e., cold start latency — for both Podman and Docker versus rootful. Network throughput drops from ~40 Gbps (rootful bridge) to ~15 Gbps with the modern pasta backend ...",
-  "weight": "low",
+  "weight": 0.1196,
   "collected_at": "2026-10-05T02:28:51Z",
-  "jev_answer": 0.1236
+  "jev_answer": 0.1236,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Podman vs Docker 2026: Rootless Benchmarks & Migration' (https://lucaberton.com/blog/podman-vs-docker-2026/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1196
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:58Z"
+  }
  },
  {
   "query": "rootless podman vs docker daemon rootful security comparison",
   "title": "Podman and Docker Rootless in DDEV | DDEV",
   "url": "https://ddev.com/blog/podman-and-docker-rootless/",
   "snippet": "Why Choose Podman? Podman is rootless by default, making it the simplest option for secure container environments. Traditional Docker requires root daemons, which can be a security concern in corporate environments with strict policies.",
-  "weight": "high",
+  "weight": 0.4688,
   "collected_at": "2026-10-05T02:28:51Z",
-  "jev_answer": 0.5012
+  "jev_answer": 0.5012,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Podman and Docker Rootless in DDEV | DDEV' (https://ddev.com/blog/podman-and-docker-rootless/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4688
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:58Z"
+  }
  },
  {
   "query": "rootless podman vs docker daemon rootful security comparison",
   "title": "Docker vs Podman 2026: Security, DX, Rootless - Kunal Ganglani",
   "url": "https://www.kunalganglani.com/blog/docker-vs-podman-2026",
   "snippet": "Jul 11, 2026 ... Architecture: Docker runs a persistent dockerd daemon (root by default). Podman is daemonless — each container is a direct child process of the ...",
-  "weight": "low",
+  "weight": 0.1266,
   "collected_at": "2026-10-05T02:28:51Z",
-  "jev_answer": 0.118
+  "jev_answer": 0.118,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker vs Podman 2026: Security, DX, Rootless - Kunal Ganglani' (https://www.kunalganglani.com/blog/docker-vs-podman-2026) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1266
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:58Z"
+  }
  },
  {
   "query": "rootless podman vs docker daemon rootful security comparison",
   "title": "Podman vs Docker: Differences and Migration Guide - Linuxize",
   "url": "https://linuxize.com/post/podman-vs-docker/",
   "snippet": "This guide compares Podman and Docker across architecture, rootless containers, systemd integration, Compose workflows, image builds, and migration planning.",
-  "weight": "low",
+  "weight": 0.4485,
   "collected_at": "2026-10-05T02:28:51Z",
-  "jev_answer": 0.4825
+  "jev_answer": 0.4825,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Podman vs Docker: Differences and Migration Guide - Linuxize' (https://linuxize.com/post/podman-vs-docker/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4485
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:25:58Z"
+  }
  },
  {
   "query": "rootless podman vs docker daemon rootful security comparison",
   "title": "Docker vs Podman: 33% Faster Boot, $0 Fee [2026] - shattered.io",
   "url": "https://shattered.io/docker-vs-podman-2026/",
   "snippet": "Sep 4, 2026 ... Docker does support a rootless mode, but it's opt-in and layered on top of an architecture designed around a root daemon, whereas Podman was ...",
-  "weight": "low",
+  "weight": 0.2975,
   "collected_at": "2026-10-05T02:28:51Z",
-  "jev_answer": 0.2815
+  "jev_answer": 0.2815,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker vs Podman: 33% Faster Boot, $0 Fee [2026] - shattered.io' (https://shattered.io/docker-vs-podman-2026/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2975
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:00Z"
+  }
  },
  {
   "query": "rootless podman vs docker daemon rootful security comparison",
   "title": "Podman vs Docker for self-hosting: I measured the difference",
   "url": "https://botmonster.com/self-hosting/podman-vs-docker-linux-container-runtime/",
   "snippet": "Jun 10, 2026 ... For self-hosting on Linux in 2026, Podman is the better default. It has no daemon, runs rootless out of the box, and its Quadlet unit files ...",
-  "weight": "low",
+  "weight": 0.2031,
   "collected_at": "2026-10-05T02:28:51Z",
-  "jev_answer": 0.2145
+  "jev_answer": 0.2145,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Podman vs Docker for self-hosting: I measured the difference' (https://botmonster.com/self-hosting/podman-vs-docker-linux-container-runtime/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2031
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:00Z"
+  }
  },
  {
   "query": "systemd-nspawn RootImage boot signed container image",
   "title": "systemd-nspawn - ArchWiki",
   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
   "snippet": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
-  "weight": "high",
+  "weight": 0.8146,
   "collected_at": "2026-10-05T02:29:00Z",
-  "jev_answer": 0.7809
+  "jev_answer": 0.7809,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - ArchWiki' (https://wiki.archlinux.org/title/Systemd-nspawn) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8146
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:00Z"
+  }
  },
  {
   "query": "systemd-nspawn RootImage boot signed container image",
   "title": "systemd-nspawn - freedesktop.org",
   "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html",
   "snippet": "systemd-nspawn implements the Container Interface specification. While running, containers invoked with systemd-nspawn are registered with the systemd-machined(8) service that keeps track of running containers, and provides programming interfaces to interact with them.",
-  "weight": "high",
+  "weight": 0.9508,
   "collected_at": "2026-10-05T02:29:00Z",
-  "jev_answer": 0.9135
+  "jev_answer": 0.9135,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9508
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:00Z"
+  }
  },
  {
   "query": "systemd-nspawn RootImage boot signed container image",
   "title": "systemd - Wikipedia",
   "url": "https://en.wikipedia.org/wiki/Systemd",
   "snippet": "Systemd records initialization instructions for each daemon in a configuration file (referred to as a \"unit file\") that uses a declarative language, replacing the traditionally used per-daemon startup shell scripts.",
-  "weight": "low",
+  "weight": 0.0855,
   "collected_at": "2026-10-05T02:29:00Z",
-  "jev_answer": 0.0767
+  "jev_answer": 0.0767,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0855
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:00Z"
+  }
  },
  {
   "query": "systemd-nspawn RootImage boot signed container image",
   "title": "systemd-nspawn - Freedesktop.org",
   "url": "https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html",
   "snippet": "As a safety check systemd-nspawn will verify the existence of /usr/lib/os-release or /etc/os-release in the container tree before booting a container (see os- ...",
-  "weight": "high",
+  "weight": 0.9252,
   "collected_at": "2026-10-05T02:29:00Z",
-  "jev_answer": 0.9214
+  "jev_answer": 0.9214,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - Freedesktop.org' (https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9252
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:02Z"
+  }
  },
  {
   "query": "systemd-nspawn RootImage boot signed container image",
   "title": "nspawn",
   "url": "https://nspawn.org/",
   "snippet": "Machines and apps Images that ship systemd boot like machinectl start does. Anything else, for example a docker image, runs its entrypoint as an app under a stub init, with -p, -e, -v, --label, --restart, -m and --entrypoint as in docker. ps, inspect, exec, shell, cp, logs, stop and rm work the same on both.",
-  "weight": "low",
+  "weight": 0.1579,
   "collected_at": "2026-10-05T02:29:00Z",
-  "jev_answer": 0.1742
+  "jev_answer": 0.1742,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'nspawn' (https://nspawn.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1579
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:02Z"
+  }
  },
  {
   "query": "systemd-nspawn RootImage boot signed container image",
   "title": "Portable Services Introduction - Systemd",
   "url": "https://systemd.io/PORTABLE_SERVICES/",
   "snippet": "If an image is moved, the RootImage= line written to the unit drop-in would point to a...Can be run as OS container, using systemd-nspawn, by booting the image withCan be booted directly as VM image, using a generic VM executor such as virtualbox/qemu/kvm",
-  "weight": "high",
+  "weight": 0.8348,
   "collected_at": "2026-10-05T02:29:00Z",
-  "jev_answer": 0.852
+  "jev_answer": 0.852,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Portable Services Introduction - Systemd' (https://systemd.io/PORTABLE_SERVICES/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8348
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:02Z"
+  }
  },
  {
   "query": "systemd-nspawn vs docker dev container toolbox comparison",
   "title": "Is systemd-nspawn a better alternative to Docker for Linux containers ...",
   "url": "https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/",
   "snippet": "If your team runs docker-compose flows, moving to nspawn means rewriting that tooling from scratch with machinectl and .nspawn files. For long-running background services on a single Linux host (database engines , web servers, self-hosted apps, build agents), nspawn's native systemd hook-in is often simpler and easier to maintain.",
-  "weight": "low",
+  "weight": 0.168,
   "collected_at": "2026-10-05T02:29:11Z",
-  "jev_answer": 0.1914
+  "jev_answer": 0.1914,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Is systemd-nspawn a better alternative to Docker for Linux containers ...' (https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.168
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:02Z"
+  }
  },
  {
   "query": "systemd-nspawn vs docker dev container toolbox comparison",
   "title": "Why Docker over systemd-nspawn? : r/homelab - Reddit",
   "url": "https://www.reddit.com/r/homelab/comments/1af0ikl/why_docker_over_systemdnspawn/",
   "snippet": "The container that your example produces could be run in nspawn, with all the advantage and disadvantages of the systemd init process, as it could be in a docker container with all the disadvantages of the docker server. Reply reply Jmc_da_boss •",
-  "weight": "low",
+  "weight": 0.0255,
   "collected_at": "2026-10-05T02:29:11Z",
-  "jev_answer": 0.0296
+  "jev_answer": 0.0296,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Why Docker over systemd-nspawn? : r/homelab - Reddit' (https://www.reddit.com/r/homelab/comments/1af0ikl/why_docker_over_systemdnspawn/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0255
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:02Z"
+  }
  },
  {
   "query": "systemd-nspawn vs docker dev container toolbox comparison",
   "title": "Systemd vs. Docker: Exploring a Surprising Alternative - DEV ...",
   "url": "https://dev.to/_russell/systemd-vs-docker-exploring-a-surprising-alternative-4pmm",
   "snippet": "Dec 9, 2024 · Why This Article? At first glance, Docker and Systemd may seem like two very different tools, but both are used to manage the execution of applications. Docker is often used to run applications in isolated containers, while Systemd is traditionally used to manage services that run directly on the host operating system.",
-  "weight": "high",
+  "weight": 0.5001,
   "collected_at": "2026-10-05T02:29:11Z",
-  "jev_answer": 0.5067
+  "jev_answer": 0.5067,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Systemd vs. Docker: Exploring a Surprising Alternative - DEV ...' (https://dev.to/_russell/systemd-vs-docker-exploring-a-surprising-alternative-4pmm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5001
+   },
+   "usage": {
+    "input_tokens": 782,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:04Z"
+  }
  },
  {
   "query": "systemd-nspawn vs docker dev container toolbox comparison",
   "title": "What is systemd-nspawn and how does it compare to Docker containers ...",
   "url": "https://techprephq.com/question/devops/linux/systemd-nspawn-machinectl-containers",
   "snippet": "Short answer systemd-nspawn is a light-weight container manager that runs an entire OS tree in a namespace-isolated environment using the host kernel. Unlike Docker, it uses no daemon, no image format, and manages containers as systemd machines via machinectl.",
-  "weight": "low",
+  "weight": 0.0702,
   "collected_at": "2026-10-05T02:29:11Z",
-  "jev_answer": 0.0724
+  "jev_answer": 0.0724,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What is systemd-nspawn and how does it compare to Docker containers ...' (https://techprephq.com/question/devops/linux/systemd-nspawn-machinectl-containers) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0702
+   },
+   "usage": {
+    "input_tokens": 782,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:04Z"
+  }
  },
  {
   "query": "systemd-nspawn vs docker dev container toolbox comparison",
   "title": "systemd - Wikipedia",
   "url": "https://en.wikipedia.org/wiki/Systemd",
   "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …",
-  "weight": "low",
+  "weight": 0.2065,
   "collected_at": "2026-10-05T02:29:11Z",
-  "jev_answer": 0.2124
+  "jev_answer": 0.2124,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2065
+   },
+   "usage": {
+    "input_tokens": 782,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:04Z"
+  }
  },
  {
   "query": "systemd-nspawn vs docker dev container toolbox comparison",
   "title": "[FREE] How is Docker different from systemd-nspawn? - brainly.com",
   "url": "https://brainly.com/question/50537321",
   "snippet": "Docker and systemd-nspawn serve different purposes; Docker facilitates application deployment with a full-feature set, while systemd-nspawn offers a simpler, more integrated system virtualization tool mainly for development and testing.",
-  "weight": "low",
+  "weight": 0.0218,
   "collected_at": "2026-10-05T02:29:11Z",
-  "jev_answer": 0.0217
+  "jev_answer": 0.0217,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '[FREE] How is Docker different from systemd-nspawn? - brainly.com' (https://brainly.com/question/50537321) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0218
+   },
+   "usage": {
+    "input_tokens": 782,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:04Z"
+  }
  },
  {
   "query": "bcvk bootc ephemeral VM testing bootc install",
   "title": "GitHub - bootc-dev/bcvk · GitHub",
   "url": "https://github.com/bootc-dev/bcvk",
   "snippet": "Everything with bcvk ephemeral creates a podman container that reuses the host virtualization stack, making it simple to test bootc containers without requiring root privileges or dedicated VM infrastructure.",
-  "weight": "low",
+  "weight": 0.4022,
   "collected_at": "2026-10-05T02:29:21Z",
-  "jev_answer": 0.3855
+  "jev_answer": 0.3855,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - bootc-dev/bcvk · GitHub' (https://github.com/bootc-dev/bcvk) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4022
+   },
+   "usage": {
+    "input_tokens": 782,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:04Z"
+  }
  },
  {
   "query": "bcvk bootc ephemeral VM testing bootc install",
   "title": "Chapter 10. Testing and deploying bootable containers with bcvk",
   "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-image-updates-with-the-bootc-virtualization-kit-bcvk",
   "snippet": "The bootc virtualization kit (bcvk) bridges the gap between container development and hardware deployment. With the bcvk tool, you can launch ephemeral virtual machines (VMs) from bootc containers to test bootable images locally or generate disk images for production frameworks.",
-  "weight": "high",
+  "weight": 0.8328,
   "collected_at": "2026-10-05T02:29:21Z",
-  "jev_answer": 0.9291
+  "jev_answer": 0.9291,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Chapter 10. Testing and deploying bootable containers with bcvk' (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8328
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:06Z"
+  }
  },
  {
   "query": "bcvk bootc ephemeral VM testing bootc install",
   "title": "bcvk | Man Page | System Administration | bcvk | ManKier",
   "url": "https://www.mankier.com/8/bcvk",
   "snippet": "Ephemeral vs Libvirt. bcvk provides two ways to run bootc containers as VMs: bcvk ephemeral runs stateless VMs managed by podman. The VM boots directly from the container image's filesystem via virtiofs with no disk image creation, making startup very fast.",
-  "weight": "low",
+  "weight": 0.1447,
   "collected_at": "2026-10-05T02:29:21Z",
-  "jev_answer": 0.1303
+  "jev_answer": 0.1303,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'bcvk | Man Page | System Administration | bcvk | ManKier' (https://www.mankier.com/8/bcvk) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1447
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:06Z"
+  }
  },
  {
   "query": "bcvk bootc ephemeral VM testing bootc install",
   "title": "Getting Started | bootc-dev/bcvk | DeepWiki",
   "url": "https://deepwiki.com/bootc-dev/bcvk/2-getting-started",
   "snippet": "Dec 29, 2025 · This page provides an introduction to bcvk (Bootc Virtualization Kit), covering installation, prerequisites, and basic usage patterns for the three primary execution modes. For detailed information about specific features, see Ephemeral VMs, Persistent VMs with Libvirt, or Disk Image Creation.",
-  "weight": "low",
+  "weight": 0.2408,
   "collected_at": "2026-10-05T02:29:21Z",
-  "jev_answer": 0.2482
+  "jev_answer": 0.2482,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Getting Started | bootc-dev/bcvk | DeepWiki' (https://deepwiki.com/bootc-dev/bcvk/2-getting-started) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2408
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:06Z"
+  }
  },
  {
   "query": "bcvk bootc ephemeral VM testing bootc install",
   "title": "Bentkey - The Daily Wire",
   "url": "https://www.dailywire.com/topic/bentkey",
   "snippet": "Social Media Erupts With Praise For ‘Chip Chilla’ After NYT Attacks Show For Depicting ‘Weirdly Present’ Father Who Teaches …",
-  "weight": "low",
+  "weight": 0.0273,
   "collected_at": "2026-10-05T02:29:21Z",
-  "jev_answer": 0.0284
+  "jev_answer": 0.0284,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Bentkey - The Daily Wire' (https://www.dailywire.com/topic/bentkey) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0273
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:06Z"
+  }
  },
  {
   "query": "bcvk bootc ephemeral VM testing bootc install",
   "title": "bcvk/README.md at main · bootc-dev/bcvk · GitHub",
   "url": "https://github.com/bootc-dev/bcvk/blob/main/README.md",
   "snippet": "Contribute to bootc-dev/bcvk development by creating an account on GitHub.Remove a VM and its resources bcvk libvirt rm -f my-fedora-vm. Other operations. The bcvk libvirt run command wraps bcvk to-disk which in turns wraps bootc install to-disk in an ephemeral VM.",
-  "weight": "high",
+  "weight": 0.9195,
   "collected_at": "2026-10-05T02:29:21Z",
-  "jev_answer": 0.8706
+  "jev_answer": 0.8706,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'bcvk/README.md at main · bootc-dev/bcvk · GitHub' (https://github.com/bootc-dev/bcvk/blob/main/README.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9195
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:06Z"
+  }
  },
  {
   "query": "bootc image testing QEMU UEFI disk image",
   "title": "Booting From UEFI in QEMU | Baeldung on Linux",
   "url": "https://www.baeldung.com/linux/qemu-uefi-boot",
   "snippet": "Jul 25, 2024 · Also, we cover the essentials, from using Open Virtual Machine Firmware (OVMF) to various ways of booting UEFI in QEMU. Notably, we use a Ubuntu ISO file for the purposes of this tutorial. 2. Storage Image UEFI Boot Requirements To boot a disk image in UEFI mode, we require two main components:",
-  "weight": "high",
+  "weight": 0.6929,
   "collected_at": "2026-10-05T02:29:26Z",
-  "jev_answer": 0.6551
+  "jev_answer": 0.6551,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Booting From UEFI in QEMU | Baeldung on Linux' (https://www.baeldung.com/linux/qemu-uefi-boot) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6929
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:08Z"
+  }
  },
  {
   "query": "bootc image testing QEMU UEFI disk image",
   "title": "Booting image files and ISOs with KVM/QEMU (EFI and BIOS)",
   "url": "https://heckel.io/blog/booting-image-files-and-isos-with-kvm-qemu-efi-and-bios/",
   "snippet": "Aug 6, 2018 ... This (super duper) short post shows how to boot image files using straight kvm commands. 1. Booting image files with KVM (non-EFI/BIOS). First, ...",
-  "weight": "low",
+  "weight": 0.3795,
   "collected_at": "2026-10-05T02:29:26Z",
-  "jev_answer": 0.3634
+  "jev_answer": 0.3634,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Booting image files and ISOs with KVM/QEMU (EFI and BIOS)' (https://heckel.io/blog/booting-image-files-and-isos-with-kvm-qemu-efi-and-bios/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3795
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:08Z"
+  }
  },
  {
   "query": "bootc image testing QEMU UEFI disk image",
   "title": "Using a simulation environment to test UEFI firmware - LinkedIn",
   "url": "https://www.linkedin.com/pulse/using-simulation-environment-test-uefi-firmware-madhavan-vivekanandan-dpqpc",
   "snippet": "Mar 21, 2026 ... For UEFI testing, QEMU is configured to load an OVMF firmware image instead of a traditional BIOS. OVMF as the UEFI firmware. OVMF is a build of ...",
-  "weight": "low",
+  "weight": 0.1292,
   "collected_at": "2026-10-05T02:29:26Z",
-  "jev_answer": 0.1367
+  "jev_answer": 0.1367,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Using a simulation environment to test UEFI firmware - LinkedIn' (https://www.linkedin.com/pulse/using-simulation-environment-test-uefi-firmware-madhavan-vi) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1292
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:08Z"
+  }
  },
  {
   "query": "bootc image testing QEMU UEFI disk image",
   "title": "Booting from real (UEFI) disk image on QEMU - Unix & Linux Stack Exchange",
   "url": "https://unix.stackexchange.com/questions/671966/booting-from-real-uefi-disk-image-on-qemu",
   "snippet": "After creating the image and trying to run QEMU, the VM hangs on \"Booting from Hard Disk\". Detailed Description. I have a desktop x86_64 machine on which I have installed standard Ubuntu 20.04.3. As per the default, this also installed GRUB as the bootloader on the 1TiB HDD.",
-  "weight": "low",
+  "weight": 0.0435,
   "collected_at": "2026-10-05T02:29:26Z",
-  "jev_answer": 0.0353
+  "jev_answer": 0.0353,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Booting from real (UEFI) disk image on QEMU - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/671966/booting-from-real-uefi-disk-image-on-qemu) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0435
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:08Z"
+  }
  },
  {
   "query": "bootc image testing QEMU UEFI disk image",
   "title": "Chapter 6. Creating bootc-compatible base disk images by using ...",
   "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/creating-bootc-compatible-base-disk-images-by-using-bootc-image-builder",
   "snippet": "Create disk images from bootc images by using the bootc-image-builder tool. These artifacts help you to provision your containerized operating system across diverse infrastructure, including physical hardware, virtual machines, edge and cloud environments.",
-  "weight": "high",
+  "weight": 0.7949,
   "collected_at": "2026-10-05T02:29:26Z",
-  "jev_answer": 0.6442
+  "jev_answer": 0.6442,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Chapter 6. Creating bootc-compatible base disk images by using ...' (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7949
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:08Z"
+  }
  },
  {
   "query": "bootc image testing QEMU UEFI disk image",
   "title": "Booting EFI in QEMU - Aleksandr Vinokurov",
   "url": "https://aleksandr.vin/2024/03/06/booting-efi-in-qemu.html",
   "snippet": "Mar 6, 2024 · Booting EFI in QEMU March 6, 2024 2 minute read How you boot a disk.img (dd’d from a drive) with a EFI bootloader using QEMU. On a real computer with UEFI firmware, the firmware is built into the computer’s motherboard.",
-  "weight": "high",
+  "weight": 0.5695,
   "collected_at": "2026-10-05T02:29:26Z",
-  "jev_answer": 0.5886
+  "jev_answer": 0.5886,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Booting EFI in QEMU - Aleksandr Vinokurov' (https://aleksandr.vin/2024/03/06/booting-efi-in-qemu.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5695
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:11Z"
+  }
  },
  {
   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
   "title": "SystemCallFilter setting - Linux Audit",
   "url": "https://linux-audit.com/systemd/settings/units/systemcallfilter/",
   "snippet": "Why and when to use SystemCallFilter. Systemd has the unit setting SystemCallFilter which aims to prevent misuse of syscalls that are not needed for normal functioning of a process or its children. This powerful filtering uses seccomp and defines what syscalls are allowed.",
-  "weight": "low",
+  "weight": 0.3749,
   "collected_at": "2026-10-05T02:29:37Z",
-  "jev_answer": 0.3765
+  "jev_answer": 0.3765,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SystemCallFilter setting - Linux Audit' (https://linux-audit.com/systemd/settings/units/systemcallfilter/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3749
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:11Z"
+  }
  },
  {
   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
   "title": "How to Configure systemd Service Hardening on Ubuntu - OneUptime",
   "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-hardening-on-ubuntu/view",
   "snippet": "Core Hardening Directives. Hardening is applied by creating a service override file. Never modify the base service file directly, as it gets overwritten on package updates.",
-  "weight": "low",
+  "weight": 0.2172,
   "collected_at": "2026-10-05T02:29:37Z",
-  "jev_answer": 0.2034
+  "jev_answer": 0.2034,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Configure systemd Service Hardening on Ubuntu - OneUptime' (https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-hardening-on-u) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2172
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:11Z"
+  }
  },
  {
   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
   "title": "How to make a restrictive syscall *whitelist* with systemd-nspawn?",
   "url": "https://unix.stackexchange.com/questions/754033/how-to-make-a-restrictive-syscall-whitelist-with-systemd-nspawn",
   "snippet": "There's a unit option SystemCallFilter=, which claims to allow you to blacklist or whitelist specific calls. I tried it out, putting a single syscall on there and expecting complete failure",
-  "weight": "low",
+  "weight": 0.0824,
   "collected_at": "2026-10-05T02:29:37Z",
-  "jev_answer": 0.0608
+  "jev_answer": 0.0608,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to make a restrictive syscall *whitelist* with systemd-nspawn?' (https://unix.stackexchange.com/questions/754033/how-to-make-a-restrictive-syscall-whitelis) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0824
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:11Z"
+  }
  },
  {
   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
   "title": "Sandboxing Systemd Services - ejaaskel",
   "url": "https://ejaaskel.dev/sandboxing-systemd-services/",
   "snippet": "Feb 8, 2026 ... Systemd has numerous powerful security features that tend to go underutilised in Linux systems. Especially, the service files have a lot of ...",
-  "weight": "low",
+  "weight": 0.2775,
   "collected_at": "2026-10-05T02:29:37Z",
-  "jev_answer": 0.2999
+  "jev_answer": 0.2999,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Sandboxing Systemd Services - ejaaskel' (https://ejaaskel.dev/sandboxing-systemd-services/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2775
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:11Z"
+  }
  },
  {
   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
   "title": "How to harden a systemd service unit - Linux Audit",
   "url": "https://linux-audit.com/systemd/how-to-harden-a-systemd-service-unit/",
   "snippet": "Mar 12, 2025 · Harden systemd services with this step-by-step guide to gather the right information to define sandboxing features and secure and protect resources from misuse.",
-  "weight": "high",
+  "weight": 0.7682,
   "collected_at": "2026-10-05T02:29:37Z",
-  "jev_answer": 0.7715
+  "jev_answer": 0.7715,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to harden a systemd service unit - Linux Audit' (https://linux-audit.com/systemd/how-to-harden-a-systemd-service-unit/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7682
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:12Z"
+  }
  },
  {
   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
   "title": "System and Service Manager",
   "url": "https://systemd.io/",
   "snippet": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount…",
-  "weight": "high",
+  "weight": 0.8683,
   "collected_at": "2026-10-05T02:29:37Z",
-  "jev_answer": 0.8017
+  "jev_answer": 0.8017,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'System and Service Manager' (https://systemd.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8683
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:12Z"
+  }
  },
  {
   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
   "title": "Mastering systemd: Securing and sandboxing applications and ...",
   "url": "https://www.redhat.com/en/blog/mastering-systemd",
   "snippet": "This output from systemd-analyze security shows the name, a convenient description, and an exposure rating, which demonstrates the consumption of available security settings per service and generates a weighted exposure score from how isolated the service is.",
-  "weight": "high",
+  "weight": 0.8093,
   "collected_at": "2026-10-05T02:29:51Z",
-  "jev_answer": 0.8034
+  "jev_answer": 0.8034,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Mastering systemd: Securing and sandboxing applications and ...' (https://www.redhat.com/en/blog/mastering-systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8093
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:12Z"
+  }
  },
  {
   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
   "title": "Systemd Service Hardening | Linux Journal",
   "url": "https://www.linuxjournal.com/content/systemd-service-strengthening",
   "snippet": "May 14, 2021 ... Systemd provided an interesting tool named systemd-analyze. This command analyzes the security and the sandboxing settings of one or more ...",
-  "weight": "high",
+  "weight": 0.588,
   "collected_at": "2026-10-05T02:29:51Z",
-  "jev_answer": 0.574
+  "jev_answer": 0.574,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Systemd Service Hardening | Linux Journal' (https://www.linuxjournal.com/content/systemd-service-strengthening) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.588
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:12Z"
+  }
  },
  {
   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
   "title": "GitHub - alegrey91/systemd-service-hardening: Basic guide to harden...",
   "url": "https://github.com/alegrey91/systemd-service-hardening",
   "snippet": "The systemd-analyze security command generates a report about security exposure for each service present in our distribution. This allow us to check the improvements applied to our systemd service, directive by directive.",
-  "weight": "high",
+  "weight": 0.5226,
   "collected_at": "2026-10-05T02:29:51Z",
-  "jev_answer": 0.5051
+  "jev_answer": 0.5051,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - alegrey91/systemd-service-hardening: Basic guide to harden...' (https://github.com/alegrey91/systemd-service-hardening) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5226
+   },
+   "usage": {
+    "input_tokens": 759,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:12Z"
+  }
  },
  {
   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
   "title": "Sandboxing Systemd Services - ejaaskel",
   "url": "https://ejaaskel.dev/sandboxing-systemd-services/",
   "snippet": "Feb 8, 2026 ... Systemd has numerous powerful security features that tend to go underutilised in Linux systems. Especially, the service files have a lot of ...",
-  "weight": "high",
+  "weight": 0.6941,
   "collected_at": "2026-10-05T02:29:51Z",
-  "jev_answer": 0.7054
+  "jev_answer": 0.7054,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Sandboxing Systemd Services - ejaaskel' (https://ejaaskel.dev/sandboxing-systemd-services/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6941
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:14Z"
+  }
  },
  {
   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
   "title": "RestrictNamespaces setting - Linux Audit",
   "url": "https://linux-audit.com/systemd/settings/units/restrictnamespaces/",
   "snippet": "Mar 12, 2025 · The property RestrictNamespaces is a systemd unit setting used for sandboxing. It is available since systemd 233. Purpose: control if namespaces usage is allowed New to securing and tuning systemd services? Start with the how to harden a systemd service unit article to learn tuning step-by-step, including the usage of relevant tools.",
-  "weight": "high",
+  "weight": 0.5607,
   "collected_at": "2026-10-05T02:29:51Z",
-  "jev_answer": 0.5911
+  "jev_answer": 0.5911,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'RestrictNamespaces setting - Linux Audit' (https://linux-audit.com/systemd/settings/units/restrictnamespaces/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5607
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:14Z"
+  }
  },
  {
   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
   "title": "systemd/Sandboxing - ArchWiki",
   "url": "https://wiki.archlinux.org/title/Systemd/Sandboxing",
   "snippet": "Sep 27, 2026 · Since hardening/sandboxing effectively restricts an application, it is not possible to use all the sandboxing directives. A web server for example should not use PrivateNetwork=true since it usually needs network access. systemd-analyze security unit generates a score for the unit showing all the used directives, which can be helpful to determine what settings to try next.",
-  "weight": "high",
+  "weight": 0.8642,
   "collected_at": "2026-10-05T02:29:51Z",
-  "jev_answer": 0.8555
+  "jev_answer": 0.8555,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/Sandboxing - ArchWiki' (https://wiki.archlinux.org/title/Systemd/Sandboxing) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8642
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:14Z"
+  }
  },
  {
   "query": "container escape vs VM escape threat model comparison",
   "title": "Are Containers More Secure Than Virtual Machines? An Honest Comparison ...",
   "url": "https://www.virtual-pc.com/are-containers-more-secure-than-virtual-machines/",
   "snippet": "Aug 10, 2026 · The Short Answer: Containers vs VMs on Security Virtual machines are generally safer than containers by default because they isolate at the hardware level through a hypervisor, while containers isolate at the operating system level by sharing the host kernel. A VM compromise does not directly expose the host kernel, but a container escape can. However, containers offer a smaller att",
-  "weight": "low",
+  "weight": 0.171,
   "collected_at": "2026-10-05T02:29:56Z",
-  "jev_answer": 0.1866
+  "jev_answer": 0.1866,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Are Containers More Secure Than Virtual Machines? An Honest Comparison ...' (https://www.virtual-pc.com/are-containers-more-secure-than-virtual-machines/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.171
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:14Z"
+  }
  },
  {
   "query": "container escape vs VM escape threat model comparison",
   "title": "Container vs VM Security: What Actually Differs - safeguard.sh",
   "url": "https://safeguard.sh/resources/blog/container-security-vs-virtual-machine-security",
   "snippet": "Mar 17, 2026 · Container vs VM security compared: kernel vs hypervisor isolation, real CVEs (runc, OMIGOD, Log4Shell), patch speed, blast radius, and SBOM scanning gaps.",
-  "weight": "low",
+  "weight": 0.3368,
   "collected_at": "2026-10-05T02:29:56Z",
-  "jev_answer": 0.311
+  "jev_answer": 0.311,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container vs VM Security: What Actually Differs - safeguard.sh' (https://safeguard.sh/resources/blog/container-security-vs-virtual-machine-security) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3368
+   },
+   "usage": {
+    "input_tokens": 768,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:14Z"
+  }
  },
  {
   "query": "container escape vs VM escape threat model comparison",
   "title": "Container vs VM Security: Security+ 701 Deep Dive",
   "url": "https://certsensei.io/blog/security-plus/container-vs-vm-security-security-plus-701",
   "snippet": "Why is 'Container Escape' a critical threat to monitor? A container escape occurs when a process inside a container manages to break through the isolation boundaries and gain access to the host operating system. This is the 'nightmare scenario' for container security.",
-  "weight": "high",
+  "weight": 0.5473,
   "collected_at": "2026-10-05T02:29:56Z",
-  "jev_answer": 0.5491
+  "jev_answer": 0.5491,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container vs VM Security: Security+ 701 Deep Dive' (https://certsensei.io/blog/security-plus/container-vs-vm-security-security-plus-701) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5473
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:16Z"
+  }
  },
  {
   "query": "container escape vs VM escape threat model comparison",
   "title": "The Container Store | Organize Your Home with Storage & Closet …",
   "url": "https://www.containerstore.com/welcome.htm?msockid=0608e6dd3139612b24bbf13430496025",
   "snippet": "Storage & Organization Solutions! Shop for kitchen, closet, travel & home decor at The Container Store. Explore Custom Spaces and …",
-  "weight": "low",
+  "weight": 0.0323,
   "collected_at": "2026-10-05T02:29:56Z",
-  "jev_answer": 0.0348
+  "jev_answer": 0.0348,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The Container Store | Organize Your Home with Storage & Closet …' (https://www.containerstore.com/welcome.htm?msockid=0608e6dd3139612b24bbf13430496025) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0323
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:16Z"
+  }
  },
  {
   "query": "container escape vs VM escape threat model comparison",
   "title": "Behavioral Genetics and Animal Science",
   "url": "http://www.grandin.com/references/genetics.html",
   "snippet": "the wolf pups. Further comparisons found that the physical development of motor skills is slower in the malamute. Goodwin et al. (1997) studied 10 different dog breeds which range",
-  "weight": "low",
+  "weight": 0.0971,
   "collected_at": "2026-10-05T02:29:56Z",
-  "jev_answer": 0.0708
+  "jev_answer": 0.0708,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Behavioral Genetics and Animal Science' (http://www.grandin.com/references/genetics.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0971
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:16Z"
+  }
  },
  {
   "query": "container escape vs VM escape threat model comparison",
   "title": "Why Containers Are Not Virtual Machines: Security Guide",
   "url": "https://www.fosslinux.com/162244/why-containers-are-not-virtual-machines-shared-kernel-isolation-escapes.htm",
   "snippet": "Real-World Container Escape CVEs in 2026. The year 2026 has been brutal for container security. I have tracked every major container escape CVE published this year, and the pattern is clear: the shared kernel is an actively exploited attack surface.",
-  "weight": "low",
+  "weight": 0.4205,
   "collected_at": "2026-10-05T02:29:56Z",
-  "jev_answer": 0.4127
+  "jev_answer": 0.4127,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Why Containers Are Not Virtual Machines: Security Guide' (https://www.fosslinux.com/162244/why-containers-are-not-virtual-machines-shared-kernel-iso) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4205
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:16Z"
+  }
  },
  {
   "query": "Linux isolation boundaries namespaces cgroups VM seccomp comparison",
   "title": "Container Isolation: Namespaces, cgroups, seccomp, gVisor",
   "url": "https://safeguard.sh/resources/blog/container-isolation-best-practices",
   "snippet": "Jul 13, 2026 · Container isolation mechanisms explained: namespaces, cgroups, seccomp, and gVisor Docker's default seccomp profile blocks roughly 44 of the 300-plus Linux syscalls, yet a 2019 runc escape bypassed every default namespace boundary anyway.",
-  "weight": "high",
+  "weight": 0.5869,
   "collected_at": "2026-10-05T02:30:06Z",
-  "jev_answer": 0.5638
+  "jev_answer": 0.5638,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container Isolation: Namespaces, cgroups, seccomp, gVisor' (https://safeguard.sh/resources/blog/container-isolation-best-practices) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5869
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:16Z"
+  }
  },
  {
   "query": "Linux isolation boundaries namespaces cgroups VM seccomp comparison",
   "title": "Isolation in Containers. Linux Primitives that help Achieve It",
   "url": "https://chkrishnatej.dev/posts/isolation-for-containers/",
   "snippet": "Apr 11, 2026 · Docker and Podman configure isolation. The Linux kernel enforces it. A deep dive into namespaces, cgroups, and seccomp. The three primitives that actually hold the boundary.",
-  "weight": "high",
+  "weight": 0.7232,
   "collected_at": "2026-10-05T02:30:06Z",
-  "jev_answer": 0.7278
+  "jev_answer": 0.7278,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Isolation in Containers. Linux Primitives that help Achieve It' (https://chkrishnatej.dev/posts/isolation-for-containers/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7232
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:18Z"
+  }
  },
  {
   "query": "Linux isolation boundaries namespaces cgroups VM seccomp comparison",
   "title": "Container Isolation: Namespaces, Cgroups, Seccomp",
   "url": "https://safeguard.sh/resources/blog/container-isolation-with-namespaces-cgroups-and-seccomp",
   "snippet": "Jun 27, 2026 · A \"container\" is not a real isolation boundary — it's a marketing term for a process wrapped in three Linux kernel primitives: namespaces (what it can see), cgroups (what it can consume), and seccomp (what it can ask the kernel to do). Docker, containerd, and Kubernetes all lean on the same kernel features, which means the same misconfigurations show up everywhere: a --privilegedfla",
-  "weight": "low",
+  "weight": 0.5609,
   "collected_at": "2026-10-05T02:30:06Z",
-  "jev_answer": 0.4965
+  "jev_answer": 0.4965,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container Isolation: Namespaces, Cgroups, Seccomp' (https://safeguard.sh/resources/blog/container-isolation-with-namespaces-cgroups-and-seccom) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5609
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:18Z"
+  }
  },
  {
   "query": "Linux isolation boundaries namespaces cgroups VM seccomp comparison",
   "title": "Download Linux | Linux.org",
   "url": "https://www.linux.org/pages/download/",
   "snippet": "May 1, 2017 · 24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try …",
-  "weight": "low",
+  "weight": 0.066,
   "collected_at": "2026-10-05T02:30:06Z",
-  "jev_answer": 0.0494
+  "jev_answer": 0.0494,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Download Linux | Linux.org' (https://www.linux.org/pages/download/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.066
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:18Z"
+  }
  },
  {
   "query": "Linux isolation boundaries namespaces cgroups VM seccomp comparison",
   "title": "css.csail.mit.edu/6.5660/2026/lec/l02-isolation.txt",
   "url": "https://css.csail.mit.edu/6.5660/2026/lec/l02-isolation.txt",
   "snippet": "No isolation within the Linux kernel itself. Kernel bugs let adversary escape isolation (\"local privilege escalation\" or LPE). Relatively common: new LPE bugs every year. Additional security mechanism: seccomp-bpf. Idea: filter what system calls can be invoked by a process.",
-  "weight": "high",
+  "weight": 0.5145,
   "collected_at": "2026-10-05T02:30:06Z",
-  "jev_answer": 0.5198
+  "jev_answer": 0.5198,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'css.csail.mit.edu/6.5660/2026/lec/l02-isolation.txt' (https://css.csail.mit.edu/6.5660/2026/lec/l02-isolation.txt) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5145
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:18Z"
+  }
  },
  {
   "query": "Linux isolation boundaries namespaces cgroups VM seccomp comparison",
   "title": "Why Containers Are Not Virtual Machines: Security Guide - FOSS Linux",
   "url": "https://www.fosslinux.com/162244/why-containers-are-not-virtual-machines-shared-kernel-isolation-escapes.htm",
   "snippet": "A container is not a virtual machine, a chroot on steroids, or a sandbox. A container is a set of Linux kernel features applied to a regular process to give it the illusion of running on its own isolated system. There are three core primitives at work: namespaces, control groups, and Linux capabilities.",
-  "weight": "low",
+  "weight": 0.2796,
   "collected_at": "2026-10-05T02:30:06Z",
-  "jev_answer": 0.2414
+  "jev_answer": 0.2414,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Why Containers Are Not Virtual Machines: Security Guide - FOSS Linux' (https://www.fosslinux.com/162244/why-containers-are-not-virtual-machines-shared-kernel-iso) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2796
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:18Z"
+  }
  },
  {
   "query": "dm-verity composefs image integrity read-only usr immutable host",
   "title": "Root Filesystem Integrity with dm-verity: Design Patterns for Immutable ...",
   "url": "https://proteanos.com/doc/rootfs-integrity-dm-verity-immutable-images/",
   "snippet": "Mar 19, 2026 · Summary dm-verity provides runtime integrity verification for read-only root filesystems. Combined with secure boot, it creates a complete chain of trust from power-on to application execution.",
-  "weight": "high",
+  "weight": 0.5969,
   "collected_at": "2026-10-05T02:30:11Z",
-  "jev_answer": 0.5978
+  "jev_answer": 0.5978,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Root Filesystem Integrity with dm-verity: Design Patterns for Immutable ...' (https://proteanos.com/doc/rootfs-integrity-dm-verity-immutable-images/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5969
+   },
+   "usage": {
+    "input_tokens": 805,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:20Z"
+  }
  },
  {
   "query": "dm-verity composefs image integrity read-only usr immutable host",
   "title": "GitHub - composefs/composefs: The reliability of disk images, the ...",
   "url": "https://github.com/composefs/composefs",
   "snippet": "The composefs project combines several underlying Linux features to provide a very flexible mechanism to support read-only mountable filesystem trees, stacking on top of an underlying \"lower\" Linux filesystem. The \"tagline\" for this project is \"The reliability of disk images, the flexibility of ...",
-  "weight": "high",
+  "weight": 0.9027,
   "collected_at": "2026-10-05T02:30:11Z",
-  "jev_answer": 0.8996
+  "jev_answer": 0.8996,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - composefs/composefs: The reliability of disk images, the ...' (https://github.com/composefs/composefs) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9027
+   },
+   "usage": {
+    "input_tokens": 805,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:20Z"
+  }
  },
  {
   "query": "dm-verity composefs image integrity read-only usr immutable host",
   "title": "Alexander Larsson – Cool links and commentary - GNOME Blogs",
   "url": "https://blogs.gnome.org/alexl/",
   "snippet": "Additionally, composefs supports using fs-verity for both the image file, and all the backing files.It is a checksum mechanism similar to dm-verity, but it works on file contents instead of partition content. Enabling fs-verity on a file makes it immutable and computes a hash-tree for it.",
-  "weight": "low",
+  "weight": 0.2777,
   "collected_at": "2026-10-05T02:30:11Z",
-  "jev_answer": 0.277
+  "jev_answer": 0.277,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Alexander Larsson – Cool links and commentary - GNOME Blogs' (https://blogs.gnome.org/alexl/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2777
+   },
+   "usage": {
+    "input_tokens": 805,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:20Z"
+  }
  },
  {
   "query": "dm-verity composefs image integrity read-only usr immutable host",
   "title": "Image sealing with composefs :: *scratch* - scrivano.org",
   "url": "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
   "snippet": "Jun 5, 2026 · Composefs achieves whole-filesystem integrity verification through image sealing: a single cryptographic digest authenticates an entire filesystem, covering both file contents and metadata (directory structure, permissions, ownership, symlinks, and xattrs). This goes further than fs-verity alone, which can only verify individual file contents, and avoids the fixed-partition requireme",
-  "weight": "low",
+  "weight": 0.4332,
   "collected_at": "2026-10-05T02:30:11Z",
-  "jev_answer": 0.4095
+  "jev_answer": 0.4095,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Image sealing with composefs :: *scratch* - scrivano.org' (https://scrivano.org/posts/2026-06-05-sealing-with-composefs/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4332
+   },
+   "usage": {
+    "input_tokens": 805,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:20Z"
+  }
  },
  {
   "query": "dm-verity composefs image integrity read-only usr immutable host",
   "title": "yubiOS/skills/dm-verity-and-integrity/SKILL.md at main · yubi ...",
   "url": "https://github.com/yubi-OS/yubiOS/blob/main/skills/dm-verity-and-integrity/SKILL.md",
   "snippet": "This skill — dm-verity root hash, fs-verity signing, IMA policy, composefs catalog — sits in a domain that benefits from explicit immutability (sysext, read-only mounts, fs-verity, OSTree, hermetic /usr, verity) coverage.",
-  "weight": "high",
+  "weight": 0.547,
   "collected_at": "2026-10-05T02:30:11Z",
-  "jev_answer": 0.5535
+  "jev_answer": 0.5535,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'yubiOS/skills/dm-verity-and-integrity/SKILL.md at main · yubi ...' (https://github.com/yubi-OS/yubiOS/blob/main/skills/dm-verity-and-integrity/SKILL.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.547
+   },
+   "usage": {
+    "input_tokens": 805,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:20Z"
+  }
  },
  {
   "query": "dm-verity composefs image integrity read-only usr immutable host",
   "title": "What Does DM Mean? Full Meaning in Texting, Social Media & Love …",
   "url": "https://punference.com/what-does-dm-mean/",
   "snippet": "Jan 31, 2026 · What does DM mean? Learn the full meaning of DM in texting, social media, relationships, and slang with simple …",
-  "weight": "low",
+  "weight": 0.2009,
   "collected_at": "2026-10-05T02:30:11Z",
-  "jev_answer": 0.2193
+  "jev_answer": 0.2193,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What Does DM Mean? Full Meaning in Texting, Social Media & Love …' (https://punference.com/what-does-dm-mean/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2009
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:22Z"
+  }
  },
  {
   "query": "Linux immutable OS architecture integrity vs isolation layers",
   "title": "Immutable Linux OS: Why Architecture Matters - linux",
   "url": "https://salivity.github.io/linux/article/immutable-linux-os-why-architecture-matters",
   "snippet": "Understanding Immutable Linux Architecture An immutable operating system is designed so that its core operating system files cannot be modified directly by users, running processes, or traditional package managers during runtime. The root filesystem (/usr, /bin, and other system directories) is mounted as read-only. User data and system configurations are strictly isolated into designated ...",
-  "weight": "low",
+  "weight": 0.2492,
   "collected_at": "2026-10-05T02:30:16Z",
-  "jev_answer": 0.2443
+  "jev_answer": 0.2443,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Immutable Linux OS: Why Architecture Matters - linux' (https://salivity.github.io/linux/article/immutable-linux-os-why-architecture-matters) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2492
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:22Z"
+  }
  },
  {
   "query": "Linux immutable OS architecture integrity vs isolation layers",
   "title": "Architecture of Linux - GeeksforGeeks",
   "url": "https://www.geeksforgeeks.org/linux-unix/architecture-of-linux-operating-system/",
   "snippet": "May 29, 2026 · The Linux operating system architecture defines how different components of the system interact with each other to manage hardware resources, run applications, and provide a stable and secure computing environment. Linux follows a layered architecture, where each layer has a specific role and responsibility. Layers The main components of Linux operating system are: Application Shell",
-  "weight": "low",
+  "weight": 0.3531,
   "collected_at": "2026-10-05T02:30:16Z",
-  "jev_answer": 0.3242
+  "jev_answer": 0.3242,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Architecture of Linux - GeeksforGeeks' (https://www.geeksforgeeks.org/linux-unix/architecture-of-linux-operating-system/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3531
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:22Z"
+  }
  },
  {
   "query": "Linux immutable OS architecture integrity vs isolation layers",
   "title": "Ubuntu Core as an immutable Linux Desktop base | Ubuntu",
   "url": "https://ubuntu.com/blog/ubuntu-core-an-immutable-linux-desktop",
   "snippet": "The architecture of an immutable Linux OS. Now that we’ve defined these properties, let’s review the design choices made in today’s immutable Linux ecosystem.",
-  "weight": "high",
+  "weight": 0.7282,
   "collected_at": "2026-10-05T02:30:16Z",
-  "jev_answer": 0.754
+  "jev_answer": 0.754,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Ubuntu Core as an immutable Linux Desktop base | Ubuntu' (https://ubuntu.com/blog/ubuntu-core-an-immutable-linux-desktop) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7282
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:22Z"
+  }
  },
  {
   "query": "Linux immutable OS architecture integrity vs isolation layers",
   "title": "Download Linux | Linux.org",
   "url": "https://www.linux.org/pages/download/",
   "snippet": "May 1, 2017 · 24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try …",
-  "weight": "low",
+  "weight": 0.1041,
   "collected_at": "2026-10-05T02:30:16Z",
-  "jev_answer": 0.1497
+  "jev_answer": 0.1497,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Download Linux | Linux.org' (https://www.linux.org/pages/download/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1041
+   },
+   "usage": {
+    "input_tokens": 761,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:22Z"
+  }
  },
  {
   "query": "Linux immutable OS architecture integrity vs isolation layers",
   "title": "Immutable Linux Distros: Are They Right for You? | LinuxBlog.io",
   "url": "https://linuxblog.io/immutable-linux-distros-are-they-right-for-you-take-the-test/",
   "snippet": "The Case for Immutable Linux. What are Immutable Linux Distributions? Do You Need an Immutable Linux Distro?Flatcar Container Linux. openSUSE MicroOS (Server Edition). Flatpak vs. Apx. Conclusion.",
-  "weight": "low",
+  "weight": 0.3279,
   "collected_at": "2026-10-05T02:30:16Z",
-  "jev_answer": 0.3327
+  "jev_answer": 0.3327,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Immutable Linux Distros: Are They Right for You? | LinuxBlog.io' (https://linuxblog.io/immutable-linux-distros-are-they-right-for-you-take-the-test/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3279
+   },
+   "usage": {
+    "input_tokens": 819,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:25Z"
+  }
  },
  {
   "query": "Linux immutable OS architecture integrity vs isolation layers",
   "title": "I've spent years with immutable Linux - RakuOS fixed my biggest…",
   "url": "https://www.zdnet.com/article/rakuos-fixes-my-biggest-problem-with-immutable-linux-distros/",
   "snippet": "Immutable Linux is the future of OS security, but the current distributions do have one particular limitation that RakuOS has overcome.",
-  "weight": "high",
+  "weight": 0.6426,
   "collected_at": "2026-10-05T02:30:16Z",
-  "jev_answer": 0.5646
+  "jev_answer": 0.5646,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'I've spent years with immutable Linux - RakuOS fixed my biggest…' (https://www.zdnet.com/article/rakuos-fixes-my-biggest-problem-with-immutable-linux-distros) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6426
+   },
+   "usage": {
+    "input_tokens": 819,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:25Z"
+  }
  },
  {
   "query": "container image digest pinning build policy supply chain",
   "title": "Image Digest Pinning: Container Supply Chain Security",
   "url": "https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-chain-integrity-in-snyk-workflows",
   "snippet": "Jun 12, 2026 · Learn how container image digest pinning secures Snyk scanning workflows by anchoring results to immutable SHA-256 identifiers instead of mutable tags.",
-  "weight": "low",
+  "weight": 0.4126,
   "collected_at": "2026-10-05T02:30:26Z",
-  "jev_answer": 0.4372
+  "jev_answer": 0.4372,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Image Digest Pinning: Container Supply Chain Security' (https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4126
+   },
+   "usage": {
+    "input_tokens": 819,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:25Z"
+  }
  },
  {
   "query": "container image digest pinning build policy supply chain",
   "title": "What is Digest Pinning? Definition & Security",
   "url": "https://inferensys.com/glossary/preemptive-algorithmic-cybersecurity/ml-pipeline-security-hardening/digest-pinning",
   "snippet": "Digest pinning is a foundational practice within a broader ecosystem of software supply chain security controls. These related terms define the mechanisms for verifying artifact identity, build provenance, and deployment integrity.",
-  "weight": "low",
+  "weight": 0.2852,
   "collected_at": "2026-10-05T02:30:26Z",
-  "jev_answer": 0.2602
+  "jev_answer": 0.2602,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What is Digest Pinning? Definition & Security' (https://inferensys.com/glossary/preemptive-algorithmic-cybersecurity/ml-pipeline-security-) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2852
+   },
+   "usage": {
+    "input_tokens": 819,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:25Z"
+  }
  },
  {
   "query": "container image digest pinning build policy supply chain",
   "title": "Rule 2.3 — Pin container image digests | Ozark Security Labs Docs",
   "url": "https://docs.ozarksecuritylabs.com/supply-chain/tier-2-hardened/container-image-digests/",
   "snippet": "The image’s manifest hash is the identity; any tampering — at the registry, on the CDN, in flight — produces a different digest and the pull fails. This is exactly the SHA-pinning model from Rule 1.2, applied to containers. SLSA Level 3 effectively requires it for the build base image.",
-  "weight": "low",
+  "weight": 0.485,
   "collected_at": "2026-10-05T02:30:26Z",
-  "jev_answer": 0.3729
+  "jev_answer": 0.3729,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Rule 2.3 — Pin container image digests | Ozark Security Labs Docs' (https://docs.ozarksecuritylabs.com/supply-chain/tier-2-hardened/container-image-digests/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.485
+   },
+   "usage": {
+    "input_tokens": 819,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:25Z"
+  }
  },
  {
   "query": "container image digest pinning build policy supply chain",
   "title": "The Container Store | Organize Your Home with Storage & Closet …",
   "url": "https://www.containerstore.com/welcome.htm?msockid=2907975884b7610d10da80b185e26038",
   "snippet": "Storage & Organization Solutions! Shop for kitchen, closet, travel & home decor at The Container Store. Explore Custom Spaces and …",
-  "weight": "low",
+  "weight": 0.3609,
   "collected_at": "2026-10-05T02:30:26Z",
-  "jev_answer": 0.3979
+  "jev_answer": 0.3979,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The Container Store | Organize Your Home with Storage & Closet …' (https://www.containerstore.com/welcome.htm?msockid=2907975884b7610d10da80b185e26038) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3609
+   },
+   "usage": {
+    "input_tokens": 821,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:27Z"
+  }
  },
  {
   "query": "container image digest pinning build policy supply chain",
   "title": "Image digests - Docker Docs",
   "url": "https://docs.docker.com/dhi/explore/security-concepts/digests/",
   "snippet": "Immutability: Once an image is built and its digest is generated, the content tied to that digest cannot change. · Security: Digests help prevent supply chain ...",
-  "weight": "high",
+  "weight": 0.9132,
   "collected_at": "2026-10-05T02:30:26Z",
-  "jev_answer": 0.8872
+  "jev_answer": 0.8872,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Image digests - Docker Docs' (https://docs.docker.com/dhi/explore/security-concepts/digests/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9132
+   },
+   "usage": {
+    "input_tokens": 821,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:27Z"
+  }
  },
  {
   "query": "container image digest pinning build policy supply chain",
   "title": "DevSecOps Container Security Guide | GS Consulting",
   "url": "https://gsconsultingllc.com/insights/devsecops-container-security",
   "snippet": "Docker build guidance recommends trusted and small base images, multiple build stages, regular rebuilds, nonroot users where possible, and digest pinning for supply chain integrity. Digest pinning creates reproducibility, but it also creates an update duty.",
-  "weight": "low",
+  "weight": 0.2547,
   "collected_at": "2026-10-05T02:30:26Z",
-  "jev_answer": 0.2796
+  "jev_answer": 0.2796,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'DevSecOps Container Security Guide | GS Consulting' (https://gsconsultingllc.com/insights/devsecops-container-security) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2547
+   },
+   "usage": {
+    "input_tokens": 821,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:27Z"
+  }
  },
  {
   "query": "cosign SLSA provenance verify container image admission",
   "title": "Container Image Provenance Attestations: SLSA and SBOM Attestation End ...",
   "url": "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
   "snippet": "May 7, 2026 · Attestations are signed metadata attached to a container image as a co-located OCI artifact. This article covers attaching and verifying SLSA build provenance and SBOM attestations using cosign, in-toto, and Kyverno.",
-  "weight": "high",
+  "weight": 0.6448,
   "collected_at": "2026-10-05T02:30:32Z",
-  "jev_answer": 0.5755
+  "jev_answer": 0.5755,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container Image Provenance Attestations: SLSA and SBOM Attestation End ...' (https://www.systemshardening.com/articles/cicd/container-image-attestations/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6448
+   },
+   "usage": {
+    "input_tokens": 821,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:27Z"
+  }
  },
  {
   "query": "cosign SLSA provenance verify container image admission",
   "title": "Container Image Signing & SLSA Provenance Verification with Sigstore Cosign",
   "url": "https://zyekh.com/blog/container-image-signing-and-slsa-provenance-with-cosign",
   "snippet": "Aug 5, 2026 · Supply chain security guide on signing OCI container images keylessly and verifying SLSA build provenance using Sigstore Cosign and Rekor.",
-  "weight": "low",
+  "weight": 0.2208,
   "collected_at": "2026-10-05T02:30:32Z",
-  "jev_answer": 0.3068
+  "jev_answer": 0.3068,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container Image Signing & SLSA Provenance Verification with Sigstore Cosign' (https://zyekh.com/blog/container-image-signing-and-slsa-provenance-with-cosign) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2208
+   },
+   "usage": {
+    "input_tokens": 821,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:27Z"
+  }
  },
  {
   "query": "cosign SLSA provenance verify container image admission",
   "title": "Cosign and SLSA Provenance: A CI/CD Signing Walkthrough | Syslabs ...",
   "url": "https://www.syslabs.in/technical-articles/signing-and-verifying-container-images-in-ci-cd-a-cosign-and-slsa-provenance-walkthrough",
   "snippet": "Sep 22, 2026 · This walkthrough covers the two halves that make image signing meaningful in practice: producing a keyless Cosign signature and SLSA provenance attestation in CI, and enforcing verification at the Kubernetes admission layer so an unsigned or unattested image simply cannot run.",
-  "weight": "high",
+  "weight": 0.6497,
   "collected_at": "2026-10-05T02:30:32Z",
-  "jev_answer": 0.6378
+  "jev_answer": 0.6378,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Cosign and SLSA Provenance: A CI/CD Signing Walkthrough | Syslabs ...' (https://www.syslabs.in/technical-articles/signing-and-verifying-container-images-in-ci-cd-) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6497
+   },
+   "usage": {
+    "input_tokens": 817,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:29Z"
+  }
  },
  {
   "query": "cosign SLSA provenance verify container image admission",
   "title": "Container Image Signing and SLSA Provenance Verification with Sigstore ...",
   "url": "https://imzye.com/Container/Cosign-Image-Signing-SLSA-Provenance/",
   "snippet": "Overview If an attacker compromises CI/CD credentials or registry access, they can replace a legitimate container tag with a backdoored image — and nothing downstream notices. Sigstore Cosign closes that hole by cryptographically signing OCI images in CI, keylessly: no long-lived private keys in CI secrets, just OIDC identity tokens (Fulcio CA) plus an immutable transparency log (Rekor ...",
-  "weight": "low",
+  "weight": 0.2131,
   "collected_at": "2026-10-05T02:30:32Z",
-  "jev_answer": 0.1953
+  "jev_answer": 0.1953,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container Image Signing and SLSA Provenance Verification with Sigstore ...' (https://imzye.com/Container/Cosign-Image-Signing-SLSA-Provenance/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2131
+   },
+   "usage": {
+    "input_tokens": 817,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:29Z"
+  }
  },
  {
   "query": "cosign SLSA provenance verify container image admission",
   "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
   "url": "https://www.rentwithcosign.com/",
   "snippet": "Whether you’re a renter trying to qualify for an apartment or a landlord seeking reliable tenants, Cosign bridges the gap to make …",
-  "weight": "low",
+  "weight": 0.026,
   "collected_at": "2026-10-05T02:30:32Z",
-  "jev_answer": 0.0267
+  "jev_answer": 0.0267,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Cosign | The Modern Cosigner Alternative for Renters and Landlords' (https://www.rentwithcosign.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.026
+   },
+   "usage": {
+    "input_tokens": 817,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:29Z"
+  }
  },
  {
   "query": "cosign SLSA provenance verify container image admission",
   "title": "How to verify container images with Kyverno using KMS, Cosign, a…",
   "url": "https://blog.sigstore.dev/how-to-verify-container-images-with-kyverno-using-kms-cosign-and-workload-identity-1e07d2b85061/",
   "snippet": "How to verify container images with Kyverno using KMS, Cosign, and Workload Identity Apr 25, 2022 by developer-guy Securing our software supply chains ha…",
-  "weight": "high",
+  "weight": 0.9217,
   "collected_at": "2026-10-05T02:30:32Z",
-  "jev_answer": 0.8944
+  "jev_answer": 0.8944,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to verify container images with Kyverno using KMS, Cosign, a…' (https://blog.sigstore.dev/how-to-verify-container-images-with-kyverno-using-kms-cosign-and) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9217
+   },
+   "usage": {
+    "input_tokens": 817,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:29Z"
+  }
  },
  {
   "query": "QEMU USB passthrough YubiKey FIDO2 virtual machine",
   "title": "Universal Second Factor (U2F) USB Key Device — QEMU…",
   "url": "https://www.qemu.org/docs/master/system/devices/usb-u2f.html",
   "snippet": "In case of a USB U2F security key, it is a USB HID device that implements the U2F protocol. QEMU supports both pass-through of a host U2F key device to a VM, and software emulation of a U2F key. u2f-passthru The u2f-passthru device allows you to connect a real hardware U2F key on your host to a guest VM.",
-  "weight": "low",
+  "weight": 0.2478,
   "collected_at": "2026-10-05T02:30:37Z",
-  "jev_answer": 0.2409
+  "jev_answer": 0.2409,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Universal Second Factor (U2F) USB Key Device — QEMU…' (https://www.qemu.org/docs/master/system/devices/usb-u2f.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2478
+   },
+   "usage": {
+    "input_tokens": 817,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:29Z"
+  }
  },
  {
   "query": "QEMU USB passthrough YubiKey FIDO2 virtual machine",
   "title": "FIDO and Fedora - Yubikey C Bio",
   "url": "https://discussion.fedoraproject.org/t/fido-and-fedora-yubikey-c-bio/82462",
   "snippet": "May 12, 2023 ... ... USB passthrough to the VM on KVM. Probably dracut is a more ... QEMU 2FA passthrough or VirtualBox passthrough. Maybe someone could ...",
-  "weight": "low",
+  "weight": 0.2558,
   "collected_at": "2026-10-05T02:30:37Z",
-  "jev_answer": 0.2577
+  "jev_answer": 0.2577,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO and Fedora - Yubikey C Bio' (https://discussion.fedoraproject.org/t/fido-and-fedora-yubikey-c-bio/82462) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2558
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:32Z"
+  }
  },
  {
   "query": "QEMU USB passthrough YubiKey FIDO2 virtual machine",
   "title": "USB emulation — QEMU documentation",
   "url": "https://www.qemu.org/docs/master/system/devices/usb.html",
   "snippet": "QEMU will automatically create and connect virtual USB hubs as necessary to connect multiple USB devices.The QEMU EHCI Adapter supports USB 2.0 devices. It can be used either standalone or with companion controllers (UHCI, OHCI) for USB 1.1 devices.",
-  "weight": "high",
+  "weight": 0.7039,
   "collected_at": "2026-10-05T02:30:37Z",
-  "jev_answer": 0.6752
+  "jev_answer": 0.6752,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'USB emulation — QEMU documentation' (https://www.qemu.org/docs/master/system/devices/usb.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7039
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:32Z"
+  }
  },
  {
   "query": "QEMU USB passthrough YubiKey FIDO2 virtual machine",
   "title": "Universal Second Factor (U2F) USB Key Device — QEMU 10.0.3 documentation",
   "url": "https://qemu.readthedocs.io/en/v10.0.3/system/devices/usb-u2f.html",
   "snippet": "QEMU supports both pass-through of a host U2F key device to a VM, and software emulation of a U2F key. u2f-passthru The u2f-passthrudevice allows you to connect a real hardware U2F key on your host to a guest VM. All requests made from the guest are passed through to the physical security key connected to the host machine and vice versa.",
-  "weight": "high",
+  "weight": 0.9052,
   "collected_at": "2026-10-05T02:30:37Z",
-  "jev_answer": 0.8503
+  "jev_answer": 0.8503,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Universal Second Factor (U2F) USB Key Device — QEMU 10.0.3 documentation' (https://qemu.readthedocs.io/en/v10.0.3/system/devices/usb-u2f.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9052
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:32Z"
+  }
  },
  {
   "query": "QEMU USB passthrough YubiKey FIDO2 virtual machine",
   "title": "GitHub - bulwarkid/virtual-fido: A Virtual FIDO2 USB Device",
   "url": "https://github.com/bulwarkid/virtual-fido",
   "snippet": "Virtual FIDO Also check out Bulwark Passkey, a passkey manager based on VirtualFIDO that is currently in beta! Virtual FIDO is a virtual USB device that implements the FIDO2/U2F protocol (like a YubiKey) to support 2FA and WebAuthN. Please note that this software is still in beta and under active development, so APIs may be subject to change.",
-  "weight": "high",
+  "weight": 0.5834,
   "collected_at": "2026-10-05T02:30:37Z",
-  "jev_answer": 0.5666
+  "jev_answer": 0.5666,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - bulwarkid/virtual-fido: A Virtual FIDO2 USB Device' (https://github.com/bulwarkid/virtual-fido) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5834
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:32Z"
+  }
  },
  {
   "query": "QEMU USB passthrough YubiKey FIDO2 virtual machine",
   "title": "QEMU",
   "url": "https://www.qemu.org/",
   "snippet": "Run programs for another Linux/BSD target, on any supported architecture. Run KVM and Xen virtual machines with near native …",
-  "weight": "high",
+  "weight": 0.6482,
   "collected_at": "2026-10-05T02:30:37Z",
-  "jev_answer": 0.6523
+  "jev_answer": 0.6523,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'QEMU' (https://www.qemu.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6482
+   },
+   "usage": {
+    "input_tokens": 784,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:32Z"
+  }
  },
  {
   "query": "GPU passthrough security nested virtualization ARM qemu",
   "title": "GPU virtualisation with QEMU/KVM - Ubuntu Server documentation",
   "url": "https://ubuntu.com/server/docs/how-to/graphics/gpu-virtualization-with-qemu-kvm/",
   "snippet": "Jun 26, 2026 · Configure GPU virtualization with QEMU/KVM including graphics frontends, backends, 3D acceleration, and advanced passthrough options.",
-  "weight": "high",
+  "weight": 0.8203,
   "collected_at": "2026-10-05T02:30:47Z",
-  "jev_answer": 0.7945
+  "jev_answer": 0.7945,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GPU virtualisation with QEMU/KVM - Ubuntu Server documentation' (https://ubuntu.com/server/docs/how-to/graphics/gpu-virtualization-with-qemu-kvm/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8203
+   },
+   "usage": {
+    "input_tokens": 783,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:34Z"
+  }
  },
  {
   "query": "GPU passthrough security nested virtualization ARM qemu",
   "title": "GitHub - slackdaystudio/qemu-gpu-passthrough: Notes for ...",
   "url": "https://github.com/slackdaystudio/qemu-gpu-passthrough",
   "snippet": "QEMU GPU Passthrough This document is intended to capture my technique for smoothly binding and unbinding GPU devices from the host system to a Virtual Machine. It is more of a collection of notes taken from various places, some of which are lost to me already.",
-  "weight": "low",
+  "weight": 0.1547,
   "collected_at": "2026-10-05T02:30:47Z",
-  "jev_answer": 0.1645
+  "jev_answer": 0.1645,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - slackdaystudio/qemu-gpu-passthrough: Notes for ...' (https://github.com/slackdaystudio/qemu-gpu-passthrough) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1547
+   },
+   "usage": {
+    "input_tokens": 783,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:34Z"
+  }
  },
  {
   "query": "GPU passthrough security nested virtualization ARM qemu",
   "title": "GitHub - HikariKnight/quickpassthrough: A project to remove the ...",
   "url": "https://github.com/HikariKnight/QuickPassthrough",
   "snippet": "Show general warning to user and inform about making a backup and general expectations Detect if user has an amd or intel CPU and provide the correct IOMMU kernel args based on that Configure your 2nd GPU for GPU Passthrough (1 for host, 1 for VM) Use ls-iommu to find PCI devices like graphic cards, usb controllers, etc and see what IOMMU group they are in Enable and configure vfio modules ...",
-  "weight": "low",
+  "weight": 0.2273,
   "collected_at": "2026-10-05T02:30:47Z",
-  "jev_answer": 0.2304
+  "jev_answer": 0.2304,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - HikariKnight/quickpassthrough: A project to remove the ...' (https://github.com/HikariKnight/QuickPassthrough) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2273
+   },
+   "usage": {
+    "input_tokens": 783,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:34Z"
+  }
  },
  {
   "query": "GPU passthrough security nested virtualization ARM qemu",
   "title": "KVM: arm64: ARMv8.3/8.4 Nested Virtualization support",
   "url": "https://lwn.net/Articles/877175/",
   "snippet": "Nov 29, 2021 · Here the bi-annual drop of the KVM/arm64 NV support code, the least loved series in the history of KVM! Not a lot has changed since [1]: a number of bug fixes (wrong MMU context being selected leading to failing TLB invalidations, fixes around the handling of nested faults), a complete rewrite of the early exit handling, a change in the way the NV support is enabled (\"kvm-arm.mode=n",
-  "weight": "high",
+  "weight": 0.7348,
   "collected_at": "2026-10-05T02:30:47Z",
-  "jev_answer": 0.681
+  "jev_answer": 0.681,
+  "weight_rescored_from": "high",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'KVM: arm64: ARMv8.3/8.4 Nested Virtualization support' (https://lwn.net/Articles/877175/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7348
+   },
+   "usage": {
+    "input_tokens": 783,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:34Z"
+  }
  },
  {
   "query": "GPU passthrough security nested virtualization ARM qemu",
   "title": "Graphics processing unit - Wikipedia",
   "url": "https://en.wikipedia.org/wiki/Graphics_processing_unit",
   "snippet": "A graphics processing unit (GPU) is a specialized electronic circuit designed for digital image processing and to accelerate computer …",
-  "weight": "low",
+  "weight": 0.0611,
   "collected_at": "2026-10-05T02:30:47Z",
-  "jev_answer": 0.0613
+  "jev_answer": 0.0613,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Graphics processing unit - Wikipedia' (https://en.wikipedia.org/wiki/Graphics_processing_unit) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0611
+   },
+   "usage": {
+    "input_tokens": 783,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:34Z"
+  }
  },
  {
   "query": "GPU passthrough security nested virtualization ARM qemu",
   "title": "VirtualBox",
   "url": "https://en.wikipedia.org/wiki/VirtualBox",
   "snippet": "Oracle VM VirtualBox (formerly Sun VirtualBox, Sun xVM VirtualBox and Innotek VirtualBox) is a type-2 hypervisor for x86 virtualization developed by Oracle Corporation. VirtualBox was originally created by Innotek GmbH, which was acquired by Sun Microsystems in 2008, which was in turn acquired by Oracle in 2010",
-  "weight": "low",
+  "weight": 0.396,
   "collected_at": "2026-10-05T02:30:47Z",
-  "jev_answer": 0.3065
+  "jev_answer": 0.3065,
+  "weight_rescored_from": "low",
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'VirtualBox' (https://en.wikipedia.org/wiki/VirtualBox) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.396
+   },
+   "usage": {
+    "input_tokens": 195,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T03:26:36Z"
+  }
  }
 ]
