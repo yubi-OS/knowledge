@@ -1,0 +1,42 @@
+{
+  "nn": "06",
+  "slug": "typed-research-db",
+  "scope": "Designing the typed research database that ships with a corpus: preflight record, outline with validation answers, per-result archive with decision records, per-dig records, and a request log, with TypeScript interfaces mirroring each JSON shape.",
+  "queries_attempted": [
+    {
+      "query": "research provenance data model JSON schema design",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "typescript interfaces matching JSON data files documentation",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://www.w3.org/submissions/prov-jsonld/",
+    "https://github.com/RI-SE/dataprov",
+    "https://ogcincubator.github.io/bblock-prov-schema/",
+    "https://github.com/HDI-Project/model-provenance-json",
+    "https://en.wikipedia.org/wiki/Metadata",
+    "https://en.wikipedia.org/wiki/Research",
+    "https://learnmandu.com/json-to-typedef/learn/typescript-interfaces",
+    "https://www.typescriptlang.org/docs/handbook/interfaces.html",
+    "https://www.xjavascript.com/blog/typescript-read-json-file/",
+    "https://handwiki.org/wiki/Software:MongoDB",
+    "https://www.typescriptlang.org/",
+    "https://www.typescriptlang.org/docs/"
+  ],
+  "outcome": "authored"
+}

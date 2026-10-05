@@ -1,0 +1,42 @@
+{
+  "nn": "02",
+  "slug": "decision-model-outline-validation",
+  "scope": "Using a typed decision model (score/choice metrics returning probabilities) to validate which outline docs are load-bearing before spending dig budget: the cheap-kill pruning principle.",
+  "queries_attempted": [
+    {
+      "query": "LLM as judge structured scoring rubric validation",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "decision model classification API probability scoring rubric",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://medium.com/@adnanmasood/rubric-based-evals-llm-as-a-judge-methodologies-and-empirical-validation-in-domain-context-71936b989e80",
+    "https://langfuse.com/docs/evaluation/evaluation-methods/llm-as-a-judge",
+    "https://github.com/motasemwed/llm-judge",
+    "https://autorubric.org/",
+    "https://en.wikipedia.org/wiki/Large_language_model",
+    "https://polyaxon.com/blog/llm-as-a-judge/",
+    "https://decisionapi.net/",
+    "https://autorubric.org/docs/api/decision-models/",
+    "https://docs.openclaw.ai/concepts/decision-models",
+    "https://www.merriam-webster.com/dictionary/decision",
+    "https://lovableapp.org/products/decisions-api-dev",
+    "https://decisions-api.org/"
+  ],
+  "outcome": "authored"
+}

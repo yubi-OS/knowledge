@@ -1,0 +1,42 @@
+{
+  "nn": "08",
+  "slug": "orchestrator-owned-commits",
+  "scope": "Why the orchestrator rather than each subagent owns the single atomic commit in a mint: avoiding branch races across parallel agents, one reviewable PR, and wave-based cadence for multi-corpus runs.",
+  "queries_attempted": [
+    {
+      "query": "orchestrator pattern parallel AI agents atomic commit",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "multi-agent coordination avoid merge conflicts workflow",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+    "https://thinking.inc/en/blue-ocean/agentic/agent-orchestration-patterns/",
+    "https://eigenwise.github.io/atomic-agents/guides/orchestration.html",
+    "https://levelop.dev/blog/multi-agent-orchestration-patterns-2026",
+    "https://architecturediagram.ai/blog/multi-agent-orchestration-patterns",
+    "https://www.uipath.com/product/orchestrator",
+    "https://self.md/guides/parallel-ai-agents/",
+    "https://baeseokjae.github.io/posts/multi-agent-coding-workflow-2026/",
+    "https://vinayakajyothi.com/blog/2026-05-09-multi-agent-coordination-protocols/",
+    "https://getmulti.ai/",
+    "https://gascity.com/guide/coordinate-multiple-ai-coding-agents/",
+    "https://github.com/clash-sh/clash"
+  ],
+  "outcome": "authored"
+}

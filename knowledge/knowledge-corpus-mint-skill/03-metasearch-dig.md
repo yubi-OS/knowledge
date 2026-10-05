@@ -1,0 +1,22 @@
+# 03. Metasearch dig through a self-hosted SearXNG proxy
+
+Scope: Running web research digs through a self-hosted SearXNG metasearch proxy: query formulation, result capture (title, url, content), rate limiting and pacing, batching, and engine health probing.
+
+The dig layer of a corpus mint is a metasearch call, and SearXNG is the open-source engine of choice for it: SearXNG is a free internet metasearch engine which aggregates results from various search services and databases (weight 0.75, https://github.com/searxng/searxng). A dig therefore fans out to many upstream engines under one API.
+
+The Search API contract is documented precisely. The `format` parameter is optional and takes `json`, `csv`, or `rss`, and the chosen output format needs to be activated in the instance's search settings before it will serve (weight 0.63, https://docs.searxng.org/dev/search_api.html; the same documentation source is in-repo at weight 0.65, https://github.com/searxng/searxng/blob/master/docs/dev/search_api.rst). Two practical consequences follow for a mint pipeline. First, the probe step exists because an instance can be up while JSON output is disabled; a plugin that talks to an instance with JSON output disabled gets a 403 from SearXNG (weight 0.31, weak backing, https://github.com/maxwell-feng/dsh-searxng-web). Second, the engine list visible in a probe response, for example bing, wiby, seznam, yahoo, yandex, and duckduckgo in one observed probe, doubles as the engine health check that a preflight record stores.
+
+Because a raw SearXNG instance should not be exposed directly, deployment and access control are part of the dig design. A self-hosted deployment template provisions an instance in Docker with an Nginx Proxy Manager combination to create an SSL endpoint for the instance (weight 0.54, https://github.com/GridexX/SearXNG-Self-Hosted/). For auth, a simple proxy server for SearXNG exists specifically to provide authenticated, secure access to privacy-respecting search (weight 0.53, https://github.com/loonylabs-dev/searxng-proxy). In the mint architecture the proxy is a webhook in an automation platform that forwards `?endpoint=search&qs=q=<urlencoded-query>` GETs to the instance, which keeps engine credentials and instance location out of every consuming agent's hands.
+
+Self-hosting is what makes the aggregation breadth usable. One setup guide describes SearXNG aggregating results from Google, DuckDuckGo, Brave, Startpage, and up to 272 other search services without tracking your queries (weight 0.16, weak backing, https://www.bitdoze.com/searxng-self-host-privacy-search/). A longer guide covers Docker setup, Nginx reverse proxy with SSL, API integration, and advanced customization (weight 0.37, weak backing, https://dasroot.net/posts/2026/03/self-hosted-search-searxng-installation-configuration/). The per-engine JSON result fields are themselves configurable: the JSON engine documentation lists response mappings such as title_html_to_text and content_html_to_text (weight 0.45, weak backing, https://docs.searxng.org/dev/engines/json_engine.html).
+
+Pacing discipline is a mint-side requirement, not an instance-side one. The observed healthy behavior is 6 results per query across roughly 6 engines, with queries spaced at least 1 second apart and every request carrying a User-Agent. The per-result capture contract is title, url, and content snippet, which is what the archive record stores.
+
+## Sub-claims
+
+1. SearXNG is a free metasearch engine aggregating results from various search services and databases (weight 0.75, https://github.com/searxng/searxng).
+2. The Search API supports json, csv, and rss output formats, and the format must be activated in settings (weight 0.63, https://docs.searxng.org/dev/search_api.html; weight 0.65, https://github.com/searxng/searxng/blob/master/docs/dev/search_api.rst).
+3. An instance with JSON output disabled returns 403, which is why preflight probing matters (weight 0.31, weak backing, https://github.com/maxwell-feng/dsh-searxng-web).
+4. Docker-based self-hosting with an SSL endpoint is a five-minute provisioning path (weight 0.54, https://github.com/GridexX/SearXNG-Self-Hosted/).
+5. An authenticated proxy in front of the instance is the documented access-control pattern (weight 0.53, https://github.com/loonylabs-dev/searxng-proxy).
+6. SearXNG can aggregate from up to 272 search services without tracking queries (weight 0.16, weak backing, https://www.bitdoze.com/searxng-self-host-privacy-search/).

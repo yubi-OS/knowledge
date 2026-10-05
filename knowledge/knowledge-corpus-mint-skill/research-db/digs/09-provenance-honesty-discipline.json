@@ -1,0 +1,42 @@
+{
+  "nn": "09",
+  "slug": "provenance-honesty-discipline",
+  "scope": "Corpus minting as an honesty contract: never inventing facts, deleting unsourced claims instead of softening them, padding prohibition, cannot-author as a success signal, and audit trails that let a reviewer re-run verification.",
+  "queries_attempted": [
+    {
+      "query": "AI generated content provenance verification citation audit",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "hallucination prevention grounded writing discipline practices",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://provenanceai.network/",
+    "https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/content-safety/provenance-disclosure",
+    "https://shanhaiyin.com/en/",
+    "https://openai.com/",
+    "https://tools.nyrds.net/board/",
+    "https://hikma.hbku.edu.qa/aidoi/faq",
+    "https://xoltar.substack.com/p/grounding",
+    "https://github.com/moonpiesheldon1337/grounded-research",
+    "https://en.wikipedia.org/wiki/Hallucination",
+    "https://agentplace.io/blog/hallucination-prevention-strategies-for-reliable-agent-output",
+    "https://bloomfire.com/resources/hallucination-prevention/",
+    "https://www.mdpi.com/2079-9292/15/3/541"
+  ],
+  "outcome": "authored"
+}

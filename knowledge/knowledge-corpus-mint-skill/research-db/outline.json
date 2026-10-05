@@ -1,0 +1,239 @@
+{
+  "topic": "minting knowledge corpora from a request: outline decomposition, jev-validated research digs, parallel authoring, and landing a cited corpus in a repo with a typed research DB",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "outline-decomposition",
+      "scope": "How a free-form research request is decomposed into a doc outline: decomposition by domain joints (subsystems, lifecycle stages, comparison axes, key decisions), one-line scopes, and seed query authoring.",
+      "seed_queries": [
+        "topic decomposition outline generation research corpus",
+        "how to break a research topic into subtopics scope statements"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "decision-model-outline-validation",
+      "scope": "Using a typed decision model (score/choice metrics returning probabilities) to validate which outline docs are load-bearing before spending dig budget: the cheap-kill pruning principle.",
+      "seed_queries": [
+        "LLM as judge structured scoring rubric validation",
+        "decision model classification API probability scoring rubric"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "metasearch-dig",
+      "scope": "Running web research digs through a self-hosted SearXNG metasearch proxy: query formulation, result capture (title, url, content), rate limiting and pacing, batching, and engine health probing.",
+      "seed_queries": [
+        "SearXNG API JSON search results documentation",
+        "self-hosted SearXNG proxy webhook integration"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "source-quality-weighting",
+      "scope": "Weighting every collected search result by source authority before citation: primary versus aggregator judgment, probability-as-weight semantics, and redo-on-failure contracts for the weighting call.",
+      "seed_queries": [
+        "evaluating web source credibility primary sources versus aggregators",
+        "automated source quality scoring research pipeline"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "parallel-subagent-authoring",
+      "scope": "Fanning out one author subagent per doc: the returned-markdown contract, citation discipline where every factual claim carries its source and weight, the thin-dig redo rule, and skip-as-gap.",
+      "seed_queries": [
+        "LLM multi-agent fan out parallel writing subagents",
+        "grounded generation citations every claim sourced LLM"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "typed-research-db",
+      "scope": "Designing the typed research database that ships with a corpus: preflight record, outline with validation answers, per-result archive with decision records, per-dig records, and a request log, with TypeScript interfaces mirroring each JSON shape.",
+      "seed_queries": [
+        "research provenance data model JSON schema design",
+        "typescript interfaces matching JSON data files documentation"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "git-data-api-landing",
+      "scope": "Landing a corpus in a GitHub repo without cloning: the blob-tree-commit-ref chain, draft PR creation, directory collision checks, and post-push verification by re-fetching and parsing every pushed file.",
+      "seed_queries": [
+        "GitHub Git Data API create blob tree commit reference",
+        "GitHub REST API create pull request verify files"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "orchestrator-owned-commits",
+      "scope": "Why the orchestrator rather than each subagent owns the single atomic commit in a mint: avoiding branch races across parallel agents, one reviewable PR, and wave-based cadence for multi-corpus runs.",
+      "seed_queries": [
+        "orchestrator pattern parallel AI agents atomic commit",
+        "multi-agent coordination avoid merge conflicts workflow"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "provenance-honesty-discipline",
+      "scope": "Corpus minting as an honesty contract: never inventing facts, deleting unsourced claims instead of softening them, padding prohibition, cannot-author as a success signal, and audit trails that let a reviewer re-run verification.",
+      "seed_queries": [
+        "AI generated content provenance verification citation audit",
+        "hallucination prevention grounded writing discipline practices"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.9457,
+        "probabilities": {
+          "0": 0.0154,
+          "1": 0.0235,
+          "2": 0.9611
+        },
+        "confidence": 0.8867,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.2306,
+        "probabilities": {
+          "0": 0.1542,
+          "1": 0.4611,
+          "2": 0.3847
+        },
+        "confidence": 0.0766,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.6408,
+        "probabilities": {
+          "0": 0.0925,
+          "1": 0.1742,
+          "2": 0.7333
+        },
+        "confidence": 0.3649,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.2548,
+        "probabilities": {
+          "0": 0.148,
+          "1": 0.4491,
+          "2": 0.4029
+        },
+        "confidence": 0.0789,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.9516,
+        "probabilities": {
+          "0": 0.0142,
+          "1": 0.0199,
+          "2": 0.9659
+        },
+        "confidence": 0.9002,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.8688,
+        "probabilities": {
+          "0": 0.0293,
+          "1": 0.0725,
+          "2": 0.8982
+        },
+        "confidence": 0.7193,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.5662,
+        "probabilities": {
+          "0": 0.1131,
+          "1": 0.2076,
+          "2": 0.6793
+        },
+        "confidence": 0.276,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.0606,
+        "probabilities": {
+          "0": 0.2093,
+          "1": 0.5207,
+          "2": 0.27
+        },
+        "confidence": 0.0818,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.5356,
+        "probabilities": {
+          "0": 0.101,
+          "1": 0.2624,
+          "2": 0.6366
+        },
+        "confidence": 0.2265,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1417,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

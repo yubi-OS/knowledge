@@ -1,0 +1,42 @@
+{
+  "nn": "01",
+  "slug": "outline-decomposition",
+  "scope": "How a free-form research request is decomposed into a doc outline: decomposition by domain joints (subsystems, lifecycle stages, comparison axes, key decisions), one-line scopes, and seed query authoring.",
+  "queries_attempted": [
+    {
+      "query": "topic decomposition outline generation research corpus",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "how to break a research topic into subtopics scope statements",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first weighting pass returned HTTP 200 for every batch but the client failed to record answers (variable shadowing bug); all results rescored with corrected parser, batch size 10",
+      "new_queries": null
+    }
+  ],
+  "results_kept": [
+    "https://mbrenndoerfer.com/writing/long-form-generation-outline-hierarchical-coherence-evaluation",
+    "https://arxiv.org/html/2305.14790v1",
+    "https://aclanthology.org/2024.lrec-main.44/",
+    "https://link.springer.com/chapter/10.1007/978-3-642-13657-3_47",
+    "https://www.merriam-webster.com/dictionary/topic",
+    "https://www.humprog.org/~stephen/",
+    "https://guides.laguardia.edu/c.php?g=845196&p=6043265",
+    "https://libguides.usc.edu/writingguide/narrowtopic",
+    "https://uwaterloo.ca/writing-and-communication-centre/develop-and-narrow-topic",
+    "https://llc.wrdsb.ca/learning/research-process/topics-and-sub-topics/",
+    "https://www.merriam-webster.com/dictionary/break",
+    "https://planet.kernel.org/"
+  ],
+  "outcome": "authored"
+}
