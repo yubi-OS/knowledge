@@ -1,0 +1,53 @@
+{
+ "nn": "06",
+ "slug": "readiness-gates-before-selling",
+ "scope": "gating each offer on engineering and operational readiness (owner, evidence target, recovery plan) before it becomes sellable",
+ "queries_attempted": [
+  {
+   "query": "product launch readiness checklist criteria gates",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": 6
+  },
+  {
+   "query": "selling to design partners before production ready startup",
+   "attempt": 1,
+   "raw_results": 74,
+   "kept": 6
+  },
+  {
+   "query": "go to market readiness checklist b2b launch criteria",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "selling before product is ready design partner process",
+   "attempt": 2,
+   "raw_results": 80,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig skewed off-topic (dictionary noise, retail catalog pages) and yielded too few authoritative-weight results to author honestly",
+   "new_queries": [
+    "go to market readiness checklist b2b launch criteria",
+    "selling before product is ready design partner process"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://a16z.com/a-framework-for-finding-a-design-partner/",
+  "https://medium.com/@iammaureenwest/4-gates-for-launch-readiness-8b7fd8d2d298",
+  "https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers",
+  "https://upliftgtm.com/blog/gtm-checklist",
+  "https://www.alskar.com/2026/09/24/product-launch-readiness-checklist/",
+  "https://www.jodoo.com/ai/product-launch-readiness-checklist",
+  "https://www.pmf.show/blog/how-to-sell-before-product-is-built",
+  "https://www.wrike.com/go-to-market-guide/faq/what-is-go-to-market-readiness/"
+ ],
+ "outcome": "authored"
+}
