@@ -1,0 +1,223 @@
+{
+  "topic": "the Fedora bootc v261 base image bump: what changed upstream, how the bump was verified against the build policy, and what the cross-check against the base-images status established",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "fedora-bootc-tag-landscape",
+      "scope": "The published quay.io/fedora/fedora-bootc tag set (43, 44, 45, 46, rawhide), what each tag carries, and how the tag set evolves across releases.",
+      "seed_queries": [
+        "quay.io fedora fedora-bootc tags",
+        "fedora bootc base image releases versions"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "digest-pinning-discipline",
+      "scope": "Why a multi-arch index digest pinned in one authoritative file (PINNED.md) is the source of truth, and why Containerfile must not copy a digest from an ADR or old PR note.",
+      "seed_queries": [
+        "pin container image digest instead of tag supply chain",
+        "bootc Containerfile FROM digest pinning"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "digest-refresh-workflow",
+      "scope": "The fetch-fedora-bootc-manifest.yml workflow pattern used to re-resolve and refresh the pinned digest, and how refresh cadence interacts with pin staleness.",
+      "seed_queries": [
+        "github actions workflow resolve container image digest",
+        "automated base image digest update renovate dependabot"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "bump-verification-gate",
+      "scope": "The two-command bump gate: docker buildx imagetools inspect on the new digest, then docker run with systemd --version as a functional smoke check.",
+      "seed_queries": [
+        "docker buildx imagetools inspect verify manifest",
+        "container smoke test systemd --version boot"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "systemd-v261-features",
+      "scope": "What systemd v261 shipped that the bump unblocked: ConditionSecurity=measured-os, systemd-tpm2-swtpm.service, and RestrictFileSystemAccess= for dm-verity-backed execution.",
+      "seed_queries": [
+        "systemd v261 release notes",
+        "systemd 261 ConditionSecurity measured-os RestrictFileSystemAccess"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "restrictfilesystems-vs-access",
+      "scope": "The consistency trap: RestrictFileSystems= (older BPF-LSM filesystem-type control, used in the shipped yubiOS enrollment unit) versus RestrictFileSystemAccess= (v261 signed-filesystem control).",
+      "seed_queries": [
+        "systemd RestrictFileSystems directive BPF LSM",
+        "systemd RestrictFileSystemAccess directive"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "base-images-cross-check",
+      "scope": "The cross-check against the fedora bootc base-images status: which Fedora streams the repo tracks, and the bootc package version lag (rawhide at 1.16.3 while upstream shipped 1.16.4).",
+      "seed_queries": [
+        "fedora bootc base-images repository supported versions",
+        "bootc 1.16 release fedora rawhide package version"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "pin-drift-and-staleness",
+      "scope": "Digest drift after a bump: the 2026-09-18 stale-pin finding, the 2026-09-29 quay tag refresh, the :46 tag appearing upstream, and who owns re-resolution.",
+      "seed_queries": [
+        "container digest pin stale drift detection",
+        "quay.io registry tag digest changed"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.3073,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1272,
+          "1": 0.4384,
+          "2": 0.4344
+        },
+        "confidence": 0.0957
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.6211,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0644,
+          "1": 0.2502,
+          "2": 0.6854
+        },
+        "confidence": 0.3048
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.4333,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0851,
+          "1": 0.3965,
+          "2": 0.5184
+        },
+        "confidence": 0.1498
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.7516,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0407,
+          "1": 0.167,
+          "2": 0.7923
+        },
+        "confidence": 0.4859
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.3766,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.117,
+          "1": 0.3894,
+          "2": 0.4936
+        },
+        "confidence": 0.1134
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.9097,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2683,
+          "1": 0.5537,
+          "2": 0.178
+        },
+        "confidence": 0.1153
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.7955,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0395,
+          "1": 0.1255,
+          "2": 0.835
+        },
+        "confidence": 0.5718
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.3067,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.102,
+          "1": 0.4893,
+          "2": 0.4087
+        },
+        "confidence": 0.1253
+      }
+    },
+    "usage": {
+      "input_tokens": 1624,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
