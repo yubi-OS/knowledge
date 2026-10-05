@@ -1,0 +1,223 @@
+{
+ "topic": "lensing the question space - connecting null-standardized question-space corpus audits to established mathematical proofs (Hodge theory, spectral methods), brainstormed anchors and the resulting gap map",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "conformal-mapping-lens",
+   "scope": "Mobius/conformal maps as refractive-index design: Leonhardt Science 2006 optical conformal mapping, transformation optics, Schmiele et al flat lenses",
+   "seed_queries": [
+    "conformal transformation optics refractive index Leonhardt Science 2006",
+    "Schmiele conformal map flat lens Physical Review A 2010"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "fermat-eikonal-variational",
+   "scope": "Fermat's principle on conformally flat metrics, the eikonal equation, and Snell's law as the corner condition at index discontinuities",
+   "seed_queries": [
+    "Fermat principle geodesics conformally flat metric eikonal equation",
+    "Snell law variational principle corner condition Tyc JOSA 1997"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "matched-null-vacuum-spectrum",
+   "scope": "The matched marginal null as vacuum metric: Marchenko-Pastur spectrum, fixed-margin ensembles and variance profiles (Lyu-Mukherjee)",
+   "seed_queries": [
+    "Marchenko Pastur distribution eigenvalue spectrum random matrices",
+    "fixed margin variance profile random matrix ensembles Lyu Mukherjee arXiv 2407.14942"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "effective-dimension-ladder",
+   "scope": "Effective dimension as a smooth dial: participation ratio, stable rank, intrinsic dimension, Zhang's effective dimension, Johnson-Lindenstrauss",
+   "seed_queries": [
+    "participation ratio stable rank intrinsic dimension effective rank matrix",
+    "Zhang effective dimension kernel generalization Johnson-Lindenstrauss lemma"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "fisher-rao-intent-geometry",
+   "scope": "Fisher-Rao information geometry as the unique invariant geometry of sufficiency: Rao 1945, Cencov's theorem, Efron's statistical curvature",
+   "seed_queries": [
+    "Cencov theorem Fisher metric unique invariant sufficient statistics",
+    "Fisher Rao information geometry statistical curvature Efron 1975"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "sbi-embedding-networks",
+   "scope": "Simulation-based inference and neural posterior estimation with embedding networks as the learned compression between observation and parameters",
+   "seed_queries": [
+    "simulation-based inference normalizing flows embedding networks summary statistics",
+    "neural posterior estimation embedding network cosmology lensing 2023"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "caustics-catastrophe-theory",
+   "scope": "Caustics as degenerate ray maps: Arnold-Thom catastrophe theory, fold and cusp classification, and singularities of transport maps",
+   "seed_queries": [
+    "caustic classification catastrophe theory fold cusp optics",
+    "singularities Brenier map optimal transport caustic"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "snell-basis-interfaces",
+   "scope": "Refraction at basis interfaces: conservation laws for null-standardized signals crossing bases, achromatic coordinates, dispersion across the dimension ladder",
+   "seed_queries": [
+    "Snell law conservation invariant crossing media interface refraction",
+    "achromatic lens design wavelength invariant coordinates dispersion"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "powering-conformal-lens",
+   "scope": "Actually powering the lens: null-constrained Mobius map optimization for family concentration with anti-caustic rank and condition-number guards",
+   "seed_queries": [
+    "Mobius transformation optimization conformal lens design gradient descent",
+    "constrained optimization condition number regularization optical design"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "wasserstein-geodesics",
+   "scope": "The Wasserstein channel: Benamou-Brenier dynamic optimal transport, W2 geodesics between distributions, transport-map singularities as caustic analogs",
+   "seed_queries": [
+    "Benamou Brenier dynamic formulation optimal transport geodesic interpolation",
+    "Brenier map singularities optimal transport regularity theory"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.4876,
+    "probabilities": {
+     "0": 0.0811,
+     "1": 0.3502,
+     "2": 0.5687
+    },
+    "confidence": 0.179,
+    "legend": null
+   },
+   "t02": {
+    "score": 1.1469,
+    "probabilities": {
+     "0": 0.1635,
+     "1": 0.526,
+     "2": 0.3105
+    },
+    "confidence": 0.0997,
+    "legend": null
+   },
+   "t03": {
+    "score": 1.589,
+    "probabilities": {
+     "0": 0.0899,
+     "1": 0.2312,
+     "2": 0.6789
+    },
+    "confidence": 0.2836,
+    "legend": null
+   },
+   "t04": {
+    "score": 1.1123,
+    "probabilities": {
+     "0": 0.1857,
+     "1": 0.5163,
+     "2": 0.298
+    },
+    "confidence": 0.0848,
+    "legend": null
+   },
+   "t05": {
+    "score": 1.3672,
+    "probabilities": {
+     "0": 0.1268,
+     "1": 0.3792,
+     "2": 0.494
+    },
+    "confidence": 0.1058,
+    "legend": null
+   },
+   "t06": {
+    "score": 0.8523,
+    "probabilities": {
+     "0": 0.2753,
+     "1": 0.5971,
+     "2": 0.1276
+    },
+    "confidence": 0.1729,
+    "legend": null
+   },
+   "t07": {
+    "score": 0.967,
+    "probabilities": {
+     "0": 0.2619,
+     "1": 0.5093,
+     "2": 0.2288
+    },
+    "confidence": 0.0705,
+    "legend": null
+   },
+   "t08": {
+    "score": 0.8249,
+    "probabilities": {
+     "0": 0.3465,
+     "1": 0.4821,
+     "2": 0.1714
+    },
+    "confidence": 0.0728,
+    "legend": null
+   },
+   "t09": {
+    "score": 1.2467,
+    "probabilities": {
+     "0": 0.1755,
+     "1": 0.4022,
+     "2": 0.4223
+    },
+    "confidence": 0.0563,
+    "legend": null
+   },
+   "t10": {
+    "score": 1.372,
+    "probabilities": {
+     "0": 0.1118,
+     "1": 0.4043,
+     "2": 0.4839
+    },
+    "confidence": 0.1151,
+    "legend": null
+   }
+  },
+  "usage": {
+   "input_tokens": 1568,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t06",
+   "t07",
+   "t08",
+   "t09",
+   "t10"
+  ]
+ }
+}
