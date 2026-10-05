@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "release-ladder",
+  "scope": "Current upstream maintenance state: the release version ladder across osbuild, composer, image-builder, cockpit-image-builder, and archived repos plus RHEL errata.",
+  "queries_attempted": [
+    {
+      "query": "osbuild image builder release overview version ladder 2026",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "cockpit-image-builder RHSA errata 2026 image builder",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://osbuild.org/docs/on-premises/overview/release-overview/",
+    "https://osbuild.org/docs/on-premises/overview/",
+    "https://github.com/osbuild/image-builder/releases",
+    "https://osbuild.org/",
+    "https://books.google.com/books/about/The_Wolves_of_War.html?id=8X-qEQAAQBAJ",
+    "https://github.com/osbuild/image-builder-cli/releases",
+    "https://access.redhat.com/errata/RHSA-2026:24331",
+    "https://www.tenable.com/plugins/nessus/319645",
+    "https://access.redhat.com/errata/RHSA-2026:71543",
+    "https://lwn.net/Articles/1093051/",
+    "https://errata.rockylinux.org/RLSA-2026:24331",
+    "https://cockpit-project.org/"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,239 @@
+{
+  "topic": "osbuild and Image Builder for on-premises OS image generation - what the toolchain builds, its deployment models, and how it compares as prior art for reproducible image builders",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "osbuild-pipeline-engine",
+      "scope": "How the osbuild engine executes an image build: stages, sources, manifests, runners, and the pipeline execution model underneath every frontend.",
+      "seed_queries": [
+        "osbuild pipeline stages manifest architecture",
+        "osbuild developer guide project principles stages sources runner"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "deployment-models",
+      "scope": "The deployment models for on-premises image generation: osbuild-composer daemon with Weldr API versus the stateless image-builder-cli, plus the hosted service frontend.",
+      "seed_queries": [
+        "osbuild-composer weldr api daemon blueprints",
+        "image-builder-cli stateless no daemon podman container"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "blueprint-format",
+      "scope": "The TOML blueprint format and customization surface: packages, users, files, filesystem layout, kernel options, and blueprint versioning.",
+      "seed_queries": [
+        "osbuild image builder blueprint toml reference customizations",
+        "osbuild blueprint reference packages customizations filesystem"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "distro-image-matrix",
+      "scope": "Which distros and output image types osbuild Image Builder supports on premises: image descriptions and the image-type catalogue.",
+      "seed_queries": [
+        "osbuild image builder supported distros image descriptions",
+        "image builder image types ami qcow2 wsl iot"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "ostree-iot-flows",
+      "scope": "The OSTree and IoT build flows: iot-commit artifacts, simplified installers, and edge deployment image chains.",
+      "seed_queries": [
+        "osbuild iot-commit ostree image builder edge",
+        "image builder simplified installer ostree commit"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "bootc-convergence",
+      "scope": "Bootc image mode integration and the 2026 convergence: bootc-image-builder deprecated and absorbed into image-builder-cli as a multi-call binary.",
+      "seed_queries": [
+        "bootc-image-builder deprecation image-builder merge ibcli",
+        "osbuild bootc image mode build disk images from container"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "composefs-backend",
+      "scope": "The experimental composefs-native backend in bootc and the osbuild/image-builder issue 2427 blocker chain for composefs-native image builds.",
+      "seed_queries": [
+        "bootc composefs experimental osbuild image-builder",
+        "osbuild image-builder composefs blocker chain issue 2427"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "release-ladder",
+      "scope": "Current upstream maintenance state: the release version ladder across osbuild, composer, image-builder, cockpit-image-builder, and archived repos plus RHEL errata.",
+      "seed_queries": [
+        "osbuild image builder release overview version ladder 2026",
+        "cockpit-image-builder RHSA errata 2026 image builder"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "prior-art-comparison",
+      "scope": "How osbuild and Image Builder compare as prior art against other reproducible OS image builders (mkosi, kiwi, live-build, NixOS) for an image-mode OS project.",
+      "seed_queries": [
+        "osbuild vs mkosi kiwi image builder comparison",
+        "reproducible OS image build tools comparison bootc image mode"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.8426,
+        "probabilities": {
+          "0": 0.0359,
+          "1": 0.0857,
+          "2": 0.8784
+        },
+        "confidence": 0.6704,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.9116,
+        "probabilities": {
+          "0": 0.0179,
+          "1": 0.0526,
+          "2": 0.9295
+        },
+        "confidence": 0.8006,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.7003,
+        "probabilities": {
+          "0": 0.0598,
+          "1": 0.1801,
+          "2": 0.7601
+        },
+        "confidence": 0.4207,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.7256,
+        "probabilities": {
+          "0": 0.0552,
+          "1": 0.164,
+          "2": 0.7808
+        },
+        "confidence": 0.4594,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.2941,
+        "probabilities": {
+          "0": 0.1265,
+          "1": 0.453,
+          "2": 0.4205
+        },
+        "confidence": 0.0971,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.3124,
+        "probabilities": {
+          "0": 0.1228,
+          "1": 0.442,
+          "2": 0.4352
+        },
+        "confidence": 0.0998,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.8296,
+        "probabilities": {
+          "0": 0.2651,
+          "1": 0.6403,
+          "2": 0.0946
+        },
+        "confidence": 0.2338,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.0777,
+        "probabilities": {
+          "0": 0.1529,
+          "1": 0.6165,
+          "2": 0.2306
+        },
+        "confidence": 0.185,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.857,
+        "probabilities": {
+          "0": 0.0314,
+          "1": 0.0802,
+          "2": 0.8884
+        },
+        "confidence": 0.695,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1669,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08",
+      "t09"
+    ]
+  }
+}
