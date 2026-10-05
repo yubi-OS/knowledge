@@ -1,0 +1,223 @@
+{
+  "topic": "host-level configuration for running a bootc-UKI host with libvirt/QEMU GPU passthrough (VFIO, IOMMU groups, host kernel setup, and the host-side constraints)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "bootc-uki-host-layout",
+      "scope": "bootc install layout on the passthrough host: systemd-boot, composefs backend, UKI signing, and why the bootc/UKI layer sits below the VFIO/IOMMU boundary; boot-time attestation as a GPU launch gate.",
+      "seed_queries": [
+        "bootc install to-filesystem systemd-boot UKI unified kernel image",
+        "composefs UKI secure boot dm-verity boot chain attestation"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "host-iommu-enablement",
+      "scope": "host kernel IOMMU enablement: intel_iommu=on and amd_iommu=on kernel cmdline on x86_64, SMMU bring-up on ARM64, and verification that DMA is actually translated before passthrough.",
+      "seed_queries": [
+        "enable intel_iommu=on amd_iommu=on kernel command line vfio passthrough",
+        "ARM64 SMMU IOMMU vfio passthrough enable kernel"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "iommu-group-topology",
+      "scope": "IOMMU group topology: discovery via /sys/kernel/iommu_groups, group co-membership constraints, ACS, and what makes a GPU passthrough-safe.",
+      "seed_queries": [
+        "linux iommu groups vfio pci passthrough isolated group",
+        "check iommu groups sysfs vfio script ACS"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "vfio-pci-binding-lifecycle",
+      "scope": "vfio-pci binding lifecycle on the host: managed=yes vs managed=no, sysfs bind/unbind, virsh nodedev-detach and nodedev-reattach, and device reclaim semantics.",
+      "seed_queries": [
+        "libvirt hostdev managed vfio-pci bind unbind sysfs",
+        "virsh nodedev-detach nodedev-reattach gpu passthrough"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "libvirt-domain-xml",
+      "scope": "libvirt domain XML for a passthrough host: hostdev subsystem=PCI shape, watchdog element with its four actions, and qemu:commandline overrides.",
+      "seed_queries": [
+        "libvirt hostdev pci passthrough domain xml managed yes",
+        "libvirt watchdog i6300esb action poweroff reset domain xml"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "host-cutoff-hooks",
+      "scope": "host-side misbehavior cutoff enforcement: libvirt qemu hooks (/etc/libvirt/hooks), hook phases, and the pause/poweroff/destroy/detach action ladder the host can execute.",
+      "seed_queries": [
+        "libvirt qemu hooks /etc/libvirt/hooks qemu.d example script",
+        "libvirt hook pause destroy vm gpu telemetry cutoff"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "kernel-vfio-contract",
+      "scope": "the kernel VFIO contract and its limits: binary device ownership, no percentage metering or VRAM quota, DMA unmetered without IOMMU, and the iommufd/cdev interface replacing legacy group fds.",
+      "seed_queries": [
+        "linux kernel vfio documentation driver-api vfio device ownership",
+        "vfio iommufd cdev replaces vfio group interface"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "host-policy-constraints",
+      "scope": "host-side policy and hardware constraints: virtio-gpu default, guest /dev/vfio suppression, IOMMU-gated passthrough access gate, SR-IOV and vGPU alternatives, and the required runner shape.",
+      "seed_queries": [
+        "sr-iov gpu virtualization iommu acs requirements passthrough",
+        "nvidia vgpu mediated device mdev vs vfio-user qemu"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.3247,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.118,
+          "1": 0.4392,
+          "2": 0.4428
+        },
+        "confidence": 0.1043
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.9319,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0176,
+          "1": 0.0328,
+          "2": 0.9496
+        },
+        "confidence": 0.8546
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.9245,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0199,
+          "1": 0.0357,
+          "2": 0.9444
+        },
+        "confidence": 0.8404
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8993,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0241,
+          "1": 0.0526,
+          "2": 0.9233
+        },
+        "confidence": 0.7839
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5519,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1107,
+          "1": 0.2266,
+          "2": 0.6627
+        },
+        "confidence": 0.2541
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.9438,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2296,
+          "1": 0.5969,
+          "2": 0.1735
+        },
+        "confidence": 0.1587
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.5929,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0723,
+          "1": 0.2625,
+          "2": 0.6652
+        },
+        "confidence": 0.275
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.7245,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0554,
+          "1": 0.1647,
+          "2": 0.7799
+        },
+        "confidence": 0.4577
+      }
+    },
+    "usage": {
+      "input_tokens": 1627,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

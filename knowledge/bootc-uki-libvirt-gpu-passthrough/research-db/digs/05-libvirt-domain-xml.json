@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "libvirt-domain-xml",
+  "scope": "libvirt domain XML for a passthrough host: hostdev subsystem=PCI shape, watchdog element with its four actions, and qemu:commandline overrides.",
+  "queries_attempted": [
+    {
+      "query": "libvirt hostdev pci passthrough domain xml managed yes",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "libvirt watchdog i6300esb action poweroff reset domain xml",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://libvirt.org/formatdomain.html",
+    "https://www.ibm.com/docs/en/linux-on-systems?topic=vfio-pass-through-pci",
+    "https://urlebird.com/es/user/bubbles_xoxo12/",
+    "https://libvirt.org/formatnode.html",
+    "https://github.com/dmuiX/ryzen-apu-passthrough-guide",
+    "https://avdv.github.io/libvirt/formatdomain.html",
+    "https://libvirt.org/formatdomain.html",
+    "https://docs.okd.io/4.12/virt/virtual_machines/advanced_vm_management/virt-configuring-a-watchdog.html",
+    "https://docs.openshift.com/container-platform/4.9//virt/virtual_machines/advanced_vm_management/virt-configuring-a-watchdog.html",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/6/html/virtualization_administration_guide/section-libvirt-dom-xml-watchdog",
+    "https://www.mlb.com/orioles?msockid=201a051106c96f9123bb12f807bc6eab",
+    "https://www.scangle.cz/SGTi6W.html"
+  ],
+  "outcome": "authored"
+}

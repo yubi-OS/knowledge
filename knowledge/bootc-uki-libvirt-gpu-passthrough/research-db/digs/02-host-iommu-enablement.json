@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "host-iommu-enablement",
+  "scope": "host kernel IOMMU enablement: intel_iommu=on and amd_iommu=on kernel cmdline on x86_64, SMMU bring-up on ARM64, and verification that DMA is actually translated before passthrough.",
+  "queries_attempted": [
+    {
+      "query": "enable intel_iommu=on amd_iommu=on kernel command line vfio passthrough",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "ARM64 SMMU IOMMU vfio passthrough enable kernel",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://gadgetsfeed.com/how-to-enable-iommu/",
+    "https://stackharbor.com/en/knowledge-base/gpu-passthrough-vfio-iommu/",
+    "https://vormox.com/blog/how-to-enable-iommu-vt-d-amd-vi-in-your-bios-and-proxmox-ve-for-pci-passthrough",
+    "https://techlasi.com/savvy/how-to-enable-iommu-in-bios-guide/",
+    "https://www.merriam-webster.com/dictionary/enable",
+    "https://pve.proxmox.com/wiki/PCI(e)_Passthrough",
+    "https://androidmobiles.org/custom-android-kernel-compilation-enabling-iommu-and-vfio-for-advanced-kvm-passthrough/",
+    "https://github.com/torvalds/linux/blob/master/drivers/iommu/arm/Kconfig",
+    "https://lwn.net/Articles/702725/",
+    "https://www.mlb.com/whitesox?msockid=07250c4d5a2361c139451ba45b4e60f0",
+    "https://pve.proxmox.com/wiki/PCI(e)_Passthrough",
+    "https://lwn.net/Articles/675380/"
+  ],
+  "outcome": "authored"
+}

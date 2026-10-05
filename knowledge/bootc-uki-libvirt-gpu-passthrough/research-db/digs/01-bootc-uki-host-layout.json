@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "bootc-uki-host-layout",
+  "scope": "bootc install layout on the passthrough host: systemd-boot, composefs backend, UKI signing, and why the bootc/UKI layer sits below the VFIO/IOMMU boundary; boot-time attestation as a GPU launch gate.",
+  "queries_attempted": [
+    {
+      "query": "bootc install to-filesystem systemd-boot UKI unified kernel image",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "composefs UKI secure boot dm-verity boot chain attestation",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+    "https://github.com/bootc-dev/bootc",
+    "https://github.com/jmarrero/ubuntu-bootc/blob/main/GUIDE.md",
+    "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+    "https://docs.qualcomm.com/bundle/publicresource/topics/80-80022-27/configure_and_secure_boot_with_systemd_boot_and_uki.html",
+    "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+    "https://docs.clip-os.org/clipos/boot_integrity.html",
+    "https://www.youtube.com/watch?v=FbO3qKeez6M",
+    "https://media.ccc.de/v/all-systems-go-2025-362-uki-composefs-and-remote-attestation-for-bootable-containers",
+    "https://github.com/yubi-OS/knowledge/blob/main/knowledge/yubios/03-boot-chain-and-ukis.md",
+    "https://wiki.archlinux.org/title/Dm-verity"
+  ],
+  "outcome": "authored"
+}
