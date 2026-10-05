@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3D",
+    "probe_results": 74,
+    "unresponsive_engines": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ],
+      [
+        "duckduckgo",
+        "CAPTCHA"
+      ],
+      [
+        "fastbot",
+        "Suspended: access denied"
+      ],
+      [
+        "fireball",
+        "Suspended: access denied"
+      ],
+      [
+        "gmx",
+        "Suspended: CAPTCHA"
+      ],
+      [
+        "google",
+        "Suspended: access denied"
+      ],
+      [
+        "google cse",
+        "Suspended: too many requests"
+      ],
+      [
+        "mwmbl",
+        "Suspended: timeout"
+      ],
+      [
+        "qwant",
+        "CAPTCHA"
+      ],
+      [
+        "resulthunter",
+        "Suspended: too many requests"
+      ],
+      [
+        "searchmysite",
+        "Suspended: access denied"
+      ],
+      [
+        "yacy",
+        "timeout"
+      ],
+      [
+        "yep",
+        "Suspended: access denied"
+      ]
+    ],
+    "engines_returned": [
+      "privacywall",
+      "duckduckgo web",
+      "bing",
+      "boardreader",
+      "wiby",
+      "yandex",
+      "encyclosearch",
+      "seznam",
+      "yahoo"
+    ]
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "model": "clef",
+      "answers": {
+        "probe": {
+          "type": "score",
+          "score": 1.0769,
+          "legend": {
+            "0": "no",
+            "1": "maybe",
+            "2": "yes"
+          },
+          "probabilities": {
+            "0": 0.2981,
+            "1": 0.327,
+            "2": 0.3749
+          },
+          "confidence": 0.0045
+        }
+      },
+      "usage": {
+        "input_tokens": 151,
+        "output_tokens": 0
+      }
+    }
+  }
+}

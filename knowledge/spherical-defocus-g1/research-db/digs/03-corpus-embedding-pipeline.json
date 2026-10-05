@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "corpus-embedding-pipeline",
+  "scope": "The pipeline that maps corpus rows onto the sphere: z-scoring 9-column coverage vectors, PCA to 2 dimensions, RMS rescaling, stereographic lift to S^2, and ridge regression of a fitted field on 16 real spherical harmonics with L2 penalty.",
+  "queries_attempted": [
+    {
+      "query": "stereographic projection embedding 2D data on the sphere",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "ridge regression fitting data with spherical harmonics basis",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Stereographic_projection",
+    "https://link.springer.com/article/10.1007/s00530-024-01347-3",
+    "https://www.euclideanspace.com/maths/geometry/space/nonEuclid/projective/stereographic/twod/index.htm",
+    "https://www.flipkart.com/",
+    "http://xahlee.info/complex/1/sphere_proj.html",
+    "https://arxiv.org/html/2401.05931v1",
+    "https://arxiv.org/pdf/2606.00181",
+    "https://en.wikipedia.org/wiki/Spherical_harmonics",
+    "https://kvttt.github.io/files/Spherical_Harmonics_Fitting.pdf",
+    "https://github.com/kvttt/Spherical-Harmonics-Fitting",
+    "https://arxiv.org/abs/2606.00181",
+    "https://ridge.com/"
+  ],
+  "outcome": "authored"
+}
