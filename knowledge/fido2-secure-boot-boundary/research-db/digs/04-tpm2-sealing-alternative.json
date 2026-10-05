@@ -1,0 +1,35 @@
+{
+ "slug": "04-tpm2-sealing-alternative",
+ "scope": "TPM2-sealed LUKS2 (rejected alternative)",
+ "queries_attempted": [
+  {
+   "query": "systemd-cryptenroll tpm2 PCR policy LUKS2 risks",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "TPM2 sealed disk encryption firmware update brick",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://askubuntu.com/questions/1470391/luks-tpm2-auto-unlock-at-boot-systemd-cryptenroll",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html",
+  "https://support.microsoft.com/en-us/windows/security/device-security/update-your-security-processor-tpm-firmware",
+  "https://en.wikipedia.org/wiki/Trusted_Platform_Module",
+  "https://blog.bogdancaraman.com/how-to-update-tpm-firmware-safely-before-installing-windows-11/",
+  "https://www.asrock.com/support/?Model=TPM+2.0",
+  "https://solitaired.com/",
+  "https://www.gnu.org/software/grub/manual/grub/html_node/TPM2-key-protector.html"
+ ],
+ "outcome": "authored"
+}

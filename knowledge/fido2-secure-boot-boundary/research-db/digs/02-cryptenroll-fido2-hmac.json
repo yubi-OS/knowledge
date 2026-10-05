@@ -1,0 +1,35 @@
+{
+ "slug": "02-cryptenroll-fido2-hmac",
+ "scope": "LUKS2 enrollment with FIDO2 hmac-secret",
+ "queries_attempted": [
+  {
+   "query": "systemd-cryptenroll fido2 LUKS2 hmac-secret",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 hmac-secret disk encryption LUKS2",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://github.com/nyancient/fido2-luks",
+  "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://blog.elcomsoft.com/tag/luks2/"
+ ],
+ "outcome": "authored"
+}
