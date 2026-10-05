@@ -1,0 +1,794 @@
+[
+ {
+  "query": "docker rootless mode daemon security",
+  "title": "Run the Docker daemon as a non-root user (Rootless mode)",
+  "url": "https://docs.docker.com/engine/security/rootless/",
+  "snippet": "This is similar to userns-remap mode, except that with userns-remap mode, the daemon itself is running with root privileges, whereas in rootless mode, both the daemon and the container are running without root privileges. The two modes also differ in how they map container UIDs and GIDs to the host: see UID/GID mapping for details ...",
+  "weight": 0.955,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.955
+ },
+ {
+  "query": "docker rootless mode daemon security",
+  "title": "Docker Rootless Mode Security [2026] Checklist | Kunal Ganglani",
+  "url": "https://www.kunalganglani.com/blog/docker-rootless-mode-security",
+  "snippet": "Aug 30, 2026 \u00b7 Running Docker in rootless mode means the Docker daemon and your containers don\u2019t run as the system\u2019s \u201csuperuser.\u201d That reduces the damage if the Docker daemon gets hacked. But it doesn\u2019t stop app bugs, bad images, stolen secrets, or attacks on the Linux kernel itself. This guide gives you a practical production checklist: how to run the rootless daemon safely, when to use user ...",
+  "weight": 0.1091,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1091
+ },
+ {
+  "query": "docker rootless mode daemon security",
+  "title": "How to Run Docker in Rootless Mode: Complete Security Guide (2026)",
+  "url": "https://panelica.com/blog/how-to-run-docker-rootless-mode-complete-security-guide-2026",
+  "snippet": "Jun 5, 2026 \u00b7 Docker rootless mode runs the daemon as a non-root user, limiting container escape impact. This guide covers setup on Ubuntu, Debian, AlmaLinux, Rocky Linux, cgroup v2 delegation, networking limits, and production hardening.",
+  "weight": 0.1343,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1343
+ },
+ {
+  "query": "docker rootless mode daemon security",
+  "title": "Docker Documentation",
+  "url": "https://docs.docker.com/engine/security/rootless.md",
+  "snippet": "# Rootless mode Rootless mode lets you run the Docker daemon and containers as a non-root user to mitigate potential vulnerabilities in the daemon and the container runtime. Rootl",
+  "weight": 0.7681,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.7681
+ },
+ {
+  "query": "docker rootless mode daemon security",
+  "title": "Docker | Secure Sandboxes for AI Agents",
+  "url": "https://www.docker.com/",
+  "snippet": "Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply chain \u2026",
+  "weight": 0.3404,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.3404
+ },
+ {
+  "query": "docker rootless mode daemon security",
+  "title": "Rootless mode | Docker Docs",
+  "url": "https://docs.docker.com/go/rootless/",
+  "snippet": "Rootless mode executes the Docker daemon and containers inside a user namespace. This is similar to userns-remap mode, except that with userns-remap mode\u2026",
+  "weight": 0.9406,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9406
+ },
+ {
+  "query": "rootless dockerd setup user namespace limitations",
+  "title": "Rootless Docker Setup: Containers Without Root Privileges",
+  "url": "https://learncybers.com/rootless-docker-containers-without-root/",
+  "snippet": "Sep 24, 2026 \u00b7 How to install and verify rootless Docker, what user namespaces actually change, and the limitations that matter: ports under 1024, disappearing client IPs, storage drivers and device access.",
+  "weight": 0.0919,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0919
+ },
+ {
+  "query": "rootless dockerd setup user namespace limitations",
+  "title": "Rootless Docker and User Namespaces | Crusader Two-One",
+  "url": "https://josephstreeter.github.io/docs/infrastructure/docker/rootless.html",
+  "snippet": "Two mechanisms narrow this. User namespace remapping keeps the root daemon but maps container UIDs to unprivileged host UIDs. Rootless mode runs the daemon itself as a normal user. This page covers both, their limitations, and how to choose.",
+  "weight": 0.1976,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1976
+ },
+ {
+  "query": "rootless dockerd setup user namespace limitations",
+  "title": "Faux Trees That Make Rooms Feel Finished | Rootless Plants",
+  "url": "https://rootlessplants.com/",
+  "snippet": "Not sure which tree fits your space? 60 seconds. We match you to the species, size, and planter your room actually wants. Side by \u2026",
+  "weight": 0.0143,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0143
+ },
+ {
+  "query": "rootless dockerd setup user namespace limitations",
+  "title": "Rootless mode | Docker Docs",
+  "url": "https://docs.docker.com/engine/security/rootless",
+  "snippet": "Rootless mode does not use binaries with Setuid bits or file capabilities, except newuidmap and newgidmap, which are needed to allow multiple UIDs/GIDs to be used in the user namespace.",
+  "weight": 0.9572,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9572
+ },
+ {
+  "query": "rootless buildkit buildx builder requirements",
+  "title": "buildkit/docs/rootless.md at master \u00b7 moby/buildkit \u00b7 GitHub",
+  "url": "https://github.com/moby/buildkit/blob/master/docs/rootless.md",
+  "snippet": "Running BuildKit in Rootless mode (containerd worker) RootlessKit needs to be installed. Run containerd in rootless mode using rootlesskit following containerd's document.",
+  "weight": 0.9365,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9365
+ },
+ {
+  "query": "rootless buildkit buildx builder requirements",
+  "title": "Build Docker images with BuildKit | GitLab Docs",
+  "url": "https://docs.gitlab.com/ci/docker/using_buildkit/",
+  "snippet": "Prerequisites GitLab Runner with Docker executor Docker 19.03 or later to use Docker Buildx A project with a Dockerfile BuildKit rootless BuildKit in standalone mode provides rootless image builds without Docker daemon dependency. This method eliminates privileged containers entirely and provides a direct replacement for Kaniko builds.",
+  "weight": 0.7481,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.7481
+ },
+ {
+  "query": "rootless buildkit buildx builder requirements",
+  "title": "Kubernetes driver | Docker Docs",
+  "url": "https://docs.docker.com/build/builders/drivers/kubernetes/",
+  "snippet": "The build driver creates the necessary resources on your cluster in the specified namespace (in this case, buildkit), while keeping your driver configuration locally. Use your new builder by including the --builder flag when running Buildx commands. For example",
+  "weight": 0.5898,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.5898
+ },
+ {
+  "query": "rootless buildkit buildx builder requirements",
+  "title": "Rootless mode - BuildKit - crazymax.dev",
+  "url": "https://crazymax.dev/buildkit/user-guides/rootless-mode/",
+  "snippet": "Rootless mode Rootless mode allows running BuildKit daemon as a non-root user. Distribution-specific hint Using Ubuntu kernel is recommended. Debian GNU/Linux 10 Add kernel.unprivileged_userns_clone=1 to /etc/sysctl.conf (or /etc/sysctl.d) and run sudo sysctl -p. This step is not needed for Debian GNU/Linux 11 and later. RHEL/CentOS 7 \u00b6 Add user.max_user_namespaces=28633 to /etc/sysctl.conf ...",
+  "weight": 0.4363,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.4363
+ },
+ {
+  "query": "rootless buildkit buildx builder requirements",
+  "title": "'buildx' tag wiki - Stack Overflow",
+  "url": "http://stackoverflow.com/tags/buildx/info",
+  "snippet": "About Docker Buildx is a CLI plugin that extends the docker command with the full support of the features provided by Moby BuildKit builder toolkit. It p\u2026",
+  "weight": 0.0237,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0237
+ },
+ {
+  "query": "buildkit rootless mode limitations",
+  "title": "Running BuildKit on Kubernetes: A Deep Dive into Rootless and ... - Medium",
+  "url": "https://medium.com/@yogendra_79882/running-buildkit-on-kubernetes-a-deep-dive-into-rootless-and-rootful-modes-2eb5760be073",
+  "snippet": "Feb 3, 2026 \u00b7 Rootful Mode Setup Rootful mode is simpler to set up but runs with elevated privileges. Configuration global: rootless: falseamd64: image: repository: moby/buildkit tag: \"v0.27.0\" # Non-rootless ...",
+  "weight": 0.3575,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.3575
+ },
+ {
+  "query": "buildkit rootless mode limitations",
+  "title": "BuildKit container builds | Buildkite Documentation",
+  "url": "https://buildkite.com/docs/agent/self-hosted/agent-stack-k8s/buildkit-container-builds",
+  "snippet": "BuildKit is a Docker builder that provides advanced features for building container images in a daemonless environment, making it a good fit for Agent Stack for Kubernetes when running a Docker daemon within build containers may not be desired or possible. BuildKit daemonless builds The BuildKit daemon can be run in rootless mode or embedded directly into your build process without requiring a ...",
+  "weight": 0.8046,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8046
+ },
+ {
+  "query": "buildkit rootless mode limitations",
+  "title": "Tasty Tacos - Voted Des Moines Best Tacos",
+  "url": "https://www.tastytacos.com/",
+  "snippet": "Family owned and operated ever since, we now have six flourishing restaurants in and around the Des Moines metro. Stop in and \u2026",
+  "weight": 0.0174,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0174
+ },
+ {
+  "query": "podman rootless mode newuidmap newgidmap",
+  "title": "Rootless Podman Setup: subuid, subgid & Common Errors",
+  "url": "https://www.golinuxcloud.com/rootless-podman/",
+  "snippet": "Aug 23, 2026 \u00b7 What is rootless Podman? Check whether Podman is running rootless Rootless Podman requirements Check newuidmap and newgidmap Check /etc/subuid and /etc/subgid The usermod --add-subuids range trap Use getsubids to verify subordinate IDs Inspect the actual rootless UID/GID mapping Run your first rootless container Where rootless Podman stores its ...",
+  "weight": 0.6489,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6489
+ },
+ {
+  "query": "podman rootless mode newuidmap newgidmap",
+  "title": "podman/docs/tutorials/rootless_tutorial.md at main \u00b7 podman ...",
+  "url": "https://github.com/podman-container-tools/podman/blob/main/docs/tutorials/rootless_tutorial.md",
+  "snippet": "Rootless Podman is not, and will never be, root; it's not a setuid binary, and gains no privileges when it runs. Instead, Podman makes use of a user namespace to shift the UIDs and GIDs of a block of users it is given access to on the host (via the newuidmap and newgidmap executables) and your own user within the containers that Podman creates.",
+  "weight": 0.9493,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9493
+ },
+ {
+  "query": "podman rootless mode newuidmap newgidmap",
+  "title": "Rootless Containers | containers/podman | DeepWiki",
+  "url": "https://deepwiki.com/containers/podman/8-rootless-containers",
+  "snippet": "Jul 31, 2026 \u00b7 Overview Rootless containers enable unprivileged users to run containers with only the permissions they already possess. When run without root, Podman uses user namespaces to map the root user inside the container to the non-root user running Podman on the host. This provides isolation without requiring setuid binaries (except for helpers like newuidmap) or daemon processes. Rootles",
+  "weight": 0.6668,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6668
+ },
+ {
+  "query": "podman rootless mode newuidmap newgidmap",
+  "title": "How to Debug User Namespace Issues in Rootless Podman",
+  "url": "https://oneuptime.com/blog/post/2026-03-18-debug-user-namespace-issues-rootless-podman/view",
+  "snippet": "Mar 18, 2026 \u00b7 Summary User namespace issues in rootless Podman come down to three areas: subuid/subgid configuration in /etc/subuid and /etc/subgid, the presence and permissions of newuidmap / newgidmap binaries, and kernel parameters like max_user_namespaces. Start debugging with podman unshare id to test basic namespace creation, check podman info for ID mapping details, and use podman --log-le",
+  "weight": 0.0843,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0843
+ },
+ {
+  "query": "podman rootless mode newuidmap newgidmap",
+  "title": "Podman",
+  "url": "https://podman.io/",
+  "snippet": "Podman 6: New Dual-Purpose MSI Installer Explained Podman 6 introduces a revamped Windows installer, allowing users to install \u2026",
+  "weight": 0.9091,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9091
+ },
+ {
+  "query": "podman rootless mode newuidmap newgidmap",
+  "title": "podman-unshare \u2014 Podman documentation",
+  "url": "https://docs.podman.io/en/latest/markdown/podman-unshare.1.html",
+  "snippet": "Podman unshare is useful for troubleshooting unprivileged operations and for manually clearing storage and other data related to images and containers.",
+  "weight": 0.8909,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8909
+ },
+ {
+  "query": "podman rootless setuid helper security",
+  "title": "How to Configure Podman Security - oneuptime.com",
+  "url": "https://oneuptime.com/blog/post/2026-02-02-podman-security-configuration/view",
+  "snippet": "Feb 2, 2026 \u00b7 How to Configure Podman Security A comprehensive guide to securing Podman containers, covering rootless mode, user namespaces, SELinux policies, seccomp profiles, capability management.",
+  "weight": 0.0752,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0752
+ },
+ {
+  "query": "podman rootless setuid helper security",
+  "title": "Enterprise Podman Security: Rootless Containers, SELinux, Backups ...",
+  "url": "https://blog.nviso.eu/2026/02/03/rootless-containers-with-podman/",
+  "snippet": "Feb 3, 2026 \u00b7 In contrast, Podman was designed to support rootless operation and uses a daemonless model for container lifecycle management, running containers as regular user processes while delegating specific tasks to helper services such as Conmon (handles container process monitoring and logging), slirp4netns (provides user-mode networking in rootless ...",
+  "weight": 0.6906,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6906
+ },
+ {
+  "query": "podman rootless setuid helper security",
+  "title": "GitHub - podman-container-tools/podman: Podman: A tool for...",
+  "url": "https://github.com/podman-container-tools/podman",
+  "snippet": "Resource isolation of containers and pods. Support for a Docker-compatible CLI interface, which can both run containers locally and on remote systems. No manager daemon, for improved security and lower resource utilization at idle.",
+  "weight": 0.655,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.655
+ },
+ {
+  "query": "linux capabilities ambient set CAP_SYS_ADMIN new root",
+  "title": "capabilities (7) \u2014 Linux manual page",
+  "url": "https://www.man7.org/linux/man-pages/man7/capabilities.7.html",
+  "snippet": "Only the init process may set capabilities in the capability bounding set; other than that, the superuser (more precisely: a process with the CAP_SYS_MODULE capability) may only clear capabilities from this set.",
+  "weight": 0.8845,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8845
+ },
+ {
+  "query": "linux capabilities ambient set CAP_SYS_ADMIN new root",
+  "title": "CAP_SYS_ADMIN: the new root - LWN.net",
+  "url": "https://lwn.net/Articles/486306/",
+  "snippet": "Mar 14, 2012 \u00b7 CAP_SYS_ADMIN: the new root March 14, 2012 This article was contributed by Michael Kerrisk. Capabilities are\u2014at least in theory\u2014a nice idea: divide the privileges of root (user ID 0) into small pieces so that a process can be granted just enough power to perform specific privileged tasks.",
+  "weight": 0.7877,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.7877
+ },
+ {
+  "query": "linux capabilities ambient set CAP_SYS_ADMIN new root",
+  "title": "Linux Capabilities Explained - mylinux.work",
+  "url": "https://mylinux.work/guides/linux-capabilities-explained/",
+  "snippet": "Jun 28, 2026 \u00b7 Linux capabilities deep dive \u2014 capability sets, file capabilities, ambient capabilities, capsh, getcap, setcap, capability-aware daemons, dropping privileges, and practical examples for running services without full root",
+  "weight": 0.0796,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0796
+ },
+ {
+  "query": "linux capabilities ambient set CAP_SYS_ADMIN new root",
+  "title": "Ubuntu Manpage: capabilities - overview of Linux capabilities",
+  "url": "https://manpages.ubuntu.com/manpages/bionic/man7/capabilities.7.html",
+  "snippet": "Only the init process may set capabilities in the capability bounding set; other than that, the superuser (more precisely: a process with the CAP_SYS_MODULE capability) may only clear capabilities from this set.",
+  "weight": 0.8852,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8852
+ },
+ {
+  "query": "linux capabilities ambient set CAP_SYS_ADMIN new root",
+  "title": "Download Linux | Linux.org",
+  "url": "https://www.linux.org/pages/download/",
+  "snippet": "May 1, 2017 \u00b7 24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try \u2026",
+  "weight": 0.1505,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1505
+ },
+ {
+  "query": "linux capabilities ambient set CAP_SYS_ADMIN new root",
+  "title": "capabilities(7) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man7/capabilities.7.html",
+  "snippet": "CAP_SYS_ADMIN capability. See also the kernel source file. Documentation/admin-guide/perf-security.rst.The ambient capability set can be directly modified using. prctl(2). Ambient capabilities are automatically lowered.",
+  "weight": 0.8938,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8938
+ },
+ {
+  "query": "capabilities(7) ambient capabilities drop privileges",
+  "title": "capabilities (7): overview of capabilities - Linux man page",
+  "url": "https://linux.die.net/man/7/capabilities",
+  "snippet": "For the purpose of performing permission checks, traditional UNIX implementations distinguish two categories of processes: privileged processes(whose effective user ID is 0, referred to as superuser or root), and unprivilegedprocesses (whose effective UID is nonzero). Privileged processesbypass all kernel permission checks, while unprivileged proce...",
+  "weight": 0.3869,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.3869
+ },
+ {
+  "query": "capabilities(7) ambient capabilities drop privileges",
+  "title": "capabilities (7) \u2014 Linux manual pages",
+  "url": "https://litux.nl/man/htmlman7/capabilities.7.html",
+  "snippet": "Starting with kernel 2.2, Linux divides the privileges traditionally associated with superuser into distinct units, known as capabilities, which can be independently enabled and disabled. Capabilities are a per-thread attribute.",
+  "weight": 0.1193,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1193
+ },
+ {
+  "query": "capabilities(7) ambient capabilities drop privileges",
+  "title": "History of the graphical user interface",
+  "url": "https://handwiki.org/wiki/History_of_the_graphical_user_interface",
+  "snippet": "The history of the graphical user interface, understood as the use of graphic icons and a pointing device to control a computer, covers a five-decade span of incremental refinements, built on some constant core principles. Several vendors have created their own windowing systems based on independent code, but with basic elements in common that defin",
+  "weight": 0.127,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.127
+ },
+ {
+  "query": "capabilities(7) ambient capabilities drop privileges",
+  "title": "Canto Tool Corporation",
+  "url": "https://cantotool.com/index.html",
+  "snippet": "Punches Gages Prototypes Special Machines Parts Our Capabilities are Jig Boring Jig Grinding EDM Machining Precision Machine \u2026",
+  "weight": 0.1736,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1736
+ },
+ {
+  "query": "capabilities(7) ambient capabilities drop privileges",
+  "title": "Michael Tsai - Blog",
+  "url": "https://mjtsai.com/blog/",
+  "snippet": "exploration of what an ambient computer assistant might look like. I wanted to give an expressive face to a helper that could also use your computer. The character evolved, but th",
+  "weight": 0.3629,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.3629
+ },
+ {
+  "query": "docker daemon attack surface unix socket root",
+  "title": "Review of the Docker Daemon attack surface",
+  "url": "https://docs.docker.com/engine/security/",
+  "snippet": "Review of the Docker Daemon attack surface Kernel namespaces Docker containers are very similar to LXC containers, and they have similar security features. When you start a container with docker run, behind the scenes Docker creates a set of namespaces and control groups for the container. Namespaces provide the first and most straightforward form of isolation. Processes running within a ...",
+  "weight": 0.832,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.832
+ },
+ {
+  "query": "docker daemon attack surface unix socket root",
+  "title": "Configure remote access for Docker daemon",
+  "url": "https://docs.docker.com/engine/daemon/remote-access/",
+  "snippet": "Configuring remote access allows Docker to accept requests from remote hosts by configuring it to listen on an IP address and port as well as the Unix socket",
+  "weight": 0.7521,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.7521
+ },
+ {
+  "query": "docker daemon attack surface unix socket root",
+  "title": "Docker socket security: why /var/run/docker.sock is root access",
+  "url": "https://www.netdata.cloud/guides/docker/docker-socket-security/",
+  "snippet": "Understand why the Docker Unix socket is root-equivalent, how to audit socket exposure, and how to reduce container escape risk without breaking workflows.",
+  "weight": 0.648,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.648
+ },
+ {
+  "query": "docker daemon attack surface unix socket root",
+  "title": "How can I use Docker without sudo? - Ask Ubuntu",
+  "url": "https://askubuntu.com/questions/477551/how-can-i-use-docker-without-sudo",
+  "snippet": "As of 0.9.0, you can specify that a group other than docker should own the Unix socket with the -G option. Warning: The docker group (or the group specified with -G) is root-equivalent; see Docker Daemon Attack Surface details and this blogpost on Why we don't let...",
+  "weight": 0.0471,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0471
+ },
+ {
+  "query": "docker daemon attack surface unix socket root",
+  "title": "Docker Security - OWASP Cheat Sheet Series",
+  "url": "https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html",
+  "snippet": "Docker socket /var/run/docker.sock is the UNIX socket that Docker is listening to. This is the primary entry point for the Docker API. The owner of this socket is root. Giving someone access to it is equivalent to giving unrestricted root access to your host. Do not enable tcp Docker daemon socket.",
+  "weight": 0.8946,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8946
+ },
+ {
+  "query": "docker.sock container escape root access",
+  "title": "Docker Container Escape: Privileged, docker.sock & Host Access",
+  "url": "https://www.golinuxcloud.com/docker-container-escape/",
+  "snippet": "Sep 4, 2026 \u00b7 Learn which Docker configurations let a compromised container affect the host, how to inspect privileged mode, docker.sock, capabilities, and mounts, and how Docker Bench differs from CVE scanners.",
+  "weight": 0.4886,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.4886
+ },
+ {
+  "query": "docker.sock container escape root access",
+  "title": "Access Docker socket within container - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/22135897/access-docker-socket-within-container",
+  "snippet": "Accessing Docker from within the container is simple: Use the docker official image or install Docker inside the container. Or you may download archive with docker client binary as described here. Expose Docker unix socket from host to container.",
+  "weight": 0.0457,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0457
+ },
+ {
+  "query": "docker.sock container escape root access",
+  "title": "Docker Socket Security: Preventing Container Escape and Unauthorized ...",
+  "url": "https://sudo.academy/blog/docker-socket-security-preventing-container-escape-and-unauthorized-daemon-access-8fc8c5",
+  "snippet": "The Docker daemon operates as a privileged process, managing containers, images, networks, and volumes. It exposes a REST API, primarily accessible via a Unix domain socket located at `/var/run/docker.sock` by default. This socket is the gateway to the Docker daemon's capabilities. Any process or user with read/write access to this socket effectively gains root privileges on the host system ...",
+  "weight": 0.3811,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.3811
+ },
+ {
+  "query": "docker.sock container escape root access",
+  "title": "Docker Runtime Escape: Risks of Mounting docker.sock",
+  "url": "https://dzone.com/articles/docker-runtime-escape-docker-sock",
+  "snippet": "Docker Runtime Escape: Why Mounting docker.sock Is Worse Than Running Privileged Containers. Tested mounting docker.sock in a container. Five minutes later: full host root access, all secrets stolen, backdoors installed. Here's how.",
+  "weight": 0.2537,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.2537
+ },
+ {
+  "query": "systemd ProtectSystem NoNewPrivileges CapabilityBoundingSet hardening",
+  "title": "Systemd Service Hardening - mylinux.work",
+  "url": "https://mylinux.work/guides/systemd-hardening/",
+  "snippet": "Jun 29, 2026 \u00b7 Systemd provides sandboxing directives that restrict what a service can do \u2014 no containers, no SELinux policy writing, no kernel recompilation. This guide covers each hardening directive, explains what it actually does at the kernel level, and provides tested unit file examples for common services.",
+  "weight": 0.1473,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1473
+ },
+ {
+  "query": "systemd ProtectSystem NoNewPrivileges CapabilityBoundingSet hardening",
+  "title": "Lock Down systemd Services (Sandboxing) \u00b7 Linux Junkies",
+  "url": "https://linuxjunkies.org/guides/lock-down-systemd-services",
+  "snippet": "Jun 7, 2026 \u00b7 Harden Linux daemons using systemd sandboxing directives: ProtectSystem, PrivateTmp, NoNewPrivileges, CapabilityBoundingSet, and SystemCallFilter explained step by step.",
+  "weight": 0.2169,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.2169
+ },
+ {
+  "query": "systemd ProtectSystem NoNewPrivileges CapabilityBoundingSet hardening",
+  "title": "Linux systemd Service Hardening \u2014 Sandboxing, Capabilities, and ...",
+  "url": "https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/",
+  "snippet": "May 24, 2026 \u00b7 Complete guide to hardening Linux systemd services \u2014 sandboxing with ProtectHome and ProtectSystem, capability reduction with CapabilityBoundingSet, NoNewPrivileges, PrivateTmp, systemd-analyze security scoring, and real hardened service files for homelab daemons.",
+  "weight": 0.1253,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1253
+ },
+ {
+  "query": "systemd ProtectSystem NoNewPrivileges CapabilityBoundingSet hardening",
+  "title": "Options for hardening systemd service units \u00b7 GitHub",
+  "url": "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+  "snippet": "A common and reliable pattern in service unit files is thus: NoNewPrivileges=yes PrivateTmp=yes PrivateDevices=yes DevicePolicy=closed ProtectSystem=strict ProtectHome=read-only ProtectControlGroups=yes ProtectKernelModules=yes ProtectKernelTunables=yes RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK RestrictNamespaces=yes RestrictRealtime=yes RestrictSUIDSGID=yes ...",
+  "weight": 0.5561,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.5561
+ },
+ {
+  "query": "systemd ProtectSystem NoNewPrivileges CapabilityBoundingSet hardening",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "weight": 0.1552,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1552
+ },
+ {
+  "query": "systemd ProtectSystem NoNewPrivileges CapabilityBoundingSet hardening",
+  "title": "Anti-Fandom Action! Hosting BreezeWiki with Caching and WildCard DNS",
+  "url": "https://artemis.sh/2023/02/22/hosting-your-own-breezewiki-with-caching.html",
+  "snippet": "ProtectProc=invisible CapabilityBoundingSet=CAP_NET_BIND_SERVICE NoNewPrivileges=true RestrictNamespaces=true RestrictAddressFamilies=~AF_UNIX [Install] WantedBy=multi-user.target",
+  "weight": 0.0361,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0361
+ },
+ {
+  "query": "systemd service sandboxing directives reference",
+  "title": "systemd/Sandboxing - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd/Sandboxing",
+  "snippet": "systemd enables users to harden and sandbox system service units. Because of technical limitations, and ironically security reasons, user units can not be hardened or sandboxed properly since this would make privilege escalation issues possible. This does not affect system units which use the User= directive.",
+  "weight": 0.7987,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.7987
+ },
+ {
+  "query": "systemd service sandboxing directives reference",
+  "title": "systemd Service Hardening and Sandboxing - What Directives Actually ...",
+  "url": "https://braindetox.kr/en/posts/systemd_service_hardening.html",
+  "snippet": "Sep 12, 2026 \u00b7 A persistent and dangerous misconception across development teams is the belief that injecting aggressive systemd sandboxing directives into service unit definitions can magically neutralize core application-layer vulnerabilities.",
+  "weight": 0.2808,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.2808
+ },
+ {
+  "query": "systemd service sandboxing directives reference",
+  "title": "Process Sandboxing and Isolation | systemd/systemd | DeepWiki",
+  "url": "https://deepwiki.com/systemd/systemd/8.2-process-sandboxing-and-isolation",
+  "snippet": "Sep 10, 2026 \u00b7 systemd provides extensive sandboxing through the ExecContext structure, which encodes security restrictions applied to service processes. These restrictions are configured via unit file directives and enforced during process invocation in the child process before executing the actual service binary.",
+  "weight": 0.6503,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6503
+ },
+ {
+  "query": "systemd service sandboxing directives reference",
+  "title": "systemd service sandboxing and security hardening 101 \u00b7 Jamie Ta\u2026",
+  "url": "http://www.jvt.me/mf2/2020/01/uizw7/",
+  "snippet": "Interactions with this post Do you not have a website set up with WebMention capabilities? You can use Comment Parade. Due to laziness, this site uses cl\u2026",
+  "weight": 0.261,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.261
+ },
+ {
+  "query": "systemd service sandboxing directives reference",
+  "title": "systemd service sandboxing and security hardening 101",
+  "url": "https://www.ctrl.blog/entry/systemd-service-hardening/",
+  "snippet": "Run the systemd-analyze security httpd.service command to generate a report of the security directives applied to the httpd.service . As of version 233, there are 77 tests in the security review. Below, I\u2019ve included a small selection of test results that focus on file system access.",
+  "weight": 0.6502,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6502
+ },
+ {
+  "query": "systemd-analyze security expose score hardening",
+  "title": "Harden Linux Services with `systemd-analyze security`: From Score to ...",
+  "url": "https://dev.to/lyraalishaikh/harden-linux-services-with-systemd-analyze-security-from-score-to-enforceable-policy-5415",
+  "snippet": "Harden Linux Services with systemd-analyze security: From Score to Enforceable Policy If you run long-lived services on Linux, hardening often gets postponed because it feels risky: \"What if I break production?\" A practical way to avoid guesswork is to use systemd-analyze security as a baseline, then apply hardening in small, testable drop-ins. This guide walks through a repeatable workflow ...",
+  "weight": 0.0695,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.0695
+ },
+ {
+  "query": "systemd-analyze security expose score hardening",
+  "title": "systemd Service Hardening: What the Exposure Score Does Not Tell You",
+  "url": "https://secure-os.org/articles/systemd-service-hardening/",
+  "snippet": "Jul 31, 2026 \u00b7 systemd-analyze security scores services from 0 to 10, but the manual is explicit that a high score does not mean a service is vulnerable. What the tool measures, what it cannot see, and why settings must be combined.",
+  "weight": 0.5367,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.5367
+ },
+ {
+  "query": "systemd-analyze security expose score hardening",
+  "title": "Linux Shtuff - Page 62 of 273 - Because I have CRS Syndrome...",
+  "url": "https://g33kinfo.com/info/page/62/",
+  "snippet": "The systemd-analyze security command gives your systemd service units an automated security rating. This is a good starting point for security hardening.\u2026",
+  "weight": 0.1803,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1803
+ },
+ {
+  "query": "systemd security score CI gate hardening",
+  "title": "GitHub - teunlao/systemd-security-gate: CI gate for systemd service ...",
+  "url": "https://github.com/teunlao/systemd-security-gate",
+  "snippet": "CLI + GitHub Action: fail CI when requiredsystemd.service units in your repo exceed a security exposure threshold, using systemd-analyze security in offline mode.",
+  "weight": 0.6018,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6018
+ },
+ {
+  "query": "systemd security score CI gate hardening",
+  "title": "systemctl Security: Audit and Harden systemd Services",
+  "url": "https://www.intramweb.com/linux-security/systemctl-security-linux/",
+  "snippet": "Use systemd-analyze security to score and prioritize hardening work, apply directives via drop-in override files to survive package updates, and mask services that should never run rather than simply disabling them.",
+  "weight": 0.2762,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.2762
+ },
+ {
+  "query": "systemd security score CI gate hardening",
+  "title": "systemd-security-gate/README.md at main \u00b7 teunlao ... - GitHub",
+  "url": "https://github.com/teunlao/systemd-security-gate/blob/main/README.md",
+  "snippet": "CI gate for systemd service hardening (systemd-analyze security offline) - teunlao/systemd-security-gate",
+  "weight": 0.1439,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1439
+ },
+ {
+  "query": "microvm firecracker CI build isolation",
+  "title": "GitHub - firecracker-microvm/firecracker: Secure and fast microVMs for ...",
+  "url": "https://github.com/firecracker-microvm/firecracker",
+  "snippet": "Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services that provide serverless operational models. Firecracker runs workloads in lightweight virtual machines, called microVMs, which combine the security and isolation properties provided by hardware virtualization technology with the ...",
+  "weight": 0.4503,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.4503
+ },
+ {
+  "query": "microvm firecracker CI build isolation",
+  "title": "Firecracker MicroVMs for Multi-Tenant CI: What Per-Build... | bex.co",
+  "url": "https://bex.co/blog/2026/07/29/dagger-firecracker-microvm-build-isolation",
+  "snippet": "Jul 29, 2026 \u00b7 A shared-kernel build pod runs a tenant's arbitrary install scripts and Dockerfiles next to every other tenant's. Firecracker microVMs can close that gap per build \u2014 real numbers from BuildBuddy's production fleet included \u2014 but per-step isolation, which nobody has actually shipped, is a different and much worse trade.",
+  "weight": 0.6405,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6405
+ },
+ {
+  "query": "microvm firecracker CI build isolation",
+  "title": "Firecracker MicroVM CI/CD Pipeline Integration Guide",
+  "url": "https://www.developnsolve.com/post/firecracker-microvm-ci-cd-pipeline",
+  "snippet": "Apr 21, 2026 \u00b7 Conclusion Firecracker MicroVMs provide a powerful solution for integrating lightweight, secure virtual machines into CI/CD pipelines. They combine the speed of containers with the strong isolation of traditional VMs, enabling faster and safer build and test environments.",
+  "weight": 0.146,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.146
+ },
+ {
+  "query": "microvm firecracker CI build isolation",
+  "title": "GitHub Pages - Firecracker",
+  "url": "https://firecracker-microvm.github.io/",
+  "snippet": "Firecracker Firecracker is an open source virtualization technology purpose-built for creating and managing secure, multi-tenant container and function-based services. It enables you to deploy workloads in lightweight virtual machines (microVMs) that provide enhanced security and workload isolation over traditional VMs, while enabling the speed and resource efficiency of containers. Open ...",
+  "weight": 0.968,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.968
+ },
+ {
+  "query": "microvm firecracker CI build isolation",
+  "title": "Isolate CI/CD Build Steps in MicroVMs \u00b7 PandaStack",
+  "url": "https://www.pandastack.ai/blog/microvm-ci-cd-pipeline-isolation/",
+  "snippet": "Jun 27, 2026 \u00b7 Firecracker & microVMs Security & isolation On this page Why a shared CI host is a soft target A microVM per job: fresh kernel, then gone Shared runner vs. microVM per job, side by side Wiring it into a pipeline Caches, secrets, and the supply-chain angle Fanning out a build matrix without fanning out risk When you don't need this",
+  "weight": 0.5097,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.5097
+ },
+ {
+  "query": "microvm firecracker CI build isolation",
+  "title": "Why MicroVMs: The Architecture Behind Docker Sandboxes",
+  "url": "https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/",
+  "snippet": "Apr 16, 2026 \u00b7 Dedicated microVM. Each sandbox gets its own kernel. It\u2019s hardware-boundary isolation, the same kind you get from \u2026",
+  "weight": 0.8987,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8987
+ },
+ {
+  "query": "ephemeral VM per build step security isolation",
+  "title": "Security & isolation \u2014 tempus.build",
+  "url": "https://tempus.build/en/security/",
+  "snippet": "How tempus.build isolates your CI \u2014 each job in its own hardware-virtualized micro-VM (Kata Containers), network default-deny, ephemeral by design \u2014 and how to verify the runner image yourself (cosign, SLSA, SBOM).",
+  "weight": 0.6179,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6179
+ },
+ {
+  "query": "ephemeral VM per build step security isolation",
+  "title": "How Do You Secure Ephemeral Build Environments?",
+  "url": "https://dev.to/varunvarde/how-do-you-secure-ephemeral-build-environments-4ee4",
+  "snippet": "Sep 8, 2026 \u00b7 In some cases, an attacker who compromises a build environment can target the software supply chain rather than the environment itself. The security objective is therefore broader than protecting the temporary machine. It is about protecting the entire build trust boundary. A secure ephemeral-build architecture should address: Runner isolation",
+  "weight": 0.1557,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1557
+ },
+ {
+  "query": "ephemeral VM per build step security isolation",
+  "title": "Ephemeral CI Runners with Firecracker and Kata: VM-Level Isolation for ...",
+  "url": "https://www.systemshardening.com/articles/cicd/firecracker-kata-ci-runners/",
+  "snippet": "Apr 27, 2026 \u00b7 The VM cannot reach hosts the bridge does not allow. DNS resolution goes through a per-bridge resolver with the same allowlist. Step 5: Image and Snapshot Lifecycle Build VM images deterministically and rotate frequently: ... Rotate weekly: a fresh snapshot bakes in latest security updates. Old snapshots are deleted, eliminating any cumulative ...",
+  "weight": 0.6785,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6785
+ },
+ {
+  "query": "ephemeral VM per build step security isolation",
+  "title": "EPHEMERAL Definition & Meaning - Merriam-Webster",
+  "url": "https://www.merriam-webster.com/dictionary/ephemeral",
+  "snippet": "The meaning of EPHEMERAL is lasting a very short time. How to use ephemeral in a sentence. The Mayfly Helps to Illustrate <span \u2026",
+  "weight": 0.9117,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9117
+ },
+ {
+  "query": "ephemeral VM per build step security isolation",
+  "title": "The Design and Implementation of the Tor Browser [DRAFT]",
+  "url": "https://2019.www.torproject.org/projects/torbrowser/design/",
+  "snippet": "to implement ephemeral-keyed encrypted swap. 2.2.\u00a0Privacy Requirements The privacy requirements are primarily concerned with reducing linkability: the ability for a user&#39;s activit",
+  "weight": 0.9248,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9248
+ },
+ {
+  "query": "ephemeral VM per build step security isolation",
+  "title": "Switching to ephemeral macOS build runners on the Swift Package...",
+  "url": "https://swiftpackageindex.com/blog/switching-to-ephemeral-macos-build-runners",
+  "snippet": "With fresh VMs per build, that\u2019s now something we could start to build. We couldn\u2019t wrap this up without also telling you all the hardware that we now run on, since it\u2019s quite impressive. We\u2019re running 8x Mac Studio M1 Ultra machines with 128GB of RAM each.",
+  "weight": 0.9257,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9257
+ },
+ {
+  "query": "falco runtime detection container privilege escalation",
+  "title": "Falco Runtime Security: Writing Effective Detection Rules and Deploying ...",
+  "url": "https://www.systemshardening.com/articles/observability/falco-security-rules/",
+  "snippet": "May 7, 2026 \u00b7 Falco is the de facto standard for Linux runtime security monitoring. This guide covers its syscall-based detection model, writing custom rules for privilege escalation, container escapes, and credential access, tuning rules to eliminate false positives, securing falco.yaml, routing alerts through Falcosidekick, and automating response with Falco Talon.",
+  "weight": 0.5188,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.5188
+ },
+ {
+  "query": "falco runtime detection container privilege escalation",
+  "title": "How to Configure Falco for Runtime Security - oneuptime.com",
+  "url": "https://oneuptime.com/blog/post/2026-01-25-falco-runtime-security/view",
+  "snippet": "Container privilege escalation.Falco gives you visibility into what actually happens inside your containers, not just what could happen. Start with the default rules, add custom detection for your environment, and route alerts to your security operations workflow.",
+  "weight": 0.1787,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1787
+ },
+ {
+  "query": "falco runtime detection container privilege escalation",
+  "title": "Falco Kubernetes Runtime Security [Rules and Alerts]",
+  "url": "https://www.golinuxcloud.com/falco-kubernetes-runtime-security/",
+  "snippet": "Falco evaluates runtime events against rules and emits alerts when a process, file access, or container action looks suspicious. This walkthrough deploys Falco 0.44.1 on a kubeadm lab running Kubernetes 1.36.3, confirms syscall collection with the modern eBPF driver, triggers four controlled detections, and adds one custom rule for shell activity in a protected namespace.",
+  "weight": 0.4181,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.4181
+ },
+ {
+  "query": "falco runtime detection container privilege escalation",
+  "title": "Falco (musician) - Wikipedia",
+  "url": "https://en.m.wikipedia.org/wiki/Falco_(musician)",
+  "snippet": "Johann \" Hans \" H\u00f6lzel (German: [\u02c8jo\u02d0han hans \u02c8h\u0153ltsl\u0329]; 19 February 1957 \u2013 6 February 1998), better known by his stage name Falco \u2026",
+  "weight": 0.8674,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.8674
+ },
+ {
+  "query": "falco runtime detection container privilege escalation",
+  "title": "Falco: K8s Runtime Threat Detection | K8s Recipes",
+  "url": "https://kubernetes.recipes/recipes/security/kubernetes-falco-runtime-security/",
+  "snippet": "Deploy Falco for Kubernetes runtime security monitoring. Detect suspicious container behavior, privilege escalation, file access.",
+  "weight": 0.3508,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.3508
+ },
+ {
+  "query": "falco runtime detection container privilege escalation",
+  "title": "VulnTech Runtime Protection (Falco) \u2013 VulnTech Notes",
+  "url": "https://vulntech.com/tutorials/devsecops/runtime-protection-falco/",
+  "snippet": "Runtime Protection (Falco) Falco provides runtime protection by continuously monitoring system calls inside Kubernetes nodes and containers. It detects suspicious behavior such as privilege escalation, file tampering, command execution inside containers, namespace escapes, and other anomaly patterns.",
+  "weight": 0.6098,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.6098
+ },
+ {
+  "query": "tetragon seccomp runtime security monitoring",
+  "title": "Tetragon - eBPF-based Security Observability and Runtime Enforcement",
+  "url": "https://tetragon.io/",
+  "snippet": "Advanced Application Insights. Tetragon goes beyond traditional monitoring, capturing events like process execution, network communications, and file access. What can Tetragon do? Cilium Tetragon is a flexible Kubernetes-aware security observability and runtime.",
+  "weight": 0.9268,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9268
+ },
+ {
+  "query": "tetragon seccomp runtime security monitoring",
+  "title": "GitHub - cilium/tetragon: eBPF-based Security Observability and Runtime Enforcement",
+  "url": "https://github.com/cilium/tetragon",
+  "snippet": "Cilium's new Tetragon component enables powerful real-time, eBPF-based Security Observability and Runtime Enforcement. Tetragon detects and is able to react to security-significant events, such as Process execution events System call activity I/O activity including network & file access When used in a Kubernetes environment, Tetragon is Kubernetes-aware - that is, it understands Kubernetes ...",
+  "weight": 0.9429,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9429
+ },
+ {
+  "query": "tetragon seccomp runtime security monitoring",
+  "title": "Tetragon: Runtime Security with eBPF Guide 2026 - khimananda.com",
+  "url": "https://khimananda.com/blog/tetragon-runtime-security-with-ebpf",
+  "snippet": "Frequently Asked Questions. What is Tetragon runtime security with eBPF? Tetragon is an open-source observability and enforcement tool using eBPF to monitor system calls, file access, and network activity in real time.",
+  "weight": 0.1661,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.1661
+ },
+ {
+  "query": "tetragon seccomp runtime security monitoring",
+  "title": "Tetragon - eBPF-based Security Observability and Runtime Enforce\u2026",
+  "url": "http://tetragon.io",
+  "snippet": "eBPF-based Security Observability and Runtime Enforcement Tetragon is a flexible Kubernetes-aware security observability and runtime enforcement tool that\u2026",
+  "weight": 0.9345,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9345
+ },
+ {
+  "query": "tetragon seccomp runtime security monitoring",
+  "title": "Resources | Tetragon - eBPF-based Security Observability and Runtime ...",
+  "url": "https://tetragon.io/docs/resources/",
+  "snippet": "Mar 20, 2025 \u00b7 Book Security Observability with eBPF - Jed Salazar & Nat\u00e1lia R\u00e9ka Iv\u00e1nk\u00f3, OReilly, 2022 Blog posts Tetragon 1.0: Kubernetes Security Observability & Runtime Enforcement with eBPF - Thomas Graf, 2023 Tutorial: Setting Up a Cybersecurity Honeypot with Tetragon to Trigger Canary Tokens - Dean Lewis, 2023 Can I use Tetragon without Cilium?",
+  "weight": 0.9301,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9301
+ },
+ {
+  "query": "tetragon seccomp runtime security monitoring",
+  "title": "Example | Tetragon - eBPF-based Security Observability and Runtime Enforcement",
+  "url": "https://tetragon.io/docs/concepts/tracing-policy/example/",
+  "snippet": "",
+  "weight": 0.9524,
+  "collected_at": "2026-10-05T03:00:34Z",
+  "jev_answer": 0.9524
+ }
+]
