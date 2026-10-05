@@ -1,70 +1,94 @@
 {
-  "subtopic": "07-verification-prerequisite",
-  "queries": [
-    "container image digest pinning build policy supply chain",
-    "cosign SLSA provenance verify container image admission"
-  ],
-  "redo_count": 0,
-  "results_kept": [
-    {
-      "query": "container image digest pinning build policy supply chain",
-      "title": "Image Digest Pinning: Container Supply Chain Security",
-      "url": "https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-chain-integrity-in-snyk-workflows"
-    },
-    {
-      "query": "container image digest pinning build policy supply chain",
-      "title": "What is Digest Pinning? Definition & Security",
-      "url": "https://inferensys.com/glossary/preemptive-algorithmic-cybersecurity/ml-pipeline-security-hardening/digest-pinning"
-    },
-    {
-      "query": "container image digest pinning build policy supply chain",
-      "title": "Rule 2.3 \u2014 Pin container image digests | Ozark Security Labs Docs",
-      "url": "https://docs.ozarksecuritylabs.com/supply-chain/tier-2-hardened/container-image-digests/"
-    },
-    {
-      "query": "container image digest pinning build policy supply chain",
-      "title": "The Container Store | Organize Your Home with Storage & Closet \u2026",
-      "url": "https://www.containerstore.com/welcome.htm?msockid=2907975884b7610d10da80b185e26038"
-    },
-    {
-      "query": "container image digest pinning build policy supply chain",
-      "title": "Image digests - Docker Docs",
-      "url": "https://docs.docker.com/dhi/explore/security-concepts/digests/"
-    },
-    {
-      "query": "container image digest pinning build policy supply chain",
-      "title": "DevSecOps Container Security Guide | GS Consulting",
-      "url": "https://gsconsultingllc.com/insights/devsecops-container-security"
-    },
-    {
-      "query": "cosign SLSA provenance verify container image admission",
-      "title": "Container Image Provenance Attestations: SLSA and SBOM Attestation End ...",
-      "url": "https://www.systemshardening.com/articles/cicd/container-image-attestations/"
-    },
-    {
-      "query": "cosign SLSA provenance verify container image admission",
-      "title": "Container Image Signing & SLSA Provenance Verification with Sigstore Cosign",
-      "url": "https://zyekh.com/blog/container-image-signing-and-slsa-provenance-with-cosign"
-    },
-    {
-      "query": "cosign SLSA provenance verify container image admission",
-      "title": "Cosign and SLSA Provenance: A CI/CD Signing Walkthrough | Syslabs ...",
-      "url": "https://www.syslabs.in/technical-articles/signing-and-verifying-container-images-in-ci-cd-a-cosign-and-slsa-provenance-walkthrough"
-    },
-    {
-      "query": "cosign SLSA provenance verify container image admission",
-      "title": "Container Image Signing and SLSA Provenance Verification with Sigstore ...",
-      "url": "https://imzye.com/Container/Cosign-Image-Signing-SLSA-Provenance/"
-    },
-    {
-      "query": "cosign SLSA provenance verify container image admission",
-      "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
-      "url": "https://www.rentwithcosign.com/"
-    },
-    {
-      "query": "cosign SLSA provenance verify container image admission",
-      "title": "How to verify container images with Kyverno using KMS, Cosign, a\u2026",
-      "url": "https://blog.sigstore.dev/how-to-verify-container-images-with-kyverno-using-kms-cosign-and-workload-identity-1e07d2b85061/"
-    }
-  ]
+ "subtopic": "07-verification-prerequisite",
+ "queries": [
+  "container image digest pinning build policy supply chain",
+  "cosign SLSA provenance verify container image admission"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "container image digest pinning build policy supply chain",
+   "title": "Image Digest Pinning: Container Supply Chain Security",
+   "url": "https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-chain-integrity-in-snyk-workflows",
+   "weight": "low",
+   "decision": 0.4372
+  },
+  {
+   "query": "container image digest pinning build policy supply chain",
+   "title": "What is Digest Pinning? Definition & Security",
+   "url": "https://inferensys.com/glossary/preemptive-algorithmic-cybersecurity/ml-pipeline-security-hardening/digest-pinning",
+   "weight": "low",
+   "decision": 0.2602
+  },
+  {
+   "query": "container image digest pinning build policy supply chain",
+   "title": "Rule 2.3 — Pin container image digests | Ozark Security Labs Docs",
+   "url": "https://docs.ozarksecuritylabs.com/supply-chain/tier-2-hardened/container-image-digests/",
+   "weight": "low",
+   "decision": 0.3729
+  },
+  {
+   "query": "container image digest pinning build policy supply chain",
+   "title": "The Container Store | Organize Your Home with Storage & Closet …",
+   "url": "https://www.containerstore.com/welcome.htm?msockid=2907975884b7610d10da80b185e26038",
+   "weight": "low",
+   "decision": 0.3979
+  },
+  {
+   "query": "container image digest pinning build policy supply chain",
+   "title": "Image digests - Docker Docs",
+   "url": "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+   "weight": "high",
+   "decision": 0.8872
+  },
+  {
+   "query": "container image digest pinning build policy supply chain",
+   "title": "DevSecOps Container Security Guide | GS Consulting",
+   "url": "https://gsconsultingllc.com/insights/devsecops-container-security",
+   "weight": "low",
+   "decision": 0.2796
+  },
+  {
+   "query": "cosign SLSA provenance verify container image admission",
+   "title": "Container Image Provenance Attestations: SLSA and SBOM Attestation End ...",
+   "url": "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+   "weight": "high",
+   "decision": 0.5755
+  },
+  {
+   "query": "cosign SLSA provenance verify container image admission",
+   "title": "Container Image Signing & SLSA Provenance Verification with Sigstore Cosign",
+   "url": "https://zyekh.com/blog/container-image-signing-and-slsa-provenance-with-cosign",
+   "weight": "low",
+   "decision": 0.3068
+  },
+  {
+   "query": "cosign SLSA provenance verify container image admission",
+   "title": "Cosign and SLSA Provenance: A CI/CD Signing Walkthrough | Syslabs ...",
+   "url": "https://www.syslabs.in/technical-articles/signing-and-verifying-container-images-in-ci-cd-a-cosign-and-slsa-provenance-walkthrough",
+   "weight": "high",
+   "decision": 0.6378
+  },
+  {
+   "query": "cosign SLSA provenance verify container image admission",
+   "title": "Container Image Signing and SLSA Provenance Verification with Sigstore ...",
+   "url": "https://imzye.com/Container/Cosign-Image-Signing-SLSA-Provenance/",
+   "weight": "low",
+   "decision": 0.1953
+  },
+  {
+   "query": "cosign SLSA provenance verify container image admission",
+   "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
+   "url": "https://www.rentwithcosign.com/",
+   "weight": "low",
+   "decision": 0.0267
+  },
+  {
+   "query": "cosign SLSA provenance verify container image admission",
+   "title": "How to verify container images with Kyverno using KMS, Cosign, a…",
+   "url": "https://blog.sigstore.dev/how-to-verify-container-images-with-kyverno-using-kms-cosign-and-workload-identity-1e07d2b85061/",
+   "weight": "high",
+   "decision": 0.8944
+  }
+ ]
 }

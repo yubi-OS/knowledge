@@ -1,70 +1,94 @@
 {
-  "subtopic": "04-unit-sandboxing-seccomp",
-  "queries": [
-    "systemd SystemCallFilter seccomp allowlist service hardening",
-    "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives"
-  ],
-  "redo_count": 0,
-  "results_kept": [
-    {
-      "query": "systemd SystemCallFilter seccomp allowlist service hardening",
-      "title": "SystemCallFilter setting - Linux Audit",
-      "url": "https://linux-audit.com/systemd/settings/units/systemcallfilter/"
-    },
-    {
-      "query": "systemd SystemCallFilter seccomp allowlist service hardening",
-      "title": "How to Configure systemd Service Hardening on Ubuntu - OneUptime",
-      "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-hardening-on-ubuntu/view"
-    },
-    {
-      "query": "systemd SystemCallFilter seccomp allowlist service hardening",
-      "title": "How to make a restrictive syscall *whitelist* with systemd-nspawn?",
-      "url": "https://unix.stackexchange.com/questions/754033/how-to-make-a-restrictive-syscall-whitelist-with-systemd-nspawn"
-    },
-    {
-      "query": "systemd SystemCallFilter seccomp allowlist service hardening",
-      "title": "Sandboxing Systemd Services - ejaaskel",
-      "url": "https://ejaaskel.dev/sandboxing-systemd-services/"
-    },
-    {
-      "query": "systemd SystemCallFilter seccomp allowlist service hardening",
-      "title": "How to harden a systemd service unit - Linux Audit",
-      "url": "https://linux-audit.com/systemd/how-to-harden-a-systemd-service-unit/"
-    },
-    {
-      "query": "systemd SystemCallFilter seccomp allowlist service hardening",
-      "title": "System and Service Manager",
-      "url": "https://systemd.io/"
-    },
-    {
-      "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
-      "title": "Mastering systemd: Securing and sandboxing applications and ...",
-      "url": "https://www.redhat.com/en/blog/mastering-systemd"
-    },
-    {
-      "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
-      "title": "Systemd Service Hardening | Linux Journal",
-      "url": "https://www.linuxjournal.com/content/systemd-service-strengthening"
-    },
-    {
-      "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
-      "title": "GitHub - alegrey91/systemd-service-hardening: Basic guide to harden...",
-      "url": "https://github.com/alegrey91/systemd-service-hardening"
-    },
-    {
-      "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
-      "title": "Sandboxing Systemd Services - ejaaskel",
-      "url": "https://ejaaskel.dev/sandboxing-systemd-services/"
-    },
-    {
-      "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
-      "title": "RestrictNamespaces setting - Linux Audit",
-      "url": "https://linux-audit.com/systemd/settings/units/restrictnamespaces/"
-    },
-    {
-      "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
-      "title": "systemd/Sandboxing - ArchWiki",
-      "url": "https://wiki.archlinux.org/title/Systemd/Sandboxing"
-    }
-  ]
+ "subtopic": "04-unit-sandboxing-seccomp",
+ "queries": [
+  "systemd SystemCallFilter seccomp allowlist service hardening",
+  "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
+   "title": "SystemCallFilter setting - Linux Audit",
+   "url": "https://linux-audit.com/systemd/settings/units/systemcallfilter/",
+   "weight": "low",
+   "decision": 0.3765
+  },
+  {
+   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
+   "title": "How to Configure systemd Service Hardening on Ubuntu - OneUptime",
+   "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-hardening-on-ubuntu/view",
+   "weight": "low",
+   "decision": 0.2034
+  },
+  {
+   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
+   "title": "How to make a restrictive syscall *whitelist* with systemd-nspawn?",
+   "url": "https://unix.stackexchange.com/questions/754033/how-to-make-a-restrictive-syscall-whitelist-with-systemd-nspawn",
+   "weight": "low",
+   "decision": 0.0608
+  },
+  {
+   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
+   "title": "Sandboxing Systemd Services - ejaaskel",
+   "url": "https://ejaaskel.dev/sandboxing-systemd-services/",
+   "weight": "high",
+   "decision": 0.7054
+  },
+  {
+   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
+   "title": "How to harden a systemd service unit - Linux Audit",
+   "url": "https://linux-audit.com/systemd/how-to-harden-a-systemd-service-unit/",
+   "weight": "high",
+   "decision": 0.7715
+  },
+  {
+   "query": "systemd SystemCallFilter seccomp allowlist service hardening",
+   "title": "System and Service Manager",
+   "url": "https://systemd.io/",
+   "weight": "high",
+   "decision": 0.8017
+  },
+  {
+   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
+   "title": "Mastering systemd: Securing and sandboxing applications and ...",
+   "url": "https://www.redhat.com/en/blog/mastering-systemd",
+   "weight": "high",
+   "decision": 0.8034
+  },
+  {
+   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
+   "title": "Systemd Service Hardening | Linux Journal",
+   "url": "https://www.linuxjournal.com/content/systemd-service-strengthening",
+   "weight": "high",
+   "decision": 0.574
+  },
+  {
+   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
+   "title": "GitHub - alegrey91/systemd-service-hardening: Basic guide to harden...",
+   "url": "https://github.com/alegrey91/systemd-service-hardening",
+   "weight": "high",
+   "decision": 0.5051
+  },
+  {
+   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
+   "title": "Sandboxing Systemd Services - ejaaskel",
+   "url": "https://ejaaskel.dev/sandboxing-systemd-services/",
+   "weight": "high",
+   "decision": 0.7054
+  },
+  {
+   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
+   "title": "RestrictNamespaces setting - Linux Audit",
+   "url": "https://linux-audit.com/systemd/settings/units/restrictnamespaces/",
+   "weight": "high",
+   "decision": 0.5911
+  },
+  {
+   "query": "systemd-analyze security PrivateDevices RestrictNamespaces sandboxing directives",
+   "title": "systemd/Sandboxing - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd/Sandboxing",
+   "weight": "high",
+   "decision": 0.8555
+  }
+ ]
 }
