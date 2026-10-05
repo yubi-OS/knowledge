@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "oidc-refederation-mechanics",
+  "scope": "The concrete relying-party-side changes that constitute OIDC refederation: new issuer URL and JWKS, new client registration, changed claims, changed sub values, updated aud/iss allowlists; plus common triggers: issuer migration, org merge, IdP deprecation, trust revocation.",
+  "queries_attempted": [
+    {
+      "query": "OpenID Connect issuer change discovery document JWKS rotation relying party",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "OIDC client registration migration new identity provider claims change sub claim",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://openid.net/specs/openid-connect-discovery-1_0.html",
+    "https://theidentity.cloud/oidc-discovery-and-jwks-endpoints-explained",
+    "https://specification.website/spec/well-known/openid-configuration/",
+    "https://ashishsrivastav.com/blog/rfc-8414-jwks-uri-key-discovery-rotation-caching",
+    "https://aboutauth.com/docs/learn/oidc/openid-connect-discovery/",
+    "https://openid.net/",
+    "https://learn.microsoft.com/en-us/entra/external-id/customers/reference-oidc-claims-mapping-customers",
+    "https://learn.microsoft.com/en-us/aspnet/core/security/authentication/claims?view=aspnetcore-10.0",
+    "https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc",
+    "https://docs.pingidentity.com/pingoneaic/am-oauth2/plugins-user-info-claims.html",
+    "https://openid.net/developers/how-connect-works/",
+    "https://dozzle.dev/guide/authentication/oidc"
+  ],
+  "outcome": "authored"
+}

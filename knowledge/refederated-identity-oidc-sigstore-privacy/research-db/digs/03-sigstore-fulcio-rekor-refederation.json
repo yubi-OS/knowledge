@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "sigstore-fulcio-rekor-refederation",
+  "scope": "How the Sigstore attestation layer behaves when the OIDC provider changes: Fulcio issues short-lived X.509 certs bound to OIDC identity claims, Rekor logs all certs and signatures, and a new issuer forces trust-list updates and a subject-identity break that needs out-of-band bridging.",
+  "queries_attempted": [
+    {
+      "query": "Sigstore Fulcio OIDC token short-lived certificate signing identity",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "Rekor transparency log certificate verification trust root OIDC provider",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.sigstore.dev/certificate_authority/oidc-in-fulcio/",
+    "https://github.com/sigstore/fulcio",
+    "https://oneuptime.com/blog/post/2026-08-25-fulcio-oidc-token-10-minute-certificate/view",
+    "https://docs.sigstore.dev/about/security/",
+    "https://www.sigstore.dev/",
+    "https://deepwiki.com/sigstore/docs/5-fulcio-certificate-authority",
+    "https://docs.sigstore.dev/logging/overview/",
+    "https://www.cleanstart.com/knowledge-hub/rekor-publishing",
+    "https://deepwiki.com/jdx/sigstore-verification/6.3-transparency-log-verification",
+    "https://deepwiki.com/jdx/sigstore-verification/10.1-rekor-transparency-log-verification",
+    "https://www.rekor.ai/",
+    "https://www.linkedin.com/pulse/your-signed-container-image-means-nothing-you-tag-heres-ifeanyi-lkwbe"
+  ],
+  "outcome": "authored"
+}
