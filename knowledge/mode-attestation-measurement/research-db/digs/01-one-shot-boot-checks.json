@@ -1,0 +1,36 @@
+{
+ "nn": 1,
+ "slug": "one-shot-boot-checks",
+ "scope": "UKI signature verification at UEFI boot and the dm-verity root hash check at mount: one-shot trigger points, exit/refusal semantics, and what each check proves exactly once",
+ "queries_attempted": [
+  {
+   "query": "sbverify cert UKI signature verification secure boot",
+   "attempt": 1,
+   "raw_results": 71,
+   "kept": 6
+  },
+  {
+   "query": "dm-verity veritysetup verify root hash mount failure EIO",
+   "attempt": 1,
+   "raw_results": 77,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.mankier.com/1/sbverify",
+  "https://manpages.org/sbverify",
+  "https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot",
+  "https://bbs.archlinux.org/viewtopic.php?id=303534",
+  "https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en",
+  "https://wiki.gentoo.org/wiki/Secure_Boot",
+  "https://kernel-internals.org/block/dm-verity/",
+  "https://www.man7.org/linux/man-pages/man8/veritysetup.8.html",
+  "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+  "https://wiki.archlinux.org/title/Dm-verity",
+  "https://man.archlinux.org/man/veritysetup.8.en",
+  "https://unix.stackexchange.com/questions/419570/veritysetup-verify-successful-but-mount-fails-after-upgrade-to-new-kernel"
+ ],
+ "outcome": "authored"
+}

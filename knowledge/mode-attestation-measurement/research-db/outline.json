@@ -1,0 +1,248 @@
+{
+ "topic": "execution modes for attestation and measurement tooling",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "one-shot-boot-checks",
+   "scope": "UKI signature verification at UEFI boot and the dm-verity root hash check at mount: one-shot trigger points, exit/refusal semantics, and what each check proves exactly once",
+   "seed_queries": [
+    "sbverify cert UKI signature verification secure boot",
+    "dm-verity veritysetup verify root hash mount failure EIO"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "daemon-resident-measurement",
+   "scope": "fTPM measurement into PCRs by an OP-TEE TA as the daemon-resident event-driven mode: append-only per boot, reset on reboot, no exit code, the event log is the output",
+   "seed_queries": [
+    "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+    "TCG2 measured boot event log PCR extend append-only reboot"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "runtime-detection-daemons",
+   "scope": "Falco and Tetragon as streaming runtime detection daemons under systemd Type=notify: SIGTERM clean stop, restart on failure, streaming output as the deliverable",
+   "seed_queries": [
+    "Falco Tetragon runtime security daemon systemd Type=notify",
+    "Tetragon tracing policy rules validate streaming events"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "on-demand-remote-attestation",
+   "scope": "Keylime-style remote attestation quote as the on-demand non-interactive mode: 0 quote OK, 2 quote refused, idempotent, --dry-run proposed",
+   "seed_queries": [
+    "Keylime agent remote attestation TPM quote",
+    "TPM2 quote attestation verifier non-interactive exit codes"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "idempotency-and-resume",
+   "scope": "Why a non-idempotent one-shot measurement breaks resume-from-suspend (PCR extend on every re-run) and how pure-function one-shots stay safe across re-runs",
+   "seed_queries": [
+    "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+    "idempotent boot integrity measurement re-run pure function"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "dry-run-and-verify-modes",
+   "scope": "sbverify --cert, veritysetup verify, chipsec_main --list, and rules --validate as dry-run modes: what each proves in CI and what it cannot prove about the booted system",
+   "seed_queries": [
+    "chipsec_main --list platform security checks",
+    "sbverify cert signature verification what it proves"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "interactive-vs-batch-mode",
+   "scope": "Attestation steps run non-interactive everywhere; the single interactive moment is YubiKey FIDO2 touch during boot unlock; CI batch mode preserves the rc=77 SKIP contract under set +e",
+   "seed_queries": [
+    "non-interactive CI secure boot verification script exit codes",
+    "FIDO2 YubiKey touch prompt boot unlock"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "exit-code-contracts",
+   "scope": "Exit semantics as the mode's observable contract: 0 all PASSED, non-zero blocks provisioning, mount refuses with -EIO, quote refused is 2, rc=77 SKIP",
+   "seed_queries": [
+    "veritysetup exit codes verify status",
+    "chipsec_main exit code return PASSED FAILED"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "isolation-and-mode-interaction",
+   "scope": "The remote-attestation agent runs rootless with systemd hardening: CapabilityBoundingSet empty, ProtectSystem=strict, seccomp allowlist, udev-granted access to /dev/tpmrm0; privilege mode composes with execution mode",
+   "seed_queries": [
+    "systemd ProtectSystem=strict CapabilityBoundingSet seccomp allowlist service hardening",
+    "udev rule /dev/tpmrm0 non-root access TPM device permissions"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.475,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1255,
+     "1": 0.274,
+     "2": 0.6005
+    },
+    "confidence": 0.1771
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.6942,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0603,
+     "1": 0.1852,
+     "2": 0.7545
+    },
+    "confidence": 0.4108
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.1728,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2363,
+     "1": 0.3545,
+     "2": 0.4092
+    },
+    "confidence": 0.0234
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.7125,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.065,
+     "1": 0.1575,
+     "2": 0.7775
+    },
+    "confidence": 0.4503
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.6662,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.4326,
+     "1": 0.4686,
+     "2": 0.0988
+    },
+    "confidence": 0.1247
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.137,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2078,
+     "1": 0.4473,
+     "2": 0.3449
+    },
+    "confidence": 0.0433
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.8625,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3359,
+     "1": 0.4657,
+     "2": 0.1984
+    },
+    "confidence": 0.0536
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.1791,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2272,
+     "1": 0.3665,
+     "2": 0.4063
+    },
+    "confidence": 0.0265
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.3564,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1453,
+     "1": 0.353,
+     "2": 0.5017
+    },
+    "confidence": 0.0962
+   }
+  },
+  "usage": {
+   "input_tokens": 1180,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ }
+}

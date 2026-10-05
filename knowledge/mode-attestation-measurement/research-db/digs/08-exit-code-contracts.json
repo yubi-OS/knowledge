@@ -1,0 +1,36 @@
+{
+ "nn": 8,
+ "slug": "exit-code-contracts",
+ "scope": "Exit semantics as the mode's observable contract: 0 all PASSED, non-zero blocks provisioning, mount refuses with -EIO, quote refused is 2, rc=77 SKIP",
+ "queries_attempted": [
+  {
+   "query": "veritysetup exit codes verify status",
+   "attempt": 1,
+   "raw_results": 70,
+   "kept": 6
+  },
+  {
+   "query": "chipsec_main exit code return PASSED FAILED",
+   "attempt": 1,
+   "raw_results": 85,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.man7.org/linux/man-pages/man8/veritysetup.8.html",
+  "https://man.archlinux.org/man/veritysetup.8.en",
+  "https://manpages.ubuntu.com/manpages/xenial/man8/veritysetup.8.html",
+  "https://man7.org/linux/man-pages/man8/veritysetup.8.html",
+  "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+  "https://man.he.net/man8/veritysetup",
+  "https://chipsec.github.io/usage/Running-Chipsec.html",
+  "https://github.com/chipsec/chipsec",
+  "https://github.com/chipsec/chipsec/blob/chipsec2/chipsec_main.py",
+  "https://github.com/chipsec/chipsec/wiki/Running-Chipsec/eec8168ae1a176f8995d94be5706a060a5a83f1a",
+  "https://chipsec.github.io/development/Developing.html",
+  "https://www.scribd.com/document/341786677/Chipsec-Manual"
+ ],
+ "outcome": "authored"
+}

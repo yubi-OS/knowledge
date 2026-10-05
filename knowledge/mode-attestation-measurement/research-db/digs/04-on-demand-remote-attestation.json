@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "on-demand-remote-attestation",
+ "scope": "Keylime-style remote attestation quote as the on-demand non-interactive mode: 0 quote OK, 2 quote refused, idempotent, --dry-run proposed",
+ "queries_attempted": [
+  {
+   "query": "Keylime agent remote attestation TPM quote",
+   "attempt": 1,
+   "raw_results": 65,
+   "kept": 6
+  },
+  {
+   "query": "TPM2 quote attestation verifier non-interactive exit codes",
+   "attempt": 1,
+   "raw_results": 85,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://deepwiki.com/keylime/keylime/3.1-tpm-attestation",
+  "https://keylime.dev/",
+  "https://documentation.suse.com/sle-micro/5.3/html/SLE-Micro-all/cha-security-attestation.html",
+  "https://keylime.readthedocs.io/en/latest/man/keylime_agent.8.html",
+  "https://deepwiki.com/keylime/keylime/3-attestation-and-verification",
+  "https://keylime.readthedocs.io/en/latest/design/security.html",
+  "https://github.com/tpm2dev/tpm.dev.tutorials/blob/master/TPM-Commands/TPM2_Quote.md",
+  "https://github.com/Kioubit/tpm2-quote-attest",
+  "https://deepwiki.com/tpm2-software/tpm2-tools/3.4-attestation-and-integrity",
+  "https://deepwiki.com/tpm2-software/tpm2-tools/3.4.1-quoting-and-certification",
+  "https://safeboot.dev/attestation/",
+  "https://www.tigertrust.io/guides/tpm-attestation"
+ ],
+ "outcome": "authored"
+}

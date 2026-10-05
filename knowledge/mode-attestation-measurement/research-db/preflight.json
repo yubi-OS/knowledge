@@ -1,0 +1,46 @@
+{
+ "date": "2026-10-05",
+ "searxng": {
+  "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=",
+  "probe_results": {
+   "status": 200,
+   "result_count": 61,
+   "unresponsive_engines": [
+    "boardreader",
+    "brave",
+    "duckduckgo",
+    "fastbot",
+    "fireball",
+    "gmx",
+    "google",
+    "google cse",
+    "privacywall",
+    "qwant",
+    "searchmysite",
+    "yacy",
+    "yep"
+   ],
+   "note": "probe at 2026-10-05T10:19Z returned 61 results with 13 engines throttled; endpoint then 500ed for ~85 min (n8n 'Webhook execution failed', searxng 400 'No query' via q-form and engine throttling via qs-form); searxng service restarted via Northflank at 11:43Z; all 18 digs then succeeded via the ?endpoint=search&qs=q%3D<query> form"
+  },
+  "unresponsive_engines": [
+   "boardreader",
+   "brave",
+   "duckduckgo",
+   "fastbot",
+   "fireball",
+   "gmx",
+   "google",
+   "google cse",
+   "privacywall",
+   "qwant",
+   "searchmysite",
+   "yacy",
+   "yep"
+  ]
+ },
+ "decide": {
+  "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "model": "clef",
+  "probe_answer": "outline score request returned HTTP 200 model clef; probe with invalid metric type yes_no returned 422"
+ }
+}

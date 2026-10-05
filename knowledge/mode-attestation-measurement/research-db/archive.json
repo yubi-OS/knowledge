@@ -1,0 +1,2923 @@
+[
+ {
+  "query": "sbverify cert UKI signature verification secure boot",
+  "title": "sbverify: UEFI secure boot verification tool | Man Page | Commands | sbsigntools | ManKier",
+  "url": "https://www.mankier.com/1/sbverify",
+  "snippet": "sbverify - Man Page UEFI secure boot verification tool Synopsis sbverify [options] --cert <certfile> <efi-boot-image> Description Verify a UEFI secure boot image. Options --cert <certfile> certificate (x509 certificate) --list list all signatures (but don't verify) --detached <file> read signature from <file>, instead of looking for an embedded ...sbverify - Man Page UEFI secure boot verification ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5044,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify: UEFI secure boot verification tool | Man Page | Commands | sbsigntools | ManKier' (https://www.mankier.com/1/sbverify) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5044
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:02Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert UKI signature verification secure boot",
+  "title": "man sbverify (1): UEFI secure boot verification tool",
+  "url": "https://manpages.org/sbverify",
+  "snippet": "sbverify [,options/] ,--cert <certfile> <efi-boot-image>/ Verify a UEFI secure boot image. --cert <certfile> certificate (x509 certificate) --no-verify \u00b7 don't perform certificate verification \u00b7 --detached <file> read signature from <file>, instead of looking for an embedded signature \u00b7\"sbverify [,options/] ,--cert / Verify a UEFI secure boot image. --cert certificate (x509 certificate) --no-verif",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.2404,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'man sbverify (1): UEFI secure boot verification tool' (https://manpages.org/sbverify) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2404
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:02Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert UKI signature verification secure boot",
+  "title": "Unified Extensible Firmware Interface/Secure Boot - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot",
+  "snippet": "1 week ago \u2014 #!/usr/bin/env bash kernel=\"$1\" [[ -n \"$kernel\" ]] || exit 0 # use already installed kernel if it exists [[ ! -f \"$KERNELDESTINATION\" ]] || kernel=\"$KERNELDESTINATION\" keypairs=(/path/to/db.key /path/to/db.crt) for (( i=0; i<${#keypairs[@]}; i+=2 )); do key=\"${keypairs[$i]}\" cert=\"${keypairs[(( i + 1 ))]}\" if ! sbverify --cert \"$cert\" \"$kernel\" &>/dev/null; then sbsign --key \"$key\" --",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.7693,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unified Extensible Firmware Interface/Secure Boot - ArchWiki' (https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7693
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:02Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert UKI signature verification secure boot",
+  "title": "Signature verification failure when attempting secure boot / Newbie Corner / Arch Linux Forums",
+  "url": "https://bbs.archlinux.org/viewtopic.php?id=303534",
+  "snippet": "[UKI] SecureBootPrivateKey=/etc/kernel/secure-boot-private-key.pem SecureBootCertificate=/etc/kernel/secure-boot-certificate.pem\"[UKI] SecureBootPrivateKey=/etc/kernel/secure-boot-private-key.pem SecureBootCertificate=/etc/kernel/secure-boot-certificate.pem\"\"The above message suggests that my UKI hasn't been signed correctly. I suspect I've missed a step, but I've gone over the instructions on the",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0278,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Signature verification failure when attempting secure boot / Newbie Corner / Arch Linux Forums' (https://bbs.archlinux.org/viewtopic.php?id=303534) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0278
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:02Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert UKI signature verification secure boot",
+  "title": "sbverify (1) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en",
+  "snippet": "sbverify - UEFI secure boot verification tool SYNOPSIS sbverify [options] --cert <certfile> <efi-boot-image> DESCRIPTION Verify a UEFI secure boot image. OPTIONS --cert <certfile> certificate (x509 certificate) --list list all signatures (but don't verify) --detached <file> read signature from <file>, instead of looking for an embedded ...sbverify - UEFI secure boot verification tool SYNOPSIS sbve",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.827,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify (1) \u2014 Arch manual pages' (https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.827
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:02Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert UKI signature verification secure boot",
+  "title": "Secure Boot - Gentoo Wiki",
+  "url": "https://wiki.gentoo.org/wiki/Secure_Boot",
+  "snippet": "~/secure_boot/ $sbverify --cert custom_config/db.crt /efi/vmlinuz-6.3.4-gentoo-r1-initramfs.signed \u00b7 Signature verification OK \u00b7 Signatures can be listed using: user $sbverify --list /efi/vmlinuz-6.3.4-gentoo-r1-initramfs.signed \u00b7 signature 1 image signature issuers: - /CN=Larry's db image signature certificates: - subject: /CN=Larry's db issuer: /CN=Larry's db \u00b7\"~/secure_boot/ $sbverify --cert cu",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.7316,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure Boot - Gentoo Wiki' (https://wiki.gentoo.org/wiki/Secure_Boot) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7316
+   },
+   "usage": {
+    "input_tokens": 754,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dm-verity veritysetup verify root hash mount failure EIO",
+  "title": "dm-verity (Integrity) - Linux Kernel Internals",
+  "url": "https://kernel-internals.org/block/dm-verity/",
+  "snippet": "# Step 2: Open dm-verity: veritysetup open /dev/sdb1 verified-root /dev/sdc1 \\ 1234567890abcdef... # root hash from step 1 # Step 3: Mount the verified device: mount -o ro /dev/mapper/verified-root /mnt # Any tampered block \u2192 read returns -EIO (or panic if configured) # Step 4: Verify manually: veritysetup verify /dev/sdb1 /dev/sdc1 1234567890abcdef...\"# Step 2: Open dm-verity: veritysetup open /d",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6543,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dm-verity (Integrity) - Linux Kernel Internals' (https://kernel-internals.org/block/dm-verity/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6543
+   },
+   "usage": {
+    "input_tokens": 754,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dm-verity veritysetup verify root hash mount failure EIO",
+  "title": "veritysetup (8) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man8/veritysetup.8.html",
+  "snippet": "Root hash is passed via file rather than inline. veritysetup --fec-device=<fec_device> --fec-roots=10 format <data_device> <hash_device> Calculates and stores verification and encoding data for the data_device. The on-disk format specification is available on the DMVerity <https://gitlab.com/cryptsetup/cryptsetup/wikis/DMVerity> page.\"Veritysetup is a utility for configuring and managing kernel dm",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.893,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'veritysetup (8) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man8/veritysetup.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.893
+   },
+   "usage": {
+    "input_tokens": 754,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dm-verity veritysetup verify root hash mount failure EIO",
+  "title": "dm-verity \u2014 The Linux Kernel documentation",
+  "url": "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+  "snippet": "When a dm-verity device is configured, it is expected that the caller has been authenticated in some way (cryptographic signatures, etc). After instantiation, all hashes will be verified on-demand during disk access. If they cannot be verified up to the root node of the tree, the root hash, then the I/O will fail.When a dm-verity device is configured, it is expected that the caller has been authen",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9652,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dm-verity \u2014 The Linux Kernel documentation' (https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9652
+   },
+   "usage": {
+    "input_tokens": 754,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dm-verity veritysetup verify root hash mount failure EIO",
+  "title": "dm-verity - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Dm-verity",
+  "snippet": "A dm-verity root setup setup consists of the following: a / root filesystem image or partition, verity hash tree verity.bin, the root hash of the verity tree roothash.txt, systemd-veritysetup.generator, systemd-veritysetup@.service, verity kernel command line options, veritysetup (part of cryptsetup), a unified kernel image which contains a stub EFI loader, kernel, initramfs, kernel command ...A d",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.7125,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dm-verity - ArchWiki' (https://wiki.archlinux.org/title/Dm-verity) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7125
+   },
+   "usage": {
+    "input_tokens": 754,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dm-verity veritysetup verify root hash mount failure EIO",
+  "title": "veritysetup (8) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/veritysetup.8.en",
+  "snippet": "When you configure the dm-verity device, veritysetup creates a new mapping that applications can access like any regular storage device. The kernel performs the verification transparently by comparing each block against pre-computed cryptographic hashes.When you configure the dm-verity device, veritysetup creates a new mapping that applications can access like any regular storage device. The kerne",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8469,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'veritysetup (8) \u2014 Arch manual pages' (https://man.archlinux.org/man/veritysetup.8.en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8469
+   },
+   "usage": {
+    "input_tokens": 868,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "dm-verity veritysetup verify root hash mount failure EIO",
+  "title": "dm crypt - veritysetup verify successful but mount fails after upgrade to new kernel - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/419570/veritysetup-verify-successful-but-mount-fails-after-upgrade-to-new-kernel",
+  "snippet": "January 25, 2018 \u2014 # Verification of root hash succeeded. # Releasing crypt device /dev/mmcblk0p6 context. # Releasing device-mapper backend. Command successful. # veritysetup create vroot /dev/mmcblk0p5 /dev/mmcblk0p6 --hash-offset 4096 d3 5f95a4b47c92332fbcf5aced9c4ed58eb2d5115bad4aa52bd9d64cc0ee676b --debug # mount -o ro /dev/mapper/vroot /mnt/ device-mapper: verity: 179:5: metadata block 2 is ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0655,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dm crypt - veritysetup verify successful but mount fails after upgrade to new kernel - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/419570/veritysetup-verify-successful-but-mount-fails-after-upgrade-to-new-kernel) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0655
+   },
+   "usage": {
+    "input_tokens": 868,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+  "title": "GitHub - OP-TEE/optee_ftpm: OP-TEE integration for the MS TPM 2.0 Reference Implementation (fTPM) \u00b7 GitHub",
+  "url": "https://github.com/OP-TEE/optee_ftpm",
+  "snippet": "This TA is built as described in ... CFG_MS_TPM_20_REF which must hold the path to a checked out copy of the MS TPM 2.0 Reference Implementation. You need to checkout commit (98b60a44aba79b15fcce1c0d1e46cf5918400f6a) of MS TPM 2.0 Reference Implementation \u00b7 The fTPM Trusted Application includes support for Measured Boot...\"This TA is built as described in Trusted Applications section in the OP-TEE",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.4952,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - OP-TEE/optee_ftpm: OP-TEE integration for the MS TPM 2.0 Reference Implementation (fTPM) \u00b7 GitHub' (https://github.com/OP-TEE/optee_ftpm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4952
+   },
+   "usage": {
+    "input_tokens": 868,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+  "title": "Measured Boot and Event Log across TF-A / OP-TEE / U-Boot / Linux | Raymond Mao",
+  "url": "https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html",
+  "snippet": "December 10, 2024 \u2014 Call TPM2_PCR_Extend() for each measured event respectively.\"At this point, PCR[N] values are finalized before Linux boots. Linux reads Event Log. ... /sys/kernel/security/tpm0/binary_bios_measurements /sys/kernel/security/tpm0/ascii_bios_measurements \u00b7 A verifier can detect tampering via replaying Event Log, recomputing and comparing. Please reference on my blog \u201cSolve the Mea",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.552,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Measured Boot and Event Log across TF-A / OP-TEE / U-Boot / Linux | Raymond Mao' (https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.552
+   },
+   "usage": {
+    "input_tokens": 868,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+  "title": "10.2. Interaction between Measured Boot and an fTPM (PoC) \u2014 Trusted Firmware-A 2.15.0 documentation",
+  "url": "https://trustedfirmware-a.readthedocs.io/en/latest/design_documents/measured_boot_poc.html",
+  "snippet": "The secure world terminal should show the debug logs for the fTPM service, including all the measurements available in the Event Log as they are being processed: M/TA: Preparing to extend the following TPM Event Log: M/TA: TCG_EfiSpecIDEvent: M/TA: PCRIndex : 0 M/TA: EventType : 3 M/TA: Digest : 00 M/TA: : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 M/TA: : 00 00 00 M/TA: EventSize : 33 M/TA: ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9177,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '10.2. Interaction between Measured Boot and an fTPM (PoC) \u2014 Trusted Firmware-A 2.15.0 documentation' (https://trustedfirmware-a.readthedocs.io/en/latest/design_documents/measured_boot_poc.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9177
+   },
+   "usage": {
+    "input_tokens": 868,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+  "title": "Event Logging and Measured Boot | OP-TEE/optee_ftpm | DeepWiki",
+  "url": "https://deepwiki.com/OP-TEE/optee_ftpm/8.1-event-logging-and-measured-boot",
+  "snippet": "Purpose and Scope This system implements TPM event logging and measured boot functionality for the OP-TEE fTPM. It processes pre-existing event logs generated by firmware during the boot process and replays them into the TPM by extending the appropriate Platform Configuration Registers (PCRs). This enables attestation and verification of the platform's boot integrity.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5931,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Event Logging and Measured Boot | OP-TEE/optee_ftpm | DeepWiki' (https://deepwiki.com/OP-TEE/optee_ftpm/8.1-event-logging-and-measured-boot) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5931
+   },
+   "usage": {
+    "input_tokens": 877,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+  "title": "MSRSec/TAs/optee_ta/fTPM/README.md at master - GitHub",
+  "url": "https://github.com/microsoft/MSRSec/blob/master/TAs/optee_ta/fTPM/README.md",
+  "snippet": "The TPM reference implementation defines a platform API (ms-tpm-20-ref/TPMCmd/Platform) which can be swapped out depending on where the TPM code is running. In the case of the fTPM the OP-TEE API is used to implement this platform.The TPM reference implementation defines a platform API (ms-tpm-20-ref/TPMCmd/Platform) which can be swapped out depending on where the TPM code is running. In the case ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8589,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'MSRSec/TAs/optee_ta/fTPM/README.md at master - GitHub' (https://github.com/microsoft/MSRSec/blob/master/TAs/optee_ta/fTPM/README.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8589
+   },
+   "usage": {
+    "input_tokens": 877,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "fTPM OP-TEE ms-tpm-20-ref measured boot PCR extend event log",
+  "title": "10.3. Interaction between Measured Boot and an fTPM (PoC) \u2014 Trusted Firmware-A 2.12.0 documentation",
+  "url": "https://trustedfirmware-a.readthedocs.io/en/v2.12/design_documents/measured_boot_poc.html",
+  "snippet": "The secure world terminal should show the debug logs for the fTPM service, including all the measurements available in the Event Log as they are being processed: M/TA: Preparing to extend the following TPM Event Log: M/TA: TCG_EfiSpecIDEvent: M/TA: PCRIndex : 0 M/TA: EventType : 3 M/TA: Digest : 00 M/TA: : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 M/TA: : 00 00 00 M/TA: EventSize : 33 M/TA: ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9235,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '10.3. Interaction between Measured Boot and an fTPM (PoC) \u2014 Trusted Firmware-A 2.12.0 documentation' (https://trustedfirmware-a.readthedocs.io/en/v2.12/design_documents/measured_boot_poc.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9235
+   },
+   "usage": {
+    "input_tokens": 877,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TCG2 measured boot event log PCR extend append-only reboot",
+  "title": "Decode Measured Boot logs to track PCR changes - Windows Client | Microsoft Learn",
+  "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes",
+  "snippet": "The Measured Boot logs record PCR changes and other information. These logs are located in the *C:\\Windows\\Logs\\MeasuredBoot* folder. This article describes tools that can be used to decode these logs: TBSLogGenerator.exe PCPTool.exe For more information about Measured Boot and PCRs, see the following articles:The Measured Boot logs record PCR changes and other information. These logs are located ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.755,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Decode Measured Boot logs to track PCR changes - Windows Client | Microsoft Learn' (https://learn.microsoft.com/en-us/troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.755
+   },
+   "usage": {
+    "input_tokens": 877,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TCG2 measured boot event log PCR extend append-only reboot",
+  "title": "Measured Boot and Event Log across TF-A / OP-TEE / U-Boot / Linux | Raymond Mao",
+  "url": "https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html",
+  "snippet": "This article explains how Measured Boot, Event Logs, and PCR banks work, and how the Event Logs and PCR measurements propagate across the boot chain TF-A / OP-TEE / U-Boot / Linux. What is Measured Boot Measured Boot records what was loaded and executed during boot, instead of merely enforcing verification.This article explains how Measured Boot, Event Logs, and PCR banks work, and how the Event L",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.3767,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Measured Boot and Event Log across TF-A / OP-TEE / U-Boot / Linux | Raymond Mao' (https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3767
+   },
+   "usage": {
+    "input_tokens": 877,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TCG2 measured boot event log PCR extend append-only reboot",
+  "title": "TCG EFI Protocol Specification - Trusted Computing Group",
+  "url": "https://trustedcomputinggroup.org/resource/tcg-efi-protocol-specification/",
+  "snippet": "It defines data structures and APIs that allow an OS to interact with UEFI firmware to query information important in an early OS boot stage. Such information include: is a TPM present, which PCR banks are active, change active PCR banks, obtain the TCG boot log, extend hashes to PCRs, and append events to the TCG boot log.It defines data structures and APIs that allow an OS to interact with UEFI ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.909,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TCG EFI Protocol Specification - Trusted Computing Group' (https://trustedcomputinggroup.org/resource/tcg-efi-protocol-specification/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.909
+   },
+   "usage": {
+    "input_tokens": 878,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TCG2 measured boot event log PCR extend append-only reboot",
+  "title": "TPM 2.0 Event Log for U-Boot SPL on an ARMv8 Measured Boot Chain | Raymond Mao",
+  "url": "https://raymo200915.github.io/2025/05/02/spl-measured-boot.html",
+  "snippet": "May 2, 2025 \u2014 For example, U-Boot\u2019s EFI TCG2 ... event logs from the previous boot stage, using a TPM 2.0 device\u200b. There is also support to append events to a log in memory, which the kernel can later retrieve....\"Recent U-Boot versions include a generic measured boot framework implemented by Linaro that can log events and extend PCRs during OS boot. For example, U-Boot\u2019s EFI TCG2 protocol and leg",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.476,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPM 2.0 Event Log for U-Boot SPL on an ARMv8 Measured Boot Chain | Raymond Mao' (https://raymo200915.github.io/2025/05/02/spl-measured-boot.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.476
+   },
+   "usage": {
+    "input_tokens": 878,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TCG2 measured boot event log PCR extend append-only reboot",
+  "title": "UEFI TCG2 / TPM2 Measurement | nxp-imx/uboot-imx | DeepWiki",
+  "url": "https://deepwiki.com/nxp-imx/uboot-imx/5.5-uefi-tcg2-tpm2-measurement",
+  "snippet": "This infrastructure provides measured boot capabilities by hashing critical boot components (firmware, configuration, and OS loaders) into the TPM's Platform Configuration Registers (PCRs) and maintaining a TCG-compliant event log. Overview and Protocol Support U-Boot implements the EFI_TCG2_PROTOCOL as defined in the TCG EFI Protocol ...This infrastructure provides measured boot capabilities by h",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.3445,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'UEFI TCG2 / TPM2 Measurement | nxp-imx/uboot-imx | DeepWiki' (https://deepwiki.com/nxp-imx/uboot-imx/5.5-uefi-tcg2-tpm2-measurement) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3445
+   },
+   "usage": {
+    "input_tokens": 878,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TCG2 measured boot event log PCR extend append-only reboot",
+  "title": "TCG Guidance on Integrity Measurements and Event Log Processing",
+  "url": "https://trustedcomputinggroup.org/wp-content/uploads/TCG-Guidance-Integrity-Measurements-Event-Log-Processing_v1_r0p118_24feb2022-1.pdf",
+  "snippet": "This document explains the concepts and usage of Integrity Measurements (IM), also referred to as Event Log Records, for attestation. This guidance's focus is the use of Integrity Measurements described in the above mentioned TCG Specifications. This focus includes firmware-based measurements.This document explains the concepts and usage of Integrity Measurements (IM), also referred to as Event Lo",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9625,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TCG Guidance on Integrity Measurements and Event Log Processing' (https://trustedcomputinggroup.org/wp-content/uploads/TCG-Guidance-Integrity-Measurements-Event-Log-Processing_v1_r0p118_24feb2022-1.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9625
+   },
+   "usage": {
+    "input_tokens": 878,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco Tetragon runtime security daemon systemd Type=notify",
+  "title": "How to Implement Security Monitoring with eBPF (Falco, Tetragon)",
+  "url": "https://oneuptime.com/blog/post/2026-01-07-ebpf-security-monitoring-falco-tetragon/view",
+  "snippet": "January 7, 2026 \u2014 Effective security monitoring requires timely alerts. Both Falco and Tetragon support integration with alerting systems.\"Falco: An open-source runtime security tool that monitors system calls and container behavior \u00b7 Tetragon: A Kubernetes-aware security observability and runtime enforcement tool from Cilium\"\"# alertmanager-config.yaml # Alertmanager configuration for security mo",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0889,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Implement Security Monitoring with eBPF (Falco, Tetragon)' (https://oneuptime.com/blog/post/2026-01-07-ebpf-security-monitoring-falco-tetragon/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0889
+   },
+   "usage": {
+    "input_tokens": 878,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco Tetragon runtime security daemon systemd Type=notify",
+  "title": "Deploy Falco + Tetragon on a VPS - RamNode",
+  "url": "https://www.ramnode.com/guides/falco-tetragon",
+  "snippet": "Falco and Tetragon are the two leading open-source runtime security tools built on eBPF. They observe syscalls, network activity, and process behavior at\u00a0...",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.2819,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Deploy Falco + Tetragon on a VPS - RamNode' (https://www.ramnode.com/guides/falco-tetragon) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2819
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco Tetragon runtime security daemon systemd Type=notify",
+  "title": "Falco vs Tetragon (2026): eBPF Runtime Security Compared | NomadX",
+  "url": "https://kubernetes.ae/falco-vs-tetragon/",
+  "snippet": "June 26, 2026 \u2014 Tetragon is newer and its policy model (TracingPolicy) is more code-like. Many teams pick Tetragon specifically for the enforcement and Cilium synergy that Falco does not offer. ... Both deploy as a DaemonSet so an agent runs on every node and watches kernel activity.\"For UAE AI/ML and fintech platforms running sensitive inference or payment workloads, Tetragon\u2019s ability to stop a ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1751,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Falco vs Tetragon (2026): eBPF Runtime Security Compared | NomadX' (https://kubernetes.ae/falco-vs-tetragon/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1751
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco Tetragon runtime security daemon systemd Type=notify",
+  "title": "Runtime Security: Falco, Tetragon and eBPF | Kubernetes Security Course ...",
+  "url": "https://protego.me/courses/kubernetes-security/k8s-l17-runtime-security",
+  "snippet": "Kubernetes Security lesson 17: Runtime Security: Falco, Tetragon and eBPF. Part of the free Kubernetes Security course on Protego.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.2355,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Runtime Security: Falco, Tetragon and eBPF | Kubernetes Security Course ...' (https://protego.me/courses/kubernetes-security/k8s-l17-runtime-security) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2355
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco Tetragon runtime security daemon systemd Type=notify",
+  "title": "Container Runtime Security 2026: Falco, Tetragon, Sysdig +3",
+  "url": "https://kubernetes.ae/container-runtime-security-2026/",
+  "snippet": "Container Runtime Security 2026: Falco, Tetragon, Sysdig +3 Falco, Tetragon, Sysdig Secure, Aqua, Prisma & Tracee tested - eBPF detection, in-line blocking, CPU overhead, and the 2026 pick for production Kubernetes.Container Runtime Security 2026: Falco, Tetragon, Sysdig +3 Falco, Tetragon, Sysdig Secure, Aqua, Prisma & Tracee tested - eBPF detection, in-line blocking, CPU overhead, and the 2026 p",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1432,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container Runtime Security 2026: Falco, Tetragon, Sysdig +3' (https://kubernetes.ae/container-runtime-security-2026/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1432
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco Tetragon runtime security daemon systemd Type=notify",
+  "title": "eBPF Runtime Security \u2014 Tetragon, Falco, and... \u2014 LabHub Blog",
+  "url": "https://labhub.hopto.org/blog/linux/2026-06-13-ebpf-security-tetragon-falco-lsm?lang=en",
+  "snippet": "Tetragon: From Observation to Enforcement. Tetragon is the eBPF-based runtime security tool from the Cilium ecosystem (Isovalent, now part of Cisco) and a CNCF project. Its biggest difference from Falco is in-kernel inline filtering and enforcement.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.123,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'eBPF Runtime Security \u2014 Tetragon, Falco, and... \u2014 LabHub Blog' (https://labhub.hopto.org/blog/linux/2026-06-13-ebpf-security-tetragon-falco-lsm?lang=en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.123
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Tetragon tracing policy rules validate streaming events",
+  "title": "Tracing Policy | Tetragon - eBPF-based Security Observability and Runtime Enforcement",
+  "url": "https://tetragon.io/docs/concepts/tracing-policy/",
+  "snippet": "Tetragon\u2019s TracingPolicy is a user-configurable Kubernetes custom resource (CR) that allows users to trace arbitrary events in the kernel and optionally define actions to take on a match.\"Tetragon\u2019s TracingPolicy is a user-configurable Kubernetes custom resource (CR) that allows users to trace arbitrary events in the kernel and optionally define actions to take on a match. Policies consist of a ho",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9262,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Tracing Policy | Tetragon - eBPF-based Security Observability and Runtime Enforcement' (https://tetragon.io/docs/concepts/tracing-policy/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9262
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Tetragon tracing policy rules validate streaming events",
+  "title": "Linux Kernel Fundamentals for Effectively Writing Tetragon Tracing Policies",
+  "url": "https://cilium.io/blog/2025/09/16/kernel-basics-for-tetragon/",
+  "snippet": "Author: Paul Arah, Isovalent@Cisco When you write Tetragon tracing policies, you\u2019re not writing arbitrary sets of rules; you're programming against the kernel execution path itself. Every policy you create hooks directly into kernel functions, intercepts system calls, and examines kernel data structures. This power comes with responsibility. Without an understanding of how the Linux kernel ...Auth",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9043,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Linux Kernel Fundamentals for Effectively Writing Tetragon Tracing Policies' (https://cilium.io/blog/2025/09/16/kernel-basics-for-tetragon/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9043
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Tetragon tracing policy rules validate streaming events",
+  "title": "Events | Tetragon - eBPF-based Security Observability and Runtime Enforcement",
+  "url": "https://tetragon.io/docs/concepts/events/",
+  "snippet": "1 month ago \u2014 All events in Tetragon contain a process_exec block to identify the process generating the event. For execution events this is the primary block. For Tracing Policy events the hook that generated the event will attach further data to this.\"By default, a field filter applies to all process events, although you can control this behaviour with the \"event_set\" key. For example, you can a",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9484,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Events | Tetragon - eBPF-based Security Observability and Runtime Enforcement' (https://tetragon.io/docs/concepts/events/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9484
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Tetragon tracing policy rules validate streaming events",
+  "title": "Exploring Tetragon - A Security Observability Tool for Kubernetes, Docker, and Linux | iximiuz Labs",
+  "url": "https://labs.iximiuz.com/tutorials/introduction-to-tetragon",
+  "snippet": "You can make Tetragon track other types of events by providing one or more tracing policies. For instance, to start monitoring the network activity, you can apply the following piece of YAML: ... apiVersion: cilium.io/v1alpha1 kind: TracingPolicy metadata: name: \"monitor-network\" spec: kprobes: # How to inject (kprobes, tracepoints, uprobes) - call: \"tcp_connect\" # Where to inject (syscall, kernel",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.3953,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Exploring Tetragon - A Security Observability Tool for Kubernetes, Docker, and Linux | iximiuz Labs' (https://labs.iximiuz.com/tutorials/introduction-to-tetragon) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3953
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Tetragon tracing policy rules validate streaming events",
+  "title": "Example | Tetragon - eBPF-based Security Observability and Runtime Enforcement",
+  "url": "https://tetragon.io/docs/concepts/tracing-policy/example/",
+  "snippet": "December 24, 2024 \u2014 Then we add the Sigkill action, meaning, that any match of the selector should send a SIGKILL signal to the process that initiated the event.\"The message field is an optional short message that will be included in the generated event to inform users what is happening. spec: kprobes: - call: \"fd_install\" message: \"Installing a file descriptor\" Tags are optional fields of a Traci",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9481,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Example | Tetragon - eBPF-based Security Observability and Runtime Enforcement' (https://tetragon.io/docs/concepts/tracing-policy/example/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9481
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Tetragon tracing policy rules validate streaming events",
+  "title": "Kubernetes security Tetragon | by Alexandr Ivenin | Medium",
+  "url": "https://medium.com/@alex.ivenin/kubernetes-runtime-security-with-tetragon-16fa069a98db",
+  "snippet": "April 30, 2026 \u2014 This policy uses exit-time enforcement \u2014 it hooks the sys_exit tracepoint and checks the binary path when processes terminate. If the process wasn\u2019t whitelisted, Tetragon delivers SIGKILL. This reactive approach lets you observe full process behavior before enforcement, useful when validating edge cases. Important note on monitoring enforcement. Tracepoint-based enforcement action",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.3701,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Kubernetes security Tetragon | by Alexandr Ivenin | Medium' (https://medium.com/@alex.ivenin/kubernetes-runtime-security-with-tetragon-16fa069a98db) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3701
+   },
+   "usage": {
+    "input_tokens": 801,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:25Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Keylime agent remote attestation TPM quote",
+  "title": "TPM Attestation | keylime/keylime | DeepWiki",
+  "url": "https://deepwiki.com/keylime/keylime/3.1-tpm-attestation",
+  "snippet": "January 15, 2026 \u2014 TPM attestation in Keylime uses the TPM 2.0 specification to generate cryptographically signed quotes containing PCR values and other integrity measurements. The Cloud Verifier requests quotes from agents and validates them using the agent's ...\"TPM attestation in Keylime uses the TPM 2.0 specification to generate cryptographically signed quotes containing PCR values and other i",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.4472,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPM Attestation | keylime/keylime | DeepWiki' (https://deepwiki.com/keylime/keylime/3.1-tpm-attestation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4472
+   },
+   "usage": {
+    "input_tokens": 801,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:25Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Keylime agent remote attestation TPM quote",
+  "title": "Keylime",
+  "url": "https://keylime.dev/",
+  "snippet": "Keylime is a CNCF hosted project that provides a highly scalable remote boot attestation and runtime integrity measurement solution. Keylime enables users to monitor remote nodes using a hardware based cryptographic root of trust.Keylime is a CNCF hosted project that provides a highly scalable remote boot attestation and runtime integrity measurement solution. Keylime enables users to monitor remo",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8516,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Keylime' (https://keylime.dev/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8516
+   },
+   "usage": {
+    "input_tokens": 801,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:25Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Keylime agent remote attestation TPM quote",
+  "title": "Remote attestation using Keylime | Security and Hardening Guide | SLE Micro 5.3",
+  "url": "https://documentation.suse.com/sle-micro/5.3/html/SLE-Micro-all/cha-security-attestation.html",
+  "snippet": "April 6, 2026 \u2014 The verifier can request a signed quote to the agent for PCR 10 to get the logs of all accessed files including the file hashes. Verifiers then compare the accessed files with a local allowlist of approved files.\"This chapter focuses on the remote attestation of SLE Micro using the Keylime agent. With the growing demand on securing devices against unauthorized changes, the use of t",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9017,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Remote attestation using Keylime | Security and Hardening Guide | SLE Micro 5.3' (https://documentation.suse.com/sle-micro/5.3/html/SLE-Micro-all/cha-security-attestation.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9017
+   },
+   "usage": {
+    "input_tokens": 801,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:25Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Keylime agent remote attestation TPM quote",
+  "title": "keylime_agent \u2014 Keylime Documentation 7.14.3 documentation",
+  "url": "https://keylime.readthedocs.io/en/latest/man/keylime_agent.8.html",
+  "snippet": "keylime_agent Keylime agent service for TPM-based attestation Manual section: 8 Author: Keylime Developers Date: September 2025 SYNOPSIS keylime_agent (Most operations require root privileges, use with sudo) DESCRIPTION The agent is a long-running service that runs on systems to be attested. It communicates with the TPM to generate quotes, collects IMA and measured boot event logs, and ...keylime_",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8192,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'keylime_agent \u2014 Keylime Documentation 7.14.3 documentation' (https://keylime.readthedocs.io/en/latest/man/keylime_agent.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8192
+   },
+   "usage": {
+    "input_tokens": 801,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:25Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Keylime agent remote attestation TPM quote",
+  "title": "Attestation and Verification | keylime/keylime | DeepWiki",
+  "url": "https://deepwiki.com/keylime/keylime/3-attestation-and-verification",
+  "snippet": "Attestation and Verification Relevant source files This document provides a comprehensive overview of Keylime's attestation and verification mechanisms. It explains how the Verifier validates the trustworthiness of remote agents by processing TPM quotes, IMA measurement lists, and measured boot logs. For detailed information about specific verification subsystems, see: TPM Attestation for TPM ...A",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6252,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Attestation and Verification | keylime/keylime | DeepWiki' (https://deepwiki.com/keylime/keylime/3-attestation-and-verification) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6252
+   },
+   "usage": {
+    "input_tokens": 833,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Keylime agent remote attestation TPM quote",
+  "title": "Attestation Security \u2014 Keylime Documentation 7.14.3 documentation",
+  "url": "https://keylime.readthedocs.io/en/latest/design/security.html",
+  "snippet": "Finally, when the logs are collected by the Keylime agent and sent to the verifier, the agent asks the TPM to certify one or more of its rolling hashes. The TPM signs the hashes with a private key known only by the TPM. The resulting quote is received by the verifier which can verify its authenticity against its knowledge of the TPM\u2019s public key.\"The TPM 2.0 spec says that a binding must be establ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9699,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Attestation Security \u2014 Keylime Documentation 7.14.3 documentation' (https://keylime.readthedocs.io/en/latest/design/security.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9699
+   },
+   "usage": {
+    "input_tokens": 833,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM2 quote attestation verifier non-interactive exit codes",
+  "title": "tpm.dev.tutorials/TPM-Commands/TPM2_Quote.md at master - GitHub",
+  "url": "https://github.com/tpm2dev/tpm.dev.tutorials/blob/master/TPM-Commands/TPM2_Quote.md",
+  "snippet": "The PCRs' values are NOT included in the quote produced by TPM2_Quote (). Instead, an attestation service can review an unsigned eventlog to ensure it leads to the same values as unsigned PCR values also provided by the attestation client, and then the attestation service can verify that the hash of the PCR values is indeed signed by the quote ...The PCRs' values are NOT included in the quote prod",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.7669,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'tpm.dev.tutorials/TPM-Commands/TPM2_Quote.md at master - GitHub' (https://github.com/tpm2dev/tpm.dev.tutorials/blob/master/TPM-Commands/TPM2_Quote.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7669
+   },
+   "usage": {
+    "input_tokens": 833,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM2 quote attestation verifier non-interactive exit codes",
+  "title": "GitHub - Kioubit/tpm2-quote-attest: Verify and print TPM2.0 ...",
+  "url": "https://github.com/Kioubit/tpm2-quote-attest",
+  "snippet": "A Go library for verifying TPM2.0 quotes, useful for performing remote or local attestation of devices to verify system integrity. The create-quote.sh script shows how to create the required keys and how to perform the actual quote generation process ...A Go library for verifying TPM2.0 quotes, useful for performing remote or local attestation of devices to verify system integrity. The create-quot",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.3077,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - Kioubit/tpm2-quote-attest: Verify and print TPM2.0 ...' (https://github.com/Kioubit/tpm2-quote-attest) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3077
+   },
+   "usage": {
+    "input_tokens": 833,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM2 quote attestation verifier non-interactive exit codes",
+  "title": "Attestation and Integrity | tpm2-software/tpm2-tools | DeepWiki",
+  "url": "https://deepwiki.com/tpm2-software/tpm2-tools/3.4-attestation-and-integrity",
+  "snippet": "This document covers the tools and features in tpm2-tools for establishing platform attestation and verifying integrity measurements. These capabilities are fundamental for remote attestation, secure boot validation, and platform integrity verification.This document covers the tools and features in tpm2-tools for establishing platform attestation and verifying integrity measurements. These capabil",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1435,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Attestation and Integrity | tpm2-software/tpm2-tools | DeepWiki' (https://deepwiki.com/tpm2-software/tpm2-tools/3.4-attestation-and-integrity) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1435
+   },
+   "usage": {
+    "input_tokens": 833,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM2 quote attestation verifier non-interactive exit codes",
+  "title": "Quoting and Certification | tpm2-software/tpm2-tools | DeepWiki",
+  "url": "https://deepwiki.com/tpm2-software/tpm2-tools/3.4.1-quoting-and-certification",
+  "snippet": "Quoting and Certification Relevant source files This document describes the TPM2 tools for remote attestation and key certification: the tpm2_quote, tpm2_checkquote, tpm2_certify, and related certification utilities. These tools allow you to prove the state of a system's Platform Configuration Registers (PCRs) and certify that specific objects or NV indices exist within the TPM. Overview The ...Qu",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5888,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Quoting and Certification | tpm2-software/tpm2-tools | DeepWiki' (https://deepwiki.com/tpm2-software/tpm2-tools/3.4.1-quoting-and-certification) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5888
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM2 quote attestation verifier non-interactive exit codes",
+  "title": "tpm2-attest: Simple TPM2 Remote Attestation - safeboot",
+  "url": "https://safeboot.dev/attestation/",
+  "snippet": "August 5, 2021 \u2014 So the quote generation needs to be written assuming very limited resources, as does the response unsealing. The remote attestation server side could be implemented entirely in a more civilized language, especially since the Server does not require any TPM interaction at all -- all of its work is done in software and can be run as an ordinary user. As an example of moving some fun",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.589,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'tpm2-attest: Simple TPM2 Remote Attestation - safeboot' (https://safeboot.dev/attestation/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.589
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM2 quote attestation verifier non-interactive exit codes",
+  "title": "The Complete Guide to TPM 2.0 Certificate Attestation | TigerTrust",
+  "url": "https://www.tigertrust.io/guides/tpm-attestation",
+  "snippet": "August 26, 2026 \u2014 Skip this and the attacker sends a self-generated AK, signs a fake quote with it, and the quote - however cryptographically valid - is meaningless. ... A device can produce a valid, fresh attestation from a real TPM and then submit a CSR whose private key lives in a file on disk. That defeats the whole point: the credential can be copied off the machine. TigerTrust closes this ho",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5088,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The Complete Guide to TPM 2.0 Certificate Attestation | TigerTrust' (https://www.tigertrust.io/guides/tpm-attestation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5088
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+  "title": "trusted computing - TPM: PCR_Event VS PCR_Extend - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/59352618/tpm-pcr-event-vs-pcr-extend",
+  "snippet": "The TCG's \"Trusted Platform Module Library Specification\" states that both commands PCR_Event and PCR_Extend eventually cause an update to the indicated PCR (and its banks). In addition to that we ...\"1 Why do I get nonstandard responses from the TPM Through TBS? ... Isn't the YLT translation of job 13:15 a more proper way to interpret the verse given the context, especially the question posed in ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0286,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'trusted computing - TPM: PCR_Event VS PCR_Extend - Stack Overflow' (https://stackoverflow.com/questions/59352618/tpm-pcr-event-vs-pcr-extend) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0286
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+  "title": "Understand PCR banks on TPM 2.0 devices | Microsoft Learn",
+  "url": "https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+  "snippet": "August 15, 2025 \u2014 Some TPM PCRs are used as checksums of log events. The log events are extended in the TPM as the events occur. Later, an auditor can validate the logs by computing the expected PCR values from the log and comparing them to the PCR values of the TPM.\"Before switching PCR banks, you should suspend or disable BitLocker or have the recovery key ready. For steps on how to switch PCR b",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8549,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Understand PCR banks on TPM 2.0 devices | Microsoft Learn' (https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/switch-pcr-banks-on-tpm-2-0-devices) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8549
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+  "title": "TPM PCR Validation Error causing BitLocker Recovery at Boot",
+  "url": "https://www.dell.com/support/kbdoc/en-us/000204144/tpm-pcr-validation-error-causing-bitlocker-recovery-at-boot",
+  "snippet": "This article provides information about Trusted Platform Module (TPM) Platform Configuration Register (PCR) Validation Error causing BitLocker Recovery at Boot.This article provides information about Trusted Platform Module (TPM) Platform Configuration Register (PCR) Validation Error causing BitLocker Recovery at Boot.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.931,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPM PCR Validation Error causing BitLocker Recovery at Boot' (https://www.dell.com/support/kbdoc/en-us/000204144/tpm-pcr-validation-error-causing-bitlocker-recovery-at-boot) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.931
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:32Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+  "title": "TPM2 PCR Measurements Made by systemd",
+  "url": "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+  "snippet": "Since the PCR number space is very small, systemd userspace supports additional PCRs implemented via TPM2 NV Indexes (here called NvPCRs, even though they are no less volatile than classic PCRs), using the TPM2_NT_EXTEND type.\"Since the PCR number space is very small, systemd userspace supports additional PCRs implemented via TPM2 NV Indexes (here called NvPCRs, even though they are no less volati",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9259,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPM2 PCR Measurements Made by systemd' (https://systemd.io/TPM2_PCR_MEASUREMENTS/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9259
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:32Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+  "title": "tss2_pcrextend - tpm2-tools",
+  "url": "https://tpm2-tools.readthedocs.io/en/latest/man/tss2_pcrextend.1/",
+  "snippet": "tss2_pcrextend (1) - This command extends the data into the PCR listed. The parameter logData is extended into the PCR log. If the logData is NULL, only the PCR extend takes place. All PCRs currently active in the TPM are extended. OPTIONS These are the available options: -x, --pcr = INTEGER: The PCR to extend. -i, --data = FILENAME or - (for ...",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8701,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'tss2_pcrextend - tpm2-tools' (https://tpm2-tools.readthedocs.io/en/latest/man/tss2_pcrextend.1/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8701
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:32Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TPM PCR extend non-idempotent measurement resume suspend mismatch",
+  "title": "TPM: Talking Points Memo - Breaking News and Analysis",
+  "url": "https://talkingpointsmemo.com/",
+  "snippet": "2 days ago \u00b7 Talking Points Memo (TPM) is an independent news organization that publishes reporting and analysis about American \u2026",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0453,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPM: Talking Points Memo - Breaking News and Analysis' (https://talkingpointsmemo.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0453
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:32Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idempotent boot integrity measurement re-run pure function",
+  "title": "Are idempotent functions the same as pure functions? - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/4801282/are-idempotent-functions-the-same-as-pure-functions",
+  "snippet": "A pure function is a function without side-effects where the output is solely determined by the input - that is, calling f(x) will give the same result no matter how many times you call it.\"For example, a function which sets the text of a textbox is idempotent (because multiple calls will display the same text), but not pure. Similarly, deleting a record by GUID (not by count) is idempotent, becau",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0418,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Are idempotent functions the same as pure functions? - Stack Overflow' (https://stackoverflow.com/questions/4801282/are-idempotent-functions-the-same-as-pure-functions) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0418
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:32Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idempotent boot integrity measurement re-run pure function",
+  "title": "Firmware measured boot and host attestation | Microsoft Learn",
+  "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation",
+  "snippet": "Learn how Azure uses firmware measured boot and host attestation to help verify host integrity and security before workloads run.Learn how Azure uses firmware measured boot and host attestation to help verify host integrity and security before workloads run.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9454,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Firmware measured boot and host attestation | Microsoft Learn' (https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9454
+   },
+   "usage": {
+    "input_tokens": 798,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idempotent boot integrity measurement re-run pure function",
+  "title": "What is the difference between an Idempotent and a Deterministic ...",
+  "url": "https://stackoverflow.com/questions/40296211/what-is-the-difference-between-an-idempotent-and-a-deterministic-function",
+  "snippet": "Idempotency does not imply determinacy (as a function can alter state on the first call while being idempotent on subsequent calls), but all pure deterministic functions are inherently idempotent (as there is no internal state to persist between calls). Impure deterministic functions are not necessarily idempotent.Idempotency does not imply determinacy (as a function can alter state on the first c",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.067,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What is the difference between an Idempotent and a Deterministic ...' (https://stackoverflow.com/questions/40296211/what-is-the-difference-between-an-idempotent-and-a-deterministic-function) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.067
+   },
+   "usage": {
+    "input_tokens": 798,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idempotent boot integrity measurement re-run pure function",
+  "title": "Idempotence - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Idempotence",
+  "snippet": "the idempotent endomorphisms of a vector space are its projections. If the set has elements, we can partition it into chosen fixed points and non-fixed points under , and then is the number of different idempotent functions. Hence, taking into account all possible partitions, is the total number of possible idempotent functions on the set.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1718,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idempotence - Wikipedia' (https://en.wikipedia.org/wiki/Idempotence) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1718
+   },
+   "usage": {
+    "input_tokens": 798,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idempotent boot integrity measurement re-run pure function",
+  "title": "TPM Boot Integrity - Technique D3-TBI | MITRE D3FEND\u2122",
+  "url": "https://d3fend.mitre.org/technique/d3f:TPMBootIntegrity/",
+  "snippet": "Assuring the integrity of a platform by demonstrating that the boot process starts from a trusted combination of hardware and software and continues until the operating system has fully booted and applications are running. Sometimes called Static Root of Trust Measurement (STRM).Assuring the integrity of a platform by demonstrating that the boot process starts from a trusted combination of hardwar",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.83,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPM Boot Integrity - Technique D3-TBI | MITRE D3FEND\u2122' (https://d3fend.mitre.org/technique/d3f:TPMBootIntegrity/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.83
+   },
+   "usage": {
+    "input_tokens": 798,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idempotent boot integrity measurement re-run pure function",
+  "title": "Idempotent Spring Boot: Safe REST with One Annotation",
+  "url": "https://foojay.io/today/idempotent-spring-boot-starter/",
+  "snippet": "August 5, 2026 \u2014 An idempotent Spring Boot starter that replays duplicate requests instead of re-executing them. One annotation, Redis or JDBC, atomic claims.\"Table of Contents 1. The Problem2. What Tiberius Does2.1 Fixture-Based Regression Testing2.2 Guardrail Validation Against Real Attack Data2.3. Probabilistic Security Contracts2.4. Bias Testing2.5. Model Fingerprinting3. Attack Coverage3.1 Bu",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0955,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idempotent Spring Boot: Safe REST with One Annotation' (https://foojay.io/today/idempotent-spring-boot-starter/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0955
+   },
+   "usage": {
+    "input_tokens": 798,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main --list platform security checks",
+  "title": "GitHub - chipsec/chipsec: Platform Security Assessment Framework \u00b7 GitHub",
+  "url": "https://github.com/chipsec/chipsec",
+  "snippet": "CHIPSEC is a framework for analyzing the security of PC platforms including hardware, system firmware (BIOS/UEFI), and platform components. It includes a security test suite, tools for accessing various low level interfaces, and forensic ...\"CHIPSEC is a framework for analyzing the security of PC platforms including hardware, system firmware (BIOS/UEFI), and platform components. It includes a secu",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.87,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - chipsec/chipsec: Platform Security Assessment Framework \u00b7 GitHub' (https://github.com/chipsec/chipsec) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.87
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main --list platform security checks",
+  "title": "CHIPSEC 2.0.9 \u2014 CHIPSEC documentation",
+  "url": "https://chipsec.github.io/",
+  "snippet": "It contains a set of modules, including simple tests for hardware protections and correct configuration, tests for vulnerabilities in firmware and platform components, security assessment and fuzzing tools for various platform devices and interfaces, and tools acquiring critical firmware and device artifacts. CHIPSEC can run on Windows, Linux, and UEFI shell.\"It contains a set of modules, includin",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.939,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'CHIPSEC 2.0.9 \u2014 CHIPSEC documentation' (https://chipsec.github.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.939
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main --list platform security checks",
+  "title": "CHIPSEC Installation and Usage Guide | PDF - Scribd",
+  "url": "https://www.scribd.com/document/341786677/Chipsec-Manual",
+  "snippet": "This document provides an overview and instructions for installing and using the CHIPSEC platform security assessment framework. CHIPSEC allows analyzing the security of PC platforms including hardware, firmware, and platform configuration. It includes security tests, assessment tools, and basic firmware forensics. CHIPSEC can be run from Windows, Linux, Mac OS X, or UEFI Shell. Installation ...Th",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0544,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'CHIPSEC Installation and Usage Guide | PDF - Scribd' (https://www.scribd.com/document/341786677/Chipsec-Manual) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0544
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main --list platform security checks",
+  "title": "CHIPSEC: Platform Security Assessment Framework",
+  "url": "https://blackhat.com/docs/us-14/materials/arsenal/us-14-Bulygin-CHIPSEC-Slides.pdf",
+  "snippet": "chipsec_main.py runs modules (see modules dir below) chipsec_util.py runs manual utilities (see utilcmd dir below) /chipsec \u00b7 /cfg \u00b7 platform specific configuration \u00b7 /hal \u00b7 all the HW stuff you can interact with \u00b7 /helper \u00b7 support for OS/environments \u00b7 /modules \u00b7 modules (tests/tools/PoCs) go here \u00b7 /utilcmd \u00b7 utility commands for chipsec_util \u00b7 Writing a Module Example \u00b7 def check...\"chipsec_ma",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.7964,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'CHIPSEC: Platform Security Assessment Framework' (https://blackhat.com/docs/us-14/materials/arsenal/us-14-Bulygin-CHIPSEC-Slides.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7964
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main --list platform security checks",
+  "title": "NFL Jobs and Careers | NFL.com",
+  "url": "https://www.nfl.com/careers/",
+  "snippet": "Whether you are looking to join one of our 32 NFL teams, the NFL League office in New York City, NFL Films office based in Mt. \u2026",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0212,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'NFL Jobs and Careers | NFL.com' (https://www.nfl.com/careers/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0212
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main --list platform security checks",
+  "title": "PDF chipsec/chipsec-manual.pdf at chipsec2 \u00b7 chipsec/chipsec - GitHub",
+  "url": "https://github.com/chipsec/chipsec/blob/chipsec2/chipsec-manual.pdf",
+  "snippet": "Platform Security Assessment Framework. Contribute to chipsec/chipsec development by creating an account on GitHub.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8571,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PDF chipsec/chipsec-manual.pdf at chipsec2 \u00b7 chipsec/chipsec - GitHub' (https://github.com/chipsec/chipsec/blob/chipsec2/chipsec-manual.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8571
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert signature verification what it proves",
+  "title": "sbverify (1) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en",
+  "snippet": "sbverify - UEFI secure boot verification tool SYNOPSIS sbverify [options] --cert <certfile> <efi-boot-image> DESCRIPTION Verify a UEFI secure boot image. OPTIONS --cert <certfile> certificate (x509 certificate) --list list all signatures (but don't verify) --detached <file> read signature from <file>, instead of looking for an embedded ...sbverify - UEFI secure boot verification tool SYNOPSIS sbve",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6025,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify (1) \u2014 Arch manual pages' (https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6025
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert signature verification what it proves",
+  "title": "sbverify: UEFI secure boot verification tool | Man Page | Commands | sbsigntools | ManKier",
+  "url": "https://www.mankier.com/1/sbverify",
+  "snippet": "sbverify - Man Page UEFI secure boot verification tool Synopsis sbverify [options] --cert <certfile> <efi-boot-image> Description Verify a UEFI secure boot image. Options --cert <certfile> certificate (x509 certificate) --list list all signatures (but don't verify) --detached <file> read signature from <file>, instead of looking for an embedded ...sbverify - Man Page UEFI secure boot verification ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0974,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify: UEFI secure boot verification tool | Man Page | Commands | sbsigntools | ManKier' (https://www.mankier.com/1/sbverify) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0974
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert signature verification what it proves",
+  "title": "man sbverify (1): UEFI secure boot verification tool",
+  "url": "https://manpages.org/sbverify",
+  "snippet": "OPTIONS --cert <certfile> certificate (x509 certificate) --no-verify don't perform certificate verification --detached <file> read signature from <file>, instead of looking for an embedded signatureOPTIONS --cert <certfile> certificate (x509 certificate) --no-verify don't perform certificate verification --detached <file> read signature from <file>, instead of looking for an embedded signature",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1249,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'man sbverify (1): UEFI secure boot verification tool' (https://manpages.org/sbverify) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1249
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert signature verification what it proves",
+  "title": "sbverify (1) \u2014 sbsigntools",
+  "url": "https://manpages.opensuse.org/Tumbleweed/sbsigntools/sbverify.1.en.html",
+  "snippet": "sbverify - UEFI secure boot verification tool SYNOPSIS \u00b6 sbverify [options] --cert <certfile> <efi-boot-image> DESCRIPTION \u00b6 Verify a UEFI secure boot image. OPTIONS \u00b6 --cert <certfile> certificate (x509 certificate) --list list all signatures (but don't verify) --detached <file> read signature from <file>, instead of looking for an embedded ...sbverify - UEFI secure boot verification tool SYNOPSI",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5057,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify (1) \u2014 sbsigntools' (https://manpages.opensuse.org/Tumbleweed/sbsigntools/sbverify.1.en.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5057
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert signature verification what it proves",
+  "title": "linux kernel - How to verify signed UEFI binaries? - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/636263/how-to-verify-signed-uefi-binaries",
+  "snippet": "February 24, 2021 \u2014 # for imgfile in /boot/vmlinuz-* /boot/initrd.img-* /boot/efi/EFI/devuan/*; do > for pemfile in ./*.pem; do > sbverify --cert \"$pemfile\" \"$imgfile\" &> /dev/null && echo \"$imgfile is signed with $pemfile\" > done > done /boot/efi/EFI/devuan/shimx64.efi is signed with ./DB-0002.pem \u00b7 Oops. Let's check why. I'll show the GRUB image here, but the situation is the same for the shim h",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1456,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'linux kernel - How to verify signed UEFI binaries? - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/636263/how-to-verify-signed-uefi-binaries) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1456
+   },
+   "usage": {
+    "input_tokens": 823,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:41Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify cert signature verification what it proves",
+  "title": "sbverify - UEFI secure boot verification tool",
+  "url": "https://man.uex.se/1/sbverify",
+  "snippet": "sbverify [options] --cert <certfile> <efi-boot-image> Verify a UEFI secure boot image. \u2212\u2212cert <certfile> certificate (x509 certificate) \u2212\u2212detached <file> read signature from <file>, instead of looking for an embedded signature \u00b7\"sbverify [options] --cert Verify a UEFI secure boot image. \u2212\u2212cert certificate (x509 certificate) \u2212\u2212detached read signature from , instead of looking for an embedded signat",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6481,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify - UEFI secure boot verification tool' (https://man.uex.se/1/sbverify) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6481
+   },
+   "usage": {
+    "input_tokens": 823,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:41Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "non-interactive CI secure boot verification script exit codes",
+  "title": "GitHub - DanielMYT/secureboot-scripts: Some scripts to simplify the process of taking control of UEFI secure boot. \u00b7 GitHub",
+  "url": "https://github.com/DanielMYT/secureboot-scripts",
+  "snippet": "The whole point of the system is to block malware and other undesirable code from loading during the early boot stage. The secure boot system doesn't only apply to the .efi binaries that boot from the firmware - it also initiates a chain of trust that ensures security during the entirety of the system boot-up process. In the context of GNU/Linux, having secure boot enabled should trigger the bootl",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.368,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - DanielMYT/secureboot-scripts: Some scripts to simplify the process of taking control of UEFI secure boot. \u00b7 GitHub' (https://github.com/DanielMYT/secureboot-scripts) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.368
+   },
+   "usage": {
+    "input_tokens": 823,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:41Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "non-interactive CI secure boot verification script exit codes",
+  "title": "How CI Pipeline Scripts and Exit Codes Interact | Dojo Five",
+  "url": "https://dojofive.com/blog/how-ci-pipeline-scripts-and-exit-codes-interact/",
+  "snippet": "June 22, 2026 \u2014 These command(s) are run in a shell by the pipeline runner. If any command(s) return a non-zero exit code, the job fails and the rest of the commands or scripts in the job do not execute.\"With either of those scenarios you can use the methods presented in this blog to prevent a pipeline build from failing on non-zero return codes. By understanding how exit codes and pipelines inter",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0652,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How CI Pipeline Scripts and Exit Codes Interact | Dojo Five' (https://dojofive.com/blog/how-ci-pipeline-scripts-and-exit-codes-interact/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0652
+   },
+   "usage": {
+    "input_tokens": 823,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:41Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "non-interactive CI secure boot verification script exit codes",
+  "title": "Powershell scripts to analyze 2023 Secure Boot Certificate | Technibble Forums",
+  "url": "https://www.technibble.com/forums/resources/powershell-scripts-to-analyze-2023-secure-boot-certificate.34/",
+  "snippet": "June 29, 2026 \u2014 3 Powershell scripts to analyze & remediate UEFI 2023 Boot Certificate. Exit codes are written to work in the N-Able N-Sight RMM dashboard, but can be easily changed as necessary. No warranty implied, use at your own risk! 1) UEFI_ReplacementCertCheck - This check determines if the computer already has the 2023 UEFI Certificate in the Secure Boot DB and the Secure Boot KEK.\"3 Power",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0299,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Powershell scripts to analyze 2023 Secure Boot Certificate | Technibble Forums' (https://www.technibble.com/forums/resources/powershell-scripts-to-analyze-2023-secure-boot-certificate.34/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0299
+   },
+   "usage": {
+    "input_tokens": 823,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:54:41Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "non-interactive CI secure boot verification script exit codes",
+  "title": "Check-SecureBoot.ps1 - Script Updated - The Deployment Bunny",
+  "url": "https://deploymentbunny.com/2026/05/07/check-secureboot-ps1-script-updated/",
+  "snippet": "The purpose of the script is to be able to check the satus of the upcoming changes for the Secure Boot Certificate issue that will happen in the summer of 2026. I just want to give a quick heads\u2011up that the script has now been updated. The update improves detection logic and includes some refinements based on recent testing and community ...",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.4493,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Check-SecureBoot.ps1 - Script Updated - The Deployment Bunny' (https://deploymentbunny.com/2026/05/07/check-secureboot-ps1-script-updated/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4493
+   },
+   "usage": {
+    "input_tokens": 799,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "non-interactive CI secure boot verification script exit codes",
+  "title": "How to run Secure Boot Validation Script on an ESXi Host - vDan",
+  "url": "https://vdan.cz/cisco/ucs/how-to-run-secure-boot-validation-script-on-an-esxi-host/",
+  "snippet": "November 23, 2023 \u2014 /usr/lib/vmware/secureboot/bin/secureBoot.py -h usage: secureBoot.py [-h] [-a | -c | -s] optional arguments: -h, --help show this help message and exit -a, --acceptance-level-check Validate acceptance levels for installed vibs -c, --check-capability Check if the host is ready to enable secure boot -s, --check-status Check if UEFI secure boot is enabled ... /usr/lib/vmware/secur",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.2606,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to run Secure Boot Validation Script on an ESXi Host - vDan' (https://vdan.cz/cisco/ucs/how-to-run-secure-boot-validation-script-on-an-esxi-host/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2606
+   },
+   "usage": {
+    "input_tokens": 799,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "non-interactive CI secure boot verification script exit codes",
+  "title": "Debian Reference",
+  "url": "https://www.debian.org/doc/manuals/debian-reference/index.en.html",
+  "snippet": "Device files 1.2.11. Special device files 1.2.12. procfs and sysfs 1.2.13. tmpfs 1.3. Midnight Commander (MC) 1.3.1. Customization of MC 1.3.2. Starting MC 1.3.3. File manager in",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6682,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Debian Reference' (https://www.debian.org/doc/manuals/debian-reference/index.en.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6682
+   },
+   "usage": {
+    "input_tokens": 799,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 YubiKey touch prompt boot unlock",
+  "title": "Unlocking Encrypted Linux with a YubiKey - Miguel Hern\u00e1ndez",
+  "url": "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "snippet": "September 2, 2025 \u2014 # Generate the initramfs images sudo mkinitcpio -P # Generate the GRUB config file sudo grub-mkconfig -o /boot/grub/grub.cfg ... That\u2019s it! After a reboot, you\u2019ll be greeted with a simple text prompt asking for your FIDO2 PIN. After entering it, the system will ask you to touch your YubiKey.\"I recently picked up a pair of YubiKey 5 Series keys and set out to integrate them into",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.2389,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking Encrypted Linux with a YubiKey - Miguel Hern\u00e1ndez' (https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2389
+   },
+   "usage": {
+    "input_tokens": 799,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 YubiKey touch prompt boot unlock",
+  "title": "Passkeys: FIDO2 \u2014 Yubico Authenticator User Guide documentation",
+  "url": "https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/fido2.html",
+  "snippet": "Passkeys can be stored on FIDO2-certified YubiKeys, and Yubico Authenticator helps you manage them. For more information on which services support FIDO2 authentication and an overview of their unique security key registration processes, see the Works with YubiKey catalog.Passkeys can be stored on FIDO2-certified YubiKeys, and Yubico Authenticator helps you manage them. For more information on whic",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6597,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Passkeys: FIDO2 \u2014 Yubico Authenticator User Guide documentation' (https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/fido2.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6597
+   },
+   "usage": {
+    "input_tokens": 799,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 YubiKey touch prompt boot unlock",
+  "title": "Use Yubikey to unlock LUKS | AnduinOS Docs",
+  "url": "https://docs.anduinos.com/Skills/Secret-Management/Use-Yubikey-To-Unlock-LUKS.html",
+  "snippet": "This setup allows you to unlock your LUKS-encrypted root partition at boot by simply touching your YubiKey (FIDO2 mode).\"When asked for password, TOUCH YUBIKEY.\" echo \"---------------------------------------------------\" else echo \"\u26a0\ufe0f WARNING: 'fido2' module missing. Check logs.\" fi fi fi ... $ sudo systemd-cryptenroll /dev/nvme0n1p3 SLOT TYPE 0 password 1 fido2 $ sudo lsinitrd | grep fido2 $ cat ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8999,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Use Yubikey to unlock LUKS | AnduinOS Docs' (https://docs.anduinos.com/Skills/Secret-Management/Use-Yubikey-To-Unlock-LUKS.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8999
+   },
+   "usage": {
+    "input_tokens": 838,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 YubiKey touch prompt boot unlock",
+  "title": "FIDO2 (YubiKey) to unlock LUKS from command line - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/751251/fido2-yubikey-to-unlock-luks-from-command-line",
+  "snippet": "July 11, 2023 \u2014 It allows LUKS2 tokens protected by PIN to take precedence over interactive keyslot passphrase prompt. ... Using systemd-cryptenroll to set up the encryption suggests that you need a similar tool of the systemd family to unlock it. Turns out it is essentially Example 3 in the systemd-specific version of the crypttab(5) man page. sudo /usr/lib/systemd/systemd-cryptsetup attach loop0",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0956,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 (YubiKey) to unlock LUKS from command line - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/751251/fido2-yubikey-to-unlock-luks-from-command-line) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0956
+   },
+   "usage": {
+    "input_tokens": 838,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 YubiKey touch prompt boot unlock",
+  "title": "GitHub - bertogg/fido2luks: Unlock LUKS volumes at boot time using a FIDO2 token and initramfs-tools \u00b7 GitHub",
+  "url": "https://github.com/bertogg/fido2luks",
+  "snippet": "This is an initramfs-tools extension to unlock LUKS-encrypted volumes at boot time using a FIDO2 token (YubiKey, Nitrokey, ...).\"This is an initramfs-tools extension to unlock LUKS-encrypted volumes at boot time using a FIDO2 token (YubiKey, Nitrokey, ...).\"\"Some settings such as whether to require a PIN or presence verification (usually physically touching the USB key). Check out the scripts in t",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.7889,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - bertogg/fido2luks: Unlock LUKS volumes at boot time using a FIDO2 token and initramfs-tools \u00b7 GitHub' (https://github.com/bertogg/fido2luks) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7889
+   },
+   "usage": {
+    "input_tokens": 838,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 YubiKey touch prompt boot unlock",
+  "title": "[SOLVED] Unlocking luks root filesystem with multiple keyslots at boot ...",
+  "url": "https://bbs.archlinux.org/viewtopic.php?id=276892",
+  "snippet": "Nov 27, 2017 \u00b7 To unlock the device in early boot it will only prompt for the passphrase, and the yubikey is ineffective. If I modify the /etc/crypttab entry to include \"- fido2-device=auto\" it will only unlock with the key inserted after the presence check passes, and never prompt for a passphrase.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0396,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '[SOLVED] Unlocking luks root filesystem with multiple keyslots at boot ...' (https://bbs.archlinux.org/viewtopic.php?id=276892) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0396
+   },
+   "usage": {
+    "input_tokens": 838,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "veritysetup exit codes verify status",
+  "title": "veritysetup (8) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man8/veritysetup.8.html",
+  "snippet": "Error codes are: 1 wrong parameters, 2 no permission, 3 out of memory, 4 wrong device specified, 5 device already exists or device is busy. veritysetup --data-blocks=256 format <data_device> <hash_device> Calculates and stores verification data on hash_device for the first 256 blocks (of block ...\"Error codes are: 1 wrong parameters, 2 no permission, 3 out of memory, 4 wrong device specified, 5 de",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5759,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'veritysetup (8) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man8/veritysetup.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5759
+   },
+   "usage": {
+    "input_tokens": 838,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "veritysetup exit codes verify status",
+  "title": "veritysetup (8) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/veritysetup.8.en",
+  "snippet": "Error codes are: 1 wrong parameters, 2 no permission, 3 out of memory, 4 wrong device specified, 5 device already exists or device is busy. veritysetup --data-blocks=256 format <data_device> <hash_device> Calculates and stores verification data on hash_device for the first 256 blocks (of block ...\"Error codes are: 1 wrong parameters, 2 no permission, 3 out of memory, 4 wrong device specified, 5 de",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8313,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'veritysetup (8) \u2014 Arch manual pages' (https://man.archlinux.org/man/veritysetup.8.en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8313
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "veritysetup exit codes verify status",
+  "title": "Ubuntu Manpage: veritysetup - manage dm-verity (block level verification) volumes",
+  "url": "https://manpages.ubuntu.com/manpages/xenial/man8/veritysetup.8.html",
+  "snippet": "This command performs userspace verification, no kernel device is created. The <root_hash> is a hexadecimal string. ... If option --no-superblock is used, you have to use as the same options as in initial format operation. ... Removes existing mapping <name>. ... Reports status for the active verity mapping <name>.\"Salt used for format or verification. Format is a hexadecimal string. ... Use the p",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8907,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Ubuntu Manpage: veritysetup - manage dm-verity (block level verification) volumes' (https://manpages.ubuntu.com/manpages/xenial/man8/veritysetup.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8907
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "veritysetup exit codes verify status",
+  "title": "veritysetup(8) - Linux manual page - man7.org",
+  "url": "https://man7.org/linux/man-pages/man8/veritysetup.8.html",
+  "snippet": "RETURN CODES top. Veritysetup returns 0 on success and a non-zero value on error.The <root_hash> was calculated in the format command. veritysetup --data-blocks=256 --hash-offset=1052672 verify <.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6453,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'veritysetup(8) - Linux manual page - man7.org' (https://man7.org/linux/man-pages/man8/veritysetup.8.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6453
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "veritysetup exit codes verify status",
+  "title": "dm-verity \u2014 The Linux Kernel documentation",
+  "url": "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+  "snippet": "This is the offset, in <data_block_size> blocks, from the start of <fec_dev> to the beginning of the parity data. check_at_most_once Verify data blocks only the first time they are read from the data device, rather than every time. This reduces the overhead of dm-verity so that it can be used on systems that are memory and/or CPU constrained.This is the offset, in <data_block_size> blocks, from th",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9085,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'dm-verity \u2014 The Linux Kernel documentation' (https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9085
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "veritysetup exit codes verify status",
+  "title": "veritysetup - he",
+  "url": "https://man.he.net/man8/veritysetup",
+  "snippet": "This feature requires Linux kernel ... previously configured deferred device removal in close command. RETURN CODES Veritysetup returns 0 on success and a non-zero value on error....\"Error codes are: 1 wrong parameters 2 no permission 3 out of memory 4 wrong device specified 5 device already exists or device is busy. EXAMPLES veritysetup --data-blocks=256 format Calculates and stores verification ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.3954,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'veritysetup - he' (https://man.he.net/man8/veritysetup) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3954
+   },
+   "usage": {
+    "input_tokens": 769,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main exit code return PASSED FAILED",
+  "title": "Running CHIPSEC \u2014 CHIPSEC documentation",
+  "url": "https://chipsec.github.io/usage/Running-Chipsec.html",
+  "snippet": "Specify module(s) to NOT run (example: ... Fail on any exception and exit (don't mask exceptions) --no_time Don't log timestamps --deltas _DELTAS_FILE Specifies a JSON log file to compute result deltas from --helper _HELPER Specify OS Helper -nb, --no_banner Chipsec won't display ...\"Specify module(s) to NOT run (example: -mx common.bios_wp common.cpu.cpu_info) -a, --module_args _MODULE_ARGV Addit",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9038,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Running CHIPSEC \u2014 CHIPSEC documentation' (https://chipsec.github.io/usage/Running-Chipsec.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9038
+   },
+   "usage": {
+    "input_tokens": 809,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main exit code return PASSED FAILED",
+  "title": "GitHub - chipsec/chipsec: Platform Security Assessment Framework",
+  "url": "https://github.com/chipsec/chipsec",
+  "snippet": "CHIPSEC is a framework for analyzing the security of PC platforms including hardware, system firmware (BIOS/UEFI), and platform components. It includes a security test suite, tools for accessing various low level interfaces, and forensic capabilities.CHIPSEC is a framework for analyzing the security of PC platforms including hardware, system firmware (BIOS/UEFI), and platform components. It includ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.9553,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - chipsec/chipsec: Platform Security Assessment Framework' (https://github.com/chipsec/chipsec) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9553
+   },
+   "usage": {
+    "input_tokens": 809,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main exit code return PASSED FAILED",
+  "title": "chipsec/chipsec_main.py at chipsec2 \u00b7 chipsec/chipsec \u00b7 GitHub",
+  "url": "https://github.com/chipsec/chipsec/blob/chipsec2/chipsec_main.py",
+  "snippet": "Platform Security Assessment Framework. Contribute to chipsec/chipsec development by creating an account on GitHub.Platform Security Assessment Framework. Contribute to chipsec/chipsec development by creating an account on GitHub.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.4589,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'chipsec/chipsec_main.py at chipsec2 \u00b7 chipsec/chipsec \u00b7 GitHub' (https://github.com/chipsec/chipsec/blob/chipsec2/chipsec_main.py) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4589
+   },
+   "usage": {
+    "input_tokens": 809,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main exit code return PASSED FAILED",
+  "title": "Running Chipsec \u00b7 chipsec/chipsec Wiki \u00b7 GitHub",
+  "url": "https://github.com/chipsec/chipsec/wiki/Running-Chipsec/eec8168ae1a176f8995d94be5706a060a5a83f1a",
+  "snippet": "usage: chipsec_main.py [options] Options: -h, --help show this message and exit -m _MODULE, --module _MODULE specify module to run (example: -m common.bios_wp) -a [_MODULE_ARGV [_MODULE_ARGV ...]], --module_args [_MODULE_ARGV [_MODULE_ARGV ...]] additional module arguments -v, --verbose verbose mode --hal HAL mode -d, --debug debug mode -l LOG, --log LOG output to log file Advanced Options: -p {CF",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.7663,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Running Chipsec \u00b7 chipsec/chipsec Wiki \u00b7 GitHub' (https://github.com/chipsec/chipsec/wiki/Running-Chipsec/eec8168ae1a176f8995d94be5706a060a5a83f1a) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7663
+   },
+   "usage": {
+    "input_tokens": 809,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main exit code return PASSED FAILED",
+  "title": "Writing Your Own Modules \u2014 CHIPSEC documentation",
+  "url": "https://chipsec.github.io/development/Developing.html",
+  "snippet": "Your module class should subclass BaseModule and implement at least the methods named is_supported and run. When chipsec_main runs, it will first run is_supported and if that returns true, then it will call run.\"Your module class should subclass BaseModule and implement at least the methods named is_supported and run. When chipsec_main runs, it will first run is_supported and if that returns true,",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6533,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Writing Your Own Modules \u2014 CHIPSEC documentation' (https://chipsec.github.io/development/Developing.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6533
+   },
+   "usage": {
+    "input_tokens": 809,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:22Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "chipsec_main exit code return PASSED FAILED",
+  "title": "CHIPSEC Installation and Usage Guide - Scribd",
+  "url": "https://www.scribd.com/document/341786677/Chipsec-Manual",
+  "snippet": "This document provides an overview and instructions for installing and using the CHIPSEC platform security assessment framework. CHIPSEC allows analyzing the security of PC platforms including hardware, firmware, and platform configuration. It includes security tests, assessment tools, and basic firmware forensics. CHIPSEC can be run from Windows, Linux, Mac OS X, or UEFI Shell. Installation ...Th",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1258,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'CHIPSEC Installation and Usage Guide - Scribd' (https://www.scribd.com/document/341786677/Chipsec-Manual) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1258
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd ProtectSystem=strict CapabilityBoundingSet seccomp allowlist service hardening",
+  "title": "Options for hardening systemd service units \u00b7 GitHub",
+  "url": "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+  "snippet": "NoNewPrivileges=yes PrivateTmp=yes PrivateDevices=yes DevicePolicy=closed ProtectSystem=strict ProtectHome=read-only ProtectControlGroups=yes ProtectKernelModules=yes ProtectKernelTunables=yes RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK RestrictNamespaces=yes RestrictRealtime=yes RestrictSUIDSGID=yes MemoryDenyWriteExecute=yes LockPersonality=yes\"Specifically this means that the pr",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1625,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Options for hardening systemd service units \u00b7 GitHub' (https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1625
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd ProtectSystem=strict CapabilityBoundingSet seccomp allowlist service hardening",
+  "title": "Lock Down systemd Services (Sandboxing) \u00b7 Linux Junkies",
+  "url": "https://linuxjunkies.org/guides/lock-down-systemd-services",
+  "snippet": "June 7, 2026 \u2014 The directives themselves are portable across any systemd-based distro, but some kernel features (e.g., seccomp-BPF for SystemCallFilter) require a kernel built with CONFIG_SECCOMP_FILTER. All major distro kernels on current LTS releases enable this by default. Can I apply sandboxing to a service that runs as root? Yes, and it is especially valuable there. CapabilityBoundingSet and ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1886,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Lock Down systemd Services (Sandboxing) \u00b7 Linux Junkies' (https://linuxjunkies.org/guides/lock-down-systemd-services) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1886
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd ProtectSystem=strict CapabilityBoundingSet seccomp allowlist service hardening",
+  "title": "Systemd Service Hardening - mylinux.work",
+  "url": "https://mylinux.work/guides/systemd-hardening/",
+  "snippet": "Systemd service hardening guide \u2014 ProtectSystem, PrivateTmp, NoNewPrivileges, CapabilityBoundingSet, SystemCallFilter, DynamicUser, systemd-analyze security scoring, and real-world hardened unit files for nginx, PostgreSQL, Node.js, and PrometheusSystemd service hardening guide \u2014 ProtectSystem, PrivateTmp, NoNewPrivileges, CapabilityBoundingSet, SystemCallFilter, DynamicUser, systemd-analyze secur",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.086,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Systemd Service Hardening - mylinux.work' (https://mylinux.work/guides/systemd-hardening/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.086
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd ProtectSystem=strict CapabilityBoundingSet seccomp allowlist service hardening",
+  "title": "Linux systemd Service Hardening \u2014 Sandboxing, Capabilities, and ...",
+  "url": "https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/",
+  "snippet": "Complete guide to hardening Linux systemd services \u2014 sandboxing with ProtectHome and ProtectSystem, capability reduction with CapabilityBoundingSet, NoNewPrivileges, PrivateTmp, systemd-analyze security scoring, and real hardened service files for homelab daemons.Complete guide to hardening Linux systemd services \u2014 sandboxing with ProtectHome and ProtectSystem, capability reduction with Capability",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.1023,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Linux systemd Service Hardening \u2014 Sandboxing, Capabilities, and ...' (https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1023
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd ProtectSystem=strict CapabilityBoundingSet seccomp allowlist service hardening",
+  "title": "SystemD Service Hardening - RogueSecurity Musings",
+  "url": "https://roguesecurity.dev/blog/systemd-hardening",
+  "snippet": "August 11, 2025 \u2014 ProtectSystem \u2014 \u201cIf set to \u201cstrict\u201d the entire file system hierarchy is mounted read-only, except for the API file system subtrees /dev/, /proc/ and /sys/ (protect these directories using PrivateDevices=, ProtectKernelTunables=, ...\"For example CapabilityBoundingSet=~CAP_SETUID CAP_SETPCAP REMOVES the setuid and setpcap capabilities. Luckily, when tuning the SystemCallFilter, we ",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5491,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SystemD Service Hardening - RogueSecurity Musings' (https://roguesecurity.dev/blog/systemd-hardening) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5491
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:27Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "systemd ProtectSystem=strict CapabilityBoundingSet seccomp allowlist service hardening",
+  "title": "Systemd Service Hardening - Tech Blog",
+  "url": "https://www.dimoulis.net/posts/systemd-service-hardening/",
+  "snippet": "August 21, 2021 \u2014 # Tuned after: # sudo systemd-analyze security caddy.service --no-pager ## Filesystem namespace options (cheap) # Mount most things read-only and set read-write paths ProtectSystem=strict ReadWritePaths=/var/lib/caddy /var/log/caddy InaccessiblePaths=... ProtectHome=true PrivateTmp=true ProtectProc=invisible ProtectKernelTunables=true ProtectControlGroups=true ## Capabilities (ma",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.3299,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Systemd Service Hardening - Tech Blog' (https://www.dimoulis.net/posts/systemd-service-hardening/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3299
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:27Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "udev rule /dev/tpmrm0 non-root access TPM device permissions",
+  "title": "linux - Accessing Trusted Platform Module(TPM) without root permission - Super User",
+  "url": "https://superuser.com/questions/1463364/accessing-trusted-platform-moduletpm-without-root-permission",
+  "snippet": "July 24, 2019 \u2014 /dev/tpmrm0: access to the TPM driver via the in-kernel TPM resource manager (recommended) You can of course change the read/write permissions of those files temporarily. What you actually want to do, however, is create a udev rule.\"/dev/tpmrm0: access to the TPM driver via the in-kernel TPM resource manager (recommended) You can of course change the read/write permissions of those",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.0372,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'linux - Accessing Trusted Platform Module(TPM) without root permission - Super User' (https://superuser.com/questions/1463364/accessing-trusted-platform-moduletpm-without-root-permission) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0372
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:27Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "udev rule /dev/tpmrm0 non-root access TPM device permissions",
+  "title": "Getting Started with Device Trust - Teleport",
+  "url": "https://goteleport.com/docs/zero-trust-access/device-trust/guide/",
+  "snippet": "Linux users need permissions to read and write from the TPM device, /dev/tpmrm0.\"binary missing signature or entitlements\" on tsh device enroll. \"unauthorized device\" errors using a trusted device. \"Failed to open the TPM device\" on Linux. Auto enrollment not working.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.6045,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Getting Started with Device Trust - Teleport' (https://goteleport.com/docs/zero-trust-access/device-trust/guide/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6045
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:27Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "udev rule /dev/tpmrm0 non-root access TPM device permissions",
+  "title": "Create and provision devices with a virtual TPM on... | Microsoft Learn",
+  "url": "https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-tpm",
+  "snippet": "This service needs to access the TPM to automatically provision your device. You can give access to the TPM by overriding the systemd settings so that the aziottpm service has root privileges.Create a new rule that gives the IoT Edge runtime access to tpm0 and tpmrm0.",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.8571,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Create and provision devices with a virtual TPM on... | Microsoft Learn' (https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-tpm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8571
+   },
+   "usage": {
+    "input_tokens": 790,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:27Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "udev rule /dev/tpmrm0 non-root access TPM device permissions",
+  "title": "Service Start Issue for tpm2-abrmd #737 - GitHub",
+  "url": "https://github.com/tpm2-software/tpm2-abrmd/issues/737",
+  "snippet": "Nov 13, 2020 ... Your device files don't have the correct permissions: /dev/tpm0 should be owned by tss:root , /dev/tpmrm0 should be owned by tss:tss , both\u00a0...",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5649,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Service Start Issue for tpm2-abrmd #737 - GitHub' (https://github.com/tpm2-software/tpm2-abrmd/issues/737) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5649
+   },
+   "usage": {
+    "input_tokens": 514,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "udev rule /dev/tpmrm0 non-root access TPM device permissions",
+  "title": "Manage Trusted Devices | Teleport",
+  "url": "https://goteleport.com/docs/zero-trust-access/device-trust/device-management/",
+  "snippet": "\"Failed to open the TPM device\" on Linux\u200b. Linux users need permissions to read and write from the TPM device, /dev/tpmrm0 . Without such permissions tsh\u00a0...",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5087,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Manage Trusted Devices | Teleport' (https://goteleport.com/docs/zero-trust-access/device-trust/device-management/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5087
+   },
+   "usage": {
+    "input_tokens": 514,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "udev rule /dev/tpmrm0 non-root access TPM device permissions",
+  "title": "GitHub - psanford/tpm-fido: A WebAuthn/U2F token protected by a TPM (Go/Linux) \u00b7 GitHub",
+  "url": "https://github.com/psanford/tpm-fido",
+  "snippet": "In order to run tpm-fido you will need permission to access /dev/tpmrm0. On Ubuntu and Arch, you can add your user to the tss group. Your user also needs permission to access /dev/uhid so that tpm-fido can appear to be a USB device.\"In order to run tpm-fido you will need permission to access /dev/tpmrm0. On Ubuntu and Arch, you can add your user to the tss group. Your user also needs permission to",
+  "collected_at": "2026-10-05T11:53:00Z",
+  "weight": 0.5175,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - psanford/tpm-fido: A WebAuthn/U2F token protected by a TPM (Go/Linux) \u00b7 GitHub' (https://github.com/psanford/tpm-fido) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5175
+   },
+   "usage": {
+    "input_tokens": 514,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:55:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify --list vs --cert flag dry run UEFI",
+  "title": "sbverify(1) - Arch manual pages",
+  "url": "https://man.archlinux.org/man/sbverify.1",
+  "snippet": "--list lists all signatures but doesn't verify; --cert cryptographically verifies the image signature against the given X.509 certificate.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.8536,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify(1) - Arch manual pages' (https://man.archlinux.org/man/sbverify.1) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8536
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify --list vs --cert flag dry run UEFI",
+  "title": "sbverify(1) - sbsigntools (Debian bookworm)",
+  "url": "https://manpages.debian.org/bookworm/sbsigntool/sbverify.1.en.html",
+  "snippet": "--list list all signatures (but don't verify); --no-verify don't perform certificate verification; --detached read signature from file.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.9118,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'sbverify(1) - sbsigntools (Debian bookworm)' (https://manpages.debian.org/bookworm/sbsigntool/sbverify.1.en.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9118
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CHIPSEC module result PASSED FAILED DEPRECATED ERROR",
+  "title": "Interpreting results - CHIPSEC documentation",
+  "url": "https://chipsec.github.io/usage/Interpreting-Results.html",
+  "snippet": "Module result codes: PASSED mitigation detected; FAILED known vulnerability detected; WARNING potential vulnerability inconclusive; ERROR issue in framework; also NOT_APPLICABLE and INFORMATION.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.7357,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Interpreting results - CHIPSEC documentation' (https://chipsec.github.io/usage/Interpreting-Results.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7357
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CHIPSEC module result PASSED FAILED DEPRECATED ERROR",
+  "title": "chipsec_main.py - chipsec source",
+  "url": "https://github.com/chipsec/chipsec/blob/272a3c7cf8435a341dc9083f1f1c60349bab9322/chipsec_main.py",
+  "snippet": "Exit code is an integer bitmask across all run modules: bit0 SKIPPED, bit1 WARNING, bit2 DEPRECATED, bit3 FAIL, bit4 ERROR, bit5 EXCEPTION; 0 indicates success.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.4681,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'chipsec_main.py - chipsec source' (https://github.com/chipsec/chipsec/blob/272a3c7cf8435a341dc9083f1f1c60349bab9322/chipsec_main.py) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4681
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CHIPSEC module result PASSED FAILED DEPRECATED ERROR",
+  "title": "Vulnerabilities and CHIPSEC Modules - chipsec wiki",
+  "url": "https://github.com/chipsec/chipsec/wiki/Vulnerabilities-and-CHIPSEC-Modules",
+  "snippet": "Modules report PASSED/FAILED/WARNING/ERROR/NOT_APPLICABLE/INFORMATION results for vulnerability checks on platform firmware.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.6985,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Vulnerabilities and CHIPSEC Modules - chipsec wiki' (https://github.com/chipsec/chipsec/wiki/Vulnerabilities-and-CHIPSEC-Modules) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6985
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco daemon exit codes systemd restart",
+  "title": "systemd-falco.service.j2 - ansible-falco",
+  "url": "https://github.com/juju4/ansible-falco/blob/master/templates/systemd-falco.service.j2",
+  "snippet": "Falco systemd unit template using Restart=on-failure, RestartSec=15s, TimeoutSec=30 for the Falco daemon.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.1407,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-falco.service.j2 - ansible-falco' (https://github.com/juju4/ansible-falco/blob/master/templates/systemd-falco.service.j2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1407
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco daemon exit codes systemd restart",
+  "title": "Falco restarts periodically - falco issue 2476",
+  "url": "https://github.com/falcosecurity/falco/issues/2476",
+  "snippet": "Falco crash and restart behavior issue: exit code 1 for general application errors or health probe failures; exit code 139 for SIGSEGV segmentation fault.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.2304,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Falco restarts periodically - falco issue 2476' (https://github.com/falcosecurity/falco/issues/2476) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2304
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco daemon exit codes systemd restart",
+  "title": "Falco Is Not Starting Up - Falco troubleshooting docs",
+  "url": "https://falco.org/docs/troubleshooting/start-up-error/",
+  "snippet": "Falco startup troubleshooting: Falco outputs status to stdout/stderr and is inspected via journalctl service status.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.9181,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Falco Is Not Starting Up - Falco troubleshooting docs' (https://falco.org/docs/troubleshooting/start-up-error/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9181
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco daemon exit codes systemd restart",
+  "title": "fix(userspace/falco): always serve forced restart requests - falco PR 3939",
+  "url": "https://github.com/falcosecurity/falco/pull/3939",
+  "snippet": "Falco supports hot restart via SIGHUP for configuration reload; in some versions the SIGHUP handler fails to trigger restart unless the config-file watcher thread is active.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.3952,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'fix(userspace/falco): always serve forced restart requests - falco PR 3939' (https://github.com/falcosecurity/falco/pull/3939) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3952
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Falco daemon exit codes systemd restart",
+  "title": "Alerts Forwarding - Falco docs",
+  "url": "https://falco.org/docs/concepts/outputs/forwarding/",
+  "snippet": "Falco daemon forwards alerts to outputs; Falcosidekick is deployed alongside with Restart=always in systemd.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.7852,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Alerts Forwarding - Falco docs' (https://falco.org/docs/concepts/outputs/forwarding/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7852
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "tetragon.yaml validate CLI flag non-kubernetes",
+  "title": "Tracing Policy - Tetragon docs",
+  "url": "https://tetragon.io/docs/reference/tracing-policy/",
+  "snippet": "TracingPolicy can be loaded/unloaded at runtime or applied at startup using non-Kubernetes methods: tetra gRPC CLI or daemon flags; policies stored per domain (k8s, grpc, static).",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.7547,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Tracing Policy - Tetragon docs' (https://tetragon.io/docs/reference/tracing-policy/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7547
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "tetragon.yaml validate CLI flag non-kubernetes",
+  "title": "Deploy with a package - Tetragon docs",
+  "url": "https://tetragon.io/docs/installation/package/",
+  "snippet": "Package install runs Tetragon standalone; tetra connects over gRPC via --server-address unix:///var/run/tetragon/tetragon.sock for getevents and policy operations.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.8036,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Deploy with a package - Tetragon docs' (https://tetragon.io/docs/installation/package/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8036
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "tetragon.yaml validate CLI flag non-kubernetes",
+  "title": "Add complete k8s object validation and defaults on standalone - cilium/tetragon PR 1521",
+  "url": "https://github.com/cilium/tetragon/pull/1521",
+  "snippet": "Standalone Tetragon now runs the same TracingPolicy validation and defaulting as the Kubernetes CRD path; FromYAML decoding passes through a proper validation step.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.4008,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Add complete k8s object validation and defaults on standalone - cilium/tetragon PR 1521' (https://github.com/cilium/tetragon/pull/1521) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4008
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify --list list signatures don't verify",
+  "title": "How to inspect kernel.efi (UKI - universal kernel image) binary? - Ubuntu Community Hub",
+  "url": "https://discourse.ubuntu.com/t/how-to-inspect-kernel-efi-uki-universal-kernel-image-binary/38266",
+  "snippet": "sbverify --list displays signature count and certificate details of a signed UKI; unsigned images report no signature table.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.0918,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to inspect kernel.efi (UKI - universal kernel image) binary? - Ubuntu Community Hub' (https://discourse.ubuntu.com/t/how-to-inspect-kernel-efi-uki-universal-kernel-image-binary/38266) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0918
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify --list list signatures don't verify",
+  "title": "Verifying a signature of an EFI binary - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/753526/verifying-a-signature-of-an-efi-binary",
+  "snippet": "sbverify --list prints signature details including issuers without cryptographic verification; full verification requires --cert.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.0873,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Verifying a signature of an EFI binary - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/753526/verifying-a-signature-of-an-efi-binary) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0873
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "sbverify --list list signatures don't verify",
+  "title": "How to query EFI signature - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/126094/how-to-query-efi-signature",
+  "snippet": "sbverify --list outputs signature table contents (issuers, certificates) without verifying against a trusted certificate.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.1059,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to query EFI signature - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/126094/how-to-query-efi-signature) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1059
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 touch prompt LUKS unlock boot systemd-cryptenroll",
+  "title": "systemd-cryptenroll - freedesktop.org manual",
+  "url": "https://freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html",
+  "snippet": "Enrolls FIDO2 hmac-secret tokens into LUKS2; --fido2-with-user-presence controls touch requirement, --fido2-with-client-pin controls PIN; defaults enable both.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.7684,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll - freedesktop.org manual' (https://freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7684
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 touch prompt LUKS unlock boot systemd-cryptenroll",
+  "title": "systemd-cryptenroll - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "snippet": "During boot the system prompts for the FIDO2 PIN if enabled, then requests a touch of the YubiKey to confirm presence; requires sd-encrypt initramfs hook.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.6567,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll - ArchWiki' (https://wiki.archlinux.org/title/Systemd-cryptenroll) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6567
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "FIDO2 touch prompt LUKS unlock boot systemd-cryptenroll",
+  "title": "Unlocking Encrypted Linux with a YubiKey - Miguel Hernandez",
+  "url": "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "snippet": "After reboot the system asks for the FIDO2 PIN and then prompts to touch the YubiKey during LUKS unlock.",
+  "collected_at": "2026-10-05T11:57:00Z",
+  "weight": 0.3449,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking Encrypted Linux with a YubiKey - Miguel Hernandez' (https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3449
+   },
+   "usage": {
+    "input_tokens": 2862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T11:57:20Z"
+  },
+  "redo_of": null
+ }
+]
