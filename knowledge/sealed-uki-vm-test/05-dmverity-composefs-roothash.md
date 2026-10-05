@@ -1,0 +1,33 @@
+# dm-verity, composefs, and the roothash in the UKI cmdline
+
+Scope: dm-verity root hash binding for immutable images, mkosi Verity embedding roothash= in the UKI cmdline, composefs digest binding in BLS entries, and kernel-side tamper rejection when the store hash mismatches.
+
+## dm-verity enforcement basics
+
+dm-verity is the kernel device-mapper target that verifies every block read from a root filesystem against a Merkle hash tree whose root hash is the trust anchor. The kernel documentation states that verification of the roothash depends on the config DM_VERITY_VERIFY_ROOTHASH_SIG being set in the kernel; signatures are checked against the builtin trusted keyring by default, or the secondary trusted keyring if DM_VERITY_VERIFY_ROOTHASH_SIG_SECONDARY_KEYRING is set (weight 0.956, https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html). The bootloader passes the root hash to the kernel, which sets up the dm-verity device before mounting root; systemd-veritysetup-generator reads the kernel command line, sets up the dm-verity device, and mounts it as the root (weight 0.678, https://www.systemshardening.com/articles/linux/dm-verity/).
+
+An ArchWiki summary enumerates the parts of a dm-verity root setup: a root filesystem image or partition, the verity hash tree (verity.bin), the root hash of the verity tree (roothash.txt), systemd-veritysetup.generator, systemd-veritysetup@.service, verity kernel command line options, veritysetup from cryptsetup, and a unified kernel image which contains a stub EFI loader, kernel, initramfs, and kernel command line (weight 0.483, weak backing, https://wiki.archlinux.org/title/Dm-verity). That inventory is effectively the component list the sealed lane boots in QEMU.
+
+## mkosi Verity and the UKI cmdline
+
+mkosi's Verity= setting controls dm-verity integration. It takes one of signed, hash, defer, auto, or a boolean value. When set to hash, mkosi configures systemd-repart to create a verity hash partition but no signature partition (weight 0.89, https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md). mkosi documentation elsewhere records that the root hash is calculated by systemd-repart and passed to the kernel at boot time, either embedded in a UKI or via the kernel command line, allowing the kernel to verify the integrity of every block read from the root filesystem (weight 0.677, https://deepwiki.com/systemd/mkosi/8.5-dm-verity-and-integrity-protection).
+
+The yubiOS lane builds with `mkosi Verity=yes` so that `roothash=<hash>` lands in the UKI `.cmdline` section automatically, and the workflow asserts the cmdline contains the correct hash (source doc: yubi-OS/yubiOS refs/sealed-uki-vm-test-2026-07-30.md). This is the mechanical link between the signed-UKI doc and this one: the signature that OVMF checks covers the cmdline section, and the cmdline carries the roothash, so Secure Boot transitively binds the root filesystem expectation.
+
+A kernel alternative exists for initramfs-free setups: with CONFIG_DM_INIT, the kernel can create a dm-verity device during early boot from dm-mod.create= command-line arguments, allowing the system to boot from a verified root filesystem without an initramfs (weight 0.275, weak backing, https://www.lynx.com/blog/dm-verity-without-an-initramfs/). The lane does not use this path; it notes it as the adjacent mechanism.
+
+## composefs digest binding
+
+composefs is the layer above fs-verity that the bootc ecosystem uses for root filesystem integrity. The composefs project README describes the pattern directly: instead of checking out to a directory, a composefs image is generated pointing into the object store and mounted as the root fs; fs-verity can then be enabled on the composefs image and the digest of that image embedded in the kernel command line which specifies the rootfs (weight 0.683, https://github.com/composefs/composefs). The original OSTree design writeup states the same: build a composefs image, enable fs-verity on it, and put its filename and digest on the kernel command line instead of a checked-out directory (weight 0.778, https://blogs.gnome.org/alexl/2022/06/02/using-composefs-in-ostree/).
+
+Image sealing generalizes this: a single cryptographic digest authenticates an entire filesystem, covering both file contents and metadata (directory structure, permissions, ownership, symlinks, and xattrs), going further than fs-verity alone, which can only verify individual file contents, and avoiding the fixed-partition requirement of dm-verity (weight 0.606, https://scrivano.org/posts/2026-06-05-sealing-with-composefs/). The bootc side: Fedora and CentOS bootc enables the use of composefs for the root filesystem by default, though in an unsigned mode; when targeting a filesystem with fs-verity enabled, fs-verity is turned on (weight 0.934, https://docs.fedoraproject.org/en-US/bootc/filesystem/). The ostree integration docs add the signed mode: when composefs.enabled is set to signed or verity in ostree/prepare-root.conf, before the content of a file in the mounted composefs is read, the integrity of its backing OSTree object is validated by the digest stored in .ostree.cfs (weight 0.842, https://ostreedev.github.io/ostree/composefs/).
+
+The yubiOS variant binds the composefs digest in the BLS entry options as `composefs=<sha512>` (source doc: yubi-OS/yubiOS refs/sealed-uki-vm-test-2026-07-30.md). The unsealed lane already proves this digest binding end-to-end; the sealed lane's contribution is that the binding now lives inside a signed UKI cmdline instead of an unsigned BLS options line.
+
+## The tamper negative test
+
+The lane's second negative test changes one byte in the `composefs=<sha512>` value in the BLS entry and asserts that on boot dm-verity refuses to mount the composefs store (source doc: yubi-OS/yubiOS refs/sealed-uki-vm-test-2026-07-30.md). The enforcement mechanism is the kernel behavior documented at weight 0.956 above: block verification against the hash tree fails when the expected roothash does not match the actual tree. Note the test's failure surface is the kernel mount step, not the firmware: the tampered BLS entry is not itself covered by the UKI signature in the lane's current design, which is precisely why the BLSConfig wiring (OMN-150) is parked out of scope until the primitive is proven.
+
+## Gaps
+
+The dig did not surface a primary-source statement of the exact kernel log or exit behavior when a composefs mount with a mismatched fs-verity digest fails, nor the mkosi boolean semantics of Verity=yes versus Verity=signed on the current mkosi release. The lane implementer should verify both against the mkosi man page and kernel source when writing the negative assertion.
