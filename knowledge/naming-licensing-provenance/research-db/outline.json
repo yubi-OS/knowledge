@@ -1,0 +1,215 @@
+{
+  "topic": "naming, licensing, and provenance risk management for an open-source security product (yubiOS)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "trademark-risk-yubico",
+      "scope": "Trademark exposure of the name yubiOS: Yubico's YubiKey marks, Yubi-prefixed marks in the authentication space, and the rebrand-after-traction cost asymmetry.",
+      "seed_queries": [
+        "Yubico YubiKey trademark USPTO registered marks",
+        "open source project name trademark risk rebrand cost"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "nominative-fair-use-disclaimers",
+      "scope": "Nominative fair use vs implied endorsement when a project README leans on a third-party brand's badges and naming, and the standard non-affiliation disclaimer practice.",
+      "seed_queries": [
+        "nominative fair use trademark software compatibility",
+        "not affiliated disclaimer open source project third party trademark"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "fork-attribution-practice",
+      "scope": "Fork naming and upstream attribution practice: keeping upstream LICENSE and NOTICE files intact when renaming or forking existing open-source projects.",
+      "seed_queries": [
+        "fork open source project attribution license notice preservation",
+        "renaming forked open source project license obligations"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "lgpl-21-license-fit",
+      "scope": "LGPL-2.1 fit for a commercial-layer OS project: permitted commercial use, modification and redistribution, separately replaceable components, and notice preservation.",
+      "seed_queries": [
+        "LGPL-2.1 commercial use combined work proprietary",
+        "LGPL license obligations source redistribution"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "fork-license-inheritance",
+      "scope": "License inheritance from forked dependencies: bootc/mkosi Apache-2.0 family, ARM Trusted Firmware and OP-TEE BSD-3-Clause, U-Boot GPL-2.0, ms-tpm-20-ref BSD, and the per-repo verification discipline before distribution.",
+      "seed_queries": [
+        "U-Boot bootloader GPL-2.0 license combined work linux distribution",
+        "ARM Trusted Firmware OP-TEE BSD-3-Clause license"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "contributor-provenance-dco-cla",
+      "scope": "Contributor provenance policy: DCO vs CLA for LGPL projects, AI-assisted commit conventions (Assisted-by trailers, no auto Signed-off-by), and formalizing CONTRIBUTING.md.",
+      "seed_queries": [
+        "DCO vs CLA open source project choice",
+        "AI generated code commits sign-off provenance convention"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "provenance-claims-slsa",
+      "scope": "Making honest provenance claims for an open-source security product: SLSA levels, in-toto attestations, and supply-chain provenance statements about build and AI-assisted authorship.",
+      "seed_queries": [
+        "SLSA provenance attestation open source release",
+        "in-toto attestation supply chain security project"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "entity-path-contract-liability",
+      "scope": "Why signing paid support contracts and carrying managed-service liability wants an entity in place first: sole proprietorship vs LLC tradeoffs for a pre-launch OSS maintainer.",
+      "seed_queries": [
+        "open source maintainer LLC sole proprietorship support contracts liability",
+        "LLC for consulting and managed services why before signing contracts"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.3701,
+        "probabilities": {
+          "0": 0.1336,
+          "1": 0.3628,
+          "2": 0.5036
+        },
+        "confidence": 0.1047,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.3135,
+        "probabilities": {
+          "0": 0.1258,
+          "1": 0.4349,
+          "2": 0.4393
+        },
+        "confidence": 0.0969,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.7008,
+        "probabilities": {
+          "0": 0.0625,
+          "1": 0.1743,
+          "2": 0.7632
+        },
+        "confidence": 0.4252,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.2175,
+        "probabilities": {
+          "0": 0.1843,
+          "1": 0.4139,
+          "2": 0.4018
+        },
+        "confidence": 0.0501,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.69,
+        "probabilities": {
+          "0": 0.0652,
+          "1": 0.1797,
+          "2": 0.7551
+        },
+        "confidence": 0.4102,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.7788,
+        "probabilities": {
+          "0": 0.0445,
+          "1": 0.1322,
+          "2": 0.8233
+        },
+        "confidence": 0.5459,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.6709,
+        "probabilities": {
+          "0": 0.0654,
+          "1": 0.1982,
+          "2": 0.7364
+        },
+        "confidence": 0.3787,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.7736,
+        "probabilities": {
+          "0": 0.3864,
+          "1": 0.4536,
+          "2": 0.16
+        },
+        "confidence": 0.071,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1114,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}
