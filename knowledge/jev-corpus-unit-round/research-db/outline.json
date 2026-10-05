@@ -1,0 +1,203 @@
+{
+ "topic": "the unit-round operating procedure for corpus RSI chains: pin, frozen baseline check, one atomic change through a full runflow with gates, and the round record",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "unit-protocol",
+   "scope": "Why a unit round commits exactly one change through the whole runflow: cycle count 1, one honest measurement per round.",
+   "seed_queries": [
+    "one change per cycle experimental design single atomic intervention",
+    "recursive self improvement bounded loop fixpoint"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "frozen-baseline",
+   "scope": "Pinning the corpus and re-deriving the frozen baseline at every unit interval, no carryover, instruments carry cross-unit comparison.",
+   "seed_queries": [
+    "frozen baseline re-derivation experimental design each trial",
+    "software regression testing baseline snapshot methodology"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "gate-statistic",
+   "scope": "The gate-statistic correction: level_dbc = 20*log10(|z|) UP as the gate; the audit dbc field as an L2 share-spectrum distance retired from gating.",
+   "seed_queries": [
+    "dBc decibels relative to carrier log10 measurement definition",
+    "statistical distance metrics L2 norm signal detection threshold"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "preregistration-outcomes",
+   "scope": "Sign gate and outcomes pre-registration; the outcomes supersedes contract and realized-row-before-remap ordering.",
+   "seed_queries": [
+    "preregistration confirmatory exploratory research design",
+    "outcome measures pre-registration clinical trials design"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "hysteresis-scorer",
+   "scope": "Free-prose scorer variance 6-8x the true effect; structured-evidence scorer v2/v2.1; hysteresis eliminating threshold jitter on re-scores.",
+   "seed_queries": [
+    "Schmitt trigger hysteresis thresholding noisy signals",
+    "LLM judge scoring consistency variance inter-rater reliability"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "harness-contracts",
+   "scope": "Endpoint quick-reference, preview single-change, placements 404 workaround, stale-deploy and KV propagation lags, nulls >= 400.",
+   "seed_queries": [
+    "contract testing test harness idempotent replay",
+    "API pagination incremental list fetching resume where left off"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "taskcheck-keep-gate",
+   "scope": "taskcheck_refs.sh C1-C7 as the keep gate: geometry proposes, the check disposes; C7 charter enforcement; the add-check subset.",
+   "seed_queries": [
+    "mechanical conformance checking CI quality gates schema validation",
+    "automated style enforcement checkers linting philosophy"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "lens-instrument",
+   "scope": "The lens as instrument not generator: real-vs-control deflection as detectability filter, cell-mobility series, rungs as candidate source.",
+   "seed_queries": [
+    "detectability filter signal versus control measurement calibration",
+    "measurement instrument versus intervention validity"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "round-record",
+   "scope": "steps.log repro entries, the record doc on the draft PR, GraphQL ready-for-review then squash merge, and the three worked unit types.",
+   "seed_queries": [
+    "decision journal experiment record keeping research documentation",
+    "squash merge pull request review workflow best practices"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8871,
+    "probabilities": {
+     "0": 0.0319,
+     "1": 0.049,
+     "2": 0.9191
+    },
+    "confidence": 0.7722,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t02": {
+    "score": 1.879,
+    "probabilities": {
+     "0": 0.0241,
+     "1": 0.0729,
+     "2": 0.903
+    },
+    "confidence": 0.732,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t03": {
+    "score": 1.7682,
+    "probabilities": {
+     "0": 0.0484,
+     "1": 0.135,
+     "2": 0.8166
+    },
+    "confidence": 0.5311,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t04": {
+    "score": 1.8391,
+    "probabilities": {
+     "0": 0.0391,
+     "1": 0.0827,
+     "2": 0.8782
+    },
+    "confidence": 0.6694,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t05": {
+    "score": 1.745,
+    "probabilities": {
+     "0": 0.0533,
+     "1": 0.1484,
+     "2": 0.7983
+    },
+    "confidence": 0.4932,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t06": {
+    "score": 1.8006,
+    "probabilities": {
+     "0": 0.043,
+     "1": 0.1134,
+     "2": 0.8436
+    },
+    "confidence": 0.5896,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t07": {
+    "score": 1.8872,
+    "probabilities": {
+     "0": 0.0315,
+     "1": 0.0499,
+     "2": 0.9186
+    },
+    "confidence": 0.7711,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t08": {
+    "score": 1.7193,
+    "probabilities": {
+     "0": 0.0517,
+     "1": 0.1773,
+     "2": 0.771
+    },
+    "confidence": 0.4428,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   },
+   "t09": {
+    "score": 1.868,
+    "probabilities": {
+     "0": 0.0292,
+     "1": 0.0736,
+     "2": 0.8972
+    },
+    "confidence": 0.7169,
+    "legend": "0=padding: drop; 1=marginal: keep only if the dig comes back strong; 2=load-bearing: core subtopic"
+   }
+  },
+  "usage": {
+   "input_tokens": 1469,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
