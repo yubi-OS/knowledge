@@ -1,0 +1,223 @@
+{
+  "topic": "Navier-Stokes research applied to corpus wayfinding mathematics",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "pr230-statistical-reconciliation",
+      "scope": "What the merged wayfinding PR actually establishes: verified isolation deltas, quantization-silent vs attaching ADD outcomes, baselines, and the honesty limits of interval claims on adaptive trials.",
+      "seed_queries": [
+        "majority class baseline classification evaluation pitfalls",
+        "Wilson score interval binomial proportion adaptive experiment"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "external-claim-verification",
+      "scope": "Verifying external research artifacts before adoption: the OpenAI Navier-Stokes paper and Lean repository audited against the Clay/Fefferman official problem formulation, with compile-level limits stated.",
+      "seed_queries": [
+        "Navier-Stokes existence smoothness Clay millennium problem Fefferman formulation",
+        "Lean 4 formalization theorem proving verification repository"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "threshold-margin-bounds",
+      "scope": "Equation A: signed threshold margins with conditional perturbation stability bounds, explicit error allowances, abstention regions, and the rejected unsigned flip-predictor.",
+      "seed_queries": [
+        "classification margin perturbation stability bound triangle inequality",
+        "classifier abstention reject option determinacy margin"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "exact-isolation-identities",
+      "scope": "Equations B and C: exact local graph identities for the isolation-count change under ADD and CHANGE point-map operations, including the neutral-ADD explanation and the one-vertex CHANGE certificate.",
+      "seed_queries": [
+        "graph degree update adding vertex neighborhood counting",
+        "local adjacency update moved vertex degree formula"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "reduction-ratio-bookkeeping",
+      "scope": "Equation D: the trust-region-style reduction ratio rho as a bookkeeping diagnostic for predicted reductions, its eligibility rules, and its small-sample interpretation limits.",
+      "seed_queries": [
+        "trust region ratio actual predicted reduction optimization",
+        "small sample statistics avoiding overfitting selected groups"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "graph-diffusion-deferred",
+      "scope": "Equation E: optional symmetric graph diffusion with the Laplacian energy identity, explicit Euler stability bounds, and why the diffusion extension stays deferred pending a matched-null admission test.",
+      "seed_queries": [
+        "graph Laplacian diffusion energy dissipation maximum principle",
+        "explicit Euler stability condition eigenvalue lambda max diffusion"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "lean-ci-integration",
+      "scope": "The Lean 4 and CI integration plan: a scoped WayfinderBounds proof file, scope manifests with printed-axiom checks, preserved negative gates, and why the external PDE library stays out of the dependency chain.",
+      "seed_queries": [
+        "Lean 4 mathlib continuous integration theorem proving",
+        "printed axioms Lean theorem dependency audit"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "research-methodology-streams",
+      "scope": "The multi-stream research discipline: independent verification streams, audited rather than accepted recommendations, pre-registration of held-out comparisons, and a rejected accuracy claim kept out of the evidence chain.",
+      "seed_queries": [
+        "independent replication verification research claims audit",
+        "pre-registration held-out evaluation avoid confirmation bias"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 0.75,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.4456,
+          "1": 0.3588,
+          "2": 0.1956
+        },
+        "confidence": 0.0483
+      },
+      "t02": {
+        "type": "score",
+        "score": 0.6574,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.486,
+          "1": 0.3705,
+          "2": 0.1435
+        },
+        "confidence": 0.0911
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.2043,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2121,
+          "1": 0.3714,
+          "2": 0.4165
+        },
+        "confidence": 0.0346
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.208,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2286,
+          "1": 0.3348,
+          "2": 0.4366
+        },
+        "confidence": 0.0325
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.8897,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3396,
+          "1": 0.4311,
+          "2": 0.2293
+        },
+        "confidence": 0.0306
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.9047,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3955,
+          "1": 0.3042,
+          "2": 0.3003
+        },
+        "confidence": 0.0087
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.2708,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.7991,
+          "1": 0.131,
+          "2": 0.0699
+        },
+        "confidence": 0.491
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.1474,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2308,
+          "1": 0.3911,
+          "2": 0.3781
+        },
+        "confidence": 0.0238
+      }
+    },
+    "usage": {
+      "input_tokens": 1074,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

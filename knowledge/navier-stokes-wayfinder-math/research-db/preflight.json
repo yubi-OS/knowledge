@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": 98,
+    "unresponsive_engines": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ],
+      [
+        "duckduckgo",
+        "CAPTCHA"
+      ],
+      [
+        "fastbot",
+        "Suspended: access denied"
+      ],
+      [
+        "fireball",
+        "Suspended: access denied"
+      ],
+      [
+        "gmx",
+        "Suspended: CAPTCHA"
+      ],
+      [
+        "google",
+        "Suspended: access denied"
+      ],
+      [
+        "qwant",
+        "CAPTCHA"
+      ],
+      [
+        "resulthunter",
+        "HTTP error"
+      ],
+      [
+        "searchmysite",
+        "Suspended: access denied"
+      ],
+      [
+        "seznam",
+        "Suspended: timeout"
+      ],
+      [
+        "yacy",
+        "timeout"
+      ],
+      [
+        "yep",
+        "Suspended: access denied"
+      ]
+    ]
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "model": "clef",
+      "answers": {
+        "p01": {
+          "type": "noul",
+          "noul": 0.069
+        }
+      },
+      "usage": {
+        "input_tokens": 182,
+        "output_tokens": 0
+      }
+    }
+  }
+}
