@@ -1,0 +1,69 @@
+{
+  "nn": "03",
+  "slug": "blockers-as-source-of-truth",
+  "scope": "Maintaining a live, numbered blocker list as the single source of truth for current project status, with dated snapshot documents deferring to it rather than restating status.",
+  "queries_attempted": [
+    {
+      "query": "blocker tracking document single source of truth software project status",
+      "attempt": 1,
+      "raw_results": 66,
+      "kept": 6
+    },
+    {
+      "query": "software project readiness blockers open issue list living document",
+      "attempt": 1,
+      "raw_results": 69,
+      "kept": 6
+    },
+    {
+      "query": "stale documentation single source of truth engineering team practices",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "issue tracker as canonical source project status documentation drift",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt-1 results mostly generic PM vendor blog posts; trying engineering-doc-specific queries",
+      "new_queries": [
+        "stale documentation single source of truth engineering team practices",
+        "issue tracker as canonical source project status documentation drift"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://sunday.work/en/blog/blocker-tracking-visual-workflow",
+    "https://ones.com/blog/management-control-in-software-projects-tracking-progress-without-micromanaging-4/",
+    "https://plane.so/blog/creating-a-single-source-of-truth-for-your-teams",
+    "https://www.atlassian.com/work-management/knowledge-sharing/documentation/building-a-single-source-of-truth-ssot-for-your-team",
+    "https://planisware.com/resources/planisware-hub/how-planisware-creates-single-source-truth",
+    "https://adblockplus.org/",
+    "https://plane.so/blog/project-blockers-definition-examples-and-how-to-overcome-them",
+    "https://devcom.com/tech-blog/go-live-checklist/",
+    "https://ontrac-solutions-llc.breezy.hr/p/af05e7fff1ef-senior-full-stack-software-engineer",
+    "https://github.com/gastownhall/beads/issues/2502",
+    "https://www.smartsheet.com/content/issue-tracking-templates",
+    "https://www.projectmanagertemplate.com/post/project-impediment-management-a-complete-guide-to-removing-project-blockers",
+    "https://datadef.io/guides/en/stale-documentation",
+    "https://falconer.com/guides/consolidate-documentation/",
+    "https://sync-o.io/blog/stale-documentation-engineering",
+    "https://www.conservapedia.com/Biden_junta",
+    "https://www.merriam-webster.com/dictionary/stale",
+    "https://thecodeforge.io/cs-fundamentals/documentation-best-practices/",
+    "https://github.com/im-tnyx/tio-world/issues/250",
+    "https://tsonic.org/docs/validation/documentation-drift/",
+    "https://deepwiki.com/jayminwest/trellis/7.2-standards-drift-and-canonical-configs",
+    "https://issuu.com/",
+    "https://github.com/topics/documentation-drift",
+    "https://make.wordpress.org/docs/handbook/github-repository-and-projects/documentation-issue-tracker/"
+  ],
+  "outcome": "authored"
+}

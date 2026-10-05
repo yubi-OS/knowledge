@@ -1,0 +1,239 @@
+{
+  "topic": "evidence boundaries in early-stage security projects - stating plainly what is verified today versus aspirational, so downstream business documents (offer, pilot, funding, case study) inherit honest claims",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "verified-asset-inventory",
+      "scope": "How to inventory and verify the technical assets and public artifacts (public repo, license file, CI lanes, published images, provenance and SBOM attestations, staged upstream forks) that ground engineering-progress claims.",
+      "seed_queries": [
+        "open source project verified public artifacts CI pipeline evidence inventory",
+        "SLSA provenance SBOM attestation container image public build evidence"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "progress-versus-market-fit",
+      "scope": "Separating evidence of engineering progress (code, CI, docs) from evidence of product-market fit (customers, pilots, committed pricing), and why the two are routinely conflated in early-stage claims.",
+      "seed_queries": [
+        "engineering progress versus product market fit evidence early stage startup",
+        "distinguishing technical milestones from commercial validation startup claims"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "blockers-as-source-of-truth",
+      "scope": "Maintaining a live, numbered blocker list as the single source of truth for current project status, with dated snapshot documents deferring to it rather than restating status.",
+      "seed_queries": [
+        "blocker tracking document single source of truth software project status",
+        "software project readiness blockers open issue list living document"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "vm-versus-hardware-evidence",
+      "scope": "Why CI and VM-lane evidence cannot back hardware or physical-device claims (token enumeration, physical key validation), and the ladder between simulated and real-hardware proof.",
+      "seed_queries": [
+        "hardware in the loop CI testing FIDO2 YubiKey validation",
+        "software emulation versus real hardware verification security product claims"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "off-limits-claims-governance",
+      "scope": "Enumerating claims that must stay off-limits until specific named evidence closes (production-ready, platform support, ROI figures, sealed boot), and enforcing that list across documents.",
+      "seed_queries": [
+        "startup marketing claims governance evidence based claims policy",
+        "overclaiming security startup marketing risk compliance"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "trademark-non-affiliation-boundary",
+      "scope": "Non-affiliation and trademark boundaries as part of the honest-claims surface: explicit disclaimers that a project is not affiliated with or endorsed by a trademark holder, independent of blocker status.",
+      "seed_queries": [
+        "trademark non-affiliation disclaimer open source project best practices",
+        "nominative fair use trademark open source project naming"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "readiness-gates-claims-mapping",
+      "scope": "Mapping evidence state to gate levels (provisional entry through general availability) and which market claims unlock at which gate.",
+      "seed_queries": [
+        "product readiness gates go to market stages software security",
+        "launch readiness criteria gating public claims software releases"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "commercial-evidence-gap",
+      "scope": "The commercial validation gap (zero customer discovery interviews, design partners, paid pilots, signed statements of work) and what evidence standards close it.",
+      "seed_queries": [
+        "customer discovery interviews evidence startup validation methods",
+        "paid pilot design partner statement of work early customer evidence"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "evidence-summary-snapshot-discipline",
+      "scope": "Writing a reusable external evidence-boundary summary, dating it, and the supersession rule (later evidence supersedes snapshot lines without back-editing), plus how downstream business docs cite the canonical boundary.",
+      "seed_queries": [
+        "technical documentation dated snapshot versus living document status claims",
+        "evidence boundary statement reusable boilerplate honest claims"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7227,
+        "probabilities": {
+          "0": 0.0549,
+          "1": 0.1675,
+          "2": 0.7776
+        },
+        "confidence": 0.4536,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.829,
+        "probabilities": {
+          "0": 0.0312,
+          "1": 0.1086,
+          "2": 0.8602
+        },
+        "confidence": 0.629,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.3851,
+        "probabilities": {
+          "0": 0.0977,
+          "1": 0.4194,
+          "2": 0.4829
+        },
+        "confidence": 0.1279,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.62,
+        "probabilities": {
+          "0": 0.0771,
+          "1": 0.2258,
+          "2": 0.6971
+        },
+        "confidence": 0.3143,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.8134,
+        "probabilities": {
+          "0": 0.0471,
+          "1": 0.0924,
+          "2": 0.8605
+        },
+        "confidence": 0.6268,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.9775,
+        "probabilities": {
+          "0": 0.1945,
+          "1": 0.6335,
+          "2": 0.172
+        },
+        "confidence": 0.2031,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.5984,
+        "probabilities": {
+          "0": 0.0797,
+          "1": 0.2421,
+          "2": 0.6782
+        },
+        "confidence": 0.2873,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.7509,
+        "probabilities": {
+          "0": 0.0535,
+          "1": 0.1421,
+          "2": 0.8044
+        },
+        "confidence": 0.5051,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.7541,
+        "probabilities": {
+          "0": 0.0584,
+          "1": 0.129,
+          "2": 0.8126
+        },
+        "confidence": 0.5205,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1732,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
