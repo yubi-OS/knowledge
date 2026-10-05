@@ -1,0 +1,2279 @@
+[
+ {
+  "query": "OpenWrt WireGuard firewall zone segmented network design",
+  "title": "[OpenWrt Wiki] WireGuard server",
+  "url": "https://openwrt.org/docs/guide-user/services/vpn/wireguard/server",
+  "snippet": "3. Firewall Consider VPN network as private. Assign VPN interface to LAN zone to minimize firewall setup. Allow access to VPN server from WAN zone.3. Firewall Consider VPN network as private. Assign VPN interface to LAN zone to minimize firewall setup. Allow access to VPN server from WAN zone.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9557
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:05Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OpenWrt WireGuard firewall zone segmented network design",
+  "title": "Network Segmentation at Home: VLANs for Guest/IoT + VPN on OpenWrt (A ...",
+  "url": "https://blog.lemaker.org/network-segmentation-home-vlans-guest-iot-vpn-openwrt-2026/",
+  "snippet": "Practical walkthrough for segmenting a home network with VLANs on OpenWrt. Covers VLAN planning, guest and IoT isolation, firewall zone rules, VPN integration, and DNS privacy.Practical walkthrough for segmenting a home network with VLANs on OpenWrt. Covers VLAN planning, guest and IoT isolation, firewall zone rules, VPN integration, and DNS privacy.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2993
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:05Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OpenWrt WireGuard firewall zone segmented network design",
+  "title": "[Solved] Different firewall zones for different wireguard clients?",
+  "url": "https://forum.openwrt.org/t/solved-different-firewall-zones-for-different-wireguard-clients/222048",
+  "snippet": "I want to have different firewall zones for different clients connecting to the wireguard server hosted on my OpenWRT (24.05.5 running on a GL.Inet MT-6000, using luci-proto-wireguard). Basically some wireguard clients should only be able to access a subset of resources on the network, while others are fully trusted. The way I envision doing this is putting the clients into separate firewall ...I want to have different firewall zones for different clients connecting to the wireguard server hoste",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0487
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:05Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OpenWrt WireGuard firewall zone segmented network design",
+  "title": "[OpenWrt Wiki] WireGuard client",
+  "url": "https://openwrt.org/docs/guide-user/services/vpn/wireguard/client",
+  "snippet": "# Configure firewall uci rename firewall. @zone [0] = \"lan\" uci rename firewall. @zone [1] = \"wan\" uci del_list firewall.wan.network= \" ${VPN_IF} \" uci add_list firewall.wan.network= \" ${VPN_IF} \" uci commit firewall service firewall\u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9493
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:05Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OpenWrt WireGuard firewall zone segmented network design",
+  "title": "OpenWrt WireGuard: the complete 2026 setup + multi-site guide",
+  "url": "https://meshwg.com/openwrt/wireguard/",
+  "snippet": "Attach to a firewall zone. Under Network \u2192 Firewall \u2192 Zones, attach wg0 to the lan zone, or create a dedicated vpn zone with input/forward rules that match your security posture. Restart networking.Attach to a firewall zone. Under Network \u2192 Firewall \u2192 Zones, attach wg0 to the lan zone, or create a dedicated vpn zone with input/forward rules that match your security posture. Restart networking.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2089
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:05Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OpenWrt WireGuard firewall zone segmented network design",
+  "title": "Wireguard firewall setting - Installing and Using OpenWrt ...",
+  "url": "https://forum.openwrt.org/t/wireguard-firewall-setting/218159",
+  "snippet": "Hi, I configured wireguard and I would like to know if the firewall is ok, I saw some basic setup from internet and some others more complex, so here what I did. root@OpenWrt:~# cat /etc/config/firewall config defaults option input 'REJECT' option output 'ACCEPT' option forward 'REJECT' option synflood_protect '1' option flow_offloading '1' option flow_offloading_hw '1' config zone 'lan ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1994
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:07Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "WireGuard mesh VPN network segmentation honeypot design",
+  "title": "WireGuard: fast, modern, secure VPN tunnel",
+  "url": "https://www.wireguard.com/",
+  "snippet": "A VPN connection is made simply by exchanging very simple public keys \u2013 exactly like exchanging SSH keys \u2013 and all the rest is transparently handled by WireGuard.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9382
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:07Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "WireGuard mesh VPN network segmentation honeypot design",
+  "title": "How to Configure WireGuard Mesh VPN? - zenarmor.com",
+  "url": "https://www.zenarmor.com/docs/network-security-tutorials/how-to-configure-wireguard-mesh-vpn",
+  "snippet": "A mesh network enables inter-device communication over a Virtual Private Network (VPN) without relying on a central server. WireGuard is a revolutionary VPN (Virtual Private Network) program developed to be operated practically anywhere and to be cross-platform.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2302
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:07Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "WireGuard mesh VPN network segmentation honeypot design",
+  "title": "Managing Multiple WireGuard Tunnels & Mesh VPN Guide (2026)",
+  "url": "https://meshwg.com/blog/manage-multiple-wireguard-tunnels-mesh-vpn-2026/",
+  "snippet": "A WireGuard Mesh VPN is a software-defined overlay network topology wherein multiple gateway nodes, servers, or endpoints establish direct, mutually authenticated, and encrypted WireGuard tunnels with one another without routing data traffic through a central hub node.A WireGuard Mesh VPN is a software-defined overlay network topology wherein multiple gateway nodes, servers, or endpoints establish direct, mutually authenticated, and encrypted WireGuard tunnels with one another without routing da",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1507
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:07Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "WireGuard mesh VPN network segmentation honeypot design",
+  "title": "Installation - WireGuard",
+  "url": "https://www.wireguard.com/install/",
+  "snippet": "Users with Debian releases older than Bullseye should enable backports. Users of kernels < 5.6 may also choose wireguard-lts or \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9273
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:07Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "WireGuard mesh VPN network segmentation honeypot design",
+  "title": "Setting up a private mesh VPN with WireGuard\u00ae",
+  "url": "https://www.scaleway.com/en/docs/tutorials/wireguard-mesh-vpn/",
+  "snippet": "WireGuard is a modern VPN (Virtual Private Network) software. It is designed to be cross-platform and run almost anywhere. Compared to other similar software, it is faster, more secure, and simpler. In this tutorial, we show you how to use WireGuard to spin up a private mesh network to...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.771
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "WireGuard mesh VPN network segmentation honeypot design",
+  "title": "Understanding mesh network topology (mesh VPNs) - Tailscale",
+  "url": "https://tailscale.com/learn/understanding-mesh-vpns",
+  "snippet": "A mesh network topology lets different nodes dynamically connect to each other, improving the overall efficiency of data transmission. Similarly, mesh VPNs use a peer-to-peer architecture to offer greater resiliency, scalability, and performance than conventional VPNs.A mesh network topology lets different nodes dynamically connect to each other, improving the overall efficiency of data transmission. Similarly, mesh VPNs use a peer-to-peer architecture to offer greater resiliency, scalability, a",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7348
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh SSH tarpit how it works protocol behavior",
+  "title": "GitHub - skeeto/endlessh: SSH tarpit that slowly sends an endless ...",
+  "url": "https://github.com/skeeto/endlessh",
+  "snippet": "Endlessh: an SSH tarpit Endlessh is an SSH tarpit that very slowly sends an endless, random SSH banner. It keeps SSH clients locked up for hours or even days at a time. The purpose is to put your real SSH server on another port and then let the script kiddies get stuck in this tarpit instead of bothering a real server.Endlessh: an SSH tarpit Endlessh is an SSH tarpit that very slowly sends an endless, random SSH banner. It keeps SSH clients locked up for hours or even days at a time. The purpose",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.336
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh SSH tarpit how it works protocol behavior",
+  "title": "Endlessh: an SSH Tarpit - null program",
+  "url": "https://nullprogram.com/blog/2019/03/22/",
+  "snippet": "Endlessh exploits a little paragraph in RFC 4253, the SSH protocol specification. Immediately after the TCP connection is established, and before negotiating the cryptography, both ends send an identification string:Endlessh exploits a little paragraph in RFC 4253, the SSH protocol specification. Immediately after the TCP connection is established, and before negotiating the cryptography, both ends send an identification string:",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4041
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh SSH tarpit how it works protocol behavior",
+  "title": "Setting Up an SSH Honeypot with Endlessh: A Complete Guide",
+  "url": "https://joshuarosato.com/posts/ssh-honeypot-endlessh-setup-guide/",
+  "snippet": "Learn how to protect your SSH servers by implementing Endlessh, an SSH tarpit that traps potential attackers. This comprehensive guide covers installation, configuration, and deployment of this lightweight but effective security tool.Learn how to protect your SSH servers by implementing Endlessh, an SSH tarpit that traps potential attackers. This comprehensive guide covers installation, configuration, and deployment of this lightweight but effective security tool.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1728
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh SSH tarpit how it works protocol behavior",
+  "title": "Endlessh (SSH Tarpit): Trapping Hacker Bots for Weeks on Your VPS",
+  "url": "https://www.sedunlab.com/posts/endlessh-ssh-tarpit-vps-en/",
+  "snippet": "What is Endlessh and How Does a Tarpit Work? According to the official SSH protocol specification (RFC 4253, Section 4.2), before the client and server exchange their protocol version strings, the server is permitted to transmit arbitrary textual header banners. The client is obligated to wait for and parse this input.What is Endlessh and How Does a Tarpit Work? According to the official SSH protocol specification (RFC 4253, Section 4.2), before the client and server exchange their protocol vers",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2939
+   },
+   "usage": {
+    "input_tokens": 163,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh SSH tarpit how it works protocol behavior",
+  "title": "skeeto/endlessh | DeepWiki",
+  "url": "https://deepwiki.com/skeeto/endlessh",
+  "snippet": "An SSH tarpit is a security tool that deliberately wastes the time and resources of potential attackers. Endlessh works by accepting SSH connections but then sending extremely slow, random banner text that never completes.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2519
+   },
+   "usage": {
+    "input_tokens": 163,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh SSH tarpit how it works protocol behavior",
+  "title": "GitHub - bediger4000/ssh-tarpit-behavior: Results of running ...",
+  "url": "https://github.com/bediger4000/ssh-tarpit-behavior",
+  "snippet": "I compiled endlessh, and wrote a systemd unit file for it. endlessh takes advantage of the SSH Banner feature of the SSH protocol to keep connectors \"on the hook\", randomly doling out small numbers of bytes at long intervals. The scanners never actually get to trying a login, if they follow the SSH protocol at all closely.I compiled endlessh, and wrote a systemd unit file for it. endlessh takes advantage of the SSH Banner feature of the SSH protocol to keep connectors \"on the hook\", randomly dol",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5305
+   },
+   "usage": {
+    "input_tokens": 163,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh honeypot OpenWrt setup limitations",
+  "title": "[OpenWrt Wiki] Honeypots",
+  "url": "https://openwrt.org/docs/guide-user/services/honeypots",
+  "snippet": "Running honeypots on OpenWrt allows for detection of network intrusions and automatically alerting the owner of the incident. It is also possible to automatically isolate the offending device on the WiFi network. Currently OpenCanary has been confirmed working on OpenWrt as a honeypot. It is important to isolate the honeypots from the rest of the network and OpenWrt itself, thus here we ...Running honeypots on OpenWrt allows for detection of network intrusions and automatically alerting the owne",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8584
+   },
+   "usage": {
+    "input_tokens": 163,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh honeypot OpenWrt setup limitations",
+  "title": "GitHub - SG-1031/EndLess_SSH_Honeypot: A lightweight SSH honeypot using ...",
+  "url": "https://github.com/SG-1031/EndLess_SSH_Honeypot",
+  "snippet": "This project sets up a minimalist honeypot using the Endlessh tool. It traps unauthorized SSH connections in an infinite banner loop, effectively delaying brute-force scanners without giving them system access.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.408
+   },
+   "usage": {
+    "input_tokens": 163,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh honeypot OpenWrt setup limitations",
+  "title": "Honeypot Setup with Endlessh and Cowrie | mylinux.work",
+  "url": "https://mylinux.work/guides/honeypot-setup/",
+  "snippet": "Home Guides Honeypot Setup with Endlessh and Cowrie Deploy SSH honeypots to trap and study attackers \u2014 Endlessh SSH tarpit to waste bot time, Cowrie medium-interaction honeypot to capture credentials and commands, Docker deployment, log analysis, Prometheus metrics, and integration with Fail2ban and CrowdSecHome Guides Honeypot Setup with Endlessh and Cowrie Deploy SSH honeypots to trap and study attackers \u2014 Endlessh SSH tarpit to waste bot time, Cowrie medium-interaction honeypot to capture cre",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3543
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "endlessh honeypot OpenWrt setup limitations",
+  "title": "Best way to setup a honeypot : r/openwrt - Reddit",
+  "url": "https://www.reddit.com/r/openwrt/comments/1buvay7/best_way_to_setup_a_honeypot/",
+  "snippet": "Best way to setup a honeypot I'm planning on setting up a honeypot for fun and learning purposes. This is my network: ISP modem in bridge mode --# AC1750 with OpenWRT -- (port 4) --# 24 port switch --# all my devices. My main concern is security of course, how can I isolate the server that will be running the honeypot?Best way to setup a honeypot I'm planning on setting up a honeypot for fun and learning purposes. This is my network: ISP modem in bridge mode --# AC1750 with OpenWRT -- (port 4) -",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0278
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "multi host honeypot network decoy consistency design",
+  "title": "Hawkeyes: An intelligent honeypot allocation strategy for cyber ...",
+  "url": "https://www.sciencedirect.com/science/article/pii/S1389128625009478",
+  "snippet": "These issues call for a honeypot allocation framework that is adaptive, scalable, stage-aware, and practical for deployment in real-world networks. Moreover, deploying honeypots arbitrarily is not feasible in practice, since each decoy introduces deployment, monitoring, and maintenance overhead.These issues call for a honeypot allocation framework that is adaptive, scalable, stage-aware, and practical for deployment in real-world networks. Moreover, deploying honeypots arbitrarily is not feasibl",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7017
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "multi host honeypot network decoy consistency design",
+  "title": "Honeypots: A Comprehensive Guide to Cybersecurity Decoys",
+  "url": "https://www.startupdefense.io/blog/honeypots-a-comprehensive-guide-to-cybersecurity-decoys",
+  "snippet": "Integration with deception technology: Honeypots are becoming a core component of broader deception platforms that also use decoy documents, fake network topologies, and other tactics to mislead attackers.Integration with deception technology: Honeypots are becoming a core component of broader deception platforms that also use decoy documents, fake network topologies, and other tactics to mislead attackers.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1691
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "multi host honeypot network decoy consistency design",
+  "title": "HoneyDOC: An Efficient Honeypot Architecture Enabling All-Round Design",
+  "url": "https://arxiv.org/abs/2402.06516",
+  "snippet": "Feb 9, 2024 \u00b7 In this paper, we propose a novel honeypot architecture termed HoneyDOC to support all-round honeypot design and implementation. Our HoneyDOC architecture clearly identifies three essential independent and collaborative modules, Decoy, Captor and Orchestrator.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8347
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "multi host honeypot network decoy consistency design",
+  "title": "Multi \u2014 one task, the right AI workflow",
+  "url": "https://getmulti.ai/",
+  "snippet": "Four tools that actually work together. Start anywhere and keep going. Multi carries your prompt and the answers you kept from one \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2117
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "multi host honeypot network decoy consistency design",
+  "title": "Deception technology for defense networks",
+  "url": "https://corvusintell.com/blog/cybersecurity/deception-technology-defense-networks/",
+  "snippet": "How deception technology defends networks: honeypots, decoy credentials and assets, breadcrumb design, and turning attacker interaction into high-fidelity alerts.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4921
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "multi host honeypot network decoy consistency design",
+  "title": "JSAC.2019.2894307 HoneyDOC: An Efficient Honeypot ...",
+  "url": "https://arxiv.org/pdf/2402.06516.pdf",
+  "snippet": "A Proof-of-Concept system is implemented in terms of the SDN-enabled honeypot design, which is used to validate the proposed honeypot architecture, and also, some experiments are conducted for evaluating the features of the prototype.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5626
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception network topology avoid decoy detection omission",
+  "title": "PDF Cyber Deception Across Domains: A Comprehensive Survey of Techniques ...",
+  "url": "https://thesai.org/Downloads/Volume16No7/Paper_92-Cyber_Deception_Across_Domains.pdf",
+  "snippet": "In [5], the authors made a review of different frameworks of cyber deception in terms of network security, assessing their strengths and weaknesses. They declared that the most effective deception requires network topologies that can adapt, which include scalability, dynamic reconfiguration, and fast responses.In [5], the authors made a review of different frameworks of cyber deception in terms of network security, assessing their strengths and weaknesses. They declared that the most effective d",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5759
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception network topology avoid decoy detection omission",
+  "title": "Network and Device Level Cyber Deception for Contested Environments ...",
+  "url": "https://arxiv.org/pdf/2603.17272",
+  "snippet": "Cyber deception has emerged as a complementary defense paradigm designed to address this asymmetry [2]. Instead of merely detecting malicious activity, deception techniques in-tentionally manipulate an adversary\u2019s perception by introduc-ing misinformation, decoy assets, and controlled misrepresen-tations of system state [3].Cyber deception has emerged as a complementary defense paradigm designed to address this asymmetry [2]. Instead of merely detecting malicious activity, deception techniques i",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1337
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception network topology avoid decoy detection omission",
+  "title": "Using Cyber Decoys to Strengthen Detection and Response",
+  "url": "https://www.cisa.gov/resources-tools/resources/using-cyber-decoys-strengthen-detection-and-response",
+  "snippet": "Sep 16, 2026 \u00b7 This guidance introduces decoy concepts\u2014including tripwires, breadcrumbs, and honeytokens\u2014and uses the MITRE Engage\u2122 and MITRE ATT&CK\u00ae frameworks to provide practical, low-complexity steps for planning, implementing, and refining decoy operations.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9098
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:50Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception network topology avoid decoy detection omission",
+  "title": "(PDF) Cyber Deception: State of the art, Trends and Open challenges",
+  "url": "https://www.researchgate.net/publication/383950901_Cyber_Deception_State_of_the_art_Trends_and_Open_challenges",
+  "snippet": "The growing interest in cybersecurity has significantly increased articles designing and implementing various Cyber Deception (CYDEC) mechanisms. This trend reflects the urgent need for new ...The growing interest in cybersecurity has significantly increased articles designing and implementing various Cyber Deception (CYDEC) mechanisms. This trend reflects the urgent need for new ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5609
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:50Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception network topology avoid decoy detection omission",
+  "title": "CyberAccess - Login",
+  "url": "https://www.cyberaccessonline.net/cyberaccess/",
+  "snippet": "Change it on the \"My Account\" screen after you log in. Do not share your user name or password. Others could use your account \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1181
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:50Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception network topology avoid decoy detection omission",
+  "title": "DecoyTrace: Toxic Decoys for Active Defense in Decentralized...",
+  "url": "https://arxiv.org/html/2609.36330v1",
+  "snippet": "Decentralized Federated Learning, Cyber Deception, Decoy, Poisoning Attack Detection, Distributed Attribution, Byzantine Resilience.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4504
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:50Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot IP address planning decoy network address allocation",
+  "title": "Decoy Network Resource - Technique D3-DNR | MITRE D3FEND\u2122",
+  "url": "https://d3fend.mitre.org/technique/d3f:DecoyNetworkResource/",
+  "snippet": "How it works Decoy network resources are deployed to web application servers, network file shares, or other network based sharing services. A \"honeypot\" may serve a variety of decoy network resources. Considerations Developing a deployment and placement strategy for the decoy network resource.How it works Decoy network resources are deployed to web application servers, network file shares, or other network based sharing services. A \"honeypot\" may serve a variety of decoy network resources. Consi",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9169
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:50Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot IP address planning decoy network address allocation",
+  "title": "Protecting Your Network With Honeypots - TCM Security",
+  "url": "https://tcm-sec.com/protecting-your-network-with-honeypots/",
+  "snippet": "A honeypot acts as a decoy system or network resource designed to mimic legitimate targets for a cyberattack. Unlike genuine production systems, a honeypot is intentionally vulnerable or configured to appear as an enticing target for cybercriminals.A honeypot acts as a decoy system or network resource designed to mimic legitimate targets for a cyberattack. Unlike genuine production systems, a honeypot is intentionally vulnerable or configured to appear as an enticing target for cybercriminals.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6982
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot IP address planning decoy network address allocation",
+  "title": "Honeypot Guide: Types, Setup, and Deployment Strategies",
+  "url": "https://scansearch.net/en/articles/honeypot-setup-deployment-guide/",
+  "snippet": "May 31, 2026 \u00b7 Master honeypot deployment. Detailed guide on low vs high interaction honeypots, Cowrie setup steps, and best practices for securing decoy systems.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0844
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot IP address planning decoy network address allocation",
+  "title": "Step-by-Step Guide to Setting Up a Honeypot for Threat Analysis",
+  "url": "https://rehacktory.com/2024/12/26/step-by-step-guide-to-setting-up-a-honeypot-for-threat-analysis/",
+  "snippet": "Honeypots are a powerful tool for detecting and analyzing cyber threats. By mimicking real systems, they attract malicious actors, allowing security teams to observe their tactics, techniques, and procedures (TTPs) in a controlled environment. This guide walks you through the process of setting up a honeypot, focusing on open-source solutions. What is a Honeypot? A honeypot is a decoy system ...Honeypots are a powerful tool for detecting and analyzing cyber threats. By mimicking real systems, th",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3606
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot IP address planning decoy network address allocation",
+  "title": "CISA Cyber Decoys: Honeytokens And Honeypots As Early Warning System",
+  "url": "https://www.zerberos.com/en/cisa-guide-cyber-decoys-as-early-warning-system-against-attackers/",
+  "snippet": "CISA guide on cyber decoys: honeytokens, honeypots, and the MITRE Engage framework for detecting attackers in your network.CISA guide on cyber decoys: honeytokens, honeypots, and the MITRE Engage framework for detecting attackers in your network.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3306
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "network deception address space planning consistent decoy surface",
+  "title": "Decoys Cannot Go Everywhere: Mapping the Deception Surface in MITRE ATT&CK",
+  "url": "https://arxiv.org/html/2606.27966v1",
+  "snippet": "We argue that before the community can successfully engineer new deceptive technologies or algorithmically optimize decoy placement, we must first map the operational deception surface: where decoys can plausibly be placed in an attacker's path, the interactions they can elicit, and what signal those interactions would yield in practice.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6393
+   },
+   "usage": {
+    "input_tokens": 167,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "network deception address space planning consistent decoy surface",
+  "title": "Cyber Deception Attack Surface Mapping",
+  "url": "https://stratosphereips.github.io/cyber-deception-attack-surface/",
+  "snippet": "Cyber deception research commonly assumes a decoy can be placed wherever there is attacker behavior. We scored feasibility against ATT&CK v18.1, and we found the deception surface to be smaller than expected.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.702
+   },
+   "usage": {
+    "input_tokens": 156,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "network deception address space planning consistent decoy surface",
+  "title": "What Is a Network? - Computer Hope",
+  "url": "https://www.computerhope.com/jargon/n/network.htm",
+  "snippet": "Feb 22, 2026 \u00b7 A network is a collection of computers, servers, mainframes, peripherals, or other devices connected to facilitate \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2297
+   },
+   "usage": {
+    "input_tokens": 156,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "network deception address space planning consistent decoy surface",
+  "title": "(PDF) Introduction to Cyberdeception",
+  "url": "https://www.academia.edu/33688391/Introduction_to_Cyberdeception",
+  "snippet": "Design Details. Case Study: Decoy Network Interface Controller. Results of Testing.With plenty of advance planning, deceptions can be ana- lyzed carefully to ensure they are as convincing as possible by being consistent and plausible.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4056
+   },
+   "usage": {
+    "input_tokens": 156,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "network deception address space planning consistent decoy surface",
+  "title": "Decoys Cannot Go Everywhere: Mapping the Deception Surface in ...",
+  "url": "https://arxiv.org/html/2606.27966",
+  "snippet": "We argue that before the community can successfully engineer new deceptive technologies or algorithmically optimize decoy placement, we must first map the operational deception surface: where decoys can plausibly be placed in an attacker\u2019s path, the interactions they can elicit, and what signal those interactions would yield in practice.We argue that before the community can successfully engineer new deceptive technologies or algorithmically optimize decoy placement, we must first map the operat",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3657
+   },
+   "usage": {
+    "input_tokens": 156,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot management without central controller static configuration",
+  "title": "An Adaptive Honeypot Configuration, Deployment and Maintenance Strategy",
+  "url": "https://arxiv.org/pdf/2111.03884",
+  "snippet": "State-of-the-Art deployment is a manual process in which the honeypot needs to be configured and maintained by a network administrator. In this paper we present a method for a dynamic honeypot configuration, deployment and maintenance strategy based on machine learning techniques.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7991
+   },
+   "usage": {
+    "input_tokens": 156,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot management without central controller static configuration",
+  "title": "HoneyChart: Automated Honeypot Management over Kubernetes",
+  "url": "https://link.springer.com/chapter/10.1007/978-3-031-25460-4_18",
+  "snippet": "Honeypots have been proven to be a useful tool in the arsenal of defense solutions against cyber-attacks. Over time, various honeypot solutions have been proposed to lure attackers that target both conventional networks and Industrial Control Systems. However, the...Honeypots have been proven to be a useful tool in the arsenal of defense solutions against cyber-attacks. Over time, various honeypot solutions have been proposed to lure attackers that target both conventional networks and Industria",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5371
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot management without central controller static configuration",
+  "title": "PDF HoneyChart: Automated Honeypot Management Over Kubernetes - Ntousakis",
+  "url": "https://www.ntousakis.com/honeychart-cps4cip-2022.pdf",
+  "snippet": "Over time, various honeypot solutions have been proposed to lure attackers that target both conventional networks and Industrial Control Systems. However, the current approaches do not make the deployment and usability of honeypots more attractive to defenders.Over time, various honeypot solutions have been proposed to lure attackers that target both conventional networks and Industrial Control Systems. However, the current approaches do not make the deployment and usability of honeypots more at",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.811
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot management without central controller static configuration",
+  "title": "(PDF) An Adaptive Honeypot Configuration, Deployment and Maintenance ...",
+  "url": "https://www.researchgate.net/publication/356027194_An_Adaptive_Honeypot_Configuration_Deployment_and_Maintenance_Strategy",
+  "snippet": "Nov 6, 2021 \u00b7 State-of-the-Art deployment is a manual process in which the honeypot needs to be configured and maintained by a network administrator. In this paper we present a method for a dynamic...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4421
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot management without central controller static configuration",
+  "title": "GitHub - hosafxd/HoneyManager: Interactive Honeypot Network with ...",
+  "url": "https://github.com/hosafxd/HoneyManager",
+  "snippet": "Decoy Intelligence: Automated Threat Classification Through Deception HoneyManager is an ultra-lightweight, open-source honeypot management framework designed specifically for home users and Small-to-Medium Businesses (SMBs). It transforms obsolete hardware\u2014old laptops, desktops, Raspberry Pis, or Android devices\u2014into active security sensors that detect both external attacks and internal ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4304
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot management without central controller static configuration",
+  "title": "nocache - npm",
+  "url": "https://www.npmjs.com/package/nocache",
+  "snippet": "Middleware to destroy caching. Latest version: 4.0.0, last published: 3 years ago. Start using nocache in your project by running \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0586
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:29:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception coordination architecture avoid single point of compromise",
+  "title": "FIVE Cybersecurity Principles to Follow (and ONE to Avoid)",
+  "url": "https://www.linkedin.com/pulse/5-cybersecurity-principles-follow-one-avoid-3hhbf",
+  "snippet": "Apr 17, 2024 \u00b7 These are the five core architecture principles to follow when designing cybersecurity systems for your organisation. Create a layered system of security mechanisms. Avoid single point...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1384
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception coordination architecture avoid single point of compromise",
+  "title": "Cyber Deception: State of the art, Trends, and Open challenges",
+  "url": "https://arxiv.org/html/2409.07194v1",
+  "snippet": "They projected future trends and challenges, underscoring the need to innovate and evolve deception strategies to address emerging cyber threats. Delving into the combination of different disciplines, the study in [21] reviewed defensive deception techniques that integrated game theory and ML (ML).",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9097
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cyber deception coordination architecture avoid single point of compromise",
+  "title": "Computer security",
+  "url": "https://handwiki.org/wiki/Computer_security",
+  "snippet": "Computer security, cybersecurity (cyber security), or information technology security (IT security) is the protection of computer systems and networks from information disclosure, theft of, or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1182
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot network isolation firewall rules attack surface minimization",
+  "title": "Honeypot Isolation Best Practices | Network Security",
+  "url": "https://www.danharkey.com/posts/honeypot-isolation-controls-that-keep-attackers-contained",
+  "snippet": "Aug 13, 2026 \u00b7 Learn how to properly isolate a honeypot with network segmentation, containment controls, and monitoring \u2014 so attackers gain nothing and you gain intelligence.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4026
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot network isolation firewall rules attack surface minimization",
+  "title": "Honeypot Isolation Best Practices | Network Security",
+  "url": "https://danharkey.com/posts/honeypot-isolation-best-practices-to-contain-risk-and-capture-threat-intelligence",
+  "snippet": "Proper honeypot isolation is not a single configuration choice. It is a layered architecture where network segmentation, firewall policy, one-way logging, authentication separation, decoy data, and automated containment each reinforce the others.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3151
+   },
+   "usage": {
+    "input_tokens": 160,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot network isolation firewall rules attack surface minimization",
+  "title": "Kerndt Brothers Bank | Moving Forward Together",
+  "url": "https://www.kerndtbrothers.com/",
+  "snippet": "Bank anywhere with Digital Banking We\u2019ve got all the fancy tech you need to manage your money at home or on the job \u2014 including \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.132
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot network isolation firewall rules attack surface minimization",
+  "title": "What is a honeypot? How it protects... | Definition from TechTarget",
+  "url": "https://www.techtarget.com/cybersecurity/definition/What-is-a-honeypot-How-it-protects-against-cyberattacks",
+  "snippet": "In the DMZ, a honeypot can be monitored from a distance while attackers access it, minimizing the risk of the main network being breached. Honeypots can also be put outside the external firewall, facing the internet, to detect attempts to enter the internal network.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6162
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot network isolation firewall rules attack surface minimization",
+  "title": "O2 Next Generation Firewall - Spolehliv\u00e1 firemn\u00ed ochrana",
+  "url": "https://www.o2.cz/podnikatele-a-firmy/bezpecnost/next-generation-firewall",
+  "snippet": "Vysoce spolehliv\u00e1 bezpe\u010dnostn\u00ed slu\u017eba bez po\u010d\u00e1te\u010dn\u00edch investic a n\u00e1klad\u016f na \u00fadr\u017ebu.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2164
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot network isolation firewall rules attack surface minimization",
+  "title": "Digital Banking | Kerndt Brothers | Cedar Rapids, Decorah, Waukon, \u2026",
+  "url": "https://www.kerndtbrothers.com/services-tools/account-services/digital-banking.html",
+  "snippet": "Digital Banking We may be your local, hometown bank \u2014 but know that you can bank with us anywhere, anytime. iTunes Google \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1764
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SSH honeypot network design protect real service from exposure",
+  "title": "Articles - SSH Honeypot [ steve-parker.org ]",
+  "url": "https://steve-parker.org/articles/ssh-honeypot/",
+  "snippet": "Jun 20, 2026 \u00b7 None of the honeypots were compromised during the study; only the modified SSH service was exposed to the internet, and it was sufficiently protected (lack of root access, nologin shell, and modified to always deny logins regardless of the credentials supplied) to keep that service secure.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5723
+   },
+   "usage": {
+    "input_tokens": 164,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SSH honeypot network design protect real service from exposure",
+  "title": "GitHub - Srakawichi/cloud-ssh-honeypot: This project presents a cloud ...",
+  "url": "https://github.com/Srakawichi/cloud-ssh-honeypot",
+  "snippet": "Overview This project presents a cloud-based SSH honeypot deployed on AWS to analyze real-world brute-force attacks and automated reconnaissance behavior. The infrastructure intentionally exposes an SSH endpoint to the public internet while isolating the underlying host system through strict network segmentation and port separation.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2327
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:08Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SSH honeypot network design protect real service from exposure",
+  "title": "Building a Real-Time SSH Honeypot Monitoring System with ... - Medium",
+  "url": "https://medium.com/@sr0504526/building-a-real-time-ssh-honeypot-monitoring-system-with-opencanary-and-flask-580df5a3556a",
+  "snippet": "Jul 9, 2026 \u00b7 During my MSc in Cybersecurity, I developed a project focused on creating a lightweight SSH honeypot that captures malicious login attempts and visualizes attack data through an interactive...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1559
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:08Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SSH honeypot network design protect real service from exposure",
+  "title": "Secure Honey | SSH Honeypot",
+  "url": "https://securehoney.net/",
+  "snippet": "In today's blog post I'll explain how to build a low-interaction SSH honeypot in Python and containerise it in Docker. In part 2, we'll add functionality to collect malware samples -- ideal for malware analysis.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3787
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:08Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SSH honeypot network design protect real service from exposure",
+  "title": "OpenSSH",
+  "url": "https://www.openssh.org/",
+  "snippet": "OpenSSH is the premier connectivity tool for remote login with the SSH protocol. It encrypts all traffic to eliminate eavesdropping, \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4817
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:08Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SSH honeypot network design protect real service from exposure",
+  "title": "Personal Project: Building an AWS SSH Honeypot for... - YouTube",
+  "url": "https://www.youtube.com/watch?v=xa1L8ywvnN4",
+  "snippet": "Project Scope: Honeypot Deployment: Deploying the Cowrie SSH honeypot on an AWS EC2 instance to emulate an SSH service and capture interaction from external sources.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0823
+   },
+   "usage": {
+    "input_tokens": 159,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:08Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot evaluation methodology evidence collection packet capture scan behavior",
+  "title": "Honeypot Data Collection and Analysis | paralax/awesome-honeypots ...",
+  "url": "https://deepwiki.com/paralax/awesome-honeypots/8-honeypot-data-collection-and-analysis",
+  "snippet": "Honeypot Data Collection and Analysis Relevant source files Purpose and Scope This document covers the tools, frameworks, and methodologies used to collect, process, analyze, and visualize data from honeypots. It focuses on how to extract actionable intelligence from honeypot interactions, including traffic logs, attack patterns, collected malware, and attacker behaviors. For information about ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2517
+   },
+   "usage": {
+    "input_tokens": 169,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:10Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot evaluation methodology evidence collection packet capture scan behavior",
+  "title": "Scheming Honeypot Evaluations - emergentmind.com",
+  "url": "https://www.emergentmind.com/topics/scheming-honeypot-evaluations",
+  "snippet": "The paper establishes that scheming honeypot evaluations integrate decoy realism with dynamic security programs to redirect attackers and capture high-value operational intelligence. Key methodologies include dynamic reconfiguration, agentic decision-making, and game-theoretic models to assess attacker behavior and measure deception effectiveness. Results indicate that combining controlled ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1608
+   },
+   "usage": {
+    "input_tokens": 169,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:10Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot evaluation methodology evidence collection packet capture scan behavior",
+  "title": "From Packet Filtering to Threat Intelligence: Building a ... - Medium",
+  "url": "https://medium.com/@23it113/from-packet-filtering-to-threat-intelligence-building-a-windows-firewall-and-soc-ready-honeypot-3254a52c20cb",
+  "snippet": "Instead of trying to block suspicious activity, the honeypot is designed to attract, capture, record, and analyze attacker behavior. I developed SentinelHive, a modular honeypot and threat ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1641
+   },
+   "usage": {
+    "input_tokens": 169,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:10Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot evaluation methodology evidence collection packet capture scan behavior",
+  "title": "PDF Empirical Telemetry-based Metrics for Evaluating Honeypot Realism and ...",
+  "url": "https://aircconline.com/ijnsa/V18N1/18126ijnsa01.pdf",
+  "snippet": "This work introduces a telemetry-based evaluation methodology that derives reproducible metrics of deception directly from honeypot telemetry. By grounding evaluation in observable attacker behavior, the proposed approach enables systematic comparison of realism and deception effectiveness across deployments.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7842
+   },
+   "usage": {
+    "input_tokens": 169,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:10Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot evaluation methodology evidence collection packet capture scan behavior",
+  "title": "Chicken Recipes",
+  "url": "https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/",
+  "snippet": "Find recipes for fried chicken, chicken breast, grilled chicken, chicken wings, and more! Allrecipes has more than 5,430 kitchen \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0378
+   },
+   "usage": {
+    "input_tokens": 169,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:10Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot evaluation methodology evidence collection packet capture scan behavior",
+  "title": "Kingsley-soc/Low---interaction-Honeypot-Lab- - GitHub",
+  "url": "https://github.com/Kingsley-soc/Low---interaction-Honeypot-Lab-/tree/main",
+  "snippet": "A containerized low-interaction Dionaea honeypot lab deployed via Docker to analyze network scanning, packet-level TCP mechanics in Wireshark, and forensic log behavior.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4442
+   },
+   "usage": {
+    "input_tokens": 162,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot validation testing methodology SSH tarpit",
+  "title": "SSH tarpit - Universal Honeypot Benchmarking Standard (UHBS)",
+  "url": "https://uhbs.github.io/uhbs-standard/mkdocs/scorecards/endlessh-ssh-tarpit/",
+  "snippet": "Open-source evaluation framework for vendor-neutral honeypot and deception evaluation (UHQS 0-100, Safety Gate). Optional AEP and alpha SLM trial helper. Spec v4.5.1. Not a consortium standard.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.642
+   },
+   "usage": {
+    "input_tokens": 162,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot validation testing methodology SSH tarpit",
+  "title": "GitHub - kwilck/SSH-honeypot: Simple SSH Honeypot/Tarpit written in ...",
+  "url": "https://github.com/kwilck/SSH-honeypot",
+  "snippet": "An SSH tarpit implemented in Python using Paramiko. This script traps and slows down brute-force attacks by artificially delaying SSH authentication attempts and never granting access.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.63
+   },
+   "usage": {
+    "input_tokens": 162,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot validation testing methodology SSH tarpit",
+  "title": "DuckDuckGo - Reddit",
+  "url": "https://www.reddit.com/r/duckduckgo/top/",
+  "snippet": "Dec 10, 2010 \u00b7 We like to keep the DuckDuckGo subreddit friendly, suitable for children (13+), and free of political discussion that \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0403
+   },
+   "usage": {
+    "input_tokens": 162,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot validation testing methodology SSH tarpit",
+  "title": "Active Defense Approaches | DeepWiki",
+  "url": "https://deepwiki.com/tolgadevsec/Awesome-Deception/3.2-active-defense-approaches",
+  "snippet": "This document explores broader defensive strategies beyond traditional honeypots and honeytokens, focusing on active defense methodologies that use deception to detect, delay, and deter attackers. This includes tarpits, deception-as-detection frameworks...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3357
+   },
+   "usage": {
+    "input_tokens": 162,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:12Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot validation testing methodology SSH tarpit",
+  "title": "Pasti (tarpit) na p\u0159\u00edchoz\u00ed SSH p\u0159ipojen\u00ed | ProHoster",
+  "url": "https://prohoster.info/cs/blog/lovushka-tarpit-dlya-vhodyashhih-ssh-soedinenij",
+  "snippet": "Nen\u00ed \u017e\u00e1dn\u00fdm tajemstv\u00edm, \u017ee internet je velmi nep\u0159\u00e1telsk\u00e9 prost\u0159ed\u00ed. Jakmile si nastav\u00edte server, okam\u017eit\u011b se stane ter\u010dem masivn\u00edch \u00fatok\u016f a mnoho\u010detn\u00fdch sken\u016f.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2148
+   },
+   "usage": {
+    "input_tokens": 178,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot alert aggregation design low noise intrusion notification",
+  "title": "Developing a Local Network Security Alert System for Specific Intrusion ...",
+  "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.175339530.08463202/v1",
+  "snippet": "The system meticulously integrates a multi-layered deception framework utilizing diverse honeypot technologies (Cowrie for high-interaction SSH, OpenCanary for multi-protocol low-interaction, Pi-hole sinkhole for DNS-based deception, and Snort for real-time intrusion detection/prevention).",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5908
+   },
+   "usage": {
+    "input_tokens": 178,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot alert aggregation design low noise intrusion notification",
+  "title": "Integrating Honeypot and Intrusion Detection System to ... - Springer",
+  "url": "https://link.springer.com/chapter/10.1007/978-3-032-28097-8_59",
+  "snippet": "This paper examines the integration of a medium-interaction honeypot (Cowrie) with an Intrusion Detection System (IDS) to enhance cyber threat detection within controlled environments. The hybrid approach aims to overcome the limitations of standalone systems, such...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8575
+   },
+   "usage": {
+    "input_tokens": 178,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot alert aggregation design low noise intrusion notification",
+  "title": "Honeypot and Deception Technology Deployment Guide (2026)",
+  "url": "https://www.decryptiondigest.com/blog/deception-technology-honeypot-deployment",
+  "snippet": "May 22, 2026 \u00b7 A honeypot is a fake system or service that appears functional but captures and alerts on all connection attempts. A fake RDP server that looks like a real Windows Server, logs every connection attempt, and generates an alert on any inbound session is a network honeypot.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1616
+   },
+   "usage": {
+    "input_tokens": 178,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot alert aggregation design low noise intrusion notification",
+  "title": "Design and Analysis of a Honeypot Pi for Intrusion Detection System",
+  "url": "https://link.springer.com/chapter/10.1007/978-3-031-81213-2_6",
+  "snippet": "The chapter concentrates on the design, development, and analysis of a medium-level interaction honeypot, incorporating it into an Intrusion Detection System that will be placed on a Raspberry Pi. \"Cowrie\" is chosen as the honeypot for this project to create an Intrusion Detection System.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8074
+   },
+   "usage": {
+    "input_tokens": 178,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot alert aggregation design low noise intrusion notification",
+  "title": "Theo van Gogh (art dealer) - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Theo_van_Gogh_(art_dealer)",
+  "snippet": "Van Gogh's great-grandson, also named Theo van Gogh, was a film director, who was murdered on the streets of Amsterdam in \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5507
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot alert aggregation design low noise intrusion notification",
+  "title": "(PDF) HoneyStat: Local Worm Detection Using Honeypots",
+  "url": "https://www.academia.edu/9602275/HoneyStat_Local_Worm_Detection_Using_Honeypots",
+  "snippet": "We describe HoneyStat, which uses modified honeypots to generate a highly accurate alert stream with low false positive rates. Unlike traditional highly-interactive honeypots, HoneyStat nodes are script-driven, automated, and cover a large IP space.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5356
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "log aggregation multiple honeypot sensors alerting design",
+  "title": "An Adaptive Multi-Layered Honeynet Architecture for Threat Behavior ...",
+  "url": "https://arxiv.org/pdf/2512.07827",
+  "snippet": "F. SCOPE AND LIMITATIONS This research focuses on the development and demonstration of an adaptive honeynet for network-based threat detection. The scope includes the design of RL algorithms for deploy- ment decision-making, the integration of anomaly detection, and the development of container orchestration for dynamic honeypot deployment.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6879
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "log aggregation multiple honeypot sensors alerting design",
+  "title": "Logarithm - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Logarithm",
+  "snippet": "In mathematics, the logarithm of a number is the exponent by which another fixed value, the base, must be raised to produce that \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "log aggregation multiple honeypot sensors alerting design",
+  "title": "TryHackMe | Introduction To Honeypots",
+  "url": "https://tryhackme.com/room/introductiontohoneypots",
+  "snippet": "Log aggregation platforms can also provide live monitoring capabilities and alerts. This is particularly beneficial when deploying Honeypots, with the intent to respond to attacks rather than to collect data.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2109
+   },
+   "usage": {
+    "input_tokens": 157,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:17Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "log aggregation multiple honeypot sensors alerting design",
+  "title": "Honeypot-Based Attack Detection & Monitoring System - GitHub",
+  "url": "https://github.com/dishachavann/Honeypot-attack-detection-system",
+  "snippet": "This project implements a Honeypot-Based Attack Detection & Monitoring System using the Cowrie SSH Honeypot. The objective is to simulate a vulnerable SSH service, capture malicious login attempts, monitor attacker behavior, analyze logs, and generate alerts and security reports. The system provides hands-on experience in threat detection, log analysis, network monitoring, and cybersecurity ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2663
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:19Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "log aggregation multiple honeypot sensors alerting design",
+  "title": "Uplifting Log Management - Nirman Techlab",
+  "url": "https://ntechlab.io/case-study/uplifting-log-management/",
+  "snippet": "Our client required robust operational visibility to maintain seamless service delivery and exceptional customer experiences.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1128
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:19Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot service failure safe design fail closed recovery",
+  "title": "Fail-Open vs Fail-Closed Network Isolation: Designing for Safety and ...",
+  "url": "https://airgapnet.com/guides/fail-open-vs-fail-closed-network-isolation/",
+  "snippet": "Architecture and engineering Fail-Open vs Fail-Closed Network Isolation: Designing for Safety and Availability Choose deliberate network-isolation failure behaviour by analysing security, safety, availability, recovery and operator response for each protected path.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4043
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:19Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot service failure safe design fail closed recovery",
+  "title": "01-safe-state-and-failure-containment.md - GitHub",
+  "url": "https://github.com/DrHazemAli/enterprise-system-design/blob/main/principals/mission-critical-systems/01-safe-state-and-failure-containment.md",
+  "snippet": "Safe state and failure containment Credits: Hazem Ali Mission-critical design begins with a consequence, not a component. The first question is not whether a service can remain available. The first question is what the system must prevent when its assumptions stop being true. A payment platform must not create an unbounded financial obligation.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1782
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:19Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot service failure safe design fail closed recovery",
+  "title": "Fail-open & Fail-close explanation - Cisco Community",
+  "url": "https://community.cisco.com/t5/security-knowledge-base/fail-open-amp-fail-close-explanation/ta-p/5012930",
+  "snippet": "\"Fail-open\" and \"fail-close\" are terms often used in network security and system design to describe how a system behaves in the event of a failure. Fail-Open: In a fail-open scenario, if a system or device fails, it automatically opens or allows access. This is usually used in systems where availa...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0964
+   },
+   "usage": {
+    "input_tokens": 165,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:19Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot service failure safe design fail closed recovery",
+  "title": "SA-8 (24): Secure Failure and Recovery \u2013 CSF Tools",
+  "url": "https://csf.tools/reference/nist-sp-800-53/r5/sa/sa-8/sa-8-24/",
+  "snippet": "The principle of secure failure and recovery parallels the principle of continuous protection to ensure that a system is capable of detecting (within limits) actual and impending failure at any stage of its operation (i.e., initialization, normal operation, shutdown, and maintenance) and to take appropriate steps to ensure that security ...",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7374
+   },
+   "usage": {
+    "input_tokens": 171,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot service failure safe design fail closed recovery",
+  "title": "Regal Meridian Movie Tickets and Showtimes | Regal - Regal Theatres",
+  "url": "https://www.regmovies.com/theatres/regal-meridian-4dx-1931",
+  "snippet": "Get showtimes, buy movie tickets and more at Regal Meridian movie theatre in Seattle, WA. Discover it all at a Regal movie theatre \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0407
+   },
+   "usage": {
+    "input_tokens": 171,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot service failure safe design fail closed recovery",
+  "title": "Why Life in Russia Feels Safer Than You\u2019d Think - YouTube",
+  "url": "https://www.youtube.com/watch?v=vlJw8RI9xA8",
+  "snippet": "After 24 years in Russia, I\u2019ve learned that safety isn\u2019t just about laws or numbers \u2014 it\u2019s about people, culture, and everyday behavior. Here\u2019s why life in Russia often feels safer than you might imagine.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1069
+   },
+   "usage": {
+    "input_tokens": 171,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot deployment readiness checklist promotion criteria evidence",
+  "title": "PDF Metrics-Driven Evaluation and Optimization of Honeypots: Toward ...",
+  "url": "https://acta.uni-obuda.hu/Aradi_Bottyan_Kail_Rigo_Banati_164.pdf",
+  "snippet": "3 Honeypot Types and Deployment Models Honeypot classification goes beyond interaction level to include architecture, deployment, and integration with security stacks [1, 3, 5]. This section synthesizes principal types and models, with Table 1 anchoring categories in representative studies and metrics [3, 11, 23]. Software-based honeypots.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.827
+   },
+   "usage": {
+    "input_tokens": 171,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot deployment readiness checklist promotion criteria evidence",
+  "title": "NextPot-Honeypot-RaspberryPi/PROJECT_READINESS_CHECKLIST.md at main ...",
+  "url": "https://github.com/Madhavi0711/NextPot-Honeypot-RaspberryPi/blob/main/PROJECT_READINESS_CHECKLIST.md",
+  "snippet": "\ud83c\udf0d Real-World Deployment Readiness Production Checklist Systemd service files provided Security best practices documented Fail2ban integration available Email/Telegram notifications configurable Logging comprehensive Backup strategy documented Scaling considerations addressed",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1906
+   },
+   "usage": {
+    "input_tokens": 171,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot deployment readiness checklist promotion criteria evidence",
+  "title": "Ultrawide porn? : r/ultrawidemasterrace - Reddit",
+  "url": "https://www.reddit.com/r/ultrawidemasterrace/comments/4vwz4h/ultrawide_porn/",
+  "snippet": "Ultrawide porn? I saw that x-art makes 21:9 porn on another thread. My question is if anyone else makes 21:9 porn. Godspeed \u2026",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0976
+   },
+   "usage": {
+    "input_tokens": 177,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot deployment readiness checklist promotion criteria evidence",
+  "title": "Evolving from Honeypots to Active Deception Defenses - YouTube",
+  "url": "https://www.youtube.com/watch?v=7IuCfNYpBnI",
+  "snippet": "Honeypot Deployment. 1:46. From Honeypots to Active Deception Through Automation.The Lists Are Already Ready. \u0414\u0435\u043d\u0438\u0441 Voenkomoff. 268K 1d ago.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2547
+   },
+   "usage": {
+    "input_tokens": 177,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot deployment readiness checklist promotion criteria evidence",
+  "title": "Healthcare Honeypot Deployment Guide: Step-by-Step Setup ...",
+  "url": "https://www.accountablehq.com/post/healthcare-honeypot-deployment-guide-step-by-step-setup-compliance-and-best-practices",
+  "snippet": "Feb 25, 2026 \u00b7 Plan, build, and operate healthcare honeypot deployments to detect threats, protect patient systems, and meet HIPAA compliance. Get step-by-step guidance.",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3208
+   },
+   "usage": {
+    "input_tokens": 177,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:24Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "honeypot deployment readiness checklist promotion criteria evidence",
+  "title": "RAGIN-Retrieval-Augmented-Honeypot-Intelligence/DEPLOYMENT_READINESS.md ...",
+  "url": "https://github.com/youseefhamdi/RAGIN-Retrieval-Augmented-Honeypot-Intelligence/blob/main/DEPLOYMENT_READINESS.md",
+  "snippet": "RAGIN Deployment Readiness Checklist Date: 2026-07-27 Status: Ready for Production Deployment",
+  "collected_at": "2026-10-05T12:26:44Z",
+  "weight": 1.0,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '<title>' (<url>) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3556
+   },
+   "usage": {
+    "input_tokens": 177,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T12:30:24Z"
+  },
+  "redo_of": null
+ }
+]
