@@ -1,0 +1,248 @@
+{
+ "topic": "worker-hosted LLM automations replacing an n8n pipeline: automation registry, 3-tier model runtime, prompt intake, cron scheduling, and gated actions on a Cloudflare Worker",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "automation-registry",
+   "scope": "Versioned automation templates in D1 (jev_automations): stages, per-stage prompt and model route, tool_refs, trigger, gate profile; draft/deploy/activate lifecycle with single-active-per-name auto-pause, revalidation on activation, run-task stamping and audit events.",
+   "seed_queries": [
+    "Cloudflare D1 schema versioned configuration registry single active version",
+    "feature flag versioning database activation lifecycle pattern"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "stage-engine",
+   "scope": "The stage engine (jev-engine.js): stage types tool (pipeline I/O, GET-only enforced at def validation AND runtime), llm (prompt interpolation, JSON-mode with repair plus one strict retry, fail-soft on unparseable), builtin, guard, propose_actions; how stages chain run context.",
+   "seed_queries": [
+    "LLM pipeline stage orchestration tool call chain pattern",
+    "LLM JSON output repair retry structured output validation"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "llm-routing",
+   "scope": "Three-tier LLM routing on Workers AI: classify routes to llama-3.1-8b-instruct-fp8, draft to llama-3.3-70b-instruct-fp8-fast, guard to llama-guard-3-8b, raw model pins allowed, neuron usage accounted onto the task, binding vs REST response shapes.",
+   "seed_queries": [
+    "Cloudflare Workers AI llama 3.1 8b fp8 llama-guard models",
+    "LLM model routing tier small fast model cost latency"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "prompt-intake",
+   "scope": "Untrusted prompt intake: POST /api/jev/tasks with payload.prompt up to 8000 chars, one 70b call proposes actions over the policy tool list, proposals pass the same validation and deterministic gate as caller-supplied actions, verbatim storage, delimiting, no URL interpolation.",
+   "seed_queries": [
+    "LLM prompt injection untrusted user input mitigation agent",
+    "AI agent proposed actions require human approval gate pattern"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "cron-scheduler",
+   "scope": "Cron scheduling on the worker: cron trigger every 5 minutes runs the scheduler tick, interval automations fire with compare-and-set on last_fired_at, per-interval idempotency keys on created tasks, lost tick acceptable vs double fire unacceptable.",
+   "seed_queries": [
+    "Cloudflare Workers cron triggers scheduled handler",
+    "distributed cron idempotency compare and set last fired deduplication"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "gate-and-policy",
+   "scope": "The deterministic action gate and policy evolution: propose_actions outputs enter the existing gate unchanged, LLM never authorizes, policy v4 adds web.fetch_public (GET-only, hosts *, credential-less, response-capped) and places.search, any-host read-only tool risk class reasoning.",
+   "seed_queries": [
+    "AI agent tool allowlist policy least privilege actions gate",
+    "SSRF prevention fetch allowlist credentialless HTTP client"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "lead-machine-port",
+   "scope": "The lead machine port (jev-lead-lib.js): verbatim port of audit/extract/normalize/template logic with every refuse-to-claim guard preserved, 40 ported behavioral tests including false-positive traps, D1 jev_leads as system of record, resend.send gated sends.",
+   "seed_queries": [
+    "sales lead enrichment data pipeline deduplication validation",
+    "cold email automation deliverability safety guardrails"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "console-v2",
+   "scope": "Operator console v2 at /jev/: prompt console textarea to task, automations tab with deploy/validate/activate/pause/run-now with input, models pill mapping route to model id, navy/violet terminal aesthetic, fail-soft sessionStorage.",
+   "seed_queries": [
+    "internal admin console operations dashboard LLM tasks",
+    "terminal UI aesthetic dark dashboard design css"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "build-method-lessons",
+   "scope": "Build method and live lessons: capability map approval, ideate-solo variations, SPEC, five parallel implementation lanes plus advisor integration writing the uncovered engine module and fixing cross-lane contract gaps, then operational lessons: D1 NOT NULL explicit-null trap, binding vs REST response shapes, User-Agent policy, Secrets Store ordering.",
+   "seed_queries": [
+    "parallel development lanes integration contracts spec first",
+    "Cloudflare Workers bindings deploy secret not found error"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8433,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.041,
+     "1": 0.0747,
+     "2": 0.8843
+    },
+    "confidence": 0.6838
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.9168,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0191,
+     "1": 0.0449,
+     "2": 0.936
+    },
+    "confidence": 0.8177
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.7964,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0395,
+     "1": 0.1246,
+     "2": 0.8359
+    },
+    "confidence": 0.5736
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.8159,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.104,
+     "2": 0.856
+    },
+    "confidence": 0.6176
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.7909,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0399,
+     "1": 0.1293,
+     "2": 0.8308
+    },
+    "confidence": 0.5629
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.9048,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0232,
+     "1": 0.0488,
+     "2": 0.928
+    },
+    "confidence": 0.7962
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.6542,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0796,
+     "1": 0.1867,
+     "2": 0.7337
+    },
+    "confidence": 0.3694
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.3324,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.3876,
+     "2": 0.4724
+    },
+    "confidence": 0.0895
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.3382,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1128,
+     "1": 0.4361,
+     "2": 0.4511
+    },
+    "confidence": 0.1096
+   }
+  },
+  "usage": {
+   "input_tokens": 1553,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ }
+}

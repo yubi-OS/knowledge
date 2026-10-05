@@ -1,0 +1,57 @@
+{
+ "nn": "02",
+ "slug": "stage-engine",
+ "scope": "The stage engine (jev-engine.js): stage types tool (pipeline I/O, GET-only enforced at def validation AND runtime), llm (prompt interpolation, JSON-mode with repair plus one strict retry, fail-soft on unparseable), builtin, guard, propose_actions; how stages chain run context.",
+ "queries_attempted": [
+  {
+   "query": "LLM pipeline stage orchestration tool call chain pattern",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "LLM JSON output repair retry structured output validation",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "structured outputs JSON schema LLM validation repair",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": 6
+  },
+  {
+   "query": "Llama Guard 3 safety classifier moderation model",
+   "attempt": 2,
+   "raw_results": 58,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "initial dig too thin: too few high-weight (>=0.5) results to author honestly",
+   "new_queries": [
+    "structured outputs JSON schema LLM validation repair",
+    "Llama Guard 3 safety classifier moderation model"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://aisoftwaredev.io/learn/llm-orchestration-patterns",
+  "https://www.morphllm.com/llm-workflows",
+  "https://heym.run/blog/llm-orchestration",
+  "https://en.wikipedia.org/wiki/Large_language_model",
+  "https://download.bibis.ir/Books/Artificial-Intelligence/LLM/2025/Learning%20LangChain%20(Mayo%20Oshin%20%20Nuno%20Campos)_bibis.ir.pdf",
+  "https://www.algoritmolab.com/blog/orchestrating-intelligence-make-com",
+  "https://github.com/ndcorder/outputguard",
+  "https://github.com/kartikey0825/LLM_OUTPUT_VALIDATOR",
+  "https://www.aijsonmedic.com/blog/llm-structured-output-json-repair",
+  "https://www.joinai.com/blog/structured-llm-outputs",
+  "https://collinwilkins.com/articles/structured-output",
+  "https://en.wikipedia.org/wiki/Large_language_model"
+ ],
+ "outcome": "authored"
+}

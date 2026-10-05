@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "gate-and-policy",
+ "scope": "The deterministic action gate and policy evolution: propose_actions outputs enter the existing gate unchanged, LLM never authorizes, policy v4 adds web.fetch_public (GET-only, hosts *, credential-less, response-capped) and places.search, any-host read-only tool risk class reasoning.",
+ "queries_attempted": [
+  {
+   "query": "AI agent tool allowlist policy least privilege actions gate",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "SSRF prevention fetch allowlist credentialless HTTP client",
+   "attempt": 2,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents",
+  "https://agenticcontrolplane.com/blog/tool-policy",
+  "https://www.microsoft.com/en-us/security/blog/2026/07/16/least-privilege-for-ai-agents-identity-access-and-tool-binding/",
+  "https://openai.com/",
+  "https://datascale-ai.github.io/data_engineering_book/en/part10/ch35_security_permission_collaboration/",
+  "https://cowork.ink/blog/ai-agent-permissions/",
+  "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+  "https://audit-core.tech/fix/ssrf",
+  "https://appsecbrief.com/articles/ssrf-prevention-guide/",
+  "https://portswigger.net/web-security/ssrf",
+  "https://www.golinuxcloud.com/server-side-request-forgery-ssrf/",
+  "https://github.com/ChatGPTNextWeb/NextChat/issues/6813"
+ ],
+ "outcome": "authored"
+}
