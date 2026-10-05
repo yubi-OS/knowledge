@@ -1,0 +1,36 @@
+{
+  "nn": 1,
+  "slug": "orphan-workflow-problem",
+  "scope": "The orphan-workflow bug class: a workflow file with workflow_dispatch but no membership in the orchestrator group tables is invisible to dispatch tooling; the yubiOS 2026-08-02 fold of 4 orphan workflows into the tests group as the historical record.",
+  "queries_attempted": [
+    {
+      "query": "github actions workflow_dispatch orphan workflow not reachable orchestrator",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "CI orchestrator group routing orphaned workflow audit best practice",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/marketplace/actions/workflow-dispatch-and-wait",
+    "https://stackoverflow.com/questions/75250667/github-workflow-workflow-dispatch-missing-in-actions-tab",
+    "https://devactivity.com/posts/apps-tools/dealing-with-orphaned-github-actions-runs-a-guide-for-dev-leaders/",
+    "https://github.com/orgs/community/discussions/178548",
+    "https://stackoverflow.com/questions/67523882/workflow-is-not-shown-so-i-cannot-run-it-manually-github-actions",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+    "https://explainx.ai/blog/multi-agent-orchestration-patterns-guide-2026",
+    "https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0829101",
+    "https://github.com/Kozphy/ci-failure-orchestrator",
+    "https://www.servicenow.com/community/cmdb-forum/best-practise-to-handle-orphan-cis/m-p/2826623",
+    "https://docs.redhat.com/en/documentation/automation_orchestrator/2026.8/develop-control_workflow_execution",
+    "https://www.lorka.ai/knowledge-hub/ai-agent-orchestration-guide"
+  ],
+  "outcome": "authored"
+}

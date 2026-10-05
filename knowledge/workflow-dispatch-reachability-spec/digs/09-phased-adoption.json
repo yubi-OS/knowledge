@@ -1,0 +1,36 @@
+{
+  "nn": 9,
+  "slug": "phased-adoption",
+  "scope": "Phased adoption: shipping the script report-only, cleaning baseline WARNs, tightening to a required PR gate, and first-run expectations on the orchestrator.",
+  "queries_attempted": [
+    {
+      "query": "rollout new required status check CI gate gradual",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "introduce new CI check without breaking pull requests migration",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/coalesce-labs/catalyst/blob/main/docs/ci-required-checks-rollout.md",
+    "https://rollgate.io/blog/gradual-rollouts-guide",
+    "https://writingexplained.org/rollout-or-roll-out-difference",
+    "https://browserbash.com/blog/verify-ai-generated-ui-before-merge",
+    "https://github.com/kestra-io/kestra/issues/19067",
+    "https://bird.com/docs/guides/esim/employee-connectivity",
+    "https://dev.to/mickelsamuel/how-to-add-database-migration-checks-to-your-cicd-pipeline-lm9",
+    "https://www.merriam-webster.com/dictionary/introduce",
+    "https://www.conservapedia.com/Nazism_at_Arab_Palestinians",
+    "https://github.com/yegor256/rultor/issues/2326",
+    "https://himanshupatil.dev/blog/the-30second-ci-check-that-stopped-our-productionbreaking-db-migrations/",
+    "https://stackoverflow.com/questions/77672309/how-can-i-require-conditional-workflows-to-pass-without-blocking-pull-requests-f"
+  ],
+  "outcome": "authored"
+}

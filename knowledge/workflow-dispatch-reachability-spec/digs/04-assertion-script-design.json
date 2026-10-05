@@ -1,0 +1,36 @@
+{
+  "nn": 4,
+  "slug": "assertion-script-design",
+  "scope": "The reachability assertion algorithm: walking .github/workflows/*.yml, detecting workflow_dispatch, extracting group tables from run blocks, bidirectional orphan and stale-entry checks.",
+  "queries_attempted": [
+    {
+      "query": "python pyyaml parse github actions workflow files detect triggers",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "script assert all workflows referenced CI configuration lint bidirectional check",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.github.com/en/enterprise-server@latest/actions/reference/workflow-syntax-for-github-actions",
+    "https://stackoverflow.com/questions/76015643/ruamel-yaml-trying-to-parse-a-github-actions-workflow-file-do-some-modificatio",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+    "https://www.python.org/",
+    "https://www.testaroo.com/pipelines/github-actions/github-actions-on-key-yaml-boolean-trap",
+    "https://github.com/tomasrollo/py_actions_workflow_parser",
+    "https://github.com/rhysd/actionlint",
+    "https://tenki.cloud/blog/lint-github-actions-workflows-actionlint",
+    "https://scriptblox.com/",
+    "https://www.youtube.com/watch?v=ftPiSz-Zcjk",
+    "https://dependency-check.github.io/DependencyCheck/dependency-check-cli/",
+    "https://attested-delivery.github.io/docs/reference/ci-and-pinning-workflows/"
+  ],
+  "outcome": "authored"
+}
