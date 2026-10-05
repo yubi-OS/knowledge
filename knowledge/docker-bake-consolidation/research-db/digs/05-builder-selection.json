@@ -1,0 +1,35 @@
+{
+  "nn": "05",
+  "slug": "builder-selection",
+  "scope": "Builder selection mechanics: buildx create --use writes the active builder into the invoking Docker configuration, while bake --builder overrides it; user-scoped named builders (e.g. hardened) created in the same Docker configuration that invokes bake.",
+  "queries_attempted": [
+    {
+      "query": "docker buildx create --use builder selection docker config",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "docker buildx bake --builder flag override",
+      "attempt": 1,
+      "raw_results": 40,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.docker.com/",
+    "https://heisiwu.net/p/https/docs.docker.com/reference/cli/docker/buildx/create/",
+    "https://docs.docker.com/reference/cli/docker/buildx/create/",
+    "https://docs.docker.com/reference/cli/docker/buildx/build/",
+    "https://www.docker.com/products/docker-desktop/",
+    "https://docs.docker.com/reference/compose-file/build/",
+    "https://docs.docker.com/reference/cli/docker/buildx/bake/",
+    "https://docs.docker.com/build/bake/overrides/",
+    "https://zvezdochetu.github.io/docker-docs-course/reference/cli/docker/buildx/bake/",
+    "https://github.com/wayne-cheng/docker-buildx/blob/master/docs/reference/buildx_bake.md",
+    "https://docs.docker.com/build/bake/reference/"
+  ],
+  "outcome": "authored"
+}

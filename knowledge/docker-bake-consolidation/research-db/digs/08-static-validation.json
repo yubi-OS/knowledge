@@ -1,0 +1,35 @@
+{
+  "nn": "08",
+  "slug": "static-validation",
+  "scope": "Static validation before CI: resolving targets with bake --print, rendering local and PUSH variants per architecture, checking tag invariants, inheritance output shapes, and workflow YAML reconciliation.",
+  "queries_attempted": [
+    {
+      "query": "docker buildx bake --print resolve check without building",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "docker bake validate targets tags static validation ci",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/reference/cli/docker/buildx/bake/",
+    "https://docs.docker.com/build/bake/reference/",
+    "https://github.com/wayne-cheng/docker-buildx/blob/master/docs/reference/buildx_bake.md",
+    "https://github.com/docker/buildx/blob/master/docs/reference/buildx_bake.md",
+    "https://www.docker.com/",
+    "https://docs.docker.com/reference/cli/docker/buildx/bake",
+    "https://docs.docker.com/build/ci/github-actions/checks/",
+    "https://dev.to/gde/docker-bake-in-practice-part-1-from-bash-scripts-to-declarative-builds-3pak",
+    "https://docs.docker.com/build/bake/targets/",
+    "https://deepwiki.com/docker/bake-action/5-cicd-workflows",
+    "https://deepwiki.com/docker/bake-action/6.3-code-quality-and-repository-configuration"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,33 @@
+{
+  "nn": "04",
+  "slug": "exporters",
+  "scope": "Bake target outputs: registry exporter vs docker/oci exporters as per-target output properties, letting one target emit local Docker output for CI and registry output for publish runs.",
+  "queries_attempted": [
+    {
+      "query": "docker bake registry exporter docker exporter output",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "docker buildx exporters types image oci docker registry",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/build/exporters/image-registry/",
+    "https://docs.docker.com/build/exporters/",
+    "https://github.com/docker/buildx/blob/master/docs/reference/buildx_bake.md",
+    "https://liudonghua123.github.io/docker-docs/build/exporters/",
+    "https://www.docker.com/",
+    "https://docs.docker.com/build/ci/github-actions/github-builder/bake/",
+    "https://heisiwu.net/build/exporters/oci-docker/",
+    "https://stackoverflow.com/questions/61638931/docker-buildx-oci-output",
+    "https://github.com/marketplace/actions/docker-buildx-bake"
+  ],
+  "outcome": "authored"
+}
