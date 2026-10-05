@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "luk2-fido2-sealing",
+  "scope": "Sealing LUKS2 volumes at install time: systemd-cryptenroll with FIDO2 (hmac-secret, user verification uv=on), --unlock-key-type=fido2, TPM PCR-bound LUKS2 slots as the complementary primitive, and asserting the sealed slot via systemd-cryptsetup status.",
+  "queries_attempted": [
+    {
+      "query": "systemd-cryptenroll fido2 LUKS2 unlock key",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "LUKS2 TPM PCR sealing systemd-cryptenroll",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+    "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+    "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+    "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+    "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+    "https://askubuntu.com/questions/1470391/luks-tpm2-auto-unlock-at-boot-systemd-cryptenroll",
+    "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+    "https://www.freedesktop.org/software/systemd/man/systemd-cryptenroll.html"
+  ],
+  "outcome": "authored"
+}

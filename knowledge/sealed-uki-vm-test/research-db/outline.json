@@ -1,0 +1,223 @@
+{
+  "topic": "sealed UKI VM test lanes for Secure Boot end-to-end proof of immutable OS images",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "uki-anatomy-signing",
+      "scope": "Unified Kernel Image structure (PE sections: .osrel, .cmdline, .linux, .initrd, .splash), building UKIs with ukify and mkosi Format=ukify, and signing them for Secure Boot with PKCS#11 URIs pointing at PIV slot 9c or a SoftHSM emulation.",
+      "seed_queries": [
+        "ukify unified kernel image PE sections build systemd",
+        "mkosi output format uki secure boot signing pkcs11"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "systemd-sbsign-engine-signing",
+      "scope": "systemd-sbsign as the Secure Boot signing tool with the engine:pkcs11 private key backend, its contrast with legacy sbsigntools/sbverify, and signing against a SoftHSM-emulated PIV slot 9c in CI.",
+      "seed_queries": [
+        "systemd-sbsign sign private-key-source engine pkcs11",
+        "systemd-sbsign versus sbsigntools sbverify secure boot signing"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "ovmf-secure-boot-qemu",
+      "scope": "Running signed UKIs in QEMU with OVMF Secure Boot: pflash code and VARS volumes, enrolling the platform root of trust (ROTPK) into the db allowed-signatures store, q35 machine with smm, and asserting SecureBoot=yes from systemd-stub.",
+      "seed_queries": [
+        "QEMU OVMF secure boot enroll custom db certificate pflash",
+        "QEMU UEFI secure boot test systemd-stub SecureBoot yes"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "swtpm-measured-boot-pcrs",
+      "scope": "TPM2 in VMs via swtpm socket passthrough, the sha256 PCR banks used at boot (PCR0 firmware, PCR4 boot manager, PCR7 Secure Boot policy, PCR11 kernel and initrd), what systemd-stub measures into each, and tpm2_pcrread golden-value assertions.",
+      "seed_queries": [
+        "swtpm qemu tpm2 measured boot PCR values linux",
+        "systemd-stub PCR 11 kernel initrd cmdline measurement TPM"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "dmverity-composefs-roothash",
+      "scope": "dm-verity root hash binding for immutable images: mkosi Verity=yes embedding roothash= in the UKI cmdline, composefs digest binding in BLS entries (composefs=sha512), and kernel-side tamper rejection when the store hash mismatches.",
+      "seed_queries": [
+        "mkosi verity dm-verity roothash kernel cmdline",
+        "composefs fs-verity digest binding bootc immutable root"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "luk2-fido2-sealing",
+      "scope": "Sealing LUKS2 volumes at install time: systemd-cryptenroll with FIDO2 (hmac-secret, user verification uv=on), --unlock-key-type=fido2, TPM PCR-bound LUKS2 slots as the complementary primitive, and asserting the sealed slot via systemd-cryptsetup status.",
+      "seed_queries": [
+        "systemd-cryptenroll fido2 LUKS2 unlock key",
+        "LUKS2 TPM PCR sealing systemd-cryptenroll"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ci-lane-separation-design",
+      "scope": "Why the sealed Secure Boot VM lane is its own CI workflow rather than a step in the unsealed bootc-filesystem lane: failure-class isolation, dependency footprint, staged evidence plan (unsigned first, then seal, then negative tamper assertions enforced).",
+      "seed_queries": [
+        "CI test workflow separation failure classes boot test lanes",
+        "secure boot end-to-end CI negative tests tamper rejection qemu"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "bootc-sealed-build-primitives",
+      "scope": "bootc sealed-build primitives: bootc container ukify and bootc container split-kernel-and-rootfs capabilities in bootc 1.16.x, how signed UKI builds are produced from OCI images, and where BLS entries point for UKI-based deployments (/EFI/Linux).",
+      "seed_queries": [
+        "bootc container ukify capability bootable container",
+        "bootc split-kernel-and-rootfs BLS EFI Linux entries"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.862,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0374,
+          "1": 0.0632,
+          "2": 0.8994
+        },
+        "confidence": 0.7214
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.7771,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0435,
+          "1": 0.136,
+          "2": 0.8205
+        },
+        "confidence": 0.5405
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.8954,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0281,
+          "1": 0.0484,
+          "2": 0.9235
+        },
+        "confidence": 0.7839
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.7876,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0508,
+          "1": 0.1108,
+          "2": 0.8384
+        },
+        "confidence": 0.5767
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.7625,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0602,
+          "1": 0.1171,
+          "2": 0.8227
+        },
+        "confidence": 0.5413
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.3393,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1522,
+          "1": 0.3562,
+          "2": 0.4916
+        },
+        "confidence": 0.0875
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.6117,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0754,
+          "1": 0.2375,
+          "2": 0.6871
+        },
+        "confidence": 0.3013
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.7131,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0571,
+          "1": 0.1726,
+          "2": 0.7703
+        },
+        "confidence": 0.4396
+      }
+    },
+    "usage": {
+      "input_tokens": 1606,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

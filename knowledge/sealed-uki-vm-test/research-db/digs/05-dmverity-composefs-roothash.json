@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "dmverity-composefs-roothash",
+  "scope": "dm-verity root hash binding for immutable images: mkosi Verity=yes embedding roothash= in the UKI cmdline, composefs digest binding in BLS entries (composefs=sha512), and kernel-side tamper rejection when the store hash mismatches.",
+  "queries_attempted": [
+    {
+      "query": "mkosi verity dm-verity roothash kernel cmdline",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "composefs fs-verity digest binding bootc immutable root",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+    "https://wiki.archlinux.org/title/Dm-verity",
+    "https://deepwiki.com/systemd/mkosi/8.5-dm-verity-and-integrity-protection",
+    "https://www.systemshardening.com/articles/linux/dm-verity/",
+    "https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md",
+    "https://www.lynx.com/blog/dm-verity-without-an-initramfs/",
+    "https://github.com/composefs/composefs",
+    "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+    "https://docs.fedoraproject.org/en-US/bootc/filesystem/",
+    "https://jmarrero.github.io/bootc/internals/composefs/fsverity/index.html",
+    "https://blogs.gnome.org/alexl/2022/06/02/using-composefs-in-ostree/",
+    "https://ostreedev.github.io/ostree/composefs/"
+  ],
+  "outcome": "authored"
+}
