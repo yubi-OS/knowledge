@@ -1,0 +1,50 @@
+{
+ "nn": 5,
+ "slug": "digest-rotation-incident-history",
+ "scope": "The documented fedora-bootc:45 rotations (stream truncation 2026-07-26, re-resolutions 2026-07-29 and 2026-07-30, and the stale 404 pin discovered 2026-09-18) as the failure-mode evidence base.",
+ "queries_attempted": [
+  {
+   "query": "quay.io registry tag manifest digest missing 404 stale pin",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": [
+    "https://deepwiki.com/quay/quay/2.1-manifest-handling",
+    "https://stackoverflow.com/questions/76654491/invalid-tag-missing-manifest-digest-when-exporting-nx-docker-image-to-gitlab-do",
+    "https://docs.quay.io/",
+    "https://access.redhat.com/articles/6975387",
+    "https://access.redhat.com/solutions/7077254",
+    "https://bex.co/blog/2026/09/25/minio-docker-hub-removal-quay-repoint"
+   ]
+  },
+  {
+   "query": "OCI registry digest immutability tag re-resolve supply chain",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": [
+    "https://www.h2security.io/secure/registry-tags-never-move/",
+    "https://containers.codeguides.io/registries-supply-chain/tagging-and-immutability/",
+    "https://chaowen.tw/notes/daily-lesson-2026-09-06-oci-image-trust-boundary.html",
+    "https://learn.microsoft.com/en-us/azure/container-registry/overview-sign-verify-artifacts",
+    "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-manage-artifact",
+    "https://www.kunwar.page/chapter/106-the-oci-image-lifecycle-registries-digest-pinning-the-digest-update-pattern"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://deepwiki.com/quay/quay/2.1-manifest-handling",
+  "https://stackoverflow.com/questions/76654491/invalid-tag-missing-manifest-digest-when-exporting-nx-docker-image-to-gitlab-do",
+  "https://docs.quay.io/",
+  "https://access.redhat.com/articles/6975387",
+  "https://access.redhat.com/solutions/7077254",
+  "https://bex.co/blog/2026/09/25/minio-docker-hub-removal-quay-repoint",
+  "https://www.h2security.io/secure/registry-tags-never-move/",
+  "https://containers.codeguides.io/registries-supply-chain/tagging-and-immutability/",
+  "https://chaowen.tw/notes/daily-lesson-2026-09-06-oci-image-trust-boundary.html",
+  "https://learn.microsoft.com/en-us/azure/container-registry/overview-sign-verify-artifacts",
+  "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-manage-artifact",
+  "https://www.kunwar.page/chapter/106-the-oci-image-lifecycle-registries-digest-pinning-the-digest-update-pattern"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,34 @@
+{
+  "topic": "package-floor verification for digest-pinned OS builds (pre- and post-digest-bump verification preserving kernel and package-version invariants when base image digests rotate)",
+  "subtopics": [
+    {"nn": 1, "slug": "package-floor-invariants", "scope": "The minimum-version invariant set (kernel, systemd, bootc, mkosi, podman, buildx build policy, SoftHSM, sbsign+libykcs11) that a digest-pinned base image must preserve across rotations.", "seed_queries": ["container image digest pinning base image supply chain verification", "base image upgrade compatibility check minimum package versions"]},
+    {"nn": 2, "slug": "composefs-kernel-floors", "scope": "Kernel floors per composefs mode: data-only OverlayFS 6.5+, verity=require 6.6+, file-backed EROFS 6.12+.", "seed_queries": ["composefs data-only overlayfs kernel 6.5 requirement", "composefs erofs verity require kernel version support"]},
+    {"nn": 3, "slug": "systemd-feature-floors", "scope": "systemd feature floors: boot loader spec 246+, discoverable partitions and LUKS2 hardware unlock 252+, portable services 254+, sysext/confext 256+.", "seed_queries": ["systemd sysext confext version 256 feature introduction", "systemd cryptenroll LUKS2 FIDO2 TPM2 PKCS11 version 252"]},
+    {"nn": 4, "slug": "bootc-floor-split-kernel-rootfs", "scope": "bootc floors: split-kernel-and-rootfs 1.16.4+, install to-filesystem composefs backend 1.16.3+, target 1.16.6.", "seed_queries": ["bootc container split-kernel-and-rootfs subcommand", "bootc install to-filesystem composefs backend option"]},
+    {"nn": 5, "slug": "digest-rotation-incident-history", "scope": "The documented fedora-bootc:45 rotations (stream truncation 2026-07-26, re-resolutions 2026-07-29 and 2026-07-30, and the stale 404 pin discovered 2026-09-18) as the failure-mode evidence base.", "seed_queries": ["quay.io registry tag manifest digest missing 404 stale pin", "OCI registry digest immutability tag re-resolve supply chain"]},
+    {"nn": 6, "slug": "pre-bump-verification-protocol", "scope": "The before-bump checklist: fetch candidate digest via quay API, pull and rpm-inspect, compare against floors, diff the package set, then update PINNED.md and the Containerfile FROM.", "seed_queries": ["podman run image rpm query verify package versions container", "checklist updating base image digest Containerfile FROM pin"]},
+    {"nn": 7, "slug": "post-bump-ci-cascade", "scope": "The after-bump verification: CI cascade groups (fetches, ci-builders, tests, vm-tests), the 5-step verify-package-floor.sh script, and the engineering gates the cascade must keep passing.", "seed_queries": ["github actions workflow_dispatch trigger downstream workflows cascade rebuild", "CI gate script verify container image version fail build"]},
+    {"nn": 8, "slug": "scheduled-drift-detection-gate", "scope": "The ci_package-floor.yml gate: daily 06:00 UTC schedule, PR path triggers on PINNED.md and Containerfile, and the 2026-09-18 finding that the gap was scheduling, not tooling.", "seed_queries": ["github actions scheduled workflow cron daily verification artifact upload", "github actions pull_request paths filter trigger specific files"]},
+    {"nn": 9, "slug": "digest-pinning-supply-chain", "scope": "Digest-vs-tag pinning semantics, OCI manifest resolution, skopeo and quay API inspection tooling, and where package floors sit in supply-chain verification.", "seed_queries": ["pin docker image by digest vs tag reproducibility security", "skopeo inspect OCI image manifest digest verify"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef",
+    "requested_at": "2026-10-05T12:42:00Z",
+    "answers": {
+      "t01": {"type": "score", "score": 1.8626, "probabilities": {"0": 0.0405, "1": 0.0565, "2": 0.903}, "confidence": 0.7304, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"type": "score", "score": 1.2967, "probabilities": {"0": 0.1736, "1": 0.356, "2": 0.4704}, "confidence": 0.0672, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"type": "score", "score": 1.1618, "probabilities": {"0": 0.213, "1": 0.4123, "2": 0.3747}, "confidence": 0.0337, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"type": "score", "score": 1.4582, "probabilities": {"0": 0.1094, "1": 0.323, "2": 0.5676}, "confidence": 0.1577, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"type": "score", "score": 0.9026, "probabilities": {"0": 0.2794, "1": 0.5386, "2": 0.182}, "confidence": 0.1019, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"type": "score", "score": 1.9229, "probabilities": {"0": 0.0183, "1": 0.0405, "2": 0.9412}, "confidence": 0.8317, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"type": "score", "score": 1.7593, "probabilities": {"0": 0.0615, "1": 0.1177, "2": 0.8208}, "confidence": 0.537, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"type": "score", "score": 1.1893, "probabilities": {"0": 0.147, "1": 0.5166, "2": 0.3364}, "confidence": 0.1024, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t09": {"type": "score", "score": 1.3406, "probabilities": {"0": 0.1377, "1": 0.384, "2": 0.4783}, "confidence": 0.0928, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1393, "output_tokens": 0},
+    "dropped": [],
+    "kept": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  }
+}

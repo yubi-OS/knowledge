@@ -1,0 +1,50 @@
+{
+ "nn": 6,
+ "slug": "pre-bump-verification-protocol",
+ "scope": "The before-bump checklist: fetch candidate digest via quay API, pull and rpm-inspect, compare against floors, diff the package set, then update PINNED.md and the Containerfile FROM.",
+ "queries_attempted": [
+  {
+   "query": "podman run image rpm query verify package versions container",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": [
+    "https://docs.podman.io/en/v5.0.2/Commands.html",
+    "https://docs.podman.io/en/latest/markdown/podman-run.1.html",
+    "https://github.com/mgoltzsche/podman-static",
+    "https://www.fosslinux.com/49839/how-to-build-run-and-manage-container-images-with-podman.htm",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/building_running_and_managing_containers/working-with-container-images",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/building_running_and_managing_containers/assembly_working-with-container-images_building-running-and-managing-containers"
+   ]
+  },
+  {
+   "query": "checklist updating base image digest Containerfile FROM pin",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": [
+    "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+    "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+    "https://how2.sh/posts/how-to-devops-pin-docker-base-images/",
+    "https://phoenixnap.com/kb/dockerfile-versioning",
+    "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+    "https://oneuptime.com/blog/post/2026-02-08-how-to-build-reproducible-docker-images-with-locked-dependencies/view"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.podman.io/en/v5.0.2/Commands.html",
+  "https://docs.podman.io/en/latest/markdown/podman-run.1.html",
+  "https://github.com/mgoltzsche/podman-static",
+  "https://www.fosslinux.com/49839/how-to-build-run-and-manage-container-images-with-podman.htm",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/building_running_and_managing_containers/working-with-container-images",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/building_running_and_managing_containers/assembly_working-with-container-images_building-running-and-managing-containers",
+  "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+  "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+  "https://how2.sh/posts/how-to-devops-pin-docker-base-images/",
+  "https://phoenixnap.com/kb/dockerfile-versioning",
+  "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-build-reproducible-docker-images-with-locked-dependencies/view"
+ ],
+ "outcome": "authored"
+}
