@@ -1,0 +1,215 @@
+{
+  "topic": "Three-year revenue and cost model frameworks for an early-stage infrastructure venture: the structural skeleton (cost drivers, revenue lines, growth assumptions) built so numbers stay unfilled until evidence exists",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "assumption-taxonomy",
+      "scope": "Which assumption categories (pricing, conversion, volume, unit cost, fixed costs, funding) must exist as explicit unfilled inputs before any number is asserted",
+      "seed_queries": [
+        "startup financial model key assumption categories pricing conversion volume",
+        "early stage financial model assumptions placeholder until validated"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "revenue-line-structure",
+      "scope": "Revenue(year) as sum over offers of customers_won x price x volume_per_customer; how an offer catalog maps to revenue lines",
+      "seed_queries": [
+        "bottom up revenue model product line price times volume customers",
+        "SaaS revenue model building blocks customers conversion average contract value formula"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "cost-driver-taxonomy",
+      "scope": "Variable unit costs per offer (hardware, support labor, infrastructure) versus fixed costs (legal, engineering, compliance); front-loaded cost treatment",
+      "seed_queries": [
+        "startup cost structure variable costs fixed costs classification",
+        "hardware startup unit cost bill of materials support labor cost model"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "readiness-gated-growth",
+      "scope": "Revenue availability tied to readiness gates and pilot completion rather than calendar quarters; event-triggered hiring costs",
+      "seed_queries": [
+        "evidence based milestones spending triggers startup operating plan",
+        "product readiness gates revenue timing assumptions sales enablement"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "sensitivity-structure",
+      "scope": "Downside/base/upside scenario architecture per driver (gate timing, segment fit, funding path, hardware cost) before numbers exist",
+      "seed_queries": [
+        "scenario analysis downside base upside startup financial model structure",
+        "sensitivity analysis key value drivers early stage company model"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "stop-rules-runway",
+      "scope": "Per-offer conversion kill thresholds, pricing redesign triggers, and runway exhaustion as the whole-model stop",
+      "seed_queries": [
+        "startup kill criteria stop rules when to stop an experiment",
+        "runway months formula burn rate capital exhaustion startup"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "unit-economics-open-items",
+      "scope": "CAC, payback, LTV: which metrics stay open until the first pilot completes, and the minimum data each needs",
+      "seed_queries": [
+        "unit economics customer acquisition cost lifetime value definition early stage",
+        "customer acquisition cost payback period benchmark SaaS"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "non-dilutive-funding",
+      "scope": "Grants and non-dilutive capital (NLnet, Alpha-Omega, GitHub Secure Open Source Fund) as a runway category shaping the funding input",
+      "seed_queries": [
+        "NLnet foundation grant funding open source projects",
+        "non-dilutive grants open source funding Alpha-Omega GitHub secure open source fund"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7837,
+        "probabilities": {
+          "0": 0.0503,
+          "1": 0.1157,
+          "2": 0.834
+        },
+        "confidence": 0.5672,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.8925,
+        "probabilities": {
+          "0": 0.0227,
+          "1": 0.062,
+          "2": 0.9153
+        },
+        "confidence": 0.7631,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.9277,
+        "probabilities": {
+          "0": 0.0172,
+          "1": 0.038,
+          "2": 0.9448
+        },
+        "confidence": 0.8416,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.8287,
+        "probabilities": {
+          "0": 0.0346,
+          "1": 0.1021,
+          "2": 0.8633
+        },
+        "confidence": 0.6353,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.6358,
+        "probabilities": {
+          "0": 0.0619,
+          "1": 0.2405,
+          "2": 0.6976
+        },
+        "confidence": 0.3226,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.5498,
+        "probabilities": {
+          "0": 0.0793,
+          "1": 0.2917,
+          "2": 0.629
+        },
+        "confidence": 0.2306,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.4927,
+        "probabilities": {
+          "0": 0.0855,
+          "1": 0.3364,
+          "2": 0.5781
+        },
+        "confidence": 0.1821,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.1481,
+        "probabilities": {
+          "0": 0.1486,
+          "1": 0.5547,
+          "2": 0.2967
+        },
+        "confidence": 0.1268,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1370,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

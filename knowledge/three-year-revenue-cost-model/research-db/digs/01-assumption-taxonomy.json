@@ -1,0 +1,51 @@
+{
+  "nn": "01",
+  "slug": "assumption-taxonomy",
+  "scope": "Which assumption categories (pricing, conversion, volume, unit cost, fixed costs, funding) must exist as explicit unfilled inputs before any number is asserted",
+  "queries_attempted": [
+    {
+      "query": "startup financial model key assumption categories pricing conversion volume",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "early stage financial model assumptions placeholder until validated",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "startup financial model assumptions list revenue drivers pricing conversion",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "lean startup financial planning assumptions validation revenue drivers",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig too thin: only 1 result >= 0.5 weight and several off-topic",
+      "new_queries": [
+        "startup financial model assumptions list revenue drivers pricing conversion",
+        "lean startup financial planning assumptions validation revenue drivers"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://qubit.capital/blog/financial-assumptions-startups",
+    "https://caena.io/financial-modelling-cheat-sheet-for-early-stage-startups/",
+    "https://revenuemap.app/blog/startup-financial-model-template",
+    "https://stratea.ai/startup-financial-model/",
+    "https://www.businesssupervisor.com/fixed-vs-variable-startup-costs/",
+    "https://inflectioncfo.co/blog/startup-financial-model-validation-testing-assumptions-before-investors-do/"
+  ],
+  "outcome": "authored"
+}
