@@ -1,0 +1,335 @@
+{
+  "topic": "the Jev v2 operations-controller architecture as a deployable skill: gated-approval orchestration (understand, decide, deterministic fail-closed gate, execute, verify, terminal states, human review, append-only audit) for autonomous agents",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "pipeline-stages",
+      "scope": "The seven-stage operations controller flow (ingest, understand, decide, gate, execute, verify, terminal) and why stage ordering, not model intelligence, is what makes an autonomous agent trustworthy.",
+      "seed_queries": [
+        "LLM agent orchestration pipeline stages understand decide execute verify",
+        "agent action pipeline approval gate plan verify execute pattern"
+      ],
+      "validation": {
+        "score": 1.8797,
+        "probabilities": {
+          "0": 0.0244,
+          "1": 0.0715,
+          "2": 0.9041
+        },
+        "confidence": 0.7347
+      }
+    },
+    {
+      "nn": "02",
+      "slug": "fail-closed-gate",
+      "scope": "The deterministic fail-closed policy gate: versioned policy, stamped enforcement version, deny-by-default semantics, and re-gating each action immediately before dispatch.",
+      "seed_queries": [
+        "fail closed deny by default policy engine authorization security",
+        "policy gate authorization tool calls autonomous agents versioned policy"
+      ],
+      "validation": {
+        "score": 1.9243,
+        "probabilities": {
+          "0": 0.0165,
+          "1": 0.0427,
+          "2": 0.9408
+        },
+        "confidence": 0.8307
+      }
+    },
+    {
+      "nn": "03",
+      "slug": "human-approval-loop",
+      "scope": "The human approval loop: approval bindings (actor, target, payload hash, limits, expiry, policy version), the review queue, and binding-mismatch failure classes.",
+      "seed_queries": [
+        "human in the loop approval workflow autonomous AI agent actions",
+        "approval binding payload hash expiry human review agent dispatch"
+      ],
+      "validation": {
+        "score": 1.7564,
+        "probabilities": {
+          "0": 0.0551,
+          "1": 0.1334,
+          "2": 0.8115
+        },
+        "confidence": 0.5191
+      }
+    },
+    {
+      "nn": "04",
+      "slug": "terminal-states-failure-paths",
+      "scope": "Terminal states and failure paths: a closed terminal enum, retry-within-limits, reconciliation, honest close, and reporting partial completion truthfully.",
+      "seed_queries": [
+        "workflow state machine terminal states idempotency retry reconciliation",
+        "autonomous agent task failure retry limits honest reporting design"
+      ],
+      "validation": {
+        "score": 1.747,
+        "probabilities": {
+          "0": 0.0425,
+          "1": 0.168,
+          "2": 0.7895
+        },
+        "confidence": 0.4801
+      }
+    },
+    {
+      "nn": "05",
+      "slug": "append-only-audit",
+      "scope": "Append-only central state and audit: event-chained tables, why mutable state is forbidden, and the pause/kill switch that cannot undo effects already executed.",
+      "seed_queries": [
+        "append only audit log tamper evident event chain design",
+        "durable execution audit trail immutable event log workflow engine"
+      ],
+      "validation": {
+        "score": 1.6743,
+        "probabilities": {
+          "0": 0.0634,
+          "1": 0.1989,
+          "2": 0.7377
+        },
+        "confidence": 0.3817
+      }
+    },
+    {
+      "nn": "06",
+      "slug": "advisory-decision-layer",
+      "scope": "The advisory decision layer: typed decision models (intent category, actionable yes/no, risk score, proposed action) that inform the pipeline but never authorize dispatch themselves.",
+      "seed_queries": [
+        "calibrated decision model classifier agent workflow routing probabilities",
+        "LLM structured output decision gate never authorize action advisory"
+      ],
+      "validation": {
+        "score": 1.1823,
+        "probabilities": {
+          "0": 0.141,
+          "1": 0.5358,
+          "2": 0.3232
+        },
+        "confidence": 0.1172
+      }
+    },
+    {
+      "nn": "07",
+      "slug": "improve-loop",
+      "scope": "The improve loop with guardrails: learnings recorded as data that cannot activate themselves, and how self-improvement is kept inside the same gated pipeline.",
+      "seed_queries": [
+        "bounded recursive self improvement agent loop guardrails",
+        "agent learning loop prevent self activation human approval"
+      ],
+      "validation": {
+        "score": 0.4604,
+        "probabilities": {
+          "0": 0.6034,
+          "1": 0.3328,
+          "2": 0.0638
+        },
+        "confidence": 0.2184
+      }
+    },
+    {
+      "nn": "08",
+      "slug": "parallel-lane-build",
+      "scope": "Building the controller with parallel implementation lanes: capability map, deps-injected modules with self-contained tests, and the cross-lane bug classes integrators must hunt (async thenable dedupe, unawaited hashing, sync config loads).",
+      "seed_queries": [
+        "parallel subagent lanes modular build dependency injected modules",
+        "integration phase cross module bugs async race promise thenable test suites"
+      ],
+      "validation": {
+        "score": 0.4372,
+        "probabilities": {
+          "0": 0.6501,
+          "1": 0.2626,
+          "2": 0.0873
+        },
+        "confidence": 0.2489
+      }
+    },
+    {
+      "nn": "09",
+      "slug": "deploy-and-first-use",
+      "scope": "Deploying the controller onto a live worker without shadowing existing routes, a versioned policy starter, the first gated end-to-end run, and the open items it surfaced (scoped executor credentials).",
+      "seed_queries": [
+        "Cloudflare Workers add new routes without breaking existing routes deploy",
+        "first production run lessons agent orchestration rate limits credentials"
+      ],
+      "validation": {
+        "score": 1.1216,
+        "probabilities": {
+          "0": 0.2201,
+          "1": 0.4383,
+          "2": 0.3416
+        },
+        "confidence": 0.0359
+      }
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "legend": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t1": {
+        "type": "score",
+        "score": 1.8797,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0244,
+          "1": 0.0715,
+          "2": 0.9041
+        },
+        "confidence": 0.7347
+      },
+      "t2": {
+        "type": "score",
+        "score": 1.9243,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0165,
+          "1": 0.0427,
+          "2": 0.9408
+        },
+        "confidence": 0.8307
+      },
+      "t3": {
+        "type": "score",
+        "score": 1.7564,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0551,
+          "1": 0.1334,
+          "2": 0.8115
+        },
+        "confidence": 0.5191
+      },
+      "t4": {
+        "type": "score",
+        "score": 1.747,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0425,
+          "1": 0.168,
+          "2": 0.7895
+        },
+        "confidence": 0.4801
+      },
+      "t5": {
+        "type": "score",
+        "score": 1.6743,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0634,
+          "1": 0.1989,
+          "2": 0.7377
+        },
+        "confidence": 0.3817
+      },
+      "t6": {
+        "type": "score",
+        "score": 1.1823,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.141,
+          "1": 0.5358,
+          "2": 0.3232
+        },
+        "confidence": 0.1172
+      },
+      "t7": {
+        "type": "score",
+        "score": 0.4604,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.6034,
+          "1": 0.3328,
+          "2": 0.0638
+        },
+        "confidence": 0.2184
+      },
+      "t8": {
+        "type": "score",
+        "score": 0.4372,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.6501,
+          "1": 0.2626,
+          "2": 0.0873
+        },
+        "confidence": 0.2489
+      },
+      "t9": {
+        "type": "score",
+        "score": 1.1216,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2201,
+          "1": 0.4383,
+          "2": 0.3416
+        },
+        "confidence": 0.0359
+      }
+    },
+    "usage": {
+      "input_tokens": 1500,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "07",
+      "08"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "09"
+    ]
+  }
+}
