@@ -1,0 +1,128 @@
+{
+  "nn": "07",
+  "slug": "cold-start-prior-art",
+  "scope": "Prior art on repo-history summarization: git changelog generators, repo summarizers, Linear Insights, and why none joins git plus planning data plus RSI.",
+  "queries_attempted": [
+    {
+      "query": "git changelog generator conventional commits tools comparison",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "open source repository summarization AI tools",
+      "attempt": 1,
+      "raw_results": 57,
+      "kept": 6
+    },
+    {
+      "query": "AI codebase summarization repository understanding tool LLM",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "q2 returned generic document summarizers, not repository summarization; q2 re-dug",
+      "new_queries": [
+        "AI codebase summarization repository understanding tool LLM"
+      ]
+    }
+  ],
+  "results_kept": [
+    {
+      "title": "GitHub - cocogitto/cocogitto: The Conventional Commits toolbox",
+      "url": "https://github.com/cocogitto/cocogitto",
+      "snippet": "There are plenty of tools listed on the conventional commits website to help you generate changelog, git hooks, commit template etc. Some of them are specifically designed for the Conventional Commits specification, and some of them are general purpose. Cocogitto was designed to help you respect the conventional and semver standard and is not intended to be used in any other context. It ..."
+    },
+    {
+      "title": "Conventional Changelog - GitHub",
+      "url": "https://github.com/conventional-changelog/conventional-changelog",
+      "snippet": "The original conventional-changelog package repo can be found in packages/conventional-changelog. If you are new to Conventional Commits, we recommend to read The Complete Guide. We recommend considering the following high level tools for automating versioning, tagging, and CHANGELOG generation: commit-and-tag-version \u2014 a drop-in replacement for npm's version command, handles automated ..."
+    },
+    {
+      "title": "A highly customizable changelog generator \u26f0\ufe0f | git-cliff",
+      "url": "https://git-cliff.org/",
+      "snippet": "git-cliff can generate changelog files for any Git repository that follows the conventional commits specification. Easy Integration. git-cliff can be easily integrated with your Rust/Python/Node.js project as a command-line tool and also can be used as a library for Rust projects."
+    },
+    {
+      "title": "Best Conventional Commit and Changelog Tools on GitHub (2026)",
+      "url": "https://awesome-repositories.com/q/conventional-commit-helper-and-changelog-generator",
+      "snippet": "Conventional Changelog is a set of tools for automatically generating formatted release notes by parsing Git commit messages that follow a structured specification. It includes a commit message parser to transform raw strings into structured data, a changelog generator for producing release notes, and a commit linter to ensure messages adhere to specific conventions before they are merged. The ..."
+    },
+    {
+      "title": "Changelog Generator \u2014 Conventional Commits to CHANGELOG.md",
+      "url": "https://www.dev-toolbox.tech/tools/changelog-generator",
+      "snippet": "The tool pairs well with other DevToolbox utilities. Use the Diff Viewer to compare two changelog versions, the Markdown Preview to render the generated markdown in real time, or the Git Command Builder to construct the git log command that extracts commits between two tags. All processing happens entirely in your browser."
+    },
+    {
+      "title": "Git",
+      "url": "https://git-scm.com/",
+      "snippet": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with \u2026"
+    },
+    {
+      "title": "ai-summarizer \u00b7 GitHub Topics \u00b7 GitHub",
+      "url": "https://github.com/topics/ai-summarizer",
+      "snippet": "The main goal of an AI-Powered News Summarizer is to assist users in quickly understanding the main points and essential information from a large volume of news articles or textual content."
+    },
+    {
+      "title": "GitHub - callstack/ai-summarization: AI summarization tool",
+      "url": "https://github.com/callstack/ai-summarization",
+      "snippet": "This repo showcases a simple, yet effective tool for document summarization. It can work with plain-text and PDF documents in any language supported by underlying LLM (Mistral by default)."
+    },
+    {
+      "title": "12 Open-source Projects and Scripts To Summarize Large Text",
+      "url": "https://medevel.com/12-scripts-to-summrize-large-text/",
+      "snippet": "Automatic summarization is a crucial process for many applications, as it helps to quickly identify the most important information in a large dataset. This not only saves time, but also makes it easier to understand and analyze the data. To achieve this, artificial intelligence algorithms are commonly utilized, with different algorithms being speci..."
+    },
+    {
+      "title": "OpenEvidence",
+      "url": "https://www.openevidence.com/",
+      "snippet": "America\u2019s Official Medical Knowledge Platform. OpenEvidence is the leading medical platform for healthcare professionals, featuring \u2026"
+    },
+    {
+      "title": "WordNet",
+      "url": "https://handwiki.org/wiki/Software:WordNet",
+      "snippet": "WordNet is a lexical database of semantic relations between words in more than 200 languages. WordNet links words into semantic relations including synonyms, hyponyms, and meronyms"
+    },
+    {
+      "title": "GNU.Support website about GNU Operating Systems",
+      "url": "https://gnu.support/",
+      "snippet": "content generation, summarization, transformation, retrieval, reasoning, and more. Generating shell script with Qwen2.5-Coder-14b-Instruct Large Language Model (LLM) This page pro"
+    },
+    {
+      "title": "RE:\ud83e\udd16 Best AI Tools for Developers in 2026: What Are Your Must-Have Tools?",
+      "url": "https://github.com/orgs/community/discussions/187143#discussioncomment-18177461",
+      "snippet": "...bugs Generating documentation Understanding large functions ...can inspect the repository, understand relationships between ...\u2192 classification, extraction, summarization, simple transformations Reasoning model \u2192 debugging...tool For larger repository-level tasks. 3. One strong LLM/API provider For experimentation and building AI.... A tool that helps me understand a 50,000-line unfamiliar code"
+    },
+    {
+      "title": "GitHub - talmadhoun/codebase_summarizer: AI-powered tool that analyzes ...",
+      "url": "https://github.com/talmadhoun/codebase_summarizer",
+      "snippet": "AI-powered tool that analyzes codebases using OpenAI API to generate detailed insights about file structure, dependencies, classes, functions, and architecture. Respects .gitignore, processes in configurable batches, and outputs comprehensive JSON documentation. - talmadhoun/codebase_summarizer"
+    },
+    {
+      "title": "Hierarchical Repository-Level Code Summarization for Business ...",
+      "url": "https://arxiv.org/html/2501.07857v1",
+      "snippet": "Automatic source code summarization is a critical module in our framework, providing backbone to other coding and software engineering related tasks. With extensive experiments, we discovered that it is difficult to create accurate repository-level source code summarization for business oriented application."
+    },
+    {
+      "title": "Repository-Level Code Understanding by LLMs via Hierarchical ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-97576-9_6",
+      "snippet": "The results demonstrate the efficacy of hierarchical summarization in enabling scalable, task-agnostic, and structure-aware repository-level code comprehension for improved bug localization and code search, particularly in scenarios involving non-technical end-user bug reports."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Best LLM-Powered Code Comprehension Tool (2025) \u2014 Byteable",
+      "url": "https://byteable.ai/blog/best-llm-powered-code-comprehension-tool-2025",
+      "snippet": "Refact.ai offers lightweight, LLM-based understanding directly within IDEs. It explains functions inline, provides refactor hints, and generates natural-language comments to speed up reviews. Key Features"
+    }
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,908 @@
+{
+  "join-git-linear": {
+    "nn": "01",
+    "slug": "join-git-linear",
+    "scope": "Techniques for joining git event history (PRs, commits) with Linear issue data via reference regexes, merge_commit_sha links, and graceful fallbacks when identifiers are missing.",
+    "queries_attempted": [
+      {
+        "query": "cross referencing pull requests with project management issues join design",
+        "attempt": 1,
+        "raw_results": 56,
+        "kept": 6,
+        "superseded_by_redo": true
+      },
+      {
+        "query": "git merge_commit_sha pull request commit link semantics",
+        "attempt": 1,
+        "raw_results": 55,
+        "kept": 6
+      },
+      {
+        "query": "GitHub API timeline events cross referenced issues pull requests",
+        "attempt": 2,
+        "raw_results": 44,
+        "kept": 6
+      },
+      {
+        "query": "GitHub REST pull request linked issues development",
+        "attempt": 2,
+        "raw_results": 68,
+        "kept": 6
+      }
+    ],
+    "redo_count": 1,
+    "redo_log": [
+      {
+        "attempt": 1,
+        "reason": "first dig returned off-topic results (rationalwiki, CBP rulings) and only 4 usable sources; q1 re-dug",
+        "new_queries": [
+          "GitHub API timeline events cross referenced issues pull requests",
+          "GitHub REST pull request linked issues development"
+        ]
+      }
+    ],
+    "results_kept": [
+      {
+        "title": "git - Get commit SHA in Github actions - Stack Overflow",
+        "url": "https://stackoverflow.com/questions/68061051/get-commit-sha-in-github-actions",
+        "snippet": "When you can create a pull request, github will execute workflow based on a fake merge branch: refs/pull/:prNumber/merge, the merge_commit_sha doesn\u2019t exist on base or head branch, but points to that surrogate merge commit, and there is a mergeable key to show the status of the test commit.When you can create a pull request, github will execute workflow based on a fake merge branch: refs/pull/:prN"
+      },
+      {
+        "title": "Guide to Getting Commit SHA in GitHub Actions | Baeldung on Ops",
+        "url": "https://www.baeldung.com/ops/github-actions-commit-sha",
+        "snippet": "Before exploring how to get the commit SHA, we must understand the nitty-gritty of the merge commit in pull requests. It\u2019ll help us figure out the correct commit SHA based on our use case. When we raise any pull request, GitHub internally creates a merge commit to show the result of merging the code changes from the source branch into the target branch. Moreover, such a commit doesn\u2019t ...Before ex"
+      },
+      {
+        "title": "git - GET pull request merge commit sha from pull request number using ...",
+        "url": "https://stackoverflow.com/questions/22331524/get-pull-request-merge-commit-sha-from-pull-request-number-using-github-api",
+        "snippet": "Mar 12, 2014 \u00b7 The merge_commit_sha attribute holds the SHA of the test merge commit Which means that GitHub creates a special branch where they merge master and your pull request branch, and merge_commit_sha points to that surrogate merge commit, however you don't have it in your local repo."
+      },
+      {
+        "title": "How to get merge commit SHA for merged pull request?",
+        "url": "https://stackoverflow.com/questions/26625965/how-to-get-merge-commit-sha-for-merged-pull-request",
+        "snippet": "All pull requests are also issues. So you can fetch the Issue Events for any Pull Request. With that, there will be a commit_id. If that attribute is present with a merged attribute then that should be the SHA of the merge commit.All pull requests are also issues. So you can fetch the Issue Events for any Pull Request. With that, there will be a commit_id. If that attribute is present with a merge"
+      },
+      {
+        "title": "Git",
+        "url": "https://git-scm.com/",
+        "snippet": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with \u2026"
+      },
+      {
+        "title": "git.openwrt.org Git - feed/packages.git/atom - CONTRIBUTING.md h\u2026",
+        "url": "http://git.openwrt.org?p=feed%2Fpackages.git%3Ba%3Datom%3Bf%3DCONTRIBUTING.md",
+        "snippet": "CONTRIBUTING.md: clarify pull request commit requirements Corrects the commit subject being referred to as a \"description\" and links the official OpenWrt\u2026"
+      },
+      {
+        "title": "REST API endpoints for timeline events - GitHub Docs",
+        "url": "https://docs.github.com/en/rest/issues/timeline",
+        "snippet": "You can use the REST API to view different types of events triggered by timeline activity in issues and pull requests. For more information about the specific events that you can receive, see Issue event types. To view GitHub activity outside of issues and pull requests, see GitHub event types."
+      },
+      {
+        "title": "Issue event types - GitHub Docs",
+        "url": "https://docs.github.com/en/rest/using-the-rest-api/issue-event-types?apiVersion=2022-11-28",
+        "snippet": "Each event type specifies if the event occurs in pull request, issues, or both. Issue event object common properties Issue events all have the same object structure, except events that are only available in the REST API for timeline events. Some events also include additional properties that provide more context about the event resources."
+      },
+      {
+        "title": "REST API endpoints for timeline events - GitHub Enterprise ...",
+        "url": "https://docs.github.com/en/enterprise-server@3.17/rest/issues/timeline",
+        "snippet": "You can use the REST API to view different types of events triggered by timeline activity in issues and pull requests. For more information about the specific events that you can receive, see Issue event types. To view GitHub activity outside of issues and pull requests, see GitHub event types."
+      },
+      {
+        "title": "docs/content/rest/using-the-rest-api/issue-event-types.md at ... - GitHub",
+        "url": "https://github.com/github/docs/blob/main/content/rest/using-the-rest-api/issue-event-types.md",
+        "snippet": "Issue events are triggered by activity in issues and pull requests and are available in the REST API for Issue events and Timeline events. Each event type specifies whether the event is available in the REST API for issue events or timeline events. GitHub's REST API considers every pull request to be an issue, but not every issue is a pull request. For this reason, the Issue Events and ..."
+      },
+      {
+        "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead.",
+        "url": "https://github.com/",
+        "snippet": "Whether you\u2019re scaling your development process or just learning how to code, GitHub is where you belong. Join the world\u2019s most \u2026"
+      },
+      {
+        "title": "Pull request created in a GitHub action does not trigger workflows...",
+        "url": "https://github.com/orgs/community/discussions/65321",
+        "snippet": "Pull requests created by the action using the default GITHUB_TOKEN cannot trigger other workflows. If you have on: pull_request or on: push workflows acting as checks on pull requests, they will not run. There are a number of workarounds with different pros and cons"
+      },
+      {
+        "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub",
+        "url": "https://github.com/",
+        "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity."
+      },
+      {
+        "title": "REST API endpoints for pull requests - GitHub Docs",
+        "url": "https://docs.github.com/en/rest/pulls",
+        "snippet": "Use the REST API to manage pull requests and pull request reviews."
+      },
+      {
+        "title": "Getting Linked issues and Projects associated with a pull request form ...",
+        "url": "https://stackoverflow.com/questions/60717142/getting-linked-issues-and-projects-associated-with-a-pull-request-form-github-ap",
+        "snippet": "How can I get the Projects and linked issues for a given pull request from github API V3? The pulls endpoint does not give information on either of them. In the github's pull requests section's si..."
+      },
+      {
+        "title": "How to Retrieve Linked Issues for a Pull Request via REST API ... - GitHub",
+        "url": "https://github.com/orgs/community/discussions/179613",
+        "snippet": "Here's what I'm looking for: Given a Pull Request number or ID, retrieve all linked issues (those referenced via keywords like Fixes #123 or linked manually in the UI). Ideally, the response should include issue details (Id , connected work tracker E.g. ADO ,Github and/or link to the item)."
+      },
+      {
+        "title": "Linux kernel",
+        "url": "https://en.wikipedia.org/wiki/Linux_kernel",
+        "snippet": "The Linux kernel is a free and open-source, monolithic, modular, multitasking, Unix-like operating system kernel. It was originally authored in 1991 by Linus Torvalds for his i386-based PC, and it was soon adopted as the kernel for the GNU operating system, which was written to be a free (libre) replacement for Unix"
+      },
+      {
+        "title": "SIGSOFT - ACM Special Interest Group on Software Engineering",
+        "url": "http://www.sigsoft.org/awards/distinguishedPaperAward.html",
+        "snippet": "Context of Model-driven Development ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2021) July 11-17, 2021, Aarhus, Denmark/Virtual Runxiang Cheng, Lin"
+      }
+    ],
+    "outcome": null
+  },
+  "refreshable-archive": {
+    "nn": "02",
+    "slug": "refreshable-archive",
+    "scope": "Incremental refresh design for a cached archive of repo events: since/from/linear-since delta fetching, cache invalidation windows, and idempotent merges.",
+    "queries_attempted": [
+      {
+        "query": "incremental api sync since parameter delta fetching design",
+        "attempt": 1,
+        "raw_results": 51,
+        "kept": 6
+      },
+      {
+        "query": "cache invalidation strategy polling data mirror stale",
+        "attempt": 1,
+        "raw_results": 52,
+        "kept": 6
+      }
+    ],
+    "redo_count": 0,
+    "redo_log": [],
+    "results_kept": [
+      {
+        "title": "Cursor-Based Sync Low-Level Design: Incremental Delta Pull, Conflict ...",
+        "url": "https://www.techinterview.org/post/3233468501/lld-cursor-based-sync/",
+        "snippet": "On this page Core Data Model Sync API: Delta Pull Conflict Resolution: Last-Write-Wins Key Interview Points A cursor-based incremental sync system lets clients efficiently download only the data that has changed since their last sync, rather than re-fetching the entire dataset. Used in mobile apps, offline-first systems, and integration APIs.On this page Core Data Model Sync API: Delta Pull Confli"
+      },
+      {
+        "title": "Implementing Dataverse Change Tracking and Delta Queries in Power ...",
+        "url": "https://www.wickedsmartdata.com/articles/implementing-dataverse-change-tracking-and-delta-queries-in-power-automate-building-incremental-sync-pipelines-for-high-volume-low-latency-data-integration",
+        "snippet": "Power Automate Implementing Dataverse Change Tracking and Delta Queries in Power Automate: Building Incremental Sync Pipelines for High-Volume, Low-Latency Data Integration Stop syncing entire tables when you only need what changed. This expert-level lesson teaches you how Dataverse delta queries work at the OData protocol level, how to persist delta tokens reliably, and how to build an ...Power A"
+      },
+      {
+        "title": "Delta Synchronization - DealCloud API Docs",
+        "url": "https://api.docs.dealcloud.com/sdk/python-1.X/data/delta-sync",
+        "snippet": "Delta sync enables efficient incremental data synchronization by fetching only records modified since your last sync. HTTP calls use intapp-rest-client; see Error handling for API errors."
+      },
+      {
+        "title": "Incremental sync - Elementary",
+        "url": "https://docs.elementary-data.com/api/incremental-sync",
+        "snippet": "Incremental sync Full scans plus incremental upsert and delete feeds. Every dataset can be read two ways: a full scan (default) and, where supported, incremental feeds that return only what changed.Incremental sync Full scans plus incremental upsert and delete feeds. Every dataset can be read two ways: a full scan (default) and, where supported, incremental feeds that return only what changed."
+      },
+      {
+        "title": "INCREMENTAL Definition & Meaning - Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/incremental",
+        "snippet": "The meaning of INCREMENTAL is of, relating to, being, or occurring in especially small increments. How to use incremental in a \u2026"
+      },
+      {
+        "title": "Get incremental changes for users - Microsoft Graph",
+        "url": "https://learn.microsoft.com/en-us/graph/delta-query-users",
+        "snippet": "The delta query in Microsoft Graph lets you query for additions, deletions, or updates to supported resources, through a series of delta requests. For users, the delta query enables you to discover changes without fetching the entire set of users to compare changes. Clients that synchronize users with a local profile store can use the delta query for both their initial full synchronization ...The "
+      },
+      {
+        "title": "Cache Invalidation and the Methods to Invalidate Cache\u2026",
+        "url": "https://www.geeksforgeeks.org/system-design/cache-invalidation-and-the-methods-to-invalidate-cache/",
+        "snippet": "Cache invalidation is the process of removing or updating outdated data stored in the cache memory. It ensures that applications always use the latest and correct data instead of stale cached information. Prevents data inconsistency by clearing old or expired cache data when the original data changes. Improves application reliability by ensuring users receive updated and accurate information ...Ca"
+      },
+      {
+        "title": "Cache Invalidation Strategies | Developer Guide",
+        "url": "https://apiguide.dev/guides/cache-invalidation/",
+        "snippet": "Cache invalidation is the discipline of removing or refreshing cached data once it no longer reflects the source of truth. For HTTP APIs it means balancing three competing goals (performance, scalability, and freshness) across several cache layers: the browser, the CDN edge, a reverse proxy, an application cache like Redis, and the database ...Cache invalidation is the discipline of removing or re"
+      },
+      {
+        "title": "Cache Invalidation: Event-Driven vs TTL - beefed.ai",
+        "url": "https://beefed.ai/en/cache-invalidation-strategies",
+        "snippet": "Proven strategies to eliminate stale cache data: TTL, write-through/back, event-driven invalidation, and best practices for near-zero stale rates.Proven strategies to eliminate stale cache data: TTL, write-through/back, event-driven invalidation, and best practices for near-zero stale rates."
+      },
+      {
+        "title": "Complete Guide to Cache Invalidation | StackPractices",
+        "url": "https://stackpractices.com/guides/complete-guide-cache-invalidation/",
+        "snippet": "Cache invalidation is the hardest problem in caching. Phil Karlton famously said, \"There are only two hard things in Computer Science: cache invalidation and naming things.\" Getting invalidation wrong means serving stale data to users, losing updates, or causing thundering herds. This guide walks through every major invalidation strategy, from simple TTL expiration to complex event-driven ..."
+      },
+      {
+        "title": "How to manage and clear your cache and cookies",
+        "url": "https://www.microsoft.com/en-us/edge/learning-center/how-to-manage-and-clear-your-cache-and-cookies?msockid=356bd9edee166daf21fece04effb6cb1",
+        "snippet": "Mar 6, 2023 \u00b7 Learn how to clear your browser cache and cookies in minutes. Improve your Internet speed and performance by \u2026"
+      },
+      {
+        "title": "swr - npmx",
+        "url": "https://npmx.dev/package/swr",
+        "snippet": "The name \u201cSWR\u201d is derived from stale-while-revalidate, a cache invalidation strategy popularized by HTTP RFC 5861. SWR first returns the data from cache \u2026"
+      }
+    ],
+    "outcome": null
+  },
+  "sphere-curve-fitting": {
+    "nn": "03",
+    "slug": "sphere-curve-fitting",
+    "scope": "Hyperspherical-harmonic curve fitting on 9-D corpus points: PCA top-2, stereographic S2 lift, Mobius reparameterization, R-squared holdout, sparse-cell detection.",
+    "queries_attempted": [
+      {
+        "query": "spherical harmonic regression machine learning sphere",
+        "attempt": 1,
+        "raw_results": 52,
+        "kept": 6
+      },
+      {
+        "query": "PCA two components stereographic projection points on sphere",
+        "attempt": 1,
+        "raw_results": 49,
+        "kept": 6
+      }
+    ],
+    "redo_count": 0,
+    "redo_log": [],
+    "results_kept": [
+      {
+        "title": "GitHub - NVIDIA/torch-harmonics: Differentiable signal processing on ...",
+        "url": "https://github.com/NVIDIA/torch-harmonics",
+        "snippet": "Overview torch-harmonics implements differentiable signal processing on the sphere. This includes differentiable implementations of the spherical harmonic transforms, vector spherical harmonic transforms and discrete-continuous convolutions on the sphere. The package was originally implemented to enable Spherical Fourier Neural Operators (SFNO ...Overview torch-harmonics implements differentiable "
+      },
+      {
+        "title": "Geometric Deep Learning for Spherical Data",
+        "url": "https://towardsdatascience.com/geometric-deep-learning-for-spherical-data-55612742d05f/",
+        "snippet": "An example of spherical data. [Photo by NASA on Unsplash] ... Learn this step by step with the interactive Machine Learning roadmap.An example of spherical data. [Photo by NASA on Unsplash] ... Learn this step by step with the interactive Machine Learning roadmap."
+      },
+      {
+        "title": "Spherical CNNs: Rotation-Equivariant Networks on the Sphere",
+        "url": "https://hunterheidenreich.com/notes/machine-learning/geometric-deep-learning/spherical-cnns/",
+        "snippet": "Home Notes Machine Learning Geometric Deep Learning Spherical CNNs: Rotation-Equivariant Networks on the Sphere Cohen et al. introduce rotation-equivariant spherical CNNs that define cross-correlation on SO (3), computed via generalized FFT from harmonic analysis.Home Notes Machine Learning Geometric Deep Learning Spherical CNNs: Rotation-Equivariant Networks on the Sphere Cohen et al. introduce r"
+      },
+      {
+        "title": "Optimal designs for spherical harmonic regression | Statistical Papers",
+        "url": "https://link.springer.com/article/10.1007/s00362-024-01630-5",
+        "snippet": "This short paper is concerned with the use of spherical t-designs as optimal designs for the spherical harmonic regression model in three dimensions over a range of specified criteria. The nature of the designs is explored and their availability and suitability is reviewed.This short paper is concerned with the use of spherical t-designs as optimal designs for the spherical harmonic regression mod"
+      },
+      {
+        "title": "Medical image computing",
+        "url": "https://handwiki.org/wiki/Medicine:Medical_image_computing",
+        "snippet": "Medical image computing (MIC) is an interdisciplinary field at the intersection of computer science, information engineering, electrical engineering, physics, mathematics and medicine. This field develops computational and mathematical methods for solving problems pertaining to medical images and their use for biomedical research and clinical care"
+      },
+      {
+        "title": "Download Spherical - My Abandonware",
+        "url": "https://www.myabandonware.com/game/spherical-6b8",
+        "snippet": "Here is the video game \u201cSpherical\u201d! Released in 1989 on Commodore 64, it's still available and playable with some tinkering. It's an \u2026"
+      },
+      {
+        "title": "Stereographic projection - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Stereographic_projection",
+        "snippet": "The stereographic projection gives a way to represent a sphere by a plane.Although any stereographic projection misses one point on the sphere (the projection point), the entire sphere can be mapped using two projections from distinct projection points."
+      },
+      {
+        "title": "2.2 Projections of Variables | Principal Component Analysis for Data ...",
+        "url": "https://pca4ds.github.io/projections-of-variables.html",
+        "snippet": "This book will teach you what is Principal Component Analysis and how you can use it for a variety of data analysis purposes: description, exploration, visualization, pre-modeling, dimension reduction, and data compression.This book will teach you what is Principal Component Analysis and how you can use it for a variety of data analysis purposes: description, exploration, visualization, pre-modeli"
+      },
+      {
+        "title": "PDF MATH 2220: SOME NOTES ON SEC 2 - Cornell University",
+        "url": "https://pi.math.cornell.edu/~boyang/2220%20s2017/math2220_notes/notes_sec_2.1.pdf",
+        "snippet": "Stereographic projection is useful because of Theorem 1 and Theorem 2. In general, it is not possible to map a portion of the sphere into the plane without introducing some distortion. Usually one cares about either the area or the angle. Stereographic projection is the latter. Angle-preserving map projections are important for navigation and it has an application in cartography. For example ...St"
+      },
+      {
+        "title": "Chapter 5. Stereographic projection - University of British ...",
+        "url": "https://personal.math.ubc.ca/~cass/courses/m309-01a/text/ch5.pdf",
+        "snippet": "Chapter 5. Stereographic projection It is impossible to render paths on a sphere onto a flat surface in such a way that all distances remain the same. In drawing a map of a sphere, therefore, some compromises must be made. Most maps adopt one of two possible strategies: (1) areas are preserved, or (2) angles are preserved. Stereographic projection is one way of making maps, and it preserves ..."
+      },
+      {
+        "title": "PDF Notes on Stereographic Coordinates [draft]",
+        "url": "https://complexmanifold.com/notes/stereographic_coordinates.pdf",
+        "snippet": "The purpose of this note is to explicitly list and derive some well-known relationships involving the stereographic projection of a point on the sphere to a plane passing through its equator. These relations are used heavily in theoretical physics, projective and algebraic geometry, and are often cast in different but equivalent ways.The purpose of this note is to explicitly list and derive some w"
+      },
+      {
+        "title": "PCA",
+        "url": "https://www.pca.org/",
+        "snippet": "6 days ago \u00b7 Own a Porsche? Join the largest single marque car club in the world. Over 150,000 of your fellow Porsche owners \u2026"
+      }
+    ],
+    "outcome": null
+  },
+  "primitive-basis": {
+    "nn": "04",
+    "slug": "primitive-basis",
+    "scope": "Deriving and validating a primitive-coverage basis (has_sha, has_linear_ref, has_state_progression and kin) for event corpora with regex detection and spot-check validation.",
+    "queries_attempted": [
+      {
+        "query": "feature engineering detection regex event metadata corpus",
+        "attempt": 1,
+        "raw_results": 55,
+        "kept": 6,
+        "superseded_by_redo": true
+      },
+      {
+        "query": "binary feature vector corpus coverage analysis validation",
+        "attempt": 1,
+        "raw_results": 55,
+        "kept": 6,
+        "superseded_by_redo": true
+      },
+      {
+        "query": "extracting structured features from commit messages pull request metadata",
+        "attempt": 2,
+        "raw_results": 49,
+        "kept": 6
+      },
+      {
+        "query": "pull request dataset machine learning labeled corpus code review",
+        "attempt": 2,
+        "raw_results": 47,
+        "kept": 6
+      }
+    ],
+    "redo_count": 1,
+    "redo_log": [
+      {
+        "attempt": 1,
+        "reason": "first dig mostly off-topic (sneaker store, generic feature engineering pages); both queries re-dug",
+        "new_queries": [
+          "extracting structured features from commit messages pull request metadata",
+          "pull request dataset machine learning labeled corpus code review"
+        ]
+      }
+    ],
+    "results_kept": [
+      {
+        "title": "Awesome Detection Engineer - GitHub",
+        "url": "https://github.com/st0pp3r/Awesome-Detection-Engineer",
+        "snippet": "Online resources related to Detection Engineering. Detection rules, detection logic, attack samples, detection tests and emulation tools, logging configuration and best practices, event log references, resources, labs, data manipulation online tools, blogs, newsletters, good reads, books, trainings, podcasts, videos and twitter/x accounts. - st0pp3r/awesome-detection-engineerOnline resources relat"
+      },
+      {
+        "title": "GitHub - erickatwork/CrowdStrike-Falcon-Events-Data ...",
+        "url": "https://github.com/erickatwork/CrowdStrike-Falcon-Events-Data-Dictionary",
+        "snippet": "CrowdStrike Falcon Events Data Dictionary An open, searchable, machine-readable reference of CrowdStrike Falcon sensor events \u2014 exported to CSV and Markdown for threat hunting, detection engineering, SIEM onboarding, and AI/LLM ingestion."
+      },
+      {
+        "title": "MeAJOR Corpus: A Multi-Source Dataset for Phishing Email Detection",
+        "url": "https://arxiv.org/html/2507.17978v1",
+        "snippet": "We apply consistent preprocessing and feature engineering across various feature categories, resulting in a comprehensive and ready-to-use dataset tailored for ML applications, named MeAJOR (Merged email Assets from Joint Open-source Repositories) Corpus (Section III).We apply consistent preprocessing and feature engineering across various feature categories, resulting in a comprehensive and ready"
+      },
+      {
+        "title": "Sneaker Culture, Designer Apparel + Lifestyle \u2013 Feature",
+        "url": "https://feature.com/",
+        "snippet": "Fashion, music, and art are the three pillars of the FEATURE DNA. Our small sneaker store has grown into a full-fledged fashion \u2026"
+      },
+      {
+        "title": "Learn Feature Engineering Tutorials | Kaggle",
+        "url": "https://www.kaggle.com/learn/feature-engineering",
+        "snippet": "Better features make better models. Discover how to get the most out of your data."
+      },
+      {
+        "title": "Leveraging Data Tables for Detection Engineering in Google ...",
+        "url": "https://security.googlecloudcommunity.com/community-blog-42/leveraging-data-tables-for-detection-engineering-in-google-secops-3996",
+        "snippet": "Write a behavior-based detection based on events ingested into Google SecOps and metadata found in a data table. Conduct a threat hunt to identify suspicious or notable behavior using a statistical search. Thanks for reading.Write a behavior-based detection based on events ingested into Google SecOps and metadata found in a data table. Conduct a threat hunt to identify suspicious or notable behavi"
+      },
+      {
+        "title": "Git Commit Metadata Extraction: Extract structured commit metadata from ...",
+        "url": "https://skills.rest/skill/git-commit-metadata-extraction",
+        "snippet": "What problem does it solve? Gathers and structures complete Git commit metadata from a repository, including parent SHAs, message, file changes, author and committer details. Core Features & Use Cases Universal primitive for deterministic commit data extraction across repositories and submodules. Produces a structured record containing target SHA, parent SHAs, full commit message body, per ..."
+      },
+      {
+        "title": "Extract Metadata from Git Repositories in 2026 | Fastio",
+        "url": "https://fast.io/resources/metadata-extraction-from-git-repositories/",
+        "snippet": "Apr 29, 2026 \u00b7 Learn how to extract commit history, contributor data, and change patterns from git repos using git log, PyDriller, and structured export workflows."
+      },
+      {
+        "title": "EXTRACTING Definition & Meaning - Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/extracting",
+        "snippet": "4 days ago \u00b7 Extract forms a kind of mirror image of abstract: more common as a verb, but also used as a noun and adjective. The \u2026"
+      },
+      {
+        "title": "Codex CLI for Everyday Git Workflows: Commit Messages, PR ...",
+        "url": "https://codex.danielvaughan.com/2026/05/02/codex-cli-git-workflows-commit-messages-pr-descriptions-automation/",
+        "snippet": "May 2, 2026 \u00b7 Combine this with the commit message patterns above for a fully automated git metadata pipeline \u2014 developers focus on code, Codex handles the documentation around it."
+      },
+      {
+        "title": "Conventional Commits",
+        "url": "https://www.conventionalcommits.org/",
+        "snippet": "The commit message should be structured as followsA common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge."
+      },
+      {
+        "title": "Extracting structured data from documents | Nutrient Python SDK",
+        "url": "https://www.nutrient.io/guides/python/extraction/extract-structured-data/",
+        "snippet": "Extract schema-shaped JSON data from documents using Nutrient Python SDK."
+      },
+      {
+        "title": "PReview: A Benchmark Dataset for Pull Request Outcomes and Quality ...",
+        "url": "https://openreview.net/forum?id=cdwp8BXTVV",
+        "snippet": "To construct this dataset we collected and carefully filtered pull request data from six well-known repositories on GitHub, the largest platform for collaborative code development. The dataset consists of 300 pull requests (PRs), each labeled with `green' and `red' flags to predict whether the PR will be merged or rejected."
+      },
+      {
+        "title": "Pull requests \u00b7 huggingface/datasets \u00b7 GitHub",
+        "url": "https://github.com/huggingface/datasets/pulls",
+        "snippet": "\ud83e\udd17 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools - Pull requests \u00b7 huggingface/datasets"
+      },
+      {
+        "title": "PR4Code: A Pull Requests Dataset for AI Code Generation",
+        "url": "https://www.semanticscholar.org/paper/PR4Code%3A-A-Pull-Requests-Dataset-for-AI-Code-Donato-Mariani/1d83b7dca6c867b9f69c803d8f8f1d9f2990f037",
+        "snippet": "This paper introduces PR4Code, a dataset of 4,508 Java and 8,831 Python curated Pull Requests collected from GitHub, each enriched with metadata, commit histories, and detailed code changes, revealing substantial variability in PR structure, commit granularity, and textual content. AI-driven code generation is evolving from handling small, localized code-completion tasks toward supporting the ..."
+      },
+      {
+        "title": "Bugdar: AI-Augmented Secure Code Review for GitHub Pull Requests",
+        "url": "https://arxiv.org/html/2503.17302v1",
+        "snippet": "A comprehensive dataset of real-world GitHub pull requests and source code with known security vulnerabilities was used to evaluate Bugdar. The dataset encompasses a diverse range of projects and programming languages, including Move [13], Solidity, Rust, TypeScript, and Python, particularly focusing on smart contracts and blockchain-related code."
+      },
+      {
+        "title": "PULL Definition & Meaning - Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/pull",
+        "snippet": "6 days ago \u00b7 The meaning of PULL is to exert force upon so as to cause or tend to cause motion toward the force. How to use pull in \u2026"
+      },
+      {
+        "title": "Find Open Datasets for AI and Research | Kaggle",
+        "url": "https://www.kaggle.com/datasets",
+        "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+      }
+    ],
+    "outcome": null
+  },
+  "rsi-loops": {
+    "nn": "05",
+    "slug": "rsi-loops",
+    "scope": "Recursive self-improvement loops applied to an archive: gap-mapping, hypothesis-driven edits, fresh-context subagents, fixpoint rules, and cycle caps with user override.",
+    "queries_attempted": [
+      {
+        "query": "recursive self improvement LLM agent bounded loop",
+        "attempt": 1,
+        "raw_results": 52,
+        "kept": 6
+      },
+      {
+        "query": "fixpoint criterion iterative agent self improvement",
+        "attempt": 1,
+        "raw_results": 48,
+        "kept": 6
+      }
+    ],
+    "redo_count": 0,
+    "redo_log": [],
+    "results_kept": [
+      {
+        "title": "Recursive self-improvement in agentic AI (2026 guide)",
+        "url": "https://datasciencedojo.com/blog/recursive-self-improvement-agentic-ai/",
+        "snippet": "Key Takeaways: Recursive self-improvement (RSI) is a loop where an AI system modifies its own code, prompts, or tools, and each round of changes makes it better at making the next round. Every real example running today is bounded. Agents rewrite code, optimize training runs, or generate harder tasks for themselves.Key Takeaways: Recursive self-improvement (RSI) is a loop where an AI system modifi"
+      },
+      {
+        "title": "Recursive Self-Improvement in AI: From Bounded Self ...",
+        "url": "https://arxiv.org/abs/2607.07663",
+        "snippet": "The taxonomy separates bounded self-refinement -- convergent, evaluable, and industrial practice -- from open-ended recursive self-improvement (RSI), which remains bounded by grounding requirements, collapse dynamics, and compute constraints on every measured axis.The taxonomy separates bounded self-refinement -- convergent, evaluable, and industrial practice -- from open-ended recursive self-impr"
+      },
+      {
+        "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to ...",
+        "url": "https://arxiv.org/html/2607.07663v1",
+        "snippet": "Anthropic\u2019s recent essay on recursive self-improvement [5] frames this transition as a continuum of increasing AI autonomy in the AI-improvement loop: from humans writing all code (pre-2023), through chatbot-assisted coding and autonomous coding agents, to agents that delegate work to other agents today, and \u2014 at the end of the spectrum \u2014 \u201cclosing the loop\u201d: agents that design and ...Anthropic\u2019s r"
+      },
+      {
+        "title": "The Path to Recursive Self-Improving Agents",
+        "url": "https://d2i-ai.github.io/awesome-recursive-self-improving-agents/",
+        "snippet": "Guided by this framework, we systematically review the literature on self-improvement and provide a taxonomy covering self-improvement in individual components and co-improvement across components. In addition, this survey identifies open research problems on the path toward recursive self-improving agents.Guided by this framework, we systematically review the literature on self-improvement and pr"
+      },
+      {
+        "title": "Recursion - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Recursion",
+        "snippet": "A recursive step \u2014 a set of rules that reduces all successive cases toward the base case. For example, the following is a recursive \u2026"
+      },
+      {
+        "title": "GitHub - hankbesser/recursive-agents: A meta-framework for self ...",
+        "url": "https://github.com/hankbesser/recursive-agents",
+        "snippet": "Recursive Agents A Meta-Framework for Self-Improving Agents Recursive Agents implements a three-phase iterative refinement architecture where LLM agents (instances of Classes) critique and improve their own outputs. Unlike single-pass systems, each agent automatically tracks its full revision history, making every decision and debuggable."
+      },
+      {
+        "title": "[2609.13406] Generalized Agent Iteration: One Formal Framework for ...",
+        "url": "https://arxiv.org/abs/2609.13406",
+        "snippet": "When we speak of recursive self-improvement (RSI), are we speaking of a phenomenon, a mechanism, or a prospect? Towards autonomous and evolving intelligence, RSI is being claimed at many scales, while no single framework that formally describes these emerging instances exists. Its counterpart in the classical realm, iterative policy improvement, is characterized by generalized policy iteration ..."
+      },
+      {
+        "title": "GitHub - selfimproving-agent/Awesome-Self-Improving-Agents: A curated ...",
+        "url": "https://github.com/selfimproving-agent/Awesome-Self-Improving-Agents",
+        "snippet": "This repository focuses on: Foundation-Model-Based Agents: Autonomous systems that use foundation models as cognitive cores and operate through persistent scaffolds such as prompts, memory, tools, and control logic. Self-Improvement Loops: Agent-level update loops in which signals or artifacts produced through generation, intrinsic evaluation, or environment interaction are consolidated into ..."
+      },
+      {
+        "title": "Obituaries in Appleton, WI | Appleton Post-Crescent",
+        "url": "https://www.postcrescent.com/obituaries/",
+        "snippet": "The Post-Crescent obituaries and death notices. Remembering the lives of those we've lost."
+      },
+      {
+        "title": "dl.acm.org/doi/10.5555/1022385.1022389",
+        "url": "https://dl.acm.org/doi/10.5555/1022385.1022389",
+        "snippet": "An improved iterative criterion for GDDM with elective parameters."
+      },
+      {
+        "title": "GB2700827A - System and method for estimating confidence and\u2026",
+        "url": "https://patents.google.com/patent/GB2700827A/en",
+        "snippet": "A confidence score, specific to an output from an AI system, is generated. The confidence score is generated by using a language model to process an input query to generate an initial output."
+      },
+      {
+        "title": "PDF Autonomous AI agents and recursive self-improvement: a ... - Springer",
+        "url": "https://link.springer.com/content/pdf/10.1007/s10586-026-06537-4.pdf",
+        "snippet": "Abstract Autonomous artificial intelligence agents capable of reasoning, planning, tool use, and self-improvement mark a rapidly advancing frontier of AI research, yet no unified framework has systematically examined the intersections of their core paradigms. This systematic review examines 249 papers, spanning large language model-based agents, recursive self-improvement, multi-agent ..."
+      }
+    ],
+    "outcome": null
+  },
+  "deep-research-hook": {
+    "nn": "06",
+    "slug": "deep-research-hook",
+    "scope": "Injecting deep-research topics into the archive via parallel subagents (deep-dive, prior-art, comparative), appending results as new corpus items and re-fitting the curve.",
+    "queries_attempted": [
+      {
+        "query": "parallel subagent research orchestration LLM agents",
+        "attempt": 1,
+        "raw_results": 44,
+        "kept": 6
+      },
+      {
+        "query": "deep research workflow multi agent synthesis report",
+        "attempt": 1,
+        "raw_results": 50,
+        "kept": 6
+      }
+    ],
+    "redo_count": 0,
+    "redo_log": [],
+    "results_kept": [
+      {
+        "title": "Using It as a Research Subagent - Parallel",
+        "url": "https://docs.parallel.ai/responses-api/examples/research-subagent",
+        "snippet": "A powerful pattern is to let an orchestrator LLM call the Responses API as a web_research function tool: the orchestrator decomposes the user's problem and plans, and each tool call is delegated to Parallel as a full grounded-research answer. The orchestrator sees finished, synthesized answers \u2014 not raw search results \u2014 so its job reduces to planning sub-questions and reconciling what ..."
+      },
+      {
+        "title": "Navigating Complexity: Orchestrated Problem Solving with Multi-Agent LLMs",
+        "url": "https://arxiv.org/html/2402.16713v1",
+        "snippet": "Feb 26, 2024 \u00b7 To address this gap, we propose a novel approach leveraging decomposition to enable LLMs to tackle vague problems effectively. Our approach involves an orchestrating LLM that interacts with users to understand the problem and then decomposes it into tangible sub-problems."
+      },
+      {
+        "title": "Orchestrator and subagent multi-agent patterns | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/agents/architecture/multi-agent-orchestrator-sub-agent",
+        "snippet": "May 19, 2026 \u00b7 Discover how orchestrator and subagent patterns enable modular, reusable AI solutions. Learn when to use this hierarchical approach for optimal results."
+      },
+      {
+        "title": "Parallels | Run Windows on Mac, VDI, and Enterprise Virtualization ...",
+        "url": "https://www.parallels.com/",
+        "snippet": "Run Windows on Mac with Parallels, trusted by millions worldwide. Access Windows applications on Apple silicon Macs and deliver \u2026"
+      },
+      {
+        "title": "CollierKing/langchain-deepagents-examples | DeepWiki",
+        "url": "https://deepwiki.com/CollierKing/langchain-deepagents-examples",
+        "snippet": "Parallel subagent orchestration for research.Subagent Orchestration. DeepAgents framework with specialized agents. Both examples use main agent coordinating sub-agents."
+      },
+      {
+        "title": "Custom agents and sub-agent orchestration - GitHub Enterprise\u2026",
+        "url": "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/copilot-sdk/features/custom-agents",
+        "snippet": "Define specialized agents with scoped tools and prompts, then let Copilot orchestrate them as sub-agents within a single session. For dispatching multiple sub-agents in parallel, see Fleet mode."
+      },
+      {
+        "title": "Multi-Agent Workflow | SalesforceAIResearch/enterprise-deep-research ...",
+        "url": "https://deepwiki.com/SalesforceAIResearch/enterprise-deep-research/3.2-multi-agent-workflow",
+        "snippet": "Multi-Agent Workflow Relevant source files This document explains the iterative multi-agent research workflow that powers Enterprise Deep Research. It covers the sequential phases of query decomposition, search execution, synthesis, reflection, and plan updates that repeat until research is complete."
+      },
+      {
+        "title": "Deep Research | FlowiseAI",
+        "url": "https://docs.flowiseai.com/tutorials/deep-research",
+        "snippet": "Jun 16, 2025 \u00b7 Deep Research Agent is a sophisticated multi-agent system that can conduct comprehensive research on any topic by breaking down complex queries into manageable tasks, deploying specialized research agents, and synthesizing findings into detailed reports."
+      },
+      {
+        "title": "DeepL Translator | World's Most Accurate Translator",
+        "url": "https://www.deepl.com/en/translator",
+        "snippet": "Ready to transform your business communication with DeepL? Translate texts & full document files instantly. Accurate translations \u2026"
+      },
+      {
+        "title": "History of computer animation",
+        "url": "https://handwiki.org/wiki/History_of_computer_animation",
+        "snippet": "The history of computer animation began as early as the 1940s and 1950s, when people began to experiment with computer graphics \u2013 most notably by John Whitney. It was only by the early 1960s when digital computers had become widely established, that new avenues for innovative computer graphics blossomed"
+      },
+      {
+        "title": "GitHub - temporal-sa/openai-deep-research-py: Deployable Temporal...",
+        "url": "https://github.com/temporal-sa/openai-deep-research-py",
+        "snippet": "Report Synthesis Agent. Directs the agent to synthesize all research findings into comprehensive, well-cited reports.File: workflows/deep_research_workflow.py. import asyncio from typing import List."
+      },
+      {
+        "title": "Building a deep research agent with Temporal - Braintrust",
+        "url": "https://www.braintrust.dev/docs/cookbook/recipes/TemporalDeepResearch",
+        "snippet": "Deep research systems combine multiple agents with web retrieval to produce evidence-based reports. These tasks can involve dozens of searches and hundreds of documents, creating failure modes that Temporal\u2019s durable execution helps protect\u2026"
+      }
+    ],
+    "outcome": null
+  },
+  "cold-start-prior-art": {
+    "nn": "07",
+    "slug": "cold-start-prior-art",
+    "scope": "Prior art on repo-history summarization: git changelog generators, repo summarizers, Linear Insights, and why none joins git plus planning data plus RSI.",
+    "queries_attempted": [
+      {
+        "query": "git changelog generator conventional commits tools comparison",
+        "attempt": 1,
+        "raw_results": 44,
+        "kept": 6
+      },
+      {
+        "query": "open source repository summarization AI tools",
+        "attempt": 1,
+        "raw_results": 57,
+        "kept": 6,
+        "superseded_by_redo": true
+      },
+      {
+        "query": "AI codebase summarization repository understanding tool LLM",
+        "attempt": 2,
+        "raw_results": 47,
+        "kept": 6
+      }
+    ],
+    "redo_count": 1,
+    "redo_log": [
+      {
+        "attempt": 1,
+        "reason": "q2 returned generic document summarizers, not repository summarization; q2 re-dug",
+        "new_queries": [
+          "AI codebase summarization repository understanding tool LLM"
+        ]
+      }
+    ],
+    "results_kept": [
+      {
+        "title": "GitHub - cocogitto/cocogitto: The Conventional Commits toolbox",
+        "url": "https://github.com/cocogitto/cocogitto",
+        "snippet": "There are plenty of tools listed on the conventional commits website to help you generate changelog, git hooks, commit template etc. Some of them are specifically designed for the Conventional Commits specification, and some of them are general purpose. Cocogitto was designed to help you respect the conventional and semver standard and is not intended to be used in any other context. It ..."
+      },
+      {
+        "title": "Conventional Changelog - GitHub",
+        "url": "https://github.com/conventional-changelog/conventional-changelog",
+        "snippet": "The original conventional-changelog package repo can be found in packages/conventional-changelog. If you are new to Conventional Commits, we recommend to read The Complete Guide. We recommend considering the following high level tools for automating versioning, tagging, and CHANGELOG generation: commit-and-tag-version \u2014 a drop-in replacement for npm's version command, handles automated ..."
+      },
+      {
+        "title": "A highly customizable changelog generator \u26f0\ufe0f | git-cliff",
+        "url": "https://git-cliff.org/",
+        "snippet": "git-cliff can generate changelog files for any Git repository that follows the conventional commits specification. Easy Integration. git-cliff can be easily integrated with your Rust/Python/Node.js project as a command-line tool and also can be used as a library for Rust projects."
+      },
+      {
+        "title": "Best Conventional Commit and Changelog Tools on GitHub (2026)",
+        "url": "https://awesome-repositories.com/q/conventional-commit-helper-and-changelog-generator",
+        "snippet": "Conventional Changelog is a set of tools for automatically generating formatted release notes by parsing Git commit messages that follow a structured specification. It includes a commit message parser to transform raw strings into structured data, a changelog generator for producing release notes, and a commit linter to ensure messages adhere to specific conventions before they are merged. The ..."
+      },
+      {
+        "title": "Changelog Generator \u2014 Conventional Commits to CHANGELOG.md",
+        "url": "https://www.dev-toolbox.tech/tools/changelog-generator",
+        "snippet": "The tool pairs well with other DevToolbox utilities. Use the Diff Viewer to compare two changelog versions, the Markdown Preview to render the generated markdown in real time, or the Git Command Builder to construct the git log command that extracts commits between two tags. All processing happens entirely in your browser."
+      },
+      {
+        "title": "Git",
+        "url": "https://git-scm.com/",
+        "snippet": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with \u2026"
+      },
+      {
+        "title": "ai-summarizer \u00b7 GitHub Topics \u00b7 GitHub",
+        "url": "https://github.com/topics/ai-summarizer",
+        "snippet": "The main goal of an AI-Powered News Summarizer is to assist users in quickly understanding the main points and essential information from a large volume of news articles or textual content."
+      },
+      {
+        "title": "GitHub - callstack/ai-summarization: AI summarization tool",
+        "url": "https://github.com/callstack/ai-summarization",
+        "snippet": "This repo showcases a simple, yet effective tool for document summarization. It can work with plain-text and PDF documents in any language supported by underlying LLM (Mistral by default)."
+      },
+      {
+        "title": "12 Open-source Projects and Scripts To Summarize Large Text",
+        "url": "https://medevel.com/12-scripts-to-summrize-large-text/",
+        "snippet": "Automatic summarization is a crucial process for many applications, as it helps to quickly identify the most important information in a large dataset. This not only saves time, but also makes it easier to understand and analyze the data. To achieve this, artificial intelligence algorithms are commonly utilized, with different algorithms being speci..."
+      },
+      {
+        "title": "OpenEvidence",
+        "url": "https://www.openevidence.com/",
+        "snippet": "America\u2019s Official Medical Knowledge Platform. OpenEvidence is the leading medical platform for healthcare professionals, featuring \u2026"
+      },
+      {
+        "title": "WordNet",
+        "url": "https://handwiki.org/wiki/Software:WordNet",
+        "snippet": "WordNet is a lexical database of semantic relations between words in more than 200 languages. WordNet links words into semantic relations including synonyms, hyponyms, and meronyms"
+      },
+      {
+        "title": "GNU.Support website about GNU Operating Systems",
+        "url": "https://gnu.support/",
+        "snippet": "content generation, summarization, transformation, retrieval, reasoning, and more. Generating shell script with Qwen2.5-Coder-14b-Instruct Large Language Model (LLM) This page pro"
+      },
+      {
+        "title": "RE:\ud83e\udd16 Best AI Tools for Developers in 2026: What Are Your Must-Have Tools?",
+        "url": "https://github.com/orgs/community/discussions/187143#discussioncomment-18177461",
+        "snippet": "...bugs Generating documentation Understanding large functions ...can inspect the repository, understand relationships between ...\u2192 classification, extraction, summarization, simple transformations Reasoning model \u2192 debugging...tool For larger repository-level tasks. 3. One strong LLM/API provider For experimentation and building AI.... A tool that helps me understand a 50,000-line unfamiliar code"
+      },
+      {
+        "title": "GitHub - talmadhoun/codebase_summarizer: AI-powered tool that analyzes ...",
+        "url": "https://github.com/talmadhoun/codebase_summarizer",
+        "snippet": "AI-powered tool that analyzes codebases using OpenAI API to generate detailed insights about file structure, dependencies, classes, functions, and architecture. Respects .gitignore, processes in configurable batches, and outputs comprehensive JSON documentation. - talmadhoun/codebase_summarizer"
+      },
+      {
+        "title": "Hierarchical Repository-Level Code Summarization for Business ...",
+        "url": "https://arxiv.org/html/2501.07857v1",
+        "snippet": "Automatic source code summarization is a critical module in our framework, providing backbone to other coding and software engineering related tasks. With extensive experiments, we discovered that it is difficult to create accurate repository-level source code summarization for business oriented application."
+      },
+      {
+        "title": "Repository-Level Code Understanding by LLMs via Hierarchical ... - Springer",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-97576-9_6",
+        "snippet": "The results demonstrate the efficacy of hierarchical summarization in enabling scalable, task-agnostic, and structure-aware repository-level code comprehension for improved bug localization and code search, particularly in scenarios involving non-technical end-user bug reports."
+      },
+      {
+        "title": "OpenAI | Research & Deployment",
+        "url": "https://openai.com/",
+        "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+      },
+      {
+        "title": "Best LLM-Powered Code Comprehension Tool (2025) \u2014 Byteable",
+        "url": "https://byteable.ai/blog/best-llm-powered-code-comprehension-tool-2025",
+        "snippet": "Refact.ai offers lightweight, LLM-based understanding directly within IDEs. It explains functions inline, provides refactor hints, and generates natural-language comments to speed up reviews. Key Features"
+      }
+    ],
+    "outcome": null
+  },
+  "output-audit-trail": {
+    "nn": "08",
+    "slug": "output-audit-trail",
+    "scope": "Output shape for a refreshable history archive: session JSON snapshots, fit metrics, gap-map markdown, changelog audit trail, and refs/ canonical summaries with status comments.",
+    "queries_attempted": [
+      {
+        "query": "audit trail design data pipeline artifacts provenance",
+        "attempt": 1,
+        "raw_results": 46,
+        "kept": 6
+      },
+      {
+        "query": "keep a changelog convention documentation releases",
+        "attempt": 1,
+        "raw_results": 65,
+        "kept": 6
+      }
+    ],
+    "redo_count": 0,
+    "redo_log": [],
+    "results_kept": [
+      {
+        "title": "Atlas: A Framework for ML Lifecycle Provenance & Transparency",
+        "url": "https://arxiv.org/html/2502.19567v2",
+        "snippet": "Atlas leverages runtime pipeline monitoring and open specifications for data and software provenance to collect model artifact integrity and end-to-end lineage metadata. Atlas combines trusted hardware and transparency logs to enhance metadata integrity and enable efficient verification of ML pipeline operations, from training through deployment."
+      },
+      {
+        "title": "Provenance Data Pipeline Engineering | Inference Systems",
+        "url": "https://inferensys.com/services/digital-provenance-and-disinformation-security/provenance-data-pipeline-engineering",
+        "snippet": "Provenance Data Pipeline Engineering Engineering of scalable data pipelines to collect, process, and store high-fidelity provenance metadata at scale, enabling audit trails and forensic analysis for compliance and security."
+      },
+      {
+        "title": "Atlas: A Framework for ML Lifecycle Provenance & Transparency",
+        "url": "https://arxiv.org/html/2502.19567v1",
+        "snippet": "Feb 26, 2025 \u00b7 We propose Atlas, a framework that enables fully attestable ML pipelines. Atlas leverages open specifications for data and software supply chain provenance to collect verifiable records of model artifact authenticity and end-to-end lineage metadata."
+      },
+      {
+        "title": "What is an Audit? - Types of Audits & Auditing Certification | ASQ",
+        "url": "https://asq.org/quality-resources/auditing",
+        "snippet": "Auditing is defined as the on-site verification activity, such as inspection or examination, of a process or quality system, to ensure \u2026"
+      },
+      {
+        "title": "12 Questions and Answers About artifact provenance",
+        "url": "https://www.securityscientist.net/blog/12-questions-and-answers-about-artifact-provenance/",
+        "snippet": "Learn how to secure your deployment pipeline and verify every piece of code using artifact provenance. Get the Free Cybersecurity Toolkit. Templates, frameworks, and resources \u2014 join 6,000+ security pros using them."
+      },
+      {
+        "title": "Capturing end-to-end provenance for machine learning pipelines",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0306437924001534",
+        "snippet": "Modern workflows for developing ML pipelines utilize ML artifact management systems (ML AMSs) such as MLflow in addition to traditional version control systems such as Git. ML AMSs collect data, model, metadata and software artifacts used and produced in pipeline development workflows. While ensuring repeatability and reproducibility, the provenance capabilities are still rudimentary, mainly ..."
+      },
+      {
+        "title": "Common Changelog",
+        "url": "https://common-changelog.org/",
+        "snippet": "Common Changelog is a style guide for changelogs, adapted from and a stricter subset of Keep a Changelog. It embraces the guiding principle of Keep a Changelog that changelogs must be written by humans and for humans, while recognizing that a clean changelog starts with a clean git history."
+      },
+      {
+        "title": "Keep a Changelog",
+        "url": "https://keepachangelog.com/en/1.1.0/",
+        "snippet": "What is a changelog? A changelog is a file which contains a curated, chronologically ordered list of notable changes for each version of a project. Why keep a changelog? To make it easier for users and contributors to see precisely what notable changes have been made between each release (or version) of the project. Who needs a changelog? People do. Whether consumers or developers, the end ..."
+      },
+      {
+        "title": "Keep a Changelog",
+        "url": "https://keepachangelog.com/en/1.0.0/",
+        "snippet": "Keep a Changelog. Don\u2019t let your friends dump git logs into changelogs. Version 1.0.0. # Changelog. All notable changes to this project will be documented in this file."
+      },
+      {
+        "title": "CHANGELOG.md Best Practices: Keep a Changelog Convention",
+        "url": "https://codersnexus.com/tutorials/github-complete-course/changelog-md-maintaining-human-readable-version-history",
+        "snippet": "CHANGELOG.md: Maintaining a Human-Readable Version History Learn how to maintain a genuinely useful CHANGELOG.md file, following the Keep a Changelog convention, either by hand or fully automated."
+      },
+      {
+        "title": "Ubuntu version history",
+        "url": "https://en.wikipedia.org/wiki/Ubuntu_version_history",
+        "snippet": "Ubuntu releases are made semiannually by Canonical Ltd, the developers of the Ubuntu operating system, using the year and month of the release as a version number. The first Ubuntu release, for example, was Ubuntu 4.10 and was released on 20 October 2004"
+      },
+      {
+        "title": "Google Keep",
+        "url": "https://keep.google.com/",
+        "snippet": "Save your thoughts, wherever you are."
+      }
+    ],
+    "outcome": null
+  },
+  "scale-and-risks": {
+    "nn": "09",
+    "slug": "scale-and-risks",
+    "scope": "Operational limits: API rate caps, curve fit cost at 100k+ commits, asymmetric joins, PR body truncation, empty-join sparse cells.",
+    "queries_attempted": [
+      {
+        "query": "linear api rate limits authenticated requests per hour",
+        "attempt": 1,
+        "raw_results": 44,
+        "kept": 6
+      },
+      {
+        "query": "github api pagination large repository performance limits",
+        "attempt": 1,
+        "raw_results": 49,
+        "kept": 6
+      }
+    ],
+    "redo_count": 0,
+    "redo_log": [],
+    "results_kept": [
+      {
+        "title": "Rate limiting \u2013 Linear Developers",
+        "url": "https://linear.app/developers/rate-limiting",
+        "snippet": "Requests authenticated using an API key can request up to 3,000,000 points per hour. Requests are associated with the authenticated user, which means all requests by the same user share the same quota even when using different API keys."
+      },
+      {
+        "title": "Linear API Rate Limits and Headers | Throttle",
+        "url": "https://throttle.com/api-limits/linear/",
+        "snippet": "Limits keep their provider-specific dimensions. Linear tracks request count and GraphQL complexity independently. Some endpoints apply additional lower request limits. Authentication: Personal API key, OAuth access token, Unauthenticated requests where supported Primary scope: Authenticated User, OAuth App User, OAuth App, Or Source IP"
+      },
+      {
+        "title": "API Limits - Throttle",
+        "url": "https://throttle.com/api-limits/",
+        "snippet": "Common primary limit 5,000 requests per hour for most authenticated users Open resource \u2192 Payments Verified Jul 28, 2026"
+      },
+      {
+        "title": "Linear \u2013 The system for product development",
+        "url": "https://linear.app/",
+        "snippet": "Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products. Linear is \u2026"
+      },
+      {
+        "title": "REST API | LN Markets Docs",
+        "url": "https://docs.lnmarkets.com/pt/api/",
+        "snippet": "Authenticated requests: 1 token per request.While unauthenticated users are effectively limited to 4 request per second and 60 per minute. The API follows the IETF HTTP API Rate Limit Headers specification (draft-10)."
+      },
+      {
+        "title": "Rate limits and API status | Prolific API",
+        "url": "https://docs.prolific.com/api-reference/introduction/rate-limits-and-api-status",
+        "snippet": "The Prolific API enforces rate limits per authenticated account (or per IP address, if unauthenticated)."
+      },
+      {
+        "title": "Mastering GitHub API Pagination - A Complete Guide to Handling Large ...",
+        "url": "https://moldstud.com/articles/p-mastering-github-api-pagination-a-complete-guide-to-handling-large-datasets",
+        "snippet": "Grasp the fundamentals of pagination in the GitHub API to efficiently manage large datasets. Knowing how pagination works will help you retrieve data in manageable chunks, improving performance and usability. Identify pagination types. Offset-basedUses a page number."
+      },
+      {
+        "title": "github search limit results - Stack Overflow",
+        "url": "https://stackoverflow.com/questions/37602893/github-search-limit-results",
+        "snippet": "I need to do a very large search on Github for a statistic in my thesis.Have you looked at the GitHub Archive? It could be a way to get your data without having to bother the live GitHub search API, which as you found out gives a limited number of results, and is also rate-limited."
+      },
+      {
+        "title": "Repository limits - GitHub Docs",
+        "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits",
+        "snippet": "Most of the limits below affect both GitHub and the API. Repository size To ensure optimal performance and manageability, we recommend staying within the following maximum limits for repository structure and size. On-disk size: 10 GB On-disk size refers to the size of the .git folder (the compressed form of the repository). Large repositories can slow down fetch operations and increase clone ..."
+      },
+      {
+        "title": "Why GitHub Cannot Paginate Through Millions of Repositories - Deep ...",
+        "url": "https://dev.to/mayank7924/why-github-silently-caps-your-search-at-1000-results-and-whats-actually-happening-underneath-1oik",
+        "snippet": "Aug 3, 2026 \u00b7 GitHub documents this cap directly \u2014 it's not rate limiting, and it's not a bug that slipped through. Once you understand the mechanism it's protecting against, the same wall shows up in a lot of places that don't bother telling you about it \u2014 including, probably, a table you've built yourself."
+      },
+      {
+        "title": "Twitter",
+        "url": "https://handwiki.org/wiki/Company:Twitter",
+        "snippet": "Twitter (/\u02c8tw\u026at\u0259r/) is an American microblogging and social networking service on which users post and interact with messages known as \"tweets\". Registered users can post, like, and retweet tweets, but unregistered users can only read them"
+      },
+      {
+        "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead.",
+        "url": "https://github.com/",
+        "snippet": "Whether you\u2019re scaling your development process or just learning how to code, GitHub is where you belong. Join the world\u2019s most \u2026"
+      }
+    ],
+    "outcome": null
+  }
+}
