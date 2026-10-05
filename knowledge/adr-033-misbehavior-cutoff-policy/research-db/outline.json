@@ -1,0 +1,218 @@
+{
+  "topic": "misbehavior-triggered cutoff policy for AI/ML workloads on PCI devices (ADR-033): policy design, ideation and decision record, trigger tiers, governance",
+  "source_doc": "session/refs-mint/refs_corpus/adr-033-misbehavior-cutoff-policy-2026-07-28.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "vfio-user-mediation-boundary",
+      "scope": "The vfio-user / IOMMU-gated PCI passthrough mediation boundary the policy sits on, and why a host-side device server is the cutoff point.",
+      "seed_queries": [
+        "vfio-user protocol device virtualization libvfio-user QEMU",
+        "vfio-user server DMA mediation device isolation hypervisor"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "iommu-dma-threat-model",
+      "scope": "The IOMMU/DMA threat model for GPU passthrough: why DMA from a device can read host memory and exfiltrate secrets without touching the network.",
+      "seed_queries": [
+        "IOMMU DMA attacks GPU passthrough security",
+        "Thunderbolt DMA attack external DMA protection IOMMU"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "severity-ladder-policy",
+      "scope": "Severity-ladder escalation policy design: INFO/WARN/THROTTLE/SEVER tiers, monotonicity, and mapping trigger signal to tier to action.",
+      "seed_queries": [
+        "incident response escalation severity levels tiered policy",
+        "adaptive security response graduated enforcement escalation model"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "device-boundary-detection",
+      "scope": "Detecting AI/ML workload misbehavior from a host-side device observer without seeing model internals: DMA-window anomaly signals and false-positive risk.",
+      "seed_queries": [
+        "GPU DMA anomaly detection hypervisor monitoring",
+        "virtual machine malicious workload detection false positives behavioral monitoring"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "snapshot-and-sever",
+      "scope": "Snapshot-and-sever at SEVER: VM state capture (qcow2 snapshots), vfio-user socket revocation, freezing rather than killing the VM, and forensic recovery.",
+      "seed_queries": [
+        "QEMU qcow2 snapshot VM state capture forensics",
+        "libvirt snapshot memory state forensic analysis virtualization"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "ideation-decision-record",
+      "scope": "The ideation method behind the ADR: autonomous variation generation, structured lenses, and the painkiller/switching-cost/defensibility/testability scoring that picked the finalist.",
+      "seed_queries": [
+        "structured ideation lenses SCAMPER systematic variation generation",
+        "idea scoring rubric criteria decision matrix prioritization"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "rejected-alternatives",
+      "scope": "The rejected design alternatives and their recorded critique: kill-the-VM, network-only cutoff, operator-in-the-loop watchdog, pre-deployment fingerprinting, constraint removal.",
+      "seed_queries": [
+        "incident response kill versus contain tradeoff forensics",
+        "machine learning model signing provenance supply chain verification"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "governance-mvp-gates",
+      "scope": "Governance: open questions (evaluator placement, snapshot ownership, interplay with resource-quota cutoffs, recovery story), MVP scope, assumptions to validate, and the ADR/issue path.",
+      "seed_queries": [
+        "architecture decision record context decision alternatives consequences",
+        "minimum viable product validation assumptions experiment design"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.1358,
+        "probabilities": {
+          "0": 0.2124,
+          "1": 0.4393,
+          "2": 0.3483
+        },
+        "confidence": 0.0391,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.3412,
+        "probabilities": {
+          "0": 0.1479,
+          "1": 0.3629,
+          "2": 0.4892
+        },
+        "confidence": 0.0893,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.8715,
+        "probabilities": {
+          "0": 0.0349,
+          "1": 0.0588,
+          "2": 0.9063
+        },
+        "confidence": 0.7391,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.4113,
+        "probabilities": {
+          "0": 0.1297,
+          "1": 0.3293,
+          "2": 0.541
+        },
+        "confidence": 0.1269,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.4305,
+        "probabilities": {
+          "0": 0.1353,
+          "1": 0.2989,
+          "2": 0.5658
+        },
+        "confidence": 0.1417,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.7231,
+        "probabilities": {
+          "0": 0.0817,
+          "1": 0.1136,
+          "2": 0.8047
+        },
+        "confidence": 0.5007,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.3664,
+        "probabilities": {
+          "0": 0.1398,
+          "1": 0.354,
+          "2": 0.5062
+        },
+        "confidence": 0.1016,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.5073,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.2927,
+          "2": 0.6073
+        },
+        "confidence": 0.1968,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1255,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": []
+  },
+  "kept": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "dropped": []
+}

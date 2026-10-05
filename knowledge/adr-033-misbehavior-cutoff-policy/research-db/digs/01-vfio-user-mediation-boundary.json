@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "vfio-user-mediation-boundary",
+  "queries_attempted": [
+    {
+      "query": "vfio-user protocol device virtualization libvfio-user QEMU",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "vfio-user server DMA mediation device isolation hypervisor",
+      "attempt": 1,
+      "raw_results": 56,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "https://movementarian.org/blog/posts/2025-08-27-vfio-user-client-in-qemu/",
+    "https://qemu.googlesource.com/libvfio-user/",
+    "https://github.com/nutanix/libvfio-user",
+    "https://qemu.googlesource.com/libvfio-user/+/a8242d117118d5191dad69a96e28a21d66fe8b50/README.md",
+    "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "https://kernel-internals.org/iommu/vfio-internals/",
+    "https://www.kernel.org/doc/html/latest/driver-api/vfio.html",
+    "https://github.com/nutanix/libvfio-user",
+    "https://docs.kernel.org/driver-api/vfio.html",
+    "https://kernel-internals.org/virtualization/vfio/"
+  ],
+  "outcome": null,
+  "scope": "The vfio-user / IOMMU-gated PCI passthrough mediation boundary the policy sits on, and why a host-side device server is the cutoff point."
+}
