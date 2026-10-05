@@ -1,0 +1,36 @@
+{
+ "nn": 5,
+ "slug": "mode-semantics-cleanup",
+ "scope": "Execution mode semantics: one-shot (--rm), ephemeral (--ephemeral), persistent (systemd unit), destructive one-shot (disk flash); lifetime, cleanup contract, and exit-rc propagation per mode.",
+ "queries_attempted": [
+  {
+   "query": "docker run --rm cleanup semantics exit code",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "systemd-nspawn ephemeral overlay discarded on exit",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-interpret-all-docker-container-exit-codes/view",
+  "https://docs.docker.com/reference/cli/docker/container/run/",
+  "https://stackoverflow.com/questions/49726272/what-is-the-rm-flag-doing",
+  "https://stackoverflow.com/questions/31297616/what-is-the-authoritative-list-of-docker-run-exit-codes",
+  "https://www.docker.com/",
+  "https://docs.docker.com/reference/cli/docker/container/run",
+  "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "https://sumguy.com/systemd-nspawn-the-forgotten-container/",
+  "https://devops-geek.net/devops-lab/building-immutable-bastion-hosts-with-systemd-nspawn-and-ephemeral-overlayfs-mounts/",
+  "https://deepwiki.com/systemd/systemd/5.1-systemd-nspawn-container-manager",
+  "https://www.man7.org/linux/man-pages/man5/systemd.nspawn.5.html",
+  "https://en.wikipedia.org/wiki/Systemd"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+ "nn": 6,
+ "slug": "mode-hazards-idempotency",
+ "scope": "Mode-specific hazards: state leaks after interrupted cleanup (orphaned network namespaces, virbr0 left UP), restart-expectation bugs under PrivateTmp/RuntimeDirectory, and confirmation gates for destructive one-shot modes (bootc install to-disk vs to-filesystem).",
+ "queries_attempted": [
+  {
+   "query": "bootc install to-disk destructive wipe confirmation",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "systemd RuntimeDirectory removed on stop state loss",
+   "attempt": 2,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.mankier.com/8/bootc-install-to-disk",
+  "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+  "https://jmarrero.github.io/bootc/bootc-install.html",
+  "https://github.com/bootc-dev/bootc/blob/main/docs/src/man/bootc-install-to-disk.8.md",
+  "https://github.com/bootc-dev/bootc/blob/main/docs/src/bootc-install.md",
+  "https://github.com/bootc-dev/bootc",
+  "https://superuser.com/questions/1776721/why-is-the-runtimedirectory-is-not-created-by-user-service-startup",
+  "https://github.com/systemd/systemd/issues/35427",
+  "https://linux-audit.com/systemd/settings/units/runtimedirectorymode/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://unix.stackexchange.com/questions/354583/how-to-automatically-create-a-runtime-folder-with-a-systemd-service-or-tmpfiles",
+  "https://systemd.io/ENVIRONMENT/"
+ ],
+ "outcome": "authored"
+}
