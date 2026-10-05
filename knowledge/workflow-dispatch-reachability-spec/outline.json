@@ -1,0 +1,248 @@
+{
+  "topic": "workflow_dispatch reachability assertions for GitHub Actions CI orchestrators",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "orphan-workflow-problem",
+      "scope": "The orphan-workflow bug class: a workflow file with workflow_dispatch but no membership in the orchestrator group tables is invisible to dispatch tooling; the yubiOS 2026-08-02 fold of 4 orphan workflows into the tests group as the historical record.",
+      "seed_queries": [
+        "github actions workflow_dispatch orphan workflow not reachable orchestrator",
+        "CI orchestrator group routing orphaned workflow audit best practice"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "dispatch-trigger-anatomy",
+      "scope": "How workflow_dispatch is declared and parsed: trigger inputs and choice types, the YAML 1.1 on-key boolean gotcha (on: true), and how parsers must special-case it.",
+      "seed_queries": [
+        "github actions workflow_dispatch trigger inputs documentation",
+        "github actions yaml 1.1 on key parsed as boolean gotcha"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "orchestrator-group-routing",
+      "scope": "Central ci.yml dispatcher design: case-statement group tables, group names (firmware, tests, vm-tests, fetches, ci-builders, forks, all), and the reachability contract between hub and leaf workflows.",
+      "seed_queries": [
+        "github actions central orchestrator workflow dispatch groups case statement",
+        "github actions hub workflow dispatch matrix groups pattern"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "assertion-script-design",
+      "scope": "The reachability assertion algorithm: walking .github/workflows/*.yml, detecting workflow_dispatch, extracting group tables from run blocks, bidirectional orphan and stale-entry checks.",
+      "seed_queries": [
+        "python pyyaml parse github actions workflow files detect triggers",
+        "script assert all workflows referenced CI configuration lint bidirectional check"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "output-formats-ci",
+      "scope": "Machine-readable audit output: text vs JSON vs SARIF, severity levels, GitHub code scanning ingestion via sarif upload, and artifact upload of reports.",
+      "seed_queries": [
+        "SARIF format github code scanning upload artifact",
+        "github actions output json report artifact upload"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "ci-gate-workflow",
+      "scope": "The ci_dispatch-reachability gate workflow: pull_request path filters, weekly cron schedule, workflow_dispatch self-trigger with inputs, pinned actions, least-privilege permissions.",
+      "seed_queries": [
+        "github actions pull_request paths filter trigger",
+        "github actions scheduled workflow cron pinned actions permissions"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "api-enumeration-dispatch",
+      "scope": "Enumerating and firing workflows through the GitHub REST API: list repo workflows, POST dispatches endpoint, run/job polling, and required token scopes.",
+      "seed_queries": [
+        "github rest api list repository workflows endpoint",
+        "github api create workflow dispatch event permissions scope"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "alternative-tooling",
+      "scope": "Alternative and complementary tooling for workflow hygiene: actionlint, workflow linters, GitHub rulesets and required workflows, and how a custom assertion compares.",
+      "seed_queries": [
+        "actionlint github actions workflow linter features",
+        "github rulesets required workflows repository enforcement"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "phased-adoption",
+      "scope": "Phased adoption: shipping the script report-only, cleaning baseline WARNs, tightening to a required PR gate, and first-run expectations on the orchestrator.",
+      "seed_queries": [
+        "rollout new required status check CI gate gradual",
+        "introduce new CI check without breaking pull requests migration"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8098,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0472,
+          "1": 0.0958,
+          "2": 0.857
+        },
+        "confidence": 0.6188
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.7784,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0471,
+          "1": 0.1274,
+          "2": 0.8255
+        },
+        "confidence": 0.5498
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.5785,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1039,
+          "1": 0.2137,
+          "2": 0.6824
+        },
+        "confidence": 0.2832
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.7544,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0626,
+          "1": 0.1204,
+          "2": 0.817
+        },
+        "confidence": 0.5288
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.9942,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2649,
+          "1": 0.4759,
+          "2": 0.2592
+        },
+        "confidence": 0.0457
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.2923,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1772,
+          "1": 0.3533,
+          "2": 0.4695
+        },
+        "confidence": 0.065
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.7082,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0679,
+          "1": 0.1561,
+          "2": 0.776
+        },
+        "confidence": 0.4468
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.3422,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.7099,
+          "1": 0.238,
+          "2": 0.0521
+        },
+        "confidence": 0.345
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.5343,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.5449,
+          "1": 0.3759,
+          "2": 0.0792
+        },
+        "confidence": 0.1667
+      }
+    },
+    "usage": {
+      "input_tokens": 1189,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "nn": 5,
+  "slug": "output-formats-ci",
+  "scope": "Machine-readable audit output: text vs JSON vs SARIF, severity levels, GitHub code scanning ingestion via sarif upload, and artifact upload of reports.",
+  "queries_attempted": [
+    {
+      "query": "SARIF format github code scanning upload artifact",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6
+    },
+    {
+      "query": "github actions output json report artifact upload",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/integrate-with-existing-tools/upload-sarif-file",
+    "https://docs.github.com/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github?learn=code_security_integration&learnProduct=code-security",
+    "https://github.com/github/codeql-action/blob/main/upload-sarif/action.yml",
+    "https://docs.qualys.com/en/integration/iac/github/upload_sarif_file_on_github.htm",
+    "https://github.com/veracode/veracode-pipeline-scan-results-to-sarif",
+    "https://github.com/advanced-security/filter-sarif",
+    "https://github.com/actions/upload-artifact",
+    "https://github.com/marketplace/actions/publish-test-results",
+    "https://docs.github.com/en/actions/tutorials/store-and-share-data",
+    "https://github.blog/tag/github-actions-artifacts/",
+    "https://github.com/",
+    "https://github.com/huginn/huginn/pull/3734"
+  ],
+  "outcome": "authored"
+}

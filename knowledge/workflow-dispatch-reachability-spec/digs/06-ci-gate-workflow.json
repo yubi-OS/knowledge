@@ -1,0 +1,36 @@
+{
+  "nn": 6,
+  "slug": "ci-gate-workflow",
+  "scope": "The ci_dispatch-reachability gate workflow: pull_request path filters, weekly cron schedule, workflow_dispatch self-trigger with inputs, pinned actions, least-privilege permissions.",
+  "queries_attempted": [
+    {
+      "query": "github actions pull_request paths filter trigger",
+      "attempt": 1,
+      "raw_results": 36,
+      "kept": 6
+    },
+    {
+      "query": "github actions scheduled workflow cron pinned actions permissions",
+      "attempt": 1,
+      "raw_results": 36,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/dorny/paths-filter",
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+    "https://github.com/marketplace/actions/path-filter",
+    "https://github.com/getlantern/lantern/pull/9062",
+    "https://github.com/marketplace/actions/paths-changes-filter",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+    "https://oneuptime.com/blog/post/2025-12-20-scheduled-workflows-cron-github-actions/view",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+    "https://github.com/marketplace/actions/set-cron-schedule",
+    "https://cronwizard.com/github-actions-cron",
+    "https://simplecrontab.com/guides/github-actions-cron-setup/",
+    "https://github.com/marketplace/actions/schedule-workflow"
+  ],
+  "outcome": "authored"
+}
