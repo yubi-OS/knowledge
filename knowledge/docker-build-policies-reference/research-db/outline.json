@@ -1,0 +1,215 @@
+{
+ "topic": "Docker Build Policies (OPA/Rego)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "policy-model",
+   "scope": "What Docker Build Policies are: OPA Rego supply-chain rules enforced before any layer executes; version requirements Buildx 0.31.0+ and the BuildKit floor (0.26.0 vs 0.27.0 doc mismatch)",
+   "seed_queries": [
+    "docker buildx build policies opa rego",
+    "docker buildx policies version requirements buildkit"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "policy-files",
+   "scope": "Policy file convention and the --policy flag: auto-load by Dockerfile base name (Dockerfile.rego), filename=, reset=true, strict=true",
+   "seed_queries": [
+    "docker buildx --policy filename reset strict flag",
+    "docker buildx policy auto-load Dockerfile.rego convention"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "rego-semantics",
+   "scope": "Rego semantics for build policies: package docker, default allow := false, allow rules, and the decision output object",
+   "seed_queries": [
+    "docker build policy rego default allow package docker",
+    "opa rego policy decision allow rule buildkit"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "input-object",
+   "scope": "The policy input object: input.local plus the full documented input.image field list (ref, isCanonical, hasProvenance, signatures, etc.) and the absent hasSBOM field",
+   "seed_queries": [
+    "docker build policies input.image fields reference",
+    "docker build policies input.image hasSBOM provenance signatures"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "policy-rules",
+   "scope": "Common policy rules: approved-registry allowlists (startswith ref), digest pinning via isCanonical, provenance and signature attestation gating, metadata version constraints",
+   "seed_queries": [
+    "docker build policy allow registry startswith example",
+    "docker build policy require digest isCanonical provenance example"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "policy-eval",
+   "scope": "docker buildx policy eval: standalone policy evaluation with --print, --fields, --file, --platform; debugging builds with --policy log-level=debug",
+   "seed_queries": [
+    "docker buildx policy eval print fields",
+    "docker buildx policy log-level debug debugging"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "yubios-integration",
+   "scope": "yubiOS integration: the central yubiOS.rego pattern with reset=true,strict=true,filename=, gating FROM images on dhi.io registry, digest pinning, and provenance in CI and bake builds",
+   "seed_queries": [
+    "yubi-OS docker build policy rego",
+    "docker bake build policy strict reset filename CI"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "ecosystem",
+   "scope": "Ecosystem context: SLSA provenance attestations feeding policy inputs, Docker Scout post-build CVE monitoring as complement, and SOC 2 / ISO 27001 supply-chain compliance framing",
+   "seed_queries": [
+    "docker build policies slsa provenance attestation",
+    "docker scout complement build policies supply chain compliance"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8811,
+    "probabilities": {
+     "0": 0.0292,
+     "1": 0.0606,
+     "2": 0.9102
+    },
+    "confidence": 0.7496,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.9,
+    "probabilities": {
+     "0": 0.021,
+     "1": 0.058,
+     "2": 0.921
+    },
+    "confidence": 0.7781,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8586,
+    "probabilities": {
+     "0": 0.028,
+     "1": 0.0853,
+     "2": 0.8867
+    },
+    "confidence": 0.6914,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.8902,
+    "probabilities": {
+     "0": 0.0243,
+     "1": 0.0612,
+     "2": 0.9145
+    },
+    "confidence": 0.7609,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.9135,
+    "probabilities": {
+     "0": 0.0178,
+     "1": 0.051,
+     "2": 0.9312
+    },
+    "confidence": 0.8052,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.6841,
+    "probabilities": {
+     "0": 0.0688,
+     "1": 0.1783,
+     "2": 0.7529
+    },
+    "confidence": 0.4051,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.5701,
+    "probabilities": {
+     "0": 0.0894,
+     "1": 0.2511,
+     "2": 0.6595
+    },
+    "confidence": 0.259,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.0522,
+    "probabilities": {
+     "0": 0.1458,
+     "1": 0.6563,
+     "2": 0.1979
+    },
+    "confidence": 0.2367,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1321,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}

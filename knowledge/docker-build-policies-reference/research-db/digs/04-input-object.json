@@ -1,0 +1,33 @@
+{
+ "nn": "04",
+ "slug": "input-object",
+ "scope": "The policy input object: input.local plus the full documented input.image field list (ref, isCanonical, hasProvenance, signatures, etc.) and the absent hasSBOM field",
+ "queries_attempted": [
+  {
+   "query": "docker build policies input.image fields reference",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "docker build policies input.image hasSBOM provenance signatures",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/inputs/",
+  "https://www.billdietrich.me/PenetrationTestingAndBugBountyHunting.html",
+  "https://abc.vhrghala.org/p/https/docs.docker.com/build/policies/inputs/",
+  "https://docs.docker.com/build/policies/inputs",
+  "https://docs.docker.com/build/policies/validate-images/",
+  "https://docs.docker.com/build/policies/",
+  "https://liudonghua123.github.io/docker-docs/build/metadata/attestations/",
+  "https://docs.docker.com/reference/compose-file/build/",
+  "https://deepwiki.com/docker/build-push-action/4.4-build-attestations"
+ ],
+ "outcome": "authored"
+}

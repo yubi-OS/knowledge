@@ -1,0 +1,30 @@
+{
+ "nn": "05",
+ "slug": "policy-rules",
+ "scope": "Common policy rules: approved-registry allowlists (startswith ref), digest pinning via isCanonical, provenance and signature attestation gating, metadata version constraints",
+ "queries_attempted": [
+  {
+   "query": "docker build policy allow registry startswith example",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "docker build policy require digest isCanonical provenance example",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-implement-docker-image-allow-lists/view",
+  "https://docs.docker.com/build/policies/examples/",
+  "https://docs.docker.com/build/policies/examples.md",
+  "https://docs.docker.com/build/policies/examples",
+  "https://matsuand.github.io/docker.docs-ja/build/policies/examples/",
+  "https://www.itjtv.net/build/policies/validate-images/"
+ ],
+ "outcome": "authored"
+}

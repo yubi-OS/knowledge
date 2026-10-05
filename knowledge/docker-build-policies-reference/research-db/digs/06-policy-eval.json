@@ -1,0 +1,31 @@
+{
+ "nn": "06",
+ "slug": "policy-eval",
+ "scope": "docker buildx policy eval: standalone policy evaluation with --print, --fields, --file, --platform; debugging builds with --policy log-level=debug",
+ "queries_attempted": [
+  {
+   "query": "docker buildx policy eval print fields",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx policy log-level debug debugging",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/reference/cli/docker/buildx/policy/eval/",
+  "https://docs.docker.com/build/policies/debugging/",
+  "https://zvezdochetu.github.io/docker-docs-course/build/policies/debugging/",
+  "https://github.com/docker/buildx/blob/master/docs/reference/buildx_policy_eval.md",
+  "https://docs.docker.com/build/policies/debugging.md",
+  "https://stackoverflow.com/questions/26220957/how-can-i-inspect-the-file-system-of-a-failed-docker-build",
+  "https://docs.docker.com/reference/cli/docker/container/logs/"
+ ],
+ "outcome": "authored"
+}
