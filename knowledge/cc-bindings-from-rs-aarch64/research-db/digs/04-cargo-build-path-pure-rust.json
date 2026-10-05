@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "cargo-build-path-pure-rust",
+  "queries_attempted": [
+    {
+      "query": "crubit cargo_build documentation cc_bindings_from_rs",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "librustc_driver so rpath ORIGIN rustc-dev component",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://crubit.rs/overview/cargo_build.html",
+    "https://github.com/google/crubit/tree/main/cc_bindings_from_rs",
+    "https://github.com/google/crubit/tree/main/cargo",
+    "https://crubit.rs/cpp/building.html",
+    "https://teslamotorsclub.com/tmc/threads/how-to-power-charge-your-laptop-in-a-tesla-using-usb-c-power.183176/",
+    "https://deepwiki.com/google/crubit/3.1-architecture-and-entry-points",
+    "https://github.com/rust-lang/rust/issues/140299",
+    "https://internals.rust-lang.org/t/librustc-driver-so-not-reproducible/19639",
+    "https://github.com/rust-lang/rust/issues/137469",
+    "https://jyn.dev/rustc-driver/",
+    "https://stackoverflow.com/questions/78431075/rust-program-cannot-find-so-library-on-the-path-where-it-is",
+    "https://www.accuweather.com/en/us/scottsville/42164/hourly-weather-forecast/333314"
+  ],
+  "outcome": "authored",
+  "scope": "cc_bindings_from_rs as a pure-Rust cargo binary: manifest location, cargo build --release --locked, required Linux RUSTFLAGS for librustc_driver rpath, and the rustc-dev component requirement."
+}

@@ -1,0 +1,374 @@
+{
+  "topic": "crubit cc_bindings_from_rs on linux-aarch64: the absence of prebuilt aarch64 bindings generators anywhere in the ecosystem, and the native-build route to producing them inside a Chromium toolchain",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "crubit-and-cc-bindings-from-rs-overview",
+      "scope": "What crubit is and what cc_bindings_from_rs generates (rs_core.h, rs_alloc.h, rs_std.h headers) for Chromium C++ callers of Rust code via enable_cpp_api_from_rust.",
+      "seed_queries": [
+        "crubit cc_bindings_from_rs Rust to C++ bindings generator",
+        "chromium enable_cpp_api_from_rust rs_core.h generated headers"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "distribution-gap-no-prebuilt-binaries",
+      "scope": "The ecosystem-wide absence of prebuilt cc_bindings_from_rs binaries: zero GitHub releases, no CIPD or GCS artifacts, no distro packages on any architecture, forcing source builds.",
+      "seed_queries": [
+        "crubit cc_bindings_from_rs prebuilt binary download release",
+        "cc_bindings_from_rs package debian nixpkgs fedora"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "ci-and-nightly-matrix-x86-64-only",
+      "scope": "crubit upstream CI reality: rust.yml workflows and the nightly matrix run x86_64-Linux only, the repo is active but distributes nothing, and the tracker has no arm64 host issues.",
+      "seed_queries": [
+        "crubit github actions rust.yml nightly CI x86_64 linux",
+        "crubit github releases artifacts distribution"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "cargo-build-path-pure-rust",
+      "scope": "cc_bindings_from_rs as a pure-Rust cargo binary: manifest location, cargo build --release --locked, required Linux RUSTFLAGS for librustc_driver rpath, and the rustc-dev component requirement.",
+      "seed_queries": [
+        "crubit cargo_build documentation cc_bindings_from_rs",
+        "librustc_driver so rpath ORIGIN rustc-dev component"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "chromium-rust-toolchain-cipd",
+      "scope": "How Chromium packages its rust toolchain: the rust-toolchain CIPD platform variants (Linux_x64, Mac, Mac_arm64, Win), no Linux_arm64 variant, and cc_bindings_from_rs shipping inside the toolchain tarball.",
+      "seed_queries": [
+        "chromium rust toolchain CIPD package platforms Linux_arm64",
+        "chromium DEPS rust_toolchain cipd platforms"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "build-crubit-py-arch-detection",
+      "scope": "Chromium tools/rust/build_crubit.py: host-arch auto-detection for the Debian sysroot, the CRUBIT_BINS list at tag 141, and tracking bug 351793625 for building crubit on all host platforms.",
+      "seed_queries": [
+        "chromium build_crubit.py CRUBIT_BINS arm64 sysroot",
+        "chromium issue 351793625 crubit all host platforms"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "gn-mechanics-cpp-api-from-rust",
+      "scope": "The GN plumbing that forces the generator: cpp_api_from_rust.gni hardcoded binary path and clang-format reference, rust.gni computed enable_cpp_api_from_rust that args.gn cannot disable, and the resulting build graph dependency.",
+      "seed_queries": [
+        "chromium cpp_api_from_rust.gni cc_bindings_from_rs path clang-format",
+        "chromium rust.gni enable_cpp_api_from_rust computed"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "native-arm64-chromium-prior-art",
+      "scope": "Prior art for native linux-aarch64 Chromium builds: the jasonrandrews/build-chromium-linux-arm64 pipeline tested on Graviton with its arm64-rust-build.patch, which stops at bindgen and never builds crubit.",
+      "seed_queries": [
+        "build chromium linux arm64 native graviton rust",
+        "jasonrandrews build-chromium-linux-arm64 github"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "native-build-recipe-install-and-risks",
+      "scope": "The route (a) recipe and its mechanical risks: pinning the crubit revision, RUSTFLAGS rpath build with the toolchain rustc, installing the aarch64 binary into third_party/rust-toolchain/bin, rustc-dev bindings drift, --locked resolution, clang-format swap, and idempotent reinstallation after toolchain re-syncs.",
+      "seed_queries": [
+        "crubit rustc-dev bindings version mismatch build error",
+        "chromium third_party rust-toolchain bin cc_bindings_from_rs install"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.566,
+        "probabilities": {
+          "0": 0.1101,
+          "1": 0.2137,
+          "2": 0.6762
+        },
+        "confidence": 0.2725,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.566,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.1101,
+            "1": 0.2137,
+            "2": 0.6762
+          },
+          "confidence": 0.2725
+        }
+      },
+      "t02": {
+        "score": 1.7261,
+        "probabilities": {
+          "0": 0.0708,
+          "1": 0.1322,
+          "2": 0.797
+        },
+        "confidence": 0.4865,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.7261,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.0708,
+            "1": 0.1322,
+            "2": 0.797
+          },
+          "confidence": 0.4865
+        }
+      },
+      "t03": {
+        "score": 1.4203,
+        "probabilities": {
+          "0": 0.1277,
+          "1": 0.3243,
+          "2": 0.548
+        },
+        "confidence": 0.1327,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.4203,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.1277,
+            "1": 0.3243,
+            "2": 0.548
+          },
+          "confidence": 0.1327
+        }
+      },
+      "t04": {
+        "score": 1.7901,
+        "probabilities": {
+          "0": 0.0475,
+          "1": 0.1149,
+          "2": 0.8376
+        },
+        "confidence": 0.5756,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.7901,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.0475,
+            "1": 0.1149,
+            "2": 0.8376
+          },
+          "confidence": 0.5756
+        }
+      },
+      "t05": {
+        "score": 1.6166,
+        "probabilities": {
+          "0": 0.0973,
+          "1": 0.1887,
+          "2": 0.714
+        },
+        "confidence": 0.3322,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.6166,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.0973,
+            "1": 0.1887,
+            "2": 0.714
+          },
+          "confidence": 0.3322
+        }
+      },
+      "t06": {
+        "score": 1.7767,
+        "probabilities": {
+          "0": 0.0492,
+          "1": 0.1248,
+          "2": 0.826
+        },
+        "confidence": 0.5503,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.7767,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.0492,
+            "1": 0.1248,
+            "2": 0.826
+          },
+          "confidence": 0.5503
+        }
+      },
+      "t07": {
+        "score": 1.6271,
+        "probabilities": {
+          "0": 0.0884,
+          "1": 0.1961,
+          "2": 0.7155
+        },
+        "confidence": 0.3373,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.6271,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.0884,
+            "1": 0.1961,
+            "2": 0.7155
+          },
+          "confidence": 0.3373
+        }
+      },
+      "t08": {
+        "score": 0.9825,
+        "probabilities": {
+          "0": 0.2171,
+          "1": 0.5832,
+          "2": 0.1997
+        },
+        "confidence": 0.1407,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 0.9825,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.2171,
+            "1": 0.5832,
+            "2": 0.1997
+          },
+          "confidence": 0.1407
+        }
+      },
+      "t09": {
+        "score": 1.5503,
+        "probabilities": {
+          "0": 0.1187,
+          "1": 0.2122,
+          "2": 0.6691
+        },
+        "confidence": 0.2602,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "raw_answer": {
+          "type": "score",
+          "score": 1.5503,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.1187,
+            "1": 0.2122,
+            "2": 0.6691
+          },
+          "confidence": 0.2602
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1624,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

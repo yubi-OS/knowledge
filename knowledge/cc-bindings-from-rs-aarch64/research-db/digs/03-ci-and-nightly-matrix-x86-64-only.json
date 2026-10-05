@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "ci-and-nightly-matrix-x86-64-only",
+  "queries_attempted": [
+    {
+      "query": "crubit github actions rust.yml nightly CI x86_64 linux",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "crubit github releases artifacts distribution",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/google/crubit/actions/workflows/nightly.yaml",
+    "https://doc.rust-lang.org/cargo/guide/continuous-integration.html",
+    "https://docs.github.com/en/actions/tutorials/build-and-test-code/rust",
+    "https://www.swedish.org/doctors/internal-medicine/wa/seattle/oren-townsend-1518936855",
+    "https://github.com/google/crubit/actions/workflows/rust.yml",
+    "https://github.com/marketplace/actions/build-rust-projects-with-cross",
+    "https://github.com/google/crubit/releases",
+    "https://github.com/google/crubit",
+    "https://crubit.rs/",
+    "https://www.reddit.com/r/Printify/comments/126ytmf/mug_sample_reviews/",
+    "https://www.reddit.com/r/EtsySellers/comments/135kofc/printify_pod_question_changing_design_after_order/",
+    "https://chromium.googlesource.com/external/github.com/google/crubit/+/refs/heads/upstream/main/"
+  ],
+  "outcome": "authored",
+  "scope": "crubit upstream CI reality: rust.yml workflows and the nightly matrix run x86_64-Linux only, the repo is active but distributes nothing, and the tracker has no arm64 host issues."
+}

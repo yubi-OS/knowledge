@@ -1,0 +1,36 @@
+{
+  "nn": "09",
+  "slug": "native-build-recipe-install-and-risks",
+  "queries_attempted": [
+    {
+      "query": "crubit rustc-dev bindings version mismatch build error",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "chromium third_party rust-toolchain bin cc_bindings_from_rs install",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/google/crubit",
+    "https://issues.chromium.org/issues/506182737",
+    "https://crubit.rs/overview/cargo_build.html",
+    "https://bugsly.dev/blog/fix-version-mismatch-rust",
+    "https://genius.com/",
+    "https://chromium.googlesource.com/chromium/src/tools/rust/",
+    "https://chromium.googlesource.com/chromium/src/tools/rust/",
+    "https://chromium.googlesource.com/chromium/src/+/main/tools/rust/",
+    "https://github.com/chromium/chromium/tree/main/tools/rust",
+    "https://issues.chromium.org/issues/460482110/resources",
+    "https://www.chromium.org/getting-involved/download-chromium/",
+    "https://chromium.googlesource.com/chromium/src/+/refs/heads/lkgr-android-internal/tools/rust/build_crubit.py"
+  ],
+  "outcome": "authored",
+  "scope": "The route (a) recipe and its mechanical risks: pinning the crubit revision, RUSTFLAGS rpath build with the toolchain rustc, installing the aarch64 binary into third_party/rust-toolchain/bin, rustc-dev bindings drift, --locked resolution, clang-format swap, and idempotent reinstallation after toolchain re-syncs."
+}
