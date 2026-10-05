@@ -1,0 +1,30 @@
+# 10 Photophysics bridge part 2: PDT, PTT and the standing warnings
+
+Scope: the PDT explicit-dosimetry corroboration and its beta parameter, the PTT Arrhenius and Pennes placements, and the six standing warnings that bind every photophysics import (source-document sections 5.3 to 5.5).
+
+## PDT: external corroboration of the admission rule
+
+The photodynamic therapy explicit-dosimetry literature converged, independently of the program, on the rule that the delivered quantity is not the effective quantity and one should measure what reacted. Singlet oxygen is the major cytotoxic agent responsible for cell killing in type-II PDT, and an empirical four-parameter macroscopic model computes the apparent reacted singlet oxygen concentration [pmc.ncbi.nlm.nih.gov/articles/PMC3071971, weight 0.71; pure.johnshopkins.edu, weight 0.88]. Kinetic modeling with 5 photo-physiological parameters determined explicitly predicts singlet oxygen generation [pmc.ncbi.nlm.nih.gov/articles/PMC4438777, weight 0.80]. The reacted-dose integral in these models carries the light fluence, the photosensitizer ground-state concentration, and the oxygen depletion factor in the form [3O2]/([3O2] + beta), which is the exact shape the synthesis document maps onto the program.
+
+The mechanical mapping: fluence corresponds to the program's Moebius lens powering; the photosensitizer concentration corresponds to per-item susceptibility measured as the primitive-coverage deficit 9 minus k; and the oxygen depletion factor corresponds to the half-yield depletion on the pool of missing primitives available to flip. One new parameter, beta, the remaining-missing count at which the per-flip yield halves, is estimable from the program's shipped edit log (213 files, 1391 dispatches, 1178 transitions per the source document) by fitting per-step advance probability against m. The document's prediction: the absorbing state at k = 9 becomes oxygen depletion rather than a merely recorded endpoint. A second deliverable, 2 parameters xi and beta, is a per-item predicted dose ranked list, testable against what the next RSI cycle actually changed. A third, zero-parameter item: fit the dBc admission threshold to observed outcome (the measured 26 sphere versus 31 and 37 flat sparse-cell closure), not to a Gaussian tail, filling a documented anti-pattern in the program's own compass skill.
+
+## PTT: Arrhenius versus CEM43, and the Pennes extension
+
+The photothermal literature divides its dose measures by regime, and the synthesis document imports the division wholesale. The Arrhenius damage integral Omega(tau) = integral A exp(-E_a/(R T(t))) dt quantifies irreversible thermal damage under high-intensity exposure [sciencedirect.com/science/article/pii/S1687850724002383, weight 0.89], while thermal dose expressed as cumulative equivalent minutes at 43 degrees Celsius (CEM43) is the standard relative-effectiveness measure in tumor hyperthermia [spiedigitallibrary.org, weight 0.91]. Published comparisons relate the two models directly and show their equivalence conditions [researchgate.net/publication/252808677, weight 0.49, weak backing; sciencedirect.com/science/article/pii/S245190492400204X, weight 0.64]. The document's mapping: Omega corresponds to the program's scale-space persistence z(t), and instantaneous caustic intensity corresponds to T(t). Confusing the instantaneous intensity with the integrated dose is the documented failure mode in the hyperthermia literature, and the same confusion is now blocked in the program by construction.
+
+One testable extension, one parameter E_a: re-weight persistence as z_Arrhenius = integral A exp(-E_a/(R kappa(t))) dt with kappa the local caustic intensity, predicting that exponentially-weighted persistence separates real features from curveball features better than duration-weighted persistence. The highest-value extension, one parameter omega: the Pennes perfusion term Q_b = omega_b rho_b c_b (T_a - T) adds a degree-independent constant to every defocus eigenvalue, giving E_l(t) = E_l(0) exp(-(2l(l+1) + omega) t). This breaks l = 0 conservation: the forward diffusion's terminus changes from the corpus-mean-preserving uniform state to the ambient state. One parameter buys a different forward-diffusion endpoint, and the document lists estimating omega from a paired corpus as open follow-up 4.
+
+Finally, lens powering is classified as a source term rather than a coordinate change: under Pennes dynamics a coordinate change cannot inject energy but a source can. If lens powering is only a reparameterization it cannot create structure; the program is instructed to be explicit about which it is.
+
+## The six standing warnings
+
+1. Parameter count is the binding constraint. The photophysics imports add parameters (k_ISC, beta, E_a, omega), and each must clear the matched-parameter ablation independently, consistent with the program's measured claim that the sphere wins at fewer parameters.
+2. Every new statistic needs its own curveball null: beta, omega, and E_a are statistics of the corpus and must deflect at fixed row and column margins.
+3. The C1 rule transfers: do not compare fitted timescales across different corpus dimension d.
+4. The crossover temperature 0.041143 is a designed-chain property; photophysics vocabulary must not smuggle historical-corpus claims past the retraction rule.
+5. The tau_T versus tau_D identifiability gate is untestable until compass sweep-step and defocus time units are reconciled; this is the prerequisite to every FCS-flavored claim.
+6. Exclusion-only language throughout: nothing above is "compatible with"; verdicts are identity, not-excluded, not-tested, excluded, or void.
+
+## Standing caveat
+
+The PDT corroboration is the strongest external grounding in the photophysics section: the reacted-dose integral with an explicit oxygen depletion factor is published, current, and weighted high. The PTT mappings and all new parameters are program-side proposals recorded as testable, not as measured.
