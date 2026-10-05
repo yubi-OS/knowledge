@@ -1,0 +1,35 @@
+{
+  "nn": "03",
+  "slug": "sysupdated-varlink",
+  "scope": "systemd-sysupdated dropping its D-Bus API for Varlink IPC while updatectl keeps working over the new transport.",
+  "queries_attempted": [
+    {
+      "query": "systemd-sysupdated varlink updatectl",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd sysupdated dbus api removed varlink",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/systemd/systemd/releases",
+    "https://www.man7.org/linux/man-pages/man8/systemd-sysupdated.service.8.html",
+    "https://www.freedesktop.org/software/systemd/man/latest/updatectl.html",
+    "https://deepwiki.com/systemd/systemd/4.3-system-update-with-systemd-sysupdate",
+    "https://www.man7.org/linux//man-pages/man8/systemd-sysupdate.service.8.html",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-sysupdated.html",
+    "https://github.com/systemd/systemd/issues/43604",
+    "https://deepwiki.com/systemd/systemd/2.5-d-bus-and-varlink-ipc",
+    "https://systemd.io/",
+    "https://www.phoronix.com/news/Systemd-Varlink-D-Bus-Future",
+    "https://en.wikipedia.org/wiki/Systemd"
+  ],
+  "outcome": "authored"
+}

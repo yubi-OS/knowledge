@@ -1,0 +1,58 @@
+{
+  "nn": "04",
+  "slug": "ukify-inspect-json",
+  "scope": "Changes to ukify inspect --json machine-readable output in v262 and what UKI tooling consumers must adapt.",
+  "queries_attempted": [
+    {
+      "query": "ukify inspect json output systemd 262",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd ukify machine readable inspect changes",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd NEWS ukify inspect json profiles output change",
+      "attempt": 2,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd 262 release notes ukify inspect machine readable",
+      "attempt": 2,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "v262-specific ukify inspect change covered only by a weak secondary source in attempt 1",
+      "new_queries": [
+        "systemd NEWS ukify inspect json profiles output change",
+        "systemd 262 release notes ukify inspect machine readable"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://github.com/systemd/systemd/releases",
+    "https://man7.org/linux/man-pages/man1/ukify.1.html",
+    "https://www.freedesktop.org/software/systemd/man/ukify.html",
+    "https://github.com/systemd/systemd/blob/main/src/ukify/ukify.py",
+    "https://www.linovox.com/system-administration/systemd/systemd-v262-changes-service-behavior-sysupdate-udev-and-credentials/",
+    "https://www.ohiogamefishing.com/threads/need-a-lead-mold-to-make-erie-dearie-spinner-baits-please.123450/",
+    "https://manpages.debian.org/man/ukify",
+    "https://www.phoronix.com/news/systemd-253-rc1",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://github.com/systemd/systemd/blob/main/man/ukify.xml",
+    "https://github.com/systemd/systemd/blob/main/NEWS",
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://www.linuxjournal.com/content/systemd-262-released-static-pid-1-intel-tdx-tpm-improvements-and-new-container-features"
+  ],
+  "outcome": "authored"
+}

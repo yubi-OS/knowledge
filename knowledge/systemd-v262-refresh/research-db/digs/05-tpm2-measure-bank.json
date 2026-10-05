@@ -1,0 +1,62 @@
+{
+  "nn": "05",
+  "slug": "tpm2-measure-bank",
+  "scope": "Removal of the tpm2-measure-bank= crypttab option in v262 and the state of TPM2 PCR measurement-bank configuration generally.",
+  "queries_attempted": [
+    {
+      "query": "systemd crypttab tpm2-measure-bank removed",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd tpm2 measure bank pcr banks option",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd NEWS incompatible changes tpm2-measure-bank",
+      "attempt": 2,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd 262 crypttab option removed tpm2",
+      "attempt": 2,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "removal claim for tpm2-measure-bank had no primary confirmation in attempt 1",
+      "new_queries": [
+        "systemd NEWS incompatible changes tpm2-measure-bank",
+        "systemd 262 crypttab option removed tpm2"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://askubuntu.com/questions/1470391/luks-tpm2-auto-unlock-at-boot-systemd-cryptenroll",
+    "https://github.com/systemd/systemd/issues/38576",
+    "https://unix.stackexchange.com/questions/715719/cryptsetup-ignoring-unknown-option-tpm2-device",
+    "https://deepwiki.com/systemd/systemd/8.1-tpm2-and-measured-boot",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://github.com/systemd/systemd/blob/main/TODO.md",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-measure.html",
+    "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+    "https://manpages.debian.org/bookworm/systemd/systemd-measure.1.en.html",
+    "https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+    "https://github.com/systemd/systemd/blob/main/NEWS",
+    "https://bbs.archlinux.org/viewtopic.php?id=314939",
+    "https://bbs.archlinux.org/viewtopic.php?id=311123",
+    "https://www.man7.org/linux/man-pages/man5/crypttab.5.html",
+    "https://www.freedesktop.org/software/systemd/man/latest/crypttab.html",
+    "https://github.com/wmcelderry/systemd_with_tpm2",
+    "https://answers.launchpad.net/ubuntu/+question/702266"
+  ],
+  "outcome": "authored"
+}
