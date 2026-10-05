@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "bootc-lifecycle-testing",
+  "scope": "bootc upgrade/rollback, A/B boot-counter behavior, sysext activation against immutable /usr, and portable-service lifecycle: the missing CI assertions.",
+  "queries_attempted": [
+    {
+      "query": "bootc upgrade rollback testing A B boot",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "systemd sysext portable services integration testing immutable usr",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://jmarrero.github.io/bootc/upgrades.html",
+    "https://deepwiki.com/bootc-dev/bootc/3.2-upgrade-and-rollback",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-rhel-bootc-images",
+    "https://github.com/duyhenryer/bootc-testboot/blob/main/docs/bootc/006-upgrade-and-rollback.md",
+    "https://www.reddit.com/r/HomeDepot/comments/10biq3q/why_doesnt_home_depot_offer_an_employee_discount/",
+    "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+    "https://itsfoss.com/systemd-sysext/",
+    "https://manpages.debian.org/testing/systemd/systemd-sysext.8.en.html",
+    "https://systemd.io/PORTABLE_SERVICES/",
+    "https://man7.org/linux/man-pages/man8/systemd-sysext.8.html",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108660/Services"
+  ],
+  "outcome": "authored"
+}

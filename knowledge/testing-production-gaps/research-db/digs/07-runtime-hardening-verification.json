@@ -1,0 +1,36 @@
+{
+  "nn": "07",
+  "slug": "runtime-hardening-verification",
+  "scope": "Runtime hardening evidence: static audits vs booted-image verification with systemd-analyze security and live RestrictFileSystems assertions.",
+  "queries_attempted": [
+    {
+      "query": "systemd-analyze security runtime verification service hardening",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "RestrictFileSystems systemd service sandboxing verification booted system",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.ctrl.blog/entry/systemd-service-hardening/",
+    "https://docs.rockylinux.org/10/guides/security/systemd_hardening/",
+    "https://dev.to/lyraalishaikh/harden-linux-services-with-systemd-analyze-security-from-score-to-enforceable-policy-5415",
+    "https://discussion.fedoraproject.org/t/systemd-service-hardening-tips/29877",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://l2dy.github.io/notes/Operating-System/Linux/Systemd-service-hardening",
+    "https://deepwiki.com/systemd/systemd/8.2-process-sandboxing-and-isolation",
+    "https://wiki.archlinux.org/title/Systemd/Sandboxing",
+    "https://deepwiki.com/systemd/systemd-stable/2.5-sandboxing-and-security",
+    "https://www.instagram.com/",
+    "https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT/",
+    "https://dev.to/aomiqaza/systemd-service-sandboxing-restricting-process-capability-system-calls-2klk"
+  ],
+  "outcome": "authored"
+}

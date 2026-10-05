@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "supply-chain-evidence",
+  "scope": "SBOM, SLSA provenance, cosign signing, and OCI channel binding for production images: the 0/25 SBOM and 2/25 provenance gaps and their fixes.",
+  "queries_attempted": [
+    {
+      "query": "SLSA provenance SBOM cosign signing container image CI",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "SLSA build level 3 GitHub Actions provenance attestation SBOM",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://imzye.com/Container/Cosign-Image-Signing-SLSA-Provenance/",
+    "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+    "https://www.matterai.so/guides/supply-chain-security-slsa-sboms-sigstore-and-dependency-pinning-in-cicd",
+    "https://o3.security/academy/container-image-supply-chain-security",
+    "https://developmi.com/blog/supply-chain-cosign-sbom-slsa/",
+    "https://nathanberg.io/posts/supply-chain-security-ci-sbom-slsa-sigstore/",
+    "https://docs.github.com/en/actions/concepts/security/artifact-attestations",
+    "https://slsa.dev/blog/2023/08/bring-your-own-builder-github",
+    "https://github.com/slsa-framework/slsa-github-generator",
+    "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/increase-security-rating",
+    "https://github.blog/tag/slsa/",
+    "https://www.reddit.com/r/RabbitRefugees/comments/eqoga4/kosmi_digital_hangouts_reinvented/"
+  ],
+  "outcome": "authored"
+}
