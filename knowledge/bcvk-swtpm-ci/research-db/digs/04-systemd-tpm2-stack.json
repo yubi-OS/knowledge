@@ -1,0 +1,50 @@
+{
+ "nn": "04",
+ "slug": "systemd-tpm2-stack",
+ "scope": "systemd-tpm2-setup services, systemd PCR measurements, systemd-cryptenroll TPM2 enrollment, and the set-aside guest-side swtpm service.",
+ "queries_attempted": [
+  {
+   "query": "systemd-tpm2-setup.service systemd-tpm2-swtpm.service",
+   "attempt": 1,
+   "raw_results": 56,
+   "kept": [
+    "https://www.freedesktop.org/software/systemd/man/258/systemd-tpm2-setup.service.html",
+    "https://man.archlinux.org/man/core/systemd/systemd-tpm2-setup.8.en",
+    "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+    "https://www.man7.org/linux/man-pages/man8/systemd-tpm2-setup.8.html",
+    "http://0pointer.de/blog/projects/instances.html",
+    "https://en.wikipedia.org/wiki/Systemd"
+   ]
+  },
+  {
+   "query": "systemd TPM2 support systemd-cryptenroll TPM2",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": [
+    "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://systemd.io/",
+    "https://askubuntu.com/questions/1470391/luks-tpm2-auto-unlock-at-boot-systemd-cryptenroll",
+    "https://fedoramagazine.org/use-systemd-cryptenroll-with-fido-u2f-or-tpm2-to-decrypt-your-disk/"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.freedesktop.org/software/systemd/man/258/systemd-tpm2-setup.service.html",
+  "https://man.archlinux.org/man/core/systemd/systemd-tpm2-setup.8.en",
+  "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+  "https://www.man7.org/linux/man-pages/man8/systemd-tpm2-setup.8.html",
+  "http://0pointer.de/blog/projects/instances.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://systemd.io/",
+  "https://askubuntu.com/questions/1470391/luks-tpm2-auto-unlock-at-boot-systemd-cryptenroll",
+  "https://fedoramagazine.org/use-systemd-cryptenroll-with-fido-u2f-or-tpm2-to-decrypt-your-disk/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,50 @@
+{
+ "nn": "06",
+ "slug": "measured-boot-verification",
+ "scope": "PCR banks, the TPM2 event log handoff to the kernel, tpm2-tools reads inside the guest, and honest measured-boot assertions without hardware.",
+ "queries_attempted": [
+  {
+   "query": "TPM2 event log PCR values measured boot verification Linux",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": [
+    "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+    "https://docs.kernel.org/security/tpm/tpm_event_log.html",
+    "https://deepwiki.com/tpm2-software/tpm2-tools/3.4.2-event-log-management",
+    "https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html",
+    "https://oneuptime.com/blog/post/2026-03-04-configure-tpm-2-0-measured-boot-rhel-9/view",
+    "https://www.booking.com/?msockid=14c40c68f38c61b917611b81f2e8604a"
+   ]
+  },
+  {
+   "query": "tpm2-tools tpm2_pcrread tpm2_getcap automation",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": [
+    "https://tpm2-tools.readthedocs.io/en/latest/man/tpm2_pcrread.1/",
+    "https://github.com/tpm2-software/tpm2-tools",
+    "https://www.mankier.com/1/tpm2",
+    "https://github.com/tpm2-software/tpm2-tools/blob/master/man/tpm2_pcrread.1.md",
+    "https://deepwiki.com/tpm2-software/tpm2-tools/3-command-line-tools",
+    "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+  "https://docs.kernel.org/security/tpm/tpm_event_log.html",
+  "https://deepwiki.com/tpm2-software/tpm2-tools/3.4.2-event-log-management",
+  "https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html",
+  "https://oneuptime.com/blog/post/2026-03-04-configure-tpm-2-0-measured-boot-rhel-9/view",
+  "https://www.booking.com/?msockid=14c40c68f38c61b917611b81f2e8604a",
+  "https://tpm2-tools.readthedocs.io/en/latest/man/tpm2_pcrread.1/",
+  "https://github.com/tpm2-software/tpm2-tools",
+  "https://www.mankier.com/1/tpm2",
+  "https://github.com/tpm2-software/tpm2-tools/blob/master/man/tpm2_pcrread.1.md",
+  "https://deepwiki.com/tpm2-software/tpm2-tools/3-command-line-tools",
+  "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a"
+ ],
+ "outcome": "authored"
+}

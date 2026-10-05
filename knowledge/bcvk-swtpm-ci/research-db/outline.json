@@ -1,0 +1,215 @@
+{
+ "topic": "software TPM (swtpm) integration for bootc VM testing in CI - running a software TPM 2.0 device in QEMU VMs for reproducible TPM-backed flows without real hardware",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "swtpm-fundamentals",
+   "scope": "What the swtpm emulator is, its libtpms front-end interfaces (socket, chardev, CUSE), and companion provisioning tooling.",
+   "seed_queries": [
+    "swtpm software TPM 2.0 emulator socket interface --tpm2",
+    "swtpm_setup swtpm_ioctl provision TPM 2.0 emulator"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "qemu-tpm-integration",
+   "scope": "QEMU -tpmdev emulator backend, tpm-tis vs tpm-crb guest devices, TPM_Startup ordering, and architecture-appropriate device choice.",
+   "seed_queries": [
+    "QEMU tpmdev emulator tpm-tis tpm-crb device",
+    "QEMU attach software TPM 2.0 swtpm virtual machine"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "guest-kernel-tpm-plumbing",
+   "scope": "tpm_tis and tpm_crb guest drivers, the /dev/tpm0 and /dev/tpmrm0 device nodes, and kernel config implications for VM tests.",
+   "seed_queries": [
+    "tpm_tis tpm_crb kernel driver /dev/tpm0 /dev/tpmrm0",
+    "Linux kernel TPM 2.0 subsystem device nodes char driver"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "systemd-tpm2-stack",
+   "scope": "systemd-tpm2-setup services, systemd PCR measurements, systemd-cryptenroll TPM2 enrollment, and the set-aside guest-side swtpm service.",
+   "seed_queries": [
+    "systemd-tpm2-setup.service systemd-tpm2-swtpm.service",
+    "systemd TPM2 support systemd-cryptenroll TPM2"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "bcvk-directboot-vm-flags",
+   "scope": "bcvk ephemeral VM architecture, the DirectBoot UKI kernel/initrd path, and the yubiOS fork's --swtpm/--swu2f flags pinned via PINNED.md.",
+   "seed_queries": [
+    "bcvk bootc virtualization kit ephemeral VM",
+    "bootc UKI direct kernel boot QEMU testing"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "measured-boot-verification",
+   "scope": "PCR banks, the TPM2 event log handoff to the kernel, tpm2-tools reads inside the guest, and honest measured-boot assertions without hardware.",
+   "seed_queries": [
+    "TPM2 event log PCR values measured boot verification Linux",
+    "tpm2-tools tpm2_pcrread tpm2_getcap automation"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "swtpm-state-provisioning",
+   "scope": "swtpm_localca certificate provisioning, persistent TPM state across ephemeral runs, and seal/unseal test flows.",
+   "seed_queries": [
+    "swtpm persistent state NVRAM directory localca",
+    "TPM2 sealing secrets unsealing automation tests"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "swtpm-ci-automation",
+   "scope": "The TPM2 software stack's emulator support, libvirt/Nova/diskimage-builder precedents, and swtpm+QEMU composition with bcvk ephemeral VMs in CI.",
+   "seed_queries": [
+    "swtpm QEMU GitHub Actions CI virtual TPM testing",
+    "TPM 2.0 emulator tpm2-software stack testing (redo of attempt 1 q2: automated TPM testing continuous integration virtual TPM)"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8883,
+    "probabilities": {
+     "0": 0.0267,
+     "1": 0.0583,
+     "2": 0.915
+    },
+    "confidence": 0.762,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.9201,
+    "probabilities": {
+     "0": 0.0173,
+     "1": 0.0452,
+     "2": 0.9375
+    },
+    "confidence": 0.8218,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.553,
+    "probabilities": {
+     "0": 0.0913,
+     "1": 0.2643,
+     "2": 0.6444
+    },
+    "confidence": 0.2401,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.8107,
+    "probabilities": {
+     "0": 0.0441,
+     "1": 0.1011,
+     "2": 0.8548
+    },
+    "confidence": 0.6143,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.8773,
+    "probabilities": {
+     "0": 0.0286,
+     "1": 0.0655,
+     "2": 0.9059
+    },
+    "confidence": 0.7386,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.7162,
+    "probabilities": {
+     "0": 0.0584,
+     "1": 0.167,
+     "2": 0.7746
+    },
+    "confidence": 0.447,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.7058,
+    "probabilities": {
+     "0": 0.0482,
+     "1": 0.1978,
+     "2": 0.754
+    },
+    "confidence": 0.415,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.9068,
+    "probabilities": {
+     "0": 0.0219,
+     "1": 0.0494,
+     "2": 0.9287
+    },
+    "confidence": 0.7981,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1349,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
