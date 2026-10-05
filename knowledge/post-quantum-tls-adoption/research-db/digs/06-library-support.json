@@ -1,0 +1,55 @@
+{
+ "nn": 6,
+ "slug": "library-support",
+ "scope": "TLS library support and defaults: OpenSSL 3.5 default hybrid groups and FIPS provider, Go 1.24/1.25/1.26 crypto/tls defaults and GODEBUG toggles, BoringSSL, GnuTLS 3.8.5 partial support.",
+ "queries_attempted": [
+  {
+   "query": "OpenSSL 3.5 ML-KEM default TLS supported groups X25519MLKEM768 FIPS provider",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "Go crypto/tls X25519MLKEM768 default GODEBUG tlsmlkem 1.24 1.26",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "OpenSSL 3.5 release notes ML-KEM hybrid key exchange default",
+   "attempt": 2,
+   "raw_results": 3,
+   "kept": 3
+  },
+  {
+   "query": "Go 1.24 crypto/tls post-quantum X25519MLKEM768 enabled by default release notes",
+   "attempt": 2,
+   "raw_results": 2,
+   "kept": 2
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "attempt-1 dig returned too few weighted>=0.5 results to author honestly",
+   "new_queries": [
+    "OpenSSL 3.5 release notes ML-KEM hybrid key exchange default",
+    "Go 1.24 crypto/tls post-quantum X25519MLKEM768 enabled by default release notes"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/openssl/openssl/discussions/27299",
+  "https://www.openssl.org/",
+  "https://github.com/golang/go/issues/76677",
+  "https://pkg.go.dev/crypto/tls",
+  "https://silo.pigsty.io/blog/design/tls-parameter-pinning/",
+  "https://openssl-library.org/news/openssl-3.5-notes/",
+  "https://github.com/openssl/openssl/releases",
+  "https://www.cryptomathic.com/blog/quantum-ready-cryptography-with-openssl-3.5-on-rhel-9.6",
+  "https://go.dev/doc/go1.24",
+  "https://github.com/golang/go/issues/69985"
+ ],
+ "outcome": "authored"
+}

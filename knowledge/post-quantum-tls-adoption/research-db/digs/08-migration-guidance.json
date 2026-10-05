@@ -1,0 +1,51 @@
+{
+ "nn": 8,
+ "slug": "migration-guidance",
+ "scope": "Migration considerations for TLS-terminating infrastructure: origin catch-up lag, PQ-preferred vs PQ-only tuning, compatibility risk and fallback, harvest-now-decrypt-later motivation, compliance deadlines around 2030 quantum readiness.",
+ "queries_attempted": [
+  {
+   "query": "post-quantum TLS migration guidance reverse proxy origin server compatibility",
+   "attempt": 1,
+   "raw_results": 4,
+   "kept": 4
+  },
+  {
+   "query": "harvest now decrypt later TLS migration quantum readiness deadline 2030",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "TLS 1.3 hybrid key exchange deployment reverse proxy nginx post-quantum",
+   "attempt": 2,
+   "raw_results": 3,
+   "kept": 0
+  },
+  {
+   "query": "NIST post-quantum cryptography migration timeline CNSA 2.0 TLS",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 3
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "attempt-1 dig returned too few weighted>=0.5 results to author honestly",
+   "new_queries": [
+    "TLS 1.3 hybrid key exchange deployment reverse proxy nginx post-quantum",
+    "NIST post-quantum cryptography migration timeline CNSA 2.0 TLS"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.digicert.com/articles/pqc/recommendations-for-post-quantum-tls-migration",
+  "https://labs.cloudsecurityalliance.org/research/csa-research-note-pqc-harvest-now-decrypt-later-enterprise-2/",
+  "https://link.springer.com/article/10.1007/s44196-026-01526-2",
+  "https://csrc.nist.gov/projects/post-quantum-cryptography",
+  "https://www.nist.gov/pqc",
+  "https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc"
+ ],
+ "outcome": "authored"
+}
