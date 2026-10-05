@@ -1,0 +1,94 @@
+{
+ "subtopic": "silent failure modes",
+ "queries": [
+  "systemd-nspawn broken after systemd upgrade",
+  "systemd release notes nspawn changes RootImage"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "systemd-nspawn broken after systemd upgrade",
+   "title": "systemd start timeout aborts dnf system-upgrade run in nspawn ... - GitHub",
+   "url": "https://github.com/systemd/systemd/issues/37295",
+   "content": "Apr 29, 2025 \u00b7 Specifically, after issuing dnf system-upgrade reboot in the container, the container restarted and started the upgrade, as expected. However, the systemd start timeout later kicked in and aborted the upgrade, leaving a partially upgraded and broken container, which I had to recreate from scratch:",
+   "weight": 0.5594
+  },
+  {
+   "query": "systemd-nspawn broken after systemd upgrade",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
+   "weight": 0.8631
+  },
+  {
+   "query": "systemd-nspawn broken after systemd upgrade",
+   "title": "systemd - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Systemd",
+   "content": "Like the init daemon, systemd is a daemon that manages other daemons, which, including systemd itself, are background processes. systemd is the first daemon to start during booting and the last daemon to terminate during shutdown.",
+   "weight": 0.2216
+  },
+  {
+   "query": "systemd-nspawn broken after systemd upgrade",
+   "title": "Diagnosing problem with systemd-nspawn after apt upgrade",
+   "url": "https://forums.raspberrypi.com/viewtopic.php?t=376184",
+   "content": "Mar 28, 2013 \u00b7 Re: Diagnosing problem with systemd-nspawn after apt upgrade Thu Sep 05, 2024 9:48 am It is, sort of. I have an existing FS folder (not an IMG file), but essentially, something has obviously gone wrong when running apt upgrade on it (in an active container, obviously!), as when I then tried to restart it, I get the seg violation.",
+   "weight": 0.0383
+  },
+  {
+   "query": "systemd-nspawn broken after systemd upgrade",
+   "title": "No systemd - Resources against systemd and alternatives",
+   "url": "https://nosystemd.org/",
+   "content": "suckless.org on systemd Broken by design: systemd systemd-free linux community Want to help? This website is Open Source. You can help to improve it by contributing to the Git rep",
+   "weight": 0.1135
+  },
+  {
+   "query": "systemd-nspawn broken after systemd upgrade",
+   "title": "Bug #1764338 \u201csystemd-nspawn container networking lost after...\u201d",
+   "url": "https://bugs.launchpad.net/ubuntu/+source/systemd/+bug/1764338",
+   "content": "I have 2 systemd-nspawn containers running on an ubuntu 18.04 server used for an internal test automation service. They each use a private network using the nethork-veth option and expose a single port.",
+   "weight": 0.4021
+  },
+  {
+   "query": "systemd release notes nspawn changes RootImage",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to var",
+   "weight": 0.849
+  },
+  {
+   "query": "systemd release notes nspawn changes RootImage",
+   "title": "Releases \u00b7 systemd/systemd - GitHub",
+   "url": "https://github.com/systemd/systemd/releases",
+   "content": "Releases \u00b7 systemd/systemd. Release list.The newer \"FactoryResetRequest\" EFI variable. remains supported and should be used instead. * As part of changes to systemd-sysupdate, the existing. \"systemd-sysupdate.service\" and \"systemd-sysupdate.timer\" units \u2013.",
+   "weight": 0.8767
+  },
+  {
+   "query": "systemd release notes nspawn changes RootImage",
+   "title": "systemd - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Systemd",
+   "content": "Systemd records initialization instructions for each daemon in a configuration file (referred to as a \"unit file\") that uses a declarative language, replacing the traditionally used per-daemon startup shell scripts.",
+   "weight": 0.1602
+  },
+  {
+   "query": "systemd release notes nspawn changes RootImage",
+   "title": "systemd-nspawn - Spawn a namespace container for debugging, testing and ...",
+   "url": "https://www.linux.org/docs/man1/systemd-nspawn.html",
+   "content": "Like all other systemd-nspawn features, this is not a security feature and provides protection against accidental destructive operations only. -M, --machine= Sets the machine name for this container.",
+   "weight": 0.6521
+  },
+  {
+   "query": "systemd release notes nspawn changes RootImage",
+   "title": "systemd/NEWS at main \u00b7 systemd/systemd \u00b7 GitHub",
+   "url": "https://github.com/systemd/systemd/blob/main/NEWS",
+   "content": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub.",
+   "weight": 0.7351
+  },
+  {
+   "query": "systemd release notes nspawn changes RootImage",
+   "title": "systemd-nspawn(1) - Linux manual page",
+   "url": "https://man7.org/linux/man-pages/man1/systemd-nspawn.1.html",
+   "content": "Example 2. Build and boot a minimal Fedora distribution in a container # dnf -y --releasever=44 --installroot=/var/lib/machines/f44 \\ --use-host-config --setopt=install_weak_deps=0 \\ --repo=fedora --repo=updates install \\ passwd dnf fedora\u2026",
+   "weight": 0.9566
+  }
+ ]
+}
