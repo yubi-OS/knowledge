@@ -1,0 +1,36 @@
+{
+ "nn": 3,
+ "slug": "build-policy-gate",
+ "scope": "Build-time digest verification through yubiOS.rego policy (reset=true strict=true) inherited from yubiOS-bake.hcl, and the fail-closed behavior when a bump is not policy-approved.",
+ "queries_attempted": [
+  {
+   "query": "docker buildx build policy rego fail closed digest",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "OPA rego approved registries container build gate",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/",
+  "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+  "https://docs.docker.com/build/policies/intro/",
+  "https://www.docker.com/",
+  "https://abc.vhrghala.org/p/https/docs.docker.com/build/policies/usage/",
+  "https://docs.docker.com/build/policies/usage",
+  "https://safeguard.sh/resources/blog/rego-policy-examples",
+  "https://secure-pipelines.com/ci-cd-security/policy-as-code-ci-cd-opa-rego-security-gates/",
+  "https://khimananda.com/blog/rego-policy-language-for-opa",
+  "https://github.com/ThaneeshAadithya/eks-security-hardening/blob/main/opa/policies/approved-registries.rego",
+  "https://o-pa.org/",
+  "https://techyall.com/tutorial/opa-rego"
+ ],
+ "outcome": "authored"
+}

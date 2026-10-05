@@ -1,0 +1,251 @@
+{
+ "01-pinning-taxonomy": {
+  "nn": 1,
+  "slug": "pinning-taxonomy",
+  "scope": "The five pinned categories in yubiOS PINNED.md (GitHub Actions, direct workflow downloads, internal fork refs, external source refs, container images) and why a digest bump means a different procedure in each.",
+  "queries_attempted": [
+   {
+    "query": "container image digest pinning supply chain security",
+    "attempt": 1,
+    "raw_results": 61,
+    "kept": 6
+   },
+   {
+    "query": "software dependency pinning taxonomy digests commits actions",
+    "attempt": 1,
+    "raw_results": 60,
+    "kept": 6
+   }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "02-container-image-bumps": {
+  "nn": 2,
+  "slug": "container-image-bumps",
+  "scope": "Container image digest bump flow: fetch-dhi-manifest and fetch-fedora-bootc-manifest refresh workflows, multi-arch index vs child digests, and updating every FROM and image: reference.",
+  "queries_attempted": [
+   {
+    "query": "docker buildx OPA rego build policy digest pinning",
+    "attempt": 1,
+    "raw_results": 45,
+    "kept": 6
+   },
+   {
+    "query": "bootc image digest update FROM reference rotation",
+    "attempt": 1,
+    "raw_results": 43,
+    "kept": 6
+   }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "03-build-policy-gate": {
+  "nn": 3,
+  "slug": "build-policy-gate",
+  "scope": "Build-time digest verification through yubiOS.rego policy (reset=true strict=true) inherited from yubiOS-bake.hcl, and the fail-closed behavior when a bump is not policy-approved.",
+  "queries_attempted": [
+   {
+    "query": "docker buildx build policy rego fail closed digest",
+    "attempt": 1,
+    "raw_results": 44,
+    "kept": 6
+   },
+   {
+    "query": "OPA rego approved registries container build gate",
+    "attempt": 1,
+    "raw_results": 44,
+    "kept": 6
+   }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "04-fork-ref-rolls": {
+  "nn": 4,
+  "slug": "fork-ref-rolls",
+  "scope": "Internal yubi-OS fork refs: release commit vs pinned source commit, fetch-released-tag-ref.yml automatic roll semantics, and manual re-verification of yubiOS-specific extensions on new releases.",
+  "queries_attempted": [
+   {
+    "query": "fork release commit versus pinned source commit rebase",
+    "attempt": 1,
+    "raw_results": 44,
+    "kept": 6
+   },
+   {
+    "query": "software fork patch extension rebase verify upstream release",
+    "attempt": 1,
+    "raw_results": 48,
+    "kept": 6
+   },
+   {
+    "query": "maintain downstream fork patches rebase new upstream release",
+    "attempt": 2,
+    "raw_results": 35,
+    "kept": 6
+   },
+   {
+    "query": "git rebase fork onto upstream release tag verify patch applies",
+    "attempt": 2,
+    "raw_results": 44,
+    "kept": 6
+   }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+   {
+    "attempt": 1,
+    "reason": "attempt 1 dig too thin: generic git client pages, Stack Overflow trivia, one off-topic listing; no primary sources on fork release-commit vs pinned-source-commit practice",
+    "new_queries": [
+     "maintain downstream fork patches rebase new upstream release",
+     "git rebase fork onto upstream release tag verify patch applies"
+    ]
+   }
+  ],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "05-external-source-refs": {
+  "nn": 5,
+  "slug": "external-source-refs",
+  "scope": "External GitHub source ref pinning for non-fork dependencies: two-table updates and re-confirming pinned capabilities (passless hmac-secret, qemu ARM64 zboot) still work after a bump.",
+  "queries_attempted": [
+   {
+    "query": "pinning external dependency commit software supply chain",
+    "attempt": 1,
+    "raw_results": 45,
+    "kept": 6
+   },
+   {
+    "query": "third party dependency capability regression verify pinned commit",
+    "attempt": 1,
+    "raw_results": 49,
+    "kept": 6
+   }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "06-workflow-downloads": {
+  "nn": 6,
+  "slug": "workflow-downloads",
+  "scope": "Direct workflow downloads: wcurl payloads for Docker static binaries and buildx releases with mandatory sha512sum --check --strict verification before consumption.",
+  "queries_attempted": [
+   {
+    "query": "wcurl download artifact sha512 verification",
+    "attempt": 1,
+    "raw_results": 45,
+    "kept": 6
+   },
+   {
+    "query": "download binary artifact checksum verify sha512sum strict ci",
+    "attempt": 1,
+    "raw_results": 57,
+    "kept": 6
+   }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "07-action-sha-pinning": {
+  "nn": 7,
+  "slug": "action-sha-pinning",
+  "scope": "GitHub Actions SHA pinning: immutable commit references versus mutable tags, and policy rejection of :latest :main and branch refs.",
+  "queries_attempted": [
+   {
+    "query": "github actions pin action sha supply chain security",
+    "attempt": 1,
+    "raw_results": 41,
+    "kept": 6
+   },
+   {
+    "query": "github actions mutable tag latest rejected immutable sha",
+    "attempt": 1,
+    "raw_results": 45,
+    "kept": 6
+   }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "08-audit-trail-superseded": {
+  "nn": 8,
+  "slug": "audit-trail-superseded",
+  "scope": "Superseded-digest audit trail practice: moving old digests into kept-for-audit blocks instead of overwriting, single source of truth hygiene, and avoiding duplicate stale digest tables.",
+  "queries_attempted": [
+   {
+    "query": "supply chain audit trail superseded artifact versions",
+    "attempt": 1,
+    "raw_results": 50,
+    "kept": 6
+   },
+   {
+    "query": "digest documentation single source of truth stale references",
+    "attempt": 1,
+    "raw_results": 46,
+    "kept": 6
+   },
+   {
+    "query": "container image digest history audit trail keep previous versions",
+    "attempt": 2,
+    "raw_results": 45,
+    "kept": 6
+   },
+   {
+    "query": "documentation drift duplicate stale references single source prevention",
+    "attempt": 2,
+    "raw_results": 43,
+    "kept": 6
+   }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+   {
+    "attempt": 1,
+    "reason": "attempt 1 queries drifted off-topic: dictionary and economics pages, YouTube; only 3 usable sources",
+    "new_queries": [
+     "container image digest history audit trail keep previous versions",
+     "documentation drift duplicate stale references single source prevention"
+    ]
+   }
+  ],
+  "results_kept": [],
+  "outcome": "pending"
+ },
+ "09-roll-procedure-prs": {
+  "nn": 9,
+  "slug": "roll-procedure-prs",
+  "scope": "The end-to-end roll procedure: obtain digest, update source of truth, update repo references, open a PR rather than pushing to main, and commit-message discipline for workflow-file edits.",
+  "queries_attempted": [
+   {
+    "query": "dependency bump pull request review procedure",
+    "attempt": 1,
+    "raw_results": 47,
+    "kept": 6
+   },
+   {
+    "query": "base image digest rotation update checklist ci",
+    "attempt": 1,
+    "raw_results": 46,
+    "kept": 6
+   }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "pending"
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "nn": 6,
+ "slug": "workflow-downloads",
+ "scope": "Direct workflow downloads: wcurl payloads for Docker static binaries and buildx releases with mandatory sha512sum --check --strict verification before consumption.",
+ "queries_attempted": [
+  {
+   "query": "wcurl download artifact sha512 verification",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "download binary artifact checksum verify sha512sum strict ci",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/curl/wcurl",
+  "https://deepwiki.com/manuel-woelker/tool-tool/5.2-checksum-verification",
+  "https://kubernetes.io/docs/tasks/administer-cluster/verify-signed-artifacts/",
+  "https://download.eclipse.org/eclipse/downloads/drops4/I20260926-2300/",
+  "https://www.youtube.com/watch?v=QGJuMBdaqIw",
+  "https://github.com/openclaw/openclaw/releases",
+  "https://brandonwie.dev/posts/binary-checksum-verification",
+  "https://maven.apache.org/resolver/about-checksums.html",
+  "https://play.google.com/store/apps/details?id=com.tech.downloader&hl=en-US",
+  "https://toolpilot.dev/guides/hash-verify-build-artifacts/",
+  "https://www.golinuxcloud.com/verify-kubernetes-release-artifacts/",
+  "https://transloadit.com/devtips/sha512sum/"
+ ],
+ "outcome": "authored"
+}

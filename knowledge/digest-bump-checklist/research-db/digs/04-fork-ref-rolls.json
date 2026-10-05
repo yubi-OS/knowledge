@@ -1,0 +1,69 @@
+{
+ "nn": 4,
+ "slug": "fork-ref-rolls",
+ "scope": "Internal yubi-OS fork refs: release commit vs pinned source commit, fetch-released-tag-ref.yml automatic roll semantics, and manual re-verification of yubiOS-specific extensions on new releases.",
+ "queries_attempted": [
+  {
+   "query": "fork release commit versus pinned source commit rebase",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "software fork patch extension rebase verify upstream release",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "maintain downstream fork patches rebase new upstream release",
+   "attempt": 2,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "git rebase fork onto upstream release tag verify patch applies",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "attempt 1 dig too thin: generic git client pages, Stack Overflow trivia, one off-topic listing; no primary sources on fork release-commit vs pinned-source-commit practice",
+   "new_queries": [
+    "maintain downstream fork patches rebase new upstream release",
+    "git rebase fork onto upstream release tag verify patch applies"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://stackoverflow.com/questions/42486141/git-rebase-commit-select-in-fork-point-mode",
+  "https://git-fork.com/",
+  "https://stackoverflow.com/questions/3329943/what-are-the-differences-between-git-branch-fork-fetch-merge-rebase-and-clon",
+  "https://git-scm.com/book/en/v2/Git-Branching-Rebasing",
+  "https://gist.github.com/AmyJeanes/cce0aa5caae97bcb5260e0380990014e",
+  "https://fork.dev/releasenotes",
+  "https://stackoverflow.com/questions/79438705/how-to-keep-a-forked-github-repository-in-sync-without-disrupting-independent-re",
+  "https://stackoverflow.com/questions/64483037/git-good-practices-to-keep-a-forked-project-up-to-date-with-its-source-origin-wh",
+  "https://mrsaynothing.dev/en/blog/2026-09-06/git-sync-fork-with-upstream",
+  "https://www.city-data.com/locations/Subway/Kennewick-Washington.html",
+  "http://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitworkflows.html",
+  "https://git-fork.com/",
+  "https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github",
+  "https://github.com/xz-dev/downstream-fork-maintain-skill",
+  "https://amboar.github.io/notes/2021/09/16/history-preserving-fork-maintenance-with-git.html",
+  "https://www.merriam-webster.com/dictionary/maintain",
+  "https://cohere.com/blog/automating-fork-maintenance-with-ai-agents",
+  "https://stackoverflow.com/questions/79438705/how-to-keep-a-forked-github-repository-in-sync-without-disrupting-independent-re",
+  "https://git-scm.com/docs/git-rebase/2.9.5",
+  "https://stackoverflow.com/questions/78229191/git-rebase-onto-works-with-tags",
+  "https://wiki.postmarketos.org/wiki/Rebase_a_close-to-mainline_kernel",
+  "https://stackoverflow.com/questions/39768124/git-rebase-onto-a-tag-when-master-and-a-branch-is-ahead-of-the-current-commits",
+  "https://git-scm.com/docs/git-rebase",
+  "https://manpages.ubuntu.com/manpages/focal/man1/git-rebase.1.html"
+ ],
+ "outcome": "authored"
+}
