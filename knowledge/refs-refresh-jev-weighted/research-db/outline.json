@@ -1,0 +1,31 @@
+{
+  "topic": "jev-weighted documentation refresh sweeps: the process spec for triaging a documentation corpus with a decision model, digging with a self-hosted metasearch, weighting results, and landing cited updates",
+  "subtopics": [
+    {"nn": "01", "slug": "corpus-enumeration-and-signals", "scope": "Enumerating every file in the corpus and computing cheap per-file staleness signals (filename age, size, title, section presence) that feed triage.", "seed_queries": ["documentation corpus staleness metrics file metadata age", "docs-as-code documentation rot audit signals"]},
+    {"nn": "02", "slug": "decision-model-triage", "scope": "Scoring every doc with a typesafe decision model (jev-1.13 via POST /api/decide) using batched, paced requests and typed answers.", "seed_queries": ["LLM as judge triage scoring documents pipeline", "structured decision model API yes no probability classification"]},
+    {"nn": "03", "slug": "ranking-and-queue-selection", "scope": "Blending the decision score with normalized age into a ranked refresh queue, bounded to a small dig set.", "seed_queries": ["blended ranking score recency weighting formula", "backlog prioritization stale documentation refresh queue"]},
+    {"nn": "04", "slug": "searxng-metasearch-digs", "scope": "Digging with self-hosted searXNG reached through an n8n webhook proxy: transport, query design, top-N keeping, and the thin-dig redo rule.", "seed_queries": ["searXNG self-hosted metasearch JSON API", "n8n webhook proxy internal service API gateway"]},
+    {"nn": "05", "slug": "collection-quality-weighting", "scope": "Weighting every collected result with the noul metric so only decision-model-scored sources can back claims.", "seed_queries": ["evaluating source authority primary sources aggregators", "LLM relevance scoring search results quality filter"]},
+    {"nn": "06", "slug": "research-db-persistence", "scope": "Persisting signals, verdicts, digs, and weights as a typed, append-only, versioned dataset that travels with the PR.", "seed_queries": ["research provenance dataset schema JSON logging", "typed dataset TypeScript interfaces documentation data"]},
+    {"nn": "07", "slug": "cited-authoring", "scope": "Turning weighted results into doc updates where every claim carries its source URL and weight; unverifiable claims are deleted, thin digs are skipped.", "seed_queries": ["citation grounded writing source URL claim verification", "AI generated documentation accuracy citation requirements"]},
+    {"nn": "08", "slug": "reviewable-pr-landing", "scope": "Landing the sweep as one draft PR with a fixed-format body and post-push verification so the evidence chain is reviewable in isolation.", "seed_queries": ["draft pull request reviewable isolated branch verification", "content repo PR review checklist data files"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef",
+    "answers": {
+      "t01": {"score": 1.7515, "probabilities": {"0": 0.055, "1": 0.1386, "2": 0.8064}, "confidence": 0.5089, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.8989, "probabilities": {"0": 0.0232, "1": 0.0547, "2": 0.9221}, "confidence": 0.7807, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.5859, "probabilities": {"0": 0.0848, "1": 0.2445, "2": 0.6707}, "confidence": 0.2752, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.8847, "probabilities": {"0": 0.0244, "1": 0.0665, "2": 0.9091}, "confidence": 0.7472, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.7647, "probabilities": {"0": 0.0506, "1": 0.1341, "2": 0.8153}, "confidence": 0.5279, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.0454, "probabilities": {"0": 0.2354, "1": 0.4838, "2": 0.2808}, "confidence": 0.0525, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.9215, "probabilities": {"0": 0.0198, "1": 0.0389, "2": 0.9413}, "confidence": 0.8319, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.6857, "probabilities": {"0": 0.0584, "1": 0.1975, "2": 0.7441}, "confidence": 0.3942, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1291, "output_tokens": 0},
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08"]
+  }
+}
