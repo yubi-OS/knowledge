@@ -1,0 +1,36 @@
+{
+ "nn": 7,
+ "slug": "smoke-test-and-suspend-evidence",
+ "scope": "Smoke-test design (TA reading TEE_GetSystemTime and protection level, REE clock-move and suspend/resume checks on ROCK 5B/RK3588 and ROCKPro64/RK3399) and CNTPCT continuity across suspend states.",
+ "queries_attempted": [
+  {
+   "query": "ARM generic timer counter CNTPCT suspend resume continuity deep sleep",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "OP-TEE test TA TEE_GetSystemTime system time protection level optee test",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Learn%20the%20Architecture/Generic%20Timer.pdf?revision=c710e7a7-9f52-4901-8c9d-91b19f44f9c7",
+  "https://wiki.osdev.org/ARMv7_Generic_Timers",
+  "https://support.arm.com/documentation/102379/0104/The-processor-timers/Count-and-frequency?lang=en",
+  "https://www.arm.com/",
+  "https://willendless.github.io/assets/os_arm_doc/aarch64-generic-timer.pdf",
+  "https://en.wikipedia.org/wiki/Interrupt",
+  "https://github.com/OP-TEE/optee_os/issues/5973",
+  "https://stackoverflow.com/questions/68544061/how-to-get-a-utc-timestamp-in-op-tee-trusted-application-ta-in-datetime-format",
+  "https://www.op.gg/?main=index",
+  "https://github.com/OP-TEE/optee_os/issues/4029",
+  "https://optee.readthedocs.io/en/latest/building/gits/optee_test.html",
+  "https://www.trustedfirmware.org/projects/op-tee/"
+ ],
+ "outcome": "authored"
+}

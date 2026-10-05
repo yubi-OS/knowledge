@@ -1,0 +1,2210 @@
+[
+ {
+  "query": "OP-TEE secure clock protection level REE 100 TEE 1000 porting guidelines",
+  "title": "Porting guidelines \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html",
+  "snippet": "If your hardware has a secure clock, then you probably want to change the implementation there to instead use the secure clock (and then you would also need to update the property accordingly, i.e., tee_time_get_sys_time_protection_level () and the variable ta_time_prot_lvl in tee_svc.c).If your hardware has a secure clock, then you probably want to change the implementation there to instead use the secure clock (and then you would also need to update the property accordingly, i.e., tee_time_get_sys_time_protection_level () and the variable ta_time_prot_lvl in tee_svc.c).",
+  "collected_at": "2026-10-05T15:12:34Z",
+  "weight": 0.9073,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Porting guidelines \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9073
+   },
+   "usage": {
+    "input_tokens": 758,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:33Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE secure clock protection level REE 100 TEE 1000 porting guidelines",
+  "title": "optee_docs/architecture/porting_guidelines.rst at master \u00b7 OP-TEE/optee ...",
+  "url": "https://github.com/OP-TEE/optee_docs/blob/master/architecture/porting_guidelines.rst",
+  "snippet": "Note that from GlobalPlatform point of view it is not required to make use of a secure clock, i.e., it is OK to use time from REE, but the level of trust should be reflected by the gpd.tee.systemTime.protectionLevel property and the gpd.tee.TAPersistentTime.protectionLevel property (100=REE controlled clock, 1000=TEE controlled clock).Note that from GlobalPlatform point of view it is not required to make use of a secure clock, i.e., it is OK to use time from REE, but the level of trust should be reflected by the gpd.tee.systemTime.protectionLevel property and the gpd.tee.TAPersistentTime.protectionLevel property (100=REE controlled clock, 1000=TEE controlled clock).",
+  "collected_at": "2026-10-05T15:12:34Z",
+  "weight": 0.9023,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'optee_docs/architecture/porting_guidelines.rst at master \u00b7 OP-TEE/optee ...' (https://github.com/OP-TEE/optee_docs/blob/master/architecture/porting_guidelines.rst) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9023
+   },
+   "usage": {
+    "input_tokens": 758,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:33Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE secure clock protection level REE 100 TEE 1000 porting guidelines",
+  "title": "OP-TEE Documentation",
+  "url": "https://optee.readthedocs.io/",
+  "snippet": "Libraries Porting guidelines Secure boot Secure storage Subkeys Trusted Applications Virtualization SPMC Arm Security Extensions Platform documentation Build and run Prerequisites Device specific information AOSP Linux kernel TEE framework OP-TEE gits Toolchains Trusted Applications StandAloneMM OP-TEE with Rust Linux userland integration ...",
+  "collected_at": "2026-10-05T15:12:34Z",
+  "weight": 0.8852,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE Documentation' (https://optee.readthedocs.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8852
+   },
+   "usage": {
+    "input_tokens": 758,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:33Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE secure clock protection level REE 100 TEE 1000 porting guidelines",
+  "title": "Secure storage \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "snippet": "Typically, an implementation may rely on the REE for that purpose (protection level 100) or on hardware assets controlled by the TEE (protection level 1000). (see GP TEE Internal Core API section 2.5 and 5.2)Typically, an implementation may rely on the REE for that purpose (protection level 100) or on hardware assets controlled by the TEE (protection level 1000). (see GP TEE Internal Core API section 2.5 and 5.2)",
+  "collected_at": "2026-10-05T15:12:34Z",
+  "weight": 0.7017,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure storage \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/secure_storage.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7017
+   },
+   "usage": {
+    "input_tokens": 758,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:33Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE secure clock protection level REE 100 TEE 1000 porting guidelines",
+  "title": "OP-TEE Documentation",
+  "url": "https://app.readthedocs.org/projects/optee/downloads/pdf/latest/",
+  "snippet": "OP-TEE implements TEE Internal Core API v1.3.1 which is the API exposed to Trusted Applications and the TEE Client API v1.0, which is the API describing how to communicate with a TEE. Those APIs are defined in the GlobalPlatform API specifications. The non-secure OS is referred to as the Rich Execution Environment (REE) in TEE specifications.OP-TEE implements TEE Internal Core API v1.3.1 which is the API exposed to Trusted Applications and the TEE Client API v1.0, which is the API describing how to communicate with a TEE. Those APIs are defined in the GlobalPlatform API specifications. The non-secure OS is referred to as the Rich Execution Environment (REE) in TEE specifications.",
+  "collected_at": "2026-10-05T15:12:34Z",
+  "weight": 0.706,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE Documentation' (https://app.readthedocs.org/projects/optee/downloads/pdf/latest/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.706
+   },
+   "usage": {
+    "input_tokens": 758,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:33Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE secure clock protection level REE 100 TEE 1000 porting guidelines",
+  "title": "OP.GG",
+  "url": "https://www.op.gg/?main=index",
+  "snippet": "We would like to show you a description here but the site won\u2019t allow us.",
+  "collected_at": "2026-10-05T15:12:34Z",
+  "weight": 0.3476,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP.GG' (https://www.op.gg/?main=index) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3476
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time protection level TEE_GetSystemTime persistent time contract",
+  "title": "inquire about the operation of the TEE_GetSystemTime function...",
+  "url": "https://github.com/OP-TEE/optee_os/issues/7157",
+  "snippet": "Current OP-TEE does not well manages persistent time, especially the TA ones. We would need to save a time reference per TA in the persistent secure storage area (likely when TEE_SetTAPersistentTime () is called) which is currently not implemented. Contributions are welcome. To reach TAPersistentTime level 1000, you need the RTC to be secure.Current OP-TEE does not well manages persistent time, especially the TA ones. We would need to save a time reference per TA in the persistent secure storage area (likely when TEE_SetTAPersistentTime () is called) which is currently not implemented. Contributions are welcome. To reach TAPersistentTime level 1000, you need the RTC to be secure.",
+  "collected_at": "2026-10-05T15:12:44Z",
+  "weight": 0.254,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'inquire about the operation of the TEE_GetSystemTime function...' (https://github.com/OP-TEE/optee_os/issues/7157) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.254
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time protection level TEE_GetSystemTime persistent time contract",
+  "title": "TEE_GetSystemTime (...) not compliant with TEE core API spec.",
+  "url": "https://github.com/OP-TEE/optee_os/issues/5973",
+  "snippet": "Indeed, since GPD TEE Intenral Core API v1.1, time protection level 1000 requires a calibrated time origin. This requires a secure RTC or like support from the platform.Indeed, since GPD TEE Intenral Core API v1.1, time protection level 1000 requires a calibrated time origin. This requires a secure RTC or like support from the platform.",
+  "collected_at": "2026-10-05T15:12:44Z",
+  "weight": 0.3058,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TEE_GetSystemTime (...) not compliant with TEE core API spec.' (https://github.com/OP-TEE/optee_os/issues/5973) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3058
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time protection level TEE_GetSystemTime persistent time contract",
+  "title": "PDF TEE Internal Core API Specification v1 - GlobalPlatform",
+  "url": "https://globalplatform.org/wp-content/uploads/2018/06/GPD_TEE_Internal_Core_API_Specification_v1.1.2.50_PublicReview.pdf",
+  "snippet": "226 The level of trust that a Trusted Application can put in System Time and its TA Persistent Time is 227 implementation-defined as a given Implementation may not include fully trustable hardware sources of time 228 and hence may have to rely on untrusted real-time clocks and timers managed by the Rich Execution 229 Environment.226 The level of trust that a Trusted Application can put in System Time and its TA Persistent Time is 227 implementation-defined as a given Implementation may not include fully trustable hardware sources of time 228 and hence may have to rely on untrusted real-time clocks and timers managed by the Rich Execution 229 Environment.",
+  "collected_at": "2026-10-05T15:12:44Z",
+  "weight": 0.9188,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PDF TEE Internal Core API Specification v1 - GlobalPlatform' (https://globalplatform.org/wp-content/uploads/2018/06/GPD_TEE_Internal_Core_API_Specification_v1.1.2.50_PublicReview.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9188
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time protection level TEE_GetSystemTime persistent time contract",
+  "title": "Porting guidelines \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html",
+  "snippet": "If your hardware has a secure clock, then you probably want to change the implementation there to instead use the secure clock (and then you would also need to update the property accordingly, i.e., tee_time_get_sys_time_protection_level () and the variable ta_time_prot_lvl in tee_svc.c).",
+  "collected_at": "2026-10-05T15:12:44Z",
+  "weight": 0.4969,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Porting guidelines \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4969
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time protection level TEE_GetSystemTime persistent time contract",
+  "title": "c - How to get a UTC timestamp in OP-TEE Trusted... - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/68544061/how-to-get-a-utc-timestamp-in-op-tee-trusted-application-ta-in-datetime-format",
+  "snippet": "To retrieve the current time in milliseconds since 1970-01-01, call TEE_GetSystemTime. The security level depends on what secure clocks are available on the specific system.To retrieve the current time in milliseconds since 1970-01-01, call TEE_GetSystemTime. The security level depends on what secure clocks are available on the specific system.",
+  "collected_at": "2026-10-05T15:12:44Z",
+  "weight": 0.1799,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'c - How to get a UTC timestamp in OP-TEE Trusted... - Stack Overflow' (https://stackoverflow.com/questions/68544061/how-to-get-a-utc-timestamp-in-op-tee-trusted-application-ta-in-datetime-format) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1799
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time protection level TEE_GetSystemTime persistent time contract",
+  "title": "OP.GG",
+  "url": "https://www.op.gg/?main=index",
+  "snippet": "We would like to show you a description here but the site won\u2019t allow us.",
+  "collected_at": "2026-10-05T15:12:44Z",
+  "weight": 0.0527,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP.GG' (https://www.op.gg/?main=index) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0527
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CFG_SECURE_TIME_SOURCE_CNTPCT OP-TEE arm cntpct",
+  "title": "Question: Measuring time taken by TEE_MemMove \u00b7 Issue #4029...",
+  "url": "https://github.com/OP-TEE/optee_os/issues/4029",
+  "snippet": "Perhaps you platform sets CFG_SECURE_TIME_SOURCE_CNTPCT=y when in fact it should set CFG_SECURE_TIME_SOURCE_REE=y? That would explain the 1000 and the panic with TEE_GetSystemTime ().Perhaps you platform sets CFG_SECURE_TIME_SOURCE_CNTPCT=y when in fact it should set CFG_SECURE_TIME_SOURCE_REE=y? That would explain the 1000 and the panic with TEE_GetSystemTime ().",
+  "collected_at": "2026-10-05T15:12:48Z",
+  "weight": 0.3987,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Question: Measuring time taken by TEE_MemMove \u00b7 Issue #4029...' (https://github.com/OP-TEE/optee_os/issues/4029) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3987
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CFG_SECURE_TIME_SOURCE_CNTPCT OP-TEE arm cntpct",
+  "title": "Secure Time Arm Trustedzone \u2013 OMNITECK",
+  "url": "https://\u0577\u0561\u0576\u0569.com/?p=1184",
+  "snippet": "This way, I can make sure the information is reliable and well-supported!Yes: on RK3399 and RK3588 the usual \u201ctrusted\u201d time source in OP-TEE is the ARM generic timer counter, typically CNTPCT, exposed via CFG_SECURE_TIME_SOURCE_CNTPCT.This way, I can make sure the information is reliable and well-supported!Yes: on RK3399 and RK3588 the usual \u201ctrusted\u201d time source in OP-TEE is the ARM generic timer counter, typically CNTPCT, exposed via CFG_SECURE_TIME_SOURCE_CNTPCT.",
+  "collected_at": "2026-10-05T15:12:48Z",
+  "weight": 0.1651,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure Time Arm Trustedzone \u2013 OMNITECK' (https://\u0577\u0561\u0576\u0569.com/?p=1184) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1651
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CFG_SECURE_TIME_SOURCE_CNTPCT OP-TEE arm cntpct",
+  "title": "optee_os/core/arch/arm/kernel/tee_time_arm_cntpct.c at master \u00b7 OP-TEE ...",
+  "url": "https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/tee_time_arm_cntpct.c",
+  "snippet": "* We collect jitter using cntpct in 32- or 64-bit mode that is typically. * clocked at around 1MHz. * The first time we are called, we add low 16 bits of the counter as entropy. * Subsequently, accumulate 2 low bits each time by: * - rotating the accumumlator by 2 bits. * - XORing it in 2-bit chunks with the whole CNTPCT contents.",
+  "collected_at": "2026-10-05T15:12:48Z",
+  "weight": 0.8535,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'optee_os/core/arch/arm/kernel/tee_time_arm_cntpct.c at master \u00b7 OP-TEE ...' (https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/tee_time_arm_cntpct.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8535
+   },
+   "usage": {
+    "input_tokens": 807,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:37Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CFG_SECURE_TIME_SOURCE_CNTPCT OP-TEE arm cntpct",
+  "title": "Qualcomm \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/platforms/qualcomm/index.html",
+  "snippet": "Boot flow based on Arm Trusted Firmware (CFG_WITH_ARM_TRUSTED_FW) with an AArch64 secure core (CFG_ARM64_core) using a 40-bit physical address space (CFG_CORE_LARGE_PHYS_ADDR). GIC interrupt controller (CFG_GIC). Secure time sourced from the physical counter CNTPCT (CFG_SECURE_TIME_SOURCE_CNTPCT).Boot flow based on Arm Trusted Firmware (CFG_WITH_ARM_TRUSTED_FW) with an AArch64 secure core (CFG_ARM64_core) using a 40-bit physical address space (CFG_CORE_LARGE_PHYS_ADDR). GIC interrupt controller (CFG_GIC). Secure time sourced from the physical counter CNTPCT (CFG_SECURE_TIME_SOURCE_CNTPCT).",
+  "collected_at": "2026-10-05T15:12:48Z",
+  "weight": 0.9108,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Qualcomm \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/platforms/qualcomm/index.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9108
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:40Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CFG_SECURE_TIME_SOURCE_CNTPCT OP-TEE arm cntpct",
+  "title": "drm-gpu-quota-secure-time Agent Skill | yubi-OS/yubiOS",
+  "url": "https://skillsmp.com/creators/yubi-os/yubios/skills-drm-gpu-quota-secure-time",
+  "snippet": "GPU resource-lockout design (per-cgroup VRAM quota + hard enforcement via secure world) and ARM64 secure-time sourcing for OP-TEE on Rockchip (CFG_SECURE_TIME_SOURCE_CNTPCT). Covers the real upstream DRM device-memory cgroup effort (\"dev\" controller, not the old \"drmcg\" RFC), the real Panfrost BO-allocation hook points (panfrost_ioctl_create_bo, panfrost_lookup_bos), a from-scratch SMC-mailbox ...GPU resource-lockout design (per-cgroup VRAM quota + hard enforcement via secure world) and ARM64 secure-time sourcing for OP-TEE on Rockchip (CFG_SECURE_TIME_SOURCE_CNTPCT). Covers the real upstream DRM device-memory cgroup effort (\"dev\" controller, not the old \"drmcg\" RFC), the real Panfrost BO-allocation hook points (panfrost_ioctl_create_bo, panfrost_lookup_bos), a from-scratch SMC-mailbox ...",
+  "collected_at": "2026-10-05T15:12:48Z",
+  "weight": 0.0542,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'drm-gpu-quota-secure-time Agent Skill | yubi-OS/yubiOS' (https://skillsmp.com/creators/yubi-os/yubios/skills-drm-gpu-quota-secure-time) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0542
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:40Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "CFG_SECURE_TIME_SOURCE_CNTPCT OP-TEE arm cntpct",
+  "title": "CFG Bank",
+  "url": "https://www.cfg.bank/",
+  "snippet": "Equal Opportunity Lender. Capital Funding, LLC and Capital Finance, LLC are subsidiaries of CFG Bank.",
+  "collected_at": "2026-10-05T15:12:48Z",
+  "weight": 0.0313,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'CFG Bank' (https://www.cfg.bank/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0313
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:40Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_arm_cntpct.c ARM system counter secure time",
+  "title": "optee_os/core/arch/arm/kernel/tee_time_arm_cntpct.c at master \u00b7 OP-TEE ...",
+  "url": "https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/tee_time_arm_cntpct.c",
+  "snippet": "Trusted side of the TEE. Contribute to OP-TEE/optee_os development by creating an account on GitHub.Trusted side of the TEE. Contribute to OP-TEE/optee_os development by creating an account on GitHub.",
+  "collected_at": "2026-10-05T15:12:58Z",
+  "weight": 0.815,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'optee_os/core/arch/arm/kernel/tee_time_arm_cntpct.c at master \u00b7 OP-TEE ...' (https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/tee_time_arm_cntpct.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.815
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:40Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_arm_cntpct.c ARM system counter secure time",
+  "title": "core/arch/arm/kernel/tee_time_arm_cntpct.c - optee-os-mtk - Git at Google",
+  "url": "https://coral.googlesource.com/optee-os-mtk/+/80d47d0aba0f7810a1c56caa0cf86a280d8b9d0b/core/arch/arm/kernel/tee_time_arm_cntpct.c",
+  "snippet": ".protection_level = 1000, .get_sys_time = arm_cntpct_get_sys_time, }; REGISTER_TIME_SOURCE(arm_cntpct_time_source) /* * We collect jitter using cntpct in 32- or 64-bit mode that is typically * clocked at around 1MHz. * * The first time we are called, we add low 16 bits of the counter as entropy. * * Subsequently, accumulate 2 low bits each time ....protection_level = 1000, .get_sys_time = arm_cntpct_get_sys_time, }; REGISTER_TIME_SOURCE(arm_cntpct_time_source) /* * We collect jitter using cntpct in 32- or 64-bit mode that is typically * clocked at around 1MHz. * * The first time we are called, we add low 16 bits of the counter as entropy. * * Subsequently, accumulate 2 low bits each time ...",
+  "collected_at": "2026-10-05T15:12:58Z",
+  "weight": 0.7663,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'core/arch/arm/kernel/tee_time_arm_cntpct.c - optee-os-mtk - Git at Google' (https://coral.googlesource.com/optee-os-mtk/+/80d47d0aba0f7810a1c56caa0cf86a280d8b9d0b/core/arch/arm/kernel/tee_time_arm_cntpct.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7663
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:40Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_arm_cntpct.c ARM system counter secure time",
+  "title": "rz_optee_os/core/arch/arm/kernel/tee_time_arm_cntpct.c at ... - GitHub",
+  "url": "https://github.com/Renesas-SST/rz_optee_os/blob/master/core/arch/arm/kernel/tee_time_arm_cntpct.c",
+  "snippet": "* We collect jitter using cntpct in 32- or 64-bit mode that is typically * clocked at around 1MHz. * The first time we are called, we add low 16 bits of the counter as entropy ...",
+  "collected_at": "2026-10-05T15:12:58Z",
+  "weight": 0.8079,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'rz_optee_os/core/arch/arm/kernel/tee_time_arm_cntpct.c at ... - GitHub' (https://github.com/Renesas-SST/rz_optee_os/blob/master/core/arch/arm/kernel/tee_time_arm_cntpct.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8079
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_arm_cntpct.c ARM system counter secure time",
+  "title": "tee_time_arm_cntpct.c - core/arch/arm/kernel/tee_time_arm_cntpct.c - Op ...",
+  "url": "https://elixir.bootlin.com/op-tee/4.3.0/source/core/arch/arm/kernel/tee_time_arm_cntpct.c",
+  "snippet": "Elixir Cross Referencer - source code of Op-tee 4.3.0: core/arch/arm/kernel/tee_time_arm_cntpct.c",
+  "collected_at": "2026-10-05T15:12:58Z",
+  "weight": 0.7296,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'tee_time_arm_cntpct.c - core/arch/arm/kernel/tee_time_arm_cntpct.c - Op ...' (https://elixir.bootlin.com/op-tee/4.3.0/source/core/arch/arm/kernel/tee_time_arm_cntpct.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7296
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_arm_cntpct.c ARM system counter secure time",
+  "title": "OP-TEE Documentation",
+  "url": "https://app.readthedocs.org/projects/optee/downloads/pdf/latest/",
+  "snippet": "OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology.OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology.",
+  "collected_at": "2026-10-05T15:12:58Z",
+  "weight": 0.6598,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE Documentation' (https://app.readthedocs.org/projects/optee/downloads/pdf/latest/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6598
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_arm_cntpct.c ARM system counter secure time",
+  "title": "Clocks and Timers \u2014 The Linux Kernel documentation",
+  "url": "https://docs.kernel.org/6.1/virt/hyperv/clocks.html",
+  "snippet": "On arm64, Hyper-V virtualizes the ARMv8 architectural system counter and timer. Guest VMs use this virtualized hardware as the Linux clocksource and clock\u2026",
+  "collected_at": "2026-10-05T15:12:58Z",
+  "weight": 0.4049,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Clocks and Timers \u2014 The Linux Kernel documentation' (https://docs.kernel.org/6.1/virt/hyperv/clocks.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4049
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_ree.c REE time rollback clamp protection level 100",
+  "title": "Secure storage \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "snippet": "Typically, an implementation may rely on the REE for that purpose (protection level 100) or on hardware assets controlled by the TEE (protection level 1000). (see GP TEE Internal Core API section 2.5 and 5.2) If configured with CFG_RPMB_FS=y the protection against rollback is controlled by the TEE and is set to 1000.",
+  "collected_at": "2026-10-05T15:13:04Z",
+  "weight": 0.3111,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure storage \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/secure_storage.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3111
+   },
+   "usage": {
+    "input_tokens": 806,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_ree.c REE time rollback clamp protection level 100",
+  "title": "Secure Storage | nxp-imx/imx-optee-os | DeepWiki",
+  "url": "https://deepwiki.com/nxp-imx/imx-optee-os/2.5-secure-storage",
+  "snippet": "Secure Storage in OP-TEE OS provides confidentiality and integrity-protected persistent storage for trusted applications (TAs). It enables TAs to securely store sensitive data and ensure that it remaiSecure Storage in OP-TEE OS provides confidentiality and integrity-protected persistent storage for trusted applications (TAs). It enables TAs to securely store sensitive data and ensure that it remai",
+  "collected_at": "2026-10-05T15:13:04Z",
+  "weight": 0.5785,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure Storage | nxp-imx/imx-optee-os | DeepWiki' (https://deepwiki.com/nxp-imx/imx-optee-os/2.5-secure-storage) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5785
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:44Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_ree.c REE time rollback clamp protection level 100",
+  "title": "Secure Storage Protection \u00b7 Issue #2592 \u00b7 OP-TEE/optee_os",
+  "url": "https://github.com/OP-TEE/optee_os/issues/2592",
+  "snippet": "Hello, I'm writing my thesis and I need to explain how the persistent secure objects are stored in /data/tee. The goal of the system I implemented is to protect against rollback attacks. https://gi...Hello, I'm writing my thesis and I need to explain how the persistent secure objects are stored in /data/tee. The goal of the system I implemented is to protect against rollback attacks. https://gi...",
+  "collected_at": "2026-10-05T15:13:04Z",
+  "weight": 0.692,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure Storage Protection \u00b7 Issue #2592 \u00b7 OP-TEE/optee_os' (https://github.com/OP-TEE/optee_os/issues/2592) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.692
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:44Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_ree.c REE time rollback clamp protection level 100",
+  "title": "OP-TEE Documentation",
+  "url": "https://optee.readthedocs.io/",
+  "snippet": "OP-TEE Documentation This is the official location for OP-TEE documentation.",
+  "collected_at": "2026-10-05T15:13:04Z",
+  "weight": 0.9362,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE Documentation' (https://optee.readthedocs.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9362
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:44Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_ree.c REE time rollback clamp protection level 100",
+  "title": "Security Features | OP-TEE/optee_os | DeepWiki",
+  "url": "https://deepwiki.com/OP-TEE/optee_os/3-security-features",
+  "snippet": "Security Features Relevant source files This document provides a high-level overview of OP-TEE's security mechanisms. It covers the cryptographic framework, secure storage systems, and memory isolation techniques that protect the Trusted Execution Environment (TEE). For detailed implementation specifics, refer to the child pages: Cryptographic Services \u2014 Details on the crypto provider ...",
+  "collected_at": "2026-10-05T15:13:04Z",
+  "weight": 0.1899,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Security Features | OP-TEE/optee_os | DeepWiki' (https://deepwiki.com/OP-TEE/optee_os/3-security-features) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1899
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:44Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE tee_time_ree.c REE time rollback clamp protection level 100",
+  "title": "Infinite Health Mob that can't move. - Minecraft Forum",
+  "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2957180-infinite-health-mob-that-cant-move",
+  "snippet": "Apr 14, 2019 \u00b7 Home Minecraft Forum Minecraft: Java Edition Redstone Discussion and Mechanisms Commands, Command Blocks \u2026",
+  "collected_at": "2026-10-05T15:13:04Z",
+  "weight": 0.021,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Infinite Health Mob that can't move. - Minecraft Forum' (https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2957180-infinite-health-mob-that-cant-move) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.021
+   },
+   "usage": {
+    "input_tokens": 802,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:44Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE REE time normal world clock spoofing secure world",
+  "title": "Core \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/core.html",
+  "snippet": "When the secure world returns to the normal world, OP-TEE OS executes a SMC that is caught by the Monitor which switches back to the normal world. When a secure interrupt is signaled by the Arm GIC, it shall reach the OP-TEE OS interrupt exception vector.When the secure world returns to the normal world, OP-TEE OS executes a SMC that is caught by the Monitor which switches back to the normal world. When a secure interrupt is signaled by the Arm GIC, it shall reach the OP-TEE OS interrupt exception vector.",
+  "collected_at": "2026-10-05T15:13:08Z",
+  "weight": 0.9145,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Core \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/core.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9145
+   },
+   "usage": {
+    "input_tokens": 796,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:47Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE REE time normal world clock spoofing secure world",
+  "title": "Normal World/Secure World Interaction | OP-TEE/optee_client | DeepWiki",
+  "url": "https://deepwiki.com/OP-TEE/optee_client/3.1-normal-worldsecure-world-interaction",
+  "snippet": "Secure World: The Trusted Execution Environment (TEE) running the OP-TEE OS and Trusted Applications These environments are physically separated by hardware mechanisms built into the processor, creating a security boundary that prevents the Normal World from directly accessing Secure World resources.Secure World: The Trusted Execution Environment (TEE) running the OP-TEE OS and Trusted Applications These environments are physically separated by hardware mechanisms built into the processor, creating a security boundary that prevents the Normal World from directly accessing Secure World resources.",
+  "collected_at": "2026-10-05T15:13:08Z",
+  "weight": 0.1886,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Normal World/Secure World Interaction | OP-TEE/optee_client | DeepWiki' (https://deepwiki.com/OP-TEE/optee_client/3.1-normal-worldsecure-world-interaction) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1886
+   },
+   "usage": {
+    "input_tokens": 796,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:47Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE REE time normal world clock spoofing secure world",
+  "title": "Core \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/3.12.0/architecture/core.html",
+  "snippet": "Core \u00b6 Interrupt handling \u00b6 This section describes how optee_os handles switches of world execution context based on SMC exceptions and interrupt notifications. Interrupt notifications are IRQ/FIQ exceptions which may also imply switching of world execution context: normal world to secure world, or secure world to normal world.",
+  "collected_at": "2026-10-05T15:13:08Z",
+  "weight": 0.9447,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Core \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/3.12.0/architecture/core.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9447
+   },
+   "usage": {
+    "input_tokens": 796,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:47Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE REE time normal world clock spoofing secure world",
+  "title": "Normal World to Secure World communication bypassing Normal ... - GitHub",
+  "url": "https://github.com/OP-TEE/optee_os/issues/1944",
+  "snippet": "We have constructed covert channels between normal world and secure world components using the shared cache. Technically it can be used for normal world and secure world communication and bypassing the normal world kernel.We have constructed covert channels between normal world and secure world components using the shared cache. Technically it can be used for normal world and secure world communication and bypassing the normal world kernel.",
+  "collected_at": "2026-10-05T15:13:08Z",
+  "weight": 0.2463,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Normal World to Secure World communication bypassing Normal ... - GitHub' (https://github.com/OP-TEE/optee_os/issues/1944) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2463
+   },
+   "usage": {
+    "input_tokens": 796,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:47Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE REE time normal world clock spoofing secure world",
+  "title": "PDF OP-TEE: When Linux Loses Control - Bootlin",
+  "url": "https://bootlin.com/pub/conferences/2021/elc/leger-optee-linux-interaction/leger-optee-linux-interaction.pdf",
+  "snippet": "Present various protocols & methods to communicate between REE/TEE (SCMI, PSCI, SMC) Provide experience feedback on Microchip SAMA5D2 OP-TEE port (ARMv7-A) Open Portable Trusted Execution Environment Provides secure services to a Rich Execution Environment (REE) (Typically Linux).Present various protocols & methods to communicate between REE/TEE (SCMI, PSCI, SMC) Provide experience feedback on Microchip SAMA5D2 OP-TEE port (ARMv7-A) Open Portable Trusted Execution Environment Provides secure services to a Rich Execution Environment (REE) (Typically Linux).",
+  "collected_at": "2026-10-05T15:13:08Z",
+  "weight": 0.7949,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PDF OP-TEE: When Linux Loses Control - Bootlin' (https://bootlin.com/pub/conferences/2021/elc/leger-optee-linux-interaction/leger-optee-linux-interaction.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7949
+   },
+   "usage": {
+    "input_tokens": 796,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:47Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE REE time normal world clock spoofing secure world",
+  "title": "How does Linux scheduler of OP-TEE work after switching to Secure world",
+  "url": "https://stackoverflow.com/questions/36599279/how-does-linux-scheduler-of-op-tee-work-after-switching-to-secure-world",
+  "snippet": "Mar 19, 2019 \u00b7 I successfully run OP-TEE on QEMU and want to figure out how scheduler works. I modified the source code to get the variable jiffies right before entering Secure World and after returning to Normal World.",
+  "collected_at": "2026-10-05T15:13:08Z",
+  "weight": 0.0677,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How does Linux scheduler of OP-TEE work after switching to Secure world' (https://stackoverflow.com/questions/36599279/how-does-linux-scheduler-of-op-tee-work-after-switching-to-secure-world) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0677
+   },
+   "usage": {
+    "input_tokens": 875,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:49Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Trusted Firmware-A OP-TEE dispatcher SPD opteed BL32 loading",
+  "title": "4.1.1. OP-TEE Dispatcher \u2014 Trusted Firmware-A 2.15.0 documentation",
+  "url": "https://tf-a.docs.trustedfirmware.org/en/latest/components/spd/optee-dispatcher.html",
+  "snippet": "4.1.1. OP-TEE Dispatcher OP-TEE OS is a Trusted OS running as Secure EL1. To build and execute OP-TEE follow the instructions at OP-TEE build.git There are two different modes for loading the OP-TEE OS. The default mode will load it as the BL32 payload during boot, and is the recommended technique for platforms to use.4.1.1. OP-TEE Dispatcher OP-TEE OS is a Trusted OS running as Secure EL1. To build and execute OP-TEE follow the instructions at OP-TEE build.git There are two different modes for loading the OP-TEE OS. The default mode will load it as the BL32 payload during boot, and is the recommended technique for platforms to use.",
+  "collected_at": "2026-10-05T15:13:18Z",
+  "weight": 0.9177,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '4.1.1. OP-TEE Dispatcher \u2014 Trusted Firmware-A 2.15.0 documentation' (https://tf-a.docs.trustedfirmware.org/en/latest/components/spd/optee-dispatcher.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9177
+   },
+   "usage": {
+    "input_tokens": 875,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:49Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Trusted Firmware-A OP-TEE dispatcher SPD opteed BL32 loading",
+  "title": "arm-trusted-firmware/docs/components/spd/optee-dispatcher.rst ... - GitHub",
+  "url": "https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/components/spd/optee-dispatcher.rst",
+  "snippet": "The default mode will load it as the BL32 payload during boot, and is the recommended technique for platforms to use. There is also another technique that will load OP-TEE OS after boot via an SMC call by enabling the option for OPTEE_ALLOW_SMC_LOAD that was specifically added for ChromeOS.The default mode will load it as the BL32 payload during boot, and is the recommended technique for platforms to use. There is also another technique that will load OP-TEE OS after boot via an SMC call by enabling the option for OPTEE_ALLOW_SMC_LOAD that was specifically added for ChromeOS.",
+  "collected_at": "2026-10-05T15:13:18Z",
+  "weight": 0.8343,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'arm-trusted-firmware/docs/components/spd/optee-dispatcher.rst ... - GitHub' (https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/components/spd/optee-dispatcher.rst) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8343
+   },
+   "usage": {
+    "input_tokens": 875,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:49Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Trusted Firmware-A OP-TEE dispatcher SPD opteed BL32 loading",
+  "title": "arm-trusted-firmware/services/spd/opteed/opteed_main.c at master \u00b7 ARM ...",
+  "url": "https://github.com/ARM-software/arm-trusted-firmware/blob/master/services/spd/opteed/opteed_main.c",
+  "snippet": "* executes in Secure EL1. The Secure Monitor will delegate all SMCs targeting * the Trusted OS/Applications range to the dispatcher. The SPD will either * handle the request locally or delegate it to the Secure Payload. It is also * responsible for initialising and maintaining communication with the SP.* executes in Secure EL1. The Secure Monitor will delegate all SMCs targeting * the Trusted OS/Applications range to the dispatcher. The SPD will either * handle the request locally or delegate it to the Secure Payload. It is also * responsible for initialising and maintaining communication with the SP.",
+  "collected_at": "2026-10-05T15:13:18Z",
+  "weight": 0.7991,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'arm-trusted-firmware/services/spd/opteed/opteed_main.c at master \u00b7 ARM ...' (https://github.com/ARM-software/arm-trusted-firmware/blob/master/services/spd/opteed/opteed_main.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7991
+   },
+   "usage": {
+    "input_tokens": 875,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:49Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Trusted Firmware-A OP-TEE dispatcher SPD opteed BL32 loading",
+  "title": "Secure Payload Dispatchers (SPD): TSPD, OP-TEE, Trusty, TLK",
+  "url": "https://deepwiki.com/mtk-openwrt/arm-trusted-firmware/4.4-secure-payload-dispatchers-(spd):-tspd-op-tee-trusty-tlk",
+  "snippet": "The Secure Payload Dispatcher (SPD) is a component of the EL3 runtime services that facilitates communication between the Non-secure world and a Trusted OS (Secure Payload) running in S-EL1. The SPD framework manages the initialization of the Secure Payload (BL32), context switching between security worlds, and handling Secure EL1 interrupts.",
+  "collected_at": "2026-10-05T15:13:18Z",
+  "weight": 0.1966,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure Payload Dispatchers (SPD): TSPD, OP-TEE, Trusty, TLK' (https://deepwiki.com/mtk-openwrt/arm-trusted-firmware/4.4-secure-payload-dispatchers-(spd):-tspd-op-tee-trusty-tlk) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1966
+   },
+   "usage": {
+    "input_tokens": 875,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:49Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Trusted Firmware-A OP-TEE dispatcher SPD opteed BL32 loading",
+  "title": "Trusted Health \u2014 Get matched to flexible jobs",
+  "url": "https://www.trustedhealth.com/",
+  "snippet": "3 days ago \u00b7 You work at the facility, but Trusted is your employer. We handle paperwork, benefits, and payroll, and support you the \u2026",
+  "collected_at": "2026-10-05T15:13:18Z",
+  "weight": 0.5285,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Trusted Health \u2014 Get matched to flexible jobs' (https://www.trustedhealth.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5285
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Trusted Firmware-A OP-TEE dispatcher SPD opteed BL32 loading",
+  "title": "4.1.1. OP-TEE Dispatcher \u2014 Trusted...",
+  "url": "https://trustedfirmware-a.readthedocs.io/en/v2.12/components/spd/optee-dispatcher.html",
+  "snippet": "Loading OP-TEE via an SMC call may be insecure depending upon the platform configuration. If using that option, be sure to understand the risks involved with allowing the Trusted OS to be loaded this way.",
+  "collected_at": "2026-10-05T15:13:18Z",
+  "weight": 0.685,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '4.1.1. OP-TEE Dispatcher \u2014 Trusted...' (https://trustedfirmware-a.readthedocs.io/en/v2.12/components/spd/optee-dispatcher.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.685
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TF-A boot-time BL32 OP-TEE secure world initialization versus SMC load",
+  "title": "Secure boot \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/secure_boot.html",
+  "snippet": "Secure boot Armv8-A - Using the authentication framework in TF-A This section gives a brief description on how to enable the verification of OP-TEE using the authentication framework in Trusted Firmware A (TF-A), i.e., something that could be used in an Armv8-A environment.Secure boot Armv8-A - Using the authentication framework in TF-A This section gives a brief description on how to enable the verification of OP-TEE using the authentication framework in Trusted Firmware A (TF-A), i.e., something that could be used in an Armv8-A environment.",
+  "collected_at": "2026-10-05T15:13:22Z",
+  "weight": 0.8249,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure boot \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/secure_boot.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8249
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TF-A boot-time BL32 OP-TEE secure world initialization versus SMC load",
+  "title": "Boot Architecture | ARM-software/arm-trusted-firmware | DeepWiki",
+  "url": "https://deepwiki.com/ARM-software/arm-trusted-firmware/3-boot-architecture",
+  "snippet": "The TF-A boot architecture provides a secure and flexible framework for initializing ARM-based systems. The multi-stage boot process, from BL1 to BL33, ensures a secure boot chain and establishes a trusted execution environment.The TF-A boot architecture provides a secure and flexible framework for initializing ARM-based systems. The multi-stage boot process, from BL1 to BL33, ensures a secure boot chain and establishes a trusted execution environment.",
+  "collected_at": "2026-10-05T15:13:22Z",
+  "weight": 0.2147,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Boot Architecture | ARM-software/arm-trusted-firmware | DeepWiki' (https://deepwiki.com/ARM-software/arm-trusted-firmware/3-boot-architecture) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2147
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TF-A boot-time BL32 OP-TEE secure world initialization versus SMC load",
+  "title": "4.1.1. OP-TEE Dispatcher \u2014 Trusted Firmware-A 2.15.0 documentation",
+  "url": "https://tf-a.docs.trustedfirmware.org/en/latest/components/spd/optee-dispatcher.html",
+  "snippet": "The default mode will load it as the BL32 payload during boot, and is the recommended technique for platforms to use. There is also another technique that will load OP-TEE OS after boot via an SMC call by enabling the option for OPTEE_ALLOW_SMC_LOAD that was specifically added for ChromeOS.",
+  "collected_at": "2026-10-05T15:13:22Z",
+  "weight": 0.717,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '4.1.1. OP-TEE Dispatcher \u2014 Trusted Firmware-A 2.15.0 documentation' (https://tf-a.docs.trustedfirmware.org/en/latest/components/spd/optee-dispatcher.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.717
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TF-A boot-time BL32 OP-TEE secure world initialization versus SMC load",
+  "title": "5.4. Firmware Design \u2014 Trusted Firmware-A 2.15.0 documentation",
+  "url": "https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html",
+  "snippet": "This is the cold boot path. TF-A also implements the PSCI as a runtime service. PSCI is the interface from normal world software to firmware implementing power management use-cases (for example, secondary CPU boot, hotplug and idle). Normal world software can access TF-A runtime services via the Arm SMC (Secure Monitor Call) instruction.This is the cold boot path. TF-A also implements the PSCI as a runtime service. PSCI is the interface from normal world software to firmware implementing power management use-cases (for example, secondary CPU boot, hotplug and idle). Normal world software can access TF-A runtime services via the Arm SMC (Secure Monitor Call) instruction.",
+  "collected_at": "2026-10-05T15:13:22Z",
+  "weight": 0.914,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '5.4. Firmware Design \u2014 Trusted Firmware-A 2.15.0 documentation' (https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.914
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TF-A boot-time BL32 OP-TEE secure world initialization versus SMC load",
+  "title": "Thornton Fractional High School District #215",
+  "url": "https://www.tfd215.org/",
+  "snippet": "At Thornton Fractional High School District 215, we remain steadfast in our commitment to providing an exceptional educational \u2026",
+  "collected_at": "2026-10-05T15:13:22Z",
+  "weight": 0.3007,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Thornton Fractional High School District #215' (https://www.tfd215.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3007
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TF-A boot-time BL32 OP-TEE secure world initialization versus SMC load",
+  "title": "STM32MPU OP-TEE profiles - stm32mpu",
+  "url": "https://wiki.st.com/stm32mpu/wiki/STM32MPU_OP-TEE_profiles",
+  "snippet": "STM32 MPU ROM code secure boot. TF-A BL2 Trusted Board Boot. Device life cycle.This profile runs OP-TEE is the secure SYSRAM with OP-TEE pager enabled. Refer to section STM32MP15 pager constraints for more information on configuration constraints when pager is enabled.",
+  "collected_at": "2026-10-05T15:13:22Z",
+  "weight": 0.8193,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'STM32MPU OP-TEE profiles - stm32mpu' (https://wiki.st.com/stm32mpu/wiki/STM32MPU_OP-TEE_profiles) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8193
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Linux kernel OP-TEE driver SMCCC SMC protocol documentation",
+  "title": "OP-TEE (Open Portable Trusted Execution Environment) \u2014 The Linux...",
+  "url": "https://docs.kernel.org/tee/op-tee.html",
+  "snippet": "OPTEE_SMC_CALL_WITH_ARG drives the OP-TEE message protocol OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory range to used for shared memory between Linux and OP-TEE. The GlobalPlatform TEE Client API [5] is implemented on top of the generic TEE API.OPTEE_SMC_CALL_WITH_ARG drives the OP-TEE message protocol OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory range to used for shared memory between Linux and OP-TEE. The GlobalPlatform TEE Client API [5] is implemented on top of the generic TEE API.",
+  "collected_at": "2026-10-05T15:13:32Z",
+  "weight": 0.928,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE (Open Portable Trusted Execution Environment) \u2014 The Linux...' (https://docs.kernel.org/tee/op-tee.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.928
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Linux kernel OP-TEE driver SMCCC SMC protocol documentation",
+  "title": "linux/Documentation/tee/op-tee.rst at master \u00b7 torvalds/linux",
+  "url": "https://github.com/torvalds/linux/blob/master/Documentation/tee/op-tee.rst",
+  "snippet": "The OP-TEE driver handles OP-TEE [1] based TEEs. Currently it is only the ARM TrustZone based OP-TEE solution that is supported. Lowest level of communication with OP-TEE builds on ARM SMC Calling Convention (SMCCC) [2], which is the foundation for OP-TEE's SMC interface [3] used internally by the ...The OP-TEE driver handles OP-TEE [1] based TEEs. Currently it is only the ARM TrustZone based OP-TEE solution that is supported. Lowest level of communication with OP-TEE builds on ARM SMC Calling Convention (SMCCC) [2], which is the foundation for OP-TEE's SMC interface [3] used internally by the ...",
+  "collected_at": "2026-10-05T15:13:32Z",
+  "weight": 0.6854,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'linux/Documentation/tee/op-tee.rst at master \u00b7 torvalds/linux' (https://github.com/torvalds/linux/blob/master/Documentation/tee/op-tee.rst) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6854
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Linux kernel OP-TEE driver SMCCC SMC protocol documentation",
+  "title": "The Linux Kernel Archives",
+  "url": "https://www.kernel.org/doc/Documentation/tee/op-tee.rst",
+  "snippet": "Lowest level of communication with OP-TEE builds on ARM SMC Calling Convention (SMCCC) [2], which is the foundation for OP-TEE's SMC interface [3] used internally by the driver.Lowest level of communication with OP-TEE builds on ARM SMC Calling Convention (SMCCC) [2], which is the foundation for OP-TEE's SMC interface [3] used internally by the driver.",
+  "collected_at": "2026-10-05T15:13:32Z",
+  "weight": 0.8866,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The Linux Kernel Archives' (https://www.kernel.org/doc/Documentation/tee/op-tee.rst) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8866
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Linux kernel OP-TEE driver SMCCC SMC protocol documentation",
+  "title": "OP-TEE (Open Portable Trusted Execution Environment) - Kernel",
+  "url": "https://docs.kernel.org/next/tee/op-tee.html",
+  "snippet": "OPTEE_SMC_CALL_WITH_ARG drives the OP-TEE message protocol OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory range to used for shared memory between Linux and OP-TEE. The GlobalPlatform TEE Client API [5] is implemented on top of the generic TEE API.",
+  "collected_at": "2026-10-05T15:13:32Z",
+  "weight": 0.936,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE (Open Portable Trusted Execution Environment) - Kernel' (https://docs.kernel.org/next/tee/op-tee.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.936
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Linux kernel OP-TEE driver SMCCC SMC protocol documentation",
+  "title": "SMC Protocol Reference | op-tee-ia/optee_linuxdriver | DeepWiki",
+  "url": "https://deepwiki.com/op-tee-ia/optee_linuxdriver/3.7-smc-protocol-reference",
+  "snippet": "SMC Protocol Reference Relevant source files This page provides a comprehensive reference for the SMC (Secure Monitor Call) protocol used by the OP-TEE driver to communicate with OP-TEE OS in the secure world.SMC Protocol Reference Relevant source files This page provides a comprehensive reference for the SMC (Secure Monitor Call) protocol used by the OP-TEE driver to communicate with OP-TEE OS in the secure world.",
+  "collected_at": "2026-10-05T15:13:32Z",
+  "weight": 0.2516,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SMC Protocol Reference | op-tee-ia/optee_linuxdriver | DeepWiki' (https://deepwiki.com/op-tee-ia/optee_linuxdriver/3.7-smc-protocol-reference) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2516
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "Linux kernel OP-TEE driver SMCCC SMC protocol documentation",
+  "title": "OP-TEE Documentation",
+  "url": "https://app.readthedocs.org/projects/optee/downloads/pdf/latest/",
+  "snippet": "The OP-TEE Linux driver (as implemented in drivers/tee/optee since Linux kernel 4.12) is designed so that the Linux thread invoking OP-TEE gets assigned a trusted thread on TEE side.The OP-TEE Linux driver (as implemented in drivers/tee/optee since Linux kernel 4.12) is designed so that the Linux thread invoking OP-TEE gets assigned a trusted thread on TEE side.",
+  "collected_at": "2026-10-05T15:13:32Z",
+  "weight": 0.7341,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE Documentation' (https://app.readthedocs.org/projects/optee/downloads/pdf/latest/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7341
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "linux documentation tee subsystem op-tee driver client TA",
+  "title": "TEE subsystem \u2014 The Linux Kernel documentation",
+  "url": "https://www.kernel.org/doc/html/v5.19/staging/tee.html",
+  "snippet": "OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory range to used for shared memory between Linux and OP-TEE. The GlobalPlatform TEE Client API [5] is implemented on top of the generic TEE API.OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory range to used for shared memory between Linux and OP-TEE. The GlobalPlatform TEE Client API [5] is implemented on top of the generic TEE API.",
+  "collected_at": "2026-10-05T15:13:37Z",
+  "weight": 0.8813,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TEE subsystem \u2014 The Linux Kernel documentation' (https://www.kernel.org/doc/html/v5.19/staging/tee.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8813
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "linux documentation tee subsystem op-tee driver client TA",
+  "title": "OP-TEE (Open Portable Trusted Execution Environment) - Kernel",
+  "url": "https://docs.kernel.org/next/tee/op-tee.html",
+  "snippet": "OPTEE_SMC_CALL_WITH_ARG drives the OP-TEE message protocol OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory range to used for shared memory between Linux and OP-TEE. The GlobalPlatform TEE Client API [5] is implemented on top of the generic TEE API.OPTEE_SMC_CALL_WITH_ARG drives the OP-TEE message protocol OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory range to used for shared memory between Linux and OP-TEE. The GlobalPlatform TEE Client API [5] is implemented on top of the generic TEE API.",
+  "collected_at": "2026-10-05T15:13:37Z",
+  "weight": 0.9005,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE (Open Portable Trusted Execution Environment) - Kernel' (https://docs.kernel.org/next/tee/op-tee.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9005
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:58Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "linux documentation tee subsystem op-tee driver client TA",
+  "title": "optee_client \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/building/gits/optee_client.html",
+  "snippet": "optee_client optee_client git contains the source code for the TEE client library in Linux. This component provides the TEE Client API as defined by the GlobalPlatform TEE standard. It is distributed under the BSD 2-clause open source license. In this git there are two main targets/binaries to build. There is libteec.so, which is the library that contains that API for communication with the ...optee_client optee_client git contains the source code for the TEE client library in Linux. This component provides the TEE Client API as defined by the GlobalPlatform TEE standard. It is distributed under the BSD 2-clause open source license. In this git there are two main targets/binaries to build. There is libteec.so, which is the library that contains that API for communication with the ...",
+  "collected_at": "2026-10-05T15:13:37Z",
+  "weight": 0.8934,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'optee_client \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/building/gits/optee_client.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8934
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:58Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "linux documentation tee subsystem op-tee driver client TA",
+  "title": "TEE Subsystem \u2014 The Linux Kernel documentation",
+  "url": "https://docs.kernel.org/next/tee/index.html",
+  "snippet": "TEE Subsystem\u00b6 TEE (Trusted Execution Environment) OP-TEE (Open Portable Trusted Execution Environment) AMD-TEE (AMD\u2019s Trusted Execution Environment) TS-TEE (Trusted Services project) QTEE (Qualcomm Trusted Execution Environment) \u00a9The kernel development community. Powered by Sphinx 7.4.7& Alabaster 0.7.16| Page source",
+  "collected_at": "2026-10-05T15:13:37Z",
+  "weight": 0.8818,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TEE Subsystem \u2014 The Linux Kernel documentation' (https://docs.kernel.org/next/tee/index.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8818
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:58Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "linux documentation tee subsystem op-tee driver client TA",
+  "title": "linux/Documentation/tee/op-tee.rst at master \u00b7 torvalds/linux",
+  "url": "https://github.com/torvalds/linux/blob/master/Documentation/tee/op-tee.rst",
+  "snippet": "The OP-TEE driver handles OP-TEE [1] based TEEs. Currently it is only the ARM TrustZone based OP-TEE solution that is supported. Lowest level of communication with OP-TEE builds on ARM SMC Calling Convention (SMCCC) [2], which is the foundation for OP-TEE's SMC interface [3] used internally by the ...",
+  "collected_at": "2026-10-05T15:13:37Z",
+  "weight": 0.8331,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'linux/Documentation/tee/op-tee.rst at master \u00b7 torvalds/linux' (https://github.com/torvalds/linux/blob/master/Documentation/tee/op-tee.rst) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8331
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:58Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "linux documentation tee subsystem op-tee driver client TA",
+  "title": "TEE Subsystem \u2014 The Linux Kernel documentation",
+  "url": "https://docs.kernel.org/tee/index.html",
+  "snippet": "WMI Subsystem TEE Subsystem Locking Development tools and processes Licensing rules Writing documentation Development tools Testing guide Hacking guide Tracing Fault injection Livepatching Rust User-oriented documentation Administration Build system Reporting issues Userspace tools Userspace API Firmware-related documentation Firmware Firmware ...WMI Subsystem TEE Subsystem Locking Development tools and processes Licensing rules Writing documentation Development tools Testing guide Hacking guide Tracing Fault injection Livepatching Rust User-oriented documentation Administration Build system Reporting issues Userspace tools Userspace API Firmware-related documentation Firmware Firmware ...",
+  "collected_at": "2026-10-05T15:13:37Z",
+  "weight": 0.8527,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TEE Subsystem \u2014 The Linux Kernel documentation' (https://docs.kernel.org/tee/index.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8527
+   },
+   "usage": {
+    "input_tokens": 763,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:14:58Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TEE time versus REE time security properties monotonic anti-rollback",
+  "title": "Trusted Clocks - PlayReady | Microsoft Learn",
+  "url": "https://learn.microsoft.com/en-us/playready/features/trusted-clocks",
+  "snippet": "A PlayReady Anti-rollback Clock is \"a real-time clock that is periodically verified by the PlayReady Final Product to have advanced\", as defined in the Defined Terms document for the Compliance and Robustness Rules for PlayReady Products Per the requirements of the Compliance Rules for PlayReady Products, a PlayReady Anti-rollback Clock can use any source of time to set its value. The trust in ...",
+  "collected_at": "2026-10-05T15:13:40Z",
+  "weight": 0.8996,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Trusted Clocks - PlayReady | Microsoft Learn' (https://learn.microsoft.com/en-us/playready/features/trusted-clocks) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8996
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TEE time versus REE time security properties monotonic anti-rollback",
+  "title": "TEE Rollback Protection vs Blockchain Finality: Key Differences",
+  "url": "https://chainscorelabs.com/differences/execution-environments-and-virtual-machines/sandboxing-and-isolation-boundaries/tee-rollback-protection-vs-blockchain-finality-key-differences",
+  "snippet": "The main difference is that TEE rollback protection uses hardware-enforced monotonic counters and sealed storage to make state reversion physically impossible without tampering with the silicon, whereas blockchain finality uses economic incentives and validator consensus to make transaction reversal prohibitively expensive.",
+  "collected_at": "2026-10-05T15:13:40Z",
+  "weight": 0.1948,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TEE Rollback Protection vs Blockchain Finality: Key Differences' (https://chainscorelabs.com/differences/execution-environments-and-virtual-machines/sandboxing-and-isolation-boundaries/tee-rollback-protection-vs-blockchain-finality-key-differences) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1948
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TEE time versus REE time security properties monotonic anti-rollback",
+  "title": "Secure RTC & Time-Stamping: Tamper-Proof Signed Time",
+  "url": "https://icnavigator.com/technology/reference-oscillators-timing/secure-rtc-time-stamping/",
+  "snippet": "Secure RTC & Time-Stamping for Tamper-Proof Event Evidence \u2190 Back to:Reference Oscillators & Timing Secure RTC / Time-Stamping turns \"time\" into verifiable evidence: every reboot, tamper, and power-fail event is bound to a monotonic counter and a signed proof artifact that can be audited and rejects rollback/replay.",
+  "collected_at": "2026-10-05T15:13:40Z",
+  "weight": 0.5833,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure RTC & Time-Stamping: Tamper-Proof Signed Time' (https://icnavigator.com/technology/reference-oscillators-timing/secure-rtc-time-stamping/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5833
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TEE time versus REE time security properties monotonic anti-rollback",
+  "title": "Secure storage \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "snippet": "The first one relies on the normal world (REE) file system. It is described in this document and is the default implementation. It is enabled at compile time by CFG_REE_FS=y. The second one makes use of the Replay Protected Memory Block (RPMB) partition of an eMMC device, and is enabled by setting CFG_RPMB_FS=y. It is described in RPMB Secure Storage.",
+  "collected_at": "2026-10-05T15:13:40Z",
+  "weight": 0.6373,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure storage \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/secure_storage.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6373
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TEE time versus REE time security properties monotonic anti-rollback",
+  "title": "Transesophageal Echocardiogram (TEE) - Cleveland Clinic",
+  "url": "https://my.clevelandclinic.org/health/diagnostics/4992-echocardiogram-transesophageal-tee",
+  "snippet": "Jul 15, 2025 \u00b7 A TEE is an ultrasound test that takes pictures of your heart from inside your body. It diagnoses valve disease, blood \u2026",
+  "collected_at": "2026-10-05T15:13:40Z",
+  "weight": 0.0429,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Transesophageal Echocardiogram (TEE) - Cleveland Clinic' (https://my.clevelandclinic.org/health/diagnostics/4992-echocardiogram-transesophageal-tee) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0429
+   },
+   "usage": {
+    "input_tokens": 812,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "TEE time versus REE time security properties monotonic anti-rollback",
+  "title": "TEE Protection Profile",
+  "url": "https://wikileaks.org/sony/docs/05/docs/Global%20Platform/GPD_TEE_ProtectionProfile_v1.0.pdf",
+  "snippet": "2048, etc. \u2022 Monotonic TA instance time \u2022 Correct execution of TA services \u2022 TEE firmware integrity up to modifications authorized by the upgrade policy (implementation-. dependent). The TEE security functionality defines the logical boundary of the TOE.",
+  "collected_at": "2026-10-05T15:13:40Z",
+  "weight": 0.7147,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TEE Protection Profile' (https://wikileaks.org/sony/docs/05/docs/Global%20Platform/GPD_TEE_ProtectionProfile_v1.0.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7147
+   },
+   "usage": {
+    "input_tokens": 856,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "secure monotonic counter ARM generic timer trust boundary what clock claims are safe",
+  "title": "PDF AArch64 Programmer's Guide: Generic Timer - Arm Developer",
+  "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Learn%20the%20Architecture/Generic%20Timer.pdf?revision=c710e7a7-9f52-4901-8c9d-91b19f44f9c7",
+  "snippet": "The Generic Timer provides a common timer framework for Arm systems. In this guide, we have learned about the different components of the Generic Timer and their programming interfaces.",
+  "collected_at": "2026-10-05T15:13:50Z",
+  "weight": 0.7812,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PDF AArch64 Programmer's Guide: Generic Timer - Arm Developer' (https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Learn%20the%20Architecture/Generic%20Timer.pdf?revision=c710e7a7-9f52-4901-8c9d-91b19f44f9c7) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7812
+   },
+   "usage": {
+    "input_tokens": 856,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "secure monotonic counter ARM generic timer trust boundary what clock claims are safe",
+  "title": "Learn the architecture - Generic Timer",
+  "url": "https://documentation-service.arm.com/static/6294c39db334256d9ea8ae53",
+  "snippet": "This document is protected by copyright and other related rights and the practice or implementation of the information contained in this document may be protected by one or more patents or pending patent applications. No part of this document may be reproduced in any form by any means without the express prior written permission of Arm. No license,...",
+  "collected_at": "2026-10-05T15:13:50Z",
+  "weight": 0.7029,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Learn the architecture - Generic Timer' (https://documentation-service.arm.com/static/6294c39db334256d9ea8ae53) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7029
+   },
+   "usage": {
+    "input_tokens": 856,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "secure monotonic counter ARM generic timer trust boundary what clock claims are safe",
+  "title": "Learn the architecture - Generic Timer",
+  "url": "https://support.arm.com/documentation/102379/0101/The-processor-timers",
+  "snippet": "This guide introduces the Generic Timer, the timer framework for A-profile PEs.",
+  "collected_at": "2026-10-05T15:13:50Z",
+  "weight": 0.8104,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Learn the architecture - Generic Timer' (https://support.arm.com/documentation/102379/0101/The-processor-timers) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8104
+   },
+   "usage": {
+    "input_tokens": 856,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "secure monotonic counter ARM generic timer trust boundary what clock claims are safe",
+  "title": "Classic Cars for sale | eBay",
+  "url": "https://m.ebay.com/sch/i.html?_nkw=classic+cars&_sop=12",
+  "snippet": "Get the best deals for Classic Cars at eBay.com. We have a great online selection at the lowest prices with Fast & Free shipping on \u2026",
+  "collected_at": "2026-10-05T15:13:50Z",
+  "weight": 0.0347,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Classic Cars for sale | eBay' (https://m.ebay.com/sch/i.html?_nkw=classic+cars&_sop=12) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0347
+   },
+   "usage": {
+    "input_tokens": 856,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "secure monotonic counter ARM generic timer trust boundary what clock claims are safe",
+  "title": "Secure RTC & Time-Stamping: Tamper-Proof Signed Time",
+  "url": "https://icnavigator.com/technology/reference-oscillators-timing/secure-rtc-time-stamping/",
+  "snippet": "The minimum secure-time loop is: event + monotonic counter + signed token. This provides integrity, freshness, and rollback detection without requiring a full secure log subsystem. Minimal payload fields (small but complete).",
+  "collected_at": "2026-10-05T15:13:50Z",
+  "weight": 0.5971,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure RTC & Time-Stamping: Tamper-Proof Signed Time' (https://icnavigator.com/technology/reference-oscillators-timing/secure-rtc-time-stamping/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5971
+   },
+   "usage": {
+    "input_tokens": 864,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "secure monotonic counter ARM generic timer trust boundary what clock claims are safe",
+  "title": "US9910990B2 - Security controlled multi-processor system\u2026",
+  "url": "https://patents.google.com/patent/US9910990B2/en",
+  "snippet": "Embodiments of the present disclosure provide systems and methods for implementing a secure processing system having a first processor that is certified as a secure processor. The first processor only executes certified and/or secure code.",
+  "collected_at": "2026-10-05T15:13:50Z",
+  "weight": 0.6411,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'US9910990B2 - Security controlled multi-processor system\u2026' (https://patents.google.com/patent/US9910990B2/en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6411
+   },
+   "usage": {
+    "input_tokens": 864,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ARM generic timer counter CNTPCT suspend resume continuity deep sleep",
+  "title": "PDF AArch64 Programmer's Guide: Generic Timer - Arm Developer",
+  "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Learn%20the%20Architecture/Generic%20Timer.pdf?revision=c710e7a7-9f52-4901-8c9d-91b19f44f9c7",
+  "snippet": "The Generic Timer provides a common timer framework for Arm systems. In this guide, we have learned about the different components of the Generic Timer and their programming interfaces.",
+  "collected_at": "2026-10-05T15:13:54Z",
+  "weight": 0.8466,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PDF AArch64 Programmer's Guide: Generic Timer - Arm Developer' (https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Learn%20the%20Architecture/Generic%20Timer.pdf?revision=c710e7a7-9f52-4901-8c9d-91b19f44f9c7) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8466
+   },
+   "usage": {
+    "input_tokens": 864,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ARM generic timer counter CNTPCT suspend resume continuity deep sleep",
+  "title": "ARMv7 Generic Timers - OSDev Wiki",
+  "url": "https://wiki.osdev.org/ARMv7_Generic_Timers",
+  "snippet": "Overview The ARM Generic Timers (henceforth, \"GT\") are architecturally specified in ARMv7 as an OPTIONAL extension to the ARMv7-a and ARMv7-r streams. The feature is specified to provide a system-wide timestamp-counter (henceforth, \"syscounter\") reference which operates independent of the CPU clock's frequency, allowing for TSC measurements which are invariant over time, regardless of ...",
+  "collected_at": "2026-10-05T15:13:54Z",
+  "weight": 0.2126,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'ARMv7 Generic Timers - OSDev Wiki' (https://wiki.osdev.org/ARMv7_Generic_Timers) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2126
+   },
+   "usage": {
+    "input_tokens": 864,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ARM generic timer counter CNTPCT suspend resume continuity deep sleep",
+  "title": "Learn the architecture - Generic Timer - support.arm.com",
+  "url": "https://support.arm.com/documentation/102379/0104/The-processor-timers/Count-and-frequency?lang=en",
+  "snippet": "Note Armv8.6-A and Armv9.1-A added a self-synchronizing version of the CNTPCT_EL0 register, this is called CNTPCTSS_EL0. CNTFRQ_EL0 reports the frequency of the system count. However, this register is not populated by hardware. The register is write-able at the highest implemented Exception level and readable at all Exception levels.",
+  "collected_at": "2026-10-05T15:13:54Z",
+  "weight": 0.8516,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Learn the architecture - Generic Timer - support.arm.com' (https://support.arm.com/documentation/102379/0104/The-processor-timers/Count-and-frequency?lang=en) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8516
+   },
+   "usage": {
+    "input_tokens": 864,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ARM generic timer counter CNTPCT suspend resume continuity deep sleep",
+  "title": "Where intelligence goes next \u2013 Arm\u00ae",
+  "url": "https://www.arm.com/",
+  "snippet": "From cloud to edge, Arm provides the compute platforms behind today\u2019s most advanced AI, trusted by innovators worldwide.",
+  "collected_at": "2026-10-05T15:13:54Z",
+  "weight": 0.4852,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Where intelligence goes next \u2013 Arm\u00ae' (https://www.arm.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4852
+   },
+   "usage": {
+    "input_tokens": 773,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ARM generic timer counter CNTPCT suspend resume continuity deep sleep",
+  "title": "AArch64 Programmer's Guide: Generic Timer",
+  "url": "https://willendless.github.io/assets/os_arm_doc/aarch64-generic-timer.pdf",
+  "snippet": "The Generic Timer provides a common timer framework for Arm systems. In this guide, we have learned about the different components of the Generic Timer and their programming interfaces.",
+  "collected_at": "2026-10-05T15:13:54Z",
+  "weight": 0.5085,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'AArch64 Programmer's Guide: Generic Timer' (https://willendless.github.io/assets/os_arm_doc/aarch64-generic-timer.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5085
+   },
+   "usage": {
+    "input_tokens": 773,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "ARM generic timer counter CNTPCT suspend resume continuity deep sleep",
+  "title": "Interrupt - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Interrupt",
+  "snippet": "X86 divides interrupts into (hardware) interrupts and software exceptions, and identifies three types of exceptions: faults, traps, and aborts. (Hardware) interrupts are interrupts triggered asynchronously by an I/O device, and allow the\u2026",
+  "collected_at": "2026-10-05T15:13:54Z",
+  "weight": 0.113,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Interrupt - Wikipedia' (https://en.wikipedia.org/wiki/Interrupt) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.113
+   },
+   "usage": {
+    "input_tokens": 773,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE test TA TEE_GetSystemTime system time protection level optee test",
+  "title": "TEE_GetSystemTime (...) not compliant with TEE core API spec.",
+  "url": "https://github.com/OP-TEE/optee_os/issues/5973",
+  "snippet": "Apr 21, 2023 \u00b7 Indeed, since GPD TEE Intenral Core API v1.1, time protection level 1000 requires a calibrated time origin. This requires a secure RTC or like support from the platform.",
+  "collected_at": "2026-10-05T15:13:58Z",
+  "weight": 0.2963,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TEE_GetSystemTime (...) not compliant with TEE core API spec.' (https://github.com/OP-TEE/optee_os/issues/5973) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2963
+   },
+   "usage": {
+    "input_tokens": 773,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE test TA TEE_GetSystemTime system time protection level optee test",
+  "title": "c - How to get a UTC timestamp in OP-TEE Trusted Application (TA) in...",
+  "url": "https://stackoverflow.com/questions/68544061/how-to-get-a-utc-timestamp-in-op-tee-trusted-application-ta-in-datetime-format",
+  "snippet": "Timer security To retrieve the current time in milliseconds since 1970-01-01, call TEE_GetSystemTime. The security level depends on what secure clocks are available on the specific system. The absolute minimum guarantee is that this value cannot decrease while a trusted application is running, but the REE may be able to control at what speed this proceeds. There is no guarantee across reboots ...",
+  "collected_at": "2026-10-05T15:13:58Z",
+  "weight": 0.0685,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'c - How to get a UTC timestamp in OP-TEE Trusted Application (TA) in...' (https://stackoverflow.com/questions/68544061/how-to-get-a-utc-timestamp-in-op-tee-trusted-application-ta-in-datetime-format) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0685
+   },
+   "usage": {
+    "input_tokens": 773,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:09Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE test TA TEE_GetSystemTime system time protection level optee test",
+  "title": "OP.GG",
+  "url": "https://www.op.gg/?main=index",
+  "snippet": "We would like to show you a description here but the site won\u2019t allow us.",
+  "collected_at": "2026-10-05T15:13:58Z",
+  "weight": 0.3525,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP.GG' (https://www.op.gg/?main=index) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3525
+   },
+   "usage": {
+    "input_tokens": 751,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:11Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE test TA TEE_GetSystemTime system time protection level optee test",
+  "title": "Question: Measuring time taken by TEE_MemMove \u00b7 Issue #4029...",
+  "url": "https://github.com/OP-TEE/optee_os/issues/4029",
+  "snippet": "TA panics as TEE_GetSystemTime() returns with TEE_ERROR_TARGET_DEAD error code.So, we set gpd.tee.systemTime.protectionLevel to 1000 when the time source is the physical count register (CNTPCT), that is, when CFG_SECURE_TIME_SOURCE_CNTPCT=y.",
+  "collected_at": "2026-10-05T15:13:58Z",
+  "weight": 0.2246,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Question: Measuring time taken by TEE_MemMove \u00b7 Issue #4029...' (https://github.com/OP-TEE/optee_os/issues/4029) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2246
+   },
+   "usage": {
+    "input_tokens": 751,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:11Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE test TA TEE_GetSystemTime system time protection level optee test",
+  "title": "optee_test \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/building/gits/optee_test.html",
+  "snippet": "The optee_test.git contains the source code for the TEE sanity test suite in Linux using the ARM (R) TrustZone (R) technology. It is typically referred to as xtest.",
+  "collected_at": "2026-10-05T15:13:58Z",
+  "weight": 0.584,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'optee_test \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/building/gits/optee_test.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.584
+   },
+   "usage": {
+    "input_tokens": 751,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:11Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "OP-TEE test TA TEE_GetSystemTime system time protection level optee test",
+  "title": "OP-TEE",
+  "url": "https://www.trustedfirmware.org/projects/op-tee/",
+  "snippet": "OP-TEE implements TEE Internal Core API v1.1.x which is the API exposed to Trusted Applications and the TEE Client API v1.0, which is the API describing how to communicate with a TEE.",
+  "collected_at": "2026-10-05T15:13:58Z",
+  "weight": 0.7218,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OP-TEE' (https://www.trustedfirmware.org/projects/op-tee/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7218
+   },
+   "usage": {
+    "input_tokens": 751,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:11Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPMB monotonic counter anti-rollback secure storage TEE",
+  "title": "Secure storage \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "snippet": "If configured with CFG_RPMB_FS=y the protection against rollback is controlled by the TEE and is set to 1000. If CFG_RPMB_FS=n, there's no protection against rollback, and the protection level is set to 0. TEE File Structure in Linux File System OP-TEE by default uses /data/tee/ as the secure storage space in the Linux file system. Each persistent object is assigned an internal identifier ...",
+  "collected_at": "2026-10-05T15:14:09Z",
+  "weight": 0.5898,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure storage \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/secure_storage.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5898
+   },
+   "usage": {
+    "input_tokens": 751,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:11Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPMB monotonic counter anti-rollback secure storage TEE",
+  "title": "Secure Storage | nxp-imx/imx-optee-os | DeepWiki",
+  "url": "https://deepwiki.com/nxp-imx/imx-optee-os/2.5-secure-storage",
+  "snippet": "Sep 6, 2026 \u00b7 The RPMB FS utilizes the eMMC RPMB partition, which provides hardware-enforced write counter functionality to prevent rollback attacks. This storage backend offers stronger security guarantees but with limited capacity.",
+  "collected_at": "2026-10-05T15:14:09Z",
+  "weight": 0.6042,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure Storage | nxp-imx/imx-optee-os | DeepWiki' (https://deepwiki.com/nxp-imx/imx-optee-os/2.5-secure-storage) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6042
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:13Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPMB monotonic counter anti-rollback secure storage TEE",
+  "title": "Secure storage \u2014 OP-TEE documentation documentation",
+  "url": "https://optee.readthedocs.io/en/3.16.0/architecture/secure_storage.html",
+  "snippet": "This document describes the RPMB secure storage implementation in OP-TEE, which is enabled by setting CFG_RPMB_FS=y. Trusted Applications may use this implementation by passing a storage ID equal to TEE_STORAGE_PRIVATE_RPMB, or TEE_STORAGE_PRIVATE if CFG_REE_FS is disabled.",
+  "collected_at": "2026-10-05T15:14:09Z",
+  "weight": 0.962,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Secure storage \u2014 OP-TEE documentation documentation' (https://optee.readthedocs.io/en/3.16.0/architecture/secure_storage.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.962
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:13Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPMB monotonic counter anti-rollback secure storage TEE",
+  "title": "Monotonic Counters",
+  "url": "https://www.intel.com/content/www/us/en/docs/dynamic-application-loader/developer-guide/1-0/monotonic-counters.html",
+  "snippet": "Monotonic counters allow trusted applications to detect offline storage data replay attacks. A separate monotonic counter is available for use by each applet, and is shared between instances of the same applet (i.e., if multiple applets are running on a platform, each applet will use a separate monotonic counter).",
+  "collected_at": "2026-10-05T15:14:09Z",
+  "weight": 0.4271,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Monotonic Counters' (https://www.intel.com/content/www/us/en/docs/dynamic-application-loader/developer-guide/1-0/monotonic-counters.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4271
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:13Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPMB monotonic counter anti-rollback secure storage TEE",
+  "title": "OpenAI | Research & Deployment",
+  "url": "https://openai.com/",
+  "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.",
+  "collected_at": "2026-10-05T15:14:09Z",
+  "weight": 0.0843,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'OpenAI | Research & Deployment' (https://openai.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0843
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:13Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "RPMB monotonic counter anti-rollback secure storage TEE",
+  "title": "CMR12",
+  "url": "https://newtraell.cs.uchicago.edu/files/ms_paper/bd3.pdf",
+  "snippet": "3.3 Defending Against Rollbacks: Global Version Counter.Other trusted hardware mechanisms, including TPMs, support secure, persistent storage or monotonic counters that could be adapted for use with StrongBox.",
+  "collected_at": "2026-10-05T15:14:09Z",
+  "weight": 0.3726,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'CMR12' (https://newtraell.cs.uchicago.edu/files/ms_paper/bd3.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3726
+   },
+   "usage": {
+    "input_tokens": 770,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:13Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "remote attestation freshness nonce versus timestamp counter best practice",
+  "title": "Nonce-based Freshness for Remote Attestation in Certificate Signing ...",
+  "url": "https://www.ietf.org/archive/id/draft-ietf-lamps-attestation-freshness-01.html",
+  "snippet": "Nonce-based Freshness for Remote Attestation in Certificate Signing Requests (CSRs) for the Certification Management Protocol (CMP) and for Enrollment over Secure Transport (EST) Abstract When an end entity includes attestation Evidence in a Certificate Signing Request (CSR), it may be necessary to demonstrate the freshness of the provided Evidence. Current attestation technology commonly ...",
+  "collected_at": "2026-10-05T15:14:14Z",
+  "weight": 0.8249,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Nonce-based Freshness for Remote Attestation in Certificate Signing ...' (https://www.ietf.org/archive/id/draft-ietf-lamps-attestation-freshness-01.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8249
+   },
+   "usage": {
+    "input_tokens": 797,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "remote attestation freshness nonce versus timestamp counter best practice",
+  "title": "Nonce-based Freshness for Remote Attestation in Certificate Signing ...",
+  "url": "https://www.ietf.org/archive/id/draft-ietf-lamps-attestation-freshness-00.html",
+  "snippet": "When an end entity places attestation Evidence in a Certificate Signing Request (CSR) it may need to demonstrate freshness of the provided Evidence. Attestation technology today often accomplishes this task via the help of nonces. This document specifies how nonces are provided by an RA/CA to the end entity for inclusion in Evidence.",
+  "collected_at": "2026-10-05T15:14:14Z",
+  "weight": 0.8034,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Nonce-based Freshness for Remote Attestation in Certificate Signing ...' (https://www.ietf.org/archive/id/draft-ietf-lamps-attestation-freshness-00.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8034
+   },
+   "usage": {
+    "input_tokens": 797,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "remote attestation freshness nonce versus timestamp counter best practice",
+  "title": "draft-ietf-lamps-attestation-freshness-08 - Requesting a Freshness ...",
+  "url": "https://datatracker.ietf.org/doc/draft-ietf-lamps-attestation-freshness/",
+  "snippet": "When an end entity includes attestation statements in a Certificate Signing Request (CSR), the freshness of the conveyed Evidence often needs to be established. A common mechanism is a nonce that is obtained from a Relying Party or Verifier and included by the Attester in the Evidence. This document specifies how an end entity requests such an attestation freshness nonce from an RA/CA when ...",
+  "collected_at": "2026-10-05T15:14:14Z",
+  "weight": 0.8295,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'draft-ietf-lamps-attestation-freshness-08 - Requesting a Freshness ...' (https://datatracker.ietf.org/doc/draft-ietf-lamps-attestation-freshness/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8295
+   },
+   "usage": {
+    "input_tokens": 797,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "remote attestation freshness nonce versus timestamp counter best practice",
+  "title": "Chrome Remote Desktop",
+  "url": "https://remotedesktop.google.com/",
+  "snippet": "Securely access your computer whenever you're away, using your phone, tablet, or another computer. Share your screen to \u2026",
+  "collected_at": "2026-10-05T15:14:14Z",
+  "weight": 0.1394,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Chrome Remote Desktop' (https://remotedesktop.google.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1394
+   },
+   "usage": {
+    "input_tokens": 797,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "remote attestation freshness nonce versus timestamp counter best practice",
+  "title": "RFC 9334 - Remote ATtestation procedureS (RATS) Architecture",
+  "url": "https://datatracker.ietf.org/doc/html/rfc9334",
+  "snippet": "In Remote ATtestation procedureS (RATS), one peer (the \"Attester\") produces believable information about itself (\"Evidence\") to enable a remote peer (the \"Relying Party\") to decide whether or not to consider that Attester a trustworthy peer.",
+  "collected_at": "2026-10-05T15:14:14Z",
+  "weight": 0.8479,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'RFC 9334 - Remote ATtestation procedureS (RATS) Architecture' (https://datatracker.ietf.org/doc/html/rfc9334) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8479
+   },
+   "usage": {
+    "input_tokens": 797,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:15Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "remote attestation freshness nonce versus timestamp counter best practice",
+  "title": "Remote Attestation | Cohere",
+  "url": "https://docs.cohere.com/docs/model-vault/encrypted/attestation",
+  "snippet": "How remote attestation and the Passport model with Intel Trust Authority prove which code is running inside a Model Vault Encrypted deployment.",
+  "collected_at": "2026-10-05T15:14:14Z",
+  "weight": 0.9422,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Remote Attestation | Cohere' (https://docs.cohere.com/docs/model-vault/encrypted/attestation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9422
+   },
+   "usage": {
+    "input_tokens": 205,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T15:15:18Z"
+  },
+  "redo_of": null
+ }
+]

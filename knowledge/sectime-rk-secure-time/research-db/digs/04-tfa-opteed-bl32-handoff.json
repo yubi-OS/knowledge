@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "tfa-opteed-bl32-handoff",
+ "scope": "TF-A loading OP-TEE as BL32 through SPD=opteed: boot-time loading versus insecure post-boot SMC loading, and the handoff contract.",
+ "queries_attempted": [
+  {
+   "query": "Trusted Firmware-A OP-TEE dispatcher SPD opteed BL32 loading",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "TF-A boot-time BL32 OP-TEE secure world initialization versus SMC load",
+   "attempt": 2,
+   "raw_results": 50,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://tf-a.docs.trustedfirmware.org/en/latest/components/spd/optee-dispatcher.html",
+  "https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/components/spd/optee-dispatcher.rst",
+  "https://github.com/ARM-software/arm-trusted-firmware/blob/master/services/spd/opteed/opteed_main.c",
+  "https://deepwiki.com/mtk-openwrt/arm-trusted-firmware/4.4-secure-payload-dispatchers-(spd):-tspd-op-tee-trusty-tlk",
+  "https://www.trustedhealth.com/",
+  "https://trustedfirmware-a.readthedocs.io/en/v2.12/components/spd/optee-dispatcher.html",
+  "https://optee.readthedocs.io/en/latest/architecture/secure_boot.html",
+  "https://deepwiki.com/ARM-software/arm-trusted-firmware/3-boot-architecture",
+  "https://tf-a.docs.trustedfirmware.org/en/latest/components/spd/optee-dispatcher.html",
+  "https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html",
+  "https://www.tfd215.org/",
+  "https://wiki.st.com/stm32mpu/wiki/STM32MPU_OP-TEE_profiles"
+ ],
+ "outcome": "authored"
+}

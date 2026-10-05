@@ -1,0 +1,36 @@
+{
+ "nn": 8,
+ "slug": "adr-time-decision-split",
+ "scope": "The ADR decision split: decisions allowed to use secure-world elapsed time (same-boot ordering, TEE-elapsed telemetry, event sequencing) versus decisions requiring stronger state (RPMB/fTPM NV counters, sealed state, verifier freshness).",
+ "queries_attempted": [
+  {
+   "query": "RPMB monotonic counter anti-rollback secure storage TEE",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "remote attestation freshness nonce versus timestamp counter best practice",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "https://deepwiki.com/nxp-imx/imx-optee-os/2.5-secure-storage",
+  "https://optee.readthedocs.io/en/3.16.0/architecture/secure_storage.html",
+  "https://www.intel.com/content/www/us/en/docs/dynamic-application-loader/developer-guide/1-0/monotonic-counters.html",
+  "https://openai.com/",
+  "https://newtraell.cs.uchicago.edu/files/ms_paper/bd3.pdf",
+  "https://www.ietf.org/archive/id/draft-ietf-lamps-attestation-freshness-01.html",
+  "https://www.ietf.org/archive/id/draft-ietf-lamps-attestation-freshness-00.html",
+  "https://datatracker.ietf.org/doc/draft-ietf-lamps-attestation-freshness/",
+  "https://remotedesktop.google.com/",
+  "https://datatracker.ietf.org/doc/html/rfc9334",
+  "https://docs.cohere.com/docs/model-vault/encrypted/attestation"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+ "nn": 3,
+ "slug": "ree-fallback-limits",
+ "scope": "The REE-backed fallback tee_time_ree.c: rollback clamping within a boot, protection level 100, and why it is insufficient for secure-time claims.",
+ "queries_attempted": [
+  {
+   "query": "OP-TEE tee_time_ree.c REE time rollback clamp protection level 100",
+   "attempt": 1,
+   "raw_results": 54,
+   "kept": 6
+  },
+  {
+   "query": "OP-TEE REE time normal world clock spoofing secure world",
+   "attempt": 2,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "https://deepwiki.com/nxp-imx/imx-optee-os/2.5-secure-storage",
+  "https://github.com/OP-TEE/optee_os/issues/2592",
+  "https://optee.readthedocs.io/",
+  "https://deepwiki.com/OP-TEE/optee_os/3-security-features",
+  "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2957180-infinite-health-mob-that-cant-move",
+  "https://optee.readthedocs.io/en/latest/architecture/core.html",
+  "https://deepwiki.com/OP-TEE/optee_client/3.1-normal-worldsecure-world-interaction",
+  "https://optee.readthedocs.io/en/3.12.0/architecture/core.html",
+  "https://github.com/OP-TEE/optee_os/issues/1944",
+  "https://bootlin.com/pub/conferences/2021/elc/leger-optee-linux-interaction/leger-optee-linux-interaction.pdf",
+  "https://stackoverflow.com/questions/36599279/how-does-linux-scheduler-of-op-tee-work-after-switching-to-secure-world"
+ ],
+ "outcome": "authored"
+}
