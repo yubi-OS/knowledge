@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "boot-loader-entries-removal",
+  "scope": "The planned removal of runtime-defined /run/boot-loader-entries in v262, the boot loader specification, and UKI addon / BLS Type #1 stanza as the supported overlay path.",
+  "queries_attempted": [
+    {
+      "query": "systemd /run/boot-loader-entries removal incompatible change",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    },
+    {
+      "query": "systemd boot loader specification type 1 entries UKI addons",
+      "attempt": 1,
+      "raw_results": "top 6 kept per query, see archive.json entries for this query",
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/systemd/systemd/issues/35729",
+    "https://linuxjunkies.org/guides/linux-troubleshooting-bootloader",
+    "https://wiki.archlinux.org/title/Systemd-boot",
+    "https://systemd.io/BOOT/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://slomkowski.eu/octoglow-vfd-fallout-inspired-display/",
+    "https://uapi-group.org/specifications/specs/boot_loader_specification/",
+    "https://systemd.io/ROOTFS_DISCOVERY/",
+    "https://systemd.io/BOOT_LOADER_INTERFACE/",
+    "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+    "https://discourse.gnome.org/t/gnomeos-sysupd-sd-boot-does-not-show-entries-on-boot-bootctl-does/23218",
+    "https://www.man7.org/linux/man-pages/man1/bootctl.1.html"
+  ],
+  "outcome": "authored"
+}

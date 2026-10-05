@@ -1,0 +1,198 @@
+{
+  "topic": "the systemd v262 refresh: release-candidate state, still-current removal audit, and interface changes that matter to an image-based OS consumer of upstream systemd",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "release-cadence",
+      "scope": "v262 release state: rc2 shipped 2026-09-08, stable line still v261 (v261.3) and the v258-v260 backport branches, plus the missing Poettering stories series.",
+      "seed_queries": [
+        "systemd v262 release notes rc2",
+        "systemd v261.3 stable release backport"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "boot-loader-entries-removal",
+      "scope": "The planned removal of runtime-defined /run/boot-loader-entries in v262, the boot loader specification, and UKI addon / BLS Type #1 stanza as the supported overlay path.",
+      "seed_queries": [
+        "systemd /run/boot-loader-entries removal incompatible change",
+        "systemd boot loader specification type 1 entries UKI addons"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "sysupdated-varlink",
+      "scope": "systemd-sysupdated dropping its D-Bus API for Varlink IPC while updatectl keeps working over the new transport.",
+      "seed_queries": [
+        "systemd-sysupdated varlink updatectl",
+        "systemd sysupdated dbus api removed varlink"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "ukify-inspect-json",
+      "scope": "Changes to ukify inspect --json machine-readable output in v262 and what UKI tooling consumers must adapt.",
+      "seed_queries": [
+        "ukify inspect json output systemd 262",
+        "systemd ukify machine readable inspect changes"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "tpm2-measure-bank",
+      "scope": "Removal of the tpm2-measure-bank= crypttab option in v262 and the state of TPM2 PCR measurement-bank configuration generally.",
+      "seed_queries": [
+        "systemd crypttab tpm2-measure-bank removed",
+        "systemd tpm2 measure bank pcr banks option"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "credentials-hardening",
+      "scope": "v262 credential-handling hardening: MITM protections around decrypted credentials and new controls for boot credentials encrypted with the null key.",
+      "seed_queries": [
+        "systemd credentials mitm protection null key",
+        "systemd decrypted credentials security hardening 262"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "image-os-consumer",
+      "scope": "Which v262 interface changes matter to image-based OS consumers (bootc, mkosi, UKI pipelines): upgrade and removal-impact reading of the incompatible-changes section.",
+      "seed_queries": [
+        "systemd incompatible changes image based operating system",
+        "systemd 262 changes bootc mkosi uki"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.2211,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1543,
+          "1": 0.4703,
+          "2": 0.3754
+        },
+        "confidence": 0.0789
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.1892,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2011,
+          "1": 0.4086,
+          "2": 0.3903
+        },
+        "confidence": 0.0396
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.2904,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1855,
+          "1": 0.3386,
+          "2": 0.4759
+        },
+        "confidence": 0.0633
+      },
+      "t04": {
+        "type": "score",
+        "score": 0.9202,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2941,
+          "1": 0.4916,
+          "2": 0.2143
+        },
+        "confidence": 0.0611
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.7782,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3276,
+          "1": 0.5666,
+          "2": 0.1058
+        },
+        "confidence": 0.1593
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.1212,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1928,
+          "1": 0.4933,
+          "2": 0.3139
+        },
+        "confidence": 0.0686
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.708,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0881,
+          "1": 0.1158,
+          "2": 0.7961
+        },
+        "confidence": 0.4825
+      }
+    },
+    "usage": {
+      "input_tokens": 1089,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07"
+    ]
+  }
+}
