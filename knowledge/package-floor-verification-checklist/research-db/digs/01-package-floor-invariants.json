@@ -1,0 +1,50 @@
+{
+ "nn": 1,
+ "slug": "package-floor-invariants",
+ "scope": "The minimum-version invariant set (kernel, systemd, bootc, mkosi, podman, buildx build policy, SoftHSM, sbsign+libykcs11) that a digest-pinned base image must preserve across rotations.",
+ "queries_attempted": [
+  {
+   "query": "container image digest pinning base image supply chain verification",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": [
+    "https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-chain-integrity-in-snyk-workflows",
+    "https://medium.com/@cypanrisk/image-and-software-supply-chain-security-validating-scanning-and-signing-trusted-container-images-8838aa222fda",
+    "https://github.com/seantristan/golden-base-images",
+    "https://allencharp.github.io/2026/08/11/Container-Image-Signing.html",
+    "https://runbook.academy/courses/git-cicd-gitops/lessons/git-cicd-gitops-lxvii-03-container-image-pinning/",
+    "https://runbook.academy/courses/docker/checklists/docker-checklist-supply-chain-verification/"
+   ]
+  },
+  {
+   "query": "base image upgrade compatibility check minimum package versions",
+   "attempt": 2,
+   "raw_results": 70,
+   "kept": [
+    "https://learn.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/upgrade-windows-containers",
+    "https://safeguard.sh/resources/blog/how-snyk-container-recommends-minor-major-and-alternative-base-image-upgrades",
+    "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-base-images",
+    "https://stackoverflow.com/questions/24520543/docker-base-image-how-to-upgrade",
+    "https://my.f5.com/manage/s/article/K000148778",
+    "https://phoenixnap.com/kb/dockerfile-versioning"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-chain-integrity-in-snyk-workflows",
+  "https://medium.com/@cypanrisk/image-and-software-supply-chain-security-validating-scanning-and-signing-trusted-container-images-8838aa222fda",
+  "https://github.com/seantristan/golden-base-images",
+  "https://allencharp.github.io/2026/08/11/Container-Image-Signing.html",
+  "https://runbook.academy/courses/git-cicd-gitops/lessons/git-cicd-gitops-lxvii-03-container-image-pinning/",
+  "https://runbook.academy/courses/docker/checklists/docker-checklist-supply-chain-verification/",
+  "https://learn.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/upgrade-windows-containers",
+  "https://safeguard.sh/resources/blog/how-snyk-container-recommends-minor-major-and-alternative-base-image-upgrades",
+  "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-base-images",
+  "https://stackoverflow.com/questions/24520543/docker-base-image-how-to-upgrade",
+  "https://my.f5.com/manage/s/article/K000148778",
+  "https://phoenixnap.com/kb/dockerfile-versioning"
+ ],
+ "outcome": "authored"
+}

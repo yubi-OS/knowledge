@@ -1,0 +1,50 @@
+{
+ "nn": 8,
+ "slug": "scheduled-drift-detection-gate",
+ "scope": "The ci_package-floor.yml gate: daily 06:00 UTC schedule, PR path triggers on PINNED.md and Containerfile, and the 2026-09-18 finding that the gap was scheduling, not tooling.",
+ "queries_attempted": [
+  {
+   "query": "github actions scheduled workflow cron daily verification artifact upload",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": [
+    "https://oneuptime.com/blog/post/2025-12-20-scheduled-workflows-cron-github-actions/view",
+    "https://cronread.com/blog/github-actions-cron-examples",
+    "https://github.com/actions/upload-artifact",
+    "https://cronwizard.com/github-actions-cron",
+    "https://simplecrontab.com/guides/github-actions-cron-setup/",
+    "https://stackoverflow.com/questions/75166565/how-to-run-cron-jobs-in-github-action-for-a-particular-day-and-time"
+   ]
+  },
+  {
+   "query": "github actions pull_request paths filter trigger specific files",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": [
+    "https://stackoverflow.com/questions/63822219/how-to-run-github-actions-workflow-only-if-the-pushed-files-are-in-a-specific-fo",
+    "https://github.com/dorny/paths-filter",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+    "https://oneuptime.com/blog/post/2025-12-20-path-filtering-github-actions/view",
+    "https://github.com/marketplace/actions/path-filter"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2025-12-20-scheduled-workflows-cron-github-actions/view",
+  "https://cronread.com/blog/github-actions-cron-examples",
+  "https://github.com/actions/upload-artifact",
+  "https://cronwizard.com/github-actions-cron",
+  "https://simplecrontab.com/guides/github-actions-cron-setup/",
+  "https://stackoverflow.com/questions/75166565/how-to-run-cron-jobs-in-github-action-for-a-particular-day-and-time",
+  "https://stackoverflow.com/questions/63822219/how-to-run-github-actions-workflow-only-if-the-pushed-files-are-in-a-specific-fo",
+  "https://github.com/dorny/paths-filter",
+  "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+  "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+  "https://oneuptime.com/blog/post/2025-12-20-path-filtering-github-actions/view",
+  "https://github.com/marketplace/actions/path-filter"
+ ],
+ "outcome": "authored"
+}

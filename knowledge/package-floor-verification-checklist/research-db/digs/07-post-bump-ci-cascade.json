@@ -1,0 +1,50 @@
+{
+ "nn": 7,
+ "slug": "post-bump-ci-cascade",
+ "scope": "The after-bump verification: CI cascade groups (fetches, ci-builders, tests, vm-tests), the 5-step verify-package-floor.sh script, and the engineering gates the cascade must keep passing.",
+ "queries_attempted": [
+  {
+   "query": "github actions workflow_dispatch trigger downstream workflows cascade rebuild",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": [
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+    "https://oneuptime.com/blog/post/2026-01-25-github-actions-workflow-dispatch/view",
+    "https://github.com/marketplace/actions/workflow-dispatch",
+    "https://github.com/marketplace/actions/workflow-dispatch-and-wait",
+    "https://octopus.com/devops/github-actions/github-actions-triggers/"
+   ]
+  },
+  {
+   "query": "CI gate script verify container image version fail build",
+   "attempt": 2,
+   "raw_results": 50,
+   "kept": [
+    "https://khimananda.com/blog/build-verification-and-quality-gates-in-ci",
+    "https://johnburns.io/post/build-a-container-image-security-gate-with-trivy/",
+    "https://github.com/s3cretagent/delta-cve-gate",
+    "https://github.com/Athou/commafeed/pull/2269",
+    "https://github.com/kubernetes/cloud-provider-openstack/issues/2528",
+    "https://docs.gitlab.com/user/application_security/container_scanning/"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+  "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+  "https://oneuptime.com/blog/post/2026-01-25-github-actions-workflow-dispatch/view",
+  "https://github.com/marketplace/actions/workflow-dispatch",
+  "https://github.com/marketplace/actions/workflow-dispatch-and-wait",
+  "https://octopus.com/devops/github-actions/github-actions-triggers/",
+  "https://khimananda.com/blog/build-verification-and-quality-gates-in-ci",
+  "https://johnburns.io/post/build-a-container-image-security-gate-with-trivy/",
+  "https://github.com/s3cretagent/delta-cve-gate",
+  "https://github.com/Athou/commafeed/pull/2269",
+  "https://github.com/kubernetes/cloud-provider-openstack/issues/2528",
+  "https://docs.gitlab.com/user/application_security/container_scanning/"
+ ],
+ "outcome": "authored"
+}

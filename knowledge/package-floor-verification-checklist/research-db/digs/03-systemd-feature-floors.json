@@ -1,0 +1,50 @@
+{
+ "nn": 3,
+ "slug": "systemd-feature-floors",
+ "scope": "systemd feature floors: boot loader spec 246+, discoverable partitions and LUKS2 hardware unlock 252+, portable services 254+, sysext/confext 256+.",
+ "queries_attempted": [
+  {
+   "query": "systemd sysext confext version 256 feature introduction",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": [
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-sysext.html",
+    "https://man7.org/linux/man-pages/man8/systemd-sysext.8.html",
+    "https://deepwiki.com/systemd/mkosi/6.2-system-extensions-(sysextconfext)",
+    "https://lists.freedesktop.org/archives/systemd-devel/2024-June/050407.html",
+    "https://lwn.net/Articles/978151/",
+    "https://www.man7.org/linux/man-pages/man5/confext.conf.5.html"
+   ]
+  },
+  {
+   "query": "systemd cryptenroll LUKS2 FIDO2 TPM2 PKCS11 version 252",
+   "attempt": 2,
+   "raw_results": 32,
+   "kept": [
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+    "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+    "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+    "https://askubuntu.com/questions/1470391/luks-tpm2-auto-unlock-at-boot-systemd-cryptenroll"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-sysext.html",
+  "https://man7.org/linux/man-pages/man8/systemd-sysext.8.html",
+  "https://deepwiki.com/systemd/mkosi/6.2-system-extensions-(sysextconfext)",
+  "https://lists.freedesktop.org/archives/systemd-devel/2024-June/050407.html",
+  "https://lwn.net/Articles/978151/",
+  "https://www.man7.org/linux/man-pages/man5/confext.conf.5.html",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+  "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "https://askubuntu.com/questions/1470391/luks-tpm2-auto-unlock-at-boot-systemd-cryptenroll"
+ ],
+ "outcome": "authored"
+}
