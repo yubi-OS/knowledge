@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": {
+      "probe1_query": "systemd",
+      "probe1_count": 59,
+      "probe2_query": "GPU device isolation",
+      "probe2_count": 62
+    },
+    "unresponsive_engines": {
+      "probe1": [
+        [
+          "boardreader",
+          "parsing error"
+        ],
+        [
+          "brave",
+          "Suspended: too many requests"
+        ],
+        [
+          "duckduckgo",
+          "CAPTCHA"
+        ],
+        [
+          "encyclosearch",
+          "timeout"
+        ],
+        [
+          "fastbot",
+          "Suspended: access denied"
+        ],
+        [
+          "fireball",
+          "Suspended: access denied"
+        ],
+        [
+          "gmx",
+          "Suspended: CAPTCHA"
+        ],
+        [
+          "google",
+          "Suspended: access denied"
+        ],
+        [
+          "google cse",
+          "Suspended: too many requests"
+        ],
+        [
+          "mwmbl",
+          "Suspended: timeout"
+        ],
+        [
+          "privacywall",
+          "Suspended: access denied"
+        ],
+        [
+          "qwant",
+          "CAPTCHA"
+        ],
+        [
+          "searchmysite",
+          "Suspended: access denied"
+        ],
+        [
+          "yacy",
+          "Suspended: timeout"
+        ],
+        [
+          "yep",
+          "Suspended: access denied"
+        ]
+      ],
+      "probe2": [
+        [
+          "boardreader",
+          "parsing error"
+        ],
+        [
+          "brave",
+          "Suspended: too many requests"
+        ],
+        [
+          "duckduckgo",
+          "CAPTCHA"
+        ],
+        [
+          "encyclosearch",
+          "Suspended: timeout"
+        ],
+        [
+          "fastbot",
+          "Suspended: access denied"
+        ],
+        [
+          "fireball",
+          "Suspended: access denied"
+        ],
+        [
+          "gmx",
+          "Suspended: CAPTCHA"
+        ],
+        [
+          "google",
+          "Suspended: access denied"
+        ],
+        [
+          "google cse",
+          "Suspended: too many requests"
+        ],
+        [
+          "mwmbl",
+          "timeout"
+        ],
+        [
+          "privacywall",
+          "Suspended: access denied"
+        ],
+        [
+          "qwant",
+          "CAPTCHA"
+        ],
+        [
+          "searchmysite",
+          "Suspended: access denied"
+        ],
+        [
+          "yacy",
+          "timeout"
+        ],
+        [
+          "yep",
+          "Suspended: access denied"
+        ]
+      ]
+    }
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "model": "clef",
+      "answers": {
+        "p01": {
+          "type": "noul",
+          "noul": 0.1155
+        }
+      },
+      "usage": {
+        "input_tokens": 191,
+        "output_tokens": 0
+      }
+    }
+  }
+}

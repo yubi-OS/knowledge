@@ -1,0 +1,223 @@
+{
+  "topic": "prior art for behavioral cut-off of AI/ML workloads via PCIe/device-level controls",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "vfio-user-protocol-baseline",
+      "scope": "What the vfio-user protocol itself mandates for client misbehavior (mutual distrust, socket disconnect handling, FSM ERROR state, negotiated DMA windows) and where it stops short of any trigger model or severity ladder.",
+      "seed_queries": [
+        "vfio-user protocol specification socket disconnection reset",
+        "libvfio-user VFIO_USER_DEVICE_RESET finite state machine DMA map"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "vfio-mdev-vendor-error-paths",
+      "scope": "Kernel VFIO mediated devices: IOMMU-group isolation, vendor-driver-mediated error handling, and the absence of a shared behavioral policy engine across vendors.",
+      "seed_queries": [
+        "VFIO mediated device mdev kernel IOMMU group isolation",
+        "vfio mdev vendor driver error handling device reset"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "nvidia-vgpu-scheduler-policies",
+      "scope": "NVIDIA vGPU scheduler modes (Best Effort, Equal Share, Fixed Share) as the closest resource-policy analogue to ADR-033's escalation ladder, and how they handle misbehaving tenants.",
+      "seed_queries": [
+        "NVIDIA vGPU scheduler best effort equal share fixed share",
+        "NVIDIA vGPU fixed share scheduling policy resource contention"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "nvidia-mig-sriov-partitioning",
+      "scope": "MIG and SR-IOV hardware partitioning of GPUs: isolation guarantees, IOMMU/ARI/AER prerequisites, and what device-level cut-off options exist in commercial GPU partitioning.",
+      "seed_queries": [
+        "NVIDIA MIG multi-instance GPU isolation SR-IOV virtual functions",
+        "NVIDIA vGPU SR-IOV IOMMU AER prerequisites stability"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "suspend-resume-state-capture",
+      "scope": "VM suspend-resume, qcow2/savevm snapshots, and live migration as state-preservation patterns at workload cut-off; discard-vs-preserve semantics with GPU passthrough.",
+      "seed_queries": [
+        "QEMU savevm qcow2 snapshot suspend resume VM state",
+        "live migration VM state preservation vfio GPU passthrough"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "cgroup-device-controllers",
+      "scope": "Device-level cut-off via cgroups: the devices cgroup controller, eBPF device program, and DRM memory cgroup for VRAM caps as resource-based cut-off mechanisms.",
+      "seed_queries": [
+        "cgroup devices controller bpf device program allow deny",
+        "DRM cgroup device memory GPU VRAM limit"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "ebpf-runtime-enforcement",
+      "scope": "Runtime eBPF enforcement for device I/O policy: BPF LSM hooks, tracing driver and DMA events, and cut-off enforcement outside the hypervisor.",
+      "seed_queries": [
+        "eBPF LSM enforcement device access policy kernel",
+        "eBPF tracing driver DMA anomaly detection GPU"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "anomaly-escalation-ladders",
+      "scope": "Behavioral anomaly detection on device I/O patterns and escalation-ladder designs in adjacent systems: systemd OnFailure/StartLimitBurst, OPA/Rego policy engines, automatic action with human checkpoint.",
+      "seed_queries": [
+        "anomaly detection device DMA pattern workload misbehavior",
+        "systemd OnFailure StartLimitBurst escalation OPA rego policy enforcement"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.5301,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.093,
+          "1": 0.2838,
+          "2": 0.6232
+        },
+        "confidence": 0.2163
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.0525,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1819,
+          "1": 0.5837,
+          "2": 0.2344
+        },
+        "confidence": 0.1431
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.3474,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.122,
+          "1": 0.4086,
+          "2": 0.4694
+        },
+        "confidence": 0.1032
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.3631,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1238,
+          "1": 0.3893,
+          "2": 0.4869
+        },
+        "confidence": 0.1059
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.2827,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1531,
+          "1": 0.411,
+          "2": 0.4359
+        },
+        "confidence": 0.0735
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.0657,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2051,
+          "1": 0.5242,
+          "2": 0.2707
+        },
+        "confidence": 0.0852
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.6515,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.4316,
+          "1": 0.4853,
+          "2": 0.0831
+        },
+        "confidence": 0.143
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.8049,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3543,
+          "1": 0.4865,
+          "2": 0.1592
+        },
+        "confidence": 0.0814
+      }
+    },
+    "usage": {
+      "input_tokens": 1136,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}
