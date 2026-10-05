@@ -1,0 +1,23 @@
+# 07. Torus versus sphere topology in function fitting
+
+Scope: how genus, periodic coordinate wrap, and manifold topology change what coordinate representations can express, and how topology is detected empirically.
+
+## The topological distinction
+
+A manifold is a space whose topology, near any of its points, is the same as the topology near a point of a Euclidean space; however, its global structure may be non-Euclidean (https://en.wikipedia.org/wiki/Introduction_to_3-Manifolds, weak backing, weight 0.5304). Topology is the structure that allows defining continuous deformation of subspaces and, more generally, all kinds of continuity (https://en.wikipedia.org/wiki/Topology, weight 0.6262). The sphere and the torus are the canonical pair: locally identical, globally distinct, with the torus carrying a periodic direction the sphere lacks.
+
+The single-chart limitation makes this distinction operational for modeling. The sphere and the torus do not satisfy the single-chart assumption, and it is by definition impossible for a single-chart flow to model these manifolds correctly due to the topological mismatch (https://arxiv.org/pdf/2505.24665, weight 0.7266). Any representation built on one global coordinate chart inherits this obstruction: what fails is not the fit but the coordinates.
+
+## Torus parameterization in practice
+
+Toroidal coordinates appear wherever quasi-periodic dynamics are tracked. One trajectory optimization thesis constructs a toroidal state representation from a precomputed atlas of quasi-periodic invariant tori generated through pseudo arclength continuation, with each torus parameterized by two angular variables and associated frequencies (https://hammer.purdue.edu/articles/thesis/A_PARAMETERIZATION_OF_INVARIANT_TORI_FOR_CONTINUOUS_TRAJECTORY_OPTIMIZATION_IN_MULTI-BODY_SYSTEMS/33025187, weak backing, weight 0.4333). Two angular variables is the torus's defining coordinate structure: the genus 1 torus is parameterized by a poloidal and a toroidal angle, both periodic.
+
+The computational literature on invariant tori treats their parameterization as a numerical problem in its own right: a KAM theorem proven with the parameterization method looks for an invariant torus in quasi-periodic time dependent Hamiltonian systems depending periodically or quasi-periodically on time (https://www.sciencedirect.com/science/article/pii/S1007570425008548, weight 0.74), and robust computation of higher dimensional invariant tori uses the reduced rank extrapolation method, Bayesian maximum a posteriori estimation, and Korkine Zolatarev lattice basis reduction to find the rotation vector of the torus (https://arxiv.org/html/2505.08715v1, weak backing, weight 0.3875). Quasi-periodic tori extend maneuvering capabilities to higher dimensions in orbital game settings (https://arxiv.org/html/2608.08151, weight 0.5912).
+
+## What topology does to function fitting
+
+The practical consequence for benchmarks is that periodicity is a span property of the coordinates, not of the data. A target defined on the torus using both angular variables naturally contains harmonics in each angular direction. A coordinate representation whose angular treatment cannot wrap continuously will fail on exactly the component that crosses the wrap, even when its other components are fit well. This is the shape of the negative control result in the source benchmark: the fit is carried by an in-span component while the wrap-crossing component is lost.
+
+Manifold learning research frames the same issue from the data side. The ground truth of the low dimensional data manifold is often implicit or latent, and a major task of manifold learning is to explicitly transform or embed high dimensional noisy data into low dimensional spaces while keeping the topological and geometric structure (https://arxiv.org/html/2505.04412v1, weight 0.6805). Preserving topological structure is stated as part of the goal, not an optional extra.
+
+Weak backing section: a standard VAE repository describes Euclidean latent spaces as structurally incapable of capturing topological properties of certain datasets and proposes diffusion VAEs with arbitrary topological latent spaces to remove the obstruction (https://github.com/luis-armando-perez-rey/diffusion_vae, weak backing, weight 0.2090). The torus encyclopedia article scored low (https://en.m.wikipedia.org/wiki/Torus, weak backing, weight 0.1749), as did an unrelated periodic table site (https://ptable.com/?lang=en, weight 0.027) and a theoretical physics thesis PDF (https://www.nbi.dk/~obers/MSc_PhD_files/Nikolaos_Karozis_MSc.pdf, weight 0.2706). No factual claim above relies on them.

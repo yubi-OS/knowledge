@@ -1,0 +1,215 @@
+{
+  "topic": "manifold-coordinate benchmarking for corpus audits: the rigorous re-test of manifold coordinate systems (stereographic projection, sphere embedding, learned latents) as measurement instruments",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "stereo-lift",
+      "scope": "Stereographic projection and its inverse as a lifting map between the sphere and flat coordinates: conformality, pole handling, and where the lift fails to wrap.",
+      "seed_queries": [
+        "stereographic projection machine learning manifold learning",
+        "inverse stereographic projection dimensionality reduction conformal"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "spherical-harmonics",
+      "scope": "Real spherical harmonics as an orthonormal, complete functional basis on the 2 sphere: degrees, span properties, and use as fitting functions in regression.",
+      "seed_queries": [
+        "real spherical harmonics orthonormal basis sphere regression",
+        "spherical harmonic expansion completeness basis functions"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "flat-periodic-fourier",
+      "scope": "Tensor-product periodic Fourier bases on flat manifold coordinates: effective rank, degenerate zero columns, and span limits versus harmonic bases.",
+      "seed_queries": [
+        "tensor product Fourier basis periodic function regression",
+        "ridge regression effective rank degenerate columns feature matrix"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "bias-vs-capacity",
+      "scope": "How to disentangle inductive bias (which functions a basis can represent) from raw capacity (parameter count, effective rank) when comparing representations.",
+      "seed_queries": [
+        "inductive bias model capacity benchmark comparison",
+        "overparameterization model capacity generalization empirical study"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "partial-in-span-design",
+      "scope": "Designing targets that mix in-span and out-of-span components so topology signal separates from capacity signal, including least-squares floors on the combined target.",
+      "seed_queries": [
+        "least squares regression target design basis functions span",
+        "synthetic benchmark design extrapolation regression target decomposition"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "paired-statistics",
+      "scope": "Paired per-seed analysis for benchmark evaluation: seeded replication, paired deltas, t-tests, win counts, and what they do and do not establish.",
+      "seed_queries": [
+        "paired t test random seeds machine learning benchmark significance",
+        "statistical significance reporting machine learning experiments seeds"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "topology-manifolds",
+      "scope": "How genus, periodic coordinate wrap, and manifold topology change what coordinate representations can express, and how topology is detected empirically.",
+      "seed_queries": [
+        "torus sphere topology manifold learning distinguish latent space",
+        "periodic coordinates regression torus parameterization"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "learned-latents",
+      "scope": "Autoencoder and manifold-learning latent spaces used as coordinate systems for functions on manifolds: evaluation criteria and failure modes.",
+      "seed_queries": [
+        "latent space geometry evaluation autoencoder manifold",
+        "manifold learning embedding quality evaluation benchmark"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.6347,
+        "probabilities": {
+          "0": 0.0678,
+          "1": 0.2297,
+          "2": 0.7025
+        },
+        "confidence": 0.3263,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.3598,
+        "probabilities": {
+          "0": 0.1141,
+          "1": 0.412,
+          "2": 0.4739
+        },
+        "confidence": 0.111,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.2367,
+        "probabilities": {
+          "0": 0.1224,
+          "1": 0.5185,
+          "2": 0.3591
+        },
+        "confidence": 0.1191,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.8031,
+        "probabilities": {
+          "0": 0.0285,
+          "1": 0.1399,
+          "2": 0.8316
+        },
+        "confidence": 0.5679,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.7495,
+        "probabilities": {
+          "0": 0.0448,
+          "1": 0.1609,
+          "2": 0.7943
+        },
+        "confidence": 0.4882,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.6407,
+        "probabilities": {
+          "0": 0.051,
+          "1": 0.2573,
+          "2": 0.6917
+        },
+        "confidence": 0.3209,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.5132,
+        "probabilities": {
+          "0": 0.0806,
+          "1": 0.3255,
+          "2": 0.5939
+        },
+        "confidence": 0.1977,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.858,
+        "probabilities": {
+          "0": 0.0288,
+          "1": 0.0845,
+          "2": 0.8867
+        },
+        "confidence": 0.6915,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1479,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
