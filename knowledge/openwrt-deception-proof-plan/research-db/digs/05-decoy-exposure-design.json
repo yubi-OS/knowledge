@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "decoy-exposure-design",
+  "scope": "Decoy-only exposure design: WireGuard zone segregation, binding decoy listeners away from WAN, real SSH behind VPN, and owner break-glass path.",
+  "queries_attempted": [
+    {
+      "query": "OpenWrt WireGuard zone firewall isolate service exposure",
+      "attempt": 1,
+      "raw_results": 56,
+      "kept": 6
+    },
+    {
+      "query": "honeypot decoy SSH service firewall design real service behind VPN",
+      "attempt": 2,
+      "raw_results": 56,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://openwrt.org/docs/guide-user/services/vpn/wireguard/server",
+    "https://forum.openwrt.org/t/solved-different-firewall-zones-for-different-wireguard-clients/222048",
+    "https://openwrt.org/docs/guide-user/services/vpn/wireguard/client",
+    "https://openwrt.org/docs/guide-user/services/vpn/wireguard/all-traffic-through-wireguard",
+    "https://forum.openwrt.org/t/solved-wireguard-zone-firewall-i-dont-understand/142385",
+    "https://www.reddit.com/r/openwrt/comments/ulh08m/help_needed_how_to_configure_firewall_zone_for/",
+    "https://docs.webdecoy.com/protection-setup/honeypot-ssh-agents/",
+    "https://www.wilck.io/posts/ssh-honeypot/",
+    "https://github.com/itslakshmipriya/ssh-honeypot-system",
+    "https://scansearch.net/en/articles/honeypot-setup-deployment-guide/",
+    "https://stackoverflow.com/questions/5205923/facebook-common-url-format-for-accessing-objects-and-their-comments-from-a-brow",
+    "https://embargo.splunk.com/en_us/blog/learn/cybersecurity-honeypots.html?301=%2Fen_us%2Fblog%2Fsecurity%2Fbuilding-a-stickier-ssh-honeypot-with-cowrie.html&301=%2Fblog%2F2018%2F12%2F11%2Fbuilding-a-stickier-ssh-honeypot-with-cowrie.html&p=2"
+  ],
+  "outcome": "authored"
+}
