@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "vfio-pci-binding-lifecycle",
+  "scope": "vfio-pci binding lifecycle on the host: managed=yes vs managed=no, sysfs bind/unbind, virsh nodedev-detach and nodedev-reattach, and device reclaim semantics.",
+  "queries_attempted": [
+    {
+      "query": "libvirt hostdev managed vfio-pci bind unbind sysfs",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "virsh nodedev-detach nodedev-reattach gpu passthrough",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://libvirt.org/drvnodedev.html",
+    "https://serverfault.com/questions/1080606/bind-unbind-pci-device-on-the-ubuntu-host",
+    "https://www.kbb.com/toyota/rav4/2011/sport-suv-4d/?msockid=260a24dee2f663af071b3337e30c62e5",
+    "https://github.com/CachyOS/linux-cachyos/issues/1023",
+    "https://libvirt.org/formatdomain.html",
+    "https://www.kbb.com/toyota/rav4/2011/?msockid=260a24dee2f663af071b3337e30c62e5",
+    "https://www.reddit.com/r/VFIO/comments/qi6pv1/amd_gpusingle_gpu_passthrough_virsh_nodedevdetach/",
+    "https://github.com/bryansteiner/gpu-passthrough-tutorial/issues/22",
+    "https://bbs.archlinux.org/viewtopic.php?id=308023",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/6/html/virtualization_administration_guide/sub-sect-numa_node_management-detaching_a_node_device",
+    "https://stackoverflow.com/questions/14146148/identity-increment-is-jumping-in-sql-server-database",
+    "https://github.com/joeknock90/Single-GPU-Passthrough/blob/master/README.md"
+  ],
+  "outcome": "authored"
+}

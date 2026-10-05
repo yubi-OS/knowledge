@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "host-cutoff-hooks",
+  "scope": "host-side misbehavior cutoff enforcement: libvirt qemu hooks (/etc/libvirt/hooks), hook phases, and the pause/poweroff/destroy/detach action ladder the host can execute.",
+  "queries_attempted": [
+    {
+      "query": "libvirt qemu hooks /etc/libvirt/hooks qemu.d example script",
+      "attempt": 1,
+      "raw_results": 39,
+      "kept": 6
+    },
+    {
+      "query": "libvirt hook pause destroy vm gpu telemetry cutoff",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://libvirt.org/hooks.html",
+    "https://www.libvirt.org/hooks.html",
+    "https://gist.github.com/lucasvscn/60205b8d7367b6686b338dbe61949a2c",
+    "https://avdv.github.io/libvirt/hooks.html",
+    "https://github.com/portellam/libvirt-hooks",
+    "https://wiki.archlinux.org/title/Libvirt",
+    "https://www.libvirt.org/hooks.html",
+    "https://github.com/NVIDIA/libvirt-hooks",
+    "https://deepwiki.com/bryansteiner/gpu-passthrough-tutorial/3-libvirt-hook-system",
+    "https://www.allrecipes.com/recipes/276/desserts/cakes/",
+    "https://libvirt.org/hooks.html",
+    "https://avdv.github.io/libvirt/hooks.html"
+  ],
+  "outcome": "authored"
+}

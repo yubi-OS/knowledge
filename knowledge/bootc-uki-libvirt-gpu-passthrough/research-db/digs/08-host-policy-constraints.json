@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "host-policy-constraints",
+  "scope": "host-side policy and hardware constraints: virtio-gpu default, guest /dev/vfio suppression, IOMMU-gated passthrough access gate, SR-IOV and vGPU alternatives, and the required runner shape.",
+  "queries_attempted": [
+    {
+      "query": "sr-iov gpu virtualization iommu acs requirements passthrough",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "nvidia vgpu mediated device mdev vs vfio-user qemu",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://androidmobiles.org/sr-iov-gpu-passthrough-for-android-vms-a-step-by-step-setup-guide-with-kvm/",
+    "https://kubernetes.recipes/recipes/configuration/iommu-gpu-passthrough-sriov-kubernetes/",
+    "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+    "https://en.m.wikipedia.org/wiki/Sr",
+    "https://kubernetes.recipes/recipes/ai/disable-acs-pcie-gpu-direct-p2p/",
+    "https://canonical.com/openstack/docs/latest/how-to/misc/configuring-sriov/",
+    "https://www.linux-kvm.org/images/5/59/02x03-Neo_Jia_and_Kirti_Wankhede-vGPU_on_KVM-A_VFIO_based_Framework.pdf",
+    "https://github.com/Arc-Compute/Mdev-GPU/",
+    "https://docs.nvidia.com/vgpu/latest/pdf/grid-vgpu-user-guide.pdf",
+    "https://termbasehub.com/vfio-mdev/",
+    "https://ubuntu.com/server/docs/how-to/graphics/gpu-virtualization-with-qemu-kvm/",
+    "http://www.nvidia.com/page/home.html"
+  ],
+  "outcome": "authored"
+}

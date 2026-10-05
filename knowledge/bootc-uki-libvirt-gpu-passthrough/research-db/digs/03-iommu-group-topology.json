@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "iommu-group-topology",
+  "scope": "IOMMU group topology: discovery via /sys/kernel/iommu_groups, group co-membership constraints, ACS, and what makes a GPU passthrough-safe.",
+  "queries_attempted": [
+    {
+      "query": "linux iommu groups vfio pci passthrough isolated group",
+      "attempt": 1,
+      "raw_results": 37,
+      "kept": 6
+    },
+    {
+      "query": "check iommu groups sysfs vfio script ACS",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF",
+    "https://kernel-internals.org/virtualization/vfio/",
+    "https://stackharbor.com/en/knowledge-base/gpu-passthrough-vfio-iommu/",
+    "https://gist.github.com/k-amin07/47cb06e4598e0c81f2b42904c6909329",
+    "https://docs.kernel.org/7.1/driver-api/vfio.html",
+    "https://rjsbbq.com/",
+    "https://proxmoxr.com/blog/proxmox-iommu-groups",
+    "https://www.heiko-sieger.info/iommu-groups-what-you-need-to-consider/",
+    "https://forum.proxmox.com/threads/pci-passthrough-iommu-acs-and-isolation.135519/",
+    "https://symbolsdb.com/check-mark-symbol",
+    "https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF",
+    "https://deepwiki.com/jmarhee/sles-qemu-gpu-passthrough-tools/3.1-iommu-group-analysis-and-fixing"
+  ],
+  "outcome": "authored"
+}
