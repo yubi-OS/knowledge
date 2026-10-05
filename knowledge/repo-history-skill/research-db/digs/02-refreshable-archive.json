@@ -1,0 +1,84 @@
+{
+  "nn": "02",
+  "slug": "refreshable-archive",
+  "scope": "Incremental refresh design for a cached archive of repo events: since/from/linear-since delta fetching, cache invalidation windows, and idempotent merges.",
+  "queries_attempted": [
+    {
+      "query": "incremental api sync since parameter delta fetching design",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "cache invalidation strategy polling data mirror stale",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    {
+      "title": "Cursor-Based Sync Low-Level Design: Incremental Delta Pull, Conflict ...",
+      "url": "https://www.techinterview.org/post/3233468501/lld-cursor-based-sync/",
+      "snippet": "On this page Core Data Model Sync API: Delta Pull Conflict Resolution: Last-Write-Wins Key Interview Points A cursor-based incremental sync system lets clients efficiently download only the data that has changed since their last sync, rather than re-fetching the entire dataset. Used in mobile apps, offline-first systems, and integration APIs.On this page Core Data Model Sync API: Delta Pull Confli"
+    },
+    {
+      "title": "Implementing Dataverse Change Tracking and Delta Queries in Power ...",
+      "url": "https://www.wickedsmartdata.com/articles/implementing-dataverse-change-tracking-and-delta-queries-in-power-automate-building-incremental-sync-pipelines-for-high-volume-low-latency-data-integration",
+      "snippet": "Power Automate Implementing Dataverse Change Tracking and Delta Queries in Power Automate: Building Incremental Sync Pipelines for High-Volume, Low-Latency Data Integration Stop syncing entire tables when you only need what changed. This expert-level lesson teaches you how Dataverse delta queries work at the OData protocol level, how to persist delta tokens reliably, and how to build an ...Power A"
+    },
+    {
+      "title": "Delta Synchronization - DealCloud API Docs",
+      "url": "https://api.docs.dealcloud.com/sdk/python-1.X/data/delta-sync",
+      "snippet": "Delta sync enables efficient incremental data synchronization by fetching only records modified since your last sync. HTTP calls use intapp-rest-client; see Error handling for API errors."
+    },
+    {
+      "title": "Incremental sync - Elementary",
+      "url": "https://docs.elementary-data.com/api/incremental-sync",
+      "snippet": "Incremental sync Full scans plus incremental upsert and delete feeds. Every dataset can be read two ways: a full scan (default) and, where supported, incremental feeds that return only what changed.Incremental sync Full scans plus incremental upsert and delete feeds. Every dataset can be read two ways: a full scan (default) and, where supported, incremental feeds that return only what changed."
+    },
+    {
+      "title": "INCREMENTAL Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/incremental",
+      "snippet": "The meaning of INCREMENTAL is of, relating to, being, or occurring in especially small increments. How to use incremental in a \u2026"
+    },
+    {
+      "title": "Get incremental changes for users - Microsoft Graph",
+      "url": "https://learn.microsoft.com/en-us/graph/delta-query-users",
+      "snippet": "The delta query in Microsoft Graph lets you query for additions, deletions, or updates to supported resources, through a series of delta requests. For users, the delta query enables you to discover changes without fetching the entire set of users to compare changes. Clients that synchronize users with a local profile store can use the delta query for both their initial full synchronization ...The "
+    },
+    {
+      "title": "Cache Invalidation and the Methods to Invalidate Cache\u2026",
+      "url": "https://www.geeksforgeeks.org/system-design/cache-invalidation-and-the-methods-to-invalidate-cache/",
+      "snippet": "Cache invalidation is the process of removing or updating outdated data stored in the cache memory. It ensures that applications always use the latest and correct data instead of stale cached information. Prevents data inconsistency by clearing old or expired cache data when the original data changes. Improves application reliability by ensuring users receive updated and accurate information ...Ca"
+    },
+    {
+      "title": "Cache Invalidation Strategies | Developer Guide",
+      "url": "https://apiguide.dev/guides/cache-invalidation/",
+      "snippet": "Cache invalidation is the discipline of removing or refreshing cached data once it no longer reflects the source of truth. For HTTP APIs it means balancing three competing goals (performance, scalability, and freshness) across several cache layers: the browser, the CDN edge, a reverse proxy, an application cache like Redis, and the database ...Cache invalidation is the discipline of removing or re"
+    },
+    {
+      "title": "Cache Invalidation: Event-Driven vs TTL - beefed.ai",
+      "url": "https://beefed.ai/en/cache-invalidation-strategies",
+      "snippet": "Proven strategies to eliminate stale cache data: TTL, write-through/back, event-driven invalidation, and best practices for near-zero stale rates.Proven strategies to eliminate stale cache data: TTL, write-through/back, event-driven invalidation, and best practices for near-zero stale rates."
+    },
+    {
+      "title": "Complete Guide to Cache Invalidation | StackPractices",
+      "url": "https://stackpractices.com/guides/complete-guide-cache-invalidation/",
+      "snippet": "Cache invalidation is the hardest problem in caching. Phil Karlton famously said, \"There are only two hard things in Computer Science: cache invalidation and naming things.\" Getting invalidation wrong means serving stale data to users, losing updates, or causing thundering herds. This guide walks through every major invalidation strategy, from simple TTL expiration to complex event-driven ..."
+    },
+    {
+      "title": "How to manage and clear your cache and cookies",
+      "url": "https://www.microsoft.com/en-us/edge/learning-center/how-to-manage-and-clear-your-cache-and-cookies?msockid=356bd9edee166daf21fece04effb6cb1",
+      "snippet": "Mar 6, 2023 \u00b7 Learn how to clear your browser cache and cookies in minutes. Improve your Internet speed and performance by \u2026"
+    },
+    {
+      "title": "swr - npmx",
+      "url": "https://npmx.dev/package/swr",
+      "snippet": "The name \u201cSWR\u201d is derived from stale-while-revalidate, a cache invalidation strategy popularized by HTTP RFC 5861. SWR first returns the data from cache \u2026"
+    }
+  ],
+  "outcome": "authored"
+}

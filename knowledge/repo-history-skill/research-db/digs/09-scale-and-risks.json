@@ -1,0 +1,84 @@
+{
+  "nn": "09",
+  "slug": "scale-and-risks",
+  "scope": "Operational limits: API rate caps, curve fit cost at 100k+ commits, asymmetric joins, PR body truncation, empty-join sparse cells.",
+  "queries_attempted": [
+    {
+      "query": "linear api rate limits authenticated requests per hour",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "github api pagination large repository performance limits",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    {
+      "title": "Rate limiting \u2013 Linear Developers",
+      "url": "https://linear.app/developers/rate-limiting",
+      "snippet": "Requests authenticated using an API key can request up to 3,000,000 points per hour. Requests are associated with the authenticated user, which means all requests by the same user share the same quota even when using different API keys."
+    },
+    {
+      "title": "Linear API Rate Limits and Headers | Throttle",
+      "url": "https://throttle.com/api-limits/linear/",
+      "snippet": "Limits keep their provider-specific dimensions. Linear tracks request count and GraphQL complexity independently. Some endpoints apply additional lower request limits. Authentication: Personal API key, OAuth access token, Unauthenticated requests where supported Primary scope: Authenticated User, OAuth App User, OAuth App, Or Source IP"
+    },
+    {
+      "title": "API Limits - Throttle",
+      "url": "https://throttle.com/api-limits/",
+      "snippet": "Common primary limit 5,000 requests per hour for most authenticated users Open resource \u2192 Payments Verified Jul 28, 2026"
+    },
+    {
+      "title": "Linear \u2013 The system for product development",
+      "url": "https://linear.app/",
+      "snippet": "Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products. Linear is \u2026"
+    },
+    {
+      "title": "REST API | LN Markets Docs",
+      "url": "https://docs.lnmarkets.com/pt/api/",
+      "snippet": "Authenticated requests: 1 token per request.While unauthenticated users are effectively limited to 4 request per second and 60 per minute. The API follows the IETF HTTP API Rate Limit Headers specification (draft-10)."
+    },
+    {
+      "title": "Rate limits and API status | Prolific API",
+      "url": "https://docs.prolific.com/api-reference/introduction/rate-limits-and-api-status",
+      "snippet": "The Prolific API enforces rate limits per authenticated account (or per IP address, if unauthenticated)."
+    },
+    {
+      "title": "Mastering GitHub API Pagination - A Complete Guide to Handling Large ...",
+      "url": "https://moldstud.com/articles/p-mastering-github-api-pagination-a-complete-guide-to-handling-large-datasets",
+      "snippet": "Grasp the fundamentals of pagination in the GitHub API to efficiently manage large datasets. Knowing how pagination works will help you retrieve data in manageable chunks, improving performance and usability. Identify pagination types. Offset-basedUses a page number."
+    },
+    {
+      "title": "github search limit results - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/37602893/github-search-limit-results",
+      "snippet": "I need to do a very large search on Github for a statistic in my thesis.Have you looked at the GitHub Archive? It could be a way to get your data without having to bother the live GitHub search API, which as you found out gives a limited number of results, and is also rate-limited."
+    },
+    {
+      "title": "Repository limits - GitHub Docs",
+      "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits",
+      "snippet": "Most of the limits below affect both GitHub and the API. Repository size To ensure optimal performance and manageability, we recommend staying within the following maximum limits for repository structure and size. On-disk size: 10 GB On-disk size refers to the size of the .git folder (the compressed form of the repository). Large repositories can slow down fetch operations and increase clone ..."
+    },
+    {
+      "title": "Why GitHub Cannot Paginate Through Millions of Repositories - Deep ...",
+      "url": "https://dev.to/mayank7924/why-github-silently-caps-your-search-at-1000-results-and-whats-actually-happening-underneath-1oik",
+      "snippet": "Aug 3, 2026 \u00b7 GitHub documents this cap directly \u2014 it's not rate limiting, and it's not a bug that slipped through. Once you understand the mechanism it's protecting against, the same wall shows up in a lot of places that don't bother telling you about it \u2014 including, probably, a table you've built yourself."
+    },
+    {
+      "title": "Twitter",
+      "url": "https://handwiki.org/wiki/Company:Twitter",
+      "snippet": "Twitter (/\u02c8tw\u026at\u0259r/) is an American microblogging and social networking service on which users post and interact with messages known as \"tweets\". Registered users can post, like, and retweet tweets, but unregistered users can only read them"
+    },
+    {
+      "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Whether you\u2019re scaling your development process or just learning how to code, GitHub is where you belong. Join the world\u2019s most \u2026"
+    }
+  ],
+  "outcome": "authored"
+}

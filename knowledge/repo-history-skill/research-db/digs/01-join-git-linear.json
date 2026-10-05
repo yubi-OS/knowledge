@@ -1,0 +1,135 @@
+{
+  "nn": "01",
+  "slug": "join-git-linear",
+  "scope": "Techniques for joining git event history (PRs, commits) with Linear issue data via reference regexes, merge_commit_sha links, and graceful fallbacks when identifiers are missing.",
+  "queries_attempted": [
+    {
+      "query": "cross referencing pull requests with project management issues join design",
+      "attempt": 1,
+      "raw_results": 56,
+      "kept": 6
+    },
+    {
+      "query": "git merge_commit_sha pull request commit link semantics",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "GitHub API timeline events cross referenced issues pull requests",
+      "attempt": 2,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "GitHub REST pull request linked issues development",
+      "attempt": 2,
+      "raw_results": 68,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "first dig returned off-topic results (rationalwiki, CBP rulings) and only 4 usable sources; q1 re-dug",
+      "new_queries": [
+        "GitHub API timeline events cross referenced issues pull requests",
+        "GitHub REST pull request linked issues development"
+      ]
+    }
+  ],
+  "results_kept": [
+    {
+      "title": "git - Get commit SHA in Github actions - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/68061051/get-commit-sha-in-github-actions",
+      "snippet": "When you can create a pull request, github will execute workflow based on a fake merge branch: refs/pull/:prNumber/merge, the merge_commit_sha doesn\u2019t exist on base or head branch, but points to that surrogate merge commit, and there is a mergeable key to show the status of the test commit.When you can create a pull request, github will execute workflow based on a fake merge branch: refs/pull/:prN"
+    },
+    {
+      "title": "Guide to Getting Commit SHA in GitHub Actions | Baeldung on Ops",
+      "url": "https://www.baeldung.com/ops/github-actions-commit-sha",
+      "snippet": "Before exploring how to get the commit SHA, we must understand the nitty-gritty of the merge commit in pull requests. It\u2019ll help us figure out the correct commit SHA based on our use case. When we raise any pull request, GitHub internally creates a merge commit to show the result of merging the code changes from the source branch into the target branch. Moreover, such a commit doesn\u2019t ...Before ex"
+    },
+    {
+      "title": "git - GET pull request merge commit sha from pull request number using ...",
+      "url": "https://stackoverflow.com/questions/22331524/get-pull-request-merge-commit-sha-from-pull-request-number-using-github-api",
+      "snippet": "Mar 12, 2014 \u00b7 The merge_commit_sha attribute holds the SHA of the test merge commit Which means that GitHub creates a special branch where they merge master and your pull request branch, and merge_commit_sha points to that surrogate merge commit, however you don't have it in your local repo."
+    },
+    {
+      "title": "How to get merge commit SHA for merged pull request?",
+      "url": "https://stackoverflow.com/questions/26625965/how-to-get-merge-commit-sha-for-merged-pull-request",
+      "snippet": "All pull requests are also issues. So you can fetch the Issue Events for any Pull Request. With that, there will be a commit_id. If that attribute is present with a merged attribute then that should be the SHA of the merge commit.All pull requests are also issues. So you can fetch the Issue Events for any Pull Request. With that, there will be a commit_id. If that attribute is present with a merge"
+    },
+    {
+      "title": "Git",
+      "url": "https://git-scm.com/",
+      "snippet": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with \u2026"
+    },
+    {
+      "title": "git.openwrt.org Git - feed/packages.git/atom - CONTRIBUTING.md h\u2026",
+      "url": "http://git.openwrt.org?p=feed%2Fpackages.git%3Ba%3Datom%3Bf%3DCONTRIBUTING.md",
+      "snippet": "CONTRIBUTING.md: clarify pull request commit requirements Corrects the commit subject being referred to as a \"description\" and links the official OpenWrt\u2026"
+    },
+    {
+      "title": "REST API endpoints for timeline events - GitHub Docs",
+      "url": "https://docs.github.com/en/rest/issues/timeline",
+      "snippet": "You can use the REST API to view different types of events triggered by timeline activity in issues and pull requests. For more information about the specific events that you can receive, see Issue event types. To view GitHub activity outside of issues and pull requests, see GitHub event types."
+    },
+    {
+      "title": "Issue event types - GitHub Docs",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/issue-event-types?apiVersion=2022-11-28",
+      "snippet": "Each event type specifies if the event occurs in pull request, issues, or both. Issue event object common properties Issue events all have the same object structure, except events that are only available in the REST API for timeline events. Some events also include additional properties that provide more context about the event resources."
+    },
+    {
+      "title": "REST API endpoints for timeline events - GitHub Enterprise ...",
+      "url": "https://docs.github.com/en/enterprise-server@3.17/rest/issues/timeline",
+      "snippet": "You can use the REST API to view different types of events triggered by timeline activity in issues and pull requests. For more information about the specific events that you can receive, see Issue event types. To view GitHub activity outside of issues and pull requests, see GitHub event types."
+    },
+    {
+      "title": "docs/content/rest/using-the-rest-api/issue-event-types.md at ... - GitHub",
+      "url": "https://github.com/github/docs/blob/main/content/rest/using-the-rest-api/issue-event-types.md",
+      "snippet": "Issue events are triggered by activity in issues and pull requests and are available in the REST API for Issue events and Timeline events. Each event type specifies whether the event is available in the REST API for issue events or timeline events. GitHub's REST API considers every pull request to be an issue, but not every issue is a pull request. For this reason, the Issue Events and ..."
+    },
+    {
+      "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Whether you\u2019re scaling your development process or just learning how to code, GitHub is where you belong. Join the world\u2019s most \u2026"
+    },
+    {
+      "title": "Pull request created in a GitHub action does not trigger workflows...",
+      "url": "https://github.com/orgs/community/discussions/65321",
+      "snippet": "Pull requests created by the action using the default GITHUB_TOKEN cannot trigger other workflows. If you have on: pull_request or on: push workflows acting as checks on pull requests, they will not run. There are a number of workarounds with different pros and cons"
+    },
+    {
+      "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity."
+    },
+    {
+      "title": "REST API endpoints for pull requests - GitHub Docs",
+      "url": "https://docs.github.com/en/rest/pulls",
+      "snippet": "Use the REST API to manage pull requests and pull request reviews."
+    },
+    {
+      "title": "Getting Linked issues and Projects associated with a pull request form ...",
+      "url": "https://stackoverflow.com/questions/60717142/getting-linked-issues-and-projects-associated-with-a-pull-request-form-github-ap",
+      "snippet": "How can I get the Projects and linked issues for a given pull request from github API V3? The pulls endpoint does not give information on either of them. In the github's pull requests section's si..."
+    },
+    {
+      "title": "How to Retrieve Linked Issues for a Pull Request via REST API ... - GitHub",
+      "url": "https://github.com/orgs/community/discussions/179613",
+      "snippet": "Here's what I'm looking for: Given a Pull Request number or ID, retrieve all linked issues (those referenced via keywords like Fixes #123 or linked manually in the UI). Ideally, the response should include issue details (Id , connected work tracker E.g. ADO ,Github and/or link to the item)."
+    },
+    {
+      "title": "Linux kernel",
+      "url": "https://en.wikipedia.org/wiki/Linux_kernel",
+      "snippet": "The Linux kernel is a free and open-source, monolithic, modular, multitasking, Unix-like operating system kernel. It was originally authored in 1991 by Linus Torvalds for his i386-based PC, and it was soon adopted as the kernel for the GNU operating system, which was written to be a free (libre) replacement for Unix"
+    },
+    {
+      "title": "SIGSOFT - ACM Special Interest Group on Software Engineering",
+      "url": "http://www.sigsoft.org/awards/distinguishedPaperAward.html",
+      "snippet": "Context of Model-driven Development ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2021) July 11-17, 2021, Aarhus, Denmark/Virtual Runxiang Cheng, Lin"
+    }
+  ],
+  "outcome": "authored"
+}

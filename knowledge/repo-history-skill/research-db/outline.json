@@ -1,0 +1,248 @@
+{
+  "topic": "deep-archival routines for repository history: joining git and Linear event history into a corpus, fitting sphere-geometry RSI curves on it, and refreshing the archive on a cadence",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "join-git-linear",
+      "scope": "Techniques for joining git event history (PRs, commits) with Linear issue data via reference regexes, merge_commit_sha links, and graceful fallbacks when identifiers are missing.",
+      "seed_queries": [
+        "cross referencing pull requests with project management issues join design",
+        "git merge_commit_sha pull request commit link semantics"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "refreshable-archive",
+      "scope": "Incremental refresh design for a cached archive of repo events: since/from/linear-since delta fetching, cache invalidation windows, and idempotent merges.",
+      "seed_queries": [
+        "incremental api sync since parameter delta fetching design",
+        "cache invalidation strategy polling data mirror stale"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "sphere-curve-fitting",
+      "scope": "Hyperspherical-harmonic curve fitting on 9-D corpus points: PCA top-2, stereographic S2 lift, Mobius reparameterization, R-squared holdout, sparse-cell detection.",
+      "seed_queries": [
+        "spherical harmonic regression machine learning sphere",
+        "PCA two components stereographic projection points on sphere"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "primitive-basis",
+      "scope": "Deriving and validating a primitive-coverage basis (has_sha, has_linear_ref, has_state_progression and kin) for event corpora with regex detection and spot-check validation.",
+      "seed_queries": [
+        "feature engineering detection regex event metadata corpus",
+        "binary feature vector corpus coverage analysis validation"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "rsi-loops",
+      "scope": "Recursive self-improvement loops applied to an archive: gap-mapping, hypothesis-driven edits, fresh-context subagents, fixpoint rules, and cycle caps with user override.",
+      "seed_queries": [
+        "recursive self improvement LLM agent bounded loop",
+        "fixpoint criterion iterative agent self improvement"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "deep-research-hook",
+      "scope": "Injecting deep-research topics into the archive via parallel subagents (deep-dive, prior-art, comparative), appending results as new corpus items and re-fitting the curve.",
+      "seed_queries": [
+        "parallel subagent research orchestration LLM agents",
+        "deep research workflow multi agent synthesis report"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "cold-start-prior-art",
+      "scope": "Prior art on repo-history summarization: git changelog generators, repo summarizers, Linear Insights, and why none joins git plus planning data plus RSI.",
+      "seed_queries": [
+        "git changelog generator conventional commits tools comparison",
+        "open source repository summarization AI tools"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "output-audit-trail",
+      "scope": "Output shape for a refreshable history archive: session JSON snapshots, fit metrics, gap-map markdown, changelog audit trail, and refs/ canonical summaries with status comments.",
+      "seed_queries": [
+        "audit trail design data pipeline artifacts provenance",
+        "keep a changelog convention documentation releases"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "scale-and-risks",
+      "scope": "Operational limits: API rate caps, curve fit cost at 100k+ commits, asymmetric joins, PR body truncation, empty-join sparse cells.",
+      "seed_queries": [
+        "linear api rate limits authenticated requests per hour",
+        "github api pagination large repository performance limits"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8761,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0307,
+          "1": 0.0625,
+          "2": 0.9068
+        },
+        "confidence": 0.7407
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.897,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.018,
+          "1": 0.067,
+          "2": 0.915
+        },
+        "confidence": 0.7631
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.6578,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.071,
+          "1": 0.2002,
+          "2": 0.7288
+        },
+        "confidence": 0.3644
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.4458,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1161,
+          "1": 0.3221,
+          "2": 0.5618
+        },
+        "confidence": 0.1493
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5434,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0938,
+          "1": 0.2691,
+          "2": 0.6371
+        },
+        "confidence": 0.2307
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.2586,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1336,
+          "1": 0.4742,
+          "2": 0.3922
+        },
+        "confidence": 0.0948
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.8845,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2594,
+          "1": 0.5967,
+          "2": 0.1439
+        },
+        "confidence": 0.1661
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.6064,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.075,
+          "1": 0.2436,
+          "2": 0.6814
+        },
+        "confidence": 0.2939
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.2988,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1115,
+          "1": 0.4782,
+          "2": 0.4103
+        },
+        "confidence": 0.1142
+      }
+    },
+    "usage": {
+      "input_tokens": 1688,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
