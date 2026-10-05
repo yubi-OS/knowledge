@@ -1,0 +1,215 @@
+{
+  "topic": "admission trials for non-admitted diagnostic statistics in a corpus-audit program: how a candidate statistic earns admission via matched nulls (curveball / column-permutation), margin traps, and the admission criteria",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "trial-framework",
+      "scope": "The admission trial framework: replacing hard-coded admitted:false flags with computed trials behind one unified endpoint, and what admission licenses (reporting a statistic as an instrument reading on one frame).",
+      "seed_queries": [
+        "null hypothesis significance testing what counts as statistical evidence",
+        "preregistered analysis pipeline reproducibility scientific claims"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "hardcoded-flags-inventory",
+      "scope": "The inventory of hard-coded admitted:false flags (axis-trial, spectra card, radius profile, rayleigh) and their decomposition: which parts became trials and which parts stay permanently not admitted.",
+      "seed_queries": [
+        "constant flags versus computed claims in audit pipelines",
+        "distinguishing statistical evidence from physical claims data analysis"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "matched-nulls",
+      "scope": "Matched nulls: curveball and column-permutation null generation, the second independent null seed, non-degenerate nulls, and why the null must match the observed data structure.",
+      "seed_queries": [
+        "null model permutation test binary matrix data",
+        "curveball algorithm null model bipartite network randomization"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "margin-traps",
+      "scope": "Margin traps: fixed-margin nulls preserve row and column totals, so non-exclusion is not confirmation, and margin-matched random matrices can reproduce observed structure.",
+      "seed_queries": [
+        "fixed margin permutation test row column sums limitations",
+        "absence of evidence is not evidence of absence statistical fallacy"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "reproducibility-criterion",
+      "scope": "Reproducibility across independent seeds as the criterion that bites: verdict_reproducible_all, verdict flips under different null seeds, and why a seed-dependent verdict is not a reading.",
+      "seed_queries": [
+        "garden of forking paths researcher degrees of freedom analysis",
+        "Monte Carlo seed sensitivity stability statistical conclusions"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "per-diagnostic-criteria",
+      "scope": "Per-diagnostic admission criteria: the Rayleigh uniformity trial, the axis-redundancy trial, the spectra Parseval-share trial (E0..E3, even, odd), and the radius I(r) count trial, including the n_at_least_100 floor.",
+      "seed_queries": [
+        "Rayleigh test uniformity circular statistics",
+        "minimum sample size 100 statistical inference reliability"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "results-baselines",
+      "scope": "The six stored baseline results (maps 436, 431, 78, 81, 326, 296): which diagnostics admitted where, the N threshold refusals, and the first frame where all four diagnostics admitted at once.",
+      "seed_queries": [
+        "small sample size unreliable statistical results examples",
+        "reproducibility of statistical analyses across datasets"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "scope-limits",
+      "scope": "What admission does not claim: per-frame and per-statistic scope with no transfer, no ranking or edit decisions, no radius change, the K=40 resolution floor (nothing below 1/41), and physical readings permanently excluded.",
+      "seed_queries": [
+        "limits of statistical evidence versus mechanistic explanation",
+        "resolution limit of discrete statistical tests small probabilities"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.8425,
+        "probabilities": {
+          "0": 0.0401,
+          "1": 0.0772,
+          "2": 0.8827
+        },
+        "confidence": 0.6801,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.3203,
+        "probabilities": {
+          "0": 0.1019,
+          "1": 0.4759,
+          "2": 0.4222
+        },
+        "confidence": 0.1227,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.9435,
+        "probabilities": {
+          "0": 0.0138,
+          "1": 0.0289,
+          "2": 0.9573
+        },
+        "confidence": 0.8761,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.7247,
+        "probabilities": {
+          "0": 0.0484,
+          "1": 0.1786,
+          "2": 0.773
+        },
+        "confidence": 0.4478,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.7649,
+        "probabilities": {
+          "0": 0.0367,
+          "1": 0.1617,
+          "2": 0.8016
+        },
+        "confidence": 0.505,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.8213,
+        "probabilities": {
+          "0": 0.0374,
+          "1": 0.1038,
+          "2": 0.8588
+        },
+        "confidence": 0.6244,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.2568,
+        "probabilities": {
+          "0": 0.1339,
+          "1": 0.4753,
+          "2": 0.3908
+        },
+        "confidence": 0.0948,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.5572,
+        "probabilities": {
+          "0": 0.0808,
+          "1": 0.2812,
+          "2": 0.638
+        },
+        "confidence": 0.239,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1632,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
