@@ -1,0 +1,69 @@
+{
+ "nn": 8,
+ "slug": "audit-trail-superseded",
+ "scope": "Superseded-digest audit trail practice: moving old digests into kept-for-audit blocks instead of overwriting, single source of truth hygiene, and avoiding duplicate stale digest tables.",
+ "queries_attempted": [
+  {
+   "query": "supply chain audit trail superseded artifact versions",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "digest documentation single source of truth stale references",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "container image digest history audit trail keep previous versions",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "documentation drift duplicate stale references single source prevention",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "attempt 1 queries drifted off-topic: dictionary and economics pages, YouTube; only 3 usable sources",
+   "new_queries": [
+    "container image digest history audit trail keep previous versions",
+    "documentation drift duplicate stale references single source prevention"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.nimblesuites.com/trust-atlas/threats/supply-chain-artifact-substitution-evidence-provenance-certification",
+  "https://arxiv.org/html/2502.19567v1",
+  "https://www.merriam-webster.com/dictionary/supply",
+  "https://www.youtube.com/watch?v=2-1RAWbRH1k",
+  "https://www.rfc-editor.org/info/rfc9334/",
+  "https://en.wikipedia.org/wiki/Supply_(economics)",
+  "https://www.docsie.io/blog/glossary/source-of-truth/",
+  "https://www.docsie.io/blog/glossary/single-source-of-truth/",
+  "https://www.atlassian.com/work-management/knowledge-sharing/documentation/building-a-single-source-of-truth-ssot-for-your-team",
+  "https://www.merriam-webster.com/dictionary/digest",
+  "https://www.claudepluginhub.com/commands/loulanyue-awesome-claude-notes/commands/update-docs",
+  "https://www.reddit.com/r/ExperiencedDevs/comments/pwgyek/what_to_do_about_fragmented_and_stale_internal/",
+  "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+  "https://docs.docker.com/reference/cli/docker/image/history/",
+  "https://www.customcontainer.io/container-audit-trail",
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-inspect-docker-image-layers-and-history/view",
+  "https://www.containerstore.com/welcome.htm?msockid=3ec5ba78ddb26c5939efad91dcab6d8c",
+  "https://www.linkedin.com/pulse/your-signed-container-image-means-nothing-you-tag-heres-ifeanyi-lkwbe",
+  "https://atlan.com/know/documentation-drift-prevention-strategies/",
+  "https://datadef.io/guides/en/documentation-drift",
+  "https://sync-o.io/blog/stale-documentation-engineering",
+  "https://en.wikipedia.org/wiki/Documentation",
+  "https://ekline.io/blog/documentation-drift",
+  "https://cwe.mitre.org/data/definitions/888.html"
+ ],
+ "outcome": "authored"
+}

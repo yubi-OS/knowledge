@@ -1,0 +1,242 @@
+{
+ "topic": "digest bump checklists for digest-pinned base images - the verification and update procedure when a pinned image digest changes, from policy through CI",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "pinning-taxonomy",
+   "scope": "The five pinned categories in yubiOS PINNED.md (GitHub Actions, direct workflow downloads, internal fork refs, external source refs, container images) and why a digest bump means a different procedure in each.",
+   "seed_queries": [
+    "container image digest pinning supply chain security",
+    "software dependency pinning taxonomy digests commits actions"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "container-image-bumps",
+   "scope": "Container image digest bump flow: fetch-dhi-manifest and fetch-fedora-bootc-manifest refresh workflows, multi-arch index vs child digests, and updating every FROM and image: reference.",
+   "seed_queries": [
+    "docker buildx OPA rego build policy digest pinning",
+    "bootc image digest update FROM reference rotation"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "build-policy-gate",
+   "scope": "Build-time digest verification through yubiOS.rego policy (reset=true strict=true) inherited from yubiOS-bake.hcl, and the fail-closed behavior when a bump is not policy-approved.",
+   "seed_queries": [
+    "docker buildx build policy rego fail closed digest",
+    "OPA rego approved registries container build gate"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "fork-ref-rolls",
+   "scope": "Internal yubi-OS fork refs: release commit vs pinned source commit, fetch-released-tag-ref.yml automatic roll semantics, and manual re-verification of yubiOS-specific extensions on new releases.",
+   "seed_queries": [
+    "fork release commit versus pinned source commit rebase",
+    "software fork patch extension rebase verify upstream release"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "external-source-refs",
+   "scope": "External GitHub source ref pinning for non-fork dependencies: two-table updates and re-confirming pinned capabilities (passless hmac-secret, qemu ARM64 zboot) still work after a bump.",
+   "seed_queries": [
+    "pinning external dependency commit software supply chain",
+    "third party dependency capability regression verify pinned commit"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "workflow-downloads",
+   "scope": "Direct workflow downloads: wcurl payloads for Docker static binaries and buildx releases with mandatory sha512sum --check --strict verification before consumption.",
+   "seed_queries": [
+    "wcurl download artifact sha512 verification",
+    "download binary artifact checksum verify sha512sum strict ci"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "action-sha-pinning",
+   "scope": "GitHub Actions SHA pinning: immutable commit references versus mutable tags, and policy rejection of :latest :main and branch refs.",
+   "seed_queries": [
+    "github actions pin action sha supply chain security",
+    "github actions mutable tag latest rejected immutable sha"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "audit-trail-superseded",
+   "scope": "Superseded-digest audit trail practice: moving old digests into kept-for-audit blocks instead of overwriting, single source of truth hygiene, and avoiding duplicate stale digest tables.",
+   "seed_queries": [
+    "supply chain audit trail superseded artifact versions",
+    "digest documentation single source of truth stale references"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "roll-procedure-prs",
+   "scope": "The end-to-end roll procedure: obtain digest, update source of truth, update repo references, open a PR rather than pushing to main, and commit-message discipline for workflow-file edits.",
+   "seed_queries": [
+    "dependency bump pull request review procedure",
+    "base image digest rotation update checklist ci"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "model": "clef",
+   "answers": {
+    "t01": {
+     "type": "score",
+     "score": 1.7551,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.0536,
+      "1": 0.1377,
+      "2": 0.8087
+     },
+     "confidence": 0.5137
+    },
+    "t02": {
+     "type": "score",
+     "score": 1.8518,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.0272,
+      "1": 0.0939,
+      "2": 0.8789
+     },
+     "confidence": 0.6732
+    },
+    "t03": {
+     "type": "score",
+     "score": 1.8002,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.035,
+      "1": 0.1298,
+      "2": 0.8352
+     },
+     "confidence": 0.5734
+    },
+    "t04": {
+     "type": "score",
+     "score": 1.6578,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.0473,
+      "1": 0.2476,
+      "2": 0.7051
+     },
+     "confidence": 0.3411
+    },
+    "t05": {
+     "type": "score",
+     "score": 1.3246,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.0953,
+      "1": 0.4848,
+      "2": 0.4199
+     },
+     "confidence": 0.1307
+    },
+    "t06": {
+     "type": "score",
+     "score": 1.1528,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.1819,
+      "1": 0.4835,
+      "2": 0.3346
+     },
+     "confidence": 0.0682
+    },
+    "t07": {
+     "type": "score",
+     "score": 1.2115,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.1597,
+      "1": 0.469,
+      "2": 0.3713
+     },
+     "confidence": 0.075
+    },
+    "t08": {
+     "type": "score",
+     "score": 1.4258,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.0804,
+      "1": 0.4135,
+      "2": 0.5061
+     },
+     "confidence": 0.1504
+    },
+    "t09": {
+     "type": "score",
+     "score": 1.8522,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     },
+     "probabilities": {
+      "0": 0.0266,
+      "1": 0.0946,
+      "2": 0.8788
+     },
+     "confidence": 0.673
+    }
+   },
+   "usage": {
+    "input_tokens": 1614,
+    "output_tokens": 0
+   }
+  },
+  "usage": null,
+  "dropped": [],
+  "kept": []
+ }
+}

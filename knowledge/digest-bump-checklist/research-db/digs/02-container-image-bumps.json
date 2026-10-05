@@ -1,0 +1,36 @@
+{
+ "nn": 2,
+ "slug": "container-image-bumps",
+ "scope": "Container image digest bump flow: fetch-dhi-manifest and fetch-fedora-bootc-manifest refresh workflows, multi-arch index vs child digests, and updating every FROM and image: reference.",
+ "queries_attempted": [
+  {
+   "query": "docker buildx OPA rego build policy digest pinning",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "bootc image digest update FROM reference rotation",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/",
+  "https://docs.docker.com/build/policies/built-ins/",
+  "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+  "https://github.com/docker/docs/blob/main/content/manuals/build/policies/built-ins.md",
+  "https://www.docker.com/",
+  "https://www.itjtv.net/build/policies/validate-images/",
+  "https://github.com/bootc-dev/bootc",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-rhel-bootc-images",
+  "https://github.com/bootc-dev/bootc/issues/2279",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-rhel-bootc-images",
+  "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+  "https://docs.centos.org/automotive-sig-documentation/building/proc_registry-workflows/"
+ ],
+ "outcome": "authored"
+}
