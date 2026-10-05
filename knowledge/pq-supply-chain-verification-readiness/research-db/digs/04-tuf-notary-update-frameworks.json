@@ -1,0 +1,98 @@
+{
+  "nn": 4,
+  "slug": "tuf-notary-update-frameworks",
+  "scope": "Update-framework readiness: TUF and Notary v2 metadata/signing surfaces and their post-quantum migration state.",
+  "queries_attempted": [
+    {
+      "query": "TUF update framework post-quantum signatures migration",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "State Machine Model for The Update Framework (TUF) - arXiv.org",
+          "url": "https://arxiv.org/html/2502.18092v1",
+          "content": "As system architects consider the transition to post-quantum algorithms, understanding the impact of new signature algorithms on a TUF deployment becomes a significant consideration. In this work we introduce a state machine model that accounts for the cumulative impact of of signature algorithm selection when used with TUF for software updates.As system architects consider the transition to post-quantum algorithms, understanding the impact of new signature algorithms on a TUF deployment becomes a significant consideration. In this work we introduce a state machine model that accounts for the cumulative impact of of signature algorithm selection when used with TUF for software updates."
+        },
+        {
+          "title": "StateMachineModelforTheUpdateFramework (TUF) arXiv:2502 ...",
+          "url": "https://arxiv.org/pdf/2502.18092v1",
+          "content": "Abstract The Update Framework or TUF was developed to address several known weaknesses that have been observed in software update distribution and validation systems. Unlike conventional secure software distribution methods where there may be a single digital signature applied to each up-date, TUF introduces four distinct roles each with one or more signing key, that must participate in the ...Abstract The Update Framework or TUF was developed to address several known weaknesses that have been observed in software update distribution and validation systems. Unlike conventional secure software distribution methods where there may be a single digital signature applied to each up-date, TUF intr"
+        },
+        {
+          "title": "The Update Framework - TUF",
+          "url": "https://theupdateframework.io/",
+          "content": "The Update Framework (TUF) maintains the security of software update systems, providing protection even against attackers that compromise the repository or signing keys.The Update Framework (TUF) maintains the security of software update systems, providing protection even against attackers that compromise the repository or signing keys."
+        },
+        {
+          "title": "Documentation | TUF",
+          "url": "https://theupdateframework.io/docs/",
+          "content": "Welcome to TUF docs! We cover everything you need to know about TUF, from learning the specification, implementing it, to contributing in various capacities.Welcome to TUF docs! We cover everything you need to know about TUF, from learning the specification, implementing it, to contributing in various capacities."
+        },
+        {
+          "title": "Fixing Bitcoin: The Post-Quantum Migration Technical Roadmap",
+          "url": "https://postquantum.com/quantum-threat-crypto/fixing-bitcoin-pqc-migration/",
+          "content": "May 12, 2026 · The foundation of Bitcoin’s post-quantum migration is a new output type that eliminates public key exposure on-chain. BIP-360, published in February 2026 and merged into Bitcoin’s official BIP repository, proposes Pay-to-Merkle-Root (P2MR) as that foundation."
+        },
+        {
+          "title": "Post-Quantum Cryptography | CSRC",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography",
+          "content": "The Migration to Post-Quantum Project at the National Cybersecurity Center of Excellence is working with industry, academia, and federal partners to accelerate this shift by demonstrating tools to find and prioritize vulnerable systems, supporting interoperable solutions, and developing migration guidance.The Migration to Post-Quantum Project at the National Cybersecurity Center of Excellence is working with industry, academia, and federal partners to accelerate this shift by demonstrating tools to find and prioritize vulnerable systems, supporting interoperable solutions, and developing migration guidance."
+        }
+      ]
+    },
+    {
+      "query": "Notary v2 post-quantum container signing",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "Container signing with Notary v2. With the recent release of ...",
+          "url": "https://medium.com/@LachlanEvenson/container-signing-with-notary-v2-13dd425e95d6",
+          "content": "With the recent release of Notary v2 alpha 1 I wanted to dive in and share how the Notation CLI can be used to sign and verify container images (full disclosure — I am a collaborator on the ...With the recent release of Notary v2 alpha 1 I wanted to dive in and share how the Notation CLI can be used to sign and verify container images (full disclosure — I am a collaborator on the ..."
+        },
+        {
+          "title": "Sign Container Images with Notation and Artifact Signing ...",
+          "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-sign-verify-notation-artifact-signing",
+          "content": "Learn how to sign and verify container images and OCI artifacts in Azure Container Registry by using Notary Project tooling, Notation, and Artifact Signing.Learn how to sign and verify container images and OCI artifacts in Azure Container Registry by using Notary Project tooling, Notation, and Artifact Signing."
+        },
+        {
+          "title": "GitHub - notaryproject/notation: A CLI tool to sign and verify ...",
+          "url": "https://github.com/notaryproject/notation",
+          "content": "Notation is a CLI project to add signatures as standard items in the OCI registry ecosystem, and to build a set of simple tooling for signing and verifying these signatures. This should be viewed as similar security to checking git commit signatures, although the signatures are generic and can be used for additional purposes. Notation is an implementation of the Notary Project specifications ...Notation is a CLI project to add signatures as standard items in the OCI registry ecosystem, and to build a set of simple tooling for signing and verifying these signatures. This should be viewed as similar security to checking git commit signatures, although the signatures are generic and can be used"
+        },
+        {
+          "title": "ARTIFACTORY: Notary v2 Signing with Artifactory Docker Repository - JFrog",
+          "url": "https://jfrog.com/help/r/artifactory-notary-v2-signing-with-artifactory-docker-repository",
+          "content": "ARTIFACTORY: Notary v2 Signing with Artifactory Docker Repository Notary v2 is a framework designed to sign and validate container images and other artifacts stored in OCI-compliant registries.ARTIFACTORY: Notary v2 Signing with Artifactory Docker Repository Notary v2 is a framework designed to sign and validate container images and other artifacts stored in OCI-compliant registries."
+        },
+        {
+          "title": "Signing Container Images with Notary Project | Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/shows/open-at-microsoft/signing-container-images-with-notary-project",
+          "content": "Join Jeremy Rickard (Azure Container Upstream) and Toddy Mladenov (Azure Cloud Native & Ecosystem) to learn about Notary Project. In this episode, you will learn about the Notary Project specification and tools, and how you can sign a container image within seconds. Chapters 00:00 - Introduction 02:30 - What's in version 2 03:55 - Demo - How it works 10:00 - What's next Recommended ...Join Jeremy Rickard (Azure Container Upstream) and Toddy Mladenov (Azure Cloud Native & Ecosystem) to learn about Notary Project. In this episode, you will learn about the Notary Project specification and tools, and how you can sign a container image within seconds. Chapters 00:00 - Introduction 02:30 - What's "
+        },
+        {
+          "title": "Firefox version history",
+          "url": "https://en.wikipedia.org/wiki/Firefox_version_history",
+          "content": "Firefox was created by Dave Hyatt and Blake Ross as an experimental branch of the Mozilla browser, first released as Firefox 1.0 on November 9, 2004. Starting with version 5.0, a rapid release cycle was put into effect, resulting in a new major version release every six weeks"
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://arxiv.org/html/2502.18092v1",
+    "https://arxiv.org/pdf/2502.18092v1",
+    "https://theupdateframework.io/",
+    "https://theupdateframework.io/docs/",
+    "https://postquantum.com/quantum-threat-crypto/fixing-bitcoin-pqc-migration/",
+    "https://csrc.nist.gov/projects/post-quantum-cryptography",
+    "https://medium.com/@LachlanEvenson/container-signing-with-notary-v2-13dd425e95d6",
+    "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-sign-verify-notation-artifact-signing",
+    "https://github.com/notaryproject/notation",
+    "https://jfrog.com/help/r/artifactory-notary-v2-signing-with-artifactory-docker-repository",
+    "https://learn.microsoft.com/en-us/shows/open-at-microsoft/signing-container-images-with-notary-project",
+    "https://en.wikipedia.org/wiki/Firefox_version_history"
+  ],
+  "outcome": "authored"
+}

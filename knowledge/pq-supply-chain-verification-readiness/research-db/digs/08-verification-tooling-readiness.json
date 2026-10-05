@@ -1,0 +1,98 @@
+{
+  "nn": 8,
+  "slug": "verification-tooling-readiness",
+  "scope": "Verification tooling readiness: Go crypto, OpenSSL, liboqs, and client verifiers for ML-DSA / SLH-DSA.",
+  "queries_attempted": [
+    {
+      "query": "Go crypto ML-DSA support standard library",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "mldsa package - crypto/mldsa - Go Packages",
+          "url": "https://pkg.go.dev/crypto/mldsa",
+          "content": "Sep 1, 2026 · Package mldsa implements the post-quantum ML-DSA signature scheme specified in FIPS 204. This package is unavailable if using the FIPS 140-3 Go Cryptographic Module v1.0.0, in which case GenerateKey, NewPrivateKey, NewPublicKey, and Verify will return an error."
+        },
+        {
+          "title": "crypto/mldsa: new package · Issue #77626 · golang/go - GitHub",
+          "url": "https://github.com/golang/go/issues/77626",
+          "content": "Go 1.26 added an internal implementation of the ML-DSA post-quantum signature algorithm, specified in FIPS 204. I propose we expose a public crypto/mldsa in Go 1.27 with the following API. // Package mldsa implements the post-quantum ML-..."
+        },
+        {
+          "title": "The Go Programming Language",
+          "url": "https://go.dev/",
+          "content": "Reference documentation for Go's standard library.Build simple, secure, scalable systems with Go. An open-source programming language supported by Google."
+        },
+        {
+          "title": "mldsa package - github.com/emmansun/gmsm/mldsa - Go Packages",
+          "url": "https://pkg.go.dev/github.com/emmansun/gmsm/mldsa",
+          "content": "README ¶ mldsa — ML-DSA (FIPS 204) Implementation This package implements ML-DSA (Module-Lattice-Based Digital Signature Algorithm) as specified in NIST FIPS 204, providing three parameter sets: ... The implementation is derived from the Go standard library's crypto/mldsa package, extended with multi-architecture SIMD optimizations."
+        },
+        {
+          "title": "Go 1.27 Release Notes - The Go Programming Language",
+          "url": "https://go.dev/doc/go1.27",
+          "content": "The new crypto/mldsa package implements the post-quantum ML-DSA signature scheme specified in FIPS 204. crypto/x509 now supports ML-DSA private keys, public keys, and signatures."
+        },
+        {
+          "title": "Firefox version history",
+          "url": "https://en.wikipedia.org/wiki/Firefox_version_history",
+          "content": "Firefox was created by Dave Hyatt and Blake Ross as an experimental branch of the Mozilla browser, first released as Firefox 1.0 on November 9, 2004. Starting with version 5.0, a rapid release cycle was put into effect, resulting in a new major version release every six weeks"
+        }
+      ]
+    },
+    {
+      "query": "OpenSSL post-quantum signatures liboqs ML-DSA",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "ML-DSA - Open Quantum Safe",
+          "url": "https://openquantumsafe.org/liboqs/algorithms/sig/ml-dsa.html",
+          "content": "ML-DSA Algorithm type: Digital signature scheme. Main cryptographic assumption: hardness of lattice problems over module lattices. Principal submitters: Vadim Lyubashevsky. Auxiliary submitters: Shi Bai, Léo Ducas, Eike Kiltz, Tancrède Lepoint, Peter Schwabe, Gregor Seiler, Damien Stehlé."
+        },
+        {
+          "title": "GitHub - ibaibing/openssl-ml-dsa: A project implementing ML-DSA ...",
+          "url": "https://github.com/ibaibing/openssl-ml-dsa",
+          "content": "This project implements the ML-DSA (Module-Lattice-Based Digital Signature Algorithm) as specified in FIPS 204, providing a complete cryptographic workflow for post-quantum digital signatures. The implementation uses OpenSSL for cryptographic operations while providing a Python interface for easy integration and testing."
+        },
+        {
+          "title": "Post-Quantum Signatures (ML-DSA) · Ox",
+          "url": "https://oxlib.sh/guides/crypto/ml-dsa",
+          "content": "MlDsa44 implements ML-DSA-44 (FIPS 204, the standardized Dilithium2) — a lattice-based signature scheme that stays secure against quantum attackers. The private key is a compact 32-byte seed; the public key is 1,312 bytes and signatures are 2,420 bytes."
+        },
+        {
+          "title": "EVP_SIGNATURE-ML-DSA - OpenSSL Documentation",
+          "url": "https://docs.openssl.org/master/man7/EVP_SIGNATURE-ML-DSA/",
+          "content": "The ML-DSA-44, ML-DSA-65 and ML-DSA-87 EVP_PKEY implementations support key generation, and one-shot sign and verify using the ML-DSA signature schemes described in FIPS 204."
+        },
+        {
+          "title": "Open-source software for prototyping quantum-resistant cryptography",
+          "url": "https://openquantumsafe.org/liboqs/examples/sig.html",
+          "content": "Open Quantum Safe. Home. Post-quantum cryptography. FAQ. About our project.Example signing and verification using liboqs. A copy of this file can be found in the liboqs repository under tests/example_sig.c."
+        },
+        {
+          "title": "ML-DSA Beats SLH-DSA: 69% Smaller Signatures [2026]",
+          "url": "https://shattered.io/ml-dsa-vs-slh-dsa-2026/",
+          "content": "ML-DSA vs SLH-DSA: 2.4KB vs 7.8KB Signatures [2026] NIST finalized two post-quantum digital signature standards in August 2024, and by August 2026 the ch…"
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://pkg.go.dev/crypto/mldsa",
+    "https://github.com/golang/go/issues/77626",
+    "https://go.dev/",
+    "https://pkg.go.dev/github.com/emmansun/gmsm/mldsa",
+    "https://go.dev/doc/go1.27",
+    "https://en.wikipedia.org/wiki/Firefox_version_history",
+    "https://openquantumsafe.org/liboqs/algorithms/sig/ml-dsa.html",
+    "https://github.com/ibaibing/openssl-ml-dsa",
+    "https://oxlib.sh/guides/crypto/ml-dsa",
+    "https://docs.openssl.org/master/man7/EVP_SIGNATURE-ML-DSA/",
+    "https://openquantumsafe.org/liboqs/examples/sig.html",
+    "https://shattered.io/ml-dsa-vs-slh-dsa-2026/"
+  ],
+  "outcome": "authored"
+}

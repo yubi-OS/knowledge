@@ -1,0 +1,98 @@
+{
+  "nn": 9,
+  "slug": "migration-timelines-governance",
+  "scope": "Government and industry migration timelines (CNSA 2.0, NIST IR 8547, EU guidance) that gate supply-chain PQ signature moves.",
+  "queries_attempted": [
+    {
+      "query": "NIST IR 8547 deprecation RSA ECDSA 2030 timeline",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "PDF NIST IR 8547 initial public draft, Transition to Post-Quantum ...",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf",
+          "content": "The 151 current revision of FIPS 186 specifies the Elliptic Curve Digital Signature Algorithm (ECDSA) and 152 adopts the RSA algorithm specified in RFC 8017 and PKCS 1 (version 1.5 and higher) and the 153 Edwards-Curve Digital Signature Algorithm (EdDSA) specified in RFC 8032."
+        },
+        {
+          "title": "IR 8547, Transition to Post-Quantum Cryptography Standards | CSRC",
+          "url": "https://csrc.nist.gov/pubs/ir/8547/ipd",
+          "content": "This report describes NIST's expected approach to transitioning from quantum-vulnerable cryptographic algorithms to post-quantum digital signature algorithms and key-establishment schemes. It identifies existing quantum-vulnerable cryptographic standards and the quantum-resistant standards to which information technology products and services will need to transition. It is intended to foster ..."
+        },
+        {
+          "title": "NIST IR 8547 Algorithm Deprecation Timeline: What Sovereign Operators ...",
+          "url": "https://qsentinel.com/knowledge-base/post-quantum/nist-ir-8547-algorithm-deprecation-timeline-what-sovereign-operators-must-do-now/",
+          "content": "The NIST IR 8547 algorithm deprecation timeline is the first authoritative federal schedule that assigns hard calendar deadlines to the phase-out of quantum-vulnerable public-key cryptography, specifically RSA, ECDSA, ECDH and finite-field Diffie-Hellman. Published in initial public draft form in 2024, it converts what had previously been a general post-quantum migration aspiration into a ..."
+        },
+        {
+          "title": "NIST IR 8547: A Roadmap for Transitioning to Post‑Quantum Cryptography",
+          "url": "https://postquantum.com/security-pqc/nist-ir-8547-ipd/",
+          "content": "NIST IR 8547 ipd. Table of Contents. Deprecating RSA and ECC – Timeline to 2035.Update — June 2026: Executive Order 14412 effectively treats NIST IR 8547’s proposed 2030 deprecation date as a compliance deadline for federal high-value assets and high-impact systems."
+        },
+        {
+          "title": "NIST Algorithm Deprecation Timeline: RSA, ECC, SHA-1 Retirement Dates ...",
+          "url": "https://www.quantumsecuritydefence.com/insights/nist-algorithm-deprecation-timeline-rsa-ecc-sha1/",
+          "content": "NIST Algorithm Deprecation Timeline: When RSA, ECC, and SHA-1 Are Officially Retired NIST IR 8547 is not a threat assessment document. It is a schedule. This article provides the specific dates, specific algorithm names, and specific policy implications practitioners need for compliance programmes, procurement specifications, and vendor questionnaires."
+        },
+        {
+          "title": "National Institute of Standards and Technology",
+          "url": "https://www.nist.gov/",
+          "content": "Aug 26, 2026 · NIST promotes U.S. innovation and industrial competitiveness by advancing measurement science, standards, and …"
+        }
+      ]
+    },
+    {
+      "query": "CNSA 2.0 timeline software signing 2027",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        {
+          "title": "CNSA 2.0: Complete Guide to NSA's PQC Requirements",
+          "url": "https://postquantum.com/cnsa-2-0/complete-guide/",
+          "content": "May 14, 2026 · Starting January 1, 2027, every new acquisition for a National Security System must support CNSA 2.0 algorithms or it cannot be deployed. That is eight months from now. For organizations selling into classified environments, the planning phase is already over."
+        },
+        {
+          "title": "CNSA 2.0: U.S. National Security Systems - pqaudit.org",
+          "url": "https://pqaudit.org/timelines/cnsa-2-0/",
+          "content": "CNSA 2.0 is the NSA's required algorithm suite for U.S. National Security Systems. It mandates ML-KEM-1024, ML-DSA-87, LMS/XMSS for firmware signing, AES-256, and SHA-384/512, with a phased timeline that starts in 2025 and ends with exclusive post-quantum use by 2035. From 2027-01-01 all new NSS acquisitions must be CNSA 2.0 compliant."
+        },
+        {
+          "title": "CNSA 2.0 2027 Deadline: Why PQC Compliance Starts Now",
+          "url": "https://postquantum.com/cnsa-2-0/2027-procurement-gate/",
+          "content": "May 14, 2026 · On January 1, 2027, every new acquisition for a U.S. National Security System must support CNSA 2.0 algorithms. A system delivered the day after without ML-KEM-1024 key establishment and ML-DSA-87 digital signatures is non-compliant on arrival."
+        },
+        {
+          "title": "CNSA 2.0 Compliance: The 2027 Deadline and What to Do Now",
+          "url": "https://www.cyphrs.ai/guides/cnsa-2-compliance-guide/",
+          "content": "Apr 17, 2026 · First published in 2022 and updated through 2025, it sets category-specific transition deadlines from January 1, 2027 for software and firmware signing to January 1, 2035 for full enterprise rollover."
+        },
+        {
+          "title": "CNSA 2.0 Timeline: Every Deadline From 2027 to 2035",
+          "url": "https://quantumsequrity.com/blog/cnsa-2-0-timeline-detailed",
+          "content": "The earliest deadline applies to software signing and firmware signing. NSA stated that CNSA 2.0 algorithms must be supported and preferred for signing software and firmware delivered to NSS by 2025, with full transition by 2030."
+        },
+        {
+          "title": "Carolina Neurosurgery & Spine Associates",
+          "url": "https://www.cnsa.com/",
+          "content": "Carolina NeuroSurgery & Spine Associates, established in 1940, is one of the oldest and largest private neurosurgical practices in …"
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf",
+    "https://csrc.nist.gov/pubs/ir/8547/ipd",
+    "https://qsentinel.com/knowledge-base/post-quantum/nist-ir-8547-algorithm-deprecation-timeline-what-sovereign-operators-must-do-now/",
+    "https://postquantum.com/security-pqc/nist-ir-8547-ipd/",
+    "https://www.quantumsecuritydefence.com/insights/nist-algorithm-deprecation-timeline-rsa-ecc-sha1/",
+    "https://www.nist.gov/",
+    "https://postquantum.com/cnsa-2-0/complete-guide/",
+    "https://pqaudit.org/timelines/cnsa-2-0/",
+    "https://postquantum.com/cnsa-2-0/2027-procurement-gate/",
+    "https://www.cyphrs.ai/guides/cnsa-2-compliance-guide/",
+    "https://quantumsequrity.com/blog/cnsa-2-0-timeline-detailed",
+    "https://www.cnsa.com/"
+  ],
+  "outcome": "authored"
+}

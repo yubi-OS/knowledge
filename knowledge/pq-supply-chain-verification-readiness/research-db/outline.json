@@ -1,0 +1,248 @@
+{
+  "topic": "post-quantum readiness of supply-chain verification - signature schemes, verification tooling, and what has to change for attestation chains to survive quantum-capable adversaries",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "pq-signature-schemes-standards",
+      "scope": "Standardized post-quantum signature algorithms (ML-DSA FIPS 204, SLH-DSA FIPS 205, FN-DSA, XMSS/LMS) and their properties relevant to signing software artifacts.",
+      "seed_queries": [
+        "ML-DSA FIPS 204 post-quantum signature standard NIST",
+        "SLH-DSA FIPS 205 stateless hash-based signature NIST"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "sigstore-cosign-pq-readiness",
+      "scope": "Sigstack stack readiness: cosign, Fulcio, Rekor, and Sigstore policy posture toward post-quantum signatures and ML-DSA support status.",
+      "seed_queries": [
+        "cosign sigstore post-quantum ML-DSA support",
+        "sigstore fulcio rekor post-quantum roadmap"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "slsa-provenance-dsse-pq",
+      "scope": "SLSA provenance, DSSE envelopes, and in-toto attestations: what signature-format and key changes post-quantum migration requires.",
+      "seed_queries": [
+        "SLSA provenance DSSE signature post-quantum",
+        "in-toto attestation post-quantum signatures"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "tuf-notary-update-frameworks",
+      "scope": "Update-framework readiness: TUF and Notary v2 metadata/signing surfaces and their post-quantum migration state.",
+      "seed_queries": [
+        "TUF update framework post-quantum signatures migration",
+        "Notary v2 post-quantum container signing"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "hybrid-composite-signatures",
+      "scope": "Composite and hybrid signature schemes (draft-ietf-lamps, composite ML-DSA) as the migration bridge for attestation chains.",
+      "seed_queries": [
+        "composite ML-DSA hybrid signature draft IETF LAMPS",
+        "hybrid classical post-quantum signatures CMS migration"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "harvest-now-forge-later",
+      "scope": "Why signed artifacts differ from encrypted traffic under harvest-now-decrypt-later: verification shelf life and the forgery-later threat model.",
+      "seed_queries": [
+        "harvest now decrypt later post-quantum signature forgery",
+        "post-quantum signatures long-lived artifacts software supply chain"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "operational-cost-pq-signatures",
+      "scope": "Operational impact of PQ signatures on verification pipelines: signature and key sizes, verification latency, registry and CI costs.",
+      "seed_queries": [
+        "ML-DSA signature size verification performance benchmarks",
+        "post-quantum signatures impact artifact size CI CD"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "verification-tooling-readiness",
+      "scope": "Verification tooling readiness: Go crypto, OpenSSL, liboqs, and client verifiers for ML-DSA / SLH-DSA.",
+      "seed_queries": [
+        "Go crypto ML-DSA support standard library",
+        "OpenSSL post-quantum signatures liboqs ML-DSA"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "migration-timelines-governance",
+      "scope": "Government and industry migration timelines (CNSA 2.0, NIST IR 8547, EU guidance) that gate supply-chain PQ signature moves.",
+      "seed_queries": [
+        "NIST IR 8547 deprecation RSA ECDSA 2030 timeline",
+        "CNSA 2.0 timeline software signing 2027"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.9115,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0235,
+          "1": 0.0415,
+          "2": 0.935
+        },
+        "confidence": 0.8147
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8398,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0319,
+          "1": 0.0965,
+          "2": 0.8716
+        },
+        "confidence": 0.6551
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.715,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0471,
+          "1": 0.1908,
+          "2": 0.7621
+        },
+        "confidence": 0.4291
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.3413,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1332,
+          "1": 0.3924,
+          "2": 0.4744
+        },
+        "confidence": 0.0952
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5095,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0951,
+          "1": 0.3002,
+          "2": 0.6047
+        },
+        "confidence": 0.1972
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.5065,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1101,
+          "1": 0.2733,
+          "2": 0.6166
+        },
+        "confidence": 0.2005
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.6175,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0524,
+          "1": 0.2777,
+          "2": 0.6699
+        },
+        "confidence": 0.2929
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.6096,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0726,
+          "1": 0.2453,
+          "2": 0.6821
+        },
+        "confidence": 0.2961
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.3525,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1276,
+          "1": 0.3922,
+          "2": 0.4802
+        },
+        "confidence": 0.101
+      }
+    },
+    "usage": {
+      "input_tokens": 1467,
+      "output_tokens": 0
+    }
+  },
+  "dropped": [],
+  "kept": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}
