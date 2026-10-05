@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=",
+    "probe_results": {
+      "status": 200,
+      "n_results": 55,
+      "sample_titles": [
+        "GitHub - Ideation-Agent/IdeationAgent: An experimental open-source ...",
+        "Agent Ideate Systems - emergentmind.com",
+        "Complete Guide to AI Agents 2026: Frameworks, Architecture & Best ..."
+      ]
+    },
+    "unresponsive_engines": []
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "status": 200,
+      "body": {
+        "model": "clef",
+        "answers": {
+          "probe": {
+            "type": "noul",
+            "noul": 0.1265
+          }
+        },
+        "usage": {
+          "input_tokens": 159,
+          "output_tokens": 0
+        }
+      }
+    }
+  }
+}
