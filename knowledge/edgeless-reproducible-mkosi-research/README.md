@@ -20,7 +20,7 @@ Knowledge corpus minted 2026-10-05 from yubi-OS/yubiOS `refs/edgeless-reproducib
 
 - Results collected: 108 (9 subtopics, 2 searXNG queries each, top 6 per query kept). Raw results across queries: 1080.
 - Weight split: 72 results at weight >= 0.5 (primary/official), 36 below 0.5. Every shipped doc cites each claim's URL and the jev weight behind it; weak-backed claims are labeled in text.
-- Jev: 47 /api/decide requests total, usage 33794 input tokens / 0 output tokens (see jev-log.json). That total includes 22 requests from a first weighting pass whose answers were discarded by an extraction bug and then redone (22 requests plus a 1-question shape probe), which pushed the count past the ~40-request budget; the redo is logged per dig.
+- Jev: 47 /api/decide requests total, usage 35440 input tokens / 0 output tokens (see jev-log.json). That total includes 22 requests from a first weighting pass whose answers were discarded by an extraction bug and then redone (22 requests plus a 1-question shape probe), which pushed the count past the ~40-request budget; the redo is logged per dig.
 - Redo counts: dig queries 0 redos. Weighting pass: 1 full redo round (all 108 results re-weighted, none dropped unweighted).
 - Skipped docs: none. All 9 subtopics authored. Outline validation dropped nothing (no score-0 subtopics).
 
