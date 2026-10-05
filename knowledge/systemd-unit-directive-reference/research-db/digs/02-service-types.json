@@ -1,0 +1,35 @@
+{
+ "nn": "02",
+ "slug": "service-types",
+ "scope": "Type= semantics for all eight values (simple, exec, forking, oneshot, notify, notify-reload, idle, dbus) including startup-detection behavior and selection criteria.",
+ "queries_attempted": [
+  {
+   "query": "systemd service Type= notify exec simple forking oneshot differences which to use",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "systemd Type=notify-reload v255 sd_notify READY RELOADING service type",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://flaviocopes.com/courses/systemd/choose-a-service-type/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://unix.stackexchange.com/questions/736189/difference-between-ubuntu-systemd-simpleoneshot-and-forking",
+  "https://superuser.com/questions/1274901/systemd-forking-vs-simple",
+  "https://www.freedesktop.org/software/systemd/man/systemd.service.html",
+  "https://ewontfix.com/",
+  "https://www.man7.org/linux/man-pages/man1/systemd-notify.1.html",
+  "https://www.baeldung.com/linux/systemd-notify",
+  "https://www.freedesktop.org/software/systemd/man/latest/sd_notify.html",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-notify.html",
+  "https://askubuntu.com/questions/1120023/how-to-use-systemd-notify"
+ ],
+ "outcome": "authored"
+}

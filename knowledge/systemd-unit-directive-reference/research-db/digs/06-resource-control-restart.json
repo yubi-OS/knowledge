@@ -1,0 +1,35 @@
+{
+ "nn": "06",
+ "slug": "resource-control-restart",
+ "scope": "systemd.resource-control(5) cgroups v2 limits (MemoryMax/MemoryHigh/CPUQuota/CPUWeight/TasksMax) and restart/watchdog policy (Restart=, RestartSec, RestartSteps, RestartMaxDelaySec, WatchdogSec).",
+ "queries_attempted": [
+  {
+   "query": "systemd.resource-control MemoryMax MemoryHigh CPUQuota cgroups v2 unit directives",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "systemd Restart on-failure watchdog WatchdogSec RestartSec exponential backoff RestartSteps",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2026-03-02-setup-systemd-resource-control-memorymax-ubuntu/view",
+  "https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html",
+  "https://fdcservers.net/blog/cgroups-v2-resource-limits-with-systemd",
+  "https://binadit.com/tutorials/implement-linux-resource-quotas-with-systemd-and-automated-enforcement",
+  "https://www.fosslinux.com/158629/linux-resource-limits-ulimit-systemd-cgroups.htm",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://oneuptime.com/blog/post/2026-03-02-configure-systemd-restartsec-watchdogsec-ubuntu/view",
+  "https://how2.sh/posts/how-to-automate-service-failure-recovery-steps-for-linux-servers/",
+  "https://www.monsys.ai/en/guides/monitoring/systemd-service-monitoring-auto-restart",
+  "https://kubernetes.io/docs/reference/node/systemd-watchdog/",
+  "https://oneuptime.com/blog/post/2026-03-02-configure-systemd-restartsec-watchdogsec-ubuntu/markdown"
+ ],
+ "outcome": "authored"
+}
