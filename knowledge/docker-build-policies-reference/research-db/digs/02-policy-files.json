@@ -1,0 +1,31 @@
+{
+ "nn": "02",
+ "slug": "policy-files",
+ "scope": "Policy file convention and the --policy flag: auto-load by Dockerfile base name (Dockerfile.rego), filename=, reset=true, strict=true",
+ "queries_attempted": [
+  {
+   "query": "docker buildx --policy filename reset strict flag",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx policy auto-load Dockerfile.rego convention",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/docker/docs/blob/main/content/manuals/build/policies/usage.md",
+  "https://docs.docker.com/build/policies/usage",
+  "https://stackoverflow.com/questions/77894727/docker-buildx-is-ignoring-the-no-cache-flag",
+  "https://matsuand.github.io/docker.docs-ja/docker.docs-ja/build/policies/usage/",
+  "https://docs.docker.com/build/policies.md",
+  "https://github.com/docker/buildx/issues/3567",
+  "https://docs.docker.com/reference/cli/docker/buildx/build/"
+ ],
+ "outcome": "authored"
+}

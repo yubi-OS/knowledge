@@ -1,0 +1,34 @@
+{
+ "nn": "01",
+ "slug": "policy-model",
+ "scope": "What Docker Build Policies are: OPA Rego supply-chain rules enforced before any layer executes; version requirements Buildx 0.31.0+ and the BuildKit floor (0.26.0 vs 0.27.0 doc mismatch)",
+ "queries_attempted": [
+  {
+   "query": "docker buildx build policies opa rego",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx policies version requirements buildkit",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/usage/",
+  "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+  "https://docs.docker.com/build/policies/intro/",
+  "https://github.com/docker/docs/blob/main/content/manuals/build/policies/intro.md",
+  "https://www.docker.com/",
+  "https://www.openpolicyagent.org/docs/policy-language",
+  "https://github.com/docker/buildx",
+  "https://docs.docker.com/build/buildkit/",
+  "https://docs.docker.com/reference/cli/docker/buildx",
+  "https://deepwiki.com/docker/build-push-action/6.3-buildx-and-buildkit-integration"
+ ],
+ "outcome": "authored"
+}

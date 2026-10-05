@@ -1,0 +1,20 @@
+{
+ "date": "2026-10-05",
+ "searxng": {
+  "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3Ddocker%2Bbuildx%2Bpolicy",
+  "probe_results": "200 OK, JSON results array returned (docker buildx policy query)",
+  "unresponsive_engines": []
+ },
+ "decide": {
+  "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "model": "clef",
+  "probe_answer": {
+   "type": "noul",
+   "noul": 0.9042,
+   "usage": {
+    "input_tokens": 156,
+    "output_tokens": 0
+   }
+  }
+ }
+}

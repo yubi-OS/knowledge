@@ -1,0 +1,32 @@
+{
+ "nn": "03",
+ "slug": "rego-semantics",
+ "scope": "Rego semantics for build policies: package docker, default allow := false, allow rules, and the decision output object",
+ "queries_attempted": [
+  {
+   "query": "docker build policy rego default allow package docker",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "opa rego policy decision allow rule buildkit",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/intro.md",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://abc.vhrghala.org/p/https/docs.docker.com/build/policies/intro/",
+  "https://www.openpolicyagent.org/docs/faq",
+  "https://aj-geddes.github.io/agentweave/tutorials/opa-policies/",
+  "https://o-pa.org/",
+  "https://www.openpolicyagent.org/docs",
+  "https://khimananda.com/blog/rego-policy-language-for-opa"
+ ],
+ "outcome": "authored"
+}
