@@ -1,0 +1,69 @@
+{
+  "nn": 6,
+  "slug": "rejected-alternatives",
+  "scope": "The alternatives that lost and why: keeping the per-runner build (V2), the hybrid AMD64-bundle plus ARM64-per-runner split (V3), bundling through bcvk's image model (V5), forking libvfio-user, bundling into the production image, and replacing meson/ninja.",
+  "queries_attempted": [
+    {
+      "query": "vendoring dependencies pin commit SHA versus fork maintenance",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "multi-architecture CI hybrid build strategy complexity",
+      "attempt": 1,
+      "raw_results": 60,
+      "kept": 6
+    },
+    {
+      "query": "pinning upstream dependency commit SHA reproducibility",
+      "attempt": 2,
+      "raw_results": 36,
+      "kept": 6
+    },
+    {
+      "query": "building same software multiple architectures CI duplication",
+      "attempt": 2,
+      "raw_results": 55,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "first-pass dig too thin to author honestly (few usable high-weight sources)",
+      "new_queries": [
+        "pinning upstream dependency commit SHA reproducibility",
+        "building same software multiple architectures CI duplication"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.git-automation.com/commit-signing-supply-chain-security/submodule-and-dependency-integrity/pinning-git-dependencies-to-commit-shas/",
+    "https://oversightinstitute.org/blog/should-you-pin-every-ci-cd-dependency-to-a-sha",
+    "https://nhimg.org/faq/how-should-security-teams-handle-github-repository-dependencies-when-a-commit-sh/",
+    "https://forums.autodesk.com/t5/inventor-forum/wrapping-to-a-curved-face/td-p/12844451",
+    "https://stackoverflow.com/questions/26217488/what-is-vendoring",
+    "https://github.com/github/branch-deploy",
+    "https://verpex.com/blog/cicd-for-multi-cloud-and-hybrid-cloud-architectures",
+    "https://docs.cloud.google.com/architecture/hybrid-multicloud-patterns/strategy",
+    "https://medium.com/@arpitaanjutagi7/building-a-cross-cloud-ci-cd-pipeline-for-hybrid-environments-19ad36bbf91d",
+    "https://handwiki.org/wiki/Glossary_of_artificial_intelligence",
+    "https://getmulti.ai/",
+    "http://mizj.com/",
+    "https://www.romainlespinasse.dev/posts/github-actions-commit-sha-pinning/",
+    "https://stackoverflow.com/questions/78903499/how-do-i-pin-an-action-to-a-specific-sha",
+    "https://oversightinstitute.org/blog/should-you-pin-every-ci-cd-dependency-to-a-sha",
+    "https://www.git-automation.com/commit-signing-supply-chain-security/submodule-and-dependency-integrity/pinning-git-dependencies-to-commit-shas/",
+    "https://www.full-stack-app.com/cicd-pipeline-architecture-fundamentals/pipeline-security-and-supply-chain-hardening/pinning-github-actions-to-commit-shas/",
+    "https://www.merriam-webster.com/dictionary/pinning",
+    "https://nseba.github.io/ci/",
+    "https://circleci.com/blog/building-docker-images-for-multiple-os-architectures/",
+    "https://handwiki.org/wiki/Software:List_of_unit_testing_frameworks",
+    "https://www.gnu.org/s/bash/manual/html_node/Compiling-For-Multiple-Architectures.html",
+    "https://en.wikipedia.org/wiki/Building",
+    "https://www.halfhill.com/bytelink.html"
+  ],
+  "outcome": "authored"
+}

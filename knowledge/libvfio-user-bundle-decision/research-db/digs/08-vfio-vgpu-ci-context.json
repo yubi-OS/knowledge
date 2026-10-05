@@ -1,0 +1,36 @@
+{
+  "nn": 8,
+  "slug": "vfio-vgpu-ci-context",
+  "scope": "Why libvfio-user exists in yubiOS CI at all: vGPU and vfio-user VM testing, socket-based device emulation, and the ADR-022 per-artifact OCI distribution scheme the whole decision leans on.",
+  "queries_attempted": [
+    {
+      "query": "vfio-user QEMU vGPU testing virtualization",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "vfio-user socket based device emulation",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "https://github.com/nutanix/libvfio-user",
+    "https://www.cloudrift.ai/blog/host-setup-for-qemu-kvm-gpu-passthrough-with-vfio-on-linux",
+    "https://www.audiforums.com/forum/audi-a6-9/01435-brake-pressure-sensor-1-g201-128555/",
+    "http://wiki.qemu.org/Internships/ProjectIdeas/VFIOUSER",
+    "https://www.youtube.com/watch?v=VcgnZDXiJls",
+    "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "https://github.com/nutanix/libvfio-user",
+    "https://qemu-stsquad.readthedocs.io/en/latest/system/devices/vfio-user.html",
+    "https://movementarian.org/blog/posts/2025-08-27-vfio-user-client-in-qemu/",
+    "https://handwiki.org/wiki/Software:Linux_kernel"
+  ],
+  "outcome": "authored"
+}

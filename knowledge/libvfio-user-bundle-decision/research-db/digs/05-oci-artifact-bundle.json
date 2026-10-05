@@ -1,0 +1,36 @@
+{
+  "nn": 5,
+  "slug": "oci-artifact-bundle",
+  "scope": "Step 2 (Variation 1): publishing libvfio-user as a per-artifact OCI tag on 0mniteck/yubios via a docker-bake target, the scratch-rootfs content model (binary plus samples), publish gating, and digest pulls from CI.",
+  "queries_attempted": [
+    {
+      "query": "docker bake multiple targets buildx publish",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "OCI artifact digest pinning supply chain security",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://oneuptime.com/blog/post/2026-08-03-publish-multiple-images-multi-stage-dockerfile-buildx-bake/view",
+    "https://docs.docker.com/guides/bake/",
+    "https://docs.docker.com/build/bake/",
+    "https://www.docker.com/",
+    "https://labex.io/tutorials/docker-how-to-use-docker-buildx-bake-command-to-build-multiple-targets-555044",
+    "https://docs.docker.com/build/bake/targets.md",
+    "https://www.kunwar.page/chapter/106-the-oci-image-lifecycle-registries-digest-pinning-the-digest-update-pattern",
+    "https://github.com/OneUptime/blog/blob/master/posts/2026-03-05-ocirepository-digest-pinning-flux/README.md",
+    "https://learn.microsoft.com/en-us/azure/container-registry/overview-sign-verify-artifacts",
+    "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-manage-artifact",
+    "https://neerajsinghi.com/blogs/artifact-immutability-go-binary-signing-digest-pinning-promotion-pipeline",
+    "https://www.ociservices.gov.in/onlineOCI/"
+  ],
+  "outcome": "authored"
+}

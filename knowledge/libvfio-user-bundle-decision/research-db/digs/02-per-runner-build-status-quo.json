@@ -1,0 +1,36 @@
+{
+  "nn": 2,
+  "slug": "per-runner-build-status-quo",
+  "scope": "The existing per-runner meson/ninja build of libvfio-user inside the vGPU VM CI workflow (PR #137, commit a53332e): its staging layout, key inputs, and repeat-build cost profile that opens the bundling question.",
+  "queries_attempted": [
+    {
+      "query": "GitHub Actions build cache meson ninja",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "self-hosted runner CI rebuild every run cost",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/marketplace/actions/meson-build",
+    "https://github.com/mesonbuild/meson/issues/9234",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching",
+    "https://github.com/",
+    "http://slackware.uk/slint/x86_64/slint-15.0/ChangeLog.txt",
+    "https://deepwiki.com/F-Stack/f-stack/6.3-docker-build-environment",
+    "https://circleci.com/docs/runner-overview/",
+    "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+    "https://freetoolhub.org/self-hosted-ci-cost-calculator/",
+    "https://cicdcost.com/runner-cost",
+    "https://c3x.dev/blog/self-hosted-runners-cost/",
+    "https://www.self.inc/"
+  ],
+  "outcome": "authored"
+}
