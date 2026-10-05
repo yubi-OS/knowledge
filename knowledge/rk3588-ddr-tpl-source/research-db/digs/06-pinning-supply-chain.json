@@ -1,0 +1,80 @@
+{
+ "nn": 6,
+ "slug": "06-pinning-supply-chain",
+ "scope": "Supply-chain pinning of build-time-fetched binaries: sha256 pinning, fail-closed builds, SLSA provenance discipline.",
+ "queries_attempted": [
+  {
+   "query": "sha256 pin binary blob build fail closed supply chain CI",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "digest pinning build inputs reproducible embedded OS supply chain",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "reproducible builds firmware blobs bootloader pinning versioning",
+   "attempt": 2,
+   "raw_results": 59,
+   "kept": 6
+  },
+  {
+   "query": "supply chain security firmware binary hash verification embedded devices",
+   "attempt": 2,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "SLSA provenance build level requirements supply chain integrity",
+   "attempt": 3,
+   "raw_results": 58,
+   "kept": 6
+  },
+  {
+   "query": "reproducible builds trustless verification binaries",
+   "attempt": 3,
+   "raw_results": 66,
+   "kept": 6
+  },
+  {
+   "query": "pinning dependencies by hash supply chain attacks CI best practices",
+   "attempt": 3,
+   "raw_results": 60,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: only 1 result above weight 0.45 across 2 queries",
+   "new_queries": [
+    "reproducible builds firmware blobs bootloader pinning versioning",
+    "supply chain security firmware binary hash verification embedded devices"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "attempt 2 dig thin: 0 results above weight 0.45 across 12 results",
+   "new_queries": [
+    "SLSA provenance build level requirements supply chain integrity",
+    "reproducible builds trustless verification binaries",
+    "pinning dependencies by hash supply chain attacks CI best practices"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/azu/dockerfile-pin",
+  "https://docs.docker.com/build/policies/validate-images",
+  "https://slsa.dev/",
+  "https://slsa.dev/spec/v0.1/provenance",
+  "https://slsa.dev/spec/v0.1/levels",
+  "https://docs.docker.com/dhi/core-concepts/slsa/",
+  "https://reproducible-builds.org/",
+  "https://docs.dasharo.com/guides/reproducible-build-verification/"
+ ],
+ "outcome": "authored"
+}
