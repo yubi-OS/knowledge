@@ -1,0 +1,32 @@
+{
+  "topic": "running a point-map placement pipeline on a real embedding cloud: R0 vs Rabs binarization rules, identity-keyed placement on real 768-D embeddings, and the deployment of the method as a Worker module",
+  "subtopics": [
+    {"nn": 1, "slug": "bge-base-embeddings", "scope": "The BAAI bge-base-en-v1.5 embedding model: 768-dimensional BERT-based sentence embeddings, the v1.5 similarity-distribution fix, and benchmark standing.", "seed_queries": ["BAAI bge base en v1.5 embedding model", "FlagEmbedding bge-base-en-v1.5 768 dimensions retrieval benchmark"]},
+    {"nn": 2, "slug": "pca-dimensionality-reduction", "scope": "PCA projection of high-dimensional embeddings to a few dozen components: variance capture, centering, and geometry preservation.", "seed_queries": ["PCA dimensionality reduction embeddings explained variance", "PCA projection top components high-dimensional data downstream"]},
+    {"nn": 3, "slug": "binarization-rules-median-zero", "scope": "Binarizing latent coordinates for placement: thresholding at the coordinate median versus at zero, and published variants of each rule.", "seed_queries": ["binarize embeddings median threshold binary code", "sign function binarization zero threshold vector representation"]},
+    {"nn": 4, "slug": "curveball-null-model", "scope": "The curveball algorithm and fixed-marginal null models for binary co-occurrence matrices, and z-score significance testing.", "seed_queries": ["curveball algorithm binary matrix randomization null model", "null model species co-occurrence z score binary matrix"]},
+    {"nn": 5, "slug": "workers-compute-limits", "scope": "Cloudflare Workers resource budgets: CPU time, the 128 MB memory limit, and what the 1102 resource-limit error means for numeric workloads.", "seed_queries": ["Cloudflare Workers error 1102 exceeded resource limit", "Cloudflare Workers CPU time and memory limits"]},
+    {"nn": 6, "slug": "cross-runtime-determinism", "scope": "Getting identical numeric results across JavaScript runtimes: IEEE 754 determinism, seeded PRNGs, and reproducible hashing.", "seed_queries": ["JavaScript deterministic floating point across runtimes", "seeded PRNG reproducible hashing JavaScript cross platform"]},
+    {"nn": 7, "slug": "worker-map-endpoint-deployment", "scope": "Shipping a computation module as a Worker API endpoint: fetch handlers, routing, and serving numeric JSON results.", "seed_queries": ["Cloudflare Workers module syntax fetch handler API endpoint", "deploy JSON API worker route handler Cloudflare"]},
+    {"nn": 8, "slug": "edge-budget-large-matrices", "scope": "Running large matrix workloads at the edge versus client-side: payload size limits and when to shift work off the server.", "seed_queries": ["serverless function request body size limits large JSON", "client side compute versus edge serverless large data processing"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef",
+    "answers": {
+      "t01": {"score": 1.5333, "probabilities": {"0": 0.0909, "1": 0.285, "2": 0.6241}, "confidence": 0.2185, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.4701, "probabilities": {"0": 0.0992, "1": 0.3315, "2": 0.5693}, "confidence": 0.1657, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.5381, "probabilities": {"0": 0.1091, "1": 0.2437, "2": 0.6472}, "confidence": 0.2352, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.4906, "probabilities": {"0": 0.1101, "1": 0.2892, "2": 0.6007}, "confidence": 0.1849, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.6739, "probabilities": {"0": 0.0663, "1": 0.1935, "2": 0.7402}, "confidence": 0.3846, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.3173, "probabilities": {"0": 0.1368, "1": 0.4091, "2": 0.4541}, "confidence": 0.0884, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.8174, "probabilities": {"0": 0.0382, "1": 0.1063, "2": 0.8555}, "confidence": 0.617, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.6225, "probabilities": {"0": 0.0614, "1": 0.2547, "2": 0.6839}, "confidence": 0.3045, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1178, "output_tokens": 0},
+    "requested_at": "2026-10-05T12:45:43Z",
+    "dropped": [],
+    "kept": [1, 2, 3, 4, 5, 6, 7, 8]
+  }
+}
