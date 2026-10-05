@@ -1,0 +1,240 @@
+{
+  "topic": "revising a paper hyperspherical-harmonic section with a table-based revised passage; how the Fibonacci-sphere edit integrates into the learned-latent-curves writeup",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "paper-structure-insertion-point",
+      "scope": "The paper uses a Riemann sphere S2 as the parameter manifold and the hyperspherical-harmonic section is the natural insertion point for a sampling scheme that avoids pole clustering.",
+      "seed_queries": [
+        "Riemann sphere parameter manifold hyperspherical harmonics basis",
+        "spherical harmonics S2 basis harmonic analysis sphere"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "fibonacci-sphere-sampling",
+      "scope": "The Fibonacci sphere node scheme z_i = 1-(2i+1)/N, phi_i = 2*pi*i/golden ratio, theta_i = arccos(z_i) and why it gives near-uniform coverage without pole clustering.",
+      "seed_queries": [
+        "Fibonacci sphere algorithm evenly distributed points on a sphere golden angle",
+        "Vogel spiral golden angle phyllotaxis generalized sphere sampling"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "y33-angular-probe",
+      "scope": "The Y_3^3 spherical harmonic, the identity Y_3^3 proportional to sin^3 theta e^{i3phi}, its 3-fold azimuthal structure, and its role as an angular probe rather than a radial variation.",
+      "seed_queries": [
+        "spherical harmonic Y_lm associated Legendre sin^m theta azimuthal phase e^{im phi}",
+        "spherical harmonics l=3 m=3 tesseral angular structure"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "revised-passage-edit-anatomy",
+      "scope": "The table-based revised passage: original text, fix, and rule per row, the verbatim LaTeX block, and the drop-in placement right after the Riemann-sphere sentence.",
+      "seed_queries": [
+        "golden angle Fibonacci lattice sphere formula arccos 1-(2i+1)/N",
+        "LaTeX display math equation block document revision patch"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "sampling-probe-complementarity",
+      "scope": "The operational rule: Fibonacci points serve sampling, Y_3^3 serves the angular probe; they are different primitives at different levels of the diagnostic stack.",
+      "seed_queries": [
+        "numerical quadrature on the sphere sampling scheme versus test function",
+        "evaluate spherical harmonics at equidistributed points on sphere"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "low-discrepancy-discrepancy-theory",
+      "scope": "The discrepancy standing of the Fibonacci sphere: O(1/N^2) area discrepancy, its relation to Niederreiter low-discrepancy sets and QMC, and where it falls short of strict QMC.",
+      "seed_queries": [
+        "Fibonacci lattice sphere discrepancy bound",
+        "low discrepancy point sets sphere quasi-Monte Carlo Niederreiter"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ablation-validation-plan",
+      "scope": "The proposed empirical gate: uniform lat-long versus Fibonacci sampling at matched N=64 on reconstruction loss, visualization RMSE, and integration error, with pass, fail, and inconclusive criteria.",
+      "seed_queries": [
+        "uniform grid versus golden angle spiral sampling sphere comparison",
+        "quasi-Monte Carlo integration convergence error rate sphere"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "companion-method-equation-block",
+      "scope": "The companion method equation block artifact: a standalone 3-equation LaTeX methods-section snippet defining z_i, phi_i, theta_i and Y_3^3 evaluation, complementary to the prose patch.",
+      "seed_queries": [
+        "Fibonacci sphere python numpy implementation formula",
+        "spherical harmonic normalization convention reference NIST DLMF"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "rsi-primitive-lineage",
+      "scope": "The 9-D binary primitive coverage analysis (6/9 present), the cycle-1 has_test ablation proposal, the cycle-2 has_correction flip, and the Duck.ai re-anchoring lesson.",
+      "seed_queries": [
+        "geodesic distance criterion binary primitive coverage vector",
+        "LLM generated citation verification primary source anchoring"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.6665,
+        "probabilities": {
+          "0": 0.0619,
+          "1": 0.2098,
+          "2": 0.7283
+        },
+        "confidence": 0.3675,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.8715,
+        "probabilities": {
+          "0": 0.0277,
+          "1": 0.0731,
+          "2": 0.8992
+        },
+        "confidence": 0.722,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.7054,
+        "probabilities": {
+          "0": 0.062,
+          "1": 0.1707,
+          "2": 0.7673
+        },
+        "confidence": 0.4327,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.8596,
+        "probabilities": {
+          "0": 0.0358,
+          "1": 0.0688,
+          "2": 0.8954
+        },
+        "confidence": 0.7115,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.4712,
+        "probabilities": {
+          "0": 0.1123,
+          "1": 0.3043,
+          "2": 0.5834
+        },
+        "confidence": 0.1684,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.9672,
+        "probabilities": {
+          "0": 0.21,
+          "1": 0.6129,
+          "2": 0.1771
+        },
+        "confidence": 0.1766,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.2454,
+        "probabilities": {
+          "0": 0.1354,
+          "1": 0.4838,
+          "2": 0.3808
+        },
+        "confidence": 0.0961,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.383,
+        "probabilities": {
+          "0": 0.1081,
+          "1": 0.4009,
+          "2": 0.491
+        },
+        "confidence": 0.1203,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 0.3268,
+        "probabilities": {
+          "0": 0.7568,
+          "1": 0.1597,
+          "2": 0.0835
+        },
+        "confidence": 0.4078,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1788,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "09"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
