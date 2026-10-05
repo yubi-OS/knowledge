@@ -1,0 +1,36 @@
+{
+ "nn": 1,
+ "slug": "luks2-root-unlock-mode",
+ "scope": "systemd-cryptsetup FIDO2 unlock of the LUKS2 root volume in the initrd: interactive touch, token retries, fallback to the passphrase prompt",
+ "queries_attempted": [
+  {
+   "query": "systemd-cryptsetup fido2-device unlock LUKS2 initrd interactive touch",
+   "attempt": 1,
+   "raw_results": 62,
+   "kept": 6
+  },
+  {
+   "query": "systemd-cryptenroll fido2 token LUKS2 boot prompt fallback passphrase",
+   "attempt": 1,
+   "raw_results": 54,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://github.com/bertogg/fido2luks",
+  "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html",
+  "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "https://www.mankier.com/1/systemd-cryptenroll"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+ "nn": 5,
+ "slug": "ci-software-authenticator",
+ "scope": "the non-interactive CI leg: a software FIDO2 authenticator answers instantly inside a bcvk VM, failure is a test failure",
+ "queries_attempted": [
+  {
+   "query": "libfido2 software authenticator virtual FIDO2 HID test automation",
+   "attempt": 1,
+   "raw_results": 70,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 emulator CI automated LUKS2 unlock testing",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/ellerh/softfido",
+  "https://developers.yubico.com/libfido2/",
+  "https://github.com/bulwarkid/virtual-fido",
+  "https://lwn.net/Articles/923656/",
+  "https://github.com/BryanJacobs/FIDO2Applet",
+  "https://proxg.dev/feitian/FidoSoftwareAuthenticator",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+  "https://github.com/bertogg/fido2luks",
+  "https://github.com/shimunn/fido2luks",
+  "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll"
+ ],
+ "outcome": "authored"
+}
