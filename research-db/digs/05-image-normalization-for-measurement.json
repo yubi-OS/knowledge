@@ -1,0 +1,48 @@
+{
+ "nn": 5,
+ "slug": "image-normalization-for-measurement",
+ "scope": "Deterministic image pre-processing for measurement (resize policy, grayscale, contrast normalization, binarization thresholds) and reproducibility practice.",
+ "queries_attempted": [
+  {
+   "query": "image preprocessing normalization reproducible measurement",
+   "attempt": 1,
+   "raw_results": 70,
+   "kept": 6
+  },
+  {
+   "query": "grayscale conversion luminance standard Rec601 Rec709",
+   "attempt": 1,
+   "raw_results": 69,
+   "kept": 6
+  },
+  {
+   "query": "sRGB grayscale conversion luminance formula",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6,
+   "redo": true
+  },
+  {
+   "query": "image binarization threshold Otsu reproducibility",
+   "attempt": 3,
+   "raw_results": 43,
+   "kept": 6,
+   "redo": true
+  },
+  {
+   "query": "test image Lena standard preprocessing benchmark reproducibility",
+   "attempt": 4,
+   "raw_results": 47,
+   "kept": 6,
+   "redo": true
+  }
+ ],
+ "redo_count": 3,
+ "redo_log": [
+  "sRGB grayscale conversion luminance formula",
+  "image binarization threshold Otsu reproducibility",
+  "test image Lena standard preprocessing benchmark reproducibility"
+ ],
+ "results_kept": 2,
+ "outcome": "authored"
+}
