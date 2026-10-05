@@ -1,0 +1,61 @@
+{
+ "nn": "05",
+ "slug": "swtpm-measured-boot",
+ "scope": "swtpm-backed TPM devices in QEMU VMs for measured-boot test legs: /dev/tpm0 and /dev/tpmrm0 exposure and what they enable",
+ "queries_attempted": [
+  {
+   "query": "QEMU swtpm TPM device /dev/tpmrm0 testing",
+   "attempt": 1,
+   "raw_results": 33,
+   "kept": 6
+  },
+  {
+   "query": "swtpm measured boot systemd CI VM",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "swtpm systemd TPM2 virtual machine test",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "TPM2 event log measured boot linux boot chain",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "swtpm systemd TPM2 virtual machine test"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "TPM2 event log measured boot linux boot chain"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://qemu.readthedocs.io/en/v8.1.5/specs/tpm.html",
+  "https://www.qemu.org/docs/master/specs/tpm.html",
+  "https://tpm2-software.github.io/2020/10/19/TPM2-Device-Emulation-With-QEMU.html",
+  "https://ejaaskel.dev/yocto-emulation-setting-up-qemu-with-tpm/",
+  "https://github.com/tompreston/qemu-ovmf-swtpm",
+  "https://github.com/anpep/qemu-tpm-measurement",
+  "https://arxiv.org/pdf/2609.05011",
+  "https://www.earth.li/~noodles/blog/2024/07/qemu-uefi-testing.html",
+  "https://www.freedesktop.org/software/systemd/man/devel/systemd-tpm2-swtpm.html",
+  "https://arxiv.org/html/2609.05011"
+ ],
+ "outcome": "authored"
+}

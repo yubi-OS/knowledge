@@ -1,0 +1,85 @@
+{
+ "nn": "08",
+ "slug": "test-guardrails",
+ "scope": "Guardrails that keep software authenticators TEST-only: dev image vs production image separation and release-confidence policy",
+ "queries_attempted": [
+  {
+   "query": "test only software authenticator production image separation CI",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 software token never production regression testing policy",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "software FIDO2 authenticator test only image security",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "software authenticator dev image CI not production security",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "virtual authenticator testing passkeys webauthn CI",
+   "attempt": 2,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 software token security risk testing only",
+   "attempt": 2,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 4,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q1 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "software FIDO2 authenticator test only image security"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q1 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "software authenticator dev image CI not production security"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "virtual authenticator testing passkeys webauthn CI"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "FIDO2 software token security risk testing only"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/19h/fidolizer",
+  "https://github.com/bulwarkid/virtual-fido",
+  "https://www.yubico.com/authentication-standards/fido2/",
+  "https://fidoalliance.org/certification/interoperability-testing/",
+  "https://mojoauth.com/blog/test-passkeys-ci-virtual-authenticators",
+  "https://helpmetest.com/blog/fido2-authenticator-testing/",
+  "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2",
+  "https://nhimg.org/faq/why-do-enterprise-fido2-rollouts-often-stall-in-production/"
+ ],
+ "outcome": "authored"
+}

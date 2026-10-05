@@ -1,0 +1,59 @@
+{
+ "nn": "06",
+ "slug": "bcvk-vm-harness",
+ "scope": "bcvk as the VM harness: ephemeral run, native-to-disk install, image pulls into podman storage, and pinned release descendants",
+ "queries_attempted": [
+  {
+   "query": "bcvk bootc virtualization kit ephemeral run",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "bcvk native-to-disk install bootc VM testing",
+   "attempt": 1,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "bcvk install to disk bootc VM",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "bcvk composefs bootc virtualization",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "bcvk install to disk bootc VM"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "bcvk composefs bootc virtualization"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-image-updates-with-the-bootc-virtualization-kit-bcvk",
+  "https://bootc.dev/blog/2026-may-07-sealed-images-deploying/",
+  "https://www.mankier.com/8/bcvk-ephemeral-run",
+  "https://github.com/bootc-dev/bcvk",
+  "https://github.com/bootc-dev/bcvk/blob/main/README.md",
+  "https://deepwiki.com/bootc-dev/bcvk/5-disk-image-creation",
+  "https://github.com/frostyard/snosi",
+  "https://deepwiki.com/bootc-dev/bcvk/3.1-ephemeral-vm-architecture"
+ ],
+ "outcome": "authored"
+}

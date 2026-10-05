@@ -1,0 +1,2378 @@
+[
+ {
+  "query": "systemd-cryptenroll fido2-device LUKS2 token enroll",
+  "title": "systemd-cryptenroll - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "snippet": "systemd-cryptenroll is a tool for ... unlock the volume during boot. systemd-cryptenroll allows enrolling smartcards, FIDO2 tokens and Trusted Platform Module security chips into LUKS devices, as well as regular passphrases....\"See dm-crypt/System configuration#crypttab and dm-crypt/System configura",
+  "collected_at": "2026-10-05T10:23:38.578079+00:00",
+  "redo_of": null,
+  "nn": "01",
+  "weight": 0.8952,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll - ArchWiki' (https://wiki.archlinux.org/title/Systemd-cryptenroll) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8952
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:39.616034+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptenroll fido2-device LUKS2 token enroll",
+  "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+  "url": "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "snippet": "Once you have a key pair on it, you can enroll it with a LUKS2 volume like so: # systemd-cryptenroll --pkcs11-token-uri=auto /dev/sda5 \u00b7 Just like the same command's invocation in the FIDO2 case this enrolls the security token as an additional way to unlock the volume, any passphrases you already ha",
+  "collected_at": "2026-10-05T10:23:38.578114+00:00",
+  "redo_of": null,
+  "nn": "01",
+  "weight": 0.9125,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248' (https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9125
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:39.616054+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptenroll fido2-device LUKS2 token enroll",
+  "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+  "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "snippet": "July 5, 2026 \u2014 On boot, systemd-cryptsetup@secure_data.service uses crypttab options to try token unlock before prompting ... Adds TPM2, FIDO2, PKCS#11, and recovery-key unlock paths to LUKS2 volumes and stores token metadata in the header JSON area \u00b7 Recovery keys work on any machine; TPM2 and FIDO",
+  "collected_at": "2026-10-05T10:23:38.578119+00:00",
+  "redo_of": null,
+  "nn": "01",
+  "weight": 0.2234,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key' (https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2234
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:39.616058+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptenroll fido2-device LUKS2 token enroll",
+  "title": "systemd-cryptenroll - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html",
+  "snippet": "Description \u00b6 systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot. Specifically, it supports tokens and credentials of the following kind to be enrolled:",
+  "collected_at": "2026-10-05T10:23:38.578123+00:00",
+  "redo_of": null,
+  "nn": "01",
+  "weight": 0.9453,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9453
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:39.616062+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptenroll fido2-device LUKS2 token enroll",
+  "title": "systemd-cryptenroll(1) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "snippet": "1 month ago \u2014 In order to unlock a LUKS2 volume with an enrolled FIDO2 security token, specify the fido2-device= option in the respective /etc/crypttab line: myvolume /dev/sda1 none fido2-device=auto See crypttab(5) for a more comprehensive example of a systemd-cryptenroll invocation and its matchin",
+  "collected_at": "2026-10-05T10:23:38.578136+00:00",
+  "redo_of": null,
+  "nn": "01",
+  "weight": 0.5357,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll(1) - Linux manual page' (https://man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5357
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:39.616065+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptenroll fido2-device LUKS2 token enroll",
+  "title": "Ubuntu Manpage: systemd-cryptenroll - Enroll PKCS#11, FIDO2, TPM2 token/devices to LUKS2 encrypted volumes",
+  "url": "https://manpages.ubuntu.com/manpages/jammy/man1/systemd-cryptenroll.1.html",
+  "snippet": "In order to unlock a LUKS2 volume with an enrolled FIDO2 security token, specify the fido2-device= option in the respective /etc/crypttab line: ... See crypttab(5) for a more comprehensive example of a systemd-cryptenroll invocation and its matching /etc/crypttab line.\"In order to unlock a LUKS2 vol",
+  "collected_at": "2026-10-05T10:23:38.578143+00:00",
+  "redo_of": null,
+  "nn": "01",
+  "weight": 0.9178,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Ubuntu Manpage: systemd-cryptenroll - Enroll PKCS#11, FIDO2, TPM2 token/devices to LUKS2 encrypted v' (https://manpages.ubuntu.com/manpages/jammy/man1/systemd-cryptenroll.1.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9178
+   },
+   "usage": {
+    "input_tokens": 934,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:41.577267+00:00"
+  }
+ },
+ {
+  "query": "systemd cryptenroll --fido2-device=auto LUKS2 token JSON format",
+  "title": "Stop Typing LUKS Passphrases at Every Boot: Practical systemd-cryptenroll on Linux - DEV Community",
+  "url": "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "snippet": "3 days ago \u2014 systemd-cryptenroll is the operator ... (hmac-secret), PKCS#11 smartcards, plus computer-generated recovery keys. Unlock metadata lives in the LUKS2 JSON token area....\"Enroll TPM2, FIDO2, and recovery keys into LUKS2 with systemd-cryptenroll \u2014 PCR binding, crypttab unlock lines, wipe-s",
+  "collected_at": "2026-10-05T10:23:38.578155+00:00",
+  "redo_of": null,
+  "nn": "01",
+  "weight": 0.1421,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Stop Typing LUKS Passphrases at Every Boot: Practical systemd-cryptenroll on Linux - DEV Community' (https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1421
+   },
+   "usage": {
+    "input_tokens": 934,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:41.577289+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+  "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+  "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "snippet": "July 5, 2026 \u2014 For a single currently running kernel, sudo update-initramfs -u is usually enough. On boot, systemd-cryptsetup@secure_data.service uses crypttab options to try token unlock before prompting ...\"For a single currently running kernel, sudo update-initramfs -u is usually enough. On boot,",
+  "collected_at": "2026-10-05T10:23:38.578166+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.2277,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key' (https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2277
+   },
+   "usage": {
+    "input_tokens": 934,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:41.577294+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+  "title": "Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...",
+  "url": "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "snippet": "systemd-cryptenroll is the operator tool for binding LUKS2 volumes to hardware factors systemd already understands at boot: TPM2 chips, FIDO2 tokens (hmac-secret), PKCS#11 smartcards, plus computer-generated recovery keys. Unlock metadata lives in the LUKS2 JSON token area. At boot, systemd-cryptset",
+  "collected_at": "2026-10-05T10:23:38.578170+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.0271,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...' (https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0271
+   },
+   "usage": {
+    "input_tokens": 934,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:41.577297+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+  "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+  "url": "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "snippet": "Key here is the fido2-device=auto option you need to add to the fourth column in the file. It tells systemd-cryptsetup to use the FIDO2 metadata now embedded in the LUKS2 header, wait for the FIDO2 token to be plugged in at boot (utilizing systemd-udevd, \u2026) and unlock the volume with it.\"This will e",
+  "collected_at": "2026-10-05T10:23:38.578175+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.8969,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248' (https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8969
+   },
+   "usage": {
+    "input_tokens": 934,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:41.577300+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+  "title": "Unlock LUKS volume with a YubiKey - Guy Rutenberg",
+  "url": "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "snippet": "April 1, 2026 \u2014 We need to modify /etc/crypttab in order to tell cryptsetup to unlock the device using the YubiKey. Add fido2-device=auto to the options field of the crypttab entry for your device.\"This solves the issue of the unknown fido2-device. Before installing dracut, I would highly recommend ",
+  "collected_at": "2026-10-05T10:23:38.578411+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.8095,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlock LUKS volume with a YubiKey - Guy Rutenberg' (https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8095
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:43.853403+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+  "title": "GitHub - bertogg/fido2luks: Unlock LUKS volumes at boot time using a FIDO2 token and initramfs-tools \u00b7 GitHub",
+  "url": "https://github.com/bertogg/fido2luks",
+  "snippet": "If you are not interested in the technical details you can skip this section. When systemd enrolls a FIDO2 token into a LUKS volume it uses an extension called hmac-secret, supported by many hardware tokens.\"A relying party ID (io.systemd.cryptsetup in this case). The aforementioned salt (which shou",
+  "collected_at": "2026-10-05T10:23:38.578417+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.9258,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - bertogg/fido2luks: Unlock LUKS volumes at boot time using a FIDO2 token and initramfs-tools' (https://github.com/bertogg/fido2luks) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9258
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:43.853425+00:00"
+  }
+ },
+ {
+  "query": "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+  "title": "systemd-cryptenroll - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "snippet": "From systemd-cryptenroll (1): systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot. systemd-cryptenroll allows enrolling smartcards, FIDO2 tokens and Trusted Platform Module security ch",
+  "collected_at": "2026-10-05T10:23:38.578420+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.8383,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll - ArchWiki' (https://wiki.archlinux.org/title/Systemd-cryptenroll) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8383
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:43.853431+00:00"
+  }
+ },
+ {
+  "query": "systemd crypttab fido2 ask-password initramfs unlock",
+  "title": "crypttab - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/crypttab.html",
+  "snippet": "Use systemd-cryptenroll --fido2-device=list to list all suitable FIDO2 security tokens currently plugged in, along with their device nodes. This option implements the following mechanism: the configured key is hashed via they HMAC keyed hash function the FIDO2 device implements, keyed by a secret ke",
+  "collected_at": "2026-10-05T10:23:38.578424+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.7806,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'crypttab - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/latest/crypttab.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7806
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:43.853436+00:00"
+  }
+ },
+ {
+  "query": "systemd crypttab fido2 ask-password initramfs unlock",
+  "title": "systemd 248: Unlocking LUKS partition with FIDO2 Token: initramfs / Newbie Corner / Arch Linux Forums",
+  "url": "https://bbs.archlinux.org/viewtopic.php?id=265134",
+  "snippet": "April 2, 2021 \u2014 MODULES=(amdgpu) BINARIES=() ... This is undocumented for arch the moment, I can not find anything in the wiki (yet). ... you need to add /usr/lib/libfido2.so.1 in the initramfs too (add it to the BINARIES list)and make sure /etc/crypttab is copied to the ...\"MODULES=(amdgpu) BINARIE",
+  "collected_at": "2026-10-05T10:23:38.578427+00:00",
+  "redo_of": null,
+  "nn": "02",
+  "weight": 0.0343,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd 248: Unlocking LUKS partition with FIDO2 Token: initramfs / Newbie Corner / Arch Linux Forum' (https://bbs.archlinux.org/viewtopic.php?id=265134) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0343
+   },
+   "usage": {
+    "input_tokens": 826,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:43.853440+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 hmac-secret extension LUKS disk unlock",
+  "title": "GitHub - nyancient/fido2-luks: FIDO2 as strong single factor for LUKS ...",
+  "url": "https://github.com/nyancient/fido2-luks",
+  "snippet": "This package lets you use a FIDO2 token with the hmac-secret extension as a strong single factor for LUKS (Linux full disk encryption). Well-known examples of such tokens include all FIDO2 models of Yubikey, the Google Titan key, the Nitrokey FIDO2, any SoloKey, and any other Microsoft-compatible ..",
+  "collected_at": "2026-10-05T10:23:38.578434+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.7966,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - nyancient/fido2-luks: FIDO2 as strong single factor for LUKS ...' (https://github.com/nyancient/fido2-luks) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7966
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:45.794970+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 hmac-secret extension LUKS disk unlock",
+  "title": "LUKS disk encryption with FIDO2 - Kudelski Security Research Center",
+  "url": "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+  "snippet": "Disk encryption with FIDO2 hmac-secret extension FIDO2 introduces a standardized communication protocol known as Client-to-Authenticator Protocol (CTAP), which defines the exchange of information between security keys, also referred as authenticators, and the operating system or web browser.",
+  "collected_at": "2026-10-05T10:23:38.578436+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.8414,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'LUKS disk encryption with FIDO2 - Kudelski Security Research Center' (https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8414
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:45.794988+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 hmac-secret extension LUKS disk unlock",
+  "title": "Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...",
+  "url": "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "snippet": "systemd-cryptenroll is the operator tool for binding LUKS2 volumes to hardware factors systemd already understands at boot: TPM2 chips, FIDO2 tokens (hmac-secret), PKCS#11 smartcards, plus computer-generated recovery keys. Unlock metadata lives in the LUKS2 JSON token area. At boot, systemd-cryptset",
+  "collected_at": "2026-10-05T10:23:38.578439+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.2533,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...' (https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2533
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:45.794993+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 hmac-secret extension LUKS disk unlock",
+  "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+  "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "snippet": "Jul 4, 2026 \u00b7 Use systemd-cryptenroll on LUKS2 volumes to add TPM2, FIDO2, PKCS#11, and recovery-key unlock methods, store token metadata in the LUKS2 JSON area, and wire boot unlock through crypttab.",
+  "collected_at": "2026-10-05T10:23:38.578441+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.4277,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key' (https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4277
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:45.794996+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 hmac-secret extension LUKS disk unlock",
+  "title": "Authenticated Boot and Disk Encryption on Linux",
+  "url": "http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html",
+  "snippet": "or user security token (FIDO2 or PKCS#11 token); i.e. user data should be locked to a security concept belonging to the user, not the system. Or to summarize this differently: Eve",
+  "collected_at": "2026-10-05T10:23:38.578448+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.8718,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Authenticated Boot and Disk Encryption on Linux' (http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8718
+   },
+   "usage": {
+    "input_tokens": 847,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:45.794999+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 hmac-secret extension LUKS disk unlock",
+  "title": "What Is FIDO2? | Microsoft Security",
+  "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=325efc9c4706638c26feeb75460862a4",
+  "snippet": "FIDO2 strengthens security and protects individuals and organizations from cybercrimes by using phishing-resistant cryptographic \u2026",
+  "collected_at": "2026-10-05T10:23:38.578453+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.8302,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What Is FIDO2? | Microsoft Security' (https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=325efc9c4706638c26feeb75460862a4) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8302
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:47.988445+00:00"
+  }
+ },
+ {
+  "query": "pam-u2f vs systemd FIDO2 hmac-secret difference",
+  "title": "Difference between yubico-pam and pam-u2f : r/yubikey - Reddit",
+  "url": "https://www.reddit.com/r/yubikey/comments/o8lkma/difference_between_yubicopam_and_pamu2f/",
+  "snippet": "It also allows authentication via HMAC-SHA1 Challenge-Response. pam-u2f allows authentication over U2F and FIDO2. I am confused because I thought the YubiCloud server was using U2F. I was also under the impression that HMAC-SHA1 Challenge-Response is the HMAC-secret component of FIDO2.",
+  "collected_at": "2026-10-05T10:23:38.578456+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.034,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Difference between yubico-pam and pam-u2f : r/yubikey - Reddit' (https://www.reddit.com/r/yubikey/comments/o8lkma/difference_between_yubicopam_and_pamu2f/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.034
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:47.988463+00:00"
+  }
+ },
+ {
+  "query": "pam-u2f vs systemd FIDO2 hmac-secret difference",
+  "title": "pam-u2f - Yubico",
+  "url": "https://developers.yubico.com/pam-u2f/",
+  "snippet": "pam-u2f This module implements PAM over U2F and FIDO2, providing an easy way to integrate the YubiKey (or other U2F/FIDO2 compliant authenticators) into your existing infrastructure.",
+  "collected_at": "2026-10-05T10:23:38.578458+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.8832,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam-u2f - Yubico' (https://developers.yubico.com/pam-u2f/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8832
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:47.988467+00:00"
+  }
+ },
+ {
+  "query": "pam-u2f vs systemd FIDO2 hmac-secret difference",
+  "title": "GitHub - Yubico/pam-u2f: Pluggable Authentication Module (PAM) for U2F ...",
+  "url": "https://github.com/Yubico/pam-u2f",
+  "snippet": "Pluggable Authentication Module (PAM) Universal 2nd Factor (U2F) This module implements PAM over U2F and FIDO2, providing an easy way to integrate the YubiKey (or other U2F/FIDO2 compliant authenticators) into your existing infrastructure.",
+  "collected_at": "2026-10-05T10:23:38.578460+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.8506,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - Yubico/pam-u2f: Pluggable Authentication Module (PAM) for U2F ...' (https://github.com/Yubico/pam-u2f) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8506
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:47.988471+00:00"
+  }
+ },
+ {
+  "query": "pam-u2f vs systemd FIDO2 hmac-secret difference",
+  "title": "Acute Care Hospitals & Outpatient Therapy | PAM Health",
+  "url": "https://pamhealth.com/",
+  "snippet": "PAM Health is committed to providing patients with the best care and outcomes. We offer both inpatient and outpatient therapy. Find \u2026",
+  "collected_at": "2026-10-05T10:23:38.578462+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.0302,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Acute Care Hospitals & Outpatient Therapy | PAM Health' (https://pamhealth.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0302
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:47.988476+00:00"
+  }
+ },
+ {
+  "query": "pam-u2f vs systemd FIDO2 hmac-secret difference",
+  "title": "Allow pam_systemd_homed to be forced to ask for FIDO2 pin \u00b7 Issue...",
+  "url": "https://ghostarchive.org/archive/AxynM",
+  "snippet": "This would mean basically duplicating pam-u2f's behaviour into systemd-homed. This would mean not just using the FIDO2 credential for it's hmac-secret but also check the signature it generates using the public key stored in UserRecord.",
+  "collected_at": "2026-10-05T10:23:38.578464+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.4078,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Allow pam_systemd_homed to be forced to ask for FIDO2 pin \u00b7 Issue...' (https://ghostarchive.org/archive/AxynM) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4078
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:50.319050+00:00"
+  }
+ },
+ {
+  "query": "pam-u2f vs systemd FIDO2 hmac-secret difference",
+  "title": "QLED vs. OLED: What's the Difference? - CNET",
+  "url": "https://www.cnet.com/tech/home-entertainment/qled-vs-oled-whats-better/",
+  "snippet": "What is the lifespan of an OLED vs. QLED TV?",
+  "collected_at": "2026-10-05T10:23:38.578466+00:00",
+  "redo_of": null,
+  "nn": "03",
+  "weight": 0.0486,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'QLED vs. OLED: What's the Difference? - CNET' (https://www.cnet.com/tech/home-entertainment/qled-vs-oled-whats-better/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0486
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:50.319075+00:00"
+  }
+ },
+ {
+  "query": "libfido2 software authenticator softoken testing",
+  "title": "FIDO2 Authenticator Testing: Hardware Keys and Software Strategies",
+  "url": "https://helpmetest.com/blog/fido2-authenticator-testing/",
+  "snippet": "It encompasses two layers: WebAuthn (the browser API) and CTAP2 (the Client-to-Authenticator Protocol). Testing FIDO2 authenticators \u2014 hardware security keys like YubiKey, software authenticators, and platform authenticators \u2014 requires strategies for both the protocol layer and the application layer",
+  "collected_at": "2026-10-05T10:23:38.578493+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.3366,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 Authenticator Testing: Hardware Keys and Software Strategies' (https://helpmetest.com/blog/fido2-authenticator-testing/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3366
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:50.319080+00:00"
+  }
+ },
+ {
+  "query": "libfido2 software authenticator softoken testing",
+  "title": "fido2-authenticator \u00b7 GitHub Topics \u00b7 GitHub",
+  "url": "https://github.com/topics/fido2-authenticator",
+  "snippet": "soft-fido2 A software-based FIDO2/WebAuthn passkey authenticator for Linux.A Java CLI tool that simulates a FIDO2 authenticator for testing WebAuthn flows (create and get).",
+  "collected_at": "2026-10-05T10:23:38.578495+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.2356,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'fido2-authenticator \u00b7 GitHub Topics \u00b7 GitHub' (https://github.com/topics/fido2-authenticator) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2356
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:50.319085+00:00"
+  }
+ },
+ {
+  "query": "libfido2 software authenticator softoken testing",
+  "title": "GitHub - Yubico/libfido2: Provides library functionality for FIDO2 ...",
+  "url": "https://github.com/Yubico/libfido2",
+  "snippet": "May 21, 2018 \u00b7 libfido2 provides library functionality and command-line tools to communicate with a FIDO device over USB or NFC, and to verify attestation and assertion signatures.",
+  "collected_at": "2026-10-05T10:23:38.578497+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.9218,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - Yubico/libfido2: Provides library functionality for FIDO2 ...' (https://github.com/Yubico/libfido2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9218
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:50.319118+00:00"
+  }
+ },
+ {
+  "query": "libfido2 software authenticator softoken testing",
+  "title": "GitHub - FeitianTech/FidoSoftwareAuthenticator: Software Authenticator ...",
+  "url": "https://github.com/FeitianTech/FidoSoftwareAuthenticator/tree/main",
+  "snippet": "A software-based FIDO2/WebAuthn authenticator written in Rust. It uses the Trussed framework and provides Post-Quantum Cryptography signatures (ML-DSA-44/65/87 per FIPS 204) alongside classical ES256, with no C dependencies \u2014 the cryptography is entirely pure Rust via the fips204 crate.",
+  "collected_at": "2026-10-05T10:23:38.578499+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.8264,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - FeitianTech/FidoSoftwareAuthenticator: Software Authenticator ...' (https://github.com/FeitianTech/FidoSoftwareAuthenticator/tree/main) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8264
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:52.429338+00:00"
+  }
+ },
+ {
+  "query": "libfido2 software authenticator softoken testing",
+  "title": "nocache - npm",
+  "url": "https://www.npmjs.com/package/nocache",
+  "snippet": "Middleware to destroy caching. Latest version: 4.0.0, last published: 3 years ago. Start using nocache in your project by running \u2026",
+  "collected_at": "2026-10-05T10:23:38.578501+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.104,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'nocache - npm' (https://www.npmjs.com/package/nocache) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.104
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:52.429358+00:00"
+  }
+ },
+ {
+  "query": "libfido2 software authenticator softoken testing",
+  "title": "Yubico Authenticator User Guide",
+  "url": "https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/webdocs.pdf",
+  "snippet": "",
+  "collected_at": "2026-10-05T10:23:38.578503+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.7865,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Yubico Authenticator User Guide' (https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/webdocs.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7865
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:52.429362+00:00"
+  }
+ },
+ {
+  "query": "passless software FIDO2 authenticator CTAP2 hmac-secret",
+  "title": "Client To Authenticator Protocol (CTAP) - FIDO2 Developer Guide",
+  "url": "https://developers.yubico.com/CTAP/index.html",
+  "snippet": "Learn how to integrate FIDO2 security keys using the Client To Authenticator Protocol (CTAP). This comprehensive guide covers CTAP versions, implementation strategies, and practical examples for building secure, passwordless authentication systems.",
+  "collected_at": "2026-10-05T10:23:38.578506+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.9041,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Client To Authenticator Protocol (CTAP) - FIDO2 Developer Guide' (https://developers.yubico.com/CTAP/index.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9041
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:52.429366+00:00"
+  }
+ },
+ {
+  "query": "passless software FIDO2 authenticator CTAP2 hmac-secret",
+  "title": "GitHub - amaanq/ctap-fido2: CTAP2 client for FIDO2 over USB HID with ...",
+  "url": "https://github.com/amaanq/ctap-fido2",
+  "snippet": "ctap-fido2 A CTAP2 client for FIDO2 over USB HID. This crate allows one to enumerate HID authenticators, create credentials, run assertions, and read the hmac-secret extension. On the TODO list is bio enrollment, credential management, large blobs, U2F, and PIN protocol v2.",
+  "collected_at": "2026-10-05T10:23:38.578508+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.5235,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - amaanq/ctap-fido2: CTAP2 client for FIDO2 over USB HID with ...' (https://github.com/amaanq/ctap-fido2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5235
+   },
+   "usage": {
+    "input_tokens": 785,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:52.429369+00:00"
+  }
+ },
+ {
+  "query": "passless software FIDO2 authenticator CTAP2 hmac-secret",
+  "title": "GitHub - dido/fido2-hmac-secret: A simple way to generate password ...",
+  "url": "https://github.com/dido/fido2-hmac-secret",
+  "snippet": "A simple way to generate password-proteceted secrets from a FIDO2 authenticator with the hmac-secret extension - dido/fido2-hmac-secret",
+  "collected_at": "2026-10-05T10:23:38.578510+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.5909,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - dido/fido2-hmac-secret: A simple way to generate password ...' (https://github.com/dido/fido2-hmac-secret) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5909
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:54.942424+00:00"
+  }
+ },
+ {
+  "query": "passless software FIDO2 authenticator CTAP2 hmac-secret",
+  "title": "CTAP2.1 - developers.yubico.com",
+  "url": "https://developers.yubico.com/CTAP/CTAP2.1.html",
+  "snippet": "HMAC Secret Extension (hmac-secret) The HMAC Secret extension can be used by a client to retrieve a symmetric secret from the authenticator when it needs to encrypt or decrypt data. The secret is scoped to the generated credential and is derived from a combination of a key on the authenticator and a",
+  "collected_at": "2026-10-05T10:23:38.578512+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.8601,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'CTAP2.1 - developers.yubico.com' (https://developers.yubico.com/CTAP/CTAP2.1.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8601
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:54.942442+00:00"
+  }
+ },
+ {
+  "query": "passless software FIDO2 authenticator CTAP2 hmac-secret",
+  "title": "Pexels",
+  "url": "https://www.pexels.com/search/videos/?q=real%2Bvirgin%2Bdeflowering",
+  "snippet": "We would like to show you a description here but the site won\u2019t allow us.",
+  "collected_at": "2026-10-05T10:23:38.578514+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.0298,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Pexels' (https://www.pexels.com/search/videos/?q=real%2Bvirgin%2Bdeflowering) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0298
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:54.942446+00:00"
+  }
+ },
+ {
+  "query": "passless software FIDO2 authenticator CTAP2 hmac-secret",
+  "title": "GitHub - 19h/fidolizer: Software FIDO2 authenticator: CTAP...",
+  "url": "https://github.com/19h/fidolizer",
+  "snippet": "Fidolizer is a software FIDO2 authenticator. It speaks CTAPHID, CTAP 2.1, and U2F, and it keeps credential private keys in a local state file.",
+  "collected_at": "2026-10-05T10:23:38.578516+00:00",
+  "redo_of": null,
+  "nn": "04",
+  "weight": 0.5784,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - 19h/fidolizer: Software FIDO2 authenticator: CTAP...' (https://github.com/19h/fidolizer) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5784
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:54.942450+00:00"
+  }
+ },
+ {
+  "query": "QEMU swtpm TPM device /dev/tpmrm0 testing",
+  "title": "QEMU TPM Device \u2014 QEMU documentation",
+  "url": "https://www.qemu.org/docs/master/specs/tpm.html",
+  "snippet": "The QEMU TPM emulator device The TPM emulator device uses an external TPM emulator called 'swtpm' for sending TPM commands to and receiving responses from. The swtpm program must have been started before trying to access it through the TPM emulator with QEMU. The TPM emulator implements a command ch",
+  "collected_at": "2026-10-05T10:23:38.578522+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.5454,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'QEMU TPM Device \u2014 QEMU documentation' (https://www.qemu.org/docs/master/specs/tpm.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5454
+   },
+   "usage": {
+    "input_tokens": 787,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:54.942453+00:00"
+  }
+ },
+ {
+  "query": "QEMU swtpm TPM device /dev/tpmrm0 testing",
+  "title": "Yocto Emulation: Setting Up QEMU with TPM - ejaaskel.dev",
+  "url": "https://ejaaskel.dev/yocto-emulation-setting-up-qemu-with-tpm/",
+  "snippet": "Apr 20, 2024 \u00b7 In a nutshell, the idea is to run swtpm TPM emulator on the host machine, and then launch QEMU Arm device emulator that talks with the swtpm process. QEMU has an option for a TPM device that can be passed through to the guest device, so the process is fairly easy. With these systems i",
+  "collected_at": "2026-10-05T10:23:38.578524+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.4775,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Yocto Emulation: Setting Up QEMU with TPM - ejaaskel.dev' (https://ejaaskel.dev/yocto-emulation-setting-up-qemu-with-tpm/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4775
+   },
+   "usage": {
+    "input_tokens": 862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:57.116412+00:00"
+  }
+ },
+ {
+  "query": "QEMU swtpm TPM device /dev/tpmrm0 testing",
+  "title": "GitHub - tompreston/qemu-ovmf-swtpm: Setting up QEMU with OVMF (UEFI ...",
+  "url": "https://github.com/tompreston/qemu-ovmf-swtpm",
+  "snippet": "This document is a step by step guide to setting up TPM emulation in QEMU with a OVMF. I use Fedora, but I think the packages are similar on Debian. There are a number of moving parts, but from the top-down: User can read TPM measurements in Linux guest OS via securityfs, when booted with UEFI ...",
+  "collected_at": "2026-10-05T10:23:38.578526+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.5574,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - tompreston/qemu-ovmf-swtpm: Setting up QEMU with OVMF (UEFI ...' (https://github.com/tompreston/qemu-ovmf-swtpm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5574
+   },
+   "usage": {
+    "input_tokens": 862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:57.116431+00:00"
+  }
+ },
+ {
+  "query": "QEMU swtpm TPM device /dev/tpmrm0 testing",
+  "title": "Tpm2 Device Emulation With Qemu - tpm2-software community",
+  "url": "https://tpm2-software.github.io/2020/10/19/TPM2-Device-Emulation-With-QEMU.html",
+  "snippet": "Oct 19, 2020 \u00b7 A potential way to overcome this, is to use QEMU instance with an attached virtualized TPM2.0 device. This device is made available to the guest OS, and with the appropriate versions of Linux, will expose the familiar /dev/tpm0 and /dev/tpmrm0 interfaces.",
+  "collected_at": "2026-10-05T10:23:38.578528+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.8617,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Tpm2 Device Emulation With Qemu - tpm2-software community' (https://tpm2-software.github.io/2020/10/19/TPM2-Device-Emulation-With-QEMU.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8617
+   },
+   "usage": {
+    "input_tokens": 862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:57.116435+00:00"
+  }
+ },
+ {
+  "query": "QEMU swtpm TPM device /dev/tpmrm0 testing",
+  "title": "Using QEmu for UEFI/TPM testing - Noodles\u2019 Emptiness",
+  "url": "https://www.earth.li/~noodles/blog/2024/07/qemu-uefi-testing.html",
+  "snippet": "Jul 31, 2024 \u00b7 At present I\u2019m using qemu 8.2.2 and swtpm 0.9.0, both from the FC40 packages. One other issue I spent too long tracking down is that the version of grub 2.06 in bookworm does not manage to pass the TPMEventLog through to the guest kernel properly.",
+  "collected_at": "2026-10-05T10:23:38.578531+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.3554,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Using QEmu for UEFI/TPM testing - Noodles\u2019 Emptiness' (https://www.earth.li/~noodles/blog/2024/07/qemu-uefi-testing.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3554
+   },
+   "usage": {
+    "input_tokens": 862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:57.116439+00:00"
+  }
+ },
+ {
+  "query": "QEMU swtpm TPM device /dev/tpmrm0 testing",
+  "title": "QEMU TPM Device \u2014 QEMU 8.1.5 documentation - Read the Docs",
+  "url": "https://qemu.readthedocs.io/en/v8.1.5/specs/tpm.html",
+  "snippet": "The QEMU TPM emulator device The TPM emulator device uses an external TPM emulator called 'swtpm' for sending TPM commands to and receiving responses from. The swtpm program must have been started before trying to access it through the TPM emulator with QEMU. The TPM emulator implements a command ch",
+  "collected_at": "2026-10-05T10:23:38.578538+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.9593,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'QEMU TPM Device \u2014 QEMU 8.1.5 documentation - Read the Docs' (https://qemu.readthedocs.io/en/v8.1.5/specs/tpm.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9593
+   },
+   "usage": {
+    "input_tokens": 862,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:57.116442+00:00"
+  }
+ },
+ {
+  "query": "swtpm measured boot systemd CI VM",
+  "title": "GitHub - anpep/qemu-tpm-measurement: Documentation for testing boot ...",
+  "url": "https://github.com/anpep/qemu-tpm-measurement",
+  "snippet": "TPM measurement under QEMU with OVMF and swtpm Introduction Measured boot is a security mechanism which leverages the TPM on a hardware platform in order to detect unwanted modifications of the platform configuration, which could potentially lead to degraded security and trust in the software enviro",
+  "collected_at": "2026-10-05T10:23:38.578545+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.55,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - anpep/qemu-tpm-measurement: Documentation for testing boot ...' (https://github.com/anpep/qemu-tpm-measurement) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.55
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:59.072472+00:00"
+  }
+ },
+ {
+  "query": "swtpm measured boot systemd CI VM",
+  "title": "TPMSpy: Validation of Measured Boot Systems by Low-Level Tracing of TPM ...",
+  "url": "https://arxiv.org/pdf/2609.05011",
+  "snippet": "Abstract. Measured Boot extends trust in a booted system by record-ing cryptographic measurements of executed software and system state into a Trusted Platform Module (TPM), enabling subsequent verifica-tion through remote attestation. Although this mechanism is increas-ingly deployed in contemporar",
+  "collected_at": "2026-10-05T10:23:38.578551+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.6441,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPMSpy: Validation of Measured Boot Systems by Low-Level Tracing of TPM ...' (https://arxiv.org/pdf/2609.05011) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6441
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:59.072490+00:00"
+  }
+ },
+ {
+  "query": "swtpm measured boot systemd CI VM",
+  "title": "Iguaz\u00fa Falls travel - Lonely Planet | Argentina, South America",
+  "url": "https://www.lonelyplanet.com/destinations/argentina/iguazu-falls",
+  "snippet": "Explore Argentina\u2019s Iguaz\u00fa Falls with our travel guide. Discover waterfall views, rainforest wildlife, boat rides and tips for visiting \u2026",
+  "collected_at": "2026-10-05T10:23:38.578554+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.0248,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Iguaz\u00fa Falls travel - Lonely Planet | Argentina, South America' (https://www.lonelyplanet.com/destinations/argentina/iguazu-falls) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0248
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:59.072494+00:00"
+  }
+ },
+ {
+  "query": "swtpm measured boot systemd CI VM",
+  "title": "TPMSpy: Validation of Measured Boot Systems by Low-Level Tracing...",
+  "url": "https://arxiv.org/html/2609.05011",
+  "snippet": "4 Evaluation Methodology of systemd Measurements. This section describes a practical application of the method described in Section 3.3 to a Measured Boot performed by a widely-used systemd -based Linux OS.",
+  "collected_at": "2026-10-05T10:23:38.578557+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.7309,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'TPMSpy: Validation of Measured Boot Systems by Low-Level Tracing...' (https://arxiv.org/html/2609.05011) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7309
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:59.072498+00:00"
+  }
+ },
+ {
+  "query": "swtpm measured boot systemd CI VM",
+  "title": "systemd-tpm2-swtpm.service",
+  "url": "https://www.freedesktop.org/software/systemd/man/devel/systemd-tpm2-swtpm.html",
+  "snippet": "The systemd-tpm2-swtpm.service provides fallback software TPM functionality, intended for use in environments where a discrete or firmware TPM (\"hardware TPM\") is not available. It is pulled into the boot process by systemd-tpm2-generator(8) if a hardware TPM is not available, and the system is conf",
+  "collected_at": "2026-10-05T10:23:38.578560+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.7991,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-tpm2-swtpm.service' (https://www.freedesktop.org/software/systemd/man/devel/systemd-tpm2-swtpm.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7991
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:23:59.072501+00:00"
+  }
+ },
+ {
+  "query": "swtpm measured boot systemd CI VM",
+  "title": "systemd/TODO.md at main \u00b7 systemd/systemd \u00b7 GitHub",
+  "url": "https://github.com/systemd/systemd/blob/main/TODO.md",
+  "snippet": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub.",
+  "collected_at": "2026-10-05T10:23:38.578562+00:00",
+  "redo_of": null,
+  "nn": "05",
+  "weight": 0.559,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/TODO.md at main \u00b7 systemd/systemd \u00b7 GitHub' (https://github.com/systemd/systemd/blob/main/TODO.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.559
+   },
+   "usage": {
+    "input_tokens": 846,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:01.187787+00:00"
+  }
+ },
+ {
+  "query": "bcvk bootc virtualization kit ephemeral run",
+  "title": "GitHub - bootc-dev/bcvk \u00b7 GitHub",
+  "url": "https://github.com/bootc-dev/bcvk",
+  "snippet": "This project helps launch ephemeral VMs from bootc containers, and also create disk images that can be imported into other virtualization frameworks. Everything with bcvk ephemeral creates a podman container that reuses the host virtualization stack, making it simple to test bootc containers without",
+  "collected_at": "2026-10-05T10:23:38.578603+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.4396,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - bootc-dev/bcvk \u00b7 GitHub' (https://github.com/bootc-dev/bcvk) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4396
+   },
+   "usage": {
+    "input_tokens": 846,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:01.187806+00:00"
+  }
+ },
+ {
+  "query": "bcvk bootc virtualization kit ephemeral run",
+  "title": "bcvk-ephemeral-run | Man Page | System Administration | bcvk | ManKier",
+  "url": "https://www.mankier.com/8/bcvk-ephemeral-run",
+  "snippet": "bcvk-ephemeral-run - Man Page bcvk-ephemeral-run - Run bootc containers as stateless VMs Synopsis bcvk ephemeral run [Options] IMAGE Description Run bootc containers as stateless VMs managed by podman. The VM boots directly from the container image's filesystem via virtiofs, with no disk image creat",
+  "collected_at": "2026-10-05T10:23:38.578607+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.2284,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'bcvk-ephemeral-run | Man Page | System Administration | bcvk | ManKier' (https://www.mankier.com/8/bcvk-ephemeral-run) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2284
+   },
+   "usage": {
+    "input_tokens": 846,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:01.187810+00:00"
+  }
+ },
+ {
+  "query": "bcvk bootc virtualization kit ephemeral run",
+  "title": "Ephemeral VM Architecture | bootc-dev/bcvk | DeepWiki",
+  "url": "https://deepwiki.com/bootc-dev/bcvk/3.1-ephemeral-vm-architecture",
+  "snippet": "Dec 29, 2025 \u00b7 This document describes the technical architecture of bcvk's ephemeral VM system, which enables running bootc container images as temporary VMs through a sophisticated multi-stage execution model combining containers, namespaces, and QEMU virtualization.",
+  "collected_at": "2026-10-05T10:23:38.578610+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.1673,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Ephemeral VM Architecture | bootc-dev/bcvk | DeepWiki' (https://deepwiki.com/bootc-dev/bcvk/3.1-ephemeral-vm-architecture) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1673
+   },
+   "usage": {
+    "input_tokens": 846,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:01.187813+00:00"
+  }
+ },
+ {
+  "query": "bcvk bootc virtualization kit ephemeral run",
+  "title": "Used 2011 Toyota RAV4 Sport SUV 4D - Kelley Blue Book",
+  "url": "https://www.kbb.com/toyota/rav4/2011/sport-suv-4d/?msockid=29ac81b8ee6166dd38349651eff36700",
+  "snippet": "1 day ago \u00b7 Get 2011 Toyota RAV4 Sport SUV 4D prices, read ratings & reviews, and shop listings.",
+  "collected_at": "2026-10-05T10:23:38.578613+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.0352,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Used 2011 Toyota RAV4 Sport SUV 4D - Kelley Blue Book' (https://www.kbb.com/toyota/rav4/2011/sport-suv-4d/?msockid=29ac81b8ee6166dd38349651eff36700) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0352
+   },
+   "usage": {
+    "input_tokens": 846,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:01.187816+00:00"
+  }
+ },
+ {
+  "query": "bcvk bootc virtualization kit ephemeral run",
+  "title": "bcvk/README.md at main \u00b7 bootc-dev/bcvk \u00b7 GitHub",
+  "url": "https://github.com/bootc-dev/bcvk/blob/main/README.md",
+  "snippet": "bcvk - bootc virtualization kit.bcvk ephemeral run -d --rm -K --name mytestvm quay.io/fedora/fedora-bootc:42 bcvk ephemeral ssh mytestvm. Or to fully streamline the above and have the VM automatically terminate when you exit the SSH client",
+  "collected_at": "2026-10-05T10:23:38.578616+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.7321,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'bcvk/README.md at main \u00b7 bootc-dev/bcvk \u00b7 GitHub' (https://github.com/bootc-dev/bcvk/blob/main/README.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7321
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:03.209686+00:00"
+  }
+ },
+ {
+  "query": "bcvk bootc virtualization kit ephemeral run",
+  "title": "Chapter 9. Testing and deploying bootable containers with bcvk",
+  "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-image-updates-with-the-bootc-virtualization-kit-bcvk",
+  "snippet": "The bootc virtualization kit (bcvk) bridges the gap between container development and hardware deployment. With the bcvk tool, you can launch ephemeral virtual machines (VMs) from bootc containers to test bootable images locally or generate disk images for production frameworks.",
+  "collected_at": "2026-10-05T10:23:38.578618+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.9501,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Chapter 9. Testing and deploying bootable containers with bcvk' (https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/managing-image-updates-with-the-bootc-virtualization-kit-bcvk) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9501
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:03.209705+00:00"
+  }
+ },
+ {
+  "query": "bcvk native-to-disk install bootc VM testing",
+  "title": "Getting Started | bootc-dev/bcvk | DeepWiki",
+  "url": "https://deepwiki.com/bootc-dev/bcvk/2-getting-started",
+  "snippet": "Dec 29, 2025 \u00b7 This page provides an introduction to bcvk (Bootc Virtualization Kit), covering installation, prerequisites, and basic usage patterns for the three primary execution modes. For detailed information about specific features, see Ephemeral VMs, Persistent VMs with Libvirt, or Disk Image ",
+  "collected_at": "2026-10-05T10:23:38.578621+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.1266,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Getting Started | bootc-dev/bcvk | DeepWiki' (https://deepwiki.com/bootc-dev/bcvk/2-getting-started) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1266
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:03.209709+00:00"
+  }
+ },
+ {
+  "query": "bcvk native-to-disk install bootc VM testing",
+  "title": "Why didn\u2019t Alexa Demie take off in Hollywood the way Sydney ... - Reddit",
+  "url": "https://www.reddit.com/r/euphoria/comments/1bzg7lm/why_didnt_alexa_demie_take_off_in_hollywood_the/",
+  "snippet": "Alexa Demie is 33 (allegedly, lots of rumors about her being older) and Sydney is 25 (around 20 when eurphoria started).",
+  "collected_at": "2026-10-05T10:23:38.578626+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.0252,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Why didn\u2019t Alexa Demie take off in Hollywood the way Sydney ... - Reddit' (https://www.reddit.com/r/euphoria/comments/1bzg7lm/why_didnt_alexa_demie_take_off_in_hollywood_the/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0252
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:03.209713+00:00"
+  }
+ },
+ {
+  "query": "bcvk native-to-disk install bootc VM testing",
+  "title": "bootc",
+  "url": "https://bootc.dev/blog/2026-may-07-sealed-images-deploying/",
+  "snippet": "bcvk (bootc virtualization kit) is a tool that makes it easy to run bootc container images as virtual machines. Under the hood, it calls bootc install to-disk to create a bootable disk image, then manages the VM lifecycle via libvirt.",
+  "collected_at": "2026-10-05T10:23:38.578628+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.7057,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'bootc' (https://bootc.dev/blog/2026-may-07-sealed-images-deploying/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7057
+   },
+   "usage": {
+    "input_tokens": 845,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:03.209716+00:00"
+  }
+ },
+ {
+  "query": "bcvk native-to-disk install bootc VM testing",
+  "title": "GitHub - frostyard/snosi: A bootable container image build\u2026",
+  "url": "https://github.com/frostyard/snosi",
+  "snippet": "Native A/B Secure Boot validation and the established bootc install/test workflow are unaffected.",
+  "collected_at": "2026-10-05T10:23:38.578630+00:00",
+  "redo_of": null,
+  "nn": "06",
+  "weight": 0.5923,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - frostyard/snosi: A bootable container image build\u2026' (https://github.com/frostyard/snosi) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5923
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:05.811626+00:00"
+  }
+ },
+ {
+  "query": "bcvk install to disk bootc VM",
+  "title": "Disk Image Creation | bootc-dev/bcvk | DeepWiki",
+  "url": "https://deepwiki.com/bootc-dev/bcvk/5-disk-image-creation",
+  "snippet": "Purpose and Scope This document covers bcvk's disk image creation system, which creates bootable disk images from bootc container images. The system uses ephemeral VMs to execute bootc install to-disk commands and implements intelligent caching to avoid redundant installations. For details on using ",
+  "collected_at": "2026-10-05T10:23:38.578633+00:00",
+  "redo_of": "q2",
+  "nn": "06",
+  "weight": 0.3128,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Disk Image Creation | bootc-dev/bcvk | DeepWiki' (https://deepwiki.com/bootc-dev/bcvk/5-disk-image-creation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3128
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:05.811644+00:00"
+  }
+ },
+ {
+  "query": "bcvk install to disk bootc VM",
+  "title": "Quick Start Examples | bootc-dev/bcvk | DeepWiki",
+  "url": "https://deepwiki.com/bootc-dev/bcvk/2.2-quick-start-examples",
+  "snippet": "Dec 29, 2025 \u00b7 This page provides practical examples for the three primary use cases of bcvk: running ephemeral VMs, managing persistent VMs with libvirt, and creating bootable disk images. These examples demonstrate common command patterns and workflows to get you started quickly.",
+  "collected_at": "2026-10-05T10:23:38.578635+00:00",
+  "redo_of": "q2",
+  "nn": "06",
+  "weight": 0.2093,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Quick Start Examples | bootc-dev/bcvk | DeepWiki' (https://deepwiki.com/bootc-dev/bcvk/2.2-quick-start-examples) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2093
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:05.811648+00:00"
+  }
+ },
+ {
+  "query": "QEMU USB passthrough YubiKey FIDO2 VM test",
+  "title": "Universal Second Factor (U2F) USB Key Device \u2014 QEMU\u2026",
+  "url": "https://www.qemu.org/docs/master/system/devices/usb-u2f.html",
+  "snippet": "In case of a USB U2F security key, it is a USB HID device that implements the U2F protocol. QEMU supports both pass-through of a host U2F key device to a VM, and software emulation of a U2F key. u2f-passthru The u2f-passthru device allows you to connect a real hardware U2F key on your host to a gues",
+  "collected_at": "2026-10-05T10:23:38.578655+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.8495,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Universal Second Factor (U2F) USB Key Device \u2014 QEMU\u2026' (https://www.qemu.org/docs/master/system/devices/usb-u2f.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8495
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:05.811652+00:00"
+  }
+ },
+ {
+  "query": "QEMU USB passthrough YubiKey FIDO2 VM test",
+  "title": "Universal Second Factor (U2F) USB Key Device \u2014 QEMU 10.0.3 documentation",
+  "url": "https://qemu.readthedocs.io/en/v10.0.3/system/devices/usb-u2f.html",
+  "snippet": "protocol. In case of a USB U2F security key, it is a USB HID device that implements the U2F protocol. QEMU supports both pass-through of a host U2F key device to a VM, and software emulation of a U2F key. u2f-passthru The u2f-passthrudevice allows you to connect a real hardware U2F key on your host ",
+  "collected_at": "2026-10-05T10:23:38.578657+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.6822,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Universal Second Factor (U2F) USB Key Device \u2014 QEMU 10.0.3 documentation' (https://qemu.readthedocs.io/en/v10.0.3/system/devices/usb-u2f.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6822
+   },
+   "usage": {
+    "input_tokens": 814,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:05.811655+00:00"
+  }
+ },
+ {
+  "query": "QEMU USB passthrough YubiKey FIDO2 VM test",
+  "title": "USB emulation \u2014 QEMU documentation",
+  "url": "https://www.qemu.org/docs/master/system/devices/usb.html",
+  "snippet": "canokey An Open-source Secure Key implementing FIDO2, OpenPGP, PIV and more. For more information, see CanoKey QEMU. Physical port addressing For all the above USB devices, by default QEMU will plug the device into the next available port on the specified USB bus, or onto some available USB bus if y",
+  "collected_at": "2026-10-05T10:23:38.578659+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.8707,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'USB emulation \u2014 QEMU documentation' (https://www.qemu.org/docs/master/system/devices/usb.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8707
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:08.263681+00:00"
+  }
+ },
+ {
+  "query": "QEMU USB passthrough YubiKey FIDO2 VM test",
+  "title": "GitHub - bulwarkid/virtual-fido: A Virtual FIDO2 USB Device",
+  "url": "https://github.com/bulwarkid/virtual-fido",
+  "snippet": "Also check out Bulwark Passkey, a passkey manager based on VirtualFIDO that is currently in beta! Virtual FIDO is a virtual USB device that implements the FIDO2/U2F protocol (like a YubiKey) to support 2FA and WebAuthN. Please note that this software is still in beta and under active development, so",
+  "collected_at": "2026-10-05T10:23:38.578661+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.7465,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - bulwarkid/virtual-fido: A Virtual FIDO2 USB Device' (https://github.com/bulwarkid/virtual-fido) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7465
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:08.263700+00:00"
+  }
+ },
+ {
+  "query": "QEMU USB passthrough YubiKey FIDO2 VM test",
+  "title": "QEMU",
+  "url": "https://www.qemu.org/",
+  "snippet": "Run programs for another Linux/BSD target, on any supported architecture. Run KVM and Xen virtual machines with near native \u2026",
+  "collected_at": "2026-10-05T10:23:38.578663+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.8102,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'QEMU' (https://www.qemu.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8102
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:08.263704+00:00"
+  }
+ },
+ {
+  "query": "QEMU USB passthrough YubiKey FIDO2 VM test",
+  "title": "FIDO2 Passwordless Authentication | YubiKey | Yubico",
+  "url": "https://www.yubico.com/authentication-standards/fido2/",
+  "snippet": "FIDO2 Supports Multiple Authenticator Types. FIDO2 supports built-in authenticators (like Face ID), synced passkeys, and highly portable, external hardware security keys.",
+  "collected_at": "2026-10-05T10:23:38.578665+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.6387,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 Passwordless Authentication | YubiKey | Yubico' (https://www.yubico.com/authentication-standards/fido2/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6387
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:08.263707+00:00"
+  }
+ },
+ {
+  "query": "hardware in the loop CI YubiKey FIDO2 unlock",
+  "title": "Unlocking Encrypted Linux with a YubiKey | Miguel Hern\u00e1ndez",
+  "url": "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "snippet": "Sep 2, 2025 \u00b7 A step-by-step guide to upgrading a LUKS-encrypted Linux system to use a YubiKey for FIDO2-based unlocking, moving beyond traditional passphrases.",
+  "collected_at": "2026-10-05T10:23:38.578668+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.4369,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking Encrypted Linux with a YubiKey | Miguel Hern\u00e1ndez' (https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4369
+   },
+   "usage": {
+    "input_tokens": 765,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:08.263710+00:00"
+  }
+ },
+ {
+  "query": "hardware in the loop CI YubiKey FIDO2 unlock",
+  "title": "YubiKey U2F/FIDO2 Hardware Authentication for Linux Sudo and ...",
+  "url": "https://www.sudo.academy/blog/implementing-yubikey-u2f-fido2-hardware-authentication-for-linux-sudo-and-ssh-in-2026",
+  "snippet": "Sep 20, 2026 \u00b7 Implement YubiKey U2F/FIDO2 for Linux Sudo and SSH authentication to improve security and user experience. Ensure that your Linux distribution and YubiKey device meet the required specifications.",
+  "collected_at": "2026-10-05T10:23:38.578670+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.5824,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'YubiKey U2F/FIDO2 Hardware Authentication for Linux Sudo and ...' (https://www.sudo.academy/blog/implementing-yubikey-u2f-fido2-hardware-authentication-for-linux-sudo-and-ssh-in-2026) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5824
+   },
+   "usage": {
+    "input_tokens": 880,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:10.237980+00:00"
+  }
+ },
+ {
+  "query": "hardware in the loop CI YubiKey FIDO2 unlock",
+  "title": "FIDO2 Hardware Security Key Setup: 12 Steps [2026]",
+  "url": "https://tech-insider.org/fido2-hardware-security-key-setup-2026/",
+  "snippet": "Sep 5, 2026 \u00b7 Set up FIDO2 hardware security keys in 12 steps and close the Pass-the-Passkey and CVE-2026-34348 gap in synced passkeys.",
+  "collected_at": "2026-10-05T10:23:38.578675+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.1733,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 Hardware Security Key Setup: 12 Steps [2026]' (https://tech-insider.org/fido2-hardware-security-key-setup-2026/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1733
+   },
+   "usage": {
+    "input_tokens": 880,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:10.237997+00:00"
+  }
+ },
+ {
+  "query": "hardware in the loop CI YubiKey FIDO2 unlock",
+  "title": "Hardware Authentication: FIDO2 & YubiKey Guide for 2026",
+  "url": "https://unlocked.everykey.com/hardware-authentication-guide-2026/",
+  "snippet": "Jun 17, 2026 \u00b7 This guide covers everything security practitioners need to know: how hardware authentication works at the protocol level (FIDO2, WebAuthn, CTAP), which devices and certifications matter, how it compares to software MFA, and how to roll it out across an organization without breaking t",
+  "collected_at": "2026-10-05T10:23:38.578677+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.3365,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Hardware Authentication: FIDO2 & YubiKey Guide for 2026' (https://unlocked.everykey.com/hardware-authentication-guide-2026/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3365
+   },
+   "usage": {
+    "input_tokens": 880,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:10.238001+00:00"
+  }
+ },
+ {
+  "query": "hardware in the loop CI YubiKey FIDO2 unlock",
+  "title": "Westlake Ace Hardware in San Angelo | Hardware Store in San Angelo, TX ...",
+  "url": "https://www.acehardware.com/store-details/03878?msockid=2c7126ad76b06d9e2f45314477406c54",
+  "snippet": "Shop at Westlake Ace Hardware at 1821 Knickerbocker Rd, San Angelo, TX, 76904 for all your grill, hardware, home improvement, \u2026",
+  "collected_at": "2026-10-05T10:23:38.578679+00:00",
+  "redo_of": null,
+  "nn": "07",
+  "weight": 0.0439,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Westlake Ace Hardware in San Angelo | Hardware Store in San Angelo, TX ...' (https://www.acehardware.com/store-details/03878?msockid=2c7126ad76b06d9e2f45314477406c54) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0439
+   },
+   "usage": {
+    "input_tokens": 880,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:10.238005+00:00"
+  }
+ },
+ {
+  "query": "YubiKey qemu usb host passthrough virtual machine",
+  "title": "YubiKey USB device doesn't appear in a Hyper-V virtual machine",
+  "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/virtualization/usb-device-hyper-v-virtual-machine",
+  "snippet": "This article helps resolve an issue where a YubiKey USB device doesn't appear in a Hyper-V virtual machine (VM) and provides guidance on using a YubiKey USB device for hardware encryption in a Hyper-V VM. It explains how to achieve USB passthrough in Hyper-V, a feature not natively supported, and of",
+  "collected_at": "2026-10-05T10:23:38.578684+00:00",
+  "redo_of": "q2",
+  "nn": "07",
+  "weight": 0.6528,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'YubiKey USB device doesn't appear in a Hyper-V virtual machine' (https://learn.microsoft.com/en-us/troubleshoot/windows-server/virtualization/usb-device-hyper-v-virtual-machine) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6528
+   },
+   "usage": {
+    "input_tokens": 880,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:10.238008+00:00"
+  }
+ },
+ {
+  "query": "test only software authenticator production image separation CI",
+  "title": "GitHub - Revive624/Authentication-Image-Steganography: Official ...",
+  "url": "https://github.com/Revive624/Authentication-Image-Steganography",
+  "snippet": "Efficient and Separate Authentication Image Steganography Network This repo contains the codebase of \u300aEfficient and Separate Authentication Image Steganography Network\u300b, Forty-second International Conference on Machine Learning (2025) Spotlight Poster.",
+  "collected_at": "2026-10-05T10:23:38.578705+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.3162,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - Revive624/Authentication-Image-Steganography: Official ...' (https://github.com/Revive624/Authentication-Image-Steganography) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3162
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:12.559294+00:00"
+  }
+ },
+ {
+  "query": "test only software authenticator production image separation CI",
+  "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+  "url": "https://www.speedtest.net/",
+  "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps.",
+  "collected_at": "2026-10-05T10:23:38.578707+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.2326,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Speedtest by Ookla - The Global Broadband Speed Test' (https://www.speedtest.net/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2326
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:12.559312+00:00"
+  }
+ },
+ {
+  "query": "test only software authenticator production image separation CI",
+  "title": "SQUARE ENIX Support Centre",
+  "url": "https://support.eu.square-enix.com/faqarticle.php?kid=82835&id=612&la=2",
+  "snippet": "How to Activate a Software Authenticator. The following steps will guide you through the process of registering a Software Authenticator app. With this free app, you can securely enjoy online gaming through your Square Enix account. Step 1 - Requirements.",
+  "collected_at": "2026-10-05T10:23:38.578709+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.44,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SQUARE ENIX Support Centre' (https://support.eu.square-enix.com/faqarticle.php?kid=82835&id=612&la=2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.44
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:12.559316+00:00"
+  }
+ },
+ {
+  "query": "test only software authenticator production image separation CI",
+  "title": "How to Test Passkeys in CI with Virtual Authenticators",
+  "url": "https://mojoauth.com/blog/test-passkeys-ci-virtual-authenticators",
+  "snippet": "Learn to test passkeys in CI with virtual authenticators: Chrome DevTools Protocol, Playwright, and Selenium code that runs WebAuthn headless, no key.",
+  "collected_at": "2026-10-05T10:23:38.578711+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.6032,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Test Passkeys in CI with Virtual Authenticators' (https://mojoauth.com/blog/test-passkeys-ci-virtual-authenticators) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6032
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:12.559319+00:00"
+  }
+ },
+ {
+  "query": "test only software authenticator production image separation CI",
+  "title": "Best Authenticator App for 2026: Reviewed, Ranked & Compared",
+  "url": "https://www.techradar.com/best/best-authenticator-apps",
+  "snippet": "P\u0159ed 7 m\u011bs\u00edciAdd an extra layer of online security with the best authenticator app",
+  "collected_at": "2026-10-05T10:23:38.578718+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.2841,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Best Authenticator App for 2026: Reviewed, Ranked & Compared' (https://www.techradar.com/best/best-authenticator-apps) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2841
+   },
+   "usage": {
+    "input_tokens": 795,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:12.559322+00:00"
+  }
+ },
+ {
+  "query": "test only software authenticator production image separation CI",
+  "title": "The Best Authenticator Apps We've Tested for 2026 | PCMag",
+  "url": "https://www.pcmag.com/picks/the-best-authenticator-apps",
+  "snippet": "Authenticator apps are a multi-factor authentication (MFA) method for encrypting your online login credentials. Stay protected with the top MFA apps we've tested.",
+  "collected_at": "2026-10-05T10:23:38.578723+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.5794,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The Best Authenticator Apps We've Tested for 2026 | PCMag' (https://www.pcmag.com/picks/the-best-authenticator-apps) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5794
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:14.739345+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 software token never production regression testing policy",
+  "title": "Tools for FIDO security keys - Token2",
+  "url": "https://www.token2.com/pages/tools-for-fido-security-keys",
+  "snippet": "Token2 develops both proprietary and open-source applications for managing FIDO2 security keys. While the original Companion applications were released as closed-source software, newer management tools are published as open-source projects to provide greater transparency, community collaboration, an",
+  "collected_at": "2026-10-05T10:23:38.578725+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.5749,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Tools for FIDO security keys - Token2' (https://www.token2.com/pages/tools-for-fido-security-keys) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5749
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:14.739364+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 software token never production regression testing policy",
+  "title": "Why do enterprise FIDO2 rollouts often stall in production?",
+  "url": "https://nhimg.org/faq/why-do-enterprise-fido2-rollouts-often-stall-in-production/",
+  "snippet": "Jul 11, 2026 \u00b7 A production FIDO2 rollout succeeds when the organisation treats authentication as a lifecycle process, not a token distribution project. That means defining how users enroll, how devices are replaced, how authenticators are recovered, and which assurance level is acceptable for step-",
+  "collected_at": "2026-10-05T10:23:38.578727+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.2622,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Why do enterprise FIDO2 rollouts often stall in production?' (https://nhimg.org/faq/why-do-enterprise-fido2-rollouts-often-stall-in-production/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2622
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:14.739368+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 software token never production regression testing policy",
+  "title": "Interoperability Testing - FIDO Alliance",
+  "url": "https://fidoalliance.org/certification/interoperability-testing/",
+  "snippet": "Interoperability Testing is a required step in the certification process. The following types of Interoperability Testing are supported for certification: Interoperability Testing Events On Demand Testing Interoperability Testing Events Interoperability Testing events are a forum for implementers to",
+  "collected_at": "2026-10-05T10:23:38.578729+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.9014,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Interoperability Testing - FIDO Alliance' (https://fidoalliance.org/certification/interoperability-testing/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9014
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:14.739371+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 software token never production regression testing policy",
+  "title": "What Is FIDO2? | Microsoft Security",
+  "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=04258e482d9469072a8a99a12c606804",
+  "snippet": "FIDO2 strengthens security and protects individuals and organizations from cybercrimes by using phishing-resistant cryptographic \u2026",
+  "collected_at": "2026-10-05T10:23:38.578735+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.8847,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'What Is FIDO2? | Microsoft Security' (https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=04258e482d9469072a8a99a12c606804) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8847
+   },
+   "usage": {
+    "input_tokens": 828,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:14.739374+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 software token never production regression testing policy",
+  "title": "FIDO U2F: Strengthen the security of your accounts with... | Ledger",
+  "url": "https://www.ledger.com/fido-u2f",
+  "snippet": "FIDO U2F. How to use Ledger devices for enhanced, second factor authentication. Secure your accounts / personal accounts with the most trusted hardware wallet.",
+  "collected_at": "2026-10-05T10:23:38.578738+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.5119,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO U2F: Strengthen the security of your accounts with... | Ledger' (https://www.ledger.com/fido-u2f) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5119
+   },
+   "usage": {
+    "input_tokens": 767,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:16.963984+00:00"
+  }
+ },
+ {
+  "query": "FIDO2 software token never production regression testing policy",
+  "title": "Co je FIDO2? | Zabezpe\u010den\u00ed od Microsoftu",
+  "url": "https://www.microsoft.com/cs-cz/security/business/security-101/what-is-fido2",
+  "snippet": "FIDO2 je otev\u0159en\u00fd standard pro v\u00edcefaktorov\u00e9 bezheslov\u00e9 ov\u011b\u0159ov\u00e1n\u00ed v mobiln\u00edch a desktopov\u00fdch prost\u0159ed\u00edch. Seznamte se se z\u00e1klady a v\u00fdhodami ov\u011b\u0159ov\u00e1n\u00ed FIDO.",
+  "collected_at": "2026-10-05T10:23:38.578740+00:00",
+  "redo_of": null,
+  "nn": "08",
+  "weight": 0.7419,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Co je FIDO2? | Zabezpe\u010den\u00ed od Microsoftu' (https://www.microsoft.com/cs-cz/security/business/security-101/what-is-fido2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7419
+   },
+   "usage": {
+    "input_tokens": 767,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:16.964002+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed fido2 luks2 home directory encryption",
+  "title": "systemd-homed: Portable Encrypted Home Directories",
+  "url": "https://sumguy.com/systemd-homed-portable-homes/",
+  "snippet": "Aug 7, 2026 \u00b7 systemd-homed turns your home dir into a portable LUKS-encrypted blob. Move it between machines, unlock with FIDO2, and own your own data.",
+  "collected_at": "2026-10-05T10:23:38.578789+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.3962,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed: Portable Encrypted Home Directories' (https://sumguy.com/systemd-homed-portable-homes/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3962
+   },
+   "usage": {
+    "input_tokens": 767,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:16.964006+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed fido2 luks2 home directory encryption",
+  "title": "JSON User Records",
+  "url": "https://systemd.io/USER_RECORD/",
+  "snippet": "as JSON. Specifically: systemd-homed.service manages human user home directories and embeds these JSON records directly in the home directory images (see Home Directories for deta",
+  "collected_at": "2026-10-05T10:23:38.578791+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.5291,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'JSON User Records' (https://systemd.io/USER_RECORD/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5291
+   },
+   "usage": {
+    "input_tokens": 767,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:16.964010+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed fido2 luks2 home directory encryption",
+  "title": "systemd-homed - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-homed",
+  "snippet": "A user home directory is stored in a Linux file system, inside an encrypted LUKS (Linux Unified Key Setup) volume inside a loopback file or any removable media. To use this mechanism provide --storage=luks to homectl. If you are using a loopback file, in order to save space, the LUKS2 volume can be ",
+  "collected_at": "2026-10-05T10:23:38.578793+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.5754,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed - ArchWiki' (https://wiki.archlinux.org/title/Systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5754
+   },
+   "usage": {
+    "input_tokens": 767,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:16.964013+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed fido2 luks2 home directory encryption",
+  "title": "systemd-homed: portable, encrypted home directories",
+  "url": "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+  "snippet": "Jan 6, 2023 \u00b7 User home directories as encrypted LUKS images or btrfs subvolumes that can be picked up and moved between machines. Per-user encryption, GPG-card / FIDO2 auth, and the user record carrying its own metadata.",
+  "collected_at": "2026-10-05T10:23:38.578795+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.3016,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed: portable, encrypted home directories' (https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3016
+   },
+   "usage": {
+    "input_tokens": 804,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:19.809541+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed fido2 luks2 home directory encryption",
+  "title": "systemd/systemd-homed \u2014 Gentoo Wiki",
+  "url": "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+  "snippet": "homed support became available in Gentoo around 2021-02-01 [1]. The following article provides instructions to migrate home directories from their traditional structure into the encrypted by default, portable concept provided by systemd's homed. This article follows the upstream guide when possible.",
+  "collected_at": "2026-10-05T10:23:38.578797+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.7299,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/systemd-homed \u2014 Gentoo Wiki' (https://wiki.gentoo.org/wiki/Systemd/systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7299
+   },
+   "usage": {
+    "input_tokens": 804,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:19.809585+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed fido2 luks2 home directory encryption",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "collected_at": "2026-10-05T10:23:38.578799+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.1071,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1071
+   },
+   "usage": {
+    "input_tokens": 804,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:19.809589+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed yubikey fido2 authentication unlock",
+  "title": "systemd-homed | yubi-OS/yubiOS Agent Skill | SkillsMP",
+  "url": "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+  "snippet": "Creates, manages, and migrates systemd-homed home directories for yubiOS. Use when creating LUKS2-encrypted homes, enrolling YubiKey FIDO2 or PKCS#11/PIV authentication, configuring PAM for homed users, managing home migration between machines, or wiring suspend/resume key protection. Triggers on: s",
+  "collected_at": "2026-10-05T10:23:38.578801+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.0593,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-homed | yubi-OS/yubiOS Agent Skill | SkillsMP' (https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0593
+   },
+   "usage": {
+    "input_tokens": 804,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:19.809593+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed yubikey fido2 authentication unlock",
+  "title": "pam - systemd-homed with FIDO2 - Login from tty still possible with ...",
+  "url": "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only",
+  "snippet": "Oct 23, 2021 \u00b7 So if the password is correct, pam_systemd_home.so will never be executed, thus not query the U2F. As the account password is enrolled as LUKS key, it is sufficient to unlock the home partition container.",
+  "collected_at": "2026-10-05T10:23:38.578803+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.089,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'pam - systemd-homed with FIDO2 - Login from tty still possible with ...' (https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.089
+   },
+   "usage": {
+    "input_tokens": 804,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:19.809596+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed yubikey fido2 authentication unlock",
+  "title": "Unlocking Encrypted Linux with a YubiKey | Miguel Hern\u00e1ndez",
+  "url": "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "snippet": "Sep 2, 2025 \u00b7 A step-by-step guide to upgrading a LUKS-encrypted Linux system to use a YubiKey for FIDO2-based unlocking, moving beyond traditional passphrases.",
+  "collected_at": "2026-10-05T10:23:38.578805+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.7471,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unlocking Encrypted Linux with a YubiKey | Miguel Hern\u00e1ndez' (https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7471
+   },
+   "usage": {
+    "input_tokens": 664,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:22.019569+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed yubikey fido2 authentication unlock",
+  "title": "FIDO2 Passwordless Authentication | YubiKey | Yubico",
+  "url": "https://www.yubico.com/solutions/fido2",
+  "snippet": "Easy-to-use, secure authenticationWith YubiKey there\u2019s no tradeoff between great security and usabilityWhy YubiKeyFIDO2MFApasswordlessProven at scale at \u2026",
+  "collected_at": "2026-10-05T10:23:38.578807+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.5915,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'FIDO2 Passwordless Authentication | YubiKey | Yubico' (https://www.yubico.com/solutions/fido2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5915
+   },
+   "usage": {
+    "input_tokens": 664,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:22.019592+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed yubikey fido2 authentication unlock",
+  "title": "Allow pam_systemd_homed to be forced to ask for FIDO2 pin \u00b7 Issue...",
+  "url": "https://ghostarchive.org/archive/AxynM",
+  "snippet": "Describe the solution you'd like Because we have all the code for FIDO2 in homed anyway; optionally allow pam_systemd_homed to authenticate the user with just the FIDO2 token (and not password). This would mean basically duplicating pam-u2f's behaviour into systemd-homed.",
+  "collected_at": "2026-10-05T10:23:38.578818+00:00",
+  "redo_of": null,
+  "nn": "09",
+  "weight": 0.1541,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Allow pam_systemd_homed to be forced to ask for FIDO2 pin \u00b7 Issue...' (https://ghostarchive.org/archive/AxynM) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1541
+   },
+   "usage": {
+    "input_tokens": 664,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:22.019598+00:00"
+  }
+ },
+ {
+  "query": "systemd-homed luks2 fido2 security key login",
+  "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+  "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "snippet": "Jul 4, 2026 \u00b7 Use systemd-cryptenroll on LUKS2 volumes to add TPM2, FIDO2, PKCS#11, and recovery-key unlock methods, store token metadata in the LUKS2 JSON area, and wire boot unlock through crypttab.",
+  "collected_at": "2026-10-05T10:23:38.578821+00:00",
+  "redo_of": "q2",
+  "nn": "09",
+  "weight": 0.56,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key' (https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.56
+   },
+   "usage": {
+    "input_tokens": 664,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-05T10:24:22.019603+00:00"
+  }
+ }
+]

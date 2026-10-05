@@ -1,0 +1,30 @@
+{
+ "nn": "02",
+ "slug": "boot-unlock-path",
+ "scope": "The boot-time unlock path: systemd-cryptsetup and initramfs FIDO2 token handling from early userspace through disk open",
+ "queries_attempted": [
+  {
+   "query": "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "systemd crypttab fido2 ask-password initramfs unlock",
+   "attempt": 1,
+   "raw_results": 60,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://www.freedesktop.org/software/systemd/man/latest/crypttab.html",
+  "https://bbs.archlinux.org/viewtopic.php?id=265134",
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://github.com/bertogg/fido2luks"
+ ],
+ "outcome": "authored"
+}
