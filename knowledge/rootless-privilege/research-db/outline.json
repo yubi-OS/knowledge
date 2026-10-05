@@ -1,0 +1,192 @@
+{
+ "topic": "rootless-privilege",
+ "subtopics": [
+  {
+   "slug": "01-rootless-docker-daemon",
+   "scope": "Rootless Docker daemon: what unprivileged actually buys"
+  },
+  {
+   "slug": "02-rootless-buildkit-buildx",
+   "scope": "Rootless BuildKit and buildx: the builder under a normal user"
+  },
+  {
+   "slug": "03-podman-rootless-setuid",
+   "scope": "Podman rootless and the setuid helper surface"
+  },
+  {
+   "slug": "04-capabilities-ambient-sysadmin",
+   "scope": "Capabilities, ambient sets, and CAP_SYS_ADMIN as root by another name"
+  },
+  {
+   "slug": "05-daemon-socket-attack-surface",
+   "scope": "The daemon socket: a root-equivalent handoff"
+  },
+  {
+   "slug": "06-systemd-unit-hardening",
+   "scope": "systemd unit hardening: the directive family that bounds runtime privilege"
+  },
+  {
+   "slug": "07-systemd-analyze-security-gate",
+   "scope": "systemd-analyze security as a hardening gate"
+  },
+  {
+   "slug": "08-vm-per-step-isolation",
+   "scope": "VM per build step: the isolation answer and its cost"
+  },
+  {
+   "slug": "09-runtime-privilege-monitoring",
+   "scope": "Runtime privilege monitoring and moment-boundary privilege"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8329,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0411,
+     "1": 0.0848,
+     "2": 0.8741
+    },
+    "confidence": 0.6593
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.5723,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0642,
+     "1": 0.2994,
+     "2": 0.6364
+    },
+    "confidence": 0.2482
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.6744,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0629,
+     "1": 0.1998,
+     "2": 0.7373
+    },
+    "confidence": 0.3813
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.7525,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0539,
+     "1": 0.1397,
+     "2": 0.8064
+    },
+    "confidence": 0.509
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.7092,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.073,
+     "1": 0.1448,
+     "2": 0.7822
+    },
+    "confidence": 0.4572
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.5864,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0922,
+     "1": 0.2293,
+     "2": 0.6785
+    },
+    "confidence": 0.2823
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.0256,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2003,
+     "1": 0.5739,
+     "2": 0.2258
+    },
+    "confidence": 0.1307
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.0656,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1878,
+     "1": 0.5588,
+     "2": 0.2534
+    },
+    "confidence": 0.1176
+   },
+   "t09": {
+    "type": "score",
+    "score": 0.8949,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.283,
+     "1": 0.539,
+     "2": 0.178
+    },
+    "confidence": 0.1034
+   }
+  },
+  "usage": {
+   "input_tokens": 1174,
+   "output_tokens": 0
+  },
+  "note": "re-scored 2026-10-05 for the record under the v2 score metric; docs already shipped under the v1 outline"
+ }
+}
