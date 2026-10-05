@@ -1,0 +1,38 @@
+{
+  "nn": 6,
+  "slug": "install-time-wiring-options",
+  "scope": "Phase 2 install-time UKI wiring options: mirroring the bootc secureboot-keys loader-entries intake, a first-boot systemd unit, or bumping the base image to bootc v1.16.4+; tradeoffs and sequencing.",
+  "queries_attempted": [
+    {
+      "query": "bootc install secureboot-keys /usr/lib/bootc/install",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "systemd first-boot unit populate ESP UKI after install",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.mankier.com/8/bootc-install",
+    "https://github.com/bootc-dev/bootc/blob/main/docs/src/bootc-install.md",
+    "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+    "https://bootc.dev/bootc/",
+    "https://github.com/bootc-dev/bootc/blob/main/docs/src/man/bootc-install.8.md",
+    "https://jmarrero.github.io/bootc/bootc-install.html",
+    "https://wiki.archlinux.org/title/Systemd-firstboot",
+    "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+    "https://wiki.archlinux.org/title/Systemd-boot",
+    "https://androidmobiles.org/mastering-android-uki-a-step-by-step-guide-to-systemd-boot-unified-kernel-image-creation/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md"
+  ],
+  "results_kept_weighted_0_5": 7,
+  "results_weighted_total": 12,
+  "outcome": "authored"
+}
