@@ -1,0 +1,98 @@
+{
+  "nn": "02",
+  "slug": "attestation-discovery",
+  "scope": "Enumerating the attestations attached to a container image in the registry: cosign fetch-attestations, the OCI referrers/attestation-manifest layout, and confirming a SLSA provenance attestation actually exists.",
+  "queries_attempted": [
+    {
+      "query": "cosign fetch-attestations list image attestations registry",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": [
+        {
+          "title": "Signing Container Images with Cosign (and Notation) + Storing ...",
+          "url": "https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html",
+          "content": "Signing container images is one of the highest-leverage things you can do to improve your software supply chain. A signature gives you a cryptographic way to answer \"who produced this image?\" and \"has it been tampered with?\". Attestations (for example: provenance and SBOMs) help you answer deeper questions like \"how was it built?\" and \"what's inside it?\"."
+        },
+        {
+          "title": "Verify a Docker Hardened Image or chart | Docker Docs",
+          "url": "https://docs.docker.com/dhi/how-to/verify/",
+          "content": "Verify image attestations. List available attestations. Retrieve a specific attestation. Validate the attestation.Once you've listed the attestations and obtained the digest from the Name field, verify them using cosign"
+        },
+        {
+          "title": "cosign/doc/cosign_verify-attestation.md at main \u00b7 sigstore ...",
+          "url": "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-attestation.md",
+          "content": "Verify an attestation on the supplied container image. Verify an attestation on an image by checking the claims against the transparency log. cosign verify-attestation --key || [ ...] # verify cosign attestations on the image against the transparency log. cosign verify-attestation"
+        },
+        {
+          "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
+          "url": "https://www.rentwithcosign.com/",
+          "content": "Whether you\u2019re a renter trying to qualify for an apartment or a landlord seeking reliable tenants, Cosign bridges the gap to make \u2026"
+        },
+        {
+          "title": "listmonk Provenance - Image Signatures and Attestations | Chainguard",
+          "url": "https://images.chainguard.dev/directory/image/listmonk/provenance",
+          "content": "Attestations are provided per image build, so you'll need to specify the correct tag and registry when pulling attestations from an image with cosign."
+        },
+        {
+          "title": "Image attestation storage | Docker Docs",
+          "url": "https://docs.docker.com/build/metadata/attestations/attestation-storage",
+          "content": "Attestations are stored as manifest objects in the image index."
+        }
+      ]
+    },
+    {
+      "query": "OCI image referrers API attestation manifest SLSA provenance storage",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": [
+        {
+          "title": "Image attestation storage | Docker Docs",
+          "url": "https://docs.docker.com/build/metadata/attestations/attestation-storage/",
+          "content": "These attestations can provide valuable information from the build process, including, but not limited to: SBOMs, SLSA Provenance, build logs, etc. This document describes the formats used to store attestations. BuildKit stores attestations as OCI artifacts when OCI media types are enabled. Set the image exporter option oci-artifact=false to use the legacy attestation image manifest format ..."
+        },
+        {
+          "title": "Container Image Provenance Attestations: SLSA and SBOM Attestation End ...",
+          "url": "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+          "content": "May 7, 2026 \u00b7 Attestations are signed metadata attached to a container image as a co-located OCI artifact. This article covers attaching and verifying SLSA build provenance and SBOM attestations using cosign, in-toto, and Kyverno."
+        },
+        {
+          "title": "Build attestations | Docker Docs",
+          "url": "https://docs.docker.com/build/metadata/attestations/",
+          "content": "Storage BuildKit produces attestations in the in-toto format, as defined by the in-toto framework, a standard supported by the Linux Foundation. Attestations attach to images as a manifest in the image index. The data records of the attestations are stored as JSON blobs. Because attestations attach to images as a manifest, it means that you can inspect the attestations for any image in a ..."
+        },
+        {
+          "title": "Online OCI Services",
+          "url": "https://www.ociservices.gov.in/onlineOCI/",
+          "content": "Jan 1, 2022 \u00b7 The Scheme provides for registration as Overseas Citizen of India (OCI) of all Persons of Indian Origin (PIOs) who \u2026"
+        },
+        {
+          "title": "Multi-Architecture Container Builds with docker buildx bake... \u2014 KloudVin",
+          "url": "https://kloudvin.com/learn/kubernetes-zero-to-hero/docker-buildkit-bake-multiarch-remote-cache-registry/",
+          "content": "Attestations (provenance, SBOM) ride along as referrer manifests \u2014 separate objects in the same repo that point back at the image digest via the OCI referrers API. That is why they need type=registry to land: there is nowhere to attach a referrer in the single-platform local image store."
+        },
+        {
+          "title": "Build release notes | Docker Docs",
+          "url": "http://docs.docker.com/build/release-notes/",
+          "content": "Buildx v0.10 enables support for a minimal SLSA Provenance attestation, which requires support for OCI-compliant multi-platform images. This may introduc\u2026"
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html",
+    "https://docs.docker.com/dhi/how-to/verify/",
+    "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-attestation.md",
+    "https://www.rentwithcosign.com/",
+    "https://images.chainguard.dev/directory/image/listmonk/provenance",
+    "https://docs.docker.com/build/metadata/attestations/attestation-storage",
+    "https://docs.docker.com/build/metadata/attestations/attestation-storage/",
+    "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+    "https://docs.docker.com/build/metadata/attestations/",
+    "https://www.ociservices.gov.in/onlineOCI/",
+    "https://kloudvin.com/learn/kubernetes-zero-to-hero/docker-buildkit-bake-multiarch-remote-cache-registry/",
+    "http://docs.docker.com/build/release-notes/"
+  ],
+  "outcome": "authored"
+}

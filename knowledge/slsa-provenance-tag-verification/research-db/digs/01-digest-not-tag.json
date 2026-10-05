@@ -1,0 +1,98 @@
+{
+  "nn": "01",
+  "slug": "digest-not-tag",
+  "scope": "Why verification anchors on the immutable digest rather than the movable tag, and how to resolve a handed tag reference to its exact digest before any check runs.",
+  "queries_attempted": [
+    {
+      "query": "docker registry tag digest immutability tag mutation attack",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": [
+        {
+          "title": "Lab: Artifact Tampering and Detection \u2014 Swapping Container Images in a ...",
+          "url": "https://secure-pipelines.com/ci-cd-security/lab-artifact-tampering-detection-swapping-container-images-registry/",
+          "content": "Mar 22, 2026 \u00b7 Hands-on lab demonstrating container image tampering in a registry. Learn how attackers swap images via tag mutation, and how to detect and prevent it with digest pinning, signing, and admission control."
+        },
+        {
+          "title": "Attack of the mutant tags! Or why tag mutability is a real ... - Sysdig",
+          "url": "https://www.sysdig.com/blog/toctou-tag-mutability",
+          "content": "Exploring tag mutability Basics of registries, images and tags Before explaining what is tag mutability, let's define some critical concepts: \u200d Registry is the service that we use to store and retrieve (push/pull) our container images. It can be a public SaaS service like docker.io, quay.io, GCR, ECR, etc., or a private registry hosted On-Prem."
+        },
+        {
+          "title": "Immutable infrastructure | Docker Docs",
+          "url": "https://docs.docker.com/dhi/explore/security-concepts/immutability/",
+          "content": "Understand how image digests, read-only containers, and signed metadata ensure Docker Hardened Images are tamper-resistant and immutable."
+        },
+        {
+          "title": "Image digests | Docker Docs",
+          "url": "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+          "content": "Use the Docker Hub UI Go to Docker Hub and sign in. Navigate to your organization's namespace and open the mirrored DHI repository. Select the Tags tab to view image variants. Each tag in the list includes a Digest field showing the image's SHA-256 value. Pull an image by digest"
+        },
+        {
+          "title": "Ensuring image integrity with immutability | Docs",
+          "url": "https://docs.stackit.cloud/products/developer-platform/container-registry/how-tos/ensuring-image-integrity-with-immutability/",
+          "content": "Jul 13, 2026 \u00b7 Learn how to use tag immutability rules in STACKIT Container Registry to prevent image tags from being overwritten, ensuring a stable and trustworthy deployment pipeline."
+        },
+        {
+          "title": "Docker | Secure Sandboxes for AI Agents",
+          "url": "https://www.docker.com/",
+          "content": "Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply chain \u2026"
+        }
+      ]
+    },
+    {
+      "query": "resolve docker image tag to digest registry API skopeo inspect",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": [
+        {
+          "title": "podman-container-tools/skopeo: Work with remote images registries...",
+          "url": "https://github.com/podman-container-tools/skopeo",
+          "content": "skopeo is able to inspect a repository on a container registry and fetch images layers. The inspect command fetches the repository's manifest and it is able to show you a docker inspect -like json output about a whole repository or a tag."
+        },
+        {
+          "title": "Skopeo \u2014 inspect and copy container images without pulling them",
+          "url": "https://stackharbor.com/en/knowledge-base/skopeo-image-inspection-copy/",
+          "content": "Use Skopeo to inspect a container image in its registry, copy images between registries, and build mirrors for offline servers without pulling anything through Docker. You will also be able to check image signatures and keep whole repositories in sync on a schedule."
+        },
+        {
+          "title": "Extract Metadata from Docker Container Images in 2026 | Fastio",
+          "url": "https://fast.io/resources/metadata-extraction-from-docker-container-images/",
+          "content": "Method 1: docker inspect for Local Images. Method 2: Skopeo for Remote Inspection Without Pulling. Method 3: Docker Registry HTTP API. Method 4: crane for Scriptable Registry Operations."
+        },
+        {
+          "title": "GitHub - p5/containers-skopeo: Work with remote images registries ...",
+          "url": "https://github.com/p5/containers-skopeo",
+          "content": "skopeo is able to inspect a repository on a container registry and fetch images layers. The inspect command fetches the repository's manifest and it is able to show you a docker inspect -like json output about a whole repository or a tag."
+        },
+        {
+          "title": "DaVinci Resolve - Blackmagic Design",
+          "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+          "content": "DaVinci Resolve is the world\u2019s only solution that combines editing, color correction, visual effects, motion graphics, audio post \u2026"
+        },
+        {
+          "title": "How to Copy and Inspect Container Images with Skopeo on RHEL",
+          "url": "https://oneuptime.com/blog/post/2026-03-04-copy-inspect-container-images-skopeo-rhel-9/view",
+          "content": "Inspecting Remote Images. You can inspect an image on a remote registry without pulling it locallyskopeo sync --src yaml --dest docker sync-config.yaml registry.example.com/mirror/. Deleting Images from Registries."
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://secure-pipelines.com/ci-cd-security/lab-artifact-tampering-detection-swapping-container-images-registry/",
+    "https://www.sysdig.com/blog/toctou-tag-mutability",
+    "https://docs.docker.com/dhi/explore/security-concepts/immutability/",
+    "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+    "https://docs.stackit.cloud/products/developer-platform/container-registry/how-tos/ensuring-image-integrity-with-immutability/",
+    "https://www.docker.com/",
+    "https://github.com/podman-container-tools/skopeo",
+    "https://stackharbor.com/en/knowledge-base/skopeo-image-inspection-copy/",
+    "https://fast.io/resources/metadata-extraction-from-docker-container-images/",
+    "https://github.com/p5/containers-skopeo",
+    "https://www.blackmagicdesign.com/products/davinciresolve",
+    "https://oneuptime.com/blog/post/2026-03-04-copy-inspect-container-images-skopeo-rhel-9/view"
+  ],
+  "outcome": "authored"
+}
