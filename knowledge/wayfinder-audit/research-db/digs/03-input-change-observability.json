@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "input-change-observability",
+  "scope": "Distinguishing changed input from changed binary geometry: quantization-silent edits, the run 46 to 47 evidence chain, and why a stationary dot cannot prove an edit was ignored.",
+  "queries_attempted": [
+    {
+      "query": "quantization rounding hides small vector changes floating point",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    },
+    {
+      "query": "embedding cache invalidation content hash change detection",
+      "attempt": 2,
+      "raw_results": 55,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://medium.com/@sergiopr89/float-point-quantization-the-maths-behind-it-explained-for-everyone-fc674d313d67",
+    "https://mbrenndoerfer.com/writing/weight-quantization-basics-scale-zero-point-calibration",
+    "https://en.wikipedia.org/wiki/Quantization_(signal_processing)",
+    "https://home.mit.bme.hu/~kollarzs/quantization/floating-point.pdf",
+    "https://www.ibm.com/think/topics/quantization",
+    "https://arxiv.org/pdf/2602.02151",
+    "https://deepwiki.com/zensical/zensical/7.2-caching-and-change-detection",
+    "https://tianpan.co/blog/2026/04/20/cache-invalidation-ai-semantic-rag",
+    "https://accessoptions.online/article/embedding-cache-invalidation-designing-correctness-over-time-661",
+    "https://en.wikipedia.org/wiki/Embedding",
+    "https://dev.to/promptcloud_services/scraping-for-rag-keeping-your-retrieval-index-fresh-and-why-staleness-hallucinates-3km8",
+    "https://martinuke0.github.io/posts/2026-09-09-mastering-build-cache-invalidation-with-bazelisk-and-buildkit/"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "full-text-ingestion-pipeline",
+  "scope": "Full-text measurement and ingestion hardening: Unicode-safe 400-byte chunks, BGE mean-pooling with byte weighting and L2 normalization, content-keyed SHA256 caching, and a TAR parser that validates checksums, PAX headers, and budgets.",
+  "queries_attempted": [
+    {
+      "query": "BGE embedding model mean pooling chunking long documents",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "tar archive format PAX header checksum validation truncated payloads",
+      "attempt": 2,
+      "raw_results": 52,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://huggingface.co/BAAI/bge-m3",
+    "https://mbrenndoerfer.com/writing/embedding-models-architecture-pooling-selection",
+    "https://huggingface.co/BAAI/bge-m3/discussions/59",
+    "https://github.com/jina-ai/late-chunking",
+    "https://x22x22.github.io/embedding_models_comprehensive_evaluation.html",
+    "https://bge-model.com/bge/bge_m3.html",
+    "https://stackoverflow.com/questions/34688392/paxheaders-in-tarball",
+    "https://deepwiki.com/isaacs/node-tar/3.5-pax-extended-headers",
+    "https://www.mkssoftware.com/docs/man4/pax.4.asp",
+    "https://www.texasrealestate.com/",
+    "http://www.openbsd.org/74.html",
+    "https://www.jython.org/jython-old-sites/docs/library/tarfile.html"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "frozen-coordinates-baseline",
+  "scope": "How the v0.2 audit freezes fitted coordinates: baseline_id reuses the actual stored frame while frame_id and instrument_id are checked independently of the changed input fingerprint, because seed-only reuse cannot pin a fitted coordinate system.",
+  "queries_attempted": [
+    {
+      "query": "reproducible machine learning baseline fixed random seed limitations",
+      "attempt": 1,
+      "raw_results": 57,
+      "kept": 6
+    },
+    {
+      "query": "deterministic inference model version pinning caching",
+      "attempt": 2,
+      "raw_results": 52,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://arxiv.org/html/2406.14325v3",
+    "https://www.geeksforgeeks.org/machine-learning/reproducibility-in-machine-learning/",
+    "https://onlinelibrary.wiley.com/doi/pdf/10.1002/aaai.70002",
+    "https://imgflip.com/memegenerator/650867736/Robert-Strus-Sissy",
+    "https://discuss.huggingface.co/t/token-fragility-contextual-copying-failures-beyond-isolated-token-probes/180360/2",
+    "https://machinelearningmastery.com/reproducible-results-neural-networks-keras/",
+    "https://docs.sglang.io/docs/advanced_features/deterministic_inference",
+    "https://github.com/microsoft/llm-42/blob/main/docs/advanced_features/deterministic_inference.md",
+    "https://github.com/ggml-org/llama.cpp/pull/16016",
+    "https://puneet.io/taming-the-dice-roll-building-deterministic-llm-systems/",
+    "https://www.dictionary.com/browse/deterministic",
+    "https://medium.com/youme-technology/day-45-compare-and-contrast-traditional-ml-vs-deep-learning-vs-agentic-ai-part-3-d418bb2ca95f"
+  ],
+  "outcome": "authored"
+}
