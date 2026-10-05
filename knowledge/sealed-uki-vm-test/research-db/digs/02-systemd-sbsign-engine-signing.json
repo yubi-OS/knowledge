@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "systemd-sbsign-engine-signing",
+  "scope": "systemd-sbsign as the Secure Boot signing tool with the engine:pkcs11 private key backend, its contrast with legacy sbsigntools/sbverify, and signing against a SoftHSM-emulated PIV slot 9c in CI.",
+  "queries_attempted": [
+    {
+      "query": "systemd-sbsign sign private-key-source engine pkcs11",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "systemd-sbsign versus sbsigntools sbverify secure boot signing",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://man.archlinux.org/man/systemd-sbsign.1.en",
+    "https://www.mankier.com/1/systemd-sbsign",
+    "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html",
+    "https://manpages.debian.org/trixie/systemd-repart/systemd-sbsign.1.en.html",
+    "https://manpages.debian.org/testing/systemd-repart/systemd-sbsign.1.en.html",
+    "https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot",
+    "https://man.archlinux.org/man/extra/sbsigntools/sbverify.1.en",
+    "https://man.archlinux.org/man/systemd-sbsign.1.en",
+    "https://manpages.opensuse.org/Tumbleweed/sbsigntools/sbverify.1.en.html",
+    "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+    "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing"
+  ],
+  "outcome": "authored"
+}

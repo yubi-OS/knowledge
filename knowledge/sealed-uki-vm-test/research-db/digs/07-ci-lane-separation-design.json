@@ -1,0 +1,36 @@
+{
+  "nn": "07",
+  "slug": "ci-lane-separation-design",
+  "scope": "Why the sealed Secure Boot VM lane is its own CI workflow rather than a step in the unsealed bootc-filesystem lane: failure-class isolation, dependency footprint, staged evidence plan (unsigned first, then seal, then negative tamper assertions enforced).",
+  "queries_attempted": [
+    {
+      "query": "CI test workflow separation failure classes boot test lanes",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "secure boot end-to-end CI negative tests tamper rejection qemu",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "http://softwaretestingreviews.com/how-to-build-a-ci-failure-triage-workflow-that-separates-product-bugs-from-test-noise/",
+    "http://softwaretestingreviews.com/how-to-build-a-ci-failure-triage-checklist-that-separates-product-bugs-test-noise-and-environment-drift/",
+    "https://www.citi.com/?msockid=175761fd0fe26a6910f376140e046b4a",
+    "https://github.com/features/actions",
+    "https://docs.github.com/en/actions/tutorials/build-and-test-code",
+    "http://test-automation-experts.com/how-to-build-a-test-result-triage-workflow-that-separates-product-regressions-environment-drift-and-flaky-automation/",
+    "https://www.qemu.org/docs/master/devel/testing/main.html",
+    "https://github.com/AnaZec/riscv-fpga-secure-boot/issues/11",
+    "https://github.com/AnaZec/riscv-fpga-secure-boot/blob/main/planning/issues/SB-11-create-cryptographic-negative-test-and-tampering-suite.md",
+    "https://www.merriam-webster.com/dictionary/secure",
+    "https://github.com/justembed-labs/meta-je-example-bsp",
+    "https://icnavigator.com/applications/avionics-mission-systems/crypto-anti-tamper/"
+  ],
+  "outcome": "authored"
+}

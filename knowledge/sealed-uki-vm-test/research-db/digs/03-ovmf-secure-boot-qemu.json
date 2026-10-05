@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "ovmf-secure-boot-qemu",
+  "scope": "Running signed UKIs in QEMU with OVMF Secure Boot: pflash code and VARS volumes, enrolling the platform root of trust (ROTPK) into the db allowed-signatures store, q35 machine with smm, and asserting SecureBoot=yes from systemd-stub.",
+  "queries_attempted": [
+    {
+      "query": "QEMU OVMF secure boot enroll custom db certificate pflash",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "QEMU UEFI secure boot test systemd-stub SecureBoot yes",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/rhuefi/qemu-ovmf-secureboot",
+    "https://gist.github.com/rgl/fd1104c9d63843def5a111863df99898",
+    "https://access.redhat.com/solutions/6967078",
+    "https://docs.openedgeplatform.intel.com/dev/image-composer-tool/configuration/configure-secure-boot.html",
+    "https://askubuntu.com/questions/1566505/secure-boot-certificate-in-qemu-ubuntu-24-04-for-windows-guest",
+    "https://www.qemu.org/",
+    "https://github.com/nosoxon/uefi-secureboot-testbed",
+    "https://github.com/salrashid123/secure_boot",
+    "https://www.qemu.org/docs/master/devel/uefi-vars.html",
+    "https://deepwiki.com/qemus/qemu/2.2-boot-configuration",
+    "https://docs.fedoraproject.org/en-US/quick-docs/uefi-with-qemu/",
+    "https://libvirt.org/kbase/secureboot.html"
+  ],
+  "outcome": "authored"
+}

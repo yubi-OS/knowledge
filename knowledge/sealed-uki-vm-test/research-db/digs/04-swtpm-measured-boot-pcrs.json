@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "swtpm-measured-boot-pcrs",
+  "scope": "TPM2 in VMs via swtpm socket passthrough, the sha256 PCR banks used at boot (PCR0 firmware, PCR4 boot manager, PCR7 Secure Boot policy, PCR11 kernel and initrd), what systemd-stub measures into each, and tpm2_pcrread golden-value assertions.",
+  "queries_attempted": [
+    {
+      "query": "swtpm qemu tpm2 measured boot PCR values linux",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "systemd-stub PCR 11 kernel initrd cmdline measurement TPM",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/anpep/qemu-tpm-measurement",
+    "https://www.qemu.org/docs/master/specs/tpm.html",
+    "https://security.stackexchange.com/questions/277782/tpm-pcr-values-change-after-the-first-reboot",
+    "https://wiki.archlinux.org/title/Trusted_Platform_Module",
+    "https://github.com/tompreston/qemu-ovmf-swtpm",
+    "https://raymo200915.github.io/2024/12/10/Measured-Boot-and-TPM-Eventlog.html",
+    "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+    "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+    "https://man.archlinux.org/man/systemd-stub.7",
+    "https://0pointer.net/blog/brave-new-trusted-boot-world.html",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-measure.html"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "uki-anatomy-signing",
+  "scope": "Unified Kernel Image structure (PE sections: .osrel, .cmdline, .linux, .initrd, .splash), building UKIs with ukify and mkosi Format=ukify, and signing them for Secure Boot with PKCS#11 URIs pointing at PIV slot 9c or a SoftHSM emulation.",
+  "queries_attempted": [
+    {
+      "query": "ukify unified kernel image PE sections build systemd",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "mkosi output format uki secure boot signing pkcs11",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://www.freedesktop.org/software/systemd/man/ukify.html",
+    "https://manpages.debian.org/man/ukify",
+    "https://www.man7.org/linux/man-pages/man1/ukify.1.html",
+    "https://www.freedesktop.org/software/systemd/man/258/ukify",
+    "https://linuxcommandlibrary.com/man/ukify",
+    "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+    "https://deepwiki.com/systemd/mkosi/5.2-unified-kernel-images-(uki)",
+    "https://wiki.archlinux.org/title/Mkosi",
+    "https://github.com/yubi-OS/yubiOS/blob/main/skills/mkosi-image-builder/SKILL.md",
+    "https://skillsmp.com/creators/yubi-os/yubios/skills-mkosi-image-builder",
+    "https://www.facebook.com/whiplashgraphics/"
+  ],
+  "outcome": "authored"
+}
