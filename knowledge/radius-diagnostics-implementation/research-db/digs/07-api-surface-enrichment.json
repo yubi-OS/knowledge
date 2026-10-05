@@ -1,0 +1,69 @@
+{
+ "nn": 7,
+ "slug": "api-surface-enrichment",
+ "scope": "API surface: map.radius_profile on new maps and previews, radius_comparison in baseline and candidate results, the compare endpoint, read-time enrichment of legacy v0.2 saved maps with radius_profile_unavailable on failure, and unchanged storage packing of radius fields.",
+ "queries_attempted": [
+  {
+   "query": "API backward compatibility optional metadata enrichment legacy records",
+   "attempt": 1,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "read time enrichment immutable records versus write time",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "tolerant reader pattern API evolution additive fields non breaking",
+   "attempt": 2,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "response enrichment endpoint additive metadata backward compatibility",
+   "attempt": 2,
+   "raw_results": 53,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 dig too thin for honest authoring: too few authoritative (jev weight >= 0.5) on-topic results",
+   "new_queries": [
+    "tolerant reader pattern API evolution additive fields non breaking",
+    "response enrichment endpoint additive metadata backward compatibility"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_support_policy.htm",
+  "https://www.systemoverflow.com/learn/design-fundamentals/api-design-basics/api-evolution-and-backward-compatibility-strategies",
+  "https://drcodes.com/posts/api-versioning-strategies-backward-compatibility-guide",
+  "https://archman.dev/docs/quality-attributes/maintainability-and-modifiability/contracts-and-compatibility",
+  "https://www.geeksforgeeks.org/system-design/differences-between-api-versioning-and-backward-compatibility-in-system-design/",
+  "https://en.wikipedia.org/wiki/API",
+  "https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-storage-overview",
+  "https://medium.com/@curiosity.orbit/nobody-tells-you-how-records-and-immutability-changed-my-c-code-and-why-you-should-care-46de97a5beb4",
+  "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-best-practices/safeguard.html",
+  "https://www.merriam-webster.com/dictionary/read",
+  "https://www.science.org/doi/10.1126/sciadv.adh8183",
+  "https://medium.com/javarevisited/understanding-java-records-immutable-data-modeling-made-simple-67252ab01959",
+  "https://martinfowler.com/bliki/TolerantReader.html",
+  "https://java-design-patterns.com/patterns/tolerant-reader/",
+  "https://www.request-routing.com/advanced-routing-api-versioning/backward-compatibility-contracts/",
+  "https://github.com/igolfpcr/api-design-workshop-2026-dotnet/tree/main/lab04-api-versioning/lab04-05-evolving-api",
+  "https://praveentn.live/architecture/terms/tolerant-reader",
+  "https://medium.com/@lasse.work/between-app-and-api-making-apps-more-resilient-with-the-tolerant-reader-pattern-d376f9ff3041",
+  "https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-api-connector-token-enrichment",
+  "https://openrouter.ai/docs/guides/features/router-metadata",
+  "https://jfarrell.net/2023/09/17/token-enrichment-with-azure-b2c/",
+  "https://github.com/yeongseon/azure-functions-openapi-python/issues/328",
+  "https://linqdev.com/how-to-design-restful-apis-for-backward-compatibility/",
+  "https://www.merriam-webster.com/dictionary/response"
+ ],
+ "outcome": "authored"
+}

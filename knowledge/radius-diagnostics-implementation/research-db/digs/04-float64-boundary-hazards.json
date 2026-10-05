@@ -1,0 +1,69 @@
+{
+ "nn": 4,
+ "slug": "float64-boundary-hazards",
+ "scope": "Float64 boundary correctness: Math.hypot chord distances, adjacent Float64 breakpoints, the midpoint rounding hazard where a midpoint can round to the excluded left boundary, and why cells use their right endpoint.",
+ "queries_attempted": [
+  {
+   "query": "Math.hypot floating point accuracy distance computation",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "IEEE 754 double midpoint rounding adjacent representable values",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "hypot implementation overflow underflow accuracy single operation",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "floating point comparison ulp equality distance thresholds",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 dig too thin for honest authoring: too few authoritative (jev weight >= 0.5) on-topic results",
+   "new_queries": [
+    "hypot implementation overflow underflow accuracy single operation",
+    "floating point comparison ulp equality distance thresholds"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://devgex.com/en/article/00030102",
+  "https://www.codersjungle.com/2026/04/18/understanding-math-hypot-for-euclidean-distance/",
+  "https://stackoverflow.com/questions/51419856/accurate-methods-for-computing-distance-between-2-points-using-floating-point-ar",
+  "https://www.pythonlore.com/understanding-math-hypot-for-euclidean-distance/",
+  "https://www.w3schools.com/python/ref_math_hypot.asp",
+  "https://www.mathplayground.com/",
+  "https://en.wikipedia.org/wiki/IEEE_754",
+  "https://stackoverflow.com/questions/77251808/c-sharp-ieee754-rounding",
+  "https://calculatorhub.com/tools/floating-point-precision-calculator/",
+  "https://standards.ieee.org/ieee/754/6210/",
+  "https://stackoverflow.com/questions/34386360/round-to-nearest-in-ieee-754",
+  "https://aiwikiproject.com/articles/floating-point-arithmetic",
+  "https://en.cppreference.com/c/numeric/math/hypot",
+  "https://en.cppreference.com/cpp/numeric/math/hypot",
+  "https://runebook.dev/en/docs/cpp/numeric/math/hypot",
+  "https://stackoverflow.com/questions/63342198/why-does-c-have-a-hypot-function",
+  "https://www.boost.org/latest/libs/math/doc/html/math_toolkit/powers/hypot.html",
+  "https://docs.oracle.com/cd/E19957-01/806-3568/ncg_math.html",
+  "https://sqlpey.com/algorithm/c-plus-plus-floating-point-comparison-strategies/",
+  "https://stackoverflow.com/questions/4915462/how-should-i-do-floating-point-comparison",
+  "https://en.wikipedia.org/wiki/Unit_in_the_last_place",
+  "https://jtempest.github.io/float_eq-rs/book/background/float_comparison_algorithms.html",
+  "https://github.com/yur-spiridonov/fast-float-compare",
+  "https://sqlpey.com/c++/comparing-floating-point-numbers/"
+ ],
+ "outcome": "authored"
+}
