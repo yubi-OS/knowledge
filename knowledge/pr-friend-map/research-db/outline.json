@@ -1,0 +1,239 @@
+{
+  "topic": "pre-launch public-relations friend mapping - identifying and organizing friendly press/community contacts for a proof-first, build-in-public campaign without overclaiming",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "readiness-gates",
+      "scope": "Pre-launch readiness assessment and claim hygiene: what must be true (evidence pages, security intake, honest wording) before any outreach begins.",
+      "seed_queries": [
+        "build in public pre-launch open source project trust evidence",
+        "open source README claim hygiene overclaiming technical preview"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "friend-map-tiers",
+      "scope": "How to identify and organize friendly communities into priority tiers, each with a first useful contribution, a first narrow ask, and a gate before outreach.",
+      "seed_queries": [
+        "community mapping open source project launch stakeholder tiers",
+        "developer relations community identification early adopters open source"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "upstream-contribution",
+      "scope": "Relationship-led participation in upstream projects (bootc, Fedora Atomic, systemd): filing reproductions and docs PRs, asking one narrow review question at a time.",
+      "seed_queries": [
+        "bootc bootable container upstream contribution guide",
+        "systemd upstream contribution etiquette mailing list github"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "fido2-practitioners",
+      "scope": "Engaging YubiKey/FIDO2 practitioner communities with a precise enrollment and recovery flow, inviting correction rather than endorsement.",
+      "seed_queries": [
+        "YubiKey FIDO2 hmac-secret enrollment recovery ceremony",
+        "FIDO2 resident key recovery best practices community"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "arm64-board-collab",
+      "scope": "Working with ARM64 firmware and board communities (TF-A, OP-TEE, RPMB, U-Boot, RK3588/RK3399) to review provisioning and recovery sequences before claiming proof.",
+      "seed_queries": [
+        "RK3588 TF-A OP-TEE secure boot community review",
+        "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "supply-chain-communities",
+      "scope": "OpenSSF, supply-chain security circles, and adjacent hardened-desktop operators (secureblue, Universal Blue) as reviewers of evidence-bounded security claims.",
+      "seed_queries": [
+        "OpenSSF community 2026 supply chain security roadmap",
+        "secureblue Universal Blue hardened immutable desktop comparison"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "homelab-testers",
+      "scope": "Recruiting homelab and security owner-operators as early testers of a technical preview, with explicit risk framing and non-daily-driver constraints.",
+      "seed_queries": [
+        "homelab security testing immutable linux early adopters",
+        "self hosted OS technical preview tester recruitment"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "media-gating",
+      "scope": "Earned media and press outreach strictly gated on reproduced proof milestones, pitching evidence and limitations rather than ambition.",
+      "seed_queries": [
+        "open source security project press pitch proof milestone",
+        "tech journalism covering security software demo embargo"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "outreach-cadence",
+      "scope": "Sequencing the first 14 days of friend-making with stop conditions, quality-over-volume metrics, and a refresh rule that re-checks community rules before every touch.",
+      "seed_queries": [
+        "build in public open source first weeks cadence feedback",
+        "community engagement metrics quality over volume developer relations"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7758,
+        "probabilities": {
+          "0": 0.048,
+          "1": 0.1282,
+          "2": 0.8238
+        },
+        "confidence": 0.5461,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.9054,
+        "probabilities": {
+          "0": 0.0185,
+          "1": 0.0576,
+          "2": 0.9239
+        },
+        "confidence": 0.786,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.5399,
+        "probabilities": {
+          "0": 0.0838,
+          "1": 0.2925,
+          "2": 0.6237
+        },
+        "confidence": 0.2223,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.5627,
+        "probabilities": {
+          "0": 0.0878,
+          "1": 0.2617,
+          "2": 0.6505
+        },
+        "confidence": 0.249,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.4236,
+        "probabilities": {
+          "0": 0.1298,
+          "1": 0.3168,
+          "2": 0.5534
+        },
+        "confidence": 0.1352,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.6795,
+        "probabilities": {
+          "0": 0.0598,
+          "1": 0.2009,
+          "2": 0.7393
+        },
+        "confidence": 0.3858,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.691,
+        "probabilities": {
+          "0": 0.0646,
+          "1": 0.1798,
+          "2": 0.7556
+        },
+        "confidence": 0.4111,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.7742,
+        "probabilities": {
+          "0": 0.044,
+          "1": 0.1378,
+          "2": 0.8182
+        },
+        "confidence": 0.5356,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.5923,
+        "probabilities": {
+          "0": 0.0764,
+          "1": 0.255,
+          "2": 0.6686
+        },
+        "confidence": 0.2769,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1445,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

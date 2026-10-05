@@ -1,0 +1,110 @@
+{
+  "nn": "05",
+  "slug": "arm64-board-collab",
+  "scope": "Working with ARM64 firmware and board communities (TF-A, OP-TEE, RPMB, U-Boot, RK3588/RK3399) to review provisioning and recovery sequences before claiming proof.",
+  "queries_attempted": [
+    {
+      "query": "RK3588 TF-A OP-TEE secure boot community review",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": [
+        {
+          "query": "RK3588 TF-A OP-TEE secure boot community review",
+          "title": "GitHub - DualTachyon/rk3588-secure-boot: Enabling Secure Boot ...",
+          "url": "https://github.com/DualTachyon/rk3588-secure-boot",
+          "snippet": "The RK3588 family of SoCs have the ability to enable Secure Boot and ensuring that only approved bootloaders can run. There is however very little public information in how to do so. Reverse engineering has revealed that 2 public released files have this ability: The ramboot loader requires sending ..."
+        },
+        {
+          "query": "RK3588 TF-A OP-TEE secure boot community review",
+          "title": "Open Source Tools for Secure Boot on Rockchip RK3588 :: ER2026\u2026",
+          "url": "https://cfp.embedded-recipes.org/er2026/talk/ULWYUJ/",
+          "snippet": "The Rockchip RK3588 SoC supports these features. However, limited documentation and reliance on a closed-source vendor OP-TEE binary and development tools raise concerns regarding security and maintainability. With OP-TEE 4.9.0 and barebox v2026.02.0, users may enable and use Secure Boot on RK3588 without needing any special Rockchip tools."
+        },
+        {
+          "query": "RK3588 TF-A OP-TEE secure boot community review",
+          "title": "Secure Boot Configuration | rockchip-linux/rkbin | DeepWiki",
+          "url": "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+          "snippet": "For information about the broader security architecture including BL31/BL32 components, see Secure Boot Chain. For details on BL32 (OP-TEE) functionality, see BL32 (OP-TEE OS). Secure boot ensures system integrity by verifying the authenticity of firmware components during the boot process using cryptographic signatures stored in hardware.For information about the broader security architecture inc"
+        },
+        {
+          "query": "RK3588 TF-A OP-TEE secure boot community review",
+          "title": "Almost a fully open-source boot chain for Rockchip's RK3588!",
+          "url": "https://www.collabora.com/news-and-blog/blog/2024/02/21/almost-a-fully-open-source-boot-chain-for-rockchips-rk3588/",
+          "snippet": "In resuming our efforts in getting Rockchip's RK3588 supported upstream, we can see that recently the boot-chain has improved in the sense that the open-source BL31 (Boot Loader stage 3.1) from TF-A is now included in our Debian images, which are published on our GitLab.In resuming our efforts in getting Rockchip's RK3588 supported upstream, we can see that recently the boot-chain has improved in "
+        },
+        {
+          "query": "RK3588 TF-A OP-TEE secure boot community review",
+          "title": "HOWTO: build ATF (Trusted Firmware ARM) and OPTEE for RK3588",
+          "url": "https://hardenedvault.net/blog/2025-03-10-build-atf-optee-rk3588/",
+          "snippet": "HOWTO: build ATF (Trusted Firmware ARM) and OPTEE for RK3588 To better implement the protection of digital assets in embedded systems, we have chosen the RK3588 as the prototype platform.HOWTO: build ATF (Trusted Firmware ARM) and OPTEE for RK3588 To better implement the protection of digital assets in embedded systems, we have chosen the RK3588 as the prototype platform."
+        },
+        {
+          "query": "RK3588 TF-A OP-TEE secure boot community review",
+          "title": "GitHub - nikicat/rock5b-optee: Upstream OP-TEE with a PKCS#11 token on ...",
+          "url": "https://github.com/nikicat/rock5b-optee",
+          "snippet": "Upstream OP-TEE with a built-in PKCS#11 token on a Radxa ROCK 5B (RK3588) that boots edk2-rk3588 UEFI. The goal: a key store whose private keys root cannot read, with import, sign and no export. Physical attacks and secure-boot fusing are out of scope; the known remaining hole is \"root rewrites the SPI flash and reboots\", which only a fused secure boot closes."
+        }
+      ]
+    },
+    {
+      "query": "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB",
+      "attempt": 2,
+      "raw_results": 48,
+      "kept": [
+        {
+          "query": "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB",
+          "title": "Installing U-Boot, Grub and Minimal Debian Rootfs on a RockPRO64",
+          "url": "https://2names1scott.com/docs/rockpro64boot.html",
+          "snippet": "Installing U-Boot, Grub and Minimal Debian Rootfs on a RockPRO64 The RockPRO64 is a low cost single-board computer featuring the powerful Rockchip RK3399 SoC.Installing U-Boot, Grub and Minimal Debian Rootfs on a RockPRO64 The RockPRO64 is a low cost single-board computer featuring the powerful Rockchip RK3399 SoC."
+        },
+        {
+          "query": "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB",
+          "title": "U-Boot RockChip - rk3399 (HARDENING), & rk3588 (TESTING)",
+          "url": "https://u-boot.omniteck.com/",
+          "snippet": "U-Boot 2025.07 W/ ATF lts-v2.12.5 & OP-TEE v4.7.0 0mniteck/U-Boot OMNITECK.COM UEFI SECURE BOOT: Download sdcard.img For RockPro64 Download sdcard.img For Pinebook Pro Download shimaa64.efi for ubuntu Signing your own shimaa64.efi Flashing Demo U-Boot RockChip - rk3399 (HARDENING), & rk3588 (TESTING)U-Boot 2025.07 W/ ATF lts-v2.12.5 & OP-TEE v4.7.0 0mniteck/U-Boot OMNITECK.COM UEFI SECURE BOOT: Do"
+        },
+        {
+          "query": "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB",
+          "title": "PINE64 ROCKPro64/Installing U-Boot - Gentoo Wiki",
+          "url": "https://wiki.gentoo.org/wiki/PINE64_ROCKPro64/Installing_U-Boot",
+          "snippet": "There are a number of places you can find pre-built images to boot your ROCKPro64. This guide describes how to set up Das U-Boot bootloader on ROCKPro64 from mainline upstream source code.There are a number of places you can find pre-built images to boot your ROCKPro64. This guide describes how to set up Das U-Boot bootloader on ROCKPro64 from mainline upstream source code."
+        },
+        {
+          "query": "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB",
+          "title": "GitHub - jeffchenfz/Rockchip: Uefi Rockchip Rk3399Pkg",
+          "url": "https://github.com/jeffchenfz/Rockchip",
+          "snippet": "After Pack firmware,use RK AndroidTool to download firmware,file_out instead of uboot.img. Need pick Loader,Parameter,U-boot (uefi firmware),Trust in the RK AndroidTool.After Pack firmware,use RK AndroidTool to download firmware,file_out instead of uboot.img. Need pick Loader,Parameter,U-boot (uefi firmware),Trust in the RK AndroidTool."
+        },
+        {
+          "query": "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB",
+          "title": "(real) Mainline U-boot finally works on SPI, boots SATA, throw away ...",
+          "url": "https://forum.pine64.org/showthread.php?tid=19868",
+          "snippet": "Then create EFI partition on SATA disk and proceed like with a regular UEFI machine. U-boot from SPI will also scan SATA partitions for extlinux/extlinux.conf, boot.scr and other U-boot-specific boot configs.Then create EFI partition on SATA disk and proceed like with a regular UEFI machine. U-boot from SPI will also scan SATA partitions for extlinux/extlinux.conf, boot.scr and other U-boot-specif"
+        },
+        {
+          "query": "RK3399 ROCKPro64 U-Boot UEFI measured boot RPMB",
+          "title": "PINE64 - Mainline U-Boot with SPI, NVMe and SATA boot support",
+          "url": "https://forum.pine64.org/archive/index.php?thread-8685-1.html",
+          "snippet": "Update 2020-02-01: Made a new release based on v2020.01, with added SATA AHCI boot support, and a fix for the \" rockchip_dnl_key_pressed: adc_channel_single_shot fail\" issue where the Recover button wasn't being read successfully.-- After seeing 's thread on porting the RK3399 PCIe/NVMe driver from Radxa's Rock Pi 4 U-Boot version, and this guide to building U-Boot for RockPro64 with all ...Update"
+        }
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/DualTachyon/rk3588-secure-boot",
+    "https://cfp.embedded-recipes.org/er2026/talk/ULWYUJ/",
+    "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+    "https://www.collabora.com/news-and-blog/blog/2024/02/21/almost-a-fully-open-source-boot-chain-for-rockchips-rk3588/",
+    "https://hardenedvault.net/blog/2025-03-10-build-atf-optee-rk3588/",
+    "https://github.com/nikicat/rock5b-optee",
+    "https://2names1scott.com/docs/rockpro64boot.html",
+    "https://u-boot.omniteck.com/",
+    "https://wiki.gentoo.org/wiki/PINE64_ROCKPro64/Installing_U-Boot",
+    "https://github.com/jeffchenfz/Rockchip",
+    "https://forum.pine64.org/showthread.php?tid=19868",
+    "https://forum.pine64.org/archive/index.php?thread-8685-1.html"
+  ],
+  "outcome": "authored"
+}
