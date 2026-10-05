@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3D<query>",
+    "probe_results": {
+      "status": 200,
+      "probe_query": "softhsm2 pkcs11",
+      "results_returned": 41
+    },
+    "unresponsive_engines": [
+      "brave (Suspended: too many requests)",
+      "duckduckgo (CAPTCHA)",
+      "fastbot (Suspended: access denied)",
+      "fireball (Suspended: access denied)",
+      "gmx (Suspended: CAPTCHA)",
+      "google (Suspended: access denied)",
+      "google cse (Suspended: too many requests)",
+      "resulthunter (Suspended: too many requests)",
+      "searchmysite (Suspended: access denied)",
+      "yacy (Suspended: timeout)",
+      "yep (Suspended: access denied)"
+    ]
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_status": 200,
+    "probe_answer": {
+      "note": "score probe p00 returned 200 OK; usage 144 input / 0 output tokens"
+    }
+  }
+}

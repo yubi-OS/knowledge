@@ -1,0 +1,23 @@
+# mkosi integration: SecureBootKeySource and systemd-sbsign
+
+Scope: how mkosi wires PKCS#11 signing keys into image builds via systemd-sbsign, the SecureBootKeySource engine/provider forms, the pkcs11 profile, and the historical gap that had to be fixed.
+
+## The tool chain mkosi uses
+
+mkosi signs Secure Boot artifacts through systemd-sbsign, whose interface takes `--private-key=` (path or PKCS#11 URI) together with `--private-key-source=` as a "type:name" tuple such as "engine:pkcs11" or "provider:pkcs11" (source: https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html, jev weight 0.9479; corroborated at https://man7.org/linux/man-pages/man1/systemd-sbsign.1.html, jev weight 0.9375, and https://man.archlinux.org/man/systemd-sbsign.1.en, jev weight 0.9507). yubiOS's cross-check against mkosi upstream confirmed that mkosi v27 natively supports `SecureBootKeySource=engine:pkcs11` and `SecureBootKeySource=provider:pkcs11` via systemd-sbsign, matching the yubiOS validation shape exactly with no drift (source: https://github.com/yubi-OS/yubiOS/blob/main/refs/sbsign-pkcs11-validate-2026-07-23.md, jev weight 0.5970).
+
+A weakly-backed source describes mkosi's key-source taxonomy as file (default, certificate and key read from filesystem paths), engine:<name> (key accessed via OpenSSL engine, for example engine:pkcs11), and provider:<name> (key accessed via OpenSSL provider, tied to systemd v257 and later) (weak backing; source: https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing, jev weight 0.3466). The taxonomy is consistent with the manpage evidence above; the v257 version attribution is the part that carries only weak backing.
+
+## The pkcs11 profile and tool selection
+
+mkosi has a `pkcs11` build profile that enables PKCS#11 support (source: https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md, jev weight 0.7430). The same manpage text documents tool selection: if set to auto, either systemd-sbsign or sbsign are used if available, with a stated fallback order (source: https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md, jev weight 0.7430). That auto-selection is exactly where the legacy-versus-modern trap lives: a machine with the old sbsign installed can silently take the legacy path. The yubiOS consistency rule exists because of this: keep build documentation on systemd-sbsign and do not reintroduce legacy `sbsign --engine pkcs11` examples except as historical context (source: https://github.com/yubi-OS/yubiOS/blob/main/refs/sbsign-pkcs11-validate-2026-07-23.md, jev weight 0.5970).
+
+## The historical gap: issue 3033
+
+Before the SecureBootKeySource plumbing existed, passing a PKCS#11 device key into mkosi's signing path did not work. The issue report: "Can't pass pkcs11 url to sbsign", filed September 16, 2024, from a user trying to use a Secure Boot key contained in a PKCS#11 device whose configuration pointed `SecureBootKey` at the key, expecting mkosi to use it directly (source: https://github.com/systemd/mkosi/issues/3033, jev weight 0.9635). The issue is the cleanest documentation of the gap between "the key is on a token" and "the build tool can reach the key": the configuration looked right, the expectation was reasonable, and the plumbing to hand the URL to the signer was the missing piece. The current v27 capability is the resolution state.
+
+## Context and boundaries
+
+The systemd-sbsign tool and its mkosi integration were introduced publicly in Lennart Poettering's post "SecureBoot Signing with the New systemd-sbsign Tool", which also notes mkosi was originally written as a tool to simplify hacking on systemd and for experimenting with images using many of the new concepts being introduced (weak backing; source: https://0pointer.net/blog/, jev weight 0.2915). For the artifacts being signed: mkosi treats UKI creation as an output format, with companion tools mkosi-initrd and mkosi-addon simplifying UKI generation for local systems (weak backing; source: https://deepwiki.com/systemd/mkosi/5.2-unified-kernel-images-(uki), jev weight 0.1641).
+
+What this doc does not cover: verification of the signed output, which is doc 05's recipe; and the CI-side question of when a build may sign at all, which is doc 07. The mkosi takeaway that matters for the rest of the corpus is narrow: once `SecureBootKeySource=engine:pkcs11` or the provider form is set and the pkcs11 profile is on, an image build consumes the same PKCS#11 URI grammar and the same module stack that the manual systemd-sbsign command uses, so the traps documented in doc 04 apply inside image builds identically.

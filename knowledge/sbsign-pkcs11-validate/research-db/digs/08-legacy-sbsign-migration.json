@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "legacy-sbsign-migration",
+  "scope": "Legacy sbsign --engine pkcs11 vs systemd-sbsign: why documentation converges on systemd-sbsign, and how historical sbsign usage is preserved as ADR context.",
+  "queries_attempted": [
+    {
+      "query": "sbsign openssl engine pkcs11 deprecated legacy",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "systemd-sbsign replaces sbsign unified kernel image",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.digicert.com/en/software-trust-manager/client-tools/signing-tools/third-party-signing-tool-integrations/configure-openssl-for-signing-with-pkcs11.html",
+    "https://support.nitrokey.com/t/pkcs11-module-crashing-with-sbsign/6852",
+    "https://www.mail-archive.com/ubuntu-bugs%40lists.ubuntu.com/msg6288165.html",
+    "https://www.mail-archive.com/ubuntu-bugs%40lists.ubuntu.com/msg6288038.html",
+    "https://www.bmwusa.com/",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html",
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://www.freedesktop.org/software/systemd/man/ukify.html",
+    "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+    "https://www.bigiron.cc/guides/shim-replacement-and-uki-unified-kernel-images-2026",
+    "https://wiki.gentoo.org/wiki/Unified_Kernel_Image",
+    "https://en.wikipedia.org/wiki/Systemd"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "systemd-sbsign-pkcs11-interface",
+  "scope": "systemd-sbsign as the modern signing interface: --private-key-source engine:pkcs11 and provider:pkcs11, the --private-key PKCS#11 URI, and how it signs PE/UKI artifacts.",
+  "queries_attempted": [
+    {
+      "query": "systemd-sbsign private-key-source engine pkcs11 PKCS11 URI",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "systemd-sbsign sign UKI unified kernel image PE signing",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+    "https://man.archlinux.org/man/systemd-sbsign.1",
+    "https://man.archlinux.org/man/systemd-sbsign.1.en",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html",
+    "https://manpages.debian.org/trixie/systemd-repart/systemd-sbsign.1.en.html",
+    "https://github.com/yubi-OS/yubiOS/blob/main/refs/sbsign-pkcs11-validate-2026-07-23.md",
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+    "https://www.bigiron.cc/guides/shim-replacement-and-uki-unified-kernel-images-2026",
+    "https://www.freedesktop.org/software/systemd/man/ukify.html",
+    "https://github.com/FSoft-AI4Code/codewiki-demo/blob/main/docs/systemd--systemd-docs/uki-management.md",
+    "https://en.wikipedia.org/wiki/Systemd"
+  ],
+  "outcome": "authored"
+}
