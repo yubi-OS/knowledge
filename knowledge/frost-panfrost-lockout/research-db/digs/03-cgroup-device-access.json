@@ -1,0 +1,29 @@
+{
+  "nn": "03",
+  "slug": "cgroup-device-access",
+  "scope": "cgroup v2 device controller with BPF_PROG_TYPE_CGROUP_DEVICE to deny render-node opens (Stage 0 lockout primitive) and its limits for already-open DRM files.",
+  "queries_attempted": [
+    {"query": "cgroup v2 device controller BPF_PROG_TYPE_CGROUP_DEVICE deny device access", "attempt": 1, "raw_results": 42, "kept": 5},
+    {"query": "cgroup v2 device controller BPF_PROG_TYPE_CGROUP_DEVICE deny device access", "attempt": 2, "raw_results": 48, "kept": 1},
+    {"query": "restrict GPU render node /dev/dri access cgroup systemd device policy", "attempt": 1, "raw_results": 45, "kept": 6},
+    {"query": "restrict GPU render node /dev/dri access cgroup systemd device policy", "attempt": 2, "raw_results": 57, "kept": 1}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.ebpf.io/linux/program-type/BPF_PROG_TYPE_CGROUP_DEVICE/",
+    "https://github.com/isovalent/ebpf-docs/blob/master/docs/linux/program-type/BPF_PROG_TYPE_CGROUP_DEVICE.md",
+    "https://eunomia.dev/tutorials/cgroup/",
+    "https://kernel-internals.org/cgroups/cgroup-bpf/",
+    "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+    "https://dropbear.xyz/2023/05/23/devices-with-cgroup-v2/",
+    "https://github.com/systemd/systemd/issues/39110",
+    "https://massedcompute.com/faq-answers/?question=How+do+I+restrict+access+to+NVIDIA+GPUs+for+specific+users+or+groups",
+    "https://github.com/containers/crun/issues/1738",
+    "https://serverfault.com/questions/958031/how-to-restrict-access-to-gpu",
+    "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+    "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/devices.html",
+    "https://%C9%84%D5%B6%D5%A9.com/?p=1180"
+  ],
+  "outcome": "authored"
+}

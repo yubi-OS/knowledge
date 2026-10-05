@@ -1,0 +1,29 @@
+{
+  "nn": "02",
+  "slug": "submit-path-gating",
+  "scope": "panfrost_ioctl_submit as the policy choke point: job push path, resolving job-manager contexts and BOs, and how a cgroup/context-aware submit gate would deny new jobs from a locked cgroup.",
+  "queries_attempted": [
+    {"query": "panfrost_ioctl_submit job push drm ioctl implementation", "attempt": 1, "raw_results": 43, "kept": 4},
+    {"query": "panfrost_ioctl_submit job push drm ioctl implementation", "attempt": 2, "raw_results": 49, "kept": 0},
+    {"query": "cgroup aware GPU job submission gating drm scheduler per client", "attempt": 1, "raw_results": 46, "kept": 5},
+    {"query": "cgroup aware GPU job submission gating drm scheduler per client", "attempt": 2, "raw_results": 53, "kept": 4}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/torvalds/linux/blob/master/include/uapi/drm/panfrost_drm.h",
+    "https://patchwork.kernel.org/comment/24291369/",
+    "https://lists.freedesktop.org/archives/dri-devel/2021-July/314344.html",
+    "https://patchwork.kernel.org/comment/24031919/",
+    "https://blogs.igalia.com/tursulin/drm-scheduling-cgroup-controller/",
+    "https://blogs.igalia.com/tursulin/fair-er-drm-gpu-scheduler/",
+    "https://lwn.net/Articles/911772/",
+    "https://lists.freedesktop.org/archives/amd-gfx/2025-September/129887.html",
+    "https://lists.freedesktop.org/archives/amd-gfx/2025-September/131295.html",
+    "https://indico.freedesktop.org/event/10/contributions/433/attachments/247/334/GPU%20Job%20Scheduling%20in%20DRM_%20Past%2C%20Present%20and%20Future-2.pdf",
+    "https://kernel-internals.org/drm/command-submission/",
+    "https://dev.to/ingero/gpu-tracing-with-cgroup-awareness-per-tenant-investigation-on-shared-hosts-2oh2",
+    "https://github.com/jreuben11/linux-graphics-stack-book/blob/main/chapters/part-01-kernel-layer/ch102-drm-gpu-scheduler.md"
+  ],
+  "outcome": "authored"
+}

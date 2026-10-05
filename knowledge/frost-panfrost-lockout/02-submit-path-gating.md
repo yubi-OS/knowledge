@@ -1,0 +1,27 @@
+# Submit path gating
+
+Scope: panfrost_ioctl_submit as the policy choke point, the job push path it drives, and how a cgroup- or context-aware submit gate would deny new jobs from a locked cgroup while leaving the rest of the desktop unharmed.
+
+## The submit ioctl surface
+
+From userspace, job submission enters the driver through DRM_IOCTL_PANFROST_SUBMIT, defined in the uapi header as DRM_IOW(DRM_COMMAND_BASE + DRM_PANFROST_SUBMIT, struct drm_panfrost_submit), and the header marks a class of Panfrost ioctls as unstable, gated behind an unsafe unstable_ioctls module flag (source: https://github.com/torvalds/linux/blob/master/include/uapi/drm/panfrost_drm.h, jev weight 0.90). The ioctl surface is actively evolving: a 2021 series added a batch submit ioctl to limit the number of ioctls needed when submitting multiple jobs, with syncobj timeline and BO access flag support (source: https://patchwork.kernel.org/comment/24291369/, jev weight 0.75), and the RFC covering it describes implementing panfrost_ioctl_submit() as a wrapper around panfrost_submit_job() (source: https://lists.freedesktop.org/archives/dri-devel/2021-July/314344.html, jev weight 0.81). The RFC motivation records that implementing VkQueueSubmit against the single-job ioctl was limiting (source: https://patchwork.kernel.org/comment/24031919/, jev weight 0.60). Any submit gate has to cover every submit ioctl variant, not just the original one.
+
+## What the submit path does today
+
+In the current driver, panfrost_ioctl_submit() resolves a job-manager context, attaches the file's MMU context, resolves the referenced buffer objects, and then pushes the job; the driver source shows the push call returning into cleanup on error (ret = panfrost_job_push(job), with drm_sched_job_cleanup on failure) (source: https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_drv.c, jev weight 0.95). This makes the ioctl the single natural choke point: a check placed after context resolution and before job push can deny new jobs for a locked DRM file or cgroup with one code path covering all job types.
+
+## The scheduler underneath
+
+Jobs that pass the ioctl land in drm_sched, which owns the queue between userspace submission and the driver pushing work at hardware, including the timeout that fires when hardware stops answering (source: https://kernel-internals.org/drm/command-submission/, jev weight 0.54). The scheduler arbitrates between entities, the per-client job containers (source: https://indico.freedesktop.org/event/10/contributions/433/attachments/247/334/GPU%20Job%20Scheduling%20in%20DRM_%20Past%2C%20Present%20and%20Future-2.pdf, jev weight 0.91).
+
+## Upstream direction: cgroup-aware scheduling
+
+A DRM scheduling cgroup controller has been in development upstream. The core idea is that GPU time budget is split by relative group weights across the cgroup hierarchy, and the controller notifies individual DRM drivers when their clients go over budget (source: https://blogs.igalia.com/tursulin/drm-scheduling-cgroup-controller/, jev weight 0.51). LWN's coverage describes the two API halves: DRM core provides an API to query per-process GPU utilization, and a second API through which the cgroup controller notifies drivers when a group enters or exits the over-budget condition (source: https://lwn.net/Articles/911772/, jev weight 0.70). The v8 RFC series implements the controller with a simpler version for amdgpu and a more complicated one for firmware-scheduler drivers such as Intel xe (source: https://lists.freedesktop.org/archives/amd-gfx/2025-September/129887.html, jev weight 0.78), and notes that extra scheduler capabilities such as hardware rings or firmware schedulers that support only a limited number of software rings, like some Mali GPUs, can be layered on top (source: https://lists.freedesktop.org/archives/amd-gfx/2025-September/131295.html, jev weight 0.69). A later scheduler rework computes virtual GPU time scaled by an entity priority factor and ties into the same controller work (source: https://blogs.igalia.com/tursulin/fair-er-drm-gpu-scheduler/, jev weight 0.51).
+
+## Stage 2 prototype design
+
+Against this landscape, the staged design's Stage 2 is a Panfrost submit gate keyed by DRM file and cgroup. The gate consults lockout state at the top of panfrost_ioctl_submit() (and any batch submit variant), returns a deterministic error to the caller for a locked context, and emits owner-facing telemetry naming the cgroup, pid and action taken. Two properties follow from the mechanism. First, the gate is forward-looking only: jobs already in flight continue to completion, so an already-open DRM fd cannot be frozen mid-job by the submit gate alone; the design's escape test acknowledges this explicitly. Second, a hard deny is different in kind from the upstream cgroup controller's over-budget notifications, which throttle rather than lock out; the lockout gate is a new, narrower mechanism, not a configuration of the existing controller.
+
+## What is not proven
+
+Per-tenant GPU tracing work that threads cgroup identity through kernel events via a single BPF helper exists in other stacks (source: https://dev.to/ingero/gpu-tracing-with-cgroup-awareness-per-tenant-investigation-on-shared-hosts-2oh2, jev weight 0.08, weak backing). No evidence in this dig shows a Panfrost-specific cgroup-aware submit gate in mainline, so Stage 2 remains prototype work with the JM context layer (doc 01) as the natural state carrier.

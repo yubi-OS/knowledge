@@ -1,0 +1,28 @@
+{
+  "nn": "01",
+  "slug": "panfrost-driver-surface",
+  "scope": "Panfrost driver architecture and per-DRM-file state (panfrost_file_priv, MMU context, job-manager contexts, supported Mali hardware) as the patch surface for policy work.",
+  "queries_attempted": [
+    {"query": "panfrost DRM driver per-file MMU context job manager architecture", "attempt": 1, "raw_results": 44, "kept": 5},
+    {"query": "panfrost DRM driver per-file MMU context job manager architecture", "attempt": 2, "raw_results": 51, "kept": 1},
+    {"query": "panfrost_file_priv panfrost_device drm mali midgard bifrost valhall", "attempt": 1, "raw_results": 43, "kept": 5},
+    {"query": "panfrost_file_priv panfrost_device drm mali midgard bifrost valhall", "attempt": 2, "raw_results": 50, "kept": 1}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.kernel.org/gpu/panfrost.html",
+    "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_drv.c",
+    "https://www.collabora.com/news-and-blog/news-and-events/pancsf-a-new-drm-driver-for-mali-csf-based-gpus.html",
+    "https://lists.freedesktop.org/archives/dri-devel/2025-September/525188.html",
+    "https://lists.freedesktop.org/archives/dri-devel/2025-September/525843.html",
+    "https://lkml.rescloud.iu.edu/2509.2/02540.html",
+    "https://docs.mesa3d.org/drivers/panfrost.html",
+    "https://deepwiki.com/allbilly/linux_drm/9.1-panfrost-and-panthor-(arm-mali-drivers)",
+    "https://deepwiki.com/mirror/mesa/3.4-panfrost-driver-for-arm-mali-gpus",
+    "https://idr.pages.freedesktop.org/mesa/drivers/panfrost.html",
+    "https://xdc2018.x.org/slides/Panfrost-XDC_2018.pdf",
+    "https://github.com/zenithblue-oss/panvk-kbase-android/blob/main/docs/MALI-GPU-ARCHITECTURES.md"
+  ],
+  "outcome": "authored"
+}

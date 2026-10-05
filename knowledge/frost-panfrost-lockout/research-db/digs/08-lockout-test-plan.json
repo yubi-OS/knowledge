@@ -1,0 +1,26 @@
+{
+  "nn": "08",
+  "slug": "lockout-test-plan",
+  "scope": "The Frost test plan and ADR trust boundary: false-positive control, active abuse, recovery, attribution, notification, escape of already-open DRM fds, and the Linux-classifies/secure-world-enforces split.",
+  "queries_attempted": [
+    {"query": "gpu misbehavior detection testing false positive runaway workload", "attempt": 1, "raw_results": 47, "kept": 3},
+    {"query": "gpu misbehavior detection testing false positive runaway workload", "attempt": 2, "raw_results": 43, "kept": 1},
+    {"query": "adr trust boundary policy engine enforcement kernel secure world", "attempt": 1, "raw_results": 36, "kept": 4},
+    {"query": "adr trust boundary policy engine enforcement kernel secure world", "attempt": 2, "raw_results": 40, "kept": 2}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://dev.to/ces1231/gpuworkloadmismatch-part-ii-from-detection-to-runtime-enforcement-for-ai-infrastructure-3l03",
+    "https://docs.nvidia.com/datacenter/dcgm/latest/learn/modules/dcgm-diagnostics.html",
+    "https://arxiv.org/html/2603.28781v1",
+    "https://github.com/eliezer8990/GPUTest4Pytorch",
+    "https://github.com/duriantaco/gatemole/blob/main/docs/architecture/ADR-001-agent-kernel-boundary.md",
+    "https://github.com/MetaAny/AnyFusion/blob/main/docs/adr/0014-planning-agent-policy-kernel-boundary.md",
+    "https://microsoft.github.io/agent-governance-toolkit/ARCHITECTURE/",
+    "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/",
+    "https://arxiv.org/abs/2609.38248",
+    "https://windowsforum.com/news/cve-2026-23409-apparmor-differential-encoding-verification-trust-boundary-risk.411376/"
+  ],
+  "outcome": "authored"
+}

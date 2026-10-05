@@ -1,0 +1,24 @@
+{
+  "nn": "05",
+  "slug": "userspace-observability",
+  "scope": "fdinfo/debugfs observability of open DRM files and engine usage (Stage 1): attributing suspected GPU load to a process or cgroup and isolating or terminating the owner-selected process group from userspace.",
+  "queries_attempted": [
+    {"query": "drm fdinfo gpu engine usage per client debugfs statistics", "attempt": 1, "raw_results": 46, "kept": 2},
+    {"query": "drm fdinfo gpu engine usage per client debugfs statistics", "attempt": 2, "raw_results": 38, "kept": 2},
+    {"query": "panfrost mesa fdinfo profiling gpu stats per process", "attempt": 1, "raw_results": 45, "kept": 2},
+    {"query": "panfrost mesa fdinfo profiling gpu stats per process", "attempt": 2, "raw_results": 37, "kept": 2}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.kernel.org/6.16/gpu/drm-usage-stats.html",
+    "https://docs.kernel.org/gpu/drm-usage-stats.html",
+    "https://mjmwired.net/kernel/Documentation/gpu/drm-usage-stats.rst",
+    "https://www.kernel.org/doc/html/v6.6/gpu/drm-usage-stats.html",
+    "https://docs.mesa3d.org/drivers/panfrost/benchmarking.html",
+    "https://github.com/omacom/mesa/blob/main/docs/perfetto.rst",
+    "https://lwn.net/Articles/944282/",
+    "https://www.kernel.org/doc/html/v7.3-rc2/gpu/panfrost.html"
+  ],
+  "outcome": "authored"
+}

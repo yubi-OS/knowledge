@@ -1,0 +1,29 @@
+{
+  "nn": "06",
+  "slug": "rockchip-recovery-model",
+  "scope": "Hardware-gated recovery options on RK3399/RK3588 after lockout: cgroup/context drain, per-GPU reset, full GPU power-cycle/reset, and what must be proven on board before claiming recovery.",
+  "queries_attempted": [
+    {"query": "rockchip rk3588 rk3399 mali gpu reset recovery linux", "attempt": 1, "raw_results": 45, "kept": 3},
+    {"query": "rockchip rk3588 rk3399 mali gpu reset recovery linux", "attempt": 2, "raw_results": 37, "kept": 3},
+    {"query": "drm gpu recovery hang reset devcoredump panfrost job fault", "attempt": 1, "raw_results": 49, "kept": 4},
+    {"query": "drm gpu recovery hang reset devcoredump panfrost job fault", "attempt": 2, "raw_results": 43, "kept": 3}
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/tsukumijima/libmali-rockchip",
+    "https://github.com/hevz/libmali-rk3399",
+    "https://forum.armbian.com/topic/51939-rk3588-setting-up-mali-hardware-acceleration/",
+    "https://xdaforums.com/t/firmware-and-modifications-for-rockchip-rk35xx-rk3566-rk3588-etc.4716612/",
+    "https://ib.bsb.br/setting-up-gpu-drivers-on-rk3588/",
+    "https://gitlab.com/rk3588_linux/linux/libmali",
+    "https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg623631.html",
+    "https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg623642.html",
+    "https://lists.freedesktop.org/archives/dri-devel/2025-July/514272.html",
+    "https://lists.freedesktop.org/archives/dri-devel/2025-June/511203.html",
+    "https://lists.freedesktop.org/archives/dri-devel/2025-May/504885.html",
+    "https://lkml.rescloud.iu.edu/2311.1/01403.html",
+    "https://blogs.gnome.org/anonymoux47/2026/08/28/gpu-reset-recovery-in-mutter-gsoc-wrap-up/"
+  ],
+  "outcome": "authored"
+}
