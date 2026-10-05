@@ -1,0 +1,223 @@
+{
+  "topic": "testing and production gaps for an immutable OS",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "sealed-uki-secure-boot-testing",
+      "scope": "Proving signed UKI and Secure Boot with negative tamper evidence: the sealed-UKI VM lane, OVMF/swtpm limits, PCR golden values, and the three unproven tamper assertions.",
+      "seed_queries": [
+        "Secure Boot UKI unified kernel image verification testing systemd-boot",
+        "OVMF swtpm secure boot negative test tampered kernel image PCR measurement"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "arm64-hardware-proof",
+      "scope": "Real-board ARM64 evidence: RK3588 TPL/DDR boot, ROTPK fuse provisioning, RPMB, and owner root-of-trust custody that QEMU cannot prove.",
+      "seed_queries": [
+        "ROTPK fuse provisioning RK3588 secure boot U-Boot",
+        "RPMB fTPM ARM board bring-up secure boot chain hardware testing"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "yubikey-physical-testing",
+      "scope": "Physical-YubiKey production-confidence runs: why software-only FIDO2 CI proves function but not physical presence, firmware ownership, or RPMB freshness.",
+      "seed_queries": [
+        "YubiKey FIDO2 hardware-in-the-loop CI testing",
+        "FIDO2 resident key production validation scenarios physical security key"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "bootc-lifecycle-testing",
+      "scope": "bootc upgrade/rollback, A/B boot-counter behavior, sysext activation against immutable /usr, and portable-service lifecycle: the missing CI assertions.",
+      "seed_queries": [
+        "bootc upgrade rollback testing A B boot",
+        "systemd sysext portable services integration testing immutable usr"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "supply-chain-evidence",
+      "scope": "SBOM, SLSA provenance, cosign signing, and OCI channel binding for production images: the 0/25 SBOM and 2/25 provenance gaps and their fixes.",
+      "seed_queries": [
+        "SLSA provenance SBOM cosign signing container image CI",
+        "SLSA build level 3 GitHub Actions provenance attestation SBOM"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "ci-governance-tooling",
+      "scope": "CI tooling governance: input-shape doctrine, workflow group reachability, token-scope audits, concurrency declarations, and fork upstream-sync drift.",
+      "seed_queries": [
+        "GitHub Actions workflow_dispatch input validation CI gate",
+        "GitHub Actions workflow permissions concurrency token scope audit"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "runtime-hardening-verification",
+      "scope": "Runtime hardening evidence: static audits vs booted-image verification with systemd-analyze security and live RestrictFileSystems assertions.",
+      "seed_queries": [
+        "systemd-analyze security runtime verification service hardening",
+        "RestrictFileSystems systemd service sandboxing verification booted system"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "negative-path-testing",
+      "scope": "Negative-path test design for security-critical primitives: fail-closed tests, tamper rejection, policy rejection, and wrong-credential tests that green-only suites miss.",
+      "seed_queries": [
+        "negative testing fail-closed security test cases CI",
+        "software negative test design tamper rejection policy enforcement tests"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.4538,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1014,
+          "1": 0.3434,
+          "2": 0.5552
+        },
+        "confidence": 0.1547
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.4851,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0921,
+          "1": 0.3307,
+          "2": 0.5772
+        },
+        "confidence": 0.1765
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.1214,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1788,
+          "1": 0.521,
+          "2": 0.3002
+        },
+        "confidence": 0.0903
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8974,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0284,
+          "1": 0.0458,
+          "2": 0.9258
+        },
+        "confidence": 0.79
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.6869,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0776,
+          "1": 0.1579,
+          "2": 0.7645
+        },
+        "confidence": 0.4231
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.2906,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1508,
+          "1": 0.4079,
+          "2": 0.4413
+        },
+        "confidence": 0.0758
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.7024,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0707,
+          "1": 0.1562,
+          "2": 0.7731
+        },
+        "confidence": 0.4406
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.7146,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0665,
+          "1": 0.1524,
+          "2": 0.7811
+        },
+        "confidence": 0.4566
+      }
+    },
+    "usage": {
+      "input_tokens": 1276,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ]
+  }
+}
