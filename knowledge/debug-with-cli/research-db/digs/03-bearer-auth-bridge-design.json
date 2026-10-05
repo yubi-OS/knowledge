@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "bearer-auth-bridge-design",
+ "scope": "The minimal stdlib Python bridge: BaseHTTPRequestHandler, hmac.compare_digest bearer check, subprocess.run, about 50 LOC, zero dependencies",
+ "queries_attempted": [
+  {
+   "query": "python http.server BaseHTTPRequestHandler JSON POST handler bearer token check",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "hmac.compare_digest constant time token comparison python example",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://stackoverflow.com/questions/41429172/python-basehttprequesthandler-respond-with-json",
+  "https://docs.python.org/3/library/http.server.html",
+  "https://www.pythonfaq.net/how-to-handle-incoming-http-requests-with-basehttprequesthandler/",
+  "https://www.python.org/",
+  "https://github.com/advisories/GHSA-6mx4-4h42-r8vh",
+  "https://runebook.dev/en/docs/python/library/http.server/http.server.BaseHTTPRequestHandler",
+  "https://realpython.com/ref/stdlib/hmac/",
+  "https://runebook.dev/en/docs/python/library/hmac/hmac.compare_digest",
+  "https://runebook.dev/en/docs/python/library/hmac/hmac.HMAC",
+  "https://docs.python.org/3/library/hmac.html",
+  "https://en.wikipedia.org/wiki/HMAC",
+  "https://github.com/shurugiken/webhook-auth-patterns"
+ ],
+ "outcome": "authored"
+}

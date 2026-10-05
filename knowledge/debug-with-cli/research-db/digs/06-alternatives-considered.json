@@ -1,0 +1,69 @@
+{
+ "nn": "06",
+ "slug": "alternatives-considered",
+ "scope": "Rejected options and why: mcp-proxy with no inbound auth, npm mcp-proxy X-API-Key, Cloudflare Tunnel + Access, mTLS, joining the tailnet, Funnel ACLs",
+ "queries_attempted": [
+  {
+   "query": "mcp-proxy sparfenyuk authentication security HTTP stdio",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "cloudflare tunnel vs tailscale funnel exposing service comparison",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "mcp-proxy HTTP transport authentication bearer token security inbound",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "exposing SSH serial console remote debugging tunnel authentication options compared",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig thin: 1 of 12 results weighted >= 0.5; marginal outline score 0.84 requires strong dig",
+   "new_queries": [
+    "mcp-proxy HTTP transport authentication bearer token security inbound",
+    "exposing SSH serial console remote debugging tunnel authentication options compared"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/sparfenyuk/mcp-proxy",
+  "https://deepwiki.com/sparfenyuk/mcp-proxy",
+  "https://github.com/mcp-research/sparfenyuk__mcp-proxy",
+  "https://www.mcphub.app/registry/sparfenyuk/mcp-proxy",
+  "https://en.m.wikipedia.org/wiki/Model_Context_Protocol",
+  "https://mcpservers.org/servers/sparfenyuk/mcp-proxy",
+  "https://behind.cloud/cloudflare-tunnels-vs-tailscale-funnel-vs-ngrok-secure-exposure-tools-compared",
+  "https://dev.to/mechcloud_academy/cloudflare-tunnel-vs-ngrok-vs-tailscale-choosing-the-right-secure-tunneling-solution-4inm",
+  "https://intellizu.com/articles/cloudflare-tunnel-vs-tailscale/",
+  "https://tailscale.com/compare/cloudflare-access",
+  "https://devtoolpicks.com/blog/when-to-use-cloudflare-tunnel-vs-tailscale-funnel-vs-public-vps-indie-hackers-2026",
+  "https://smarthomeentry.com/en/tailscale-vs-cloudflare-tunnel",
+  "https://mcp-auth.dev/docs/configure-server/bearer-auth",
+  "https://github.com/aws-samples/sample-mcp-identity-proxy-for-aws",
+  "https://modelcontextprotocol.io/",
+  "https://swagger.io/docs/specification/authentication/bearer-authentication/",
+  "https://en.m.wikipedia.org/wiki/Model_Context_Protocol",
+  "https://screenshotneo.com/blog/fix-n8n-mcp-authentication-errors/",
+  "https://linuxize.com/post/how-to-setup-ssh-tunneling/",
+  "https://tunnelpicks.net/blog/ssh-tunneling-2026-remote-access-port-forwarding",
+  "https://stackoverflow.com/questions/75851529/what-is-the-difference-between-vscode-remote-ssh-and-remote-tunnel-connections",
+  "https://dictionary.cambridge.org/dictionary/english/exposing",
+  "https://github.com/topics/remote-console",
+  "https://linuxmind.dev/2025/09/02/ssh-tunnels-secure-remote-access-and-port-forwarding/"
+ ],
+ "outcome": "authored"
+}
