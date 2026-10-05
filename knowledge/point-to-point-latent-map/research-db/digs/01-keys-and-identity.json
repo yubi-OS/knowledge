@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "keys-and-identity",
+  "scope": "Identity keys for unlabeled corpus items: content hashing (FNV-1a, SHA-256), ordinal injectivity, and collision classes.",
+  "queries_attempted": [
+    {
+      "query": "FNV-1a hash algorithm 64-bit collisions",
+      "attempt": 1,
+      "raw_results": 58,
+      "kept": 6
+    },
+    {
+      "query": "content hash SHA-256 data identity deduplication",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function",
+    "https://github.com/sindresorhus/fnv1a",
+    "https://freetoolscorner.com/hash-crypto-tools/fnv-1a-hash-generator/",
+    "https://www.ietf.org/archive/id/draft-eastlake-fnv-21.html",
+    "https://github.com/pstibrany/fnv-1a-64bit-collisions",
+    "https://miniwebtool.com/fnv1a-hash-generator/",
+    "https://help.relativity.com/RelativityOne/Content/Relativity/Processing/Deduplication_considerations.htm",
+    "https://transloadit.com/devtips/efficient-file-deduplication-with-sha-256-and-node-js/",
+    "https://blog.creativeos.com/blog/5-hash-based-deduplication",
+    "https://www.techinterview.org/post/3233468290/lld-file-deduplication/",
+    "https://www.techinterview.org/post/3233470327/lld-deduplication-service/",
+    "https://www.merriam-webster.com/dictionary/content"
+  ],
+  "outcome": "authored"
+}
