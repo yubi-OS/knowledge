@@ -1,0 +1,239 @@
+{
+ "topic": "Applying learned-latent-curve to a real artifact corpus: the full flow from primitive coverage matrices through PCA and curve/surface fits to gap-finding, including the consolidated superseding version (v3) and the v4 negative result",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "coverage-matrices",
+   "scope": "Building the 9-D binary primitive coverage matrix: the 10 internal-big-picture primitives, keyword dictionaries, dropping the collapsed self-describing column, binary versus graded variants",
+   "seed_queries": [
+    "scikit-learn PCA explained variance ratio interpretation",
+    "binary feature matrix principal component analysis variance"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "pca-t-coordinate",
+   "scope": "Deriving the 1-D and 2-D t coordinates from PCA of the coverage matrix, with explained variance (PC1 versus PC1+PC2) as the go/no-go gate",
+   "seed_queries": [
+    "PCA explained variance rule of thumb threshold dimensionality reduction",
+    "projecting new data onto PCA components transform"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "one-d-curve-fit",
+   "scope": "The 1-D curve fits v1 (raw content) and v2 (coverage basis): sanity cosines, holdout MSE and R-squared gates, and why raw multi-dimensional content fails",
+   "seed_queries": [
+    "Fourier series least squares curve fitting basis functions",
+    "holdout R squared regression validation train test split"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "two-d-surface",
+   "scope": "The v3 2-D learned surface: separable Fourier basis k=2 per axis, closed-form ridge fit, the honest gradient-refinement finding, condition number, headline holdout metrics",
+   "seed_queries": [
+    "separable Fourier basis 2D function approximation least squares",
+    "condition number design matrix ridge regression multicollinearity"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "negative-embedding-target",
+   "scope": "The v4 negative finding: MiniLM sentence-transformer embeddings as the target, the ONNX install path, the effective rank 211 diagnosis, and why dense embeddings fail the curve",
+   "seed_queries": [
+    "all-MiniLM-L6-v2 sentence transformer 384 dimension embeddings",
+    "intrinsic dimensionality embeddings effective rank analysis"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "corpus-hygiene",
+   "scope": "Corpus hygiene that changed the fit: filtering .gitkeep placeholders 213 to 211 and hand-classifying 14 borderline artifacts with per-override rationale",
+   "seed_queries": [
+    "dataset curation placeholder files data cleaning machine learning",
+    "manual annotation overrides heuristic labeling data quality"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "gap-finding-ops",
+   "scope": "Operationalizing the fit for gap-finding: the scalar knob t, projecting new artifacts onto saved PCA loadings, uncovered-primitive-territory queries, pairing with content-addressed storage",
+   "seed_queries": [
+    "UMAP t-SNE semantic search embedding retrieval",
+    "embedding space gap detection nearest neighbor coverage analysis"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "supersession-lifecycle",
+   "scope": "Supersession and lifecycle practice: the consolidated flow doc replacing v1-v3 artifacts, keeping v4 as a retained negative finding, t-pipeline versioning and fit caches",
+   "seed_queries": [
+    "architecture decision record supersedes status deprecated",
+    "keep a changelog documentation deprecation lifecycle"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "gates-antipatterns",
+   "scope": "Metric gates and anti-patterns: the PC1 >= 0.40 heuristic versus holdout R-squared > 0 as ground truth, overfitting graded-coverage variants, fixed-basis fit sold as learned",
+   "seed_queries": [
+    "overfitting explained variance PCA pitfalls machine learning",
+    "cross validation holdout explained variance R2 threshold"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.6561,
+    "probabilities": {
+     "0": 0.0875,
+     "1": 0.169,
+     "2": 0.7435
+    },
+    "confidence": 0.3836,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7485,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.1516,
+     "2": 0.7984
+    },
+    "confidence": 0.4945,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8601,
+    "probabilities": {
+     "0": 0.0293,
+     "1": 0.0813,
+     "2": 0.8894
+    },
+    "confidence": 0.6978,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.713,
+    "probabilities": {
+     "0": 0.053,
+     "1": 0.181,
+     "2": 0.766
+    },
+    "confidence": 0.4335,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.3415,
+    "probabilities": {
+     "0": 0.125,
+     "1": 0.4085,
+     "2": 0.4665
+    },
+    "confidence": 0.1002,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.0615,
+    "probabilities": {
+     "0": 0.2052,
+     "1": 0.528,
+     "2": 0.2668
+    },
+    "confidence": 0.0881,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.7686,
+    "probabilities": {
+     "0": 0.0492,
+     "1": 0.133,
+     "2": 0.8178
+    },
+    "confidence": 0.5334,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.9785,
+    "probabilities": {
+     "0": 0.2308,
+     "1": 0.5599,
+     "2": 0.2093
+    },
+    "confidence": 0.1158,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.6552,
+    "probabilities": {
+     "0": 0.0707,
+     "1": 0.2035,
+     "2": 0.7258
+    },
+    "confidence": 0.3599,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1506,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
