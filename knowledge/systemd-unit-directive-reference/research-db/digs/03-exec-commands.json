@@ -1,0 +1,35 @@
+{
+ "nn": "03",
+ "slug": "exec-commands",
+ "scope": "The ExecStart family (ExecStart/ExecStartPre/ExecStartPost/ExecCondition/ExecStop/ExecStopPost/ExecReload/ExecReloadPost) with ordering, prefix modifiers, and failure/skip semantics.",
+ "queries_attempted": [
+  {
+   "query": "systemd ExecStartPre ExecStartPost ExecCondition exit codes skip fail semantics",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "systemd ExecStop ExecStopPost ExecReload prefix - : + execution commands",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://stackoverflow.com/questions/68491889/execcondition-doesnt-prevent-start-of-service",
+  "https://unix.stackexchange.com/questions/659647/execcondition-doesnt-prevent-start-of-service",
+  "https://man7.org/linux/man-pages/man5/systemd.service.5.html",
+  "https://serverfault.com/questions/1016586/prevent-a-systemd-service-from-starting-if-another-systemd-service-is-running",
+  "https://unix.stackexchange.com/questions/726729/run-systemd-service-only-if-script-condion-is-true",
+  "https://stackoverflow.com/questions/56928677/how-to-ignore-a-failure-of-an-execstart-in-systemd",
+  "https://www.dev-toolbox.tech/tools/systemd-unit-generator/examples/exec-directives-deep-dive",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+  "https://manpages.debian.org/buster/systemd/systemd.service.5.en.html",
+  "https://stackoverflow.com/questions/30640717/systemd-script-does-execstop-right-after-execstart",
+  "https://en.wikipedia.org/wiki/Systemd"
+ ],
+ "outcome": "authored"
+}

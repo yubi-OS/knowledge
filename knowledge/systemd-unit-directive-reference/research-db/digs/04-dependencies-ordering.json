@@ -1,0 +1,35 @@
+{
+ "nn": "04",
+ "slug": "dependencies-ordering",
+ "scope": "Dependency vs ordering directives (Requires/Wants/BindsTo/PartOf/Upholds, After/Before), [Install] section, unit file search path precedence, and the drop-in override pattern.",
+ "queries_attempted": [
+  {
+   "query": "systemd unit dependencies Requires Wants BindsTo PartOf differences ordering After Before",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "systemd unit file search path drop-in directory override conf precedence",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.dev-toolbox.tech/tools/systemd-unit-generator/examples/dependency-ordering",
+  "https://fedoramagazine.org/systemd-unit-dependencies-and-order/",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-dependencies-on-ubuntu/view",
+  "https://adhdecode.com/articles/systemd/systemd-dependency-ordering-guide/",
+  "https://serverfault.com/questions/1012550/systemd-requires-vs-bindsto",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-override-systemd-service-parameters-with-drop-in-files-on-ubuntu/view",
+  "https://www.bigiron.cc/guides/systemd-drop-ins-overriding-a-unit-without-editing-the-package-file",
+  "https://www.freedesktop.org/software/systemd/man/systemd.unit.html",
+  "https://jira.mariadb.org/browse/MXS-2627",
+  "https://www.flatcar.org/docs/latest/os-config/host-config/drop-in-units/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,96 @@
+{
+  "topic": "systemd unit directives reference: the exec/unit/service directive map, sandboxing directives, and how to find the right man page for a hardening or service-design question",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "man-page-map",
+      "scope": "How systemd man pages divide unit configuration (systemd.unit(5), systemd.service(5), systemd.exec(5), systemd.resource-control(5), systemd.kill(5), systemd.directives(7)) and how to route a hardening or service-design question to the right page.",
+      "seed_queries": [
+        "systemd.directives index man page find directive systemd.unit systemd.exec",
+        "systemd man pages which page unit vs exec vs service vs resource-control documentation"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "service-types",
+      "scope": "Type= semantics for all eight values (simple, exec, forking, oneshot, notify, notify-reload, idle, dbus) including startup-detection behavior and selection criteria.",
+      "seed_queries": [
+        "systemd service Type= notify exec simple forking oneshot differences which to use",
+        "systemd Type=notify-reload v255 sd_notify READY RELOADING service type"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "exec-commands",
+      "scope": "The ExecStart family (ExecStart/ExecStartPre/ExecStartPost/ExecCondition/ExecStop/ExecStopPost/ExecReload/ExecReloadPost) with ordering, prefix modifiers, and failure/skip semantics.",
+      "seed_queries": [
+        "systemd ExecStartPre ExecStartPost ExecCondition exit codes skip fail semantics",
+        "systemd ExecStop ExecStopPost ExecReload prefix - : + execution commands"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "dependencies-ordering",
+      "scope": "Dependency vs ordering directives (Requires/Wants/BindsTo/PartOf/Upholds, After/Before), [Install] section, unit file search path precedence, and the drop-in override pattern.",
+      "seed_queries": [
+        "systemd unit dependencies Requires Wants BindsTo PartOf differences ordering After Before",
+        "systemd unit file search path drop-in directory override conf precedence"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "sandboxing-directives",
+      "scope": "The systemd.exec sandboxing surface (DynamicUser, Private*, Protect*, Restrict*, NoNewPrivileges, SystemCallFilter, CapabilityBoundingSet) and the hardened baseline combo.",
+      "seed_queries": [
+        "systemd sandboxing directives ProtectSystem DynamicUser SystemCallFilter hardening best practices",
+        "systemd-analyze security systemd.exec sandboxing directives guide"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "resource-control-restart",
+      "scope": "systemd.resource-control(5) cgroups v2 limits (MemoryMax/MemoryHigh/CPUQuota/CPUWeight/TasksMax) and restart/watchdog policy (Restart=, RestartSec, RestartSteps, RestartMaxDelaySec, WatchdogSec).",
+      "seed_queries": [
+        "systemd.resource-control MemoryMax MemoryHigh CPUQuota cgroups v2 unit directives",
+        "systemd Restart on-failure watchdog WatchdogSec RestartSec exponential backoff RestartSteps"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "credentials-directories",
+      "scope": "Per-service credentials (LoadCredential/LoadCredentialEncrypted/SetCredential via $CREDENTIALS_DIRECTORY) and the StateDirectory/RuntimeDirectory family plus RootImage/RootEphemeral.",
+      "seed_queries": [
+        "systemd credentials LoadCredential LoadCredentialEncrypted SetCredential CREDENTIALS_DIRECTORY",
+        "systemd StateDirectory RuntimeDirectory CacheDirectory DynamicUser service directories"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "v261-directives",
+      "scope": "New directives and behavior in systemd v259 through v261 (Type=notify-reload, PrivateUsers variants, RestrictFileSystemAccess manager-level semantics, CPUSetPartition, PSI pressure watches, ConditionFraction, ConditionMachineTag, Varlink wire-value changes).",
+      "seed_queries": [
+        "systemd v261 release notes new directives RestrictFileSystemAccess CPUSetPartition",
+        "systemd v260 PrivateUsers managed ConditionFraction PSI pressure watch release"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef",
+    "answers": {
+      "t01": {"score": 1.7276, "probabilities": {"0": 0.0593, "1": 0.1538, "2": 0.7869}, "confidence": 0.4695, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.8708, "probabilities": {"0": 0.0278, "1": 0.0736, "2": 0.8986}, "confidence": 0.7205, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.9344, "probabilities": {"0": 0.0191, "1": 0.0274, "2": 0.9535}, "confidence": 0.8655, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.8868, "probabilities": {"0": 0.0305, "1": 0.0522, "2": 0.9173}, "confidence": 0.7677, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.945, "probabilities": {"0": 0.0151, "1": 0.0248, "2": 0.9601}, "confidence": 0.8839, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.7692, "probabilities": {"0": 0.0531, "1": 0.1246, "2": 0.8223}, "confidence": 0.5418, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.5071, "probabilities": {"0": 0.0874, "1": 0.3182, "2": 0.5944}, "confidence": 0.1934, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 0.993, "probabilities": {"0": 0.1175, "1": 0.7719, "2": 0.1106}, "confidence": 0.4328, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1494, "output_tokens": 0},
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08"],
+    "notes": "t08 scored marginal (0.99): kept only if the dig comes back strong per criteria. t07 scored 1.51 marginal-leaning-load-bearing: kept."
+  }
+}
