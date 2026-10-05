@@ -1,0 +1,248 @@
+{
+ "topic": "LUKS2 FIDO2 end-to-end testing - test design for verifying FIDO2-based disk unlock from enrollment through boot unlock, in CI VMs and on real hardware",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "cryptenroll-fido2",
+   "scope": "systemd-cryptenroll --fido2-device flow: how a FIDO2 credential gets enrolled into a LUKS2 header, the token JSON layout, and what enrollment verification means",
+   "seed_queries": [
+    "systemd-cryptenroll fido2-device LUKS2 token enroll",
+    "systemd cryptenroll --fido2-device=auto LUKS2 token JSON format"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "boot-unlock-path",
+   "scope": "The boot-time unlock path: systemd-cryptsetup and initramfs FIDO2 token handling from early userspace through disk open",
+   "seed_queries": [
+    "systemd-cryptsetup initramfs FIDO2 unlock LUKS2",
+    "systemd crypttab fido2 ask-password initramfs unlock"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "hmac-secret-vs-u2f",
+   "scope": "Why CTAP2 hmac-secret (not CTAP1/U2F) is the credential type that makes FIDO2 disk unlock possible, and how pam-u2f differs",
+   "seed_queries": [
+    "FIDO2 hmac-secret extension LUKS disk unlock",
+    "pam-u2f vs systemd FIDO2 hmac-secret difference"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "software-authenticators",
+   "scope": "Software authenticators usable in CI VMs: libfido2 softoken / swu2f, passless, and what each covers of CTAP1 vs CTAP2 hmac-secret",
+   "seed_queries": [
+    "libfido2 software authenticator softoken testing",
+    "passless software FIDO2 authenticator CTAP2 hmac-secret"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "swtpm-measured-boot",
+   "scope": "swtpm-backed TPM devices in QEMU VMs for measured-boot test legs: /dev/tpm0 and /dev/tpmrm0 exposure and what they enable",
+   "seed_queries": [
+    "QEMU swtpm TPM device /dev/tpmrm0 testing",
+    "swtpm measured boot systemd CI VM"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "bcvk-vm-harness",
+   "scope": "bcvk as the VM harness: ephemeral run, native-to-disk install, image pulls into podman storage, and pinned release descendants",
+   "seed_queries": [
+    "bcvk bootc virtualization kit ephemeral run",
+    "bcvk native-to-disk install bootc VM testing"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "yubikey-passthrough",
+   "scope": "Real-hardware legs: YubiKey USB passthrough into VMs and hardware-in-the-loop test runners, and why physical tokens stay the release authority",
+   "seed_queries": [
+    "QEMU USB passthrough YubiKey FIDO2 VM test",
+    "hardware in the loop CI YubiKey FIDO2 unlock"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "test-guardrails",
+   "scope": "Guardrails that keep software authenticators TEST-only: dev image vs production image separation and release-confidence policy",
+   "seed_queries": [
+    "test only software authenticator production image separation CI",
+    "FIDO2 software token never production regression testing policy"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "systemd-homed-fido2",
+   "scope": "systemd-homed FIDO2-protected homes as a second unlock leg: LUKS2 home directories and the homed authentication path",
+   "seed_queries": [
+    "systemd-homed fido2 luks2 home directory encryption",
+    "systemd-homed yubikey fido2 authentication unlock"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8755,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0315,
+     "1": 0.0615,
+     "2": 0.907
+    },
+    "confidence": 0.7411
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.8889,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0227,
+     "1": 0.0656,
+     "2": 0.9117
+    },
+    "confidence": 0.7539
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.5078,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0812,
+     "1": 0.3297,
+     "2": 0.5891
+    },
+    "confidence": 0.1934
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.8048,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0418,
+     "1": 0.1117,
+     "2": 0.8465
+    },
+    "confidence": 0.5963
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.2534,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1573,
+     "1": 0.432,
+     "2": 0.4107
+    },
+    "confidence": 0.0701
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.508,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0931,
+     "1": 0.3058,
+     "2": 0.6011
+    },
+    "confidence": 0.1953
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.8212,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0427,
+     "1": 0.0933,
+     "2": 0.864
+    },
+    "confidence": 0.6355
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.452,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0798,
+     "1": 0.3885,
+     "2": 0.5317
+    },
+    "confidence": 0.1601
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.1094,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1726,
+     "1": 0.5455,
+     "2": 0.2819
+    },
+    "confidence": 0.1102
+   }
+  },
+  "usage": {
+   "input_tokens": 1604,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}

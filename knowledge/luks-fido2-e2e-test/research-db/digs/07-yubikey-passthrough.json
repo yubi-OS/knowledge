@@ -1,0 +1,59 @@
+{
+ "nn": "07",
+ "slug": "yubikey-passthrough",
+ "scope": "Real-hardware legs: YubiKey USB passthrough into VMs and hardware-in-the-loop test runners, and why physical tokens stay the release authority",
+ "queries_attempted": [
+  {
+   "query": "QEMU USB passthrough YubiKey FIDO2 VM test",
+   "attempt": 1,
+   "raw_results": 53,
+   "kept": 6
+  },
+  {
+   "query": "hardware in the loop CI YubiKey FIDO2 unlock",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "YubiKey qemu usb host passthrough virtual machine",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 hardware token CI automation testing",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "YubiKey qemu usb host passthrough virtual machine"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "FIDO2 hardware token CI automation testing"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.qemu.org/docs/master/system/devices/usb-u2f.html",
+  "https://qemu.readthedocs.io/en/v10.0.3/system/devices/usb-u2f.html",
+  "https://www.qemu.org/docs/master/system/devices/usb.html",
+  "https://github.com/bulwarkid/virtual-fido",
+  "https://www.yubico.com/authentication-standards/fido2/",
+  "https://learn.microsoft.com/en-us/troubleshoot/windows-server/virtualization/usb-device-hyper-v-virtual-machine",
+  "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "https://developers.yubico.com/CTAP/CTAP2.1.html"
+ ],
+ "outcome": "authored"
+}

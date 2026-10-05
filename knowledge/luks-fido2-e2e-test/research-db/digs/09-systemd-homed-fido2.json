@@ -1,0 +1,59 @@
+{
+ "nn": "09",
+ "slug": "systemd-homed-fido2",
+ "scope": "systemd-homed FIDO2-protected homes as a second unlock leg: LUKS2 home directories and the homed authentication path",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed fido2 luks2 home directory encryption",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "systemd-homed yubikey fido2 authentication unlock",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "systemd-homed luks2 fido2 security key login",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "systemd-homed encryption password authentication",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "systemd-homed luks2 fido2 security key login"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt-1 query for q2 returned mostly off-topic results (shopping/travel/retail pages)",
+   "new_queries": [
+    "systemd-homed encryption password authentication"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://systemd.io/USER_RECORD/",
+  "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+  "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+  "https://sumguy.com/systemd-homed-portable-homes/",
+  "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only",
+  "https://ghostarchive.org/archive/AxynM",
+  "https://developers.yubico.com/CTAP/CTAP2.1.html"
+ ],
+ "outcome": "authored"
+}
