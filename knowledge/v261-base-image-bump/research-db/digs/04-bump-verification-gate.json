@@ -1,0 +1,48 @@
+{
+  "nn": "04",
+  "slug": "bump-verification-gate",
+  "scope": "The two-command bump gate: docker buildx imagetools inspect on the new digest, then docker run with systemd --version as a functional smoke check.",
+  "queries_attempted": [
+    {
+      "query": "docker buildx imagetools inspect verify manifest",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 0
+    },
+    {
+      "query": "container smoke test systemd --version boot",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 0
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/reference/cli/docker/buildx/imagetools/inspect/",
+    "https://docs.docker.com/reference/cli/docker/buildx/imagetools/",
+    "https://labex.io/tutorials/docker-how-to-use-docker-buildx-imagetools-inspect-command-to-examine-image-details-555058",
+    "https://github.com/docker/buildx/blob/master/docs/reference/buildx_imagetools_inspect.md",
+    "https://oneuptime.com/blog/post/2026-02-08-how-to-check-the-os-and-architecture-of-a-docker-image/view",
+    "https://github.com/google/cadvisor/pull/3920",
+    "https://www.docker.com/",
+    "https://docker.ubitools.com/reference/cli/docker/buildx/imagetools/inspect/",
+    "https://docs.docker.com/reference/cli/docker/image/inspect",
+    "https://github.com/sharifelgamal/docker-buildx/blob/master/docs/reference/buildx_imagetools_inspect.md",
+    "https://stackoverflow.com/questions/75521775/buildx-docker-image-claims-to-be-a-manifest-list",
+    "https://www.docker.com/products/docker-desktop/",
+    "https://github.com/bootc-dev/bootc",
+    "https://systemd.io/DEBUGGING/",
+    "https://www.containerstore.com/welcome.htm?msockid=399c8fc36e2e6b7d12cd982a6f1c6a26",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_atomic_host/7/html/managing_containers/running_containers_as_systemd_services_with_podman",
+    "https://bugs.launchpad.net/ubuntu/+source/systemd/+bug/1519499",
+    "https://tomasvotruba.com/blog/cost-effective-container-smoke-tests-every-symfony-project-must-have",
+    "https://www.docker.com/resources/what-container/",
+    "https://discuss.linuxcontainers.org/t/systemd-networkd-not-working-in-debian-sid-or-bullseye-images/11503?page=2",
+    "https://mylinux.work/projects/windows-container-smoke-tests/",
+    "https://github.com/rfxn/advanced-policy-firewall",
+    "https://containerone.net/collections/shipping-containers-for-sale",
+    "https://github.com/sarbanha/systemd-container"
+  ],
+  "outcome": "authored"
+}

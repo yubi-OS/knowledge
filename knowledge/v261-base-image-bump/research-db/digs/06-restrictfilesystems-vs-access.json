@@ -1,0 +1,45 @@
+{
+  "nn": "06",
+  "slug": "restrictfilesystems-vs-access",
+  "scope": "The consistency trap: RestrictFileSystems= (older BPF-LSM filesystem-type control, used in the shipped yubiOS enrollment unit) versus RestrictFileSystemAccess= (v261 signed-filesystem control).",
+  "queries_attempted": [
+    {
+      "query": "systemd RestrictFileSystems directive BPF LSM",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 0
+    },
+    {
+      "query": "systemd RestrictFileSystemAccess directive",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 0
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://kinvolk.io/blog/2021/02/extending-systemd-security-features-with-ebpf",
+    "https://deepwiki.com/systemd/systemd/8.2-process-sandboxing-and-isolation",
+    "https://docs.kernel.org/bpf/prog_lsm.html",
+    "https://github.com/systemd/systemd/issues/32968",
+    "https://eunomia.dev/tutorials/19-lsm-connect/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://lwn.net/Articles/1082111/",
+    "https://www.man7.org/linux/man-pages/man7/systemd.directives.7.html",
+    "https://github.com/systemd/systemd/blob/main/README",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd.directives.html",
+    "https://systemd.io/",
+    "https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2166235",
+    "https://www.freedesktop.org/software/systemd/man/253/systemd.directives.html",
+    "https://oneuptime.com/blog/post/2026-03-02-use-systemd-protectsystem-protecthome-directives-ubuntu/view",
+    "https://man7.org/linux/man-pages/man7/kernel-command-line.7.html",
+    "https://man7.org/linux/man-pages/man7/systemd.directives.7.html",
+    "https://devopsil.com/articles/2026-03-29-linux-systemd-service-hardening",
+    "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+    "https://forums.linuxmint.com/viewtopic.php?t=379138",
+    "https://www.freedesktop.org/software/systemd/man/260/systemd.directives.html",
+    "https://systemd.io/CREDENTIALS/"
+  ],
+  "outcome": "authored"
+}
