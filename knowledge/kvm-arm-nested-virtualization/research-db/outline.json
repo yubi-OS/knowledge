@@ -1,0 +1,215 @@
+{
+  "topic": "KVM-on-ARM nested virtualization - verification and enablement of kvm_arm=nested on ARM64 hosts, its status, and how to test it",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "interface-history",
+      "scope": "The three nested-virt selection mechanisms in ARM KVM history: the 2017-2018 prototype sysfs knob /sys/module/kvm_arm/parameters/nested, the Linux 6.2 upstream landing of the 68-patch v7 series, and the 2024-10 kvm-arm.mode doc consolidation; why the old module-parameter path is stale.",
+      "seed_queries": [
+        "/sys/module/kvm_arm/parameters/nested arm KVM nested virtualization module parameter sysfs",
+        "KVM arm64 nested virtualization upstream Linux 6.2 patch series Marc Zyngier"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "kvm-arm-mode",
+      "scope": "The current kvm-arm.mode tri-state kernel parameter (nvhe default, protected, nested), their mutual exclusivity, experimental status, and what the upstream documentation says about each mode.",
+      "seed_queries": [
+        "kvm-arm.mode kernel parameter documentation nested nvhe protected",
+        "Documentation update behaviour kvm-arm.mode patch linux-arm-kernel"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "feat-nv-feat-nv2-hardware",
+      "scope": "FEAT_NV vs FEAT_NV2 architectural difference (VNCR_EL2 addressing change), the ARM64_HAS_NESTED_VIRT cpufeature, and the hardware matrix: Apple M2, Neoverse-N2, Cortex-A710/A715/A720 vs Cortex-A53/A55/A76 and Graviton 2.",
+      "seed_queries": [
+        "FEAT_NV2 nested virtualization ARMv8.4 CPUs support list",
+        "Apple M2 KVM nested virtualization Linux ARM FEAT_NV2 support"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "verify-host",
+      "scope": "How to verify nested KVM state on a running ARM64 host: kernel cmdline, dmesg KVM mode reporting, cpufeature evidence, lsmod/module-builtin distinctions, and why the old sysfs path is absent on modern kernels.",
+      "seed_queries": [
+        "check nested virtualization enabled KVM ARM64 host dmesg kvm-arm.mode",
+        "verify KVM arm hypervisor mode nvhe protected nested running system"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "enable-cmdline",
+      "scope": "How to enable kvm-arm.mode=nested via kernel command line on systemd-boot, GRUB, and UKI EFI-stub cmdlines; why modprobe kvm_arm nested=1 fails on modern kernels; safe baseline nvhe.",
+      "seed_queries": [
+        "enable nested virtualization KVM arm64 kernel command line kvm-arm.mode=nested",
+        "modprobe kvm nested unknown parameter arm64 enable nested"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "nested-qemu-guest",
+      "scope": "Running nested guests with qemu-system-aarch64 -M virt -cpu host -enable-kvm: the L0/L1/L2 recipe, in-guest kernel cmdline, and the QEMU SYSREG_<IDREG>_<FIELD> ID-register masking surface including KVM_CAP_ARM_WRITABLE_IMP_ID_REGS.",
+      "seed_queries": [
+        "qemu-system-aarch64 nested virtualization KVM guest virt machine host cpu",
+        "QEMU arm64 CPU ID register override writable id registers KVM capability"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "internals-vncr",
+      "scope": "How KVM arm64 nested virtualization works under the hood: the v7 series structure (68 patches), VNCR_EL2 virtual nested control register pages, FEAT_NV2 traps, and the ARM64_HAS_NESTED_VIRT cpufeature gating.",
+      "seed_queries": [
+        "VNCR_EL2 nested virtualization KVM arm64 virtual nested control register",
+        "ARM64_HAS_NESTED_VIRT cpufeature KVM arm64 nested implementation"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "ci-testing-drift",
+      "scope": "Testing nested KVM in CI: hardware-fail-closed capability probes, host matrix enumeration (Graviton 3 vs Graviton 2), fail-safe test design, and upstream drift surfaces to watch (QEMU named CPU models RFC, kvm-arm.mode doc updates).",
+      "seed_queries": [
+        "AWS Graviton nested virtualization KVM support instance Graviton 3",
+        "nested virtualization CI arm64 QEMU testing L2 guest"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 0.5568,
+        "probabilities": {
+          "0": 0.519,
+          "1": 0.4052,
+          "2": 0.0758
+        },
+        "confidence": 0.1589,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.115,
+        "probabilities": {
+          "0": 0.2169,
+          "1": 0.4512,
+          "2": 0.3319
+        },
+        "confidence": 0.0412,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.7024,
+        "probabilities": {
+          "0": 0.0706,
+          "1": 0.1564,
+          "2": 0.773
+        },
+        "confidence": 0.4405,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.8915,
+        "probabilities": {
+          "0": 0.0274,
+          "1": 0.0537,
+          "2": 0.9189
+        },
+        "confidence": 0.7721,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.7181,
+        "probabilities": {
+          "0": 0.0772,
+          "1": 0.1275,
+          "2": 0.7953
+        },
+        "confidence": 0.482,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.6655,
+        "probabilities": {
+          "0": 0.0769,
+          "1": 0.1806,
+          "2": 0.7425
+        },
+        "confidence": 0.3846,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.7789,
+        "probabilities": {
+          "0": 0.3433,
+          "1": 0.5345,
+          "2": 0.1222
+        },
+        "confidence": 0.1277,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.7568,
+        "probabilities": {
+          "0": 0.3968,
+          "1": 0.4496,
+          "2": 0.1536
+        },
+        "confidence": 0.0748,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1233,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

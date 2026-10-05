@@ -1,0 +1,64 @@
+{
+  "nn": "05",
+  "slug": "enable-cmdline",
+  "scope": "How to enable kvm-arm.mode=nested via kernel command line on systemd-boot, GRUB, and UKI EFI-stub cmdlines; why modprobe kvm_arm nested=1 fails on modern kernels; safe baseline nvhe.",
+  "queries_attempted": [
+    {
+      "query": "enable nested virtualization KVM arm64 kernel command line kvm-arm.mode=nested",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "modprobe kvm nested unknown parameter arm64 enable nested",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 4
+    },
+    {
+      "query": "arm64 boot enable kvm-arm.mode nested kernel parameter boot loader",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 5
+    },
+    {
+      "query": "KVM arm64 nested virtualization enable grub systemd-boot command line",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 4
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig: ARM-specific claims (dmesg mode report, cmdline enablement) backed only by low-weight sources",
+      "new_queries": [
+        "arm64 boot enable kvm-arm.mode nested kernel parameter boot loader",
+        "KVM arm64 nested virtualization enable grub systemd-boot command line"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://docs.fedoraproject.org/en-US/quick-docs/using-nested-virtualization-in-kvm/",
+    "https://ubuntu.com/server/docs/how-to/virtualisation/enable-nested-virtualisation/",
+    "https://www.howtogeek.com/devops/how-to-enable-nested-kvm-virtualization/",
+    "https://ostechnix.com/how-to-enable-nested-virtualization-in-kvm-in-linux/",
+    "https://www.virtual-pc.com/how-to-enable-nested-virtualization-in-kvm-on-linux/",
+    "https://www.merriam-webster.com/dictionary/enable",
+    "https://www.kernel.org/doc/html/v5.7/virt/kvm/running-nested-guests.html",
+    "https://stackoverflow.com/questions/43942033/nested-virtualization-with-kvm-enable-kvm-in-qemu-in-nested-virtualization",
+    "https://www.amazon.com/amazonprime",
+    "https://docs.kernel.org/virt/kvm/x86/running-nested-guests.html",
+    "https://lwn.net/Articles/877175/",
+    "https://www.pk-sharma.com/briefing/linux-arm64-kvm-nested-escape-exposure",
+    "https://pureinfotech.com/check-if-processor-arm64-x64-64bit-windows-11/",
+    "https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html",
+    "https://origin.kernel.org/doc/html/latest/arch/arm/booting.html",
+    "http://www.virtualopensystems.com/en/solutions/guides/kvm-on-armv8/",
+    "https://support.microsoft.com/en-us/windows/experience/enable-virtualization-on-windows",
+    "https://lwn.net/Articles/728193/",
+    "https://help.ubuntu.com/community/KVM/FAQ"
+  ],
+  "outcome": "authored"
+}

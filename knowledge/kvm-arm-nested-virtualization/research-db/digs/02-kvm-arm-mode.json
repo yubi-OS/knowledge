@@ -1,0 +1,35 @@
+{
+  "nn": "02",
+  "slug": "kvm-arm-mode",
+  "scope": "The current kvm-arm.mode tri-state kernel parameter (nvhe default, protected, nested), their mutual exclusivity, experimental status, and what the upstream documentation says about each mode.",
+  "queries_attempted": [
+    {
+      "query": "kvm-arm.mode kernel parameter documentation nested nvhe protected",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "Documentation update behaviour kvm-arm.mode patch linux-arm-kernel",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 5
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://lkml.org/lkml/2024/10/24/1323",
+    "https://lkml.org/lkml/2024/10/24/1791",
+    "https://lkml.iu.edu/2410.3/01124.html",
+    "https://lists.openwrt.org/pipermail/linux-arm-kernel/2023-May/837104.html",
+    "https://support.microsoft.com/en-us/windows/experience/enable-virtualization-on-windows",
+    "https://www.kernel.org/doc/html/latest/arch/powerpc/kvm-nested.html",
+    "https://lkml.iu.edu/hypermail/linux/kernel/2410.2/11356.html",
+    "https://www.kernel.org/doc/html/v5.7/virt/kvm/arm/index.html",
+    "https://lkml.org/lkml/2024/10/25/560",
+    "https://en.wikipedia.org/wiki/Documentation",
+    "https://apple-tree.life/~michael/blog/2011/"
+  ],
+  "outcome": "authored"
+}

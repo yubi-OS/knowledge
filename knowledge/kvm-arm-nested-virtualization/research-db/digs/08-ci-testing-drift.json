@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "ci-testing-drift",
+  "scope": "Testing nested KVM in CI: hardware-fail-closed capability probes, host matrix enumeration (Graviton 3 vs Graviton 2), fail-safe test design, and upstream drift surfaces to watch (QEMU named CPU models RFC, kvm-arm.mode doc updates).",
+  "queries_attempted": [
+    {
+      "query": "AWS Graviton nested virtualization KVM support instance Graviton 3",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "nested virtualization CI arm64 QEMU testing L2 guest",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.repost.aws/questions/QUChyy06f6TRKgitoNLKV4DQ/nested-virtualization-support-on-ec2-graviton-3-metal-instances",
+    "https://repost.aws/questions/QU8NxrQuk3Rla42meRIear6g/does-graviton-3-support-nested-virtualization",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nested-virtualization.html",
+    "https://lore.kernel.org/all/86jzqayq2q.wl-maz@kernel.org/",
+    "https://aws.amazon.com/",
+    "https://repost.aws/questions/QUEoabj2ZERq2P5QFL6d6-RQ/nested-virtualization-on-graviton",
+    "https://www.kernel.org/doc/html/v5.7/virt/kvm/running-nested-guests.html",
+    "https://securityarsenal.com/blog/cve-2026-89775-arm64-kvm-nested-virtualization-guest-escape-detection-mitigation-and-patching-guide",
+    "https://github.com/zalexdev/linux-um-arm64/blob/um-arm64/Documentation/virt/kvm/x86/running-nested-guests.rst",
+    "https://docs.kernel.org/6.0/virt/kvm/x86/running-nested-guests.html",
+    "https://nested.com/",
+    "https://wf.lavatech.top/lun-4/"
+  ],
+  "outcome": "authored"
+}
