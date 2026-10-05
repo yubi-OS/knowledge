@@ -1,0 +1,36 @@
+{
+ "nn": 5,
+ "slug": "permissions-matrix-hygiene",
+ "scope": "Workflow permissions blocks (top-level least privilege, redundant job-level overrides, no read-write GITHUB_TOKEN defaults) and matrix strategy conventions (include stubs, fail-fast false, pinned ubuntu-24.04 runner).",
+ "queries_attempted": [
+  {
+   "query": "GitHub Actions GITHUB_TOKEN permissions least privilege job level",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "GitHub Actions matrix strategy fail-fast include ubuntu-latest pinning",
+   "attempt": 1,
+   "raw_results": 36,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/GitHubSecurityLab/actions-permissions",
+  "https://blog.stephane-robert.info/en/docs/pipeline-cicd/github/securite/permissions/",
+  "https://starsling.dev/best-practices/github-actions/limit-github-actions-permissions",
+  "https://docs.github.com/actions/using-jobs/assigning-permissions-to-jobs",
+  "https://craci.com/blog/github-token-permissions",
+  "https://devsecopsatlas.com/guides/github-token-permissions-checklist",
+  "https://www.geeksforgeeks.org/git/the-matrix-strategy-in-github-actions/",
+  "https://fixdevs.com/blog/github-actions-matrix-strategy/",
+  "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations",
+  "https://runs-on.com/github-actions/the-matrix-strategy/",
+  "https://stackpractices.com/recipes/github-actions-matrix-strategy/",
+  "https://christosgalano.github.io/github-actions-strategy-and-matrix/"
+ ],
+ "outcome": "authored"
+}

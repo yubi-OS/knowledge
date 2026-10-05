@@ -1,0 +1,239 @@
+{
+ "topic": "CI workflow pattern analysis across a real repository (container+dind, action SHA pinning and integrity, reusable workflow composition) with patterns and anti-patterns found",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "container-block-architecture",
+   "scope": "The digest-pinned container: block as yubiOS CI security architecture: canonical 4-key shape (options, volumes, credentials, image), dhi.io/debian-base multi-arch index digest, 21 of 24 workflow coverage, --privileged rationale.",
+   "seed_queries": [
+    "GitHub Actions run job in container docker:// image credentials documentation",
+    "GitHub Actions container jobs privileged option volumes runner documentation"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "dind-patterns",
+   "scope": "Docker-in-docker patterns inside container jobs: rootless dockerd over a unix socket driven by docker buildx bake versus legacy inner-dind with --privileged --pid=host --ipc=host.",
+   "seed_queries": [
+    "docker buildx bake rootless dockerd unix socket CI container privileged",
+    "docker in docker privileged pid host ipc host install to disk bootc"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "sha-pinning-discipline",
+   "scope": "Full-length commit SHA pinning of every uses: ref: 65 uses across 24 workflows, zero floating refs, PINNED.md allowlist as source of truth, 8 stale actions/checkout v6.0.2 SHAs in 5 workflows.",
+   "seed_queries": [
+    "GitHub Actions security pin actions to full length commit SHA third-party",
+    "actions/checkout v7.0.1 release commit SHA pinning"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "pinning-doc-drift",
+   "scope": "Stale in-repo documentation (AGENTS.md, github-actions skill) drifting from the PINNED.md allowlist: superseded checkout SHA and container digest still documented, copy-paste re-introduction of drift, missing allowlist entries.",
+   "seed_queries": [
+    "documentation drift pinned versions supply chain security allowlist",
+    "GitHub Actions pinned action versions stale documentation risk"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "permissions-matrix-hygiene",
+   "scope": "Workflow permissions blocks (top-level least privilege, redundant job-level overrides, no read-write GITHUB_TOKEN defaults) and matrix strategy conventions (include stubs, fail-fast false, pinned ubuntu-24.04 runner).",
+   "seed_queries": [
+    "GitHub Actions GITHUB_TOKEN permissions least privilege job level",
+    "GitHub Actions matrix strategy fail-fast include ubuntu-latest pinning"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "secure-boot-signing-pattern",
+   "scope": "Canonical Secure Boot signing pattern: SoftHSM token bootstrap, mkosi --secure-boot-key-source provider:pkcs11 with systemd-sbsign per ADR-008, sbverify gate before VM boot, mkosi.conf Validation block.",
+   "seed_queries": [
+    "mkosi secure boot systemd-sbsign pkcs11 provider softhsm",
+    "sbverify sbsign verify unified kernel image UKI secure boot certificate"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "stub-divergence-analysis",
+   "scope": "How the sealed-UKI-VM workflow stub diverges from canonical: hardcoded slot vs --free, missing SOFTHSM2_CONF, engine:pkcs11 vs provider:pkcs11, wrong libsofthsm2.so path, no private key import, no cert generation.",
+   "seed_queries": [
+    "softhsm2 C_Initialize error 5 configuration environment sandbox",
+    "openssl pkcs11 engine deprecated pkcs11 provider migration"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "ovmf-provisioning-gap",
+   "scope": "The OVMF provisioning gap: OVMF_CODE.fd and OVMF_VARS.fd sourced from the edk2 build artifact, yubiOS ROTPK enrollment into OVMF db with virt-fw-vars, before QEMU Secure Boot tests.",
+   "seed_queries": [
+    "virt-fw-vars enroll secure boot db OVMF vars custom platform key",
+    "OVMF_CODE.fd OVMF_VARS.fd provisioning QEMU secure boot edk2 firmware artifact"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "remediation-roadmap",
+   "scope": "Prioritized fix list distilled from the audit: skill update, checkout SHA roll, container block restore, canonical signing adoption, OVMF provisioning; ordering rationale and verification gates.",
+   "seed_queries": [
+    "CI pipeline security hardening remediation priority checklist",
+    "secure boot CI test VM enrollment firmware artifact pipeline"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.732,
+    "probabilities": {
+     "0": 0.0624,
+     "1": 0.1431,
+     "2": 0.7945
+    },
+    "confidence": 0.4833,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7295,
+    "probabilities": {
+     "0": 0.0504,
+     "1": 0.1696,
+     "2": 0.78
+    },
+    "confidence": 0.4594,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8918,
+    "probabilities": {
+     "0": 0.0234,
+     "1": 0.0615,
+     "2": 0.9151
+    },
+    "confidence": 0.7627,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.8979,
+    "probabilities": {
+     "0": 0.2423,
+     "1": 0.6175,
+     "2": 0.1402
+    },
+    "confidence": 0.1895,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.9595,
+    "probabilities": {
+     "0": 0.2389,
+     "1": 0.5627,
+     "2": 0.1984
+    },
+    "confidence": 0.1195,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.6421,
+    "probabilities": {
+     "0": 0.4972,
+     "1": 0.3635,
+     "2": 0.1393
+    },
+    "confidence": 0.0981,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.7914,
+    "probabilities": {
+     "0": 0.3957,
+     "1": 0.4172,
+     "2": 0.1871
+    },
+    "confidence": 0.0485,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.2459,
+    "probabilities": {
+     "0": 0.8134,
+     "1": 0.1273,
+     "2": 0.0593
+    },
+    "confidence": 0.5221,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.8317,
+    "probabilities": {
+     "0": 0.3423,
+     "1": 0.4836,
+     "2": 0.1741
+    },
+    "confidence": 0.0721,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1373,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ }
+}

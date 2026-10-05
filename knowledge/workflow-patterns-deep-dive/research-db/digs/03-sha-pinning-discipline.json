@@ -1,0 +1,34 @@
+{
+ "nn": 3,
+ "slug": "sha-pinning-discipline",
+ "scope": "Full-length commit SHA pinning of every uses: ref: 65 uses across 24 workflows, zero floating refs, PINNED.md allowlist as source of truth, 8 stale actions/checkout v6.0.2 SHAs in 5 workflows.",
+ "queries_attempted": [
+  {
+   "query": "GitHub Actions security pin actions to full length commit SHA third-party",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "actions/checkout v7.0.1 release commit SHA pinning",
+   "attempt": 1,
+   "raw_results": 39,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.blog/changelog/2025-08-15-github-actions-policy-now-supports-blocking-and-sha-pinning-actions/",
+  "https://www.romainlespinasse.dev/posts/github-actions-commit-sha-pinning/",
+  "https://github.com/marketplace/actions/enforce-full-sha-commit-pinning-in-github-actions",
+  "https://dev.to/suzukishunsuke/pin-github-actions-to-a-full-length-commit-sha-for-security-2n7p",
+  "https://github.com/zgosalvez/github-actions-ensure-sha-pinned-actions",
+  "https://docs.github.com/en/actions/reference/security/secure-use",
+  "https://github.com/actions/checkout",
+  "https://stackoverflow.com/questions/78903499/how-do-i-pin-an-action-to-a-specific-sha",
+  "https://allencharp.github.io/2026/08/29/Pin-GitHub-Actions-To-Commit-SHA.html",
+  "https://github.com/actions/checkout/releases"
+ ],
+ "outcome": "authored"
+}
