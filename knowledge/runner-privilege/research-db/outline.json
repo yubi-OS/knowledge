@@ -1,0 +1,173 @@
+{
+ "topic": "runner-privilege",
+ "subtopics": [
+  {
+   "slug": "01-runner-admission-trust-boundary",
+   "scope": "Runner admission as a trust boundary before any process exists"
+  },
+  {
+   "slug": "02-github-hosted-vs-self-hosted",
+   "scope": "GitHub-hosted vs self-hosted runners: custody and its consequences"
+  },
+  {
+   "slug": "03-untrusted-pr-jobs-persistent-hosts",
+   "scope": "Untrusted PR-triggered jobs on persistent self-hosted hosts"
+  },
+  {
+   "slug": "04-ephemeral-runner-mitigation",
+   "scope": "Ephemeral and autoscaling runners as mitigation"
+  },
+  {
+   "slug": "05-tool-bootstrap-without-sudo",
+   "scope": "Tool bootstrap without sudo on a self-hosted runner"
+  },
+  {
+   "slug": "06-sha-pinning-org-rule",
+   "scope": "SHA pinning as the org rule for GitHub Actions references"
+  },
+  {
+   "slug": "07-runner-labels-scoping",
+   "scope": "Runner labels and workflow scoping: routing jobs to the right machines"
+  },
+  {
+   "slug": "08-hardware-host-segmentation",
+   "scope": "Segmentation of job classes on shared hardware lab hosts"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8106,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0487,
+     "1": 0.0919,
+     "2": 0.8594
+    },
+    "confidence": 0.6241
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.8734,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0262,
+     "1": 0.0741,
+     "2": 0.8997
+    },
+    "confidence": 0.7233
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.8734,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0279,
+     "1": 0.0708,
+     "2": 0.9013
+    },
+    "confidence": 0.7271
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.5688,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0796,
+     "1": 0.272,
+     "2": 0.6484
+    },
+    "confidence": 0.2511
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.352,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1423,
+     "1": 0.3634,
+     "2": 0.4943
+    },
+    "confidence": 0.095
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.4399,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.125,
+     "1": 0.3101,
+     "2": 0.5649
+    },
+    "confidence": 0.1464
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.6263,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0835,
+     "1": 0.2067,
+     "2": 0.7098
+    },
+    "confidence": 0.3302
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.2625,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1403,
+     "1": 0.4569,
+     "2": 0.4028
+    },
+    "confidence": 0.086
+   }
+  },
+  "usage": {
+   "input_tokens": 1041,
+   "output_tokens": 0
+  },
+  "note": "re-scored 2026-10-05 for the record under the v2 score metric; docs already shipped under the v1 outline"
+ }
+}
