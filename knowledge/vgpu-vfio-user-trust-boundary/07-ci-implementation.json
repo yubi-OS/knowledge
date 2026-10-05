@@ -1,0 +1,36 @@
+{
+  "nn": "07",
+  "slug": "ci-implementation",
+  "scope": "The landed CI implementation: ci_test-vgpu-vm.yml derived from ci_test-vm.yml, the bcvk --extra-qemu-arg patch, the pinned libvfio-user build, the loud-SKIP rc contract, and QEMU 10.1 vfio-user-pci.",
+  "queries_attempted": [
+    {
+      "query": "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "libvfio-user nutanix meson build samples gpio-pci-idio-16",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://movementarian.org/blog/posts/2025-08-27-vfio-user-client-in-qemu/",
+    "https://qemu-stsquad.readthedocs.io/en/docs-next/system/devices/vfio-user.html",
+    "https://qemu.eu/doc/10.1/system/devices/vfio-user.html",
+    "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "https://qemu.googlesource.com/libvfio-user/+/HEAD/docs/qemu.md",
+    "https://qemu.googlesource.com/libvfio-user/",
+    "https://github.com/nutanix/libvfio-user",
+    "https://github.com/nutanix/libvfio-user/blob/master/docs/qemu.md",
+    "https://deepwiki.com/nutanix/libvfio-user/5.2-gpio-pci-device",
+    "https://qemu.googlesource.com/libvfio-user/+/HEAD/samples/meson.build",
+    "https://intelkevinputnam.github.io/cloud-hypervisor-docs-HTML/docs/vfio-user.html",
+    "https://qemu.googlesource.com/libvfio-user/+/a8242d117118d5191dad69a96e28a21d66fe8b50/README.md"
+  ],
+  "outcome": "authored"
+}

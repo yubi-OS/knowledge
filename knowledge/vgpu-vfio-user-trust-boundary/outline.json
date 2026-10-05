@@ -1,0 +1,239 @@
+{
+  "topic": "vgpu-vfio-user-trust-boundary",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "vfio-pci-kernel-iommufd",
+      "scope": "Kernel VFIO framework: IOMMU groups as the isolation unit, container/group/device model, and the iommufd + device cdev migration with the legacy container/group path headed for deprecation.",
+      "seed_queries": [
+        "Linux kernel VFIO iommufd device cdev VFIO_DEVICE_BIND_IOMMUFD documentation",
+        "vfio legacy container group deprecation iommufd migration kernel docs"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "vfio-user-protocol",
+      "scope": "The vfio-user protocol: device model in a separate userspace process, QEMU as client over AF_UNIX, FD passing, version negotiation through GET_INFO/REGION_INFO/DMA_MAP/READ/WRITE/SET_IRQS, mutual distrust, and protocol limitations.",
+      "seed_queries": [
+        "vfio-user protocol specification qemu AF_UNIX DMA_MAP negotiation",
+        "libvfio-user protocol version negotiation region info irq client server"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "virtio-gpu-default",
+      "scope": "virtio-gpu as the default yubiOS image device model: paravirtualized emulation owned by the hypervisor, no new trust peer, and why the default image ships nothing else.",
+      "seed_queries": [
+        "QEMU virtio-gpu paravirtualized GPU device model security boundary",
+        "virtio-gpu-pci device emulation guest kernel DRM driver"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "dma-key-extraction",
+      "scope": "DMA-capable peripherals as a memory-disclosure primitive against unsealed secrets: what an untranslated device can read from kernel memory and why the IOMMU is the enforcing boundary.",
+      "seed_queries": [
+        "GPU DMA attack read kernel memory without IOMMU translation",
+        "DMA attacks extract disk encryption keys from RAM vulnerable peripherals"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "adr-rules-policy",
+      "scope": "Candidate ADR-024 policy rules: virtio-gpu only by default, passthrough as an opt-in documented deviation gated on IOMMU isolation, vfio-user socket 0600 VMM-user-owned, and the GPU-independent unlock invariant.",
+      "seed_queries": [
+        "GPU passthrough IOMMU group isolation requirements before assigning device",
+        "device assignment policy documented deviation opt-in security baseline"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "testability-matrix",
+      "scope": "What is testable where: hosted GitHub runners (Azure VMs, no nested virt, no IOMMU) versus self-hosted KVM runners versus bare metal for IOMMU passthrough and vendor vGPU.",
+      "seed_queries": [
+        "GitHub Actions hosted runner nested virtualization not supported Azure VMs",
+        "vfio pci passthrough requires real IOMMU hardware testing bare metal"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ci-implementation",
+      "scope": "The landed CI implementation: ci_test-vgpu-vm.yml derived from ci_test-vm.yml, the bcvk --extra-qemu-arg patch, the pinned libvfio-user build, the loud-SKIP rc contract, and QEMU 10.1 vfio-user-pci.",
+      "seed_queries": [
+        "QEMU 10.1 vfio-user-pci device client unix socket configuration",
+        "libvfio-user nutanix meson build samples gpio-pci-idio-16"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "failure-recovery",
+      "scope": "Failure modes and recovery baseline: passthrough without a working IOMMU, over-exposed vfio-user socket, GPU state coupled into the unlock path, pinned CI input drift, and the research-to-enforcement promotion gate.",
+      "seed_queries": [
+        "vfio device assignment failure modes broken IOMMU isolation recovery",
+        "CI pinned dependency drift patch no longer applies fail loudly skip"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "vendor-vgpu-3d",
+      "scope": "The mediated vGPU and 3D acceleration landscape: NVIDIA vGPU on bare metal, Intel GVT-g archived upstream, and virgl/Venus 3D acceleration requiring host GPU access.",
+      "seed_queries": [
+        "NVIDIA vGPU mediated device passthrough requirements hypervisor",
+        "Intel GVT-g deprecated archived upstream virgl Venus 3D virtio-gpu"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7699,
+        "probabilities": {
+          "0": 0.0428,
+          "1": 0.1445,
+          "2": 0.8127
+        },
+        "confidence": 0.5248,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.6278,
+        "probabilities": {
+          "0": 0.0702,
+          "1": 0.2318,
+          "2": 0.698
+        },
+        "confidence": 0.3188,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 0.851,
+        "probabilities": {
+          "0": 0.3089,
+          "1": 0.5312,
+          "2": 0.1599
+        },
+        "confidence": 0.1047,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.0394,
+        "probabilities": {
+          "0": 0.2989,
+          "1": 0.3628,
+          "2": 0.3383
+        },
+        "confidence": 0.0031,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.9649,
+        "probabilities": {
+          "0": 0.3238,
+          "1": 0.3874,
+          "2": 0.2888
+        },
+        "confidence": 0.0075,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.582,
+        "probabilities": {
+          "0": 0.0822,
+          "1": 0.2536,
+          "2": 0.6642
+        },
+        "confidence": 0.2684,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.5874,
+        "probabilities": {
+          "0": 0.0875,
+          "1": 0.2375,
+          "2": 0.675
+        },
+        "confidence": 0.2795,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.8694,
+        "probabilities": {
+          "0": 0.035,
+          "1": 0.0606,
+          "2": 0.9044
+        },
+        "confidence": 0.7343,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.0041,
+        "probabilities": {
+          "0": 0.2009,
+          "1": 0.5941,
+          "2": 0.205
+        },
+        "confidence": 0.153,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1457,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
