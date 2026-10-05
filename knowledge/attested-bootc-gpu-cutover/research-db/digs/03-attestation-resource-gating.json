@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "attestation-resource-gating",
+ "scope": "Attestation-based resource gating stacks: IMA + dm-verity + TPM PCRs, EAR/AR4SI trust claims, CoCo Trustee/KBS policy model, AWS Nitro PCR-to-KMS",
+ "queries_attempted": [
+  {
+   "query": "Confidential Containers Trustee KBS EAR AR4SI attestation policy",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "IMA dm-verity TPM PCR measured boot attestation gate",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://confidentialcontainers.org/docs/attestation/policies/",
+  "https://github.com/confidential-containers/trustee",
+  "https://confidentialcontainers.org/docs/attestation/architecture/",
+  "https://confidentialcontainers.org/docs/attestation/",
+  "https://github.com/confidential-containers/trustee/blob/main/kbs/docs/kbs_attestation_protocol.md",
+  "https://www.merriam-webster.com/dictionary/confidential",
+  "https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-attest-linux-workload",
+  "https://ima-doc.readthedocs.io/en/latest/ima-concepts.html",
+  "https://www.imaglobal.org/",
+  "https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation",
+  "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+  "https://www.linutronix.de/industrial_linux/security_tpm_hsm_modul.php"
+ ],
+ "outcome": "authored"
+}
