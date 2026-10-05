@@ -1,0 +1,20 @@
+{
+  "ref": "runner-privilege",
+  "validated_at": "2026-10-05T02:51:00Z",
+  "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "model": "clef",
+  "answers": {
+    "t01_runner_admission_trust_boundary": 0.8312,
+    "t02_github_hosted_vs_self_hosted": 0.826,
+    "t03_untrusted_pr_jobs_persistent_hosts": 0.9136,
+    "t04_ephemeral_runner_mitigation": 0.8404,
+    "t05_tool_bootstrap_without_sudo": 0.7806,
+    "t06_sha_pinning_org_rule": 0.5786,
+    "t07_runner_labels_workflow_scoping": 0.6622,
+    "t08_shared_hardware_host_segmentation": 0.7248,
+    "t09_github_large_runner_fallback": 0.2994
+  },
+  "kept": ["t01", "t02", "t03", "t04", "t05", "t06", "t07", "t08"],
+  "dropped": ["t09 (noul 0.2994 < 0.4)"],
+  "jev_requests_used": 1
+}
