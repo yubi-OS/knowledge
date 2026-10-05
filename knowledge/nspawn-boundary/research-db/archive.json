@@ -1,0 +1,770 @@
+[
+ {
+  "query": "systemd-nspawn container isolation how it works",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
+  "weight": 0.9089,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn container isolation how it works",
+  "title": "systemd-nspawn Lightweight Containers - mylinux.work",
+  "url": "https://mylinux.work/guides/systemd-nspawn-containers/",
+  "snippet": "Apr 13, 2026 \u00b7 Overview systemd-nspawn is a lightweight container manager built into systemd. No daemon, no image registry, no overlay filesystem \u2014 it runs a full OS tree in an isolated namespace, like chroot with proper process, network, and filesystem isolation. Every modern Linux distribution ships it. No additional packages beyond systemd-container. No background service to manage. Containers ",
+  "weight": 0.1351,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn container isolation how it works",
+  "title": "Introduction to systemd-nspawn Containers: chroot on Steroids",
+  "url": "https://mwalkowski.com/post/introduction-to-systemd-nspawn-containers-chroot-on-steroids/",
+  "snippet": "In this article, we will explore how systemd-nspawn allows the creation and management of containers in Linux, its main advantages, and how it differs from the more traditional chroot approach and other popular container solutions.",
+  "weight": 0.4049,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn container isolation how it works",
+  "title": "systemd-nspawn Container Manager | systemd/systemd | DeepWiki",
+  "url": "https://deepwiki.com/systemd/systemd/5.1-systemd-nspawn-container-manager",
+  "snippet": "Sep 10, 2026 \u00b7 Purpose and Scope systemd-nspawn is a lightweight container manager utilizing Linux kernel features such as namespaces, cgroups, and capabilities to spawn and manage OS containers. It isolates hostname, filesystems, process trees, users, and network stacks to securely execute commands or fully booted Linux OS instances inside containers.",
+  "weight": 0.445,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn container isolation how it works",
+  "title": "How to Use systemd-nspawn for Lightweight System Containers on...",
+  "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-use-systemd-nspawn-for-lightweight-system-containers-on-ubuntu/view",
+  "snippet": "Mar 2, 2026 \u00b7 Run lightweight system containers on Ubuntu using systemd-nspawn for process isolation without the overhead of Docker or full VMs, with networking and service management.",
+  "weight": 0.1515,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn container isolation how it works",
+  "title": "How does Container isolation work with non-containerized tabs - \u2026",
+  "url": "https://discourse.mozilla.org/t/how-does-container-isolation-work-with-non-containerized-tabs/14205",
+  "snippet": "As I have many open tabs already, currently I can not set a container type to be the default to open new tabs in, and containers are supposed to keep coo\u2026",
+  "weight": 0.4618,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+  "title": "systemd-nspawn vs chroot and bind mount? - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/457815/systemd-nspawn-vs-chroot-and-bind-mount",
+  "snippet": "Explore Stack Internal. systemd-nspawn vs chroot and bind mount? Ask Question.Does systemd-nspawn do special inside to a chroot or does it just provide a different method of running chroot + the appropriate ro --bind mounts for proc , sys .",
+  "weight": 0.0579,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name.",
+  "weight": 0.7474,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+  "title": "WSL-Style Isolation and the Container Design of NSL - Architecture ...",
+  "url": "https://braindetox.kr/en/posts/nsl_linux_for_wsl_isolated_environments_2026.html",
+  "snippet": "3 days ago \u00b7 At the center of this implementation is the union of systemd-nspawn and a shared QEMU virtual machine layer. Standard chroot jails lack cgroup resource accounting and robust root containment, whereas generic application container engines are not typically structured to initialize full multi-user operating system stacks.",
+  "weight": 0.1618,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+  "title": "A whirlwind tour of systemd-nspawn containers | Quantum",
+  "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+  "snippet": "Mar 22, 2025 \u00b7 An introduction to systemd-nspawn, a simple containerization technology that enables lightweight \u201cvirtual machines\u201d without a hypervisor, diving into how they might be set up.",
+  "weight": 0.2591,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+  "title": "Introduction to systemd-nspawn Containers: chroot on Steroids",
+  "url": "https://mwalkowski.com/post/introduction-to-systemd-nspawn-containers-chroot-on-steroids/",
+  "snippet": "May 6, 2024 \u00b7 Systemd-nspawn utilizes Linux kernel features like namespaces for spatial isolation and cgroups for resource control, thus offering significant isolation between containers and the host system. Comparing systemd-nspawn to chroot \u2013 what are the additional capabilities?",
+  "weight": 0.694,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "weight": 0.1488,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn RootImage mkosi image",
+  "title": "mkosi \u2014 A Tool for Generating OS Images",
+  "url": "https://0pointer.net/blog/mkosi-a-tool-for-generating-os-images.html",
+  "snippet": "# systemd-nspawn -bi image.raw. And there you go: the image should boot up, and just work for you. Now, let's make things more interesting. Let's still not use any of the mkosi.$SOMETHING files around: # mkosi -t raw_btrfs --bootable -o foobar.raw # systemd-nspawn -bi foobar.raw.",
+  "weight": 0.6959,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn RootImage mkosi image",
+  "title": "GitHub - systemd/mkosi: Build Bespoke OS Images",
+  "url": "https://github.com/systemd/mkosi",
+  "snippet": "\ud83d\udcbd Build Bespoke OS Images. Contribute to systemd/mkosi development by creating an account on GitHub.",
+  "weight": 0.7282,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn RootImage mkosi image",
+  "title": "mkosi \u2014 Build Bespoke OS Images",
+  "url": "https://mkosi.systemd.io/",
+  "snippet": "mkosi \u2014 Build Bespoke OS Images A fancy wrapper around dnf --installroot, apt, pacman and zypper that generates customized disk images with a number of bells and whistles.",
+  "weight": 0.7394,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn RootImage mkosi image",
+  "title": "Portable Services Introduction",
+  "url": "https://systemd.io/PORTABLE_SERVICES/",
+  "snippet": "The unit file is searched in the usual paths, i.e. primarily /etc/systemd/system/ and /usr/lib/systemd/system/ within the image. (The implementation will check a couple of other paths too, but it\u2019s recommended to use these two paths.)",
+  "weight": 0.93,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn RootImage mkosi image",
+  "title": "mkosi/mkosi/resources/man/mkosi.1.md at main \u00b7 systemd/mkosi\u2026",
+  "url": "https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md",
+  "snippet": "The mkosi.nspawn nspawn settings file will be copied into the same place as the output image file, if it exists. This is useful since nspawn looks for settings files next to image files it boots, for additional container runtime settings.",
+  "weight": 0.8188,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn RootImage mkosi image",
+  "title": "Quick Start Guide | systemd/mkosi | DeepWiki",
+  "url": "https://deepwiki.com/systemd/mkosi/1.2-quick-start-guide",
+  "snippet": "Jun 21, 2026 \u00b7 This page provides a hands-on tutorial for building your first OS image with mkosi. It covers the basic commands, minimal configuration requirements, and how to run the resulting image.",
+  "weight": 0.2072,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot OS disk image RootImage option",
+  "title": "systemd-nspawn - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html",
+  "snippet": "Most importantly the template unit file makes use of the --boot option which is not the default in case systemd-nspawn is invoked from the interactive command line.",
+  "weight": 0.9124,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot OS disk image RootImage option",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name.",
+  "weight": 0.5529,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot OS disk image RootImage option",
+  "title": "Portable Services Introduction",
+  "url": "https://systemd.io/PORTABLE_SERVICES/",
+  "snippet": "Can be run as OS container, using systemd-nspawn, by booting the image with systemd-nspawn -i -b.Confext images do not have to contain units. As with the base/OS image, each upper extension image must be a plain sub-directory, btrfs subvolume, or a raw disk image.",
+  "weight": 0.9385,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot OS disk image RootImage option",
+  "title": "csboot.zip: Hard Disk Image of MS-DOS 6.22 with Pascal for Compu\u2026",
+  "url": "https://archive.org/details/csboot",
+  "snippet": "http://michael960308.webs.com//downloads/csboot.zip from http://michael960308.webs.com/downloads.htm << Hard Disk Image of MS-DOS 6.22 with Pascal for Co\u2026",
+  "weight": 0.1627,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot OS disk image RootImage option",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "weight": 0.2627,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot OS disk image RootImage option",
+  "title": "Credentials",
+  "url": "https://systemd.io/CREDENTIALS/",
+  "snippet": "a service it invokes. systemd-nspawn(1) \u2019s --set-credential= and --load-credential= switches implement this, in order to pass arbitrary credentials from host to container payload.",
+  "weight": 0.8117,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn ephemeral option overlay",
+  "title": "systemd.nspawn (5) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man5/systemd.nspawn.5.html",
+  "snippet": "This option is equivalent to the command line switches --overlay= and --overlay-ro=, see systemd-nspawn (1) for details about the specific options supported. This setting is privileged (see above).",
+  "weight": 0.768,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn ephemeral option overlay",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Systemd tracks processes using the Linux kernel's cgroups subsystem instead of using process identifiers (PIDs); thus, daemons cannot \"escape\" systemd, not even by double- forking.",
+  "weight": 0.7601,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn ephemeral option overlay",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to var",
+  "weight": 0.861,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn ephemeral option overlay",
+  "title": "Building Immutable Bastion Hosts with Systemd-Nspawn and Ephemeral ...",
+  "url": "https://devops-geek.net/devops-lab/building-immutable-bastion-hosts-with-systemd-nspawn-and-ephemeral-overlayfs-mounts/",
+  "snippet": "Sep 26, 2026 \u00b7 Learn how to build secure, ephemeral bastion hosts using systemd-nspawn and OverlayFS to ensure persistent changes are wiped on every reboot.",
+  "weight": 0.1901,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn ephemeral option overlay",
+  "title": "systemd-nspawn should support ephemeral systems using overlayfs",
+  "url": "https://github.com/systemd/systemd/issues/11054",
+  "snippet": "Is your feature request related to a problem? Please describe. When using systemd-nspawn --ephemeral, the entire dir seems to be copied to a temporary path in /tmp. It would be more efficient if it used an overlay instead, though the user needs to be warned not to change the lower dir. Describe the solution you'd like Please add an option such as --overlay-ephemeral, --overlay-root, or similar ...",
+  "weight": 0.6143,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn ephemeral option overlay",
+  "title": "systemd-nspawn - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html",
+  "snippet": "See systemd.nspawn(5) for details. Settings files override the default options used by the systemd-nspawn@.service template unit file, making it usually unnecessary to alter this template file directly. Note that systemd-nspawn will mount file systems private to the container to /dev/, /run/, and similar.",
+  "weight": 0.9398,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "ephemeral containers systemd-nspawn copy on write",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
+  "weight": 0.8754,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "ephemeral containers systemd-nspawn copy on write",
+  "title": "EPHEMERAL Definition & Meaning - Merriam-Webster",
+  "url": "https://www.merriam-webster.com/dictionary/ephemeral",
+  "snippet": "The meaning of EPHEMERAL is lasting a very short time. How to use ephemeral in a sentence. The Mayfly Helps to Illustrate <span \u2026",
+  "weight": 0.7217,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "ephemeral containers systemd-nspawn copy on write",
+  "title": "Category: projects",
+  "url": "http://0pointer.net/blog/category/projects.html",
+  "snippet": "Rebooting/Powering off systemd-nspawn containers via hotkey Post #26: ExecStart= | modifier Post #27: systemctl reload reloads confexts Post #28: Server side userdb filtering Post",
+  "weight": 0.4251,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "ephemeral containers systemd-nspawn copy on write",
+  "title": "Latest posts for tag <strong>systemd</strong>",
+  "url": "https://www.enricozini.org/tags/systemd/",
+  "snippet": "I published the polished result as nspawn-runner on GitHub. systemd-nspawn has an interesting --ephemeral option that sets up temporary copy-on-write filesystem snapshots on filesystems that support it, like btrfs.",
+  "weight": 0.2857,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "ephemeral containers systemd-nspawn copy on write",
+  "title": "systemd.nspawn (5) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man5/systemd.nspawn.5.html",
+  "snippet": "An nspawn container settings file (suffix .nspawn) contains runtime configuration for a local container, and is used by systemd-nspawn (1). Files of this type are named after the containers they define settings for.",
+  "weight": 0.8324,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "ephemeral containers systemd-nspawn copy on write",
+  "title": "Ephemeral Containers | Kubernetes",
+  "url": "https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/",
+  "snippet": "Feature state: Stable since Kubernetes v1.25 This page provides an overview of ephemeral containers: a special type of container that runs temporarily in an existing Pod to accomplish user-initiated actions such as troubleshooting.",
+  "weight": 0.9277,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot option machinectl lifecycle",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Aug 10, 2026 \u00b7 Finally, boot into the container: The -b option will boot the container (i.e. run systemd as PID=1), instead of just running a shell, and -D specifies the directory that becomes the container's root directory. After the container starts, log in as \"root\" with your password.",
+  "weight": 0.8096,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot option machinectl lifecycle",
+  "title": "systemd-nspawn (1) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man1/systemd-nspawn.1.html",
+  "snippet": "In contrast to chroot (1) systemd-nspawn may be used to boot full Linux-based operating systems in a container. systemd-nspawn limits access to various kernel interfaces in the container to read-only, such as /sys/, /proc/sys/, or /sys/fs/selinux/.",
+  "weight": 0.8261,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot option machinectl lifecycle",
+  "title": "systemd-nspawn - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/251/systemd-nspawn.html",
+  "snippet": "Most importantly the template unit file makes use of the --boot which is not the default in case systemd-nspawn is invoked from the interactive command line. Further differences with the defaults are documented along with the various supported options below. The machinectl(1) tool may be used to execute a number of operations on containers.",
+  "weight": 0.8775,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot option machinectl lifecycle",
+  "title": "systemd-nspawn (1) \u2014 systemd-container \u2014 Debian trixie \u2014 Debian Manpages",
+  "url": "https://manpages.debian.org/systemd-nspawn.1.html",
+  "snippet": "Further differences with the defaults are documented along with the various supported options below. The machinectl (1) tool may be used to execute a number of operations on containers. In particular it provides easy-to-use commands to run containers as system services using the systemd-nspawn@.service template unit file.",
+  "weight": 0.6033,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot option machinectl lifecycle",
+  "title": "Systemd-nspawn (1) Linux Manual Page - SysTutorials",
+  "url": "https://www.systutorials.com/linux-manual-page-1-systemd-nspawn/",
+  "snippet": "In contrast to chroot (1) systemd-nspawn may be used to boot full Linux-based operating systems in a container. Use a tool like yum (8), debootstrap (8), or pacman (8) to set up an OS directory tree suitable as file system hierarchy for systemd-nspawn containers.",
+  "weight": 0.3956,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn boot option machinectl lifecycle",
+  "title": "systemd-nspawn - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html",
+  "snippet": "Most importantly the template unit file makes use of the --boot option which is not the default in case systemd-nspawn is invoked from the interactive command line. Further differences with the defaults are documented along with the various supported options below. The machinectl(1) tool may be used to execute a number of operations on containers.",
+  "weight": 0.9511,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "machinectl list start stop nspawn machines",
+  "title": "How to Manage systemd-nspawn Containers with machinectl on RHEL",
+  "url": "https://oneuptime.com/blog/post/2026-03-04-manage-systemd-nspawn-containers-with-machinectl-on-rhel/view",
+  "snippet": "Mar 4, 2026 \u00b7 machinectl is the management interface for the systemd machine manager. It provides commands to list, start, stop, clone, and inspect systemd-nspawn containers stored under /var/lib/machines/ and other supported machine image paths.",
+  "weight": 0.1709,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "machinectl list start stop nspawn machines",
+  "title": "machinectl - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/machinectl.html",
+  "snippet": "This starts systemd-nspawn@.service, instantiated for the specified machine name, similar to the effect of systemctl start on the service name. systemd-nspawn looks for a container image by the specified name in /var/lib/machines/ (and other search paths, see below) and runs it.",
+  "weight": 0.9227,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "machinectl list start stop nspawn machines",
+  "title": "How to use the command 'machinectl' (with examples)",
+  "url": "https://commandmasters.com/commands/machinectl-linux/",
+  "snippet": "Dec 17, 2024 \u00b7 The machinectl command is a powerful utility used for controlling and managing the systemd machine manager. It allows users to execute operations on virtual machines, containers, and images seamlessly. This command is typically used for interacting with systemd\u2019s nspawn container environments, which helps in managing machine instances smoothly. By using machinectl, administrators ca",
+  "weight": 0.1396,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "machinectl list start stop nspawn machines",
+  "title": "machinectl Command Linux: Complete Guide to Managing systemd Containers ...",
+  "url": "https://codelucky.com/machinectl-command-linux/",
+  "snippet": "What is machinectl? machinectl is the command-line interface to systemd-machined, a system service that manages local containers and virtual machines. It's designed to work seamlessly with various container technologies like systemd-nspawn, Docker, and virtualization platforms such as libvirt and QEMU/KVM. Key Features",
+  "weight": 0.4685,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "machinectl list start stop nspawn machines",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Aug 10, 2026 \u00b7 Default systemd-nspawn options Note that containers started via machinectl or systemd-nspawn@.service use different default options than containers started manually by the systemd-nspawn command. The extra options used by the service are: -b / --boot \u2013 Managed containers automatically search for an init program and invoke it as PID 1.",
+  "weight": 0.9015,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "machinectl list start stop nspawn machines",
+  "title": "machinectl - Control the systemd machine manager at Linux.org",
+  "url": "https://www.linux.org/docs/man1/machinectl.html",
+  "snippet": "machinectl - Control the systemd machine manager at Linux.org Back to main site | Back to man page index",
+  "weight": 0.6077,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd portable services portablectl attach detach",
+  "title": "Portable Services Introduction - systemd",
+  "url": "https://systemd.io/PORTABLE_SERVICES/",
+  "snippet": "The portablectl reattach command combines a detach with an attach. It is useful in case an image gets upgraded, as it allows performing a restart operation on the units instead of stop plus start, thus providing lower downtime and avoiding losing runtime state associated with the unit such as the file descriptor store.",
+  "weight": 0.8864,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd portable services portablectl attach detach",
+  "title": "portablectl - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/portablectl.html",
+  "snippet": "Description \u00b6 portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service(8). Portable service images contain an OS file system tree along with systemd(1) unit file information. A service image may be \"attached\" to the local system. If attached, a set of unit files are copied from the image to the host, and ...",
+  "weight": 0.8021,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd portable services portablectl attach detach",
+  "title": "portablectl (1) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man1/portablectl.1.html",
+  "snippet": "NAME top portablectl - Attach, detach or inspect portable service images SYNOPSIS top portablectl [OPTIONS...] {COMMAND} [NAME...] DESCRIPTION top portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service (8). Portable service images contain an OS file system tree along with systemd (1) unit file ...",
+  "weight": 0.8009,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd portable services portablectl attach detach",
+  "title": "Ubuntu Manpage: portablectl - Attach, detach or inspect portable ...",
+  "url": "https://manpages.ubuntu.com/manpages/focal/man1/portablectl.1.html",
+  "snippet": "DESCRIPTION portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service (8). Portable service images contain an OS file system tree along with systemd (1) unit file information. A service image may be \"attached\" to the local system.",
+  "weight": 0.8876,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd portable services portablectl attach detach",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "weight": 0.1685,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd portable services portablectl attach detach",
+  "title": "portablectl",
+  "url": "https://redhat-plumbers.github.io/systemd-rhel9/portablectl.html",
+  "snippet": "portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service(8). Portable service images contain an OS file system tree along with systemd(1) unit file information.",
+  "weight": 0.6723,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "portable services vs systemd-nspawn",
+  "title": "Portable Services Introduction - systemd",
+  "url": "https://systemd.io/PORTABLE_SERVICES/",
+  "snippet": "\"Container\" is a very vague term, after all it is used for systemd-nspawn/LXC-type OS containers, for Docker/rkt-like micro service containers, and even certain 'lightweight' VM runtimes. \"Portable services\" do not provide a fully isolated environment to the payload, like containers mostly intend to.",
+  "weight": 0.8856,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "portable services vs systemd-nspawn",
+  "title": "Firecracker vs systemd-nspawn for untrusted code \u00b7 PandaStack",
+  "url": "https://www.pandastack.ai/blog/firecracker-vs-systemd-nspawn/",
+  "snippet": "What it's built for \u2014 systemd-nspawn: building and testing OS images (mkosi), portable services, running a full trusted Linux userspace, even booting machines via machinectl. Firecracker: running untrusted or per-tenant workloads at density.",
+  "weight": 0.4343,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "portable services vs systemd-nspawn",
+  "title": "Is systemd-nspawn a better alternative to Docker for Linux containers ...",
+  "url": "https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/",
+  "snippet": "May 12, 2026 \u00b7 For many workloads, systemd-nspawn beats Docker on leanness, simplicity, and host integration. It shines on servers and homelabs where you want isolated environments without daemon overhead. You launch a container with one command, manage it with machinectl, and run it as a systemd service. All the tools already ship with every modern Linux system.",
+  "weight": 0.1253,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "portable services vs systemd-nspawn",
+  "title": "When to use SystemD NSpawn? : r/linuxquestions - Reddit",
+  "url": "https://www.reddit.com/r/linuxquestions/comments/trg0ix/when_to_use_systemd_nspawn/",
+  "snippet": "nspawn and systemd portable services seem super nice. I was very interested in this when it came. But it's as you say, too far out of the mainstream. I tried building my own setup, since especially nspawn itself is very simple, basic, and fast.",
+  "weight": 0.0364,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "portable services vs systemd-nspawn",
+  "title": "Systemd vs. Docker: Exploring a Surprising Alternative",
+  "url": "https://dev.to/_russell/systemd-vs-docker-exploring-a-surprising-alternative-4pmm",
+  "snippet": "Dec 9, 2024 \u00b7 Systemd gives you more control over how the process interacts with the system. You can manage logging, resource allocation, and service dependencies more granularly with Systemd. Performance: Docker adds a small overhead due to containerization, though the performance difference is usually negligible for most applications.",
+  "weight": 0.1569,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "portable services vs systemd-nspawn",
+  "title": "Containers and Virtualization | systemd/systemd | DeepWiki",
+  "url": "https://deepwiki.com/systemd/systemd/5-containers-and-virtualization",
+  "snippet": "Sep 10, 2026 \u00b7 The key parts of this ecosystem include: systemd-nspawn for managing lightweight Linux containers with namespace and cgroup isolation. systemd-machined for tracking running containers and virtual machines, providing a central registry and D-Bus/Varlink interfaces. machinectl as the user-facing command line tool for managing machines and images.",
+  "weight": 0.3747,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn development environment reproducible",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to var",
+  "weight": 0.874,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn development environment reproducible",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux built to unify service configuration and behavior across Linux distributions. Its main component is an init system used to bootstrap user space and manage user processes.",
+  "weight": 0.1618,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn development environment reproducible",
+  "title": "Introduction to systemd-nspawn Containers: chroot on Steroids",
+  "url": "https://mwalkowski.com/post/introduction-to-systemd-nspawn-containers-chroot-on-steroids/",
+  "snippet": "May 6, 2024 \u00b7 Real-world Applications of systemd-nspawn in production and development Isolated Development Environments: Systemd-nspawn is an ideal tool for creating isolated development environments, where each developer can have their own separate environment with all necessary dependencies, without affecting the main operating system or the work of other ...",
+  "weight": 0.18,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn development environment reproducible",
+  "title": "systemd-nspawn - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html",
+  "snippet": "Description \u00b6 systemd-nspawn may be used to run a command or OS in a lightweight namespace container. In many ways it is similar to chroot(1), but more powerful since it virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems, and the host and domain names. systemd-nspawn may be invoked on any directory tree containing an operating system tree, using the ...",
+  "weight": 0.9634,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn development environment reproducible",
+  "title": "Lightweight Development Sandboxes with systemd-nspawn on Linux",
+  "url": "https://adamgradzki.com/lightweight-development-sandboxes-with-systemd-nspawn-on-linux.html",
+  "snippet": "Sep 26, 2025 \u00b7 Why systemd-nspawn for Development Containers? If you've ever wanted to let an AI code agent or experimental script run wild without worrying about it wreaking havoc on your system, you need isolation. While Docker is the go-to solution for many, systemd-nspawn offers a compelling alternative that's built right into systemd-based Linux ...",
+  "weight": 0.0815,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn development environment reproducible",
+  "title": "GitHub - CANVEXTER/PaperBox: nspawn setup for archlinux",
+  "url": "https://github.com/CANVEXTER/PaperBox",
+  "snippet": "Goal of this project This project is basically a systemd-nspawn configuration, which means it works out of the box on most Linux distributions without needing Docker or Podman. The goal is to create a secondary, isolated userspace environment inside a Linux system for development, testing, or installing software without affecting the host.",
+  "weight": 0.6177,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "hermetic build environment systemd-nspawn",
+  "title": "Hermeticity - Bazel Documentation",
+  "url": "https://bazel.build/basics/hermeticity",
+  "snippet": "They depend on specific versions of build tools, such as compilers, and dependencies, such as libraries. This makes the build process self-contained as it doesn't rely on services external to the build environment. The two important aspects of hermeticity are: Isolation: Hermetic build systems treat tools as source code.",
+  "weight": 0.7114,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "hermetic build environment systemd-nspawn",
+  "title": "How to Use systemd-nspawn for Lightweight Containers on Ubuntu",
+  "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-use-systemd-nspawn-for-lightweight-containers-on-ubuntu/view",
+  "snippet": "systemd-nspawn is a container manager built directly into systemd. It creates isolated environments similar to Docker containers, but uses the existing systemd tooling you already have on your Ubuntu system.systemd-nspawn is part of the systemd-container package.",
+  "weight": 0.1565,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "hermetic build environment systemd-nspawn",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to var",
+  "weight": 0.8181,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "hermetic build environment systemd-nspawn",
+  "title": "GitHub - lkhq/debspawn: Debian package builder and build helper\u2026",
+  "url": "https://github.com/lkhq/debspawn",
+  "snippet": "Debspawn Debspawn is a tool to build Debian packages in an isolated environment. Unlike similar tools like sbuild or pbuilder, debspawn uses systemd-nspawn instead of plain chroots to manage the isolated environment. This allows Debspawn to isolate builds from the host system much more via containers.",
+  "weight": 0.6766,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "hermetic build environment systemd-nspawn",
+  "title": "Hermeticism - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Hermeticism",
+  "snippet": "This specific, chronologically and geographically limited form of Hermetic philosophy is sometimes more narrowly referred to as \u2026",
+  "weight": 0.7572,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "hermetic build environment systemd-nspawn",
+  "title": "Luke Smith Fanclub &amp; Archive",
+  "url": "https://lukesmith.neocities.org/",
+  "snippet": "Asceticism and the Hermetic Answer tl;dr: modernity offers a false choice between self-indulgent hedonism and joyless asceticism; both waste your potential-hedonism burns creative",
+  "weight": 0.5379,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn continuous integration testing",
+  "title": "Improving systemd's integration testing infrastructure (part 2)",
+  "url": "https://www.codethink.co.uk/articles/2024/systemd-integration-testing-part-2/",
+  "snippet": "Sep 26, 2024 \u00b7 In Part 2, we examine the architecture of the new integration test suite and summarise the test results. Introducing vmspawn systemd-vmspawn may be used to start a virtual machine from an OS image. In many ways, it is similar to systemd-nspawn (1), but it launches a full virtual machine instead of using namespaces. -- The systemd-vmspawn (1 ...",
+  "weight": 0.7191,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn continuous integration testing",
+  "title": "Building a Full Pentesting Lab Using Only systemd\u2011nspawn | Medium",
+  "url": "https://medium.com/@3lp3n54d04_s3c/building-a-full-pentesting-lab-using-only-systemd-nspawn-86428add4328",
+  "snippet": "Why Use systemd\u2011nspawn for a Pentesting Lab? 1. Very Fast & Lightweight. Systemd\u2011nspawn containers boot in seconds and have extremely low overhead compared to VMs or Docker because they share the host kernel directly.",
+  "weight": 0.184,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn continuous integration testing",
+  "title": "Testing Infrastructure and CI/CD | systemd/systemd | DeepWiki",
+  "url": "https://deepwiki.com/systemd/systemd/10.2-testing-infrastructure-and-cicd",
+  "snippet": "This document details systemd's testing infrastructure, spanning low-level C unit tests (`src/test/`), python-based network integration test suites, `mkosi`-based container and disk image building, an",
+  "weight": 0.3054,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn continuous integration testing",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+  "weight": 0.8083,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn continuous integration testing",
+  "title": "Fuck Big Tech: A Privacy Guide",
+  "url": "https://fuckbigtech.neocities.org/",
+  "snippet": "the rich richer, or the continuous insect extinction slowly destroying our whole ecosystem that can&#39;t be stopped because it would sadden shareholders, but Big Tech moguls actively",
+  "weight": 0.174,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn continuous integration testing",
+  "title": "Faster and cheaper NixOS integration tests with containers",
+  "url": "https://nixcademy.com/posts/faster-cheaper-nixos-integration-tests-with-containers/",
+  "snippet": "Today, we are thrilled to announce a lightweight, blazing-fast alternative built directly into the NixOS test driver: The new systemd-nspawn-based container backend for integration tests! Want to see how to run tests with multiple NixOS hosts within just a few seconds? Keep reading.",
+  "weight": 0.6027,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "nspawn ci runner systemd tests github actions",
+  "title": "Actions \u00b7 yoshuawuyts/systemd-nspawn-scripts \u00b7 GitHub",
+  "url": "https://github.com/yoshuawuyts/systemd-nspawn-scripts/actions",
+  "snippet": "GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Learn more about getting started with Actions.",
+  "weight": 0.1646,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "nspawn ci runner systemd tests github actions",
+  "title": "Configuring the self-hosted runner application as a service",
+  "url": "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/configure-the-application",
+  "snippet": "For Linux systems that use systemd, you can use the svc.sh script that is created after successfully adding the runner to install and manage using the application as a service. On the runner machine, open a shell in the directory where you installed the self-hosted runner application. Use the commands below to install and manage the self-hosted runner service.",
+  "weight": 0.2964,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "nspawn ci runner systemd tests github actions",
+  "title": "Managing self-hosted runners - GitHub Docs",
+  "url": "https://docs.github.com/actions/how-tos/managing-self-hosted-runners",
+  "snippet": "To use self-hosted runners in a workflow, you can use labels or groups to specify the runner for a job. You can use policies to limit access to self-hosted runners that have been added to an organization. You can monitor your self-hosted runners to view their activity and diagnose common issues.",
+  "weight": 0.9476,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "nspawn ci runner systemd tests github actions",
+  "title": "Watch Anime Online",
+  "url": "https://www.anime-planet.com/anime/watch-online/",
+  "snippet": "Watch Anime Online Watch a selection of anime episodes on Anime-Planet. All videos are legal and industry-supported due to \u2026",
+  "weight": 0.0686,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "nspawn ci runner systemd tests github actions",
+  "title": "TEST-13-NSPAWN (machinectl) failed in GitHub Action \u00b7 Issue...",
+  "url": "https://github.com/systemd/systemd/issues/32888",
+  "snippet": "Development. No branches or pull requests. Issue actions. Open in GitHub Copilot app.",
+  "weight": 0.6662,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "nspawn ci runner systemd tests github actions",
+  "title": "arm-runner-action/.github/workflows/test-systemd-nspawn.yml at main ...",
+  "url": "https://github.com/pguyot/arm-runner-action/blob/main/.github/workflows/test-systemd-nspawn.yml",
+  "snippet": "Run tests natively and build images directly from GitHub Actions using a chroot-based virtualized Raspberry Pi (raspios/raspbian) environment - arm-runner-action/.github/workflows/test-systemd-nspawn.yml at main \u00b7 pguyot/arm-runner-action",
+  "weight": 0.6541,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn broken after systemd upgrade",
+  "title": "systemd start timeout aborts dnf system-upgrade run in nspawn ... - GitHub",
+  "url": "https://github.com/systemd/systemd/issues/37295",
+  "snippet": "Apr 29, 2025 \u00b7 Specifically, after issuing dnf system-upgrade reboot in the container, the container restarted and started the upgrade, as expected. However, the systemd start timeout later kicked in and aborted the upgrade, leaving a partially upgraded and broken container, which I had to recreate from scratch:",
+  "weight": 0.5594,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn broken after systemd upgrade",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
+  "weight": 0.8631,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn broken after systemd upgrade",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Like the init daemon, systemd is a daemon that manages other daemons, which, including systemd itself, are background processes. systemd is the first daemon to start during booting and the last daemon to terminate during shutdown.",
+  "weight": 0.2216,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn broken after systemd upgrade",
+  "title": "Diagnosing problem with systemd-nspawn after apt upgrade",
+  "url": "https://forums.raspberrypi.com/viewtopic.php?t=376184",
+  "snippet": "Mar 28, 2013 \u00b7 Re: Diagnosing problem with systemd-nspawn after apt upgrade Thu Sep 05, 2024 9:48 am It is, sort of. I have an existing FS folder (not an IMG file), but essentially, something has obviously gone wrong when running apt upgrade on it (in an active container, obviously!), as when I then tried to restart it, I get the seg violation.",
+  "weight": 0.0383,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn broken after systemd upgrade",
+  "title": "No systemd - Resources against systemd and alternatives",
+  "url": "https://nosystemd.org/",
+  "snippet": "suckless.org on systemd Broken by design: systemd systemd-free linux community Want to help? This website is Open Source. You can help to improve it by contributing to the Git rep",
+  "weight": 0.1135,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd-nspawn broken after systemd upgrade",
+  "title": "Bug #1764338 \u201csystemd-nspawn container networking lost after...\u201d",
+  "url": "https://bugs.launchpad.net/ubuntu/+source/systemd/+bug/1764338",
+  "snippet": "I have 2 systemd-nspawn containers running on an ubuntu 18.04 server used for an internal test automation service. They each use a private network using the nethork-veth option and expose a single port.",
+  "weight": 0.4021,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd release notes nspawn changes RootImage",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to var",
+  "weight": 0.849,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd release notes nspawn changes RootImage",
+  "title": "Releases \u00b7 systemd/systemd - GitHub",
+  "url": "https://github.com/systemd/systemd/releases",
+  "snippet": "Releases \u00b7 systemd/systemd. Release list.The newer \"FactoryResetRequest\" EFI variable. remains supported and should be used instead. * As part of changes to systemd-sysupdate, the existing. \"systemd-sysupdate.service\" and \"systemd-sysupdate.timer\" units \u2013.",
+  "weight": 0.8767,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd release notes nspawn changes RootImage",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Systemd records initialization instructions for each daemon in a configuration file (referred to as a \"unit file\") that uses a declarative language, replacing the traditionally used per-daemon startup shell scripts.",
+  "weight": 0.1602,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd release notes nspawn changes RootImage",
+  "title": "systemd-nspawn - Spawn a namespace container for debugging, testing and ...",
+  "url": "https://www.linux.org/docs/man1/systemd-nspawn.html",
+  "snippet": "Like all other systemd-nspawn features, this is not a security feature and provides protection against accidental destructive operations only. -M, --machine= Sets the machine name for this container.",
+  "weight": 0.6521,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd release notes nspawn changes RootImage",
+  "title": "systemd/NEWS at main \u00b7 systemd/systemd \u00b7 GitHub",
+  "url": "https://github.com/systemd/systemd/blob/main/NEWS",
+  "snippet": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub.",
+  "weight": 0.7351,
+  "collected_at": "2026-10-05"
+ },
+ {
+  "query": "systemd release notes nspawn changes RootImage",
+  "title": "systemd-nspawn(1) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man1/systemd-nspawn.1.html",
+  "snippet": "Example 2. Build and boot a minimal Fedora distribution in a container # dnf -y --releasever=44 --installroot=/var/lib/machines/f44 \\ --use-host-config --setopt=install_weak_deps=0 \\ --repo=fedora --repo=updates install \\ passwd dnf fedora\u2026",
+  "weight": 0.9566,
+  "collected_at": "2026-10-05"
+ }
+]

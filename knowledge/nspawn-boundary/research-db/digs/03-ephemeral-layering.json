@@ -1,0 +1,94 @@
+{
+ "subtopic": "ephemeral layering",
+ "queries": [
+  "systemd-nspawn ephemeral option overlay",
+  "ephemeral containers systemd-nspawn copy on write"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "systemd-nspawn ephemeral option overlay",
+   "title": "systemd.nspawn (5) - Linux manual page - man7.org",
+   "url": "https://www.man7.org/linux/man-pages/man5/systemd.nspawn.5.html",
+   "content": "This option is equivalent to the command line switches --overlay= and --overlay-ro=, see systemd-nspawn (1) for details about the specific options supported. This setting is privileged (see above).",
+   "weight": 0.768
+  },
+  {
+   "query": "systemd-nspawn ephemeral option overlay",
+   "title": "systemd - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Systemd",
+   "content": "Systemd tracks processes using the Linux kernel's cgroups subsystem instead of using process identifiers (PIDs); thus, daemons cannot \"escape\" systemd, not even by double- forking.",
+   "weight": 0.7601
+  },
+  {
+   "query": "systemd-nspawn ephemeral option overlay",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to var",
+   "weight": 0.861
+  },
+  {
+   "query": "systemd-nspawn ephemeral option overlay",
+   "title": "Building Immutable Bastion Hosts with Systemd-Nspawn and Ephemeral ...",
+   "url": "https://devops-geek.net/devops-lab/building-immutable-bastion-hosts-with-systemd-nspawn-and-ephemeral-overlayfs-mounts/",
+   "content": "Sep 26, 2026 \u00b7 Learn how to build secure, ephemeral bastion hosts using systemd-nspawn and OverlayFS to ensure persistent changes are wiped on every reboot.",
+   "weight": 0.1901
+  },
+  {
+   "query": "systemd-nspawn ephemeral option overlay",
+   "title": "systemd-nspawn should support ephemeral systems using overlayfs",
+   "url": "https://github.com/systemd/systemd/issues/11054",
+   "content": "Is your feature request related to a problem? Please describe. When using systemd-nspawn --ephemeral, the entire dir seems to be copied to a temporary path in /tmp. It would be more efficient if it used an overlay instead, though the user needs to be warned not to change the lower dir. Describe the solution you'd like Please add an option such as --overlay-ephemeral, --overlay-root, or similar ...",
+   "weight": 0.6143
+  },
+  {
+   "query": "systemd-nspawn ephemeral option overlay",
+   "title": "systemd-nspawn - freedesktop.org",
+   "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html",
+   "content": "See systemd.nspawn(5) for details. Settings files override the default options used by the systemd-nspawn@.service template unit file, making it usually unnecessary to alter this template file directly. Note that systemd-nspawn will mount file systems private to the container to /dev/, /run/, and similar.",
+   "weight": 0.9398
+  },
+  {
+   "query": "ephemeral containers systemd-nspawn copy on write",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
+   "weight": 0.8754
+  },
+  {
+   "query": "ephemeral containers systemd-nspawn copy on write",
+   "title": "EPHEMERAL Definition & Meaning - Merriam-Webster",
+   "url": "https://www.merriam-webster.com/dictionary/ephemeral",
+   "content": "The meaning of EPHEMERAL is lasting a very short time. How to use ephemeral in a sentence. The Mayfly Helps to Illustrate <span \u2026",
+   "weight": 0.7217
+  },
+  {
+   "query": "ephemeral containers systemd-nspawn copy on write",
+   "title": "Category: projects",
+   "url": "http://0pointer.net/blog/category/projects.html",
+   "content": "Rebooting/Powering off systemd-nspawn containers via hotkey Post #26: ExecStart= | modifier Post #27: systemctl reload reloads confexts Post #28: Server side userdb filtering Post",
+   "weight": 0.4251
+  },
+  {
+   "query": "ephemeral containers systemd-nspawn copy on write",
+   "title": "Latest posts for tag <strong>systemd</strong>",
+   "url": "https://www.enricozini.org/tags/systemd/",
+   "content": "I published the polished result as nspawn-runner on GitHub. systemd-nspawn has an interesting --ephemeral option that sets up temporary copy-on-write filesystem snapshots on filesystems that support it, like btrfs.",
+   "weight": 0.2857
+  },
+  {
+   "query": "ephemeral containers systemd-nspawn copy on write",
+   "title": "systemd.nspawn (5) - Linux manual page - man7.org",
+   "url": "https://www.man7.org/linux/man-pages/man5/systemd.nspawn.5.html",
+   "content": "An nspawn container settings file (suffix .nspawn) contains runtime configuration for a local container, and is used by systemd-nspawn (1). Files of this type are named after the containers they define settings for.",
+   "weight": 0.8324
+  },
+  {
+   "query": "ephemeral containers systemd-nspawn copy on write",
+   "title": "Ephemeral Containers | Kubernetes",
+   "url": "https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/",
+   "content": "Feature state: Stable since Kubernetes v1.25 This page provides an overview of ephemeral containers: a special type of container that runs temporarily in an existing Pod to accomplish user-initiated actions such as troubleshooting.",
+   "weight": 0.9277
+  }
+ ]
+}

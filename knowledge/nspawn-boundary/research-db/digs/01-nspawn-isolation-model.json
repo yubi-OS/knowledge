@@ -1,0 +1,94 @@
+{
+ "subtopic": "nspawn isolation model",
+ "queries": [
+  "systemd-nspawn container isolation how it works",
+  "systemd-nspawn vs chroot vs virtual machine comparison"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "systemd-nspawn container isolation how it works",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
+   "weight": 0.9089
+  },
+  {
+   "query": "systemd-nspawn container isolation how it works",
+   "title": "systemd-nspawn Lightweight Containers - mylinux.work",
+   "url": "https://mylinux.work/guides/systemd-nspawn-containers/",
+   "content": "Apr 13, 2026 \u00b7 Overview systemd-nspawn is a lightweight container manager built into systemd. No daemon, no image registry, no overlay filesystem \u2014 it runs a full OS tree in an isolated namespace, like chroot with proper process, network, and filesystem isolation. Every modern Linux distribution ships it. No additional packages beyond systemd-container. No background service to manage. Containers ",
+   "weight": 0.1351
+  },
+  {
+   "query": "systemd-nspawn container isolation how it works",
+   "title": "Introduction to systemd-nspawn Containers: chroot on Steroids",
+   "url": "https://mwalkowski.com/post/introduction-to-systemd-nspawn-containers-chroot-on-steroids/",
+   "content": "In this article, we will explore how systemd-nspawn allows the creation and management of containers in Linux, its main advantages, and how it differs from the more traditional chroot approach and other popular container solutions.",
+   "weight": 0.4049
+  },
+  {
+   "query": "systemd-nspawn container isolation how it works",
+   "title": "systemd-nspawn Container Manager | systemd/systemd | DeepWiki",
+   "url": "https://deepwiki.com/systemd/systemd/5.1-systemd-nspawn-container-manager",
+   "content": "Sep 10, 2026 \u00b7 Purpose and Scope systemd-nspawn is a lightweight container manager utilizing Linux kernel features such as namespaces, cgroups, and capabilities to spawn and manage OS containers. It isolates hostname, filesystems, process trees, users, and network stacks to securely execute commands or fully booted Linux OS instances inside containers.",
+   "weight": 0.445
+  },
+  {
+   "query": "systemd-nspawn container isolation how it works",
+   "title": "How to Use systemd-nspawn for Lightweight System Containers on...",
+   "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-use-systemd-nspawn-for-lightweight-system-containers-on-ubuntu/view",
+   "content": "Mar 2, 2026 \u00b7 Run lightweight system containers on Ubuntu using systemd-nspawn for process isolation without the overhead of Docker or full VMs, with networking and service management.",
+   "weight": 0.1515
+  },
+  {
+   "query": "systemd-nspawn container isolation how it works",
+   "title": "How does Container isolation work with non-containerized tabs - \u2026",
+   "url": "https://discourse.mozilla.org/t/how-does-container-isolation-work-with-non-containerized-tabs/14205",
+   "content": "As I have many open tabs already, currently I can not set a container type to be the default to open new tabs in, and containers are supposed to keep coo\u2026",
+   "weight": 0.4618
+  },
+  {
+   "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+   "title": "systemd-nspawn vs chroot and bind mount? - Unix & Linux Stack Exchange",
+   "url": "https://unix.stackexchange.com/questions/457815/systemd-nspawn-vs-chroot-and-bind-mount",
+   "content": "Explore Stack Internal. systemd-nspawn vs chroot and bind mount? Ask Question.Does systemd-nspawn do special inside to a chroot or does it just provide a different method of running chroot + the appropriate ro --bind mounts for proc , sys .",
+   "weight": 0.0579
+  },
+  {
+   "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "Aug 10, 2026 \u00b7 systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name.",
+   "weight": 0.7474
+  },
+  {
+   "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+   "title": "WSL-Style Isolation and the Container Design of NSL - Architecture ...",
+   "url": "https://braindetox.kr/en/posts/nsl_linux_for_wsl_isolated_environments_2026.html",
+   "content": "3 days ago \u00b7 At the center of this implementation is the union of systemd-nspawn and a shared QEMU virtual machine layer. Standard chroot jails lack cgroup resource accounting and robust root containment, whereas generic application container engines are not typically structured to initialize full multi-user operating system stacks.",
+   "weight": 0.1618
+  },
+  {
+   "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+   "title": "A whirlwind tour of systemd-nspawn containers | Quantum",
+   "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+   "content": "Mar 22, 2025 \u00b7 An introduction to systemd-nspawn, a simple containerization technology that enables lightweight \u201cvirtual machines\u201d without a hypervisor, diving into how they might be set up.",
+   "weight": 0.2591
+  },
+  {
+   "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+   "title": "Introduction to systemd-nspawn Containers: chroot on Steroids",
+   "url": "https://mwalkowski.com/post/introduction-to-systemd-nspawn-containers-chroot-on-steroids/",
+   "content": "May 6, 2024 \u00b7 Systemd-nspawn utilizes Linux kernel features like namespaces for spatial isolation and cgroups for resource control, thus offering significant isolation between containers and the host system. Comparing systemd-nspawn to chroot \u2013 what are the additional capabilities?",
+   "weight": 0.694
+  },
+  {
+   "query": "systemd-nspawn vs chroot vs virtual machine comparison",
+   "title": "systemd - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Systemd",
+   "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+   "weight": 0.1488
+  }
+ ]
+}

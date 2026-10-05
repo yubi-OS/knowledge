@@ -1,0 +1,94 @@
+{
+ "subtopic": "portable services vs nspawn",
+ "queries": [
+  "systemd portable services portablectl attach detach",
+  "portable services vs systemd-nspawn"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "systemd portable services portablectl attach detach",
+   "title": "Portable Services Introduction - systemd",
+   "url": "https://systemd.io/PORTABLE_SERVICES/",
+   "content": "The portablectl reattach command combines a detach with an attach. It is useful in case an image gets upgraded, as it allows performing a restart operation on the units instead of stop plus start, thus providing lower downtime and avoiding losing runtime state associated with the unit such as the file descriptor store.",
+   "weight": 0.8864
+  },
+  {
+   "query": "systemd portable services portablectl attach detach",
+   "title": "portablectl - freedesktop.org",
+   "url": "https://www.freedesktop.org/software/systemd/man/portablectl.html",
+   "content": "Description \u00b6 portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service(8). Portable service images contain an OS file system tree along with systemd(1) unit file information. A service image may be \"attached\" to the local system. If attached, a set of unit files are copied from the image to the host, and ...",
+   "weight": 0.8021
+  },
+  {
+   "query": "systemd portable services portablectl attach detach",
+   "title": "portablectl (1) - Linux manual page - man7.org",
+   "url": "https://www.man7.org/linux/man-pages/man1/portablectl.1.html",
+   "content": "NAME top portablectl - Attach, detach or inspect portable service images SYNOPSIS top portablectl [OPTIONS...] {COMMAND} [NAME...] DESCRIPTION top portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service (8). Portable service images contain an OS file system tree along with systemd (1) unit file ...",
+   "weight": 0.8009
+  },
+  {
+   "query": "systemd portable services portablectl attach detach",
+   "title": "Ubuntu Manpage: portablectl - Attach, detach or inspect portable ...",
+   "url": "https://manpages.ubuntu.com/manpages/focal/man1/portablectl.1.html",
+   "content": "DESCRIPTION portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service (8). Portable service images contain an OS file system tree along with systemd (1) unit file information. A service image may be \"attached\" to the local system.",
+   "weight": 0.8876
+  },
+  {
+   "query": "systemd portable services portablectl attach detach",
+   "title": "systemd - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Systemd",
+   "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+   "weight": 0.1685
+  },
+  {
+   "query": "systemd portable services portablectl attach detach",
+   "title": "portablectl",
+   "url": "https://redhat-plumbers.github.io/systemd-rhel9/portablectl.html",
+   "content": "portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service(8). Portable service images contain an OS file system tree along with systemd(1) unit file information.",
+   "weight": 0.6723
+  },
+  {
+   "query": "portable services vs systemd-nspawn",
+   "title": "Portable Services Introduction - systemd",
+   "url": "https://systemd.io/PORTABLE_SERVICES/",
+   "content": "\"Container\" is a very vague term, after all it is used for systemd-nspawn/LXC-type OS containers, for Docker/rkt-like micro service containers, and even certain 'lightweight' VM runtimes. \"Portable services\" do not provide a fully isolated environment to the payload, like containers mostly intend to.",
+   "weight": 0.8856
+  },
+  {
+   "query": "portable services vs systemd-nspawn",
+   "title": "Firecracker vs systemd-nspawn for untrusted code \u00b7 PandaStack",
+   "url": "https://www.pandastack.ai/blog/firecracker-vs-systemd-nspawn/",
+   "content": "What it's built for \u2014 systemd-nspawn: building and testing OS images (mkosi), portable services, running a full trusted Linux userspace, even booting machines via machinectl. Firecracker: running untrusted or per-tenant workloads at density.",
+   "weight": 0.4343
+  },
+  {
+   "query": "portable services vs systemd-nspawn",
+   "title": "Is systemd-nspawn a better alternative to Docker for Linux containers ...",
+   "url": "https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/",
+   "content": "May 12, 2026 \u00b7 For many workloads, systemd-nspawn beats Docker on leanness, simplicity, and host integration. It shines on servers and homelabs where you want isolated environments without daemon overhead. You launch a container with one command, manage it with machinectl, and run it as a systemd service. All the tools already ship with every modern Linux system.",
+   "weight": 0.1253
+  },
+  {
+   "query": "portable services vs systemd-nspawn",
+   "title": "When to use SystemD NSpawn? : r/linuxquestions - Reddit",
+   "url": "https://www.reddit.com/r/linuxquestions/comments/trg0ix/when_to_use_systemd_nspawn/",
+   "content": "nspawn and systemd portable services seem super nice. I was very interested in this when it came. But it's as you say, too far out of the mainstream. I tried building my own setup, since especially nspawn itself is very simple, basic, and fast.",
+   "weight": 0.0364
+  },
+  {
+   "query": "portable services vs systemd-nspawn",
+   "title": "Systemd vs. Docker: Exploring a Surprising Alternative",
+   "url": "https://dev.to/_russell/systemd-vs-docker-exploring-a-surprising-alternative-4pmm",
+   "content": "Dec 9, 2024 \u00b7 Systemd gives you more control over how the process interacts with the system. You can manage logging, resource allocation, and service dependencies more granularly with Systemd. Performance: Docker adds a small overhead due to containerization, though the performance difference is usually negligible for most applications.",
+   "weight": 0.1569
+  },
+  {
+   "query": "portable services vs systemd-nspawn",
+   "title": "Containers and Virtualization | systemd/systemd | DeepWiki",
+   "url": "https://deepwiki.com/systemd/systemd/5-containers-and-virtualization",
+   "content": "Sep 10, 2026 \u00b7 The key parts of this ecosystem include: systemd-nspawn for managing lightweight Linux containers with namespace and cgroup isolation. systemd-machined for tracking running containers and virtual machines, providing a central registry and D-Bus/Varlink interfaces. machinectl as the user-facing command line tool for managing machines and images.",
+   "weight": 0.3747
+  }
+ ]
+}

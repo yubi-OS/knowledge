@@ -1,0 +1,94 @@
+{
+ "subtopic": "boot and machine lifecycle",
+ "queries": [
+  "systemd-nspawn boot option machinectl lifecycle",
+  "machinectl list start stop nspawn machines"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "systemd-nspawn boot option machinectl lifecycle",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "Aug 10, 2026 \u00b7 Finally, boot into the container: The -b option will boot the container (i.e. run systemd as PID=1), instead of just running a shell, and -D specifies the directory that becomes the container's root directory. After the container starts, log in as \"root\" with your password.",
+   "weight": 0.8096
+  },
+  {
+   "query": "systemd-nspawn boot option machinectl lifecycle",
+   "title": "systemd-nspawn (1) - Linux manual page - man7.org",
+   "url": "https://www.man7.org/linux/man-pages/man1/systemd-nspawn.1.html",
+   "content": "In contrast to chroot (1) systemd-nspawn may be used to boot full Linux-based operating systems in a container. systemd-nspawn limits access to various kernel interfaces in the container to read-only, such as /sys/, /proc/sys/, or /sys/fs/selinux/.",
+   "weight": 0.8261
+  },
+  {
+   "query": "systemd-nspawn boot option machinectl lifecycle",
+   "title": "systemd-nspawn - freedesktop.org",
+   "url": "https://www.freedesktop.org/software/systemd/man/251/systemd-nspawn.html",
+   "content": "Most importantly the template unit file makes use of the --boot which is not the default in case systemd-nspawn is invoked from the interactive command line. Further differences with the defaults are documented along with the various supported options below. The machinectl(1) tool may be used to execute a number of operations on containers.",
+   "weight": 0.8775
+  },
+  {
+   "query": "systemd-nspawn boot option machinectl lifecycle",
+   "title": "systemd-nspawn (1) \u2014 systemd-container \u2014 Debian trixie \u2014 Debian Manpages",
+   "url": "https://manpages.debian.org/systemd-nspawn.1.html",
+   "content": "Further differences with the defaults are documented along with the various supported options below. The machinectl (1) tool may be used to execute a number of operations on containers. In particular it provides easy-to-use commands to run containers as system services using the systemd-nspawn@.service template unit file.",
+   "weight": 0.6033
+  },
+  {
+   "query": "systemd-nspawn boot option machinectl lifecycle",
+   "title": "Systemd-nspawn (1) Linux Manual Page - SysTutorials",
+   "url": "https://www.systutorials.com/linux-manual-page-1-systemd-nspawn/",
+   "content": "In contrast to chroot (1) systemd-nspawn may be used to boot full Linux-based operating systems in a container. Use a tool like yum (8), debootstrap (8), or pacman (8) to set up an OS directory tree suitable as file system hierarchy for systemd-nspawn containers.",
+   "weight": 0.3956
+  },
+  {
+   "query": "systemd-nspawn boot option machinectl lifecycle",
+   "title": "systemd-nspawn - freedesktop.org",
+   "url": "https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html",
+   "content": "Most importantly the template unit file makes use of the --boot option which is not the default in case systemd-nspawn is invoked from the interactive command line. Further differences with the defaults are documented along with the various supported options below. The machinectl(1) tool may be used to execute a number of operations on containers.",
+   "weight": 0.9511
+  },
+  {
+   "query": "machinectl list start stop nspawn machines",
+   "title": "How to Manage systemd-nspawn Containers with machinectl on RHEL",
+   "url": "https://oneuptime.com/blog/post/2026-03-04-manage-systemd-nspawn-containers-with-machinectl-on-rhel/view",
+   "content": "Mar 4, 2026 \u00b7 machinectl is the management interface for the systemd machine manager. It provides commands to list, start, stop, clone, and inspect systemd-nspawn containers stored under /var/lib/machines/ and other supported machine image paths.",
+   "weight": 0.1709
+  },
+  {
+   "query": "machinectl list start stop nspawn machines",
+   "title": "machinectl - freedesktop.org",
+   "url": "https://www.freedesktop.org/software/systemd/man/latest/machinectl.html",
+   "content": "This starts systemd-nspawn@.service, instantiated for the specified machine name, similar to the effect of systemctl start on the service name. systemd-nspawn looks for a container image by the specified name in /var/lib/machines/ (and other search paths, see below) and runs it.",
+   "weight": 0.9227
+  },
+  {
+   "query": "machinectl list start stop nspawn machines",
+   "title": "How to use the command 'machinectl' (with examples)",
+   "url": "https://commandmasters.com/commands/machinectl-linux/",
+   "content": "Dec 17, 2024 \u00b7 The machinectl command is a powerful utility used for controlling and managing the systemd machine manager. It allows users to execute operations on virtual machines, containers, and images seamlessly. This command is typically used for interacting with systemd\u2019s nspawn container environments, which helps in managing machine instances smoothly. By using machinectl, administrators ca",
+   "weight": 0.1396
+  },
+  {
+   "query": "machinectl list start stop nspawn machines",
+   "title": "machinectl Command Linux: Complete Guide to Managing systemd Containers ...",
+   "url": "https://codelucky.com/machinectl-command-linux/",
+   "content": "What is machinectl? machinectl is the command-line interface to systemd-machined, a system service that manages local containers and virtual machines. It's designed to work seamlessly with various container technologies like systemd-nspawn, Docker, and virtualization platforms such as libvirt and QEMU/KVM. Key Features",
+   "weight": 0.4685
+  },
+  {
+   "query": "machinectl list start stop nspawn machines",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "Aug 10, 2026 \u00b7 Default systemd-nspawn options Note that containers started via machinectl or systemd-nspawn@.service use different default options than containers started manually by the systemd-nspawn command. The extra options used by the service are: -b / --boot \u2013 Managed containers automatically search for an init program and invoke it as PID 1.",
+   "weight": 0.9015
+  },
+  {
+   "query": "machinectl list start stop nspawn machines",
+   "title": "machinectl - Control the systemd machine manager at Linux.org",
+   "url": "https://www.linux.org/docs/man1/machinectl.html",
+   "content": "machinectl - Control the systemd machine manager at Linux.org Back to main site | Back to man page index",
+   "weight": 0.6077
+  }
+ ]
+}

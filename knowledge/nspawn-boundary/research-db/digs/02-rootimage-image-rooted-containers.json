@@ -1,0 +1,94 @@
+{
+ "subtopic": "RootImage image-rooted containers",
+ "queries": [
+  "systemd-nspawn RootImage mkosi image",
+  "systemd-nspawn boot OS disk image RootImage option"
+ ],
+ "redo_count": 0,
+ "results_kept": [
+  {
+   "query": "systemd-nspawn RootImage mkosi image",
+   "title": "mkosi \u2014 A Tool for Generating OS Images",
+   "url": "https://0pointer.net/blog/mkosi-a-tool-for-generating-os-images.html",
+   "content": "# systemd-nspawn -bi image.raw. And there you go: the image should boot up, and just work for you. Now, let's make things more interesting. Let's still not use any of the mkosi.$SOMETHING files around: # mkosi -t raw_btrfs --bootable -o foobar.raw # systemd-nspawn -bi foobar.raw.",
+   "weight": 0.6959
+  },
+  {
+   "query": "systemd-nspawn RootImage mkosi image",
+   "title": "GitHub - systemd/mkosi: Build Bespoke OS Images",
+   "url": "https://github.com/systemd/mkosi",
+   "content": "\ud83d\udcbd Build Bespoke OS Images. Contribute to systemd/mkosi development by creating an account on GitHub.",
+   "weight": 0.7282
+  },
+  {
+   "query": "systemd-nspawn RootImage mkosi image",
+   "title": "mkosi \u2014 Build Bespoke OS Images",
+   "url": "https://mkosi.systemd.io/",
+   "content": "mkosi \u2014 Build Bespoke OS Images A fancy wrapper around dnf --installroot, apt, pacman and zypper that generates customized disk images with a number of bells and whistles.",
+   "weight": 0.7394
+  },
+  {
+   "query": "systemd-nspawn RootImage mkosi image",
+   "title": "Portable Services Introduction",
+   "url": "https://systemd.io/PORTABLE_SERVICES/",
+   "content": "The unit file is searched in the usual paths, i.e. primarily /etc/systemd/system/ and /usr/lib/systemd/system/ within the image. (The implementation will check a couple of other paths too, but it\u2019s recommended to use these two paths.)",
+   "weight": 0.93
+  },
+  {
+   "query": "systemd-nspawn RootImage mkosi image",
+   "title": "mkosi/mkosi/resources/man/mkosi.1.md at main \u00b7 systemd/mkosi\u2026",
+   "url": "https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md",
+   "content": "The mkosi.nspawn nspawn settings file will be copied into the same place as the output image file, if it exists. This is useful since nspawn looks for settings files next to image files it boots, for additional container runtime settings.",
+   "weight": 0.8188
+  },
+  {
+   "query": "systemd-nspawn RootImage mkosi image",
+   "title": "Quick Start Guide | systemd/mkosi | DeepWiki",
+   "url": "https://deepwiki.com/systemd/mkosi/1.2-quick-start-guide",
+   "content": "Jun 21, 2026 \u00b7 This page provides a hands-on tutorial for building your first OS image with mkosi. It covers the basic commands, minimal configuration requirements, and how to run the resulting image.",
+   "weight": 0.2072
+  },
+  {
+   "query": "systemd-nspawn boot OS disk image RootImage option",
+   "title": "systemd-nspawn - freedesktop.org",
+   "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-nspawn.html",
+   "content": "Most importantly the template unit file makes use of the --boot option which is not the default in case systemd-nspawn is invoked from the interactive command line.",
+   "weight": 0.9124
+  },
+  {
+   "query": "systemd-nspawn boot OS disk image RootImage option",
+   "title": "systemd-nspawn - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+   "content": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name.",
+   "weight": 0.5529
+  },
+  {
+   "query": "systemd-nspawn boot OS disk image RootImage option",
+   "title": "Portable Services Introduction",
+   "url": "https://systemd.io/PORTABLE_SERVICES/",
+   "content": "Can be run as OS container, using systemd-nspawn, by booting the image with systemd-nspawn -i -b.Confext images do not have to contain units. As with the base/OS image, each upper extension image must be a plain sub-directory, btrfs subvolume, or a raw disk image.",
+   "weight": 0.9385
+  },
+  {
+   "query": "systemd-nspawn boot OS disk image RootImage option",
+   "title": "csboot.zip: Hard Disk Image of MS-DOS 6.22 with Pascal for Compu\u2026",
+   "url": "https://archive.org/details/csboot",
+   "content": "http://michael960308.webs.com//downloads/csboot.zip from http://michael960308.webs.com/downloads.htm << Hard Disk Image of MS-DOS 6.22 with Pascal for Co\u2026",
+   "weight": 0.1627
+  },
+  {
+   "query": "systemd-nspawn boot OS disk image RootImage option",
+   "title": "systemd - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Systemd",
+   "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across \u2026",
+   "weight": 0.2627
+  },
+  {
+   "query": "systemd-nspawn boot OS disk image RootImage option",
+   "title": "Credentials",
+   "url": "https://systemd.io/CREDENTIALS/",
+   "content": "a service it invokes. systemd-nspawn(1) \u2019s --set-credential= and --load-credential= switches implement this, in order to pass arbitrary credentials from host to container payload.",
+   "weight": 0.8117
+  }
+ ]
+}
