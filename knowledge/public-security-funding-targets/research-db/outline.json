@@ -1,0 +1,223 @@
+{
+  "topic": "public security funding programs for open-source security projects - grant targets (SBIR, NSF, foundations, government programs), eligibility, and the rationale for prioritization without drafting applications prematurely",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "sbir-sttr-security-funding",
+      "scope": "SBIR and STTR as the US government small-business funding route for cybersecurity R&D, including open-source deliverables, phase structure, and eligibility constraints for an open-source security project.",
+      "seed_queries": [
+        "SBIR STTR cybersecurity funding phase eligibility small business",
+        "SBIR open source software deliverables security research"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "nsf-open-source-security-programs",
+      "scope": "US National Science Foundation programs that fund open-source security research and maintenance (SaTC, CICI, Pathways, Transition to Practice), their eligibility and open-source relevance.",
+      "seed_queries": [
+        "NSF cybersecurity funding program open source SaTC",
+        "NSF transition to practice open source security research grant"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "openssf-alpha-omega",
+      "scope": "OpenSSF Alpha-Omega (Linux Foundation): what it funds, the 2026 $12.5M expansion, engagement model, and fit for critical open-source security projects.",
+      "seed_queries": [
+        "OpenSSF Alpha-Omega funding critical open source maintainers security audits",
+        "Alpha-Omega project funding 2026 announcement"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "github-secure-open-source-fund",
+      "scope": "GitHub Secure Open Source Fund: grant size, cohort format, eligibility, application process, and what deliverables it expects.",
+      "seed_queries": [
+        "GitHub Secure Open Source Fund 10000 cohort application",
+        "GitHub secure open source fund eligibility maintainers"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "nlnet-ngi-zero-grants",
+      "scope": "NLnet Foundation and NGI Zero funds: grant sizes, themed call calendar, eligibility for privacy and security research, and open-source requirements.",
+      "seed_queries": [
+        "NLnet NGI Zero grant amount eligibility privacy security",
+        "NLnet foundation open call internet security research"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "sovereign-tech-fund-eligibility",
+      "scope": "Sovereign Tech Fund / Sovereign Tech Agency: funding focus on maintenance of critical open digital infrastructure, eligibility, prototype exclusion, and application cycles.",
+      "seed_queries": [
+        "Sovereign Tech Fund funding criteria open source maintenance",
+        "Sovereign Tech Agency application cycle open digital infrastructure"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "otf-foss-sustainability-fund",
+      "scope": "Open Technology Fund and its FOSS sustainability work: mission framing (internet freedom, at-risk users), funding cycles, eligibility, and fit limits for general security projects.",
+      "seed_queries": [
+        "Open Technology Fund FOSS sustainability fund call eligibility",
+        "OTF internet freedom funding open source security tools"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "funding-screening-prioritization",
+      "scope": "Screening criteria and prioritization rationale for selecting funders: avoiding roadmap and governance distortion, matching grants to scoped public outputs, sequencing an application backlog, and re-verifying deadlines before applying.",
+      "seed_queries": [
+        "open source project accepting funding risks governance control",
+        "grant application prioritization criteria open source maintainers"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.5789,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.091,
+          "1": 0.2391,
+          "2": 0.6699
+        },
+        "confidence": 0.2713
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.4501,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1219,
+          "1": 0.3061,
+          "2": 0.572
+        },
+        "confidence": 0.1536
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.3527,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1463,
+          "1": 0.3547,
+          "2": 0.499
+        },
+        "confidence": 0.0943
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.2659,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1574,
+          "1": 0.4194,
+          "2": 0.4232
+        },
+        "confidence": 0.0697
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5306,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1101,
+          "1": 0.2491,
+          "2": 0.6408
+        },
+        "confidence": 0.2271
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.0478,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2532,
+          "1": 0.4457,
+          "2": 0.3011
+        },
+        "confidence": 0.0301
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.8638,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3138,
+          "1": 0.5085,
+          "2": 0.1777
+        },
+        "confidence": 0.0829
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.6931,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0566,
+          "1": 0.1936,
+          "2": 0.7498
+        },
+        "confidence": 0.4042
+      }
+    },
+    "usage": {
+      "input_tokens": 1142,
+      "output_tokens": 0
+    }
+  },
+  "dropped": [],
+  "kept": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ]
+}
