@@ -1,0 +1,31 @@
+{
+  "topic": "the differential curve as a cross-corpus audit tool: fitting one learned surface over the union of two corpora (skills and self-docs) on a shared primitive basis, sparse-cell detection, Jaccard overlap as system coherence measurement, and skill land-grab detection",
+  "subtopics": [
+    {"nn": "01", "slug": "union-basis-construction", "scope": "Building the shared 19-D primitive basis by concatenation with zero-padding: preserving each corpus's native primitive signal, why mixing is forbidden, and why 0 of 19 columns are dropped on the union.", "seed_queries": ["feature concatenation combining heterogeneous feature sets zero padding shared representation", "multimodal embedding alignment shared latent space heterogeneous data sources"]},
+    {"nn": "02", "slug": "sparse-cell-detection", "scope": "Sparse-cell detection in the differential: L-infinity-ball neighbor radius, per-cell corpus-occupancy breakdown, distinguishing true gaps (sparse in both corpora) from corpus-specific artifacts.", "seed_queries": ["outlier detection density based methods low dimensional embedding sparse regions", "coverage matrix gap analysis audit sparse coverage detection"]},
+    {"nn": "03", "slug": "jaccard-overlap-coherence", "scope": "Jaccard overlap over binarized (u,v) cell grids as a system-coherence measurement: jointly-occupied cells as structural alignment anchors, empty-cell accounting.", "seed_queries": ["Jaccard index set similarity metric definition applications", "corpus comparison document collections overlap analysis coherence"]},
+    {"nn": "04", "slug": "curve-fit-quality-gates", "scope": "Curve-fit quality gates: PC1+PC2 explained variance >= 0.40, holdout R-squared > 0, negative R-squared on small corpora, degenerate fits from near-constant column drops.", "seed_queries": ["PCA explained variance ratio first two components dimensionality reduction quality", "negative R-squared cross validation regression metric interpretation"]},
+    {"nn": "05", "slug": "cross-corpus-rsi-cycles", "scope": "Cross-corpus RSI cycles on the differential baseline: prioritization from sparse-cell maps, preserving per-corpus Stage 1 baselines, drift and re-fitting rules.", "seed_queries": ["iterative self improvement feedback loop baseline drift regression detection", "incremental documentation improvement cycles verification baseline preservation"]},
+    {"nn": "06", "slug": "primitive-basis-design", "scope": "Primitive basis design for corpus audit: binary coverage matrices, near-constant column drop thresholds, choosing 10-D technical vs 9-D audit-trail primitive taxonomies, item granularity rules.", "seed_queries": ["taxonomy design controlled vocabulary ontology construction knowledge organization", "variance threshold feature selection remove constant columns binary indicators"]},
+    {"nn": "07", "slug": "skill-land-grab-detection", "scope": "Skill land-grab detection: reading which corpus populates which (u,v) territory, corpus-typical signatures on the v axis, occupancy-only vs both-occupied cells as expansion opportunities.", "seed_queries": ["market overlap analysis white space analysis segmentation competitive territory", "topic modeling corpus comparison intertopic divergence document collections"]},
+    {"nn": "08", "slug": "multi-corpus-audit-pipelines", "scope": "Reproducible multi-corpus audit pipelines: one-shot scripts, JSON curve-cache persistence, verification checklists, anti-patterns for re-fitting mid-run.", "seed_queries": ["reproducible data pipelines JSON artifact persistence workflow best practices", "documentation as code automated audit corpus analysis pipeline"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef",
+    "answers": {
+      "t01": {"score": 1.5385, "probabilities": {"0": 0.0773, "1": 0.307, "2": 0.6157}, "confidence": 0.219, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.682, "probabilities": {"0": 0.0605, "1": 0.1971, "2": 0.7424}, "confidence": 0.3906, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.4765, "probabilities": {"0": 0.1033, "1": 0.3169, "2": 0.5798}, "confidence": 0.1709, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.683, "probabilities": {"0": 0.0605, "1": 0.196, "2": 0.7435}, "confidence": 0.3922, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.5537, "probabilities": {"0": 0.0951, "1": 0.2561, "2": 0.6488}, "confidence": 0.2434, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.5385, "probabilities": {"0": 0.0973, "1": 0.2669, "2": 0.6358}, "confidence": 0.2274, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.6837, "probabilities": {"0": 0.0616, "1": 0.193, "2": 0.7454}, "confidence": 0.395, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.3837, "probabilities": {"0": 0.1293, "1": 0.3578, "2": 0.5129}, "confidence": 0.1117, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1304, "output_tokens": 0},
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08"]
+  }
+}
