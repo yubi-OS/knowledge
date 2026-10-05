@@ -1,0 +1,38 @@
+{
+  "nn": "06",
+  "slug": "nftables-attribution",
+  "scope": "nftables/firewall4 redirect and DNAT with logging: preserving original destination for decoy attribution, log-before-redirect patterns on OpenWrt",
+  "queries_attempted": [
+    {
+      "query": "nftables redirect dnat log original destination address",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "openwrt firewall4 nftables log before dnat redirect port",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.nftables.org/wiki-nftables/index.php/Performing_Network_Address_Translation_%28NAT%29",
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/security_guide/sec-configuring_nat_using_nftables",
+    "https://oneuptime.com/blog/post/2026-03-20-destination-nat-dnat-nftables/view",
+    "https://documentation.ubuntu.com/security/security-features/network/firewall/nftables/",
+    "https://wiki.nftables.org/wiki-nftables/index.php/Main_Page",
+    "https://jensd.be/1086/linux/forward-a-tcp-port-to-another-ip-or-port-using-nat-with-nftables",
+    "https://deepwiki.com/openwrt/firewall4/7.2-nat-and-redirection",
+    "https://openwrt.org/docs/guide-user/firewall/firewall_configuration",
+    "https://deepwiki.com/openwrt/firewall4/7-rules-and-nat",
+    "https://openwrt.org/docs/guide-user/firewall/misc/nftables?s%5B%5D=command",
+    "https://openwrt.org/",
+    "https://openwrt.org/docs/guide-user/firewall/overview"
+  ],
+  "outcome": "authored"
+}
