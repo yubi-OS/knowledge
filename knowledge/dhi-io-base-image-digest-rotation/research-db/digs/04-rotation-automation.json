@@ -1,0 +1,32 @@
+{
+  "nn": "04",
+  "slug": "rotation-automation",
+  "scope": "Automating the refresh cadence: Dependabot and Renovate digest-pin updates, updatecli, and scheduled workflows that open the bump PR.",
+  "queries_attempted": [
+    {
+      "query": "dependabot docker digest pin base image update",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "renovate pin docker digests update manager",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.renovatebot.com/docker/",
+    "https://docs.renovatebot.com/presets-docker/",
+    "https://github.com/dependabot/dependabot-core/issues/14065",
+    "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+    "https://github.com/microsoft/physical-ai-toolchain/issues/1093",
+    "https://scanrook.io/blog/automate-docker-base-image-updates",
+    "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+    "https://github.com/renovatebot/renovate/discussions/15238"
+  ],
+  "outcome": "authored"
+}

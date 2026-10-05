@@ -1,0 +1,33 @@
+{
+  "nn": "01",
+  "slug": "digest-pinning-fundamentals",
+  "scope": "Why FROM lines are pinned by immutable digest instead of mutable tags, and how multi-arch OCI index digests differ from per-arch child digests.",
+  "queries_attempted": [
+    {
+      "query": "docker FROM digest pinning immutable tag mutable supply chain",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "oci image index digest vs platform manifest digest multi-arch",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://containers.codeguides.io/registries-supply-chain/tagging-and-immutability/",
+    "https://oneuptime.com/blog/post/2026-08-03-copy-artifacts-external-images-pin-digests/view",
+    "https://www.docker.com/blog/defending-your-software-supply-chain-what-every-engineering-team-should-do-now/",
+    "https://specs.opencontainers.org/image-spec/manifest/",
+    "https://specs.opencontainers.org/image-spec/image-index/",
+    "https://stackharbor.com/en/knowledge-base/containers-oci-image-spec-deep-dive/",
+    "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+    "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+    "https://github.com/mindersec/minder/issues/6829"
+  ],
+  "outcome": "authored"
+}

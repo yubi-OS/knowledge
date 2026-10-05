@@ -1,0 +1,2210 @@
+[
+  {
+    "query": "docker FROM digest pinning immutable tag mutable supply chain",
+    "title": "`COPY --from` External Images: Pin Digests, Not Mutable Tags",
+    "url": "https://oneuptime.com/blog/post/2026-08-03-copy-artifacts-external-images-pin-digests/view",
+    "snippet": "Docker pulls that image when necessary and copies the selected path from its filesystem root. If the source uses a mutable tag, rebuilding the same commit can silently copy different bytes. Pinning the external image's digest turns that input into an immutable content reference.",
+    "collected_at": "2026-10-05T07:42:30.623Z",
+    "weight": 0.5211,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '`COPY --from` External Images: Pin Digests, Not Mutable Tags' (https://oneuptime.com/blog/post/2026-08-03-copy-artifacts-external-images-pin-digests/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5211
+      },
+      "usage": {
+        "input_tokens": 156,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:12.635Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker FROM digest pinning immutable tag mutable supply chain",
+    "title": "Image digests | Docker Docs",
+    "url": "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+    "snippet": "Learn how Docker Hardened Images help secure every stage of your software supply chain with signed metadata, provenance, and minimal attack surface.",
+    "collected_at": "2026-10-05T07:42:30.623Z",
+    "weight": 0.9686,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Image digests | Docker Docs' (https://docs.docker.com/dhi/explore/security-concepts/digests/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9686
+      },
+      "usage": {
+        "input_tokens": 156,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:12.635Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker FROM digest pinning immutable tag mutable supply chain",
+    "title": "Tagging & Immutability - Containers SME Cookbook",
+    "url": "https://containers.codeguides.io/registries-supply-chain/tagging-and-immutability/",
+    "snippet": "Insight: Tags are mutable pointers, so treat them as convenient labels and treat the digest as the real, immutable identity. Key Concepts:Semver tags for humans, git SHA tags for traceability, digests for deployment, and registry immutable-tag rules for enforcement.",
+    "collected_at": "2026-10-05T07:42:30.623Z",
+    "weight": 0.6819,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Tagging & Immutability - Containers SME Cookbook' (https://containers.codeguides.io/registries-supply-chain/tagging-and-immutability/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6819
+      },
+      "usage": {
+        "input_tokens": 156,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:12.635Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker FROM digest pinning immutable tag mutable supply chain",
+    "title": "Docker Image Tagging Strategies: Safe Deploys Guide 2026",
+    "url": "https://khimananda.com/blog/docker-image-tagging-strategies",
+    "snippet": "Aug 18, 2026 · Quick answer: Reliable Docker image tagging strategies combine immutable Git SHA tags for traceability with semantic version tags for human readability. Never deploy mutable tags like :latest to production; instead, pin manifests to specific digests or unique commit identifiers to guarantee reproducible builds and safe rollbacks.",
+    "collected_at": "2026-10-05T07:42:30.623Z",
+    "weight": 0.0885,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker Image Tagging Strategies: Safe Deploys Guide 2026' (https://khimananda.com/blog/docker-image-tagging-strategies) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0885
+      },
+      "usage": {
+        "input_tokens": 156,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:12.635Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker FROM digest pinning immutable tag mutable supply chain",
+    "title": "Docker | Secure Sandboxes for AI Agents",
+    "url": "https://www.docker.com/",
+    "snippet": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you …",
+    "collected_at": "2026-10-05T07:42:30.623Z",
+    "weight": 0.1114,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker | Secure Sandboxes for AI Agents' (https://www.docker.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1114
+      },
+      "usage": {
+        "input_tokens": 156,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:12.635Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker FROM digest pinning immutable tag mutable supply chain",
+    "title": "Defending Your Software Supply Chain: What Every Engineering…",
+    "url": "https://www.docker.com/blog/defending-your-software-supply-chain-what-every-engineering-team-should-do-now/",
+    "snippet": "The latest supply chain attack wave is not a single incident to respond to. It is a permanent shift in the threat landscape. In this blog by the Docker CISO Mark Lechner, we share the recommended best practice we use to protect ourselves.",
+    "collected_at": "2026-10-05T07:42:30.623Z",
+    "weight": 0.5928,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Defending Your Software Supply Chain: What Every Engineering…' (https://www.docker.com/blog/defending-your-software-supply-chain-what-every-engineering-team-should-do-now/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5928
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:14.744Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "oci image index digest vs platform manifest digest multi-arch",
+    "title": "OCI Image Indexes: How One Container Tag Selects Multiple Platforms",
+    "url": "https://danielcosenza.com/posts/devops-oci-image-index/",
+    "snippet": "Aug 26, 2026 · How OCI image indexes connect platform descriptors to immutable manifests, and how runtimes select, verify, publish, and debug multi-platform images.",
+    "collected_at": "2026-10-05T07:42:34.555Z",
+    "weight": 0.3,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'OCI Image Indexes: How One Container Tag Selects Multiple Platforms' (https://danielcosenza.com/posts/devops-oci-image-index/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:14.744Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "oci image index digest vs platform manifest digest multi-arch",
+    "title": "The OpenContainers Image Manifest Spec",
+    "url": "https://specs.opencontainers.org/image-spec/manifest/",
+    "snippet": "The second goal is to allow multi-architecture images, through a \"fat manifest\" which references image manifests for platform-specific versions of an image. In OCI, this is codified in an image index.",
+    "collected_at": "2026-10-05T07:42:34.555Z",
+    "weight": 0.9328,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'The OpenContainers Image Manifest Spec' (https://specs.opencontainers.org/image-spec/manifest/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9328
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:14.744Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "oci image index digest vs platform manifest digest multi-arch",
+    "title": "Inspect an OCI Image's Platform Before You Pull It",
+    "url": "https://www.voxfor.com/inspect-oci-image-index-platform-digest-before-pull/",
+    "snippet": "A tag can resolve to a single manifest or to an OCI image index or Docker manifest list containing multiple platform-specific child manifests. Inspect the negotiated media type before assuming which object you received.",
+    "collected_at": "2026-10-05T07:42:34.555Z",
+    "weight": 0.1667,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Inspect an OCI Image's Platform Before You Pull It' (https://www.voxfor.com/inspect-oci-image-index-platform-digest-before-pull/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1667
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:14.744Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "oci image index digest vs platform manifest digest multi-arch",
+    "title": "OCI GetDigest returns the linux/amd64 manifest digest for multi-arch ...",
+    "url": "https://github.com/mindersec/minder/issues/6829",
+    "snippet": "2 days ago · GetRawManifest (Expose raw OCI manifest/index via GetRawManifest #6776) returns the amd64 manifest, so rules can't see the platform list. This blocks the multi-arch example rule in Roadmap: Expand OCI Registry Provider Coverage #6436. Identity.digest in the rego input isn't what docker pull resolves to.",
+    "collected_at": "2026-10-05T07:42:34.555Z",
+    "weight": 0.2153,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'OCI GetDigest returns the linux/amd64 manifest digest for multi-arch ...' (https://github.com/mindersec/minder/issues/6829) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2153
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:14.744Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "oci image index digest vs platform manifest digest multi-arch",
+    "title": "The OCI image spec — what your container image actually is",
+    "url": "https://stackharbor.com/en/knowledge-base/containers-oci-image-spec-deep-dive/",
+    "snippet": "Apr 22, 2026 · A working tour of the OCI image format: manifest, config, layers, index. Inspect images by hand, understand multi-arch indexes, and debug pull or signature failures.",
+    "collected_at": "2026-10-05T07:42:34.555Z",
+    "weight": 0.5544,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'The OCI image spec — what your container image actually is' (https://stackharbor.com/en/knowledge-base/containers-oci-image-spec-deep-dive/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5544
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:16.904Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "oci image index digest vs platform manifest digest multi-arch",
+    "title": "The OpenContainers Image Index Spec",
+    "url": "https://specs.opencontainers.org/image-spec/image-index/",
+    "snippet": "The image index is a higher-level manifest which points to specific image manifests, ideal for one or more platforms. While the use of an image index is OPTIONAL for image providers, image consumers SHOULD be prepared to process them. ¶",
+    "collected_at": "2026-10-05T07:42:34.555Z",
+    "weight": 0.9569,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'The OpenContainers Image Index Spec' (https://specs.opencontainers.org/image-spec/image-index/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9569
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:16.904Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "crane digest vs skopeo inspect multi-arch index digest",
+    "title": "Skopeo vs Crane vs regctl: Container Image Tools Without Docker Daemon ...",
+    "url": "https://alexandre-vazquez.com/skopeo-crane-regctl-container-image-tools/",
+    "snippet": "May 28, 2026 · Skopeo, crane, regctl, ORAS — a practical comparison of container image management tools for platform engineers who need more than docker pull. With use cases, workflows, and a side-by-side comparison.",
+    "collected_at": "2026-10-05T07:42:44.171Z",
+    "weight": 0.1776,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Skopeo vs Crane vs regctl: Container Image Tools Without Docker Daemon ...' (https://alexandre-vazquez.com/skopeo-crane-regctl-container-image-tools/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1776
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:16.904Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "crane digest vs skopeo inspect multi-arch index digest",
+    "title": "Self-Hosted Container Image Management: Skopeo vs ORAS vs Crane (2026)",
+    "url": "https://www.pistack.xyz/posts/2026-05-10-container-image-management-skopeo-oras-crane-guide/",
+    "snippet": "May 10, 2026 · This guide compares three open-source container image tools — Skopeo, ORAS (OCI Registry As Storage), and Crane (from go-containerregistry) — that handle image copying, inspection, signing, and OCI artifact management without requiring a full Docker daemon.",
+    "collected_at": "2026-10-05T07:42:44.171Z",
+    "weight": 0.1432,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Self-Hosted Container Image Management: Skopeo vs ORAS vs Crane (2026)' (https://www.pistack.xyz/posts/2026-05-10-container-image-management-skopeo-oras-crane-guide/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1432
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:16.904Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "crane digest vs skopeo inspect multi-arch index digest",
+    "title": "A Tale of Two Container Image Tools: Skopeo and Crane",
+    "url": "https://eng.d2iq.com/blog/a-tale-of-two-container-image-tools-skopeo-and-crane/",
+    "snippet": "A container image is a self-contained, executable bundle that contains everything required to run a piece of software in a well-defined runtime environment. The bundle contains one or more tar archives, plus a JSON manifest file that describes the software contained in the bundle and how to run it (e.g. what command to run to start the software). L...",
+    "collected_at": "2026-10-05T07:42:44.171Z",
+    "weight": 0.2738,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'A Tale of Two Container Image Tools: Skopeo and Crane' (https://eng.d2iq.com/blog/a-tale-of-two-container-image-tools-skopeo-and-crane/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2738
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:16.904Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "crane digest vs skopeo inspect multi-arch index digest",
+    "title": "Crane (machine) - Wikipedia",
+    "url": "https://en.m.wikipedia.org/wiki/Crane_(machine)",
+    "snippet": "Cranes are commonly employed in transportation for the loading and unloading of freight, in construction for the movement of …",
+    "collected_at": "2026-10-05T07:42:44.171Z",
+    "weight": 0.6686,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Crane (machine) - Wikipedia' (https://en.m.wikipedia.org/wiki/Crane_(machine)) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6686
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:19.021Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "crane digest vs skopeo inspect multi-arch index digest",
+    "title": "Security Labels and Metadata | Project Hummingbird",
+    "url": "https://hummingbird-project.io/docs/background/containers/security-labels-and-metadata/",
+    "snippet": "Image = \"registry.access.redhat.com/hi/caddy\" TAG = \"latest\" ARCH = \"amd64\" # Get per-architecture digests from the image index skopeo inspect --raw \"docker:// ${Image}: ${TAG} \" \\ | jq '.manifests[] | {digest, platform}' # Download the…",
+    "collected_at": "2026-10-05T07:42:44.171Z",
+    "weight": 0.6338,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Security Labels and Metadata | Project Hummingbird' (https://hummingbird-project.io/docs/background/containers/security-labels-and-metadata/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6338
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:19.021Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "crane digest vs skopeo inspect multi-arch index digest",
+    "title": "tools/containers/registry-tools/skopeo-vs-crane.md at main - GitHub",
+    "url": "https://github.com/SparK-7/tools/blob/main/containers/registry-tools/skopeo-vs-crane.md",
+    "snippet": "Aug 30, 2026 · Skopeo vs crane — which registry tool to use Status: reference notes. This is a capability comparison written from the tools' documented behaviour, not from a head-to-head evaluation on our workloads. Treat the recommendations as starting points, not measured results.",
+    "collected_at": "2026-10-05T07:42:44.171Z",
+    "weight": 0.1523,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'tools/containers/registry-tools/skopeo-vs-crane.md at main - GitHub' (https://github.com/SparK-7/tools/blob/main/containers/registry-tools/skopeo-vs-crane.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1523
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:19.021Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx imagetools inspect manifest list digest",
+    "title": "docker buildx imagetools inspect | Docker Docs",
+    "url": "https://docs.docker.com/reference/cli/docker/buildx/imagetools/inspect/",
+    "snippet": "docker dhi customization build list.$ docker buildx imagetools inspect crazymax/loop --format \"{{.Manifest}}\" Name: docker.io/crazymax/loop:latest MediaType: application/vnd.docker.distribution.manifest.v2+json Digest: sha256",
+    "collected_at": "2026-10-05T07:42:47.855Z",
+    "weight": 0.8239,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'docker buildx imagetools inspect | Docker Docs' (https://docs.docker.com/reference/cli/docker/buildx/imagetools/inspect/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8239
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:19.021Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx imagetools inspect manifest list digest",
+    "title": "docker buildx imagetools",
+    "url": "https://docs.docker.com/reference/cli/docker/buildx/imagetools/",
+    "snippet": "Description The imagetools commands contains subcommands for working with manifest lists in container registries. These commands are useful for inspecting manifests to check multi-platform configuration and attestations. Examples Override the configured builder instance (--builder) Same as buildx --builder. Subcommands",
+    "collected_at": "2026-10-05T07:42:47.855Z",
+    "weight": 0.7905,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'docker buildx imagetools' (https://docs.docker.com/reference/cli/docker/buildx/imagetools/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7905
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:19.021Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx imagetools inspect manifest list digest",
+    "title": "docker buildx imagetools inspect | Docker Docs",
+    "url": "https://docker.ubitools.com/reference/cli/docker/buildx/imagetools/inspect/",
+    "snippet": "Description Options Examples Override the configured builder instance (--builder) Format the output (--format) .Name .Manifest JSON output Multi-platform Show original JSON manifest (--raw)",
+    "collected_at": "2026-10-05T07:42:47.855Z",
+    "weight": 0.7556,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'docker buildx imagetools inspect | Docker Docs' (https://docker.ubitools.com/reference/cli/docker/buildx/imagetools/inspect/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7556
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:20.862Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx imagetools inspect manifest list digest",
+    "title": "Docker | Secure Sandboxes for AI Agents",
+    "url": "https://www.docker.com/",
+    "snippet": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you …",
+    "collected_at": "2026-10-05T07:42:47.855Z",
+    "weight": 0.3675,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker | Secure Sandboxes for AI Agents' (https://www.docker.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3675
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:20.862Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx imagetools inspect manifest list digest",
+    "title": "buildx/docs/reference/buildx_imagetools_inspect.md at master · docker ...",
+    "url": "https://github.com/docker/buildx/blob/master/docs/reference/buildx_imagetools_inspect.md",
+    "snippet": "Format the output using the given Go template. Defaults to { {.Manifest}} if unset. Following fields are available: .Name: provides the reference of the image .Manifest: provides the manifest or manifest list .Image: provides the image config",
+    "collected_at": "2026-10-05T07:42:47.855Z",
+    "weight": 0.8242,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'buildx/docs/reference/buildx_imagetools_inspect.md at master · docker ...' (https://github.com/docker/buildx/blob/master/docs/reference/buildx_imagetools_inspect.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8242
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:20.862Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx imagetools inspect manifest list digest",
+    "title": "docker buildx imagetools inspect | Docker Docs",
+    "url": "https://docs.docker.com/reference/cli/docker/buildx/imagetools/inspect",
+    "snippet": "$ docker buildx imagetools inspect alpine Name: docker.io/library/alpine:latest MediaType: application/vnd.docker.distribution.manifest.list.v2+json Digest: sha256:21a3deaa0d32a8057914f36584b5288d2e5ecc984380bc0118285c70fa8c9300 Manifests…",
+    "collected_at": "2026-10-05T07:42:47.855Z",
+    "weight": 0.8987,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'docker buildx imagetools inspect | Docker Docs' (https://docs.docker.com/reference/cli/docker/buildx/imagetools/inspect) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8987
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:20.862Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx build policy rego input image ref canonical digest",
+    "title": "Validating Docker Builds with .rego Policies: Because \"It Works on My ...",
+    "url": "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+    "snippet": "Feb 13, 2026 · Docker build policies are declarative rules written in Rego (the policy language from Open Policy Agent) that validate your build inputs before the build runs. When you kick off docker buildx build, Buildx resolves all inputs — base images from FROM, files from ADD or COPY, Git repositories — and evaluates them against your policy.",
+    "collected_at": "2026-10-05T07:42:51.608Z",
+    "weight": 0.2064,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Validating Docker Builds with .rego Policies: Because \"It Works on My ...' (https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2064
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:20.862Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx build policy rego input image ref canonical digest",
+    "title": "Introduction to build policies | Docker Docs",
+    "url": "https://docs.docker.com/build/policies/intro/",
+    "snippet": "About input.local You'll see allow if input.local in nearly every policy. This rule allows local file access, which includes your build context (typically, the . directory) and importantly, the Dockerfile itself. Without this rule, Buildx can't read your Dockerfile to start the build. Even builds that don't reference any files from the build context often need input.local because the ...",
+    "collected_at": "2026-10-05T07:42:51.608Z",
+    "weight": 0.8622,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Introduction to build policies | Docker Docs' (https://docs.docker.com/build/policies/intro/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8622
+      },
+      "usage": {
+        "input_tokens": 148,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:22.971Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx build policy rego input image ref canonical digest",
+    "title": "Using build policies | Docker Docs",
+    "url": "https://docs.docker.com/build/policies/usage/",
+    "snippet": "See Input reference for all available fields. Testing policies with policy eval Use docker buildx policy eval to test whether your policy allows a specific source without running a full build. Note: docker buildx policy eval tests the source specified as the argument. It doesn't parse your Dockerfile to evaluate all inputs - for that, build with --progress=plain.",
+    "collected_at": "2026-10-05T07:42:51.608Z",
+    "weight": 0.868,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Using build policies | Docker Docs' (https://docs.docker.com/build/policies/usage/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.868
+      },
+      "usage": {
+        "input_tokens": 148,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:22.971Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx build policy rego input image ref canonical digest",
+    "title": "docs/content/manuals/build/policies/usage.md at main · docker/docs",
+    "url": "https://github.com/docker/docs/blob/main/content/manuals/build/policies/usage.md",
+    "snippet": "Policy development workflow Buildx automatically loads policies that match your Dockerfile name. When you build with Dockerfile, Buildx looks for Dockerfile.rego in the same directory. For a file named app.Dockerfile, it looks for app.Dockerfile.rego. See the Advanced: Policy configuration section for configuration options and manual policy ...",
+    "collected_at": "2026-10-05T07:42:51.608Z",
+    "weight": 0.3148,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'docs/content/manuals/build/policies/usage.md at main · docker/docs' (https://github.com/docker/docs/blob/main/content/manuals/build/policies/usage.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3148
+      },
+      "usage": {
+        "input_tokens": 148,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:22.971Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx build policy rego input image ref canonical digest",
+    "title": "Docker | Secure Sandboxes for AI Agents",
+    "url": "https://www.docker.com/",
+    "snippet": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you …",
+    "collected_at": "2026-10-05T07:42:51.608Z",
+    "weight": 0.2914,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker | Secure Sandboxes for AI Agents' (https://www.docker.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2914
+      },
+      "usage": {
+        "input_tokens": 148,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:22.971Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker buildx build policy rego input image ref canonical digest",
+    "title": "Docker Build Overview | Docker Docs",
+    "url": "https://docs.docker.com/build/concepts/overview",
+    "snippet": "While docker build invokes Buildx under the hood, there are subtle differences between this command and the canonical docker buildx build.",
+    "collected_at": "2026-10-05T07:42:51.608Z",
+    "weight": 0.6676,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker Build Overview | Docker Docs' (https://docs.docker.com/build/concepts/overview) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6676
+      },
+      "usage": {
+        "input_tokens": 148,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:22.971Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker build policy rego approved registries FROM digest rule",
+    "title": "Validating Docker Builds with .rego Policies: Because \"It Works on My ...",
+    "url": "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+    "snippet": "Feb 13, 2026 · Wrapping Up Docker build policies with .rego files are a powerful addition to your supply chain security toolkit. They're declarative, testable, and integrate seamlessly into existing build workflows. Whether you start with a simple registry allowlist or go full paranoid mode with pinned digests and signed tags, the important thing is to start.",
+    "collected_at": "2026-10-05T07:43:01.247Z",
+    "weight": 0.6931,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Validating Docker Builds with .rego Policies: Because \"It Works on My ...' (https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6931
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:25.025Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker build policy rego approved registries FROM digest rule",
+    "title": "Validating build inputs with policies | Docker Docs",
+    "url": "https://docs.docker.com/build/policies/",
+    "snippet": "How policies work When you run docker buildx build, Buildx: Resolves all build inputs (images, Git repos, HTTP downloads) Looks for a policy file matching your Dockerfile name (e.g., Dockerfile.rego) Evaluates each input against the policy before the build starts Allows the build to proceed only if all inputs pass the policy Policies are written in Rego (Open Policy Agent's policy language ...",
+    "collected_at": "2026-10-05T07:43:01.247Z",
+    "weight": 0.955,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Validating build inputs with policies | Docker Docs' (https://docs.docker.com/build/policies/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.955
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:25.025Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker build policy rego approved registries FROM digest rule",
+    "title": "Docker | Secure Sandboxes for AI Agents",
+    "url": "https://www.docker.com/",
+    "snippet": "9. 4. 2025Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code.",
+    "collected_at": "2026-10-05T07:43:01.247Z",
+    "weight": 0.2701,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker | Secure Sandboxes for AI Agents' (https://www.docker.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2701
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:25.025Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker build policy rego approved registries FROM digest rule",
+    "title": "Policy templates and examples | Docker Docs",
+    "url": "https://docs.docker.com/build/policies/examples/",
+    "snippet": "If you're new to policies, start with the tutorials: Introduction, Image validation, and Git validation. Those pages teach individual techniques. This page shows complete policies combining those techniques. How to use these examples Copy the policy code into a Dockerfile.rego file next to your Dockerfile Customize any todo comments with your specific values Test by running docker build . and ...",
+    "collected_at": "2026-10-05T07:43:01.248Z",
+    "weight": 0.9221,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Policy templates and examples | Docker Docs' (https://docs.docker.com/build/policies/examples/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9221
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:25.025Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker build policy rego approved registries FROM digest rule",
+    "title": "yubiOS/skills/docker-build-policy/SKILL.md at main · yubi-OS ... - GitHub",
+    "url": "https://github.com/yubi-OS/yubiOS/blob/main/skills/docker-build-policy/SKILL.md",
+    "snippet": "A Build Policy is an OPA/Rego program BuildKit evaluates before a build runs. It inspects each build input (notably FROM images) and returns an allow/deny decision. On deny, nothing is pulled or built — the build fails immediately with the policy's reason. This is the yubiOS supply-chain gate: only approved registries, only digest-pinned (canonical) images.",
+    "collected_at": "2026-10-05T07:43:01.248Z",
+    "weight": 0.2424,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'yubiOS/skills/docker-build-policy/SKILL.md at main · yubi-OS ... - GitHub' (https://github.com/yubi-OS/yubiOS/blob/main/skills/docker-build-policy/SKILL.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2424
+      },
+      "usage": {
+        "input_tokens": 157,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:25.025Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker build policy rego approved registries FROM digest rule",
+    "title": "Private Docker Registry - Inedo Documentation",
+    "url": "https://docs.inedo.com/docs/proget/docker/private-registries",
+    "snippet": "Using ProGet's Docker Registries, you manage your own and third-party Docker images in a unified way while defining fine-grained access control. ProGet works transparently with Docker Client, allowing images to be created internally or…",
+    "collected_at": "2026-10-05T07:43:01.248Z",
+    "weight": 0.7282,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Private Docker Registry - Inedo Documentation' (https://docs.inedo.com/docs/proget/docker/private-registries) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7282
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:27.238Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "dependabot docker digest pin base image update",
+    "title": "Safely update Docker base images with Dependabot: tag following, digest ...",
+    "url": "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+    "snippet": "Jun 28, 2026 · Safely update Docker base images with Dependabot: tag following, digest pinning, and silent-rebuild countermeasures An implementation guide to keep Dockerfile / Docker Compose base images safely updated with Dependabot. Faithful to the official documentation (as of June 2026), it explains, with copy-paste real code: the docker / docker-compose ecosystem configuration, the difference",
+    "collected_at": "2026-10-05T07:43:05.472Z",
+    "weight": 0.2432,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Safely update Docker base images with Dependabot: tag following, digest ...' (https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2432
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:27.238Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "dependabot docker digest pin base image update",
+    "title": "Add digest pinning when updating Docker image tags #14065",
+    "url": "https://github.com/dependabot/dependabot-core/issues/14065",
+    "snippet": "Jan 31, 2026 · Is there an existing issue for this? I have searched the existing issues Feature description Right now, if you have a Dockerfile like this: FROM ubuntu:22.04 Dependabot will update the tag when a n...",
+    "collected_at": "2026-10-05T07:43:05.472Z",
+    "weight": 0.6402,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Add digest pinning when updating Docker image tags #14065' (https://github.com/dependabot/dependabot-core/issues/14065) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6402
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:27.238Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "dependabot docker digest pin base image update",
+    "title": "Base Image Pinning by Digest - Containers SME Cookbook",
+    "url": "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+    "snippet": "Jul 16, 2026 · Pin base images by digest for reproducible builds A digest is an immutable content hash, unlike a mutable tag Resolve tags to digests using docker inspect Automate digest updates with tools like Renovate or Dependabot Pair digest pinning with scheduled rebuilds for security patches Avoid pinning a single platform's manifest for multi-arch images",
+    "collected_at": "2026-10-05T07:43:05.472Z",
+    "weight": 0.61,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Base Image Pinning by Digest - Containers SME Cookbook' (https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:27.238Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "dependabot docker digest pin base image update",
+    "title": "Automate Docker Base Image Updates with Renovate | ScanRook",
+    "url": "https://scanrook.io/blog/automate-docker-base-image-updates",
+    "snippet": "Jul 31, 2026 · How to automate Docker base image updates with Renovate or Dependabot, scheduled CI rebuilds, digest pinning, and automatic scan verification.",
+    "collected_at": "2026-10-05T07:43:05.472Z",
+    "weight": 0.3369,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Automate Docker Base Image Updates with Renovate | ScanRook' (https://scanrook.io/blog/automate-docker-base-image-updates) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3369
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:27.238Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "dependabot docker digest pin base image update",
+    "title": "How to Pin Docker Base Images for Reproducible Builds",
+    "url": "https://how2.sh/posts/how-to-devops-pin-docker-base-images/",
+    "snippet": "Feb 10, 2026 · Pin Docker base images by digest to prevent surprise breakages from upstream tag updates in CI and production.",
+    "collected_at": "2026-10-05T07:43:05.472Z",
+    "weight": 0.5786,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to Pin Docker Base Images for Reproducible Builds' (https://how2.sh/posts/how-to-devops-pin-docker-base-images/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5786
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:29.206Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "dependabot docker digest pin base image update",
+    "title": "Dependabot quickstart guide - GitHub Docs",
+    "url": "https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart",
+    "snippet": "About Dependabot This quickstart guide walks you through setting up and enabling Dependabot, viewing Dependabot alerts, and …",
+    "collected_at": "2026-10-05T07:43:05.472Z",
+    "weight": 0.7791,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Dependabot quickstart guide - GitHub Docs' (https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7791
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:29.206Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "renovate pin docker digests update manager",
+    "title": "Docker - Renovate Docs",
+    "url": "https://docs.renovatebot.com/docker/",
+    "snippet": "Luckily Renovate can update the digests for you. When pinning a digest, Renovate retains the Docker tag in the FROM line for readability, like this: FROM node:14.15.1@sha256:d938c1761e3afbae9242848ffbb95b9cc1cb0a24d889f8bd955204d347a7266e.",
+    "collected_at": "2026-10-05T07:43:09.395Z",
+    "weight": 0.8922,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker - Renovate Docs' (https://docs.renovatebot.com/docker/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8922
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:29.206Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "renovate pin docker digests update manager",
+    "title": "Docker Presets - Renovate Docs",
+    "url": "https://docs.renovatebot.com/presets-docker/",
+    "snippet": "Renovate 44 was accidentally released as a major version, even though the changes were non-breaking. See the full announcement on GitHub for more details.Renovate Docs. Docker Presets. Initializing search.",
+    "collected_at": "2026-10-05T07:43:09.395Z",
+    "weight": 0.6919,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker Presets - Renovate Docs' (https://docs.renovatebot.com/presets-docker/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6919
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:29.206Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "renovate pin docker digests update manager",
+    "title": "RegexManager and Docker digest pinning - Help to make it work for...",
+    "url": "https://github.com/renovatebot/renovate/discussions/15238",
+    "snippet": "While pocing Renovate on 1 repo, I used the default dockerfile manager, and Renovate opened PRs to pin the digest of the images. So far, so good. Except that, for misc reasons, we have put the docker registry in an ARG variable.",
+    "collected_at": "2026-10-05T07:43:09.395Z",
+    "weight": 0.0745,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'RegexManager and Docker digest pinning - Help to make it work for...' (https://github.com/renovatebot/renovate/discussions/15238) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0745
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:29.206Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "renovate pin docker digests update manager",
+    "title": "Renovate update image version and digest in the same PR",
+    "url": "https://stackoverflow.com/questions/78590314/renovate-update-image-version-and-digest-in-the-same-pr",
+    "snippet": "I have renovate setup with the config bellow. This results in two PRs (the digest update only happens after the version is merged). Do you see any issue with my config? My main objective here is to update the version but also to have se security of digest pinning. If I add \"docker:pinDigests\", the version updates stop working Thank you Image declaration example (k8s):",
+    "collected_at": "2026-10-05T07:43:09.395Z",
+    "weight": 0.2737,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Renovate update image version and digest in the same PR' (https://stackoverflow.com/questions/78590314/renovate-update-image-version-and-digest-in-the-same-pr) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2737
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:31.175Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "renovate pin docker digests update manager",
+    "title": "Renovate Bot Homelab — Automated Docker Dependency Updates with Git",
+    "url": "https://blog.gntech.me/posts/2026-06-01-renovate-bot-automated-docker-updates-homelab/",
+    "snippet": "Automate Docker Compose and Dockerfile dependency updates in your homelab with Renovate Bot. Self-hosted setup with Gitea for automated PR-based image version bumps and digest pinning.",
+    "collected_at": "2026-10-05T07:43:09.395Z",
+    "weight": 0.1826,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Renovate Bot Homelab — Automated Docker Dependency Updates with Git' (https://blog.gntech.me/posts/2026-06-01-renovate-bot-automated-docker-updates-homelab/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1826
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:31.175Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "renovate pin docker digests update manager",
+    "title": "NFL.com | Official Site of the National Football League",
+    "url": "https://www.nfl.com/",
+    "snippet": "The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more.",
+    "collected_at": "2026-10-05T07:43:09.395Z",
+    "weight": 0.0273,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'NFL.com | Official Site of the National Football League' (https://www.nfl.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0273
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:31.175Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cosign verify container image digest attestation signature",
+    "title": "Verifying Signatures - Sigstore",
+    "url": "https://docs.sigstore.dev/cosign/verifying/verify/",
+    "snippet": "Signature payloads created by cosign included the digest of the container image they are attached to. By default, cosign validates that this digest matches the container during cosign verify. If you are using other payload formats with cosign, you can use the --check-claims=false flag",
+    "collected_at": "2026-10-05T07:43:19.039Z",
+    "weight": 0.6011,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Verifying Signatures - Sigstore' (https://docs.sigstore.dev/cosign/verifying/verify/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6011
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:31.175Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cosign verify container image digest attestation signature",
+    "title": "Cosign Image Signing [Key-Based and Keyless Verification]",
+    "url": "https://www.golinuxcloud.com/cosign-sign-verify-container-images/",
+    "snippet": "Jul 28, 2026 · Cosign binds a cryptographic signature to an exact container image digest. This walkthrough downloads and verifies Cosign 3.1.2 using an already trusted Cosign installation, then signs and verifies container images. For a first installation, bootstrap trust with Sigstore's documented TUF artifact-key procedure before running the identity-based binary verification shown here. On Rock",
+    "collected_at": "2026-10-05T07:43:19.039Z",
+    "weight": 0.2651,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Cosign Image Signing [Key-Based and Keyless Verification]' (https://www.golinuxcloud.com/cosign-sign-verify-container-images/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2651
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:31.175Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cosign verify container image digest attestation signature",
+    "title": "Signing Container Images with Cosign (and Notation) + Storing ...",
+    "url": "https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html",
+    "snippet": "Jan 20, 2026 · Signing container images is one of the highest-leverage things you can do to improve your software supply chain. A signature gives you a cryptographic way to answer “who produced this image?” and “has it been tampered with?”. Attestations (for example: provenance and SBOMs) help you answer deeper questions like “how was it built?” and “what’s inside it?”.",
+    "collected_at": "2026-10-05T07:43:19.039Z",
+    "weight": 0.6881,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Signing Container Images with Cosign (and Notation) + Storing ...' (https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6881
+      },
+      "usage": {
+        "input_tokens": 171,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:33.215Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cosign verify container image digest attestation signature",
+    "title": "How to Verify Docker Image Signatures with Cosign",
+    "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-verify-docker-image-signatures-with-cosign/view",
+    "snippet": "Cosign is a tool for signing, verifying, and storing container image signatures in OCI-compliant registries. Unlike traditional GPG signing, Cosign stores signatures alongside the image in the registry itself. No separate signature server needed.",
+    "collected_at": "2026-10-05T07:43:19.039Z",
+    "weight": 0.1656,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to Verify Docker Image Signatures with Cosign' (https://oneuptime.com/blog/post/2026-02-08-how-to-verify-docker-image-signatures-with-cosign/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1656
+      },
+      "usage": {
+        "input_tokens": 171,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:33.215Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cosign verify container image digest attestation signature",
+    "title": "How to verify container images with Kyverno using KMS, Cosign, a…",
+    "url": "https://blog.sigstore.dev/how-to-verify-container-images-with-kyverno-using-kms-cosign-and-workload-identity-1e07d2b85061/",
+    "snippet": "How to verify container images with Kyverno using KMS, Cosign, and Workload Identity Apr 25, 2022 by developer-guy Securing our software supply chains ha…",
+    "collected_at": "2026-10-05T07:43:19.039Z",
+    "weight": 0.8747,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to verify container images with Kyverno using KMS, Cosign, a…' (https://blog.sigstore.dev/how-to-verify-container-images-with-kyverno-using-kms-cosign-and-workload-identity-1e07d2b85061/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8747
+      },
+      "usage": {
+        "input_tokens": 171,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:33.215Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cosign verify container image digest attestation signature",
+    "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
+    "url": "https://www.rentwithcosign.com/",
+    "snippet": "Whether you’re a renter trying to qualify for an apartment or a landlord seeking reliable tenants, Cosign bridges the gap to make …",
+    "collected_at": "2026-10-05T07:43:19.039Z",
+    "weight": 0.0234,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Cosign | The Modern Cosigner Alternative for Renters and Landlords' (https://www.rentwithcosign.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0234
+      },
+      "usage": {
+        "input_tokens": 171,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:33.215Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "verify sbom slsa provenance base image before upgrade",
+    "title": "Container Image Provenance Attestations: SLSA and SBOM Attestation End ...",
+    "url": "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+    "snippet": "May 7, 2026 · Attestations are signed metadata attached to a container image as a co-located OCI artifact. This article covers attaching and verifying SLSA build provenance and SBOM attestations using cosign, in-toto, and Kyverno.",
+    "collected_at": "2026-10-05T07:43:22.691Z",
+    "weight": 0.4205,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Container Image Provenance Attestations: SLSA and SBOM Attestation End ...' (https://www.systemshardening.com/articles/cicd/container-image-attestations/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4205
+      },
+      "usage": {
+        "input_tokens": 171,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:33.215Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "verify sbom slsa provenance base image before upgrade",
+    "title": "Provenance-First CI/CD: Add SLSA-style attestations + SBOM checks to ...",
+    "url": "https://appropri8.com/blog/2026/01/20/provenance-first-cicd-slsa-sbom/",
+    "snippet": "Jan 19, 2026 · Most breaches aren't app bugs. They're compromised dependencies, poisoned build steps, and untrusted artifacts. This article shows how to add provenance attestations, signing, and SBOM policy gates to a GitHub Actions pipeline so you only ship verified artifacts.",
+    "collected_at": "2026-10-05T07:43:22.691Z",
+    "weight": 0.5636,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Provenance-First CI/CD: Add SLSA-style attestations + SBOM checks to ...' (https://appropri8.com/blog/2026/01/20/provenance-first-cicd-slsa-sbom/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5636
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:35.279Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "verify sbom slsa provenance base image before upgrade",
+    "title": "Software Supply-chain Evidence: SBOMs, Provenance, Signing, and ...",
+    "url": "https://docs.jasonachkardiab.com/devsecops/supply-chain-sbom-signing/",
+    "snippet": "Jul 25, 2026 · Generate a current-format SBOM and SLSA provenance predicate, obtain an attestation through an approved identity/signing service, and store evidence with the artifact. Before promotion: verify the signed attestation envelope, signer/key or certificate chain, expected issuer/identity, and required transparency evidence;",
+    "collected_at": "2026-10-05T07:43:22.691Z",
+    "weight": 0.1987,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Software Supply-chain Evidence: SBOMs, Provenance, Signing, and ...' (https://docs.jasonachkardiab.com/devsecops/supply-chain-sbom-signing/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1987
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:35.279Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "verify sbom slsa provenance base image before upgrade",
+    "title": "Attesting builds with SLSA provenance in CI | SecOpsLog",
+    "url": "https://secopslog.com/blog/sbom-attest/",
+    "snippet": "Jun 3, 2025 · An SBOM (software bill of materials) inventories every component in an artifact; SLSA provenance is a signed statement of how that artifact was built. Together they turn incident response from grepping Dockerfiles into querying a catalog — and they give admission controllers something verifiable to enforce before a pod schedules.",
+    "collected_at": "2026-10-05T07:43:22.691Z",
+    "weight": 0.3003,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Attesting builds with SLSA provenance in CI | SecOpsLog' (https://secopslog.com/blog/sbom-attest/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3003
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:35.279Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "verify sbom slsa provenance base image before upgrade",
+    "title": "Home | E-Verify",
+    "url": "https://www.e-verify.gov/",
+    "snippet": "E-Verify is a web-based system that allows enrolled employers to confirm the eligibility of their employees to work in the United …",
+    "collected_at": "2026-10-05T07:43:22.691Z",
+    "weight": 0.032,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Home | E-Verify' (https://www.e-verify.gov/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.032
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:35.279Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "verify sbom slsa provenance base image before upgrade",
+    "title": "SBOM attestations | Docker Docs",
+    "url": "https://docs.docker.com/build/metadata/attestations/sbom/",
+    "snippet": "Verify SBOM attestations. Always validate the generated SBOM for your image before you push your image to a registry.BUILDKIT_SBOM_SCAN_STAGE=base,bin. Enables scanning for the stages named base and bin. Only stages that are built will be scanned.",
+    "collected_at": "2026-10-05T07:43:22.691Z",
+    "weight": 0.934,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'SBOM attestations | Docker Docs' (https://docs.docker.com/build/metadata/attestations/sbom/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.934
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:44:35.279Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "single source of truth pinned image digests containerfile drift",
+    "title": "feat(security): detect drift/staleness of pinned container image ...",
+    "url": "https://github.com/microsoft/physical-ai-toolchain/issues/1093",
+    "snippet": "Give container images the same freshness and tamper-evidence coverage the binary and GitHub Actions pins already have: a scheduled check that, for each digest-pinned image reference in the repository, re-resolves the tag to its current registry digest and reports drift (optionally flagging staleness against a newer tag), surfaced non-gating to ...",
+    "collected_at": "2026-10-05T07:43:32.399Z",
+    "weight": 0.8229,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'feat(security): detect drift/staleness of pinned container image ...' (https://github.com/microsoft/physical-ai-toolchain/issues/1093) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8229
+      },
+      "usage": {
+        "input_tokens": 168,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:38.199Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "single source of truth pinned image digests containerfile drift",
+    "title": "Image Version Pinning and Dependency Management",
+    "url": "https://deepwiki.com/ublue-os/bluefin/2.2-image-version-pinning-and-dependency-management",
+    "snippet": "Mar 31, 2026 · The image-versions.yml file serves as the single source of truth for all external container image dependencies used in Bluefin builds. This manifest explicitly declares every base image and component image with its registry location, tag, and immutable SHA256 digest.",
+    "collected_at": "2026-10-05T07:43:32.399Z",
+    "weight": 0.3328,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Image Version Pinning and Dependency Management' (https://deepwiki.com/ublue-os/bluefin/2.2-image-version-pinning-and-dependency-management) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3328
+      },
+      "usage": {
+        "input_tokens": 168,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:38.199Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "single source of truth pinned image digests containerfile drift",
+    "title": "ADR-0009-runtime-source-of-truth-and-drift-semantics.md",
+    "url": "https://github.com/pestoura/hermes-security-labs/blob/main/docs/architecture/adr/ADR-0009-runtime-source-of-truth-and-drift-semantics.md",
+    "snippet": "Automatic reconciliation is forbidden. Drift requires explicit review and a deliberate Git change, deployment or rollback. Image digests are owned by an immutable runtime release, not copied into each environment manifest. An environment references the applicable release/profile. An image release declared PINNED requires a valid sha256 digest.",
+    "collected_at": "2026-10-05T07:43:32.399Z",
+    "weight": 0.4326,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'ADR-0009-runtime-source-of-truth-and-drift-semantics.md' (https://github.com/pestoura/hermes-security-labs/blob/main/docs/architecture/adr/ADR-0009-runtime-source-of-truth-and-drift-semantics.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4326
+      },
+      "usage": {
+        "input_tokens": 168,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:38.199Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "single source of truth pinned image digests containerfile drift",
+    "title": "Mark 8:36 NKJV - For what will it profit a man if he - Bible Gateway",
+    "url": "https://www.biblegateway.com/passage/?search=Mark+8%3A36&version=NKJV",
+    "snippet": "For what will it profit a man if he gains the whole world, and loses his own soul?",
+    "collected_at": "2026-10-05T07:43:32.399Z",
+    "weight": 0.0239,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Mark 8:36 NKJV - For what will it profit a man if he - Bible Gateway' (https://www.biblegateway.com/passage/?search=Mark+8%3A36&version=NKJV) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0239
+      },
+      "usage": {
+        "input_tokens": 168,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:38.199Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "single source of truth pinned image digests containerfile drift",
+    "title": "[architect] image identity is a 7-site manual rename contract with no...",
+    "url": "https://github.com/projectbluefin/finpilot/issues/291",
+    "snippet": "Containerfile:14-16 asserts that the project name defined there is \"the single source of truth for your custom image's identity\".Any ISO built from this repo, or from a fork that misses rename site 7, installs and then pins the machine to a registry ref that does not exist.",
+    "collected_at": "2026-10-05T07:43:32.399Z",
+    "weight": 0.2806,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '[architect] image identity is a 7-site manual rename contract with no...' (https://github.com/projectbluefin/finpilot/issues/291) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2806
+      },
+      "usage": {
+        "input_tokens": 168,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:38.199Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "single source of truth pinned image digests containerfile drift",
+    "title": "GitHub - NicoENDYs/SecurityModule: Submódulo reutilizable de…",
+    "url": "https://github.com/NicoENDYs/SecurityModule",
+    "snippet": "Security-testing-template/ setup.sh # One-shot scaffold script versions.env # Single source of truth for all pinned image versions/digests .trivy.yaml # Default Trivy config (severity, skip-dirs, scanners) Contributing.md # Contribution…",
+    "collected_at": "2026-10-05T07:43:32.399Z",
+    "weight": 0.2695,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - NicoENDYs/SecurityModule: Submódulo reutilizable de…' (https://github.com/NicoENDYs/SecurityModule) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2695
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:40.329Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "central pin file dockerfile digest drift supply chain",
+    "title": "GitHub - azu/dockerfile-pin: A CLI tool for digest pinning ...",
+    "url": "https://github.com/azu/dockerfile-pin",
+    "snippet": "Mar 27, 2026 · dockerfile-pin A CLI tool that adds @sha256: to FROM and COPY --from= lines in Dockerfiles, image fields in docker-compose.yml, and Docker image references in GitHub Actions and GitLab CI files to prevent supply chain attacks.",
+    "collected_at": "2026-10-05T07:43:36.272Z",
+    "weight": 0.8668,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - azu/dockerfile-pin: A CLI tool for digest pinning ...' (https://github.com/azu/dockerfile-pin) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8668
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:40.329Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "central pin file dockerfile digest drift supply chain",
+    "title": "dockerfile-pin/README.md at main · azu/dockerfile-pin · GitHub",
+    "url": "https://github.com/azu/dockerfile-pin/blob/main/README.md",
+    "snippet": "dockerfile-pin A CLI tool that adds @sha256:<digest> to FROM and COPY --from= lines in Dockerfiles, image fields in docker-compose.yml, and Docker image references in GitHub Actions and GitLab CI files to prevent supply chain attacks.",
+    "collected_at": "2026-10-05T07:43:36.272Z",
+    "weight": 0.5515,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'dockerfile-pin/README.md at main · azu/dockerfile-pin · GitHub' (https://github.com/azu/dockerfile-pin/blob/main/README.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5515
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:40.329Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "central pin file dockerfile digest drift supply chain",
+    "title": "Container Image Supply Chain Dockerfile to Production",
+    "url": "https://safeguard.sh/resources/blog/container-image-supply-chain-dockerfile-to-production",
+    "snippet": "Mar 30, 2026 · Walk through container supply chain security from base image choice to runtime drift detection, including Chainguard, distroless, Kyverno, and Gatekeeper.",
+    "collected_at": "2026-10-05T07:43:36.272Z",
+    "weight": 0.5605,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Container Image Supply Chain Dockerfile to Production' (https://safeguard.sh/resources/blog/container-image-supply-chain-dockerfile-to-production) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5605
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:40.329Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "central pin file dockerfile digest drift supply chain",
+    "title": "Central Station (Chicago terminal) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Central_Station_(Chicago_terminal)",
+    "snippet": "Central Station was an intercity passenger terminal in downtown Chicago, Illinois, at the southern end of Grant Park near Roosevelt …",
+    "collected_at": "2026-10-05T07:43:36.272Z",
+    "weight": 0.0224,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Central Station (Chicago terminal) - Wikipedia' (https://en.wikipedia.org/wiki/Central_Station_(Chicago_terminal)) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0224
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:40.329Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "central pin file dockerfile digest drift supply chain",
+    "title": "dockerfile-pin command - github.com/azu/dockerfile-pin - Go...",
+    "url": "https://pkg.go.dev/github.com/azu/dockerfile-pin",
+    "snippet": "dockerfile-pin. A CLI tool that adds @sha256:<digest> to FROM lines in Dockerfiles, image fields in docker-compose.yml, and Docker image references in GitHub Actions files to prevent supply chain attacks.",
+    "collected_at": "2026-10-05T07:43:36.272Z",
+    "weight": 0.7776,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'dockerfile-pin command - github.com/azu/dockerfile-pin - Go...' (https://pkg.go.dev/github.com/azu/dockerfile-pin) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7776
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:42.725Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "central pin file dockerfile digest drift supply chain",
+    "title": "GitHub - ICTU/update-time: It's time to update your…",
+    "url": "https://github.com/ICTU/update-time",
+    "snippet": "Warning Digest drift for python:3.14 in Dockerfile:1: pinned to sha256:… but the registry now serves sha256:…; the pin was left unchanged, verify the change is expected before updating the pin Warning Tag drift for actions/checkout@4.1.1 in…",
+    "collected_at": "2026-10-05T07:43:36.272Z",
+    "weight": 0.4345,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - ICTU/update-time: It's time to update your…' (https://github.com/ICTU/update-time) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4345
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:42.725Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker registry digest immutability rollback pinned image",
+    "title": "Docker: Pulling an image by digest, that internally uses a tag",
+    "url": "https://stackoverflow.com/questions/55407999/docker-pulling-an-image-by-digest-that-internally-uses-a-tag",
+    "snippet": "Mar 29, 2019 · Based off of the docker documentation pulling an image via digest has the following property: Using this feature “pins” an image to a specific version in time From what I understand, the docker image pulled with that digest at any point is immutable. Though it doesn't comment on the mutable, or seemingly mutable references within.",
+    "collected_at": "2026-10-05T07:43:39.987Z",
+    "weight": 0.0751,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker: Pulling an image by digest, that internally uses a tag' (https://stackoverflow.com/questions/55407999/docker-pulling-an-image-by-digest-that-internally-uses-a-tag) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0751
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:42.725Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker registry digest immutability rollback pinned image",
+    "title": "Immutable infrastructure | Docker Docs",
+    "url": "https://docs.docker.com/dhi/explore/security-concepts/immutability/",
+    "snippet": "Understand how image digests, read-only containers, and signed metadata ensure Docker Hardened Images are tamper-resistant and immutable.",
+    "collected_at": "2026-10-05T07:43:39.987Z",
+    "weight": 0.9227,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Immutable infrastructure | Docker Docs' (https://docs.docker.com/dhi/explore/security-concepts/immutability/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9227
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:42.725Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker registry digest immutability rollback pinned image",
+    "title": "Docker | Secure Sandboxes for AI Agents",
+    "url": "https://www.docker.com/",
+    "snippet": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you …",
+    "collected_at": "2026-10-05T07:43:39.987Z",
+    "weight": 0.2022,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Docker | Secure Sandboxes for AI Agents' (https://www.docker.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2022
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:42.725Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker registry digest immutability rollback pinned image",
+    "title": "What is Docker? Containers, Images, and Registries Explained",
+    "url": "https://www.deployhq.com/blog/what-is-docker",
+    "snippet": "The four moving parts: Dockerfile, image, container, registry. Most Docker confusion goes away once these four are clear: Dockerfile — a text file with the recipe to build an image. You commit this to your repo. Image — an immutable, layered binary artifact built from the Dockerfile.",
+    "collected_at": "2026-10-05T07:43:39.987Z",
+    "weight": 0.4916,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What is Docker? Containers, Images, and Registries Explained' (https://www.deployhq.com/blog/what-is-docker) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4916
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:44.783Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker registry digest immutability rollback pinned image",
+    "title": "Jak náhrát docker image do Docker Registry | Josef Jebavý",
+    "url": "https://blog.josefjebavy.cz/cs/unix/docker-registry",
+    "snippet": "Docker registr je serverová aplikace, která poskytuje organizovaný úložný prostor a distribuční systém pro pojmenované Docker obrazy (image).",
+    "collected_at": "2026-10-05T07:43:39.987Z",
+    "weight": 0.1259,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Jak náhrát docker image do Docker Registry | Josef Jebavý' (https://blog.josefjebavy.cz/cs/unix/docker-registry) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1259
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:44.783Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "docker registry digest immutability rollback pinned image",
+    "title": "Runbook: Roll back a Compose stack to a pinned digest",
+    "url": "https://runbook.academy/courses/docker/runbooks/docker-runbook-roll-back-compose-stack/",
+    "snippet": "Aug 12, 2026 · 6 Pin the target digest in the Compose file or in a rollback override file, replacing the tag entirely; expect docker compose config --images to print the digest form rather than the tag.",
+    "collected_at": "2026-10-05T07:43:39.987Z",
+    "weight": 0.4534,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Runbook: Roll back a Compose stack to a pinned digest' (https://runbook.academy/courses/docker/runbooks/docker-runbook-roll-back-compose-stack/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4534
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:44.783Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "digest mismatch manifest changed registry incident",
+    "title": "Podman: Manifest Push Failed - Digest Mismatch - Why Your Image Push ...",
+    "url": "https://adhdecode.com/debugging/podman/manifest-push-failed-digest-not-matching/",
+    "snippet": "This error, “Manifest Push Failed - Digest Mismatch,” in Podman (and Docker, as the underlying mechanisms are similar) is frustratingly common. It indicates that the manifest list you’re attempting to push to a registry doesn’t align with the images already present, specifically concerning their content digests.",
+    "collected_at": "2026-10-05T07:43:49.611Z",
+    "weight": 0.1232,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Podman: Manifest Push Failed - Digest Mismatch - Why Your Image Push ...' (https://adhdecode.com/debugging/podman/manifest-push-failed-digest-not-matching/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1232
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:44.783Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "digest mismatch manifest changed registry incident",
+    "title": "Image can't be pulled due to digest mismatch, expected sha256 not found",
+    "url": "https://access.redhat.com/solutions/6300121",
+    "snippet": "Pod creation fail due to digest mismatch on images modified after the upgrade to OCP 4.7.24",
+    "collected_at": "2026-10-05T07:43:49.611Z",
+    "weight": 0.877,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Image can't be pulled due to digest mismatch, expected sha256 not found' (https://access.redhat.com/solutions/6300121) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.877
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:44.783Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "digest mismatch manifest changed registry incident",
+    "title": "manifest digest mismatch pushing to private docker registry · Issue...",
+    "url": "https://github.com/moby/buildkit/issues/2963",
+    "snippet": "Jul 14, 2022 · I don't see any clear statement that the digest returned by the registry must match the one generated by the client. For the manifest in particular, there doesn't seem to be a canonical way to marshal it into JSON, which is why the digests differ between client and server in this case.",
+    "collected_at": "2026-10-05T07:43:49.611Z",
+    "weight": 0.7329,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'manifest digest mismatch pushing to private docker registry · Issue...' (https://github.com/moby/buildkit/issues/2963) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7329
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:47.019Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "digest mismatch manifest changed registry incident",
+    "title": "DIGEST Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/digest",
+    "snippet": "The meaning of DIGEST is a summation or condensation of a body of information. How to use digest in a sentence.",
+    "collected_at": "2026-10-05T07:43:49.611Z",
+    "weight": 0.0447,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'DIGEST Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/digest) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.0447
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:47.019Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "digest mismatch manifest changed registry incident",
+    "title": "Ollama Digest Mismatch Error: Delete One Bad Blob",
+    "url": "https://localaimaster.com/blog/ollama-digest-mismatch",
+    "snippet": "What \"digest mismatch, file must be downloaded again\" means, how to find and delete the single offending sha256 blob, and why a stable got digest points at the network while a changing one points at your disk.",
+    "collected_at": "2026-10-05T07:43:49.611Z",
+    "weight": 0.1706,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Ollama Digest Mismatch Error: Delete One Bad Blob' (https://localaimaster.com/blog/ollama-digest-mismatch) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1706
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:47.019Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "digest mismatch manifest changed registry incident",
+    "title": "Why does podman image push fail with digest error - Red Hat ...",
+    "url": "https://access.redhat.com/solutions/6568941",
+    "snippet": "Jun 13, 2022 · Issue When pushing an image to a registry, push fails with the below error",
+    "collected_at": "2026-10-05T07:43:49.611Z",
+    "weight": 0.8899,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Why does podman image push fail with digest error - Red Hat ...' (https://access.redhat.com/solutions/6568941) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8899
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:47.019Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "slsa provenance base image attestation verify new digest",
+    "title": "Container Image Provenance Attestations: SLSA and SBOM Attestation End ...",
+    "url": "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+    "snippet": "May 7, 2026 · Attestations are signed metadata attached to a container image as a co-located OCI artifact. This article covers attaching and verifying SLSA build provenance and SBOM attestations using cosign, in-toto, and Kyverno.",
+    "collected_at": "2026-10-05T07:43:53.267Z",
+    "weight": 0.3827,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Container Image Provenance Attestations: SLSA and SBOM Attestation End ...' (https://www.systemshardening.com/articles/cicd/container-image-attestations/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3827
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:47.019Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "slsa provenance base image attestation verify new digest",
+    "title": "Verify image provenance | Compute Engine | Google Cloud Documentation",
+    "url": "https://docs.cloud.google.com/compute/docs/images/image-builder/verify-image-provenance",
+    "snippet": "Extract, decode, and verify SLSA build provenance attestations generated by Image Builder inside Artifact Registry.",
+    "collected_at": "2026-10-05T07:43:53.267Z",
+    "weight": 0.9125,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Verify image provenance | Compute Engine | Google Cloud Documentation' (https://docs.cloud.google.com/compute/docs/images/image-builder/verify-image-provenance) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9125
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:49.715Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "slsa provenance base image attestation verify new digest",
+    "title": "Lab: Generating and Verifying SLSA Provenance for Container Images",
+    "url": "https://secure-pipelines.com/ci-cd-security/lab-generating-verifying-slsa-provenance-container-images/",
+    "snippet": "Mar 5, 2026 · Hands-on lab for generating SLSA Level 3 provenance for container images using GitHub Actions. Covers slsa-github-generator, slsa-verifier, and GitHub artifact attestations.",
+    "collected_at": "2026-10-05T07:43:53.267Z",
+    "weight": 0.4653,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Lab: Generating and Verifying SLSA Provenance for Container Images' (https://secure-pipelines.com/ci-cd-security/lab-generating-verifying-slsa-provenance-container-images/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4653
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:49.715Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "slsa provenance base image attestation verify new digest",
+    "title": "XXX - Trailers & Videos | Rotten Tomatoes",
+    "url": "https://www.rottentomatoes.com/m/xxx/videos/1828701251997",
+    "snippet": "View HD Trailers and Videos for XXX on Rotten Tomatoes, then check our Tomatometer to find out what the Critics say.",
+    "collected_at": "2026-10-05T07:43:53.267Z",
+    "weight": 0.026,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'XXX - Trailers & Videos | Rotten Tomatoes' (https://www.rottentomatoes.com/m/xxx/videos/1828701251997) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.026
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:49.715Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "slsa provenance base image attestation verify new digest",
+    "title": "Artifact Provenance and Attestations: From SLSA to in-toto",
+    "url": "https://secure-pipelines.com/ci-cd-security/artifact-provenance-attestations-slsa-in-toto/",
+    "snippet": "Mar 11, 2026 · Add verification to your admission controllers, deployment scripts, or pull-based GitOps workflows. Adopt in-toto attestations as your metadata format. The in-toto attestation format is becoming the standard for supply chain metadata, supporting not just SLSA provenance but also SBOMs, vulnerability scans, and custom predicates.",
+    "collected_at": "2026-10-05T07:43:53.267Z",
+    "weight": 0.5154,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Artifact Provenance and Attestations: From SLSA to in-toto' (https://secure-pipelines.com/ci-cd-security/artifact-provenance-attestations-slsa-in-toto/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5154
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:49.715Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "slsa provenance base image attestation verify new digest",
+    "title": "SLSA • Provenance",
+    "url": "https://slsa.dev/spec/v1.0/provenance",
+    "snippet": "Record the digest in the provenance 1 and use a separate provenance attestation to link that digest back to version control.",
+    "collected_at": "2026-10-05T07:43:53.267Z",
+    "weight": 0.9273,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'SLSA • Provenance' (https://slsa.dev/spec/v1.0/provenance) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9273
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:49.715Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "sigstore rekor container image transparency log attestation",
+    "title": "GitHub - sigstore/rekor: Software Supply Chain Transparency Log …",
+    "url": "https://github.com/sigstore/rekor",
+    "snippet": "A CLI application is available to make and verify entries, query the transparency log for inclusion proof, integrity verification of the transparency log or retrieval of entries by either public key or artifact. Rekor fulfils the signature transparency role of sigstore's software signing infrastructure.",
+    "collected_at": "2026-10-05T07:43:56.911Z",
+    "weight": 0.7905,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GitHub - sigstore/rekor: Software Supply Chain Transparency Log …' (https://github.com/sigstore/rekor) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.7905
+      },
+      "usage": {
+        "input_tokens": 149,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:51.803Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "sigstore rekor container image transparency log attestation",
+    "title": "Transparency Log - Sigstore",
+    "url": "https://docs.sigstore.dev/logging/",
+    "snippet": "Documentation for Rekor",
+    "collected_at": "2026-10-05T07:43:56.911Z",
+    "weight": 0.9466,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Transparency Log - Sigstore' (https://docs.sigstore.dev/logging/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.9466
+      },
+      "usage": {
+        "input_tokens": 149,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:51.803Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "sigstore rekor container image transparency log attestation",
+    "title": "Rekor - Sigstore",
+    "url": "https://docs.sigstore.dev/logging/overview/",
+    "snippet": "The Rekor project provides a restful API-based server for validation, and a transparency log for storage. A CLI application is available to make and verify entries, query the log for inclusion proof, integrity verification of the log or retrieval of entries (either by a public key or an artifact).",
+    "collected_at": "2026-10-05T07:43:56.911Z",
+    "weight": 0.8248,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Rekor - Sigstore' (https://docs.sigstore.dev/logging/overview/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.8248
+      },
+      "usage": {
+        "input_tokens": 149,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:51.803Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "sigstore rekor container image transparency log attestation",
+    "title": "Home · Sigstore",
+    "url": "https://www.sigstore.dev/",
+    "snippet": "Sigstore's Rekor provides an immutable, tamper-resistant, transparent ledger of signatures and software metadata. Our public Rekor …",
+    "collected_at": "2026-10-05T07:43:56.911Z",
+    "weight": 0.6629,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Home · Sigstore' (https://www.sigstore.dev/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6629
+      },
+      "usage": {
+        "input_tokens": 149,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:51.803Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "sigstore rekor container image transparency log attestation",
+    "title": "How to Verify Docker Image Signatures with Cosign",
+    "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-verify-docker-image-signatures-with-cosign/view",
+    "snippet": "Cosign signs the image with this certificate. The signing event is recorded in Rekor, a tamper-resistant transparency log. The certificate expires, but the Rekor entry proves the signature was valid at signing time.",
+    "collected_at": "2026-10-05T07:43:56.911Z",
+    "weight": 0.1974,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to Verify Docker Image Signatures with Cosign' (https://oneuptime.com/blog/post/2026-02-08-how-to-verify-docker-image-signatures-with-cosign/view) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1974
+      },
+      "usage": {
+        "input_tokens": 149,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:45:51.803Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "sigstore rekor container image transparency log attestation",
+    "title": "Sigstore | Kyverno",
+    "url": "https://kyverno.io/docs/policy-types/cluster-policy/verify-images/sigstore/",
+    "snippet": "Skipping Image References. Signing images. Verifying Image Attestations.Cosign uses Rekor, a transparency log service to store signatures. In Cosign 2.0 verifies Rekor entries for both key-based and identity-based signing.",
+    "collected_at": "2026-10-05T07:43:56.911Z",
+    "weight": 0.96,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Sigstore | Kyverno' (https://kyverno.io/docs/policy-types/cluster-policy/verify-images/sigstore/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.96
+      },
+      "usage": {
+        "input_tokens": 208,
+        "output_tokens": 0
+      },
+      "requested_at": "2026-10-05T07:46:54.437Z"
+    },
+    "redo_of": null
+  }
+]

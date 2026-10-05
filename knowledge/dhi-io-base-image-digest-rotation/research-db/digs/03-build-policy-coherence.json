@@ -1,0 +1,29 @@
+{
+  "nn": "03",
+  "slug": "build-policy-coherence",
+  "scope": "Keeping an OPA/Rego Docker Build Policy coherent across a rotation: approved registries, canonical digest-pinned FROM, provenance requirements, and what denies the new pin.",
+  "queries_attempted": [
+    {
+      "query": "docker buildx build policy rego input image ref canonical digest",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "docker build policy rego approved registries FROM digest rule",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/build/policies/",
+    "https://docs.docker.com/build/policies/intro/",
+    "https://docs.docker.com/build/policies/examples/",
+    "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+    "https://docs.docker.com/build/policies/usage/"
+  ],
+  "outcome": "authored"
+}

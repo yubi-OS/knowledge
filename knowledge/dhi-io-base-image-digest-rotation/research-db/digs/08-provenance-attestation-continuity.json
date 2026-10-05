@@ -1,0 +1,32 @@
+{
+  "nn": "08",
+  "slug": "provenance-attestation-continuity",
+  "scope": "Keeping SLSA provenance, Sigstore signatures, and transparency-log coverage continuous across a rotation: verifying the new base image digest carries its attestations.",
+  "queries_attempted": [
+    {
+      "query": "slsa provenance base image attestation verify new digest",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "sigstore rekor container image transparency log attestation",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://slsa.dev/spec/v1.0/provenance",
+    "https://docs.cloud.google.com/compute/docs/images/image-builder/verify-image-provenance",
+    "https://secure-pipelines.com/ci-cd-security/artifact-provenance-attestations-slsa-in-toto/",
+    "https://www.sigstore.dev/",
+    "https://github.com/sigstore/rekor",
+    "https://docs.sigstore.dev/logging/overview/",
+    "https://docs.sigstore.dev/logging/",
+    "https://kyverno.io/docs/policy-types/cluster-policy/verify-images/sigstore/"
+  ],
+  "outcome": "authored"
+}

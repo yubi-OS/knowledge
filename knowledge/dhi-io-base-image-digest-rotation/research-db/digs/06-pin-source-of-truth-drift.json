@@ -1,0 +1,31 @@
+{
+  "nn": "06",
+  "slug": "pin-source-of-truth-drift",
+  "scope": "Single source of truth for approved digests (a PINNED.md-style pin file), keeping the consuming Containerfile in lockstep, and using commit messages as the audit trail.",
+  "queries_attempted": [
+    {
+      "query": "single source of truth pinned image digests containerfile drift",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "central pin file dockerfile digest drift supply chain",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://safeguard.sh/resources/blog/container-image-supply-chain-dockerfile-to-production",
+    "https://github.com/azu/dockerfile-pin",
+    "https://pkg.go.dev/github.com/azu/dockerfile-pin",
+    "https://github.com/azu/dockerfile-pin/blob/main/README.md",
+    "https://github.com/microsoft/physical-ai-toolchain/issues/1093",
+    "https://github.com/pestoura/hermes-security-labs/blob/main/docs/architecture/adr/ADR-0009-runtime-source-of-truth-and-drift-semantics.md",
+    "https://deepwiki.com/ublue-os/bluefin/2.2-image-version-pinning-and-dependency-management"
+  ],
+  "outcome": "authored"
+}
