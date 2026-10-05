@@ -1,0 +1,27 @@
+# Stereographic lift onto the sphere
+
+Scope: mapping the 2-dimensional principal plane onto the 2-sphere through inverse stereographic projection, and why the audit curve wants a compact manifold instead of an unbounded plane.
+
+## The projection itself
+
+Stereographic projection maps the sphere to the plane by projecting points on the surface from one pole onto a plane tangent to the opposite pole. Wolfram MathWorld defines it as a map projection obtained by projecting points P on the surface of a sphere from the sphere's north pole N to a point P' in a plane tangent to the south pole S, with the property that great circles project to circles in the plane (https://mathworld.wolfram.com/StereographicProjection.html, jev high 0.8621). The mathematical definition is the same construction read as a perspective projection of the sphere through a specific point on the sphere onto a plane perpendicular to the diameter through that point (https://en.wikipedia.org/wiki/Stereographic_projection, jev high 0.9332; https://encyclopediaofmath.org/wiki/Stereographic_projection, jev high 0.8526). Brown University's geometry course material treats it as one of the most useful mapping techniques from a curved surface to a flat map (https://www.math.brown.edu/tbanchof/Beyond3D.new/chapter6/s6_7.html, jev high 0.9057).
+
+The key property for audit use is conformality: the projection preserves angles locally, which is what makes it well-behaved when the direction of a point from the pole carries the meaning. The cartographic reference gives the explicit forward and inverse mapping equations for the polar stereographic projection, including the radius of the spherical reference surface (https://kartoweb.itc.nl/geometrics/Map%20projections/body.htm, jev high 0.7893), and classifies stereographic among the azimuthal perspective projections (https://en.wikipedia.org/wiki/Stereographic_map_projection, jev high 0.5174).
+
+## The inverse direction: plane to sphere
+
+The corpus method runs the projection backwards. The PCA plane from the coverage matrix is finite data on an unbounded plane; the inverse stereographic lift carries it onto the sphere, where every point sits at finite distance and the surface is compact. This inverse direction is an established technique in data analysis. A 2021 study proposes transforming data on an unknown manifold to an n-sphere by conformal stereographic projection, explicitly to preserve the angles and similarities of data in the original manifold, and uses the sphere's metric and geodesic distances to build similarity matrices for embedding and clustering (https://link.springer.com/article/10.1007/s10489-021-02513-0, jev high 0.8764; full-text PDF at https://link.springer.com/content/pdf/10.1007/s10489-021-02513-0.pdf, jev high 0.7719).
+
+The visualization community arrived at the same construction from the display side. The Virtual Data Sphere work inverts the principle of stereographic projection by projecting spatial features from a map onto a virtual sphere surrounding the viewer, as a focus-plus-context technique for immersive geovisualization (https://isprs-annals.copernicus.org/articles/V-4-2022/235/2022/isprs-annals-V-4-2022-235-2022.pdf, jev high 0.8912). Both lines of work justify the lift the same way the audit does: the plane has no boundary conditions to manage, while the sphere is finite and every direction is representable.
+
+## Why a compact manifold for audit
+
+The audit's verdict lives in empty regions of a fitted curve. On an unbounded plane, a fitted function can drift to infinity in directions where no data sits, and "empty" is undefined because there is always more plane. On the sphere, the domain is closed: the fitted curve covers a bounded, closed surface, so every point is either inside a dense region or in a named sparse cell, and the equal-area cell partition of the next doc can tile the whole domain with no leftover. Compactness is what makes "the corpus is thin here" a statement about a specific place rather than a tail behaviour (source: yubi-OS/yubiOS refs/adjacent-problems-curve-corpus-primitives-2026-09-01.md).
+
+## What the lift costs
+
+The lift is a deliberate distortion: the plane's point at infinity collapses to the projection pole on the sphere. Two files that are far apart in PCA space but on the same ray from the origin end up near each other on the sphere near the pole. The method accepts this because the pole region is where the least-structured files land (low coverage on most primitives), and the audit reads that pole as its own signal rather than pretending the distance there is metrically meaningful. The alternative of keeping data on the plane was tried as the v1 basis and lost the matched-parameter ablation, which is recorded in the spherical-harmonics doc.
+
+## Practical reading of a lifted corpus
+
+After the lift, a file's position encodes its joint primitive pattern: files covering the same spread of primitives cluster, files with unusual combinations sit apart, and the corpus pole concentrates files that cover few primitives. Readers of the map should interpret direction from the centre, not Euclidean distance, because stereographic coordinates preserve angles rather than distances. The 2021 manifold-learning paper makes the same trade explicit by choosing the conformal property over metric fidelity (https://link.springer.com/article/10.1007/s10489-021-02513-0, jev high 0.8764).
