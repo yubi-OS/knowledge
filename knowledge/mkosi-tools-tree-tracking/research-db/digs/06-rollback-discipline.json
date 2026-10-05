@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "rollback-discipline",
+ "scope": "Rolling back a tools-tree change by reverting the pin: never hand-editing a built image, atomic revert semantics, and treating a mkosi upgrade like a base-image bump.",
+ "queries_attempted": [
+  {
+   "query": "rollback container image pin revert git atomic",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "reproducible builds never modify built image artifacts",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://stackoverflow.com/questions/76920841/how-do-you-rollback-downgrade-a-docker-container-image-to-a-previous-version",
+  "https://vergil-project.github.io/vergil-containers/dev/operations/rollback/",
+  "https://stackoverflow.com/questions/26322247/docker-revert-changes-to-container",
+  "https://learn.microsoft.com/en-us/answers/questions/5550113/how-to-i-roll-back-a-windows-update",
+  "https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit",
+  "https://gist.github.com/dasgoll/476ecc7a057ac885f0be",
+  "https://reproducible-builds.org/",
+  "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/",
+  "https://handwiki.org/wiki/Philosophy:List_of_topics_characterized_as_pseudoscience",
+  "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "https://adhdecode.com/devops/artifact-management/reproducible-builds/"
+ ],
+ "outcome": "authored"
+}

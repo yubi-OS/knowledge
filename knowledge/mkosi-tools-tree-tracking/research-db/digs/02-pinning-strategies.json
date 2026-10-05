@@ -1,0 +1,48 @@
+{
+ "nn": "02",
+ "slug": "pinning-strategies",
+ "scope": "Pinning the tools-tree image: digest vs tag pinning, choosing the distro/registry source, and resolving the tools tree reproducibly so builds are comparable.",
+ "queries_attempted": [
+  {
+   "query": "mkosi tools tree pin image digest registry",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 2
+  },
+  {
+   "query": "OCI image digest pinning reproducible builds tag vs digest",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "mkosi tools tree mirror cache offline build environment",
+   "attempt": 2,
+   "raw_results": 51,
+   "kept": 2
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig thin: only 1 authoritative source (ArchWiki mkosi) for tools-tree pinning strategies",
+   "new_queries": [
+    "mkosi tools tree mirror cache offline build environment"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://mail.yahoo.com/",
+  "https://wiki.archlinux.org/title/Mkosi",
+  "https://www.kunwar.page/chapter/106-the-oci-image-lifecycle-registries-digest-pinning-the-digest-update-pattern",
+  "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+  "https://oneuptime.com/blog/post/2026-08-11-why-sign-container-images-by-digest-not-tag/view",
+  "https://interviewstacks.com/stacks/docker/image-distribution-and-registries/whats-the-difference-between-using-a-tag-and-using-a-digest-for-pinning",
+  "https://www.ociservices.gov.in/onlineOCI/",
+  "https://neerajsinghi.com/blogs/artifact-immutability-go-binary-signing-digest-pinning-promotion-pipeline",
+  "https://man.archlinux.org/man/mkosi.1.en",
+  "https://www.cornell.edu/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,239 @@
+{
+ "topic": "mkosi tools trees: version pinning and tracking of the build-tool environment so OS image builds run inside a pinned, managed tool tree, and how to track its versions",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "tools-tree-mechanism",
+   "scope": "What the mkosi tools tree is: how mkosi builds and uses a tools tree, the ToolsTree= / ToolsTreeDistribution= / ToolsTreeDefault= semantics, what runs inside it, and when mkosi stopped building one by default.",
+   "seed_queries": [
+    "mkosi ToolsTree tools tree configuration how it works",
+    "mkosi ToolsTreeDistribution ToolsTreeDefault tools tree default behavior"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "pinning-strategies",
+   "scope": "Pinning the tools-tree image: digest vs tag pinning, choosing the distro/registry source, and resolving the tools tree reproducibly so builds are comparable.",
+   "seed_queries": [
+    "mkosi tools tree pin image digest registry",
+    "OCI image digest pinning reproducible builds tag vs digest"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "single-source-of-truth",
+   "scope": "Where the tools-tree pin lives: exactly one owner (a PINNED.md-style ledger or the mkosi config), avoiding a second pin location, and how config references the tracked digest.",
+   "seed_queries": [
+    "single source of truth dependency pinning repository policy",
+    "PINNED.md image digests tracking file"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "refresh-workflow",
+   "scope": "The refresh workflow for the tools-tree pin: confirm the current pin, resolve the new source, record the digest not just the tag, rebuild a candidate image, and update the pin in one commit.",
+   "seed_queries": [
+    "renovate digest pin automated dependency update workflow",
+    "container base image bump workflow digest update single commit"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "verification-gates",
+   "scope": "Post-bump verification gates: boot the built artifact, verify the UKI signs and boots, and gate the tools-tree change on image-level tests rather than tool-level smoke tests.",
+   "seed_queries": [
+    "mkosi UKI unified kernel image sign boot verification",
+    "image build CI gate boot test UKI signing verification"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "rollback-discipline",
+   "scope": "Rolling back a tools-tree change by reverting the pin: never hand-editing a built image, atomic revert semantics, and treating a mkosi upgrade like a base-image bump.",
+   "seed_queries": [
+    "rollback container image pin revert git atomic",
+    "reproducible builds never modify built image artifacts"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "supply-chain-integration",
+   "scope": "The tools tree as a supply-chain input: how the pinned tool environment feeds SLSA provenance, build-policy FROM-image vetting, and attestation of the build pipeline.",
+   "seed_queries": [
+    "SLSA provenance build environment toolchain attestation",
+    "build policy FROM image digest allowlist supply chain security"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "assumption-set",
+   "scope": "Caller obligations and environment dependencies: build-host mkosi parity, every image-producing job consuming the same pin, registry availability and offline mirrors, and concurrency over the pin.",
+   "seed_queries": [
+    "build host toolchain drift reproducible builds hermetic",
+    "offline air-gapped container image build local registry mirror"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "version-tracking-ledger",
+   "scope": "Tracking tool-tree versions over time: recording old-to-new transitions, changelog and ledger discipline, and auditing which tool versions produced which images.",
+   "seed_queries": [
+    "build tool version record provenance which tool built artifact",
+    "dependency changelog tracking pin transitions ledger"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8885,
+    "probabilities": {
+     "0": 0.0315,
+     "1": 0.0486,
+     "2": 0.9199
+    },
+    "confidence": 0.7744,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.8037,
+    "probabilities": {
+     "0": 0.0325,
+     "1": 0.1313,
+     "2": 0.8362
+    },
+    "confidence": 0.5762,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.4836,
+    "probabilities": {
+     "0": 0.1265,
+     "1": 0.2634,
+     "2": 0.6101
+    },
+    "confidence": 0.1864,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.6084,
+    "probabilities": {
+     "0": 0.0752,
+     "1": 0.2412,
+     "2": 0.6836
+    },
+    "confidence": 0.2967,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.2096,
+    "probabilities": {
+     "0": 0.1593,
+     "1": 0.4718,
+     "2": 0.3689
+    },
+    "confidence": 0.0761,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.8737,
+    "probabilities": {
+     "0": 0.2583,
+     "1": 0.6098,
+     "2": 0.1319
+    },
+    "confidence": 0.1839,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.1303,
+    "probabilities": {
+     "0": 0.1744,
+     "1": 0.521,
+     "2": 0.3046
+    },
+    "confidence": 0.092,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.9362,
+    "probabilities": {
+     "0": 0.328,
+     "1": 0.4077,
+     "2": 0.2643
+    },
+    "confidence": 0.0155,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.5528,
+    "probabilities": {
+     "0": 0.108,
+     "1": 0.2312,
+     "2": 0.6608
+    },
+    "confidence": 0.2527,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1252,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t06",
+   "t07",
+   "t08",
+   "t09"
+  ]
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "nn": "03",
+ "slug": "single-source-of-truth",
+ "scope": "Where the tools-tree pin lives: exactly one owner (a PINNED.md-style ledger or the mkosi config), avoiding a second pin location, and how config references the tracked digest.",
+ "queries_attempted": [
+  {
+   "query": "single source of truth dependency pinning repository policy",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "PINNED.md image digests tracking file",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "mkosi mkosi.conf pin tools tree distribution version configuration",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 2
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig thin: only 2 authoritative sources for single-source-of-truth pin location",
+   "new_queries": [
+    "mkosi mkosi.conf pin tools tree distribution version configuration"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://devsecopsschool.com/blog/dependency-pinning/",
+  "https://www.merriam-webster.com/dictionary/single",
+  "https://ocaml-explore.netlify.app/pages/opam/repositories-and-pinning/",
+  "https://github.com/appdefensealliance/ASA-WG/issues/400",
+  "https://rakesh-lakshmipathy.github.io/android-master-to-architect/docs/architecture/repository-usecase-ssot",
+  "https://www.mdpi.com/1424-8220/21/15/4975",
+  "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+  "https://how2.sh/posts/how-to-devops-pin-docker-base-images/",
+  "https://github.com/deadnews/pindock/tree/main",
+  "https://pinnedgolf.com/",
+  "https://github.com/ukrolelo/dockgecompanion",
+  "https://build.opensuse.org/users/ojkastl_buildservice",
+  "https://thenines.com/",
+  "https://github.com/marketplace/actions/setup-mkosi"
+ ],
+ "outcome": "authored"
+}

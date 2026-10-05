@@ -1,0 +1,36 @@
+{
+ "nn": "08",
+ "slug": "assumption-set",
+ "scope": "Caller obligations and environment dependencies: build-host mkosi parity, every image-producing job consuming the same pin, registry availability and offline mirrors, and concurrency over the pin.",
+ "queries_attempted": [
+  {
+   "query": "build host toolchain drift reproducible builds hermetic",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "offline air-gapped container image build local registry mirror",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://bazel.build/basics/hermeticity",
+  "https://beefed.ai/en/hermetic-build-playbook",
+  "https://martinuke0.github.io/posts/2026-09-06-implementing-hermetic-builds-with-bazel-and-buildbuddy-for-reproducible-ci-pipelines/",
+  "https://adultfriendfinder.com/www/guest/",
+  "https://infragap.com/hermetic-builds/",
+  "https://reproducible-builds.org/docs/build-toolchain-from-source/",
+  "https://medium.com/@cocardoso/air-gapped-not-handcuffed-bootstrapping-a-secure-offline-docker-registry-in-one-afternoon-8892b5211906",
+  "https://oneuptime.com/blog/post/2026-01-19-kubernetes-mirror-images-offline/view",
+  "https://www.offline-dice.com/",
+  "https://coder.com/docs/install/airgap",
+  "https://www.crazygames.com/t/offline",
+  "https://www.netray.co/troubleshoot/air-gapped-container-registry-setup"
+ ],
+ "outcome": "authored"
+}
