@@ -1,0 +1,44 @@
+{
+ "nn": "01",
+ "slug": "atomic-unit-of-change",
+ "scope": "What makes a change atomic and auditable: the smallest unit of change in databases, git, and improvement cycles, and why one atomic action per cycle is the smallest honest audit unit.",
+ "queries_attempted": [
+  {
+   "query": "atomic commit smallest unit of change database transaction definition",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "one atomic change per commit code review audit best practice",
+   "attempt": 2,
+   "raw_results": 62,
+   "kept": 6
+  },
+  {
+   "query": "ACID properties atomicity transactions postgresql documentation",
+   "attempt": "redo1.1",
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "small commits git history review atomic changes",
+   "attempt": "redo1.2",
+   "raw_results": 51,
+   "kept": 5
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "dig returned 0 results weighted >= 0.5; first 2 queries surfaced aggregators and off-topic pages",
+   "new_queries": [
+    "ACID properties atomicity transactions postgresql documentation",
+    "small commits git history review atomic changes"
+   ]
+  }
+ ],
+ "results_kept": [],
+ "outcome": "authored"
+}

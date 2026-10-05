@@ -1,0 +1,223 @@
+{
+ "topic": "the single-action atom and Merkle-tree artifact design: one atomic action per improvement cycle with a Merkle-structured artifact as the auditable unit of change",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "atomic-unit-of-change",
+   "scope": "What makes a change atomic and auditable: the smallest unit of change in databases, git, and improvement cycles, and why one atomic action per cycle is the smallest honest audit unit.",
+   "seed_queries": [
+    "atomic commit smallest unit of change database transaction definition",
+    "one atomic change per commit code review audit best practice"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "merkle-tree-fundamentals",
+   "scope": "Merkle tree structure, hash chaining, inclusion proofs, and content addressing: the substrate that makes an artifact tamper-evident and verifiable.",
+   "seed_queries": [
+    "merkle tree inclusion proof audit log how it works",
+    "content addressed storage merkle tree git ipfs explanation"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "git-object-model-merkle-history",
+   "scope": "Git's object model (blob, tree, commit) as a Merkle DAG: how version control natively makes every change unit tamper-evident and addressable.",
+   "seed_queries": [
+    "git object model blob tree commit sha merkle dag",
+    "git commit hash chain tamper evident history verify"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "transparency-log-attestation",
+   "scope": "Transparency logs (Rekor, Certificate Transparency) and attestations: publishing each change artifact so third parties can verify it existed and was signed.",
+   "seed_queries": [
+    "sigstore rekor transparency log attestation inclusion proof",
+    "certificate transparency merkle tree design tamper evidence"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "evidence-bundle-artifact",
+   "scope": "Evidence bundles and provenance: in-toto attestations and SLSA provenance packaging logs and build events into one hash-chained, signed auditable unit.",
+   "seed_queries": [
+    "in-toto attestation slsa provenance evidence bundle",
+    "hash chained tamper evident audit log evidence packaging design"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "bounded-rsi-one-action-cycle",
+   "scope": "Bounded recursive self-improvement discipline: one hypothesis per cycle, fixpoint rules, and why a single atomic action per cycle keeps improvement auditable.",
+   "seed_queries": [
+    "one hypothesis per iteration bounded improvement loop audit",
+    "agent self improvement loop single change per cycle verify"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "idempotency-reversibility",
+   "scope": "Idempotency and reversibility of atomic actions: idempotency keys, compensating actions, and recovery when the outcome of an action is unknown.",
+   "seed_queries": [
+    "idempotency key design distributed systems retry",
+    "compensating transaction rollback design atomic operation"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "change-artifact-manifest",
+   "scope": "Manifest design for change artifacts: linking leaf artifacts, tree structure, and a root hash so an improvement cycle produces one verifiable bundle.",
+   "seed_queries": [
+    "merkle tree manifest artifact integrity root hash design",
+    "sbom manifest linking artifacts hashes integrity"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.9178,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0217,
+     "1": 0.0388,
+     "2": 0.9395
+    },
+    "confidence": 0.8269
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.927,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0154,
+     "1": 0.0422,
+     "2": 0.9424
+    },
+    "confidence": 0.8351
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.7706,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0387,
+     "1": 0.152,
+     "2": 0.8093
+    },
+    "confidence": 0.5194
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.1767,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1388,
+     "1": 0.5457,
+     "2": 0.3155
+    },
+    "confidence": 0.1248
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.5506,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0726,
+     "1": 0.3041,
+     "2": 0.6233
+    },
+    "confidence": 0.2293
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.8741,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0236,
+     "1": 0.0787,
+     "2": 0.8977
+    },
+    "confidence": 0.719
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.4676,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0856,
+     "1": 0.3611,
+     "2": 0.5533
+    },
+    "confidence": 0.1657
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.8908,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0249,
+     "1": 0.0594,
+     "2": 0.9157
+    },
+    "confidence": 0.7639
+   }
+  },
+  "usage": {
+   "input_tokens": 1498,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
