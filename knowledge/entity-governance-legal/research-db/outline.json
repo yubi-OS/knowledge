@@ -1,0 +1,194 @@
+{
+  "topic": "entity formation, governance, and legal review for an open-source security project",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "entity-formation-options",
+      "scope": "Comparison of US legal entity types (sole proprietorship, LLC, nonprofit) for a solo-founder pre-revenue open-source security software project, with liability, tax, and funding tradeoffs.",
+      "seed_queries": [
+        "LLC vs sole proprietorship solo software consultant liability tax",
+        "open source project LLC vs nonprofit 501c3 formation"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "nonprofit-foundation-structures",
+      "scope": "Nonprofit paths for open-source projects: 501(c)(3) vs 501(c)(6), fiscal sponsorship (SFC, Open Collective), and foundation umbrella programs.",
+      "seed_queries": [
+        "fiscal sponsorship open source Software Freedom Conservancy Open Collective comparison",
+        "501c3 vs 501c6 open source foundation Linux Foundation"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "governance-models",
+      "scope": "Open-source governance models (BDFL, foundation, vendor-led, community-led) and what a single-founder project needs to document before GA.",
+      "seed_queries": [
+        "open source governance models BDFL steering council foundation comparison",
+        "solo maintainer open source project governance advisory board"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "security-disclosure-review",
+      "scope": "Security disclosure point of contact, coordinated vulnerability disclosure policy, and trusted external review for security-critical decisions.",
+      "seed_queries": [
+        "SECURITY.md coordinated vulnerability disclosure policy open source best practices",
+        "security code review trusted reviewers open source project"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "contracts-sow-consulting",
+      "scope": "Contract essentials for consulting/support SOWs: liability caps, IP ownership of deliverables, SLA enforceability, governing law.",
+      "seed_queries": [
+        "consulting statement of work liability cap IP ownership deliverables clause",
+        "SLA enforceability small business consulting contract"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "professional-liability-insurance",
+      "scope": "Errors-and-omissions / professional liability and cyber liability insurance considerations for a solo security consultancy.",
+      "seed_queries": [
+        "professional liability insurance errors omissions solo software consultant",
+        "cyber liability insurance security consulting firm"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "privacy-policy-hosted-offers",
+      "scope": "Privacy policy and data handling commitments required before launching hosted services handling customer operational data; GDPR/CCPA baseline and DPAs.",
+      "seed_queries": [
+        "privacy policy requirements SaaS startup before launch GDPR CCPA",
+        "data processing agreement hosted service customer data"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "export-controls-crypto",
+      "scope": "US export control regime for cryptographic open-source software: ECCN 5D002, publicly-available source provisions, BIS notification, CCATS.",
+      "seed_queries": [
+        "EAR encryption export control open source publicly available 5D002 TSU",
+        "BIS CCATS classification open source cryptography notification"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "funding-structure-fit",
+      "scope": "How funding path (grants, sponsorships, paid support) interacts with entity choice and grant eligibility.",
+      "seed_queries": [
+        "grant eligibility nonprofit entity requirements open source funding",
+        "open source project funding models sponsorship grants consulting"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7335,
+        "probabilities": {
+          "0": 0.0741,
+          "1": 0.1182,
+          "2": 0.8077
+        },
+        "confidence": 0.5077
+      },
+      "t02": {
+        "score": 1.3119,
+        "probabilities": {
+          "0": 0.1907,
+          "1": 0.3067,
+          "2": 0.5026
+        },
+        "confidence": 0.0746
+      },
+      "t03": {
+        "score": 1.8745,
+        "probabilities": {
+          "0": 0.0301,
+          "1": 0.0653,
+          "2": 0.9046
+        },
+        "confidence": 0.7351
+      },
+      "t04": {
+        "score": 1.6677,
+        "probabilities": {
+          "0": 0.0904,
+          "1": 0.1515,
+          "2": 0.7581
+        },
+        "confidence": 0.4088
+      },
+      "t05": {
+        "score": 1.0284,
+        "probabilities": {
+          "0": 0.2646,
+          "1": 0.4424,
+          "2": 0.293
+        },
+        "confidence": 0.0274
+      },
+      "t06": {
+        "score": 0.8187,
+        "probabilities": {
+          "0": 0.3485,
+          "1": 0.4843,
+          "2": 0.1672
+        },
+        "confidence": 0.0759
+      },
+      "t07": {
+        "score": 0.9922,
+        "probabilities": {
+          "0": 0.2849,
+          "1": 0.438,
+          "2": 0.2771
+        },
+        "confidence": 0.0247
+      },
+      "t08": {
+        "score": 1.5425,
+        "probabilities": {
+          "0": 0.1091,
+          "1": 0.2394,
+          "2": 0.6515
+        },
+        "confidence": 0.2406
+      },
+      "t09": {
+        "score": 1.4708,
+        "probabilities": {
+          "0": 0.1118,
+          "1": 0.3056,
+          "2": 0.5826
+        },
+        "confidence": 0.168
+      }
+    },
+    "usage": {
+      "input_tokens": 1219,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
