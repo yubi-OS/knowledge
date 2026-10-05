@@ -1,0 +1,248 @@
+{
+  "topic": "the zstd-compressed EFI zboot image format on ARM64, its interaction with bootc/VM boot flows (bcvk), the QEMU loader limitation that required a workaround, and the upstream QEMU fix that resolved it",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "efi-zboot-format",
+      "scope": "The Linux EFI zboot image format: header layout, compression field, and why ARM64 adopted it.",
+      "seed_queries": [
+        "Linux EFI zboot image format ARM64 kernel header",
+        "efi zboot compressed kernel vmlinuz.efi structure"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "fedora-zstd-kernels",
+      "scope": "zstd-compressed kernel payloads in Fedora ARM64 builds: packaging motivation and the dracut-ng interaction.",
+      "seed_queries": [
+        "Fedora ARM64 kernel zstd EFI zboot compressed",
+        "dracut-ng issue 1406 zstd zboot kernel"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "qemu-direct-loader",
+      "scope": "QEMU direct kernel boot of EFI zboot images: the loader path and the zstd limitation behind the error.",
+      "seed_queries": [
+        "QEMU direct kernel boot EFI zboot image loader",
+        "QEMU unable to handle EFI zboot image compression error"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "qemu-zstd-fix",
+      "scope": "The upstream QEMU fix: the zstd EFI zboot unpacker patch, its author, merge, and the QEMU 11.0 release that carries it.",
+      "seed_queries": [
+        "QEMU zstd EFI zboot patch Daan De Meyer",
+        "QEMU 11.0 EFI zboot zstd support merged"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "bcvk-boot-flow",
+      "scope": "bcvk (bootc virtualization kit) and the ephemeral run boot flow: how the kernel is extracted from a bootc image and handed to QEMU.",
+      "seed_queries": [
+        "bcvk bootc virtualization kit ephemeral run QEMU",
+        "bootc extract kernel direct boot QEMU virt"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "yubios-workaround",
+      "scope": "The yubiOS CI workaround: pinned upstream QEMU commit, bind-mount of the QEMU prefix into the bcvk container, and the exact-error skip fallback.",
+      "seed_queries": [
+        "pinned QEMU commit CI self-hosted runner workaround",
+        "bind mount QEMU prefix into container ROM search path"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ci-evidence",
+      "scope": "CI evidence: what run 29525332901 proved about the workaround reaching the guest and what still failed.",
+      "seed_queries": [
+        "ci_test-vm.yml ARM64 bcvk test-luks-fido2-ci",
+        "bootloader-update.service failure CI guest boot Fedora"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "firmware-stub-vs-directboot",
+      "scope": "Firmware/stub boot versus DirectBoot for ARM64 VM testing: decompression ownership, fidelity, and Secure Boot alignment.",
+      "seed_queries": [
+        "EFI stub decompression kernel zboot firmware boot",
+        "UEFI firmware boot versus direct kernel boot virtual machine"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "distro-qemu-tracking",
+      "scope": "Distro QEMU 11.0 availability and the runner-image question: when the pinned workaround can be retired.",
+      "seed_queries": [
+        "Fedora QEMU 11.0 package release",
+        "QEMU 11.0 release changelog zstd zboot"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.7741,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0446,
+          "1": 0.1366,
+          "2": 0.8188
+        },
+        "confidence": 0.5365
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.1145,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1552,
+          "1": 0.5751,
+          "2": 0.2697
+        },
+        "confidence": 0.1413
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.917,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0218,
+          "1": 0.0394,
+          "2": 0.9388
+        },
+        "confidence": 0.825
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.9323,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0188,
+          "1": 0.0302,
+          "2": 0.951
+        },
+        "confidence": 0.8586
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8156,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0384,
+          "1": 0.1075,
+          "2": 0.8541
+        },
+        "confidence": 0.6137
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.7505,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0455,
+          "1": 0.1584,
+          "2": 0.7961
+        },
+        "confidence": 0.4914
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.9005,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2354,
+          "1": 0.6287,
+          "2": 0.1359
+        },
+        "confidence": 0.2037
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.198,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1483,
+          "1": 0.5055,
+          "2": 0.3462
+        },
+        "confidence": 0.0961
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.0411,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1289,
+          "1": 0.7011,
+          "2": 0.17
+        },
+        "confidence": 0.3056
+      }
+    },
+    "usage": {
+      "input_tokens": 1771,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
