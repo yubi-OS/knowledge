@@ -1,0 +1,173 @@
+{
+ "topic": "mirror-provenance",
+ "subtopics": [
+  {
+   "slug": "01-mirror-overlay-topology",
+   "scope": ""
+  },
+  {
+   "slug": "02-verifying-mirror-against-upstream",
+   "scope": ""
+  },
+  {
+   "slug": "03-pinning-discipline",
+   "scope": ""
+  },
+  {
+   "slug": "04-patch-series-provenance",
+   "scope": ""
+  },
+  {
+   "slug": "05-slsa-large-source-snapshots",
+   "scope": ""
+  },
+  {
+   "slug": "06-attestations-beyond-oci",
+   "scope": ""
+  },
+  {
+   "slug": "07-policy-verdict-consumer-side",
+   "scope": ""
+  },
+  {
+   "slug": "08-trust-and-vouching",
+   "scope": ""
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 0.1963,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.8759,
+     "1": 0.0518,
+     "2": 0.0723
+    },
+    "confidence": 0.6628
+   },
+   "t02": {
+    "type": "score",
+    "score": 0.0491,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.9659,
+     "1": 0.019,
+     "2": 0.0151
+    },
+    "confidence": 0.9004
+   },
+   "t03": {
+    "type": "score",
+    "score": 0.0852,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.9443,
+     "1": 0.0263,
+     "2": 0.0294
+    },
+    "confidence": 0.8398
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.0975,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.9349,
+     "1": 0.0326,
+     "2": 0.0325
+    },
+    "confidence": 0.8144
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.1549,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.8991,
+     "1": 0.047,
+     "2": 0.0539
+    },
+    "confidence": 0.7202
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.2366,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.848,
+     "1": 0.0675,
+     "2": 0.0845
+    },
+    "confidence": 0.5961
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.4948,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.6902,
+     "1": 0.1248,
+     "2": 0.185
+    },
+    "confidence": 0.2893
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.1268,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.9165,
+     "1": 0.0402,
+     "2": 0.0433
+    },
+    "confidence": 0.7653
+   }
+  },
+  "usage": {
+   "input_tokens": 953,
+   "output_tokens": 0
+  },
+  "note": "re-scored 2026-10-05 for the record under the v2 score metric; docs already shipped under the v1 outline"
+ }
+}
