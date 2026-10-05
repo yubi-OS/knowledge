@@ -1,0 +1,36 @@
+{
+ "nn": 2,
+ "slug": "proof-artifact-gate",
+ "scope": "The proof artifact gate around the Lean proofs: a scope manifest mapping theorem statements to runtime predicates, a checker that parses the kernel's printed axiom sets, rejects missing declarations, unknown axioms and proof placeholders, and CI gating on the proof commit (Lean CI run 34567362278).",
+ "queries_attempted": [
+  {
+   "query": "Lean print axioms theorem dependency CI check",
+   "attempt": 1,
+   "raw_results": 65,
+   "kept": 6
+  },
+  {
+   "query": "proof artifacts scope manifest CI gate trusted kernel",
+   "attempt": 1,
+   "raw_results": 58,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://arxiv.org/html/2605.21089v1",
+  "https://github.com/certik/math_notes/issues/29",
+  "https://github.com/unit27research/artifact-manifest",
+  "https://lean-lang.org/doc/reference/latest/Axioms/",
+  "https://lean-lang.org/doc/reference/latest/ValidatingProofs/",
+  "https://lean-lang.org/theorem_proving_in_lean4/Axioms-and-Computation/",
+  "https://shop.sgproof.com/",
+  "https://verum-lang.org/docs/verification/trusted-kernel",
+  "https://www.proofspath.com/sorry-free-discipline-and-axiom-auditing",
+  "https://yoo.be/zero-trust-ci-cd-ephemeral-agents-attested-artifacts-blueprint/",
+  "https://yoo.be/zero-trust-ci-cd-least-privilege-provenance/",
+  "https://zenn.dev/matsuteru/articles/lean4-sorry-axiom-dependencies?locale=en"
+ ],
+ "outcome": "authored"
+}
