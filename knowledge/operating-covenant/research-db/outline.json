@@ -1,0 +1,263 @@
+{
+ "topic": "public-interest operating covenants for open-source projects - what stays public, what the commercial layer may sell, stewardship rules around telemetry, forks, roadmap, and disclosure",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "01-what-stays-public",
+   "scope": "Which artifacts an open-source project commits to keeping public (source, trust chain, threat models, base image, ADRs) and why the list must be explicit.",
+   "seed_queries": [
+    "open source project commitment what remains free software promise",
+    "open core model what stays open criticism"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "02-commercial-boundaries",
+   "scope": "What commercial offerings may sell around an open-source OS (services, support, hardware, hosting) and the boundary against selling security or trust itself.",
+   "seed_queries": [
+    "open source business model services support hardware around free software",
+    "selling security features enterprise tier open source criticism"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "03-trust-chain-openness",
+   "scope": "Why security trust boundaries (secure boot, signing, encryption, reproducible builds) must remain public and inspectable.",
+   "seed_queries": [
+    "reproducible builds bootstrappable trust supply chain security",
+    "transparent secure boot signing community verification open source"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "04-telemetry-stewardship",
+   "scope": "Stewardship rules for telemetry: default-off, documented and auditable collection, and the hosted-commercial-data boundary.",
+   "seed_queries": [
+    "Linux distribution telemetry opt-in Fedora Ubuntu data collection",
+    "open source software telemetry privacy default controversy"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "05-fork-rights",
+   "scope": "License-guaranteed forking, trademark policy as the real lever, and no disadvantaging of fork users in security fixes.",
+   "seed_queries": [
+    "open source trademark policy forks Apache Software Foundation",
+    "downstream fork security patch access upstream CVE"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "06-roadmap-governance",
+   "scope": "Public ADR-driven architecture decisions; commercial signal as input vs commercial gating of trust-chain work.",
+   "seed_queries": [
+    "architecture decision records ADR open source governance",
+    "open source governance roadmap commercial vendor influence"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "07-security-disclosure",
+   "scope": "Coordinated vulnerability disclosure norms, no customer-only embargo, and published known-gap documents as a second surface.",
+   "seed_queries": [
+    "coordinated vulnerability disclosure policy CERT guidelines",
+    "security fixes early access paying customers embargo criticism"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "08-license-compatibility",
+   "scope": "LGPL-2.1 and copyleft as the baseline guarantee beneath a covenant; no additional restrictions.",
+   "seed_queries": [
+    "LGPL 2.1 commercial use distribution rights explained",
+    "copyleft license additional restrictions freedom zero FSF"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "09-precedent-covenants",
+   "scope": "Real-world precedent commitments (Debian Social Contract, Contributor Covenant, Open Source Pledge) and their design lessons.",
+   "seed_queries": [
+    "Debian Social Contract Free Software Guidelines history",
+    "Ubuntu IP promise open source pledge covenant examples"
+   ]
+  },
+  {
+   "nn": 10,
+   "slug": "10-business-model-review",
+   "scope": "The re-review discipline: checking a concrete commercial offer against covenant commitments when the business model lands.",
+   "seed_queries": [
+    "open source sustainability business models monetization services pricing",
+    "open source project offer pricing governance compatibility review"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8677,
+    "probabilities": {
+     "0": 0.0311,
+     "1": 0.07,
+     "2": 0.8989
+    },
+    "confidence": 0.7207,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7401,
+    "probabilities": {
+     "0": 0.0434,
+     "1": 0.1731,
+     "2": 0.7835
+    },
+    "confidence": 0.4686,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.0383,
+     "1": 0.1235,
+     "2": 0.8382
+    },
+    "confidence": 0.579,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.773,
+    "probabilities": {
+     "0": 0.0473,
+     "1": 0.1324,
+     "2": 0.8203
+    },
+    "confidence": 0.539,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.7777,
+    "probabilities": {
+     "0": 0.0431,
+     "1": 0.136,
+     "2": 0.8209
+    },
+    "confidence": 0.5412,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.7067,
+    "probabilities": {
+     "0": 0.0472,
+     "1": 0.1989,
+     "2": 0.7539
+    },
+    "confidence": 0.4153,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.8343,
+    "probabilities": {
+     "0": 0.0349,
+     "1": 0.0959,
+     "2": 0.8692
+    },
+    "confidence": 0.6488,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.3861,
+    "probabilities": {
+     "0": 0.1185,
+     "1": 0.3768,
+     "2": 0.5047
+    },
+    "confidence": 0.1161,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.6977,
+    "probabilities": {
+     "0": 0.0577,
+     "1": 0.187,
+     "2": 0.7553
+    },
+    "confidence": 0.4132,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.6416,
+    "probabilities": {
+     "0": 0.0664,
+     "1": 0.2257,
+     "2": 0.7079
+    },
+    "confidence": 0.3348,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1517,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01-what-stays-public",
+   "02-commercial-boundaries",
+   "03-trust-chain-openness",
+   "04-telemetry-stewardship",
+   "05-fork-rights",
+   "06-roadmap-governance",
+   "07-security-disclosure",
+   "08-license-compatibility",
+   "09-precedent-covenants",
+   "10-business-model-review"
+  ]
+ }
+}
