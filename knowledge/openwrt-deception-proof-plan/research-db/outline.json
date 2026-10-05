@@ -1,0 +1,250 @@
+{
+  "topic": "Deception-based network defense on OpenWrt: turning an SSH tarpit idea into a testable proof plan with package builds, VM/spare-router testbeds, and packet-level evidence requirements",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "openwrt-package-structure",
+      "scope": "OpenWrt in-tree/feed package Makefile layout: PKG_* variables, Package/<name> sections, conffiles, DEPENDS, and install rules for a new service package.",
+      "seed_queries": [
+        "OpenWrt package Makefile PKG_NAME conffiles feed package guide",
+        "OpenWrt packages example Makefile Package section install"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "procd-init-scripts",
+      "scope": "procd service integration on OpenWrt: USE_PROCD=1 init scripts, procd_set_param command/respawn, UCI config validation, and config triggers.",
+      "seed_queries": [
+        "OpenWrt procd init script USE_PROCD procd_set_param respawn",
+        "OpenWrt procd service script uci config validate triggers"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "firewall4-nftables",
+      "scope": "firewall4 and nftables model on OpenWrt 22.03 and later: UCI firewall syntax preserved, zones, forwarding, and generated rules.",
+      "seed_queries": [
+        "OpenWrt firewall4 nftables UCI zones documentation",
+        "OpenWrt firewall configuration zones forwarding rules wiki"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "endlessh-tarpit",
+      "scope": "Endlessh SSH tarpit: endless-banner protocol behavior, configuration options, resource usage, and deployment modes.",
+      "seed_queries": [
+        "Endlessh SSH tarpit how it works config",
+        "endlessh banner delay resource usage deployment"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "decoy-exposure-design",
+      "scope": "Decoy-only exposure design: WireGuard zone segregation, binding decoy listeners away from WAN, real SSH behind VPN, and owner break-glass path.",
+      "seed_queries": [
+        "OpenWrt WireGuard zone firewall isolate service exposure",
+        "honeypot decoy SSH service firewall design real service behind VPN"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "testbed-vm-qemu",
+      "scope": "Building OpenWrt VM testbeds: QEMU x86_64 images, spare-router hardware, and snapshot/rollback workflow for repeatable proof runs.",
+      "seed_queries": [
+        "OpenWrt QEMU x86_64 image run VM testbed",
+        "OpenWrt virtualbox qemu testing spare router setup"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "evidence-capture",
+      "scope": "Packet-level and scan evidence requirements: nmap scan behavior against decoys, tcpdump capture on the WireGuard interface, proving no WAN exposure.",
+      "seed_queries": [
+        "nmap scan SSH honeypot decoy ports evidence",
+        "tcpdump capture WireGuard interface SYN packets evidence"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "logging-minimization",
+      "scope": "Minimal-metadata logging for decoy services: what to store, what never to store, retention defaults, and notification payloads.",
+      "seed_queries": [
+        "honeypot logging best practices minimal data privacy",
+        "SSH honeypot log retention notification privacy payloads"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "deception-governance-adr",
+      "scope": "ADR governance for network deception: deception as defensive signal not authentication, trust boundary, failure behavior, and recovery path.",
+      "seed_queries": [
+        "network deception governance policy defensive deception guidelines",
+        "deception technology deployment policy incident response recovery"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.4897,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0769,
+          "1": 0.3565,
+          "2": 0.5666
+        },
+        "confidence": 0.181
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.5399,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0753,
+          "1": 0.3094,
+          "2": 0.6153
+        },
+        "confidence": 0.2199
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.5552,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0821,
+          "1": 0.2805,
+          "2": 0.6374
+        },
+        "confidence": 0.2375
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.9322,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0194,
+          "1": 0.029,
+          "2": 0.9516
+        },
+        "confidence": 0.86
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.6836,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0768,
+          "1": 0.1628,
+          "2": 0.7604
+        },
+        "confidence": 0.4159
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.7955,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0426,
+          "1": 0.1193,
+          "2": 0.8381
+        },
+        "confidence": 0.5776
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.818,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0439,
+          "1": 0.0943,
+          "2": 0.8618
+        },
+        "confidence": 0.6304
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.3682,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0927,
+          "1": 0.4464,
+          "2": 0.4609
+        },
+        "confidence": 0.1304
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.5124,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.5481,
+          "1": 0.3914,
+          "2": 0.0605
+        },
+        "confidence": 0.1859
+      }
+    },
+    "usage": {
+      "input_tokens": 1358,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "09"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ],
+    "dropped_note": "t09 (deception-governance-adr) score 0.5124, probabilities {0:0.5481,1:0.3914,2:0.0605}; 0-bucket argmax, dropped per score metric"
+  }
+}

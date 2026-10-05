@@ -1,0 +1,35 @@
+{
+  "nn": "02",
+  "slug": "procd-init-scripts",
+  "scope": "procd service integration on OpenWrt: USE_PROCD=1 init scripts, procd_set_param command/respawn, UCI config validation, and config triggers.",
+  "queries_attempted": [
+    {
+      "query": "OpenWrt procd init script USE_PROCD procd_set_param respawn",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "OpenWrt procd service script uci config validate triggers",
+      "attempt": 2,
+      "raw_results": 50,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://openwrt.org/docs/guide-developer/procd-init-scripts",
+    "https://openwrt.org/docs/techref/procd",
+    "https://deepwiki.com/openwrt/openwrt/5.1.1-procd-init-scripts-and-service-lifecycle",
+    "https://deepwiki.com/untangle/openwrt/6.1-process-management-with-procd",
+    "https://github.com/openwrt-docs4ai/openwrt-docs4ai.github.io/blob/main/wiki/chunked-reference/wiki_page-guide-developer-procd-init-script-example.md",
+    "https://en.wikipedia.org/wiki/OpenWrt",
+    "https://deepwiki.com/gl-inet/openwrt/6.3-service-triggers-and-reload",
+    "https://deepwiki.com/kenzok8/openwrt-daede/2.1.1-dae-runtime:-init-script-and-uci-config",
+    "https://forum.openwrt.org/t/procd-add-reload-trigger-only-sometimes-works/105230",
+    "https://github.com/openwrt-docs4ai/openwrt-docs4ai.github.io/blob/main/cookbook/chunked-reference/procd-service-lifecycle.md",
+    "https://openwrt.org/docs/guide-developer/procd-init-script-example?s%5B%5D=restart&s%5B%5D=all"
+  ],
+  "outcome": "authored"
+}

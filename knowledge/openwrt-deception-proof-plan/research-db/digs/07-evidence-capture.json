@@ -1,0 +1,36 @@
+{
+  "nn": "07",
+  "slug": "evidence-capture",
+  "scope": "Packet-level and scan evidence requirements: nmap scan behavior against decoys, tcpdump capture on the WireGuard interface, proving no WAN exposure.",
+  "queries_attempted": [
+    {
+      "query": "nmap scan SSH honeypot decoy ports evidence",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "tcpdump capture WireGuard interface SYN packets evidence",
+      "attempt": 2,
+      "raw_results": 41,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/aahme05/vulnerability-management-honeypot-lab",
+    "https://github.com/chinemerem-nsv/Cowrie-ssh-honeypot-lab",
+    "https://awjunaid.com/nmap/nmap-firewall-evasion-techniques-fragmenting-packets-decoys-and-source-port-manipulation/",
+    "https://www.bilal-qudah.com/grad_proj/Honeypot-Based_Approach_Against_NMAP_and_SSH_Attacks_on_Web_Servers.pdf",
+    "https://nmap.org/download",
+    "https://inria.hal.science/hal-03746028/document",
+    "https://nickb.dev/blog/viewing-wireguard-traffic-with-tcpdump/",
+    "https://serverfault.com/questions/217605/how-to-capture-ack-or-syn-packets-by-tcpdump",
+    "https://www.procustodibus.com/blog/2023/05/troubleshooting-wireguard-with-tcpdump/",
+    "https://oneuptime.com/blog/post/2026-03-20-tcpdump-capture-tcp-syn-packets/view",
+    "https://prachub.com/resources/tcpdump-interview-exercises-capture-filters-missing-packets-and-connection-evidence",
+    "https://linuxconfig.org/how-to-use-tcpdump-command-on-linux"
+  ],
+  "outcome": "authored"
+}
