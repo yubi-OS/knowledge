@@ -1,1 +1,30 @@
-Ly8gVHlwZWQgaW5kZXggZm9yIHRoZSBtaXJyb3ItcHJvdmVuYW5jZSByZXNlYXJjaCBEQi4KCmV4cG9ydCBpbnRlcmZhY2UgRHVnUmVzdWx0IHsKICBxaWQ6IHN0cmluZzsKICB0aXRsZTogc3RyaW5nOwogIHVybDogc3RyaW5nOwogIHNuaXBwZXQ6IHN0cmluZzsKICAvKiogamV2IG5vdWwgcHJvYmFiaWxpdHksIDAuLjE7IG51bGwgd2hlbiB0aGUgcmVzdWx0IHdhcyBuZXZlciB3ZWlnaHRlZCAqLwogIHdlaWdodDogbnVtYmVyIHwgbnVsbDsKICAvKiogc2VhclhORyBxdWVyeSBpZHMgd2hvc2UgdG9wLTYgY3V0IGluY2x1ZGVkIHRoaXMgcmVzdWx0ICovCiAgcXVlcmllczogc3RyaW5nW107Cn0KCmV4cG9ydCBpbnRlcmZhY2UgRGlnUmVjb3JkIHsKICBzdWJ0b3BpYzogc3RyaW5nOwogIHF1ZXJpZXM6IHN0cmluZ1tdOwogIHJlZG9fY291bnQ6IG51bWJlcjsKICByZXN1bHRzX2tlcHQ6IG51bWJlcjsKfQoKZXhwb3J0IGludGVyZmFjZSBBcmNoaXZlRW50cnkgewogIHF1ZXJ5OiBzdHJpbmc7CiAgdGl0bGU6IHN0cmluZzsKICB1cmw6IHN0cmluZzsKICBzbmlwcGV0OiBzdHJpbmc7CiAgd2VpZ2h0OiBudW1iZXIgfCBudWxsOwogIGNvbGxlY3RlZF9hdDogc3RyaW5nOwogIC8qKiBqZXYgbm91bCA+PSAwLjQsIG51bGwgd2hlbiB1bndlaWdodGVkICovCiAgamV2X2Fuc3dlcjogYm9vbGVhbiB8IG51bGw7Cn0K
+// Typed index for the mirror-provenance research DB.
+
+export interface DugResult {
+  qid: string;
+  title: string;
+  url: string;
+  snippet: string;
+  /** jev noul probability, 0..1; null when the result was never weighted */
+  weight: number | null;
+  /** searXNG query ids whose top-6 cut included this result */
+  queries: string[];
+}
+
+export interface DigRecord {
+  subtopic: string;
+  queries: string[];
+  redo_count: number;
+  results_kept: number;
+}
+
+export interface ArchiveEntry {
+  query: string;
+  title: string;
+  url: string;
+  snippet: string;
+  weight: number | null;
+  collected_at: string;
+  /** jev noul >= 0.4, null when unweighted */
+  jev_answer: boolean | null;
+}
