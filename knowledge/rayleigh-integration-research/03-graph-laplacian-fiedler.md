@@ -1,0 +1,27 @@
+# 03 - The Rayleigh quotient of the graph Laplacian: Fiedler value and connectivity
+
+**Scope:** the Rayleigh quotient of the graph Laplacian: Fiedler value, algebraic connectivity, Cheeger inequality, and the centered-indicator cut bound.
+
+## The Laplacian quotient reads connectivity
+
+For a graph with Laplacian L, the Rayleigh quotient x^T L x / x^T x has a concrete form: the numerator expands to a sum over edges of squared differences (x_i - x_j)^2, so the quotient measures how much a vector varies across edges. This identity is the reason the Laplacian, and not some other matrix, is the right object for connectivity readings.
+
+The second-smallest eigenvalue of the Laplacian is the algebraic connectivity of the graph, also called the Fiedler value after Miroslav Fiedler; it is strictly positive if and only if the graph is connected (weight 0.17, weak backing, [Wikipedia, Algebraic connectivity](https://en.wikipedia.org/wiki/Algebraic_connectivity)). The term is standard enough that recent research papers use it as a definition without ceremony: a 2013 Linear Algebra and its Applications paper studies the maximum Fiedler value among all planar graphs with n vertices and derives the asymptotic behavior 2 + Theta(1/n^2) for the maximum (weight 0.96, [ScienceDirect, S0024379513003868](https://www.sciencedirect.com/science/article/pii/S0024379513003868)). A survey-style topic page describes the Fiedler value as the quantity driving network connectivity, diffusion, and resilience readings (weight 0.60, [emergentmind](https://www.emergentmind.com/topics/fiedler-value-algebraic-connectivity)).
+
+The variational side is what makes the Fiedler value auditable without an eigensolver: lambda_2 = min over vectors x orthogonal to the all-ones vector of R(x). The centered indicator of any subset S (take +1 on S, scaled so the vector sums to zero) is an admissible candidate, and its Rayleigh quotient is an exact rational number computable by hand from the cut size. So every cut supplies an upper bound certificate for lambda_2, and none of it requires floating-point eigendecomposition.
+
+## Cheeger: how tight the connectivity is
+
+The Cheeger inequality relates the spectral gap to conductance, a combinatorial measure of the best cut. Yale lecture notes by Spielman introduce conductance, the normalized Laplacian, and prove Cheeger's inequality, which relates the second-smallest eigenvalue of the normalized Laplacian to conductance (weight 0.89, [Yale Spielman lecture 11](https://www.cs.yale.edu/homes/spielman/561/lect11-18.pdf); an earlier version of the same lecture collected weight 0.66, [Yale Spielman lecture 6](https://www.cs.yale.edu/homes/spielman/561/lect06-15.pdf)). Waterloo course notes state the connectivity prerequisite explicitly: a graph G is connected if and only if lambda_2 > 0 for the normalized Laplacian, and present Cheeger's inequality as the robust generalization of that fact (weight 0.71, [Waterloo CS860 notes](https://cs.uwaterloo.ca/~lapchi/cs860-2022/notes/04-Cheeger.pdf)). UCSC slides put the two-sided form in one sentence: conductance is lower bounded up to constant factors by the spectral gap (weight 0.67, [UCSC CSE202 slides](https://users.soe.ucsc.edu/~sesh/Teaching/2021/CSE202/Slides/lec17-cheeger-inequality.pdf)).
+
+The Wikipedia Cheeger constant article records the reach of these inequalities beyond the original Riemannian setting, noting their influence in Markov chain theory and graph theory through the graph Cheeger constant and the notion of conductance (weight 0.51, [Wikipedia](https://en.wikipedia.org/wiki/Cheeger_constant)). A tutorial-level page states the same relationship in simplified form (weight 0.10, weak backing, [TutorialsPoint](https://www.tutorialspoint.com/graph_theory/graph_theory_cheegers_inequality.htm)).
+
+## The bottleneck warning
+
+The dig confirmed a reading that matters operationally: a small positive lambda_2 signals a bottleneck, not isolation. The Fiedler value's role in measuring "how well connected the overall graph is" is exactly the quantity an instrument should report when isolates are counted separately from the connected mass (weight 0.17, weak backing, [Wikipedia, Algebraic connectivity](https://en.wikipedia.org/wiki/Algebraic_connectivity)). Prior art on spectral graph partitioning uses the sign of the Fiedler vector to locate bottlenecks; the instrument's design mirrors this by reporting the largest component's lambda_2 alongside the isolate count rather than conflating the two.
+
+Two results in the dig were off-topic junk and are recorded here only to mark the boundary of the evidence: a car forum thread (weight 0.02, [Edmunds forums](https://forums.edmunds.com/discussions/tagged/bmw/x1)) and a graph-operations Stack Exchange question (weight 0.16, weak backing, [cstheory.stackexchange.com](https://cstheory.stackexchange.com/q/5439)). Neither supports a claim in this doc.
+
+## What this buys the instrument
+
+Three things. First, the component and isolate counts are exact integer computations (BFS), independent of any eigenvalue estimate. Second, the largest component's lambda_2 is a connectivity reading that can be checked against a margin-preserving null. Third, the rational Rayleigh-Ritz witness from a sign cut, R = n * cut / (|S| (n - |S|)), upper-bounds the float estimate, so a runtime check (bound_holds) can indict a bad float without ever touching the theory. The exact objects and the float estimate are kept separate by design.

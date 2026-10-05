@@ -1,0 +1,224 @@
+{
+  "topic": "Rayleigh's equation as an instrument for corpus wayfinding: what fits the Lean CI and Cloudflare API audit stack, what was excluded, and what is proved",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "rayleigh-quotient-variational",
+      "scope": "The Rayleigh quotient R(x)=x^T A x / x^T x and the Rayleigh-Ritz / Courant-Fischer variational characterization of eigenvalues: the mathematical base the instrument's readings stand on.",
+      "seed_queries": [
+        "Rayleigh quotient Courant-Fischer variational characterization eigenvalues",
+        "Rayleigh-Ritz method eigenvalue bounds spectral variational principle"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "ky-fan-principle",
+      "scope": "The Ky Fan maximum principle for sums of top-k eigenvalues and trace inequalities, the exact form behind the top-2 eigen-share and the frozen-frame gap reading.",
+      "seed_queries": [
+        "Ky Fan maximum principle sum largest eigenvalues trace inequality",
+        "Ky Fan theorem eigenvalues orthonormal projection trace"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "graph-laplacian-fiedler",
+      "scope": "The Rayleigh quotient of the graph Laplacian: Fiedler value, algebraic connectivity, Cheeger inequality, and the centered-indicator cut bound.",
+      "seed_queries": [
+        "Fiedler value algebraic connectivity graph Laplacian Rayleigh quotient",
+        "Cheeger inequality graph Laplacian second eigenvalue conductance"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "components-isolates-nullity",
+      "scope": "Laplacian nullity equals the number of connected components, isolates as size-1 components, and the use of lambda_2 = 0 as an exact disconnection certificate in spectral clustering prior art.",
+      "seed_queries": [
+        "graph Laplacian nullity number connected components theorem",
+        "spectral clustering second eigenvalue zero disconnected components"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "excluded-physics-forms",
+      "scope": "The Rayleigh forms that do not fit a corpus audit instrument: the inviscid shear-flow stability equation, Rayleigh-Plesset bubble ODE, and Rayleigh damping, and why they are excluded.",
+      "seed_queries": [
+        "Rayleigh stability equation parallel shear flow inflection point theorem",
+        "Rayleigh-Plesset equation bubble dynamics Rayleigh damping"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "fixed-margin-nulls",
+      "scope": "Fixed-margin checkerboard and permutation nulls for binary matrices, certified margins, and exclusion-only verdicts at resolution 1/(K+1).",
+      "seed_queries": [
+        "checkerboard swap null model binary matrix fixed margins",
+        "permutation test Monte Carlo p-value resolution exclusion conservative"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "lean-spectral-provability",
+      "scope": "What is elementary algebra provable in core Lean without Mathlib (PSD, cut identities, rational Rayleigh-Ritz witnesses) versus what needs the spectral theorem or Mathlib.",
+      "seed_queries": [
+        "Lean 4 theorem proving without Mathlib quadratic form PSD",
+        "Lean Mathlib spectral theorem finite dimensional matrices dependency"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "drift-detection-rebaseline",
+      "scope": "Embedding and corpus drift detection and re-baselining: frozen PCA frames, explained-variance shortfall as a drift signal, and when to rebuild a baseline.",
+      "seed_queries": [
+        "embedding drift detection distribution shift monitoring embeddings",
+        "PCA subspace drift detection explained variance retraining baseline"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.5253,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1083,
+          "1": 0.258,
+          "2": 0.6337
+        },
+        "confidence": 0.2197
+      },
+      "t02": {
+        "type": "score",
+        "score": 0.9082,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3431,
+          "1": 0.4056,
+          "2": 0.2513
+        },
+        "confidence": 0.0181
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.0741,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2275,
+          "1": 0.4709,
+          "2": 0.3016
+        },
+        "confidence": 0.0467
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.6545,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0764,
+          "1": 0.1927,
+          "2": 0.7309
+        },
+        "confidence": 0.3658
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.0086,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2352,
+          "1": 0.521,
+          "2": 0.2438
+        },
+        "confidence": 0.0793
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.9423,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3216,
+          "1": 0.4144,
+          "2": 0.264
+        },
+        "confidence": 0.0173
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.4137,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1039,
+          "1": 0.3784,
+          "2": 0.5177
+        },
+        "confidence": 0.1329
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.1348,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2128,
+          "1": 0.4395,
+          "2": 0.3477
+        },
+        "confidence": 0.039
+      }
+    },
+    "usage": {
+      "input_tokens": 1244,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "marginal_note": "t02, t05, t06 scored below 1.05 (marginal band): they stay only if their dig comes back strong; none scored 0."
+}
