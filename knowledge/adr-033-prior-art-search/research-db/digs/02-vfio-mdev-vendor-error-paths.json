@@ -1,0 +1,36 @@
+{
+  "nn": 2,
+  "slug": "vfio-mdev-vendor-error-paths",
+  "scope": "Kernel VFIO mediated devices: IOMMU-group isolation, vendor-driver-mediated error handling, and the absence of a shared behavioral policy engine across vendors.",
+  "queries_attempted": [
+    {
+      "query": "VFIO mediated device mdev kernel IOMMU group isolation",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "vfio mdev vendor driver error handling device reset",
+      "attempt": 1,
+      "raw_results": 37,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html",
+    "https://kernel-internals.org/iommu/vfio-internals/",
+    "https://docs.kernel.org/driver-api/vfio.html",
+    "https://github.com/torvalds/linux/blob/master/Documentation/driver-api/vfio-mediated-device.rst",
+    "https://lwn.net/Articles/779650/",
+    "https://docs.kernel.org/5.19/driver-api/vfio-mediated-device.html",
+    "https://docs.kernel.org/driver-api/vfio.html",
+    "https://docs.kernel.org/driver-api/vfio-mediated-device.html",
+    "https://github.com/gnif/vendor-reset",
+    "https://gist.github.com/Chester-Gillon/aeba238f4960d82f1f25ef1f5d90966c",
+    "https://open-iov.org/index.php/Virtual_I/O_Internals",
+    "https://www.kernel.org/doc/html/v6.15/driver-api/vfio.html"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": 6,
+  "slug": "cgroup-device-controllers",
+  "scope": "Device-level cut-off via cgroups: the devices cgroup controller, eBPF device program, and DRM memory cgroup for VRAM caps as resource-based cut-off mechanisms.",
+  "queries_attempted": [
+    {
+      "query": "cgroup devices controller bpf device program allow deny",
+      "attempt": 1,
+      "raw_results": 37,
+      "kept": 6
+    },
+    {
+      "query": "DRM cgroup device memory GPU VRAM limit",
+      "attempt": 1,
+      "raw_results": 36,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://kernel-internals.org/cgroups/cgroup-bpf/",
+    "https://docs.ebpf.io/linux/program-type/BPF_PROG_TYPE_CGROUP_DEVICE/",
+    "https://github.com/vpsfreecz/devcgprog",
+    "https://eunomia.dev/tutorials/cgroup/",
+    "https://deepwiki.com/libbpf/bpftool/3.10-cgroup-commands",
+    "https://github.com/isovalent/ebpf-docs/blob/master/docs/linux/program-type/BPF_PROG_TYPE_CGROUP_DEVICE.md",
+    "https://lwn.net/Articles/844199/",
+    "https://lwn.net/Articles/812540/",
+    "https://windowsforum.com/news/linux-7-3s-low-vram-drm-changes-what-they-do.443845/",
+    "https://www.phoronix.com/news/DMEM-cgroup-vRAM-Control",
+    "https://blogs.igalia.com/tursulin/drm-scheduling-cgroup-controller/",
+    "https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg618008.html"
+  ],
+  "outcome": "authored"
+}

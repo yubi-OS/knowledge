@@ -1,0 +1,36 @@
+{
+  "nn": 5,
+  "slug": "suspend-resume-state-capture",
+  "scope": "VM suspend-resume, qcow2/savevm snapshots, and live migration as state-preservation patterns at workload cut-off; discard-vs-preserve semantics with GPU passthrough.",
+  "queries_attempted": [
+    {
+      "query": "QEMU savevm qcow2 snapshot suspend resume VM state",
+      "attempt": 1,
+      "raw_results": 33,
+      "kept": 6
+    },
+    {
+      "query": "live migration VM state preservation vfio GPU passthrough",
+      "attempt": 1,
+      "raw_results": 38,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://airbus-seclab.github.io/qemu_blog/snapshot.html",
+    "https://superuser.com/questions/1768173/how-to-work-with-qemu-snapshots-savevm-in-a-way-that-is-predictable-like-virtual",
+    "https://deepwiki.com/sifive/riscv-qemu/8.2-snapshots-and-saverestore",
+    "https://grainvm.com/docs/0.4.0/guides/lifecycle/",
+    "https://wiki.qemu.org/Documentation/CreateSnapshot",
+    "https://wiki.qemu.org/Features/VMSnapshotEnchancement",
+    "https://www.qemu.org/docs/master/devel/migration/vfio.html",
+    "https://developers.redhat.com/articles/2024/02/21/virtio-live-migration-technical-deep-dive",
+    "https://virtio-fs.gitlab.io/qemu/devel/vfio-migration.html",
+    "https://medium.com/@armestonaidoost/kvm-gpu-passthrough-with-vfio-a-production-focused-guide-de432ca2a12b",
+    "https://github.com/TikZSZ/vfio-gpu-passthrough",
+    "https://qemu.readthedocs.io/en/v8.1.5/devel/vfio-migration.html"
+  ],
+  "outcome": "authored"
+}

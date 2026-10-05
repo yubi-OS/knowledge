@@ -1,0 +1,36 @@
+{
+  "nn": 7,
+  "slug": "ebpf-runtime-enforcement",
+  "scope": "Runtime eBPF enforcement for device I/O policy: BPF LSM hooks, tracing driver and DMA events, and cut-off enforcement outside the hypervisor.",
+  "queries_attempted": [
+    {
+      "query": "eBPF LSM enforcement device access policy kernel",
+      "attempt": 1,
+      "raw_results": 34,
+      "kept": 6
+    },
+    {
+      "query": "eBPF tracing driver DMA anomaly detection GPU",
+      "attempt": 1,
+      "raw_results": 35,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.kernel.org/bpf/prog_lsm.html",
+    "https://deepwiki.com/eunomia-bpf/bpf-developer-tutorial/6.1-linux-security-modules-(lsm)",
+    "https://docs.kernel.org/5.10/bpf/bpf_lsm.html",
+    "https://github.com/bschaatsbergen/tpmlsm",
+    "https://www.kernel.org/doc/html/v6.1//bpf/prog_lsm.html",
+    "https://ebpf.hamza-megahed.com/docs/chapter5/2-lsm/",
+    "https://eunomia.dev/tutorials/xpu/gpu-kernel-driver/",
+    "https://medium.com/@yunwei356/ebpf-tutorial-by-example-monitoring-gpu-driver-activity-with-kernel-tracepoints-db3d8bb01d4e",
+    "https://eunomia.dev/GPTtrace/",
+    "https://eunomia.dev/tutorials/47-cuda-events/",
+    "https://deepwiki.com/eunomia-bpf/gpu_ext/5-tracing-and-observability",
+    "https://github.com/eunomia-bpf/bpf-developer-tutorial/tree/main/src/xpu/gpu-kernel-driver"
+  ],
+  "outcome": "authored"
+}

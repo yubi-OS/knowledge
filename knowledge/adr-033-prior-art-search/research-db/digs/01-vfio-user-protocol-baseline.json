@@ -1,0 +1,36 @@
+{
+  "nn": 1,
+  "slug": "vfio-user-protocol-baseline",
+  "scope": "What the vfio-user protocol itself mandates for client misbehavior (mutual distrust, socket disconnect handling, FSM ERROR state, negotiated DMA windows) and where it stops short of any trigger model or severity ladder.",
+  "queries_attempted": [
+    {
+      "query": "vfio-user protocol specification socket disconnection reset",
+      "attempt": 1,
+      "raw_results": 34,
+      "kept": 6
+    },
+    {
+      "query": "libvfio-user VFIO_USER_DEVICE_RESET finite state machine DMA map",
+      "attempt": 1,
+      "raw_results": 38,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "https://github.com/nutanix/libvfio-user",
+    "https://qemu-stsquad.readthedocs.io/en/latest/system/devices/vfio-user.html",
+    "https://qemu.googlesource.com/libvfio-user/+/a8242d117118d5191dad69a96e28a21d66fe8b50/README.md",
+    "https://lists.gnu.org/archive/html/qemu-devel/2021-05/msg01046.html",
+    "https://www.qemu.org/docs/master/interop/vfio-user.html",
+    "https://github.com/nutanix/libvfio-user",
+    "https://www.kernel.org/doc/html/latest/driver-api/vfio.html",
+    "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+    "https://www.kernel.org/doc/html/v5.8/driver-api/vfio.html",
+    "https://github.com/nutanix/libvfio-user/blob/master/include/libvfio-user.h"
+  ],
+  "outcome": "authored"
+}

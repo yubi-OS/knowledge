@@ -1,0 +1,36 @@
+{
+  "nn": 4,
+  "slug": "nvidia-mig-sriov-partitioning",
+  "scope": "MIG and SR-IOV hardware partitioning of GPUs: isolation guarantees, IOMMU/ARI/AER prerequisites, and what device-level cut-off options exist in commercial GPU partitioning.",
+  "queries_attempted": [
+    {
+      "query": "NVIDIA MIG multi-instance GPU isolation SR-IOV virtual functions",
+      "attempt": 1,
+      "raw_results": 36,
+      "kept": 6
+    },
+    {
+      "query": "NVIDIA vGPU SR-IOV IOMMU AER prerequisites stability",
+      "attempt": 1,
+      "raw_results": 32,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/index.html",
+    "https://docs.nvidia.com/datacenter/tesla/mig-user-guide/virtualization.html",
+    "https://openmetal.io/docs/manuals/private-ai/engineering-notes/sr-iov-and-mig",
+    "https://massedcompute.com/faq-answers/?question=What+is+the+difference+between+MIG+and+SR-IOV+on+NVIDIA+GPUs",
+    "https://labhub.hopto.org/blog/virtualization/04_gpu_virtualization?lang=en",
+    "https://github.com/openmetalio/openmetal-docs/blob/main/docs/private-ai/engineering-notes/sr-iov-and-mig.md",
+    "https://docs.nvidia.com/vgpu/troubleshooting/latest/config.html",
+    "https://labhub.hopto.org/blog/virtualization/04_gpu_virtualization?lang=en",
+    "https://docs.verge.io/learn-the-platform/module-6-virtual-machines/03-gpu-passthrough",
+    "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+    "https://enterprise-support.nvidia.com/s/article/vGPU-virtual-machine-fails-to-start-on-AMD-Epyc-platform-when-Advanced-Error-Reporting-AER-is-disabled-in-server-BIOS-settings",
+    "https://openmetal.io/docs/manuals/private-ai/engineering-notes/sr-iov-and-mig"
+  ],
+  "outcome": "authored"
+}

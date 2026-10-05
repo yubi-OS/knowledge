@@ -1,0 +1,36 @@
+{
+  "nn": 3,
+  "slug": "nvidia-vgpu-scheduler-policies",
+  "scope": "NVIDIA vGPU scheduler modes (Best Effort, Equal Share, Fixed Share) as the closest resource-policy analogue to ADR-033's escalation ladder, and how they handle misbehaving tenants.",
+  "queries_attempted": [
+    {
+      "query": "NVIDIA vGPU scheduler best effort equal share fixed share",
+      "attempt": 1,
+      "raw_results": 33,
+      "kept": 6
+    },
+    {
+      "query": "NVIDIA vGPU fixed share scheduling policy resource contention",
+      "attempt": 1,
+      "raw_results": 38,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/changing-vgpu-scheduling-policy.html",
+    "https://docs.nvidia.com/ai-enterprise/release-8/latest/infra-software/vgpu/features/scheduling.html",
+    "https://vxworld.co.uk/2025/06/30/understanding-nvidia-vgpu-time-slicing-policies-best-effort-vs-equal-share-vs-fixed-share/",
+    "https://vxworld.co.uk/2025/09/10/nvidia-vgpu-time-slicing-scheduling-policies-best-practice/",
+    "https://vmorecloud.com/understanding-nvidia-vgpu-time-slicing-policies-best-effort-vs-equal-share-vs-fixed-share/",
+    "https://drpranayjha.com/nvidia-gpu-partitioning-mig-vgpu-timeslicing/",
+    "https://docs.nvidia.com/ai-enterprise/release-8/latest/infra-software/vgpu/features/scheduling.html",
+    "https://docs.nvidia.com/ai-enterprise/release-7/latest/infra-software/vgpu/features/scheduling.html",
+    "https://vxworld.co.uk/2025/06/30/understanding-nvidia-vgpu-time-slicing-policies-best-effort-vs-equal-share-vs-fixed-share/",
+    "https://vxworld.co.uk/2025/09/10/nvidia-vgpu-time-slicing-scheduling-policies-best-practice/",
+    "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/resource-optimization/time-slicing",
+    "https://aawjq20.buzz/p/https/docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/changing-vgpu-scheduling-policy.html"
+  ],
+  "outcome": "authored"
+}
