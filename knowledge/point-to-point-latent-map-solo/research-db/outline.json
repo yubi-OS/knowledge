@@ -1,0 +1,249 @@
+{
+  "topic": "the ideation record for a proof-carrying point-to-point latent map: design variations considered for mapping unlabeled corpora onto sphere geometry as a deployable browser/Worker tool, and the finalist design decisions",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "ideate-solo-variation-method",
+      "scope": "How the 7 design variations were generated (forced lenses: inversion, constraint removal, audience shift, combination, simplification) and scored on the P/S/D/T matrix with threshold 8.",
+      "seed_queries": [
+        "ideation method scoring ideas criteria painkiller defensibility testability matrix",
+        "design space exploration forced lenses inversion constraint removal ideation techniques"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "proof-carrying-lean-identities",
+      "scope": "The proof-carrying constraint: Lean-checked identities (atom delta nonnegativity, composition, stationary law) may be enforced as runtime assertions but never recast as measurement claims.",
+      "seed_queries": [
+        "proof-carrying code runtime verification certificates Necula",
+        "Lean theorem proving verified software runtime assertions deployment"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "identity-versus-measurement-wall",
+      "scope": "Why point-to-point identity needs a separate layer: measurement classes collide (2286 items to 176 classes, slugs collide), only the row ordinal is injective.",
+      "seed_queries": [
+        "entity resolution identity layer separate from measurement data",
+        "hash collision resistant identifiers deduplication record identity"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "binarization-fixed-margin-fibre",
+      "scope": "The admitted binary state {0,1}^{N x d}, the per-axis median binarization rule as part of the map key, and the fixed-margin curveball null versus column-permutation nulls.",
+      "seed_queries": [
+        "binarize embedding vectors median threshold Hamming space",
+        "curveball permutation null fixed margin swap test statistics"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "sphere-placement-geometry",
+      "scope": "Placement geometry choices compared: S2 stereographic lift with spherical harmonics, continuous slerp on the unit sphere with vMF concentration, and Hamming-native Krawtchouk shells.",
+      "seed_queries": [
+        "spherical harmonics embedding visualization dimensionality reduction sphere",
+        "slerp geodesic interpolation unit sphere von Mises-Fisher concentration"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "edge-certificates",
+      "scope": "The three edge types (atom moves, null trades, slerp bridges), each emitting a certificate that names the theorem it shadows, split into identity checks versus honest-fail measurement checks.",
+      "seed_queries": [
+        "Sigstore Rekor transparency log attestation evidence",
+        "verifiable computation certificate runtime proof checking"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "deployable-module-architecture",
+      "scope": "The deployable shape: one dependency-free TypeScript module running client-side in the browser first, then mounted behind /api/map on a Cloudflare Worker with D1 persistence, with the static single-file sphere as the MVP cut.",
+      "seed_queries": [
+        "Cloudflare Workers D1 single dependency-free TypeScript module architecture",
+        "browser-only static single file visualization tool no backend"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "testability-admission-nulls",
+      "scope": "Testability discipline: pre-registered degeneracy check on the curveball null (SD0 threshold), the admission null gating the v2 continuous channel, and the WebGPU reverse-diffusion bet left at G5.",
+      "seed_queries": [
+        "preregistration statistical test null distribution degenerate variance",
+        "Monte Carlo permutation test null distribution power sample size"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "audience-product-framing",
+      "scope": "Audience framing: the SMB self-serve 'is my data structured or noise' skin (V3) as a deployment target on top of the /api/map output, kept out of the core mapping design.",
+      "seed_queries": [
+        "self-serve data quality tool small business non-technical users",
+        "developer tool product led growth interactive visualization demo"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6638,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0795,
+          "1": 0.1773,
+          "2": 0.7432
+        },
+        "confidence": 0.3852
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.7558,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0483,
+          "1": 0.1475,
+          "2": 0.8042
+        },
+        "confidence": 0.5062
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.7787,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0471,
+          "1": 0.1271,
+          "2": 0.8258
+        },
+        "confidence": 0.5504
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.63,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0799,
+          "1": 0.2102,
+          "2": 0.7099
+        },
+        "confidence": 0.3318
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8863,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0275,
+          "1": 0.0587,
+          "2": 0.9138
+        },
+        "confidence": 0.7589
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.8057,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0431,
+          "1": 0.1081,
+          "2": 0.8488
+        },
+        "confidence": 0.601
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.875,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0281,
+          "1": 0.0688,
+          "2": 0.9031
+        },
+        "confidence": 0.7316
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.6173,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0687,
+          "1": 0.2453,
+          "2": 0.686
+        },
+        "confidence": 0.3033
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.8082,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2848,
+          "1": 0.6222,
+          "2": 0.093
+        },
+        "confidence": 0.2153
+      }
+    },
+    "usage": {
+      "input_tokens": 1845,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "note": "scores are continuous on the 0..2 legend scale; t09 scored 0.8082 (marginal) and was kept because its redone dig returned 7 primary sources"
+  }
+}
