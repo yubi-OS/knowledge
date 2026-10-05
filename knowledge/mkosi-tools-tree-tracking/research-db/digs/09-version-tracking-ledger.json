@@ -1,0 +1,56 @@
+{
+ "nn": "09",
+ "slug": "version-tracking-ledger",
+ "scope": "Tracking tool-tree versions over time: recording old-to-new transitions, changelog and ledger discipline, and auditing which tool versions produced which images.",
+ "queries_attempted": [
+  {
+   "query": "build tool version record provenance which tool built artifact",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "dependency changelog tracking pin transitions ledger",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "renovate changelog digest update audit trail image bump",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig thin: changelog/ledger sources mostly weak",
+   "new_queries": [
+    "renovate changelog digest update audit trail image bump"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.wasilzafar.com/pages/series/software-engineering/software-engineering-part13-artifact-management.html",
+  "https://cybersecurity101.net/glossary/slsa-build-provenance/",
+  "https://rationalwiki.org/wiki/Question_Evolution",
+  "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+  "https://github.com/ShadowStrikeHQ/ai-artifact-provenance-recorder",
+  "http://devsecopsschool.com/blog/build-provenance/",
+  "https://www.ledger.com/",
+  "https://deepwiki.com/opencharly/charly/6.4-changelog-ledger-practice",
+  "https://github.com/cap-js/change-tracking",
+  "https://www.merriam-webster.com/dictionary/dependency",
+  "https://docs.dependencytrack.org/changelog/",
+  "https://inferensys.com/prompts/documentation-and-api-reference-prompts/changelog-and-release-note-automation/dependency-update-changelog-entry-prompt-template",
+  "https://docs.renovatebot.com/key-concepts/changelogs/",
+  "https://www.jvt.me/posts/2025/05/08/renovate-digest-changelog/",
+  "https://docs.renovatebot.com/docker/",
+  "https://github.com/renovatebot/renovate/releases",
+  "https://scholar.google.com/",
+  "https://docs.renovatebot.com/configuration-options/"
+ ],
+ "outcome": "authored"
+}

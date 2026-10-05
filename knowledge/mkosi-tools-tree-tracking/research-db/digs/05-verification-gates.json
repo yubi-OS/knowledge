@@ -1,0 +1,33 @@
+{
+ "nn": "05",
+ "slug": "verification-gates",
+ "scope": "Post-bump verification gates: boot the built artifact, verify the UKI signs and boots, and gate the tools-tree change on image-level tests rather than tool-level smoke tests.",
+ "queries_attempted": [
+  {
+   "query": "mkosi UKI unified kernel image sign boot verification",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "image build CI gate boot test UKI signing verification",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 3
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Unified_kernel_image",
+  "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+  "https://deepwiki.com/systemd/mkosi/5.2-unified-kernel-images-(uki)",
+  "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+  "https://duckduckgo.com/",
+  "http://0pointer.de/blog/",
+  "https://khimananda.com/blog/build-verification-and-quality-gates-in-ci",
+  "https://allencharp.github.io/2026/08/11/Container-Image-Signing.html",
+  "https://images.google.com/"
+ ],
+ "outcome": "authored"
+}
