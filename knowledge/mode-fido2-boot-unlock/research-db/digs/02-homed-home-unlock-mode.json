@@ -1,0 +1,36 @@
+{
+ "nn": 2,
+ "slug": "homed-home-unlock-mode",
+ "scope": "systemd-homed FIDO2 unlock of the home directory at login: prompt loop, passphrase fallback when enrolled, home stays locked on no touch",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed fido2 unlock login prompt loop",
+   "attempt": 1,
+   "raw_results": 71,
+   "kept": 6
+  },
+  {
+   "query": "systemd-homed LUKS fido2 fallback passphrase authentication",
+   "attempt": 1,
+   "raw_results": 67,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://discussion.fedoraproject.org/t/systemd-homed-first-login-attempt-is-unsuccessful-second-attempt-always-works/155106/19",
+  "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only",
+  "https://github.com/systemd/systemd/issues/24036",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://github.com/systemd/systemd/issues/27909",
+  "https://github.com/systemd/systemd/issues/19872",
+  "https://forums.opensuse.org/t/help-with-fido2-fde-setup-with-systemdboot-luks-encryption-btrfs-no-lvm/180518",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef"
+ ],
+ "outcome": "authored"
+}

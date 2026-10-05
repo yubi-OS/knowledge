@@ -1,0 +1,36 @@
+{
+ "nn": 9,
+ "slug": "fido2-user-presence-boot",
+ "scope": "user presence and verification checks plus authenticator timeouts under FIDO2 at early boot, and how libfido2 and systemd surface them",
+ "queries_attempted": [
+  {
+   "query": "libfido2 fido_dev_get_assert timeout user presence",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 user presence check timeout authenticator CTAP",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.yubico.com/libfido2/Manuals/fido2-assert.html",
+  "https://github.com/Yubico/libfido2/issues/917",
+  "https://github.com/Yubico/libfido2/discussions/757",
+  "https://developers.yubico.com/libfido2/Manuals/fido_dev_get_assert.html",
+  "https://manpages.opensuse.org/Tumbleweed/libfido2-devel/fido_dev_get_assert.3.en.html",
+  "https://elections.bc.ca/current-jobs/",
+  "https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html",
+  "https://docs.yubico.com/yesdk/users-manual/application-fido2/apdu/authenticator-selection.html",
+  "https://github.com/Yubico/Yubico.NET.SDK/blob/develop/docs/users-manual/application-fido2/apdu/authenticator-selection.md/",
+  "https://www.yubico.com/authentication-standards/fido2/",
+  "https://developers.yubico.com/CTAP/index.html",
+  "https://deepwiki.com/trussed-dev/fido-authenticator/3.1-ctap2fido2-protocol"
+ ],
+ "outcome": "authored"
+}

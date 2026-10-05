@@ -1,0 +1,36 @@
+{
+ "nn": 3,
+ "slug": "pam-u2f-login-gate",
+ "scope": "pam-u2f login gate mode: interactive touch, module timeout and cue, second enrolled key, then denial",
+ "queries_attempted": [
+  {
+   "query": "pam-u2f interactive touch timeout cue module configuration",
+   "attempt": 1,
+   "raw_results": 66,
+   "kept": 6
+  },
+  {
+   "query": "pam-u2f multiple enrolled keys fallback denial",
+   "attempt": 1,
+   "raw_results": 69,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.yubico.com/pam-u2f/",
+  "https://developers.yubico.com/pam-u2f/Manuals/pam_u2f.8.html",
+  "https://github.com/Yubico/pam-u2f",
+  "https://www.mankier.com/8/pam_u2f",
+  "https://hexmos.com/freedevtools/man-pages/system-admin/miscellaneous-diversions/pam_u2f/",
+  "https://man.archlinux.org/man/pam_u2f.8.en",
+  "https://developers.yubico.com/pam-u2f/",
+  "https://github.com/Yubico/pam-u2f",
+  "https://developers.yubico.com/pam-u2f/Manuals/pam_u2f.8.html",
+  "https://github.com/Yubico/pam-u2f/issues/247",
+  "https://pamhealth.com/",
+  "https://webencrypt.org/fido/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+ "nn": 7,
+ "slug": "exit-semantics-idempotency",
+ "scope": "exit semantics and idempotency: same key to same token slot yields the same volume key, single-method failure is a log line, non-zero exit only when every enrolled method fails",
+ "queries_attempted": [
+  {
+   "query": "cryptsetup LUKS2 token plugin failure exit code multiple tokens order",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "systemd-cryptsetup multiple enrolled unlock methods fallback order",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.man7.org/linux/man-pages/man8/cryptsetup.8.html",
+  "https://www.man7.org/linux/man-pages/man8/cryptsetup-token.8.html",
+  "https://bbs.archlinux.org/viewtopic.php?id=279762",
+  "https://man.archlinux.org/man/cryptsetup-luksAddKey.8.en",
+  "https://patents.google.com/patent/US11586726B2/en",
+  "https://man.archlinux.org/man/cryptsetup-token.8.en",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://manpages.ubuntu.com/manpages/jammy/man1/systemd-cryptenroll.1.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://github.com/Aldin-Dreamer/Arch-Hypr-Vault"
+ ],
+ "outcome": "authored"
+}

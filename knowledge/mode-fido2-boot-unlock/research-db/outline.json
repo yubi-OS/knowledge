@@ -1,0 +1,239 @@
+{
+ "topic": "FIDO2 unlock at boot as an execution-mode problem: the one interactive step in an otherwise automated boot chain, its modes of operation, and what it means for unattended systems",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "luks2-root-unlock-mode",
+   "scope": "systemd-cryptsetup FIDO2 unlock of the LUKS2 root volume in the initrd: interactive touch, token retries, fallback to the passphrase prompt",
+   "seed_queries": [
+    "systemd-cryptsetup fido2-device unlock LUKS2 initrd interactive touch",
+    "systemd-cryptenroll fido2 token LUKS2 boot prompt fallback passphrase"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "homed-home-unlock-mode",
+   "scope": "systemd-homed FIDO2 unlock of the home directory at login: prompt loop, passphrase fallback when enrolled, home stays locked on no touch",
+   "seed_queries": [
+    "systemd-homed fido2 unlock login prompt loop",
+    "systemd-homed LUKS fido2 fallback passphrase authentication"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "pam-u2f-login-gate",
+   "scope": "pam-u2f login gate mode: interactive touch, module timeout and cue, second enrolled key, then denial",
+   "seed_queries": [
+    "pam-u2f interactive touch timeout cue module configuration",
+    "pam-u2f multiple enrolled keys fallback denial"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "unattended-reboot-semantics",
+   "scope": "unattended reboot semantics when only FIDO2 unlock exists: machine waits at the prompt, no network or TPM path, policy vs integration test",
+   "seed_queries": [
+    "LUKS2 FIDO2 unattended reboot headless disk unlock waits forever",
+    "headless server FIDO2 LUKS unlock no remote unlock tradeoff"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "ci-software-authenticator",
+   "scope": "the non-interactive CI leg: a software FIDO2 authenticator answers instantly inside a bcvk VM, failure is a test failure",
+   "seed_queries": [
+    "libfido2 software authenticator virtual FIDO2 HID test automation",
+    "FIDO2 emulator CI automated LUKS2 unlock testing"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "hardware-ci-usb-passthrough",
+   "scope": "the hardware CI leg: a real YubiKey passed through USB to a CI box with touch policy set off for automation",
+   "seed_queries": [
+    "QEMU USB passthrough YubiKey CI automated testing",
+    "YubiKey touch policy off automated FIDO2 assertion"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "exit-semantics-idempotency",
+   "scope": "exit semantics and idempotency: same key to same token slot yields the same volume key, single-method failure is a log line, non-zero exit only when every enrolled method fails",
+   "seed_queries": [
+    "cryptsetup LUKS2 token plugin failure exit code multiple tokens order",
+    "systemd-cryptsetup multiple enrolled unlock methods fallback order"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "why-interactive-exception",
+   "scope": "why the interactive touch is the deliberate exception in an automated boot chain: no remote unlock means no remote attacker unlock, and post-unlock services never see the key",
+   "seed_queries": [
+    "FIDO2 LUKS2 unlock versus TPM2 unattended boot security tradeoff",
+    "disk unlock key exposed after unlock container isolation boot chain"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "fido2-user-presence-boot",
+   "scope": "user presence and verification checks plus authenticator timeouts under FIDO2 at early boot, and how libfido2 and systemd surface them",
+   "seed_queries": [
+    "libfido2 fido_dev_get_assert timeout user presence",
+    "FIDO2 user presence check timeout authenticator CTAP"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.8739,
+    "probabilities": {
+     "0": 0.029,
+     "1": 0.0681,
+     "2": 0.9029
+    },
+    "confidence": 0.731,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.0117,
+    "probabilities": {
+     "0": 0.2523,
+     "1": 0.4836,
+     "2": 0.2641
+    },
+    "confidence": 0.0509,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.7157,
+    "probabilities": {
+     "0": 0.4231,
+     "1": 0.4381,
+     "2": 0.1388
+    },
+    "confidence": 0.0853,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.7807,
+    "probabilities": {
+     "0": 0.0405,
+     "1": 0.1383,
+     "2": 0.8212
+    },
+    "confidence": 0.5427,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.2227,
+    "probabilities": {
+     "0": 0.181,
+     "1": 0.4153,
+     "2": 0.4037
+    },
+    "confidence": 0.0523,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.9053,
+    "probabilities": {
+     "0": 0.2892,
+     "1": 0.5163,
+     "2": 0.1945
+    },
+    "confidence": 0.082,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.9635,
+    "probabilities": {
+     "0": 0.2996,
+     "1": 0.4372,
+     "2": 0.2632
+    },
+    "confidence": 0.0253,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.6525,
+    "probabilities": {
+     "0": 0.0718,
+     "1": 0.2039,
+     "2": 0.7243
+    },
+    "confidence": 0.3571,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.6173,
+    "probabilities": {
+     "0": 0.0968,
+     "1": 0.189,
+     "2": 0.7142
+    },
+    "confidence": 0.3327,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1431,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}

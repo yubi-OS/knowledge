@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "unattended-reboot-semantics",
+ "scope": "unattended reboot semantics when only FIDO2 unlock exists: machine waits at the prompt, no network or TPM path, policy vs integration test",
+ "queries_attempted": [
+  {
+   "query": "LUKS2 FIDO2 unattended reboot headless disk unlock waits forever",
+   "attempt": 1,
+   "raw_results": 68,
+   "kept": 6
+  },
+  {
+   "query": "headless server FIDO2 LUKS unlock no remote unlock tradeoff",
+   "attempt": 1,
+   "raw_results": 67,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://github.com/bertogg/fido2luks",
+  "https://github.com/Yubico/libfido2/issues/852",
+  "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+  "https://askubuntu.com/questions/996155/how-do-i-automatically-decrypt-an-encrypted-filesystem-on-the-next-reboot",
+  "https://www.cyberciti.biz/security/how-to-unlock-luks-using-dropbear-ssh-keys-remotely-in-linux/",
+  "https://www.bigiron.cc/guides/encrypted-root-with-tpm-clevis-tang-or-just-passphrase",
+  "https://vo.rs/story/luks-on-a-headless-server-with-remote-unlock/",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://github.com/Juka-Bala/remote-luks-unlock-guide",
+  "https://www.roblox.com/bundles/201/Headless-Horseman"
+ ],
+ "outcome": "authored"
+}
