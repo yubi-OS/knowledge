@@ -1,0 +1,25 @@
+# 02. Who pays in open source
+
+Scope: Who actually pays money in open-source ecosystems: individual developers, small teams, and enterprises; the buyer pyramid; free rider dynamics and where monetizable demand concentrates.
+
+## The canonical monetization paths
+
+The reference taxonomy of open-source business models lists selling services (training, technical support, consulting) rather than the software itself, along with advertising- and dual-license-based approaches, as the standard commercialization routes (source: https://en.wikipedia.org/wiki/Business_models_for_open-source_software, jev weight 0.41, weak backing). Practitioner summaries converge on the same set: open core, dual licensing, hosting, support, marketplaces, and donations, with real examples in HashiCorp, Elastic, MongoDB, Grafana, GitLab, and Databricks (source: https://viprasol.com/blog/open-source-business-model/, jev weight 0.12, weak backing; https://blog.ossium.in/open-source-business-models-explained, jev weight 0.21, weak backing).
+
+The consistent structural point across these models is that companies make money by selling value around open-source software rather than by removing the license rights attached to the open code; common paid wrappers are support, consulting, training, managed hosting, and enterprise features (source: https://www.fosshub.com/resources/open-source/open-source-business-models/, jev weight 0.18, weak backing).
+
+## Where paying demand concentrates
+
+The demand side is uneven. The economics of open source is described as a patchwork of motivations, business models, and funding mechanisms with no single answer to who pays for the code the world runs on (source: https://www.codowl.com/article/the-economics-of-open-source-who-pays-and-who-builds, jev weight 0.22, weak backing). Historical revenue streams for open-source projects include foundations, corporate sponsorship, hosted offerings, and paid support, and the funding story has evolved across decades rather than arriving fully formed (source: https://dev.to/vitalisorenko/exploring-economic-models-for-open-source-projects-a-deep-dive-into-funding-innovation-5bl0, jev weight 0.28, weak backing).
+
+Practically, monetizable demand concentrates in 2 places: organizations whose use is operational and continuous (they need the vendor relationship to survive incidents), and organizations with compliance or procurement needs that only a formal contract satisfies. Individual developers are the discovery layer, not the revenue layer. The conversion path from community to paid is its own designed artifact: the onboarding experience is treated as the mechanism that converts free open-source users into paid plans, with community-to-commercial transition as a deliberate step (source: https://www.getmonetizely.com/articles/what-onboarding-experience-converts-free-open-source-users-to-paid, jev weight 0.15, weak backing).
+
+## The free rider problem
+
+Open source runs on unpaid labor while large companies use it for free; this free rider dynamic is documented around incidents like Log4Shell and xz-utils, where the economic asymmetry between users and maintainers became visible (source: https://safeguard.sh/resources/blog/the-economics-of-free-riding-in-open-source-security, jev weight 0.36, weak backing). The free rider problem is sharpest in security: everyone benefits from a hardened dependency, but the cost of hardening falls on a few maintainers, so the willingness to pay exists diffusely while the incentive to pay individually is weak (source: https://safeguard.sh/resources/blog/the-economics-of-free-riding-in-open-source-security, jev weight 0.36, weak backing).
+
+This has a direct segment implication. A security product that is fully free for individuals and priced only for organizations inherits the free rider structure deliberately: the individuals provide community, testing, and reachability, while the organizations fund it. The alternative, charging individuals, trades reach for revenue and is generally documented as the losing trade in open-source distribution (source: https://news.seonib.com/articles/2026-07-15/open-source-customer-acquisition-in-2026-how-free-code-drive.html, jev weight 0.06, weak backing).
+
+## What this means for segment choice
+
+The buyer pyramid for open source runs: individual users at the base (no revenue, high reach), small teams next (some revenue, low sales cost), and enterprises at the top (most revenue, highest sales and support cost). The documented models show that the paid layers above the individual base are what sustain the project, and that the individual layer is the acquisition engine (source: https://dev.to/zny10289/open-source-software-monetization-how-developers-are-actually-making-money-in-2026-4ddh, jev weight 0.11, weak backing). For a security product with a hardware component, the individual tier can additionally carry real unit revenue (the hardware itself is bought), which softens the free rider problem at the base of the pyramid in a way pure-software open source cannot.
