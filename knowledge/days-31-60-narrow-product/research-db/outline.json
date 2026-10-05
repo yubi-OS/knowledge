@@ -1,0 +1,215 @@
+{
+  "topic": "proving a narrow product in days 31-60 of an early-stage GTM plan (narrowing the offer, first users, evidence gates for an MVP)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "pilot-platform-narrowing",
+      "scope": "Narrowing the offer to one pilot platform: choosing the x86_64 VM-validated lane over ARM64 hardware, and the general discipline of picking the narrowest defensible platform slice.",
+      "seed_queries": [
+        "choosing narrowest viable platform first product early stage startup",
+        "virtual machine validated path before hardware support early product"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "blocker-triage-reclassification",
+      "scope": "Retiring, reclassifying, or explicitly deferring blockers on a critical path: triage taxonomy for pilot-blocking vs release-blocking vs out-of-scope work items.",
+      "seed_queries": [
+        "bug triage blocker severity classification release vs pilot",
+        "deferring known issues explicit scope exclusion engineering process"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "physical-hardware-evidence",
+      "scope": "Designing a reproducible, falsifiable physical-hardware demonstration: evidence to capture per run (model, firmware, build SHA, command output, failure case) and the limits to state explicitly.",
+      "seed_queries": [
+        "YubiKey FIDO2 LUKS2 disk unlock systemd-homed setup guide",
+        "reproducible hardware demonstration evidence capture falsifiable claim"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "evidence-gates-exit-criteria",
+      "scope": "Evidence gates for a minimum viable product: converting phase claims into checkable exit criteria and go/no-go gates between lifecycle phases.",
+      "seed_queries": [
+        "MVP success metrics evidence gates early stage product",
+        "go no-go decision gates product milestones exit criteria"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "design-partner-recruitment",
+      "scope": "Finding the first users: design-partner recruitment for a narrow B2B product, target profile definition, channels, and getting partners to run the pilot on real infrastructure.",
+      "seed_queries": [
+        "design partner program recruitment first customers B2B startup",
+        "find first design partners enterprise pilot early stage"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "pricing-the-pilot",
+      "scope": "Pricing the pilot instead of defaulting to unpaid custom engineering: paid pilots, SOW prerequisites, and pricing structure constraints before recruiting.",
+      "seed_queries": [
+        "paid pilot pricing B2B startup statement of work",
+        "why not do unpaid pilots custom engineering trap startup"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "operational-readiness",
+      "scope": "Operational muscle a paying pilot expects: vulnerability triage intake and severity rubric with response SLA, release severity gates, escalation paging, backup and restore cadence, and incident communications.",
+      "seed_queries": [
+        "vulnerability disclosure triage severity rubric response SLA",
+        "incident response escalation backup restore testing customer communication startup"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.3887,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0939,
+          "1": 0.4235,
+          "2": 0.4826
+        },
+        "confidence": 0.1316
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.6782,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.067,
+          "1": 0.1878,
+          "2": 0.7452
+        },
+        "confidence": 0.3926
+      },
+      "t03": {
+        "type": "score",
+        "score": 0.7978,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3547,
+          "1": 0.4928,
+          "2": 0.1525
+        },
+        "confidence": 0.0879
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.5179,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0698,
+          "1": 0.3425,
+          "2": 0.5877
+        },
+        "confidence": 0.2014
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.919,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0188,
+          "1": 0.0433,
+          "2": 0.9379
+        },
+        "confidence": 0.8227
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.9155,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0197,
+          "1": 0.0451,
+          "2": 0.9352
+        },
+        "confidence": 0.8155
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.4801,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0825,
+          "1": 0.355,
+          "2": 0.5625
+        },
+        "confidence": 0.1739
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.209,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1488,
+          "1": 0.4934,
+          "2": 0.3578
+        },
+        "confidence": 0.0904
+      }
+    },
+    "usage": {
+      "input_tokens": 1489,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "03"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
