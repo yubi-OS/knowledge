@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "interactive-shell-mode",
+  "scope": "Running rootless builds in a developer login shell: dockerd-rootless.sh and the user-owned daemon socket under $XDG_RUNTIME_DIR, login-shell PATH resolution, TTY-driven prompts and progress bars, and why privilege problems stay hidden here.",
+  "queries_attempted": [
+    {
+      "query": "dockerd-rootless.sh XDG_RUNTIME_DIR rootless docker setup",
+      "attempt": 1,
+      "raw_results": 58,
+      "kept": 6
+    },
+    {
+      "query": "rootless podman developer workstation login shell environment",
+      "attempt": 1,
+      "raw_results": 66,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/engine/security/rootless/",
+    "https://forums.docker.com/t/can-not-setup-rootless-docker/135230",
+    "https://github.com/moby/moby/blob/master/contrib/dockerd-rootless-setuptool.sh",
+    "https://blog.juanje.net/en/posts/docker-rootless/",
+    "https://www.ssdnodes.com/learn/docker-uis-that-support-rootless",
+    "https://cubepath.com/docs/docker-advanced/docker-rootless-mode-configuration",
+    "https://github.com/podman-container-tools/podman/blob/main/docs/tutorials/rootless_tutorial.md",
+    "https://docs.rockylinux.org/10/guides/containers/rootless_podman_advanced/",
+    "https://www.redhat.com/en/blog/rootless-containers-podman",
+    "https://www.golinuxcloud.com/rootless-podman/",
+    "https://github.com/XIAN-SHENG-576692/Configure-Podman-in-rootless",
+    "https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html"
+  ],
+  "outcome": "authored"
+}

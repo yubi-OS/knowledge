@@ -1,0 +1,233 @@
+{
+  "topic": "rootless build and runtime execution modes: interactive vs batch vs daemon operation for rootless container builds and runtimes, and the mode-specific constraints",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "interactive-shell-mode",
+      "scope": "Running rootless builds in a developer login shell: dockerd-rootless.sh and the user-owned daemon socket under $XDG_RUNTIME_DIR, login-shell PATH resolution, TTY-driven prompts and progress bars, and why privilege problems stay hidden here.",
+      "seed_queries": [
+        "dockerd-rootless.sh XDG_RUNTIME_DIR rootless docker setup",
+        "rootless podman developer workstation login shell environment"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "ci-batch-mode",
+      "scope": "Unattended batch execution on ephemeral CI runners: a runner user whose rootless store is not visible to tools like bcvk, PATH appended not replaced, NO_COLOR and --quiet for non-TTY output, idempotency across runner restarts.",
+      "seed_queries": [
+        "GitHub Actions rootless podman runner user XDG_RUNTIME_DIR",
+        "CI non-interactive shell NO_COLOR quiet mode hangs on prompt"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "daemon-mode-systemd",
+      "scope": "Long-lived rootless daemons under systemd: podman.socket as a user unit, DynamicUser where possible, ExecSearchPath for PATH resolution, NoNewPrivileges=yes, journald instead of a TTY, Restart=on-failure semantics.",
+      "seed_queries": [
+        "systemd user socket podman.socket rootless podman",
+        "systemd DynamicUser ExecSearchPath NoNewPrivileges service hardening"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "exit-semantics-idempotency",
+      "scope": "Exit-code contracts across modes: capturing rc under set -e, the rc=77 SKIP-not-FAIL convention, SuccessExitStatus listing 77 in units, and why idempotency is mandatory in batch and daemon modes.",
+      "seed_queries": [
+        "bash set -e capture exit code rc pattern scripts",
+        "systemd SuccessExitStatus custom exit code semantics"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "tty-stdio-constraints",
+      "scope": "What TTY presence or absence does to rootless tooling: prompts that hang batch jobs, progress bars and colors, NO_COLOR, --quiet flags, and stdout/stderr routed to journald in daemon mode.",
+      "seed_queries": [
+        "isatty TTY detection CLI tools hang waiting for input in CI",
+        "systemd unit stdout stderr journald logging service"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "dry-run-verification-modes",
+      "scope": "Dry-run and verification surfaces per mode: bcvk --dry-run where supported, --check validation legs in CI workflows, systemd-analyze verify for unit files, and what each catches that the others miss.",
+      "seed_queries": [
+        "systemd-analyze verify unit file offline validation",
+        "docker buildx build check dry-run mode CI validation"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "fido2-enrollment-crossing",
+      "scope": "The interactive-only crossing: systemd-cryptenroll --fido2-device=auto needs root and a physical touch at once, so it never runs in batch or daemon mode; CI substitutes a software authenticator inside the bcvk VM.",
+      "seed_queries": [
+        "systemd-cryptenroll fido2-device auto touch root",
+        "software FIDO2 authenticator virtual machine CI testing"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "isolation-constant-mode-coverage",
+      "scope": "What stays constant across modes: the same seccomp default profile and Linux isolation boundary in all three modes, which makes privilege differences visible; plus the yubiOS rule that every rootless tool runs in at least two of the three modes.",
+      "seed_queries": [
+        "rootless containers seccomp default profile podman",
+        "rootless docker user namespace seccomp isolation security model"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6749,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0853,
+          "1": 0.1545,
+          "2": 0.7602
+        },
+        "confidence": 0.4135,
+        "score_discrete": "2"
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.7582,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0439,
+          "1": 0.1541,
+          "2": 0.802
+        },
+        "confidence": 0.5034,
+        "score_discrete": "2"
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.6852,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0676,
+          "1": 0.1796,
+          "2": 0.7528
+        },
+        "confidence": 0.4053,
+        "score_discrete": "2"
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.0546,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2038,
+          "1": 0.5378,
+          "2": 0.2584
+        },
+        "confidence": 0.0963,
+        "score_discrete": "1"
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.4158,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1228,
+          "1": 0.3385,
+          "2": 0.5387
+        },
+        "confidence": 0.1298,
+        "score_discrete": "2"
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.8293,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2777,
+          "1": 0.6152,
+          "2": 0.1071
+        },
+        "confidence": 0.2006,
+        "score_discrete": "1"
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.1806,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.8568,
+          "1": 0.1058,
+          "2": 0.0374
+        },
+        "confidence": 0.62,
+        "score_discrete": "0"
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.3694,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1272,
+          "1": 0.3761,
+          "2": 0.4967
+        },
+        "confidence": 0.1065,
+        "score_discrete": "2"
+      }
+    },
+    "usage": {
+      "input_tokens": 1156,
+      "output_tokens": 0
+    },
+    "dropped": [
+      "07"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "08"
+    ],
+    "score_mapping": "continuous score mapped to discrete 0/1/2 by argmax of probabilities"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "dry-run-verification-modes",
+  "scope": "Dry-run and verification surfaces per mode: bcvk --dry-run where supported, --check validation legs in CI workflows, systemd-analyze verify for unit files, and what each catches that the others miss.",
+  "queries_attempted": [
+    {
+      "query": "systemd-analyze verify unit file offline validation",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "docker buildx build check dry-run mode CI validation",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://linux-audit.com/systemd/faq/how-to-verify-a-systemd-unit-for-errors/",
+    "https://johnburns.io/post/verify-systemd-unit-files-before-daemon-reload/",
+    "https://github.com/systemdemo/workshop/blob/main/workshop/ANALYZE/systemd-analyze-verify.md",
+    "https://willibrandon.github.io/vscode-systemd/validation/",
+    "https://dev.to/lyraalishaikh/stop-shipping-broken-systemd-units-practical-systemd-analyze-verify-for-linux-services-24dk",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://docs.docker.com/build/checks/",
+    "https://deepwiki.com/docker/setup-buildx-action/4-testing-and-cicd",
+    "https://oneuptime.com/blog/post/2026-02-08-how-to-use-docker-build-checks-for-dockerfile-validation/view",
+    "https://www.docker.com/",
+    "https://www.youtube.com/watch?v=mHn3M9_b0QY",
+    "https://deepwiki.com/docker/setup-buildx-action/4.2-test-and-validation-workflows"
+  ],
+  "outcome": "authored"
+}

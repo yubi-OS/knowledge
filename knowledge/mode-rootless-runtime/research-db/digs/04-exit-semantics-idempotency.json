@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "exit-semantics-idempotency",
+  "scope": "Exit-code contracts across modes: capturing rc under set -e, the rc=77 SKIP-not-FAIL convention, SuccessExitStatus listing 77 in units, and why idempotency is mandatory in batch and daemon modes.",
+  "queries_attempted": [
+    {
+      "query": "bash set -e capture exit code rc pattern scripts",
+      "attempt": 1,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "systemd SuccessExitStatus custom exit code semantics",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://linuxsimply.com/bash-scripting-tutorial/process-and-signal-handling/exit-codes/set-exit-code/",
+    "https://stackoverflow.com/questions/10448160/how-do-i-set-or-the-return-code-in-bash",
+    "https://unix.stackexchange.com/questions/66581/bash-shell-ssh-remote-script-capture-output-and-exit-code",
+    "https://www.geeksforgeeks.org/linux-unix/how-to-use-exit-code-to-read-from-terminal-from-script-and-with-logical-operators/",
+    "https://linuxsimply.com/bash-scripting-tutorial/process-and-signal-handling/exit-codes/check-exit-code/",
+    "https://stackoverflow.com/questions/5312266/how-to-trap-exit-code-in-bash-script",
+    "https://github.com/systemd/systemd/issues/15757",
+    "https://unix.stackexchange.com/questions/734114/make-systemd-treat-unexpected-exit-as-failure",
+    "https://github.com/systemd/systemd/issues/33431",
+    "https://max.nardit.com/articles/an-exit-is-not-a-verdict",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://manpages.debian.org/testing/systemd/systemd.service.5.en.html"
+  ],
+  "outcome": "authored"
+}

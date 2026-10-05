@@ -1,0 +1,37 @@
+{
+  "nn": "07",
+  "slug": "fido2-enrollment-crossing",
+  "scope": "The interactive-only crossing: systemd-cryptenroll --fido2-device=auto needs root and a physical touch at once, so it never runs in batch or daemon mode; CI substitutes a software authenticator inside the bcvk VM.",
+  "queries_attempted": [
+    {
+      "query": "systemd-cryptenroll fido2-device auto touch root",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "software FIDO2 authenticator virtual machine CI testing",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+    "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+    "https://forum.sbenny.com/genre/auto/",
+    "https://systemd.io/USER_RECORD/",
+    "https://github.com/ellerh/softfido",
+    "https://helpmetest.com/blog/fido2-authenticator-testing/",
+    "https://github.com/keinPlan/virtual-fido",
+    "https://en.m.wikipedia.org/wiki/Software",
+    "https://github.com/19h/fidolizer",
+    "https://github.com/topics/fido2-authenticator"
+  ],
+  "outcome": "skipped",
+  "skip_reason": "dropped at outline validation: score 0 (argmax 0.857 on 'padding: drop'); dig executed but doc not authored, recorded as a gap"
+}

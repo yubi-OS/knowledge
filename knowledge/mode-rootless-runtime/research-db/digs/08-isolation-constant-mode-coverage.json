@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "isolation-constant-mode-coverage",
+  "scope": "What stays constant across modes: the same seccomp default profile and Linux isolation boundary in all three modes, which makes privilege differences visible; plus the yubiOS rule that every rootless tool runs in at least two of the three modes.",
+  "queries_attempted": [
+    {
+      "query": "rootless containers seccomp default profile podman",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "rootless docker user namespace seccomp isolation security model",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://oneuptime.com/blog/post/2026-02-02-podman-security-configuration/view",
+    "https://podman.io/blogs/2019/10/15/generate-seccomp-profiles",
+    "https://rootlessplants.com/",
+    "https://blog.hashhackers.com/blog/linux-containers-security/",
+    "https://blog.nviso.eu/2026/02/03/rootless-containers-with-podman/",
+    "https://www.urhoba.net/en/post/podman-security-privileges-seccomp-trust",
+    "https://docs.docker.com/engine/security/rootless/",
+    "https://www.virtua.cloud/learn/en/tutorials/docker-security-hardening-rootless-seccomp",
+    "https://xdaforums.com/t/rom-16-ota-crdroid-12-for-xiaomi-12x-psyche-unofficial-encryption.4762076/page-12",
+    "https://www.kunalganglani.com/blog/docker-rootless-mode-security",
+    "https://systeminternals.dev/docker/security/",
+    "https://rootlessplants.com/"
+  ],
+  "outcome": "authored"
+}

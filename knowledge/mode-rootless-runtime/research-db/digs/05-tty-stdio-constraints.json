@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "tty-stdio-constraints",
+  "scope": "What TTY presence or absence does to rootless tooling: prompts that hang batch jobs, progress bars and colors, NO_COLOR, --quiet flags, and stdout/stderr routed to journald in daemon mode.",
+  "queries_attempted": [
+    {
+      "query": "isatty TTY detection CLI tools hang waiting for input in CI",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "systemd unit stdout stderr journald logging service",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.python-cli-toolcraft.com/advanced-input-parsing-user-experience/working-with-stdin-stdout-and-pipes/detecting-tty-and-adapting-output/",
+    "https://hoop.dev/blog/solving-silent-terminal-failures-understanding-and-fixing-tty-pain-points",
+    "https://deska.dev/blog/terminal-detection-tty",
+    "https://hoop.dev/blog/mastering-tty-preventing-build-hangs-and-ci-pipeline-deadlocks",
+    "https://www.life-savers.com/",
+    "https://gptzero.me/",
+    "https://unix.stackexchange.com/questions/20399/view-stdout-stderr-of-systemd-service",
+    "https://stackoverflow.com/questions/40812634/send-stdout-stderr-to-console-for-a-systemd-service",
+    "https://stackoverflow.com/questions/37585758/how-to-redirect-output-of-systemd-service-to-a-file",
+    "https://systemd.io/",
+    "http://developer.toradex.com/software/linux-resources/linux-features/persistent-journald-logging",
+    "https://en.wikipedia.org/wiki/Systemd"
+  ],
+  "outcome": "authored"
+}
