@@ -1,0 +1,34 @@
+{
+  "ref": "0pointer-poettering-systemd-vision",
+  "topic": "Lennart Poettering / 0pointer.net systemd architecture vision and the Amutable company, and its relevance to image-based immutable Linux systems",
+  "outline_validation": {
+    "endpoint": "POST https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "jev_requests_used": 1,
+    "answers": {
+      "t01_amutable-company": 0.7617,
+      "t02_fitting-everything-together": 0.792,
+      "t03_uki-boot-chain": 0.8323,
+      "t04_repart-factory-reset": 0.844,
+      "t05_sysext-portable-modularity": 0.8501,
+      "t06_mkosi-image-builder": 0.848,
+      "t07_sysupdate-ab-upgrades": 0.8657,
+      "t08_version-history-v256-v261": 0.5181,
+      "t09_verity-attestation": 0.7728,
+      "t10_luks2-tpm2-fido2": 0.743
+    },
+    "dropped": []
+  },
+  "subtopics": [
+    {"id": "t01", "slug": "amutable-company", "scope": "Amutable company profile: founders (Chris Kuhl CEO, Christian Brauner CTO, Lennart Poettering Chief Engineer, David Strauss CPO), Berlin base, mission of determinism and verifiable integrity.", "queries": ["Amutable company Chris Kuhl Christian Brauner Lennart Poettering", "Amutable Berlin systemd startup mission"]},
+    {"id": "t02", "slug": "fitting-everything-together", "scope": "The 11 design goals of the 2020 Fitting Everything Together essay: image-based OS, trust chain, offline security, measurement, self-updating, factory reset, vendor/user separation.", "queries": ["0pointer fitting everything together systemd design goals", "Poettering image based OS vision blog"]},
+    {"id": "t03", "slug": "uki-boot-chain", "scope": "Unified Kernel Images, systemd-boot version sorting, usrhash kernel parameter, and the boot loader to apps trust chain.", "queries": ["systemd UKI unified kernel image systemd-boot", "systemd-stub usrhash dm-verity boot chain"]},
+    {"id": "t04", "slug": "repart-factory-reset", "scope": "systemd-repart: declarative partitioning, first-boot adaptive partition creation, factory reset via --defer-partitions-factory-reset, and the no-installer goal.", "queries": ["systemd-repart first boot partitioning factory reset", "systemd-repart declarative partition specification"]},
+    {"id": "t05", "slug": "sysext-portable-modularity", "scope": "Modularity layers: systemd-sysext and confext (verity + PKCS#7 signed overlays), portable services with RootImage, and the app-layer gap.", "queries": ["systemd-sysext confext verity signed overlayfs", "systemd portable services RootImage"]},
+    {"id": "t06", "slug": "mkosi-image-builder", "scope": "mkosi re-introduction: what it builds (GPT disk images, USIs, sysext, portable images), workflow, and CI usage (mkosi boot / qemu).", "queries": ["mkosi re-introduction Daan De Meyer OS images", "mkosi systemd-repart disk image build"]},
+    {"id": "t07", "slug": "sysupdate-ab-upgrades", "scope": "systemd-sysupdate A/B atomic upgrades, self-updating design goal, robustness against power loss.", "queries": ["systemd-sysupdate A B atomic upgrades", "systemd-sysupdate design blog Poettering"]},
+    {"id": "t08", "slug": "version-history-v256-v261", "scope": "systemd v256 to v261 feature history relevant to image-based OS: sbsign, homed signing keys, RootMStack, NvPCR, sysinstall, RestrictFileSystemAccess.", "queries": ["systemd v261 release notes", "systemd v258 v259 v260 release features"]},
+    {"id": "t09", "slug": "verity-attestation", "scope": "Cryptographic measurement everywhere: dm-verity on /usr, measured boot, remote attestation in the 0pointer vision.", "queries": ["systemd dm-verity usrhash remote attestation", "Poettering trusted boot measurement blog"]},
+    {"id": "t10", "slug": "luks2-tpm2-fido2", "scope": "Offline security: LUKS2 encryption, TPM2 enrollment, FIDO2 key sealing via systemd-cryptenroll, local key generation.", "queries": ["systemd-cryptenroll TPM2 FIDO2 LUKS2", "systemd LUKS2 TPM2 sealed key blog"]}
+  ]
+}
