@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "context-hygiene",
+ "scope": "Build context and state hygiene: context minimization, ldconfig and package-manager cache removal, deterministic compilation flags",
+ "queries_attempted": [
+  {
+   "query": "docker .dockerignore build context minimal reproducible",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "ldconfig aux-cache remove reproducible image build",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/concepts/context/",
+  "https://docs.docker.com/offload/optimize/",
+  "https://dockerbuild.com/reference/dockerignore",
+  "https://www.docker.com/",
+  "https://stackoverflow.com/questions/53945934/docker-compose-and-dockerignore",
+  "https://docs.docker.com/build/concepts/overview",
+  "https://gitlab.com/cip-project/cip-core/isar-cip-core/-/issues/35",
+  "https://bugs.archlinux.org/task/73817.html",
+  "https://dangerzone.rocks/news/2026-03-02-repro-build/",
+  "https://stackoverflow.com/questions/21758828/purging-and-rebuilding-ldconfig-cache",
+  "https://www.autotrader.com/cars-for-sale/truck?msockid=32f4a02ebd656ba924bcb7c7bcdb6ae1",
+  "https://github.com/docker-library/official-images/issues/16044"
+ ],
+ "outcome": "authored"
+}

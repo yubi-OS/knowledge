@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "mkosi-installer-repro",
+ "scope": "mkosi installer reproducibility: epoch and seed inputs, pinned toolchain, dracut initrd, canonical manifest gate",
+ "queries_attempted": [
+  {
+   "query": "mkosi SourceDateEpoch reproducible OS image build",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "dracut reproducible mode deterministic initrd",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/systemd/mkosi",
+  "https://mkosi.systemd.io/",
+  "https://vdwaa.nl/mkosi-reproducible-images.html",
+  "https://github.com/edgelesssys/reproducible-mkosi",
+  "https://www.reebok.com/",
+  "https://wiki.archlinux.org/title/Mkosi",
+  "https://www.man7.org/linux/man-pages/man8/dracut.8.html",
+  "https://wiki.archlinux.org/title/Dracut",
+  "https://wiki.gentoo.org/wiki/Dracut",
+  "https://www.kernel.org/pub/linux/utils/boot/dracut/dracut.html",
+  "https://linuxconfig.org/how-to-build-an-initramfs-using-dracut-on-linux",
+  "https://en.m.wikipedia.org/wiki/Dracut_(software)"
+ ],
+ "outcome": "authored"
+}

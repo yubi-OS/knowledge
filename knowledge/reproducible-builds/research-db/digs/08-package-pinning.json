@@ -1,0 +1,65 @@
+{
+ "nn": "08",
+ "slug": "package-pinning",
+ "scope": "Package input pinning and repository snapshots: live-repo resolution vs immutable snapshots, RPM/Fedora and Debian rebuild infrastructure",
+ "queries_attempted": [
+  {
+   "query": "reproducible builds immutable package repository snapshot dependency pinning",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "rpm reproducible builds SOURCE_DATE_EPOCH deterministic",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "RPM BUILD_TIME reproducible package build deterministic",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "reproducible builds linux distributions repository snapshot snapshot.debian.org",
+   "attempt": 2,
+   "raw_results": 53,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig for subtopic 08 returned only 3 results at weight >= 0.5, too thin to author honestly",
+   "new_queries": [
+    "RPM BUILD_TIME reproducible package build deterministic",
+    "reproducible builds linux distributions repository snapshot snapshot.debian.org"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-build-reproducible-docker-images-with-locked-dependencies/view",
+  "https://devsecopsschool.com/blog/dependency-pinning/",
+  "https://en.wikipedia.org/wiki/Reproducible_builds",
+  "https://github.com/orgs/autowarefoundation/discussions/6861",
+  "https://inferensys.com/glossary/preemptive-algorithmic-cybersecurity/ai-supply-chain-security/dependency-pinning",
+  "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "https://reproducible-builds.org/docs/",
+  "https://reproducible-builds.org/docs/source-date-epoch/",
+  "https://reproducible-builds.org/docs/timestamps/",
+  "https://rb.mapreri.org/site/docs/",
+  "https://rpm.org/",
+  "https://reproducible-builds.org/docs/deterministic-build-systems/",
+  "https://docs.fedoraproject.org/en-US/reproducible-builds/",
+  "https://fedoraproject.org/wiki/Changes/ReproduciblePackageBuilds",
+  "https://github.com/rpm-software-management/rpm/discussions/2934",
+  "https://reproduce.debian.net/",
+  "https://github.com/fepitre/debian-snapshot",
+  "https://snapshot.debian.org/",
+  "https://reproducible-builds.org/reports/2025-01/",
+  "https://myunix.org/linux/linux-reproducible-builds/"
+ ],
+ "outcome": "authored"
+}
