@@ -1,0 +1,44 @@
+{
+ "nn": 9,
+ "slug": "yubios-comparative-analysis",
+ "scope": "Edgeless versus yubiOS: overlap matrix, what yubiOS already implements (commit-derived epoch, fork pinning, multi-surface verifiers), what is complementary, and borrow guidance.",
+ "queries_attempted": [
+  {
+   "query": "bootc image mode reproducible OCI OS image verification",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "YubiKey PIV secure boot signing mkosi UKI dm-verity roothash",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-round-1",
+   "reason": "First noul weighting pass completed 22 /api/decide requests but the agent stored the answer under the wrong key ('score'); the noul metric returns its weight under the 'noul' key, so all 108 weights extracted as null. All 108 results were re-weighted in weighting-round-2 (22 redo /api/decide requests plus a 1-question shape probe); no dig queries were re-run.",
+   "new_queries": []
+  }
+ ],
+ "results_kept": [
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/building-and-testing-the-rhel-bootable-container-images_using-image-mode-for-rhel-to-build-deploy-and-manage-operating-systems",
+  "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+  "https://github.com/bootc-dev/bootc",
+  "https://docs.centos.org/automotive-sig-documentation/building/con_bootc-image-layering/",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/building-and-testing-rhel-bootc-images",
+  "https://mylinux.work/guides/image-mode-bootc/",
+  "https://github.com/yubi-OS/yubiOS",
+  "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+  "https://yubi-os.github.io/",
+  "https://www.yubico.com/",
+  "https://forum.root.cz/index.php?topic=29367.0",
+  "https://sandro-keil.de/blog/yubikey-full-disk-encryption-uefi-secure-boot-for-everyone/"
+ ],
+ "outcome": "authored",
+ "weights_high": 7,
+ "weights_low": 5
+}

@@ -1,0 +1,44 @@
+{
+ "nn": 2,
+ "slug": "reproducibility-techniques",
+ "scope": "The catalogue of techniques that make the builds deterministic: SOURCE_DATE_EPOCH=0, fixed repart seed, sorted cpio input, CleanPackageMetadata, RemoveFiles, and the upstream mkosi/systemd/dosfstools/authselect PRs Edgeless authored.",
+ "queries_attempted": [
+  {
+   "query": "mkosi reproducible build SOURCE_DATE_EPOCH systemd-repart fixed seed",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "mkosi reproducible image techniques sorted cpio RemoveFiles upstream PRs",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-round-1",
+   "reason": "First noul weighting pass completed 22 /api/decide requests but the agent stored the answer under the wrong key ('score'); the noul metric returns its weight under the 'noul' key, so all 108 weights extracted as null. All 108 results were re-weighted in weighting-round-2 (22 redo /api/decide requests plus a 1-question shape probe); no dig queries were re-run.",
+   "new_queries": []
+  }
+ ],
+ "results_kept": [
+  "https://vdwaa.nl/mkosi-reproducible-images.html",
+  "https://reproducible-builds.org/docs/source-date-epoch/",
+  "https://github.com/edgelesssys/reproducible-mkosi",
+  "https://vdwaa.nl/mkosi-reproducible-arch-images.html",
+  "https://github.com/systemd/mkosi",
+  "https://forums.hfboards.com/forums/nashville-predators.33/",
+  "https://github.com/edgelesssys/reproducible-mkosi",
+  "https://github.com/systemd/mkosi",
+  "https://mkosi.systemd.io/",
+  "https://vdwaa.nl/mkosi-reproducible-images.html",
+  "https://vdwaa.nl/mkosi-reproducible-arch-images.html",
+  "https://en.wikipedia.org/wiki/0"
+ ],
+ "outcome": "authored",
+ "weights_high": 9,
+ "weights_low": 3
+}

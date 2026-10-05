@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-05",
+ "searxng": {
+  "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3Dmkosi%2Breproducible%2Bbuilds",
+  "probe_results": 44,
+  "unresponsive_engines": []
+ },
+ "decide": {
+  "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+  "model": "clef",
+  "probe_answer": {
+   "type": "score",
+   "score": 0.5739,
+   "legend": {
+    "0": "no",
+    "1": "maybe",
+    "2": "yes"
+   },
+   "probabilities": {
+    "0": 0.5943,
+    "1": 0.2375,
+    "2": 0.1682
+   },
+   "confidence": 0.1568
+  }
+ }
+}

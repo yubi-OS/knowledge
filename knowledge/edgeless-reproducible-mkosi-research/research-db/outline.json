@@ -1,0 +1,241 @@
+{
+ "topic": "the edgelesssys/reproducible-mkosi project: reproducible mkosi builds, its techniques, and prior art for reproducible OS image verification",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "repo-overview-status",
+   "scope": "What edgelesssys/reproducible-mkosi is: a 2023 Edgeless Systems demo of bit-for-bit reproducible OS images via mkosi plus Nix, its repository layout, frozen status since 2024-02-07, and adoption signals.",
+   "seed_queries": [
+    "edgelesssys reproducible-mkosi github demo repository",
+    "edgeless systems reproducible mkosi repository status frozen"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "reproducibility-techniques",
+   "scope": "The catalogue of techniques that make the builds deterministic: SOURCE_DATE_EPOCH=0, fixed repart seed, sorted cpio input, CleanPackageMetadata, RemoveFiles, and the upstream mkosi/systemd/dosfstools/authselect PRs Edgeless authored.",
+   "seed_queries": [
+    "mkosi reproducible build SOURCE_DATE_EPOCH systemd-repart fixed seed",
+    "mkosi reproducible image techniques sorted cpio RemoveFiles upstream PRs"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "two-build-verifier",
+   "scope": "The diffimage.sh two-build verifier pattern: build twice, systemd-dissect --mtree, DPS-aware partition extraction, sha256 plus veritysetup dump diffing, and exit-on-divergence design.",
+   "seed_queries": [
+    "mkosi diffimage.sh two build reproducibility verifier systemd-dissect mtree",
+    "verify reproducible OS image build compare two builds veritysetup sha256"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "nix-pinned-toolchain",
+   "scope": "Nix-pinned build toolchain via flake.nix: why pinning the build environment matters, the mkosi commit pin, and empirical evidence for Nix reproducibility rates.",
+   "seed_queries": [
+    "nix flake pinned toolchain reproducible mkosi builds",
+    "nix reproducibility empirical study package reproducibility rate"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "ci-verification-flow",
+   "scope": "The single e2e.yml CI workflow: daily rebuild-and-diff cron, nix flake update as a moving target, un-archived live distro mirrors, and what reproducibility is actually achieved.",
+   "seed_queries": [
+    "github actions daily reproducible build verification cron workflow_dispatch",
+    "reproducible builds CI moving target package archive distro mirrors"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "signing-attestation-gap",
+   "scope": "The absence of a signing and attestation chain in the repo (no SecureBoot keys, cosign, in-toto, SLSA) and the Edgeless philosophy that reproducibility substitutes for trust in the signer.",
+   "seed_queries": [
+    "cosign in-toto SBOM attestation container images edgeless constellation",
+    "reproducible builds versus signing trust remote attestation confidential computing"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "prior-art-landscape",
+   "scope": "Direct peers and failed attempts: Flashbots mkosi-poc, Jelly arch-mkosi-boxes, repro-get deprecation, mkosi #1115 --reproduce, btrfs reproducibility dead end.",
+   "seed_queries": [
+    "flashbots mkosi-poc reproducible builds intel tdx",
+    "mkosi reproducible arch linux btrfs reproducibility problems"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "academic-foundations",
+   "scope": "Academic and community foundations: IEEE Software 2021 reproducible builds framing, verifiable builds research, and the reproducible-builds.org Debian lineage.",
+   "seed_queries": [
+    "reproducible builds IEEE Software 2021 academic paper",
+    "reproducible-builds.org Debian reproducibility history foundation"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "yubios-comparative-analysis",
+   "scope": "Edgeless versus yubiOS: overlap matrix, what yubiOS already implements (commit-derived epoch, fork pinning, multi-surface verifiers), what is complementary, and borrow guidance.",
+   "seed_queries": [
+    "bootc image mode reproducible OCI OS image verification",
+    "YubiKey PIV secure boot signing mkosi UKI dm-verity roothash"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.4603,
+    "probabilities": {
+     "0": 0.1162,
+     "1": 0.3072,
+     "2": 0.5766
+    },
+    "confidence": 0.1604,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.8494,
+    "probabilities": {
+     "0": 0.0264,
+     "1": 0.0978,
+     "2": 0.8758
+    },
+    "confidence": 0.6659,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.6844,
+    "probabilities": {
+     "0": 0.0681,
+     "1": 0.1795,
+     "2": 0.7524
+    },
+    "confidence": 0.4045,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.6258,
+    "probabilities": {
+     "0": 0.0769,
+     "1": 0.2204,
+     "2": 0.7027
+    },
+    "confidence": 0.3225,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.5963,
+    "probabilities": {
+     "0": 0.0812,
+     "1": 0.2412,
+     "2": 0.6776
+    },
+    "confidence": 0.2858,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.4282,
+    "probabilities": {
+     "0": 0.1158,
+     "1": 0.3402,
+     "2": 0.544
+    },
+    "confidence": 0.1376,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.5425,
+    "probabilities": {
+     "0": 0.0933,
+     "1": 0.271,
+     "2": 0.6357
+    },
+    "confidence": 0.2294,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.9373,
+    "probabilities": {
+     "0": 0.2502,
+     "1": 0.5623,
+     "2": 0.1875
+    },
+    "confidence": 0.1209,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.0073,
+    "probabilities": {
+     "0": 0.2395,
+     "1": 0.5138,
+     "2": 0.2467
+    },
+    "confidence": 0.0733,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1284,
+   "output_tokens": 0
+  },
+  "requested_at": "2026-10-05T08:00:00Z",
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "note": "No score-0 subtopics. Subtopics t01, t06, t08, t09 scored in the marginal band (1.0-1.5) and were kept because their digs came back strong (5-10 high-weight primary sources each)."
+ }
+}

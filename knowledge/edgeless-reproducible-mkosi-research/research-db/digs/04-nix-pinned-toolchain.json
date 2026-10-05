@@ -1,0 +1,44 @@
+{
+ "nn": 4,
+ "slug": "nix-pinned-toolchain",
+ "scope": "Nix-pinned build toolchain via flake.nix: why pinning the build environment matters, the mkosi commit pin, and empirical evidence for Nix reproducibility rates.",
+ "queries_attempted": [
+  {
+   "query": "nix flake pinned toolchain reproducible mkosi builds",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "nix reproducibility empirical study package reproducibility rate",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-round-1",
+   "reason": "First noul weighting pass completed 22 /api/decide requests but the agent stored the answer under the wrong key ('score'); the noul metric returns its weight under the 'noul' key, so all 108 weights extracted as null. All 108 results were re-weighted in weighting-round-2 (22 redo /api/decide requests plus a 1-question shape probe); no dig queries were re-run.",
+   "new_queries": []
+  }
+ ],
+ "results_kept": [
+  "https://reproducible.nixos.org/",
+  "https://github.com/edgelesssys/reproducible-mkosi",
+  "https://nixos.org/",
+  "https://kalyanmudumby.com/post/building-reproducible-environments-with-nix/",
+  "https://github.com/Dicklesworthstone/beads_rust/issues/27",
+  "https://www.youtube.com/watch?v=pKIl6qN3lUA",
+  "https://hal.science/hal-05630285v1/file/2025-nixpkgs-reproducibility-extended.pdf",
+  "https://nixos.org/",
+  "https://arxiv.org/pdf/2501.15919v1",
+  "https://luj.fr/notes/20260522T000000==public--decade-of-software-reproducibility__research.org",
+  "https://nixos.org/research/",
+  "https://hal.science/hal-05630285"
+ ],
+ "outcome": "authored",
+ "weights_high": 10,
+ "weights_low": 2
+}

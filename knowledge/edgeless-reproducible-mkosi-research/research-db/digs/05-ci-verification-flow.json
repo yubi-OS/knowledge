@@ -1,0 +1,44 @@
+{
+ "nn": 5,
+ "slug": "ci-verification-flow",
+ "scope": "The single e2e.yml CI workflow: daily rebuild-and-diff cron, nix flake update as a moving target, un-archived live distro mirrors, and what reproducibility is actually achieved.",
+ "queries_attempted": [
+  {
+   "query": "github actions daily reproducible build verification cron workflow_dispatch",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "reproducible builds CI moving target package archive distro mirrors",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-round-1",
+   "reason": "First noul weighting pass completed 22 /api/decide requests but the agent stored the answer under the wrong key ('score'); the noul metric returns its weight under the 'noul' key, so all 108 weights extracted as null. All 108 results were re-weighted in weighting-round-2 (22 redo /api/decide requests plus a 1-question shape probe); no dig queries were re-run.",
+   "new_queries": []
+  }
+ ],
+ "results_kept": [
+  "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+  "https://github.com/marketplace/actions/daily-build",
+  "https://oneuptime.com/blog/post/2025-12-20-scheduled-workflows-cron-github-actions/view",
+  "https://cronread.com/blog/github-actions-cron-examples",
+  "https://github.com/",
+  "https://github.com/orgs/community/discussions/206028",
+  "https://reproducible-builds.org/",
+  "https://reproducible-builds.org/tools/",
+  "https://dangerzone.rocks/news/2026-03-02-repro-build/",
+  "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "https://docs.internetcomputer.org/guides/canister-management/reproducible-builds/",
+  "https://github.com/freedomofpress/repro-build"
+ ],
+ "outcome": "authored",
+ "weights_high": 5,
+ "weights_low": 7
+}
