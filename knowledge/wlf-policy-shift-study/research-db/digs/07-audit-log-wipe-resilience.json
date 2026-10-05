@@ -1,0 +1,132 @@
+{
+ "nn": "07",
+ "slug": "audit-log-wipe-resilience",
+ "scope": "The 2026-10-01 14:44Z data wipe as a case study: the audit event history was removed so policy-change timestamps are not reconstructable from D1, and the general problem of designing wipe-resistant durable ledgers for audit histories.",
+ "queries_attempted": [
+  {
+   "query": "audit log data loss incident reconstruction postmortem",
+   "attempt": 1,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "immutable append only audit log storage design wipe",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "audit event retention immutability WORM storage compliance design",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6,
+   "results": [
+    {
+     "title": "What is WORM Storage? Meaning, Architecture, Examples, Use Cases, and ...",
+     "url": "https://devsecopsschool.com/blog/worm-storage/",
+     "content": "WORM storage enforces immutable retention of written objects through policy and controls to ensure data integrity, auditability, and compliance for a defined lifecycle.WORM storage enforces immutable retention of written objects through policy and controls to ensure data integrity, auditability, and compliance for a defined lifecycle."
+    },
+    {
+     "title": "WORM Compliance: SEC & FINRA Requirements for Record Storage",
+     "url": "https://www.archondatastore.com/blog/sec-finra-worm-compliance/",
+     "content": "WORM compliance is a regulatory requirement under SEC Rule 17a-4 and FINRA Rule 4511. Regulators expect records, metadata, and audit trails to remain non-rewriteable and non-erasable for the full retention period, with integrity that can be proven during an examination.WORM compliance is a regulatory requirement under SEC Rule 17a-4 and FINRA Rule 4511. Regulators expect records, metadata, and aud"
+    },
+    {
+     "title": "Worm Storage Immutability Regulatory Compliance | Grotabyte",
+     "url": "https://www.grotabyte.com/blog/worm-storage-immutability-regulatory-compliance",
+     "content": "Jun 29, 2026 \u00b7 Enable Audit Logging: Maintain immutable logs of all retention and access events. Test Access & Retrieval: Regularly validate that records remain accessible when needed. Plan for Legal Holds: Ensure immutability works in tandem with legal hold requirements. Reduced Legal Risk: Eliminates challenges around data authenticity in litigation."
+    },
+    {
+     "title": "System Design: Audit Log \u2014 Immutable Event Trail, Compliance, and ...",
+     "url": "https://www.techinterview.org/post/3233465643/system-design-audit-log/",
+     "content": "System design for an audit log system: immutable append-only storage, hash chaining for tamper detection, write to external storage, Elasticsearch indexing for investigations, and compliance retention policies.System design for an audit log system: immutable append-only storage, hash chaining for tamper detection, write to external storage, Elasticsearch indexing for investigations, and compliance"
+    },
+    {
+     "title": "Immutable Storage for Blob Data Overview - Azure... | Microsoft Learn",
+     "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-storage-overview",
+     "content": "Immutable storage for Azure Blob Storage lets you store business-critical data in a WORM (Write Once, Read Many) state. While in a WORM state, data can't be modified or deleted for a user-specified interval. By configuring immutability policies for blob data, you can protect your data from overwrites and deletes."
+    },
+    {
+     "title": "Audit Logging Architecture for Compliance Evidence \u2014 Know\u2026",
+     "url": "https://www.the-algo.com/knowledge/audit-logging-architecture",
+     "content": "We design centralized audit logging architectures with structured event schemas, at-least-once delivery pipelines to access-controlled log platforms, Object Lock/WORM tamper-evidence storage, and retention enforcement automation. Our implementations include log completeness assessments that identify gaps between application, infrastructure, and cloud audit log sources, ensuring end-to-end ...We de"
+    }
+   ]
+  },
+  {
+   "query": "audit trail tamper evidence log preservation requirements",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6,
+   "results": [
+    {
+     "title": "18 Tips to Implement Tamper-Proof Audit Logs - Mattermost",
+     "url": "https://mattermost.com/blog/compliance-by-design-18-tips-to-implement-tamper-proof-audit-logs/",
+     "content": "Audit logs are where security, operations, and compliance meet. When an incident happens or an auditor asks for evidence, your logs are how you prove who did what, when it happened, and what the outcome was. Ensuring that these audit logs are accurate, reliable, and tamper-proof is critical. \"Tamper-proof\" audit logs don't happen by accident. Instead, they're the result of deliberate ..."
+    },
+    {
+     "title": "Audit Logging Architecture: Designing Tamper-Resistant, Compliance ...",
+     "url": "https://www.systemshardening.com/articles/cross-cutting/audit-logging-architecture/",
+     "content": "Audit logs are a structured record of security-relevant decisions and actions, designed from the start to be tamper-resistant, correlated, and retained for a defined period to satisfy both forensic and compliance requirements. Audit logs that an attacker can erase are not audit logs."
+    },
+    {
+     "title": "Audit Logging Deep Dive: Engineering Tamper-Proof Trails for Security ...",
+     "url": "https://news.lavx.hu/article/audit-logging-deep-dive-engineering-tamper-proof-trails-for-security-and-compliance",
+     "content": "Ensuring Immutability and Tamper Evidence: The Security Imperative An audit log you can't trust is worse than useless. Key strategies include: Write-Once-Read-Many (WORM) Storage: Leveraging cloud storage features (like S3 Object Lock in Compliance mode, Azure Blob Immutable Storage) or dedicated appliances designed for immutability."
+    },
+    {
+     "title": "HIPAA audit trails and tamper-evidence: what the Security Rule really ...",
+     "url": "https://claimzen.ai/resources/hipaa-audit-trails-tamper-evidence/",
+     "content": "Audit controls and integrity are two of the HIPAA Security Rule's hardest technical safeguards \u2014 and where software most often fails quietly. What a tamper-evident audit trail looks like, and why a log you can edit isn't evidence."
+    },
+    {
+     "title": "Tamper-evident audit trails: when 'we logged it' is not enough anymore",
+     "url": "https://novantra.io/en/articles/insights/tamper-proof-audit-trails",
+     "content": "Logging used to be the audit answer. Across PCI DSS 4.0, ISO 27001:2022, NIST SP 800-53, HIPAA, NIS2, FINMA, ADHICS, and SAMA, the integrity of the log itself is now the requirement. Why tamper-evident is different from tamper-resistant, and what hash-chained audit looks like in practice."
+    },
+    {
+     "title": "Audit Trail Requirements: A Practical Compliance Guide",
+     "url": "https://www.cyndra.ai/blog/audit-trail-requirements",
+     "content": "Audit trail requirements aren't satisfied by collecting a few application logs and keeping them in a writable database. A defensible trail must show who acted, what changed, when it happened, where the action occurred, why it was authorized, and how the evidence was protected from alteration."
+    }
+   ]
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin: fewer than 3 results weighted >= 0.5 after dedup; REDO RULE applied with different queries",
+   "new_queries": [
+    "audit event retention immutability WORM storage compliance design",
+    "audit trail tamper evidence log preservation requirements"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://asq.org/quality-resources/auditing",
+  "https://claimzen.ai/resources/hipaa-audit-trails-tamper-evidence/",
+  "https://devopsaitoolkit.com/blog/timeline-reconstruction-for-postmortems-a-practical-method/",
+  "https://devsecopsschool.com/blog/worm-storage/",
+  "https://github.com/kb4ai/event-sourcing-append-log-immutable-architecture-pub-kb",
+  "https://hyperping.com/blog/incident-post-mortem",
+  "https://incident.io/blog/best-incident-postmortem-software-2026-guide",
+  "https://inferensys.com/prompts/structured-output-and-schema-control/structured-log-event-and-audit-trail-outputs/incident-timeline-reconstruction-log-prompt",
+  "https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-storage-overview",
+  "https://learn.microsoft.com/en-us/compliance/assurance/assurance-sim-post-incident-activity",
+  "https://mattermost.com/blog/compliance-by-design-18-tips-to-implement-tamper-proof-audit-logs/",
+  "https://news.lavx.hu/article/audit-logging-deep-dive-engineering-tamper-proof-trails-for-security-and-compliance",
+  "https://novantra.io/en/articles/insights/tamper-proof-audit-trails",
+  "https://oneuptime.com/blog/post/2026-02-06-immutable-audit-log-pipeline-otel/view",
+  "https://www.archondatastore.com/blog/sec-finra-worm-compliance/",
+  "https://www.cyndra.ai/blog/audit-trail-requirements",
+  "https://www.emergentmind.com/topics/immutable-audit-log",
+  "https://www.grotabyte.com/blog/worm-storage-immutability-regulatory-compliance",
+  "https://www.immutable.com/",
+  "https://www.systemshardening.com/articles/cross-cutting/audit-logging-architecture/",
+  "https://www.techinterview.org/post/3233465643/system-design-audit-log/",
+  "https://www.the-algo.com/knowledge/audit-logging-architecture",
+  "https://www.tigrisdata.com/blog/append-only-storage/"
+ ],
+ "outcome": "authored"
+}

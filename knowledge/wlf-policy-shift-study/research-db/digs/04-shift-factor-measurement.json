@@ -1,0 +1,32 @@
+{
+ "nn": "04",
+ "slug": "shift-factor-measurement",
+ "scope": "The measurement method: segment response history into per-policy-version windows using an audit event log, build response curves per window (approve latency, verdict distribution, retry behavior, audit cadence), and compute per-version shift factors a_T(v) by superposition fitting along log time.",
+ "queries_attempted": [
+  {
+   "query": "time series segmentation by configuration version change point",
+   "attempt": 1,
+   "raw_results": 70,
+   "kept": 6
+  },
+  {
+   "query": "shift factor estimation superposition fitting log time axis",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://arxiv.org/html/2404.07451v1",
+  "https://en.wikipedia.org/wiki/Time-series_segmentation",
+  "https://fchavelli.github.io/tsseg/",
+  "https://github.com/fchavelli/tsseg",
+  "https://github.com/lzz19980125/awesome-time-series-segmentation-papers/",
+  "https://metricgate.com/docs/time-temperature-superposition/",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC6312324/",
+  "https://www.osti.gov/servlets/purl/1817993"
+ ],
+ "outcome": "authored"
+}

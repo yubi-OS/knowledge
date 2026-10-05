@@ -1,0 +1,133 @@
+{
+ "nn": "06",
+ "slug": "policy-version-stamping",
+ "scope": "The proposed instrument: stamp policy_version on every jev_corpus_runs row and keep a compact append-only policy changelog (version, timestamp, diff summary) in a table the wipe protocol never touches, so the method becomes executable after about 2 policy versions of accumulation.",
+ "queries_attempted": [
+  {
+   "query": "append only changelog table schema design best practices",
+   "attempt": 1,
+   "raw_results": 53,
+   "kept": 6
+  },
+  {
+   "query": "database schema version stamping observability audit",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "event log version metadata observability schema design",
+   "attempt": 2,
+   "raw_results": 50,
+   "kept": 6,
+   "results": [
+    {
+     "title": "How to Implement Event Metadata Design - oneuptime.com",
+     "url": "https://oneuptime.com/blog/post/2026-01-30-event-metadata-design/view",
+     "content": "Jan 30, 2026 \u00b7 Without proper metadata design, debugging distributed systems becomes a nightmare of correlating timestamps and guessing at causality. This guide covers practical patterns for designing event metadata that makes your systems observable, debuggable, and maintainable in production."
+    },
+    {
+     "title": "Simple Schema for Observability | OpenSearch Documentation",
+     "url": "https://docs.opensearch.org/latest/observing-your-data/ss4o/",
+     "content": "Simple Schema for Observability, which uses the schema convention ss4o, is a standardization for conforming to a common and unified observability schema. With the schema in place, Observability tools can ingest, automatically extract, and aggregate data and create custom dashboards, making it easier to understand the system at a higher level.Simple Schema for Observability, which uses the schema c"
+    },
+    {
+     "title": "blog/posts/2026-01-30-event-schema-design at master ... - GitHub",
+     "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-01-30-event-schema-design",
+     "content": "Description: A practical guide to designing event schemas that evolve gracefully, covering envelopes, metadata, payloads, and versioning with Avro, JSON Schema, and Protobuf examples. Event-driven systems live or die by schema design. Get it right and your services decouple cleanly, evolve independently, and communicate without friction."
+    },
+    {
+     "title": "observability/docs/Simple-schema.md at main \u00b7 opensearch ...",
+     "url": "https://github.com/opensearch-project/observability/blob/main/docs/Simple-schema.md",
+     "content": "Schema support for Observability Simple schema for Observability is defined by the three main structured types OpenTelemetry & ECS define and supports which are Logs, Traces, Metric. OpenSearch's Observability Plugin will support these schema structures out of the box in the form of a default index pattern per type (will be detailed below)."
+    },
+    {
+     "title": "Seattle, WA Events, Calendar & Tickets | Eventbrite",
+     "url": "https://www.eventbrite.com/d/wa--seattle/events/?msockid=33d7018026d769f70f3e166927526863",
+     "content": "Dec 20, 2014 \u00b7 Looking for something to do in Seattle? Whether you're a local, new in town or just cruising through we've got loads of \u2026"
+    },
+    {
+     "title": "RE:Question about rerankers in knowledge graphs",
+     "url": "https://discuss.huggingface.co/t/question-about-rerankers-in-knowledge-graphs/177685/3",
+     "content": "... from the proposed online design is mainly lifecycle and ...on a rigid entity/relation schema. It is still different...evidence - source and version metadata This supports three different purposes... replacement for the original event. 3. Distinguish different graph ... be: store QueryEvents for observability \u2193 promote only validated relations or...distinguish a private QueryEvent log from a re"
+    }
+   ]
+  },
+  {
+   "query": "stamping config version on telemetry records best practice",
+   "attempt": 2,
+   "raw_results": 54,
+   "kept": 6,
+   "results": [
+    {
+     "title": "NIST Security Best Practices for Telemetry Data (2026)",
+     "url": "https://www.virtualmetric.com/guides/nist-security-best-practices-telemetry-data/",
+     "content": "NIST security best practices for telemetry data treat logs as governed records. Every record has required content, a protection requirement, and a retention period. Eight practices cover the decisions involved, from what you collect through to how you document each filter."
+    },
+    {
+     "title": "Solutions - Cisco Telemetry Architecture Guide",
+     "url": "https://www.cisco.com/c/en/us/solutions/collateral/enterprise/design-zone-security/telemetry-architecture-guide.html",
+     "content": "This architecture guide describes the modern telemetry architecture and the best practices for implementation.This architecture guide describes the modern telemetry architecture and the best practices for implementation."
+    },
+    {
+     "title": "[O.DIP.6] Standardize telemetry data with common formats",
+     "url": "https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o.dip.6-standardize-telemetry-data-with-common-formats.html",
+     "content": "Normalize telemetry data using a common format or standard schema to enhance consistency in data collection and reporting. This facilitates seamless correlation and analysis across multiple facets of observability, such as system performance, user behaviors, and security events, improving the overall speed and accuracy of detection and response in any of these areas."
+    },
+    {
+     "title": "Stamping (metalworking) - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Stamping_(metalworking)",
+     "content": "Stamping is the process of placing flat sheet metal, in either blank or coil form, into a stamping press where a tool and die surface \u2026"
+    },
+    {
+     "title": "SimHub Dash Studio Tutorial Part 5 - Replay Telemetry... - YouTube",
+     "url": "https://www.youtube.com/watch?v=MfSQ20Nuh9U",
+     "content": "Part 5 in a tutorial series on Dash Studio in the SimHub software. This video covers how to record and replay telemetry data from a sim so you can easily tes..."
+    },
+    {
+     "title": "Streaming Telemetry - Cisco",
+     "url": "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/17-18/config-guide/b_wl_17_18_cg/streaming-telemetry-on-Cisco-Catalyst-9800-series-wireless-controller.pdf",
+     "content": "Streaming telemetry capabilities and usage You can use streaming telemetry for scalable and efficient monitoring of access points and clients through native Cisco wireless models.Streaming telemetry capabilities and usage You can use streaming telemetry for scalable and efficient monitoring of access points and clients through native Cisco wireless models."
+    }
+   ]
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin: fewer than 3 results weighted >= 0.5 after dedup; REDO RULE applied with different queries",
+   "new_queries": [
+    "event log version metadata observability schema design",
+    "stamping config version on telemetry records best practice"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://ahmed-waseem.medium.com/building-an-append-only-ledger-in-nosql-caebd3786193",
+  "https://discuss.huggingface.co/t/question-about-rerankers-in-knowledge-graphs/177685/3",
+  "https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o.dip.6-standardize-telemetry-data-with-common-formats.html",
+  "https://docs.digna.ai/platform/schema_tracker/Introduction/",
+  "https://docs.liquibase.com/pro/user-guide-4-33/changelog-examples",
+  "https://docs.opensearch.org/latest/observing-your-data/ss4o/",
+  "https://en.wikipedia.org/wiki/Database",
+  "https://en.wikipedia.org/wiki/Stamping_(metalworking)",
+  "https://github.com/oneuptime/blog/tree/master/posts/2026-01-30-event-schema-design",
+  "https://github.com/opensearch-project/observability/blob/main/docs/Simple-schema.md",
+  "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-append-only-ledger-tables?view=sql-server-ver17",
+  "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-how-to-append-only-ledger-tables?view=sql-server-ver17",
+  "https://oneuptime.com/blog/post/2026-01-30-event-metadata-design/view",
+  "https://oneuptime.com/blog/post/2026-02-26-argocd-database-schema-version-tracking/view",
+  "https://salivity.github.io/mysql/article/track-and-audit-my-sql-database-schema-changes",
+  "https://stackoverflow.com/questions/32271518/append-only-to-table-in-sql-server-to-record-immutable-events-and-improve-overal",
+  "https://www.cisco.com/c/en/us/solutions/collateral/enterprise/design-zone-security/telemetry-architecture-guide.html",
+  "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/17-18/config-guide/b_wl_17_18_cg/streaming-telemetry-on-Cisco-Catalyst-9800-series-wireless-controller.pdf",
+  "https://www.dbdesigner.net/database-version-control-the-visual-guide-to-tracking-schema-changes/",
+  "https://www.eventbrite.com/d/wa--seattle/events/?msockid=33d7018026d769f70f3e166927526863",
+  "https://www.liquibase.com/resources/guides/database-version-control",
+  "https://www.merriam-webster.com/dictionary/append",
+  "https://www.virtualmetric.com/guides/nist-security-best-practices-telemetry-data/",
+  "https://www.youtube.com/watch?v=MfSQ20Nuh9U"
+ ],
+ "outcome": "authored"
+}
