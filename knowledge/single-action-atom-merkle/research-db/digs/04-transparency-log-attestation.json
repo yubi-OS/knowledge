@@ -1,0 +1,30 @@
+{
+ "nn": "04",
+ "slug": "transparency-log-attestation",
+ "scope": "Transparency logs (Rekor, Certificate Transparency) and attestations: publishing each change artifact so third parties can verify it existed and was signed.",
+ "queries_attempted": [
+  {
+   "query": "sigstore rekor transparency log attestation inclusion proof",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "certificate transparency merkle tree design tamper evidence",
+   "attempt": 2,
+   "raw_results": 53,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.sigstore.dev/logging/overview/",
+  "https://docs.sigstore.dev/logging/",
+  "https://transparency.dev/summit2025/talks/mtcs.html",
+  "https://www.ietf.org/archive/id/draft-davidben-tls-merkle-tree-certs-06.html",
+  "https://certificate.transparency.dev/",
+  "https://datatracker.ietf.org/doc/html/rfc6962"
+ ],
+ "outcome": "authored"
+}

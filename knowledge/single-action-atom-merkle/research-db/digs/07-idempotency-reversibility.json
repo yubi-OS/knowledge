@@ -1,0 +1,47 @@
+{
+ "nn": "07",
+ "slug": "idempotency-reversibility",
+ "scope": "Idempotency and reversibility of atomic actions: idempotency keys, compensating actions, and recovery when the outcome of an action is unknown.",
+ "queries_attempted": [
+  {
+   "query": "idempotency key design distributed systems retry",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "compensating transaction rollback design atomic operation",
+   "attempt": 2,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "stripe api idempotency keys documentation",
+   "attempt": "redo1.1",
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "saga pattern compensating transactions microservices.io",
+   "attempt": "redo1.2",
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "dig returned 0 results weighted >= 0.5; first 2 queries surfaced aggregators and off-topic pages",
+   "new_queries": [
+    "stripe api idempotency keys documentation",
+    "saga pattern compensating transactions microservices.io"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.stripe.com/api/idempotent_requests",
+  "https://stripe.com/blog/idempotency"
+ ],
+ "outcome": "authored"
+}
