@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "composefs-digest-boot-arg",
+  "scope": "The composefs kernel command line contract: strict composefs=<128-hex SHA-512 digest> vs the optional composefs=? marker, --allow-missing-verity, and why a strict digest in a mutable BLS entry is still unsealed.",
+  "queries_attempted": [
+    {
+      "query": "bootc composefs kernel argument digest allow-missing-verity",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6
+    },
+    {
+      "query": "composefs kernel cmdline optional verity marker bootc",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/composefs/composefs",
+    "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+    "https://bootc.dev/bootc/experimental-composefs.html",
+    "https://github.com/bootc-dev/bootc/issues/2174",
+    "https://github.com/bootc-dev/bootc",
+    "https://deepwiki.com/bootc-dev/bootc/2.3.2-composefs-backend",
+    "https://github.com/composefs/composefs",
+    "https://bootc-dev.github.io/bootc/internals/composefs_boot/cmdline/fn.make_cmdline_composefs.html",
+    "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+    "https://bootc.dev/bootc/experimental-composefs.html",
+    "https://bootc-dev.github.io/bootc/internals/src/composefs_boot/cmdline.rs.html",
+    "https://www.reddit.com/user/Yahoo-CustomerCare/"
+  ],
+  "outcome": "authored"
+}
