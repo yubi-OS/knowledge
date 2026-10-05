@@ -1,0 +1,44 @@
+{
+ "nn": 3,
+ "slug": "two-build-verifier",
+ "scope": "The diffimage.sh two-build verifier pattern: build twice, systemd-dissect --mtree, DPS-aware partition extraction, sha256 plus veritysetup dump diffing, and exit-on-divergence design.",
+ "queries_attempted": [
+  {
+   "query": "mkosi diffimage.sh two build reproducibility verifier systemd-dissect mtree",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "verify reproducible OS image build compare two builds veritysetup sha256",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-round-1",
+   "reason": "First noul weighting pass completed 22 /api/decide requests but the agent stored the answer under the wrong key ('score'); the noul metric returns its weight under the 'noul' key, so all 108 weights extracted as null. All 108 results were re-weighted in weighting-round-2 (22 redo /api/decide requests plus a 1-question shape probe); no dig queries were re-run.",
+   "new_queries": []
+  }
+ ],
+ "results_kept": [
+  "https://github.com/systemd/mkosi",
+  "https://mkosi.systemd.io/",
+  "https://wiki.archlinux.org/title/Mkosi",
+  "https://docs.blender.org/manual/en/latest/editors/3dview/navigate/camera_view.html",
+  "https://github.com/systemd/systemd",
+  "https://argo-cd.readthedocs.io/en/stable/user-guide/diffing/",
+  "https://docs.dasharo.com/guides/reproducible-build-verification/",
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-set-up-docker-build-reproducibility-verification/view",
+  "https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/",
+  "https://reproducible-builds.org/tools/",
+  "https://www.e-verify.gov/",
+  "https://man7.org/linux/man-pages/man8/veritysetup.8.html"
+ ],
+ "outcome": "authored",
+ "weights_high": 7,
+ "weights_low": 5
+}

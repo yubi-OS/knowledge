@@ -1,0 +1,44 @@
+{
+ "nn": 8,
+ "slug": "academic-foundations",
+ "scope": "Academic and community foundations: IEEE Software 2021 reproducible builds framing, verifiable builds research, and the reproducible-builds.org Debian lineage.",
+ "queries_attempted": [
+  {
+   "query": "reproducible builds IEEE Software 2021 academic paper",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "reproducible-builds.org Debian reproducibility history foundation",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-round-1",
+   "reason": "First noul weighting pass completed 22 /api/decide requests but the agent stored the answer under the wrong key ('score'); the noul metric returns its weight under the 'noul' key, so all 108 weights extracted as null. All 108 results were re-weighted in weighting-round-2 (22 redo /api/decide requests plus a 1-question shape probe); no dig queries were re-run.",
+   "new_queries": []
+  }
+ ],
+ "results_kept": [
+  "https://ieeexplore.ieee.org/document/9403390",
+  "https://reproducible-builds.org/reports/2021-04/",
+  "https://reproducible-builds.org/docs/publications/",
+  "https://www.researchgate.net/publication/350852889_Reproducible_Builds_Increasing_the_Integrity_of_Software_Supply_Chains",
+  "https://arxiv.org/pdf/2104.06020",
+  "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "https://reproducible-builds.org/docs/history/",
+  "https://tests.reproducible-builds.org/debian/reproducible.html",
+  "https://en.wikipedia.org/wiki/Reproducible_builds",
+  "https://rb.mapreri.org/site/docs/history/",
+  "https://reproducible-builds.org/",
+  "https://dictionary.cambridge.org/dictionary/english/reproducible"
+ ],
+ "outcome": "authored",
+ "weights_high": 9,
+ "weights_low": 3
+}

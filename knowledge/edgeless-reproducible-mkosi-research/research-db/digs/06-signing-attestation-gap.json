@@ -1,0 +1,44 @@
+{
+ "nn": 6,
+ "slug": "signing-attestation-gap",
+ "scope": "The absence of a signing and attestation chain in the repo (no SecureBoot keys, cosign, in-toto, SLSA) and the Edgeless philosophy that reproducibility substitutes for trust in the signer.",
+ "queries_attempted": [
+  {
+   "query": "cosign in-toto SBOM attestation container images edgeless constellation",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "reproducible builds versus signing trust remote attestation confidential computing",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-round-1",
+   "reason": "First noul weighting pass completed 22 /api/decide requests but the agent stored the answer under the wrong key ('score'); the noul metric returns its weight under the 'noul' key, so all 108 weights extracted as null. All 108 results were re-weighted in weighting-round-2 (22 redo /api/decide requests plus a 1-question shape probe); no dig queries were re-run.",
+   "new_queries": []
+  }
+ ],
+ "results_kept": [
+  "https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html",
+  "https://www.edgeless.systems/blog/bringing-first-class-support-to-sboms-and-attestations-for-constellation-containers",
+  "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+  "https://datosh.github.io/post/first_class_support_for_sboms/",
+  "https://docs.edgeless.systems/constellation/workflows/sbom",
+  "https://www.rentwithcosign.com/",
+  "https://build.confidential.ai/docs/reproducible-builds/",
+  "https://lab.iisec.ac.jp/~suzaki_lab/PDF/DSN-HAP26_muto.pdf",
+  "https://archive.fosdem.org/2024/events/attachments/fosdem-2024-1769-reproducible-builds-for-confidential-computing-why-remote-attestation-is-worthless-without-it/slides/22912/20240204-FOSDEM-reproducible-builds-print_lR28MRP.pdf",
+  "https://katexochen.aro.bz/posts/reproducible-secure-signatures/",
+  "https://dictionary.cambridge.org/dictionary/english/reproducible",
+  "https://www.edgeless.systems/blog/reproducible-builds-for-confidential-computing"
+ ],
+ "outcome": "authored",
+ "weights_high": 8,
+ "weights_low": 4
+}
