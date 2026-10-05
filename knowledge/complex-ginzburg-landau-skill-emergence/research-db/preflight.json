@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": 127,
+    "unresponsive_engines": [
+      [
+        "boardreader",
+        "parsing error"
+      ],
+      [
+        "brave",
+        "too many requests"
+      ],
+      [
+        "duckduckgo",
+        "CAPTCHA"
+      ],
+      [
+        "fastbot",
+        "access denied"
+      ],
+      [
+        "fireball",
+        "access denied"
+      ],
+      [
+        "gmx",
+        "CAPTCHA"
+      ],
+      [
+        "google",
+        "access denied"
+      ],
+      [
+        "google cse",
+        "too many requests"
+      ],
+      [
+        "privacywall",
+        "access denied"
+      ],
+      [
+        "qwant",
+        "CAPTCHA"
+      ],
+      [
+        "resulthunter",
+        "too many requests"
+      ],
+      [
+        "searchmysite",
+        "access denied"
+      ],
+      [
+        "seznam",
+        "timeout"
+      ],
+      [
+        "wikidata",
+        "unexpected crash"
+      ],
+      [
+        "yacy",
+        "timeout"
+      ],
+      [
+        "yep",
+        "access denied"
+      ]
+    ]
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "type": "score",
+      "score": 0.978,
+      "legend": {
+        "0": "zero: not one",
+        "1": "one: is one",
+        "2": "two: is two"
+      },
+      "probabilities": {
+        "0": 0.0331,
+        "1": 0.9558,
+        "2": 0.0111
+      },
+      "confidence": 0.8723
+    }
+  }
+}
