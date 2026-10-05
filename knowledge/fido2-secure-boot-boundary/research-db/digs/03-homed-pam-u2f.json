@@ -1,0 +1,35 @@
+{
+ "slug": "03-homed-pam-u2f",
+ "scope": "systemd-homed FIDO2 homes and pam-u2f login",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed FIDO2 LUKS2 home directory",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "pam-u2f YubiKey login configuration",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://sumguy.com/systemd-homed-portable-homes/",
+  "https://systemd.io/HOME_DIRECTORY/",
+  "https://systemd.io/USER_RECORD/",
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+  "https://linuxreviews.org/Systemd-homed",
+  "https://github.com/Yubico/pam-u2f",
+  "https://developers.yubico.com/pam-u2f/",
+  "https://wiki.gentoo.org/wiki/YubiKey/PAM",
+  "https://support.yubico.com/s/article/Ubuntu-Linux-login-guide-U2F",
+  "https://www.microsoft.com/en-us/security/business/security-101/what-is-privileged-access-management-pam?msockid=1159c58a2dc66938037ed2632ce8688e",
+  "https://newsletter.nixers.net/entries.php"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "01-uki-signing-piv9c",
+ "scope": "PIV slot 9c UKI/Secure Boot signing",
+ "queries_attempted": [
+  {
+   "query": "YubiKey PIV slot 9c code signing UKI secure boot",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "sbsign PKCS11 YubiKey unified kernel image signing",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.yubico.com/PIV/Introduction/Certificate_slots.html",
+  "https://docs.yubico.com/yesdk/users-manual/application-piv/slots.html",
+  "https://support.yubico.com/s/article/Code-signing-with-the-YubiKey-on-Windows",
+  "https://yubi-os.github.io/",
+  "https://www.yubico.com/",
+  "https://github.com/Jaakkonen/talos-secureboot/blob/main/yubikey-signer/README.md",
+  "https://github.com/OpenSC/libp11/issues/534",
+  "https://docs.system-transparency.org/st-1.3.0/docs/how-to/secure-boot/sign-efi-applications/yubikey/",
+  "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+  "https://stackoverflow.com/questions/14146148/identity-increment-is-jumping-in-sql-server-database",
+  "https://wiki.gentoo.org/wiki/Unified_kernel_image",
+  "https://docs.digicert.com/en/digicert-keylocker/client-tools/cryptographic-libraries-and-frameworks/pkcs11-library.html"
+ ],
+ "outcome": "authored"
+}
