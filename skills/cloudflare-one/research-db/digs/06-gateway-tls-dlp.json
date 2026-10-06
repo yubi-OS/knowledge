@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "06-gateway-tls-dlp",
+ "scope": "Gateway policy types and order of enforcement, TLS inspection and root CA, Do Not Inspect exceptions, and DLP activation.",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Gateway order of enforcement DNS HTTP network egress policies",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare TLS decryption root certificate do not inspect DLP profiles",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/learning-paths/secure-internet-traffic/understand-policies/order-of-enforcement/",
+  "https://www.cloudflare.com/",
+  "https://developers.cloudflare.com/cloudflare-one/traffic-policies/order-of-enforcement/",
+  "https://dash.cloudflare.com/login",
+  "https://en.wikipedia.org/wiki/Cloudflare",
+  "https://deepwiki.com/cloudflare/cloudflare-docs/8.1-gateway-policies-and-enforcement",
+  "https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/tls-decryption/",
+  "https://developers.cloudflare.com/learning-paths/secure-internet-traffic/build-http-policies/tls-inspection/",
+  "https://developers.cloudflare.com/learning-paths/replace-vpn/configure-device-agent/enable-tls-decryption/",
+  "https://community.cloudflare.com/t/do-not-inspect-setting/494526",
+  "https://community.cloudflare.com/t/phone-zerotrust-inspect-https-requests-with-tls-decryption-not-work-youtube/863504",
+  "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/learning-paths/replace-vpn/configure-device-agent/enable-tls-decryption.mdx"
+ ],
+ "outcome": "authored"
+}
