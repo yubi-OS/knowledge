@@ -1,0 +1,49 @@
+{
+  "topic": "0pointer-mastery: the Lennart Poettering / systemd ecosystem mastery skill and how it bridges the Poettering image-based OS vision to yubiOS (YubiKey replaces TPM2 for secrets)",
+  "ground_source": "yubi-OS/yubiOS skills/0pointer-mastery/SKILL.md (fetched 2026-10-06, 21540 bytes)",
+  "subtopics": [
+    {"nn": "01", "slug": "skill-usage-model", "scope": "How the skill is used: trigger phrases, the 4-step usage method (locate the layer, trust chain rule, version table check, the one-line yubiOS delta), reference sub-files, and the RSI audit-trail sections.", "seed_queries": [], "dig": "internal-record subtopic, no dig"},
+    {"nn": "02", "slug": "design-goals-17", "scope": "The 17 design goals of the image-based OS vision mapped to their yubiOS implementations (bootc, mkosi, UKI signing, LUKS2 FIDO2, DPS, sysupdate, repart, homed).", "seed_queries": [], "dig": "internal-record subtopic, no dig"},
+    {"nn": "03", "slug": "modularity-ladder", "scope": "The modularity ladder: sysext vs portable services vs nspawn vs flatpak/OCI, the uniformity rule (GPT + DPS UUIDs + Verity + PKCS#7), and version-specific mechanisms (RootMStack=, unprivileged portable services).", "seed_queries": ["systemd sysext portable services nspawn comparison image-based OS", "systemd portable services portablectl RootImage tutorial walkthrough"], "dig": "searXNG, 2 queries"},
+    {"nn": "04", "slug": "trusted-boot-chain", "scope": "The boot chain: UEFI to systemd-boot to UKI, PCR 4/11/12/13/15 assignments, boot phase words, sysext validation, root unlock, TPM2 vs YubiKey secrets.", "seed_queries": ["unified kernel image UKI PCR 11 measurements systemd-stub boot phases", "systemd dm-verity LUKS2 TPM2 PCR 15 root volume key authenticated boot"], "dig": "searXNG, 2 queries + 1 redo"},
+    {"nn": "05", "slug": "five-why-answers", "scope": "The five why answers: ostree vs dm-verity, no installer (on-device key generation), sysext over editing /usr, FIDO2 vs TPM2 for secrets, and the DPS rationale.", "seed_queries": ["dm-verity versus ostree integrity every read boot", "FIDO2 hmac-secret versus TPM2 LUKS2 disk encryption systemd cryptenroll"], "dig": "searXNG, 2 queries + 1 redo"}
+  ],
+  "dropped_candidates": [
+    {"nn": "t05", "slug": "partition-layout-factory-reset", "score": 0.43, "reason": "score below 0.5 band (maps to legend 0)"},
+    {"nn": "t06", "slug": "update-lifecycle", "score": 0.41, "reason": "score below 0.5 band (maps to legend 0)"},
+    {"nn": "t07", "slug": "systemd-homed-homes", "score": 0.4, "reason": "score below 0.5 band (maps to legend 0)"},
+    {"nn": "t08", "slug": "systemd-version-landscape", "score": 0.15, "reason": "score below 0.5 band (maps to legend 0)"},
+    {"nn": "t10", "slug": "amutable-2026", "score": 0.14, "reason": "score below 0.5 band (maps to legend 0)"}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "banding_rule": "jev-1.13 returns quantized fractional scores. Banding applied: score < 0.5 maps to legend 0 (drop); 0.5 <= score < 1.5 maps to legend 1 (marginal, keep only if dig strong); score >= 1.5 maps to legend 2 (keep).",
+    "model": "typesafe/jev-1.13-20260917",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {"score": 1.38, "probabilities": {"0": 0.27, "1": 0.09, "2": 0.64}, "confidence": 0.08},
+      "t02": {"score": 0.55, "probabilities": {"0": 0.58, "1": 0.29, "2": 0.13}, "confidence": 0.18},
+      "t03": {"score": 0.58, "probabilities": {"0": 0.59, "1": 0.24, "2": 0.17}, "confidence": 0.13},
+      "t04": {"score": 0.67, "probabilities": {"0": 0.55, "1": 0.24, "2": 0.21}, "confidence": 0},
+      "t05": {"score": 0.43, "probabilities": {"0": 0.66, "1": 0.25, "2": 0.09}, "confidence": 0.36},
+      "t06": {"score": 0.41, "probabilities": {"0": 0.69, "1": 0.2, "2": 0.11}, "confidence": 0.38},
+      "t07": {"score": 0.4, "probabilities": {"0": 0.66, "1": 0.27, "2": 0.07}, "confidence": 0.4},
+      "t08": {"score": 0.15, "probabilities": {"0": 0.87, "1": 0.1, "2": 0.03}, "confidence": 0.77},
+      "t09": {"score": 0.57, "probabilities": {"0": 0.58, "1": 0.27, "2": 0.15}, "confidence": 0.15},
+      "t10": {"score": 0.14, "probabilities": {"0": 0.88, "1": 0.1, "2": 0.02}, "confidence": 0.8}
+    },
+    "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"},
+    "usage": {"input_tokens": 1268, "output_tokens": 154},
+    "kept": ["01", "02", "03", "04", "05"],
+    "dropped": ["t05", "t06", "t07", "t08", "t10"],
+    "kept_notes": {
+      "01": "marginal score (1.38, banding legend 1). Internal-record subtopic: the source doc has a dedicated How to Use This Skill section; strength signal is the source doc itself, no dig applies.",
+      "02": "marginal score (0.55). Internal-record subtopic: the 17 design goals table is the skill's core mapping; strength signal is the source doc itself, no dig applies.",
+      "03": "marginal score (0.58). Dig came back strong: 8 results weighted >= 0.5 (systemd.io, PORTABLE_SERVICES, freedesktop sysext man, systemd GitHub, 0pointer walkthrough, portablectl man). Kept.",
+      "04": "marginal score (0.67). Dig came back strong: 5 results weighted >= 0.5 (systemd-measure man, man7 systemd-stub, systemd GitHub issue 35820, 0pointer brave-new-trusted-boot-world, man7 systemd). Kept.",
+      "05": "marginal score (0.57). Dig came back strong for the FIDO2/TPM2/cryptenroll axis (3 results >= 0.5); the ostree-vs-dm-verity axis has no strong external source, so those claims are attributed to the source doc. Kept."
+    }
+  },
+  "requested_at": "2026-10-06T13:20:40Z"
+}

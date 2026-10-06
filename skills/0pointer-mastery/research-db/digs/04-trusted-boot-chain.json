@@ -1,0 +1,15 @@
+{"nn": "04", "slug": "trusted-boot-chain", "scope": "The boot chain: UEFI to systemd-boot to UKI, PCR assignments, boot phases, TPM2 vs YubiKey secrets.", "queries_attempted": [
+  {"query": "unified kernel image UKI PCR 11 measurements systemd-stub boot phases", "attempt": 1, "raw_results": 55, "kept": 6},
+  {"query": "systemd dm-verity LUKS2 TPM2 PCR 15 root volume key authenticated boot", "attempt": 1, "raw_results": 49, "kept": 6},
+  {"query": "ukify systemd-stub PCR 11 PCR 12 PCR 15 TPM2 measurement signing", "attempt": 2, "raw_results": 53, "kept": 6}
+], "redo_count": 1, "redo_log": [
+  {"attempt": 2, "reason": "q2 first pass returned only generic systemd overview results (Wikipedia, systemd.io home, GitHub repo, linuxvox, geeksforgeeks); nothing specific to PCR 12/15 bindings, so the dig was redone with different queries targeting systemd-stub, ukify and systemd-measure", "new_queries": ["ukify systemd-stub PCR 11 PCR 12 PCR 15 TPM2 measurement signing"]}
+], "results_kept": [
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-measure.html",
+  "http://0pointer.net/blog/brave-new-trusted-boot-world.html",
+  "https://systemd.io/",
+  "https://github.com/systemd/systemd",
+  "https://www.man7.org/linux/man-pages/man1/systemd.1.html",
+  "https://github.com/systemd/systemd/issues/35820",
+  "https://man7.org/linux/man-pages/man7/systemd-stub.7.html"
+], "outcome": "authored", "note": "dig strong: 5 results weighted >= 0.5. Off-topic results (unifiedbank.com, outlook support page, amazon.com, sciencedirect) weighted 0.01 to 0.02 and not used."}
