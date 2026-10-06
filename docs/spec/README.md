@@ -27,4 +27,4 @@ Preflight 2026-10-06: searXNG healthy (campaign preflight run orchestrator-side)
 
 ## Verification
 
-VERIFIED: files 16, research-db 9 parse, weights 60/60
+VERIFIED: files 18, research-db 10 parse, weights 60/60
