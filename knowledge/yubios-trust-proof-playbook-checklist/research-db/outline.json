@@ -1,0 +1,215 @@
+{
+  "topic": "Trust-proof playbooks and printable checklists for security products: the artifact structure for proving trust claims, and integration with CI so the checklist stays true",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "trust-claims-verification-axes",
+      "scope": "Decomposing a product's trust claims into numbered, checkable verification axes (the 10-axis pattern: provenance, pinning, boot, storage, keys, enrollment, recovery, rollback, platform, failure).",
+      "seed_queries": [
+        "software supply chain trust claims verification checklist",
+        "verify trust claims against running system not documentation"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "operator-playbook-structure",
+      "scope": "The 14-section operator playbook shape: purpose, scope, success criteria, then per-axis Goal/Checks/Pass-if/Fail-if blocks.",
+      "seed_queries": [
+        "security operator runbook structure pass fail criteria",
+        "verification playbook success criteria sections goal checks"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "printable-checklist-design",
+      "scope": "One-page printable checklist artifact design: name/date/host/arch header, one checkbox per line grouped in sections, final decision block with PASS/FAIL and signoff.",
+      "seed_queries": [
+        "printable security checklist design one page signoff",
+        "checklist artifact design audit worksheet checkbox sections"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "falsifiable-mechanical-rules",
+      "scope": "Mapping each checkbox to a falsifiable rule (exit code, byte/string match, log count) so the trust decision is mechanically decidable, not subjective.",
+      "seed_queries": [
+        "falsifiable verification rules security checklist exit code",
+        "mechanical verification commands audit checklist shell exit codes"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "ci-parity-integration",
+      "scope": "Keeping the checklist true via CI: the CI gates as the automated counterpart, checkbox-to-test-to-signal cross-ref tables, and preventing drift between manual worksheet and CI.",
+      "seed_queries": [
+        "CI pipeline parity manual security checklist gates",
+        "keep manual checklist in sync with CI tests drift"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "phased-test-plan",
+      "scope": "Structured adversarial test plans: baseline verification, intentional failures, recovery, upgrade and rollback phases with a final pass condition.",
+      "seed_queries": [
+        "adversarial test plan phases failure injection recovery baseline",
+        "boot verification test plan upgrade rollback phases"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "evidence-packaging-signoff",
+      "scope": "The signed, dated, signed-off worksheet as audit evidence: packaging for HITRUST/CISA reviewers, filing copies with evidence bundles, PDF generation for printouts.",
+      "seed_queries": [
+        "audit evidence packaging signed checklist compliance",
+        "compliance evidence artifact signoff auditor worksheet attestation"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "fail-closed-verification",
+      "scope": "Verifying fail-closed behavior by breaking one thing at a time: wrong image, missing key, modified UKI, corrupted boot artifact, invalid enrollment state.",
+      "seed_queries": [
+        "fail closed verification secure boot tamper detection",
+        "secure boot UKI tamper test fails closed verification"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.8704,
+        "probabilities": {
+          "0": 0.0359,
+          "1": 0.0578,
+          "2": 0.9063
+        },
+        "confidence": 0.7391,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.779,
+        "probabilities": {
+          "0": 0.0501,
+          "1": 0.1209,
+          "2": 0.829
+        },
+        "confidence": 0.5566,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.8312,
+        "probabilities": {
+          "0": 0.0375,
+          "1": 0.0938,
+          "2": 0.8687
+        },
+        "confidence": 0.6472,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.6895,
+        "probabilities": {
+          "0": 0.0673,
+          "1": 0.1758,
+          "2": 0.7569
+        },
+        "confidence": 0.4124,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.2436,
+        "probabilities": {
+          "0": 0.177,
+          "1": 0.4024,
+          "2": 0.4206
+        },
+        "confidence": 0.0552,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.4066,
+        "probabilities": {
+          "0": 0.1388,
+          "1": 0.3158,
+          "2": 0.5454
+        },
+        "confidence": 0.1247,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.6453,
+        "probabilities": {
+          "0": 0.082,
+          "1": 0.1907,
+          "2": 0.7273
+        },
+        "confidence": 0.3581,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.7117,
+        "probabilities": {
+          "0": 0.0695,
+          "1": 0.1494,
+          "2": 0.7811
+        },
+        "confidence": 0.456,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1076,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

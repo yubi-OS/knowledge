@@ -1,0 +1,37 @@
+{
+  "nn": "08",
+  "slug": "fail-closed-verification",
+  "scope": "Verifying fail-closed behavior by breaking one thing at a time: wrong image, missing key, modified UKI, corrupted boot artifact, invalid enrollment state.",
+  "queries_attempted": [
+    {
+      "query": "fail closed verification secure boot tamper detection",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "secure boot UKI tamper test fails closed verification",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://icnavigator.com/applications/avionics-mission-systems/crypto-anti-tamper",
+    "https://support.microsoft.com/en-us/servicing/os/secure-boot/2026/03/secure-boot-troubleshooting-guide",
+    "https://www.elevenforum.com/t/secure-boot-failed-signature-verification-after-resetting-keys-windows-boots-fine-with-secure-boot-off.47796",
+    "https://www.erropedia.com/solution.php?slug=bios-secure-boot-verification-failed-quick-fix",
+    "https://handwiki.org/wiki/computer_security",
+    "https://www.merriam-webster.com/dictionary/fail",
+    "https://github.com/iokanto/linux-secureboot-guide",
+    "https://www.kbytechnologies.com/tech-fundamentals/fixing-uefi-secure-boot-chain-of-trust-failures",
+    "https://askubuntu.com/questions/1470480/security-check-fails-is-this-ok",
+    "https://github.com/timurkhakimovpxl/tpm-trusted-boot-fedora",
+    "https://discuss.linuxcontainers.org/t/secure-boot-key-update-verification-failure-after-tpm-chip-reseat/26113",
+    "https://www.npmjs.com/package/nocache"
+  ],
+  "outcome": "authored",
+  "primary_sources": 2
+}
