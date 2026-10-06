@@ -1,0 +1,36 @@
+{
+  "nn": "03",
+  "slug": "mechanism-chain",
+  "scope": "The end-to-end chain: host bcvk --swu2f uhid load, in-guest passless, hidraw CTAP2 hmac-secret enumeration, LUKS2 enroll/unlock, systemd-homed home create, pamu2fcfg registration, ssh-keygen ed25519-sk.",
+  "queries_attempted": [
+    {
+      "query": "CTAP2 hmac-secret extension specification FIDO",
+      "attempt": 1,
+      "raw_results": 66,
+      "kept": 6
+    },
+    {
+      "query": "systemd-cryptenroll FIDO2 token LUKS2 enroll unlock",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.pdf",
+    "https://developers.yubico.com/WebAuthn/Concepts/PRF_Extension/CTAP2_HMAC_Secret_Deep_Dive.html",
+    "https://fidoalliance.org/specs/fido-v2.0-rd-20180702/fido-client-to-authenticator-protocol-v2.0-rd-20180702.html",
+    "https://www.reddit.com/r/Piracy/comments/11lwzmn/i_made_a_chat_gpt_jailbreak_prompt_that_is_good/",
+    "https://github.com/19h/fidolizer",
+    "https://developers.yubico.com/WebAuthn/WebAuthn_Developer_Guide/Integration_Review_Standard_FIDO.html",
+    "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+    "https://systemd.io/",
+    "https://github.com/systemd/systemd"
+  ],
+  "outcome": "authored"
+}

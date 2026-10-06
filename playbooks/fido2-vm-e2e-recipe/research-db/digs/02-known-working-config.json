@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "known-working-config",
+  "scope": "The frozen decision list: bcvk --swu2f plus swtpm, passless pinned commit, /dev/hidraw0 CTAP2 hmac-secret, pamu2fcfg packaging in the production Containerfile, homectl --enforce-password-policy=no, pam-u2f required with a 1.3.1 floor.",
+  "queries_attempted": [
+    {
+      "query": "swtpm software TPM 2.0 emulator QEMU",
+      "attempt": 1,
+      "raw_results": 79,
+      "kept": 6
+    },
+    {
+      "query": "uhid Linux kernel userspace HID device emulation",
+      "attempt": 1,
+      "raw_results": 74,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/tompreston/qemu-ovmf-swtpm",
+    "https://github.com/stefanberger/swtpm",
+    "https://www.linaro.org/blog/how-to-emulate-trusted-platform-module-in-qemu-with-u-boot/",
+    "https://ejaaskel.dev/yocto-emulation-setting-up-qemu-with-tpm/",
+    "https://tpm2-software.github.io/2020/10/19/TPM2-Device-Emulation-With-QEMU.html",
+    "https://doc.opensuse.org/documentation/leap/virtualization/html/book-virtualization/tpm.html",
+    "https://docs.kernel.org/hid/uhid.html",
+    "https://www.kernelconfig.io/config_uhid",
+    "https://en.wikipedia.org/wiki/Stanford_University",
+    "http://www.kernel.org/doc/html/v5.5/hid/uhid.html",
+    "https://chromium.googlesource.com/chromiumos/platform2/+/master/u2fd/README.md",
+    "https://lib.rs/crates/uhid-virt"
+  ],
+  "outcome": "authored"
+}
