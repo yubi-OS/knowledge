@@ -1,0 +1,50 @@
+{
+  "nn": 4,
+  "slug": "axis-architecture",
+  "scope": "Architecture axis: existing patterns, module boundaries, dependency direction, complexity reduction vs relocation, explicit type boundaries, feature logic leakage",
+  "queries_attempted": [
+    {
+      "query": "architectural review code change module boundaries dependency direction circular dependencies",
+      "attempt": 1,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "refactoring reduces complexity versus relocates complexity concepts reader cognitive load",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    },
+    {
+      "query": "martin fowler code review architecture guidelines coupling cohesion",
+      "attempt": 2,
+      "raw_results": ">=6",
+      "kept": 6
+    },
+    {
+      "query": "clean architecture dependency rule module boundaries software design review",
+      "attempt": 2,
+      "raw_results": ">=6",
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first dig returned mostly low-weight / off-topic results (0-3 of 12 above 0.5)",
+      "new_queries": [
+        "martin fowler code review architecture guidelines coupling cohesion",
+        "clean architecture dependency rule module boundaries software design review"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Martin_(TV_series)",
+    "https://www.martinguitar.com/guitars/",
+    "https://martinfowler.com/ieeeSoftware/coupling.pdf",
+    "https://www.merriam-webster.com/dictionary/clean",
+    "https://dictionary.cambridge.org/dictionary/english/clean"
+  ],
+  "outcome": "authored"
+}

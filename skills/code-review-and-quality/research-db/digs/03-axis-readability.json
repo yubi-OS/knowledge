@@ -1,0 +1,54 @@
+{
+  "nn": 3,
+  "slug": "axis-readability",
+  "scope": "Readability and simplicity axis: naming, control flow, fewer lines, abstractions earning their complexity, dead-code artifacts, bolted conditionals",
+  "queries_attempted": [
+    {
+      "query": "code readability review naming conventions control flow simplicity clean code",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    },
+    {
+      "query": "rule of three abstraction principle do not generalize early dead code",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "clean code readability best practices meaningful names reduce complexity",
+      "attempt": 2,
+      "raw_results": ">=6",
+      "kept": 6
+    },
+    {
+      "query": "code review readability guideline nesting control flow simplification",
+      "attempt": 2,
+      "raw_results": ">=6",
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first dig returned mostly low-weight / off-topic results (0-3 of 12 above 0.5)",
+      "new_queries": [
+        "clean code readability best practices meaningful names reduce complexity",
+        "code review readability guideline nesting control flow simplification"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://code.org/",
+    "https://code.visualstudio.com/",
+    "https://www.merriam-webster.com/dictionary/rule",
+    "https://www.merriam-webster.com/dictionary/clean",
+    "https://dictionary.cambridge.org/dictionary/english/clean",
+    "https://www.sigplan.org/Highlights/Papers/",
+    "https://code.org/",
+    "https://code.visualstudio.com/",
+    "https://courseinfo.code.org/curricula/"
+  ],
+  "outcome": "authored"
+}

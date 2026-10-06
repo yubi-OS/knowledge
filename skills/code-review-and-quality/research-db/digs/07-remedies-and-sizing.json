@@ -1,0 +1,50 @@
+{
+  "nn": 7,
+  "slug": "remedies-and-sizing",
+  "scope": "Structural remedies (named restructurings) and change sizing: 100/300/1000-line targets, file-size boundary, splitting strategies, refactor-vs-feature separation",
+  "queries_attempted": [
+    {
+      "query": "ideal pull request size research review quality 200 400 lines",
+      "attempt": 1,
+      "raw_results": 63,
+      "kept": 6
+    },
+    {
+      "query": "how to split large pull request stacked pull requests strategies",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "pull request size review quality research small changes defect rate",
+      "attempt": 2,
+      "raw_results": ">=6",
+      "kept": 6
+    },
+    {
+      "query": "stacked pull requests large PR split review speed practice",
+      "attempt": 2,
+      "raw_results": ">=6",
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first dig returned mostly low-weight / off-topic results (0-3 of 12 above 0.5)",
+      "new_queries": [
+        "pull request size review quality research small changes defect rate",
+        "stacked pull requests large PR split review speed practice"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.merriam-webster.com/dictionary/ideal",
+    "https://en.wikipedia.org/wiki/Split_(2016_American_film)",
+    "https://www.merriam-webster.com/dictionary/pull",
+    "https://dictionary.cambridge.org/dictionary/english/pull",
+    "https://www.merriam-webster.com/dictionary/stacked"
+  ],
+  "outcome": "authored"
+}
