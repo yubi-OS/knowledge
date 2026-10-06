@@ -1,0 +1,37 @@
+{
+ "nn": "04",
+ "slug": "firmware-lane",
+ "scope": "ci_firmware-rk.yml ARM64/RK firmware integration: StandaloneMM RPMB build, OP-TEE/fTPM/TF-A/U-Boot board builds, unsigned-component equality proof, QEMU fTPM e2e, board-scoped publication.",
+ "internal_record": false,
+ "queries_attempted": [
+  {
+   "query": "OP-TEE fTPM QEMU aarch64 TF-A U-Boot FIP firmware build reproducibility",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": 6
+  },
+  {
+   "query": "RK3588 RK3399 OP-TEE Trusted Firmware-A U-Boot firmware build pipeline",
+   "attempt": 1,
+   "raw_results": 36,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/OP-TEE/optee_ftpm",
+  "https://www.trustedfirmware.org/docs/TF-QEMU-OpenCI.pdf",
+  "https://optee.readthedocs.io/en/latest/building/gits/build.html",
+  "https://docs.u-boot-project.org/en/stable/board/emulation/qemu-arm.html",
+  "https://deepwiki.com/OP-TEE/build",
+  "https://docs.u-boot.org/en/v2026.07/_sources/board/emulation/qemu-arm.rst.txt",
+  "https://hardenedvault.net/blog/2025-03-10-build-atf-optee-rk3588/",
+  "https://github.com/schneid-l/u-boot-rockchip",
+  "https://deepwiki.com/rockchip-linux/rkbin/2.1-secure-boot-chain",
+  "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+  "https://note.f5.pm/go-302124.html",
+  "https://opencca.github.io/docs/reference/rk3588/bootflow/"
+ ],
+ "outcome": "authored"
+}

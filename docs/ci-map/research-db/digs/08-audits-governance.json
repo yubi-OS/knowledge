@@ -1,0 +1,37 @@
+{
+ "nn": "08",
+ "slug": "audits-governance",
+ "scope": "The audits group: 5 governance guards (input-shape, token-audit, dispatch-reachability, fork-drift-detect, package-floor), their cron cadence, and PR-time self-edit validation.",
+ "internal_record": false,
+ "queries_attempted": [
+  {
+   "query": "GitHub Actions GITHUB_TOKEN permissions least privilege audit workflow",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "GitHub Actions path-scoped pull_request trigger workflow input validation",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/GitHubSecurityLab/actions-permissions",
+  "https://docs.github.com/actions/using-jobs/assigning-permissions-to-jobs",
+  "https://starsling.dev/best-practices/github-actions/limit-github-actions-permissions",
+  "https://learn.programmingline.com/learn/cicd/cicd-workflow-permissions-github-token",
+  "https://www.devbolt.dev/tools/github-actions-validator/workflow-permissions-guide",
+  "https://blog.stephane-robert.info/en/docs/pipeline-cicd/github/securite/permissions/",
+  "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+  "https://stackoverflow.com/questions/70438914/trigger-a-github-action-on-pull-request-approval-and-path",
+  "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+  "https://github.com/orgs/community/discussions/48373",
+  "https://learn.programmingline.com/learn/cicd/cicd-workflow-events-filters",
+  "https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/"
+ ],
+ "outcome": "authored"
+}
