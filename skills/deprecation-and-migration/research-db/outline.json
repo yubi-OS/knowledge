@@ -1,0 +1,210 @@
+{
+ "topic": "deprecation-and-migration",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "01-core-principles",
+   "scope": "code as a liability, Hyrum's law, and design-time deprecation planning",
+   "seed_queries": [
+    "Hyrum's law of API dependencies observable behaviors",
+    "cost of maintaining legacy code software liability"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "02-deprecation-decision",
+   "scope": "the 5-question framework gating every deprecation: unique value, consumer count, replacement existence, migration cost, maintenance cost of not deprecating",
+   "seed_queries": [
+    "when to deprecate legacy system decision framework",
+    "maintenance cost vs migration cost legacy system"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "03-advisory-compulsory",
+   "scope": "advisory (warnings, nudges, own timeline) versus compulsory (hard deadline plus migration tooling) deprecation",
+   "seed_queries": [
+    "API deprecation policy sunset deadline best practices",
+    "compulsory vs advisory deprecation migration deadline"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "04-migration-process",
+   "scope": "build replacement, announce and document, migrate incrementally, remove old system, plus the Churn Rule",
+   "seed_queries": [
+    "software migration plan announce document migrate incrementally",
+    "deprecating a service replacement rollout checklist"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "05-migration-patterns",
+   "scope": "strangler, adapter, and feature flag migration patterns",
+   "seed_queries": [
+    "strangler fig pattern incremental migration",
+    "feature flag migration adapter pattern legacy interface"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "06-schema-migration",
+   "scope": "zero-downtime database schema migration via the expand/contract (parallel change) pattern",
+   "seed_queries": [
+    "expand contract pattern zero downtime database migration",
+    "rename drop column without downtime production database"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "07-zombie-code",
+   "scope": "code nobody owns but everybody depends on: signs, risks, and the invest-or-remove rule",
+   "seed_queries": [
+    "zombie code nobody owns but everybody depends on",
+    "orphaned code no maintainer security vulnerabilities"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "08-rationalizations-flags",
+   "scope": "the 6 common rationalizations, 7 red flags, and the post-deprecation verification checklist",
+   "seed_queries": [
+    "deprecation anti-patterns common failure modes",
+    "removing code verification zero usage metrics"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "09-primitive-coverage",
+   "scope": "yubiOS 10-primitive coverage sections of the skill (least privilege, audit/evidence, segmentation, cryptographic identity, trust chain)",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.94,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.02,
+     "2": 0.96
+    },
+    "confidence": 0.92,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "01-core-principles"
+   },
+   "t02": {
+    "score": 1.98,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0,
+     "2": 0.99
+    },
+    "confidence": 0.97,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "02-deprecation-decision"
+   },
+   "t03": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.95,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "03-advisory-compulsory"
+   },
+   "t04": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.93,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "04-migration-process"
+   },
+   "t05": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.96,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "05-migration-patterns"
+   },
+   "t06": {
+    "score": 1.91,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.05,
+     "2": 0.93
+    },
+    "confidence": 0.86,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "06-schema-migration"
+   },
+   "t07": {
+    "score": 1.81,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.11,
+     "2": 0.85
+    },
+    "confidence": 0.72,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "07-zombie-code"
+   },
+   "t08": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.11,
+     "2": 0.84
+    },
+    "confidence": 0.69,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "08-rationalizations-flags"
+   },
+   "t09": {
+    "score": 0.39,
+    "probabilities": {
+     "0": 0.68,
+     "1": 0.25,
+     "2": 0.07
+    },
+    "confidence": 0.42,
+    "legend": "0=padding, 1=marginal, 2=load-bearing; model returned continuous 0-2 scores, subtopics scoring below 0.5 treated as dropped",
+    "subtopic": "09-primitive-coverage"
+   }
+  },
+  "usage": {
+   "input_tokens": 1148,
+   "output_tokens": 139
+  },
+  "dropped": [
+   "t09"
+  ],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t06",
+   "t07",
+   "t08"
+  ]
+ }
+}
