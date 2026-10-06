@@ -1,0 +1,39 @@
+{
+ "nn": 4,
+ "slug": "biases",
+ "scope": "04. Biases: the 12 named and their correctives",
+ "queries_attempted": [
+  {
+   "query": "LLM sycophancy research agree instead of push back",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "LLM long context compaction information loss",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "initial dig plus weighting run (2026-10-06 09:47-09:54Z) completed with valid DefAPI answers, but the intermediate results file was lost when the sandbox wiped /tmp between bash calls; the full dig and weighting pipeline was re-run (attempt 2) to recover complete raw records; no decision-model failure was involved",
+   "new_queries": [
+    "LLM sycophancy research agree instead of push back",
+    "LLM long context compaction information loss"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://arxiv.org/html/2411.15287v1",
+  "https://arxiv.org/abs/2502.08177",
+  "https://arxiv.org/abs/2310.13548",
+  "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
+  "https://arxiv.org/html/2608.11242v1",
+  "https://zylos.ai/research/2026-04-21-agent-context-compaction-long-running-sessions/"
+ ],
+ "outcome": "authored"
+}
