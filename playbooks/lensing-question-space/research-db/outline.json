@@ -1,0 +1,257 @@
+{
+  "topic": "the yubiOS lensing-the-question-space playbook (Lensing the Question Space + Spherical Diffusion, SLERP extension)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "optical-mapping-lens-and-ray-tracer",
+      "scope": "F1+F2: the Moebius chart phi_theta as a literal optical conformal mapping lens (index profile n(z) = |phi_theta'(z)|), the unpowered-lens observation that every run freezes phi_theta at identity, and the atom as a discrete ray tracer (Fermat's principle, eikonal S on coverage shells, Snell's law as corner condition).",
+      "seed_queries": [
+        "Leonhardt optical conformal mapping transformation optics Science 2006",
+        "Fermat principle eikonal Snell law variational ray tracing discrete"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "null-as-vacuum-deflection",
+      "scope": "F3: null standardization as measuring deflection against an unlensed background (gravitational lensing analogy); the matched-null medium given an analytic spectrum by tilted-iid random matrix theory; standardization as a statistical equivalence principle where curvature survives.",
+      "seed_queries": [
+        "weak gravitational lensing deflection angle unlensed background metric",
+        "tilted iid variance profile random matrices Marchenko Pastur fixed margins"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "caustics-and-achromatic-coordinates",
+      "scope": "F4+F5: exact-1.0000 gate passes as caustics (rank-2 degeneracy, over-focus destroying information, Thom-Arnold catastrophe classification, Brenier-map singularity analog) and Parseval shares E_lm as dimension-invariant achromatic coordinates for cross-D comparison.",
+      "seed_queries": [
+        "catastrophe theory caustic classification Thom Arnold optical focusing",
+        "Parseval energy shares basis invariant spherical harmonics dimension independence"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "question-space-chain-formalized",
+      "scope": "F6: the formalized chain of spaces: question space Q (the is-this-x triple), null space N0 as vacuum metric, intent space I with its Fisher-Rao geometry via Cencov's theorem, and the latent space dimension dial from Zhang's effective dimension to Johnson-Lindenstrauss floors.",
+      "seed_queries": [
+        "Cencov theorem uniqueness Fisher-Rao metric information geometry",
+        "effective dimension trace regularization Johnson-Lindenstrauss embedding floor"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "part-i-gap-map",
+      "scope": "F7: the six Part I gaps A-F (which refractive index, Snell invariant at basis interfaces, intent-space membership condition, powering the Moebius lens, caustic classification, Wasserstein channel) with their named test designs against internal result files.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "slerp-geodesic-interpolation",
+      "scope": "F8: SLERP as the constant-speed geodesic interpolant the framework already implies; the three discrete slerps in the papers (atom flip sequence, fold ladder, drift alignment); the continuous bloom parameter replacing the k-quantized ladder; why geodesic beats linear interpolation in high dimension.",
+      "seed_queries": [
+        "Shoemake slerp spherical linear interpolation quaternions SIGGRAPH 1985",
+        "White Sampling Generative Networks spherical latent interpolation high dimension"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "heat-kernel-diffusion-diagonalization",
+      "scope": "F9: the spherical-harmonic basis diagonalizing diffusion; the closed-form S2 heat kernel; per-mode energy decay E_lm(t) = E_lm(0) exp(-2 l(l+1) t); the diffusion-time estimator and the null space as the t-to-infinity endpoint (forward diffusion as the map Q to N0).",
+      "seed_queries": [
+        "heat kernel on sphere S2 Legendre polynomial expansion Laplace-Beltrami",
+        "diffusion per-mode energy decay spectrum eigenbasis heat flow"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "reverse-diffusion-as-lens",
+      "scope": "F10: reverse diffusion as the lens run backward (2022-2023 literature): Riemannian score-based generative modelling on compact manifolds, Riemannian diffusion models with Stratonovich SDE, exact heat kernels on symmetric spaces; the learned score as refractive-index gradient.",
+      "seed_queries": [
+        "Riemannian score-based generative modelling sphere De Bortoli NeurIPS 2022",
+        "Riemannian diffusion models symmetric spaces exact heat kernel NeurIPS 2023"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "sphere-langevin-and-diffusion-purchases",
+      "scope": "F11+F12: the compass atom as the zero-temperature discretization of sphere Langevin (von Mises-Fisher stationary families, slerp as the deterministic half of a diffusion step) and what the diffusion machinery buys: the scale-space channel, standard-candle generator v2, the SLERP fold, and Schrodinger-bridge unification with transport.",
+      "seed_queries": [
+        "Riemannian Langevin dynamics sphere Euler-Maruyama von Mises-Fisher stationary",
+        "Schrodinger bridge entropic optimal transport diffusion connection"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "new-gaps-order-of-attack-honesty",
+      "scope": "F13 plus the merged order of attack and honesty constraints: the six Part II gaps G1-G6 with their cheapest tests, the seven-step attack ordering, and the four honesty rules (non-degenerate nulls, empirical quantiles, reserved vocabulary, designed-dynamics knobs).",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "score": 1.09,
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.29,
+          "2": 0.4
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 0.54,
+        "probabilities": {
+          "0": 0.6,
+          "1": 0.26,
+          "2": 0.14
+        },
+        "confidence": 0.19,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 0.99,
+        "probabilities": {
+          "0": 0.32,
+          "1": 0.37,
+          "2": 0.31
+        },
+        "confidence": 0.05,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.43,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.24,
+          "2": 0.59
+        },
+        "confidence": 0.14,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.07,
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.32,
+          "2": 0.37
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.67,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.12,
+          "2": 0.78
+        },
+        "confidence": 0.51,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.05,
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.3,
+          "2": 0.37
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.41,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.27,
+          "2": 0.57
+        },
+        "confidence": 0.12,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 0.5,
+        "probabilities": {
+          "0": 0.66,
+          "1": 0.17,
+          "2": 0.17
+        },
+        "confidence": 0.25,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t10": {
+        "score": 0.64,
+        "probabilities": {
+          "0": 0.53,
+          "1": 0.31,
+          "2": 0.16
+        },
+        "confidence": 0.04,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1307,
+      "output_tokens": 154
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  }
+}
