@@ -1,0 +1,84 @@
+{
+  "nn": "06",
+  "slug": "build-distribution",
+  "queries_attempted": [
+    {
+      "query": "bootc container ukify split-kernel-and-rootfs composefs digest",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        "https://github.com/rkollataj/centos-bootc-cfs",
+        "https://github.com/rkollataj/centos-bootc-cfs/blob/main/README.md",
+        "https://bootc.dev/bootc/experimental-composefs.html",
+        "https://bootc.dev/",
+        "https://bootc-dev.github.io/bootc/internals/bootc_lib/ukify/index.html",
+        "https://github.com/bootc-dev/bootc"
+      ]
+    },
+    {
+      "query": "systemd-repart sysext sysupdate A B partition update boot counter",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": [
+        "https://github.com/applicative-systems/nixos-appliance-ota-update",
+        "https://deepwiki.com/systemd/systemd/4.3-system-update-with-systemd-sysupdate",
+        "https://x86.lol/generic/2024/08/28/systemd-sysupdate.html",
+        "https://nixcademy.com/posts/immutable-ab-system-partitions-with-nixos-for-ota-updates-with-systemd-sysupdate/",
+        "https://www.freedesktop.org/software/systemd/man/latest/systemd-repart.html",
+        "https://wiki.archlinux.org/title/Systemd-repart"
+      ]
+    },
+    {
+      "query": "bootc composefs sealed images security chain documentation",
+      "attempt": 3,
+      "raw_results": 6,
+      "kept": [
+        "https://bootc.dev/blog/2026-may-04-sealed-images-security-chain/",
+        "https://github.com/bootc-dev/bootc-dev.github.io/blob/main/content/blog/2026-may-04-sealed-images-security-chain.md",
+        "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/cryptographic-sealing-of-bootc-images-technology-preview",
+        "https://sigs.centos.org/automotive/autosd-10/building/con_bootc-image-layering.html",
+        "https://github.com/bootc-dev/bootc-dev.github.io/blob/main/content/blog/2026-may-06-sealed-images-building.md",
+        "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/"
+      ]
+    },
+    {
+      "query": "systemd-sysupdate automatic boot assessment boot good",
+      "attempt": 4,
+      "raw_results": 6,
+      "kept": [
+        "https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT/",
+        "https://github.com/systemd/systemd/blob/main/docs/AUTOMATIC_BOOT_ASSESSMENT.md",
+        "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+        "https://www.sportsfeelgoodstories.com/basketball-jokes/",
+        "https://github.com/systemd/systemd/issues/32653",
+        "https://chromium.googlesource.com/chromiumos/third_party/systemd/+/refs/heads/chromeos-v247/docs/AUTOMATIC_BOOT_ASSESSMENT.md"
+      ]
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig yielded 0 high-weight (noul >= 0.5) results; re-dug with different queries",
+      "new_queries": [
+        "bootc composefs sealed images security chain documentation",
+        "systemd-sysupdate automatic boot assessment boot good"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://github.com/rkollataj/centos-bootc-cfs",
+    "https://github.com/rkollataj/centos-bootc-cfs/blob/main/README.md",
+    "https://bootc.dev/bootc/experimental-composefs.html",
+    "https://bootc.dev/",
+    "https://bootc-dev.github.io/bootc/internals/bootc_lib/ukify/index.html",
+    "https://github.com/bootc-dev/bootc",
+    "https://github.com/applicative-systems/nixos-appliance-ota-update",
+    "https://deepwiki.com/systemd/systemd/4.3-system-update-with-systemd-sysupdate",
+    "https://x86.lol/generic/2024/08/28/systemd-sysupdate.html",
+    "https://nixcademy.com/posts/immutable-ab-system-partitions-with-nixos-for-ota-updates-with-systemd-sysupdate/",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd-repart.html",
+    "https://wiki.archlinux.org/title/Systemd-repart"
+  ],
+  "outcome": "authored"
+}

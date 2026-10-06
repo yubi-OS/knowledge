@@ -1,0 +1,93 @@
+{
+  "nn": "07",
+  "slug": "version-requirements",
+  "queries_attempted": [
+    {
+      "query": "systemd v261 RestrictFileSystemAccess release notes",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        "https://github.com/systemd/systemd/releases",
+        "https://github.com/systemd/systemd/blob/main/NEWS",
+        "https://lwn.net/Articles/1078708/",
+        "https://www.phoronix.com/news/systemd-261",
+        "https://www.phoronix.com/news/systemd-261-rc1",
+        "https://www.linuxnews.net/articles/systemd-v261-released"
+      ]
+    },
+    {
+      "query": "X25519MLKEM768 hybrid post-quantum TLS default OpenSSL Go",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": [
+        "https://goodtls.com/post-quantum-tls",
+        "https://pqaudit.org/algorithms/hybrid-tls-x25519mlkem768/",
+        "https://www.encryptionconsulting.com/x25519mlkem768-tls-deployment-guide/",
+        "https://tls.studio/academy/enable-post-quantum-tls/",
+        "https://www.systemshardening.com/articles/network/tls-post-quantum-hybrid-deployment/",
+        "https://quantakrypto.com/guides/enabling-post-quantum-tls"
+      ]
+    },
+    {
+      "query": "systemd NEWS v261 RestrictFileSystemAccess systemd.exec",
+      "attempt": 3,
+      "raw_results": 6,
+      "kept": [
+        "https://newreleases.io/project/github/systemd/systemd/release/v261",
+        "https://github.com/yubi-OS/yubiOS/blob/main/refs/systemd-hardening-audit-2026-07-17.md",
+        "https://www.freedesktop.org/software/systemd/man/systemd.exec.html",
+        "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+        "https://www.phoronix.com/news/systemd-261",
+        "https://systemd.io/ENVIRONMENT/"
+      ]
+    },
+    {
+      "query": "OpenSSL 3.5 release ML-KEM hybrid X25519MLKEM768 default",
+      "attempt": 4,
+      "raw_results": 6,
+      "kept": [
+        "https://pqscore.io/blog/enable-x25519mlkem768-nginx-openssl",
+        "https://www.getpagespeed.com/server-setup/nginx/nginx-post-quantum-cryptography",
+        "https://netguardia.com/privacy/encryption/hybrid-key-exchange-today-why-x25519-ml-kem-is-the-interim-default/",
+        "https://postquantum.com/security-pqc/openssl-3-5-pqc-default/",
+        "https://www.systemshardening.com/articles/network/tls-post-quantum-hybrid-deployment/",
+        "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.1_release_notes/overview"
+      ]
+    }
+  ],
+  "redo_count": 2,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig yielded 0 results with noul >= 0.5",
+      "new_queries": [
+        "systemd NEWS v261 RestrictFileSystemAccess systemd.exec",
+        "OpenSSL 3.5 release ML-KEM hybrid X25519MLKEM768 default"
+      ]
+    },
+    {
+      "attempt": 3,
+      "reason": "redo 1 still yielded 0 results with noul >= 0.5",
+      "new_queries": [
+        "systemd v261 systemd-sysinstall release notes features",
+        "pam-u2f 1.3.1 release security fix Yubico changelog"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://github.com/systemd/systemd/releases",
+    "https://github.com/systemd/systemd/blob/main/NEWS",
+    "https://lwn.net/Articles/1078708/",
+    "https://www.phoronix.com/news/systemd-261",
+    "https://www.phoronix.com/news/systemd-261-rc1",
+    "https://www.linuxnews.net/articles/systemd-v261-released",
+    "https://goodtls.com/post-quantum-tls",
+    "https://pqaudit.org/algorithms/hybrid-tls-x25519mlkem768/",
+    "https://www.encryptionconsulting.com/x25519mlkem768-tls-deployment-guide/",
+    "https://tls.studio/academy/enable-post-quantum-tls/",
+    "https://www.systemshardening.com/articles/network/tls-post-quantum-hybrid-deployment/",
+    "https://quantakrypto.com/guides/enabling-post-quantum-tls"
+  ],
+  "outcome": "skipped",
+  "skip_reason": "subtopic scored marginal (0.65) in outline validation; dig was required to come back strong. Two redo rounds with different queries produced no result with noul >= 0.5, so the doc is skipped per the redo rule and recorded as a gap."
+}
