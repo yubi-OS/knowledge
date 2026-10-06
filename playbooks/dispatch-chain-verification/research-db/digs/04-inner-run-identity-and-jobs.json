@@ -1,0 +1,57 @@
+{
+ "nn": 4,
+ "slug": "inner-run-identity-and-jobs",
+ "scope": "Per-run identity fields plus jobs endpoint; parse-failure trap absorbed here after subtopic 5 was dropped at validation.",
+ "queries_attempted": [
+  {
+   "query": "github actions rest api get workflow run details jobs endpoint",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/rest/actions/workflow-jobs"
+   ]
+  },
+  {
+   "query": "github actions workflow run status conclusion fields rest api",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": []
+  },
+  {
+   "query": "docs.github.com list jobs for a workflow run",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-jobs"
+   ]
+  },
+  {
+   "query": "docs.github.com get a workflow run actions api",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/actions/managing-workflow-runs/deleting-a-workflow-run",
+    "https://docs.github.com/en/actions"
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 returned homepage noise; only the workflow-jobs endpoint was kept",
+   "new_queries": [
+    "docs.github.com list jobs for a workflow run",
+    "docs.github.com get a workflow run actions api"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.github.com/en/rest/actions/workflow-jobs",
+  "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-jobs",
+  "https://docs.github.com/en/actions/managing-workflow-runs/deleting-a-workflow-run",
+  "https://docs.github.com/en/actions",
+  "https://docs.github.com/en/rest/actions"
+ ],
+ "outcome": "authored"
+}

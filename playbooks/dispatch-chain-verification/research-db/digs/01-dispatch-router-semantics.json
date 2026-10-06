@@ -1,0 +1,48 @@
+{
+ "nn": 1,
+ "slug": "dispatch-router-semantics",
+ "scope": "ci.yml group router semantics; outer conclusion covers only the dispatch job.",
+ "queries_attempted": [
+  {
+   "query": "github actions workflow_dispatch trigger multiple workflows independent runs",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow"
+   ]
+  },
+  {
+   "query": "github actions workflow_run chain needs cascade trigger inner workflows",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow"
+   ]
+  },
+  {
+   "query": "docs.github.com list workflow runs for a repository",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/rest/actions/workflow-runs",
+    "https://docs.github.com/en/rest/actions/workflows"
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 queries returned mostly github.com homepage and marketing noise; only 1 unique primary kept",
+   "new_queries": [
+    "docs.github.com list workflow runs for a repository"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+  "https://docs.github.com/en/rest/actions/workflow-runs",
+  "https://docs.github.com/en/rest/actions/workflows"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,46 @@
+{
+ "nn": 7,
+ "slug": "merge-verification-readonly",
+ "scope": "Read-only merge verification via GET /pulls/{n} and /pulls/{n}/files.",
+ "queries_attempted": [
+  {
+   "query": "github rest api merge pull request merged true verify",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://www.itjtv.net/en/enterprise-cloud@latest/rest/pulls/pulls"
+   ]
+  },
+  {
+   "query": "github api pull request files endpoint verify changed files",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/rest/pulls"
+   ]
+  },
+  {
+   "query": "docs.github.com merge a pull request api merged",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/rest/pulls"
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 kept only a low-weight mirror (0.06); redo recovered the primary rest/pulls reference",
+   "new_queries": [
+    "docs.github.com merge a pull request api merged"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.itjtv.net/en/enterprise-cloud@latest/rest/pulls/pulls",
+  "https://docs.github.com/en/rest/pulls"
+ ],
+ "outcome": "authored"
+}

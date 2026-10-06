@@ -1,0 +1,234 @@
+{
+ "topic": "the yubiOS dispatch-chain verification playbook (yubi-OS/yubiOS playbooks/dispatch-chain-verification.md)",
+ "source_doc": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/playbooks/dispatch-chain-verification.md",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "dispatch-router-semantics",
+   "scope": "ci.yml is a group router; outer conclusion=success covers only the dispatch job; no chain, no needs, no callback read.",
+   "seed_queries": [
+    "github actions workflow_dispatch trigger multiple workflows independent runs",
+    "github actions workflow_run chain needs cascade trigger inner workflows"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "verify-before-claiming-rules",
+   "scope": "The 5 Decision rules plus the patch-is-ground-truth corollary. Internal-record subtopic, no dig.",
+   "seed_queries": []
+  },
+  {
+   "nn": 3,
+   "slug": "dispatch-and-duplicate-detection",
+   "scope": "Dispatch once, list immediately, detect duplicates 10-20s apart, cancel with POST /actions/runs/{id}/cancel (202).",
+   "seed_queries": [
+    "github actions rest api list workflow runs created at find duplicates",
+    "github actions cancel workflow run rest api 202"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "inner-run-identity-and-jobs",
+   "scope": "Per inner run: confirm identity fields and read jobs; total_count 0 parse-failure trap; reporting template.",
+   "seed_queries": [
+    "github actions rest api get workflow run details jobs endpoint",
+    "github actions workflow run status conclusion fields rest api"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "yaml-parse-failure-trap",
+   "scope": "total_count 0 on a completed run is a YAML parse failure; check parse state before step logs.",
+   "seed_queries": [
+    "github actions workflow yaml parse error instant failure zero jobs",
+    "github actions invalid workflow file conclusion failure no steps"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "log-expiry-and-listing-traps",
+   "scope": "Logs 404 at 15-30 min; diagnose from file diff and jobs endpoint; run listings mislead, report name and path.",
+   "seed_queries": [
+    "github actions download logs 404 expired retention api",
+    "github actions workflow runs list filter by workflow file name path"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "merge-verification-readonly",
+   "scope": "Never PUT /pulls/{n}/merge; verify merged:true via GET /pulls/{n}; patch is ground truth via GET /pulls/{n}/files.",
+   "seed_queries": [
+    "github rest api merge pull request merged true verify",
+    "github api pull request files endpoint verify changed files"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "recorded-failure-evidence",
+   "scope": "PR #150 cycle violations, PR #147 patch-vs-title proof, runs #48/#49 zero-jobs proof. Internal-record subtopic, no dig.",
+   "seed_queries": []
+  },
+  {
+   "nn": 9,
+   "slug": "operational-dispatch-discipline",
+   "scope": "One dispatch per intent; group=all ban in self-mode; fetch-*.yml commits to main; connection discipline. Internal-record subtopic, no dig.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.68,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.12,
+     "2": 0.78
+    },
+    "confidence": 0.52,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.79,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.03,
+     "2": 0.88
+    },
+    "confidence": 0.68,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.85,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.04,
+     "2": 0.9
+    },
+    "confidence": 0.77,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.76,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.06,
+     "2": 0.85
+    },
+    "confidence": 0.64,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.33,
+    "probabilities": {
+     "0": 0.74,
+     "1": 0.2,
+     "2": 0.06
+    },
+    "confidence": 0.51,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.12,
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.44,
+     "2": 0.34
+    },
+    "confidence": 0.16,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.02,
+    "probabilities": {
+     "0": 0.33,
+     "1": 0.32,
+     "2": 0.35
+    },
+    "confidence": 0.0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.07,
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.35,
+     "2": 0.36
+    },
+    "confidence": 0.0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.83,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.04,
+     "2": 0.9
+    },
+    "confidence": 0.75,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1057,
+   "output_tokens": 139
+  },
+  "dropped": [
+   5
+  ],
+  "dropped_reason": "t05 scored 0.33 with 0.74 probability mass on drop; dig came back weak (1 primary + 3 low-weight results); per the validation rule score-0/near-0 subtopics are dropped and the content was folded into subtopic 04",
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   9
+  ]
+ }
+}
