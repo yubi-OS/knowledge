@@ -1,0 +1,36 @@
+{
+ "nn": "07",
+ "slug": "policy-testing",
+ "scope": "Testing the policy without a full build: opa eval, conftest, and the native buildx policy eval.",
+ "queries_attempted": [
+  {
+   "query": "opa eval test rego policy synthetic input JSON",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "conftest test rego policy container build",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.openpolicyagent.org/docs/policy-testing",
+  "https://policyascode.dev/guides/opa-rego-tutorial/",
+  "https://cbnative.com/posts/rego-patterns-policy-testing",
+  "https://deepwiki.com/open-policy-agent/opa/5.2-evaluation-command-(eval)",
+  "https://github.com/orgs/open-policy-agent/discussions/406",
+  "https://mylinux.work/projects/opa-policy-tester/",
+  "https://www.conftest.dev/",
+  "https://github.com/open-policy-agent/conftest",
+  "https://khimananda.com/blog/conftest-test-configs-against-opa-policies",
+  "https://github.com/open-policy-agent/conftest/blob/master/examples/data/policy/base_test.rego",
+  "https://oneuptime.com/blog/post/2026-01-28-opa-conftest-policy-testing/view",
+  "http://www.webmail.earthlink.net/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "input-object",
+ "scope": "The input object schema the policy sees: input.local, input.image.ref, isCanonical, hasProvenance.",
+ "queries_attempted": [
+  {
+   "query": "docker buildx build policy input object image ref isCanonical hasProvenance",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "buildx policy input local image ref fields documentation",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/debugging/",
+  "https://github.com/docker/buildx/issues/3613",
+  "https://github.com/docker",
+  "https://liudonghua123.github.io/docker-docs/build/metadata/attestations/",
+  "https://www.docker.com/",
+  "https://docs.docker.com/build/policies/inputs/",
+  "https://deepwiki.com/microsoft/docker-buildx/3-user-guide",
+  "https://stackoverflow.com/questions/75455209/migrating-local-docker-images-to-buildx",
+  "https://www.azlyrics.com/lyrics/thompsonsquare/areyougonnakissmeornot.html",
+  "https://mcpindex.ai/whitepaper",
+  "https://zvezdochetu.github.io/docker-docs-course/reference/cli/docker/buildx/policy/eval/",
+  "https://stackoverflow.com/questions/70041942/how-do-i-docker-buildx-build-into-a-local-registry-container"
+ ],
+ "outcome": "authored"
+}

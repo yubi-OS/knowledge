@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "yubios-rego-pattern",
+ "scope": "The yubiOS.rego pattern: default deny, approved_registry, allow rules, decision object, actionable reasons.",
+ "queries_attempted": [
+  {
+   "query": "OPA rego policy default deny allow rules package docker",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "rego decision object reason sprintf deny message policy",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.openpolicyagent.org/docs/docker-authorization",
+  "https://polarsparc.github.io/Security/PrimerOPA.html",
+  "https://github.com/open-policy-agent/opa-docker-authz/blob/main/example.rego",
+  "https://deepwiki.com/open-policy-agent/opa-docker-authz/4.1-policy-structure-and-basics",
+  "https://github.com/open-policy-agent/opa-docker-authz",
+  "https://hub.docker.com/r/openpolicyagent/opa",
+  "https://www.openpolicyagent.org/docs/policy-language",
+  "https://www.openpolicyagent.org/docs/cheatsheet",
+  "https://stackoverflow.com/questions/61578607/parameters-in-rego-rules-open-policy-agent",
+  "https://stackoverflow.com/questions/69230579/sprintf-in-opa-rego-policy",
+  "https://github.com/open-policy-agent/conftest/blob/master/examples/xml/policy/deny.rego",
+  "https://secopslog.com/courses/opa/op-deny/"
+ ],
+ "outcome": "authored"
+}

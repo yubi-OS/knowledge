@@ -1,0 +1,255 @@
+{
+ "topic": "docker-build-policy: writing, wiring, and debugging Docker Build Policies (OPA/Rego) for the yubi-OS org",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "build-policy-overview",
+   "scope": "What a Build Policy is, BuildKit pre-build evaluation, allow/deny semantics, the yubiOS supply-chain gate framing.",
+   "seed_queries": [
+    "Docker BuildKit build policy OPA rego evaluate before build",
+    "docker buildx build policy allow deny image before build"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "02",
+   "slug": "invocation-flags",
+   "scope": "The --policy flag surface: reset, strict, filename, and the buildx version requirement.",
+   "seed_queries": [
+    "docker buildx build --policy flag reset strict filename",
+    "docker buildx policy version requirement BuildKit policy support"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "03",
+   "slug": "input-object",
+   "scope": "The input object schema the policy sees: input.local, input.image.ref, isCanonical, hasProvenance.",
+   "seed_queries": [
+    "docker buildx build policy input object image ref isCanonical hasProvenance",
+    "buildx policy input local image ref fields documentation"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "04",
+   "slug": "yubios-rego-pattern",
+   "scope": "The yubiOS.rego pattern: default deny, approved_registry, allow rules, decision object, actionable reasons.",
+   "seed_queries": [
+    "OPA rego policy default deny allow rules package docker",
+    "rego decision object reason sprintf deny message policy"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "05",
+   "slug": "common-changes",
+   "scope": "Adding an approved registry, requiring provenance, and the policy-does-not-replace-pinning invariant.",
+   "seed_queries": [
+    "docker image provenance attestation SLSA buildx attestations",
+    "container image digest pinning supply chain mutable tag"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "06",
+   "slug": "ci-wiring",
+   "scope": "Enabling the policy on the yubiOS-ci.yml build job and reading a denial from the CI log.",
+   "seed_queries": [],
+   "internal_record": true
+  },
+  {
+   "nn": "07",
+   "slug": "policy-testing",
+   "scope": "Testing the policy without a full build: opa eval, conftest, and the native buildx policy eval.",
+   "seed_queries": [
+    "opa eval test rego policy synthetic input JSON",
+    "conftest test rego policy container build"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "08",
+   "slug": "guardrails-discipline",
+   "scope": "Never weaken the gate, prefix-to-PINNED.md correspondence, actionable deny reasons.",
+   "seed_queries": [
+    "digest pinning mutable tag supply chain attack container image",
+    "default deny policy gate CI supply chain hardening"
+   ],
+   "internal_record": false
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.97,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.95
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.15,
+     "2": 0.79
+    },
+    "confidence": 0.59
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.87,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.06,
+     "2": 0.9
+    },
+    "confidence": 0.81
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.05,
+     "2": 0.9
+    },
+    "confidence": 0.78
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.79,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.11,
+     "2": 0.84
+    },
+    "confidence": 0.68
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.64,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.13,
+     "2": 0.75
+    },
+    "confidence": 0.46
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.78,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.14,
+     "2": 0.82
+    },
+    "confidence": 0.68
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.65,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.09,
+     "2": 0.78
+    },
+    "confidence": 0.47
+   },
+   "t09": {
+    "type": "score",
+    "score": 0.36,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.75,
+     "1": 0.15,
+     "2": 0.1
+    },
+    "confidence": 0.46
+   }
+  },
+  "usage": {
+   "input_tokens": 1261,
+   "output_tokens": 139,
+   "cost": 0.000105924
+  },
+  "dropped": [
+   "09"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ],
+  "dropped_detail": [
+   {
+    "nn": "09",
+    "slug": "primitive-coverage",
+    "score": 0.36,
+    "reason": "score 0.36 with 0.77 probability of padding; the primitive-coverage substance is covered in the closing section of 08-guardrails-discipline.md instead"
+   }
+  ]
+ }
+}

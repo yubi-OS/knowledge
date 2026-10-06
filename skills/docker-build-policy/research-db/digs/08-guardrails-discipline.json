@@ -1,0 +1,36 @@
+{
+ "nn": "08",
+ "slug": "guardrails-discipline",
+ "scope": "Never weaken the gate, prefix-to-PINNED.md correspondence, actionable deny reasons.",
+ "queries_attempted": [
+  {
+   "query": "digest pinning mutable tag supply chain attack container image",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "default deny policy gate CI supply chain hardening",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://secure-pipelines.com/ci-cd-security/lab-artifact-tampering-detection-swapping-container-images-registry/",
+  "https://www.vmfarms.com/blog/trivy-supply-chain/",
+  "https://docs.ozarksecuritylabs.com/supply-chain/tier-2-hardened/container-image-digests/",
+  "https://www.merriam-webster.com/dictionary/digest",
+  "https://clearnotemusic.com/defending-against-software-supply-chain-attacks-targeting-container-images/",
+  "https://www.linkedin.com/pulse/hardening-containers-building-truly-immutable-images-sha-ateeb-aslam-0sgxf",
+  "https://github.com/echennells/supply-chain-hardening",
+  "https://docs.fjord.sh/operations/supply-chain-ci",
+  "https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure/",
+  "https://www.pipelineclear.com/blog/network-policy-default-deny",
+  "https://podci.entropy.quest/development/supply-chain/",
+  "https://www.systemshardening.com/articles/cicd/supply-chain-policy-deploy-time/"
+ ],
+ "outcome": "authored"
+}
