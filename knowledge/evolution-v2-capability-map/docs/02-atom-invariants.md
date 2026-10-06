@@ -1,0 +1,23 @@
+# 02. Atom invariants: the single-action atom and the identity-measurement boundary
+
+Scope: The paper-derived gating invariants for a self-improvement loop: the single-action atom with d_pre, d_post, and delta against a defined ideal state; delta >= 0 as a bug alarm; cumulative monotonicity versus per-cycle increments; and the identity-measurement boundary that keeps machine-checkable identities out of the human gate.
+
+## Loop invariants, the general tool
+
+A loop invariant is a condition about the relationship between program variables that is definitely true immediately before and immediately after each iteration of the loop (source: https://www.geeksforgeeks.org/dsa/loop-invariant-condition-examples-sorting-algorithms/, jev weight 0.26, weak). In the verification literature it is a predicate that holds on every loop iteration at the same point, usually the loop head, and to verify a loop it suffices to find a sufficiently strong invariant (source: https://web.stanford.edu/class/cs242/materials/old/Lecture13.pdf, jev weight 0.63). Loop invariants are properties that hold both before and after each iteration and are routinely used to verify programs (source: https://www.sciencedirect.com/science/article/pii/S0747717125001336, jev weight 0.76). The craft has one important caution: the full postcondition will not be true the whole time, so a part of the postcondition that is actually the loop's termination condition must not be included in the invariant (source: http://cs.iit.edu/~smuller/cs536-f23/lectures/14-15-loopinv.pdf, jev weight 0.80). Modern tooling can even generate all polynomial invariants of a while loop up to a specified degree algebraically (source: https://arxiv.org/pdf/2405.09232, jev weight 0.89).
+
+## The loop's invariant register
+
+The evolution loop adopts this discipline as its atom ledger. Every executed directive is a single-action atom that carries three numbers, d_pre, d_post, and delta, all measured against a defined ideal state, and a stay option always exists so that doing nothing is a legal outcome rather than a forced edit. The delta >= 0 property is the invariant: if any executed atom produces negative delta, that is a bug alarm in the harness, not a regression to be logged and forgotten.
+
+The telescoping identity does the heavy lifting. Per-cycle increments are allowed to rise or fall; the only property that must hold is that the cumulative sum is monotone. Reading an uptick in a single cycle's increment as a failure is a category error: the invariant lives on the sum, not on the increments. This is the same structure the IIT lecture warns about: the part of the postcondition that belongs to termination (here, eventual saturation) must not be asserted cycle by cycle.
+
+## Identity assertions versus measurements
+
+The second half of the invariant set is the boundary between what the machine asserts and what the human judges. Identities (delta >= 0, the telescoping sum, cumulative monotonicity) are asserted in tests, and only measurements face the human gate. The security literature gives this split a vocabulary: NIST SP 800-53 control IA-13(2) requires verification of the digital signatures protecting identity assertions and access tokens, including the metadata that binds the assertion to its request (source: https://csf.tools/reference/nist-sp-800-53/r5/ia/ia-13/ia-13-2/, jev weight 0.93), and SP 800-63C-4 defines how federated assertions carry authentication attributes that a relying party verifies rather than re-derives (source: https://csrc.nist.gov/pubs/sp/800/63/c/4/final, jev weight 0.93). The Cybersecurity Framework puts it plainly: identity assertions are to be protected, conveyed, and verified (source: https://csf.tools/reference/nist-cybersecurity-framework/v2-0/pr/pr-aa/pr-aa-04/, jev weight 0.39, weak).
+
+Mapped onto the loop: an invariant is like a signed assertion. It is checked mechanically on every iteration, and it is never what the operator is asked to approve. The operator sees measurements (what changed, by how much, against which null), while the tests see identities. Keeping the two apart is what makes a fail-closed design cheap: the expensive human attention is spent only on the quantities that actually need judgment.
+
+## Why this matters for the rest of the map
+
+The atom ledger is the substrate every later primitive reads from. Null-standardized claims (doc 04) need d_pre and d_post to exist as numbers. The dynamics audit (doc 06) needs the append-only event log the ledger writes. The standard candle (doc 05) needs a defined ideal state so a planted directive has a known-correct outcome to detect. None of that works if the atom is not enforced as an invariant first.

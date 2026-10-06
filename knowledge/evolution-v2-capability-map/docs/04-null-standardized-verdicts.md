@@ -1,0 +1,25 @@
+# 04. Null-standardized claims and exclusion-only verdicts
+
+Scope: The loop's claims discipline: no effect is reported raw, every claim is a z score against a matched null (label-permutation and null-delivery ensembles for the quality ledger), and gates emit only excluded, not-excluded, or not-tested at |z| > 3, never narratives.
+
+## Why raw effects are not claims
+
+An effect size is a value measuring the strength of the relationship between two variables in a population, or a sample-based estimate of that quantity (source: https://en.wikipedia.org/wiki/Effect_size, jev weight 0.14, weak). A raw number is not yet a claim; the claim requires a reference distribution. The loop's rule follows the is-this-x paper's definition: no effect reported raw, always z against a matched null.
+
+## Building the null: label permutation
+
+The standard tool is the permutation test. scikit-learn's permutation_test_score evaluates a score by comparing it against a null distribution built from n_permutations random label permutations, with 100 as the documented default count (source: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.permutation_test_score.html, jev weight 0.88). The construction is general: produce several pseudo-samples under the null hypothesis by randomly permuting the labels or observations of the data, then compare the observed test statistic to that distribution (source: https://www.geeksforgeeks.org/machine-learning/permutation-tests-in-machine-learning/, jev weight 0.49). Shuffling labels is described as the way to generate a null in the applied biostatistics tradition (source: https://bookdown.org/kmbm92/Applied-Biostats/perm1.html, jev weight 0.69), and the same node-label permutation is worked through for graph data (source: https://dshizuka.github.io/networkanalysis/06_permutations.html, jev weight 0.57).
+
+Permutation tests earn their place because they avoid relying on specific parametric assumptions, and they remain useful in complex modern applications where it can be difficult to derive a null distribution analytically (source: https://nchenderson.github.io/elements-nonpar-stat/permutation.html, jev weight 0.79). The Wikipedia article calls it an exact statistical hypothesis test whose null hypothesis is that all samples are exchangeable (source: https://en.wikipedia.org/wiki/Permutation_test, jev weight 0.21, weak). For the loop's quality ledger, the matched nulls are label-permutation and null-delivery ensembles: directives paired with shuffled or non-delivered controls so the separation between real and null effects has an honest denominator.
+
+## The z score, and one honest caution
+
+Standardizing against the null means the reported number is a z: the effect divided by the null's standard deviation. A caution from the literature is worth keeping in view: a z score based on the permutation null may not add much information beyond significance, because the variability of the permutation null distribution is itself a function of the sample size (source: https://statmodeling.stat.columbia.edu/2024/01/11/my-quick-answer-is-that-i-dont-care-much-about-permutation-tests-because-they-are-testing-a-null-null-hypothesis-that-is-of-typically-no-interest/, jev weight 0.71). That is precisely why the null must be matched to the actual measurement procedure rather than borrowed, and why the null's spread is reported (the dBc scale in doc 06 makes sigma_null part of the number itself).
+
+## Exclusion-only verdicts at |z| > 3
+
+The gate's output vocabulary is exactly three values: excluded, not-excluded, or not-tested, emitted when |z| exceeds 3. No narratives. The three-valued design is deliberate: a directive whose effect was never measured against a null is not-tested, which is not evidence either way, and saying so out loud prevents the most common failure in self-measuring systems, which is silently treating untested as tested-and-passed. The pattern of making abstention an explicit, first-class outcome rather than a silent default is echoed in practitioner guidance on decision systems, which map score ranges and hard preconditions to explicit outcomes including abstain (source: https://sincllm.com/blog/llm-confidence-scoring-abstention, jev weight 0.38, weak). Statology's summary of the method, weakly weighted, captures the intuition that shuffling labels tests group differences without requiring normal distributions (source: https://www.statology.org/complete-guide-to-permutation-tests-when-to-use-them-and-why/, jev weight 0.21, weak).
+
+## What the discipline buys
+
+Because every claim is a z against a recorded null, the loop's history becomes auditable in the strict sense: any past improvement claim can be re-checked against its stored null ensemble. Claims that never had a null are, by construction, not-tested, and the ledger says so. This is the claims discipline that the calibration primitives in doc 05 depend on: you cannot measure detection power over a history whose entries were never standardized in the first place.

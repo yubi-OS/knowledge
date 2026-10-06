@@ -1,0 +1,27 @@
+# 08. The reassessed worker module map, the Cloudflare surface, and the non-goals
+
+Scope: The reassessed evolution v2 module map (A trigger and machine-cycle, B atom ledger and calibration, C memory and recall, D execution and notify, E preflight and verify, F jev quality assessment), the Cloudflare endpoints each maps to, the lane plan, and the explicit non-goals.
+
+## The trigger: cron restores the heartbeat
+
+Module A is the trigger plus machine-cycle. Cloudflare Cron Triggers map a cron expression to a Worker using a scheduled() handler, which is the documented mechanism for running Workers on a schedule for periodic jobs (source: https://developers.cloudflare.com/workers/configuration/cron-triggers/, jev weight 0.91). Wrangler configuration supports a different cron trigger per environment, with the triggers table placed under the chosen environment (source: https://developers.cloudflare.com/workers/examples/cron-trigger/, jev weight 0.90). A weakly-weighted guide describes the same capability as a recurring schedule at the edge with no servers and no orchestrator (source: https://cronuru.com/guides/cloudflare-workers-cron-triggers, jev weight 0.19, weak).
+
+The account state matters here: the live probe found the Cron Triggers list empty, because the every-5-minutes automation cron was wiped by the 11:07Z deploy. Module A both restores that lost cron and moves the machine-cycle to an hourly heartbeat: measure (task outcomes, ledger separation, automation failure rates, policy drift), propose (jev priority-ranked, approval-forecast pre-screened), gate, notify.
+
+## The state layer: D1 for the ledger, DO declined
+
+Module B, the atom ledger plus calibration instruments, lands on D1: the delta ledger per directive (d_pre, d_post, delta, stay option), the cumulative-monotonicity assertion, null standard deviation and dBc reporting on separation, the standard-candle plant and detection measurement, the PC1+PC2 gate, the anti-caustic guard, fixpoint stop, and the dynamics audit over events. Cloudflare documents the storage options across the platform (source: https://developers.cloudflare.com/workers/platform/storage-options/, jev weight 0.94). Durable Objects provide durable storage attached to each object, strongly consistent and fast because it lives with the object (source: https://developers.cloudflare.com/durable-objects/, jev weight 0.92), and the launch post framed them as stateful serverless (source: http://blog.cloudflare.com/introducing-workers-durable-objects/, jev weight 0.92). A weakly-weighted comparison notes that Workers KV, Durable Objects, and D1 each solve a different state problem, differing in consistency, latency, write limits, and portability (source: https://basekv.com/articles/durable-objects-vs-kv-store, jev weight 0.21, weak), and a practitioner guide warns that picking the wrong primitive shows up as stale KV reads, D1 write limits, or a hot Durable Object melting down (source: https://flaviocopes.com/tools/cloudflare-storage-chooser/, jev weight 0.81).
+
+The map's call: D1 with compare-and-swap is sufficient serialization for the ledger, so Durable Objects are explicitly not used. A third-party note that Workers paired with Durable Objects form a strong cron stack (source: https://wphtaccess.com/2025/09/18/serverless-cron-jobs-on-cloudflare-workers-with-durable-objects/, jev weight 0.23, weak) describes a valid alternative pattern the map chose not to take.
+
+## Memory, execution, preflight, and the Jenny addition
+
+Module C is memory and recall on Vectorize, Cloudflare's vector database for AI-powered semantic search per the Workers platform overview (source: https://developers.cloudflare.com/workers/, jev weight 0.71), using a 768-D bge-base embedding endpoint and the point-map discipline from doc 07; the live probe confirmed the sos-embeddings index is live and Workers AI offers 321 models. Module D is execution and notify: Queues give durable directive execution (claim, execute, verify, retry with backoff, terminal state), Resend sends the hourly digest and immediate pending-approval email, and console v3 adds trend, recall view, and calibration curve. Module E is preflight and verify: the Phase 0 endpoint-preflight gate runs on every cycle, and post-execute verify legs close each directive.
+
+Module F is the Jenny addition: jev quality assessment as a first-class loop component rather than a ledger afterthought. Quality is predicted at PROPOSE time (every candidate proposal scored before enqueue), at VERIFY time (every execution result scored against its intent), and on sweep-report quality. All predictions land in the ledger for the calibration loop, and low predicted-quality proposals are demoted to notes instead of being queued.
+
+## Lane plan and non-goals
+
+The lane plan is 4 lanes: A plus B invariants, C memory, D execution and notify, E calibration instruments. B and E overlap heavily, so the final lane split is deferred to the SPEC. An advisor/integrator lane reconciles cross-lane contracts, followed by deploy and route-by-route live verification. No new secrets are required; the deploy restores the cron and sets the hourly schedule.
+
+The explicit v1 non-goals carry over, unchanged: no worker-side self-modification (worker_change directives still execute via Sauna sessions), no R2 (not enabled on the account; D1 and KV suffice), no Durable Objects (CAS on D1 is sufficient serialization), and no auto-approval of anything (the whitelist is unchanged).
