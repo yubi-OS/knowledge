@@ -1,0 +1,72 @@
+{
+ "nn": "02",
+ "slug": "granularity-rule",
+ "scope": "Granularity rule: each version is one corpus item; per-file item units (SELF.md rows, SELF-CHANGELOG entries, memory-file sections); the decomposition rule for N<20 corpora with the 3-level bound; the 20-item curve-fit gate.",
+ "queries_attempted": [
+  {
+   "query": "keep a changelog format atomic entries",
+   "attempt": 1,
+   "raw_results": -1,
+   "kept": 6,
+   "note": "raw count not captured in first pass"
+  },
+  {
+   "query": "document segmentation unit of analysis granularity",
+   "attempt": 2,
+   "raw_results": -1,
+   "kept": 6,
+   "note": "raw count not captured in first pass"
+  },
+  {
+   "query": "keep a changelog specification format software",
+   "attempt": 3,
+   "raw_results": 77,
+   "kept": 6
+  },
+  {
+   "query": "semantic versioning release notes changelog practices",
+   "attempt": 4,
+   "raw_results": 69,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig returned mostly irrelevant dictionary and note-app results; refined toward changelog-format queries",
+   "new_queries": [
+    "keep a changelog specification format software",
+    "semantic versioning release notes changelog practices"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://keep.google.com/",
+  "https://workspace.google.com/products/keep/",
+  "https://keep.com/",
+  "https://www.merriam-webster.com/dictionary/keep",
+  "https://play.google.com/store/apps/details/?id=com.google.android.keep&hl=en-US",
+  "https://common-changelog.org/",
+  "https://docs.google.com/",
+  "https://word.cloud.microsoft/en-us/",
+  "https://docs.google.com/document/",
+  "https://workspace.google.com/products/docs/",
+  "https://www.document.com/",
+  "https://www.freedocumentmaker.com/document-editor",
+  "https://keep.google.com/",
+  "https://workspace.google.com/products/keep/",
+  "https://keep.com/",
+  "https://common-changelog.org/",
+  "http://zlib.net/zlib_faq.html",
+  "https://handwiki.org/wiki/Software:LineageOS",
+  "https://announcekit.app/blog/changelog-versioning/",
+  "https://github.com/semantic-release/semantic-release",
+  "https://www.merriam-webster.com/dictionary/semantic",
+  "https://handwiki.org/wiki/Software:Comparison_of_wiki_software",
+  "https://www.salesforce.com/?bc=OTH",
+  "https://release-notes.dev/learn"
+ ],
+ "outcome": "authored",
+ "skip_reason": null
+}
