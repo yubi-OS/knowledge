@@ -1,0 +1,23 @@
+{
+ "nn": "07",
+ "slug": "07-base-image-bump-drift",
+ "scope": "Re-verification on base-image bumps: the guarantee is per-filename-pair, not permanent; upstream static- files invalidate it",
+ "queries_attempted": [
+  {
+   "query": "bootc base image upgrade configuration drift usr etc",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "container base image upgrade verify package configuration changes",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}

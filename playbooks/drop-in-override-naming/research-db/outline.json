@@ -1,0 +1,209 @@
+{
+ "topic": "the yubiOS systemd drop-in override naming playbook (playbooks/drop-in-override-naming.md): lex-sort discipline, prefix naming convention, author-time verification recipe, OMN-149 cost, base-image drift, doctrine cross-references",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "lex-sort-discipline",
+   "scope": "Lexicographic ordering discipline of drop-in configuration directories (tmpfiles.d, modprobe.d, dracut.conf.d, udev rules.d, unit .d): what sorts by full filename and how merges resolve",
+   "seed_queries": [
+    "systemd-tmpfiles configuration files sorted lexicographic order",
+    "modprobe.d files processed sorted by filename order"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "rcn-prefix-mismatch",
+   "scope": "Why sysv-init rcN.d numeric prefixes do not transfer to these directories and silently invert fire-after intent",
+   "seed_queries": [
+    "sysvinit rcN.d S K numeric prefix boot ordering convention",
+    "systemd tmpfiles numeric prefix rcN.d convention does not transfer"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "naming-convention",
+   "scope": "The yubiOS prefix convention for fire-after overrides: vfio-yubiOS-, kvm-yubiOS-, yubiOS- prefixes, never a bare numeric prefix",
+   "seed_queries": [
+    "systemd unit drop-in file naming convention .conf ordering",
+    "linux configuration drop-in directory naming prefix convention"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "verification-recipe",
+   "scope": "Author-time mechanical verification recipe: effective sort listing, pairwise sort assertion, base-image listing via podman, runtime effect assertion",
+   "seed_queries": [
+    "list files inside docker image without running container",
+    "bash sort printf verify filename lexical sort order"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "omn-149-incident",
+   "scope": "OMN-149 incident anatomy: the 53-yubiOS-no-static-vfio.conf ship, 0x35 vs 0x73 arithmetic, 4 days of /dev/vfio re-creation, the fix commit",
+   "seed_queries": []
+  },
+  {
+   "nn": "06",
+   "slug": "tmpfiles-r-vs-z",
+   "scope": "tmpfiles.d line-type semantics: r (remove) vs z (adjust) and why r beats z when upstream re-creates device nodes",
+   "seed_queries": []
+  },
+  {
+   "nn": "07",
+   "slug": "base-image-bump-drift",
+   "scope": "Re-verification on base-image bumps: the guarantee is per-filename-pair, not permanent; upstream static- files invalidate it",
+   "seed_queries": [
+    "bootc base image upgrade configuration drift usr etc",
+    "container base image upgrade verify package configuration changes"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "doctrine-and-ci-gap",
+   "scope": "Doctrine cross-references: BLOCKERS.md CI-Evidence pattern, OMN-141/OMN-146, the two vm test scripts, and the unbuilt proactive CI gate (Gap 8)",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.07,
+     "2": 0.86
+    },
+    "confidence": 0.7
+   },
+   "t02": {
+    "score": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.29,
+     "2": 0.29
+    },
+    "confidence": 0
+   },
+   "t03": {
+    "score": 1.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.06,
+     "2": 0.88
+    },
+    "confidence": 0.73
+   },
+   "t04": {
+    "score": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.33,
+     "2": 0.25
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "score": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.65,
+     "1": 0.23,
+     "2": 0.12
+    },
+    "confidence": 0.3
+   },
+   "t06": {
+    "score": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.82,
+     "1": 0.14,
+     "2": 0.04
+    },
+    "confidence": 0.67
+   },
+   "t07": {
+    "score": 0.77,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.45,
+     "1": 0.32,
+     "2": 0.23
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "score": 0.75,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.45,
+     "1": 0.35,
+     "2": 0.2
+    },
+    "confidence": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1232,
+   "output_tokens": 124
+  },
+  "requested_at": "2026-10-06T12:16:20+00:00",
+  "endpoint": "api.defapi.org/api/v1/decisions",
+  "dropped": [
+   "05",
+   "06"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "07",
+   "08"
+  ]
+ }
+}

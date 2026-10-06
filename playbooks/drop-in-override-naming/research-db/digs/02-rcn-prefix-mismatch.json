@@ -1,0 +1,23 @@
+{
+ "nn": "02",
+ "slug": "02-rcn-prefix-mismatch",
+ "scope": "Why sysv-init rcN.d numeric prefixes do not transfer to these directories and silently invert fire-after intent",
+ "queries_attempted": [
+  {
+   "query": "sysvinit rcN.d S K numeric prefix boot ordering convention",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "systemd tmpfiles numeric prefix rcN.d convention does not transfer",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}
