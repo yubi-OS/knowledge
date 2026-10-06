@@ -1,0 +1,226 @@
+{
+ "topic": "the docker-login-action skill: authenticating to a container registry (Docker Hub, GHCR, quay.io, dhi.io) using docker/login-action in GitHub Actions",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "when-to-use-placement",
+   "scope": "When a GitHub Actions job needs docker/login-action, where the step belongs, and the ordering rule before any push step",
+   "seed_queries": [
+    "docker login action GitHub Actions order before build push",
+    "docker/login-action authenticate registry in GitHub Actions workflow"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "02",
+   "slug": "action-reference-inputs",
+   "scope": "The login-action step shape and its registry/username/password inputs, plus the upstream scope input and v3-to-v4 drift",
+   "seed_queries": [
+    "docker login-action v3 action inputs registry username password logout",
+    "docker/login-action action.yml inputs documentation"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "03",
+   "slug": "supported-registries",
+   "scope": "The registry table: Docker Hub, GHCR, quay.io, dhi.io, and the any-OCI fallback with each registry's credential source",
+   "seed_queries": [
+    "docker login-action supported registries ghcr quay Docker Hub",
+    "docker login private OCI registry GitHub Actions examples"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "04",
+   "slug": "ghcr-auth-pattern",
+   "scope": "GITHUB_TOKEN auth for ghcr.io and the packages: write permission block it requires, plus cross-org limits",
+   "seed_queries": [
+    "GitHub Actions GITHUB_TOKEN packages write push ghcr.io docker",
+    "docker login-action ghcr.io GITHUB_TOKEN example"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "05",
+   "slug": "quay-dhi-patterns",
+   "scope": "quay.io robot accounts and dhi.io credentials, plus the multi-registry yubiOS pattern and the OIDC alternative",
+   "seed_queries": [
+    "quay.io robot account token GitHub Actions docker login",
+    "dhi.io Docker Hardened Images registry login credentials"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "06",
+   "slug": "secrets-and-credential-handling",
+   "scope": "Where registry credentials live (secrets vs runtime-minted tokens), masking, build-time mounts, and rotation posture",
+   "seed_queries": [
+    "GitHub Actions secrets container registry token security best practices",
+    "docker login-action AWS ECR credentials github actions"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "09",
+   "slug": "examples-and-guidelines",
+   "scope": "Worked setup, in-repo touchpoints, boundary routing, guidelines, and the source doc's corpus-audit annotations",
+   "seed_queries": [],
+   "dig_mode": "internal-record"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917 (clef)",
+  "answers": {
+   "t01": {
+    "score": 1.72,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.16,
+     "2": 0.78
+    },
+    "confidence": 0.58,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.95,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.92,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.05,
+     "2": 0.93
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.73,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.15,
+     "2": 0.79
+    },
+    "confidence": 0.59,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.52,
+    "probabilities": {
+     "0": 0.56,
+     "1": 0.37,
+     "2": 0.07
+    },
+    "confidence": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.36,
+    "probabilities": {
+     "0": 0.67,
+     "1": 0.29,
+     "2": 0.04
+    },
+    "confidence": 0.46,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.04,
+    "probabilities": {
+     "0": 0.97,
+     "1": 0.02,
+     "2": 0.01
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.72,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.15,
+     "2": 0.78
+    },
+    "confidence": 0.57,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1123,
+   "output_tokens": 139
+  },
+  "dropped": [
+   "07-supply-chain-trust-chain-role",
+   "08-continuous-adaptive-primitive-coverage"
+  ],
+  "kept": [
+   "01-when-to-use-placement",
+   "02-action-reference-inputs",
+   "03-supported-registries",
+   "04-ghcr-auth-pattern",
+   "05-quay-dhi-patterns",
+   "06-secrets-and-credential-handling",
+   "09-examples-and-guidelines"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "ghcr-auth-pattern",
+ "scope": "GITHUB_TOKEN auth for ghcr.io and the packages: write permission block it requires, plus cross-org limits",
+ "queries_attempted": [
+  {
+   "query": "GitHub Actions GITHUB_TOKEN packages write push ghcr.io docker",
+   "attempt": 1,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "docker login-action ghcr.io GITHUB_TOKEN example",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry",
+  "https://stackoverflow.com/questions/75926611/github-workflow-to-push-docker-image-to-ghcr-io",
+  "https://dev.to/willvelida/pushing-container-images-to-github-container-registry-with-github-actions-1m6b",
+  "https://github.com/marketplace/actions/build-and-push-docker-image-to-ghcr",
+  "https://github.com/marketplace/actions/push-to-ghcr",
+  "https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions",
+  "https://github.com/docker/login-action",
+  "https://github.com/marketplace/actions/docker-login",
+  "https://stackoverflow.com/questions/74101254/how-to-log-into-github-container-registy-using-github-actions",
+  "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry",
+  "https://dev.to/coder7475/how-to-automate-your-docker-workflow-publish-images-to-github-container-registry-3jei",
+  "https://gist.github.com/yokawasa/841b6db379aa68b2859846da84a9643c"
+ ],
+ "outcome": "authored"
+}
