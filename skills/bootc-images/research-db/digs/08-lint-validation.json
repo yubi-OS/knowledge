@@ -1,0 +1,33 @@
+{
+ "nn": "08",
+ "slug": "lint-validation",
+ "scope": "bootc container lint checks (/boot content, kernel path, /usr/etc, tmpfiles.d since 1.1.6) and running it in CI with podman",
+ "queries_attempted": [
+  {
+   "query": "bootc container lint checks CI",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "bootc container lint tmpfiles.d missing entries 1.1.6",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 3
+  }
+ ],
+ "results_kept": [
+  "https://github.com/bootc-dev/bootc",
+  "https://www.mankier.com/8/bootc-container-lint",
+  "https://bootc.dev/",
+  "https://bootc.dev/bootc/",
+  "https://developer.android.com/build/dependencies?hl=fa",
+  "https://github.com/bootc-dev/bootc/issues/1546",
+  "https://github.com/ublue-os/bluefin-lts/issues/382",
+  "https://bootc.dev/bootc/filesystem.html",
+  "https://bootc.dev/bootc/bootc-filesystem.7.html"
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "outcome": "authored"
+}

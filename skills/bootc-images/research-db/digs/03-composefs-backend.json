@@ -1,0 +1,35 @@
+{
+ "nn": "03",
+ "slug": "composefs-backend",
+ "scope": "prepare-root.conf composefs enablement, full / as read-only EROFS image, verity mode and its limits, kernel CONFIG_EROFS_FS",
+ "queries_attempted": [
+  {
+   "query": "bootc composefs prepare-root.conf enabled verity EROFS",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "composefs EROFS filesystem kernel requirement ostree",
+   "attempt": 1,
+   "raw_results": 61,
+   "kept": 5
+  }
+ ],
+ "results_kept": [
+  "https://github.com/bootc-dev/bootc",
+  "https://bootc.dev/",
+  "https://bootc.dev/bootc/experimental-composefs.html",
+  "https://bootc.dev/bootc/",
+  "https://github.com/composefs/composefs",
+  "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+  "https://ostreedev.github.io/ostree/composefs/",
+  "https://erofs.docs.kernel.org/en/latest/merging.html",
+  "https://en.wikipedia.org/wiki/Fast_%26_Furious",
+  "https://www.reddit.com/r/CounterTops/",
+  "https://www.reddit.com/r/Sniffies/comments/15wzpca/does_the_website_deletes_your_location/"
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "outcome": "authored"
+}

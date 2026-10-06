@@ -1,0 +1,35 @@
+{
+ "nn": "02",
+ "slug": "image-requirements",
+ "scope": "Mandatory containers.bootc label, kernel and initramfs at /usr/lib/modules, no /boot content, /ostree not required since 1.1.3",
+ "queries_attempted": [
+  {
+   "query": "containers.bootc label bootc container lint requirements",
+   "attempt": 1,
+   "raw_results": 76,
+   "kept": 6
+  },
+  {
+   "query": "bootc kernel /usr/lib/modules vmlinuz initramfs /ostree directory",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 5
+  }
+ ],
+ "results_kept": [
+  "https://www.amazon.com/containers/s?k=containers",
+  "https://bootc.dev/bootc/bootc-images.html",
+  "https://github.com/bootc-dev/bootc",
+  "https://www.walmart.com/browse/home/storage-containers/4044_90828_1230056",
+  "https://deepwiki.com/bootc-dev/bootc/3.4-container-image-validation",
+  "https://docs.fedoraproject.org/en-US/bootc/building-from-scratch/",
+  "https://jmarrero.github.io/bootc/bootc-install.html",
+  "https://github.com/bootc-dev/bootc/blob/main/docs/src/bootc-compatible-images.7.md",
+  "https://jmarrero.github.io/bootc/bootc-images.html",
+  "https://bootc.dev/",
+  "https://bootc.dev/bootc/"
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "outcome": "authored"
+}
