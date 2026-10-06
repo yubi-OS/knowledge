@@ -1,0 +1,68 @@
+{
+ "nn": "01",
+ "slug": "01-lane-overview",
+ "scope": "What the sealed-UKI VM lane is: ci_test_sealed-uki-vm.yml builds a PKCS#11-signed UKI (SoftHSM slot emulating PIV 9c), boots it under OVMF Secure Boot, runs negative tamper tests; 3 jobs (build-and-verify-uki, boot-secure-vm, negative-tamper-tests), 6 assertions; canonical pattern ci_mkosi-installer.yml.",
+ "queries_attempted": [
+  {
+   "query": "systemd UKI unified kernel image ukify secure boot signing",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "Unified kernel image - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Unified_kernel_image",
+     "snippet": "Unified kernel image A unified kernel image (UKI) is a single executable which can be booted directly from UEFI firmware, or automatically sourced by boot loaders with little or no configuration. It i"
+    },
+    {
+     "title": "Boot signed Linux with no bootloader config: unified kernel images and ...",
+     "url": "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+     "snippet": "A Unified Kernel Image is a single PE-format EFI binary that bundles the kernel, initrd, kernel command line, OS release metadata, and an optional splash into one file that UEFI can execute directly a"
+    },
+    {
+     "title": "systemd - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Systemd",
+     "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across Linux distributions. [8] Its main component is an init system used t"
+    },
+    {
+     "title": "System and Service Manager",
+     "url": "https://systemd.io/",
+     "snippet": "System and Service Manager systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system. systemd provid"
+    },
+    {
+     "title": "systemd-ukify: Unified Kernel Image (UKI) f\u00fcr UEFI Secure Boot mit ...",
+     "url": "https://www.codingblatt.de/secure-boot-systemd-ukify-yubikey-signieren/",
+     "snippet": "23. Oktober 2024 Stephan In einem \u00e4lteren Beitrag hatte ich bereits beschrieben, wie ich mittels systemd-ukify sogenannte Unified Kernel Images (UKIs) zum Booten meines Arch-Linux -Systems erstelle. D"
+    },
+    {
+     "title": "ukify: Combine components into a signed Unified Kernel Image for...",
+     "url": "https://www.mankier.com/1/ukify",
+     "snippet": "ukify [OPTIONS...] inspect FILE... Description. ukify is a tool whose primary purpose is to combine components (usually a kernel, an initrd, and the systemd-stub(7) UEFI stub) to create a UAPI.5 Unifi"
+    }
+   ],
+   "kept": [
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/",
+    "https://www.codingblatt.de/secure-boot-systemd-ukify-yubikey-signieren/",
+    "https://www.mankier.com/1/ukify"
+   ]
+  },
+  {
+   "query": "PKCS#11 OpenSSL 3 provider SoftHSM signing token",
+   "attempt": 1,
+   "raw_results": [],
+   "kept": []
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Unified_kernel_image",
+  "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://systemd.io/",
+  "https://www.codingblatt.de/secure-boot-systemd-ukify-yubikey-signieren/",
+  "https://www.mankier.com/1/ukify"
+ ],
+ "outcome": "authored"
+}

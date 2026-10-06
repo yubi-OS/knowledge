@@ -1,0 +1,112 @@
+{
+ "nn": "04",
+ "slug": "04-sbsign-pkcs11-signing",
+ "scope": "Rows 1 and 2: systemd-sbsign ships inside the systemd package at /usr/lib/systemd/systemd-sbsign and is not on PATH (no dnf package exists; 'No match for argument' is expected); each docker run is a fresh ephemeral container so a dnf install in one does not persist; the sign command needs --private-key-source=provider:pkcs11 not engine:pkcs11 (ADR-008 / OMN-116, OpenSSL 3.x deprecates the engine API); the PKCS#11 URI must be single-quoted with the embedded PIN (pin-value) or signing hangs or C_Login fails.",
+ "queries_attempted": [
+  {
+   "query": "systemd-sbsign ukify binary location PATH systemd package signing",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "systemd - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Systemd",
+     "snippet": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across Linux distributions. [8] Its main component is an init system used t"
+    },
+    {
+     "title": "System and Service Manager",
+     "url": "https://systemd.io/",
+     "snippet": "System and Service Manager systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system. systemd provid"
+    },
+    {
+     "title": "ukify(1) - Linux manual page",
+     "url": "https://man7.org/linux/man-pages/man1/ukify.1.html",
+     "snippet": "SecureBootSigningTool=systemd-sbsign/--signtool=systemd-sbsign. Added in version 253. SecureBootCertificateDir=SB_PATH, -- secureboot-certificate-dir=SB_PATH. A path to a nss certificate database dire"
+    },
+    {
+     "title": "systemd-sbsign (1) - Linux manual page - man7.org",
+     "url": "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+     "snippet": "The specified OpenSSL signing engine or provider will be used to sign the PE binary. Added in version 257. --prepare-offline-signing When this option is specified, the sign command writes the data tha"
+    },
+    {
+     "title": "systemd-sbsign(1) \u2014 Arch manual pages",
+     "url": "https://man.archlinux.org/man/systemd-sbsign.1",
+     "snippet": "Specifies the path where to write the signed PE binary or the data to be signed offline when using the --prepare-offline-signingoption."
+    },
+    {
+     "title": "systemd-sbsign (1) \u2014 Arch manual pages",
+     "url": "https://man.archlinux.org/man/systemd-sbsign.1.en",
+     "snippet": "DESCRIPTION systemd-sbsign can be used to sign PE binaries for EFI Secure Boot. COMMANDS sign Signs the given PE binary for EFI Secure Boot. Takes a path to a PE binary as its argument. If the PE bina"
+    }
+   ],
+   "kept": [
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/",
+    "https://man7.org/linux/man-pages/man1/ukify.1.html",
+    "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+    "https://man.archlinux.org/man/systemd-sbsign.1",
+    "https://man.archlinux.org/man/systemd-sbsign.1.en"
+   ]
+  },
+  {
+   "query": "pkcs11-provider SoftHSM hashed ECDSA C_SignUpdate single-part fix",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "PKCS 11 - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/PKCS_11",
+     "snippet": "In cryptography, PKCS #11 is a Public-Key Cryptography Standard that defines a C programming interface to create and manipulate cryptographic tokens that may contain secret cryptographic keys. It is o"
+    },
+    {
+     "title": "ECDSA-SHA1 - unable to sign file/wrong signature #2181",
+     "url": "https://github.com/OpenSC/OpenSC/issues/2181",
+     "snippet": "For big file (over key size): Using slot 0 with a present token (0x0) Using signature algorithm ECDSA-SHA1 error: PKCS11 function C_SignUpdate failed: rv = CKR_DATA_LEN_RANGE (0x21) Aborting. If input"
+    },
+    {
+     "title": "PKCS #11 Cryptographic Token Interface Base Specification ... - OASIS",
+     "url": "https://docs.oasis-open.org/pkcs11/pkcs11-base/v2.40/os/pkcs11-base-v2.40-os.html",
+     "snippet": "On some platforms, or earlier PKCS11 compliant libraries, it may be necessary to successfully call C_Initialize or to restart the entire system.C_Sign cannot be used to terminate a multi-part operatio"
+    },
+    {
+     "title": "PKCS #11 Specification Version 3.1 - OASIS",
+     "url": "https://docs.oasis-open.org/pkcs11/pkcs11-spec/v3.1/csd01/pkcs11-spec-v3.1-csd01.html",
+     "snippet": "This document defines data types, functions and other basic components of the PKCS #11 Cryptoki interface. Status: This document was last revised or approved by the OASIS PKCS 11 TC on the above date."
+    },
+    {
+     "title": "The hashed ECDSA operations not support multipart operations #842",
+     "url": "https://github.com/softhsm/SoftHSMv2/issues/842",
+     "snippet": "Jan 21, 2026 \u00b7 The #683 introduced the hashed ECDSA mechanisms, but did not implement multipart operations. The specs clearly say that the multipart operation should work and this is breaking, for exa"
+    },
+    {
+     "title": "SoftHSM | www.softhsm.org",
+     "url": "https://www.softhsm.org/",
+     "snippet": "SoftHSM is an implementation of a cryptographic store accessible through a PKCS #11 interface. You can use it to explore PKCS #11 without having a Hardware Security Module."
+    }
+   ],
+   "kept": [
+    "https://en.wikipedia.org/wiki/PKCS_11",
+    "https://github.com/OpenSC/OpenSC/issues/2181",
+    "https://docs.oasis-open.org/pkcs11/pkcs11-base/v2.40/os/pkcs11-base-v2.40-os.html",
+    "https://docs.oasis-open.org/pkcs11/pkcs11-spec/v3.1/csd01/pkcs11-spec-v3.1-csd01.html",
+    "https://github.com/softhsm/SoftHSMv2/issues/842",
+    "https://www.softhsm.org/"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://systemd.io/",
+  "https://man7.org/linux/man-pages/man1/ukify.1.html",
+  "https://www.man7.org/linux/man-pages/man1/systemd-sbsign.1.html",
+  "https://man.archlinux.org/man/systemd-sbsign.1",
+  "https://man.archlinux.org/man/systemd-sbsign.1.en",
+  "https://en.wikipedia.org/wiki/PKCS_11",
+  "https://github.com/OpenSC/OpenSC/issues/2181",
+  "https://docs.oasis-open.org/pkcs11/pkcs11-base/v2.40/os/pkcs11-base-v2.40-os.html",
+  "https://docs.oasis-open.org/pkcs11/pkcs11-spec/v3.1/csd01/pkcs11-spec-v3.1-csd01.html",
+  "https://github.com/softhsm/SoftHSMv2/issues/842",
+  "https://www.softhsm.org/"
+ ],
+ "outcome": "authored"
+}
