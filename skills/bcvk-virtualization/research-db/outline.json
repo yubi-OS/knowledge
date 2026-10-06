@@ -1,0 +1,254 @@
+{
+ "topic": "the bcvk virtualization skill (bootc virtualization kit: ephemeral VM testing, disk image creation, YubiKey passthrough, FIDO2 emulators, CI wiring) from yubi-OS/yubiOS skills/bcvk-virtualization/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "overview-stack",
+   "scope": "bcvk overview and stack: Rust toolkit running bootc images as VMs with podman + QEMU + virtiofsd, unprivileged; the command decision matrix.",
+   "seed_queries": [
+    "bcvk bootc virtualization kit QEMU virtiofsd",
+    "bootc container image VM rootfs podman QEMU"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "ephemeral-vms",
+   "scope": "ephemeral VM lifecycle: run, ssh, detach, ssh-port forwarding, VM disappears on stop.",
+   "seed_queries": [
+    "bcvk ephemeral run bootc VM",
+    "bootc image ephemeral VM testing unprivileged QEMU"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "disk-image-creation",
+   "scope": "bcvk to-disk: boots ephemeral VM and runs bootc install to-disk inside it; raw/qcow2, disk size, btrfs.",
+   "seed_queries": [
+    "bcvk to-disk bootc install to-disk qcow2",
+    "bootc install to-disk btrfs filesystem image"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "native-to-disk",
+   "scope": "native-to-disk: privileged podman container calls bootc install to-disk directly; block device safety validation; --yes and --rootful flags.",
+   "seed_queries": [
+    "bootc install to-disk bare metal flash privileged container",
+    "bootc install to-disk block device confirmation safety"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "libvirt-persistent-vms",
+   "scope": "libvirt persistent VMs: run with name/memory/cpus, list, ssh, stop/start.",
+   "seed_queries": [
+    "bcvk libvirt run persistent VM bootc",
+    "libvirt persistent VM virsh start stop managed"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "yubikey-usb-passthrough",
+   "scope": "YubiKey USB passthrough to QEMU: u2f-passthru hidraw, udevadm discovery, libvirt USB hostdev XML vendor 0x1050 product 0x0407.",
+   "seed_queries": [
+    "QEMU u2f-passthru hidraw YubiKey FIDO2 passthrough",
+    "libvirt USB hostdev YubiKey vendor 0x1050"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "fido2-software-emulators",
+   "scope": "FIDO2 software emulators for CI without hardware: virtual-fido via USB/IP vhci-hcd, softfido for PKCS#11.",
+   "seed_queries": [
+    "virtual-fido USB/IP vhci-hcd FIDO2 emulator",
+    "softfido SoftHSM PKCS11 FIDO emulator"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "luks-tpm-gotcha",
+   "scope": "LUKS + TPM/FIDO2 enrollment gotcha in VMs: PCR mismatch, two-stage install with temporary passphrase then systemd-cryptenroll on real hardware.",
+   "seed_queries": [
+    "systemd-cryptenroll FIDO2 LUKS2 TPM PCR mismatch virtual machine",
+    "TPM PCR values differ virtual machine measured boot"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "ci-workflow-quality",
+   "scope": "bcvk-based CI workflow (mkosi build, ephemeral VM boot test with timeout, FIDO2 enrollment test) plus bcvk REVIEW.md code quality rules.",
+   "seed_queries": [
+    "GitHub Actions test bootc image VM boot",
+    "bats bash automated testing system integration tests"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.91
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.19,
+     "2": 0.6900000000000001
+    },
+    "confidence": 0.34
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.16,
+     "2": 0.77
+    },
+    "confidence": 0.56
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.47,
+     "1": 0.33,
+     "2": 0.2
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.79,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.09,
+     "2": 0.85
+    },
+    "confidence": 0.68
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.28,
+     "1": 0.61,
+     "2": 0.11
+    },
+    "confidence": 0.42
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.66,
+     "1": 0.32,
+     "2": 0.02
+    },
+    "confidence": 0.45
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.36,
+     "1": 0.54,
+     "2": 0.1
+    },
+    "confidence": 0.31
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.2,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.44,
+     "2": 0.38
+    },
+    "confidence": 0.17
+   }
+  },
+  "usage": {
+   "input_tokens": 1260,
+   "output_tokens": 139,
+   "cost": 0.00010584
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "08",
+   "09"
+  ],
+  "skipped_after_dig": [
+   {
+    "nn": "07",
+    "reason": "dig stayed thin after 2 redos (max 0.53 single high-weight result); per REDO rule the doc is skipped, not padded"
+   }
+  ]
+ }
+}
