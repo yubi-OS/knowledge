@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "ci-dispatch-verification",
+  "scope": "Dispatching ci_test-vm.yml via workflow_dispatch with image/hw_device/allow_real_u2f inputs, then verifying the inner run and reading for SKIPs instead of trusting conclusion=success.",
+  "queries_attempted": [
+    {
+      "query": "GitHub Actions workflow_dispatch REST API dispatches inputs",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "GitHub Actions job conclusion skipped jobs run status",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/",
+    "https://github.blog/",
+    "https://github.com/login",
+    "https://docs.github.com/en/enterprise-server@3.1/actions/managing-workflow-runs/manually-running-a-workflow",
+    "https://x.com/github",
+    "https://dev.to/daksh_choudhary_6645530c3/from-jenkins-dropdowns-to-github-actions-solving-dynamic-docker-tag-selection-5f11",
+    "https://buglyst.com/learn/symptoms/clarity-github-actions-job-skipped",
+    "https://github.com/im-open/workflow-conclusion",
+    "https://github.com/marketplace/actions/wait-for-checks",
+    "https://www.linkedin.com/company/github",
+    "https://desktop.github.com/download/",
+    "https://github.com/orgs/community/discussions/25789"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "context-and-regression-guard",
+  "scope": "When the recipe applies: the software FIDO2/LUKS2/systemd-homed VM lane, its dependency list, the B-VM-CTAP2 RESOLVED freeze, and the scope boundary against B-REAL-FIDO2.",
+  "queries_attempted": [
+    {
+      "query": "systemd-homed FIDO2 LUKS2 disk encryption unlock",
+      "attempt": 1,
+      "raw_results": 78,
+      "kept": 6
+    },
+    {
+      "query": "pam-u2f YubiKey PAM module pluggable authentication",
+      "attempt": 1,
+      "raw_results": 82,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/",
+    "https://github.com/systemd/systemd",
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://linuxvox.com/blog/systemd-in-linux/",
+    "https://github.com/Yubico/pam-u2f",
+    "https://pamhealth.com/",
+    "https://www.microsoft.com/en-us/security/business/security-101/what-is-privileged-access-management-pam",
+    "https://www.pam.ai/",
+    "https://developers.yubico.com/pam-u2f/",
+    "https://www.beyondtrust.com/resources/glossary/privileged-access-management-pam"
+  ],
+  "outcome": "authored"
+}

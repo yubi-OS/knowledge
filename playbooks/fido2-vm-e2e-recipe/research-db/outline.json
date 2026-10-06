@@ -1,0 +1,233 @@
+{
+  "topic": "the yubiOS FIDO2 VM end-to-end test recipe (ground source: yubi-OS/yubiOS playbooks/fido2-vm-e2e-recipe.md)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "context-and-regression-guard",
+      "scope": "When the recipe applies: the software FIDO2/LUKS2/systemd-homed VM lane, its dependency list, the B-VM-CTAP2 RESOLVED freeze, and the scope boundary against B-REAL-FIDO2.",
+      "seed_queries": [
+        "systemd-homed FIDO2 LUKS2 disk encryption unlock",
+        "pam-u2f YubiKey PAM module pluggable authentication"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "known-working-config",
+      "scope": "The frozen decision list: bcvk --swu2f plus swtpm, passless pinned commit, /dev/hidraw0 CTAP2 hmac-secret, pamu2fcfg packaging in the production Containerfile, homectl --enforce-password-policy=no, pam-u2f required with a 1.3.1 floor.",
+      "seed_queries": [
+        "swtpm software TPM 2.0 emulator QEMU",
+        "uhid Linux kernel userspace HID device emulation"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "mechanism-chain",
+      "scope": "The end-to-end chain: host bcvk --swu2f uhid load, in-guest passless, hidraw CTAP2 hmac-secret enumeration, LUKS2 enroll/unlock, systemd-homed home create, pamu2fcfg registration, ssh-keygen ed25519-sk.",
+      "seed_queries": [
+        "CTAP2 hmac-secret extension specification FIDO",
+        "systemd-cryptenroll FIDO2 token LUKS2 enroll unlock"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "ci-dispatch-verification",
+      "scope": "Dispatching ci_test-vm.yml via workflow_dispatch with image/hw_device/allow_real_u2f inputs, then verifying the inner run and reading for SKIPs instead of trusting conclusion=success.",
+      "seed_queries": [
+        "GitHub Actions workflow_dispatch REST API dispatches inputs",
+        "GitHub Actions job conclusion skipped jobs run status"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "test-scripts-bats",
+      "scope": "The tests/vm scripts test-luks-fido2-ci.sh, test-fido2-enrollment.sh, test-luks-fido2.sh and the bats unit tests asserting the required control and the 1.3.1 floor.",
+      "seed_queries": [
+        "bats-core bash automated testing system",
+        "bats test framework CI assertions shell"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "failure-triage",
+      "scope": "The symptom to first-suspect table, guard refusals that must not be worked around, and the mkosi.conf versus production Containerfile build-path lesson from PRs 102 and 125.",
+      "seed_queries": [
+        "Fedora pam-u2f pamu2fcfg subpackage split",
+        "systemd-homed homectl enforce-password-policy FIDO2"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "verified-evidence",
+      "scope": "Run 30139433902 job 89629762908 proving the chain with no skips, the two real bugs fixed in PRs 102 and 125, B-VM-CTAP2 RESOLVED 2026-07-25, Linear OMN-48, and the retired B-VM-SSH and B-VM-BOOTLOADER-UPDATE blockers.",
+      "seed_queries": []
+    },
+    {
+      "nn": "08",
+      "slug": "tradeoffs-hw-lane-boundary",
+      "scope": "What the software lane cannot prove: physical presence, PIN retry and lockout, multi-key hidraw races, recovery tokens, revocation, the PIV 9c signing ceremony, and the 12 scenarios behind B-REAL-FIDO2.",
+      "seed_queries": [
+        "FIDO2 CTAP2 user presence user verification flags",
+        "YubiKey FIDO2 PIN retry lockout policy"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "cross-references-map",
+      "scope": "The document graph around the recipe: BLOCKERS.md sections, related runs, PRs, Linear items, refs/ docs, ADR-003/026/002, and the sibling playbooks hw-device-and-allow-real-u2f and dispatch-chain-verification.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "score": 1.66,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.14,
+          "2": 0.76
+        },
+        "confidence": 0.49,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.8,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.05,
+          "2": 0.87
+        },
+        "confidence": 0.69,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.95,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.97
+        },
+        "confidence": 0.92,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.75,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.11,
+          "2": 0.82
+        },
+        "confidence": 0.63,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.88,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.03,
+          "2": 0.93
+        },
+        "confidence": 0.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.37,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.33,
+          "2": 0.52
+        },
+        "confidence": 0.05,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.2,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.24,
+          "2": 0.48
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.63,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.16,
+          "2": 0.73
+        },
+        "confidence": 0.44,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.59,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.23,
+          "2": 0.68
+        },
+        "confidence": 0.38,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1585,
+      "output_tokens": 139
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "failure-triage",
+  "scope": "The symptom to first-suspect table, guard refusals that must not be worked around, and the mkosi.conf versus production Containerfile build-path lesson from PRs 102 and 125.",
+  "queries_attempted": [
+    {
+      "query": "Fedora pam-u2f pamu2fcfg subpackage split",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "systemd-homed homectl enforce-password-policy FIDO2",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/Yubico/pam-u2f",
+    "https://fedoraproject.org/",
+    "https://fedoraproject.org/workstation/download/",
+    "https://en.wikipedia.org/wiki/Fedora_Linux",
+    "https://fedorarepository.org/download/",
+    "https://packages.fedoraproject.org/pkgs/pam-u2f/pamu2fcfg/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+    "https://github.com/systemd/systemd",
+    "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only"
+  ],
+  "outcome": "authored"
+}
