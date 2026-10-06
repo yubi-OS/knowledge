@@ -1,0 +1,13 @@
+{
+ "date": "2026-10-06",
+ "searxng": {
+  "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+  "probe_results": "campaign preflight healthy (orchestrator)",
+  "unresponsive_engines": []
+ },
+ "decide": {
+  "url": "https://api.defapi.org/api/v1/decisions",
+  "model": "typesafe/jev-1.13",
+  "note": "campaign preflight run orchestrator-side; agent-side probe skipped for speed; weighting served via DefAPI direct"
+ }
+}
