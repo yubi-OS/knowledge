@@ -1,0 +1,238 @@
+{
+ "topic": "continuous-runtime-detection-falco: detecting runtime security events using Falco rules, Tetragon TracingPolicy, OTel Collector, and Prometheus recording rules (declarative continuous/adaptive telemetry for yubiOS)",
+ "ground_source": "yubi-OS/yubiOS skills/continuous-runtime-detection-falco/SKILL.md (https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/continuous-runtime-detection-falco/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "skill-scope-and-primitive-mapping",
+   "scope": "The skill's frontmatter scope, its mapping to the 10-primitive spine (P4 primary, P3 declarative policy, P6 audit/evidence), and downstream consumers.",
+   "seed_queries": [],
+   "internal_record": true
+  },
+  {
+   "nn": 2,
+   "slug": "falco-syscall-detection",
+   "scope": "Falco as the syscall-level detection engine: drivers, rule/macros/lists structure, and the two yubiOS closure rules.",
+   "seed_queries": [
+    "Falco custom rules syntax macros lists conditions",
+    "Falco syscall threat detection eBPF kernel module driver"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": 3,
+   "slug": "tetragon-ebpf-enforcement",
+   "scope": "Tetragon as the eBPF enforcement layer: TracingPolicy as declarative policy, hook points, enforcement vs detection.",
+   "seed_queries": [
+    "Tetragon TracingPolicy YAML declarative eBPF security policy",
+    "Tetragon security observability enforcement Kubernetes"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": 4,
+   "slug": "otel-collector-telemetry",
+   "scope": "OTel Collector as the declarative telemetry carrier: receivers, processors, exporters, connectors, pipelines.",
+   "seed_queries": [
+    "OpenTelemetry Collector configuration receivers processors exporters",
+    "OpenTelemetry Collector declarative configuration telemetry pipeline"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": 5,
+   "slug": "prometheus-recording-rules-alerting",
+   "scope": "Prometheus recording and alerting rules as the declarative alerting layer closing the loop.",
+   "seed_queries": [
+    "Prometheus recording rules syntax best practices",
+    "Prometheus alerting rules configuration recording rules"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": 6,
+   "slug": "ca-residual-closure",
+   "scope": "The 2 C/A residual cells (composefs-kernel-floors, yubikey-operations) and the verifier-instrumentation closure pattern.",
+   "seed_queries": [],
+   "internal_record": true
+  },
+  {
+   "nn": 7,
+   "slug": "ca-keyword-binding-cells",
+   "scope": "The canonical C/A keyword mapping, 7 keywords x 4 frameworks = 28 binding cells, and the change-review obligation.",
+   "seed_queries": [],
+   "internal_record": true
+  },
+  {
+   "nn": 8,
+   "slug": "audit-evidence-feedback-loop",
+   "scope": "Continuous telemetry as the audit artifact (P6) and the monitoring feedback loop, with external detection-engineering corroboration.",
+   "seed_queries": [
+    "continuous audit evidence security telemetry compliance monitoring",
+    "observability feedback loop security monitoring detection engineering"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": 9,
+   "slug": "skill-origin-and-lifecycle",
+   "scope": "The changelog trail (cycle 9 corpus enrichment, PR #179), in-repo touchpoints, and boundary routing rules.",
+   "seed_queries": [],
+   "internal_record": true
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "redo_note": "First validation pass scored external-mechanism subtopics with ungrounded instructions (t03 0.42, t04 0.23). One redo with grounded instructions re-anchored every subtopic to the skill description; redo answers recorded here are authoritative. No subtopic dropped.",
+  "redo_of_request": 1,
+  "answers": {
+   "t02": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.96,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.66,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.19,
+     "2": 0.73
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.42,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.33,
+     "2": 0.55
+    },
+    "confidence": 0.14,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.29,
+     "2": 0.63
+    },
+    "confidence": 0.34,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.6,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.13,
+     "2": 0.74
+    },
+    "confidence": 0.4,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.6,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.07,
+     "2": 0.77
+    },
+    "confidence": 0.41,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.79,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.04,
+     "2": 0.87
+    },
+    "confidence": 0.69,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t01": {
+    "score": 1.82,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.02,
+     "2": 0.9
+    },
+    "confidence": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1294,
+   "output_tokens": 124,
+   "cost": 0.000108696
+  }
+ },
+ "dropped": [],
+ "kept": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "first_pass_answers": {
+  "t01": 0.68,
+  "t02": 1.97,
+  "t03": 0.42,
+  "t04": 0.23,
+  "t05": 0.95,
+  "t06": 0.22,
+  "t07": 0.48,
+  "t08": 1.91,
+  "t09": 0.97
+ }
+}
