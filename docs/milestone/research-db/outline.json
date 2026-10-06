@@ -1,0 +1,215 @@
+{
+ "topic": "the yubiOS milestone definitions (explicating yubi-OS/yubiOS docs/MILESTONE.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "goal-and-workstreams",
+   "scope": "Project goal and the four main workstreams and the Linear mirroring arrangement",
+   "seed_queries": [
+    "yubiOS ARM64 secure boot ROTPK OP-TEE fTPM U-Boot production proof",
+    "immutable Linux image based OS secure boot chain systemd UKI production"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "milestone-1-arm64-path-a",
+   "scope": "Milestone 1 ARM64 Path A production proof: scope, gates, ownership, blockers, status",
+   "seed_queries": [
+    "ROCK 5B RK3588 OP-TEE RPMB fTPM measured boot production",
+    "U-Boot UEFI Secure Boot ROCK 5B signed UKI arm64 trusted firmware"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "milestone-2-token-backed-vm-ci",
+   "scope": "Milestone 2 token-backed VM and CI coverage: delivered software path, blocker corrections, status",
+   "seed_queries": [
+    "FIDO2 LUKS2 unlock QEMU CI deterministic hardware token testing",
+    "QEMU zboot feature gate version workaround CI"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "milestone-3-sealed-composefs",
+   "scope": "Milestone 3 sealed composefs boot chain: critical path, blocker, long-pole status, cross-dependencies",
+   "seed_queries": [
+    "composefs fs-verity signed UKI secure boot tamper evidence",
+    "bootc composefs sealed boot chain UKI systemd ukify"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "milestone-4-runtime-supply-chain",
+   "scope": "Milestone 4 runtime hardening and supply-chain validation: evidence mechanisms, ownership, blockers",
+   "seed_queries": [
+    "SLSA provenance pinned base image digest supply chain container",
+    "systemd-analyze security verify Bats runtime hardening target image"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "cross-milestone-items",
+   "scope": "Cross-milestone items with no parent: mirror infra, standalone hardware validation, hygiene, research",
+   "seed_queries": []
+  },
+  {
+   "nn": "07",
+   "slug": "blocker-seeding-and-roadmap-relationship",
+   "scope": "Blocker seeding model and TODO/BLOCKERS/FUTURE division of labor",
+   "seed_queries": []
+  },
+  {
+   "nn": "08",
+   "slug": "planning-publish-gate",
+   "scope": "Planning doc publish-gate process rule and drift-check discipline",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.05,
+     "2": 0.75
+    },
+    "confidence": 0.32
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.64,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.07,
+     "2": 0.78
+    },
+    "confidence": 0.45
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.14,
+     "2": 0.6
+    },
+    "confidence": 0.02
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.53,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.09,
+     "2": 0.72
+    },
+    "confidence": 0.29
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.21,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.32,
+     "1": 0.15,
+     "2": 0.53
+    },
+    "confidence": 0
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.19,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.3,
+     "2": 0.44
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.74,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.46,
+     "1": 0.34,
+     "2": 0.2
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.41,
+     "1": 0.23,
+     "2": 0.36
+    },
+    "confidence": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1137,
+   "output_tokens": 124,
+   "cost": 9.5508e-05
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
