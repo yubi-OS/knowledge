@@ -1,0 +1,48 @@
+{
+  "nn": "03",
+  "slug": "measurement-channels",
+  "scope": "The two measurement channels: matrix channel with primary statistic dV2z = (V2 - E0[V2])/SD0[V2] against the curveball fixed row and column margin null, and dynamics channel facts D1-D3 read off the shipped edit log (absorbing k=9, zero backward transitions, exchangeability).",
+  "queries_attempted": [
+    {
+      "query": "curveball fixed margin null model bipartite graph randomization",
+      "attempt": 1,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "absorbing Markov chain reversibility entropy production irreversibility",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "variance explained first two eigenvalues dimension artifact share statistic",
+      "attempt": 2,
+      "raw_results": 37,
+      "kept": 6
+    },
+    {
+      "query": "entropy production rate Markov jump process reversibility test",
+      "attempt": 2,
+      "raw_results": 49,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "thin weighted dig: fewer than 3 results with noul weight >= 0.5 on attempt 1; redone with different queries per REDO RULE",
+      "new_queries": [
+        "variance explained first two eigenvalues dimension artifact share statistic",
+        "entropy production rate Markov jump process reversibility test"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://arxiv.org/html/1609.05137v2"
+  ],
+  "outcome": "skipped",
+  "skip_reason": "thin dig: only 1 result with noul weight >= 0.5 (arxiv 1609.05137, w=0.53) after 1 redo with different queries; marginal outline subtopic kept only on a strong dig, dig not strong",
+  "note": "first-pass primary result arxiv 1609.05137 (curveball sampler for bipartite graphs with fixed margins, w=0.53) is cited where relevant in the authored docs"
+}

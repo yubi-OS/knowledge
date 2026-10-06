@@ -1,0 +1,48 @@
+{
+  "nn": "05",
+  "slug": "metropolis-atom-mechanism",
+  "scope": "The compass mechanism: atomic moves flip one primitive on or off, the signed proposal design of record (direction 50/50 then uniform eligible primitive), the Hastings degeneracy factor C(9,k')/C(9,k) forced by the asymmetric proposal, and Metropolis on the free energy alpha = min(1, exp(-(F_T(k') - F_T(k))/T)).",
+  "queries_attempted": [
+    {
+      "query": "Metropolis-Hastings asymmetric proposal Hastings ratio correction",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    },
+    {
+      "query": "Metropolis algorithm sampling free energy degeneracy factor lattice model",
+      "attempt": 1,
+      "raw_results": 56,
+      "kept": 6
+    },
+    {
+      "query": "Hastings correction asymmetric proposal acceptance ratio formula",
+      "attempt": 2,
+      "raw_results": 58,
+      "kept": 6
+    },
+    {
+      "query": "lattice gas chemical potential degeneracy binomial entropy ideal lattice",
+      "attempt": 2,
+      "raw_results": 50,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "thin weighted dig: fewer than 3 results with noul weight >= 0.5 on attempt 1; redone with different queries per REDO RULE",
+      "new_queries": [
+        "Hastings correction asymmetric proposal acceptance ratio formula",
+        "lattice gas chemical potential degeneracy binomial entropy ideal lattice"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm",
+    "https://www.science.org/doi/10.1126/science.1257998"
+  ],
+  "outcome": "skipped",
+  "skip_reason": "thin dig: only 2 results with noul weight >= 0.5 (wikipedia Metropolis-Hastings 0.50, science.org 0.56 with an off-topic snippet) after 1 redo with different queries; marginal outline subtopic kept only on a strong dig, dig not strong"
+}
