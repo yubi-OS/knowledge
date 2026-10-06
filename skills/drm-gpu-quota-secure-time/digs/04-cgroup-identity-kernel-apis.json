@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "cgroup-identity-kernel-apis",
+ "scope": "Real cgroup v2 kernel identity APIs (task_css_set, task_dfl_cgrp, cgroup_id, cgroup_get/put) vs invented ones, and the cgroup_id-keyed gpu_cg_quota accounting shape.",
+ "queries_attempted": [
+  {
+   "query": "task_css_set task_dfl_cgrp cgroup_id kernel API",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "linux cgroup v2 internal API cgroup_get cgroup_put refcount",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Task_(TV_series)",
+  "https://www.imdb.com/title/tt28013708/",
+  "https://terenceli.github.io/%E6%8A%80%E6%9C%AF/2020/01/05/cgroup-internlas",
+  "https://www.rottentomatoes.com/tv/task/s01",
+  "https://tasks.google.com/",
+  "https://www.kernel.org/doc/html/v5.4/admin-guide/cgroup-v1/cgroups.html",
+  "https://www.linux.org/pages/download/",
+  "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+  "https://kubernetes.io/docs/concepts/architecture/cgroups/",
+  "https://www.linux.org/",
+  "https://man7.org/linux/man-pages/man7/cgroups.7.html",
+  "https://en.wikipedia.org/wiki/Linux"
+ ],
+ "outcome": "authored"
+}

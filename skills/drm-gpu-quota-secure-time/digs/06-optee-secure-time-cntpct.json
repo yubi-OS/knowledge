@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "optee-secure-time-cntpct",
+ "scope": "OP-TEE CFG_SECURE_TIME_SOURCE_CNTPCT on Rockchip: plat-rockchip conf.mk force-on, CNTPCT_EL0 based TEE_GetSystemTime, protectionLevel 1000, RK3399/RK3588 coverage.",
+ "queries_attempted": [
+  {
+   "query": "OP-TEE CFG_SECURE_TIME_SOURCE_CNTPCT optee_os",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "OP-TEE TEE_GetSystemTime secure time CNTPCT generic timer",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/OP-TEE/optee_os",
+  "https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html",
+  "https://github.com/OP-TEE/optee_os/issues/1371",
+  "https://optee.readthedocs.io/en/latest/",
+  "https://www.op.gg/?main=index",
+  "https://github.com/OP-TEE/optee_os/issues/4029",
+  "https://stackoverflow.com/questions/68544061/how-to-get-a-utc-timestamp-in-op-tee-trusted-application-ta-in-datetime-format",
+  "https://github.com/OP-TEE/optee_os/issues/5973",
+  "https://github.com/OP-TEE/optee_os/issues/1489",
+  "https://www.op.gg/?main=index",
+  "https://github.com/OP-TEE/optee_os/issues/4029",
+  "https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html"
+ ],
+ "outcome": "authored"
+}
