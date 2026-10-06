@@ -1,0 +1,36 @@
+{
+ "nn": 5,
+ "slug": "performance-tradeoffs",
+ "scope": "QEMU emulation being ~5-10x slower than native, cost of platforms: all, guidance to use native runners when CI time matters.",
+ "queries_attempted": [
+  {
+   "query": "QEMU emulation docker build performance slow arm64",
+   "attempt": 1,
+   "raw_results": 54,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx platforms all build time cost QEMU",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://blog.bernot.io/p/when-quick-emulation-is-slow/",
+  "https://dockerbuild.com/tutorials/multi-arch-builds",
+  "https://docs.docker.com/build/building/multi-platform/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://github.com/docker/setup-qemu-action/issues/22",
+  "https://jay739.dev/blog/optimizing-docker-arm64",
+  "https://sumguy.com/multi-arch-docker-builds-qemu-buildx/",
+  "https://wf.lavatech.top/lun-4/",
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://www.npmjs.com/package/nocache",
+  "https://zenn.dev/135yshr/articles/366e686b56de0c?locale=en"
+ ],
+ "outcome": "authored"
+}
