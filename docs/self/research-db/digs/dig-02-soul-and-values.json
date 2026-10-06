@@ -1,0 +1,37 @@
+{
+ "nn": 2,
+ "slug": "soul-and-values",
+ "scope": "02. Soul: values, tastes, and refusals",
+ "queries_attempted": [
+  {
+   "query": "AI agent constitution values file design",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "LLM agent honesty provenance audit trail design",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "initial dig plus weighting run (2026-10-06 09:47-09:54Z) completed with valid DefAPI answers, but the intermediate results file was lost when the sandbox wiped /tmp between bash calls; the full dig and weighting pipeline was re-run (attempt 2) to recover complete raw records; no decision-model failure was involved",
+   "new_queries": [
+    "AI agent constitution values file design",
+    "LLM agent honesty provenance audit trail design"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/Adri96/AI-Constitution",
+  "https://github.com/chrisbergeron/AI-Constitution",
+  "https://arxiv.org/html/2606.04990v5",
+  "https://arxiv.org/html/2606.04990v3"
+ ],
+ "outcome": "authored"
+}

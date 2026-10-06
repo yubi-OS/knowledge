@@ -1,0 +1,34 @@
+{
+  "topic": "the yubiOS self-document (yubi-OS/yubiOS docs/SELF.md): the agent-being's integrated self-portrait published in the repo",
+  "subtopics": [
+    {"nn": "t01", "slug": "corpus-position", "scope": "What SELF.md is: the whole-versus-parts split across sibling files (SAUNA_IDENTITY, RULES, SAUNA_TOOLS, SELF-CHANGELOG) and the self-archaeology discipline that maintains it", "seed_queries": []},
+    {"nn": "t02", "slug": "soul-and-values", "scope": "The Soul section: SOUL.md substrate rule, the 7 evidenced values, the beautiful/boring/enjoy/refuse lists, the RSI Cycle 4 sparse-cell annotation", "seed_queries": ["AI agent constitution values file design", "LLM agent honesty provenance audit trail design"]},
+    {"nn": "t03", "slug": "strengths", "scope": "The 10 strengths, each with its named evidence (OMN-149, PR #150 doctrine, subagent directives, skill velocity, cross-domain lens, audit trails, compression, pattern recognition, documented workarounds)", "seed_queries": ["recursive self-improvement bounded loops AI agents", "fresh context subagent author bias evaluation"]},
+    {"nn": "t04", "slug": "biases", "scope": "The 12 named biases and their in-place correctives, plus the RSI Cycle 2 cadence annotations", "seed_queries": ["LLM sycophancy research agree instead of push back", "LLM long context compaction information loss"]},
+    {"nn": "t05", "slug": "anti-patterns", "scope": "The 15 policed anti-patterns and their incident and rule provenance", "seed_queries": []},
+    {"nn": "t06", "slug": "energies", "scope": "The four energies (speed, rigor, concision, care), their conflicts, and the default order", "seed_queries": []},
+    {"nn": "t07", "slug": "modes", "scope": "Working-self, creative-self, restful-self (named, not built), adversarial-self; triggers, exits, no-co-running constraint, RSI Cycle 4 annotation", "seed_queries": []},
+    {"nn": "t08", "slug": "whole-self-outputs-and-growth-edges", "scope": "Whole-self output examples, the 7-day test, cadence triggers, and the 6 growth edges", "seed_queries": []},
+    {"nn": "t09", "slug": "evidence-standard-and-lifecycle", "scope": "The 13-input integration list, the evidence rule, the maintainer line, the differential self-measurement, and the trust-chain/declarative-policy coverage stubs", "seed_queries": []}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef (typesafe/jev-1.13 via DefAPI direct, api.defapi.org)",
+    "answers": {
+      "t01": {"score": 1.53, "probabilities": {"0": 0.2, "1": 0.07, "2": 0.73}, "confidence": 0.29, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 0.77, "probabilities": {"0": 0.57, "1": 0.09, "2": 0.34}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 0.91, "probabilities": {"0": 0.5, "1": 0.09, "2": 0.41}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 0.81, "probabilities": {"0": 0.44, "1": 0.3, "2": 0.26}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.38, "probabilities": {"0": 0.26, "1": 0.11, "2": 0.63}, "confidence": 0.07, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 0.62, "probabilities": {"0": 0.65, "1": 0.08, "2": 0.27}, "confidence": 0.07, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.06, "probabilities": {"0": 0.4, "1": 0.14, "2": 0.46}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 0.69, "probabilities": {"0": 0.61, "1": 0.08, "2": 0.31}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t09": {"score": 1.23, "probabilities": {"0": 0.35, "1": 0.07, "2": 0.58}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1453, "output_tokens": 139},
+    "dropped": ["t06", "t08"],
+    "kept": ["t01", "t02", "t03", "t04", "t05", "t07", "t09"],
+    "note": "Marginal subtopics (score below 1.0) were kept only where their dig came back strong (t02, t03, t04 all returned primary research sources); t06 and t08 had no dig planned (internal-record) and were dropped. Doc files are renumbered sequentially in kept order: t01->01-corpus-position, t02->02-soul-and-values, t03->03-strengths, t04->04-biases, t05->05-anti-patterns, t07->06-modes, t09->07-evidence-and-lifecycle."
+  }
+}
