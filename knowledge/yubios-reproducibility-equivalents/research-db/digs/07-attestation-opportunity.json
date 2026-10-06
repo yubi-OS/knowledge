@@ -1,0 +1,36 @@
+{
+ "nn": "07",
+ "slug": "attestation-opportunity",
+ "scope": "Attesting reproducible outputs: cosign attestation, in-toto, SLSA provenance, Rekor transparency for OCI images as the open adoption opportunity.",
+ "queries_attempted": [
+  {
+   "query": "cosign in-toto attestation OCI image provenance",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "SLSA provenance attestation container image GitHub Actions",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+  "https://docs.sigstore.dev/cosign/verifying/attestation/",
+  "https://secure-pipelines.com/ci-cd-security/artifact-provenance-attestations-slsa-in-toto/",
+  "https://www.rentwithcosign.com/",
+  "https://www.decryptiondigest.com/blog/slsa-software-supply-chain-framework-guide",
+  "https://blog.glen-thomas.com/software%20engineering/security/2026/01/20/signing-container-images-with-cosign.html",
+  "https://github.com/slsa-framework/slsa-github-generator",
+  "https://tenki.cloud/blog/github-actions-artifact-attestations-slsa",
+  "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations",
+  "https://www.xvideos.com/",
+  "https://github.com/orgs/community/discussions/205663#discussion-10672238",
+  "https://blog.stephane-robert.info/en/docs/pipeline-cicd/github/securite/lab/build-verifiable/"
+ ],
+ "outcome": "authored"
+}

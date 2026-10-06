@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "toolchain-pinning",
+ "scope": "Pinning the build toolchain: Nix flake pins vs fork plus git-SHA pins vs version floors like mkosi MinimumVersion, and how each constrains build inputs.",
+ "queries_attempted": [
+  {
+   "query": "mkosi pin version reproducible build toolchain nix flake",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "pin toolchain git commit reproducible builds fork",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/edgelesssys/reproducible-mkosi",
+  "https://github.com/systemd/mkosi",
+  "https://wiki.archlinux.org/title/Mkosi",
+  "https://mylinux.work/guides/nix-reproducible-server-environments/",
+  "https://oneuptime.com/blog/post/2026-01-25-nix-reproducible-environments/view",
+  "https://discourse.nixos.org/t/pin-each-package-that-goes-into-mkshell/28658",
+  "https://github.com/mandrean/ferrokinesis/issues/48",
+  "https://buglyst.com/learn/verification/clarity-verify-reproducible-build",
+  "https://www.kunalganglani.com/blog/rust-reproducible-builds-sbom",
+  "https://www.rustfaq.org/en/how-to-use-rust-toolchaintoml-to-pin-toolchain-versions/",
+  "https://www.pinterest.com/",
+  "https://github.com/pooryafayazi/emoji-search-react-vite"
+ ],
+ "outcome": "authored"
+}
