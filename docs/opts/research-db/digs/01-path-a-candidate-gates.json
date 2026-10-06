@@ -1,0 +1,36 @@
+{
+  "nn": 1,
+  "slug": "path-a-candidate-gates",
+  "scope": "The 8 evidence gates defining a Path A candidate (owner root at reset, complete chain, owner-controlled inputs, secure state, persistent UEFI state, TPM and measured boot, rollback/recovery/debug, reproducibility) and the first-verifier wording caveat.",
+  "queries_attempted": [
+    {
+      "query": "OP-TEE BL32 BL31 U-Boot BL33 secure boot chain ARM TrustZone TF-A",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    },
+    {
+      "query": "eMMC RPMB Replay Protected Memory Block UEFI secure variables StandaloneMM OP-TEE",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://optee.readthedocs.io/en/latest/architecture/secure_boot.html",
+    "https://deepwiki.com/rockchip-linux/rkbin/2.1-secure-boot-chain",
+    "https://sprchuoi.github.io/securebootloader/07-soc-secure-boot/",
+    "https://eotics.com/blog/secure-boot-arm-linux-chain/",
+    "https://www.op.gg/?main=index",
+    "https://www.linkedin.com/pulse/building-trusted-applications-arm-trustzone-hands-on-deep-el-sayed-awgee",
+    "https://deepwiki.com/tianocore/edk2-platforms/8.2-secure-boot-and-standalonemm",
+    "https://www.skyhighmemory.com/download/applicationNotes/Understanding%20and%20Using%20eMMC%20RPMB.pdf",
+    "https://optee.readthedocs.io/en/3.16.0/architecture/secure_storage.html",
+    "https://deepwiki.com/OP-TEE/optee_client/2.2.2-rpmb-storage",
+    "https://www.linaro.org/blog/linaro-enables-op-tee-rpmb-access-directly-from-the-linux-kernel/",
+    "https://en.wikipedia.org/wiki/Replay_Protected_Memory_Block"
+  ],
+  "outcome": "authored"
+}

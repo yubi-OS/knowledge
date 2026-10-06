@@ -1,0 +1,36 @@
+{
+  "nn": 9,
+  "slug": "cross-cutting-conclusions",
+  "scope": "The three cross-cutting upstream conclusions: Rockchip Path A has no TF-A BL1/BL2; no reviewed board arrives with the complete yubiOS config; binary firmware remains inside the security boundary.",
+  "queries_attempted": [
+    {
+      "query": "TF-A rockchip BL31 only BL1 BL2 supplied by U-Boot coreboot platform port",
+      "attempt": 1,
+      "raw_results": 56,
+      "kept": 6
+    },
+    {
+      "query": "StandaloneMM OP-TEE UEFI variables CONFIG_EFI_MM_COMM_TEE eMMC RPMB",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/plat/rockchip.rst",
+    "https://deepwiki.com/mtk-openwrt/arm-trusted-firmware/2.1-boot-loader-stages:-bl1-bl2-bl31-and-variants",
+    "https://tf-a.docs.trustedfirmware.org/en/latest/plat/rockchip.html",
+    "https://meanovia.com/tf-meaning-in-text/",
+    "https://www.youtube.com/watch?v=QdEQc1-jEk0",
+    "https://www.peckamodel.cz/blh6050-blade-mcp-x-bl2-bnf-basic",
+    "https://optee.readthedocs.io/en/latest/building/efi_vars/stmm.html",
+    "https://github.com/OP-TEE/optee_docs/blob/master/building/efi_vars/stmm.rst",
+    "https://github.com/OP-TEE/optee_docs/diffs/0?base_sha=d0cf24fd4ecaad038ceb8337f357ea627aac5e05&head_user=AristoChen&name=master&pull_number=212&sha1=d0cf24fd4ecaad038ceb8337f357ea627aac5e05&sha2=672b955e69e6eaa3ea384974c49714efa0aadf82&short_path=c756a3f&w=false",
+    "https://deepwiki.com/tianocore/edk2-platforms/8.2-secure-boot-and-standalonemm",
+    "https://optee.readthedocs.io/en/4.0.0/building/efi_vars/stmm.html",
+    "https://static.linaro.org/connect/lvc20/presentations/LVC20-302-0.pdf"
+  ],
+  "outcome": "authored"
+}
