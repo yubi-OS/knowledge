@@ -1,0 +1,275 @@
+{
+  "topic": "the yubiOS citation and attribution standards",
+  "ground_source": "yubi-OS/yubiOS docs/CITATION.md",
+  "subtopics": [
+    {
+      "slug": "supply-chain-provenance",
+      "scope": "Software supply chain and provenance standards: OpenSSF SLSA v1.0 supply-chain levels and the Sigstore cosign plus Rekor transparency-log ecosystem.",
+      "seed_queries": [
+        "SLSA v1.0 supply-chain levels for software artifacts OpenSSF",
+        "Sigstore cosign Rekor transparency log artifact attestation"
+      ],
+      "source_tNN": "07",
+      "dig_mode": "web-shaped (2 queries)"
+    },
+    {
+      "slug": "security-advisory-pamu2f",
+      "scope": "The referenced security advisory: Yubico YSA-2025-01, pam-u2f partial authentication bypass, CVE-2025-23013, the one vulnerability record the citation doc names.",
+      "seed_queries": [
+        "Yubico YSA-2025-01 pam-u2f security advisory",
+        "CVE-2025-23013 pam-u2f authentication bypass"
+      ],
+      "source_tNN": "08",
+      "dig_mode": "web-shaped (2 queries)"
+    },
+    {
+      "slug": "citation-discipline-drift",
+      "scope": "The doc's drift-check discipline: the 2026-09-18 wayfinder round 10 cycle 14 and round 11 cycle 20 entries tying CITATION.md to citation-integrity commit audits, plus the least-privilege, declarative-policy, and continuous-monitoring coverage notes. Internal-record subtopic, no dig.",
+      "seed_queries": [],
+      "source_tNN": "10",
+      "dig_mode": "internal-record subtopic, no dig"
+    },
+    {
+      "slug": "authentication-standards",
+      "scope": "The authentication standards grounding the design: W3C WebAuthn Level 2, FIDO Alliance CTAP 2.1, and IETF RFC 7512 PKCS#11 URI scheme, as cited in the source doc.",
+      "seed_queries": [
+        "WebAuthn Level 2 W3C Recommendation specification client authentication",
+        "RFC 7512 PKCS#11 URI scheme IETF specification"
+      ],
+      "source_tNN": "02",
+      "dig_mode": "web-shaped (2 queries)"
+    },
+    {
+      "slug": "firmware-supply-chain-nist",
+      "scope": "NIST firmware-supply-chain hardening guidance cited by the doc: SP 800-147 BIOS Protection, SP 800-155 draft BIOS Integrity Measurement, and SP 800-193 Platform Firmware Resiliency.",
+      "seed_queries": [
+        "NIST SP 800-193 platform firmware resiliency guidelines",
+        "NIST SP 800-147 BIOS protection guidelines 800-155 BIOS integrity measurement"
+      ],
+      "source_tNN": "04",
+      "dig_mode": "web-shaped (2 queries)"
+    },
+    {
+      "slug": "upstream-reference-index",
+      "scope": "The doc's internal \"Citations And Primary Sources\" maintenance section: the preference for primary upstream documentation, release notes, standards, and source repos; the per-domain reference index (systemd, FIDO2/YubiKey, bootc/OCI, TLS/PQ, firmware/ARM64/TPM, virtualization/zboot); and the yubiOS internal refs. Internal-record subtopic, no dig.",
+      "seed_queries": [],
+      "source_tNN": "09",
+      "dig_mode": "internal-record subtopic, no dig"
+    },
+    {
+      "slug": "project-citation",
+      "scope": "The canonical project citation and BibTeX record for yubiOS: how the doc asks academic and technical work to cite the project, the exact citation string, and the @software bibtex entry with its note field.",
+      "seed_queries": [
+        "bibtex @software entry type software citation how to cite software",
+        "software citation best practices GitHub repository citation format"
+      ],
+      "source_tNN": "01",
+      "dig_mode": "web-shaped (2 queries)"
+    },
+    {
+      "slug": "trusted-boot-platform-integrity",
+      "scope": "Trusted boot, measured boot, and platform integrity literature: Arbaugh 1997 secure bootstrap, Sailer 2004 IMA/PCR measurement, Parno Bootstrapping Trust, TPM 2.0 Library Specification, and UEFI 2.10 Secure Boot.",
+      "seed_queries": [
+        "Arbaugh 1997 secure and reliable bootstrap architecture IEEE",
+        "TPM 2.0 library specification trusted computing group UEFI Secure Boot db KEK PK"
+      ],
+      "source_tNN": "03",
+      "dig_mode": "web-shaped (2 queries)"
+    }
+  ],
+  "dropped": [
+    {
+      "tNN": "05",
+      "slug": "image-based-os-systemd",
+      "score": 0.48,
+      "reason": "score decodes to 0 (padding: drop) under nearest-integer rule"
+    },
+    {
+      "tNN": "06",
+      "slug": "disk-encryption",
+      "score": 0.19,
+      "reason": "score decodes to 0 (padding: drop) under nearest-integer rule"
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t05": {
+        "score": 0.48,
+        "probabilities": {
+          "0": 0.67,
+          "1": 0.18,
+          "2": 0.15
+        },
+        "confidence": 0.27,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 0
+      },
+      "t06": {
+        "score": 0.19,
+        "probabilities": {
+          "0": 0.87,
+          "1": 0.07,
+          "2": 0.06
+        },
+        "confidence": 0.72,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 0
+      },
+      "t07": {
+        "score": 0.55,
+        "probabilities": {
+          "0": 0.63,
+          "1": 0.19,
+          "2": 0.18
+        },
+        "confidence": 0.17,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 1
+      },
+      "t08": {
+        "score": 1.28,
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.11,
+          "2": 0.58
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 1
+      },
+      "t10": {
+        "score": 0.93,
+        "probabilities": {
+          "0": 0.44,
+          "1": 0.2,
+          "2": 0.36
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 1
+      },
+      "t02": {
+        "score": 0.8,
+        "probabilities": {
+          "0": 0.51,
+          "1": 0.18,
+          "2": 0.31
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 1
+      },
+      "t04": {
+        "score": 0.93,
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.22,
+          "2": 0.36
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 1
+      },
+      "t09": {
+        "score": 1.48,
+        "probabilities": {
+          "0": 0.23,
+          "1": 0.06,
+          "2": 0.71
+        },
+        "confidence": 0.23,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 1
+      },
+      "t01": {
+        "score": 1.59,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.04,
+          "2": 0.78
+        },
+        "confidence": 0.39,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 2
+      },
+      "t03": {
+        "score": 0.54,
+        "probabilities": {
+          "0": 0.64,
+          "1": 0.19,
+          "2": 0.17
+        },
+        "confidence": 0.2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "decoded": 1
+      }
+    },
+    "usage": {
+      "input_tokens": 1584,
+      "output_tokens": 154,
+      "cost": 0.000133056
+    },
+    "decision_rule": "continuous score decoded to nearest integer per the 0/1/2 legend; score 1 subtopics kept because their digs returned strong results",
+    "dropped": [
+      "t05",
+      "t06"
+    ],
+    "kept": [
+      "t07",
+      "t08",
+      "t10",
+      "t02",
+      "t04",
+      "t09",
+      "t01",
+      "t03"
+    ]
+  }
+}
