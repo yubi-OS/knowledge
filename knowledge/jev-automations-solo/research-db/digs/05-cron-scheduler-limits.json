@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "cron-scheduler-limits",
+  "scope": "Worker cron-triggered scheduling for automations: the 30s CPU limit, batch sizing, and chunked long-running research via queued batches",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Workers cron triggers CPU time limit 30 seconds",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "chunked batch processing scheduled worker jobs long running tasks",
+      "attempt": 2,
+      "raw_results": 49,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://runhooks.app/blog/cloudflare-workers-cron-triggers-limits/",
+    "https://developers.cloudflare.com/workers/configuration/cron-triggers/",
+    "https://runhooks.app/blog/schedule-cloudflare-workers-beyond-cron-triggers/",
+    "https://cronuru.com/guides/cloudflare-workers-cron-triggers",
+    "https://www.cloudflare.com/",
+    "https://void.cloud/guide/jobs",
+    "https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs",
+    "https://docs.spring.io/spring-batch/reference/scalability.html",
+    "https://www.kbb.com/toyota/corolla/2003/?msockid=39806ef1922c6b1f03cc791b93f26ad8",
+    "https://www.javainuse.com/spring/batchtaskchunk",
+    "https://dev.to/aws-builders/event-driven-batch-processing-on-aws-from-scheduled-tasks-to-auto-scaling-workloads-20a6",
+    "https://docs.altis-dxp.com/cloud/scheduled-tasks/"
+  ],
+  "outcome": "authored"
+}
