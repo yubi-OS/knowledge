@@ -1,0 +1,40 @@
+# 07 - ARM64 platform and secure world (ADR-017, ADR-018, ADR-019, ADR-020, ADR-021, ADR-023, ADR-029)
+
+Scope: ARM64 as the primary target, the yubiOS owned TF-A plus OP-TEE plus fTPM plus U-Boot secure world stack, the two root-of-trust provisioning paths, and the ROCK 5B board selection that makes the strategy actionable.
+
+## Platform primacy (ADR-017, ADR-023)
+
+The source doc (yubi-OS/yubiOS docs/ADR.md) records the trajectory in 2 steps. ADR-017 (dated 2026-06-24, status Accepted, platform priority superseded by ADR-023) decided that yubiOS ships as a multi arch project: the trust chain above the UKI is architecturally identical on ARM64 and x86-64, CI runs native amd64 and arm64 jobs through the shared `yubiOS-bake.hcl` graph merging per architecture staging tags into multi architecture manifests, and the fedora-bootc:45 base is multi arch. ADR-023 (dated 2026-07-08, status Accepted) then changed the priority: ARM64, especially RK3588 Path A, is the primary target platform and x86-64 remains supported secondary. The rationale is the mission itself: owner-owned trust below the UKI. ARM64 and RK3588 can plausibly deliver it through owner provisioned firmware and secure world work; x86-64 cannot without replacing OEM firmware, which is out of scope. Consequences recorded: docs and CI triage use ARM64 primacy as the tie-breaker, and x86-64 is not deprecated. An ADR-017 amendment (2026-07-11) directs that any older text saying x86-64 is primary be read through ADR-023. (source doc)
+
+## The secure world stack (ADR-018, ADR-020, ADR-021)
+
+ADR-018 (source doc, dated 2026-06-24, status Proposed, post-launch) decides the stack composition: TF-A as the EL3 monitor and Trusted Board Boot chain, OP-TEE as BL32, the Microsoft `ms-tpm-20-ref` fTPM as an OP-TEE Trusted Application, and U-Boot as BL33. The division of labor is explicit: the fTPM is the platform integrity root while the YubiKey stays the user identity root and primary disk unlock path, and the fTPM must never become the sole disk unlock gate. The consequence recorded: per-SoC TF-A bring-up is significant, so prove on QEMU first, then on selected boards, before claiming production Path A hardware support. (source doc)
+
+The dig corroborates the upstream components at weak weights: TF-A is a reference implementation of secure world software for Arm A-Profile architectures including an EL3 Secure Monitor (https://github.com/ARM-software/arm-trusted-firmware, weight 0.35, weak), its Trusted Board Boot design authenticates all firmware images up to and including the normal world bootloader (https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/design/trusted-board-boot.rst, weight 0.27, weak), and Arm's PSA Trusted Boot and Firmware Update specification defines the architecture requirements (https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/PSA/DEN0072-PSA_TBFU_1.1-BETA0.pdf, weight 0.51, authoritative). OP-TEE is a Trusted Execution Environment companion to a non-secure Linux kernel using TrustZone (https://www.trustedfirmware.org/projects/op-tee/, weight 0.39, weak), with its secure boot documentation describing TF-A authentication framework verification of OP-TEE (https://optee.readthedocs.io/en/latest/architecture/secure_boot.html, weight 0.41, weak).
+
+ADR-020 (source doc, Proposed, post-launch) keeps the boot path unbespoke: on ARM64, U-Boot provides the UEFI environment and chainloads the same systemd-boot plus UKI artifacts that x86-64 uses, with Secure Boot variables stored through EDK2 StandaloneMM running as an OP-TEE module and backed by RPMB on production boards. ADR-021 (source doc, status Accepted, post-launch) goes further and makes U-Boot the sole UEFI firmware provider on ARM64, rejecting edk2-rk3588 as a BL33 replacement, because U-Boot integrates with TF-A and OP-TEE, provides EFI_LOADER, supports Secure Boot and TCG2 measurement, has board defconfigs for target boards, and keeps the Linux and Device Tree path aligned. The U-Boot UEFI documentation corroborates that UEFI has become the default boot interface on AArch64 and that the StandAloneMM binary comes from EDK2 (https://docs.u-boot-project.org/en/latest/develop/uefi/uefi.html, weight 0.41, weak; stable mirror 0.41, weak). Linaro's work on protected UEFI variables with U-Boot corroborates the variable protection problem StandaloneMM addresses (https://www.linaro.org/blog/protected-uefi-variables-with-u-boot/, weight 0.24, weak). The rejected edk2-rk3588 project exists as an EDK2 UEFI implementation for RK3588 boards (https://github.com/edk2-porting/edk2-rk3588, weight 0.17, weak), which is exactly the alternative ADR-021 declined.
+
+## Two provisioning paths (ADR-019)
+
+ADR-019 (source doc, dated 2026-06-24, status Proposed, post-launch) supports two root-of-trust provisioning paths. Path A, fuses burnable and enforcing: an owner burned ROTPK hash in OTP or eFuse, full Trusted Board Boot, and BL1 rejecting any image that does not chain to it. Path B, no or locked or unburned fuses, measured plus attested: a software root via U-Boot FIT verified boot plus measured boot into the fTPM, with trust decided after boot by attestation and secret release. The doc's honest framing is the load-bearing sentence: Path B records what ran and can withhold secrets when measurements are wrong, but compromised code may execute long enough to measure itself; Path A is stronger. A 2026-07-11 amendment records that the RPi 5 remains Path B only because the Broadcom VideoCore firmware stays in the root chain, and RK3588 remains the preferred Path A family. (source doc)
+
+## Board selection (ADR-029)
+
+ADR-029 (source doc, dated 2026-07-16, status Accepted) makes the strategy concrete: Radxa ROCK 5B (RK3588) is the primary Path A production-root proof board, and ROCKPro64 (RK3399) is the supported secondary for bring-up and regression evidence. Rationale: RK3588 was already the preferred Path A family in ADR-019 and ADR-023, and ROCK 5B makes that preference actionable; a single primary board keeps ROTPK and fuse, RPMB, OP-TEE, StandaloneMM, fTPM NV, and U-Boot UEFI evidence from spreading across too many variants before the first proof completes; RK3399 exercises the older Rockchip secure world and U-Boot lineage but must not block the RK3588 proof. Artifact consequences: real hardware firmware workflows use explicit variant names `rock5b-rk3588` and `rockpro64-rk3399`, while the bootc OS image, `dev`, and `installer` tags stay board neutral, and board specific firmware tags (`firmware-rock5b-rk3588`, `firmware-rockpro64-rk3399`, with sha variants) are added only when real hardware payloads diverge from the QEMU/CI bundle. (source doc)
+
+## Sources considered
+
+| Source | Weight | Role |
+|---|---|---|
+| https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/PSA/DEN0072-PSA_TBFU_1.1-BETA0.pdf | 0.51 | PSA trusted boot specification |
+| https://optee.readthedocs.io/en/latest/architecture/secure_boot.html | 0.41 (weak) | OP-TEE secure boot |
+| https://docs.u-boot-project.org/en/latest/develop/uefi/uefi.html | 0.41 (weak) | U-Boot UEFI |
+| https://docs.u-boot-project.org/en/stable/develop/uefi/uefi.html | 0.41 (weak) | U-Boot UEFI stable |
+| https://www.trustedfirmware.org/projects/op-tee/ | 0.39 (weak) | OP-TEE overview |
+| https://www.trustedfirmware.org/ | 0.34 (weak) | Trusted Firmware overview |
+| https://github.com/ARM-software/arm-trusted-firmware | 0.35 (weak) | TF-A upstream |
+| https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/design/trusted-board-boot.rst | 0.27 (weak) | TBB design |
+| https://www.linaro.org/blog/protected-uefi-variables-with-u-boot/ | 0.24 (weak) | UEFI variable protection |
+| https://github.com/edk2-porting/edk2-rk3588 | 0.17 (weak) | rejected alternative record |
+| https://deepwiki.com/tianocore/edk2-platforms/8.2-secure-boot-and-standalonemm | 0.14 (weak, unused) | aggregator |
+| yubi-OS/yubiOS docs/ADR.md (source doc) | n/a | ADR-017 through ADR-023, ADR-029 text |

@@ -1,0 +1,192 @@
+{
+ "nn": "09",
+ "slug": "governance-version-tracking",
+ "scope": "ADR-016/028 plus the doc's process mechanics: status lifecycle (Accepted/Proposed/post-launch), amendment discipline, PINNED.md as digest source of truth, the 2026-07-11 planning cycle consistency rules, systemd v261 feature adoption and the RestrictFileSystemAccess correction.",
+ "queries_attempted": [
+  {
+   "query": "systemd v261 release swtpm ConditionSecurity measured-os",
+   "attempt": 1,
+   "raw_results": 33,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "privacywall",
+     "too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "systemd RestrictFileSystemAccess systemd.exec filesystem access restriction",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "privacywall",
+     "Suspended: too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "title": "Systemd 261 Lands with Cloud IMDS, TPM, and Network Updates - Linuxiac",
+   "url": "https://linuxiac.com/systemd-261-lands-with-cloud-imds-tpm-and-network-updates/",
+   "snippet": "TPM support receives several updates. Systemd 261 introduces ConditionSecurity=measured-os, a new unit condition that checks if the system booted with measured-boot semantics. This is similar to ConditionSecurity=measured-uki but is more generic and applies to systems where TPM functionality is provided at the OS level."
+  },
+  {
+   "title": "Systemd 261 Introduces Software TPM, Cloud Metadata Daemon, and OS ...",
+   "url": "https://portal.vyprsec.ai/stories/systemd-261-introduces-software-tpm-cloud-metadata-daemon-and-os-installer",
+   "snippet": "A new service, systemd-tpm2-swtpm.service, can run IBM's swtpm as a software TPM for systems that lack physical hardware, gated behind a kernel command line option. A new condition, ConditionSecurity=measured-os, checks whether a system booted with measured-boot semantics. systemd-stub now maintains a boot secret derived from a persistent EFI variable and passes it to the OS for fallback ..."
+  },
+  {
+   "title": "The systemd 261 release brings a software TPM, new OS installer",
+   "url": "https://cybernoz.com/the-systemd-261-release-brings-a-software-tpm-new-os-installer/",
+   "snippet": "A new condition, ConditionSecurity=measured-os, checks whether a system booted with measured-boot semantics. systemd-stub maintains a boot secret derived from a persistent EFI variable and passes it to the OS, for fallback codepaths where a local TPM is absent. systemd-boot now stores the prior boot loader binary as a fallback when installing a ..."
+  },
+  {
+   "title": "The systemd 261 release brings a software TPM, new OS installer",
+   "url": "https://www.helpnetsecurity.com/2026/06/22/systemd-261-released/",
+   "snippet": "A new condition, ConditionSecurity=measured-os, checks whether a system booted with measured-boot semantics. systemd-stub maintains a boot secret derived from a persistent EFI variable and passes ..."
+  },
+  {
+   "title": "systemd/systemd v261 on GitHub - NewReleases.io",
+   "url": "https://newreleases.io/project/github/systemd/systemd/release/v261",
+   "snippet": "New release systemd/systemd version v261 systemd v261 on GitHub."
+  },
+  {
+   "title": "Systemd 261 Adds Software TPM and New OS Installer",
+   "url": "https://digitrendz.blog/tech-news/207338/systemd-261-adds-software-tpm-and-new-os-installer/",
+   "snippet": "A new condition, ConditionSecurity=measured-os, checks whether the system booted with measured-boot semantics. systemd-stub now maintains a boot secret derived from a persistent EFI variable, passing it to the OS as a fallback when no local TPM is available. systemd-boot stores the prior boot loader binary as a fallback when installing a new ..."
+  },
+  {
+   "title": "Is there a way to control filesystem access with systemd?",
+   "url": "https://serverfault.com/questions/847156/is-there-a-way-to-control-filesystem-access-with-systemd",
+   "snippet": "Apr 28, 2017 \u00b7 So I'm diving into the intricacies of systemd and it's ability to meter resources with cgroups like cpu, io, and memory. Is there also a way to control the directories a process has access to with systemd? For instance, /usr/bin is generally marked o+rX, and I'd like a webserver process to be locked out of that directory."
+  },
+  {
+   "title": "Can I restrict a process' access to the filesystem using `systemd-run ...",
+   "url": "https://unix.stackexchange.com/questions/724309/can-i-restrict-a-process-access-to-the-filesystem-using-systemd-run-user",
+   "snippet": "If possible, I would like to restrict the resulting rsync process on the server to only be able to modify certain folders. I realize that there are other ways to achieve this specifically for rsync, but I'm interested in a general answer about systemd-run 's features."
+  },
+  {
+   "title": "How to Use systemd ProtectSystem and ProtectHome Directives on Ubuntu",
+   "url": "https://oneuptime.com/blog/post/2026-03-02-use-systemd-protectsystem-protecthome-directives-ubuntu/view",
+   "snippet": "Mar 2, 2026 \u00b7 A detailed guide to systemd's ProtectSystem and ProtectHome directives on Ubuntu, explaining how to use them to restrict service filesystem access and protect sensitive directories."
+  },
+  {
+   "title": "Bing Homepage quiz task not triggering? : r/MicrosoftRewards - Reddit",
+   "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8i6lc/bing_homepage_quiz_task_not_triggering/",
+   "snippet": "Dec 4, 2021 \u00b7 Onn the cheetah page you described, look carefully under the first article and there is a take quiz button."
+  },
+  {
+   "title": "kernel-command-line(7) - Linux manual page",
+   "url": "https://man7.org/linux/man-pages/man7/kernel-command-line.7.html",
+   "snippet": "systemd.restrict_filesystem_access=. Controls the RestrictFileSystemAccess= execution enforcement. policy. For details, see systemd-system.conf(5). Added in version 261."
+  },
+  {
+   "title": "systemd-system.conf(5) - Linux manual page",
+   "url": "https://man7.org/linux/man-pages/man5/systemd-system.conf.5.html",
+   "snippet": "When run as a system instance, systemd interprets the configuration file system.conf and the files in system.conf.d directories; when run as a user instance, it interprets the configuration file user.conf (in order of priority, in the home\u2026"
+  }
+ ],
+ "outcome": "authored"
+}

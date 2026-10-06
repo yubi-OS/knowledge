@@ -1,0 +1,192 @@
+{
+ "nn": "02",
+ "slug": "disk-encryption-unlock",
+ "scope": "ADR-003/009/011: LUKS2 + systemd-cryptenroll FIDO2 unlock, PIN policy and recovery key, systemd-homed per-user LUKS2 homes, HMAC-secret update survivability vs TPM2 PCR re-enrollment.",
+ "queries_attempted": [
+  {
+   "query": "systemd-cryptenroll fido2-device auto LUKS2 token HMAC-secret",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "CAPTCHA"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "privacywall",
+     "Suspended: timeout"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "systemd-homed per-user LUKS2 FIDO2 home directory btrfs suspend",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "CAPTCHA"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "privacywall",
+     "timeout"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "title": "systemd-cryptenroll - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+   "snippet": "systemd-cryptenroll allows enrolling smartcards, FIDO2 tokens and Trusted Platform Module security chips into LUKS devices, as well as regular passphrases. These devices are later unlocked by systemd-cryptsetup@.service, using the enrolled tokens."
+  },
+  {
+   "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+   "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+   "snippet": "sudo systemd-cryptenroll --tpm2-device=auto /dev/sdc1. Enroll FIDO2 HMAC token.LUKS2 volume (not LUKS1) \u2014 confirm with cryptsetup luksDump. Root or sudo. An existing unlock secret (passphrase or key file) for every enrollment except --wipe-slot."
+  },
+  {
+   "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+   "url": "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+   "snippet": "It's only purpose is to make it easy to enroll your security token/chip of choice into an encrypted volume. It works with any LUKS2 volume, and embeds a tiny bit of meta-information into the LUKS2 header with parameters necessary for the\u2026"
+  },
+  {
+   "title": "Stop Typing LUKS Passphrases at Every Boot: Practical systemd ...",
+   "url": "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+   "snippet": "4 days ago \u00b7 systemd-cryptenroll is the operator tool for binding LUKS2 volumes to hardware factors systemd already understands at boot: TPM2 chips, FIDO2 tokens (hmac-secret), PKCS#11 smartcards, plus computer-generated recovery keys. Unlock metadata lives in the LUKS2 JSON token area. At boot, systemd-cryptsetup + /etc/crypttab consume it."
+  },
+  {
+   "title": "systemd-cryptenroll",
+   "url": "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+   "snippet": "systemd-cryptenroll is a tool for enrolling hardware security tokens and devices into a LUKS2 encrypted volume, which may then be used to unlock the volume during boot."
+  },
+  {
+   "title": "Football - University of Oregon Athletics - GoDucks.com",
+   "url": "https://goducks.com/sports/football",
+   "snippet": "5 days ago \u00b7 Marcus Mariota led the Commanders to an upset win over the Seahawks. Here's how it went down. 6 Offense stats \u2026"
+  },
+  {
+   "title": "systemd-homed - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-homed",
+   "snippet": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+  },
+  {
+   "title": "systemd-homed: Portable Encrypted Home Directories",
+   "url": "https://sumguy.com/systemd-homed-portable-homes/",
+   "snippet": "Aug 7, 2026 \u00b7 systemd-homed turns your home dir into a portable LUKS-encrypted blob. Move it between machines, unlock with FIDO2, and own your own data."
+  },
+  {
+   "title": "systemd-homed: portable, encrypted home directories",
+   "url": "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+   "snippet": "Jan 6, 2023 \u00b7 User home directories as encrypted LUKS images or btrfs subvolumes that can be picked up and moved between machines. Per-user encryption, GPG-card / FIDO2 auth, and the user record carrying its own metadata."
+  },
+  {
+   "title": "How to force a web browser NOT to cache images - Stack Overflow",
+   "url": "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+   "snippet": "Spent days trying to get Chromium based app to stop caching images. The ?nocache with time echo solved the issue. Thank you!"
+  },
+  {
+   "title": "Practical Encrypted Home Directories with systemd-homed on Linux",
+   "url": "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+   "snippet": "The result: portable .home image files you can copy to another machine, per-user encryption that locks on logout or suspend, and a cleaner separation from the host system. Why Use systemd-homed? Encryption by default (LUKS or fscrypt) for each user. Portability: A single .home file (or directory) contains the home + identity."
+  },
+  {
+   "title": "Allow pam_systemd_homed to be forced to ask for FIDO2 pin \u00b7 Issue...",
+   "url": "https://ghostarchive.org/archive/AxynM",
+   "snippet": "However from the code I understand this would mean that I would have two FIDO credentials and I will be prompted for test of user presence twice. Once to authenticate with pam-u2f and once to unlock the LUKS2 container in pam_systemd_homed."
+  }
+ ],
+ "outcome": "authored"
+}

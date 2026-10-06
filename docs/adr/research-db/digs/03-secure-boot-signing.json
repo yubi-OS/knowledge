@@ -1,0 +1,194 @@
+{
+ "nn": "03",
+ "slug": "secure-boot-signing",
+ "scope": "ADR-002/008: YubiKey PIV slot 9c via PKCS#11 over CCID for Secure Boot UKI signing, systemd-sbsign over legacy sbsigntools, PCR 11 signature co-generation, pcscd requirement.",
+ "queries_attempted": [
+  {
+   "query": "systemd-sbsign PKCS11 UKI signing systemd v257",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "CAPTCHA"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "timeout"
+    ],
+    [
+     "privacywall",
+     "Suspended: timeout"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "YubiKey PIV slot 9c PKCS#11 signing UEFI Secure Boot db",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 0,
+   "unresponsive_engines": null
+  },
+  {
+   "query": "yubico-piv-tool PIV slot 9c digital signature certificate management",
+   "attempt": 2,
+   "raw_results": 37,
+   "kept": 6
+  },
+  {
+   "query": "systemd-sbsign secure boot unified kernel image pkcs11 YubiKey",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "seed query 2 'YubiKey PIV slot 9c PKCS#11 signing UEFI Secure Boot db' returned 0 raw results; dig thin for a signing-toolchain doc",
+   "new_queries": [
+    "yubico-piv-tool PIV slot 9c digital signature certificate management",
+    "systemd-sbsign secure boot unified kernel image pkcs11 YubiKey"
+   ]
+  }
+ ],
+ "results_kept": [
+  {
+   "title": "Secure Boot and Signing | systemd/mkosi | DeepWiki",
+   "url": "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+   "snippet": "Secure Boot is a UEFI firmware security feature that validates the cryptographic signatures of bootloaders and kernels before executing them. mkosi handles the complete signing workflow, from development environments with local key pairs to production builds with hardware security modules (HSMs) or remote signing services."
+  },
+  {
+   "title": "systemd-sbsign",
+   "url": "https://www.freedesktop.org/software/systemd/man/257/systemd-sbsign.html",
+   "snippet": "The --private-key= option takes a path or a URI that will be passed to the OpenSSL engine or provider, as specified by --private-key-source= as a \" type:name \" tuple, such as \" engine:pkcs11 \". The specified OpenSSL signing engine or provider will be used to sign the PE binary. Added in version 257. -h, --help \u00b6 Print a short help text and exit."
+  },
+  {
+   "title": "systemd-sbsign",
+   "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html",
+   "snippet": "The --private-key= option takes a path or a URI that will be passed to the OpenSSL engine or provider, as specified by --private-key-source= as a \" type:name \" tuple, such as \" engine:pkcs11 \". The specified OpenSSL signing engine or provider will be used to sign the PE binary. Added in version 257. --prepare-offline-signing \u00b6"
+  },
+  {
+   "title": "Unified kernel image - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Unified_kernel_image",
+   "snippet": "Unified kernel image A unified kernel image (UKI) is a single executable which can be booted directly from UEFI firmware, or automatically sourced by boot loaders with little or no configuration. It is the combination of a UEFI boot stub program like systemd-stub (7), a Linux kernel image, an initramfs, and further resources in a single UEFI PE ..."
+  },
+  {
+   "title": "SO3 2- Lewis Structure - How to Draw the Dot Structure for SO3 2 ...",
+   "url": "https://www.thegeoexchange.org/chemistry/bonding/Lewis-Structures/SO32-lewis-structure.html",
+   "snippet": "Let's do the SO3 2- Lewis structure. For the SO3 2- compound, we have 26 total valence electrons, and that includes these two \u2026"
+  },
+  {
+   "title": "Systemd 257 released [LWN.net]",
+   "url": "https://lwn.net/Articles/1001657/",
+   "snippet": "Systemd 257 has been released.bootctl, systemd-keyutil, systemd-measure, systemd-repart, and. systemd-sbsign gained a new --certificate-source switch that allows. loading the X.509 certificate from an OpenSSL provider instead of a. file system path. *"
+  },
+  {
+   "title": "Certificates: PIV \u2014 Yubico Authenticator User Guide documentation",
+   "url": "https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/piv-certificates.html",
+   "snippet": "The PIN, PUK, and Management Key are essential to the functionality of the YubiKey's PIV application. The PIN is a 6-8 character value (default: 123456) that protects the YubiKey's PIV slot credentials. It is required when performing operations such as authentication, encryption/decryption, and digital signature creation."
+  },
+  {
+   "title": "Yubico PIV Tool User Guide",
+   "url": "https://docs.yubico.com/software/yubikey/tools/pivtool/index.html",
+   "snippet": "Yubico PIV Tool User Guide Contents Introduction PIV Standard PIV Tool Design PIV Usage Guides General Information Software License Set up PIV Tool Preparing a YubiKey for Real Use Secure Channel Communication Building on POSIX platforms Building on Windows Coverage Portability Card Holder Unique Identifier PIV Tool Common Tasks YubiKey ..."
+  },
+  {
+   "title": "yubico-piv-tool: Tool for managing Personal Identity Verificatio\u2026",
+   "url": "https://www.mankier.com/1/yubico-piv-tool",
+   "snippet": "yubico-piv-tool - Man Page. Tool for managing Personal Identity Verification credentials on Yubikeys.Compress a large certificate using GZIP before import (default=off). --global. Reset the whole device over all applications (default=off)."
+  },
+  {
+   "title": "YubiKey Software Downloads | Yubico",
+   "url": "https://www.yubico.com/support/download/",
+   "snippet": "End-user tools YubiKey Manager Manage pin codes, configure FIDO2, OTP and PIV functionality, see firmware version and more. Works with any currently supported YubiKey."
+  },
+  {
+   "title": "Yubico PIV Tool",
+   "url": "https://developers.yubico.com/yubico-piv-tool/",
+   "snippet": "Yubico PIV Tool Introduction The Yubico PIV tool is used for interacting with the Personal Identity Verification (PIV) application on a YubiKey. With it you may generate keys on the device, importing keys and certificates, and create certificate requests, and other operations. A shared library and a command-line tool is included."
+  },
+  {
+   "title": "PIV certificate slots - Yubico",
+   "url": "https://developers.yubico.com/PIV/Introduction/Certificate_slots.html",
+   "snippet": "A PIV-enabled YubiKey NEO holds 4 distinct slots for certificates and a YubiKey 4 & 5 holds 24, as specified in the PIV standards document. Each of these slots is capable of holding an X.509 certificate, together with its accompanying private key."
+  },
+  {
+   "title": "Secure Boot and Unified Kernel Images - mylinux.work",
+   "url": "https://mylinux.work/guides/secure-boot-uki/",
+   "snippet": "Secure Boot and Unified Kernel Images guide \u2014 UEFI Secure Boot enrollment, UKI with systemd-ukify, sbsign, measured boot, TPM2 PCR policy, MOK management, kernel lockdown, RHEL and EL 10 defaults, and custom key chains"
+  },
+  {
+   "title": "Boot signed Linux with no bootloader config: unified kernel images and ...",
+   "url": "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+   "snippet": "A Unified Kernel Image is a single PE-format EFI binary that bundles the kernel, initrd, kernel command line, OS release metadata, and an optional splash into one file that UEFI can execute directly and Secure Boot can sign as a whole."
+  },
+  {
+   "title": "systemd-sbsign - freedesktop.org",
+   "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-sbsign.html",
+   "snippet": "Set the Secure Boot private key and certificate for use with the sign verb. The --certificate= option takes a path to a PEM-encoded X.509 certificate or a URI that's passed to the OpenSSL provider configured with --certificate-source."
+  },
+  {
+   "title": "systemd-boot - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Systemd-boot",
+   "snippet": "systemd-boot(7), previously called gummiboot (German for \"rubber dinghy\") and sometimes referred to as sd-boot, is an easy-to-configure UEFI boot manager. It provides a textual menu to select the boot entry and an editor for the kernel command line."
+  },
+  {
+   "title": "ChatGPT: Chat, Work, Create & Code with AI",
+   "url": "https://chatgpt.com/",
+   "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code\u2014all in one place. Get started for free or \u2026"
+  },
+  {
+   "title": "Unified kernel image - Gentoo wiki",
+   "url": "https://emirror.d0a.io/wiki/wiki.gentoo.org/wiki/Unified_kernel_image.html",
+   "snippet": "A unified kernel image requires a stub loader, e.g. systemd-stub. Currently systemd-stub is available for amd64, x86 and arm64.In sys-kernel/gentoo-kernel and sys-kernel/vanilla-kernel this option is enabled when the secureboot USE flag is enabled. It may also be configured manually"
+  }
+ ],
+ "outcome": "authored"
+}

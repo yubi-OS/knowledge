@@ -1,0 +1,184 @@
+{
+ "nn": "06",
+ "slug": "build-substrate-supply-chain",
+ "scope": "ADR-014/015/022/026/030: rootless Docker Buildx over Podman, digest-pinned fedora-bootc base, Docker Hardened Images with rootless inner daemon, yubiOS-bake.hcl plus OPA/Rego Build Policies, per-artifact tags on 0mniteck/yubios, reproducibility gates.",
+ "queries_attempted": [
+  {
+   "query": "docker buildx build policies OPA Rego supply chain provenance attestation",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "rootless dockerd Docker Hardened Images CI SLSA provenance reproducible builds digest pinning",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "title": "Build attestations | Docker Docs",
+   "url": "https://docs.docker.com/build/metadata/attestations/",
+   "snippet": "You can also disable default provenance attestations by setting the BUILDX_NO_DEFAULT_ATTESTATIONS environment variable. See Provenance attestation for more details about provenance modes and options.You can also disable default provenance attestations by setting the BUILDX_NO_DEFAULT_ATTESTATIONS environment variable. See Provenance attestation for more details about provenance modes and options."
+  },
+  {
+   "title": "Validating build inputs with policies | Docker Docs",
+   "url": "https://docs.docker.com/build/policies/",
+   "snippet": "How policies work When you run docker buildx build, Buildx: Resolves all build inputs (images, Git repos, HTTP downloads) Looks for a policy file matching your Dockerfile name (e.g., Dockerfile.rego) Evaluates each input against the policy before the build starts Allows the build to proceed only if all inputs pass the policy Policies are written in Rego (Open Policy Agent's policy language ...How "
+  },
+  {
+   "title": "Validating Docker Builds with .rego Policies: Because \"It Works on My ...",
+   "url": "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+   "snippet": "Wrapping Up Docker build policies with .rego files are a powerful addition to your supply chain security toolkit. They're declarative, testable, and integrate seamlessly into existing build workflows. Whether you start with a simple registry allowlist or go full paranoid mode with pinned digests and signed tags, the important thing is to start."
+  },
+  {
+   "title": "Build attestations | Docker Docs",
+   "url": "https://liudonghua123.github.io/docker-docs/build/metadata/attestations/",
+   "snippet": "When you build an image with docker buildx build, you can add attestation records to the resulting image using the --provenance and --sbom options. You can opt in to add either the SBOM or provenance attestation type, or both.When you build an image with docker buildx build, you can add attestation records to the resulting image using the --provenance and --sbom options. You can opt in to add eith"
+  },
+  {
+   "title": "Provenance attestations | Docker Docs",
+   "url": "https://liudonghua123.github.io/docker-docs/build/metadata/attestations/slsa-provenance/",
+   "snippet": "Create provenance attestations To create a provenance attestation, pass the --attest type=provenance option to the docker buildx build command: ... Alternatively, you can use the shorthand --provenance=true option instead of --attest type=provenance. To specify the mode parameter using the shorthand option, use: --provenance=mode=max.Create provenance attestations To create a provenance attestatio"
+  },
+  {
+   "title": "Docker | Secure Sandboxes for AI Agents",
+   "url": "https://www.docker.com/",
+   "snippet": "Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply chain \u2026"
+  },
+  {
+   "title": "Image provenance | Docker Docs",
+   "url": "https://docs.docker.com/dhi/explore/security-concepts/provenance/",
+   "snippet": "Learn how build provenance metadata helps trace the origin of Docker Hardened Images and support compliance with SLSA.Learn how build provenance metadata helps trace the origin of Docker Hardened Images and support compliance with SLSA."
+  },
+  {
+   "title": "Run the Docker daemon as a non-root user (Rootless mode)",
+   "url": "https://docs.docker.com/engine/security/rootless/",
+   "snippet": "This is similar to userns-remap mode, except that with userns-remap mode, the daemon itself is running with root privileges, whereas in rootless mode, both the daemon and the container are running without root privileges.This is similar to userns-remap mode, except that with userns-remap mode, the daemon itself is running with root privileges, whereas in rootless mode, both the daemon and the cont"
+  },
+  {
+   "title": "Docker Hardened Images - mylinux.work",
+   "url": "https://mylinux.work/guides/docker-hardened-images/",
+   "snippet": "Docker Hardened Images guide \u2014 near-zero CVE base images now free for all, SBOMs and SLSA provenance built in, distroless comparisons, Chainguard alternatives, how to adopt DHI in CI/CD, migration from standard images, and practical security assessmentDocker Hardened Images guide \u2014 near-zero CVE base images now free for all, SBOMs and SLSA provenance built in, distroless comparisons, Chainguard al"
+  },
+  {
+   "title": "Hardened Images | Docker",
+   "url": "https://www.docker.com/products/hardened-images/",
+   "snippet": "These images provide trusted, ready-to-deploy building blocks on proven Linux foundations such as Alpine and Debian, and with an Apache 2.0 license, they remain fully open source and free for anyone to use."
+  },
+  {
+   "title": "Docker Image Security Best Practices: SBOM, Non-Root, Provenance",
+   "url": "https://bell-sw.com/blog/docker-image-security-best-practices-for-production/",
+   "snippet": "Learn how to secure Docker container images: minimal base images, non-root containers, SBOM, provenance attestation, and host hardening. Get practical tips.Learn how to secure Docker container images: minimal base images, non-root containers, SBOM, provenance attestation, and host hardening. Get practical tips."
+  },
+  {
+   "title": "Clover Time Codes (October 2026) [BETA RELEASE] \u2014 Free Big Chest",
+   "url": "https://progameguides.com/roblox/clover-time-codes/",
+   "snippet": "4 days ago \u00b7 Check out our updated list of Clover Time codes for October 2026 to claim free spins, currency, and powerful boosts to \u2026"
+  }
+ ],
+ "outcome": "authored"
+}

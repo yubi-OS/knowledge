@@ -1,0 +1,252 @@
+{
+ "topic": "the yubiOS Architecture Decision Record spine (docs/ADR.md): what each recorded decision decides, context, rejected alternatives, supersession chains, and how the ADR set composes into the trust architecture",
+ "ground_source": "yubi-OS/yubiOS docs/ADR.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "trust-anchor-identity",
+   "scope": "ADR-001/004/005: YubiKey 5 series as sole trust anchor, ed25519-sk resident SSH keys, pam-u2f 1.3.1 floor for sudo/login, recovery and single-point-of-failure tradeoffs.",
+   "seed_queries": [
+    "YubiKey FIDO2 PIV OATH CTAP2 open specification trust anchor hardware key",
+    "pam-u2f CVE-2025-23013 YSA-2025-01 authentication bypass advisory"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "disk-encryption-unlock",
+   "scope": "ADR-003/009/011: LUKS2 + systemd-cryptenroll FIDO2 unlock, PIN policy and recovery key, systemd-homed per-user LUKS2 homes, HMAC-secret update survivability vs TPM2 PCR re-enrollment.",
+   "seed_queries": [
+    "systemd-cryptenroll fido2-device auto LUKS2 token HMAC-secret",
+    "systemd-homed per-user LUKS2 FIDO2 home directory btrfs suspend"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "secure-boot-signing",
+   "scope": "ADR-002/008: YubiKey PIV slot 9c via PKCS#11 over CCID for Secure Boot UKI signing, systemd-sbsign over legacy sbsigntools, PCR 11 signature co-generation, pcscd requirement.",
+   "seed_queries": [
+    "systemd-sbsign PKCS11 UKI signing systemd v257",
+    "YubiKey PIV slot 9c PKCS#11 signing UEFI Secure Boot db"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "immutable-root-partitioning",
+   "scope": "ADR-006/007/010/012: dual mkosi and bootc build paths, composefs over dm-verity erofs, Discoverable Partitions Specification with no /etc/fstab, systemd-repart first-boot partitioning and on-device key generation.",
+   "seed_queries": [
+    "composefs dm-verity erofs immutable root filesystem UKI roothash",
+    "Discoverable Partitions Specification systemd-gpt-auto-generator GPT partition type UUIDs"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "updates-ab-lifecycle",
+   "scope": "ADR-013/032: systemd-sysupdate A/B updates with Boot Assessment counters, 4-artifact update set, kernel+rootfs split as first-class principle, bootc BLSConfig follow-ups.",
+   "seed_queries": [
+    "systemd-sysupdate A/B updates automatic boot assessment boot counter",
+    "bootc composefs BLSConfig UKI digest kernel rootfs split"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "build-substrate-supply-chain",
+   "scope": "ADR-014/015/022/026/030: rootless Docker Buildx over Podman, digest-pinned fedora-bootc base, Docker Hardened Images with rootless inner daemon, yubiOS-bake.hcl plus OPA/Rego Build Policies, per-artifact tags on 0mniteck/yubios, reproducibility gates.",
+   "seed_queries": [
+    "docker buildx build policies OPA Rego supply chain provenance attestation",
+    "rootless dockerd Docker Hardened Images CI SLSA provenance reproducible builds digest pinning"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "arm64-secure-world",
+   "scope": "ADR-017/018/019/020/021/023/029: ARM64 as primary platform, TF-A + OP-TEE + fTPM + U-Boot secure-world stack, Path A fuse-enforcing vs Path B measured/attested provisioning, ROCK 5B primary board selection.",
+   "seed_queries": [
+    "ARM Trusted Firmware Trusted Board Boot OP-TEE fTPM ARM64 secure boot chain",
+    "U-Boot UEFI Secure Boot EDK2 StandaloneMM RPMB RK3588"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "gpu-trust-boundary",
+   "scope": "ADR-031/033: GPU trust boundary with virtio-gpu default and vfio-user preferred, IOMMU-gated PCI passthrough gate, 4-tier misbehavior-triggered cutoff ladder with state preservation.",
+   "seed_queries": [
+    "vfio-user virtio-gpu VM GPU device mediation trust boundary",
+    "vfio-pci IOMMU group isolation DMA passthrough security risk"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "governance-version-tracking",
+   "scope": "ADR-016/028 plus the doc's process mechanics: status lifecycle (Accepted/Proposed/post-launch), amendment discipline, PINNED.md as digest source of truth, the 2026-07-11 planning cycle consistency rules, systemd v261 feature adoption and the RestrictFileSystemAccess correction.",
+   "seed_queries": [
+    "systemd v261 release swtpm ConditionSecurity measured-os",
+    "systemd RestrictFileSystemAccess systemd.exec filesystem access restriction"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "endpoint": "https://api.defapi.org/api/v1/decisions (DefAPI direct, speed optimization 2026-10-06)",
+  "answers": {
+   "t03": {
+    "type": "score",
+    "score": 0.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.45,
+     "1": 0.17,
+     "2": 0.38
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.97,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.39,
+     "1": 0.26,
+     "2": 0.35
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.19,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.33,
+     "1": 0.15,
+     "2": 0.52
+    },
+    "confidence": 0
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.05,
+     "2": 0.75
+    },
+    "confidence": 0.32
+   },
+   "t02": {
+    "type": "score",
+    "score": 0.86,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.46,
+     "1": 0.23,
+     "2": 0.31
+    },
+    "confidence": 0
+   },
+   "t04": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.16,
+     "2": 0.42
+    },
+    "confidence": 0
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.09,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.36,
+     "1": 0.18,
+     "2": 0.46
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.4,
+     "1": 0.27,
+     "2": 0.33
+    },
+    "confidence": 0
+   },
+   "t01": {
+    "type": "score",
+    "score": 0.91,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.48,
+     "1": 0.13,
+     "2": 0.39
+    },
+    "confidence": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1626,
+   "output_tokens": 139,
+   "cost": 0.000136584
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ],
+  "interpretation": "jev-1.13 returns a continuous 0-2 score. Applied rule: score < 0.5 dropped, 0.5-1.0 marginal (keep only if the dig is strong), > 1.0 load-bearing. No subtopic scored below 0.5; marginal-tier subtopics (t01,t02,t03,t05,t08) proceed to dig and their dig strength decides."
+ }
+}
