@@ -1,0 +1,29 @@
+{
+ "nn": 5,
+ "slug": "readiness-gates",
+ "scope": "Gates 0 through 3: evidence requirements, allowed language, and the enforcement rules per gate.",
+ "queries_attempted": [
+  {
+   "query": "U-Boot UEFI Secure Boot measured boot TCG2 event log ARM64",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 0
+  },
+  {
+   "query": "OP-TEE fTPM RPMB secure boot ARM64 trust chain",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": 0
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-redo",
+   "reason": "first weighting pass via DefAPI direct (batches 1-4, 2026-10-06T09:52Z) returned inverted-looking noul values (all 0.02-0.34) because instructions deviated from the canonical parent-brief phrasing; verified against steady-orbit clef control probe (bootc GitHub 0.8772, brandfetch 0.148) and a matched DefAPI control (0.79, 0.11); rescored all 48 results with canonical phrasing",
+   "new_queries": "same 48 results, canonical noul instruction text"
+  }
+ ],
+ "results_kept": [],
+ "outcome": "authored"
+}

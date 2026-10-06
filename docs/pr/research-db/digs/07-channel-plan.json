@@ -1,0 +1,29 @@
+{
+ "nn": 7,
+ "slug": "channel-plan",
+ "scope": "Owned channels with cadences, earned and community channels with per-outlet timing rules, and the 6 pitch angles keyed to minimum gates.",
+ "queries_attempted": [
+  {
+   "query": "LWN.net story submission guidelines contact editorial FAQ",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 0
+  },
+  {
+   "query": "Hacker News Show HN submission guidelines self-promotion",
+   "attempt": 1,
+   "raw_results": 61,
+   "kept": 0
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [
+  {
+   "attempt": "weighting-redo",
+   "reason": "first weighting pass via DefAPI direct (batches 1-4, 2026-10-06T09:52Z) returned inverted-looking noul values (all 0.02-0.34) because instructions deviated from the canonical parent-brief phrasing; verified against steady-orbit clef control probe (bootc GitHub 0.8772, brandfetch 0.148) and a matched DefAPI control (0.79, 0.11); rescored all 48 results with canonical phrasing",
+   "new_queries": "same 48 results, canonical noul instruction text"
+  }
+ ],
+ "results_kept": [],
+ "outcome": "authored"
+}
