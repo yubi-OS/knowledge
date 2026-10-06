@@ -1,0 +1,56 @@
+{
+ "nn": "06",
+ "slug": "systemd-hardening-runtime",
+ "scope": "B-HARDENING-RUNTIME: static audit complete, runtime evidence pending; RestrictFileSystems vs RestrictFileSystemAccess and the v261 correction",
+ "queries_attempted": [
+  {
+   "query": "systemd RestrictFileSystemAccess v261 new option",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "systemd-analyze verify security Bats unit tests services",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "systemd v261 RestrictFileSystemAccess BPF LSM release",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "original dig returned noise (off-topic high-weight outliers); v261 RestrictFileSystemAccess sub-claim needed a real source",
+   "new_queries": [
+    "systemd v261 RestrictFileSystemAccess BPF LSM release"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://newreleases.io/project/github/systemd/systemd/release/v261",
+  "https://www.phoronix.com/news/systemd-261",
+  "https://daily.dev/posts/systemd-261-released-with-new-systemd-sysinstall-os-installer-imdsd-storagectl-glptjyagp",
+  "https://en.wikipedia.org/wiki/Frank_Sinatra",
+  "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+  "https://mastodon.social/@pid_eins/116792552048067669",
+  "https://kalexnolasco.github.io/systemd-client/guide/analyze/",
+  "https://www.man7.org/linux/man-pages/man1/systemd-analyze.1.html",
+  "https://dev.to/lyraalishaikh/stop-shipping-broken-systemd-units-practical-systemd-analyze-verify-for-linux-services-24dk",
+  "https://en.m.wikipedia.org/wiki/Pink_Floyd",
+  "https://manpages.ubuntu.com/manpages/focal/man1/systemd-analyze.1.html",
+  "https://man7.org/linux/man-pages/man1/systemd-analyze.1.html",
+  "https://newreleases.io/project/github/systemd/systemd/release/v261",
+  "https://github.com/systemd/systemd/issues/32968",
+  "https://www.phoronix.com/news/systemd-261",
+  "https://github.com/systemd/systemd/releases?after=v241-rc2",
+  "https://docs.kernel.org/bpf/prog_lsm.html",
+  "https://www.mitsubishicars.com/"
+ ],
+ "outcome": "authored"
+}

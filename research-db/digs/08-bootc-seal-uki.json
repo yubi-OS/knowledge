@@ -1,0 +1,75 @@
+{
+ "nn": "08",
+ "slug": "bootc-seal-uki",
+ "scope": "B-BOOTC-SEAL: the artifact split (signed UKI as OCI artifact), the BLSConfig wiring gap in bootc 1.16.3, and the Secure Boot / negative-tamper-boot gate",
+ "queries_attempted": [
+  {
+   "query": "bootc split-kernel-and-rootfs BLSConfig install",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "composefs UKI signed Secure Boot container image boot",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "composefs verified boot immutable root fedora bootc",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "unified kernel image UKI systemd-boot secure boot signing",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "original dig thin: best weight 0.41, composefs/verified-boot leg unbacked",
+   "new_queries": [
+    "composefs verified boot immutable root fedora bootc"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "complementary redo for the UKI/Secure Boot leg after 2r",
+   "new_queries": [
+    "unified kernel image UKI systemd-boot secure boot signing"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/bootc-dev/bootc",
+  "https://jmarrero.github.io/bootc/bootc-install.html",
+  "https://www.mankier.com/8/bootc-container-split-kernel-and-rootfs",
+  "https://docs.fedoraproject.org/en-US/bootc/filesystem/",
+  "https://github.com/bootc-dev/agentic-workflows-ci-sandbox/blob/main/docs/src/man/bootc-container-split-kernel-and-rootfs.8.md",
+  "https://medium.com/@jobinjohn819/fixing-boot-issues-by-configuring-the-bls-flag-on-linux-systems-9d3ee18cc92a",
+  "https://fedoramagazine.org/sealed-atomic-desktops-test-images/",
+  "https://planet.kde.org/siosms-blog-2026-04-27-sealed-fedora-atomic-desktop-bootable-container-images/",
+  "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+  "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+  "https://www.ramforum.com/threads/totalflow-mufflers-nice-price-or-crack-pipe.160793/",
+  "https://github.com/SRugina/secureblue-sealed",
+  "https://docs.fedoraproject.org/en-US/bootc/filesystem/",
+  "https://docs.fedoraproject.org/en-US/fedora-coreos/composefs/",
+  "https://jmarrero.github.io/bootc/filesystem.html",
+  "https://discussion.fedoraproject.org/t/testing-bootc-confused/196526",
+  "https://www.crunchyroll.com/",
+  "https://fedoraproject.org/wiki/Changes/ComposefsAtomicDesktops",
+  "https://wiki.archlinux.org/title/Unified_kernel_image",
+  "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+  "https://edu4rdshl.dev/posts/uki-secure-boot-on-archlinux-systemd-boot-walkthrough/",
+  "https://mylinux.work/guides/secure-boot-uki/",
+  "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+  "https://support.microsoft.com/en-us/outlook/how-do-i-consolidate-unify-my-email-accounts-in-my-inbox"
+ ],
+ "outcome": "authored"
+}
