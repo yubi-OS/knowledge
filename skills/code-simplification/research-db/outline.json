@@ -1,0 +1,254 @@
+{
+ "topic": "the code-simplification skill",
+ "ground_source": "yubi-OS/yubiOS skills/code-simplification/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "overview-and-trigger-scopes",
+   "scope": "The skill's goal (clarity over fewer lines, the new-team-member test), when to use it, and when NOT to use it.",
+   "seed_queries": [
+    "behavior preserving refactoring when to refactor readability",
+    "code refactoring anti-patterns when not to refactor"
+   ],
+   "redo_queries": [
+    "when to refactor code rule of three",
+    "refactoring without changing behavior tests"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "02",
+   "slug": "five-principles",
+   "scope": "The Five Principles: preserve behavior exactly, follow project conventions, prefer clarity over cleverness, maintain balance against over-simplification, scope to what changed.",
+   "seed_queries": [
+    "behavior preserving refactoring definition safety net tests",
+    "clever code vs readable code maintainability research"
+   ],
+   "redo_queries": [
+    "Fowler refactoring definition behavior preserving",
+    "code readability versus cleverness maintainability"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "03",
+   "slug": "simplification-process",
+   "scope": "The 4-step process: understand before touching (Chesterton's Fence), identify opportunities, apply changes incrementally with tests after each, verify the result; the Rule of 500.",
+   "seed_queries": [
+    "Chesterton's Fence software engineering principle",
+    "incremental refactoring small commits test after each change"
+   ],
+   "redo_queries": [
+    "Chestertons fence software principle explained",
+    "small incremental refactoring steps continuous testing"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "04",
+   "slug": "complexity-pattern-catalog",
+   "scope": "Step 2's concrete pattern catalog across three tables: structural complexity, naming and readability, and redundancy.",
+   "seed_queries": [
+    "long method code smell refactoring extract function guard clause",
+    "dead code duplicated code refactoring catalog"
+   ],
+   "redo_queries": [
+    "refactoring guru long method extract method",
+    "code smells duplicated code dead code long parameter list"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "05",
+   "slug": "language-specific-guidance",
+   "scope": "Language-specific simplification guidance: TypeScript/JavaScript, Python, and React patterns.",
+   "seed_queries": [
+    "pythonic code guard clause early return idiom",
+    "typescript async function unnecessary await anti-pattern"
+   ],
+   "redo_queries": [
+    "python guard clauses style guide early return",
+    "unnecessary async wrapper typescript refactoring"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "06",
+   "slug": "rationalizations-and-red-flags",
+   "scope": "The seven common rationalizations table and the seven red flags.",
+   "seed_queries": [
+    "premature abstraction speculative generality anti-pattern",
+    "code review red flags refactoring scope creep"
+   ],
+   "redo_queries": [
+    "speculative generality refactoring guru",
+    "premature abstraction anti pattern software design"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "07",
+   "slug": "verification-checklist",
+   "scope": "The post-pass verification checklist.",
+   "seed_queries": [
+    "refactoring verification checklist code review gate",
+    "continuous integration code quality gates refactoring safety"
+   ],
+   "redo_queries": [
+    "refactoring checklist before commit",
+    "code review checklist refactoring verification tests"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "08",
+   "slug": "primitive-coverage-notes",
+   "scope": "The skill's curve-guided-rsi primitive-coverage annotations (segmentation, immutability, declarative policy, trust chain, cryptographic identity, attestation) and its place in the 10-primitive yubiOS model. Internal-record subtopic, no dig.",
+   "seed_queries": [],
+   "internal_record": true
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef (typesafe/jev-1.13 via DefAPI direct)",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.98,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0,
+     "2": 0.99
+    },
+    "confidence": 0.97,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.95,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.94,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.03,
+     "2": 0.96
+    },
+    "confidence": 0.92,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.67,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.23,
+     "2": 0.72
+    },
+    "confidence": 0.51,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.57,
+    "probabilities": {
+     "0": 0.53,
+     "1": 0.37,
+     "2": 0.1
+    },
+    "confidence": 0.14,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.33,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.49,
+     "2": 0.42
+    },
+    "confidence": 0.23,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.04,
+    "probabilities": {
+     "0": 0.97,
+     "1": 0.03,
+     "2": 0
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1242,
+   "output_tokens": 124
+  },
+  "dropped": [
+   "08"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07"
+  ]
+ },
+ "dropped_reason": {
+  "08": "score 0.04 (rounds to 0, padding); also an internal-record subtopic requiring no dig"
+ }
+}
