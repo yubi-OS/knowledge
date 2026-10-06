@@ -1,0 +1,58 @@
+{
+ "nn": 4,
+ "slug": "order-matters-step-ordering",
+ "scope": "Why the step order QEMU then Buildx then login then build matters, and what breaks when it is wrong.",
+ "queries_attempted": [
+  {
+   "query": "setup-qemu-action before setup-buildx-action order matters",
+   "attempt": 1,
+   "raw_results": 54,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx binfmt_misc register QEMU interpreters build",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "docker docs multi-platform GitHub Actions set up QEMU step buildx order",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "how buildx uses QEMU binfmt_misc foreign architecture buildkit",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 dig returned off-topic results (spelling references, unrelated changelogs; best noul 0.59 on an unrelated result)",
+   "new_queries": [
+    "docker docs multi-platform GitHub Actions set up QEMU step buildx order",
+    "how buildx uses QEMU binfmt_misc foreign architecture buildkit"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://cefboud.com/posts/qemu-virtualzation-docker-multi-build/",
+  "https://coderivers.org/blog/docker-cannot-build-multi-platform-images-with-docker-buildx/",
+  "https://deepwiki.com/docker/setup-qemu-action",
+  "https://deepwiki.com/docker/setup-qemu-action/1.1-installation-and-usage",
+  "https://github.com/docker/setup-buildx-action",
+  "https://github.com/docker/setup-qemu-action",
+  "https://grammarist.com/spelling/set-up-vs-setup/",
+  "https://stackengine.dev/docker-buildx-platform-linux-amd64-qemu",
+  "https://twdev.blog/2024/01/docker_multi_platform/",
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://www.merriam-webster.com/dictionary/setup"
+ ],
+ "outcome": "authored",
+ "note": "attempt-1 results were weighted (all low) and retained in archive.json for the audit trail; doc 04 was authored from the attempt-2 redo results plus source doc."
+}

@@ -1,0 +1,197 @@
+{
+ "topic": "the docker-setup-qemu-action skill: registering QEMU emulators for cross-platform Docker builds in GitHub Actions",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "when-to-use-cross-platform",
+   "scope": "When the skill applies: enabling cross-platform builds such as building linux/arm64 on amd64 runners, and when build-push-action targets non-native architectures.",
+   "seed_queries": [
+    "docker setup-qemu-action GitHub Actions cross-platform build",
+    "GitHub Actions build linux arm64 image on amd64 runner"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "action-reference-and-inputs",
+   "scope": "The docker/setup-qemu-action action reference: v3 usage, the platforms input, 'all' vs explicit platform lists, reset, and version drift.",
+   "seed_queries": [
+    "docker/setup-qemu-action platforms input default all",
+    "docker setup-qemu-action v3 release changelog"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "standard-multi-platform-setup",
+   "scope": "The standard 4-step GitHub Actions workflow YAML: setup-qemu-action, setup-buildx-action, login-action, build-push-action with platforms.",
+   "seed_queries": [
+    "Docker docs multi-platform GitHub Actions setup buildx build push",
+    "docker build-push-action platforms linux amd64 arm64 GitHub Actions example"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "order-matters-step-ordering",
+   "scope": "Why the step order QEMU then Buildx then login then build matters, and what breaks when it is wrong.",
+   "seed_queries": [
+    "setup-qemu-action before setup-buildx-action order matters",
+    "docker buildx binfmt_misc register QEMU interpreters build"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "performance-tradeoffs",
+   "scope": "QEMU emulation being ~5-10x slower than native, cost of platforms: all, guidance to use native runners when CI time matters.",
+   "seed_queries": [
+    "QEMU emulation docker build performance slow arm64",
+    "docker buildx platforms all build time cost QEMU"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "alternatives-native-arm",
+   "scope": "The matrix strategy with platform-specific self-hosted or native arm64 runners as the non-QEMU alternative.",
+   "seed_queries": [
+    "GitHub Actions native arm64 runners multi-arch without QEMU",
+    "self-hosted arm64 runner docker matrix strategy multi-arch"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "yubios-application-and-coverage",
+   "scope": "The yubiOS note on when QEMU is needed for bootc image builds vs single-arch CI, plus the skill's least-privilege and declarative-policy primitive coverage and RSI cycle closure sections. Internal-record subtopic grounded in the source doc itself.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef (typesafe/jev-1.13 via DefAPI)",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.97,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.95
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.93
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.89,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.05,
+     "2": 0.92
+    },
+    "confidence": 0.84
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.13,
+     "2": 0.83
+    },
+    "confidence": 0.69
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.15,
+     "2": 0.83
+    },
+    "confidence": 0.72
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.46,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.42,
+     "2": 0.52
+    },
+    "confidence": 0.2
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.65,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.56,
+     "1": 0.22,
+     "2": 0.22
+    },
+    "confidence": 0.02
+   }
+  },
+  "usage": {
+   "input_tokens": 1076,
+   "output_tokens": 109,
+   "cost": 9.0384e-05
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "notes": "t06 scored 1.46 (marginal, kept because its dig returned 3 first-party results at weight >= 0.5); t07 scored 0.65 (kept as the internal-record subtopic requiring no dig, per brief speed-opt 4)."
+ }
+}
