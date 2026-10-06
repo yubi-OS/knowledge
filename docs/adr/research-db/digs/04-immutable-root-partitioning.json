@@ -1,0 +1,196 @@
+{
+ "nn": "04",
+ "slug": "immutable-root-partitioning",
+ "scope": "ADR-006/007/010/012: dual mkosi and bootc build paths, composefs over dm-verity erofs, Discoverable Partitions Specification with no /etc/fstab, systemd-repart first-boot partitioning and on-device key generation.",
+ "queries_attempted": [
+  {
+   "query": "composefs dm-verity erofs immutable root filesystem UKI roothash",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "CAPTCHA"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "timeout"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "Discoverable Partitions Specification systemd-gpt-auto-generator GPT partition type UUIDs",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "Suspended: timeout"
+    ],
+    [
+     "privacywall",
+     "Suspended: timeout"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "title": "GitHub - composefs/composefs: The reliability of disk images, the ...",
+   "url": "https://github.com/composefs/composefs",
+   "snippet": "The composefs project combines several underlying Linux features to provide a very flexible mechanism to support read-only mountable filesystem trees, stacking on top of an underlying \"lower\" Linux filesystem. The key technologies composefs uses are: overlayfs as the kernel interface EROFS for a mountable metadata treeThe composefs project combines several underlying Linux features to provide a ve"
+  },
+  {
+   "title": "Root Filesystem Integrity with dm-verity: Design Patterns for Immutable ...",
+   "url": "https://proteanos.com/doc/rootfs-integrity-dm-verity-immutable-images/",
+   "snippet": "For latency-sensitive applications, pre-populate the hash tree in page cache during boot by reading it sequentially before mounting. Adoption across Linux distributions dm-verity and immutable root filesystem patterns have become standard practice across modern Linux distributions.For latency-sensitive applications, pre-populate the hash tree in page cache during boot by reading it sequentially be"
+  },
+  {
+   "title": "Image sealing with composefs :: *scratch* - scrivano.org",
+   "url": "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+   "snippet": "Composefs achieves whole-filesystem integrity verification through image sealing: a single cryptographic digest authenticates an entire filesystem, covering both file contents and metadata (directory structure, permissions, ownership, symlinks, and xattrs). This goes further than fs-verity alone, which can only verify individual file contents, and avoids the fixed-partition requirement of dm ...Co"
+  },
+  {
+   "title": "containerd docs \u2013 erofs",
+   "url": "https://containerd.io/docs/main/snapshotters/erofs/",
+   "snippet": "When dm-verity is enabled, the EROFS differ formats each layer with dm-verity by appending a Merkle hash tree to the EROFS blob and generating a root hash. The hash tree is stored inline within the layer blob itself.When dm-verity is enabled, the EROFS differ formats each layer with dm-verity by appending a Merkle hash tree to the EROFS blob and generating a root hash. The hash tree is stored inli"
+  },
+  {
+   "title": "dm-verity - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/Dm-verity",
+   "snippet": "A dm-verity root setup setup consists of the following: a / root filesystem image or partition, verity hash tree verity.bin, the root hash of the verity tree roothash.txt, systemd-veritysetup.generator, systemd-veritysetup@.service, verity kernel command line options, veritysetup (part of cryptsetup), a unified kernel image which contains a stub EFI loader, kernel, initramfs, kernel command ...A d"
+  },
+  {
+   "title": "DM-verity - Alpine Linux",
+   "url": "https://wiki.alpinelinux.org/wiki/DM-verity",
+   "snippet": "What is ERO-FS? Google thought about implementing ERO-FS with DM-Verity [7]. Google was reported to be using it in Android 13, and ERO-FS is an excellent and fast compressed read-only filesystem. Here is an excerpt about mkfs.erofs on [Arch Linux Wiki] [8]: mkfs.erofs (1) offers an attractive alternative to ext4 or squashfs on the root partition. EROFS, like squashfs, does not allow writes by ...W"
+  },
+  {
+   "title": "UAPI.2 Discoverable Partitions... | UAPI Group Specifications",
+   "url": "https://uapi-group.org/specifications/specs/discoverable_partitions_specification/",
+   "snippet": "This specification describes the use of GUID Partition Table (GPT) UUIDs to enable automatic discovery of partitions and their intended mountpoints. Traditionally Linux has made little use of partition types, mostly just defining one UUID for file system/data partitions and another one for swap partitions."
+  },
+  {
+   "title": "The Discoverable Partitions Specification - third-party-mirror ...",
+   "url": "https://third-party-mirror.googlesource.com/systemd/+/2398d87694e8af48e92ff8fb5f9cf273f706fb00/docs/DISCOVERABLE_PARTITIONS.md",
+   "snippet": "This specification describes the use of GUID Partition Table (GPT) UUIDs to enable automatic discovery of partitions and their intended mountpoints. Traditionally Linux has made little use of partition types, mostly just defining one UUID for file system/data partitions and another one for swap partitions."
+  },
+  {
+   "title": "GUID Partition Table",
+   "url": "https://handwiki.org/wiki/GUID_Partition_Table",
+   "snippet": "The GUID Partition Table (GPT) is a standard for the layout of partition tables of a physical computer storage device, such as a hard disk drive or solid-state drive, using universally unique identifiers, which are also known as globally unique identifiers (GUIDs). Forming a part of the Unified Extensible Firmware Interface (UEFI) standard (Unified"
+  },
+  {
+   "title": "daisybaby007 - YouTube",
+   "url": "https://www.youtube.com/@daisybaby007",
+   "snippet": "Share your videos with friends, family, and the world"
+  },
+  {
+   "title": "The Discoverable Partitions Specification",
+   "url": "https://chromium.googlesource.com/chromiumos/third_party/systemd/+/refs/tags/upstream/v248/docs/DISCOVERABLE_PARTITIONS.md",
+   "snippet": "title: Discoverable Partitions Specification category: Concepts layout: default.Note that the OS side of this specification is currently implemented in systemd 211 and newer in the systemd-gpt-auto-generator(8) generator tool."
+  },
+  {
+   "title": "systemd-gpt-auto-generator - Generator for automatically discovering ...",
+   "url": "https://www.linux.org/docs/man8/systemd-gpt-auto-generator.html",
+   "snippet": "systemd-gpt-auto-generator - Generator for automatically discovering and mounting root, /home and /srv. partitions, as well as discovering and enabling swap partitions, based on GPT partition type GUIDs. /usr/lib/systemd/system-generators/systemd-gpt-auto-generator."
+  }
+ ],
+ "outcome": "authored"
+}

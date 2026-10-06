@@ -1,0 +1,208 @@
+{
+ "nn": "05",
+ "slug": "updates-ab-lifecycle",
+ "scope": "ADR-013/032: systemd-sysupdate A/B updates with Boot Assessment counters, 4-artifact update set, kernel+rootfs split as first-class principle, bootc BLSConfig follow-ups.",
+ "queries_attempted": [
+  {
+   "query": "systemd-sysupdate A/B updates automatic boot assessment boot counter",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "encyclosearch",
+     "HTTP error"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "timeout"
+    ],
+    [
+     "privacywall",
+     "timeout"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "wikipedia",
+     "HTTP error"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "bootc composefs BLSConfig UKI digest kernel rootfs split",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "Suspended: timeout"
+    ],
+    [
+     "privacywall",
+     "Suspended: timeout"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "title": "Automatic Boot Assessment - systemd",
+   "url": "https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT/",
+   "snippet": "Automatic Boot Assessment systemd provides support for automatically reverting back to the previous version of the OS or kernel in case the system consistently fails to boot. The UAPI.1 Boot Loader Specification describes how to annotate boot loader entries with a counter that specifies how many attempts should be made to boot it. This document describes how systemd implements this scheme. The ..."
+  },
+  {
+   "title": "systemd/docs/AUTOMATIC_BOOT_ASSESSMENT.md at main - GitHub",
+   "url": "https://github.com/systemd/systemd/blob/main/docs/AUTOMATIC_BOOT_ASSESSMENT.md",
+   "snippet": "Automatic Boot Assessment systemd provides support for automatically reverting back to the previous version of the OS or kernel in case the system consistently fails to boot. The UAPI.1 Boot Loader Specification describes how to annotate boot loader entries with a counter that specifies how many attempts should be made to boot it."
+  },
+  {
+   "title": "System Update with systemd-sysupdate - DeepWiki",
+   "url": "https://deepwiki.com/systemd/systemd/4.3-system-update-with-systemd-sysupdate",
+   "snippet": "1. Overview systemd-sysupdate is a system update utility designed to provide a clean, atomic, and robust update mechanism through an A/B partition model. It manages the installation of system images and related resources, ensuring that updates are prepared in a \"candidate\" slot and switched atomically upon successful installation. Key functionality includes: Managing transfers and updates of ..."
+  },
+  {
+   "title": "NixOS OTA Updates with systemd-sysupdate: Immutable A/B System\u2026",
+   "url": "https://nixcademy.com/posts/immutable-ab-system-partitions-with-nixos-for-ota-updates-with-systemd-sysupdate/",
+   "snippet": "Auto-updating: systemd-sysupdate provides powerful mechanisms to make systems self-updatable over network. NixOS already provides system switching capabilities. These necessitate Nix being installed on that system to manage system generations..."
+  },
+  {
+   "title": "systemd-no-age-verification/docs/AUTOMATIC_BOOT_ASSESSMENT.md at main ...",
+   "url": "https://github.com/r4shsec/systemd-no-age-verification/blob/main/docs/AUTOMATIC_BOOT_ASSESSMENT.md",
+   "snippet": "Automatic Boot Assessment systemd provides support for automatically reverting back to the previous version of the OS or kernel in case the system consistently fails to boot. The UAPI.1 Boot Loader Specification describes how to annotate boot loader entries with a counter that specifies how many attempts should be made to boot it. This document describes how systemd implements this scheme."
+  },
+  {
+   "title": "How to force a web browser NOT to cache images - Stack Overflow",
+   "url": "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+   "snippet": "Spent days trying to get Chromium based app to stop caching images. The ?nocache with time echo solved the issue. Thank you!"
+  },
+  {
+   "title": "composefs backend - bootc",
+   "url": "https://bootc.dev/bootc/experimental-composefs.html",
+   "snippet": "composefs digest: A SHA-512 hash of the entire root filesystem, computed at build time. Unified Kernel Image (UKI): A single EFI binary containing the kernel, initramfs, and kernel command line with the composefs digest embedded."
+  },
+  {
+   "title": "bootc_lib::bootc_composefs::boot - Rust",
+   "url": "https://bootc-dev.github.io/bootc/internals/bootc_lib/bootc_composefs/boot/index.html",
+   "snippet": "Composefs boot setup and configuration. This module handles setting up boot entries for composefs-based deployments, including generating BLS (Boot Loader Specification) entries, copying kernel/initrd files, managing UKI (Unified Kernel Images), and configuring the ESP (EFI System Partition)."
+  },
+  {
+   "title": "Trying to use UKIs: Error because of composefs= parameter mismatch - GitHub",
+   "url": "https://github.com/bootc-dev/bootc/discussions/1984",
+   "snippet": "I would have expected that either bootc takes care of not including the files in /boot in the checksum calculation or that I'm able to specify an UKI to be installed on top of the rootfs image, such that the situation where I'd need to include a signed digest into an image - and thus changing this exact digest - doesn't happen. What am I missing?"
+  },
+  {
+   "title": "Composefs Backend | bootc-dev/bootc | DeepWiki",
+   "url": "https://deepwiki.com/bootc-dev/bootc/2.3.2-composefs-backend",
+   "snippet": "This document describes the Composefs backend, an experimental storage backend for bootc that uses composefs (composite filesystem) with EROFS images and fsverity verification. The Composefs backend provides enhanced integrity guarantees, native UKI (Unified Kernel Image) support, and sealed image capabilities compared to the default OSTree ..."
+  },
+  {
+   "title": "boot.rs - source",
+   "url": "https://jmarrero.github.io/bootc/internals/src/bootc_lib/bootc_composefs/boot.rs.html",
+   "snippet": "Source of the Rust file `crates/lib/src/bootc_composefs/boot.rs`."
+  },
+  {
+   "title": "bootc-dev/bootc: Boot and upgrade via container images - GitHub",
+   "url": "https://github.com/bootc-dev/bootc",
+   "snippet": "Boot and upgrade via container images. Contribute to bootc-dev/bootc development by creating an account on GitHub."
+  }
+ ],
+ "outcome": "authored"
+}

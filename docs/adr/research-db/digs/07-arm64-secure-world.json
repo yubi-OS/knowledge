@@ -1,0 +1,184 @@
+{
+ "nn": "07",
+ "slug": "arm64-secure-world",
+ "scope": "ADR-017/018/019/020/021/023/029: ARM64 as primary platform, TF-A + OP-TEE + fTPM + U-Boot secure-world stack, Path A fuse-enforcing vs Path B measured/attested provisioning, ROCK 5B primary board selection.",
+ "queries_attempted": [
+  {
+   "query": "ARM Trusted Firmware Trusted Board Boot OP-TEE fTPM ARM64 secure boot chain",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "U-Boot UEFI Secure Boot EDK2 StandaloneMM RPMB RK3588",
+   "attempt": 1,
+   "raw_results": 53,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "title": "Secure boot \u2014 OP-TEE documentation documentation",
+   "url": "https://optee.readthedocs.io/en/latest/architecture/secure_boot.html",
+   "snippet": "Secure boot Armv8-A - Using the authentication framework in TF-A This section gives a brief description on how to enable the verification of OP-TEE using the authentication framework in Trusted Firmware A (TF-A), i.e., something that could be used in an Armv8-A environment.Secure boot Armv8-A - Using the authentication framework in TF-A This section gives a brief description on how to enable the v"
+  },
+  {
+   "title": "Trusted Firmware - Open Source Secure Software",
+   "url": "https://www.trustedfirmware.org/",
+   "snippet": "Trusted Firmware provides a reference implementation of secure software for Armv8-A, Armv9-A and Armv8-M. It provides SoC developers and OEMs with a reference trusted code base complying with the relevant Arm specifications.Trusted Firmware provides a reference implementation of secure software for Armv8-A, Armv9-A and Armv8-M. It provides SoC developers and OEMs with a reference trusted code base"
+  },
+  {
+   "title": "GitHub - ARM-software/arm-trusted-firmware: Read-only mirror of Trusted ...",
+   "url": "https://github.com/ARM-software/arm-trusted-firmware",
+   "snippet": "Trusted Firmware-A (TF-A) is a reference implementation of secure world software for Arm A-Profile architectures (Armv8-A and Armv7-A), including an Exception Level 3 (EL3) Secure Monitor. It provides a suitable starting point for productization of secure world boot and runtime firmware, in either the AArch32 or AArch64 execution states.Trusted Firmware-A (TF-A) is a reference implementation of se"
+  },
+  {
+   "title": "OP-TEE - Trusted Firmware",
+   "url": "https://www.trustedfirmware.org/projects/op-tee/",
+   "snippet": "OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology.OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology."
+  },
+  {
+   "title": "arm-trusted-firmware/docs/design/trusted-board-boot.rst at master \u00b7 ARM ...",
+   "url": "https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/design/trusted-board-boot.rst",
+   "snippet": "The Trusted Board Boot (TBB) feature prevents malicious firmware from running on the platform by authenticating all firmware images up to and including the normal world bootloader. It does this by establishing a Chain of Trust using Public-Key-Cryptography Standards (PKCS). This document describes ..."
+  },
+  {
+   "title": "PDF Arm\u00ae Platform Security Architecture Trusted Boot and Firmware Update",
+   "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/PSA/DEN0072-PSA_TBFU_1.1-BETA0.pdf?revision=3ce2513a-ae0f-4b43-96a0-851ed67a640b",
+   "snippet": "About this document This manual is part of the Arm Platform Security Architecture (PSA) family of specifications. It defines the security architecture and technical requirements to create a Trusted Boot process. A Trusted Boot process involves verifying and measuring software in accordance to a chain of trust.About this document This manual is part of the Arm Platform Security Architecture (PSA) f"
+  },
+  {
+   "title": "Secure Boot and StandaloneMM | tianocore/edk2-platforms | DeepWiki",
+   "url": "https://deepwiki.com/tianocore/edk2-platforms/8.2-secure-boot-and-standalonemm",
+   "snippet": "This document covers the secure boot implementations, StandaloneMM environments, and secure storage mechanisms in the edk2-platforms repository. It focuses on the integration between UEFI firmware and trusted execution environments for secure variable storage, particularly through RPMB (Replay Protected Memory Block) storage and OpTee integration.This document covers the secure boot implementation"
+  },
+  {
+   "title": "UEFI on U-Boot \u2014 Das U-Boot unknown version documentation",
+   "url": "https://docs.u-boot-project.org/en/latest/develop/uefi/uefi.html",
+   "snippet": "UEFI on U-Boot The Unified Extensible Firmware Interface Specification (UEFI) [1] has become the default for booting on AArch64 and x86 systems. It provides a stable API for the interaction of drivers and applications with the firmware. The API comprises access to block storage, network, and console to name a few.UEFI on U-Boot The Unified Extensible Firmware Interface Specification (UEFI) [1] has"
+  },
+  {
+   "title": "Protected UEFI Variables With U-Boot | Blog | Linaro",
+   "url": "https://www.linaro.org/blog/protected-uefi-variables-with-u-boot/",
+   "snippet": "Critical system variables, like the UEFI ones, must be protected against a variety of attacks. On Arm servers and desktops, which typically run EDK2, dedicated flashes are used. Those would normally be accessible from the secure world only, since they are storing critical variables for our systems integrity and security.Critical system variables, like the UEFI ones, must be protected against a var"
+  },
+  {
+   "title": "University of Houston",
+   "url": "https://www.uh.edu/",
+   "snippet": "Sep 4, 2026 \u00b7 UH offers over 250 undergraduate and graduate degree programs across a wide range of disciplines, including \u2026"
+  },
+  {
+   "title": "GitHub - edk2-porting/edk2-rk3588: EDK2 UEFI firmware for ...",
+   "url": "https://github.com/edk2-porting/edk2-rk3588",
+   "snippet": "This repository contains an UEFI firmware implementation based on EDK2 for various RK3588 boards. It delivers a PC-like standardized boot experience, supporting multiple operating systems, such as Windows, Linux, BSD and VMware ESXi."
+  },
+  {
+   "title": "UEFI on U-Boot \u2014 Das U-Boot unknown version documentation",
+   "url": "https://docs.u-boot-project.org/en/stable/develop/uefi/uefi.html",
+   "snippet": "The Unified Extensible Firmware Interface Specification (UEFI) [1] has become the default for booting on AArch64 and x86 systems.Although the StandAloneMM binary comes from EDK2, using and storing the variables is currently available in U-Boot only."
+  }
+ ],
+ "outcome": "authored"
+}

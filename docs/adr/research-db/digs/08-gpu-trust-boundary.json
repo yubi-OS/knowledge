@@ -1,0 +1,184 @@
+{
+ "nn": "08",
+ "slug": "gpu-trust-boundary",
+ "scope": "ADR-031/033: GPU trust boundary with virtio-gpu default and vfio-user preferred, IOMMU-gated PCI passthrough gate, 4-tier misbehavior-triggered cutoff ladder with state preservation.",
+ "queries_attempted": [
+  {
+   "query": "vfio-user virtio-gpu VM GPU device mediation trust boundary",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "vfio-pci IOMMU group isolation DMA passthrough security risk",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6,
+   "unresponsive_engines": [
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "title": "KVM GPU Passthrough with VFIO: A Production-Focused Guide - Medium",
+   "url": "https://medium.com/@armestonaidoost/kvm-gpu-passthrough-with-vfio-a-production-focused-guide-de432ca2a12b",
+   "snippet": "A dependable KVM GPU passthrough design starts with hardware isolation, not virtual machine XML. Validate the IOMMU boundary, identify every device function, and establish deterministic vfio-pci ..."
+  },
+  {
+   "title": "GPU Passthrough Setup: IOMMU/VFIO Guide [2026]",
+   "url": "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+   "snippet": "Running Windows inside a virtual machine used to mean giving up your GPU's real performance. Not anymore. GPU passthrough, built on IOMMU and VFIO, hands a physical graphics card directly to a guest VM so it renders games, CUDA workloads, or CAD software at close to bare-metal speed. This tutorial walks through the full 2026 setup on Proxmox VE 9.2, from checking your motherboard's IOMMU ..."
+  },
+  {
+   "title": "GPU Passthrough KVM Setup with VFIO and Libvirt | by ... - Medium",
+   "url": "https://medium.com/@carvajaldaniel699/gpu-passthrough-kvm-setup-with-vfio-and-libvirt-3086b7acbbb0",
+   "snippet": "Jul 23, 2026 \u00b7 Adding a PCI address to a VM is the easy part. The real work is proving that the platform can isolate the device safely, preventing the host driver from claiming it, attaching every required..."
+  },
+  {
+   "title": "VFIO - \u201cVirtual Function I/O\u201d \u2014 The Linux Kernel documentation",
+   "url": "https://docs.kernel.org/driver-api/vfio.html",
+   "snippet": "VFIO - \u201cVirtual Function I/O\u201d [1] \u00b6 Many modern systems now provide DMA and interrupt remapping facilities to help ensure I/O devices behave within the boundaries they\u2019ve been allotted. This includes x86 hardware with AMD-Vi and Intel VT-d, POWER systems with Partitionable Endpoints (PEs) and embedded PowerPC systems such as Freescale PAMU. The VFIO driver is an IOMMU/device agnostic ...VFIO - \u201cVi"
+  },
+  {
+   "title": "GPU passthrough with VFIO: configuration and optimization",
+   "url": "https://www.pchardwarepro.com/en/complete-guide-to-gpu-passthrough-with-vfio-on-linux/",
+   "snippet": "GPU passthrough with VFIO allows you to assign a physical GPU to a VM with near-native performance using KVM/QEMU and OVMF. It is essential to properly enable IOMMU in BIOS and kernel, have clean IOMMU groups, and link the GPU to vfio-pci. Using hugepages, CPU pinning, virtio for network and disks, and specific settings for NVIDIA/AMD noticeably improves smoothness. With an iGPU or second GPU ...G"
+  },
+  {
+   "title": "Star Crossed | Porn Fan Community Forum",
+   "url": "https://forum.adultdvdtalk.com/star-crossed",
+   "snippet": "1 day ago \u00b7 Adult Movie discussion forum: pornstar discussion, porn star photos, talk with stars, pornstar IDs."
+  },
+  {
+   "title": "VFIO Device Passthrough - Linux Kernel Internals",
+   "url": "https://kernel-internals.org/virtualization/vfio/",
+   "snippet": "VFIO: Virtual Function I/O and Device Passthrough IOMMU groups, DMA remapping, and direct PCI device access from userspace/VMs What is VFIO? VFIO (Virtual Function I/O) provides a secure mechanism to expose PCI devices directly to userspace processes or VMs, bypassing the kernel driver.VFIO: Virtual Function I/O and Device Passthrough IOMMU groups, DMA remapping, and direct PCI device access from "
+  },
+  {
+   "title": "PCI passthrough via OVMF - ArchWiki",
+   "url": "https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF",
+   "snippet": "Vfio-pci normally targets PCI devices by ID, meaning you only need to specify the IDs of the devices you intend to passthrough. For the following IOMMU group, you would want to bind vfio-pci with 10de:13c2 and 10de:0fbb, which will be used as example values for the rest of this section.Vfio-pci normally targets PCI devices by ID, meaning you only need to specify the IDs of the devices you intend t"
+  },
+  {
+   "title": "VFIO, IOMMU, and the PCI Subsystem",
+   "url": "https://howtech.substack.com/p/vfio-iommu-and-the-pci-subsystem",
+   "snippet": "Solving this requires hardware support (an IOMMU), a kernel framework to manage device ownership and group devices into isolation boundaries (VFIO), and deep integration with the PCI subsystem's model of buses, functions, and configuration space. How Tech - Systems Programming is a reader-supported publication."
+  },
+  {
+   "title": "VFIO - \u201cVirtual Function I/O\u201d \u2014 The Linux Kernel documentation",
+   "url": "https://docs.kernel.org/driver-api/vfio.html",
+   "snippet": "VFIO - \u201cVirtual Function I/O\u201d [1] \u00b6 Many modern systems now provide DMA and interrupt remapping facilities to help ensure I/O devices behave within the boundaries they\u2019ve been allotted. This includes x86 hardware with AMD-Vi and Intel VT-d, POWER systems with Partitionable Endpoints (PEs) and embedded PowerPC systems such as Freescale PAMU. The VFIO driver is an IOMMU/device agnostic ...VFIO - \u201cVi"
+  },
+  {
+   "title": "GPU, USB and PCI Passthrough on Proxmox: IOMMU/VFIO Guide",
+   "url": "https://proxmox.rdem-systems.com/en/blog/proxmox-hardware-passthrough-gpu-usb-pci/",
+   "snippet": "Proxmox GPU, USB and PCI Passthrough: The Complete IOMMU / VFIO Guide Assign an NVIDIA or AMD GPU, a USB controller, a network card or any PCI device directly to a Proxmox VM \u2014 with near bare-metal performance. This guide covers IOMMU configuration, VFIO, common pitfalls and real-world use cases.Proxmox GPU, USB and PCI Passthrough: The Complete IOMMU / VFIO Guide Assign an NVIDIA or AMD GPU, a US"
+  },
+  {
+   "title": "unsolicited \"Your new account on XNXX GOLD\" email - Reddit",
+   "url": "https://www.reddit.com/r/Scams/comments/wip14o/unsolicited_your_new_account_on_xnxx_gold_email/",
+   "snippet": "Aug 7, 2022 \u00b7 Archived post. New comments cannot be posted and votes cannot be cast."
+  }
+ ],
+ "outcome": "authored"
+}
