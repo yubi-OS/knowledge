@@ -1,0 +1,225 @@
+{
+  "topic": "audit-evidence-packaging skill: cryptographically-signed evidence bundles (hash-chained archive, TPM2/YubiKey attestation quotes, Rekor v2 transparency-log entries, evidence-collection strategy)",
+  "ground_source": "yubi-OS/yubiOS skills/audit-evidence-packaging/SKILL.md",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "01-evidence-bundle-overview",
+      "scope": "What an evidence bundle is: the 4 properties (tamper-evident, attestable, transparent, independently verifiable) and derivation from in-toto Statement v1",
+      "seed_queries": [
+        "in-toto attestation statement v1 specification format",
+        "tamper evident audit evidence bundle cryptographic attestation"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "02-when-to-use-audit-frameworks",
+      "scope": "When to use vs when not: HITRUST CSF, CISA ZTMM v2.0, SOC2/ISO 27001, CI/CD wiring, and the 4 do-not-use cases",
+      "seed_queries": [
+        "HITRUST CSF control families audit evidence requirements",
+        "CISA Zero Trust Maturity Model v2 pillars cross-cutting capabilities"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "03-bundle-anatomy",
+      "scope": "Directory layout and the role of manifest.json, merkle-root.txt, artifacts/, attestation/, verifier/",
+      "seed_queries": [
+        "Merkle tree hash chain tamper evidence log proofs",
+        "in-toto statement subject predicateType resource descriptors"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "04-generating-bundles",
+      "scope": "The evidence-bundle CLI and its 7-step pipeline (hash, Merkle tree, PCR quote, YubiKey PIV 9c signing, Rekor v2 publication)",
+      "seed_queries": [
+        "TPM2 PCR quote tpm2_quote attestation PCRs",
+        "YubiKey PIV slot 9c digital signature signing"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "05-verifying-bundles",
+      "scope": "The 7-step independent verification path and the PASS/FAIL verdict",
+      "seed_queries": [
+        "Sigstore Rekor inclusion proof verification cosign",
+        "Sigstore TUF transparency log endpoint discovery"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "06-bundling-strategy",
+      "scope": "Per-day bundles, weekly Merkle-root rollups, multi-year retention and forensic drill-down",
+      "seed_queries": [
+        "audit log retention archival compliance daily bundles",
+        "long term log archive integrity hash chain verification"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "07-anti-patterns",
+      "scope": "The 6 anti-patterns: no Merkle tree, shared attestation keys, skipped transparency-log publication, stale PCR quotes, unfiltered /var/log, co-located storage",
+      "seed_queries": [
+        "attestation key separation dedicated signing key compromise",
+        "transparency log equivocation counter-signature attack prevention"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "08-standards-and-ecosystem",
+      "scope": "Referenced specs (in-toto, Rekor v2, TCG TPM2, HITRUST CSF, CISA ZTMM) and the 5 related yubiOS skills",
+      "seed_queries": [
+        "Sigstore Rekor v2 specification tile hash log",
+        "TCG TPM 2.0 library specification part 1 architecture"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917 (DefAPI direct)",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.93,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.96
+        },
+        "confidence": 0.9
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.22,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.41,
+          "2": 0.39999999999999997
+        },
+        "confidence": 0
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.96,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.97
+        },
+        "confidence": 0.93
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.09,
+          "2": 0.85
+        },
+        "confidence": 0.7
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.76,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.09,
+          "2": 0.83
+        },
+        "confidence": 0.64
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.81,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.09,
+          "2": 0.86
+        },
+        "confidence": 0.72
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.84,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.09,
+          "2": 0.87
+        },
+        "confidence": 0.75
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.31,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.39,
+          "2": 0.46
+        },
+        "confidence": 0
+      }
+    },
+    "usage": {
+      "input_tokens": 1139,
+      "output_tokens": 124,
+      "cost": 9.5676e-05
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

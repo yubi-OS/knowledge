@@ -1,0 +1,36 @@
+{
+  "nn": 7,
+  "slug": "07-anti-patterns",
+  "scope": "The 6 anti-patterns: no Merkle tree, shared attestation keys, skipped transparency-log publication, stale PCR quotes, unfiltered /var/log, co-located storage",
+  "queries_attempted": [
+    {
+      "query": "attestation key separation dedicated signing key compromise",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "transparency log equivocation counter-signature attack prevention",
+      "attempt": 1,
+      "raw_results": 34,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://chainscorelabs.com/guides/trust-and-verification-systems/proof-of-reserves-verification/how-to-manage-key-management-for-proof-of-reserves-signing-ceremonies",
+    "https://github.com/pwnedkeys/key-compromise-attestation-rfc/blob/main/draft-mpalmer-key-compromise-attestation.md",
+    "https://www.securebydesignhandbook.com/docs/implementation/build-phase/key-provisioning",
+    "https://www.merriam-webster.com/dictionary/attestation",
+    "https://abc.vhrghala.org/p/https/developer.android.com/privacy-and-security/security-key-attestation",
+    "https://source.android.com/docs/security/features/keystore/attestation",
+    "https://learn.microsoft.com/en-us/azure/confidential-ledger/about-microsoft-signing-transparency-ledger",
+    "https://azure.microsoft.com/en-us/blog/enhancing-software-supply-chain-security-with-microsofts-signing-transparency/",
+    "https://support.google.com/business/threads?hl=en",
+    "https://www.emergentmind.com/topics/transparency-logs",
+    "https://www.academia.edu/114361576/A_White_Box_False_Positive_Adversarial_Attack_Method_on_Contrastive_Loss_Based_Offline_Handwritten_Signature_Verification_Models",
+    "https://technology.a-sit.at/wp-content/plugins/download-attachments/includes/download.php?id=5159"
+  ],
+  "outcome": "authored"
+}
