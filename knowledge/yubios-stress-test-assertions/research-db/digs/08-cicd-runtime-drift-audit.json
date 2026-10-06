@@ -1,0 +1,69 @@
+{
+ "nn": 8,
+ "slug": "cicd-runtime-drift-audit",
+ "scope": "Auditing the CI-to-runtime gap: detecting policy, test-only, or best-effort artifacts that leak into production image layers.",
+ "queries_attempted": [
+  {
+   "query": "container image layer history audit policy artifacts production",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "CI production promotion gate supply chain drift",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "production promotion gate container image policy enforcement supply chain",
+   "attempt": 2,
+   "raw_results": 64,
+   "kept": 6
+  },
+  {
+   "query": "inspect container image layers find test artifacts production docker history",
+   "attempt": 2,
+   "raw_results": 51,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first dig returned 0 authoritative (weight >= 0.5) sources for this subtopic; dig judged too thin to author honestly without a redo",
+   "new_queries": [
+    "production promotion gate container image policy enforcement supply chain",
+    "inspect container image layers find test artifacts production docker history"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://zuzia.app/learn/container-image-auditing/",
+  "https://www.decryptiondigest.com/blog/container-image-security-audit-guide",
+  "https://safeguard.sh/resources/blog/container-image-audit",
+  "https://www.containerstore.com/welcome.htm?msockid=30a98d928731631b0abc9a7886826228",
+  "https://debugger.ai/container-security/",
+  "https://medium.com/@cypanrisk/image-and-software-supply-chain-security-validating-scanning-and-signing-trusted-container-images-8838aa222fda",
+  "https://beefed.ai/en/automated-testing-gates-production-models",
+  "https://www.citi.com/?msockid=027de8aa7d756d331f70ff407c2d6c1b",
+  "https://mdwiki.org/wiki/Carbon_monoxide_poisoning",
+  "https://www.factualminds.com/blog/aws-cicd-appsec-pipeline-threat-model/",
+  "https://www.movedemocracy.org/networking/directory",
+  "https://www.muhammadusmanakbar.com/backend-book/ci-cd-quality-and-ai-release-gates",
+  "https://letsbuildsolutions.com/blog/devops/container-security-in-production-image-scanning-runtime-policies-and-supply-chain-integrity/",
+  "https://www.systemshardening.com/articles/cicd/cd-promotion-gates-approvals/",
+  "https://dev.to/apprecode/cicd-for-containers-how-to-build-and-secure-a-production-pipeline-9eh",
+  "https://www.golinuxcloud.com/secure-container-image-promotion-cicd/",
+  "https://en.wikipedia.org/wiki/China",
+  "https://www.merriam-webster.com/dictionary/production",
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-inspect-docker-image-layers-and-history/view",
+  "https://docs.docker.com/reference/cli/docker/image/history/",
+  "https://labex.io/tutorials/docker-how-to-analyze-docker-image-layers-using-the-history-command-410055",
+  "https://labex.io/tutorials/docker-how-to-use-docker-image-history-command-to-inspect-image-layers-555153",
+  "https://indiana.pmpaware.net/login",
+  "https://github.com/aboutcode-org/container-inspector"
+ ],
+ "outcome": "authored"
+}

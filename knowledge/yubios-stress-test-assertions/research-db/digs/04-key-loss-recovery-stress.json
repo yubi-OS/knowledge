@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "key-loss-recovery-stress",
+ "scope": "Stress of credential-loss paths: hardware token removed, disk unlock, SSH, PAM, backup-key recovery, and the rule that a single unrecoverable token is a fail.",
+ "queries_attempted": [
+  {
+   "query": "FIDO2 hardware security key loss recovery disk encryption",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "recovering from lost YubiKey LUKS full disk encryption",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.yubico.com/authentication-standards/fido2/",
+  "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+  "https://deepwiki.com/secureblue/secureblue/3.6-disk-encryption:-luks-tpm2-and-fido2",
+  "https://tech-insider.org/fido2-hardware-security-key-setup-2026/",
+  "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=2afe6f8070d767b1226f786a71b166c9",
+  "http://0pointer.net/blog/brave-new-trusted-boot-world.html",
+  "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+  "https://gist.github.com/cmedianu/470a49038e919cf5bc98cd0d2299c484",
+  "https://github.com/agherzan/yubikey-full-disk-encryption",
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://www.merriam-webster.com/dictionary/recovering",
+  "https://askubuntu.com/questions/599825/yubikey-two-factor-authentication-full-disk-encryption-via-luks"
+ ],
+ "outcome": "authored"
+}

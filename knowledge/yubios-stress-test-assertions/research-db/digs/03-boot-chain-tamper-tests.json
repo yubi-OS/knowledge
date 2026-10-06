@@ -1,0 +1,36 @@
+{
+ "nn": 3,
+ "slug": "boot-chain-tamper-tests",
+ "scope": "Tamper-per-link stress tests across the verified boot chain: kernel image, loader config, signing material, digest pin files, root digest.",
+ "queries_attempted": [
+  {
+   "query": "unified kernel image tampering fail closed verification",
+   "attempt": 1,
+   "raw_results": 56,
+   "kept": 6
+  },
+  {
+   "query": "verified boot tamper detection test chain of trust",
+   "attempt": 1,
+   "raw_results": 62,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+  "https://wiki.archlinux.org/title/Unified_kernel_image",
+  "https://wiki.gentoo.org/wiki/Unified_Kernel_Image",
+  "https://handwiki.org/wiki/Computer_security",
+  "https://unifiedgrp.com/login/",
+  "https://linuxsecureops.com/article/linux-unified-kernel-images-uki-systemd-boot-secure-boot-2026",
+  "https://beefed.ai/en/unbroken-chain-of-trust-secure-boot",
+  "https://github.com/tianocore-docs/Understanding_UEFI_Secure_Boot_Chain/blob/master/introduction-to-the-secure-boot-chain.md",
+  "https://source.android.com/docs/security/features/verifiedboot",
+  "https://android.googlesource.com/platform/external/avb/+/master/README.md",
+  "https://handwiki.org/wiki/Mobile_security",
+  "https://trmm.net/TOCTOU"
+ ],
+ "outcome": "authored"
+}

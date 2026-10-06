@@ -1,0 +1,36 @@
+{
+ "nn": 6,
+ "slug": "artifact-trust-verification",
+ "scope": "Artifact-trust verification: digest pinning, SLSA provenance, SBOM attestations, and reproducible-build reproduction as the proof for pin-by-digest claims.",
+ "queries_attempted": [
+  {
+   "query": "SLSA provenance SBOM attestation verification cosign",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "reproducible builds verify container image digest",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.systemshardening.com/articles/cicd/container-image-attestations/",
+  "https://secopslog.com/blog/sbom-attest/",
+  "https://imzye.com/Container/Cosign-Image-Signing-SLSA-Provenance/",
+  "https://edu.chainguard.dev/open-source/sigstore/cosign/how-to-sign-an-sbom-with-cosign/",
+  "https://slsa.dev/",
+  "https://devopscube.com/container-image-signing-kubernetes/",
+  "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/",
+  "https://docs-ironbank.dso.mil/hardening/reproducible-builds/",
+  "https://chaturbate.com/",
+  "https://opensource.com/article/21/12/sigstore-container-images",
+  "https://discuss.huggingface.co/t/rtx-5090-35b-nvfp4/177814/2"
+ ],
+ "outcome": "authored"
+}

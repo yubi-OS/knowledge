@@ -1,0 +1,36 @@
+{
+ "nn": 5,
+ "slug": "enrollment-partial-state",
+ "scope": "Partial-enrollment hazard testing: skipped onboarding steps must auto-recover or block completion, never leave a silently weaker state.",
+ "queries_attempted": [
+  {
+   "query": "partial enrollment fail safe provisioning security",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "PAM FIDO2 enrollment lockout recovery",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.manageengine.com/products/self-service-password/kb/how-to-enable-partial-enrollment-for-active-directory-users.html",
+  "https://admin365.blog/2026/02/18/force-complete-intune-enrollment-mobile-device-security-guide/",
+  "https://www.ituonline.com/comptia-securityx/comptia-securityx-4/mitigations-implementing-fail-secure-and-fail-safe-strategies-for-robust-security/",
+  "https://www.merriam-webster.com/dictionary/partial",
+  "https://techcommunity.microsoft.com/discussions/microsoft-intune/from-domain-joined-to-microsoft-entra-joined-a-low-disruption-migration-framewor/4559001",
+  "https://www.youtube.com/watch?v=jta3hqhu34c",
+  "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-troubleshoot",
+  "https://docs.cyberark.com/pam-self-hosted/latest/en/content/pas%20inst/fido-authentication.htm",
+  "https://www.microsoft.com/en-us/security/business/security-101/what-is-privileged-access-management-pam?msockid=1c27062ae9aa69e2183511c0e8e16857",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://hirschsecure.atlassian.net/wiki/spaces/FIDO/pages/4643815425",
+  "https://docs.cyberark.com/pam-self-hosted-legacy/latest/en/content/pas%20inst/fido-authentication.htm"
+ ],
+ "outcome": "authored"
+}
