@@ -1,0 +1,107 @@
+[
+  {
+    "requested_at": "2026-10-06T19:57:12Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 9,
+    "question_names": ["t01", "t02", "t03", "t04", "t05", "t06", "t07", "t08", "t09"],
+    "metric_types": ["score"],
+    "usage": {"input_tokens": 1354, "output_tokens": 139},
+    "answer_id": "gen-dec-1791316453-YhgQpO7XNQGuCkTN3E0t"
+  },
+  {
+    "requested_at": "2026-10-06T20:00:00Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 84,
+    "question_names": ["r01..r15 across 6 batches"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 8965, "output_tokens": 1536},
+    "note": "first weighting pass completed but its answers were lost before persistence (sandbox read-only filesystem); re-run below supersedes it"
+  },
+  {
+    "requested_at": "2026-10-06T20:04:00Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": ["r01..r15"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 1555, "output_tokens": 274},
+    "note": "second weighting attempt crashed after batch 0 on a script bug; only this batch was consumed"
+  },
+  {
+    "requested_at": "2026-10-06T20:08:00Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": ["r01", "r02", "r03", "r04", "r05", "r06", "r07", "r08", "r09", "r10", "r11", "r12", "r13", "r14", "r15"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 1555, "output_tokens": 274},
+    "answer_id": "gen-dec-1791317178-vHXnmDBx7ZqP7P5S0SW8",
+    "note": "final weighting pass, batch 0 (results 0-14)"
+  },
+  {
+    "requested_at": "2026-10-06T20:08:05Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": ["r01", "r02", "r03", "r04", "r05", "r06", "r07", "r08", "r09", "r10", "r11", "r12", "r13", "r14", "r15"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 1579, "output_tokens": 274},
+    "answer_id": "gen-dec-1791317179-Q2snYKg2jwGpaPPsWps8",
+    "note": "final weighting pass, batch 1 (results 15-29)"
+  },
+  {
+    "requested_at": "2026-10-06T20:08:10Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": ["r01", "r02", "r03", "r04", "r05", "r06", "r07", "r08", "r09", "r10", "r11", "r12", "r13", "r14", "r15"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 1575, "output_tokens": 274},
+    "answer_id": "gen-dec-1791317181-RVwdlpWnhFrO5TCb8IRa",
+    "note": "final weighting pass, batch 2 (results 30-44)"
+  },
+  {
+    "requested_at": "2026-10-06T20:08:16Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": ["r01", "r02", "r03", "r04", "r05", "r06", "r07", "r08", "r09", "r10", "r11", "r12", "r13", "r14", "r15"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 1630, "output_tokens": 274},
+    "answer_id": "gen-dec-1791317182-f8bxtVsghTMldvVChbvg",
+    "note": "final weighting pass, batch 3 (results 45-59)"
+  },
+  {
+    "requested_at": "2026-10-06T20:08:21Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": ["r01", "r02", "r03", "r04", "r05", "r06", "r07", "r08", "r09", "r10", "r11", "r12", "r13", "r14", "r15"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 1574, "output_tokens": 274},
+    "answer_id": "gen-dec-1791317184-mpQLOLknzg5b3Urjg7Cq",
+    "note": "final weighting pass, batch 4 (results 60-74)"
+  },
+  {
+    "requested_at": "2026-10-06T20:08:27Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "docker-build-push-action",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 9,
+    "question_names": ["r01", "r02", "r03", "r04", "r05", "r06", "r07", "r08", "r09"],
+    "metric_types": ["noul"],
+    "usage": {"input_tokens": 1052, "output_tokens": 166},
+    "answer_id": "gen-dec-1791317185-UL7Hw7lWR0V3l0KwtUl0",
+    "note": "final weighting pass, batch 5 (results 75-83)"
+  }
+]
