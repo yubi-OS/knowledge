@@ -1,0 +1,78 @@
+{
+ "nn": "07",
+ "slug": "fido2-software-emulators",
+ "scope": "FIDO2 software emulators for CI without hardware: virtual-fido via USB/IP vhci-hcd, softfido for PKCS#11.",
+ "queries_attempted": [
+  {
+   "query": "",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "FIDO2 software authenticator emulator testing WebAuthN",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "libfido2 fido2-token list virtual device testing",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "virtual-fido USB/IP virtual YubiKey device",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "usbip vhci-hcd attach USB device to Linux guest",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "initial dig thin: 1 high-weight result only (SoftHSM 0.61)",
+   "new_queries": [
+    "FIDO2 software authenticator emulator testing WebAuthN",
+    "libfido2 fido2-token list virtual device testing"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "redo 1 still thin (max 0.24); second and final redo per REDO rule",
+   "new_queries": [
+    "virtual-fido USB/IP virtual YubiKey device",
+    "usbip vhci-hcd attach USB device to Linux guest"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/bulwarkid/virtual-fido",
+  "https://deepwiki.com/bulwarkid/virtual-fido",
+  "https://pkg.go.dev/github.com/bulwarkid/virtual-fido",
+  "https://www.merriam-webster.com/dictionary/virtual",
+  "https://eshop.taktik.cz/idprime-fido-bio/",
+  "https://www.reddit.com/r/netsec/comments/xh3bae/virtual_fido_is_a_virtual_usb_device_that/",
+  "https://github.com/ellerh/softfido",
+  "https://github.com/softhsm/softHSMv2",
+  "https://www.softhsm.org/",
+  "https://nfinite.live/",
+  "https://www.opendnssec.org/en/latest/softhsm/",
+  "https://cyberhashira.github.io/notes/pkcs11/SoftHSM2.html"
+ ],
+ "outcome": "skipped",
+ "skip_reason": "dig stayed thin after 2 redos; per REDO rule doc skipped, recorded as gap"
+}

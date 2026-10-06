@@ -1,0 +1,57 @@
+{
+ "nn": "08",
+ "slug": "luks-tpm-gotcha",
+ "scope": "LUKS + TPM/FIDO2 enrollment gotcha in VMs: PCR mismatch, two-stage install with temporary passphrase then systemd-cryptenroll on real hardware.",
+ "queries_attempted": [
+  {
+   "query": "",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "systemd-cryptenroll fido2-device LUKS2 unlock boot",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "TPM2 PCR seal policy virtual machine swtpm mismatch",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "initial dig had only 3 high-weight results",
+   "new_queries": [
+    "systemd-cryptenroll fido2-device LUKS2 unlock boot",
+    "TPM2 PCR seal policy virtual machine swtpm mismatch"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.freedesktop.org/software/systemd/man/systemd-cryptenroll.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "https://docs.trustauthority.intel.com/main/articles/articles/ita/tpm-log.html",
+  "https://learn.microsoft.com/en-us/troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes",
+  "https://en.wikipedia.org/wiki/Trusted_Platform_Module",
+  "https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation",
+  "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+  "https://talkingpointsmemo.com/"
+ ],
+ "outcome": "authored"
+}
