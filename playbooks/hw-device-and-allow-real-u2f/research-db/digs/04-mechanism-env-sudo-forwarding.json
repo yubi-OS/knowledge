@@ -1,0 +1,65 @@
+{
+ "nn": "04",
+ "slug": "mechanism-env-sudo-forwarding",
+ "scope": "Mechanism: ALLOW_REAL_U2F env plumbing and explicit sudo env forwarding",
+ "queries_attempted": [
+  {
+   "query": "sudo does not inherit environment variables sudo env forwarding vs -E",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "github actions step env variable not visible inside sudo shell script",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "sudoers env_keep environment variables sudo manual page",
+   "attempt": 2,
+   "raw_results": 53,
+   "kept": 6
+  },
+  {
+   "query": "sudo env VAR=value run command with environment variable example",
+   "attempt": 2,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-dig results all weighted < 0.5 (no primary source); redo per MINT-BRIEF step 5 REDO RULE",
+   "new_queries": [
+    "sudoers env_keep environment variables sudo manual page",
+    "sudo env VAR=value run command with environment variable example"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.vcarvalho.fr/notes/pentest/privilege-escalation/linux/sudo-env-variables",
+  "https://en.wikipedia.org/wiki/Sudo",
+  "https://github.blog/",
+  "https://github.com/",
+  "https://github.com/login",
+  "https://github.com/orgs/community/discussions/27027",
+  "https://github.com/orgs/community/discussions/27127",
+  "https://linuxvox.com/blog/sudo-command-in-linux/",
+  "https://stackoverflow.com/questions/59867124/how-can-i-access-github-action-environment-variables-within-a-bash-script-run-by",
+  "https://sudo.music/",
+  "https://sysprog21.github.io/lkmpg/",
+  "https://unix.stackexchange.com/a/699140",
+  "https://unix.stackexchange.com/questions/202383/how-to-pass-environment-variable-to-sudo-su",
+  "https://unix.stackexchange.com/questions/8646/why-are-path-variables-different-when-running-via-sudo-and-su",
+  "https://www.baeldung.com/linux/control-variable-access-sudo-environment",
+  "https://www.baeldung.com/linux/sudo-manage-environment-variables",
+  "https://www.geeksforgeeks.org/linux-unix/sudo-command-in-linux-with-examples/",
+  "https://www.man7.org/linux/man-pages/man5/sudoers.5.html",
+  "https://www.petefreitag.com/blog/environment-variables-sudo/",
+  "https://www.sudo.ws/docs/man/1.8.31/sudoers.man/"
+ ],
+ "outcome": "authored"
+}
