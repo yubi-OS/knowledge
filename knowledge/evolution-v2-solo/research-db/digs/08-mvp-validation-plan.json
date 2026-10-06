@@ -1,0 +1,45 @@
+{
+ "nn": "08",
+ "slug": "mvp-validation-plan",
+ "scope": "MVP scope and validation plan: hourly cron machine-cycle, atom ledger, candle planter, memory recall, digest email, queues adapter, and the three assumptions to validate with live tests.",
+ "queries_attempted": [
+  {
+   "query": "forecast versus actual calibration correlation evaluate predictions",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "minimum viable automation quality gates validation experiments",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "first run completed but its persisted files were lost to an ephemeral sandbox filesystem; re-dug with identical queries",
+   "new_queries": [
+    "forecast versus actual calibration correlation evaluate predictions",
+    "minimum viable automation quality gates validation experiments"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://harvardsciencereview.org/2026/09/14/ai-forecast-calibration-accuracy/",
+  "https://fastercapital.com/content/Forecast-variance--How-to-compare-and-explain-the-differences-between-your-forecasts-and-actual-results.html",
+  "https://arxiv.org/html/2501.19047v1",
+  "https://fastercapital.com/content/Actual-vs--Forecast--Forecasting-the-Future--Using-Variance-Analysis-to-Compare-Actuals.html",
+  "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/calibration.pdf",
+  "https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/visualizing-forecast-performance",
+  "https://diegorodrigo.dev/en/2026/04/06/sdd-in-practice-quality-gates-tests-and-templates/",
+  "https://khimananda.com/blog/build-verification-and-quality-gates-in-ci",
+  "https://beefed.ai/en/automated-testing-gates-production-models",
+  "https://deepwiki.com/cogeet-io/ai-development-specifications/3.3-quality-gates-and-validation",
+  "https://medium.com/@MinimumViableMatriarch/beyond-vibe-coding-building-quality-gates-for-ai-assisted-development-da8dc102df6f",
+  "https://corp.tied-inc.com/blog/en/quality-gates-for-small-teams/"
+ ],
+ "outcome": "authored"
+}

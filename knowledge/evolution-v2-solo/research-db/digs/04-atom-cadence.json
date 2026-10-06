@@ -1,0 +1,45 @@
+{
+ "nn": "04",
+ "slug": "atom-cadence",
+ "scope": "V7 single-action atom cadence: at most one gated action per hourly cycle, measured delta against a named ideal-state metric, stay option, monotone ledger.",
+ "queries_attempted": [
+  {
+   "query": "commitment device one change at a time incremental improvement cadence",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "append-only ledger design immutable audit log architecture",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "first run completed but its persisted files were lost to an ephemeral sandbox filesystem; re-dug with identical queries",
+   "new_queries": [
+    "commitment device one change at a time incremental improvement cadence",
+    "append-only ledger design immutable audit log architecture"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.productivepatty.com/maximizing-productivity-using-commitment-devices-for-cadence-based-shipping/",
+  "https://besci.org/tactics/commitment-devices",
+  "https://www.ssonetwork.com/continuous-improvement-process-improvement/columns/incremental-process-improvement-drive-results",
+  "https://www.cflowapps.com/incremental-improvement/",
+  "https://queue.acm.org/detail.cfm?id=1721964",
+  "https://medium.com/@danavanwoerdenskoglund/one-simple-3-minute-practice-to-become-better-everyday-cc08d51f29d",
+  "https://www.emergentmind.com/topics/immutable-audit-log",
+  "https://martinuke0.github.io/posts/2026-05-21-architecting-immutable-ledger-design-for-financial-systems-consistency-integrity-and-auditability-patterns/",
+  "https://www.financialreconciliation.com/compliance-audit-trail-controls/immutable-append-only-ledger-design/",
+  "https://github.com/kb4ai/event-sourcing-append-log-immutable-architecture-pub-kb",
+  "https://bitatlas.com/blog/agent-audit-logs-immutable-ledgers",
+  "https://www.financialreconciliation.com/compliance-audit-trail-controls/immutable-append-only-ledger-design/hash-chained-audit-logs-in-postgres/"
+ ],
+ "outcome": "authored"
+}
