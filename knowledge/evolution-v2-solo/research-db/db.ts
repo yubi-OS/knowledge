@@ -1,27 +1,131 @@
-# 08. MVP scope and validation plan
+// db.ts - TypeScript interfaces for the evolution-v2-solo research-db.
+//
+// File -> interface mapping:
+//   research-db/preflight.json            -> PreflightRecord
+//   research-db/outline.json              -> OutlineRecord
+//   research-db/archive.json              -> DugResult[] (a JSON array of collected, weighted results)
+//   research-db/digs/<NN>-<slug>.json     -> DigRecord (one per subtopic dig)
+//   research-db/jev-log.json              -> JevLogEntry[] (one entry per jev /api/decide HTTP request)
 
-Scope: The MVP scope the framing log commits to, the queues adapter choice, and the three assumptions the design marks for validation with live tests.
+export interface Usage {
+  input_tokens: number;
+  output_tokens: number;
+}
 
-## The MVP scope
+/** A single jev decision record attached to a collected result. */
+export interface DecisionRecord {
+  /** Metric type used for this decision. */
+  type: "noul" | "score" | "choice";
+  /** The verbatim instructions sent to the decision model. */
+  instructions: string;
+  /** Decision model, "clef". */
+  model: string;
+  /** The raw answer object returned by /api/decide (includes probabilities / confidence). */
+  answer: Record<string, unknown>;
+  usage: Usage;
+  requested_at: string;
+}
 
-The framing log's MVP is deliberately small: the hourly cron machine-cycle, jev quality assessment (propose and verify scoring), the atom ledger, the candle planter, memory recall, and the digest email. Queues run through a thin adapter, D1-backed by default, switching to CF Queues if the queue exists at deploy. Console v3 views complete the scope (source: the framing log, refs/evolution-v2-solo-2026-10-01.md).
+/** One collected search result, weighted by jev noul. Stored in archive.json. */
+export interface DugResult {
+  /** The searXNG query that surfaced this result. */
+  query: string;
+  title: string;
+  url: string;
+  snippet: string;
+  collected_at: string;
+  /** noul probability; null only if the result could not be scored (never shipped unweighted). */
+  weight: number | null;
+  decision: DecisionRecord;
+  /** Index of the superseded unweighted entry when this result was rescored; null otherwise. */
+  redo_of: number | null;
+}
 
-The not-doing list is part of the scope decision: no worker-side repo pushes, no Durable Objects (CAS on D1 suffices), no R2 (not enabled on the account; D1 and KV carry the state), no approval via email link (console approval is proven) (source: the framing log). Practitioner writing on minimum viable automation makes the same scope argument: automate the highest-value repeatable step first and expand after testing, rather than over-engineering up front (https://corp.tied-inc.com/blog/en/quality-gates-for-small-teams/, weight 0.11, weak). Quality gate practice in delivery pipelines treats gates as non-negotiable release artifacts between an experimental system and reliable production, which is the role jev plays in this loop (https://beefed.ai/en/automated-testing-gates-production-models, weight 0.19, weak; https://deepwiki.com/cogeet-io/ai-development-specifications/3.3-quality-gates-and-validation, weight 0.25, weak).
+/** One searXNG query execution recorded in a DigRecord. */
+export interface QueryAttempt {
+  query: string;
+  attempt: number;
+  raw_results: number;
+  kept: number;
+}
 
-## Assumption 1: the worker can measure its own deltas
+/** One redo logged in a DigRecord. */
+export interface RedoLogEntry {
+  attempt: number;
+  reason: string;
+  new_queries: string[];
+}
 
-The first assumption to validate is that the worker can measure deltas for its own atoms, resting on the claim that jev task outcomes are queryable from D1. The validation test is concrete: run one live atom with a recorded delta (source: the framing log). This is a data-plane assumption: if D1 cannot answer for an atom's before and after states, the ledger's d_pre, d_post, delta entries cannot be filled and V7 collapses into an unmeasured changelog.
+/** One subtopic dig. Stored in research-db/digs/<NN>-<slug>.json. */
+export interface DigRecord {
+  nn: string;
+  slug: string;
+  scope: string;
+  queries_attempted: QueryAttempt[];
+  redo_count: number;
+  redo_log: RedoLogEntry[];
+  results_kept: string[];
+  outcome: "authored" | "skipped";
+  skip_reason?: string;
+}
 
-## Assumption 2: approval forecasting reduces queue noise
+/** One outline subtopic. Part of OutlineRecord. */
+export interface OutlineSubtopic {
+  nn: string;
+  slug: string;
+  scope: string;
+  seed_queries: string[];
+}
 
-The second assumption is that approval-forecast pre-screening reduces queue noise without suppressing good proposals. The validation test is statistical: compare forecast versus actual approval correlation after at least 10 real approvals (source: the framing log). The framing log commits to a sample size, n >= 10, before drawing any conclusion.
+/** The jev score validation of the outline. Part of OutlineRecord. */
+export interface OutlineValidation {
+  metric: "score";
+  criteria: string[];
+  model: string;
+  answers: Record<
+    string,
+    {
+      score: number;
+      probabilities: Record<string, number>;
+      confidence: number;
+      legend: Record<string, string>;
+    }
+  >;
+  usage: Usage;
+  dropped: string[];
+  kept: string[];
+}
 
-The forecast evaluation literature supplies the method. Calibration means a model's estimated probabilities match real-world likelihoods; a weather model that predicts 70% chance of rain on days when it rains 70% of the time is calibrated (https://arxiv.org/html/2501.19047v1, weight 0.85, authoritative). Statistical learning treatment of forecast scoring separates sharpness from calibration and shows how to evaluate both (https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/calibration.pdf, weight 0.86, authoritative). The accuracy-versus-calibration distinction for predictive systems, accuracy measures whether predictions are correct, calibration examines whether stated confidence tracks observed frequency, is the lens the log's forecast-versus-actual test applies to its own approval forecasts (https://harvardsciencereview.org/2026/09/14/ai-forecast-calibration-accuracy/, weight 0.61, authoritative). Visualizing forecasts against actuals is the standard first evaluation step, surfacing error patterns before any summary statistic is trusted (https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/visualizing-forecast-performance, weight 0.37, weak).
+/** outline.json. */
+export interface OutlineRecord {
+  topic: string;
+  subtopics: OutlineSubtopic[];
+  validation: OutlineValidation;
+}
 
-## Assumption 3: recall changes propose behavior
+/** One jev HTTP request. Stored in jev-log.json (one entry per request). */
+export interface JevLogEntry {
+  requested_at: string;
+  endpoint: string;
+  state: string;
+  model: string;
+  n_questions: number;
+  question_names: string[];
+  metric_types: string[];
+  usage: Usage;
+}
 
-The third assumption is that Vectorize recall changes what the loop proposes, specifically that it dedupes repeated proposals. The test: re-propose a known learning and expect a recall hit (source: the framing log). This makes the memory layer falsifiable as a behavior change, not just as infrastructure: if recall does not alter proposals, the memory layer is not earning its place in the loop.
-
-## Open questions carried forward
-
-Two questions are explicitly left open: which ideal-state metric anchors the atom ledger first, with jev task success rate as the default, and candle cadence, daily versus weekly, with weekly as the recorded starting point (source: the framing log). Both are marked as empirical decisions rather than design fiat, consistent with the loop's own honesty requirement: the design does not claim to know what it has not measured.
+/** preflight.json. */
+export interface PreflightRecord {
+  date: string;
+  searxng: {
+    url: string;
+    probe_results: number;
+    unresponsive_engines: string[];
+  };
+  decide: {
+    url: string;
+    model: string;
+    probe_answer: Record<string, unknown>;
+  };
+}

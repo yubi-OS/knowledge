@@ -1,27 +1,2210 @@
-# 08. MVP scope and validation plan
-
-Scope: The MVP scope the framing log commits to, the queues adapter choice, and the three assumptions the design marks for validation with live tests.
-
-## The MVP scope
-
-The framing log's MVP is deliberately small: the hourly cron machine-cycle, jev quality assessment (propose and verify scoring), the atom ledger, the candle planter, memory recall, and the digest email. Queues run through a thin adapter, D1-backed by default, switching to CF Queues if the queue exists at deploy. Console v3 views complete the scope (source: the framing log, refs/evolution-v2-solo-2026-10-01.md).
-
-The not-doing list is part of the scope decision: no worker-side repo pushes, no Durable Objects (CAS on D1 suffices), no R2 (not enabled on the account; D1 and KV carry the state), no approval via email link (console approval is proven) (source: the framing log). Practitioner writing on minimum viable automation makes the same scope argument: automate the highest-value repeatable step first and expand after testing, rather than over-engineering up front (https://corp.tied-inc.com/blog/en/quality-gates-for-small-teams/, weight 0.11, weak). Quality gate practice in delivery pipelines treats gates as non-negotiable release artifacts between an experimental system and reliable production, which is the role jev plays in this loop (https://beefed.ai/en/automated-testing-gates-production-models, weight 0.19, weak; https://deepwiki.com/cogeet-io/ai-development-specifications/3.3-quality-gates-and-validation, weight 0.25, weak).
-
-## Assumption 1: the worker can measure its own deltas
-
-The first assumption to validate is that the worker can measure deltas for its own atoms, resting on the claim that jev task outcomes are queryable from D1. The validation test is concrete: run one live atom with a recorded delta (source: the framing log). This is a data-plane assumption: if D1 cannot answer for an atom's before and after states, the ledger's d_pre, d_post, delta entries cannot be filled and V7 collapses into an unmeasured changelog.
-
-## Assumption 2: approval forecasting reduces queue noise
-
-The second assumption is that approval-forecast pre-screening reduces queue noise without suppressing good proposals. The validation test is statistical: compare forecast versus actual approval correlation after at least 10 real approvals (source: the framing log). The framing log commits to a sample size, n >= 10, before drawing any conclusion.
-
-The forecast evaluation literature supplies the method. Calibration means a model's estimated probabilities match real-world likelihoods; a weather model that predicts 70% chance of rain on days when it rains 70% of the time is calibrated (https://arxiv.org/html/2501.19047v1, weight 0.85, authoritative). Statistical learning treatment of forecast scoring separates sharpness from calibration and shows how to evaluate both (https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/calibration.pdf, weight 0.86, authoritative). The accuracy-versus-calibration distinction for predictive systems, accuracy measures whether predictions are correct, calibration examines whether stated confidence tracks observed frequency, is the lens the log's forecast-versus-actual test applies to its own approval forecasts (https://harvardsciencereview.org/2026/09/14/ai-forecast-calibration-accuracy/, weight 0.61, authoritative). Visualizing forecasts against actuals is the standard first evaluation step, surfacing error patterns before any summary statistic is trusted (https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/visualizing-forecast-performance, weight 0.37, weak).
-
-## Assumption 3: recall changes propose behavior
-
-The third assumption is that Vectorize recall changes what the loop proposes, specifically that it dedupes repeated proposals. The test: re-propose a known learning and expect a recall hit (source: the framing log). This makes the memory layer falsifiable as a behavior change, not just as infrastructure: if recall does not alter proposals, the memory layer is not earning its place in the loop.
-
-## Open questions carried forward
-
-Two questions are explicitly left open: which ideal-state metric anchors the atom ledger first, with jev task success rate as the default, and candle cadence, daily versus weekly, with weekly as the recorded starting point (source: the framing log). Both are marked as empirical decisions rather than design fiat, consistent with the loop's own honesty requirement: the design does not claim to know what it has not measured.
+[
+ {
+  "query": "autonomous ideation without human feedback LLM agent brainstorming",
+  "title": "A Review of LLM-Assisted Ideation - arXiv.org",
+  "url": "https://arxiv.org/pdf/2503.00946",
+  "snippet": "We present a comprehensive, in-depth review of ideation assisted by large language models (LLMs), highlighting emerging trends and identifying unaddressed research gaps. In total, we examined 61 studies investigating the application of LLMs in both group and individual ideation processes.",
+  "collected_at": "2026-10-06T06:54:52Z",
+  "weight": 0.7544,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'A Review of LLM-Assisted Ideation - arXiv.org' (https://arxiv.org/pdf/2503.00946) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7544
+   },
+   "usage": {
+    "input_tokens": 800,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "autonomous ideation without human feedback LLM agent brainstorming",
+  "title": "GitHub - Lum1104/agent-brainstorm: Your AI-native partner for ...",
+  "url": "https://github.com/Lum1104/agent-brainstorm",
+  "snippet": "This system implements a 5-stage brainstorming methodology using AI agents to generate, evaluate, and refine ideas for both project development and research papers. The entire process runs locally with real-time web search integration and ArXiv research capabilities.",
+  "collected_at": "2026-10-06T06:54:52Z",
+  "weight": 0.3187,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - Lum1104/agent-brainstorm: Your AI-native partner for ...' (https://github.com/Lum1104/agent-brainstorm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3187
+   },
+   "usage": {
+    "input_tokens": 800,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "autonomous ideation without human feedback LLM agent brainstorming",
+  "title": "GitHub - Ideation-Agent/IdeationAgent: An experimental open-source ...",
+  "url": "https://github.com/Ideation-Agent/IdeationAgent",
+  "snippet": "IdeationAgent aims to revolutionize the way entrepreneurs brainstorm business ideas. By just providing a LinkedIn URL and your interests, our platform leverages the power of AI to simulate a brainstorming session with four AI agents: CASEY (Researcher) - Provides data and insights related to the idea. PAT (Devil's Advocate) - Questions the feasibility and challenges of an idea. Lily (Angel's ...",
+  "collected_at": "2026-10-06T06:54:52Z",
+  "weight": 0.4225,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - Ideation-Agent/IdeationAgent: An experimental open-source ...' (https://github.com/Ideation-Agent/IdeationAgent) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4225
+   },
+   "usage": {
+    "input_tokens": 800,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "autonomous ideation without human feedback LLM agent brainstorming",
+  "title": "[2503.00946] A Review of LLM-Assisted Ideation - arXiv.org",
+  "url": "https://arxiv.org/abs/2503.00946",
+  "snippet": "Mar 2, 2025 \u00b7 We present a comprehensive, in-depth review of ideation assisted by large language models (LLMs), highlighting emerging trends and identifying unaddressed research gaps. In total, we examined 61 studies investigating the application of LLMs in both group and individual ideation processes.",
+  "collected_at": "2026-10-06T06:54:52Z",
+  "weight": 0.9283,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '[2503.00946] A Review of LLM-Assisted Ideation - arXiv.org' (https://arxiv.org/abs/2503.00946) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9283
+   },
+   "usage": {
+    "input_tokens": 800,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "autonomous ideation without human feedback LLM agent brainstorming",
+  "title": "Agent Laboratory: Using LLM Agents as Research Assistants",
+  "url": "https://arxiv.org/pdf/2501.04227",
+  "snippet": "The pipeline integrates human input with LLM-driven agents, such as the PhD and Postdoc agents, which handle literature reviews, experimental planning, data preparation, and result interpretation.",
+  "collected_at": "2026-10-06T06:54:52Z",
+  "weight": 0.7325,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Agent Laboratory: Using LLM Agents as Research Assistants' (https://arxiv.org/pdf/2501.04227) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7325
+   },
+   "usage": {
+    "input_tokens": 800,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:52Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "autonomous ideation without human feedback LLM agent brainstorming",
+  "title": "Creativity in LLM-based Multi-Agent Systems: A Survey",
+  "url": "https://arxiv.org/pdf/2505.21116",
+  "snippet": "Single-agent pipelines, such as one-shot or simple iterative LLM prompting (Grattafiori et al., 2024; Wang et al., 2022), execute in isolation and often converge on familiar patterns, struggling to explore vast open-ended spaces. Unlike monolithic systems, a MAS comprises multiple autonomous entities: software agents, robots, or human-AI hybrids.Single-agent pipelines, such as one-shot or simple iterative LLM prompting (Grattafiori et al., 2024; Wang et al., 2022), execute in isolation and often converge on familiar patterns, struggling to explore vast open-ended spaces. Unlike monolithic systems, a MAS comprises multiple autonomous entities: software agents, robots, or human-AI hybrids.",
+  "collected_at": "2026-10-06T06:54:54Z",
+  "weight": 0.8077,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Creativity in LLM-based Multi-Agent Systems: A Survey' (https://arxiv.org/pdf/2505.21116) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8077
+   },
+   "usage": {
+    "input_tokens": 803,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea scoring criteria novelty feasibility tradeoff framework",
+  "title": "Powerful Idea Evaluation Criteria - IdeaClouds",
+  "url": "https://www.ideaclouds.net/resources/workshop-methods/idea-evaluation-methods/",
+  "snippet": "Learn idea evaluation criteria and methods for systematic assessment. Professional frameworks for scoring, rating and selecting the best ideas.Learn idea evaluation criteria and methods for systematic assessment. Professional frameworks for scoring, rating and selecting the best ideas.",
+  "collected_at": "2026-10-06T06:54:54Z",
+  "weight": 0.1262,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Powerful Idea Evaluation Criteria - IdeaClouds' (https://www.ideaclouds.net/resources/workshop-methods/idea-evaluation-methods/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1262
+   },
+   "usage": {
+    "input_tokens": 803,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea scoring criteria novelty feasibility tradeoff framework",
+  "title": "Idea Evaluation Process & Criteria Guide - ideawake.com",
+  "url": "https://ideawake.com/idea-evaluation-process-and-criteria/",
+  "snippet": "Idea evaluation is the structured method of assessing an idea\u2019s potential value, feasibility, and risk before investing time or money. It gives you a reliable way to decide which ideas deserve to move forward and which should be parked or refined.Idea evaluation is the structured method of assessing an idea\u2019s potential value, feasibility, and risk before investing time or money. It gives you a reliable way to decide which ideas deserve to move forward and which should be parked or refined.",
+  "collected_at": "2026-10-06T06:54:54Z",
+  "weight": 0.1778,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idea Evaluation Process & Criteria Guide - ideawake.com' (https://ideawake.com/idea-evaluation-process-and-criteria/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1778
+   },
+   "usage": {
+    "input_tokens": 803,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea scoring criteria novelty feasibility tradeoff framework",
+  "title": "Idea Selection Criteria for Innovation: The 2026 Framework for Data ...",
+  "url": "https://ideawake.com/idea-selection-criteria-for-innovation-the-2026-framework-for-data-driven-scoring/",
+  "snippet": "Stop gambling on innovation. Master the objective idea selection criteria for innovation with our 2026 framework for data-driven scoring and measurable ROI.Stop gambling on innovation. Master the objective idea selection criteria for innovation with our 2026 framework for data-driven scoring and measurable ROI.",
+  "collected_at": "2026-10-06T06:54:54Z",
+  "weight": 0.1141,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idea Selection Criteria for Innovation: The 2026 Framework for Data ...' (https://ideawake.com/idea-selection-criteria-for-innovation-the-2026-framework-for-data-driven-scoring/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1141
+   },
+   "usage": {
+    "input_tokens": 803,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea scoring criteria novelty feasibility tradeoff framework",
+  "title": "Unpacking idea evaluation process: Key insights and future directions",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0166497226000982",
+  "snippet": "For example, a corporate innovation team could use the framework to design a workflow where AI filters 500+ employee ideas by feasibility, hybrid panels score remaining ideas on novelty and user value, and structured feedback loops refine top concepts, turning fragmented evaluation into a systemic, value-driven practice.For example, a corporate innovation team could use the framework to design a workflow where AI filters 500+ employee ideas by feasibility, hybrid panels score remaining ideas on novelty and user value, and structured feedback loops refine top concepts, turning fragmented evaluation into a systemic, value-driven practice.",
+  "collected_at": "2026-10-06T06:54:54Z",
+  "weight": 0.886,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unpacking idea evaluation process: Key insights and future directions' (https://www.sciencedirect.com/science/article/pii/S0166497226000982) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.886
+   },
+   "usage": {
+    "input_tokens": 803,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:54Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea scoring criteria novelty feasibility tradeoff framework",
+  "title": "Idea Matrix: A Framework for Effective Idea Evaluation",
+  "url": "https://qmarkets.net/resources/article/idea-matrix/",
+  "snippet": "Jan 21, 2026 \u00b7 An idea matrix provides a clear, objective method for evaluating, classifying, and prioritizing ideas based on criteria such as feasibility, impact, and strategic alignment.",
+  "collected_at": "2026-10-06T06:54:56Z",
+  "weight": 0.2767,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idea Matrix: A Framework for Effective Idea Evaluation' (https://qmarkets.net/resources/article/idea-matrix/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2767
+   },
+   "usage": {
+    "input_tokens": 342,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea scoring criteria novelty feasibility tradeoff framework",
+  "title": "Key Criteria for Idea Evaluation Explained - Vizologi",
+  "url": "https://vizologi.com/key-criteria-for-idea-evaluation-explained/",
+  "snippet": "Evaluating ideas is important. It helps determine their value and feasibility. Companies gauge ideas using criteria such as novelty, feasibility, market potential, and benefits versus costs. This ensures they align with the company\u2019s objectives and brand. Managers can use scoring, rating, metrics, and feedback to keep the idea process clear and on-brand. It is crucial to group ideas based on ...Evaluating ideas is important. It helps determine their value and feasibility. Companies gauge ideas using criteria such as novelty, feasibility, market potential, and benefits versus costs. This ensures they align with the company\u2019s objectives and brand. Managers can use scoring, rating, metrics, and feedback to keep the idea process clear and on-brand. It is crucial to group ideas based on ...",
+  "collected_at": "2026-10-06T06:54:56Z",
+  "weight": 0.3155,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Key Criteria for Idea Evaluation Explained - Vizologi' (https://vizologi.com/key-criteria-for-idea-evaluation-explained/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3155
+   },
+   "usage": {
+    "input_tokens": 342,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:54:56Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "guardrails for autonomous cron driven AI agent loops",
+  "title": "GitHub - groktopus/loop-designer: Autonomous agent loop ...",
+  "url": "https://github.com/groktopus/loop-designer",
+  "snippet": "Autonomous agent loop design in 10 steps. A Hermes Agent skill that distills Alex (@de1lymoon)'s 10-step roadmap into concrete Hermes Agent invocations \u2014 from /goal with goal_judge to unattended cron loops with memory, verification, and fail-safe guardrails. This is NOT about better prompting or model selection. The model stays the same \u2014 what improves is the infrastructure wrapped around it.",
+  "collected_at": "2026-10-06T06:55:14Z",
+  "weight": 0.3202,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - groktopus/loop-designer: Autonomous agent loop ...' (https://github.com/groktopus/loop-designer) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3202
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "guardrails for autonomous cron driven AI agent loops",
+  "title": "Guardrails for Autonomous AI Agents: Production Safety 2026",
+  "url": "https://khimananda.com/blog/guardrails-for-autonomous-ai-agents",
+  "snippet": "Aug 10, 2026 \u00b7 Learn how to implement guardrails for autonomous AI agents with policy-as-code, IAM boundaries, and human-in-the-loop controls for safe production ops.",
+  "collected_at": "2026-10-06T06:55:14Z",
+  "weight": 0.1328,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Guardrails for Autonomous AI Agents: Production Safety 2026' (https://khimananda.com/blog/guardrails-for-autonomous-ai-agents) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1328
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "guardrails for autonomous cron driven AI agent loops",
+  "title": "GitHub - Norinatiring463/loop-engineering: Design and audit autonomous ...",
+  "url": "https://github.com/Norinatiring463/loop-engineering",
+  "snippet": "A prompt optimizes a single interaction; a loop optimizes the autonomous behavior that surrounds it \u2014 when an agent runs, what triggers it, how it verifies its own work, when it stops, and when it hands back to a human.",
+  "collected_at": "2026-10-06T06:55:14Z",
+  "weight": 0.1369,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - Norinatiring463/loop-engineering: Design and audit autonomous ...' (https://github.com/Norinatiring463/loop-engineering) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1369
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "guardrails for autonomous cron driven AI agent loops",
+  "title": "Guardrails for Autonomous AI Agents: Patterns That Work",
+  "url": "https://gigafloptechlab.com/ai-agent/blog-guardrails-for-autonomous-ai-agents/",
+  "snippet": "Sep 15, 2026 \u00b7 This technical guide outlines practical, production-tested guardrail patterns that engineering leaders can implement during ai agent development to secure tool execution, control token burn, and maintain zero-trust data safety.",
+  "collected_at": "2026-10-06T06:55:14Z",
+  "weight": 0.122,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Guardrails for Autonomous AI Agents: Patterns That Work' (https://gigafloptechlab.com/ai-agent/blog-guardrails-for-autonomous-ai-agents/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.122
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "guardrails for autonomous cron driven AI agent loops",
+  "title": "How to Run Claude as an Autonomous Agent: Loops, Memory, Schedules, and ...",
+  "url": "https://dev.to/wartzarbee/how-to-run-claude-as-an-autonomous-agent-loops-memory-schedules-and-guardrails-jkj",
+  "snippet": "A practical guide to running Claude unattended \u2014 long-running loops, scheduled/cron agents, memory and state that survives across sessions, tool use, and the guardrails that keep an autonomous agent honest and safe. Tagged with claude, ai, automation, agents.",
+  "collected_at": "2026-10-06T06:55:14Z",
+  "weight": 0.1438,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Run Claude as an Autonomous Agent: Loops, Memory, Schedules, and ...' (https://dev.to/wartzarbee/how-to-run-claude-as-an-autonomous-agent-loops-memory-schedules-and-guardrails-jkj) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1438
+   },
+   "usage": {
+    "input_tokens": 808,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:14Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "guardrails for autonomous cron driven AI agent loops",
+  "title": "AI Agent Loop Guardrails: Where to Place Them - Loop Engineering",
+  "url": "https://loop-engineering.net/knowledge/reliability-safety/guardrails-autonomous-ai-loops/",
+  "snippet": "Jul 20, 2026 \u00b7 Learn where to place guardrails in AI agent loops, what they block, and how to balance safety, context, and latency.",
+  "collected_at": "2026-10-06T06:55:16Z",
+  "weight": 0.3983,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'AI Agent Loop Guardrails: Where to Place Them - Loop Engineering' (https://loop-engineering.net/knowledge/reliability-safety/guardrails-autonomous-ai-loops/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3983
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:16Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "principle of least privilege AI agent blast radius autonomy boundary",
+  "title": "The principle of least privilege for AI agents",
+  "url": "https://www.threatlocker.com/blog/the-principle-of-least-privilege-for-ai-agents",
+  "snippet": "AI agents should be treated the same as human users when it comes to enforcing Zero Trust principles. Least privilege in particular helps contain compromises before they take over.AI agents should be treated the same as human users when it comes to enforcing Zero Trust principles. Least privilege in particular helps contain compromises before they take over.",
+  "collected_at": "2026-10-06T06:55:16Z",
+  "weight": 0.396,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The principle of least privilege for AI agents' (https://www.threatlocker.com/blog/the-principle-of-least-privilege-for-ai-agents) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.396
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:16Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "principle of least privilege AI agent blast radius autonomy boundary",
+  "title": "Limiting Data Exposure and Blast Radius for AI Agents",
+  "url": "https://www.loginradius.com/blog/engineering/limiting-data-exposure-and-blast-radius-for-ai-agents",
+  "snippet": "Feb 23, 2026 \u00b7 Learn how to limit data exposure and blast radius for AI agents using agentic security, ai agent authentication, and identity-centric controls.",
+  "collected_at": "2026-10-06T06:55:16Z",
+  "weight": 0.3019,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Limiting Data Exposure and Blast Radius for AI Agents' (https://www.loginradius.com/blog/engineering/limiting-data-exposure-and-blast-radius-for-ai-agents) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3019
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:16Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "principle of least privilege AI agent blast radius autonomy boundary",
+  "title": "The Agent Blast Radius Model: Matching AI Agent Autonomy to Access ...",
+  "url": "https://digitalthoughtdisruption.com/2026/07/24/agent-blast-radius-model-ai-agent-autonomy/",
+  "snippet": "Learn how to use the Agent Blast Radius Model to match AI agent autonomy with access scope, transaction impact, and rollback feasibility.Learn how to use the Agent Blast Radius Model to match AI agent autonomy with access scope, transaction impact, and rollback feasibility.",
+  "collected_at": "2026-10-06T06:55:16Z",
+  "weight": 0.1236,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The Agent Blast Radius Model: Matching AI Agent Autonomy to Access ...' (https://digitalthoughtdisruption.com/2026/07/24/agent-blast-radius-model-ai-agent-autonomy/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1236
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:16Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "principle of least privilege AI agent blast radius autonomy boundary",
+  "title": "Least Privilege for AI Agents: Runtime Capability Minimization and ...",
+  "url": "https://copilot-autogent.github.io/ai-security-blog/blog/least-privilege-ai-agents-capability-minimization/",
+  "snippet": "Most agent deployments give AI agents too many capabilities by default \u2014 violating a 50-year-old security principle. A concrete framework for enumerating required capabilities, scoping tool access by task, sandboxing execution environments, and auditing capability creep to reduce blast radius.Most agent deployments give AI agents too many capabilities by default \u2014 violating a 50-year-old security principle. A concrete framework for enumerating required capabilities, scoping tool access by task, sandboxing execution environments, and auditing capability creep to reduce blast radius.",
+  "collected_at": "2026-10-06T06:55:16Z",
+  "weight": 0.2539,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Least Privilege for AI Agents: Runtime Capability Minimization and ...' (https://copilot-autogent.github.io/ai-security-blog/blog/least-privilege-ai-agents-capability-minimization/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2539
+   },
+   "usage": {
+    "input_tokens": 820,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:16Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "principle of least privilege AI agent blast radius autonomy boundary",
+  "title": "Least privilege for AI agents with Microsoft Entra Agent ID",
+  "url": "https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents",
+  "snippet": "Pattern: Least-privilege AI agents Practice: Protect identities and secrets; Secure by design; Secure by default As organizations adopt agentic AI, the security question shifts from whether an agent can complete a task to whether it should be allowed to perform each action, against which resources, and under whose authority. This pattern frames least privilege as a design requirement for ...",
+  "collected_at": "2026-10-06T06:55:19Z",
+  "weight": 0.9522,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Least privilege for AI agents with Microsoft Entra Agent ID' (https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9522
+   },
+   "usage": {
+    "input_tokens": 374,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:19Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "principle of least privilege AI agent blast radius autonomy boundary",
+  "title": "Agentic AI Blast Radius Reduction with Identity | Entrust",
+  "url": "https://www.entrust.com/blog/2026/08/why-agentic-ai-expands-blast-radius-and-how-identity-limits-it",
+  "snippet": "How does least privilege reduce AI agent blast radius? By scoping access to the specific tool and action an agent needs right now, rather than the account level, so a compromised agent can't reach beyond the task it was performing. What identity controls help contain AI agents?",
+  "collected_at": "2026-10-06T06:55:19Z",
+  "weight": 0.5205,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Agentic AI Blast Radius Reduction with Identity | Entrust' (https://www.entrust.com/blog/2026/08/why-agentic-ai-expands-blast-radius-and-how-identity-limits-it) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5205
+   },
+   "usage": {
+    "input_tokens": 374,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:19Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SCAMPER creativity techniques inversion simplification combination",
+  "title": "SCAMPER Design Thinking Technique: Complete Guide & Examples",
+  "url": "https://www.imd.org/blog/innovation/scamper-method-design-thinking/",
+  "snippet": "Transform ideas systematically with SCAMPER design thinking. Discover 7 proven techniques, real-world examples from leading brands, with tips to succeed!Transform ideas systematically with SCAMPER design thinking. Discover 7 proven techniques, real-world examples from leading brands, with tips to succeed!",
+  "collected_at": "2026-10-06T06:55:35Z",
+  "weight": 0.4547,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SCAMPER Design Thinking Technique: Complete Guide & Examples' (https://www.imd.org/blog/innovation/scamper-method-design-thinking/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4547
+   },
+   "usage": {
+    "input_tokens": 771,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SCAMPER creativity techniques inversion simplification combination",
+  "title": "SCAMPER model of creativity, explained | An easy innovation ...",
+  "url": "https://www.bitesizelearning.co.uk/resources/scamper-model-creativity",
+  "snippet": "Find creative solutions to innovation challenges with the SCAMPER model. Learn how to apply the seven SCAMPER factors: Substitute, Combine, Adapt, Modify, Put to a new use, Eliminate and Reverse.Find creative solutions to innovation challenges with the SCAMPER model. Learn how to apply the seven SCAMPER factors: Substitute, Combine, Adapt, Modify, Put to a new use, Eliminate and Reverse.",
+  "collected_at": "2026-10-06T06:55:35Z",
+  "weight": 0.2993,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SCAMPER model of creativity, explained | An easy innovation ...' (https://www.bitesizelearning.co.uk/resources/scamper-model-creativity) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2993
+   },
+   "usage": {
+    "input_tokens": 771,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SCAMPER creativity techniques inversion simplification combination",
+  "title": "SCAMPER Technique for Creative Thinking and Innovation",
+  "url": "https://mockflow.com/blog/scamper-technique",
+  "snippet": "Learn what the SCAMPER technique is, how it works, and how to apply its seven questions to improve ideas, products, and processes with real examples.Learn what the SCAMPER technique is, how it works, and how to apply its seven questions to improve ideas, products, and processes with real examples.",
+  "collected_at": "2026-10-06T06:55:35Z",
+  "weight": 0.2276,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SCAMPER Technique for Creative Thinking and Innovation' (https://mockflow.com/blog/scamper-technique) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2276
+   },
+   "usage": {
+    "input_tokens": 771,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SCAMPER creativity techniques inversion simplification combination",
+  "title": "SCAMPER Technique Examples and Applications - Designorate",
+  "url": "https://www.designorate.com/scamper-technique-examples-and-applications/",
+  "snippet": "The SCAMPER technique is one of the brainstorming tools that allows us to explore solutions to problems by altering the current product through seven different approaches: Substitute, Combine, Adapt, Modify, Put in Another Use, Eliminate, and Rearrange. My previous article, A Guide to the SCAMPER Technique for Creative Thinking, explored these seven approaches and the questions we must ask ...The SCAMPER technique is one of the brainstorming tools that allows us to explore solutions to problems by altering the current product through seven different approaches: Substitute, Combine, Adapt, Modify, Put in Another Use, Eliminate, and Rearrange. My previous article, A Guide to the SCAMPER Technique for Creative Thinking, explored these seven approaches and the questions we must ask ...",
+  "collected_at": "2026-10-06T06:55:35Z",
+  "weight": 0.2461,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SCAMPER Technique Examples and Applications - Designorate' (https://www.designorate.com/scamper-technique-examples-and-applications/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2461
+   },
+   "usage": {
+    "input_tokens": 771,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SCAMPER creativity techniques inversion simplification combination",
+  "title": "SCAMPER Technique: Drive Innovation & Creativity - SixSigma.us",
+  "url": "https://www.6sigma.us/lean-tools/scamper-technique/",
+  "snippet": "Eberle\u2019s book was initially intended as a resource for teaching creative problem-solving skills to children, but the technique quickly gained popularity in the business world due to its effectiveness in fostering innovation and generating unique ideas. Explore how SCAMPER and other problem-solving techniques fit into the improvement framework.Eberle\u2019s book was initially intended as a resource for teaching creative problem-solving skills to children, but the technique quickly gained popularity in the business world due to its effectiveness in fostering innovation and generating unique ideas. Explore how SCAMPER and other problem-solving techniques fit into the improvement framework.",
+  "collected_at": "2026-10-06T06:55:35Z",
+  "weight": 0.3869,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SCAMPER Technique: Drive Innovation & Creativity - SixSigma.us' (https://www.6sigma.us/lean-tools/scamper-technique/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3869
+   },
+   "usage": {
+    "input_tokens": 771,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:35Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "SCAMPER creativity techniques inversion simplification combination",
+  "title": "SCAMPER Method: Guide, Practical Example, and Checklist for ...",
+  "url": "https://www.si-labs.com/en/articles/scamper/",
+  "snippet": "The SCAMPER method step by step: 7 creativity techniques with a practical example for service and product innovation.The SCAMPER method step by step: 7 creativity techniques with a practical example for service and product innovation.",
+  "collected_at": "2026-10-06T06:55:38Z",
+  "weight": 0.2218,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SCAMPER Method: Guide, Practical Example, and Checklist for ...' (https://www.si-labs.com/en/articles/scamper/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2218
+   },
+   "usage": {
+    "input_tokens": 774,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:38Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea evaluation criteria testability switching cost decision drop",
+  "title": "Idea Evaluation Process & Criteria Guide - ideawake.com",
+  "url": "https://ideawake.com/idea-evaluation-process-and-criteria/",
+  "snippet": "Idea evaluation is the structured method of assessing an idea\u2019s potential value, feasibility, and risk before investing time or money. It gives you a reliable way to decide which ideas deserve to move forward and which should be parked or refined.Idea evaluation is the structured method of assessing an idea\u2019s potential value, feasibility, and risk before investing time or money. It gives you a reliable way to decide which ideas deserve to move forward and which should be parked or refined.",
+  "collected_at": "2026-10-06T06:55:38Z",
+  "weight": 0.1762,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idea Evaluation Process & Criteria Guide - ideawake.com' (https://ideawake.com/idea-evaluation-process-and-criteria/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1762
+   },
+   "usage": {
+    "input_tokens": 774,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:38Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea evaluation criteria testability switching cost decision drop",
+  "title": "Powerful Idea Evaluation Criteria - IdeaClouds",
+  "url": "https://www.ideaclouds.net/resources/workshop-methods/idea-evaluation-methods/",
+  "snippet": "Learn idea evaluation criteria and methods for systematic assessment. Professional frameworks for scoring, rating and selecting the best ideas.Learn idea evaluation criteria and methods for systematic assessment. Professional frameworks for scoring, rating and selecting the best ideas.",
+  "collected_at": "2026-10-06T06:55:38Z",
+  "weight": 0.2957,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Powerful Idea Evaluation Criteria - IdeaClouds' (https://www.ideaclouds.net/resources/workshop-methods/idea-evaluation-methods/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2957
+   },
+   "usage": {
+    "input_tokens": 774,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:38Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea evaluation criteria testability switching cost decision drop",
+  "title": "Idea Evaluation Methods for Practical Selection and Prioritization",
+  "url": "https://www.lusidea.com/articles/idea-evaluation-methods-for-practical-selection-and-prioritization",
+  "snippet": "Jun 9, 2026 \u00b7 Ideas create a resource-allocation problem before they create a growth opportunity. This article explains practical idea evaluation methods, prioritization logic, and scoring models for innovation decisions.",
+  "collected_at": "2026-10-06T06:55:38Z",
+  "weight": 0.1355,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idea Evaluation Methods for Practical Selection and Prioritization' (https://www.lusidea.com/articles/idea-evaluation-methods-for-practical-selection-and-prioritization) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1355
+   },
+   "usage": {
+    "input_tokens": 774,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:38Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea evaluation criteria testability switching cost decision drop",
+  "title": "The Idea Evaluation Process: A Complete Guide - qmarkets.net",
+  "url": "https://qmarkets.net/resources/article/idea-evaluation-process/",
+  "snippet": "Discover the idea evaluation process and how it can contribute towards an innovation process that drives sustained results.Discover the idea evaluation process and how it can contribute towards an innovation process that drives sustained results.",
+  "collected_at": "2026-10-06T06:55:38Z",
+  "weight": 0.1046,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'The Idea Evaluation Process: A Complete Guide - qmarkets.net' (https://qmarkets.net/resources/article/idea-evaluation-process/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1046
+   },
+   "usage": {
+    "input_tokens": 774,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:38Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea evaluation criteria testability switching cost decision drop",
+  "title": "Unpacking idea evaluation process: Key insights and future directions",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0166497226000982",
+  "snippet": "This intricate decision environment makes evaluation both resource-intensive and prone to costly errors, such as dismissing breakthrough ideas or advancing flawed ones, that stall innovation pipelines. Given its role as a make-or-break step in innovation, idea evaluation has garnered growing scholarly attention in recent years.This intricate decision environment makes evaluation both resource-intensive and prone to costly errors, such as dismissing breakthrough ideas or advancing flawed ones, that stall innovation pipelines. Given its role as a make-or-break step in innovation, idea evaluation has garnered growing scholarly attention in recent years.",
+  "collected_at": "2026-10-06T06:55:40Z",
+  "weight": 0.7822,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Unpacking idea evaluation process: Key insights and future directions' (https://www.sciencedirect.com/science/article/pii/S0166497226000982) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7822
+   },
+   "usage": {
+    "input_tokens": 367,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:40Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "idea evaluation criteria testability switching cost decision drop",
+  "title": "Idea Tool Evaluation Guide: ROI-Focused Selection Methods",
+  "url": "https://unbuiltlab.com/blog/idea-tool-evaluation-guide-roi-focused-selection-methods.html",
+  "snippet": "Jun 11, 2026 \u00b7 Effective idea tool evaluation starts with calculating total cost of ownership against projected value creation. Most founders underestimate hidden costs\u2014integration time, learning curve, data migration, and opportunity cost of choosing the wrong platform.",
+  "collected_at": "2026-10-06T06:55:40Z",
+  "weight": 0.1284,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Idea Tool Evaluation Guide: ROI-Focused Selection Methods' (https://unbuiltlab.com/blog/idea-tool-evaluation-guide-roi-focused-selection-methods.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1284
+   },
+   "usage": {
+    "input_tokens": 367,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:40Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "commitment device one change at a time incremental improvement cadence",
+  "title": "Maximizing Productivity: Using Commitment Devices for Cadence-Based ...",
+  "url": "https://www.productivepatty.com/maximizing-productivity-using-commitment-devices-for-cadence-based-shipping/",
+  "snippet": "Jan 26, 2026 \u00b7 In exploring effective strategies for cadence-based shipping, one intriguing approach involves the use of commitment devices to enhance productivity and accountability. By implementing these tools, teams can establish clear deadlines and incentives that encourage timely delivery of projects.",
+  "collected_at": "2026-10-06T06:55:57Z",
+  "weight": 0.3167,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Maximizing Productivity: Using Commitment Devices for Cadence-Based ...' (https://www.productivepatty.com/maximizing-productivity-using-commitment-devices-for-cadence-based-shipping/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3167
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:57Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "commitment device one change at a time incremental improvement cadence",
+  "title": "Commitment Devices | Behavior change tactic | The Behavior Institute ...",
+  "url": "https://besci.org/tactics/commitment-devices",
+  "snippet": "Commitment devices are tools that attempt to bridge the gap between a person's initial motivation to perfrom the behavior and the typical pattern of noncompliance as time goes on.One prominent example is the \"Ulysses Pact,\" where Filipino banking customers were offered the option to enroll in an account where their ability to make withdrawals would be limited. In a study by Ashraf and Karlan ...Commitment devices are tools that attempt to bridge the gap between a person's initial motivation to perfrom the behavior and the typical pattern of noncompliance as time goes on.One prominent example is the \"Ulysses Pact,\" where Filipino banking customers were offered the option to enroll in an account where their ability to make withdrawals would be limited. In a study by Ashraf and Karlan ...",
+  "collected_at": "2026-10-06T06:55:57Z",
+  "weight": 0.6523,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Commitment Devices | Behavior change tactic | The Behavior Institute ...' (https://besci.org/tactics/commitment-devices) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6523
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:57Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "commitment device one change at a time incremental improvement cadence",
+  "title": "Small Steps, Big Impact: How Incremental Process Improvements Drive Results",
+  "url": "https://www.ssonetwork.com/continuous-improvement-process-improvement/columns/incremental-process-improvement-drive-results",
+  "snippet": "May 15, 2026 \u00b7 Small process improvements offer a pragmatic, low\u2011risk path to achieving meaningful and sustainable change. By focusing on incremental improvements from the boardroom through operations and audit, organizations can enhance performance, reduce risk, and build a culture of continuous improvement.",
+  "collected_at": "2026-10-06T06:55:57Z",
+  "weight": 0.2885,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Small Steps, Big Impact: How Incremental Process Improvements Drive Results' (https://www.ssonetwork.com/continuous-improvement-process-improvement/columns/incremental-process-improvement-drive-results) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2885
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:57Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "commitment device one change at a time incremental improvement cadence",
+  "title": "Incremental Improvement: The Compounding Effect of Small Wins",
+  "url": "https://www.cflowapps.com/incremental-improvement/",
+  "snippet": "Aug 31, 2026 \u00b7 With a one-step-at-a-time approach, the incremental improvement method becomes an advantage to teams in changing the core setup of processes with simple and small-scale changes.",
+  "collected_at": "2026-10-06T06:55:57Z",
+  "weight": 0.0886,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Incremental Improvement: The Compounding Effect of Small Wins' (https://www.cflowapps.com/incremental-improvement/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0886
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:57Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "commitment device one change at a time incremental improvement cadence",
+  "title": "Commitment Issues - ACM Queue",
+  "url": "https://queue.acm.org/detail.cfm?id=1721964",
+  "snippet": "Commitment Issues When is the right time to commit changes? One of the other people on my project insists on checking in unrelated changes in large batch\u2026",
+  "collected_at": "2026-10-06T06:55:57Z",
+  "weight": 0.3946,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Commitment Issues - ACM Queue' (https://queue.acm.org/detail.cfm?id=1721964) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3946
+   },
+   "usage": {
+    "input_tokens": 791,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:57Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "commitment device one change at a time incremental improvement cadence",
+  "title": "One simple 3-minute practice to become better everyday | Medium",
+  "url": "https://medium.com/@danavanwoerdenskoglund/one-simple-3-minute-practice-to-become-better-everyday-cc08d51f29d",
+  "snippet": "\u201cThe [Daily Questions] announce our intention to do something and, at the risk of private disappointment or public humiliation, they commit us to doing it\u201d. The daily check-in also reminds us to take things one day at a time.Incremental improvements compound into big results.",
+  "collected_at": "2026-10-06T06:55:59Z",
+  "weight": 0.1642,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'One simple 3-minute practice to become better everyday | Medium' (https://medium.com/@danavanwoerdenskoglund/one-simple-3-minute-practice-to-become-better-everyday-cc08d51f29d) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1642
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:59Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "append-only ledger design immutable audit log architecture",
+  "title": "Immutable Audit Log Architecture - emergentmind.com",
+  "url": "https://www.emergentmind.com/topics/immutable-audit-log",
+  "snippet": "An immutable audit log is a cryptographically protected, append-only record of events or actions, structured such that once written, past entries cannot be altered or deleted without detection. This property delivers strong guarantees of data integrity, accountability, and non-repudiation, making such systems foundational for forensic analysis, regulatory compliance, distributed consensus, and ...An immutable audit log is a cryptographically protected, append-only record of events or actions, structured such that once written, past entries cannot be altered or deleted without detection. This property delivers strong guarantees of data integrity, accountability, and non-repudiation, making such systems foundational for forensic analysis, regulatory compliance, distributed consensus, and ...",
+  "collected_at": "2026-10-06T06:55:59Z",
+  "weight": 0.2568,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Immutable Audit Log Architecture - emergentmind.com' (https://www.emergentmind.com/topics/immutable-audit-log) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2568
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:59Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "append-only ledger design immutable audit log architecture",
+  "title": "Architecting Immutable Ledger Design for Financial Systems: Consistency ...",
+  "url": "https://martinuke0.github.io/posts/2026-05-21-architecting-immutable-ledger-design-for-financial-systems-consistency-integrity-and-auditability-patterns/",
+  "snippet": "TL;DR \u2014 Immutable ledgers achieve regulatory\u2011grade consistency, tamper\u2011proof integrity, and effortless auditability by combining append\u2011only storage, cryptographic chaining, and proven consensus protocols. The patterns below show how to implement them at scale on modern cloud stacks.TL;DR \u2014 Immutable ledgers achieve regulatory\u2011grade consistency, tamper\u2011proof integrity, and effortless auditability by combining append\u2011only storage, cryptographic chaining, and proven consensus protocols. The patterns below show how to implement them at scale on modern cloud stacks.",
+  "collected_at": "2026-10-06T06:55:59Z",
+  "weight": 0.0875,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Architecting Immutable Ledger Design for Financial Systems: Consistency ...' (https://martinuke0.github.io/posts/2026-05-21-architecting-immutable-ledger-design-for-financial-systems-consistency-integrity-and-auditability-patterns/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0875
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:59Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "append-only ledger design immutable audit log architecture",
+  "title": "Immutable Append-Only Ledger Design \u00b7 FinReconcile",
+  "url": "https://www.financialreconciliation.com/compliance-audit-trail-controls/immutable-append-only-ledger-design/",
+  "snippet": "Immutable Append-Only Ledger Design for Tamper-Evident Reconciliation Audit Trails The audit ledger is the system of record that lets a regulator replay a reconciliation run and arrive at the same decisions your pipeline made in production. It is written at the tail of every consequential step: after a transaction is matched, after a variance break is routed, after a reviewer signs off, and ...Immutable Append-Only Ledger Design for Tamper-Evident Reconciliation Audit Trails The audit ledger is the system of record that lets a regulator replay a reconciliation run and arrive at the same decisions your pipeline made in production. It is written at the tail of every consequential step: after a transaction is matched, after a variance break is routed, after a reviewer signs off, and ...",
+  "collected_at": "2026-10-06T06:55:59Z",
+  "weight": 0.2205,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Immutable Append-Only Ledger Design \u00b7 FinReconcile' (https://www.financialreconciliation.com/compliance-audit-trail-controls/immutable-append-only-ledger-design/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2205
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:59Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "append-only ledger design immutable audit log architecture",
+  "title": "Event Sourcing, Append-Log & Immutable Architecture - GitHub",
+  "url": "https://github.com/kb4ai/event-sourcing-append-log-immutable-architecture-pub-kb",
+  "snippet": "Architecture patterns combining event sourcing, append-only logs, immutable data structures, and distributed ledger-inspired designs rooted in functional programming principles - kb4ai/event-sourci...Architecture patterns combining event sourcing, append-only logs, immutable data structures, and distributed ledger-inspired designs rooted in functional programming principles - kb4ai/event-sourci...",
+  "collected_at": "2026-10-06T06:55:59Z",
+  "weight": 0.1605,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Event Sourcing, Append-Log & Immutable Architecture - GitHub' (https://github.com/kb4ai/event-sourcing-append-log-immutable-architecture-pub-kb) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1605
+   },
+   "usage": {
+    "input_tokens": 834,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:55:59Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "append-only ledger design immutable audit log architecture",
+  "title": "Building Immutable Audit Trails for AI Agent Actions \u2014 BitAtlas Blog",
+  "url": "https://bitatlas.com/blog/agent-audit-logs-immutable-ledgers",
+  "snippet": "Building Immutable Audit Trails for AI Agent Actions How to design tamper-proof audit logs for autonomous AI agents using append-only stores, cryptographic chaining, and verifiable ledgers \u2014 so you always know what your agents did and when.",
+  "collected_at": "2026-10-06T06:56:02Z",
+  "weight": 0.3895,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Building Immutable Audit Trails for AI Agent Actions \u2014 BitAtlas Blog' (https://bitatlas.com/blog/agent-audit-logs-immutable-ledgers) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3895
+   },
+   "usage": {
+    "input_tokens": 366,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:02Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "append-only ledger design immutable audit log architecture",
+  "title": "Implementing Hash-Chained Audit Logs in Postgres",
+  "url": "https://www.financialreconciliation.com/compliance-audit-trail-controls/immutable-append-only-ledger-design/hash-chained-audit-logs-in-postgres/",
+  "snippet": "It is a concrete implementation of Immutable Append-Only Ledger Design, the pattern that underlies every control surface in Compliance, Audit Trails & Financial Controls, and the chained hashes produced here are exactly what gets bundled into evidence packages in Generating SOX 404 Evidence Bundles in Python.It is a concrete implementation of Immutable Append-Only Ledger Design, the pattern that underlies every control surface in Compliance, Audit Trails & Financial Controls, and the chained hashes produced here are exactly what gets bundled into evidence packages in Generating SOX 404 Evidence Bundles in Python.",
+  "collected_at": "2026-10-06T06:56:02Z",
+  "weight": 0.3623,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Implementing Hash-Chained Audit Logs in Postgres' (https://www.financialreconciliation.com/compliance-audit-trail-controls/immutable-append-only-ledger-design/hash-chained-audit-logs-in-postgres/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3623
+   },
+   "usage": {
+    "input_tokens": 366,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:02Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "standard candle astronomy calibration reference brightness measurement",
+  "title": "Standard Candle \u2013 Definition & Detailed Explanation \u2013 Astronomical ...",
+  "url": "https://sentinelmission.org/astronomical-units-measurements-glossary/standard-candle/",
+  "snippet": "I. What is a Standard Candle in Astronomy? In astronomy, a standard candle is a type of astronomical object that has a known intrinsic brightness. By measuring the apparent brightness of a standard candle from Earth, astronomers can calculate its distance from us. This concept is crucial in determining the distances to objects in space, as it provides a reliable method for measuring cosmic ...I. What is a Standard Candle in Astronomy? In astronomy, a standard candle is a type of astronomical object that has a known intrinsic brightness. By measuring the apparent brightness of a standard candle from Earth, astronomers can calculate its distance from us. This concept is crucial in determining the distances to objects in space, as it provides a reliable method for measuring cosmic ...",
+  "collected_at": "2026-10-06T06:56:18Z",
+  "weight": 0.6393,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Standard Candle \u2013 Definition & Detailed Explanation \u2013 Astronomical ...' (https://sentinelmission.org/astronomical-units-measurements-glossary/standard-candle/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6393
+   },
+   "usage": {
+    "input_tokens": 844,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:18Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "standard candle astronomy calibration reference brightness measurement",
+  "title": "Cosmic distance ladder - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Cosmic_distance_ladder",
+  "snippet": "Also unlike standard candles, gravitational waves need no calibration against other distance measures. The measurement of distance does of course require the calibration of the gravitational wave detectors, but then the distance is fundamentally given as a multiple of the wavelength of the laser light being used in the gravitational wave ...Also unlike standard candles, gravitational waves need no calibration against other distance measures. The measurement of distance does of course require the calibration of the gravitational wave detectors, but then the distance is fundamentally given as a multiple of the wavelength of the laser light being used in the gravitational wave ...",
+  "collected_at": "2026-10-06T06:56:18Z",
+  "weight": 0.2806,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Cosmic distance ladder - Wikipedia' (https://en.wikipedia.org/wiki/Cosmic_distance_ladder) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2806
+   },
+   "usage": {
+    "input_tokens": 844,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:18Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "standard candle astronomy calibration reference brightness measurement",
+  "title": "6.3: Standard Candle - Physics LibreTexts",
+  "url": "https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Big_Ideas_in_Cosmology_%28Coble_et_al.%29/06%3A_Measuring_Cosmic_Distances/6.03%3A_Standard_Candle",
+  "snippet": "With our detectors, we can measure an object\u2019s flux, that is, how bright it appears. The flux is related to its intrinsic brightness and its distance through the inverse square law. The standard candle technique employs the inverse square law to calculate the distance to an object of known luminosity.With our detectors, we can measure an object\u2019s flux, that is, how bright it appears. The flux is related to its intrinsic brightness and its distance through the inverse square law. The standard candle technique employs the inverse square law to calculate the distance to an object of known luminosity.",
+  "collected_at": "2026-10-06T06:56:18Z",
+  "weight": 0.7974,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '6.3: Standard Candle - Physics LibreTexts' (https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Big_Ideas_in_Cosmology_%28Coble_et_al.%29/06%3A_Measuring_Cosmic_Distances/6.03%3A_Standard_Candle) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7974
+   },
+   "usage": {
+    "input_tokens": 844,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:18Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "standard candle astronomy calibration reference brightness measurement",
+  "title": "PDF 5. Cosmic Distance Ladder Ii: Standard Candles",
+  "url": "https://users.physics.unc.edu/~reichart/ASTR101L-5.pdf",
+  "snippet": "In this lab you will measure the distances to three standard candles: two types of variable stars and one type of exploding star, or supernova. For each one, you will (1) confirm that it is a standard candle, (2) use this to determine its absolute magnitude (think luminosity), (3) measure its apparent magnitude (think brightness), and (4) use ...In this lab you will measure the distances to three standard candles: two types of variable stars and one type of exploding star, or supernova. For each one, you will (1) confirm that it is a standard candle, (2) use this to determine its absolute magnitude (think luminosity), (3) measure its apparent magnitude (think brightness), and (4) use ...",
+  "collected_at": "2026-10-06T06:56:18Z",
+  "weight": 0.5962,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PDF 5. Cosmic Distance Ladder Ii: Standard Candles' (https://users.physics.unc.edu/~reichart/ASTR101L-5.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5962
+   },
+   "usage": {
+    "input_tokens": 844,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:18Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "standard candle astronomy calibration reference brightness measurement",
+  "title": "Standard Candles in Astronomy | Springer Nature Link",
+  "url": "https://link.springer.com/chapter/10.1007/978-94-007-1658-2_2",
+  "snippet": "One of the basic missions of Astronomy is to measure distances in the cosmos. This is usually done using the method of standard candles, which requires identifying astronomical objects or phenomena with a repeatable luminosity, and to measure that luminosity. Objects suitable as standard candles range from stars to supernovae, but also properties of the light of galaxies and the distribution ...",
+  "collected_at": "2026-10-06T06:56:18Z",
+  "weight": 0.9216,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Standard Candles in Astronomy | Springer Nature Link' (https://link.springer.com/chapter/10.1007/978-94-007-1658-2_2) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9216
+   },
+   "usage": {
+    "input_tokens": 844,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:18Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "standard candle astronomy calibration reference brightness measurement",
+  "title": "From Waxlight to Moonlight: 21st Century Standard Candles at NIST",
+  "url": "https://www.nist.gov/blogs/taking-measure/waxlight-moonlight-21st-century-standard-candles-nist",
+  "snippet": "The brightness of these \"standard candles\" can be used as a reference to make important astronomical and cosmological measurements, from the distances to other galaxies to the age of the universe. For what was then known as the NISTars program, we identified a set of stable stars to be our standard candles.",
+  "collected_at": "2026-10-06T06:56:21Z",
+  "weight": 0.9463,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'From Waxlight to Moonlight: 21st Century Standard Candles at NIST' (https://www.nist.gov/blogs/taking-measure/waxlight-moonlight-21st-century-standard-candles-nist) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9463
+   },
+   "usage": {
+    "input_tokens": 788,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "planted canary sentinel test detect gaming test oracle security",
+  "title": "Configure Sentinel servers - Oracle",
+  "url": "https://docs.oracle.com/cd/E55956_01/doc.11123/user_guide/content/common_sentinel.html",
+  "snippet": "Sentinel server overview Oracle Sentinel is a Business Activity Monitoring (BAM) product that collects, aggregates, correlates, and reports events from API Gateway and other Oracle products, applications, and systems throughout your infrastructure. Sentinel is a separate product that you can buy from Oracle or an authorized partner.",
+  "collected_at": "2026-10-06T06:56:21Z",
+  "weight": 0.6807,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Configure Sentinel servers - Oracle' (https://docs.oracle.com/cd/E55956_01/doc.11123/user_guide/content/common_sentinel.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6807
+   },
+   "usage": {
+    "input_tokens": 788,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "planted canary sentinel test detect gaming test oracle security",
+  "title": "Thinkst Canary",
+  "url": "https://canary.tools/",
+  "snippet": "Most companies discover they\u2019ve been breached way too late. Thinkst Canary fixes this: just 2 minutes of setup; nearly 0 false positives, no ongoing overhead, and you can detect attackers long before they dig in. Check out why our Hardware, VM and Cloud-based Canaries are deployed and loved on all 7 continents... https://canary.tools/loveMost companies discover they\u2019ve been breached way too late. Thinkst Canary fixes this: just 2 minutes of setup; nearly 0 false positives, no ongoing overhead, and you can detect attackers long before they dig in. Check out why our Hardware, VM and Cloud-based Canaries are deployed and loved on all 7 continents... https://canary.tools/love",
+  "collected_at": "2026-10-06T06:56:21Z",
+  "weight": 0.4848,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Thinkst Canary' (https://canary.tools/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4848
+   },
+   "usage": {
+    "input_tokens": 788,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "planted canary sentinel test detect gaming test oracle security",
+  "title": "[2604.10717v1] Detecting RAG Extraction Attack via Dual-Path Runtime ...",
+  "url": "https://arxiv.org/abs/2604.10717v1",
+  "snippet": "CanaryRAG embeds carefully designed canary tokens into retrieved chunks and reformulates RAG extraction defense as a dual-path runtime integrity game. Leakage is detected in real time whenever either the target or oracle path violates its expected canary behavior, including under adaptive suppression and obfuscation.",
+  "collected_at": "2026-10-06T06:56:21Z",
+  "weight": 0.5752,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '[2604.10717v1] Detecting RAG Extraction Attack via Dual-Path Runtime ...' (https://arxiv.org/abs/2604.10717v1) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5752
+   },
+   "usage": {
+    "input_tokens": 788,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "planted canary sentinel test detect gaming test oracle security",
+  "title": "Oracle Customer Security Testing Policy",
+  "url": "https://www.oracle.com/corporate/security-practices/testing/",
+  "snippet": "Oracle Customer Security Testing Policy This site is intended to describe the security testing activities (for example, penetration testing, vulnerability scanning) that can be performed by Oracle customers against their Oracle On-Premises Products and Oracle Cloud Services (\"Security Tests\" or \"Security Testing\").",
+  "collected_at": "2026-10-06T06:56:21Z",
+  "weight": 0.6899,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Oracle Customer Security Testing Policy' (https://www.oracle.com/corporate/security-practices/testing/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6899
+   },
+   "usage": {
+    "input_tokens": 788,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:21Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "planted canary sentinel test detect gaming test oracle security",
+  "title": "Information Security Policies, InfoSec Policy ... - Oracle Help Center",
+  "url": "https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/cgsad/3_info_security_epm_cloud_pen_test.html",
+  "snippet": "Oracle employs third party security teams to perform periodic penetration testing. Oracle also employs a dedicated team of ethical hackers who engage in the in-depth hacking of the Oracle code base. These tests ensure that there are no vulnerabilities. Any vulnerability found is immediately reported to the Development team and rectified. Oracle makes the security testing reports available to ...",
+  "collected_at": "2026-10-06T06:56:23Z",
+  "weight": 0.9064,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Information Security Policies, InfoSec Policy ... - Oracle Help Center' (https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/cgsad/3_info_security_epm_cloud_pen_test.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9064
+   },
+   "usage": {
+    "input_tokens": 352,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:23Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "planted canary sentinel test detect gaming test oracle security",
+  "title": "RAG Security Assessment | Signal Canary",
+  "url": "https://signalcanary.net/test-your-rag",
+  "snippet": "Enterprise-grade RAG security testing. Detect data leakage in AI systems with attack simulations and canary tokens.",
+  "collected_at": "2026-10-06T06:56:23Z",
+  "weight": 0.3828,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'RAG Security Assessment | Signal Canary' (https://signalcanary.net/test-your-rag) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3828
+   },
+   "usage": {
+    "input_tokens": 352,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:23Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cloudflare vectorize agent memory semantic search embeddings",
+  "title": "Overview \u00b7 Cloudflare Vectorize docs",
+  "url": "https://developers.cloudflare.com/vectorize/",
+  "snippet": "Apr 21, 2026 \u00b7 Vectorize makes querying embeddings \u2014 representations of values or objects like text, images, audio that are designed to be consumed by machine learning models and semantic search algorithms \u2014 faster, easier and more affordable. To report bugs or give feedback, go to the #vectorize Discord channel \u2197.",
+  "collected_at": "2026-10-06T06:56:39Z",
+  "weight": 0.9465,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Overview \u00b7 Cloudflare Vectorize docs' (https://developers.cloudflare.com/vectorize/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9465
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cloudflare vectorize agent memory semantic search embeddings",
+  "title": "Vectorize and Workers AI - Cloudflare Docs",
+  "url": "https://developers.cloudflare.com/vectorize/get-started/embeddings/",
+  "snippet": "A vector database is designed to store vector embeddings, which are representations of data, but not the original data itself. To create your first Vectorize index, change into the directory you just created for your Workers project:A vector database is designed to store vector embeddings, which are representations of data, but not the original data itself. To create your first Vectorize index, change into the directory you just created for your Workers project:",
+  "collected_at": "2026-10-06T06:56:39Z",
+  "weight": 0.954,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Vectorize and Workers AI - Cloudflare Docs' (https://developers.cloudflare.com/vectorize/get-started/embeddings/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.954
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cloudflare vectorize agent memory semantic search embeddings",
+  "title": "Cloudflare Vectorize - Vector Database for RAG Applications",
+  "url": "https://www.cloudflare.com/products/vectorize/",
+  "snippet": "Use vector databases to power RAG applications Vectorize stores vector data for applications like Retrieval Augmented Generation and search products. Vector storage from within Cloudflare Workers platform. Enhance AI applications by injecting relevant context.Use vector databases to power RAG applications Vectorize stores vector data for applications like Retrieval Augmented Generation and search products. Vector storage from within Cloudflare Workers platform. Enhance AI applications by injecting relevant context.",
+  "collected_at": "2026-10-06T06:56:39Z",
+  "weight": 0.4872,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Cloudflare Vectorize - Vector Database for RAG Applications' (https://www.cloudflare.com/products/vectorize/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4872
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cloudflare vectorize agent memory semantic search embeddings",
+  "title": "Cloudflare D1 + Vectorize | Agent Memory at Edge",
+  "url": "https://www.buildmvpfast.com/blog/cloudflare-agent-memory-vectorize-d1-edge-2026",
+  "snippet": "Build AI agent memory on Cloudflare: D1 for structured state, Vectorize for semantic search, Durable Objects for sessions. Architecture, pricing, and gotchas.Build AI agent memory on Cloudflare: D1 for structured state, Vectorize for semantic search, Durable Objects for sessions. Architecture, pricing, and gotchas.",
+  "collected_at": "2026-10-06T06:56:39Z",
+  "weight": 0.2181,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Cloudflare D1 + Vectorize | Agent Memory at Edge' (https://www.buildmvpfast.com/blog/cloudflare-agent-memory-vectorize-d1-edge-2026) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2181
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cloudflare vectorize agent memory semantic search embeddings",
+  "title": "Community project: persistent MCP memory layer using D1 + Vectorize ...",
+  "url": "https://github.com/cloudflare/agents/discussions/1762",
+  "snippet": "Users deploy it to their own Cloudflare account and connect it via a single Worker URL. Stack: Workers + D1 (SQLite persistence) + Vectorize (semantic search with three-tier similarity scoring) + Workers AI (bge-small-en-v1.5 for embeddings, Llama 4 Scout for synthesis). Everything runs on the free tier.Users deploy it to their own Cloudflare account and connect it via a single Worker URL. Stack: Workers + D1 (SQLite persistence) + Vectorize (semantic search with three-tier similarity scoring) + Workers AI (bge-small-en-v1.5 for embeddings, Llama 4 Scout for synthesis). Everything runs on the free tier.",
+  "collected_at": "2026-10-06T06:56:39Z",
+  "weight": 0.4292,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Community project: persistent MCP memory layer using D1 + Vectorize ...' (https://github.com/cloudflare/agents/discussions/1762) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4292
+   },
+   "usage": {
+    "input_tokens": 755,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:39Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cloudflare vectorize agent memory semantic search embeddings",
+  "title": "Vectorize Search | Cloudflare Experiments",
+  "url": "https://cloudflare-experiments.com/docs/experiments/vectorize-search",
+  "snippet": "Deploy Enable the Workers AI binding (AI) and Vectorize binding (VECTORIZE). The deploy button configures these via wrangler.json.",
+  "collected_at": "2026-10-06T06:56:42Z",
+  "weight": 0.8978,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Vectorize Search | Cloudflare Experiments' (https://cloudflare-experiments.com/docs/experiments/vectorize-search) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8978
+   },
+   "usage": {
+    "input_tokens": 738,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "durable execution workflow engine cloudflare workers queues",
+  "title": "Cloudflare Workflows - Durable Execution Engine",
+  "url": "https://www.cloudflare.com/products/workflows/",
+  "snippet": "Build durable workflows & multi-step applications Workflows is an execution engine built on Cloudflare Workers \u2014 to build applications that can automatically retry, persist state and run for minutes, hours, days, or weeks. No need to worry about scaling, managing infrastructure, or handling durability: Workflows takes care of it for you.Build durable workflows & multi-step applications Workflows is an execution engine built on Cloudflare Workers \u2014 to build applications that can automatically retry, persist state and run for minutes, hours, days, or weeks. No need to worry about scaling, managing infrastructure, or handling durability: Workflows takes care of it for you.",
+  "collected_at": "2026-10-06T06:56:42Z",
+  "weight": 0.6393,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Cloudflare Workflows - Durable Execution Engine' (https://www.cloudflare.com/products/workflows/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6393
+   },
+   "usage": {
+    "input_tokens": 738,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "durable execution workflow engine cloudflare workers queues",
+  "title": "Durable Workflows - Multi-Step Application Engine - Cloudflare",
+  "url": "https://www.cloudflare.com/solutions/workflows/",
+  "snippet": "Build durable multi-step applications. Workflows is an execution engine built on Cloudflare Workers \u2014 to build applications that can automatically retry, persist state and run for minutes, hours, days, or weeks. Workflows introduces a programming model that makes it easier to build reliable, long-running tasks, observe progression, and programmatically trigger events-based instances based ...Build durable multi-step applications. Workflows is an execution engine built on Cloudflare Workers \u2014 to build applications that can automatically retry, persist state and run for minutes, hours, days, or weeks. Workflows introduces a programming model that makes it easier to build reliable, long-running tasks, observe progression, and programmatically trigger events-based instances based ...",
+  "collected_at": "2026-10-06T06:56:42Z",
+  "weight": 0.4743,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Durable Workflows - Multi-Step Application Engine - Cloudflare' (https://www.cloudflare.com/solutions/workflows/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.4743
+   },
+   "usage": {
+    "input_tokens": 738,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "durable execution workflow engine cloudflare workers queues",
+  "title": "Build durable applications on Cloudflare Workers: you write the ...",
+  "url": "https://blog.cloudflare.com/building-workflows-durable-execution-on-workers/",
+  "snippet": "Cloudflare Workflows is now in open beta! Workflows allows you to build reliable, repeatable, long-lived multi-step applications that can automatically retry, persist state, and scale out. Read on to learn how Workflows works, how we built it on top of Durable Objects, and how you can deploy your first Workflows application.Cloudflare Workflows is now in open beta! Workflows allows you to build reliable, repeatable, long-lived multi-step applications that can automatically retry, persist state, and scale out. Read on to learn how Workflows works, how we built it on top of Durable Objects, and how you can deploy your first Workflows application.",
+  "collected_at": "2026-10-06T06:56:42Z",
+  "weight": 0.8346,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Build durable applications on Cloudflare Workers: you write the ...' (https://blog.cloudflare.com/building-workflows-durable-execution-on-workers/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8346
+   },
+   "usage": {
+    "input_tokens": 738,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "durable execution workflow engine cloudflare workers queues",
+  "title": "Overview \u00b7 Cloudflare Workflows docs",
+  "url": "https://developers.cloudflare.com/workflows/",
+  "snippet": "Sep 18, 2026 \u00b7 Build durable multi-step applications on Cloudflare Workers with Workflows. With Workflows, you can build applications that chain together multiple steps, automatically retry failed tasks, and persist state for minutes, hours, or even weeks - with no infrastructure to manage.",
+  "collected_at": "2026-10-06T06:56:42Z",
+  "weight": 0.9088,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Overview \u00b7 Cloudflare Workflows docs' (https://developers.cloudflare.com/workflows/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9088
+   },
+   "usage": {
+    "input_tokens": 738,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:42Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "durable execution workflow engine cloudflare workers queues",
+  "title": "Build your first Workflow \u00b7 Cloudflare Workflows docs",
+  "url": "https://developers.cloudflare.com/workflows/get-started/guide/",
+  "snippet": "Create and deploy your first Cloudflare Workflow with durable, multi-step execution on the Workers platform.Create and deploy your first Cloudflare Workflow with durable, multi-step execution on the Workers platform.",
+  "collected_at": "2026-10-06T06:56:44Z",
+  "weight": 0.9686,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Build your first Workflow \u00b7 Cloudflare Workflows docs' (https://developers.cloudflare.com/workflows/get-started/guide/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.9686
+   },
+   "usage": {
+    "input_tokens": 358,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:44Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "durable execution workflow engine cloudflare workers queues",
+  "title": "Stop Building Workflow Engines in Your Queue Workers \u2014 ishu.dev",
+  "url": "https://ishu.dev/post/durable-execution-workflow-orchestration-queues-2026-07-19",
+  "snippet": "You're already using queues for async work. But chain multiple queues together to coordinate a multi-step process and you've accidentally built a workflow engine \u2014 a fragile one. This post breaks down the failure modes of queue-chained workflows and shows how durable execution frameworks fix crash recovery, retries, and long-running timers without the sprawl.",
+  "collected_at": "2026-10-06T06:56:44Z",
+  "weight": 0.318,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Stop Building Workflow Engines in Your Queue Workers \u2014 ishu.dev' (https://ishu.dev/post/durable-execution-workflow-orchestration-queues-2026-07-19) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.318
+   },
+   "usage": {
+    "input_tokens": 358,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:56:44Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "red team adversarial critique of engineering design decisions",
+  "title": "Adversarial Reviewer: Generate structured red-team prompts to critique ...",
+  "url": "https://skills.rest/skill/adversarial-reviewer",
+  "snippet": "Adversarial code review is a red-team critique technique that exposes weak assumptions and edge cases in code or plans before release. Use it during pre-release QA to target critical components like authentication, data handling, and design decisions.Adversarial code review is a red-team critique technique that exposes weak assumptions and edge cases in code or plans before release. Use it during pre-release QA to target critical components like authentication, data handling, and design decisions.",
+  "collected_at": "2026-10-06T06:57:01Z",
+  "weight": 0.314,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Adversarial Reviewer: Generate structured red-team prompts to critique ...' (https://skills.rest/skill/adversarial-reviewer) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.314
+   },
+   "usage": {
+    "input_tokens": 810,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "red team adversarial critique of engineering design decisions",
+  "title": "AI Red Teaming and Adversarial Testing \u2013 Thinking Like an AI Red Team ...",
+  "url": "https://helloitsliam.com/2026/07/13/ai-red-teaming-and-adversarial-testing-thinking-like-an-ai-red-team-part-5/",
+  "snippet": "In the previous articles in this series, we explored what AI red teaming is, why it has become an essential part of responsible AI development, and how to design structured adversarial testing exercises that evaluate the safety, reliability, and robustness of generative AI systems. We also examined practical testing methodologies, adversarial scenarios, and enterprise evaluation\u2026",
+  "collected_at": "2026-10-06T06:57:01Z",
+  "weight": 0.1817,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'AI Red Teaming and Adversarial Testing \u2013 Thinking Like an AI Red Team ...' (https://helloitsliam.com/2026/07/13/ai-red-teaming-and-adversarial-testing-thinking-like-an-ai-red-team-part-5/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1817
+   },
+   "usage": {
+    "input_tokens": 810,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "red team adversarial critique of engineering design decisions",
+  "title": "GitHub - dissensus-ai/autonomous-red-team: Autonomous Red Team: Multi ...",
+  "url": "https://github.com/dissensus-ai/autonomous-red-team",
+  "snippet": "This technical report presents a framework for autonomous adversarial security competition using large language models (LLMs). We introduce a dual-agent architecture where autonomous red team and blue team agents compete in isolated environments: the red team attempts to compromise target systems while the blue team defends, detects, and ...",
+  "collected_at": "2026-10-06T06:57:01Z",
+  "weight": 0.5862,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'GitHub - dissensus-ai/autonomous-red-team: Autonomous Red Team: Multi ...' (https://github.com/dissensus-ai/autonomous-red-team) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.5862
+   },
+   "usage": {
+    "input_tokens": 810,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "red team adversarial critique of engineering design decisions",
+  "title": "MihaiCristea21/ai-red-teaming-guide - GitHub",
+  "url": "https://github.com/MihaiCristea21/ai-red-teaming-guide",
+  "snippet": "\ud83c\udf10 Join the Global Red Teaming Network Connect with AI red teamers worldwide, share findings, and collaborate on adversarial testing through Cogensec. \u2192 Join the network A comprehensive guide to adversarial testing and security evaluation of AI systems, helping organizations identify vulnerabilities before attackers exploit them.",
+  "collected_at": "2026-10-06T06:57:01Z",
+  "weight": 0.2267,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'MihaiCristea21/ai-red-teaming-guide - GitHub' (https://github.com/MihaiCristea21/ai-red-teaming-guide) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2267
+   },
+   "usage": {
+    "input_tokens": 810,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "red team adversarial critique of engineering design decisions",
+  "title": "Red-Team Review Submission Guidelines - AI-2027 Response",
+  "url": "https://ai2027-response.org/red-team-intake",
+  "snippet": "Red-Team Review is a structured adversarial review process defining submission requirements, severity classification, evaluation criteria, and submission channel for findings about the Constitutional Execution Architecture.",
+  "collected_at": "2026-10-06T06:57:01Z",
+  "weight": 0.3385,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Red-Team Review Submission Guidelines - AI-2027 Response' (https://ai2027-response.org/red-team-intake) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3385
+   },
+   "usage": {
+    "input_tokens": 810,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:01Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "red team adversarial critique of engineering design decisions",
+  "title": "Strategic management",
+  "url": "https://en.wikipedia.org/wiki/Strategic_management",
+  "snippet": "In the field of management, strategic management involves the formulation and implementation of the major goals and initiatives taken by an organization's managers on behalf of stakeholders, based on consideration of resources and an assessment of the internal and external environments in which the organization operates",
+  "collected_at": "2026-10-06T06:57:04Z",
+  "weight": 0.6213,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Strategic management' (https://en.wikipedia.org/wiki/Strategic_management) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6213
+   },
+   "usage": {
+    "input_tokens": 869,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cheating benchmark detection hashed payload adversarial evaluation gaming",
+  "title": "When Benchmarks Become Adversarial: METR's Sol Cheating Finding and ...",
+  "url": "https://codex.danielvaughan.com/2026/07/27/when-benchmarks-become-adversarial-metr-gpt56-sol-cheating-evaluation-gaming-codex-cli-agent-trust/",
+  "snippet": "When Benchmarks Become Adversarial: METR's Sol Cheating Finding and What It Means for Coding Agent Trust GPT-5.6 Sol is the default model powering Codex CLI. It is also, according to METR's pre-deployment evaluation published on 26 June 2026, the model with the highest recorded rate of benchmark cheating in the organisation's history 1.",
+  "collected_at": "2026-10-06T06:57:04Z",
+  "weight": 0.3377,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'When Benchmarks Become Adversarial: METRs Sol Cheating Finding and ...' (https://codex.danielvaughan.com/2026/07/27/when-benchmarks-become-adversarial-metr-gpt56-sol-cheating-evaluation-gaming-codex-cli-agent-trust/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3377
+   },
+   "usage": {
+    "input_tokens": 869,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cheating benchmark detection hashed payload adversarial evaluation gaming",
+  "title": "When Benchmarks Become Adversarial: What METR's Sol Evaluation Gaming ...",
+  "url": "https://codex.danielvaughan.com/2026/08/04/when-benchmarks-become-adversarial-metr-sol-evaluation-gaming-codex-cli-agent-trust/",
+  "snippet": "Aug 4, 2026 \u00b7 On 26 June 2026, METR published its predeployment evaluation of GPT-5.6 Sol and disclosed a finding that should reshape how every developer thinks about coding agent output: Sol exhibited the highest evaluation cheating rate of any publicly tested model in METR\u2019s history 1.",
+  "collected_at": "2026-10-06T06:57:04Z",
+  "weight": 0.2894,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'When Benchmarks Become Adversarial: What METRs Sol Evaluation Gaming ...' (https://codex.danielvaughan.com/2026/08/04/when-benchmarks-become-adversarial-metr-sol-evaluation-gaming-codex-cli-agent-trust/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2894
+   },
+   "usage": {
+    "input_tokens": 869,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cheating benchmark detection hashed payload adversarial evaluation gaming",
+  "title": "When Benchmark Cheating Becomes a Production Breach: Specification ...",
+  "url": "https://digitalthoughtdisruption.com/2026/07/27/benchmark-cheating-production-breach-specification-gaming-agentic-ai/",
+  "snippet": "Jul 27, 2026 \u00b7 Learn how specification gaming in agentic AI can turn benchmark optimization into a production breach, and how invariant controls prevent it.",
+  "collected_at": "2026-10-06T06:57:04Z",
+  "weight": 0.0639,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'When Benchmark Cheating Becomes a Production Breach: Specification ...' (https://digitalthoughtdisruption.com/2026/07/27/benchmark-cheating-production-breach-specification-gaming-agentic-ai/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0639
+   },
+   "usage": {
+    "input_tokens": 869,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cheating benchmark detection hashed payload adversarial evaluation gaming",
+  "title": "Hybrid cryptographic and AI frameworks for cheat detection ... - Springer",
+  "url": "https://oadoi.org/10.1007/s44163-025-00715-w",
+  "snippet": "In addition to algorithms designed for cheat detection, a related area of research focuses on proactive defense mechanisms that use \u2026",
+  "collected_at": "2026-10-06T06:57:04Z",
+  "weight": 0.6212,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Hybrid cryptographic and AI frameworks for cheat detection ... - Springer' (https://oadoi.org/10.1007/s44163-025-00715-w) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6212
+   },
+   "usage": {
+    "input_tokens": 869,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:04Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cheating benchmark detection hashed payload adversarial evaluation gaming",
+  "title": "Outsmarting AI cheats: Gradient-based game security using adversarial ...",
+  "url": "https://www.sciencedirect.com/science/article/pii/S2667295226000413",
+  "snippet": "AI-driven visual cheats in competitive gaming\u2014such as aimbots built on real-time object detectors\u2014pose a growing threat to fair play that current anti-cheat systems fail to reliably address. This article presents a gradient-based adversarial attack methodology that neutralizes such cheats by generating Universal Adversarial Perturbations (UAPs) to suppress character detection without ...",
+  "collected_at": "2026-10-06T06:57:06Z",
+  "weight": 0.7951,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Outsmarting AI cheats: Gradient-based game security using adversarial ...' (https://www.sciencedirect.com/science/article/pii/S2667295226000413) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7951
+   },
+   "usage": {
+    "input_tokens": 354,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "cheating benchmark detection hashed payload adversarial evaluation gaming",
+  "title": "Detect Hardware - PCGameBenchmark",
+  "url": "https://www.pcgamebenchmark.com/detect",
+  "snippet": "What to do next\u2026Once downloaded, open that location and click the downloaded file to start the detectionWait for detection to complete. You will be redirected to the results page and receive a rating",
+  "collected_at": "2026-10-06T06:57:06Z",
+  "weight": 0.2229,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Detect Hardware - PCGameBenchmark' (https://www.pcgamebenchmark.com/detect) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2229
+   },
+   "usage": {
+    "input_tokens": 354,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:06Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "forecast versus actual calibration correlation evaluate predictions",
+  "title": "AI Forecast Calibration: Why Accuracy Is Not Enough",
+  "url": "https://harvardsciencereview.org/2026/09/14/ai-forecast-calibration-accuracy/",
+  "snippet": "Sep 14, 2026 \u00b7 Their findings established a useful distinction for evaluating predictive systems: accuracy measures whether predictions are correct; calibration examines whether their stated probabilities deserve trust. The study tested particular architectures and datasets, not every AI system.",
+  "collected_at": "2026-10-06T06:57:28Z",
+  "weight": 0.6066,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'AI Forecast Calibration: Why Accuracy Is Not Enough' (https://harvardsciencereview.org/2026/09/14/ai-forecast-calibration-accuracy/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.6066
+   },
+   "usage": {
+    "input_tokens": 830,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "forecast versus actual calibration correlation evaluate predictions",
+  "title": "Forecast variance: How to compare and explain the ... - FasterCapital",
+  "url": "https://fastercapital.com/content/Forecast-variance--How-to-compare-and-explain-the-differences-between-your-forecasts-and-actual-results.html",
+  "snippet": "Aug 25, 2026 \u00b7 Forecast variance refers to the disparity between predicted or forecasted values and the actual outcomes. It is a crucial metric for evaluating the accuracy and reliability of forecasting models.",
+  "collected_at": "2026-10-06T06:57:28Z",
+  "weight": 0.0529,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Forecast variance: How to compare and explain the ... - FasterCapital' (https://fastercapital.com/content/Forecast-variance--How-to-compare-and-explain-the-differences-between-your-forecasts-and-actual-results.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.0529
+   },
+   "usage": {
+    "input_tokens": 830,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "forecast versus actual calibration correlation evaluate predictions",
+  "title": "Understanding Model Calibration - A gentle introduction and visual ...",
+  "url": "https://arxiv.org/html/2501.19047v1",
+  "snippet": "Calibration makes sure that a model's estimated probabilities match real-world likelihoods. For example, if a weather forecasting model predicts a 70% chance of rain on several days, then roughly 70% of those days should actually be rainy for the model to be considered well calibrated (Dawid, 1982; DeGroot & Fienberg, 1983). This makes model predictions more reliable and trustworthy, which ...",
+  "collected_at": "2026-10-06T06:57:28Z",
+  "weight": 0.8505,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Understanding Model Calibration - A gentle introduction and visual ...' (https://arxiv.org/html/2501.19047v1) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8505
+   },
+   "usage": {
+    "input_tokens": 830,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "forecast versus actual calibration correlation evaluate predictions",
+  "title": "Actual vs: Forecast: Forecasting the Future: Using Variance Analysis \u2026",
+  "url": "https://fastercapital.com/content/Actual-vs--Forecast--Forecasting-the-Future--Using-Variance-Analysis-to-Compare-Actuals.html",
+  "snippet": "Variance analysis stands as a cornerstone in the world of financial forecasting, offering a systematic approach to understanding how actual results compare to those projected.'s about delving into the 'why' and 'how'\u2014unraveling...Variance analysis stands as a cornerstone in the world of financial forecasting, offering a systematic approach to understanding how actual results compare to those projected.'s about delving into the 'why' and 'how'\u2014unraveling...",
+  "collected_at": "2026-10-06T06:57:28Z",
+  "weight": 0.053,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Actual vs: Forecast: Forecasting the Future: Using Variance Analysis \u2026' (https://fastercapital.com/content/Actual-vs--Forecast--Forecasting-the-Future--Using-Variance-Analysis-to-Compare-Actuals.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.053
+   },
+   "usage": {
+    "input_tokens": 830,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "forecast versus actual calibration correlation evaluate predictions",
+  "title": "PDF Forecast Scoring and Calibration Forecast Scoring and Calibration ...",
+  "url": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/calibration.pdf",
+  "snippet": "1 Introduction In this lecture, we cover a topic that sits adjacent to conformal prediction in a sense, which is calibration. We will cover the perspective(s) on calibration from the forecasting literature, where it is arguably the most developed. Instead of focusing solely on calibration, we'll cover some of the broader theory of forecasting, pertaining to scoring rules, calibration, and ...",
+  "collected_at": "2026-10-06T06:57:28Z",
+  "weight": 0.8554,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PDF Forecast Scoring and Calibration Forecast Scoring and Calibration ...' (https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/calibration.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8554
+   },
+   "usage": {
+    "input_tokens": 830,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:28Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "forecast versus actual calibration correlation evaluate predictions",
+  "title": "Visualizing Forecast Performance vs Actuals - apxml.com",
+  "url": "https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/visualizing-forecast-performance",
+  "snippet": "Visualizing your forecasts against the actual observed values is an essential step in model evaluation. It allows you to assess performance, identify patterns in errors, and gain confidence in your model.Visualizing your forecasts against the actual observed values is an essential step in model evaluation. It allows you to assess performance, identify patterns in errors, and gain confidence in your model.",
+  "collected_at": "2026-10-06T06:57:30Z",
+  "weight": 0.3676,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Visualizing Forecast Performance vs Actuals - apxml.com' (https://apxml.com/courses/time-series-analysis-forecasting/chapter-6-model-evaluation-selection/visualizing-forecast-performance) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.3676
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "minimum viable automation quality gates validation experiments",
+  "title": "SDD in Practice: Quality Gates, Tests, and Templates",
+  "url": "https://diegorodrigo.dev/en/2026/04/06/sdd-in-practice-quality-gates-tests-and-templates/",
+  "snippet": "A practical look at Spec-Driven Development with quality gates, tests, reviews, and templates that make AI-assisted delivery repeatable.A practical look at Spec-Driven Development with quality gates, tests, reviews, and templates that make AI-assisted delivery repeatable.",
+  "collected_at": "2026-10-06T06:57:30Z",
+  "weight": 0.1431,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'SDD in Practice: Quality Gates, Tests, and Templates' (https://diegorodrigo.dev/en/2026/04/06/sdd-in-practice-quality-gates-tests-and-templates/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1431
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "minimum viable automation quality gates validation experiments",
+  "title": "Build Verification and Quality Gates in CI: Practical Guide 2026",
+  "url": "https://khimananda.com/blog/build-verification-and-quality-gates-in-ci",
+  "snippet": "Aug 10, 2026 \u00b7 Learn how to configure build verification and quality gates in CI pipelines with real examples, policy thresholds, and compliance-ready automation for 2026.",
+  "collected_at": "2026-10-06T06:57:30Z",
+  "weight": 0.1023,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Build Verification and Quality Gates in CI: Practical Guide 2026' (https://khimananda.com/blog/build-verification-and-quality-gates-in-ci) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1023
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "minimum viable automation quality gates validation experiments",
+  "title": "Automated Gates: Tests for Production-Ready Models",
+  "url": "https://beefed.ai/en/automated-testing-gates-production-models",
+  "snippet": "Automated validation gates are the single most effective safeguard between an experimental model and a reliable production service. Treat gates as non-negotiable release artifacts: they must be deterministic, auditable, and fail-fast so your release cadence doesn\u2019t become a series of firefights.",
+  "collected_at": "2026-10-06T06:57:30Z",
+  "weight": 0.1924,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Automated Gates: Tests for Production-Ready Models' (https://beefed.ai/en/automated-testing-gates-production-models) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1924
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "minimum viable automation quality gates validation experiments",
+  "title": "Quality Gates and Validation | cogeet-io/ai-development-specifications ...",
+  "url": "https://deepwiki.com/cogeet-io/ai-development-specifications/3.3-quality-gates-and-validation",
+  "snippet": "Quality Gates and Validation Relevant source files This document covers the comprehensive quality validation framework within the AI Development Specifications system, including testing strategies, code quality enforcement, and automated validation pipelines.Quality Gates and Validation Relevant source files This document covers the comprehensive quality validation framework within the AI Development Specifications system, including testing strategies, code quality enforcement, and automated validation pipelines.",
+  "collected_at": "2026-10-06T06:57:30Z",
+  "weight": 0.2483,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Quality Gates and Validation | cogeet-io/ai-development-specifications ...' (https://deepwiki.com/cogeet-io/ai-development-specifications/3.3-quality-gates-and-validation) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.2483
+   },
+   "usage": {
+    "input_tokens": 813,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:30Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "minimum viable automation quality gates validation experiments",
+  "title": "Beyond Vibe Coding: Building Quality Gates for AI-Assisted ... - Medium",
+  "url": "https://medium.com/@MinimumViableMatriarch/beyond-vibe-coding-building-quality-gates-for-ai-assisted-development-da8dc102df6f",
+  "snippet": "Quality gates for AI-assisted development shouldn't require a computer science degree to implement. If\u2026more Reply More from Minimum Viable Matriarch Minimum Viable MatriarchQuality gates for AI-assisted development shouldn't require a computer science degree to implement. If\u2026more Reply More from Minimum Viable Matriarch Minimum Viable Matriarch",
+  "collected_at": "2026-10-06T06:57:32Z",
+  "weight": 0.1794,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Beyond Vibe Coding: Building Quality Gates for AI-Assisted ... - Medium' (https://medium.com/@MinimumViableMatriarch/beyond-vibe-coding-building-quality-gates-for-ai-assisted-development-da8dc102df6f) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1794
+   },
+   "usage": {
+    "input_tokens": 375,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:32Z"
+  },
+  "redo_of": null
+ },
+ {
+  "query": "minimum viable automation quality gates validation experiments",
+  "title": "Quality gates for small teams: the minimum viable code review setup",
+  "url": "https://corp.tied-inc.com/blog/en/quality-gates-for-small-teams/",
+  "snippet": "A minimum viable quality gate setup for startups without a CTO: the order to introduce review, static analysis, CI, and testing, and how to tell when you've over-invested.A minimum viable quality gate setup for startups without a CTO: the order to introduce review, static analysis, CI, and testing, and how to tell when you've over-invested.",
+  "collected_at": "2026-10-06T06:57:32Z",
+  "weight": 0.1146,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Quality gates for small teams: the minimum viable code review setup' (https://corp.tied-inc.com/blog/en/quality-gates-for-small-teams/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1146
+   },
+   "usage": {
+    "input_tokens": 375,
+    "output_tokens": 0
+   },
+   "requested_at": "2026-10-06T06:57:32Z"
+  },
+  "redo_of": null
+ }
+]
