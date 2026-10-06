@@ -1,0 +1,36 @@
+{
+ "nn": 3,
+ "slug": "roothash-update-flow",
+ "scope": "The five-step root-hash update flow across kernel updates: bootc upgrade, BLS entries, systemd-boot chaining, signed-payload verification.",
+ "queries_attempted": [
+  {
+   "query": "bootc composefs verity roothash BLS bootloader entry atomic update",
+   "attempt": 1,
+   "raw_results": 12,
+   "kept": 6
+  },
+  {
+   "query": "systemd-boot BootLoader Specification type 2 entry verity roothash signed",
+   "attempt": 2,
+   "raw_results": 12,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/bootc-dev/bootc",
+  "https://github.com/jmarrero/ubuntu-bootc/blob/main/GUIDE.md",
+  "https://deepwiki.com/bootc-dev/bootc/5.3-kernel-command-line",
+  "https://bootc.dev/",
+  "https://bootc.dev/bootc/experimental-composefs.html",
+  "https://bootc.dev/bootc/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://wiki.archlinux.org/title/Dm-verity",
+  "https://wiki.archlinux.org/title/Systemd-boot",
+  "https://systemd.io/",
+  "https://github.com/systemd/systemd",
+  "https://www.geeksforgeeks.org/linux-unix/linux-systemd-and-its-components/"
+ ],
+ "outcome": "authored"
+}

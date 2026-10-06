@@ -1,0 +1,240 @@
+{
+ "topic": "the dm-verity-and-integrity skill: full-stack filesystem integrity for yubiOS (dm-verity, fs-verity, composefs, IMA, dm-integrity, systemd-dissect)",
+ "ground_source": "yubi-OS/yubiOS skills/dm-verity-and-integrity/SKILL.md (https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/dm-verity-and-integrity/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "four-layer-integrity-stack",
+   "scope": "The four-layer integrity stack (dm-verity, fs-verity, composefs, IMA) plus dm-integrity and the /usr invariant that anchors them.",
+   "seed_queries": [
+    "dm-verity fs-verity composefs IMA Linux filesystem integrity stack comparison",
+    "immutable root filesystem integrity dm-verity IMA appraisal composefs Linux image mode"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "dm-verity-roothash-computation",
+   "scope": "dm-verity Merkle-tree mechanics, the root hash, and mkosi computation including --verity=defer and mkosi-sandbox offline signing.",
+   "seed_queries": [
+    "mkosi verity dm-verity root hash mkosi-sandbox offline sign",
+    "dm-verity Merkle tree root hash kernel roothash device mapper verity how it works"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "roothash-update-flow",
+   "scope": "The five-step root-hash update flow across kernel updates: bootc upgrade, BLS entries, systemd-boot chaining, signed-payload verification.",
+   "seed_queries": [
+    "bootc composefs verity roothash BLS bootloader entry atomic update",
+    "systemd-boot BootLoader Specification type 2 entry verity roothash signed"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "fs-verity-signing",
+   "scope": "fs-verity per-file Merkle trees, the fsverity enable/sign/verify flow, builtin vs userspace signatures, and the yubiOS protected file set.",
+   "seed_queries": [
+    "fs-verity enable sign verify fsverity tool kernel documentation",
+    "fs-verity builtin signature userspace signature enforcement policy"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "composefs-signed-catalog",
+   "scope": "composefs signed digest catalogs composing sysext/confext layers over a dm-verity base, and why the signature is load-bearing.",
+   "seed_queries": [
+    "composefs signed digest catalog erofs overlayfs bootc image mode",
+    "composefs kernel merge status upstream containers project 2025 2026"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "ima-policy-and-measurement",
+   "scope": "IMA appraisal vs audit mode by path, the signed ima-sig policy, PCR 10 measurement, and the PCR 10+11 attestation handoff.",
+   "seed_queries": [
+    "IMA appraisal mode audit mode signed policy ima-sig template configuration",
+    "IMA measurement list PCR 10 TPM extend attestation runtime integrity"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "dm-integrity-write-paths",
+   "scope": "dm-integrity per-sector tags and journaled write atomicity, the dm-verity comparison, and why yubiOS confines it to rare write paths.",
+   "seed_queries": [
+    "dm-integrity journal integrity on write device mapper documentation",
+    "dm-integrity vs dm-verity write-time integrity use case LUKS"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "systemd-dissect-verification",
+   "scope": "systemd-dissect introspection and verification of DDIs, the --mount verity gap (issue 34807), and the sysext/confext service relation.",
+   "seed_queries": [
+    "systemd-dissect verify dm-verity image os-release tooling",
+    "systemd-dissect mount image sysext confext composefs verification"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "anti-patterns-and-layer-selection",
+   "scope": "The six anti-patterns, the layer-selection rule each encodes, and out-of-scope routing to LUKS2, ftpm-optee-tpm, and mkosi-image-builder.",
+   "seed_queries": [],
+   "dig_status": "internal-record subtopic, no dig"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.76,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.08,
+     "2": 0.84
+    },
+    "confidence": 0.64,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.71,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.19,
+     "2": 0.76
+    },
+    "confidence": 0.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.46,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.36,
+     "2": 0.55
+    },
+    "confidence": 0.2,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.11,
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.53,
+     "2": 0.29
+    },
+    "confidence": 0.3,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.81,
+    "probabilities": {
+     "0": 0.35,
+     "1": 0.5,
+     "2": 0.15
+    },
+    "confidence": 0.25,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.02,
+    "probabilities": {
+     "0": 0.27,
+     "1": 0.44,
+     "2": 0.29
+    },
+    "confidence": 0.15,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.13,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.55,
+     "2": 0.29
+    },
+    "confidence": 0.33,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.44,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.35,
+     "2": 0.54
+    },
+    "confidence": 0.16,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.67,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.2,
+     "2": 0.74
+    },
+    "confidence": 0.51,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1149,
+   "output_tokens": 139,
+   "cost": 9.6516e-05
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "note": "all 9 subtopics scored above 0; t05 (0.81) kept on the strength of its dig (2 primary composefs sources); t09 is internal-record with no dig by design"
+ }
+}
