@@ -1,0 +1,34 @@
+{
+  "topic": "the defapi-jev skill: classifying, routing, gating, or scoring text and JSON with DefAPI's typesafe/jev-1.13 decision model",
+  "subtopics": [
+    {"nn": 1, "slug": "decision-model-not-chat-model", "scope": "What a decision model is, how jev-1.13 differs from a generative chat model, why the output contract matters.", "seed_queries": ["LLM classifier calibrated probabilities versus generative text output decision model", "structured classification API routing triage machine readable decision"], "dig": "web-shaped"},
+    {"nn": 2, "slug": "when-to-use-and-misfits", "scope": "The 5 good fits (triage, gating, prioritization, batch labeling, multi-decision calls) and the 4 misfits.", "seed_queries": [], "dig": "internal-record"},
+    {"nn": 3, "slug": "setup-and-client", "scope": "The 3 setup requirements (env key, network allowlist, stdlib client) and the smoke test.", "seed_queries": [], "dig": "internal-record"},
+    {"nn": 4, "slug": "calling-the-model-cli-and-python", "scope": "The CLI (file or stdin) and the Python decide() interface with the source doc's worked example.", "seed_queries": [], "dig": "internal-record"},
+    {"nn": 5, "slug": "question-types-schema", "scope": "noul, choice, and score: criteria shapes, answer fields, probability-weighted score, observed response envelope.", "seed_queries": [], "dig": "internal-record"},
+    {"nn": 6, "slug": "writing-good-questions", "scope": "State shaping, instructions discipline, criteria design, score ordering, external corroboration.", "seed_queries": ["prompt design classification mutually exclusive labels instructions criteria", "LLM classification prompt engineering state context fields accuracy"], "dig": "web-shaped"},
+    {"nn": 7, "slug": "acting-on-results-thresholds-and-audit", "scope": "Thresholds instead of rounding, confidence-based routing, task_id/consumed audit logging, session_id/user.", "seed_queries": ["classification confidence threshold auto-act escalate human review routing", "LLM classification human in the loop threshold calibration production"], "dig": "web-shaped"},
+    {"nn": 8, "slug": "errors-and-failure-handling", "scope": "RuntimeError and ValueError contracts, 401 code 1007, network blocks, retry discipline.", "seed_queries": [], "dig": "internal-record"},
+    {"nn": 9, "slug": "integration-patterns-batch-and-routing", "scope": "Batch labeling, multi-decision calls, triage and routing pipelines, division of labor with chat models.", "seed_queries": ["LLM ticket triage routing pipeline batch labeling automation", "LLM moderation gating automation structured decisions pipeline"], "dig": "web-shaped"}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {"score": 1.51, "probabilities": {"0": 0.19, "1": 0.1, "2": 0.71}, "confidence": 0.27, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.47, "probabilities": {"0": 0.21, "1": 0.11, "2": 0.68}, "confidence": 0.2, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.77, "probabilities": {"0": 0.09, "1": 0.05, "2": 0.86}, "confidence": 0.66, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.49, "probabilities": {"0": 0.22, "1": 0.07, "2": 0.71}, "confidence": 0.24, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.04, "probabilities": {"0": 0.4, "1": 0.15, "2": 0.45}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 0.95, "probabilities": {"0": 0.46, "1": 0.12, "2": 0.42}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 0.94, "probabilities": {"0": 0.43, "1": 0.21, "2": 0.36}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 0.97, "probabilities": {"0": 0.38, "1": 0.27, "2": 0.35}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t09": {"score": 0.76, "probabilities": {"0": 0.49, "1": 0.26, "2": 0.25}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1081, "output_tokens": 139},
+    "response_id": "gen-dec-1791306144-74XJsjeY067r8pI5gUsd",
+    "dropped": [],
+    "kept": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  }
+}
