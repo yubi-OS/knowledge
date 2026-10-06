@@ -1,0 +1,48 @@
+{
+ "nn": "03",
+ "slug": "localize-and-bisect",
+ "scope": "Step 2: narrowing the failing layer (UI, API, database, build tooling, external service, test itself) and git bisect for regressions",
+ "queries_attempted": [
+  {
+   "query": "git bisect find regression commit tutorial",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "bug localization techniques which layer is failing",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "debugging layers frontend backend database network triage",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "git bisect tutorial find bad commit",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: 0-1 results with weight >= 0.5, several off-topic results",
+   "new_queries": [
+    "debugging layers frontend backend database network triage",
+    "git bisect tutorial find bad commit"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://canonical-openstack.readthedocs-hosted.com/en/latest/reference/network-debugging/",
+  "https://git-scm.com/docs/git-bisect",
+  "https://aws.amazon.com/what-is/debugging/"
+ ],
+ "outcome": "authored"
+}

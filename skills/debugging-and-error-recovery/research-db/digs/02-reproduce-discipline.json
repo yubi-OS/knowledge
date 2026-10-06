@@ -1,0 +1,49 @@
+{
+ "nn": "02",
+ "slug": "reproduce-discipline",
+ "scope": "Step 1: making failures reliable, reproducing in isolation, and the 4-way non-reproducible decision tree (timing, environment, state, random)",
+ "queries_attempted": [
+  {
+   "query": "how to reproduce flaky bugs reliably debugging techniques",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "reproducing intermittent bugs timing race conditions techniques",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "nondeterministic bug reproduction strategies software",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "reproduce bug isolation test harness debugging",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: 0-1 results with weight >= 0.5, several off-topic results",
+   "new_queries": [
+    "nondeterministic bug reproduction strategies software",
+    "reproduce bug isolation test harness debugging"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://lwn.net/Articles/802128/",
+  "https://en.wikipedia.org/wiki/Debugging",
+  "https://bugpilot.io/2026/03/11/reproducing-intermittent-bugs-elusive-defect-strategies-guide/",
+  "https://buglyst.com/blog/how-to-reproduce-a-flaky-test"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,67 @@
+{
+ "nn": "06",
+ "slug": "error-specific-triage",
+ "scope": "The test-failure, build-failure, and runtime-error triage trees and how to read each error class",
+ "queries_attempted": [
+  {
+   "query": "triaging failing tests flaky outdated side effects",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "common build failure types dependency import config errors",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "flaky test causes order dependence shared state",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "typescript npm build error troubleshooting types",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "jest test debugging documentation",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "npm ERR build errors troubleshooting documentation",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: 0-1 results with weight >= 0.5, several off-topic results",
+   "new_queries": [
+    "flaky test causes order dependence shared state",
+    "typescript npm build error troubleshooting types"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "attempt 2 dig still thin for this subtopic; third and final allowed attempt with different queries",
+   "new_queries": [
+    "jest test debugging documentation",
+    "npm ERR build errors troubleshooting documentation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://jestjs.io/docs/troubleshooting",
+  "https://docs.npmjs.com/common-errors/"
+ ],
+ "outcome": "authored"
+}

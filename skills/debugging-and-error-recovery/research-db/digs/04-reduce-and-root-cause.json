@@ -1,0 +1,47 @@
+{
+ "nn": "04",
+ "slug": "reduce-and-root-cause",
+ "scope": "Steps 3-4: building the minimal failing case and fixing causes not symptoms, with the 5-whys discipline",
+ "queries_attempted": [
+  {
+   "query": "minimal reproducible example SSCCE debugging best practice",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "five whys root cause analysis software bug fixing",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "minimal reproducible example debugging wikipedia",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "root cause analysis five whys software defects",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: 0-1 results with weight >= 0.5, several off-topic results",
+   "new_queries": [
+    "minimal reproducible example debugging wikipedia",
+    "root cause analysis five whys software defects"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://stackoverflow.com/help/minimal-reproducible-example",
+  "https://larion.com/sakichi-toyoda-five-whys-root-cause-analysis/"
+ ],
+ "outcome": "authored"
+}

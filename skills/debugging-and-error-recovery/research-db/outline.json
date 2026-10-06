@@ -1,0 +1,263 @@
+{
+ "topic": "debugging-and-error-recovery (yubiOS skills/debugging-and-error-recovery/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "stop-the-line-rule",
+   "scope": "The STOP/PRESERVE/DIAGNOSE/FIX/GUARD/RESUME discipline and why errors compound when you push past a broken state",
+   "seed_queries": [
+    "andon stop the line manufacturing analogy software debugging",
+    "cost of fixing bugs later software engineering compounding errors"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "reproduce-discipline",
+   "scope": "Step 1: making failures reliable, reproducing in isolation, and the 4-way non-reproducible decision tree (timing, environment, state, random)",
+   "seed_queries": [
+    "how to reproduce flaky bugs reliably debugging techniques",
+    "reproducing intermittent bugs timing race conditions techniques"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "localize-and-bisect",
+   "scope": "Step 2: narrowing the failing layer (UI, API, database, build tooling, external service, test itself) and git bisect for regressions",
+   "seed_queries": [
+    "git bisect find regression commit tutorial",
+    "bug localization techniques which layer is failing"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "reduce-and-root-cause",
+   "scope": "Steps 3-4: building the minimal failing case and fixing causes not symptoms, with the 5-whys discipline",
+   "seed_queries": [
+    "minimal reproducible example SSCCE debugging best practice",
+    "five whys root cause analysis software bug fixing"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "guard-and-verify",
+   "scope": "Steps 5-6: regression tests that fail without the fix, and the 6-item end-to-end verification checklist",
+   "seed_queries": [
+    "regression test writing after bug fix best practices",
+    "verifying bug fixes end to end checklist"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "error-specific-triage",
+   "scope": "The test-failure, build-failure, and runtime-error triage trees and how to read each error class",
+   "seed_queries": [
+    "triaging failing tests flaky outdated side effects",
+    "common build failure types dependency import config errors"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "safe-fallbacks-and-instrumentation",
+   "scope": "Safe defaults, graceful degradation patterns, and the add/remove/keep lifecycle of debugging instrumentation",
+   "seed_queries": [
+    "graceful degradation safe fallback patterns software design",
+    "when to add and remove debug logging instrumentation lifecycle"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "rationalizations-and-red-flags",
+   "scope": "The rationalization table (guessing, skipping tests, works on my machine), red flags, and the calibration of its 70% claim as an unvalidated prior",
+   "seed_queries": [
+    "debugging anti-patterns guessing fixes common mistakes",
+    "works on my machine problem environment differences debugging"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "untrusted-error-output",
+   "scope": "Treating error messages, stack traces, and CI log text as untrusted data, not instructions, and the injection risks that motivate it",
+   "seed_queries": [
+    "prompt injection via error messages logs security",
+    "treating untrusted data not instructions error output security"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "primitive-placement",
+   "scope": "Where this skill sits in the yubiOS 10-primitive model: least privilege, audit/evidence, segmentation, cryptographic identity, trust chain coverage entries and the cycle 5-7 RSI audit trail (internal-record subtopic, no dig)",
+   "seed_queries": [],
+   "internal_record": true
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef (typesafe/jev-1.13-20260917)",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.93,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.03,
+     "2": 0.95
+    },
+    "confidence": 0.9,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0,
+     "1": 0.03,
+     "2": 0.97
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.99,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 0.99,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.58,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.26,
+     "2": 0.66
+    },
+    "confidence": 0.36,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.03,
+     "2": 0.96
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.62,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.31,
+     "2": 0.65
+    },
+    "confidence": 0.44,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.96,
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.52,
+     "2": 0.22
+    },
+    "confidence": 0.27,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.85,
+    "probabilities": {
+     "0": 0.28,
+     "1": 0.59,
+     "2": 0.13
+    },
+    "confidence": 0.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.33,
+    "probabilities": {
+     "0": 0.68,
+     "1": 0.3,
+     "2": 0.02
+    },
+    "confidence": 0.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1539,
+   "output_tokens": 154
+  },
+  "dropped": [
+   "10"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
