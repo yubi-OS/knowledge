@@ -1,0 +1,35 @@
+{
+ "nn": "08",
+ "slug": "sbom-provenance-attestations",
+ "scope": "SBOM and SLSA provenance attestations: --attest type=provenance,mode=max and type=sbom, docker-container driver requirement, verification via imagetools inspect",
+ "queries_attempted": [
+  {
+   "query": "docker buildx SBOM provenance attestations attest imagetools inspect",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "buildx SLSA provenance attestation docker-container driver required",
+   "attempt": 1,
+   "raw_results": 56,
+   "kept": 5
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://docs.docker.com/build/metadata/attestations/sbom/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://docs.docker.com/build/metadata/attestations/",
+  "http://docs.docker.com/build/release-notes/",
+  "https://www.soxtalk.com/forums/",
+  "https://www.freshworks.com/customer-service/support/ai/",
+  "https://scriptagc.wasmer.app/https_docs_docker_com/build/metadata/attestations/slsa-provenance/",
+  "https://docs.docker.com/build/builders/drivers/docker-container"
+ ],
+ "outcome": "authored"
+}

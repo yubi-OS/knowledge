@@ -1,0 +1,64 @@
+{
+ "nn": "06",
+ "slug": "multi-platform-builds",
+ "scope": "Multi-platform builds: --platform linux/amd64,linux/arm64, QEMU emulator registration via multiarch/qemu-user-static and docker/setup-qemu-action, pushing manifest lists",
+ "queries_attempted": [
+  {
+   "query": "docker buildx multi-platform build linux/amd64 linux/arm64 QEMU emulation",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "multiarch/qemu-user-static register emulators buildx multi-arch",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx multi-arch manifest list push registry tutorial platform",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 1
+  },
+  {
+   "query": "tonistiigi/binfmt qemu emulation docker buildx arm64 cross compile",
+   "attempt": 2,
+   "raw_results": 60,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "polluted dig: 1 high-weight result plus off-topic entries after attempt 1",
+   "new_queries": [
+    "docker buildx multi-arch manifest list push registry tutorial platform",
+    "tonistiigi/binfmt qemu emulation docker buildx arm64 cross compile"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://www.blacksmith.sh/blog/building-multi-platform-docker-images-for-arm64-in-github-actions",
+  "https://docs.docker.com/",
+  "https://www.geeksforgeeks.org/devops/introduction-to-docker/",
+  "https://github.com/multiarch/qemu-user-static",
+  "https://stackoverflow.com/questions/72444103/what-does-running-the-multiarch-qemu-user-static-does-before-building-a-containe",
+  "https://www.cars.com/shopping/toyota-camry-2018/los_angeles-ca/?msockid=05aa2c5805ba64623bf13bb204c865a4",
+  "https://www.ohiogamefishing.com/threads/need-a-lead-mold-to-make-erie-dearie-spinner-baits-please.123450/",
+  "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/build-multi-arch-for-arm",
+  "https://www.cars.com/research/toyota-camry-2018/?msockid=05aa2c5805ba64623bf13bb204c865a4",
+  "https://hub.docker.com/",
+  "https://github.com/tonistiigi/binfmt",
+  "https://stackoverflow.com/questions/38333569/adding-nocache-1-to-every-url-including-the-assets-like-stylesheet-behind-the",
+  "https://docs.docker.com/build/building/multi-platform/",
+  "https://www.npmjs.com/package/nocache",
+  "https://www.ipecsales.com/",
+  "https://cefboud.com/posts/qemu-virtualzation-docker-multi-build/"
+ ],
+ "outcome": "authored"
+}

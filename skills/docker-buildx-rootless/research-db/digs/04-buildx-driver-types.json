@@ -1,0 +1,53 @@
+{
+ "nn": "04",
+ "slug": "buildx-driver-types",
+ "scope": "The four builder drivers (docker, docker-container, kubernetes, remote): where BuildKit runs and which capabilities each gets (cache export, multi-platform, attestations, Build Policies)",
+ "queries_attempted": [
+  {
+   "query": "docker buildx driver types docker-container kubernetes remote differences",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx docker driver limitations no cache export multi-platform",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 0
+  },
+  {
+   "query": "docker buildx create --driver docker-container cache export multi-platform attestations features",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 0
+  },
+  {
+   "query": "docker buildx kubernetes driver remote driver buildkit docs",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 2
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "coverage hole: all attempt-1 results deduped into other subtopics, 0 archive entries",
+   "new_queries": [
+    "docker buildx create --driver docker-container cache export multi-platform attestations features",
+    "docker buildx kubernetes driver remote driver buildkit docs"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://www.geeksforgeeks.org/devops/introduction-to-docker/",
+  "https://hub.docker.com/",
+  "https://docs.docker.com/build/builders/drivers/remote/",
+  "https://docs.docker.com/build/builders/drivers/kubernetes/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,54 @@
+{
+ "nn": "05",
+ "slug": "builder-lifecycle",
+ "scope": "Builder lifecycle commands: buildx create with --driver-opt network=host, inspect --bootstrap, ls, use, rm, and the built-in default docker driver",
+ "queries_attempted": [
+  {
+   "query": "docker buildx create inspect bootstrap builder lifecycle commands",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx ls use rm manage multiple builders",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 1
+  },
+  {
+   "query": "docker buildx inspect --bootstrap docker-container builder create use",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 1
+  },
+  {
+   "query": "docker buildx rm ls multiple builder instances manage default driver",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 1
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "thin dig: only 1 archive entry after attempt 1",
+   "new_queries": [
+    "docker buildx inspect --bootstrap docker-container builder create use",
+    "docker buildx rm ls multiple builder instances manage default driver"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://www.geeksforgeeks.org/devops/introduction-to-docker/",
+  "https://hub.docker.com/",
+  "https://github.com/docker/buildx",
+  "https://docs.docker.com/reference/cli/docker/buildx/inspect/",
+  "https://docs.docker.com/build/builders/manage/"
+ ],
+ "outcome": "authored"
+}
