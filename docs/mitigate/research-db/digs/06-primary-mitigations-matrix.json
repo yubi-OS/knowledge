@@ -1,0 +1,72 @@
+{
+ "nn": "06",
+ "slug": "primary-mitigations-matrix",
+ "scope": "The mitigation matrix's primary-threat table and threat model assumptions: owner vs attacker model, LUKS2 with FIDO2 hmac-secret (PIN, touch, offline recovery key), composefs over erofs with dm-verity and signed UKI cmdline, digest pins in PINNED.md with build policy and provenance/SBOM, owner-enrolled Secure Boot keys with PIV signing and sbverify in CI, avoidance of PCR-hash-bound LUKS unlock, pam-u2f local auth, per-user systemd-homed LUKS2 homes, and X25519MLKEM768 post-quantum TLS defaults.",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed LUKS2 FIDO2 hmac-secret disk unlock",
+   "attempt": 1,
+   "raw_results": 61,
+   "kept": 6
+  },
+  {
+   "query": "X25519MLKEM768 Go OpenSSL post-quantum TLS key exchange",
+   "attempt": 2,
+   "raw_results": 66,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+   "weight": 0.15
+  },
+  {
+   "url": "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+   "weight": 0.49
+  },
+  {
+   "url": "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+   "weight": 0.64
+  },
+  {
+   "url": "https://github.com/nyancient/fido2-luks",
+   "weight": 0.21
+  },
+  {
+   "url": "https://wiki.archlinux.org/title/Systemd-homed",
+   "weight": 0.53
+  },
+  {
+   "url": "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+   "weight": 0.11
+  },
+  {
+   "url": "https://goodtls.com/post-quantum-tls",
+   "weight": 0.2
+  },
+  {
+   "url": "https://quantakrypto.com/guides/enabling-post-quantum-tls",
+   "weight": 0.17
+  },
+  {
+   "url": "https://pqaudit.org/algorithms/hybrid-tls-x25519mlkem768/",
+   "weight": 0.34
+  },
+  {
+   "url": "https://sslboard.com/blog/go-post-quantum-tls-mlkem.md/",
+   "weight": 0.18
+  },
+  {
+   "url": "https://www.encryptionconsulting.com/x25519mlkem768-tls-deployment-guide/",
+   "weight": 0.17
+  },
+  {
+   "url": "https://tls.studio/academy/enable-post-quantum-tls/",
+   "weight": 0.19
+  }
+ ],
+ "outcome": "authored"
+}
