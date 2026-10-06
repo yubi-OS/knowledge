@@ -1,0 +1,183 @@
+{
+ "topic": "the yubiOS planning document - the plan's phases, workstreams, gates, and how planning artifacts compose with the roadmap and milestones (ground source: yubi-OS/yubiOS docs/PLAN.md)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "services-to-subscription-model",
+   "scope": "The executive decision: public-first cybersecurity project, capital-light company selling accountable operations, five-point services-to-subscription plan.",
+   "seed_queries": [
+    "commercial open source services to subscription business model",
+    "open core company recurring revenue versus services revenue models"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "evidence-boundary",
+   "scope": "What exists vs what does not yet exist as verified business evidence; GitHub activity is not market evidence; off-limits claims.",
+   "seed_queries": []
+  },
+  {
+   "nn": 3,
+   "slug": "customers-and-value-prop",
+   "scope": "Four enterprise segments with fleet sizes and economic buyers; enterprise overlay vs canonical demand-side list; capability vs accountability value proposition.",
+   "seed_queries": [
+    "enterprise buyers open source commercial support willingness to pay",
+    "hardened endpoint Linux fleet security engineering enterprise buyers"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "public-interest-covenant",
+   "scope": "What remains public, what customers may buy, stewardship rules, public-interest budget, transparency report.",
+   "seed_queries": []
+  },
+  {
+   "nn": 5,
+   "slug": "pricing-architecture",
+   "scope": "Seven offers, launch prices and gates, revenue priority, no per-device royalty on the OS.",
+   "seed_queries": [
+    "enterprise Linux support subscription pricing per node SUSE Red Hat",
+    "open source enterprise pricing annual minimum commitment benchmarks"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "readiness-gates",
+   "scope": "Gates 0-3 required evidence and allowed activities; proof-first sales motion.",
+   "seed_queries": []
+  },
+  {
+   "nn": 7,
+   "slug": "revenue-cost-model",
+   "scope": "Assumptions, base case (illustrative scaffolding), sensitivity, stop rules, unit-economic goals, runway.",
+   "seed_queries": []
+  },
+  {
+   "nn": 8,
+   "slug": "team-governance-legal",
+   "scope": "Year 1 budget split, hiring order, entity options, legal review list, EU CRA roles and dates.",
+   "seed_queries": [
+    "EU Cyber Resilience Act open source software stewards obligations",
+    "Cyber Resilience Act reporting obligations September 2026 full application 2027"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "execution-and-decisions",
+   "scope": "First 90 days, metrics and reporting discipline, adopt/defer/reject lists, closing commercial test.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.2,
+    "probabilities": {
+     "0": 0.31,
+     "1": 0.18,
+     "2": 0.51
+    },
+    "confidence": 0
+   },
+   "t02": {
+    "score": 0.97,
+    "probabilities": {
+     "0": 0.39,
+     "1": 0.25,
+     "2": 0.36
+    },
+    "confidence": 0
+   },
+   "t03": {
+    "score": 0.72,
+    "probabilities": {
+     "0": 0.55,
+     "1": 0.19,
+     "2": 0.26
+    },
+    "confidence": 0
+   },
+   "t04": {
+    "score": 0.91,
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.25,
+     "2": 0.33
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "score": 1.02,
+    "probabilities": {
+     "0": 0.39,
+     "1": 0.2,
+     "2": 0.41
+    },
+    "confidence": 0
+   },
+   "t06": {
+    "score": 0.9,
+    "probabilities": {
+     "0": 0.45,
+     "1": 0.21,
+     "2": 0.34
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "score": 1.64,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.12,
+     "2": 0.76
+    },
+    "confidence": 0.47
+   },
+   "t09": {
+    "score": 1.34,
+    "probabilities": {
+     "0": 0.24,
+     "1": 0.18,
+     "2": 0.58
+    },
+    "confidence": 0.02
+   },
+   "t10": {
+    "score": 1.71,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.04,
+     "2": 0.83
+    },
+    "confidence": 0.56
+   }
+  },
+  "usage": {
+   "input_tokens": 1227,
+   "output_tokens": 154,
+   "cost": 0.000103068
+  },
+  "dropped": [
+   8
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "note": "Outline was validated with question ids t01-t10 over the original 10 subtopics; t08 (customer ROI model) scored 0.5 with plurality probability 0.63 on drop and was dropped. Question id t09 maps to doc 08, t10 maps to doc 09. Answers recorded as returned by DefAPI (score/probabilities/confidence)."
+ }
+}
