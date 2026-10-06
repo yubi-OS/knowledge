@@ -1,0 +1,108 @@
+{
+  "topic": "Cloudflare platform skill (yubi-OS/yubiOS skills/cloudflare/SKILL.md): Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flagship), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi)",
+  "ground_source": "yubi-OS/yubiOS skills/cloudflare/SKILL.md (fetched https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/cloudflare/SKILL.md, 11570 bytes, User-Agent omni-agent/1.0)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "retrieval-first-stance",
+      "scope": "The skill's Retrieval Sources doctrine: fetch live docs before citing numbers or API signatures; the four retrieval channels (Cloudflare docs MCP / developers.cloudflare.com, workers-types npm package, wrangler config-schema.json, product changelogs) and the docs-over-references resolution order.",
+      "seed_queries": [
+        "Cloudflare docs developers.cloudflare.com changelog API reference limits",
+        "Cloudflare wrangler config-schema.json workers-types npm package types retrieval"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "compute-product-routing",
+      "scope": "The 'I need to run code' decision tree: Workers, Pages, Durable Objects, Workflows, Containers, Workers for Platforms, cron triggers, snippets, tail workers, and smart placement, with the distinguishing criteria each row encodes.",
+      "seed_queries": [
+        "Cloudflare Workers vs Pages vs Durable Objects vs Workflows when to use",
+        "Cloudflare Containers Workers for Platforms cron triggers tail workers snippets"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "storage-data-products",
+      "scope": "The 'I need to store data' decision tree: KV, D1, Hyperdrive, R2, artifacts, queues, durable object storage, secrets store, pipelines, R2 data catalog, R2 SQL, and cache reserve.",
+      "seed_queries": [
+        "Cloudflare KV vs D1 vs R2 which storage to choose",
+        "Cloudflare Queues Pipelines R2 Data Catalog R2 SQL Hyperdrive artifacts"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "ai-ml-products",
+      "scope": "The 'I need AI' decision tree: Workers AI inference, Vectorize vector database, Agents SDK for stateful AI agents, AI Gateway provider gateway, AI Search.",
+      "seed_queries": [
+        "Cloudflare Workers AI Vectorize AI Gateway overview",
+        "Cloudflare Agents SDK AI Search stateful agents"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "networking-connectivity",
+      "scope": "The 'I need networking' decision tree: Cloudflare Tunnel, Spectrum TCP/UDP proxy, TURN for WebRTC, Network Interconnect, Argo Smart Routing, Workers VPC, smart placement.",
+      "seed_queries": [
+        "Cloudflare Tunnel Spectrum TURN networking products overview",
+        "Cloudflare Network Interconnect Argo Smart Routing Workers VPC"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "security-products",
+      "scope": "The 'I need security' decision tree: WAF and managed rulesets (including credential leak detection), DDoS protection, bot management, API Shield, Turnstile CAPTCHA alternative.",
+      "seed_queries": [
+        "Cloudflare WAF DDoS protection overview managed ruleset",
+        "Cloudflare Bot Management API Shield Turnstile"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "media-content-products",
+      "scope": "The 'I need media/content' decision tree: Images optimization and transformation, Stream video encoding and streaming, Browser Rendering automation and screenshots, Zaraz third-party script management.",
+      "seed_queries": [
+        "Cloudflare Images Stream video media products overview",
+        "Cloudflare Browser Rendering Zaraz third-party scripts"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "analytics-observability",
+      "scope": "The 'I need analytics/metrics data' decision tree: GraphQL Analytics API cross-product queries, Analytics Engine custom metrics, Web Analytics RUM, Workers observability and logs, R2 SQL over Iceberg data lakes, Logpush raw logs.",
+      "seed_queries": [
+        "Cloudflare GraphQL Analytics API Analytics Engine custom metrics",
+        "Cloudflare Web Analytics Workers observability Logpush"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "iac-flags-calibration-recursion",
+      "scope": "The IaC decision tree (Pulumi, Terraform, REST API) plus feature flags (Flagship binding, OpenFeature SDK, Flagship REST API), and the skill's Calibration and Recursion sections: no baked-in numbers, docs-over-references, index-rot audits, changelog discipline.",
+      "seed_queries": [
+        "Cloudflare Terraform Pulumi provider infrastructure as code",
+        "Cloudflare Flagship feature flags OpenFeature SDK"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "clef",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "model_id": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {"score": 1.62, "probabilities": {"0": 0.14, "1": 0.1, "2": 0.76}, "confidence": 0.44, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.83, "probabilities": {"0": 0.06, "1": 0.05, "2": 0.89}, "confidence": 0.74, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.68, "probabilities": {"0": 0.06, "1": 0.19, "2": 0.75}, "confidence": 0.52, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.22, "probabilities": {"0": 0.11, "1": 0.56, "2": 0.33}, "confidence": 0.35, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.87, "probabilities": {"0": 0.03, "1": 0.06, "2": 0.91}, "confidence": 0.81, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.97, "probabilities": {"0": 0.01, "1": 0, "2": 0.99}, "confidence": 0.96, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.38, "probabilities": {"0": 0.09, "1": 0.43, "2": 0.48}, "confidence": 0.07, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.53, "probabilities": {"0": 0.08, "1": 0.31, "2": 0.61}, "confidence": 0.29, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t09": {"score": 1.07, "probabilities": {"0": 0.23, "1": 0.47, "2": 0.3}, "confidence": 0.22, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1211, "output_tokens": 139},
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08", "09"]
+  }
+}
