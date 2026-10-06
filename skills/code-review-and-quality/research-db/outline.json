@@ -1,0 +1,248 @@
+{
+  "topic": "code-review-and-quality skill (yubi-OS/yubiOS skills/code-review-and-quality/SKILL.md)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "overview-approval-standard",
+      "scope": "The skill's core posture: every change reviewed before merge, five review axes, and the approval standard of net-improvement over perfection",
+      "seed_queries": [
+        "code review standards approve a change google engineering practices small diffs",
+        "code review approval standard continuous improvement not perfection"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "axis-correctness",
+      "scope": "Correctness axis: spec match, edge cases, error paths, test quality, race conditions and off-by-one detection",
+      "seed_queries": [
+        "code review correctness checklist edge cases error paths race conditions off-by-one",
+        "review tests first code review test quality regression testing"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "axis-readability",
+      "scope": "Readability and simplicity axis: naming, control flow, fewer lines, abstractions earning their complexity, dead-code artifacts, bolted conditionals",
+      "seed_queries": [
+        "code readability review naming conventions control flow simplicity clean code",
+        "rule of three abstraction principle do not generalize early dead code"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "axis-architecture",
+      "scope": "Architecture axis: existing patterns, module boundaries, dependency direction, complexity reduction vs relocation, explicit type boundaries, feature logic leakage",
+      "seed_queries": [
+        "architectural review code change module boundaries dependency direction circular dependencies",
+        "refactoring reduces complexity versus relocates complexity concepts reader cognitive load"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "axis-security",
+      "scope": "Security axis: input validation, secrets hygiene, auth checks, injection prevention, XSS encoding, dependency trust, boundary validation of external data",
+      "seed_queries": [
+        "OWASP secure code review checklist input validation secrets SQL injection XSS",
+        "code review security authentication authorization external data untrusted boundary validation"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "axis-performance",
+      "scope": "Performance axis: N+1 queries, unbounded loops, sync vs async, UI re-renders, missing pagination, hot-path allocations",
+      "seed_queries": [
+        "code review performance N+1 query unbounded loop pagination hot path allocation",
+        "frontend performance review unnecessary re-renders synchronous async operations"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "remedies-and-sizing",
+      "scope": "Structural remedies (named restructurings) and change sizing: 100/300/1000-line targets, file-size boundary, splitting strategies, refactor-vs-feature separation",
+      "seed_queries": [
+        "ideal pull request size research review quality 200 400 lines",
+        "how to split large pull request stacked pull requests strategies"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "process-and-labels",
+      "scope": "The 5-step review process: understand context, review tests first, walk implementation with the five axes, severity prefixes (Critical/Nit/Optional/FYI), verify the verification",
+      "seed_queries": [
+        "code review process steps review tests first severity labels conventional comments nit",
+        "code review verify the verification what tests were run manual testing screenshots"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "culture-and-multi-model",
+      "scope": "Review culture: speed expectations, dispute resolution hierarchy, honesty and no rubber-stamping, dependency discipline, multi-model review pattern, dead code hygiene, anti-rationalizations",
+      "seed_queries": [
+        "code review response time latency best practices one business day review speed",
+        "AI generated code review LLM multi-model review rubber stamping scrutiny"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917 (via DefAPI direct)",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.95
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.99,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 1
+        },
+        "confidence": 0.98
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.98,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.99
+        },
+        "confidence": 0.97
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.85,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.11,
+          "2": 0.87
+        },
+        "confidence": 0.78
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.96
+        },
+        "confidence": 0.91
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.87,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.09,
+          "2": 0.89
+        },
+        "confidence": 0.81
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.45,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.37,
+          "2": 0.54
+        },
+        "confidence": 0.18
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.96
+        },
+        "confidence": 0.93
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.9,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.92
+        },
+        "confidence": 0.84
+      }
+    },
+    "usage": {
+      "input_tokens": 1313,
+      "output_tokens": 139
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
