@@ -1,0 +1,231 @@
+{
+ "topic": "threat-model",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "platform-overview",
+   "scope": "Platform overview: FIDO2-first immutable Linux OS, bootc/OCI and mkosi delivery, ARM64 Path A vs Path B, x86-64 posture, runtime split of verified /usr versus encrypted writable state, and the in-repo supply-chain surface.",
+   "seed_queries": [
+    "bootc bootable container OCI image Linux immutable",
+    "mkosi systemd image builder Linux distribution"
+   ],
+   "kind": "web"
+  },
+  {
+   "nn": "02",
+   "slug": "assets-and-objectives",
+   "scope": "Assets and security objectives: the 9 protected assets with required properties and consequences if lost.",
+   "seed_queries": [],
+   "kind": "internal"
+  },
+  {
+   "nn": "03",
+   "slug": "security-invariants",
+   "scope": "The 10 security invariants that are the center of the model and the boundary-based evaluation rule.",
+   "seed_queries": [],
+   "kind": "internal"
+  },
+  {
+   "nn": "04",
+   "slug": "actors-and-boundaries",
+   "scope": "Threat actors with control and trust levels plus the 11 trust boundaries with expected controls and residual risks.",
+   "seed_queries": [],
+   "kind": "internal"
+  },
+  {
+   "nn": "05",
+   "slug": "input-classification",
+   "scope": "Input classification: attacker-controlled, operator-controlled, and developer-controlled inputs and the developer-compromise reclassification rule.",
+   "seed_queries": [],
+   "kind": "internal"
+  },
+  {
+   "nn": "06",
+   "slug": "assumptions-exclusions",
+   "scope": "Assumptions and exclusions: assumed-sound primitives, owner assumptions, platform-status conditions, and out-of-scope hardware and application issues.",
+   "seed_queries": [],
+   "kind": "internal"
+  },
+  {
+   "nn": "07",
+   "slug": "attack-surface-mitigations",
+   "scope": "Attack surface: 4 control-maturity tiers and 15 principal attacker stories with existing controls and residual risk, grounded in systemd-cryptenroll/FIDO2 hmac-secret and CHIPSEC.",
+   "seed_queries": [
+    "FIDO2 hmac-secret LUKS2 systemd-cryptenroll disk unlock",
+    "CHIPSEC firmware vulnerability assessment platform security"
+   ],
+   "kind": "web"
+  },
+  {
+   "nn": "08",
+   "slug": "vulnerability-classes",
+   "scope": "Vulnerability classes that matter most versus low-relevance traditional web classes, with external grounding for CI workflow injection and verified-boot rollback.",
+   "seed_queries": [
+    "GitHub Actions workflow injection vulnerability supply chain",
+    "dm-verity verified boot rollback protection Linux"
+   ],
+   "kind": "web"
+  },
+  {
+   "nn": "09",
+   "slug": "severity-calibration",
+   "scope": "Severity calibration: Critical, High, Medium, Low definitions with raise and lower factors.",
+   "seed_queries": [],
+   "kind": "internal"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.35,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.32,
+     "2": 0.52
+    },
+    "confidence": 0.03,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.93,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.02,
+     "2": 0.95
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.62,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.08,
+     "2": 0.77
+    },
+    "confidence": 0.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.02,
+     "2": 0.95
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.81,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.07,
+     "2": 0.87
+    },
+    "confidence": 0.71,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.9,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.03,
+     "2": 0.93
+    },
+    "confidence": 0.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.01,
+     "2": 0.96
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.64,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.2,
+     "2": 0.72
+    },
+    "confidence": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.77,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.12,
+     "2": 0.83
+    },
+    "confidence": 0.66,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1083,
+   "output_tokens": 139
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
