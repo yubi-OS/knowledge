@@ -1,0 +1,219 @@
+{
+ "topic": "the yubiOS digest-bump recovery playbook (stale fedora-bootc pin)",
+ "subtopics": [
+  {
+   "nn": "t01",
+   "slug": "01-trigger-and-failure-classes",
+   "scope": "The two failure classes the playbook covers (dead quay.io digest 404, arm64 layer-pull stream truncation) and the 3-in-7-days cadence",
+   "seed_queries": [
+    "quay.io digest pin 404 not found registry manifest gone container build failure",
+    "fedora bootc quay.io digest pinning container image build breakage"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "t02",
+   "slug": "02-two-dispatch-decision",
+   "scope": "Two dispatches via the fetches group, never a hand-edited digest; the Containerfile/PINNED.md invariant",
+   "seed_queries": [],
+   "dig_mode": "internal-record"
+  },
+  {
+   "nn": "t03",
+   "slug": "03-recovery-mechanism",
+   "scope": "The 5-step recovery procedure with the exact commands",
+   "seed_queries": [
+    "GitHub Actions workflow dispatch REST API workflow_dispatch trigger inputs",
+    "skopeo inspect raw docker registry manifest sha256 verify digest exists"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "t04",
+   "slug": "04-dispatch-discipline-rules",
+   "scope": "One dispatch per POST, let the dispatcher settle, Docker_push renames on forward",
+   "seed_queries": [],
+   "dig_mode": "internal-record"
+  },
+  {
+   "nn": "t05",
+   "slug": "05-dev-tag-mismatch",
+   "scope": "Adjacent case: dev tag / short-SHA mismatch, commit 95565a0e, resolve-to-digest discipline",
+   "seed_queries": [
+    "container image tag points stale build short SHA mismatch after base image bump",
+    "OCI image tag vs digest resolution skopeo compute digest sha256sum pipeline"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "t06",
+   "slug": "06-verified-incident-ledger",
+   "scope": "The 3 verified recoveries of 2026-07-26 to 2026-07-30 and the self-mode proof",
+   "seed_queries": [],
+   "dig_mode": "internal-record"
+  },
+  {
+   "nn": "t07",
+   "slug": "07-tradeoffs-and-known-gaps",
+   "scope": "Dispatch cost vs hand edit, the auditable commit pair, the unimplemented fail-fast pre-check",
+   "seed_queries": [
+    "CI pipeline fail fast pre-check stale container image pin registry",
+    "immutable digest pinning vs mutable tag reproducible builds tradeoff"
+   ],
+   "dig_mode": "web"
+  },
+  {
+   "nn": "t08",
+   "slug": "08-cross-references-and-workflow-landscape",
+   "scope": "BLOCKERS.md B-PINS, sibling fetch workflows, dispatch-chain-verification, Linear/commit anchors",
+   "seed_queries": [],
+   "dig_mode": "internal-record"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.63,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.07,
+     "2": 0.78
+    },
+    "confidence": 0.45
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.04,
+     "2": 0.85
+    },
+    "confidence": 0.6
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.92,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.01,
+     "2": 0.96
+    },
+    "confidence": 0.89
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.18,
+     "2": 0.65
+    },
+    "confidence": 0.21
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.26,
+     "2": 0.62
+    },
+    "confidence": 0.26
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.29,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.19,
+     "2": 0.55
+    },
+    "confidence": 0.0
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.21,
+     "2": 0.65
+    },
+    "confidence": 0.25
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.45,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.19,
+     "2": 0.63
+    },
+    "confidence": 0.17
+   }
+  },
+  "usage": {
+   "input_tokens": 1273,
+   "output_tokens": 124
+  },
+  "dropped": [],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t06",
+   "t07",
+   "t08"
+  ]
+ }
+}

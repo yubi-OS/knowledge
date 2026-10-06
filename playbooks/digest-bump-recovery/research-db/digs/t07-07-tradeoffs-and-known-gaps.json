@@ -1,0 +1,37 @@
+{
+ "nn": "t07",
+ "slug": "07-tradeoffs-and-known-gaps",
+ "scope": "Dispatch cost vs hand edit, the auditable commit pair, the unimplemented fail-fast pre-check",
+ "dig_mode": "web",
+ "queries_attempted": [
+  {
+   "query": "CI pipeline fail fast pre-check stale container image pin registry",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "immutable digest pinning vs mutable tag reproducible builds tradeoff",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://infrarunbook.com/article/docker-build-failing-in-ci-pipeline",
+  "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+  "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+  "https://www.citi.com/",
+  "https://docs.gitlab.com/ci/variables/predefined_variables/",
+  "https://www.browserstack.com/pricing",
+  "https://www.devopsschool.nl/dependency-pinning/",
+  "https://adhdecode.com/articles/docker/docker-image-digest-vs-tag/",
+  "https://runbook.academy/courses/kubernetes/lessons/kubernetes-cxv-05-tag-digest/",
+  "https://interviewstacks.com/stacks/docker/image-distribution-and-registries/whats-the-difference-between-using-a-tag-and-using-a-digest-for-pinning",
+  "https://www.merriam-webster.com/dictionary/immutable",
+  "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/"
+ ],
+ "outcome": "authored"
+}
