@@ -1,0 +1,61 @@
+{
+ "nn": "09",
+ "slug": "untrusted-error-output",
+ "scope": "Treating error messages, stack traces, and CI log text as untrusted data, not instructions, and the injection risks that motivate it",
+ "queries_attempted": [
+  {
+   "query": "prompt injection via error messages logs security",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "treating untrusted data not instructions error output security",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "OWASP prompt injection LLM untrusted output",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "CWE-117 log injection improper output neutralization",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "OWASP Top 10 LLM Applications prompt injection",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: 0-1 results with weight >= 0.5, several off-topic results",
+   "new_queries": [
+    "OWASP prompt injection LLM untrusted output"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "attempt 2 dig still thin for this subtopic; third and final allowed attempt with different queries",
+   "new_queries": [
+    "CWE-117 log injection improper output neutralization",
+    "OWASP Top 10 LLM Applications prompt injection"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://cwe.mitre.org/data/definitions/117.html",
+  "https://owasp.org/projects/top-10-for-large-language-model-applications",
+  "https://genai.owasp.org/llmrisk2023-24/llm01-24-prompt-injection/"
+ ],
+ "outcome": "authored"
+}

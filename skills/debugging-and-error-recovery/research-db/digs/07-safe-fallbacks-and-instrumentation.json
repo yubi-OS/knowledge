@@ -1,0 +1,48 @@
+{
+ "nn": "07",
+ "slug": "safe-fallbacks-and-instrumentation",
+ "scope": "Safe defaults, graceful degradation patterns, and the add/remove/keep lifecycle of debugging instrumentation",
+ "queries_attempted": [
+  {
+   "query": "graceful degradation safe fallback patterns software design",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "when to add and remove debug logging instrumentation lifecycle",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "circuit breaker graceful degradation resilience pattern",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "logging levels debug logging production best practices",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: 0-1 results with weight >= 0.5, several off-topic results",
+   "new_queries": [
+    "circuit breaker graceful degradation resilience pattern",
+    "logging levels debug logging production best practices"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.geeksforgeeks.org/system-design/microservices-resilience-patterns/",
+  "https://docs.python.org/3/library/logging.html",
+  "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+ ],
+ "outcome": "authored"
+}

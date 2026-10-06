@@ -1,0 +1,69 @@
+{
+ "nn": "01",
+ "slug": "stop-the-line-rule",
+ "scope": "The STOP/PRESERVE/DIAGNOSE/FIX/GUARD/RESUME discipline and why errors compound when you push past a broken state",
+ "queries_attempted": [
+  {
+   "query": "andon stop the line manufacturing analogy software debugging",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "cost of fixing bugs later software engineering compounding errors",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "Boehm bug fix cost phase software engineering",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "andon cord lean manufacturing wikipedia",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "andon system toyota production line stop",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "software defect cost escalation Boehm 1981",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig thin: 0-1 results with weight >= 0.5, several off-topic results",
+   "new_queries": [
+    "Boehm bug fix cost phase software engineering",
+    "andon cord lean manufacturing wikipedia"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "attempt 2 dig still thin for this subtopic; third and final allowed attempt with different queries",
+   "new_queries": [
+    "andon system toyota production line stop",
+    "software defect cost escalation Boehm 1981"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.lean.org/lexicon-terms/andon/",
+  "https://mag.toyota.co.uk/andon-toyota-production-system/",
+  "https://www.researchgate.net/figure/Historical-cost-to-fix-curve-Adapted-from-Boehm-1981-p-40_fig11_308264787",
+  "https://archive.org/details/softwareengineer0000boeh"
+ ],
+ "outcome": "authored"
+}
