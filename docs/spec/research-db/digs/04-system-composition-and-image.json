@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "system-composition-and-image",
+ "scope": "Image and delivery (bootc OCI + mkosi), digest-pinned Fedora bootc base, OPA/Rego build policy with SLSA/SBOM attestations, DPS partition layout, A/B updates via systemd-sysupdate with Boot Assessment, hardening baseline and version floors.",
+ "queries_attempted": [
+  {
+   "query": "bootc OCI bootable container Fedora bootc digest pinned image",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "systemd Automatic Boot Assessment A/B updates sysupdate rollback",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+  "https://docs.fedoraproject.org/en-US/bootc/",
+  "https://github.com/bootc-dev/bootc",
+  "https://bootc.dev/bootc/",
+  "https://bootc.dev/",
+  "https://deepwiki.com/bootc-dev/bootc/2.4-image-management",
+  "https://systemd.io/AUTOMATIC_BOOT_ASSESSMENT/",
+  "https://deepwiki.com/systemd/systemd/4.3-system-update-with-systemd-sysupdate",
+  "https://botmonster.com/self-hosting/atomic-linux-updates-systemd-sysupdate/",
+  "https://nixcademy.com/posts/immutable-ab-system-partitions-with-nixos-for-ota-updates-with-systemd-sysupdate/",
+  "https://x86.lol/generic/2024/08/28/systemd-sysupdate.html",
+  "https://src.rivoreo.one/systemd-stable/+show/v244.4/docs/AUTOMATIC_BOOT_ASSESSMENT.md"
+ ],
+ "outcome": "authored"
+}

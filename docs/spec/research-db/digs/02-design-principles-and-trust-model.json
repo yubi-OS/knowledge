@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "design-principles-and-trust-model",
+ "scope": "The six design principles and the two complementary roots of trust: YubiKey 5 across five interfaces (PIV 9c, hmac-secret x2, ed25519-sk, U2F) and the fTPM for measurement/attestation.",
+ "queries_attempted": [
+  {
+   "query": "FIDO2 hmac-secret LUKS2 systemd-cryptenroll disk encryption YubiKey",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "YubiKey PIV slot 9c systemd-sbsign UKI signing pkcs11",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.freedesktop.org/software/systemd/man/253/systemd-cryptenroll.html",
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://github.com/nyancient/fido2-luks",
+  "https://github.com/yubi-OS/yubiOS/blob/main/refs/sbsign-pkcs11-validate-2026-07-23.md",
+  "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+  "https://developers.yubico.com/PIV/Introduction/Certificate_slots.html",
+  "https://docs.yubico.com/yesdk/users-manual/application-piv/slots.html",
+  "https://www.cupass.com/en/learn/yubikey-piv-ssh-guide.html",
+  "https://www.yubico.com/"
+ ],
+ "outcome": "authored"
+}
