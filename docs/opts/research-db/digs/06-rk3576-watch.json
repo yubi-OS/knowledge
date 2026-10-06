@@ -1,0 +1,36 @@
+{
+  "nn": 6,
+  "slug": "rk3576-watch",
+  "scope": "Priority 2 watch lane RK3576 (Radxa ROCK 4D, ArmSoM Sige5): BL31-only TF-A, no RK3576 secure-boot/OTP path in OP-TEE, DDR/TPL blobs, eMMC preferred for first proof.",
+  "queries_attempted": [
+    {
+      "query": "RK3576 secure boot OTP eFuse Rockchip U-Boot TF-A BL31",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    },
+    {
+      "query": "ArmSoM Sige5 Radxa ROCK 4D RK3576 eMMC UFS storage",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+    "https://github.com/mfkiwl/rk-open-docs/blob/master/NVM/Rockchip_Developer_Guide_Secure_Boot_Application_Note_EN.md",
+    "https://deepwiki.com/rockchip-linux/rkbin/2.1-secure-boot-chain",
+    "http://resource.milesight-iot.com/files/Rockchip-Secure-Boot-Application-Note-V1.9.pdf",
+    "https://blog.3mdeb.com/2021/2021-12-03-rockchip-secure-boot/",
+    "https://repacklab.com/about-us/",
+    "https://www.armsom.org/sige5",
+    "https://radxa.com/products/rock4/4d/",
+    "https://docs.armsom.org/armsom-sige5",
+    "https://docs.radxa.com/en/rock4/rock4d",
+    "https://github.com/as-jackson/RK3576-Development-Board",
+    "https://www.armsom.org/product-page/sige5"
+  ],
+  "outcome": "authored"
+}

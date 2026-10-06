@@ -1,0 +1,36 @@
+{
+  "nn": 5,
+  "slug": "stm32mp257f-ev1",
+  "scope": "Priority 2 STM32MP257F-EV1: full TF-A BL2/BL31 plus OP-TEE BL32 plus U-Boot BL33 firmware shape, but U-Boot secure-state configs missing and DDR PHY blob required.",
+  "queries_attempted": [
+    {
+      "query": "STM32MP257 secure boot TF-A FIP BL2 BL31 OP-TEE U-Boot boot chain",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    },
+    {
+      "query": "STM32MP25 DDR PHY firmware binary DDRFW license trust boundary",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.st.com/stm32mpu/wiki/How_to_configure_TF-A_FIP",
+    "https://www.st.com/en/embedded-software/stm32mp2distrib.html",
+    "https://bootlin.com/doc/training/embedded-linux/embedded-linux-stm32mp2-labs.pdf",
+    "https://docs.digi.com/resources/documentation/digidocs/embedded/dey/4.0/ccmp25/yocto-boot-chain_t.html",
+    "https://community.st.com/stm32-mpus-61/stm32mpus-security-overview-21",
+    "https://www.st.com/en/microcontrollers-microprocessors/stm32mp257/documentation.html",
+    "https://github.com/STMicroelectronics/STM32DDRFW-UTIL",
+    "https://www.st.com/resource/en/application_note/an5723-guidelines-for-ddr-configuration-on-stm32mp2-mpus-stmicroelectronics.pdf",
+    "https://github.com/STMicroelectronics/stm32-ddr-phy-binary/",
+    "https://wiki.st.com/stm32mpu/wiki/How_to_setup_the_DDR_configuration",
+    "https://www.scribd.com/document/822543518/An5723-Guidelines-for-Ddr-Configuration-on-Stm32mp2-Mpus-Stmicroelectronics-2",
+    "https://wiki.st.com/stm32mpu/wiki/STM32MP25_microprocessor"
+  ],
+  "outcome": "authored"
+}

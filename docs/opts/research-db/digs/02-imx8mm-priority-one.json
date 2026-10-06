@@ -1,0 +1,36 @@
+{
+  "nn": 2,
+  "slug": "imx8mm-priority-one",
+  "scope": "Priority 1 i.MX8M Mini lane: CompuLab IOT-GATE-iMX8 / SBC-IOT-iMX8 and NXP i.MX8M Mini EVKB, their split upstream defconfigs, HABv4/SRK fuse closure, and unproven items.",
+  "queries_attempted": [
+    {
+      "query": "NXP HABv4 SRK eFuse high assurance boot i.MX8M Mini closed configuration",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    },
+    {
+      "query": "U-Boot imx8mm-cl-iot-gate-optee defconfig CONFIG_TPM2_FTPM_TEE EFI secure boot",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://dev.variscite.com/var-som-mx8m-plus/mx8mp-b2qt-kirkstone-5.15-2.0.x-v1.0/high-assurance-boot-mx8/",
+    "https://community.nxp.com/t5/i-MX-Processors/Encrypted-Boot-i-MX8M-Plus-using-SRK-fuses-for-field-deployment/m-p/1819736",
+    "https://www.nxp.com/docs/en/user-guide/UG10158.pdf",
+    "https://docs.nxp.com/bundle/UG10158/page/topics/get_cst_tool_and_keys_configuration.html",
+    "https://community.nxp.com/t5/i-MX-Processors/Burning-eFuses-on-i-MX8M-Mini/m-p/2339316",
+    "https://www.nxp.com/",
+    "https://github.com/Xilinx/u-boot-xlnx/blob/master/configs/imx8mm-cl-iot-gate-optee_defconfig",
+    "https://docs.u-boot-project.org/en/latest/develop/uefi/uefi.html",
+    "https://github.com/Beckhoff/u-boot/blob/bhf/v2026.01/configs/imx8mm-cl-iot-gate-optee_defconfig",
+    "https://elixir.bootlin.com/u-boot/v2024.04-rc5/source/configs/imx8mm-cl-iot-gate-optee_defconfig",
+    "https://www.uh.edu/",
+    "https://github.com/OP-TEE/optee_ftpm"
+  ],
+  "outcome": "authored"
+}

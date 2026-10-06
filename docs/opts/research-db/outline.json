@@ -1,0 +1,269 @@
+{
+  "topic": "yubiOS Path A device options upstream survey (docs/OPTS.md)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "path-a-candidate-gates",
+      "scope": "The 8 evidence gates defining a Path A candidate (owner root at reset, complete chain, owner-controlled inputs, secure state, persistent UEFI state, TPM and measured boot, rollback/recovery/debug, reproducibility) and the first-verifier wording caveat.",
+      "seed_queries": [
+        "OP-TEE BL32 BL31 U-Boot BL33 secure boot chain ARM TrustZone TF-A",
+        "eMMC RPMB Replay Protected Memory Block UEFI secure variables StandaloneMM OP-TEE"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "imx8mm-priority-one",
+      "scope": "Priority 1 i.MX8M Mini lane: CompuLab IOT-GATE-iMX8 / SBC-IOT-iMX8 and NXP i.MX8M Mini EVKB, their split upstream defconfigs, HABv4/SRK fuse closure, and unproven items.",
+      "seed_queries": [
+        "NXP HABv4 SRK eFuse high assurance boot i.MX8M Mini closed configuration",
+        "U-Boot imx8mm-cl-iot-gate-optee defconfig CONFIG_TPM2_FTPM_TEE EFI secure boot"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "rk3588-alternates",
+      "scope": "Priority 1 alternate RK3588 boards: Orange Pi 5 Plus and NanoPC-T6 LTS; SPL FIT signatures and RPMB transport only; Rockchip OTP and CFG_RK_SECURE_BOOT caveats.",
+      "seed_queries": [
+        "Rockchip RK3588 BootROM eFuse secure boot TPL SPL boot chain",
+        "OP-TEE rockchip platform CFG_RK_SECURE_BOOT OTP driver RK3588"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "imx93-evk",
+      "scope": "Priority 2 conditional NXP i.MX93 EVK: strong U-Boot integration (EFI MM, RPMB, OP-TEE) but EdgeLock Enclave/AHAB vendor trust boundary and three open questions.",
+      "seed_queries": [
+        "NXP i.MX93 EdgeLock Enclave AHAB signed container boot chain",
+        "i.MX93 ELE firmware trust boundary secure boot owner key"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "stm32mp257f-ev1",
+      "scope": "Priority 2 STM32MP257F-EV1: full TF-A BL2/BL31 plus OP-TEE BL32 plus U-Boot BL33 firmware shape, but U-Boot secure-state configs missing and DDR PHY blob required.",
+      "seed_queries": [
+        "STM32MP257 secure boot TF-A FIP BL2 BL31 OP-TEE U-Boot boot chain",
+        "STM32MP25 DDR PHY firmware binary DDRFW license trust boundary"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "rk3576-watch",
+      "scope": "Priority 2 watch lane RK3576 (Radxa ROCK 4D, ArmSoM Sige5): BL31-only TF-A, no RK3576 secure-boot/OTP path in OP-TEE, DDR/TPL blobs, eMMC preferred for first proof.",
+      "seed_queries": [
+        "RK3576 secure boot OTP eFuse Rockchip U-Boot TF-A BL31",
+        "ArmSoM Sige5 Radxa ROCK 4D RK3576 eMMC UFS storage"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "lx2160a-rb3gen2",
+      "scope": "Priority 3 NXP LX2160A-RDB (OTPMK/SRKH TBBR, split secure-boot and StandaloneMM configs) and watch lane Qualcomm RB3 Gen 2 (QTI signing, qtiseclib, UFS storage).",
+      "seed_queries": [
+        "NXP LX2160A OTPMK SRKH TBBR secure boot Layerscape TF-A",
+        "Qualcomm RB3 Gen 2 QCM6490 secure boot QTI signing qtiseclib"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "deferred-rejected",
+      "scope": "Deferred and rejected intersections (RK3566/68, Raspberry Pi 5, TI K3, Allwinner A64, i.MX8MQ, newer i.MX9 variants, Nuvoton Arbel) with the recorded rejection reasons.",
+      "seed_queries": []
+    },
+    {
+      "nn": 9,
+      "slug": "cross-cutting-conclusions",
+      "scope": "The three cross-cutting upstream conclusions: Rockchip Path A has no TF-A BL1/BL2; no reviewed board arrives with the complete yubiOS config; binary firmware remains inside the security boundary.",
+      "seed_queries": [
+        "TF-A rockchip BL31 only BL1 BL2 supplied by U-Boot coreboot platform port",
+        "StandaloneMM OP-TEE UEFI variables CONFIG_EFI_MM_COMM_TEE eMMC RPMB"
+      ]
+    },
+    {
+      "nn": 10,
+      "slug": "next-work-proof-packet",
+      "scope": "Recommended next work (6 ordered actions) and the hardware proof packet required before any board is promoted beyond research candidate.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef (typesafe/jev-1.13 via DefAPI direct)",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.06,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.41,
+          "1": 0.13,
+          "2": 0.45999999999999996
+        },
+        "confidence": 0
+      },
+      "t02": {
+        "type": "score",
+        "score": 0.56,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.63,
+          "1": 0.18,
+          "2": 0.19
+        },
+        "confidence": 0.16
+      },
+      "t03": {
+        "type": "score",
+        "score": 0.93,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.4,
+          "1": 0.27,
+          "2": 0.33
+        },
+        "confidence": 0
+      },
+      "t04": {
+        "type": "score",
+        "score": 0.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.57,
+          "1": 0.24,
+          "2": 0.19
+        },
+        "confidence": 0.08
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.72,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.52,
+          "1": 0.24,
+          "2": 0.24
+        },
+        "confidence": 0
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.47,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.66,
+          "1": 0.22,
+          "2": 0.12
+        },
+        "confidence": 0.3
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.59,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.6,
+          "1": 0.2,
+          "2": 0.2
+        },
+        "confidence": 0.11
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.43,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.67,
+          "1": 0.23,
+          "2": 0.1
+        },
+        "confidence": 0.35
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.7,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.54,
+          "1": 0.22,
+          "2": 0.24
+        },
+        "confidence": 0
+      },
+      "t10": {
+        "type": "score",
+        "score": 0.48,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.67,
+          "1": 0.18,
+          "2": 0.15
+        },
+        "confidence": 0.27
+      }
+    },
+    "usage": {
+      "input_tokens": 1148,
+      "output_tokens": 154,
+      "cost": 9.6432e-05
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "note": "no score-0 subtopics; marginal subtopics kept per DOCS-brief internal-record allowance, gated on dig strength at authoring"
+  }
+}

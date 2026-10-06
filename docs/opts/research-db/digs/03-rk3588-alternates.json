@@ -1,0 +1,36 @@
+{
+  "nn": 3,
+  "slug": "rk3588-alternates",
+  "scope": "Priority 1 alternate RK3588 boards: Orange Pi 5 Plus and NanoPC-T6 LTS; SPL FIT signatures and RPMB transport only; Rockchip OTP and CFG_RK_SECURE_BOOT caveats.",
+  "queries_attempted": [
+    {
+      "query": "Rockchip RK3588 BootROM eFuse secure boot TPL SPL boot chain",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "OP-TEE rockchip platform CFG_RK_SECURE_BOOT OTP driver RK3588",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://soliddowant.github.io/2024/01/23/rk3588-cluster-4",
+    "https://www.collabora.com/news-and-blog/blog/2024/02/21/almost-a-fully-open-source-boot-chain-for-rockchips-rk3588/",
+    "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+    "https://pengutronix.de/en/blog/2026-06-19-rk3588-secure-boot.html",
+    "https://github.com/DualTachyon/rk3588-secure-boot",
+    "https://github.com/DualTachyon/rk3588-secure-boot/blob/main/README.md",
+    "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+    "https://github.com/gahingwoo/bl32-rk3576",
+    "https://github.com/DualTachyon/rk3588-secure-boot",
+    "https://cfp.embedded-recipes.org/er2026/talk/ULWYUJ/",
+    "https://hardenedvault.net/blog/2025-03-10-build-atf-optee-rk3588/",
+    "https://github.com/OP-TEE/optee_os/blob/master/core/pta/rockchip/rk_secure_boot.c"
+  ],
+  "outcome": "authored"
+}
