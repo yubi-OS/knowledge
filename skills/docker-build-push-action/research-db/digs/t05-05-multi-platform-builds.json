@@ -1,0 +1,36 @@
+{
+ "nn": "t05",
+ "slug": "05-multi-platform-builds",
+ "scope": "platforms input, QEMU vs native runners, multi-platform + load restriction.",
+ "queries_attempted": [
+  {
+   "query": "docker build-push-action multi-platform linux amd64 arm64 QEMU emulation",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "buildx multi-platform load not supported docker load export limitations",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/ci/github-actions/multi-platform/",
+  "https://www.docker.com/",
+  "https://docs.docker.com/build/building/multi-platform/",
+  "https://github.com/sredevopsorg/multi-arch-docker-github-workflow",
+  "https://kx.cloudingenium.com/en/github-actions-docker-build-deploy",
+  "https://oneuptime.com/blog/post/2025-12-20-multi-platform-docker-builds-github-actions/view",
+  "https://www.erroratlas.net/errors/docker-buildx-multi-platform-load-not-supported",
+  "https://markaicode.com/docker-buildx-multiplatform-v24-fix/",
+  "https://stackoverflow.com/questions/60080264/docker-cannot-build-multi-platform-images-with-docker-buildx",
+  "https://docs.docker.com/reference/cli/docker/buildx/build/",
+  "https://fixdevs.com/blog/docker-multi-platform-build-not-working/",
+  "https://deverrors.com/errors/docker-buildx-platform-unsupported"
+ ],
+ "outcome": "authored"
+}

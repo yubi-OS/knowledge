@@ -1,0 +1,36 @@
+{
+ "nn": "t06",
+ "slug": "06-digest-pinning-supply-chain",
+ "scope": "Digest output for pinning FROM lines, yubiOS.rego requirement, secrets hygiene.",
+ "queries_attempted": [
+  {
+   "query": "pin docker image digest FROM sha256 supply chain security",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "docker build-push-action digest output pin image reference",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/azu/dockerfile-pin",
+  "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+  "https://docs.ozarksecuritylabs.com/supply-chain/tier-2-hardened/container-image-digests/",
+  "https://dreamlab.ing/posts/25-image-digest-pinning-homelab/",
+  "https://www.sourcery.ai/vulnerabilities/docker-unpinned-image-tags",
+  "https://www.pinterest.com/",
+  "https://github.com/docker/build-push-action",
+  "https://stackoverflow.com/questions/71564486/how-to-reference-the-imageid-from-a-docker-build-using-docker-build-push-action",
+  "https://deepwiki.com/docker/build-push-action/3.2-output-variables",
+  "https://deepwiki.com/docker/build-push-action/3-configuration-reference",
+  "https://handwiki.org/wiki/Software:Firefox_version_history",
+  "https://github.com/docker/build-push-action/issues/46"
+ ],
+ "outcome": "authored"
+}

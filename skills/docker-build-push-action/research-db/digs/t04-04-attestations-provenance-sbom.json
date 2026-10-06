@@ -1,0 +1,36 @@
+{
+ "nn": "t04",
+ "slug": "04-attestations-provenance-sbom",
+ "scope": "SLSA provenance and SBOM attestations, mode=max / SLSA Build L3, id-token: write.",
+ "queries_attempted": [
+  {
+   "query": "docker build-push-action provenance sbom attestation SLSA documentation",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "buildx provenance mode max SLSA Build Level 3 id-token write GitHub Actions",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/metadata/attestations/slsa-provenance/",
+  "https://deepwiki.com/docker/build-push-action/4.4-build-attestations",
+  "https://docs.docker.com/build/metadata/attestations/",
+  "https://blog.stephane-robert.info/en/docs/pipeline-cicd/github/securite/attestations/",
+  "https://github.com/docker/build-push-action",
+  "https://github.com/actions/attest-build-provenance",
+  "https://docs.docker.com/build/metadata/attestations/slsa-provenance/",
+  "https://slsa.dev/blog/2023/08/bring-your-own-builder-github",
+  "https://github.com/actions/attest-build-provenance",
+  "https://docs.docker.com/build/ci/github-actions/attestations/",
+  "https://github.com/slsa-framework/slsa-github-generator",
+  "https://ohmybabes.com/vanessavenus21"
+ ],
+ "outcome": "authored"
+}

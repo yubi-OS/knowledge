@@ -1,0 +1,36 @@
+{
+ "nn": "t03",
+ "slug": "03-caching-strategies",
+ "scope": "cache-from/cache-to backends: gha, registry, s3; mode=max; multi-source chains.",
+ "queries_attempted": [
+  {
+   "query": "docker build cache backends gha registry s3 build-push-action",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx cache-to mode max registry cache GitHub Actions persistent",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/cache/backends/gha/",
+  "https://docs.docker.com/build/ci/github-actions/cache/",
+  "https://runs-on.com/github-actions/docker-layer-caching/",
+  "https://starsling.dev/github-actions/docker-build-push-action",
+  "https://stackoverflow.com/questions/76227392/github-build-push-action-and-gha-cache-should-i-set-the-github-ref-name-in-the",
+  "https://www.dash0.com/faq/cache-docker-images-github-actions",
+  "https://docs.docker.com/build/ci/github-actions/cache/",
+  "https://docs.docker.com/build/cache/backends/gha/",
+  "https://www.dash0.com/faq/cache-docker-images-github-actions",
+  "https://www.blacksmith.sh/blog/cache-is-king-a-guide-for-docker-layer-caching-in-github-actions",
+  "https://www.docker.com/",
+  "https://starsling.dev/ci/docker"
+ ],
+ "outcome": "authored"
+}
