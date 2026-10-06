@@ -1,0 +1,241 @@
+{
+ "topic": "brag \u2014 knowledge corpus explicating the /brag skill (launch-video generation via Hyperframes)",
+ "ground_source": "yubi-OS/yubiOS skills/brag/SKILL.md",
+ "variant": "MINT-BRIEF-SKILLS.md (skills-variant, one corpus per yubiOS skills/ SKILL.md)",
+ "date": "2026-10-06",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "invocation-and-options",
+   "scope": "Parsing the /brag invocation: flags (tone/format/duration/music/sfx/title/voice), defaults, opt-in voice, and the brag-slim model-check dispatch.",
+   "seed_queries": [],
+   "score": 1.7,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 2,
+   "slug": "workflow-overview",
+   "scope": "The 5-step flow (inspect, plan and storyboard, Hyperframes handoff, validate render deliver) and the hard gate at each step.",
+   "seed_queries": [],
+   "score": 0.96,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 3,
+   "slug": "tone-system",
+   "scope": "The 7 tone presets, freeform tone mapping, and what each changes.",
+   "seed_queries": [],
+   "score": 1,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 4,
+   "slug": "creative-laws",
+   "scope": "The 8 creative laws and the scene pattern.",
+   "seed_queries": [],
+   "score": 1.37,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 5,
+   "slug": "hyperframes-composition",
+   "scope": "The Hyperframes handoff contract, domain skills, the npx hyperframes check gate, composition structure.",
+   "seed_queries": [
+    "Hyperframes HTML video composition tool",
+    "Hyperframes video rendering CLI"
+   ],
+   "score": 0.92,
+   "verdict": "kept",
+   "dig": "searxng"
+  },
+  {
+   "nn": 6,
+   "slug": "audio-and-music-cues",
+   "scope": "Bundled music + SFX assets, cue presets as optional timing guidance, beat-sync detection.",
+   "seed_queries": [],
+   "score": 0.36,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 7,
+   "slug": "voice-narration-kokoro",
+   "scope": "Opt-in --voice narration via Kokoro through Hyperframes, single-provider design.",
+   "seed_queries": [
+    "Kokoro open source text to speech model",
+    "Kokoro TTS 82M model"
+   ],
+   "score": 0.24,
+   "verdict": "kept",
+   "dig": "searxng"
+  },
+  {
+   "nn": 8,
+   "slug": "output-and-delivery",
+   "scope": "Output directory conventions, the render gates, and share copy.",
+   "seed_queries": [],
+   "score": 1.26,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  }
+ ],
+ "score_validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "model": "typesafe/jev-1.13",
+  "answers_in_full": {
+   "outline_01": {
+    "type": "score",
+    "score": 1.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.09,
+     "2": 0.8
+    },
+    "confidence": 0.55
+   },
+   "outline_02": {
+    "type": "score",
+    "score": 0.96,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.21,
+     "2": 0.37
+    },
+    "confidence": 0
+   },
+   "outline_03": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.36,
+     "1": 0.28,
+     "2": 0.36
+    },
+    "confidence": 0
+   },
+   "outline_04": {
+    "type": "score",
+    "score": 1.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.21,
+     "1": 0.22,
+     "2": 0.57
+    },
+    "confidence": 0.05
+   },
+   "outline_05": {
+    "type": "score",
+    "score": 0.92,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.43,
+     "1": 0.23,
+     "2": 0.34
+    },
+    "confidence": 0
+   },
+   "outline_06": {
+    "type": "score",
+    "score": 0.36,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.75,
+     "1": 0.15,
+     "2": 0.1
+    },
+    "confidence": 0.46
+   },
+   "outline_07": {
+    "type": "score",
+    "score": 0.24,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.82,
+     "1": 0.11,
+     "2": 0.07
+    },
+    "confidence": 0.64
+   },
+   "outline_08": {
+    "type": "score",
+    "score": 1.26,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.23,
+     "1": 0.28,
+     "2": 0.49
+    },
+    "confidence": 0
+   }
+  },
+  "model_meta": {
+   "model": "typesafe/jev-1.13-20260917",
+   "usage": {
+    "input_tokens": 1156,
+    "output_tokens": 132,
+    "cost": 9.7104e-05
+   },
+   "id": "gen-dec-1791330935-BObwI6GdrpdC0DG3bsUu",
+   "provider": "TypeSafe",
+   "task_id": "ta866493-314c-4216-a1d1-00f892c1cfbd",
+   "consumed": "0.000097104"
+  },
+  "kept": [
+   "invocation-and-options",
+   "workflow-overview",
+   "tone-system",
+   "creative-laws",
+   "hyperframes-composition",
+   "audio-and-music-cues",
+   "voice-narration-kokoro",
+   "output-and-delivery"
+  ],
+  "dropped": []
+ }
+}
