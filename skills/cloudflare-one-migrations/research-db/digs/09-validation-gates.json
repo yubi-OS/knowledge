@@ -1,0 +1,36 @@
+{
+ "nn": "09",
+ "slug": "validation-gates",
+ "scope": "The 6 stage-scoped validation gates: count reconciliation, review item classes, pilot validation, TLS testing, rollback paths, accounting table.",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Gateway TLS inspection do not inspect testing validation",
+   "attempt": 0,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "zero trust rollout pilot parallel run rollback plan",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/learning-paths/secure-internet-traffic/build-http-policies/tls-inspection/",
+  "https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/tls-decryption/",
+  "https://www.decryptiondigest.com/blog/cloudflare-gateway-selective-decryption-ssl-inspection-guide",
+  "https://www.cloudflare.com/",
+  "https://signalovernoise.at/posts/2026/08/28/cloudflare-mcp-detection-coverage/",
+  "https://community.cloudflare.com/t/do-not-inspect-setting/494526",
+  "https://zerotrustexplained.com/rollback-strategies-zero-trust-deployments/",
+  "https://zerotrustcost.com/roadmap",
+  "https://zerotrustexplained.com/zero-trust-implementation-timeline/",
+  "https://secfolio.com/how-long-does-a-zero-trust-rollout-take/",
+  "https://zaplio.io/zero-trust-architecture-rollout-plan/",
+  "https://ashishsrivastav.com/blog/phased-zero-trust-rollout-plan"
+ ],
+ "outcome": "authored"
+}

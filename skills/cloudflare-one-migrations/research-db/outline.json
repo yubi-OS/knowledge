@@ -1,0 +1,276 @@
+{
+ "topic": "Cloudflare One migrations: planning migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One (assessment, policy mapping, rollout, gap analysis) per yubi-OS/yubiOS skills/cloudflare-one-migrations/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "migration-workflow",
+   "scope": "The 7-step migration workflow from source-stack identification to rule accounting, and its grounding in Cloudflare migration guidance.",
+   "seed_queries": [
+    "Cloudflare One migration plan replace VPN assessment steps",
+    "SASE migration project plan staging pilot rollout methodology"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "source-exports",
+   "scope": "Per-source export checklists for Zscaler ZIA, Zscaler ZPA, and Palo Alto/Prisma, and why structured exports beat screenshots.",
+   "seed_queries": [
+    "Zscaler ZIA API export URL filtering firewall SSL DLP policy configuration",
+    "Zscaler ZPA API export application segments access policies connectors"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "mapping-heuristics",
+   "scope": "Source-stack to Cloudflare One target mapping patterns: ZIA/SWG to Gateway, ZPA to Access plus Tunnel, Palo Alto intent mapping, legacy VPN replacement.",
+   "seed_queries": [
+    "Zscaler ZIA to Cloudflare Gateway traffic policy mapping migration",
+    "ZPA to Cloudflare Access application types cloudflared tunnel private network routing"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "assessment-prompts",
+   "scope": "The 7 readiness dimensions: source coverage, rule volume and hit data, object dependencies, identity, TLS/DLP, connectivity, rollout readiness.",
+   "seed_queries": [
+    "Cloudflare One device posture checks SCIM group sync identity readiness",
+    "Cloudflare split tunnels egress policies dedicated egress documentation"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "zscaler-zia-traps",
+   "scope": "Zscaler ZIA/SWG source-specific traps: custom URL categories, locations vs DNS locations, GRE tunnels, caution behavior, DLP engines, SCIM gaps.",
+   "seed_queries": [
+    "Zscaler custom URL categories Cloudflare Gateway lists migration",
+    "Zscaler GRE tunnels Cloudflare WARP connector migration"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "zscaler-zpa-traps",
+   "scope": "Zscaler ZPA/private access traps: app segment fan-out, cloudflared topology, split tunnel bypass, hostname limits, egress decisions, resolver policies, Gateway precedence.",
+   "seed_queries": [
+    "Cloudflare Access application limit hostnames private app",
+    "Zscaler ZPA to Cloudflare Tunnel connector group mapping"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "palo-alto-traps",
+   "scope": "Palo Alto/Prisma/NGFW traps: one rule to many resources, partial mappings, object exports, broad rules and catchalls, device posture prerequisites.",
+   "seed_queries": [
+    "Palo Alto App-ID zone HIP profile to Cloudflare device posture mapping",
+    "Prisma Access to Cloudflare WAN migration"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "gotchas-rule-accounting",
+   "scope": "Cross-source gotchas and how each feeds the rule-accounting obligation: reference resolution, identity normalization, decision points, rule order, no catchalls.",
+   "seed_queries": [
+    "firewall rule cleanup hit count stale rules migration audit",
+    "TLS decryption exceptions certificate pinned bypass zero trust migration"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "validation-gates",
+   "scope": "The 6 stage-scoped validation gates: count reconciliation, review item classes, pilot validation, TLS testing, rollback paths, accounting table.",
+   "seed_queries": [
+    "Cloudflare Gateway TLS inspection do not inspect testing validation",
+    "zero trust rollout pilot parallel run rollback plan"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "assessment-template",
+   "scope": "The migration assessment markdown deliverable template and how each workflow stage and readiness dimension feeds its sections. Internal-record subtopic, no dig.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13 (DefAPI direct, https://api.defapi.org/api/v1/decisions)",
+  "endpoint_used": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.91,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.01,
+     "2": 0.95
+    },
+    "confidence": 0.87
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.07,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.33,
+     "1": 0.27,
+     "2": 0.4
+    },
+    "confidence": 0
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.02,
+     "2": 0.95
+    },
+    "confidence": 0.89
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.04,
+     "2": 0.9
+    },
+    "confidence": 0.74
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.25,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.76,
+     "1": 0.22,
+     "2": 0.02
+    },
+    "confidence": 0.63
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.38,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.67,
+     "1": 0.28,
+     "2": 0.05
+    },
+    "confidence": 0.43
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.36,
+     "2": 0.22
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.08,
+     "2": 0.87
+    },
+    "confidence": 0.73
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.76,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.11,
+     "2": 0.82
+    },
+    "confidence": 0.64
+   },
+   "t10": {
+    "type": "score",
+    "score": 1.62,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.15,
+     "2": 0.74
+    },
+    "confidence": 0.43
+   }
+  },
+  "usage": {
+   "input_tokens": 1357,
+   "output_tokens": 154,
+   "cost": 0.000113988
+  },
+  "decision_id": "gen-dec-1791297632-KS0uwNeno4tg9P7rFdXw",
+  "rounding": "fractional score rounded to nearest integer level per the score metric (probability-weighted average)",
+  "dropped": [
+   "05",
+   "06"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "07",
+   "08",
+   "09",
+   "10"
+  ],
+  "notes": "05 (0.25) and 06 (0.38) scored 0 and were dropped per the metric. 02 (1.07) and 07 (0.80) scored 1 (marginal); both digs returned primary vendor sources at or above 0.5, so both were kept."
+ }
+}
