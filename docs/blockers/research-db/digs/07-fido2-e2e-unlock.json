@@ -1,0 +1,36 @@
+{
+ "nn": "07",
+ "slug": "fido2-e2e-unlock",
+ "scope": "B-REAL-FIDO2 and the resolved B-VM-CTAP2: SoftHSM and swu2f as software substitutes, the physical-YubiKey production gate, and the CTAP2/homed/PIV chain",
+ "queries_attempted": [
+  {
+   "query": "FIDO2 CTAP2 LUKS2 systemd-homed YubiKey unlock chain",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "pam_u2f pamu2fcfg ed25519-sk resident key FIDO2 SSH",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+  "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+  "https://www.yubico.com/authentication-standards/fido2/",
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=0fd4d61736fc661f221dc1fd375d673e",
+  "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+  "https://github.com/Yubico/pam-u2f",
+  "https://developers.yubico.com/pam-u2f/",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-fido2-security-keys-for-login-on-ubuntu/view",
+  "https://docs.fedoraproject.org/en-US/quick-docs/using-yubikeys/",
+  "https://pamhealth.com/",
+  "https://eglug.org/setting-up-a-yubikey-for-ssh-and-sudo-authentication-on-linux/"
+ ],
+ "outcome": "authored"
+}

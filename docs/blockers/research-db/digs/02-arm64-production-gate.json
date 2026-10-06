@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "arm64-production-gate",
+ "scope": "B-ARM64-PATHA: why Path A is not production until a real board proves the full secure-boot chain (ROTPK/fuse, OP-TEE, RPMB StandaloneMM, fTPM NV, U-Boot UEFI, signed UKI)",
+ "queries_attempted": [
+  {
+   "query": "OP-TEE RPMB fTPM ARM64 secure boot chain U-Boot",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "U-Boot UEFI signed UKI secure boot ARM64 measured boot",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/OP-TEE/optee_ftpm",
+  "https://optee.readthedocs.io/en/latest/architecture/secure_boot.html",
+  "https://lists.denx.de/pipermail/u-boot/2026-March/612498.html",
+  "https://skillsmp.com/creators/yubi-os/yubios/skills-arm-trusted-firmware-optee",
+  "https://lists.denx.de/pipermail/u-boot/2026-May/618511.html",
+  "https://github.com/microsoft/MSRSec/blob/master/TAs/optee_ta/fTPM/README.md",
+  "https://www.systemshardening.com/articles/linux/uki-secure-boot-hardening/",
+  "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+  "https://mylinux.work/guides/secure-boot-uki/",
+  "https://github.com/lockboot/stage1",
+  "https://www.uh.edu/",
+  "https://oneuptime.com/blog/post/2026-03-03-use-unified-kernel-images-uki-with-talos-linux/view"
+ ],
+ "outcome": "authored"
+}

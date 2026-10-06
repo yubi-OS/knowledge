@@ -1,0 +1,75 @@
+{
+ "nn": "05",
+ "slug": "digest-pin-supply-chain",
+ "scope": "B-PINS: base-image digest pinning, package-floor checks, and PINNED.md as the single live digest source",
+ "queries_attempted": [
+  {
+   "query": "container base image digest pinning supply chain practice",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "pinned OCI image digest reproducible supply chain provenance",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "fedora bootc quay.io image digest pin upgrade",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "SLSA provenance container supply chain digest pinning requirements",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "original dig thin: best weight 0.56, most results low or off-topic",
+   "new_queries": [
+    "fedora bootc quay.io image digest pin upgrade"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "original dig thin: best weight 0.44, no authoritative results",
+   "new_queries": [
+    "SLSA provenance container supply chain digest pinning requirements"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-chain-integrity-in-snyk-workflows",
+  "https://nhimg.org/glossary/container-image-digest/",
+  "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+  "https://www.containerstore.com/welcome.htm?msockid=1f728a67dbe068080fd89d8ddaf56977",
+  "https://docs.ozarksecuritylabs.com/supply-chain/tier-2-hardened/container-image-digests/",
+  "https://www.systemshardening.com/articles/cicd/container-build-hardening/",
+  "https://danielcosenza.com/posts/devops-container-tags-digests-provenance/",
+  "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "https://chaowen.tw/notes/daily-lesson-2026-09-06-oci-image-trust-boundary.html",
+  "https://devguard.org/research-development/bit-for-bit-building-sovereign-reproducible-container-supply-chain-devguard.pdf",
+  "https://www.kunwar.page/chapter/106-the-oci-image-lifecycle-registries-digest-pinning-the-digest-update-pattern",
+  "https://safeguard.sh/resources/blog/docker-oci-image-labels-annotations-best-practices",
+  "https://docs.fedoraproject.org/en-US/iot/fedora-iot-bootc-quay-example/",
+  "https://docs.stg.fedoraproject.org/en-US/iot/fedora-iot-bootc-quay-example/",
+  "https://github.com/bootc-dev/bootc",
+  "https://fedoraproject.org/",
+  "https://docs.fedoraproject.org/si/iot/fedora-iot-bootc-quay-example/",
+  "https://bootc.dev/bootc/booting-local-builds.html",
+  "https://slsa.dev/spec/v0.1/provenance",
+  "https://www.decryptiondigest.com/blog/slsa-software-supply-chain-framework-guide",
+  "https://slsa.dev/provenance/",
+  "https://www.systemshardening.com/articles/cicd/slsa-provenance/",
+  "https://slsa.dev/",
+  "https://cloudsecuritydesk.com/publications/container-image-digest-provenance-verification"
+ ],
+ "outcome": "authored"
+}
