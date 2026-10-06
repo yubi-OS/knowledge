@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "coverage-layers",
+  "scope": "The doc's declared participation in yubiOS security layers: attestation coverage (in-toto, Rekor, SLSA, Sigstore, bootupd measurement, keylime), trust-chain coverage, least-privilege coverage, continuous/adaptive coverage, plus the wayfinder drift-check annotations.",
+  "queries_attempted": [
+    {
+      "query": "in-toto SLSA provenance Rekor Sigstore attestation supply chain",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "Keylime runtime attestation Linux TPM",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://safeguard.sh/resources/blog/software-attestation-framework-comparison",
+    "https://beefed.ai/en/software-provenance-sigstore-in-toto",
+    "https://aquilax.ai/blog/supply-chain-artifact-signing-slsa",
+    "https://slsa.dev/blog/2023/05/in-toto-and-slsa",
+    "https://dev.to/kamal_namdeo/slsa-sigstore-and-provenance-complete-practical-guide-1bl5",
+    "https://www.nikhilj.com/software-supply-chain-security-slsa-sigstore-in-toto/",
+    "https://github.com/keylime/keylime",
+    "https://keylime.dev/",
+    "https://documentation.suse.com/sle-micro/6.0/html/Micro-keylime/index.html",
+    "https://keylime.readthedocs.io/en/latest/design/security.html",
+    "https://documentation.suse.com/smart/security/html/SLE-Micro-security/ch03.html",
+    "https://keylime.readthedocs.io/"
+  ],
+  "outcome": "authored"
+}

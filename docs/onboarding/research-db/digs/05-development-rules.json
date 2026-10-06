@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "development-rules",
+  "scope": "Standing development rules: ARM64 primary for hardware-root trust planning, keep x86-64 working, pin hygiene (update PINNED.md, never copy stale workflow-run digests), distinct RestrictFileSystems semantics, dated refs/ research notes.",
+  "queries_attempted": [
+    {
+      "query": "systemd RestrictFileSystems vs RestrictFileSystemAccess hardening",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "ARM64 secure boot hardware root of trust chain",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.rockylinux.org/10/guides/security/systemd_hardening/",
+    "https://github.com/yubi-OS/yubiOS/blob/main/refs/systemd-hardening-audit-2026-07-17.md",
+    "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://docs.arbitrary.ch/security/systemd.html",
+    "https://www.vlacia.com/os-security/systemd-unit-file-hardening",
+    "https://support.arm.com/documentation/PRD29-GENC-009492/c/TrustZone-Software-Architecture/Booting-a-secure-system/Secure-boot",
+    "https://documentation-service.arm.com/static/5fae7507ca04df4095c1caaa",
+    "https://sprchuoi.github.io/securebootloader/00-foundations/",
+    "https://support.arm.com/documentation/PRD29-GENC-009492/c/TrustZone-Software-Architecture/Booting-a-secure-system",
+    "https://hubble.com/community/guides/how-to-implement-secure-boot-on-arm-cortex-m/",
+    "https://static.linaro.org/connect/sfo17/Presentations/SFO17-201%20Secure%20Boot%20on%20Arm%20systems.pdf"
+  ],
+  "outcome": "authored"
+}
