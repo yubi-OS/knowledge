@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "set-overrides-cache",
+ "scope": "set overrides: wildcard * vs per-target, cache-from/cache-to type=gha mode=max, provenance mode",
+ "queries_attempted": [
+  {
+   "query": "bake-action set cache-from cache-to gha mode max wildcard",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "docker bake set target.property override syntax",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/cache/backends/gha/",
+  "https://www.wikihow.com/Bake",
+  "https://quanttype.net/p/weeknote-17-caching-docker-builds/",
+  "https://www.bakedindallas.com/",
+  "https://dev.to/abatilo/one-dockerfile-is-all-it-takes-falling-in-love-with-bake-2jm9",
+  "https://github.com/mozilla/sccache/blob/main/docs/GHA.md",
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://docs.docker.com/reference/cli/docker/buildx/bake.md",
+  "https://docs.docker.com/build/bake/overrides/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+ "nn": "08",
+ "slug": "provenance-sbom",
+ "scope": "SLSA provenance and SBOM attestations: inputs, sign=auto OIDC binding, cosign verification outputs",
+ "queries_attempted": [
+  {
+   "query": "docker bake provenance sbom attestation SLSA GitHub Actions",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "cosign verify attestation image provenance sigstore OIDC",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://docs.docker.com/build/ci/github-actions/attestations/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://docs.docker.com/build/ci/github-actions/attestations",
+  "https://www.rentwithcosign.com/",
+  "https://blog.sigstore.dev/cosign-verify-bundles/",
+  "https://www.rentwithcosign.com/renters",
+  "https://github.com/sigstore/cosign",
+  "https://cosign.co/",
+  "https://dev.to/kamal_namdeo/slsa-sigstore-and-provenance-complete-practical-guide-1bl5"
+ ],
+ "outcome": "authored"
+}

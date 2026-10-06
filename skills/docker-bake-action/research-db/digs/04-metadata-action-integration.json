@@ -1,0 +1,79 @@
+{
+ "nn": "04",
+ "slug": "metadata-action-integration",
+ "scope": "consuming metadata-action bake-file output in the files input; github-builder meta-images/meta-tags alternative",
+ "queries_attempted": [
+  {
+   "query": "docker metadata-action bake-file output bake-action integration",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "bake-action metadata-action tags labels workflow",
+   "attempt": 1,
+   "raw_results": 53,
+   "kept": 6
+  },
+  {
+   "query": "docker docs bake metadata-action integration example",
+   "attempt": 2,
+   "raw_results": 71,
+   "kept": 6
+  },
+  {
+   "query": "metadata-action bake-file output consume bake-action files input",
+   "attempt": 2,
+   "raw_results": 64,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin on authoritative bake-specific sources (top results generic or low-weight)",
+   "new_queries": [
+    "docker docs bake metadata-action integration example"
+   ],
+   "raw_results": 71,
+   "kept": 6
+  },
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin on authoritative bake-specific sources (top results generic or low-weight)",
+   "new_queries": [
+    "metadata-action bake-file output consume bake-action files input"
+   ],
+   "raw_results": 64,
+   "kept": 6
+  }
+ ],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://github.com/docker/metadata-action",
+  "https://docs.docker.com/",
+  "https://www.geeksforgeeks.org/devops/introduction-to-docker/",
+  "https://github.com/docker/metadata-action",
+  "https://www.wikihow.com/Bake",
+  "https://www.bakedindallas.com/",
+  "https://gitea.psi.ch/docker/metadata-action",
+  "https://www.facebook.com/cretiasbakeryandrestaurant/",
+  "https://bakethecookieshoppe.com/",
+  "https://deepwiki.com/docker/metadata-action/3.2-usage-examples-and-integration",
+  "https://github.com/marketplace/actions/docker-metadata-action",
+  "https://docs.docker.com/build/bake/remote-definition/",
+  "https://docs.docker.com/build/ci/github-actions/github-builder/bake/",
+  "https://support.google.com/youtube/answer/10801543?hl=en",
+  "https://abc.vhrghala.org/p/https/docs.docker.com/build/ci/github-actions/annotations/",
+  "https://en.wikipedia.org/wiki/Metadata",
+  "https://www.metadata2go.com/blog/what-is-metadata",
+  "https://www.geeksforgeeks.org/software-engineering/what-is-metadata/",
+  "https://deepwiki.com/docker/bake-action/1.2-action-inputs-and-outputs-reference",
+  "https://www.ibm.com/think/topics/metadata",
+  "https://mattw.io/youtube-metadata/"
+ ],
+ "outcome": "authored"
+}
