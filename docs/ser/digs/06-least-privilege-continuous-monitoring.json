@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "least-privilege-continuous-monitoring",
+  "scope": "The doc's least-privilege and continuous-monitoring sections: Linux capabilities drop plus ambient, ProtectSystem/ProtectHome, rootless execution, dynamic users, RBAC, and runtime detection with falco/tracee/tetragon/kubeArmor.",
+  "queries_attempted": [
+    {
+      "query": "systemd service hardening ProtectSystem capabilities ambient least privilege",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "ebpf runtime security monitoring falco tracee tetragon kubearmor",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://mylinux.work/guides/systemd-hardening/",
+    "https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/",
+    "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+    "https://docs.rockylinux.org/10/guides/security/systemd_hardening/",
+    "https://virtualserversvps.com/blog/systemd-service-hardening-sandboxing-capabilities/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://www.armosec.io/blog/best-ebpf-security-solutions-runtime-protection/",
+    "https://safeguard.sh/resources/blog/ebpf-runtime-security",
+    "https://www.accuknox.com/wp-content/uploads/Container_Runtime_Security_Tooling.pdf",
+    "https://www.decryptiondigest.com/blog/ebpf-runtime-security-tools-falco-tetragon",
+    "https://1337skills.com/blog/2026-06-24-ebpf-runtime-security-2026-falco-tetragon-tracee/",
+    "https://safeguard.sh/resources/blog/kubernetes-runtime-security-tools-comparison"
+  ],
+  "outcome": "authored"
+}

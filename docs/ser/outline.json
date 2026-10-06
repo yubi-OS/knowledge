@@ -1,0 +1,141 @@
+{
+  "topic": "yubiOS SER / SERA framework alignment (ground source: yubi-OS/yubiOS docs/SER.md)",
+  "source_doc": "yubi-OS/yubiOS docs/SER.md",
+  "source_url": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/docs/SER.md",
+  "source_bytes": 4835,
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "ser-framework-overview",
+      "scope": "The SER framework itself: its principles (sovereignty, ephemerality, reproducibility), the 0mniteck reference by Shant Tchatalbachian, and how yubiOS positions itself as a full-stack SER-style implementation.",
+      "seed_queries": [
+        "SER framework sovereignty ephemerality reproducibility omniteck",
+        "SER framework software engineering reproducibility principles open service model"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "owner-centric-sovereignty",
+      "scope": "Owner-centric control as the doc records it: the YubiKey as the boundary for Secure Boot signing, disk unlock, SSH resident keys, PAM login, and app 2FA, and as the root-of-trust anchor replacing OEM firmware.",
+      "seed_queries": [
+        "YubiKey FIDO2 full disk encryption unlock systemd-cryptenroll",
+        "YubiKey SSH resident keys PIV PAM u2f two factor authentication"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "ephemerality-time-bounded-artifacts",
+      "scope": "Time-bounded retention as the doc records it: pre-launch artifacts, pinned digests, disposable TEST-only validation flows, and durable decisions routed into dated notes, ADRs, and pinned references.",
+      "seed_queries": [
+        "immutable OS ephemeral test artifacts pinned digests retention",
+        "architecture decision records dated notes documentation time bounded"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "reproducibility-provenance",
+      "scope": "Reproducibility as the doc records it: pinned base images, digest tracking, deterministic OCI delivery, bootc-based updates, and explicit CI/firmware/installer/VM evidence files.",
+      "seed_queries": [
+        "bootc bootable container reproducible builds pinned base images digests",
+        "deterministic OCI image build reproducibility CI evidence provenance"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "attestation-trust-chain-coverage",
+      "scope": "The doc's attestation and trust-chain sections: in-toto attestations, Rekor transparency-log entries, SLSA provenance, Sigstore signing config, keylime runtime attestation, bootupd measurement, and the ROT/ROTPK chain.",
+      "seed_queries": [
+        "SLSA provenance in-toto attestation Rekor transparency log sigstore",
+        "Keylime runtime attestation measured boot root of trust ROTPK chain"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "least-privilege-continuous-monitoring",
+      "scope": "The doc's least-privilege and continuous-monitoring sections: Linux capabilities drop plus ambient, ProtectSystem/ProtectHome, rootless execution, dynamic users, RBAC, and runtime detection with falco/tracee/tetragon/kubeArmor.",
+      "seed_queries": [
+        "systemd service hardening ProtectSystem capabilities ambient least privilege",
+        "ebpf runtime security monitoring falco tracee tetragon kubearmor"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "score": 1.42,
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.04,
+          "2": 0.69
+        },
+        "confidence": 0.13
+      },
+      "t02": {
+        "score": 0.77,
+        "probabilities": {
+          "0": 0.54,
+          "1": 0.14,
+          "2": 0.32
+        },
+        "confidence": 0
+      },
+      "t03": {
+        "score": 0.5,
+        "probabilities": {
+          "0": 0.66,
+          "1": 0.17,
+          "2": 0.17
+        },
+        "confidence": 0.25
+      },
+      "t04": {
+        "score": 0.74,
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.14,
+          "2": 0.3
+        },
+        "confidence": 0
+      },
+      "t05": {
+        "score": 0.78,
+        "probabilities": {
+          "0": 0.54,
+          "1": 0.14,
+          "2": 0.32
+        },
+        "confidence": 0
+      },
+      "t06": {
+        "score": 0.93,
+        "probabilities": {
+          "0": 0.44,
+          "1": 0.19,
+          "2": 0.37
+        },
+        "confidence": 0
+      }
+    },
+    "usage": {
+      "input_tokens": 989,
+      "output_tokens": 94
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ],
+    "note": "no subtopic dropped at score 0; 03 is marginal (0.5) and kept only if its dig comes back strong"
+  }
+}

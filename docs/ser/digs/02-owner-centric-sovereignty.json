@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "owner-centric-sovereignty",
+  "scope": "Owner-centric control as the doc records it: the YubiKey as the boundary for Secure Boot signing, disk unlock, SSH resident keys, PAM login, and app 2FA, and as the root-of-trust anchor replacing OEM firmware.",
+  "queries_attempted": [
+    {
+      "query": "YubiKey FIDO2 full disk encryption unlock systemd-cryptenroll",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "YubiKey SSH resident keys PIV PAM u2f two factor authentication",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+    "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+    "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+    "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+    "https://github.com/8r4n/luks-yubikey-plugin",
+    "https://developers.yubico.com/SSH/",
+    "https://www.cupass.com/en/learn/yubikey-piv-ssh-guide.html",
+    "https://mylinux.work/guides/yubikey-server-authentication/",
+    "https://sunhick.github.io/posts/advanced-yubikey-5c/",
+    "https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html",
+    "https://support.yubico.com/s/article/Using-the-YubiKey-PIV-application-for-SSH-authentication"
+  ],
+  "outcome": "authored"
+}
