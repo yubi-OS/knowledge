@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "vgpu-vfio-user-trust-boundary",
+ "scope": "The landed vGPU / vfio-user trust boundary work (ADR-031, 2026-07-25): virtio-gpu-only default images, vfio-pci passthrough as a key-extraction primitive inside the YubiKey-unsealed memory domain, vfio-user device models with mutual distrust, CI legs proving vGPU is a no-op for every trust-boundary component, and the OMN-108 tracking issue",
+ "queries_attempted": [
+  {
+   "query": "vfio-user libvfio-user device model QEMU mutual distrust",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "vfio-pci GPU passthrough IOMMU security risk VM escape",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.qemu.org/docs/master/system/devices/vfio-user.html",
+  "https://github.com/nutanix/libvfio-user",
+  "https://www.qemu.org/docs/master/interop/vfio-user.html",
+  "https://www.mycarforum.com/forums/topic/2697173-toyota-mark-x-maintenance-and-servicing/",
+  "https://qemu.googlesource.com/libvfio-user/",
+  "https://forums.edmunds.com/discussions/tagged/toyota/camry",
+  "https://medium.com/@armestonaidoost/kvm-gpu-passthrough-with-vfio-a-production-focused-guide-de432ca2a12b",
+  "https://tech-insider.org/gpu-passthrough-iommu-vfio-setup-2026/",
+  "https://stackharbor.com/en/knowledge-base/gpu-passthrough-vfio-iommu/",
+  "https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF",
+  "https://github.com/4G0NYY/PCIEPassthroughKVM",
+  "https://www.chefsresource.com/faq/how-much-sugar-is-in-a-tic-tac-orange/"
+ ],
+ "outcome": "authored"
+}

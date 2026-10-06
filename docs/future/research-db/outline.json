@@ -1,0 +1,252 @@
+{
+ "topic": "yubiOS future-work ledger (yubi-OS/yubiOS docs/FUTURE.md): what future directions are recorded, their preconditions, and how the ledger structures long-horizon planning",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "near-term-planning-cycle",
+   "scope": "The evidence refresh and planning baselines FUTURE.md links (ci-evidence-2026-07-21, systemd-upstream-progress-2026-07-21, planning-cycle-2026-07-11) and how the cycle wires FUTURE.md to SPEC.md, ADR.md, and BLOCKERS.md",
+   "seed_queries": []
+  },
+  {
+   "nn": "02",
+   "slug": "milestone-f-arm64-root-of-trust",
+   "scope": "Milestone F: proving the production Path A owner-owned root-of-trust story on ROCK 5B / RK3588 (primary) and ROCKPro64 / RK3399 (secondary): DDR/TPL blob licensing and checksums, TF-A Trusted Board Boot and ROTPK rehearsal, OP-TEE / StandaloneMM / RPMB UEFI variables / ms-tpm-20-ref fTPM bring-up, U-Boot UEFI Secure Boot with TCG2 measurement, booting the shared signed UKI with /usr verification and FIDO2 unlock",
+   "seed_queries": [
+    "TF-A Trusted Board Boot ROTPK Rockchip RK3588 secure boot",
+    "U-Boot UEFI Secure Boot TCG2 event log OP-TEE RPMB UEFI variables"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "milestone-sectime-secure-world-time",
+   "scope": "Milestone SecTime: auditing the TF-A / U-Boot / OP-TEE secure time path (CFG_SECURE_TIME_SOURCE_CNTPCT, AArch64 timer handling, SPD=opteed), distinguishing counter reads from board-backed secure RTC and RPMB monotonic counters, defining what secure enough means for yubiOS time claims, and the evidence needed before promotion",
+   "seed_queries": [
+    "OP-TEE CFG_SECURE_TIME_SOURCE_CNTPCT secure time source",
+    "secure world monotonic time ARM generic timer RPMB monotonic counter attestation freshness"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "milestone-frost-gpu-lockout",
+   "scope": "Milestone Frost: Panfrost-centered firmware-assisted GPU resource lockout on RK3399/RK3588 \u2014 DRM/Panfrost and cgroup v2 as the policy layer, the emerging DRM device-memory cgroup path, hooking BO allocation / PRIME import / destruction, SMC or shared-mailbox hard actions from secure firmware, and staged enforcement from observe to full reset",
+   "seed_queries": [
+    "DRM device memory cgroup dev controller GPU memory limits kernel",
+    "Panfrost BO allocation PRIME import driver hook points Rockchip"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "vgpu-vfio-user-trust-boundary",
+   "scope": "The landed vGPU / vfio-user trust boundary work (ADR-031, 2026-07-25): virtio-gpu-only default images, vfio-pci passthrough as a key-extraction primitive inside the YubiKey-unsealed memory domain, vfio-user device models with mutual distrust, CI legs proving vGPU is a no-op for every trust-boundary component, and the OMN-108 tracking issue",
+   "seed_queries": [
+    "vfio-user libvfio-user device model QEMU mutual distrust",
+    "vfio-pci GPU passthrough IOMMU security risk VM escape"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "milestone-ci-test-lanes",
+   "scope": "Milestone CI: keeping test lanes honest \u2014 native ARM64 KVM evidence, required CTAP2 enumeration and token-dependent guest operations, the pinned zstd EFI zboot workaround, PQ TLS verification so ML-KEM hybrid defaults survive base-image bumps, native multi-architecture publication, and the x86-64-vs-ARM64 blocker framing",
+   "seed_queries": []
+  },
+  {
+   "nn": "07",
+   "slug": "milestone-docs-snapshot-drift",
+   "scope": "Milestone Docs: preventing snapshot drift \u2014 dated refs/ planning notes per research cycle, keeping run-specific image digests out of prose (PINNED.md is the pin home), keeping RestrictFileSystems= and RestrictFileSystemAccess= distinct in hardening docs, and CITATION.md primary-source preference",
+   "seed_queries": []
+  },
+  {
+   "nn": "08",
+   "slug": "milestone-net-openwrt-deception",
+   "scope": "Milestone Net: an OpenWrt WireGuard deception LAN \u2014 decoy SSH endpoints bound to the WireGuard zone, endlessh-style tarpits, multi-host deception via loopback aliases / decoy pools / nftables DNAT, owner notification with rate limits, strict self-DoS ceilings, and the evidence needed before promotion",
+   "seed_queries": [
+    "endlessh SSH tarpit honeypot OpenWrt package",
+    "OpenWrt nftables DNAT decoy honeypot SSH wireguard LAN"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "post-launch-hardware-and-deferred",
+   "scope": "The post-launch hardware work ledger (RK3588 Path A proof, RK3399 secondary proof, RPi 5 Path B docs, firmware OCI hardening, U-Boot FIDO2 console gate, attestation service) plus the deferred ideas: systemd-sysinstall guided installer, LUO/KHO live-update research, FIDO2-wrapped Secure Boot signing keys, and ORAS artifact media types",
+   "seed_queries": [
+    "systemd KHO kernel live update LUO live or rebootless update",
+    "ORAS artifact media types OCI registry non-container artifacts"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "exit-criteria-promotion",
+   "scope": "The six exit criteria FUTURE.md sets for moving an item out of FUTURE.md into ADR.md, SPEC.md, or implementation: clear trust boundary, documented recovery and failure behavior, defined CI or hardware evidence, recorded pins and upstream references, notification and evidence-retention policy for detection work, and no silent production/test artifact crossover",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef (typesafe/jev-1.13-20260917)",
+  "answers": {
+   "t01": {
+    "score": 1.5,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.19,
+     "2": 0.66
+    },
+    "confidence": 0.26,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 0.96,
+    "probabilities": {
+     "0": 0.3,
+     "1": 0.43,
+     "2": 0.27
+    },
+    "confidence": 0.14,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.73,
+    "probabilities": {
+     "0": 0.47,
+     "1": 0.33,
+     "2": 0.2
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.55,
+    "probabilities": {
+     "0": 0.56,
+     "1": 0.34,
+     "2": 0.1
+    },
+    "confidence": 0.18,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.92,
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.5,
+     "2": 0.21
+    },
+    "confidence": 0.26,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.08,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.53,
+     "2": 0.27
+    },
+    "confidence": 0.29,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.06,
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.42,
+     "2": 0.32
+    },
+    "confidence": 0.14,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.45,
+    "probabilities": {
+     "0": 0.62,
+     "1": 0.31,
+     "2": 0.07
+    },
+    "confidence": 0.33,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.27,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.43,
+     "2": 0.42
+    },
+    "confidence": 0.14,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.97,
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.44,
+     "2": 0.27
+    },
+    "confidence": 0.16,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1165,
+   "output_tokens": 154
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09",
+   "10"
+  ],
+  "note": "no subtopic scored 0; all 10 kept"
+ }
+}
