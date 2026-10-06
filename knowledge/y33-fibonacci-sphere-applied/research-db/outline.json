@@ -1,0 +1,198 @@
+{
+ "topic": "applying the Y_3^3 spherical harmonic + Fibonacci sphere machinery to corpus audit (the applied synthesis)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "fibonacci-sphere-sampling",
+   "scope": "The Fibonacci sphere sampling scheme on S2: z_i = 1 - (2i+1)/N, phi_i = 2 pi i / varphi with varphi the golden ratio, theta_i = arccos z_i; why it avoids polar clustering and gives low discrepancy.",
+   "seed_queries": [
+    "Fibonacci sphere sampling golden angle algorithm",
+    "Saff Kuijlaars distributing many points on a sphere"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "y33-harmonic-basis",
+   "scope": "The Y_3^3 spherical harmonic itself: closed form Re{Y_3^3} = K sin^3 theta cos(3 phi), Condon-Shortley normalization, 3-fold azimuthal symmetry, and its role as an angular probe rather than a radial factor.",
+   "seed_queries": [
+    "spherical harmonic Ylm sin^m theta e^(im phi) closed form",
+    "Condon Shortley phase spherical harmonics normalization"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "applied-paper-insertions",
+   "scope": "The two applied insertions into learned-latent-curves-2026-08-06.tex (Fibonacci sampling scheme + explicit Y_3^3 identity) placed right after the Riemann-sphere sentence, plus the companion equation-block and revised-passage artifacts.",
+   "seed_queries": [
+    "Fibonacci lattice quadrature unit sphere",
+    "spherical harmonics basis functions on the sphere visualization"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "rsi-phi-operationalization",
+   "scope": "Operationalizing the math as rsi-phi-skill: the paper-to-skill mapping, i = t Fibonacci parameterization, 384 azimuthal lobes m = 3..384 step 3, and the dual-ordering testing constraint.",
+   "seed_queries": [
+    "azimuthal order m spherical harmonics rotational symmetry",
+    "spherical harmonic basis functions for data on a sphere machine learning"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "time-series-gate-5dim",
+   "scope": "The 5-dim PC1+PC2 gate table after the application: 7-D, 9-D, 16-D, 24-D, 384-D bases, their principal-component coverage values, and which dimensions passed or failed.",
+   "seed_queries": [
+    "PCA explained variance first two principal components",
+    "principal component analysis explained variance ratio interpretation"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "variant-testing-384d",
+   "scope": "Why the native (l=3) 384-lobe basis failed the gate at PC1+PC2 = 0.0156: the sin^3 theta polar vanishing, how raising l to 128 or 384 sharpens equatorial contrast, and the chosen (l=384, m=3, sin^384 polar) variant at PC1+PC2 = 1.0000.",
+   "seed_queries": [
+    "sin^n theta equatorial concentration spherical harmonics",
+    "PCA two components capture all variance separability"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "downstream-consumers",
+   "scope": "Who consumes the applied y33 machinery: paper readers (runnable sampling scheme), RSI loop users (rsi-phi-skill as the operational entry point), and the render pipeline (384-D time-series entry and keystone visualization).",
+   "seed_queries": [
+    "Fibonacci grid sampling geoscience atmosphere",
+    "spherical harmonics applications data analysis visualization"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8431,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0422,
+     "1": 0.0724,
+     "2": 0.8854
+    },
+    "confidence": 0.6864
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.6591,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0625,
+     "1": 0.216,
+     "2": 0.7215
+    },
+    "confidence": 0.3568
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.4593,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1583,
+     "1": 0.224,
+     "2": 0.6177
+    },
+    "confidence": 0.1851
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.0701,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3015,
+     "1": 0.3268,
+     "2": 0.3717
+    },
+    "confidence": 0.0038
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.0219,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.318,
+     "1": 0.3422,
+     "2": 0.3398
+    },
+    "confidence": 0.0005
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.8929,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.34,
+     "1": 0.4271,
+     "2": 0.2329
+    },
+    "confidence": 0.0284
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.1408,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2354,
+     "1": 0.3885,
+     "2": 0.3761
+    },
+    "confidence": 0.0217
+   }
+  },
+  "usage": {
+   "input_tokens": 1019,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07"
+  ]
+ }
+}
