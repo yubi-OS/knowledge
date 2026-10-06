@@ -1,0 +1,215 @@
+{
+  "topic": "a nature-based taste engine: biological equations for aesthetic preference (fractal dimension preference bands, symmetry, scale coherence), a deterministic scorer architecture, the validation discipline, and the honest limits of admitting a fractal-band axis on real photos",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "fractal-dimension-preference-bands",
+      "scope": "The empirical fractal-dimension preference peak: Spehar/Taylor/Hagerhall D 1.3 to 1.5 for statistical fractals, contour-class versus cluster-class peak differences, Isherwood 2016 peak at D 1.2, and the contested monotonic trend for exact recursive fractals.",
+      "seed_queries": [
+        "fractal dimension preference peak 1.3 1.5 aesthetic Spehar Taylor",
+        "Isherwood 2016 preference peak fractal dimension 1.2 natural images"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "branch-exponent-murray-davinci",
+      "scope": "Branch radius scaling as an aesthetic axis: the PNAS Nexus 2025 alpha 1.5 to 2.8 preference band for tree renderings, da Vinci alpha 2, Murray alpha 3, and why alpha predicts aesthetic response better than fractal dimension alone.",
+      "seed_queries": [
+        "PNAS Nexus 2025 scaling branch thickness fractal aesthetic trees",
+        "Murray law radius exponent branching da Vinci tree drawing"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "symmetry-fluency-rejected-anchors",
+      "scope": "Perceptual anchors beyond fractal dimension: processing fluency, mirror symmetry preference, symmetry with controlled deviation, fluctuating asymmetry noise, the golden ratio myth, and the Kleiber 3/4 soft band.",
+      "seed_queries": [
+        "processing fluency symmetry aesthetic preference review",
+        "golden ratio aesthetics myth meta-analysis fluctuating asymmetry attractiveness"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "preference-imitation-prior-art",
+      "scope": "Existing ML taste engines (LAION aesthetic predictor, PickScore, ImageReward, Midjourney personalization) as preference-imitation systems, and the audit literature on fidelity bias, dataset bias, and reward hacking.",
+      "seed_queries": [
+        "LAION aesthetic predictor PickScore ImageReward human preference scoring",
+        "text-to-image reward model bias audit reward hacking"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "biophilic-checklist-prior-art",
+      "scope": "Expert-weighted biophilic scoring instruments (BID-M, Biophilic Healing Index, BiomiMETRIC) and the Birkhoff order/complexity revival: why checklist-based scores are not physics-derived and where parametric aesthetic measures stand.",
+      "seed_queries": [
+        "biophilic design assessment instrument BID-M biophilic healing index",
+        "Birkhoff aesthetic measure order complexity empirical test"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "scorer-architecture-axis-dictionary",
+      "scope": "The deterministic taste scorer architecture: layer 1 feature extraction, layer 2 batched typed decisions with measured numbers embedded in each instruction, hysteresis thresholds, and the 9-axis dictionary v1 from fractal_band to family.",
+      "seed_queries": [
+        "box counting method fractal dimension estimation image implementation",
+        "calibrated language model classifier structured output probability"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "validation-discipline",
+      "scope": "The validation discipline for an instrument built on LLM decisions: jitter tests on repeated identical calls, threshold calibration sweeps, gold-set cross-validation, question-order permutation, k-pass ensembling for the ambiguous band, and outcomes-ledger pre-registration.",
+      "seed_queries": [
+        "LLM judge position bias question order mitigation ensemble",
+        "classifier threshold calibration Youden index gold standard validation"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "edge-standard-and-photo-limits",
+      "scope": "Edge-map standardization (ink normalization, outer-boundary tracing, pinned box-counting window) and the honest limits of admitting a fractal-band axis on real photos: the trial 1 pipeline confound, trial 2 after standardization, and the human-rated gold-set path.",
+      "seed_queries": [
+        "fractal dimension measurement edge detection pipeline reliability images",
+        "human rated image dataset fractal dimension preference ScenicOrNot natural scenes"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.7857,
+        "probabilities": {
+          "0": 0.0529,
+          "1": 0.1086,
+          "2": 0.8385
+        },
+        "confidence": 0.5766,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.7267,
+        "probabilities": {
+          "0": 0.0576,
+          "1": 0.1581,
+          "2": 0.7843
+        },
+        "confidence": 0.4651,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.5962,
+        "probabilities": {
+          "0": 0.075,
+          "1": 0.2538,
+          "2": 0.6712
+        },
+        "confidence": 0.2808,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.4934,
+        "probabilities": {
+          "0": 0.0831,
+          "1": 0.3404,
+          "2": 0.5765
+        },
+        "confidence": 0.1827,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.3523,
+        "probabilities": {
+          "0": 0.1308,
+          "1": 0.3862,
+          "2": 0.483
+        },
+        "confidence": 0.0994,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.9505,
+        "probabilities": {
+          "0": 0.014,
+          "1": 0.0215,
+          "2": 0.9645
+        },
+        "confidence": 0.8963,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.9072,
+        "probabilities": {
+          "0": 0.026,
+          "1": 0.0408,
+          "2": 0.9332
+        },
+        "confidence": 0.8098,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.8433,
+        "probabilities": {
+          "0": 0.0419,
+          "1": 0.073,
+          "2": 0.8851
+        },
+        "confidence": 0.6858,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1642,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
