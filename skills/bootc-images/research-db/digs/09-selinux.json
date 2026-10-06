@@ -1,0 +1,32 @@
+{
+ "nn": "09",
+ "slug": "selinux",
+ "scope": "SELinux labeling of bootc images: no embedded security.selinux xattrs, semanage fcontext in builds, chcon denial, default_t on custom toplevel dirs",
+ "queries_attempted": [
+  {
+   "query": "bootc SELinux semanage fcontext image labels",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "bootc chcon container xattr security.selinux OCI denied",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 2
+  }
+ ],
+ "results_kept": [
+  "https://github.com/bootc-dev/bootc",
+  "https://bootc.dev/",
+  "https://bootc.dev/bootc/",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-security-enhanced_linux-working_with_selinux-selinux_contexts_labeling_files",
+  "https://bootc.dev/bootc/bootc-images.html",
+  "https://carta.tech/man-pages/man8/semanage-fcontext.8.html",
+  "https://docs.fedoraproject.org/en-US/bootc/getting-started/",
+  "https://jmarrero.github.io/bootc/bootc-install.html"
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "outcome": "authored"
+}
