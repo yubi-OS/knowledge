@@ -1,0 +1,249 @@
+{
+ "topic": "the custom-connection skill: working with custom API-key connections in the Sauna environment, credential injection, and connection-management discipline",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "connection-row-inventory",
+   "scope": "the six Cloudflare connection rows, the one working row, and the dated dead-row history",
+   "seed_queries": [],
+   "dig_type": "internal-record"
+  },
+  {
+   "nn": "02",
+   "slug": "multi-connection-pinning",
+   "scope": "the connections parameter plus the X-Sauna-Connection-Id header pattern for same-host rows",
+   "seed_queries": [
+    "pipedream managed connector connection id api key proxy injection",
+    "http proxy credential injection multiple accounts same provider header pinning"
+   ],
+   "dig_type": "web-shaped"
+  },
+  {
+   "nn": "03",
+   "slug": "credential-scoping-health-checks",
+   "scope": "account-scoped credentials, the verify false positive, and the correct whoami endpoint",
+   "seed_queries": [
+    "Cloudflare API token verify endpoint user/tokens/verify",
+    "Cloudflare API account scoped token vs user token permissions memberships"
+   ],
+   "dig_type": "web-shaped"
+  },
+  {
+   "nn": "04",
+   "slug": "error-code-discrimination",
+   "scope": "6111 vs 9109 vs 1000 vs 7003 and what each says about the row versus the route",
+   "seed_queries": [
+    "Cloudflare API error 9109 invalid access token",
+    "Cloudflare API error 6111 invalid format for Authorization header"
+   ],
+   "dig_type": "web-shaped"
+  },
+  {
+   "nn": "05",
+   "slug": "account-inventory-mapping",
+   "scope": "what the account holds, the workers.dev subdomain rename, and the Worker consolidation",
+   "seed_queries": [
+    "Cloudflare workers.dev subdomain rename error 1016 DNS points to disabled subdomain",
+    "Cloudflare Workers scripts API list deployments settings endpoints"
+   ],
+   "dig_type": "web-shaped"
+  },
+  {
+   "nn": "06",
+   "slug": "calibration-discipline",
+   "scope": "session re-verification, the false-positive trap, and dynamic id pinning",
+   "seed_queries": [],
+   "dig_type": "internal-record"
+  },
+  {
+   "nn": "07",
+   "slug": "recursion-audit-rules",
+   "scope": "session-start audit, table update discipline, append-dont-rewrite, re-run triggers",
+   "seed_queries": [],
+   "dig_type": "internal-record"
+  },
+  {
+   "nn": "08",
+   "slug": "proven-api-patterns",
+   "scope": "verified request patterns: live check, deployments, settings, lists, and the failed routes",
+   "seed_queries": [
+    "Cloudflare API GET accounts workers scripts deployments settings endpoints",
+    "Cloudflare API error 7003 not a valid route"
+   ],
+   "dig_type": "web-shaped"
+  },
+  {
+   "nn": "09",
+   "slug": "connector-selection-strategy",
+   "scope": "managed connector rows vs manual api_key rows and the OAuth-create defect resolution",
+   "seed_queries": [
+    "Pipedream managed connectors oauth vs api key authentication",
+    "connect custom API key service account connection best practices"
+   ],
+   "dig_type": "web-shaped"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.06,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.34,
+     "1": 0.26,
+     "2": 0.4
+    },
+    "confidence": 0
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.25,
+     "2": 0.57
+    },
+    "confidence": 0.09
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.26,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.39,
+     "2": 0.43
+    },
+    "confidence": 0
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.03,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.34,
+     "1": 0.3,
+     "2": 0.36
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.6,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.62,
+     "1": 0.16,
+     "2": 0.22
+    },
+    "confidence": 0.11
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.38,
+     "1": 0.29,
+     "2": 0.33
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.91,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.43,
+     "1": 0.24,
+     "2": 0.33
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.77,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.07,
+     "2": 0.85
+    },
+    "confidence": 0.65
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.59,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.22,
+     "2": 0.6799999999999999
+    },
+    "confidence": 0.38
+   }
+  },
+  "usage": {
+   "input_tokens": 1152,
+   "output_tokens": 139,
+   "cost": 9.6768e-05
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
