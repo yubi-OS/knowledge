@@ -1,0 +1,65 @@
+{
+ "nn": 4,
+ "slug": "isolation-mechanics",
+ "scope": "Minimal self-contained subagent prompts, fresh sessions, scoped tool calls, bring back conclusions not transcripts.",
+ "queries_attempted": [
+  {
+   "query": "prompt engineering subagent self-contained task context handoff",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "LLM agent summarize findings not full transcript handoff",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "Claude Code subagents custom agents context engineering brief",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "LLM orchestrator worker pattern distilled results context window",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "dig too thin: no on-topic authoritative source (weight >= 0.5) in attempt 1; agent-handoff results were weak or off-domain",
+   "new_queries": [
+    "Claude Code subagents custom agents context engineering brief",
+    "LLM orchestrator worker pattern distilled results context window"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.prompthealth.com/",
+  "https://www.merriam-webster.com/dictionary/prompt",
+  "https://www.prompthealth.com/products/emr",
+  "https://generateprompt.ai/en",
+  "https://strangerloops.com/context-conservation.md?trk=public_post_comment-text",
+  "https://inferensys.com/prompts/multi-agent-coordination-and-handoff/agent-task-delegation-and-decomposition-prompts/sub-task-context-packaging-prompt-for-handoff",
+  "https://llmwikis.org/guides/agent-handoff-patterns/",
+  "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2827327",
+  "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2827336",
+  "https://psnet.ahrq.gov/issue/developing-and-evaluating-large-language-model-generated-emergency-medicine-handoff-notes",
+  "https://tryinterlock.com/blog/2026-agent-handoffs-state-summaries-beat-raw-transcripts-34.php",
+  "https://code.claude.com/docs/en/sub-agents",
+  "https://claude.ai/",
+  "https://deepwiki.com/coleam00/context-engineering-intro/3.3-subagents-system",
+  "https://claude.com/download",
+  "https://skillsplayground.com/guides/claude-code-agents/",
+  "https://platform.claude.com/cookbook/patterns-agents-orchestrator-workers",
+  "https://news.creeta.com/en/orchestrator-worker-pattern-ai-agents-subagent-context-isolation-token-reduction/",
+  "https://en.m.wikipedia.org/wiki/Large_language_model",
+  "https://patternsimple.dev/patterns/orchestrator-worker"
+ ],
+ "outcome": "authored"
+}

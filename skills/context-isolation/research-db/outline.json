@@ -1,0 +1,188 @@
+{
+ "topic": "the context-isolation skill (ground source: yubi-OS/yubiOS skills/context-isolation/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "id": "t01",
+   "slug": "context-rot-and-failure-modes",
+   "scope": "What context rot is and the 3 failure modes the source doc names: stale anchors, rubber-stamp verification, wasted re-establishment.",
+   "seed_queries": [
+    "LLM context rot long context degradation attention research",
+    "lost in the middle long context LLM performance study"
+   ]
+  },
+  {
+   "nn": 2,
+   "id": "t02",
+   "slug": "when-to-isolate",
+   "scope": "The 4 isolation triggers: independent verification/adversarial review, parallel independent workstreams, large exploratory research, speculative work.",
+   "seed_queries": [
+    "multi-agent LLM orchestration parallel independent tasks isolation",
+    "AI agent scratchpad isolation speculative exploration"
+   ]
+  },
+  {
+   "nn": 3,
+   "id": "t03",
+   "slug": "when-not-to-isolate",
+   "scope": "The 2 exclusions: single continuous dependent tasks, and results the main thread must judge immediately.",
+   "seed_queries": [
+    "when not to use multi-agent LLM overhead coordination cost",
+    "LLM multi-agent debate overhead vs single agent"
+   ]
+  },
+  {
+   "nn": 4,
+   "id": "t04",
+   "slug": "isolation-mechanics",
+   "scope": "Minimal self-contained subagent prompts, fresh sessions, scoped tool calls, bring back conclusions not transcripts.",
+   "seed_queries": [
+    "prompt engineering subagent self-contained task context handoff",
+    "LLM agent summarize findings not full transcript handoff"
+   ]
+  },
+  {
+   "nn": 5,
+   "id": "t05",
+   "slug": "fresh-context-verification",
+   "scope": "Why visible prior reasoning rubber-stamps verification; anchoring and self-correction evidence; the artifact-plus-criteria contract.",
+   "seed_queries": [
+    "anchoring bias LLM self-verification own output",
+    "LLM cannot self-critique own reasoning fresh perspective review"
+   ]
+  },
+  {
+   "nn": null,
+   "id": "t06",
+   "slug": "subagent-prompt-load-order",
+   "scope": "The mandatory skill-load directive at the start of every general-subagent prompt, why fresh subagents do not load skills proactively, and when to skip it.",
+   "seed_queries": [
+    "agent skill loading system prompt directive",
+    "subagent proactive skill discovery"
+   ]
+  },
+  {
+   "nn": 6,
+   "id": "t07",
+   "slug": "skill-interaction-map",
+   "scope": "How the skill pairs with token-efficiency, negative-skill-space, doubt-driven-development, recursive-self-improvement, using-agent-skills, code-review-and-quality. Internal-record subtopic, no dig.",
+   "seed_queries": []
+  },
+  {
+   "nn": null,
+   "id": "t08",
+   "slug": "rsi-governance-and-primitive-coverage",
+   "scope": "The skill changelog, corpus-audit cycles, and the declarative-policy and least-privilege coverage notes appended by the yubiOS RSI pipeline.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.32,
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.29,
+     "2": 0.52
+    },
+    "confidence": 0
+   },
+   "t02": {
+    "score": 1.86,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.07,
+     "2": 0.9
+    },
+    "confidence": 0.8
+   },
+   "t03": {
+    "score": 1.57,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.28,
+     "2": 0.64
+    },
+    "confidence": 0.36
+   },
+   "t04": {
+    "score": 1.94,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.92
+   },
+   "t05": {
+    "score": 1.79,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.1,
+     "2": 0.85
+    },
+    "confidence": 0.68
+   },
+   "t06": {
+    "score": 0.47,
+    "probabilities": {
+     "0": 0.66,
+     "1": 0.21,
+     "2": 0.13
+    },
+    "confidence": 0.29
+   },
+   "t07": {
+    "score": 1.13,
+    "probabilities": {
+     "0": 0.21,
+     "1": 0.45,
+     "2": 0.34
+    },
+    "confidence": 0.18
+   },
+   "t08": {
+    "score": 0.62,
+    "probabilities": {
+     "0": 0.54,
+     "1": 0.3,
+     "2": 0.16
+    },
+    "confidence": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 1073,
+   "output_tokens": 124
+  },
+  "dropped": [
+   {
+    "id": "t06",
+    "score": 0.47,
+    "reason": "score 0 bucket: majority probability on padding"
+   },
+   {
+    "id": "t08",
+    "score": 0.62,
+    "reason": "marginal and purely internal-record (RSI bookkeeping), no dig support possible"
+   }
+  ],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t07"
+  ],
+  "note": "scores are continuous 0-2; t06 mapped to the drop bucket below 0.5. t07 kept at score 1 as an internal-record subtopic grounded in the source doc's own Interaction section, where the dig criterion does not apply (no dig per variant rule)."
+ }
+}
