@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "mutable-tag-ban",
+ "scope": "why mutable tags (latest, branch tags, partial versions) are banned from CI inputs and what to use instead.",
+ "queries_attempted": [
+  {
+   "query": "docker image tag pinning CI supply chain security mutable latest tag",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "immutable image tags CI workflows security best practices",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.sourcery.ai/vulnerabilities/docker-unpinned-image-tags",
+  "https://khimananda.com/blog/docker-image-tagging-strategies",
+  "https://nhimg.org/faq/how-should-security-teams-implement-docker-image-tagging-in-cicd-to-avoid-releas/",
+  "https://www.docker.com/",
+  "https://docs.docker.com/reference/cli/docker/image/tag",
+  "https://safeguard.sh/resources/blog/a-tag-is-not-a-version",
+  "https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html",
+  "https://khimananda.com/blog/docker-image-tagging-strategies",
+  "https://github.com/orgs/community/discussions/181783",
+  "https://cloudwebschool.com/docs/aws/devops-and-cicd/ecr-best-practices/",
+  "https://docs.docker.com/dhi/explore/security-concepts/immutability/",
+  "https://learn.programmingline.com/learn/cicd/cicd-image-tags-versions"
+ ],
+ "outcome": "authored"
+}

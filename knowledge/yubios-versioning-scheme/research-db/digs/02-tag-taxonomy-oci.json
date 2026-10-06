@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "tag-taxonomy-oci",
+ "scope": "the two-layer tag model where human-facing semver release tags coexist with immutable commit-SHA OCI image tags, and where floating tags fit.",
+ "queries_attempted": [
+  {
+   "query": "container image tagging immutable commit sha versus mutable latest tag",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "OCI image tag best practices per architecture tags",
+   "attempt": 2,
+   "raw_results": 50,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://khimananda.com/blog/docker-image-tagging-strategies",
+  "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-tag-version",
+  "https://gist.github.com/artofthepossible/43a3919b13a0e66bc6c7b487de187f65",
+  "https://medium.com/@michael.vittrup.larsen/why-we-should-use-latest-tag-on-container-images-fc0266877ab5",
+  "https://docs.docker.com/docker-hub/repos/manage/hub-images/immutable-tags/",
+  "https://docs.gitlab.com/user/packages/container_registry/immutable_container_tags/",
+  "https://docs.oracle.com/en-us/iaas/Content/Tagging/Concepts/taggingoverview.htm",
+  "https://www.ateam-oracle.com/oracle-cloud-infrastructure-tagging-best-practices-enable-mandatory-tagging-for-compartments",
+  "https://github.com/opencontainers/image-spec",
+  "https://docs.oracle.com/en-us/iaas/Content/Tagging/Tasks/managingtagsandtagnamespaces.htm",
+  "https://specs.opencontainers.org/image-spec/annotations/",
+  "https://www.cgichicago.gov.in/page.php?id=oci-cards"
+ ],
+ "outcome": "authored"
+}

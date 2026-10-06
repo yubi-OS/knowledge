@@ -1,0 +1,79 @@
+{
+ "nn": "04",
+ "slug": "tag-cut-governance",
+ "scope": "release authority (who is allowed to cut tags), the pre-tag checklist, and post-tag verification.",
+ "queries_attempted": [
+  {
+   "query": "release management governance who is allowed to cut release tags",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "pre-release checklist engineering gates before tagging a release",
+   "attempt": 2,
+   "raw_results": 34,
+   "kept": 12
+  },
+  {
+   "query": "git tag creation permissions release policy repository",
+   "attempt": 2,
+   "raw_results": 34,
+   "kept": 12
+  },
+  {
+   "query": "software release readiness checklist changelog dependencies build verification",
+   "attempt": 3,
+   "raw_results": 36,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig too thin: mostly weak or off-topic results (score-1 marginal subtopic needs a strong dig)",
+   "new_queries": [
+    "pre-release checklist engineering gates before tagging a release",
+    "git tag creation permissions release policy repository",
+    "software release readiness checklist changelog dependencies build verification"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig too thin: mostly weak or off-topic results (score-1 marginal subtopic needs a strong dig)",
+   "new_queries": [
+    "pre-release checklist engineering gates before tagging a release",
+    "git tag creation permissions release policy repository",
+    "software release readiness checklist changelog dependencies build verification"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.ugrabyte.com/post/github-ruleset-release-tags-ci",
+  "https://nhimg.org/glossary/release-branch-governance/",
+  "https://www.exceediance.com/the-complete-release-management-guide/",
+  "https://www.merriam-webster.com/dictionary/release",
+  "https://en.wikipedia.org/wiki/Web_2.0",
+  "https://ones.com/blog/on-prem-release-governance-key-tools-framework/",
+  "https://guardrailengineering.io/why-your-releases-keep-failing-and-the-pre-release-checklist-that-fixes-it/",
+  "https://rahulkantjha.com/insights/release-gate-checklist/",
+  "https://mcpmarket.com/tools/skills/release-checklist-1",
+  "https://www.cnn.com/markets/premarkets",
+  "https://github.com/okf-memory/okf-agent-memory/blob/main/docs/RELEASE_PLAYBOOK.md",
+  "https://blog.arezgit.com/articles/complete-pre-release-checklist",
+  "https://learn.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions?view=azure-devops",
+  "https://open-exam-prep.com/study-guides/azure-az-400/repo-management-optimization/repo-permissions-and-tags",
+  "https://stackoverflow.com/questions/72383123/what-permissions-are-needed-for-github-actions-to-create-a-tag-and-release-for-a",
+  "https://github.com/orgs/community/discussions/68252",
+  "https://wackowiki.org/doc/Dev/ChangeLog",
+  "https://blog.hashhackers.com/blog/github-releases-guide/",
+  "https://www.cortex.io/post/software-release-checklist",
+  "https://checklistforge.com/checklist/release-checklist",
+  "https://skills.rest/skill/release-checklist-nxtg-ai",
+  "https://kiolo.com/en/blog/software-release-readiness-checklist/",
+  "https://checklist.gg/templates/release-readiness-checklist",
+  "https://www.heykuno.com/en/blog/software-release-readiness-checklist/"
+ ],
+ "outcome": "authored"
+}
