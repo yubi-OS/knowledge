@@ -1,0 +1,50 @@
+{
+ "nn": "06",
+ "slug": "ci-verification",
+ "scope": "arm64-chromium-build.yml dispatch via workflow_dispatch and workflow-filtered run polling at the new head sha.",
+ "queries_attempted": [
+  {
+   "query": "GitHub Actions workflow dispatch REST API create workflow dispatch event",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "GitHub API list workflow runs filter head_sha event workflow status",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "github actions create workflow dispatch event rest api documentation",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "github rest api list workflow runs head_sha conclusion filter",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 top hits were GitHub homepage/login noise (weights 0.36-0.62); thin on workflow_dispatch + runs API",
+   "new_queries": [
+    "github actions create workflow dispatch event rest api documentation",
+    "github rest api list workflow runs head_sha conclusion filter"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.github.com/en/rest/actions/workflows",
+  "https://docs.github.com/en/rest/actions",
+  "https://locize.com/docs/integration/github-repository-dispatch-event",
+  "https://docs.github.com/en/rest/actions/workflow-runs",
+  "https://github.com/github/rest-api-description/actions"
+ ],
+ "outcome": "authored"
+}

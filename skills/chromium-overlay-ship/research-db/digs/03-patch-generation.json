@@ -1,0 +1,30 @@
+{
+ "nn": "03",
+ "slug": "patch-generation",
+ "scope": "Cumulative fixup diffs vs new-member diffs against the series base commit, --binary for assets, and the file-ownership overlap check.",
+ "queries_attempted": [
+  {
+   "query": "git diff --binary binary files patch apply",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "git cumulative diff since commit specific paths generate patch",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://git-scm.com/",
+  "https://git-scm.com/install/",
+  "https://git-scm.com/",
+  "https://git-scm.com/install/",
+  "https://code.visualstudio.com/docs/sourcecontrol/quickstart",
+  "https://git-scm.com/docs/diff-generate-patch"
+ ],
+ "outcome": "authored"
+}
