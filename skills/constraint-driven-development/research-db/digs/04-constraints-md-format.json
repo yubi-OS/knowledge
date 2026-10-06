@@ -1,0 +1,54 @@
+{
+ "nn": "04",
+ "slug": "constraints-md-format",
+ "scope": "The CONSTRAINTS.md artifact: the floor, the enforced-with-numbers table (rule, checking command, run phase), the measured-not-enforced table, and the exceptions table.",
+ "queries_attempted": [
+  {
+   "query": "quality gates as code repository standards file CI enforcement",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "engineering standards markdown file team conventions review",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "quality gates as code repository standards file CI enforcement",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "engineering standards markdown file team conventions review",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 digs used %20 space encoding; searXNG parsed only the first token of each query and returned dictionary/noise results; re-issued the same queries with + encoding",
+   "new_queries": "same 14 queries, re-encoded"
+  }
+ ],
+ "results_kept": [
+  "https://beefed.ai/en/quality-gates-ci-cd-design-best-practices",
+  "https://how2.sh/posts/how-to-automate-code-review-quality-gates-for-enterprise-repos/",
+  "https://testkube.io/glossary/quality-gates",
+  "https://handwiki.org/wiki/Place:Mexico_City",
+  "https://aws.amazon.com/marketplace/pp/prodview-xmhesofteb52w",
+  "https://blog.vibecoder.me/automated-code-quality-gates-ci-cd",
+  "https://microsoft.github.io/code-with-engineering-playbook/code-reviews/recipes/markdown/",
+  "https://shipdocs.sh/blog/team-coding-standards-documentation-types-explained/",
+  "https://leduykhuong.com/en/blog/team-development-guidelines",
+  "https://en.wikipedia.org/wiki/Comment_(computer_programming)",
+  "https://en.wikipedia.org/wiki/Engineering",
+  "https://blog.buildbetter.ai/agents-md-complete-guide-for-engineering-teams-in-2026/"
+ ],
+ "outcome": "authored"
+}

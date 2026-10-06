@@ -1,0 +1,54 @@
+{
+ "nn": "05",
+ "slug": "tooling-dimensions",
+ "scope": "The de facto tool per dimension, five gotchas (redact, URL-bound checks, diff scoping, no second test run, license), and the check:fast/check:task/check:full script mapping.",
+ "queries_attempted": [
+  {
+   "query": "semgrep gitleaks osv-scanner static analysis security scanning CI",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "lighthouse axe-core CI accessibility performance testing tools",
+   "attempt": 1,
+   "raw_results": 54,
+   "kept": 6
+  },
+  {
+   "query": "semgrep gitleaks osv-scanner static analysis security scanning CI",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "lighthouse axe-core CI accessibility performance testing tools",
+   "attempt": 2,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 digs used %20 space encoding; searXNG parsed only the first token of each query and returned dictionary/noise results; re-issued the same queries with + encoding",
+   "new_queries": "same 14 queries, re-encoded"
+  }
+ ],
+ "results_kept": [
+  "https://github.com/Stelnyx/SecGate",
+  "https://opensourcetools.org/category/code-scanning/",
+  "https://github.com/rezmoss/awesome-security-pipeline",
+  "https://docs.semgrep.dev/introduction",
+  "https://www.segrep.com/",
+  "https://semgrep.dev/",
+  "https://inferensys.com/comparisons/ai-powered-media-and-document-accessibility/axe-core-vs-lighthouse",
+  "https://a11ypath.com/guides/accessibility-testing-tools/",
+  "https://www.calumryan.com/about",
+  "https://inferensys.com/differences/ai-powered-media-and-document-accessibility/wcag-compliance-auditing-tools/google-lighthouse-vs-axe-core-cli",
+  "https://github.com/SciTools/iris/pull/4253",
+  "https://en.m.wikipedia.org/wiki/Lighthouse"
+ ],
+ "outcome": "authored"
+}

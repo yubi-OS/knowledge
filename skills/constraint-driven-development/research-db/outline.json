@@ -1,0 +1,264 @@
+{
+ "topic": "the constraint-driven-development skill (yubi-OS/yubiOS skills/constraint-driven-development/SKILL.md)",
+ "ground_source": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/constraint-driven-development/SKILL.md",
+ "ground_source_bytes": 22707,
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "overview-why-constraints",
+   "scope": "Why a written quality bar: prose checks do not survive the session, the agent-volume problem, and the spec/TDD/constraint division of labor.",
+   "seed_queries": [
+    "quality gates shift left software quality definition of done",
+    "AI generated code volume code review bottleneck"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "when-to-use-boundaries",
+   "scope": "When to apply the skill, when not to, and the non-interactive-context floor-only fallback. Internal-record subtopic, no dig.",
+   "seed_queries": [
+    "internal-record subtopic, no dig"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "detect-then-interview",
+   "scope": "Detect before you ask (read stack, test runner, linters, coverage, CI, agent harness) and the four-question interview where every question carries a default.",
+   "seed_queries": [
+    "one question at a time interview technique requirements elicitation",
+    "test coverage threshold default teams quality gate"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "constraints-md-format",
+   "scope": "The CONSTRAINTS.md artifact: the floor, the enforced-with-numbers table (rule, checking command, run phase), the measured-not-enforced table, and the exceptions table.",
+   "seed_queries": [
+    "quality gates as code repository standards file CI enforcement",
+    "engineering standards markdown file team conventions review"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "tooling-dimensions",
+   "scope": "The de facto tool per dimension, five gotchas (redact, URL-bound checks, diff scoping, no second test run, license), and the check:fast/check:task/check:full script mapping.",
+   "seed_queries": [
+    "semgrep gitleaks osv-scanner static analysis security scanning CI",
+    "lighthouse axe-core CI accessibility performance testing tools"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "lifecycle-placement",
+   "scope": "Wiring checks to the lifecycle: BUILD/VERIFY/REVIEW/SHIP phases with time budgets, scope to the diff, cost decides placement.",
+   "seed_queries": [
+    "pre-commit hooks fast feedback lint type check developer loop",
+    "CI pipeline stages lint test security scan placement cost"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "diff-watch-guard",
+   "scope": "Guarding the bar itself: the five cheapest-road-to-green diff moves, the four suppression comments that switch off checks, the floor-guard reference implementation, and the external/project/suite circularity ranking.",
+   "seed_queries": [
+    "detect skipped tests disabled linter rules code review guard",
+    "istanbul ignore stryker mutation testing suppression bypass detection"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "ratchets-defaults-escalation",
+   "scope": "Ratchets when no number exists (record today, refuse to get worse), the sane-defaults table with rationales, and the three-level escalation path.",
+   "seed_queries": [
+    "ratchet baseline technical debt no regression principle",
+    "core web vitals LCP CLS good thresholds"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "anti-patterns-verification",
+   "scope": "Common rationalizations, red flags, the verification checklist, and skill boundaries. Internal-record subtopic, no dig.",
+   "seed_queries": [
+    "internal-record subtopic, no dig"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.27,
+     "2": 0.65
+    },
+    "confidence": 0.34
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.33,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.4,
+     "2": 0.46
+    },
+    "confidence": 0
+   },
+   "t03": {
+    "type": "score",
+    "score": 0.54,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.6,
+     "1": 0.27,
+     "2": 0.13
+    },
+    "confidence": 0.19
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.68,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.14,
+     "2": 0.77
+    },
+    "confidence": 0.52
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.99,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.43,
+     "2": 0.28
+    },
+    "confidence": 0.13
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.13,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.21,
+     "1": 0.46,
+     "2": 0.33
+    },
+    "confidence": 0.19
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.36,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.77,
+     "1": 0.11,
+     "2": 0.12
+    },
+    "confidence": 0.46
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.63,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.54,
+     "1": 0.28,
+     "2": 0.18
+    },
+    "confidence": 0.06
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.31,
+     "2": 0.56
+    },
+    "confidence": 0.15
+   },
+   "t07v2": {
+    "type": "score",
+    "score": 1.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.07,
+     "2": 0.8
+    },
+    "confidence": 0.5
+   }
+  },
+  "usage": {
+   "input_tokens": 1090,
+   "output_tokens": 139
+  },
+  "note": "t07 scored 0.36 in the first validation pass; re-validated as t07v2 with sharper framing and scored 1.67 (kept as load-bearing). t03 (0.54), t05 (0.99), t08 (0.63) are marginal per the score metric and were kept because their redo-2 digs came back substantive.",
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
