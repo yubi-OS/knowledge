@@ -1,0 +1,112 @@
+{
+  "topic": "the yubiOS system architecture as recorded in yubi-OS/yubiOS docs/ARCHITECTURE.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "thesis-identity-root",
+      "scope": "FIDO2-first identity root of trust and the split between owner-held YubiKey and platform root",
+      "seed_queries": [
+        "FIDO2 hardware backed identity Linux immutable OS design",
+        "bootc composefs immutable Linux atomic updates"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "target-platforms",
+      "scope": "RK3588 Path A, Path B measured boot, x86-64 secondary stance",
+      "seed_queries": [
+        "RK3588 secure boot eFuse ROTPK Rockchip mainline",
+        "x86-64 UEFI Secure Boot custom enrolled keys Linux disk"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "trust-boundaries",
+      "scope": "The six trust boundaries: UKI signing, disk unlock, user homes, SSH, PAM, platform measurement",
+      "seed_queries": [
+        "pam-u2f CVE-2025-23013 authentication bypass",
+        "systemd-cryptenroll FIDO2 LUKS2 systemd-homed YubiKey"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "boot-flow",
+      "scope": "UEFI firmware, systemd-boot, UKI, composefs sysroot chain, sealed vs unsealed status",
+      "seed_queries": [
+        "unified kernel image UKI PCR 11 systemd measure boot phases",
+        "bootc composefs EROFS fs-verity boot flow"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "arm64-firmware",
+      "scope": "TF-A, OP-TEE, fTPM, U-Boot secure-world chain and the three workflow firmware variants",
+      "seed_queries": [
+        "ARM Trusted Firmware Trusted Board Boot FIP ROTPK chain of trust",
+        "ms-tpm-20-ref fTPM OP-TEE RPMB U-Boot"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "build-distribution",
+      "scope": "Bootc and mkosi paths, OCI tags, composefs build flow, partition layout, updates",
+      "seed_queries": [
+        "bootc container ukify split-kernel-and-rootfs composefs digest",
+        "systemd-repart sysext sysupdate A B partition update boot counter"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "version-requirements",
+      "scope": "Minimum versions and the systemd hardening correction",
+      "seed_queries": [
+        "systemd v261 RestrictFileSystemAccess release notes",
+        "X25519MLKEM768 hybrid post-quantum TLS default OpenSSL Go"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "first-boot-extensions",
+      "scope": "First-boot services and the four extension models: sysext, portable services, nspawn, flatpak",
+      "seed_queries": [
+        "systemd-sysext portable services verity trust model",
+        "ConditionSecurity measured-os systemd first boot services"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "kernel-rootfs-split",
+      "scope": "Kernel plus rootfs split ADR-032: uki OCI artifacts, Phase 1 and Phase 2 staging",
+      "seed_queries": [
+        "bootc 1.16 uki BLSConfig pull 2269",
+        "Linux kernel rootfs split separate UKI OCI artifact reproducibility"
+      ]
+    }
+  ],
+  "validation": {
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "id": "gen-dec-1791275964-9wB7qbGOg4v1Y08J6iGz",
+    "answers": {
+      "t01": { "score": 0.64, "probabilities": { "0": 0.61, "1": 0.15, "2": 0.24 }, "confidence": 0.04, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t02": { "score": 1.12, "probabilities": { "0": 0.31, "1": 0.26, "2": 0.43 }, "confidence": 0, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t03": { "score": 1.28, "probabilities": { "0": 0.31, "1": 0.1, "2": 0.59 }, "confidence": 0, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t04": { "score": 1.5, "probabilities": { "0": 0.19, "1": 0.11, "2": 0.7 }, "confidence": 0.25, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t05": { "score": 1.27, "probabilities": { "0": 0.3, "1": 0.12, "2": 0.58 }, "confidence": 0, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t06": { "score": 1.33, "probabilities": { "0": 0.24, "1": 0.18, "2": 0.58 }, "confidence": 0, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t07": { "score": 0.65, "probabilities": { "0": 0.47, "1": 0.4, "2": 0.13 }, "confidence": 0.02, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t08": { "score": 1.17, "probabilities": { "0": 0.32, "1": 0.2, "2": 0.48 }, "confidence": 0, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } },
+      "t09": { "score": 1.02, "probabilities": { "0": 0.38, "1": 0.23, "2": 0.39 }, "confidence": 0, "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" } }
+    },
+    "usage": { "input_tokens": 1127, "output_tokens": 139 },
+    "dropped": ["07"],
+    "kept": ["01", "02", "03", "04", "05", "06", "08", "09"],
+    "drop_note": "t07 scored marginal (0.65); per the rule it stayed only if its dig came back strong. Two redo rounds produced no noul >= 0.5 result, so it was dropped after authoring-time evaluation and recorded as a skipped doc."
+  }
+}

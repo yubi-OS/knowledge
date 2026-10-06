@@ -1,0 +1,84 @@
+{
+  "nn": "02",
+  "slug": "target-platforms",
+  "queries_attempted": [
+    {
+      "query": "RK3588 secure boot eFuse ROTPK Rockchip mainline",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": [
+        "https://github.com/DualTachyon/rk3588-secure-boot",
+        "http://resource.milesight-iot.com/files/Rockchip-Secure-Boot-Application-Note-V1.9.pdf",
+        "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+        "https://github.com/mfkiwl/rk-open-docs/blob/master/NVM/Rockchip_Developer_Guide_Secure_Boot_Application_Note_EN.md",
+        "https://www.youtube.com/watch?v=0KSOMA3QBU0",
+        "https://www.cnx-software.com/news/sbc"
+      ]
+    },
+    {
+      "query": "x86-64 UEFI Secure Boot custom enrolled keys Linux disk",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": [
+        "https://www.systemshardening.com/articles/linux/linux-uefi-secure-boot-db/",
+        "https://www.commandinline.com/linux-secure-boot-uefi-mokutil-key-management/",
+        "https://botmonster.com/self-hosting/secure-boot-custom-keys-linux/",
+        "https://en.wikipedia.org/wiki/X86",
+        "https://handwiki.org/wiki/Software:Features_new_to_Windows_8",
+        "https://access.redhat.com/articles/1180943"
+      ]
+    },
+    {
+      "query": "Rockchip RK3588 boot ROM secure boot eFuse documentation",
+      "attempt": 3,
+      "raw_results": 6,
+      "kept": [
+        "https://github.com/mfkiwl/rk-open-docs/blob/master/NVM/Rockchip_Developer_Guide_Secure_Boot_Application_Note_EN.md",
+        "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+        "http://resource.milesight-iot.com/files/Rockchip-Secure-Boot-Application-Note-V1.9.pdf",
+        "https://www.rock-chips.com/a/en/",
+        "https://github.com/DualTachyon/rk3588-secure-boot",
+        "https://soliddowant.github.io/2024/01/23/rk3588-cluster-4"
+      ]
+    },
+    {
+      "query": "UEFI Secure Boot custom PK KEK db key enrollment documentation",
+      "attempt": 4,
+      "raw_results": 6,
+      "kept": [
+        "https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11",
+        "https://en.wikipedia.org/wiki/UEFI",
+        "https://mundobytes.com/en/Configure-secure-boot-with-your-own-keys-%28pk--kek--and-db%29./",
+        "https://www.systemshardening.com/articles/linux/linux-uefi-secure-boot-db/",
+        "https://discussion.fedoraproject.org/t/this-updates-the-uefi-signature-database-signed-by-do-not-trust-ami-test-pk/202426/5",
+        "https://docs.fogproject.org/en/latest/kb/how-tos/secure-boot-setup-mode-enrollment/"
+      ]
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig yielded 0 high-weight (noul >= 0.5) results; re-dug with different queries",
+      "new_queries": [
+        "Rockchip RK3588 boot ROM secure boot eFuse documentation",
+        "UEFI Secure Boot custom PK KEK db key enrollment documentation"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://github.com/DualTachyon/rk3588-secure-boot",
+    "http://resource.milesight-iot.com/files/Rockchip-Secure-Boot-Application-Note-V1.9.pdf",
+    "https://deepwiki.com/rockchip-linux/rkbin/8.3-secure-boot-configuration",
+    "https://github.com/mfkiwl/rk-open-docs/blob/master/NVM/Rockchip_Developer_Guide_Secure_Boot_Application_Note_EN.md",
+    "https://www.youtube.com/watch?v=0KSOMA3QBU0",
+    "https://www.cnx-software.com/news/sbc",
+    "https://www.systemshardening.com/articles/linux/linux-uefi-secure-boot-db/",
+    "https://www.commandinline.com/linux-secure-boot-uefi-mokutil-key-management/",
+    "https://botmonster.com/self-hosting/secure-boot-custom-keys-linux/",
+    "https://en.wikipedia.org/wiki/X86",
+    "https://handwiki.org/wiki/Software:Features_new_to_Windows_8",
+    "https://access.redhat.com/articles/1180943"
+  ],
+  "outcome": "authored"
+}
