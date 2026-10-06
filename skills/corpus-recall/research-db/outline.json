@@ -1,0 +1,186 @@
+{
+ "topic": "corpus-recall skill (corpus recall of yubi-OS/knowledge corpora)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "repo-layout",
+   "scope": "The knowledge/<ref>/ corpus anatomy: authored docs, README charter, and the research-db/ provenance directory (archive.json, digs, preflight, outline, jev-log, db.ts)",
+   "seed_queries": []
+  },
+  {
+   "nn": "02",
+   "slug": "mirror-grep",
+   "scope": "Path 1: mirroring the whole repo via the codeload tarball (curl -sL, no API budget, ~1s fetch) and grepping it with rg, including scripts/recall.sh and its index.tsv",
+   "seed_queries": [
+    "github codeload tarball download without api rate limits",
+    "ripgrep rg recursive text search repository"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "repo-items",
+   "scope": "Path 2: one-call full-text retrieval via POST /api/repo-items on the steady-orbit worker (824 items, full text + paths, ~1s, 7.3 MB response)",
+   "seed_queries": [
+    "cloudflare workers.dev subdomain custom api endpoints",
+    "full text search api endpoint over repository text items"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "raw-reads",
+   "scope": "Path 3: single-doc raw reads from raw.githubusercontent.com (no auth, no budget, known-path reads)",
+   "seed_queries": [
+    "raw.githubusercontent.com serving raw files from github repositories",
+    "github raw content url rate limits versus api"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "provenance-discipline",
+   "scope": "Provenance discipline: inline citations with jev weights, citing doc paths when recalling facts, and cross-checking research-db/archive.json for the original URL's weight and collection date",
+   "seed_queries": [
+    "research provenance citation discipline data sourcing",
+    "data provenance evidence weight scoring research archive"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "usage-patterns",
+   "scope": "The skill's examples and guidelines: path selection by job shape, mirroring per session not per task, never pasting full doc bodies, and the read-only relationship with knowledge-corpus-mint",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t05": {
+    "type": "score",
+    "score": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.44,
+     "1": 0.33,
+     "2": 0.23
+    },
+    "confidence": 0
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.65,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.13,
+     "2": 0.76
+    },
+    "confidence": 0.47
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.05,
+     "2": 0.9
+    },
+    "confidence": 0.77
+   },
+   "t01": {
+    "type": "score",
+    "score": 1.44,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.27,
+     "2": 0.58
+    },
+    "confidence": 0.16
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.25,
+     "2": 0.57
+    },
+    "confidence": 0.08
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.23,
+     "2": 0.58
+    },
+    "confidence": 0.09
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.04,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.97,
+     "1": 0.02,
+     "2": 0.01
+    },
+    "confidence": 0.94
+   }
+  },
+  "usage": {
+   "input_tokens": 1065,
+   "output_tokens": 109,
+   "cost": 8.946e-05
+  },
+  "dropped": [
+   "04"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "05",
+   "06",
+   "07"
+  ]
+ }
+}
