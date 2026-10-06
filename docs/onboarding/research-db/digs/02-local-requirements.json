@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "local-requirements",
+  "scope": "The toolchain a contributor must have locally (Docker Buildx, recent systemd toolchain, YubiKey 5 series) and the TEST-only stance on SoftHSM and swu2f in CI.",
+  "queries_attempted": [
+    {
+      "query": "Docker Buildx rootless builder documentation",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "SoftHSM software HSM testing FIDO2 token emulation",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/build/builders/drivers/kubernetes/",
+    "https://github.com/moby/buildkit/blob/master/docs/rootless.md",
+    "https://docs.gitlab.com/ci/docker/using_buildkit/",
+    "https://github.com/docker/buildx",
+    "https://docs.docker.com/reference/cli/docker/buildx/",
+    "https://hub.docker.com/r/moby/buildkit",
+    "https://github.com/ellerh/softfido",
+    "https://github.com/softhsm/softHSMv2",
+    "https://helpmetest.com/blog/fido2-authenticator-testing/",
+    "https://www.softhsm.org/",
+    "https://www.opendnssec.org/en/latest/softhsm/",
+    "http://stackoverflow.com/tags/softhsm/info"
+  ],
+  "outcome": "authored"
+}

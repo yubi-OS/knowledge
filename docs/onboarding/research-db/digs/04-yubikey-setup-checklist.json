@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "yubikey-setup-checklist",
+  "scope": "The YubiKey bring-up checklist: enable FIDO and CCID, set a FIDO2 PIN, primary enrollment for LUKS2 and homed, backup key, offline recovery key, PIV slot 9c separation from SSH.",
+  "queries_attempted": [
+    {
+      "query": "ykman config usb enable FIDO CCID interfaces",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "YubiKey FIDO2 LUKS2 systemd-homed enrollment backup recovery key",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.yubico.com/software/yubikey/tools/ykman/Config_Commands.html",
+    "https://docs.yubico.com/software/yubikey/tools/ykman/",
+    "https://github.com/Yubico/yubikey-manager/issues/488",
+    "https://wiki.archlinux.org/title/YubiKey",
+    "https://developers.yubico.com/yubikey-manager/Config_Reference.html",
+    "https://commandmasters.com/commands/ykman-config-common/",
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+    "https://mhdez.com/posts/unlocking-encrypted-linux-with-a-yubikey/",
+    "https://github.com/8r4n/luks-yubikey-plugin",
+    "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+    "https://gist.github.com/cmedianu/470a49038e919cf5bc98cd0d2299c484"
+  ],
+  "outcome": "authored"
+}
