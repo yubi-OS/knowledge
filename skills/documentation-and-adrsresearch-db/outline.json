@@ -1,0 +1,261 @@
+{
+ "topic": "the documentation-and-adrs skill (yubi-OS/yubiOS skills/documentation-and-adrs/SKILL.md): recording decisions and documentation, ADRs, inline/API/README/changelog documentation, and documentation for agents",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "01-document-why-not-what",
+   "scope": "The core doctrine: documentation captures the why (context, constraints, trade-offs); triggers for when to document and when not to.",
+   "seed_queries": [
+    "why document architectural decisions rationale not just code",
+    "when to document codebase context tradeoffs alternative rejected"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "02-adr-when-and-value",
+   "scope": "When to write an ADR (frameworks, schemas, auth strategy, API architecture, expensive-to-reverse decisions) and why ADRs are the highest-value documentation.",
+   "seed_queries": [
+    "architecture decision records when to write ADR value",
+    "expensive to reverse technical decisions record rationale"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "03-adr-template-anatomy",
+   "scope": "The skill's ADR template (Status, Date, Context, Decision, Alternatives Considered, Consequences) and storage in docs/decisions/ with sequential numbering.",
+   "seed_queries": [
+    "architecture decision record template context decision alternatives consequences",
+    "ADR template comparison Nygard MADR docs/decisions numbering"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "04-adr-lifecycle-supersede",
+   "scope": "The PROPOSED to ACCEPTED to SUPERSEDED/DEPRECATED lifecycle; never delete old ADRs; supersede with a new referencing ADR.",
+   "seed_queries": [
+    "architecture decision record lifecycle status proposed accepted superseded",
+    "do not delete old ADRs supersede with new record"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "05-inline-comments-why",
+   "scope": "Comment the why not the what; the 3 anti-patterns; documenting known gotchas inline with ADR cross-references.",
+   "seed_queries": [
+    "code comments should explain why not what guideline",
+    "code comment anti patterns TODO comments commented out code delete"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "06-api-documentation",
+   "scope": "Documenting public APIs: inline typed docs for TypeScript, OpenAPI/Swagger for REST, error and example documentation.",
+   "seed_queries": [
+    "TypeScript API documentation TSDoc JSDoc inline types best practices",
+    "OpenAPI Swagger document REST API endpoints errors examples"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "07-readme-structure",
+   "scope": "Required README sections: description, quick start, commands table, architecture overview linking ADRs, contributing.",
+   "seed_queries": [
+    "what makes a good README structure quick start commands",
+    "README architecture section design decisions contributing guide"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "08-changelog-maintenance",
+   "scope": "Changelog discipline for shipped features: Added/Fixed/Changed sections with issue references and dates.",
+   "seed_queries": [
+    "Keep a Changelog format Added Fixed Changed semver",
+    "changelog best practices issue references release notes"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "09-agent-documentation",
+   "scope": "Documentation for AI agents: CLAUDE.md rules files, current spec files, ADRs preventing re-deciding, inline gotchas.",
+   "seed_queries": [
+    "CLAUDE.md AGENTS.md project conventions documentation for AI coding agents",
+    "keep spec files updated ADRs prevent agents re-deciding context"
+   ]
+  },
+  {
+   "nn": 10,
+   "slug": "10-rationalizations-and-verification",
+   "scope": "The anti-rationalization table, the red flag list, and the post-documentation verification checklist. Internal-record subtopic, no dig.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.96,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.05,
+     "2": 0.93
+    },
+    "confidence": 0.87,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.48,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.43,
+     "2": 0.53
+    },
+    "confidence": 0.23,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.14,
+     "2": 0.83
+    },
+    "confidence": 0.71,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.88,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.09,
+     "2": 0.89
+    },
+    "confidence": 0.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.21,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.59,
+     "2": 0.31
+    },
+    "confidence": 0.38,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.13,
+     "2": 0.83
+    },
+    "confidence": 0.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.45,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.3,
+     "2": 0.57
+    },
+    "confidence": 0.17,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1314,
+   "output_tokens": 154
+  },
+  "dropped": [],
+  "kept": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10"
+  ]
+ }
+}

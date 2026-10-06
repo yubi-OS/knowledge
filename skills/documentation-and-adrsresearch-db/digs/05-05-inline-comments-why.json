@@ -1,0 +1,42 @@
+{
+ "nn": 5,
+ "slug": "05-inline-comments-why",
+ "scope": "Comment the why not the what; the 3 anti-patterns; documenting known gotchas inline with ADR cross-references.",
+ "queries_attempted": [
+  {
+   "query": "code comments should explain why not what guideline",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 0
+  },
+  {
+   "query": "code comment anti patterns TODO comments commented out code delete",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 3
+  },
+  {
+   "query": "comment why not how code complete guideline",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 0
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 queries returned off-topic noise (dictionary entries, product homepages); results too thin to author from",
+   "new_queries": [
+    "comment why not how code complete guideline"
+   ]
+  }
+ ],
+ "results_kept": [
+  "r156",
+  "r055",
+  "r059",
+  "r057"
+ ],
+ "outcome": "authored"
+}

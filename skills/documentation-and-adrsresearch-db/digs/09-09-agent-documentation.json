@@ -1,0 +1,43 @@
+{
+ "nn": 9,
+ "slug": "09-agent-documentation",
+ "scope": "Documentation for AI agents: CLAUDE.md rules files, current spec files, ADRs preventing re-deciding, inline gotchas.",
+ "queries_attempted": [
+  {
+   "query": "CLAUDE.md AGENTS.md project conventions documentation for AI coding agents",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 1
+  },
+  {
+   "query": "keep spec files updated ADRs prevent agents re-deciding context",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 1
+  },
+  {
+   "query": "anthropic claude code CLAUDE.md memory documentation guide",
+   "attempt": 2,
+   "raw_results": 12,
+   "kept": 3
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 queries returned off-topic noise (dictionary entries, product homepages); results too thin to author from",
+   "new_queries": [
+    "anthropic claude code CLAUDE.md memory documentation guide"
+   ]
+  }
+ ],
+ "results_kept": [
+  "r114",
+  "r106",
+  "r102",
+  "r112",
+  "r150"
+ ],
+ "outcome": "authored"
+}

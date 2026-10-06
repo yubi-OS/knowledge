@@ -1,0 +1,42 @@
+{
+ "nn": 3,
+ "slug": "03-adr-template-anatomy",
+ "scope": "The skill's ADR template (Status, Date, Context, Decision, Alternatives Considered, Consequences) and storage in docs/decisions/ with sequential numbering.",
+ "queries_attempted": [
+  {
+   "query": "architecture decision record template context decision alternatives consequences",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 1
+  },
+  {
+   "query": "ADR template comparison Nygard MADR docs/decisions numbering",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 1
+  },
+  {
+   "query": "Nygard architecture decision record template fields",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 1
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 queries returned off-topic noise (dictionary entries, product homepages); results too thin to author from",
+   "new_queries": [
+    "Nygard architecture decision record template fields"
+   ]
+  }
+ ],
+ "results_kept": [
+  "r027",
+  "r032",
+  "r131",
+  "r042"
+ ],
+ "outcome": "authored"
+}

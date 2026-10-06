@@ -1,0 +1,42 @@
+{
+ "nn": 7,
+ "slug": "07-readme-structure",
+ "scope": "Required README sections: description, quick start, commands table, architecture overview linking ADRs, contributing.",
+ "queries_attempted": [
+  {
+   "query": "what makes a good README structure quick start commands",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 0
+  },
+  {
+   "query": "README architecture section design decisions contributing guide",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 4
+  },
+  {
+   "query": "GitHub README template quickstart installation usage sections",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 0
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 queries returned off-topic noise (dictionary entries, product homepages); results too thin to author from",
+   "new_queries": [
+    "GitHub README template quickstart installation usage sections"
+   ]
+  }
+ ],
+ "results_kept": [
+  "r080",
+  "r081",
+  "r082",
+  "r084"
+ ],
+ "outcome": "authored"
+}
