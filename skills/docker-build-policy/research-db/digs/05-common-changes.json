@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "common-changes",
+ "scope": "Adding an approved registry, requiring provenance, and the policy-does-not-replace-pinning invariant.",
+ "queries_attempted": [
+  {
+   "query": "docker image provenance attestation SLSA buildx attestations",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "container image digest pinning supply chain mutable tag",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/metadata/attestations/slsa-provenance/",
+  "https://docs.docker.com/build/metadata/attestations/",
+  "https://liudonghua123.github.io/docker-docs/build/metadata/attestations/slsa-provenance/",
+  "https://runbook.academy/courses/docker/lessons/docker-image-provenance/",
+  "https://techprephq.com/question/devops/docker/how-buildkit-provenance-attestation-work-create-reproducible",
+  "https://www.augmentedmind.de/2025/03/16/docker-image-attestation-buildkit/",
+  "https://runbook.academy/courses/kubernetes/lessons/kubernetes-lxiv-01-image-tags-vs-digests/",
+  "https://safeguard.sh/resources/blog/how-image-digest-pinning-strengthens-container-supply-chain-integrity-in-snyk-workflows",
+  "https://safeguard.sh/resources/blog/container-image-digests-vs-tags-why-pinning-matters",
+  "https://jaytank.hashnode.dev/digestlock-pin-container-images-sha256-digest",
+  "https://runbook.academy/courses/git-cicd-gitops/lessons/git-cicd-gitops-lxvii-03-container-image-pinning/",
+  "https://www.altftool.com/tools/all/container-image-digest-pinning-helper"
+ ],
+ "outcome": "authored"
+}

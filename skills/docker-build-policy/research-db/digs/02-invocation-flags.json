@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "invocation-flags",
+ "scope": "The --policy flag surface: reset, strict, filename, and the buildx version requirement.",
+ "queries_attempted": [
+  {
+   "query": "docker buildx build --policy flag reset strict filename",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx policy version requirement BuildKit policy support",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/usage.md",
+  "https://github.com/docker/docs/blob/main/content/manuals/build/policies/usage.md",
+  "https://stackoverflow.com/questions/17466699/how-do-i-build-a-docker-image-if-the-name-of-the-dockerfile-isnt-dockerfile",
+  "https://github.com/docker/buildx/issues/3567",
+  "https://matsuand.github.io/docker.docs-ja/docker.docs-ja/build/policies/usage/",
+  "https://stackoverflow.com/questions/77894727/docker-buildx-is-ignoring-the-no-cache-flag",
+  "https://github.com/docker/buildx",
+  "https://deepwiki.com/docker/build-push-action/6.3-buildx-and-buildkit-integration",
+  "https://docs.gitlab.com/ci/docker/using_buildkit/",
+  "https://zvezdochetu.github.io/docker-docs-course/build/policies/usage/",
+  "https://github.com/docker/buildx/blob/master/docs/reference/buildx_policy.md",
+  "https://zvezdochetu.github.io/docker-docs-course/build/policies/"
+ ],
+ "outcome": "authored"
+}

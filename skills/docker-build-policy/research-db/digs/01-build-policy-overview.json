@@ -1,0 +1,36 @@
+{
+ "nn": "01",
+ "slug": "build-policy-overview",
+ "scope": "What a Build Policy is, BuildKit pre-build evaluation, allow/deny semantics, the yubiOS supply-chain gate framing.",
+ "queries_attempted": [
+  {
+   "query": "Docker BuildKit build policy OPA rego evaluate before build",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx build policy allow deny image before build",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/",
+  "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+  "https://docs.docker.com/build/policies/usage/",
+  "https://github.com/docker/docs/blob/main/content/manuals/build/policies/intro.md",
+  "https://www.openpolicyagent.org/docs/deploy/docker",
+  "https://github.com/yubi-OS/yubiOS/blob/main/skills/docker-build-policy/SKILL.md",
+  "https://docs.docker.com/build/policies/intro/",
+  "https://github.com/thatrobotdev/docker-docs/blob/main/content/manuals/build/policies/usage.md",
+  "https://stackoverflow.com/questions/48098671/build-with-docker-and-privileged",
+  "https://stackoverflow.com/questions/77924205/docker-buildx-build-automatically-pulls-base-image",
+  "https://manpages.debian.org/testing/docker-buildx/docker-buildx-build.1.en.html",
+  "https://docker.ubitools.com/reference/cli/docker/buildx/build/"
+ ],
+ "outcome": "authored"
+}
