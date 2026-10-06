@@ -1,0 +1,112 @@
+{
+ "nn": "02",
+ "slug": "portraits-purpose-and-fears",
+ "scope": "MISSION.md as purpose (trust nothing, default deny, concentrated power) and THREAT_MODEL.md as codified fears (ten invariants, recovery-path discipline, honesty tables)",
+ "queries_attempted": [
+  {
+   "query": "YubiKey FIDO2 hmac-secret LUKS2 disk encryption offline recovery key",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "Unlock LUKS volume with a YubiKey \u2013 Guy Rutenberg",
+     "url": "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+     "snippet": "April 1, 2026 \u2014 Also, the whole thing with using more than one physical key, that is how you are supposed to do everything with these FIDO2 keys. Even with SSH for example, I can just use the -i option and specify the private portion of the key stored on the hard drive for the ba"
+    },
+    {
+     "title": "GitHub - nyancient/fido2-luks: FIDO2 as strong single factor for LUKS encryption \u00b7 GitHub",
+     "url": "https://github.com/nyancient/fido2-luks",
+     "snippet": "This package lets you use a FIDO2 token with the hmac-secret extension as a strong single factor for LUKS (Linux full disk encryption). Well-known examples of such tokens include all FIDO2 models of Yubikey, the Google Titan key, the Nitrokey ...\"This package is forked from yubik"
+    },
+    {
+     "title": "Configuring LUKS to work with YubiKey | Piotr Nowicki's Blog",
+     "url": "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+     "snippet": "June 17, 2024 \u2014 Let\u2019s stop for a second. You have your YubiKey enrolled as a way to unlock your LUKS volume. Now you need to configure cryptsetup to allow it to use FIDO2.\"Your LUKS volume can be decrypted using different ways and each uses one \u201cslots\u201d. One of the slots can be us"
+    },
+    {
+     "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+     "url": "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+     "snippet": "Unlocking with FIDO2 security tokens (well, at least with those which implement the hmac-secret extension; most do). i.e. your YubiKeys (series 5 and above), Nitrokey FIDO2, AuthenTrend ATKey.Pro and such.\"TL;DR: It's now easy to unlock your LUKS2 volume with a FIDO2 security tok"
+    },
+    {
+     "title": "LUKS disk encryption with FIDO2 - Kudelski Security Research Center",
+     "url": "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+     "snippet": "December 14, 2023 \u2014 This is a security issue as explained before if someone is able to steal you disk and you security key. This behavior is not generalized to all auhtenticators. We have tested a Yubikey having the firmware version 5.1.1 and it turned out that the key would not "
+    },
+    {
+     "title": "GitHub - 8r4n/luks-yubikey-plugin",
+     "url": "https://github.com/8r4n/luks-yubikey-plugin",
+     "snippet": "Overview This plugin uses systemd-cryptenroll to register YubiKey FIDO2 tokens as LUKS2 keyslots. At boot, the system prompts for your YubiKey touch and PIN to unlock the encrypted disk.Overview This plugin uses systemd-cryptenroll to register YubiKey FIDO2 tokens as LUKS2 keyslo"
+    }
+   ],
+   "kept": [
+    "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+    "https://github.com/nyancient/fido2-luks",
+    "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+    "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+    "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+    "https://github.com/8r4n/luks-yubikey-plugin"
+   ]
+  },
+  {
+   "query": "dm-verity fail-closed verified boot immutable root filesystem Linux",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "Root Filesystem Integrity with dm-verity: Design Patterns for Immutable Images \u2013 ProteanOS",
+     "url": "https://proteanos.com/doc/rootfs-integrity-dm-verity-immutable-images/",
+     "snippet": "March 19, 2026 \u2014 If a block has been modified\u2014whether ... For embedded devices with immutable system partitions, dm-verity closes the gap between secure boot and runtime integrity....\"Changes appear in the upper layer without modifying the verified lower layer. dm-verity adds ove"
+    },
+    {
+     "title": "dm-verity \u2014 The Linux Kernel documentation",
+     "url": "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+     "snippet": "dm-verity is meant to be set up as part of a verified boot path. This may be anything ranging from a boot using tboot or trustedgrub to just booting from a known-good device (like a USB drive or CD). When a dm-verity device is configured, it is expected that the caller has been a"
+    },
+    {
+     "title": "dm-verity and dm-integrity: Tamper-Evident Block-Level Roots for Production Linux",
+     "url": "https://www.systemshardening.com/articles/linux/dm-verity/",
+     "snippet": "April 29, 2026 \u2014 dm-verity gives you a read-only root that fails to mount if a single block is tampered with. dm-integrity adds runtime checksumming. Together: immutable, evidence-bearing systems.\"Combined with the immutable root, the system has clear separation: read-only verifi"
+    },
+    {
+     "title": "dm-verity - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Dm-verity",
+     "snippet": "The use of dm-verity is not limited to the root device. Other devices that need to be verified at boot can be put into /etc/veritytab and will be assembled by systemd-veritysetup@.service.The use of dm-verity is not limited to the root device. Other devices that need to be verifi"
+    },
+    {
+     "title": "dm-verity (Integrity) - Linux Kernel Internals",
+     "url": "https://kernel-internals.org/block/dm-verity/",
+     "snippet": "Every read is verified against pre-computed hashes. If data is tampered with, the kernel returns an error or panics. Used by: Android: verifying the read-only system partition ChromeOS: verified boot for rootfs Linux distributions: immutable root filesystem with integrity"
+    },
+    {
+     "title": "dm-verity: How a Read-Only Rootfs Stays Verified",
+     "url": "https://www.techveda.live/2026/08/03/dm-verity-read-only-rootfs/",
+     "snippet": "August 3, 2026 \u2014 It does not provide confidentiality, so if the rootfs contents are sensitive you layer dm-crypt underneath for encryption and dm-verity on top for integrity. It does not protect writable data, so application state, logs, and configuration on a read-write partitio"
+    }
+   ],
+   "kept": [
+    "https://proteanos.com/doc/rootfs-integrity-dm-verity-immutable-images/",
+    "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+    "https://www.systemshardening.com/articles/linux/dm-verity/",
+    "https://wiki.archlinux.org/title/Dm-verity",
+    "https://kernel-internals.org/block/dm-verity/",
+    "https://www.techveda.live/2026/08/03/dm-verity-read-only-rootfs/"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://github.com/nyancient/fido2-luks",
+  "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+  "https://github.com/8r4n/luks-yubikey-plugin",
+  "https://proteanos.com/doc/rootfs-integrity-dm-verity-immutable-images/",
+  "https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/verity.html",
+  "https://www.systemshardening.com/articles/linux/dm-verity/",
+  "https://wiki.archlinux.org/title/Dm-verity",
+  "https://kernel-internals.org/block/dm-verity/",
+  "https://www.techveda.live/2026/08/03/dm-verity-read-only-rootfs/"
+ ],
+ "outcome": "authored"
+}
