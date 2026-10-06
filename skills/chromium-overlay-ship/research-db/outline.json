@@ -1,0 +1,38 @@
+{
+  "topic": "chromium-overlay-ship: shipping changes from the HIGH-MEM box Chromium tree into the yubi-OS/chromium-provenance overlay patch series (OMN-165 / Antimony)",
+  "subtopics": [
+    {"nn": "01", "slug": "environment-facts", "scope": "The ubuntu HIGH-MEM box runtime: shell bridge contract, tree/branch/overlay/CI facts, gn-cipd, and the build classes that decide relink vs repack.", "seed_queries": ["chromium gn args is_component_build ninja relink build targets", "chromium grit pak resources repack locale build"]},
+    {"nn": "02", "slug": "box-commit-discipline", "scope": "Explicit-path git add, per-command safe.directory, and explicit commit identity on the box tree.", "seed_queries": []},
+    {"nn": "03", "slug": "patch-generation", "scope": "Cumulative fixup diffs vs new-member diffs against the series base commit, --binary for assets, and the file-ownership overlap check.", "seed_queries": ["git diff --binary binary files patch apply", "git cumulative diff since commit specific paths generate patch"]},
+    {"nn": "04", "slug": "chunked-transfer", "scope": "base64 chunked fetch over the single-threaded bridge, local reassembly, and byte/line/section validation.", "seed_queries": []},
+    {"nn": "05", "slug": "overlay-push", "scope": "Git Data API chain to yubi-OS/chromium-provenance plus SERIES.md row insert/replace discipline.", "seed_queries": ["GitHub REST Git Data API create blob tree commit update reference", "github api commit multiple files git trees base_tree blob sha"]},
+    {"nn": "06", "slug": "ci-verification", "scope": "arm64-chromium-build.yml dispatch via workflow_dispatch and workflow-filtered run polling at the new head sha.", "seed_queries": ["GitHub Actions workflow dispatch REST API create workflow dispatch event", "GitHub API list workflow runs filter head_sha event workflow status"]},
+    {"nn": "07", "slug": "linear-comments", "scope": "GraphQL issue resolution and sequentially numbered status comments as the session changelog.", "seed_queries": []},
+    {"nn": "08", "slug": "failure-modes", "scope": "Six paid-for failure modes: bridge payload escaping, pgrep self-match, mtime staleness, multi-target icon namespaces, artifact-vs-generator verification, shadow-DOM puppeteer checks.", "seed_queries": ["chromium vector_icons .icon files generated C++ namespace build target", "puppeteer connect chrome devtools protocol 9222 shadow DOM pier"]},
+    {"nn": "09", "slug": "ship-discipline", "scope": "The four guidelines and the durable changelog: SERIES.md rows plus COMPANY.md memory appended in the same turn.", "seed_queries": []}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "typesafe/jev-1.13-20260917",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {"score": 1.68, "probabilities": {"0": 0.11, "1": 0.11, "2": 0.78}, "confidence": 0.51, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 0.96, "probabilities": {"0": 0.34, "1": 0.35, "2": 0.31}, "confidence": 0.02, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.55, "probabilities": {"0": 0.12, "1": 0.2, "2": 0.68}, "confidence": 0.33, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 0.66, "probabilities": {"0": 0.57, "1": 0.21, "2": 0.22}, "confidence": 0.01, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.48, "probabilities": {"0": 0.17, "1": 0.19, "2": 0.64}, "confidence": 0.22, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.33, "probabilities": {"0": 0.2, "1": 0.26, "2": 0.54}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 0.31, "probabilities": {"0": 0.75, "1": 0.19, "2": 0.06}, "confidence": 0.53, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.47, "probabilities": {"0": 0.14, "1": 0.25, "2": 0.61}, "confidence": 0.21, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t09": {"score": 1.38, "probabilities": {"0": 0.25, "1": 0.12, "2": 0.63}, "confidence": 0.07, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1182, "output_tokens": 139},
+    "dropped": ["04", "07"],
+    "kept": ["01", "02", "03", "05", "06", "08", "09"],
+    "drop_reason": {
+      "04": "score 0.66 with 0.57 probability on padding; content folded contextually into 01 and 03 where relevant",
+      "07": "score 0.31 with 0.75 probability on padding"
+    }
+  }
+}
