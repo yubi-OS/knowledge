@@ -1,0 +1,37 @@
+{
+ "nn": "07",
+ "slug": "fetches-and-forks",
+ "scope": "The fetches group (pin refresh of DHI/fedora-bootc manifests and released tag refs into PINNED.md) and the forks group (8 ci_fork_* component validators, manual-only since PR 145).",
+ "internal_record": false,
+ "queries_attempted": [
+  {
+   "query": "Docker Hardened Images DHI Debian digest manifest pinning",
+   "attempt": 1,
+   "raw_results": 37,
+   "kept": 6
+  },
+  {
+   "query": "fedora-bootc index digest pin bootc-base-imagectl",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/dhi/",
+  "https://hub.docker.com/hardened-images/catalog/dhi/debian-base/guides",
+  "https://guneycansanli.github.io/my-blog/Docker-HDI/",
+  "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+  "https://github.com/docker-hardened-images/catalog",
+  "https://hub.docker.com/hardened-images/catalog/dhi/debian-base",
+  "https://docs.fedoraproject.org/en-US/bootc/building-from-scratch/",
+  "https://github.com/imguoguo/fedora-bootc-base-images",
+  "https://docs.stg.fedoraproject.org/en-US/bootc/building-from-scratch/",
+  "https://gitlab.com/fedora/bootc/base-images",
+  "https://discussion.fedoraproject.org/t/bootc-base-imagectl-for-composefs-native/166438",
+  "https://gitlab.com/bootc-router/fedora-bootc/-/blob/main/bootc-base-imagectl.md?ref_type=heads"
+ ],
+ "outcome": "authored"
+}

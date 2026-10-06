@@ -1,0 +1,37 @@
+{
+ "nn": "05",
+ "slug": "pre-image-tests",
+ "scope": "The tests group's 8 pre-image validation workflows: rootless docker, bootc filesystem, PQ TLS, bootc lifecycle, sysext/portable, fedora-bootc arm64 pull, fTPM tpm0, and the UKI signing matrix.",
+ "internal_record": false,
+ "queries_attempted": [
+  {
+   "query": "bootc install to-filesystem composefs fs-verity verification",
+   "attempt": 1,
+   "raw_results": 32,
+   "kept": 6
+  },
+  {
+   "query": "systemd sysext portable service systemd-homed migration",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://deepwiki.com/bootc-dev/bootc/2.3.2-composefs-backend",
+  "https://docs.fedoraproject.org/en-US/bootc/filesystem/",
+  "https://github.com/composefs/composefs",
+  "https://scrivano.org/posts/2026-06-05-sealing-with-composefs/",
+  "https://github.com/tuna-os/bootc-migrate/blob/main/docs/filesystem-support.md",
+  "https://discussion.fedoraproject.org/t/a-few-questions-about-bootc-and-composefs/178725/28",
+  "https://systemd.io/PORTABLE_SERVICES/",
+  "https://www.man7.org/linux/man-pages/man8/systemd-sysext.8.html",
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://man7.org/linux/man-pages/man8/systemd-sysext.8.html",
+  "https://kb.symas.com/en_US/configuration/configure-sssd-with-ldap-on-ubuntu-client",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-sysext.html"
+ ],
+ "outcome": "authored"
+}

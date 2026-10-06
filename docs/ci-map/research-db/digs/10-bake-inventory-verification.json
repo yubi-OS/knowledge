@@ -1,0 +1,37 @@
+{
+ "nn": "10",
+ "slug": "bake-inventory-verification",
+ "scope": "The canonical Docker Bake graph and its 4 hidden targets, the full 40-file .yml inventory, the ci-launchpad cross-check, trigger policy, and drift discipline.",
+ "internal_record": false,
+ "queries_attempted": [
+  {
+   "query": "docker bake HCL hidden targets inheritance group",
+   "attempt": 1,
+   "raw_results": 36,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx imagetools create manifest list",
+   "attempt": 1,
+   "raw_results": 37,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/bake/reference/",
+  "https://acchapm1.github.io/tutorials/Docker-Bake/docker-bake-deep-dive",
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-write-docker-bake-hcl-files/view",
+  "https://docs.docker.com/build/bake/inheritance/",
+  "https://github.com/tosun-si/docker-bake-playground/blob/main/docker-bake-inheritance.hcl",
+  "https://github.com/docker/docs/diffs/0?base_sha=78ee529adcb726fe98578ee45162abd057b82da6&head_user=chrsalx&name=main&pull_number=18226&sha1=78ee529adcb726fe98578ee45162abd057b82da6&sha2=d51e9575b47acd997a85979357ce640f6792da91&short_path=853e647&w=false",
+  "https://docs.docker.com/reference/cli/docker/buildx/imagetools/create/",
+  "https://docs.docker.com/reference/cli/docker/buildx/imagetools/",
+  "https://stackoverflow.com/questions/75521775/buildx-docker-image-claims-to-be-a-manifest-list",
+  "https://github.com/docker/buildx/blob/master/docs/reference/buildx_imagetools_create.md",
+  "https://docker.ubitools.com/reference/cli/docker/buildx/imagetools/create/",
+  "https://github.com/namespacelabs/docker-buildx/blob/master/docs/reference/buildx_imagetools_create.md"
+ ],
+ "outcome": "authored"
+}

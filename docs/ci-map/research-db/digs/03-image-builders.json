@@ -1,0 +1,37 @@
+{
+ "nn": "03",
+ "slug": "image-builders",
+ "scope": "The four OCI image builders (production, dev/test, installer, fixtures): Bake targets, the OPA rego policy gate, dual-build reproducibility proofs, and two-stage publication.",
+ "internal_record": false,
+ "queries_attempted": [
+  {
+   "query": "docker buildx bake OPA rego policy buildx --policy strict",
+   "attempt": 1,
+   "raw_results": 39,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx imagetools multi-arch manifest reproducible build verification",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/policies/usage/",
+  "https://docs.docker.com/build/policies/usage.md",
+  "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+  "https://www.openpolicyagent.org/docs/deploy/docker",
+  "https://hub.docker.com/r/openpolicyagent/opa",
+  "https://github.com/docker/docs/blob/main/content/manuals/build/policies/usage.md",
+  "https://dockerbuild.com/tutorials/multi-arch-builds",
+  "https://docs.docker.com/reference/cli/docker/buildx/imagetools/",
+  "https://khimananda.com/blog/multi-arch-docker-images-with-buildx-one-build-for-amd64-and-arm64",
+  "https://sumguy.com/multi-arch-docker-builds-qemu-buildx/",
+  "https://www.docker.com/blog/how-to-rapidly-build-multi-architecture-images-with-buildx/",
+  "https://oneuptime.com/blog/post/2026-02-09-multi-arch-buildx-arm-kubernetes/view"
+ ],
+ "outcome": "authored"
+}
