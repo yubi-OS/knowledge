@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": 33,
+    "unresponsive_engines": [],
+    "probe_query": "SCAMPER technique ideation method Bob Eberle origin",
+    "engines_seen": [
+      "bing",
+      "duckduckgo web",
+      "seznam",
+      "yahoo",
+      "yandex"
+    ],
+    "note": "All 5 engines seen in the probe response returned results; no engine was unresponsive."
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "type": "noul",
+      "noul": 0.9505
+    }
+  }
+}
