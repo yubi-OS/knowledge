@@ -1,0 +1,215 @@
+{
+ "topic": "the Y_3^3 spherical harmonic and Fibonacci sphere sampling method equation block for learned-latent-curves-2026-08-06.tex",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "y33-closed-form-normalization",
+   "scope": "The (l=3,m=3) spherical harmonic: complex form K sin^3(theta) e^{i3phi}, Condon-Shortley normalization K = sqrt(245/(64pi)), real form Re{Y_3^3} = K sin^3(theta) cos(3phi).",
+   "seed_queries": [
+    "Y_lm spherical harmonics normalization Condon Shortley convention formula",
+    "spherical harmonic Y_33 l=3 m=3 sin cubed theta closed form"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "fibonacci-sphere-sampling-indexing",
+   "scope": "Canonical Fibonacci sphere indexing z_i = 1-(2i+1)/N, phi_i = 2pi i/phi with golden ratio phi=(1+sqrt5)/2; Vogel 1979 and Saff-Kuijlaars 1997 provenance.",
+   "seed_queries": [
+    "Fibonacci lattice sphere points golden angle algorithm",
+    "Vogel spiral sunflower golden angle point distribution"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "spherical-discrepancy-uniformity",
+   "scope": "Why Fibonacci sampling gives near-uniform coverage: O(1/N) discrepancy, no polar clustering, comparison against latitude-longitude grids.",
+   "seed_queries": [
+    "spherical cap discrepancy Fibonacci lattice order",
+    "uniform point distribution sphere latitude longitude grid polar clustering"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "latent-projection-sphere",
+   "scope": "The projection step z_i = f_theta(t_i), u_i = z_i/||z_i|| mapping learned latent curves onto S^2.",
+   "seed_queries": [
+    "normalize vector onto unit sphere projection machine learning",
+    "latent curve manifold learning spherical embedding"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "harmonic-radial-modulation",
+   "scope": "The modulated embedding x_i = (1 + alpha Re{Y_3^3}(theta_i,phi_i)) u_i: ripple amplitude alpha, single tunable scalar, alpha=0 baseline.",
+   "seed_queries": [
+    "spherical harmonic radial displacement modulation surface",
+    "shape deformation spherical harmonics radial coefficients"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "ablation-baseline-design",
+   "scope": "Ablation suite: lat-long grid vs Fibonacci alpha=0 vs Fibonacci+Y_3^3 vs flat [0,1]^2 baseline; matched-parameter comparison philosophy.",
+   "seed_queries": [
+    "ablation study design matched parameters machine learning",
+    "evaluation baselines spherical representation learning ablation"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "sphere-quadrature-integration",
+   "scope": "Fibonacci points as a quadrature grid for integrals over S^2, spectral losses, O(1/N) behavior.",
+   "seed_queries": [
+    "numerical integration over sphere quadrature nodes equal weights",
+    "spherical harmonics spectral loss quadrature grid"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "convention-constraints-variants",
+   "scope": "Convention choices and hard constraints: golden ratio vs Vogel pi variant vs Saff-Kuijlaars psi variant; Condon-Shortley phase; non-substitution rules.",
+   "seed_queries": [
+    "golden angle spiral variants pi versus golden ratio phyllotaxis",
+    "Condon Shortley phase convention spherical harmonics sign"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.4315,
+    "probabilities": {
+     "0": 0.1442,
+     "1": 0.2801,
+     "2": 0.5757
+    },
+    "confidence": 0.146,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.6997,
+    "probabilities": {
+     "0": 0.0555,
+     "1": 0.1893,
+     "2": 0.7552
+    },
+    "confidence": 0.4139,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.7796,
+    "probabilities": {
+     "0": 0.2999,
+     "1": 0.6206,
+     "2": 0.0795
+    },
+    "confidence": 0.222,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.8926,
+    "probabilities": {
+     "0": 0.3558,
+     "1": 0.3958,
+     "2": 0.2484
+    },
+    "confidence": 0.0174,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.5918,
+    "probabilities": {
+     "0": 0.5722,
+     "1": 0.2638,
+     "2": 0.164
+    },
+    "confidence": 0.1359,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.4495,
+    "probabilities": {
+     "0": 0.6349,
+     "1": 0.2808,
+     "2": 0.0843
+    },
+    "confidence": 0.2335,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.2489,
+    "probabilities": {
+     "0": 0.1708,
+     "1": 0.4094,
+     "2": 0.4198
+    },
+    "confidence": 0.0595,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.272,
+    "probabilities": {
+     "0": 0.1747,
+     "1": 0.3786,
+     "2": 0.4467
+    },
+    "confidence": 0.0601,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1159,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
