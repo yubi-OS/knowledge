@@ -1,0 +1,227 @@
+{
+  "topic": "the yubiOS TODO ledger",
+  "ground_source": "yubi-OS/yubiOS docs/TODO.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "ledger-evidence-header",
+      "scope": "The dated evidence header at the top of TODO.md: CI-infra evidence line, canonical VM e2e run references, sealed-UKI and bootc install evidence pointers, and the latest-* refs pointer discipline.",
+      "seed_queries": [
+        "github actions run evidence tracking self-hosted runner",
+        "software project evidence header changelog practice"
+      ],
+      "dig": false
+    },
+    {
+      "nn": "02",
+      "slug": "future-coverage-map",
+      "scope": "The FUTURE.md coverage map: how each FUTURE.md roadmap section is tied to active TODO lanes, with follow-up rules for watch-listed and deferred ideas.",
+      "seed_queries": [
+        "roadmap coverage map documentation practice",
+        "deferred ideas watch list software roadmap"
+      ],
+      "dig": false
+    },
+    {
+      "nn": "03",
+      "slug": "adr-governance",
+      "scope": "Current ADR Governance Tasks: one Linear issue per ADR (OMN-109..138), Accepted vs Proposed states, the ADR-032/033 acceptance flow, and the rule that ADRs and tracking issues are created together.",
+      "seed_queries": [
+        "architecture decision records tracking issue pairing",
+        "ADR accepted proposed lifecycle governance"
+      ],
+      "dig": false
+    },
+    {
+      "nn": "04",
+      "slug": "documentation-lane",
+      "scope": "Current Documentation Tasks: dated refs/ planning-cycle notes, PINNED.md as the explicit live digest source, systemd v262 audit reconciliation, and snapshot-drift prevention work items.",
+      "seed_queries": [
+        "docs as code snapshot drift prevention",
+        "pinned digest source of truth documentation"
+      ],
+      "dig": false
+    },
+    {
+      "nn": "05",
+      "slug": "roadmap-research-lanes",
+      "scope": "Current Roadmap Research Tasks by milestone: SecTime (OP-TEE CNTPCT secure time), Frost (Panfrost GPU lockout), Net (OpenWrt WireGuard deception LAN), and FUTURE promotion gates.",
+      "seed_queries": [
+        "OP-TEE CFG_SECURE_TIME_SOURCE_CNTPCT Rockchip RK3588 secure time",
+        "Panfrost DRM device memory cgroup accounting lockout"
+      ],
+      "dig": true
+    },
+    {
+      "nn": "06",
+      "slug": "ci-lane",
+      "scope": "Current CI Tasks: PQ TLS verification, QEMU zstd EFI zboot gating, the B-VGPU-VM-UNZIP host-deps gap, group-routed workflow_dispatch design, and the sealed composefs lane promotion condition.",
+      "seed_queries": [
+        "X25519MLKEM768 hybrid post-quantum key exchange TLS 1.3 OpenSSL 3.5",
+        "QEMU zstd EFI zboot loader support version"
+      ],
+      "dig": true
+    },
+    {
+      "nn": "07",
+      "slug": "hardware-supply-chain",
+      "scope": "Current ARM64, Security, and Supply-Chain tasks: board Path A status, TF-A/OP-TEE/RPMB evidence requirements, CHIPSEC one-shot validation, digest pinning, reproducible builds, and board-scoped firmware tags.",
+      "seed_queries": [
+        "ROCKPro64 RK3399 TF-A OP-TEE RPMB StandaloneMM U-Boot UEFI",
+        "bootc install to-filesystem composefs dm-verity reproducible build"
+      ],
+      "dig": true
+    },
+    {
+      "nn": "08",
+      "slug": "ledger-discipline",
+      "scope": "Watch List, Retired From Active TODO, the 2026-08-01 BLOCKERS.md review diff, and the drift-check annotations: what the ledger structure teaches about tracking work in a hardware-coupled OS project.",
+      "seed_queries": [
+        "blocker tracking ledger hardware dependent CI verification",
+        "retired ideas watch list task ledger practice"
+      ],
+      "dig": true
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "score": 0.85,
+        "probabilities": {
+          "0": 0.49,
+          "1": 0.18,
+          "2": 0.33
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 0.89,
+        "probabilities": {
+          "0": 0.39999999999999997,
+          "1": 0.3,
+          "2": 0.3
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 0.47,
+        "probabilities": {
+          "0": 0.63,
+          "1": 0.27,
+          "2": 0.1
+        },
+        "confidence": 0.3,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.41,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.29,
+          "2": 0.56
+        },
+        "confidence": 0.11,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.86,
+        "probabilities": {
+          "0": 0.46,
+          "1": 0.22,
+          "2": 0.32
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.63,
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.25,
+          "2": 0.19
+        },
+        "confidence": 0.05,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.33,
+        "probabilities": {
+          "0": 0.73,
+          "1": 0.21,
+          "2": 0.06
+        },
+        "confidence": 0.5,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.09,
+        "probabilities": {
+          "0": 0.38,
+          "1": 0.15,
+          "2": 0.47
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1163,
+      "output_tokens": 124,
+      "cost": 9.7692e-05
+    },
+    "dropped": [
+      "03",
+      "07"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "04",
+      "05",
+      "06",
+      "08"
+    ],
+    "drop_rule_note": "continuous 0-2 scale: score < 0.5 with padding-argmax dropped (t03 0.47 p0=0.63, t07 0.33 p0=0.73)"
+  }
+}
