@@ -1,0 +1,231 @@
+{
+ "topic": "docker-bake-action skill (yubi-OS/yubiOS skills/docker-bake-action/SKILL.md): building multiple Docker/OCI images or multi-platform variants defined in a docker-bake.hcl file using docker/bake-action in GitHub Actions",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "when-to-use-bake",
+   "scope": "when bake beats build-push-action: 2+ targets, single declarative matrix, yubiOS variant builds",
+   "seed_queries": [
+    "docker bake action vs build-push-action multiple targets when to use",
+    "docker bake GitHub Actions build multiple images matrix"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "action-reference-inputs",
+   "scope": "bake-action v5 step surface: files, targets, push, load, set, provenance, sbom, source; default group target",
+   "seed_queries": [
+    "docker bake-action inputs files targets set source",
+    "bake-action GitHub Action v5 inputs documentation"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "bake-file-authoring",
+   "scope": "docker-bake.hcl structure: variable, group, target fields, inherits composition, yubiOS labels",
+   "seed_queries": [
+    "docker bake HCL syntax groups targets inherits variables",
+    "docker-bake.hcl target context dockerfile platforms tags example"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "metadata-action-integration",
+   "scope": "consuming metadata-action bake-file output in the files input; github-builder meta-images/meta-tags alternative",
+   "seed_queries": [
+    "docker metadata-action bake-file output bake-action integration",
+    "bake-action metadata-action tags labels workflow"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "set-overrides-cache",
+   "scope": "set overrides: wildcard * vs per-target, cache-from/cache-to type=gha mode=max, provenance mode",
+   "seed_queries": [
+    "bake-action set cache-from cache-to gha mode max wildcard",
+    "docker bake set target.property override syntax"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "github-builder-workflow",
+   "scope": "docker/github-builder reusable bake workflow: bake.yml inputs/outputs, registry-auths, trusted isolation, advantages",
+   "seed_queries": [
+    "docker github-builder reusable workflow bake",
+    "github-builder bake.yml inputs registry-auths sbom sign"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "native-multiplatform",
+   "scope": "native arm64 runner mapping, distribute=true per-platform runners, no QEMU emulation",
+   "seed_queries": [
+    "docker github-builder native arm64 runners distribute no qemu",
+    "github actions ubuntu-24.04-arm runner docker multi-platform build"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "provenance-sbom",
+   "scope": "SLSA provenance and SBOM attestations: inputs, sign=auto OIDC binding, cosign verification outputs",
+   "seed_queries": [
+    "docker bake provenance sbom attestation SLSA GitHub Actions",
+    "cosign verify attestation image provenance sigstore OIDC"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.76,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.17,
+     "2": 0.8
+    },
+    "confidence": 0.64,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.95,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.94,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.02,
+     "2": 0.96
+    },
+    "confidence": 0.92,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.4,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.38,
+     "2": 0.51
+    },
+    "confidence": 0.1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.72,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.21,
+     "2": 0.75
+    },
+    "confidence": 0.57,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.66,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.22,
+     "2": 0.72
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.4,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.39,
+     "2": 0.5
+    },
+    "confidence": 0.1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.72,
+    "probabilities": {
+     "0": 0.39,
+     "1": 0.5,
+     "2": 0.11
+    },
+    "confidence": 0.25,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.01,
+    "probabilities": {
+     "0": 0.99,
+     "1": 0.01,
+     "2": 0.0
+    },
+    "confidence": 0.98,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1186,
+   "output_tokens": 139
+  },
+  "dropped": [
+   "09"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
