@@ -1,0 +1,261 @@
+{
+ "topic": "the docker-setup-buildx-action skill (setting up Docker Buildx in GitHub Actions)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "when-to-use-prerequisites",
+   "scope": "When docker/setup-buildx-action is required: before docker/build-push-action when using cache export/import, SLSA provenance/SBOM attestations, multi-platform builds, or custom buildkitd config; and what is possible without it.",
+   "seed_queries": [
+    "docker setup-buildx-action when required before build-push-action",
+    "GitHub Actions docker buildx setup cache attestations requirements"
+   ],
+   "orig_nn": 1
+  },
+  {
+   "nn": 2,
+   "slug": "builder-drivers",
+   "scope": "Buildx driver comparison: docker-container (default; enables cache export, attestations, multi-platform), docker (none of those), kubernetes (all three); why the driver choice gates every downstream feature.",
+   "seed_queries": [
+    "buildx drivers docker-container docker kubernetes comparison",
+    "docker-container driver BuildKit cache export attestation multi-platform"
+   ],
+   "orig_nn": 2
+  },
+  {
+   "nn": 3,
+   "slug": "action-reference-pinning",
+   "scope": "Action reference and version discipline: version: latest pin for reproducibility, pinning action SHA for AGENTS.md-compliant workflows, @v3 acceptable for dev, upgrade cadence between action major versions.",
+   "seed_queries": [
+    "docker setup-buildx-action version pinning SHA",
+    "GitHub Actions pin action version commit SHA supply chain"
+   ],
+   "orig_nn": 3
+  },
+  {
+   "nn": 4,
+   "slug": "buildkitd-config-mirrors",
+   "scope": "Custom buildkitd config via buildkitd-config-inline and buildkitd-config: registry mirrors ([registry.\"quay.io\"] mirrors = [...]), config files, and why mirrors matter in CI.",
+   "seed_queries": [
+    "setup-buildx-action buildkitd-config-inline registry mirrors",
+    "buildkitd config registry mirror GitHub Actions"
+   ],
+   "orig_nn": 4
+  },
+  {
+   "nn": 5,
+   "slug": "cache-export-import",
+   "scope": "Cache export/import discipline that the docker-container driver unlocks: cache-from/cache-to backends (gha, registry, s3), scope keys, and why the docker driver cannot do it.",
+   "seed_queries": [
+    "GitHub Actions docker buildx cache-from cache-to gha",
+    "buildx cache backend gha registry s3 docker-container driver"
+   ],
+   "orig_nn": 6
+  },
+  {
+   "nn": 6,
+   "slug": "slsa-attestations",
+   "scope": "SLSA provenance/SBOM attestations via BuildKit: provenance and sbom attestation modes in build-push-action, the docker-container driver requirement, and how the attestations land in the image index.",
+   "seed_queries": [
+    "docker buildx provenance sbom attestations GitHub Actions",
+    "build-push-action provenance sbom attestation driver requirement"
+   ],
+   "orig_nn": 7
+  },
+  {
+   "nn": 7,
+   "slug": "multi-platform-builds",
+   "scope": "Multi-platform builds: pairing setup-qemu-action with setup-buildx-action, the docker-container driver requirement, platform list syntax, and per-platform cache/export behavior.",
+   "seed_queries": [
+    "GitHub Actions multi-platform docker buildx QEMU setup-qemu-action",
+    "buildx multi-platform build linux amd64 arm64 GitHub Actions"
+   ],
+   "orig_nn": 8
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13 (DefAPI direct)",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.29,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.36,
+     "2": 0.45999999999999996
+    },
+    "confidence": 0
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.71,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.19,
+     "2": 0.76
+    },
+    "confidence": 0.56
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.57,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.3,
+     "2": 0.64
+    },
+    "confidence": 0.35
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.63,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.53,
+     "2": 0.05
+    },
+    "confidence": 0.29
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.23,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.79,
+     "1": 0.2,
+     "2": 0.01
+    },
+    "confidence": 0.66
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.42,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.45,
+     "2": 0.48
+    },
+    "confidence": 0.13
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.51,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.51,
+     "1": 0.48,
+     "2": 0.01
+    },
+    "confidence": 0.24
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.92,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.04,
+     "2": 0.94
+    },
+    "confidence": 0.88
+   },
+   "t09": {
+    "type": "score",
+    "score": 0.03,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.98,
+     "1": 0.01,
+     "2": 0.01
+    },
+    "confidence": 0.96
+   },
+   "t10": {
+    "type": "score",
+    "score": 0.62,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.52,
+     "1": 0.35,
+     "2": 0.13
+    },
+    "confidence": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 1184,
+   "output_tokens": 154,
+   "cost": 9.9456e-05
+  },
+  "dropped": [
+   5,
+   9,
+   10
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "drop_reasons": {
+   "nn5 network-host-driver-opts": "score 0.23 (P(padding)=0.79) -> nearest 0, dropped by metric",
+   "nn9 yubios-placement-primitives": "score 0.03 (P(padding)=0.98) -> nearest 0, dropped by metric",
+   "nn10 scope-guidelines-boundary": "score 0.62 marginal; internal-record subtopic with no dig, cannot demonstrate dig strength, dropped"
+  }
+ }
+}
