@@ -1,0 +1,31 @@
+{
+ "nn": "09",
+ "slug": "suspend-resume-key-material",
+ "scope": "Suspend and resume key handling (H12): suspend=1 PAM entries forget key material so resume demands a fresh touch instead of a cached session.",
+ "queries_attempted": [
+  {
+   "query": "pam u2f suspend resume reauthentication yubikey",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 4
+  },
+  {
+   "query": "systemd homed suspend fido2 reauth key material",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 3
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/Yubico/pam-u2f",
+  "https://wiki.gentoo.org/wiki/YubiKey/PAM",
+  "https://www.yubico.com/authentication-standards/fido2/",
+  "https://www.systemshardening.com/articles/linux/linux-pam-mfa-totp-yubikey/",
+  "https://github.com/systemd/systemd/issues/27909",
+  "https://www.freedesktop.org/software/systemd/man/255/pam_systemd_home.html",
+  "https://www.kaufland.cz/product/522734591/"
+ ],
+ "outcome": "authored"
+}

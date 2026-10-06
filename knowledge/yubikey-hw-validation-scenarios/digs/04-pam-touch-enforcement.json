@@ -1,0 +1,35 @@
+{
+ "nn": "04",
+ "slug": "pam-touch-enforcement",
+ "scope": "PAM login and sudo require a physical touch, not mere enumeration (H6): pam_u2f and pam_systemd_home presence semantics with key present-but-untouched vs touched.",
+ "queries_attempted": [
+  {
+   "query": "pam_u2f touch required sudo ssh yubikey",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "pam_systemd_home fido2 authentication touch presence",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 5
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.sudo.academy/blog/implementing-yubikey-u2f-fido2-hardware-authentication-for-linux-sudo-and-ssh-in-2026",
+  "https://eglug.org/setting-up-a-yubikey-for-ssh-and-sudo-authentication-on-linux/",
+  "https://developers.yubico.com/pam-u2f/",
+  "https://pamhealth.com/",
+  "https://prohoster.info/en/blog/novosti-interneta/yubikey-touch-detector",
+  "https://github.com/jcoffi/yubikey-sudo-setup",
+  "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only",
+  "https://github.com/systemd/systemd/issues/17176",
+  "https://wiki.archlinux.org/title/Universal_2nd_Factor",
+  "https://pamhealth.com/",
+  "https://ghostarchive.org/archive/AxynM"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,35 @@
+{
+ "nn": "08",
+ "slug": "multikey-enrollment-revocation",
+ "scope": "Multi-key enrollment and revocation (H11): a second enrolled YubiKey unlocks the same resource, and wiping one slot leaves the other functional.",
+ "queries_attempted": [
+  {
+   "query": "pamu2fcfg -n additional yubikey multiple keys pam",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "cryptsetup luksAddKey wipe slot revoke second yubikey",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 5
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://cromwell-intl.com/cybersecurity/yubikey/pam_u2f.html",
+  "https://www.reddit.com/r/duckduckgo/top/",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-pam-for-hardware-token-authentication-on-ubuntu/view",
+  "https://www.reddit.com/r/yubikey/comments/10y6z6s/adding_second_key_to_linux/",
+  "https://www.zhihu.com/topic/19594248/hot",
+  "https://www.prado.lt/how-to-configure-local-two-factor-authentication-with-u2f-on-ubuntu-19-10",
+  "https://www.man7.org/linux/man-pages/man8/cryptsetup-luksAddKey.8.html",
+  "https://www.man7.org/linux/man-pages/man8/cryptsetup-lukskillslot.8.html",
+  "https://man.archlinux.org/man/core/cryptsetup/cryptsetup-luksKillSlot.8.en",
+  "https://www.man7.org/linux/man-pages/man8/cryptsetup.8.html",
+  "https://gist.github.com/cmedianu/cfff046b64be7b7caf4b8da5630856c3"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,32 @@
+{
+ "nn": "07",
+ "slug": "token-identity-preauth",
+ "scope": "Token identity readable before authentication (H10): PIV identity visible pre-auth so systemd-homed pkcs11-token-uri auto-selects the right username per inserted key.",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed pkcs11-token-uri auto login username",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 3
+  },
+  {
+   "query": "yubikey PIV certificate identity before authentication homed",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 5
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.reddit.com/r/archlinux/comments/jzds2o/systemdhomed_small_issues/",
+  "https://bbs.archlinux.org/viewtopic.php?id=283203",
+  "https://bbs.archlinux.org/viewtopic.php?id=255506",
+  "https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/piv-certificates.html",
+  "https://www.yubico.com/authentication-standards/smart-card/",
+  "https://docs.yubico.com/software/yubikey/tools/authenticator/auth-guide/smartc-import-certificates.html",
+  "https://access.redhat.com/articles/7127269",
+  "https://securew2.com/blog/yubikey-piv-certificate-slot-configuration"
+ ],
+ "outcome": "authored"
+}

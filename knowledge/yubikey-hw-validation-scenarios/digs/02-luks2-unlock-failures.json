@@ -1,0 +1,30 @@
+{
+ "nn": "02",
+ "slug": "luks2-unlock-failures",
+ "scope": "LUKS2 unlock failure handling on real hardware (H2, H3): key absent falls back to passphrase, user-presence timeout fails cleanly and retries on touch.",
+ "queries_attempted": [
+  {
+   "query": "LUKS2 FIDO2 fallback passphrase key absent boot",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 4
+  },
+  {
+   "query": "FIDO2 user presence timeout unlock failure retry systemd-cryptenroll",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 2
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+  "https://github.com/systemd/systemd/issues/32586",
+  "https://www.reddit.com/r/archlinux/comments/va6344/luks_boot_unlock_fido2_issue/",
+  "https://gemini.google.com/",
+  "https://www.man7.org/linux/man-pages/man1/systemd-cryptenroll.1.html",
+  "https://unix.stackexchange.com/questions/717227/systemd-cryptenroll-with-fido2"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,33 @@
+{
+ "nn": "03",
+ "slug": "systemd-homed-fido2",
+ "scope": "systemd-homed with FIDO2 on real hardware (H4, H5): homectl create with luks storage, login gated on key presence, and the recovery-key unlock path when the key is lost.",
+ "queries_attempted": [
+  {
+   "query": "systemd-homed homectl fido2-device luks storage create",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "systemd-homed recovery key unlock luks fido2 lost",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 3
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Systemd-homed",
+  "https://sumguy.com/systemd-homed-portable-homes/",
+  "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-systemd-homed-for-modern-user-management-on-ubuntu/view",
+  "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+  "http://0pointer.net/blog/category/projects.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html",
+  "https://wiki.archlinux.org/title/Systemd-homed"
+ ],
+ "outcome": "authored"
+}
