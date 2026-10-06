@@ -1,0 +1,23 @@
+{
+  "nn": "03",
+  "slug": "fit-quality-gate",
+  "scope": "The PC1+PC2 >= 0.40 concentration gate: any principal-component fit used for scoring must clear the explained-variance floor or it is not used, plus the atomicity diagnostic that checks the measurement basis carries information before derived scores are trusted.",
+  "queries_attempted": [
+    {
+      "query": "PCA explained variance ratio threshold first two components quality",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "principal component analysis explained variance criteria dimensionality reduction",
+      "attempt": 1,
+      "raw_results": 54,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "authored"
+}
