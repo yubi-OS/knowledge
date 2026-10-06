@@ -1,0 +1,72 @@
+{
+ "nn": "02",
+ "slug": "step2-pre-init-hijack",
+ "scope": "Step 2 mitigations before systemd init: obfuscated kernel modules (signed initrd in UKI, kernel lockdown, IMA, CoreSight disabled on arm64), modified libselinux/libapparmor and /usr bind-mount poison (dm-verity on every IO, usrhash=), poisoned generators, journal flushing and NVMe/GPT-auto blocking (PCR phase measurements, DPS fallback discovery).",
+ "queries_attempted": [
+  {
+   "query": "Linux kernel lockdown CoreSight SecureBoot CONFIG_LOCK_DOWN_KERNEL_FORCE_CONFIDENTIALITY",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "systemd UKI initrd PE section PCR 11 measured boot",
+   "attempt": 2,
+   "raw_results": 60,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "url": "https://www.man7.org/linux/man-pages/man7/kernel_lockdown.7.html",
+   "weight": 0.82
+  },
+  {
+   "url": "https://access.redhat.com/solutions/6969947",
+   "weight": 0.73
+  },
+  {
+   "url": "https://github.com/torvalds/linux/blob/master/security/lockdown/Kconfig",
+   "weight": 0.78
+  },
+  {
+   "url": "https://stackoverflow.com/questions/60092190/is-there-any-relationship-between-secure-boot-and-kernel-lockdown",
+   "weight": 0.1
+  },
+  {
+   "url": "https://linuxconfig.net/howto/security/kernel-lockdown-mode-enforcing-security-restrictions-in-the-linux-kernel.html",
+   "weight": 0.17
+  },
+  {
+   "url": "https://www.kernelconfig.io/config_lock_down_kernel_force_confidentiality",
+   "weight": 0.16
+  },
+  {
+   "url": "https://systemd.io/TPM2_PCR_MEASUREMENTS/",
+   "weight": 0.74
+  },
+  {
+   "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd-measure.html",
+   "weight": 0.75
+  },
+  {
+   "url": "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+   "weight": 0.14
+  },
+  {
+   "url": "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+   "weight": 0.12
+  },
+  {
+   "url": "https://www.freedesktop.org/software/systemd/man/252/systemd-measure.html",
+   "weight": 0.74
+  },
+  {
+   "url": "https://docs.siderolabs.com/talos/v1.14/platform-specific-installations/bare-metal-platforms/secureboot",
+   "weight": 0.75
+  }
+ ],
+ "outcome": "authored"
+}

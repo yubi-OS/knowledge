@@ -1,0 +1,72 @@
+{
+ "nn": "07",
+ "slug": "firmware-validation-hardening-discipline",
+ "scope": "The hardware bring-up and hardening discipline the doc records: yubiOS-chipsec-firstboot.service as a scoped one-shot firmware validation service with warn-by-default and fail-closed kernel-argument policy, CHIPSEC's inability to give a reliable automated Absolute/Computrace verdict (WPBT informational scanning instead), systemd hardening notes (RestrictFileSystems usage and RestrictFileSystemAccess as the v261 primitive to evaluate), the explicit out-of-scope list, declarative-policy, continuous-monitoring and segmentation integration sections, and the 2026-09-18 wayfinder drift-check note.",
+ "queries_attempted": [
+  {
+   "query": "CHIPSEC WPBT scan Windows Platform Binary Table",
+   "attempt": 1,
+   "raw_results": 64,
+   "kept": 6
+  },
+  {
+   "query": "systemd RestrictFileSystemAccess v261 BPF LSM",
+   "attempt": 2,
+   "raw_results": 67,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "url": "https://github.com/Jamesits/dropWPBT",
+   "weight": 0.25
+  },
+  {
+   "url": "https://persistence-info.github.io/Data/wpbbin.html",
+   "weight": 0.11
+  },
+  {
+   "url": "https://chipsec.github.io/",
+   "weight": 0.68
+  },
+  {
+   "url": "https://github.com/chipsec/chipsec",
+   "weight": 0.57
+  },
+  {
+   "url": "https://chipsec.github.io/installation/InstallWindows.html",
+   "weight": 0.66
+  },
+  {
+   "url": "https://borncity.com/win/2017/12/06/vendors-rootkit-windows-platform-binary-table-wpbt/",
+   "weight": 0.12
+  },
+  {
+   "url": "https://docs.kernel.org/bpf/prog_lsm.html",
+   "weight": 0.8
+  },
+  {
+   "url": "https://github.com/systemd/systemd/issues/32968",
+   "weight": 0.65
+  },
+  {
+   "url": "https://www.phoronix.com/news/systemd-261",
+   "weight": 0.21
+  },
+  {
+   "url": "https://kinvolk.io/blog/2021/02/extending-systemd-security-features-with-ebpf",
+   "weight": 0.37
+  },
+  {
+   "url": "https://newreleases.io/project/github/systemd/systemd/release/v261",
+   "weight": 0.09
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Systemd",
+   "weight": 0.37
+  }
+ ],
+ "outcome": "authored"
+}

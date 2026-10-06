@@ -1,0 +1,72 @@
+{
+ "nn": "03",
+ "slug": "step3-runtime-control",
+ "scope": "Step 3 runtime-control mitigations: faux ACPI tables blocked by signed cmdline, no TEE dependency (YubiKey FIDO2 instead of TrustZone), Computrace detection via chipsec, radio persistence and framebuffer password exfil (no typed passphrase, pam-u2f, PrivateNetwork=), and dmesg/proc scrubbing with fd hijacking (dm-verity service units, DynamicUser=, ProtectProc=invisible, NoNewPrivileges=, journal forward-secure sealing).",
+ "queries_attempted": [
+  {
+   "query": "Absolute Computrace WPBT detection chipsec UEFI",
+   "attempt": 1,
+   "raw_results": 60,
+   "kept": 6
+  },
+  {
+   "query": "systemd journal forward sealing journalctl --verify FSS",
+   "attempt": 2,
+   "raw_results": 57,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "url": "https://support.eset.com/en/kb6567-you-receive-an-eset-uefi-detection",
+   "weight": 0.8
+  },
+  {
+   "url": "https://github.com/patapik/uefi-persistence-whitepaper",
+   "weight": 0.25
+  },
+  {
+   "url": "https://github.com/chipsec/chipsec/issues/2197",
+   "weight": 0.59
+  },
+  {
+   "url": "https://standa-note.blogspot.com/2021/04/reverse-engineering-absolute-uefi.html",
+   "weight": 0.1
+  },
+  {
+   "url": "https://laptopjudge.com/hp-absolute-persistence-computrace/",
+   "weight": 0.1
+  },
+  {
+   "url": "https://forum.eset.com/topic/44324-help-me-with-eficomputracea-detection/",
+   "weight": 0.07
+  },
+  {
+   "url": "https://learn.netdata.cloud/docs/logs-management/systemd-journal-logs/forward-secure-sealing-fss-in-systemd-journal",
+   "weight": 0.33
+  },
+  {
+   "url": "https://stackharbor.com/en/knowledge-base/journald-protection/",
+   "weight": 0.22
+  },
+  {
+   "url": "https://unix.stackexchange.com/questions/347499/how-does-journalctl-sign-the-logs-if-the-the-verification-key-should-be-stored",
+   "weight": 0.12
+  },
+  {
+   "url": "https://esf.eurotech.com/docs/journald-fss-verification",
+   "weight": 0.5
+  },
+  {
+   "url": "https://lwn.net/Articles/512895/",
+   "weight": 0.29
+  },
+  {
+   "url": "https://www.intramweb.com/linux-security/journalctl-command-linux/",
+   "weight": 0.15
+  }
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,72 @@
+{
+ "nn": "05",
+ "slug": "prevention-gaps-hardware-boundary",
+ "scope": "What yubiOS cannot fully prevent: Computrace in UEFI ROM below the boot chain, hardware-wired radios that ignore OS power commands, novel dirtyfrag-class kernel CVEs, Qualcomm dload sideload running below the dm-verity Merkle tree, and a malicious UEFI supply chain root; the hardware-selection escape routes (open-firmware radios like Intel AX210, non-Qualcomm ARM64 boards in ADR-017).",
+ "queries_attempted": [
+  {
+   "query": "Absolute Persistence Computrace BIOS firmware removal reflash",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "Intel AX210 open source firmware wireless Linux",
+   "attempt": 2,
+   "raw_results": 72,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  {
+   "url": "https://laptopjudge.com/hp-absolute-persistence-computrace/",
+   "weight": 0.1
+  },
+  {
+   "url": "https://www.itadtools.com/disable-absolute-computrace/",
+   "weight": 0.12
+  },
+  {
+   "url": "https://www.eevblog.com/forum/general-computing/dell-computraceabsolute-module-questions/",
+   "weight": 0.04
+  },
+  {
+   "url": "https://www.dell.com/support/kbdoc/en-us/000142862/computrace-replaced-by-absolute-module-in-newest-bios-revisions",
+   "weight": 0.73
+  },
+  {
+   "url": "https://www.elevenforum.com/t/absolute-module-removal-from-dell-bios-some-call-it-a-rootkit-for-tracking-should-i-do-this.22792/",
+   "weight": 0.03
+  },
+  {
+   "url": "https://security.stackexchange.com/questions/53698/detecting-and-removing-absolute-persistence-technology",
+   "weight": 0.14
+  },
+  {
+   "url": "https://linuxvox.com/blog/ax210-linux-driver/",
+   "weight": 0.13
+  },
+  {
+   "url": "https://www.intel.com/content/www/us/en/download/824804/intel-wireless-wi-fi-drivers-for-linux.html",
+   "weight": 0.53
+  },
+  {
+   "url": "https://www.intel.com/content/www/us/en/support/articles/000005511/wireless.html",
+   "weight": 0.69
+  },
+  {
+   "url": "https://github.com/torvalds/linux/blob/master/drivers/net/wireless/intel/iwlwifi/cfg/ax210.c",
+   "weight": 0.71
+  },
+  {
+   "url": "https://community.intel.com/t5/Wireless/Looking-for-Driver-and-Firmware-Documentation-for-the-AX210/m-p/1593917",
+   "weight": 0.07
+  },
+  {
+   "url": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases",
+   "weight": 0.44
+  }
+ ],
+ "outcome": "authored"
+}
