@@ -1,0 +1,37 @@
+{
+ "nn": "t05",
+ "slug": "05-dev-tag-mismatch",
+ "scope": "Adjacent case: dev tag / short-SHA mismatch, commit 95565a0e, resolve-to-digest discipline",
+ "dig_mode": "web",
+ "queries_attempted": [
+  {
+   "query": "container image tag points stale build short SHA mismatch after base image bump",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "OCI image tag vs digest resolution skopeo compute digest sha256sum pipeline",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://nlhmag.co.uk/2026/07/13/fix-docker-ci-pipeline-git-sha/",
+  "https://www.codegenes.net/blog/dockerhub-sha-digest-doesn-t-match/",
+  "https://support.google.com/websearch/answer/16305143?hl=en",
+  "https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md",
+  "https://docs.docker.com/get-started/docker-concepts/building-images/build-tag-and-publish-an-image",
+  "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+  "https://specs.opencontainers.org/image-spec/descriptor/",
+  "https://mkdev.me/posts/the-standards-behind-the-modern-container-images",
+  "https://www.kunwar.page/chapter/106-the-oci-image-lifecycle-registries-digest-pinning-the-digest-update-pattern",
+  "https://oneuptime.com/blog/post/2026-08-11-why-sign-container-images-by-digest-not-tag/view",
+  "https://www.ociservices.gov.in/onlineOCI/",
+  "https://maccdn.com/en/blog/articles/cross-border-oci-image-acceleration-registry-mirror-pull-through-harbor-matrix-2026/cross-border-oci-image-acceleration-registry-mirror-pull-through-harbor-matrix-2026.html"
+ ],
+ "outcome": "authored"
+}

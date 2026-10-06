@@ -1,0 +1,37 @@
+{
+ "nn": "t01",
+ "slug": "01-trigger-and-failure-classes",
+ "scope": "The two failure classes the playbook covers (dead quay.io digest 404, arm64 layer-pull stream truncation) and the 3-in-7-days cadence",
+ "dig_mode": "web",
+ "queries_attempted": [
+  {
+   "query": "quay.io digest pin 404 not found registry manifest gone container build failure",
+   "attempt": 1,
+   "raw_results": 67,
+   "kept": 6
+  },
+  {
+   "query": "fedora bootc quay.io digest pinning container image build breakage",
+   "attempt": 1,
+   "raw_results": 66,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://access.redhat.com/solutions/7077254",
+  "http://docs.quay.io/",
+  "https://devopsaitoolkit.com/blog/docker-error-manifest-unknown/",
+  "https://deepwiki.com/quay/quay/2.1-manifest-handling",
+  "https://docs.redhat.com/en/documentation/openshift_container_platform/4.12/html/disconnected_installation_mirroring/installing-mirroring-installation-images",
+  "https://www.quay.com/",
+  "https://docs.fedoraproject.org/en-US/iot/fedora-iot-bootc-quay-example/",
+  "https://github.com/osbuild/bootc-image-builder",
+  "https://docs.stg.fedoraproject.org/en-US/iot/fedora-iot-bootc-quay-example/",
+  "https://github.com/cgwalters-forge/tracker/issues/185",
+  "https://github.com/rpm-software-management/dnf5/discussions/2662",
+  "https://docs.fedoraproject.org/en-US/bootc/getting-started/"
+ ],
+ "outcome": "authored"
+}
