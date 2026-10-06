@@ -1,0 +1,48 @@
+{
+  "nn": "04",
+  "slug": "identity-checks-admission",
+  "scope": "The table of coordinates that cannot fail (rank identity, in-sample R^2 = 1, wrapped angle sums, vacuous Kolmogorov test on a DAG, ladder distance identity) plus the binding admission rule: no coordinate is admitted without a demonstrated non-degenerate null.",
+  "queries_attempted": [
+    {
+      "query": "Kolmogorov cycle criterion detailed balance Markov chain test",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "tautological test statistic degenerate diagnostic validity null model",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "Kolmogorov cycle criterion reversible Markov chain closed loops",
+      "attempt": 2,
+      "raw_results": 60,
+      "kept": 6
+    },
+    {
+      "query": "tautological test software testing anti-pattern vacuous assertion",
+      "attempt": 2,
+      "raw_results": 44,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "thin weighted dig: fewer than 3 results with noul weight >= 0.5 on attempt 1; redone with different queries per REDO RULE",
+      "new_queries": [
+        "Kolmogorov cycle criterion reversible Markov chain closed loops",
+        "tautological test software testing anti-pattern vacuous assertion"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.researchgate.net/publication/344105190_Detailed_Balance_Complex_Balance_Cycle_Balance_A_Graph-Theoretic_Proof_for_Reaction_Networks_and_Markov_Chains"
+  ],
+  "outcome": "skipped",
+  "skip_reason": "thin dig: only 1 result with noul weight >= 0.5 (researchgate 344105190, w=0.50) after 1 redo with different queries; marginal outline subtopic kept only on a strong dig, dig not strong",
+  "note": "first-pass primary result researchgate 344105190 (detailed balance as complex balance plus cycle balance, w=0.50) is cited where relevant in the authored docs"
+}
