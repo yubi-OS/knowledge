@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "funnel-setup-target-box",
+ "scope": "The one-time target-box setup: Tailscale install via install.sh, headless auth with a non-ephemeral reusable auth key, tailscale funnel --bg 8080, funnel status, the https://<node>.<tailnet>.ts.net URL shape.",
+ "queries_attempted": [
+  {
+   "query": "tailscale funnel setup background port ts.net URL",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "tailscale ephemeral vs non-ephemeral nodes auth key reusable",
+   "attempt": 2,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://tailscale.com/download",
+  "https://tailscale.com/",
+  "https://login.tailscale.com/login",
+  "https://tailscale.com/docs/features/tailscale-funnel",
+  "https://en.wikipedia.org/wiki/Tailscale",
+  "https://github.com/tailscale/tailscale",
+  "https://tailscale.com/",
+  "https://tailscale.com/docs/features/ephemeral-nodes",
+  "https://tailscale.com/download",
+  "https://login.tailscale.com/login",
+  "https://en.wikipedia.org/wiki/Tailscale",
+  "https://github.com/tailscale/tailscale"
+ ],
+ "outcome": "authored"
+}

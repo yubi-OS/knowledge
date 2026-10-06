@@ -1,0 +1,36 @@
+{
+ "nn": "08",
+ "slug": "security-model",
+ "scope": "The security model: 256-bit openssl rand -hex 32 token, TLS terminated at the Funnel edge, bind 127.0.0.1 never 0.0.0.0, token stored in /etc mode 600 env file, argv-only subprocess, constant-time hmac.compare_digest, journald audit posture.",
+ "queries_attempted": [
+  {
+   "query": "hmac.compare_digest constant time string comparison python",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "openssl rand hex 32 token entropy 256 bits",
+   "attempt": 2,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/HMAC",
+  "https://sqreen.github.io/DevelopersSecurityBestPractices/timing-attack/python",
+  "https://www.geeksforgeeks.org/computer-networks/what-is-hmachash-based-message-authentication-code/",
+  "https://codeshack.io/hmac-generator/",
+  "https://docs.python.org/3/library/hmac.html",
+  "https://runebook.dev/en/docs/python/library/hmac/hmac.compare_digest",
+  "https://www.openssl.org/",
+  "https://envtools.dev/openssl-rand-generator",
+  "https://docs.openssl.org/master/man1/openssl-rand/",
+  "https://www.openssl-library.org/source/",
+  "https://github.com/openssl/openssl",
+  "https://www.hexhero.com/tools/random-key-generator"
+ ],
+ "outcome": "authored"
+}

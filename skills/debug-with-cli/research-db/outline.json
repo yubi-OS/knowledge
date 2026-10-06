@@ -1,0 +1,260 @@
+{
+ "topic": "the debug-with-cli skill: driving shell commands on remote machines from a Sauna agent via Tailscale Funnel + Bearer-auth HTTP bridge",
+ "ground_source": "yubi-OS/yubiOS skills/debug-with-cli/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "philosophy-architecture",
+   "scope": "Why the bridge is HTTP-only via the Sauna auth proxy: the sandbox has network access but no tailscale binary and cannot ssh to non-public hosts; the target box runs a Bearer-auth HTTP server returning {stdout, stderr, returncode}; argv shape as a feature (no injection, no quoting).",
+   "seed_queries": null
+  },
+  {
+   "nn": "02",
+   "slug": "when-to-use-scope",
+   "scope": "When to apply the skill (Sauna cannot otherwise reach the machine; read logs/inspect state/probe loop; 20-min CI round-trips to 20-second curls) and the four do-NOT-use boundaries (HTTP API exists, one-off log read, no Tailscale, needs real PTY).",
+   "seed_queries": null
+  },
+  {
+   "nn": "03",
+   "slug": "funnel-setup-target-box",
+   "scope": "The one-time target-box setup: Tailscale install via install.sh, headless auth with a non-ephemeral reusable auth key, tailscale funnel --bg 8080, funnel status, the https://<node>.<tailnet>.ts.net URL shape.",
+   "seed_queries": [
+    "tailscale funnel setup background port ts.net URL",
+    "tailscale ephemeral vs non-ephemeral nodes auth key reusable"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "sauna-connection-setup",
+   "scope": "The Sauna-side setup: connect_account with connection_type keys (not mcp), auth_type bearer, auth_strategy static inject bearer, token field, and proxy auto-injection of the Authorization header; verify 401 without auth then 200 with auth.",
+   "seed_queries": [
+    "RFC 6750 bearer token Authorization header HTTP scheme",
+    "bearer token authentication HTTP proxy auto-injection"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "bridge-script-design",
+   "scope": "The ~50-LOC Python stdlib bridge internals: BaseHTTPRequestHandler + HTTPServer on 127.0.0.1:8080, hmac.compare_digest Bearer check, JSON body {command, timeout, cwd}, subprocess.run(capture_output=True, text=True), TimeoutExpired to 408, quiet log_message.",
+   "seed_queries": null
+  },
+  {
+   "nn": "06",
+   "slug": "call-shape-argv",
+   "scope": "POST /run request shape: command is a JSON array of argv strings passed to subprocess.run with shell=False; no pipes at the bridge (bash -c via argv is the escape hatch), sudo -n is mandatory, per-call env not supported, cwd field.",
+   "seed_queries": [
+    "python subprocess.run argv list shell False command injection",
+    "subprocess.run timeout capture_output text parameters docs"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "tty-audit-pattern",
+   "scope": "The argv-audit-to-tty pattern for user observability: banner via printf %b to /dev/ttyS2 then run with tee -a, repr() quoting of argv elements for the inner bash -c, tee -a not >, and the two-POST rule for multi-line content (write to host /tmp first, then cat to TTY).",
+   "seed_queries": null
+  },
+  {
+   "nn": "08",
+   "slug": "security-model",
+   "scope": "The security model: 256-bit openssl rand -hex 32 token, TLS terminated at the Funnel edge, bind 127.0.0.1 never 0.0.0.0, token stored in /etc mode 600 env file, argv-only subprocess, constant-time hmac.compare_digest, journald audit posture.",
+   "seed_queries": [
+    "hmac.compare_digest constant time string comparison python",
+    "openssl rand hex 32 token entropy 256 bits"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "alternatives-considered",
+   "scope": "The six rejected alternatives and why: sparfenyuk mcp-proxy (no inbound auth), punkpeye mcp-proxy (Node dep + X-API-Key), Cloudflare Tunnel + Access (per-call OIDC), mTLS (no cert store in sandbox), adding the sandbox to the tailnet (extra infra, no auth change), Funnel ACL grants (sandbox is not a tailnet user).",
+   "seed_queries": [
+    "sparfenyuk mcp-proxy stdio HTTP bridge GitHub",
+    "cloudflare tunnel access oidc self-hosted app"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "antipatterns-loading-guidelines",
+   "scope": "The anti-pattern list (0.0.0.0 bind, plaintext token logging, short tokens, string commands, Funnel to exposed ports, sudo without -n, skipping the local smoke test, mistaking Cloudflare 530/1016 for auth) plus loading constraints (argv-only, no request logging by default, one bridge per machine, token rotation cadence).",
+   "seed_queries": null
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.02,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.31,
+     "1": 0.37,
+     "2": 0.32
+    },
+    "confidence": 0.06
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.76,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.11,
+     "2": 0.82
+    },
+    "confidence": 0.64
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.53,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.13,
+     "2": 0.7
+    },
+    "confidence": 0.3
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.78,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.5599999999999999,
+     "1": 0.09,
+     "2": 0.35
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.59,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.17,
+     "2": 0.71
+    },
+    "confidence": 0.38
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.75,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.09,
+     "2": 0.83
+    },
+    "confidence": 0.62
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.27,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.76,
+     "1": 0.21,
+     "2": 0.03
+    },
+    "confidence": 0.6
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.77,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.41,
+     "1": 0.41,
+     "2": 0.18
+    },
+    "confidence": 0.11
+   },
+   "t09": {
+    "type": "score",
+    "score": 0.64,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.5,
+     "1": 0.35,
+     "2": 0.15
+    },
+    "confidence": 0.03
+   },
+   "t10": {
+    "type": "score",
+    "score": 1.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.21,
+     "2": 0.67
+    },
+    "confidence": 0.33
+   }
+  },
+  "usage": {
+   "input_tokens": 1534,
+   "output_tokens": 154,
+   "cost": 0.000128856
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09",
+   "10"
+  ]
+ }
+}

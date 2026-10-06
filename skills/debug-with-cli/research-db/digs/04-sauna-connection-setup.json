@@ -1,0 +1,57 @@
+{
+ "nn": "04",
+ "slug": "sauna-connection-setup",
+ "scope": "The Sauna-side setup: connect_account with connection_type keys (not mcp), auth_type bearer, auth_strategy static inject bearer, token field, and proxy auto-injection of the Authorization header; verify 401 without auth then 200 with auth.",
+ "queries_attempted": [
+  {
+   "query": "RFC 6750 bearer token Authorization header HTTP scheme",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "bearer token authentication HTTP proxy auto-injection",
+   "attempt": 2,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "RFC 6750 OAuth 2.0 bearer token usage specification",
+   "attempt": 1,
+   "raw_results": 93,
+   "kept": 6
+  },
+  {
+   "query": "HTTP Authorization header Bearer scheme RFC 7235 authentication",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "original dig returned off-topic results (SAT tax portal, Google Flights, dictionary entries); retrying with specification-focused queries",
+   "new_queries": [
+    "RFC 6750 OAuth 2.0 bearer token usage specification",
+    "HTTP Authorization header Bearer scheme RFC 7235 authentication"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.sat.gob.mx/portal/public/tramites/inscripcion-y-aviso-al-rfc",
+  "https://datatracker.ietf.org/doc/html/rfc6750",
+  "https://wwwmat.sat.gob.mx/aplicacion/31274/consulta-tu-clave-de-rfc-mediante-curp",
+  "https://www.rfc-editor.org/",
+  "https://www.ietf.org/process/rfcs/",
+  "https://wwwmat.sat.gob.mx/personas/tramites-del-rfc",
+  "https://stackoverflow.com/questions/22229996/basic-http-and-bearer-token-authentication",
+  "https://blog.stigok.com/",
+  "https://www.merriam-webster.com/dictionary/bearer",
+  "https://www.google.com/travel/flights",
+  "https://stackoverflow.com/a/22565038",
+  "https://oauth2-proxy.github.io/oauth2-proxy/behaviour/"
+ ],
+ "outcome": "authored"
+}
