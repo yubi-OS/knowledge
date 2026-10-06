@@ -1,0 +1,217 @@
+{
+ "topic": "the yubiOS hw-device and allow_real_u2f two-flag opt-in playbook (ground source: yubi-OS/yubiOS playbooks/hw-device-and-allow-real-u2f.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "context-two-destructive-workflows",
+   "scope": "Context: the 2 destructive-capable workflows (ci_test-vm.yml, ci_test-vgpu-vm.yml) and why the flags exist",
+   "seed_queries": [
+    "github actions workflow_dispatch destructive disk wipe safety self-hosted runner",
+    "spare block device hardware-in-the-loop CI test destructive install leg"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "decision-two-independent-flags",
+   "scope": "Decision: two flags opted into independently, never inferred; 422 on undeclared forwarding",
+   "seed_queries": [
+    "github actions workflow_dispatch undeclared input 422 Unprocessable Entity",
+    "github actions workflow dispatch inputs validation unexpected input error"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "mechanism-real-u2f-guard-hidraw-race",
+   "scope": "Mechanism: the real-U2F guard and the /dev/hidraw enumeration race",
+   "seed_queries": [
+    "linux /dev/hidraw enumeration order race USB HID FIDO2 security key",
+    "virtual software FIDO2 U2F authenticator hidraw linux testing libfido2"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "mechanism-env-sudo-forwarding",
+   "scope": "Mechanism: ALLOW_REAL_U2F env plumbing and explicit sudo env forwarding",
+   "seed_queries": [
+    "sudo does not inherit environment variables sudo env forwarding vs -E",
+    "github actions step env variable not visible inside sudo shell script"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "runner-preflight-and-dispatch-shapes",
+   "scope": "Runner pre-flight checks and the 3 dispatch shapes",
+   "seed_queries": [
+    "lsblk findmnt verify block device not mounted before overwrite script",
+    "lsusb detect Yubico YubiKey vendor id 1050 linux shell"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "verified-working-record",
+   "scope": "Verified working record: PRs #144/#137/#145, commits 5200f0b, 5342867, 6dad3733, run 30523246025",
+   "seed_queries": []
+  },
+  {
+   "nn": "07",
+   "slug": "tradeoffs-fail-safe-defaults",
+   "scope": "Tradeoffs: fail-safe default false, silent-green risk on hw_device, missing dispatch-step lsusb fail-fast",
+   "seed_queries": [
+    "fail-safe default design opt-in for destructive CI operations",
+    "CI test silently skipped hardware step false green regression masking"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "cross-references-testing-discipline",
+   "scope": "Cross-references and real-hardware testing discipline: BLOCKERS.md B-REAL-FIDO2, Linear OMN-42/OMN-63/OMN-149, related tests and playbooks",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 0.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.45,
+     "1": 0.17,
+     "2": 0.38
+    },
+    "confidence": 0
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.08,
+     "2": 0.81
+    },
+    "confidence": 0.55
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.22,
+     "2": 0.64
+    },
+    "confidence": 0.24
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.19,
+     "2": 0.68
+    },
+    "confidence": 0.33
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.68,
+     "1": 0.15,
+     "2": 0.17
+    },
+    "confidence": 0.26
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.07,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.33,
+     "1": 0.27,
+     "2": 0.4
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.65,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.15,
+     "2": 0.75
+    },
+    "confidence": 0.48
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.22,
+     "2": 0.64
+    },
+    "confidence": 0.25
+   }
+  },
+  "usage": {
+   "input_tokens": 1176,
+   "output_tokens": 124
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
