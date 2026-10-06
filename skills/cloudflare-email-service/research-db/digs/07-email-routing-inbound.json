@@ -1,0 +1,28 @@
+{
+  "nn": 7,
+  "slug": "email-routing-inbound",
+  "scope": "Receiving inbound email: Workers email() handler, forwarding to verified addresses, postal-mime parsing, single-use message.raw.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Email Routing Worker email handler message.forward",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 3
+    },
+    {
+      "query": "Cloudflare Workers postal-mime parse incoming email raw",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/email-service/api/route-emails/email-handler/",
+    "https://developers.cloudflare.com/email-service/get-started/route-emails/",
+    "https://www.cloudflare.com/products/email-routing/",
+    "https://developers.cloudflare.com/email-service/api/route-emails/email-handler/"
+  ],
+  "outcome": "authored"
+}
