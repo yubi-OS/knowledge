@@ -1,0 +1,31 @@
+{
+ "nn": 7,
+ "slug": "alarms",
+ "scope": "Alarms: one alarm per DO, setAlarm replaces, at-least-once retry with exponential backoff, batching and scheduling patterns.",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Durable Objects alarms setAlarm deleteAlarm documentation",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "Durable Objects alarm handler scheduled work retry",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/durable-objects/api/state",
+  "https://developers.cloudflare.com/durable-objects/api/alarms/",
+  "https://developers.cloudflare.com/durable-objects/examples/alarms-api/",
+  "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/api/alarms.mdx",
+  "https://blog.cloudflare.com/durable-objects-alarms/",
+  "https://blog.cloudflare.com/building-scheduling-system-with-workers-and-durable-objects/",
+  "https://www.ktvq.com/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,264 @@
+{
+ "topic": "the durable-objects skill: creating and reviewing Cloudflare Durable Objects (stateful coordination, SQLite storage, alarms, WebSockets, review discipline, wrangler config)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "when-to-use",
+   "scope": "When to use Durable Objects (and when not): the 5 use-for categories, the 3 excluded cases, the retrieval-first rule.",
+   "seed_queries": [
+    "Cloudflare Durable Objects when to use use cases",
+    "Durable Objects vs Workers when not to use stateless"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "coordination-model",
+   "scope": "Coordination-atom modeling: one DO per chat room, game, or user, never one global DO; strong consistency and per-entity storage.",
+   "seed_queries": [
+    "Cloudflare Durable Objects coordination strong consistency single writer",
+    "Cloudflare Durable Objects design patterns chat room multiplayer game"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "stub-routing",
+   "scope": "Stub creation and deterministic routing: getByName preferred, idFromString rehydration, newUniqueId with externally stored IDs.",
+   "seed_queries": [
+    "DurableObjectNamespace getByName idFromName newUniqueId documentation",
+    "Cloudflare Durable Objects deterministic routing idFromString stub"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "sqlite-storage",
+   "scope": "SQLite storage operations: synchronous sql.exec as the recommended surface, async KV, persist-first ordering, per-instance privacy.",
+   "seed_queries": [
+    "Cloudflare Durable Objects SQLite storage sql.exec documentation",
+    "Durable Objects storage API KV SQL difference"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "wrangler-config",
+   "scope": "Wrangler configuration and migrations: durable_objects bindings, new_sqlite_classes, and the dated drift toward the exports field.",
+   "seed_queries": [
+    "wrangler.jsonc durable_objects bindings migrations new_sqlite_classes",
+    "Cloudflare Durable Objects migration tags wrangler configuration"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "rpc-concurrency",
+   "scope": "RPC methods, constructor init, and concurrency control: RPC over fetch() since compatibility date 2024-04-03, blockConcurrencyWhile for schema setup only.",
+   "seed_queries": [
+    "Cloudflare Durable Objects RPC methods compatibility date 2024-04-03",
+    "Durable Objects blockConcurrencyWhile constructor initialization documentation"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "alarms",
+   "scope": "Alarms: one alarm per DO, setAlarm replaces, at-least-once retry with exponential backoff, batching and scheduling patterns.",
+   "seed_queries": [
+    "Cloudflare Durable Objects alarms setAlarm deleteAlarm documentation",
+    "Durable Objects alarm handler scheduled work retry"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "websockets",
+   "scope": "WebSockets and persistent connections: standard vs Hibernation API, why Hibernation is preferred for server applications.",
+   "seed_queries": [
+    "Cloudflare Durable Objects WebSockets hibernation API documentation",
+    "Durable Objects WebSocket handler real-time notifications"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "testing",
+   "scope": "Testing with @cloudflare/vitest-pool-workers: in-runtime tests via cloudflare:test, alarm testing, config-validation version skew.",
+   "seed_queries": [
+    "cloudflare vitest-pool-workers Durable Objects testing",
+    "Durable Objects unit integration testing cloudflare:test"
+   ]
+  },
+  {
+   "nn": 10,
+   "slug": "antipatterns-review",
+   "scope": "Anti-patterns and the DO review discipline: the 5 NEVER patterns, the positive rules behind them, a 10-step review checklist.",
+   "seed_queries": [
+    "Cloudflare Durable Objects best practices anti-patterns",
+    "Durable Objects single global bottleneck blockConcurrencyWhile performance"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.05,
+     "2": 0.9299999999999999
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.91,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.02,
+     "2": 0.95
+    },
+    "confidence": 0.87,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.94,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.02,
+     "2": 0.96
+    },
+    "confidence": 0.91,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.11,
+     "2": 0.84
+    },
+    "confidence": 0.68,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.88,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.06,
+     "2": 0.91
+    },
+    "confidence": 0.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.04,
+     "2": 0.94
+    },
+    "confidence": 0.87,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.99,
+    "probabilities": {
+     "0": 0.24,
+     "1": 0.53,
+     "2": 0.23
+    },
+    "confidence": 0.3,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.2,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.48,
+     "2": 0.36
+    },
+    "confidence": 0.23,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.97,
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.59,
+     "2": 0.19
+    },
+    "confidence": 0.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.12,
+     "2": 0.84
+    },
+    "confidence": 0.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1239,
+   "output_tokens": 154,
+   "cost": 0.000104076
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ]
+ }
+}
