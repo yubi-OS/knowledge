@@ -21,7 +21,7 @@ Ground source: yubi-OS/yubiOS docs/ENDPOINTS.md (the steady-orbit endpoint refer
 
 - Results collected: 96 (84 from the initial digs across 7 web-shaped subtopics, 2 queries each; 12 from the NN06 redo).
 - Weight split: 11 high (>= 0.5), 85 low (< 0.5). Every result carries its weight in research-db/archive.json.
-- jev: 9 requests (1 outline score validation + 8 noul weighting batches) via DefAPI direct (https://api.defapi.org/api/v1/decisions, typesafe/jev-1.13). Usage: 10428 input tokens, 1781 output tokens. Outline validation: all 10 subtopics kept, 0 dropped.
+- jev: 10 requests (1 outline score validation + 8 noul weighting batches + 1 redo-weighting batch) via DefAPI direct (https://api.defapi.org/api/v1/decisions, typesafe/jev-1.13). Usage: 12014 input tokens, 1935 output tokens. Outline validation: all 10 subtopics kept, 0 dropped.
 - Digs: 7 web-shaped subtopics dug (2 queries each, 14 queries); 3 subtopics (01, 02, 10) are internal-record subtopics and were not dug, per the docs-variant speed optimization; they cite the source doc.
 - Redos: 1 (NN06 wayfinder-map-endpoints: attempt 1 returned 0 of 12 results above weight 0.5; redo attempt 2 with different queries still returned weak results, so the doc cites those as weak with the weight labels shown).
 - Skipped docs: none.
