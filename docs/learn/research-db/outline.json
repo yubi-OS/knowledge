@@ -1,0 +1,235 @@
+{
+  "topic": "the yubiOS learnings document docs/LEARN.md: LLC (Learned Latent Curves) and The Vacuum",
+  "source_doc": {
+    "repo": "yubi-OS/yubiOS",
+    "path": "docs/LEARN.md",
+    "url": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/docs/LEARN.md",
+    "bytes": 1372,
+    "fetched_at": "2026-10-06T08:56:00Z"
+  },
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "llc-and-the-vacuum",
+      "scope": "The LLC (Learned Latent Curves) concept and the Vacuum framing in the LEARN.md title",
+      "seed_queries": [
+        "learned latent curves representation learning",
+        "latent space learning curve representation neural network"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "02",
+      "slug": "y33-hypersphere-384d",
+      "scope": "The conceptual rendering of a Y_3^3 hyper-sphere at 384-D that opens the doc, and the spherical-harmonic geometry it implies",
+      "seed_queries": [
+        "spherical harmonics hyperspherical harmonics machine learning basis",
+        "384 dimensional hypersphere embedding representation learning"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "03",
+      "slug": "charts-as-artifacts",
+      "scope": "The three chart/image assets LEARN.md embeds (Learned_Latent_Curve, Latent_Space_Learning, Y_3^3 renders) and what they record",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "04",
+      "slug": "learner-fourier-mlp",
+      "scope": "The learner pipeline: 1D input t through Fourier features into a small MLP",
+      "seed_queries": [
+        "Fourier feature mapping positional encoding neural networks",
+        "small MLP implicit neural representation curve fitting"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "05",
+      "slug": "dual-curves-project-self",
+      "scope": "The two curves the MLP emits: z_project(t) evaluated as task performance and z_self(t) evaluated as model state",
+      "seed_queries": [
+        "task performance curve versus self evaluation model state machine learning",
+        "dual objective self model evaluation meta learning loop"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "06",
+      "slug": "optimization-signal-loop",
+      "scope": "The optimization signal that fuses task and self evaluation into a parameter update back into the learner",
+      "seed_queries": [
+        "multi objective optimization signal parameter update machine learning",
+        "closed loop learning gradient signal model self evaluation"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "07",
+      "slug": "rsi-loop-capability-change",
+      "scope": "The downstream half of the diagram: breadth/depth deltas and the recursive self-improvement loop producing real-world capability change",
+      "seed_queries": [
+        "recursive self improvement AI loop evaluation cycle",
+        "capability breadth depth evaluation agent improvement loop"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "08",
+      "slug": "drift-check-discipline",
+      "scope": "The 2026-09-18 drift check entries (wayfinder round 10 cycle 16, round 11 cycle 24) and the inventory completeness discipline they establish",
+      "seed_queries": [],
+      "internal_record": true
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "note": "the model returned continuous scores in [0,2]; the drop rule was applied to score == 0, and no subtopic scored 0",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 0.54,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.71,
+          "1": 0.05,
+          "2": 0.24
+        },
+        "confidence": 0.2
+      },
+      "t02": {
+        "type": "score",
+        "score": 0.34,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.79,
+          "1": 0.08,
+          "2": 0.13
+        },
+        "confidence": 0.49
+      },
+      "t03": {
+        "type": "score",
+        "score": 0.69,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.61,
+          "1": 0.09,
+          "2": 0.3
+        },
+        "confidence": 0
+      },
+      "t04": {
+        "type": "score",
+        "score": 0.73,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.58,
+          "1": 0.11,
+          "2": 0.31
+        },
+        "confidence": 0
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.88,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.53,
+          "1": 0.06,
+          "2": 0.41
+        },
+        "confidence": 0
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.75,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.59,
+          "1": 0.07,
+          "2": 0.34
+        },
+        "confidence": 0
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.81,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.07,
+          "2": 0.37
+        },
+        "confidence": 0
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.36,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.74,
+          "1": 0.16,
+          "2": 0.1
+        },
+        "confidence": 0.46
+      }
+    },
+    "usage": {
+      "input_tokens": 1325,
+      "output_tokens": 124,
+      "cost": 0.0001113
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
