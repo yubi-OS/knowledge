@@ -1,0 +1,54 @@
+{
+ "nn": "06",
+ "slug": "lifecycle-placement",
+ "scope": "Wiring checks to the lifecycle: BUILD/VERIFY/REVIEW/SHIP phases with time budgets, scope to the diff, cost decides placement.",
+ "queries_attempted": [
+  {
+   "query": "pre-commit hooks fast feedback lint type check developer loop",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "CI pipeline stages lint test security scan placement cost",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "pre-commit hooks fast feedback lint type check developer loop",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "CI pipeline stages lint test security scan placement cost",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 digs used %20 space encoding; searXNG parsed only the first token of each query and returned dictionary/noise results; re-issued the same queries with + encoding",
+   "new_queries": "same 14 queries, re-encoded"
+  }
+ ],
+ "results_kept": [
+  "https://www.aihero.dev/essential-ai-coding-feedback-loops-for-type-script-projects",
+  "https://pre-commit.com/",
+  "https://code.furybee.org/articles/pre-commit-hooks/",
+  "https://dev.to/samueldjones/run-a-typescript-type-check-in-your-pre-commit-hook-using-lint-staged-husky-30id",
+  "https://github.com/pre-commit/pre-commit-hooks",
+  "https://www.cnn.com/markets/premarkets",
+  "https://jarroba.com/en/ci-continuous-integration-analysis-tests-quality-and-security/",
+  "https://www.halkwinds.com/cost/cicd-pipeline-cost",
+  "https://docs.gitscrum.com/en/best-practices/continuous-integration-best-practices",
+  "https://thecorporate.cloud/cicd-pipeline-stages-explained",
+  "https://www.citi.com/",
+  "https://knowledgelib.io/software/system-design/cicd-pipeline/2026"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,54 @@
+{
+ "nn": "03",
+ "slug": "detect-then-interview",
+ "scope": "Detect before you ask (read stack, test runner, linters, coverage, CI, agent harness) and the four-question interview where every question carries a default.",
+ "queries_attempted": [
+  {
+   "query": "one question at a time interview technique requirements elicitation",
+   "attempt": 1,
+   "raw_results": 68,
+   "kept": 6
+  },
+  {
+   "query": "test coverage threshold default teams quality gate",
+   "attempt": 1,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "one question at a time interview technique requirements elicitation",
+   "attempt": 2,
+   "raw_results": 63,
+   "kept": 6
+  },
+  {
+   "query": "test coverage threshold default teams quality gate",
+   "attempt": 2,
+   "raw_results": 51,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 digs used %20 space encoding; searXNG parsed only the first token of each query and returned dictionary/noise results; re-issued the same queries with + encoding",
+   "new_queries": "same 14 queries, re-encoded"
+  }
+ ],
+ "results_kept": [
+  "https://www.koji.so/docs/requirements-gathering-interviews-guide",
+  "https://thebusinessanalystjobdescription.com/requirements-gathering-interview-questions/",
+  "https://www.geeksforgeeks.org/software-engineering/software-engineering-requirements-elicitation/",
+  "https://edutechwiki.unige.ch/en/Repertory_grid_technique",
+  "http://metatalk.metafilter.com/11634/",
+  "https://www.softwaretestinghelp.com/requirements-elicitation-techniques/",
+  "https://medium.com/@telesis/quality-gate-configuring-code-coverage-checks-for-net-c50874b89a20",
+  "https://nhimg.org/faq/how-should-teams-combine-coverage-reporting-with-quality-gates-and-trend-analysi/",
+  "https://beefed.ai/en/quality-gates-ci-cd-design-best-practices",
+  "https://www.conservapedia.com/Liberal_corporate_tyranny",
+  "https://www.speedtest.net/",
+  "https://dev.to/shanawaz_mohammed_d4a9ace/how-to-add-quality-gates-to-a-github-actions-pipeline-step-by-step-1e5a"
+ ],
+ "outcome": "authored"
+}
