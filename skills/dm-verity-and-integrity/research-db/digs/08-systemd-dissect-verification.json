@@ -1,0 +1,36 @@
+{
+ "nn": 8,
+ "slug": "systemd-dissect-verification",
+ "scope": "systemd-dissect introspection and verification of DDIs, the --mount verity gap (issue 34807), and the sysext/confext service relation.",
+ "queries_attempted": [
+  {
+   "query": "systemd-dissect verify dm-verity image os-release tooling",
+   "attempt": 1,
+   "raw_results": 12,
+   "kept": 6
+  },
+  {
+   "query": "systemd-dissect mount image sysext confext composefs verification",
+   "attempt": 2,
+   "raw_results": 12,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://systemd.io/",
+  "https://github.com/systemd/systemd",
+  "https://github.com/systemd/systemd/issues/34807",
+  "https://lynx.luxferre.top/",
+  "https://man.archlinux.org/man/systemd-dissect.1.en",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://systemd.io/ENVIRONMENT/",
+  "https://systemd.io/",
+  "https://github.com/systemd/systemd",
+  "https://man7.org/linux/man-pages/man8/systemd-sysext.8.html",
+  "https://www.geeksforgeeks.org/linux-unix/linux-systemd-and-its-components/"
+ ],
+ "outcome": "authored"
+}
