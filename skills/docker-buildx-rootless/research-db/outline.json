@@ -1,0 +1,267 @@
+{
+ "topic": "docker-buildx-rootless skill (yubi-OS/yubiOS skills/docker-buildx-rootless/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "rootless-mode-architecture",
+   "scope": "How dockerd rootless mode works: daemon and containers inside a user namespace, subuid/subgid mapping via newuidmap/newgidmap, no setuid/file capabilities, difference from userns-remap",
+   "seed_queries": [
+    "docker rootless mode user namespace subuid subgid newuidmap how it works",
+    "docker rootless mode vs userns-remap difference security"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "rootless-daemon-install",
+   "scope": "Install paths and setup: dockerd-rootless-setuptool.sh install, get.docker.com/rootless script, systemd user unit, loginctl enable-linger, disabling system docker, socket at /run/user/<UID>/docker.sock, docker context use rootless",
+   "seed_queries": [
+    "dockerd-rootless-setuptool.sh install systemd user unit enable-linger",
+    "docker rootless DOCKER_HOST unix socket docker context use rootless"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "rootless-limitations",
+   "scope": "Known rootless mode limitations: cgroup v1 device access, AppArmor/SELinux policy enforcement, slirp4netns network performance, restricted docker run flags, overlay2 kernel 5.11 floor and fuse-overlayfs fallback",
+   "seed_queries": [
+    "docker rootless mode known limitations overlay2 fuse-overlayfs kernel",
+    "rootless docker slirp4netns network performance apparmor limitations"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "buildx-driver-types",
+   "scope": "The four builder drivers (docker, docker-container, kubernetes, remote): where BuildKit runs and which capabilities each gets (cache export, multi-platform, attestations, Build Policies)",
+   "seed_queries": [
+    "docker buildx driver types docker-container kubernetes remote differences",
+    "docker buildx docker driver limitations no cache export multi-platform"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "builder-lifecycle",
+   "scope": "Builder lifecycle commands: buildx create with --driver-opt network=host, inspect --bootstrap, ls, use, rm, and the built-in default docker driver",
+   "seed_queries": [
+    "docker buildx create inspect bootstrap builder lifecycle commands",
+    "docker buildx ls use rm manage multiple builders"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "multi-platform-builds",
+   "scope": "Multi-platform builds: --platform linux/amd64,linux/arm64, QEMU emulator registration via multiarch/qemu-user-static and docker/setup-qemu-action, pushing manifest lists",
+   "seed_queries": [
+    "docker buildx multi-platform build linux/amd64 linux/arm64 QEMU emulation",
+    "multiarch/qemu-user-static register emulators buildx multi-arch"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "buildx-cache-management",
+   "scope": "Cache backends: inline cache, registry cache with mode=max, GitHub Actions gha cache, --cache-to and --cache-from usage in CI",
+   "seed_queries": [
+    "docker buildx cache backend types inline registry gha mode=max",
+    "buildx cache-to cache-from registry cache CI best practices"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "sbom-provenance-attestations",
+   "scope": "SBOM and SLSA provenance attestations: --attest type=provenance,mode=max and type=sbom, docker-container driver requirement, verification via imagetools inspect",
+   "seed_queries": [
+    "docker buildx SBOM provenance attestations attest imagetools inspect",
+    "buildx SLSA provenance attestation docker-container driver required"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "bake-multi-target",
+   "scope": "Bake declarative multi-target builds: docker-bake.hcl variables, groups, targets, inherits, --set overrides, --print dry run, compose-file inputs",
+   "seed_queries": [
+    "docker buildx bake docker-bake.hcl target group variable inherits",
+    "docker buildx bake --set --print override variable"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "build-policies-opa-rego",
+   "scope": "Docker Build Policies: --policy flag options (reset, strict, filename, log-level), input object fields (image.ref, isCanonical, hasProvenance, local), decision object, the yubiOS.rego approved-registry and digest-pinning pattern, debugging via --progress=plain",
+   "seed_queries": [
+    "docker buildx build policy opa rego --policy flag input isCanonical",
+    "docker build policy rego decision allow deny reason digest pinning"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.91,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.06,
+     "2": 0.93
+    },
+    "confidence": 0.86,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.06,
+     "2": 0.91
+    },
+    "confidence": 0.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.08,
+     "2": 0.91
+    },
+    "confidence": 0.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.51,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.36,
+     "2": 0.58
+    },
+    "confidence": 0.27,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.79,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.14,
+     "2": 0.82
+    },
+    "confidence": 0.68,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.46,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.43,
+     "2": 0.51
+    },
+    "confidence": 0.18,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.31,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.55,
+     "2": 0.38
+    },
+    "confidence": 0.34,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.55,
+    "probabilities": {
+     "0": 0.47,
+     "1": 0.5,
+     "2": 0.03
+    },
+    "confidence": 0.25,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.97,
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.65,
+     "2": 0.16
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.1,
+    "probabilities": {
+     "0": 0.92,
+     "1": 0.07,
+     "2": 0.01
+    },
+    "confidence": 0.86,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1382,
+   "output_tokens": 154,
+   "cost": 0.000116088
+  },
+  "dropped": [
+   "10"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ },
+ "ground_source": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/docker-buildx-rootless/SKILL.md",
+ "drop_note": "subtopic 10 (build-policies-opa-rego) scored 0.1 at validation and was dropped per the score metric; Build Policies are covered by the dedicated docker-build-policy skill and its corpus"
+}

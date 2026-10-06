@@ -1,0 +1,63 @@
+{
+ "nn": "03",
+ "slug": "rootless-limitations",
+ "scope": "Known rootless mode limitations: cgroup v1 device access, AppArmor/SELinux policy enforcement, slirp4netns network performance, restricted docker run flags, overlay2 kernel 5.11 floor and fuse-overlayfs fallback",
+ "queries_attempted": [
+  {
+   "query": "docker rootless mode known limitations overlay2 fuse-overlayfs kernel",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "rootless docker slirp4netns network performance apparmor limitations",
+   "attempt": 1,
+   "raw_results": 61,
+   "kept": 6
+  },
+  {
+   "query": "docker rootless mode limitations cgroup v1 device access overlay2 kernel 5.11",
+   "attempt": 2,
+   "raw_results": 31,
+   "kept": 1
+  },
+  {
+   "query": "rootlesskit slirp4netns docker rootless networking performance drivers",
+   "attempt": 2,
+   "raw_results": 68,
+   "kept": 5
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "thin dig: 0 high-weight results after attempt 1",
+   "new_queries": [
+    "docker rootless mode limitations cgroup v1 device access overlay2 kernel 5.11",
+    "rootlesskit slirp4netns docker rootless networking performance drivers"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://www.geeksforgeeks.org/devops/introduction-to-docker/",
+  "https://hub.docker.com/",
+  "https://www.virtua.cloud/learn/en/tutorials/docker-security-hardening-rootless-seccomp",
+  "https://rootlessplants.com/",
+  "https://www.reddit.com/r/amazon/comments/3hiaq1/is_it_reliable_to_buy_used_book_from_amazon/",
+  "https://www.reddit.com/r/privacy/comments/14op32s/how_safe_is_duckduckgo/",
+  "https://oneuptime.com/blog/post/2026-03-20-docker-ipv4-networking-rootless-mode/view",
+  "https://en.wikipedia.org/wiki/Slirp",
+  "https://oneuptime.com/blog/post/2026-01-06-docker-rootless-mode/view",
+  "https://pornpic.com/creator/likes2shareinsocal",
+  "https://stackoverflow.com/questions/10832031/how-to-run-a-single-test-with-mocha",
+  "https://www.anime-planet.com/anime/watch-online/",
+  "https://liudonghua123.github.io/docker-docs/engine/security/rootless/",
+  "https://github.com/containerd/nerdctl/blob/main/docs/rootless.md"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,32 @@
+{
+ "nn": "09",
+ "slug": "bake-multi-target",
+ "scope": "Bake declarative multi-target builds: docker-bake.hcl variables, groups, targets, inherits, --set overrides, --print dry run, compose-file inputs",
+ "queries_attempted": [
+  {
+   "query": "docker buildx bake docker-bake.hcl target group variable inherits",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "docker buildx bake --set --print override variable",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 2
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.docker.com/",
+  "https://docs.docker.com/build/bake/reference/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://oneuptime.com/blog/post/2026-02-08-how-to-use-docker-bake-with-variable-groups/view",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://www.itjtv.net/build/bake/overrides/",
+  "https://docs.docker.com/build/bake/overrides/"
+ ],
+ "outcome": "authored"
+}

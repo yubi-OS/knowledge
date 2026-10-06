@@ -1,0 +1,35 @@
+{
+ "nn": "02",
+ "slug": "rootless-daemon-install",
+ "scope": "Install paths and setup: dockerd-rootless-setuptool.sh install, get.docker.com/rootless script, systemd user unit, loginctl enable-linger, disabling system docker, socket at /run/user/<UID>/docker.sock, docker context use rootless",
+ "queries_attempted": [
+  {
+   "query": "dockerd-rootless-setuptool.sh install systemd user unit enable-linger",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "docker rootless DOCKER_HOST unix socket docker context use rootless",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 5
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/reference/cli/dockerd/",
+  "https://docs.docker.com/engine/security/rootless/",
+  "https://docs.docker.com/engine/daemon/",
+  "https://github.com/moby/moby/blob/master/contrib/dockerd-rootless-setuptool.sh",
+  "https://commandmasters.com/commands/dockerd-linux/",
+  "https://bugzilla.redhat.com/show_bug.cgi?id=1560348",
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://mvysny.github.io/docker-rootless/",
+  "https://docs.docker.com/"
+ ],
+ "outcome": "authored"
+}
