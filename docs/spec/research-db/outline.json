@@ -1,0 +1,165 @@
+{
+ "topic": "the yubiOS specification document (yubi-OS/yubiOS docs/SPEC.md): what the spec specifies, its contracts, and how the specification structure works",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "scope-and-normative-framing",
+   "scope": "What SPEC.md covers: in-scope surfaces (image, build pipeline, trust chain, updates, enrollment; arm64 primary, x86-64 secondary), out-of-scope boundaries, RFC 2119 keyword semantics, and the spec's versioning/status conventions.",
+   "seed_queries": [
+    "RFC 2119 MUST SHOULD MAY keyword semantics specification normative language",
+    "RFC 8174 BCP 14 requirement keywords update RFC 2119"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "design-principles-and-trust-model",
+   "scope": "The six design principles and the two complementary roots of trust: YubiKey 5 across five interfaces (PIV 9c, hmac-secret x2, ed25519-sk, U2F) and the fTPM for measurement/attestation.",
+   "seed_queries": [
+    "FIDO2 hmac-secret LUKS2 systemd-cryptenroll disk encryption YubiKey",
+    "YubiKey PIV slot 9c systemd-sbsign UKI signing pkcs11"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "boot-trust-chains",
+   "scope": "The full boot trust chain on both platforms: ARM64 TF-A Trusted Board Boot with ROTPK Path A vs U-Boot FIT Path B into OP-TEE and U-Boot, and x86-64 owner-enrolled UEFI Secure Boot; both landing in systemd-boot + UKI + composefs/dm-verity + LUKS2.",
+   "seed_queries": [
+    "ARM Trusted Firmware Trusted Board Boot ROTPK secure boot BL31 OP-TEE U-Boot",
+    "systemd UKI unified kernel image composefs dm-verity usrhash signed cmdline"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "system-composition-and-image",
+   "scope": "Image and delivery (bootc OCI + mkosi), digest-pinned Fedora bootc base, OPA/Rego build policy with SLSA/SBOM attestations, DPS partition layout, A/B updates via systemd-sysupdate with Boot Assessment, hardening baseline and version floors.",
+   "seed_queries": [
+    "bootc OCI bootable container Fedora bootc digest pinned image",
+    "systemd Automatic Boot Assessment A/B updates sysupdate rollback"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "enrollment-and-modularity",
+   "scope": "First-boot enrollment (yubiOS-enroll.service gated by ConditionSecurity=measured-os, four skippable steps, recovery-key rule) and the modularity ladder (sysext, portable services, nspawn, flatpak).",
+   "seed_queries": [
+    "systemd ConditionSecurity measured-os unit security condition",
+    "systemd-sysext portable services systemd-nspawn immutable OS modularity"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "use-cases-non-goals-conformance",
+   "scope": "The seven sample use cases (UC-1 to UC-7), the four non-goals, and the seven-point conformance checklist as the spec's operational contract. Internal-record subtopic, no dig.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.72,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.02,
+     "2": 0.85
+    },
+    "confidence": 0.58,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.01,
+     "2": 0.89
+    },
+    "confidence": 0.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.04,
+     "2": 0.76
+    },
+    "confidence": 0.34,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.04,
+     "2": 0.76
+    },
+    "confidence": 0.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.36,
+    "probabilities": {
+     "0": 0.28,
+     "1": 0.09,
+     "2": 0.63
+    },
+    "confidence": 0.03,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.59,
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.06,
+     "2": 0.77
+    },
+    "confidence": 0.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1143,
+   "output_tokens": 94,
+   "cost": 9.6012e-05
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06"
+  ]
+ }
+}

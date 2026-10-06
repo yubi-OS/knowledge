@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "enrollment-and-modularity",
+ "scope": "First-boot enrollment (yubiOS-enroll.service gated by ConditionSecurity=measured-os, four skippable steps, recovery-key rule) and the modularity ladder (sysext, portable services, nspawn, flatpak).",
+ "queries_attempted": [
+  {
+   "query": "systemd ConditionSecurity measured-os unit security condition",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "systemd-sysext portable services systemd-nspawn immutable OS modularity",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.man7.org/linux/man-pages/man7/systemd.directives.7.html",
+  "https://www.linux.org/threads/solved-arch-apparmor-conditionsecurity-apparmor-was-not-met.57177/",
+  "https://blog.servarat.net/systemd-261-a-local-metadata-proxy-that-doubles-as-a-security-control/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://bbs.archlinux.org/viewtopic.php?id=284034",
+  "https://vmorecloud.com/systemd-261-lands-with-cloud-imds-tpm-and-network-updates/",
+  "https://systemd.io/PORTABLE_SERVICES/",
+  "https://github.com/yubi-OS/knowledge/blob/main/knowledge/0pointer/07-portable-services-sysext.md",
+  "https://itsfoss.com/systemd-sysext/",
+  "https://blog.peridio.com/harnessing-systemd-modular-immutable-embedded-systems",
+  "https://systemd.io/",
+  "https://www.man7.org/linux/man-pages/man8/systemd-sysext.8.html"
+ ],
+ "outcome": "authored"
+}

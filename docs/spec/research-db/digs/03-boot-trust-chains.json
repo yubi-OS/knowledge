@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "boot-trust-chains",
+ "scope": "The full boot trust chain on both platforms: ARM64 TF-A Trusted Board Boot with ROTPK Path A vs U-Boot FIT Path B into OP-TEE and U-Boot, and x86-64 owner-enrolled UEFI Secure Boot; both landing in systemd-boot + UKI + composefs/dm-verity + LUKS2.",
+ "queries_attempted": [
+  {
+   "query": "ARM Trusted Firmware Trusted Board Boot ROTPK secure boot BL31 OP-TEE U-Boot",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "systemd UKI unified kernel image composefs dm-verity usrhash signed cmdline",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://tf-a.docs.trustedfirmware.org/en/latest/design/trusted-board-boot.html",
+  "https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/design/trusted-board-boot.rst",
+  "https://deepwiki.com/opencca/arm-trusted-firmware/5.4-trusted-board-boot-and-measured-boot",
+  "https://deepwiki.com/mtk-openwrt/arm-trusted-firmware/2.1-boot-loader-stages:-bl1-bl2-bl31-and-variants",
+  "https://optee.readthedocs.io/en/latest/architecture/secure_boot.html",
+  "https://www.arm.com/",
+  "https://wiki.archlinux.org/title/Unified_kernel_image",
+  "https://wiki.archlinux.org/title/Dm-verity",
+  "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+  "https://www.bigiron.cc/guides/shim-replacement-and-uki-unified-kernel-images-2026",
+  "https://www.freedesktop.org/software/systemd/man/ukify.html",
+  "https://en.wikipedia.org/wiki/Systemd"
+ ],
+ "outcome": "authored"
+}
