@@ -1,0 +1,29 @@
+{
+  "nn": "04",
+  "slug": "automations-evolution-endpoints",
+  "scope": "The automations stage-pipeline endpoints (activate, pause, run, models, reply webhook) and the evolution sweep/directive/cycle/atom/candle/memory endpoints with cron dispatch and CAS firing.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Workers cron scheduled handler patterns",
+      "attempt": 1,
+      "raw_results": {
+        "status": 200,
+        "total": 40
+      },
+      "kept": 6
+    },
+    {
+      "query": "compare-and-set idempotent cron scheduler design",
+      "attempt": 1,
+      "raw_results": {
+        "status": 200,
+        "total": 46
+      },
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "authored"
+}

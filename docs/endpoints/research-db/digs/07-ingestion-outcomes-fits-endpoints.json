@@ -1,0 +1,29 @@
+{
+  "nn": "07",
+  "slug": "ingestion-outcomes-fits-endpoints",
+  "scope": "The ingestion endpoints (repo-items, chunked/v1 embed with content-hash cache, vector search), the append-only outcomes pre-registration ledger, and the legacy FIT assessment surface.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Workers AI bge-base-en-v1.5 embeddings",
+      "attempt": 1,
+      "raw_results": {
+        "status": 200,
+        "total": 61
+      },
+      "kept": 6
+    },
+    {
+      "query": "append-only event ledger pre-registration design",
+      "attempt": 1,
+      "raw_results": {
+        "status": 200,
+        "total": 46
+      },
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [],
+  "outcome": "authored"
+}

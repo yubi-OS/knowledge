@@ -1,0 +1,54 @@
+{
+  "nn": "06",
+  "slug": "wayfinder-map-endpoints",
+  "scope": "The /api/map family: mapping texts or vectors onto the frozen pointmap/0.2 frame, preview/control/consistency diagnostics, rayleigh/azimuth/admission trials, stored maps and KV overflow.",
+  "queries_attempted": [
+    {
+      "query": "stereographic projection PCA embedding visualization",
+      "attempt": 1,
+      "raw_results": {
+        "status": 200,
+        "total": 44
+      },
+      "kept": 6
+    },
+    {
+      "query": "spectral graph theory Fiedler value Rayleigh quotient",
+      "attempt": 1,
+      "raw_results": {
+        "status": 200,
+        "total": 46
+      },
+      "kept": 6
+    },
+    {
+      "query": "Fiedler vector spectral graph partitioning lecture notes",
+      "attempt": 2,
+      "raw_results": {
+        "status": 200
+      },
+      "kept": 0
+    },
+    {
+      "query": "stereographic projection sphere mapping Wolfram MathWorld",
+      "attempt": 2,
+      "raw_results": {
+        "status": 200
+      },
+      "kept": 0
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 dig thin: 0 of 12 results weighted >= 0.5",
+      "new_queries": [
+        "Fiedler vector spectral graph partitioning lecture notes",
+        "stereographic projection sphere mapping Wolfram MathWorld"
+      ]
+    }
+  ],
+  "results_kept": [],
+  "outcome": "authored"
+}
