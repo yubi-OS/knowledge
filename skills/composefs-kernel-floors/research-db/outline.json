@@ -1,0 +1,36 @@
+{
+  "topic": "composefs-kernel-floors: kernel version floors and mount options required for composefs on yubiOS (ground source: yubi-OS/yubiOS skills/composefs-kernel-floors/SKILL.md)",
+  "subtopics": [
+    {"nn": "01", "slug": "data-only-overlayfs", "scope": "Kernel >=6.5 data-only OverlayFS as composefs primary backing: metacopy=off, redirect_dir=off, fs-only layers, and the writable-upper fallback that breaks immutability.", "seed_queries": ["composefs overlayfs data-only upper layer mount option", "overlayfs metacopy redirect_dir off data-only layers kernel 6.5"]},
+    {"nn": "02", "slug": "verity-require", "scope": "Kernel >=6.6 verity=require mount option: mount-time enforcement that the composefs catalog is signed, and the unsigned-catalog exposure without it.", "seed_queries": ["overlayfs verity require mount option composefs", "composefs signed catalog fs-verity enforcement kernel"]},
+    {"nn": "03", "slug": "file-backed-erofs", "scope": "Kernel >=6.12 file-backed EROFS as alternate composefs backing: density vs Squashfs, decompression speed, sysext use cases.", "seed_queries": ["erofs file-backed mode kernel 6.12 composefs", "erofs vs squashfs compression density benchmark"]},
+    {"nn": "04", "slug": "systemd-dissect-integration", "scope": "systemd-dissect as the user-space composer: --mount, --mount-with-catalog, --mount-with-erofs and the kernel floor each mode requires.", "seed_queries": ["systemd-dissect mount composefs options", "systemd-dissect man page --mount --discover sysext"]},
+    {"nn": "05", "slug": "kernel-selection-convention", "scope": "The yubiOS PINNED.md convention for picking the lowest-supported kernel: production >=6.12, LTS >=6.6, experimental >=6.5, and the pre-composefs dm-verity-only path.", "seed_queries": ["linux kernel LTS versions 6.6 6.12 support", "composefs bootc kernel requirement version"]},
+    {"nn": "06", "slug": "anti-patterns", "scope": "The six documented anti-patterns: pinning <6.5 for stability, >=6.5 without verity=require, block-device EROFS at >=6.12, undocumented floors, skipping the mkosi kernel check, non-Linux use.", "seed_queries": ["composefs kernel too old error debug mount", "mkosi prepare script check kernel version build"]},
+    {"nn": "07", "slug": "scope-and-boundaries", "scope": "When to use and when NOT to use: general kernel selection, dm-verity (>=4.4), IMA, fs-verity floors, and the Linux-only constraint.", "seed_queries": ["dm-verity kernel version minimum requirement history", "fs-verity IMA appraisal kernel version support"]},
+    {"nn": "08", "slug": "worked-setup-and-touchpoints", "scope": "Worked setup (the three-tier flow), in-repo touchpoints, and the RSI changelog provenance of the skill. Internal-record subtopic, no dig.", "seed_queries": []}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "typesafe/jev-1.13 (via DefAPI direct, endpoint https://api.defapi.org/api/v1/decisions)",
+    "endpoint_used": "https://api.defapi.org/api/v1/decisions",
+    "provider": "TypeSafe",
+    "answer_id": "gen-dec-1791299339-Iznc9iH0M6fhH6VGdt6V",
+    "task_id": "tac666b3-8744-43d1-96c4-2fcbc32b3332",
+    "answers": {
+      "t01": {"score": 1.72, "probabilities": {"0": 0.09, "1": 0.11, "2": 0.8}, "confidence": 0.58, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.78, "probabilities": {"0": 0.06, "1": 0.1, "2": 0.84}, "confidence": 0.66, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.26, "probabilities": {"0": 0.12, "1": 0.5, "2": 0.38}, "confidence": 0.25, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.82, "probabilities": {"0": 0.06, "1": 0.06, "2": 0.88}, "confidence": 0.73, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.86, "probabilities": {"0": 0.04, "1": 0.05, "2": 0.91}, "confidence": 0.79, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.70, "probabilities": {"0": 0.07, "1": 0.17, "2": 0.76}, "confidence": 0.55, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.87, "probabilities": {"0": 0.04, "1": 0.05, "2": 0.91}, "confidence": 0.81, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.04, "probabilities": {"0": 0.35, "1": 0.25, "2": 0.4}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1364, "output_tokens": 124, "cost": 0.000114576},
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08"],
+    "notes": "No subtopic scored 0. t08 scored 1.04 (marginal) but is an internal-record subtopic that requires no dig; it is kept as the index of the source doc's worked setup, touchpoints, and changelog provenance, with every claim cited to the source doc only."
+  }
+}
