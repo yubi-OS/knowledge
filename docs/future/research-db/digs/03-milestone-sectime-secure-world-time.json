@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "milestone-sectime-secure-world-time",
+ "scope": "Milestone SecTime: auditing the TF-A / U-Boot / OP-TEE secure time path (CFG_SECURE_TIME_SOURCE_CNTPCT, AArch64 timer handling, SPD=opteed), distinguishing counter reads from board-backed secure RTC and RPMB monotonic counters, defining what secure enough means for yubiOS time claims, and the evidence needed before promotion",
+ "queries_attempted": [
+  {
+   "query": "OP-TEE CFG_SECURE_TIME_SOURCE_CNTPCT secure time source",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "secure world monotonic time ARM generic timer RPMB monotonic counter attestation freshness",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html",
+  "https://github.com/OP-TEE/optee_os/issues/1371",
+  "https://optee.readthedocs.io/en/latest/architecture/platforms/qualcomm/index.html",
+  "https://\u0577\u0561\u0576\u0569.com/?p=1184",
+  "https://blog.hboeck.de/archives/890-In-Search-of-a-Secure-Time-Source.html",
+  "http://fanf.livejournal.com/128861.html",
+  "https://www.intel.com/content/www/us/en/docs/dynamic-application-loader/developer-guide/1-0/monotonic-counters.html",
+  "https://docs.nxp.com/bundle/AN14105/page/topics/monotonic_counter_and_secure_storage.html",
+  "https://optee.readthedocs.io/en/latest/architecture/secure_storage.html",
+  "https://littlecaesars.com/en-us/",
+  "https://www.google.com/?hl=en",
+  "https://peps.python.org/pep-0418/"
+ ],
+ "outcome": "authored"
+}
