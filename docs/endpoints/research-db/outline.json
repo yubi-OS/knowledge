@@ -1,0 +1,256 @@
+{
+  "topic": "the yubiOS endpoint surface documentation - the steady-orbit worker endpoint reference",
+  "source_doc": "yubi-OS/yubiOS docs/ENDPOINTS.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "lane-assembly-methodology",
+      "scope": "How the five parallel lanes (A-E) plus the R1/R2/R3 resolution refresh assembled the endpoint reference, with the reconciliation arithmetic over route rows, unique paths and capability assignments.",
+      "seed_queries": []
+    },
+    {
+      "nn": "02",
+      "slug": "capability-map-domains",
+      "scope": "The 13 capability domains covering the worker, the dagger placement of routes Lane C had not assigned, and the bearer/none auth model across the surface.",
+      "seed_queries": []
+    },
+    {
+      "nn": "03",
+      "slug": "jev-orchestrator-endpoints",
+      "scope": "The /api/jev task lifecycle endpoints: task create and stage transitions, approvals with approve/reject/guide, pause, summary, learnings and human promote, with terminal states and gate invariants.",
+      "seed_queries": [
+        "DefAPI typesafe decision model API",
+        "fail-closed approval gate orchestration API design"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "automations-evolution-endpoints",
+      "scope": "The automations stage-pipeline endpoints (activate, pause, run, models, reply webhook) and the evolution sweep/directive/cycle/atom/candle/memory endpoints with cron dispatch and CAS firing.",
+      "seed_queries": [
+        "Cloudflare Workers cron scheduled handler patterns",
+        "compare-and-set idempotent cron scheduler design"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "corpus-taste-visco-endpoints",
+      "scope": "The corpus audit/lens/atom/classify/placements routes, the taste score/matrix/edge-standard instrument, and the visco persistence/hysteresis/prony/mobility/snapback/policy-log measurement gates.",
+      "seed_queries": [
+        "Lean 4 theorem proving verification mathlib",
+        "Prony least squares relaxation fitting method"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "wayfinder-map-endpoints",
+      "scope": "The /api/map family: mapping texts or vectors onto the frozen pointmap/0.2 frame, preview/control/consistency diagnostics, rayleigh/azimuth/admission trials, stored maps and KV overflow.",
+      "seed_queries": [
+        "stereographic projection PCA embedding visualization",
+        "spectral graph theory Fiedler value Rayleigh quotient"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "ingestion-outcomes-fits-endpoints",
+      "scope": "The ingestion endpoints (repo-items, chunked/v1 embed with content-hash cache, vector search), the append-only outcomes pre-registration ledger, and the legacy FIT assessment surface.",
+      "seed_queries": [
+        "Cloudflare Workers AI bge-base-en-v1.5 embeddings",
+        "append-only event ledger pre-registration design"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "public-relays-dig-proxy-endpoints",
+      "scope": "The CORS-open public relays (tts, stt, contact, chat, decide, site-assistant, brain preview) and the searxng dig proxy, with their rate limits, caps and 503-with-named-error contract.",
+      "seed_queries": [
+        "ElevenLabs speech to text scribe model API",
+        "Resend transactional email API send"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "platform-surface-ops-console",
+      "scope": "The platform surface: health, AGENT.md, llms.txt, the /jev ops console, the v19 site routes, KV-backed assets, and the cron-driven scheduled entrypoint.",
+      "seed_queries": [
+        "Cloudflare Workers KV serving static assets patterns",
+        "Cloudflare Workers AI llama model routes"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "documented-vs-code-verification",
+      "scope": "The Lane B/R3 documented-vs-code cross-reference, the Lean verification map with endpoint-to-Lean and tool-to-CI mappings, cross-domain flows and the resource map.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "score": 0.97,
+        "probabilities": {
+          "0": 0.44,
+          "1": 0.15,
+          "2": 0.41
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.18,
+        "probabilities": {
+          "0": 0.32,
+          "1": 0.18,
+          "2": 0.5
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.38,
+        "probabilities": {
+          "0": 0.21,
+          "1": 0.2,
+          "2": 0.59
+        },
+        "confidence": 0.06,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.49,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.16,
+          "2": 0.67
+        },
+        "confidence": 0.24,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.53,
+        "probabilities": {
+          "0": 0.66,
+          "1": 0.15,
+          "2": 0.19
+        },
+        "confidence": 0.2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.88,
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.29,
+          "2": 0.29
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.22,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.19,
+          "2": 0.52
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.36,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.26,
+          "2": 0.55
+        },
+        "confidence": 0.04,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.45,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.18,
+          "2": 0.64
+        },
+        "confidence": 0.17,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t10": {
+        "score": 1.36,
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.16,
+          "2": 0.6
+        },
+        "confidence": 0.03,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1586,
+      "output_tokens": 154
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  }
+}
