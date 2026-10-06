@@ -1,0 +1,239 @@
+{
+ "topic": "reproducibility equivalents research: what techniques from reproducible-builds prior art (like reproducible-mkosi) map onto an OS image project, and which equivalents are worth adopting",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "source-date-epoch",
+   "scope": "SOURCE_DATE_EPOCH semantics for reproducible OS image builds: the spec, tool support, commit-derived vs fixed-zero epoch values, and enforcement against drift.",
+   "seed_queries": [
+    "SOURCE_DATE_EPOCH reproducible builds specification",
+    "SOURCE_DATE_EPOCH mkosi deterministic image build timestamp"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "toolchain-pinning",
+   "scope": "Pinning the build toolchain: Nix flake pins vs fork plus git-SHA pins vs version floors like mkosi MinimumVersion, and how each constrains build inputs.",
+   "seed_queries": [
+    "mkosi pin version reproducible build toolchain nix flake",
+    "pin toolchain git commit reproducible builds fork"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "two-build-verification",
+   "scope": "Two-build reproducibility verification: building twice and diffing (diffimage.sh style, buildx builders, sha256, systemd-dissect mtree) across image, installer, and firmware artifacts.",
+   "seed_queries": [
+    "reproducible-mkosi diffimage build twice sha256 diff",
+    "verify reproducible OS image build twice compare systemd-dissect mtree"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "seeds-and-uuids",
+   "scope": "Deterministic seeds and identifiers in image builds: mkosi Seed=, repart seeds, UUID derivation per commit and architecture, and collision avoidance.",
+   "seed_queries": [
+    "mkosi Seed UUID reproducible image build repart seed",
+    "deterministic UUID derivation reproducible partition image build"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "build-state-nondeterminism",
+   "scope": "Build-state nondeterminism: machine-id, random-seed, ldconfig aux-cache, package manager caches, PYTHONHASHSEED, and other mutable build residue.",
+   "seed_queries": [
+    "reproducible build machine-id random-seed container image nondeterminism",
+    "PYTHONHASHSEED reproducible build package cache ldconfig aux-cache"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "upstream-fixes-inheritance",
+   "scope": "Inheriting upstream reproducibility fixes through version floors: mkosi PRs 1834, 1837, 1982, 2163, related systemd fixes, and MinimumVersion enforcement.",
+   "seed_queries": [
+    "mkosi reproducibility fixes pull request SOURCE_DATE_EPOCH cpio sort",
+    "systemd mkosi reproducible build upstream improvements PR"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "attestation-opportunity",
+   "scope": "Attesting reproducible outputs: cosign attestation, in-toto, SLSA provenance, Rekor transparency for OCI images as the open adoption opportunity.",
+   "seed_queries": [
+    "cosign in-toto attestation OCI image provenance",
+    "SLSA provenance attestation container image GitHub Actions"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "mirror-independence",
+   "scope": "Fetch independence and package caching or vendoring: mirror state as a reproducibility input, mkosi.cache vendoring, and reproducible-builds.org foundations.",
+   "seed_queries": [
+    "reproducible builds package mirror independence vendoring",
+    "mkosi cache packages reproducible image build offline"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "peer-prior-art",
+   "scope": "Peer projects and prior art: flashbots mkosi-poc, arch-mkosi-boxes, upstream mkosi --reproduce PR 1115, and reproducible-builds.org.",
+   "seed_queries": [
+    "flashbots mkosi-poc reproducible TDX image build",
+    "mkosi --reproduce flag pull request reproducible builds"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.7508,
+    "probabilities": {
+     "0": 0.0596,
+     "1": 0.13,
+     "2": 0.8104
+    },
+    "confidence": 0.5158,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.8116,
+    "probabilities": {
+     "0": 0.0344,
+     "1": 0.1195,
+     "2": 0.8461
+    },
+    "confidence": 0.597,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8555,
+    "probabilities": {
+     "0": 0.0333,
+     "1": 0.0779,
+     "2": 0.8888
+    },
+    "confidence": 0.6957,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.5261,
+    "probabilities": {
+     "0": 0.1112,
+     "1": 0.2515,
+     "2": 0.6373
+    },
+    "confidence": 0.2227,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.7421,
+    "probabilities": {
+     "0": 0.0528,
+     "1": 0.1523,
+     "2": 0.7949
+    },
+    "confidence": 0.4867,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.3225,
+    "probabilities": {
+     "0": 0.1399,
+     "1": 0.3977,
+     "2": 0.4624
+    },
+    "confidence": 0.0873,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.1137,
+    "probabilities": {
+     "0": 0.1747,
+     "1": 0.537,
+     "2": 0.2883
+    },
+    "confidence": 0.103,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.6071,
+    "probabilities": {
+     "0": 0.0873,
+     "1": 0.2183,
+     "2": 0.6944
+    },
+    "confidence": 0.3062,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.1925,
+    "probabilities": {
+     "0": 0.1466,
+     "1": 0.5144,
+     "2": 0.339
+    },
+    "confidence": 0.1015,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1666,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "two-build-verification",
+ "scope": "Two-build reproducibility verification: building twice and diffing (diffimage.sh style, buildx builders, sha256, systemd-dissect mtree) across image, installer, and firmware artifacts.",
+ "queries_attempted": [
+  {
+   "query": "reproducible-mkosi diffimage build twice sha256 diff",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "verify reproducible OS image build twice compare systemd-dissect mtree",
+   "attempt": 1,
+   "raw_results": 53,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/edgelesssys/reproducible-mkosi",
+  "https://github.com/systemd/mkosi",
+  "https://www.kbytechnologies.com/devops-automation/achieving-bit-for-bit-reproducible-builds-in-ci-cd",
+  "https://legacybox.com/",
+  "https://www.youtube.com/watch?v=5Kft4nlDKR8",
+  "https://cyclonedx.org/tool-center/",
+  "https://buglyst.com/learn/verification/clarity-verify-reproducible-build",
+  "https://secure-pipelines.com/ci-cd-security/lab-reproducible-container-builds-pinning-verifying-diffing/",
+  "https://reproducible-builds.org/tools/",
+  "https://reproducible-builds.org/docs/system-images/",
+  "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "https://www.e-verify.gov/"
+ ],
+ "outcome": "authored"
+}

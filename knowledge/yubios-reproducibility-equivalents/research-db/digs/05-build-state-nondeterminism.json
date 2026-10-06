@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "build-state-nondeterminism",
+ "scope": "Build-state nondeterminism: machine-id, random-seed, ldconfig aux-cache, package manager caches, PYTHONHASHSEED, and other mutable build residue.",
+ "queries_attempted": [
+  {
+   "query": "reproducible build machine-id random-seed container image nondeterminism",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "PYTHONHASHSEED reproducible build package cache ldconfig aux-cache",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.systemshardening.com/articles/cicd/reproducible-builds/",
+  "https://dangerzone.rocks/news/2026-03-02-repro-build/",
+  "https://reproducible-builds.org/docs/randomness/",
+  "https://docs.pytorch.org/docs/main/notes/randomness.html",
+  "https://www.kbb.com/toyota/corolla/2003/?msockid=023ae794bc3964bb0518f07ebdb6653d",
+  "http://lwn.net/Articles/755747/",
+  "https://wiki.gentoo.org/wiki/User:OstCollector/Reproducible_Build",
+  "https://stackoverflow.com/questions/21758828/purging-and-rebuilding-ldconfig-cache",
+  "https://gist.github.com/OstCollector/6397cb05ad47e3602bf2adacf571c540",
+  "https://www.phoenix.edu/login.html",
+  "https://cursor.com/docs/sdk/python",
+  "https://github.com/AnnaofArendelle/prootyl/blob/main/rootfs/var/cache/ldconfig/aux-cache"
+ ],
+ "outcome": "authored"
+}
