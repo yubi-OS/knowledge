@@ -1,0 +1,262 @@
+{
+ "topic": "browser testing with devtools - the yubiOS skill explicating real-browser testing via Chrome DevTools MCP (DOM inspection, console errors, network analysis, performance profiling, visual verification)",
+ "source_doc": "yubi-OS/yubiOS skills/browser-testing-with-devtools/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "01-mcp-setup",
+   "scope": "Installing and configuring Chrome DevTools MCP: npx chrome-devtools-mcp@latest, -y flag, profile modes (dedicated profile, --isolated temp profile, --autoConnect attach to running Chrome), and the Sauna runtime environment note",
+   "seed_queries": [
+    "chrome-devtools-mcp npm package installation configuration",
+    "chrome devtools mcp --isolated --autoConnect remote debugging profile"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "02-tool-capabilities",
+   "scope": "The 8 DevTools MCP capabilities: screenshot, DOM inspection, console logs, network monitor, performance trace, element styles, accessibility tree, JavaScript execution, and when to use each",
+   "seed_queries": [
+    "chrome-devtools-mcp available tools list take_snapshot screenshot network",
+    "chrome devtools mcp performance trace accessibility tree evaluate script tools"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "03-profile-isolation",
+   "scope": "Blast radius of agent-attached browsers: dedicated vs --isolated vs --autoConnect profiles, --browser-url user-data-dir constraint, rules for testing with logged-in state",
+   "seed_queries": [
+    "chrome remote debugging user data directory non-default security risk",
+    "browser automation agent logged-in profile isolation security best practices"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "04-untrusted-content",
+   "scope": "Browser content as untrusted data: prompt injection via DOM/console/network, no navigation from page content, no secret exfiltration, JS execution constraints (read-only, no external requests, no credential access), content boundary markers",
+   "seed_queries": [
+    "indirect prompt injection browser agent untrusted web content defense",
+    "LLM agent web content prompt injection OWASP LLM01 mitigation"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "05-ui-debugging-workflow",
+   "scope": "The 5-step UI bug workflow: reproduce, inspect (console, DOM, computed styles, a11y tree), diagnose (HTML/CSS/JS/data root cause), fix, verify",
+   "seed_queries": [
+    "browser debugging workflow reproduce inspect diagnose fix verify DOM",
+    "debugging methodology root cause analysis UI bug reproduce inspect"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "06-network-debugging",
+   "scope": "Network issue workflow: capture, analyze (URL, method, headers, payload, status, body, timing), diagnose 4xx/5xx/CORS/timeout/missing request, fix and verify",
+   "seed_queries": [
+    "debug network requests devtools status codes CORS timeout diagnosis",
+    "HTTP status code diagnosis 4xx 5xx client server error debugging"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "07-performance-profiling",
+   "scope": "Performance workflow: baseline trace, identify LCP/CLS/INP/long tasks over 50ms/unnecessary re-renders, fix, re-measure against baseline",
+   "seed_queries": [
+    "core web vitals LCP CLS INP thresholds good poor",
+    "performance trace long tasks 50ms main thread debugging"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "08-test-plans-screenshots",
+   "scope": "Writing structured test plans for complex UI bugs (setup, steps, expected results, checks) and screenshot-based before/after visual regression verification",
+   "seed_queries": [
+    "visual regression testing screenshot before after comparison",
+    "UI test plan structure steps expected results verification checklist"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "09-console-accessibility",
+   "scope": "Console analysis patterns by level (error/warn/log), the clean console standard, and accessibility verification (a11y tree, heading hierarchy, focus order, 4.5:1 contrast, ARIA live regions)",
+   "seed_queries": [
+    "browser console error warning analysis patterns clean console",
+    "accessibility tree verification heading hierarchy focus order contrast WCAG"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "10-rationalizations-verification",
+   "scope": "Common rationalizations vs reality, red flags, the post-change verification checklist, and the skill's curve-guided-rsi primitive-closure sections (internal-record)",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": {
+   "0": "padding: drop",
+   "1": "marginal: keep only if the dig comes back strong",
+   "2": "load-bearing: core subtopic"
+  },
+  "model": "typesafe/jev-1.13 (DefAPI direct)",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.37,
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.29,
+     "2": 0.54
+    },
+    "confidence": 0.05,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.95,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.02,
+     "2": 0.96
+    },
+    "confidence": 0.92,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.21,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.4,
+     "2": 0.4
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.93,
+    "probabilities": {
+     "0": 0.3,
+     "1": 0.47,
+     "2": 0.23
+    },
+    "confidence": 0.21,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.95,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.0,
+     "1": 0.02,
+     "2": 0.98
+    },
+    "confidence": 0.96,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.14,
+     "2": 0.83
+    },
+    "confidence": 0.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.63,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.28,
+     "2": 0.67
+    },
+    "confidence": 0.44,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.65,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.28,
+     "2": 0.68
+    },
+    "confidence": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.58,
+    "probabilities": {
+     "0": 0.56,
+     "1": 0.3,
+     "2": 0.14
+    },
+    "confidence": 0.13,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1664,
+   "output_tokens": 154
+  },
+  "dropped": [],
+  "kept": [
+   "01-mcp-setup",
+   "02-tool-capabilities",
+   "03-profile-isolation",
+   "04-untrusted-content",
+   "05-ui-debugging-workflow",
+   "06-network-debugging",
+   "07-performance-profiling",
+   "08-test-plans-screenshots",
+   "09-console-accessibility",
+   "10-rationalizations-verification"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "04-untrusted-content",
+ "scope": "Browser content as untrusted data: prompt injection via DOM/console/network, no navigation from page content, no secret exfiltration, JS execution constraints (read-only, no external requests, no credential access), content boundary markers",
+ "queries_attempted": [
+  {
+   "query": "indirect prompt injection browser agent untrusted web content defense",
+   "attempt": 1,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "LLM agent web content prompt injection OWASP LLM01 mitigation",
+   "attempt": 1,
+   "raw_results": 20,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+  "https://community.owasp.org/attacks/PromptInjection",
+  "https://decodeit.app/en/ai/security/prompt-injection-explained",
+  "https://dev.to/programmingcentral/the-invisible-threat-defending-against-indirect-prompt-injections-in-web-content-data-feeds-3ekn",
+  "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+  "https://genai.owasp.org/llmrisk2023-24/llm01-24-prompt-injection/",
+  "https://learn.microsoft.com/en-us/security/zero-trust/catalog-ai-attack-techniques/prompt-injection",
+  "https://learn.microsoft.com/en-us/security/zero-trust/sfi/defend-indirect-prompt-injection",
+  "https://nhimg.org/articles/indirect-web-prompt-injection-is-the-browser-agent-risk-teams-miss/",
+  "https://www.kunalganglani.com/blog/prompt-injection-2026-owasp-llm-vulnerability",
+  "https://www.microsoft.com/en-us/msrc/blog/2025/07/how-microsoft-defends-against-indirect-prompt-injection-attacks",
+  "https://www.promptfoo.dev/blog/indirect-prompt-injection-web-agents/"
+ ],
+ "outcome": "authored"
+}

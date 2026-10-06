@@ -1,0 +1,36 @@
+{
+ "nn": "07",
+ "slug": "07-performance-profiling",
+ "scope": "Performance workflow: baseline trace, identify LCP/CLS/INP/long tasks over 50ms/unnecessary re-renders, fix, re-measure against baseline",
+ "queries_attempted": [
+  {
+   "query": "core web vitals LCP CLS INP thresholds good poor",
+   "attempt": 1,
+   "raw_results": 37,
+   "kept": 6
+  },
+  {
+   "query": "performance trace long tasks 50ms main thread debugging",
+   "attempt": 1,
+   "raw_results": 36,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://buglyst.com/learn/guides/javascript-long-task-debug",
+  "https://github.com/JasonMore/chrome-trace-analyzer",
+  "https://how2.sh/posts/how-to-debug-javascript-performance-with-chrome-devtools-performance-panel/",
+  "https://loadtime.dev/core-web-vitals",
+  "https://pageguard.org/guides/core-web-vitals-2026",
+  "https://prooflytics.io/blog/core-web-vitals-thresholds-2026-lcp-inp-cls",
+  "https://rankato.com/blog/core-web-vitals-2026-inp-guide",
+  "https://renderlog.in/blog/long-tasks-main-thread-blocking/",
+  "https://rishikc.com/articles/core-web-vitals-guide-2026-lcp-inp-cls/",
+  "https://www.browser-rendering.com/rendering-performance-metrics-and-tooling/performanceobserver-api-patterns/observing-long-tasks-with-performanceobserver/",
+  "https://www.corewebvitals.io/core-web-vitals",
+  "https://www.panstag.com/2026/04/how-to-fix-long-tasks-chrome-devtools.html"
+ ],
+ "outcome": "authored"
+}
