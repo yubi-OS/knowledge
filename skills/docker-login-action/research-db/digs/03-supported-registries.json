@@ -1,0 +1,69 @@
+{
+ "nn": "03",
+ "slug": "supported-registries",
+ "scope": "The registry table: Docker Hub, GHCR, quay.io, dhi.io, and the any-OCI fallback with each registry's credential source",
+ "queries_attempted": [
+  {
+   "query": "docker login-action supported registries ghcr quay Docker Hub",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "docker login private OCI registry GitHub Actions examples",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "docker login-action registries list ghcr quay registry aws ecr",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "docker login private registry github actions registry input",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 queries returned mostly off-topic generic vendor pages, dig too thin to author honestly",
+   "new_queries": [
+    "docker login-action registries list ghcr quay registry aws ecr",
+    "docker login private registry github actions registry input"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/marketplace/actions/docker-login",
+  "https://deepwiki.com/docker/login-action",
+  "https://github.com/docker/login-action",
+  "https://deepwiki.com/docker/login-action/2.2-registry-support",
+  "https://hub.docker.com/",
+  "https://docs.docker.com/build/ci/github-actions/push-multi-registries/",
+  "https://github.com/docker/login-action",
+  "https://stackoverflow.com/questions/64033686/how-can-i-use-private-docker-image-in-github-actions",
+  "https://www.baeldung.com/ops/github-actions-private-docker-image",
+  "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry",
+  "https://www.docker.com/",
+  "https://github.com/semdatex/actions-amazon-ecr-login",
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://deepwiki.com/docker/login-action",
+  "https://github.com/aws-actions/amazon-ecr-login",
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://en.wikipedia.org/wiki/Docker_(software)",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/",
+  "https://dataswamp.org/~solene/index-full.html"
+ ],
+ "outcome": "authored"
+}

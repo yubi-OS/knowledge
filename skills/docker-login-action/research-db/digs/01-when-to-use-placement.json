@@ -1,0 +1,69 @@
+{
+ "nn": "01",
+ "slug": "when-to-use-placement",
+ "scope": "When a GitHub Actions job needs docker/login-action, where the step belongs, and the ordering rule before any push step",
+ "queries_attempted": [
+  {
+   "query": "docker login action GitHub Actions order before build push",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "docker/login-action authenticate registry in GitHub Actions workflow",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "github actions docker login before build push registry authentication",
+   "attempt": 2,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "login-action action default registry docker hub github ci",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 queries returned mostly off-topic generic vendor pages, dig too thin to author honestly",
+   "new_queries": [
+    "github actions docker login before build push registry authentication",
+    "login-action action default registry docker hub github ci"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/docker/login-action",
+  "https://www.docker.com/",
+  "https://github.com/marketplace/actions/login-build-and-push-docker-image",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/guides/gha/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://github.com/docker/login-action",
+  "https://deepwiki.com/docker/login-action",
+  "https://www.docker.com/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://github.com/marketplace/actions/docker-login",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://github.com/",
+  "https://github.com/marketplace/actions/docker-login",
+  "https://tenki.cloud/blog/github-actions-docker-build-push",
+  "https://github.com/login",
+  "http://docs.docker.com/reference/cli/docker/login/",
+  "https://dataswamp.org/~solene/index-full.html",
+  "https://accounts.google.com/Login",
+  "https://github.com/docker/login-action",
+  "https://github.com/marketplace/actions/docker-login",
+  "https://account.microsoft.com/account",
+  "https://outlook.office.com/mail/",
+  "https://myaccount.microsoft.com/login"
+ ],
+ "outcome": "authored"
+}

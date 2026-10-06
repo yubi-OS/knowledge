@@ -1,0 +1,69 @@
+{
+ "nn": "05",
+ "slug": "quay-dhi-patterns",
+ "scope": "quay.io robot accounts and dhi.io credentials, plus the multi-registry yubiOS pattern and the OIDC alternative",
+ "queries_attempted": [
+  {
+   "query": "quay.io robot account token GitHub Actions docker login",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "dhi.io Docker Hardened Images registry login credentials",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "quay.io robot account token push images documentation",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "Docker Hardened Images dhi.io registry authentication docs",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 queries returned mostly off-topic generic vendor pages, dig too thin to author honestly",
+   "new_queries": [
+    "quay.io robot account token push images documentation",
+    "Docker Hardened Images dhi.io registry authentication docs"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/docker/login-action",
+  "https://github.com/marketplace/actions/docker-login",
+  "https://github.com/sabre1041/quay-oidc-auth-action",
+  "https://docs.quay.io/glossary/robot-accounts.html",
+  "https://docs.redhat.com/en/documentation/red_hat_quay/3/html/use_red_hat_quay/allow-robot-access-user-repo",
+  "https://www.merriam-webster.com/dictionary/quay",
+  "https://docs.docker.com/dhi/how-to/use/",
+  "https://docs.docker.com/dhi/get-started/",
+  "https://getdrydock.com/docs/v1.6/configuration/registries/dhi",
+  "https://getdrydock.com/docs/v1.4/configuration/registries/dhi",
+  "https://docs.docker.com/dhi/how-to/mirror/",
+  "https://www.dhimortgage.com/",
+  "https://www.merriam-webster.com/dictionary/quay",
+  "https://developers.redhat.com/articles/2026/07/22/push-images-to-quay-without-a-password",
+  "https://www.quay.com/",
+  "https://docs.quay.io/glossary/robot-accounts.html",
+  "https://docs.redhat.com/en/documentation/red_hat_quay/3/html/about_quay_io/allow-robot-access-user-repo",
+  "https://github.com/dekorateio/dekorate",
+  "https://www.docker.com/",
+  "https://docs.docker.com/dhi/",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://docs.docker.com/dhi/get-started/",
+  "https://docs.docker.com/desktop/setup/install/windows-install/",
+  "https://docs.docker.com/"
+ ],
+ "outcome": "authored"
+}
