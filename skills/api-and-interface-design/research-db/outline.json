@@ -1,0 +1,237 @@
+{
+  "topic": "the API and interface design skill: designing stable APIs, module boundaries, REST/GraphQL endpoint design, and type contracts between modules (ground source: yubi-OS/yubiOS skills/api-and-interface-design/SKILL.md)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "hyrums-law-one-version",
+      "scope": "Hyrum's Law: every observable behavior becomes a de facto contract; design implications (expose intentionally, don't leak implementation details, plan deprecation, tests are not enough) and the One-Version Rule against diamond dependencies.",
+      "seed_queries": [
+        "Hyrum's Law observable behaviors API contract",
+        "diamond dependency problem multiple versions of same dependency"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "contract-first",
+      "scope": "Contract first: define the interface before implementing it; the contract is the spec; TaskAPI-style typed interface example.",
+      "seed_queries": [
+        "contract-first API design benefits",
+        "design by contract interface-first development specification"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "consistent-error-semantics",
+      "scope": "Consistent error semantics: one error strategy everywhere; structured APIError shape; status code mapping 400/401/403/404/409/422/500; don't mix patterns.",
+      "seed_queries": [
+        "RFC 9457 problem details JSON error response format",
+        "HTTP status code semantics 400 401 403 404 409 422 API design"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "validate-at-boundaries",
+      "scope": "Validate at boundaries: trust internal code, validate system edges (API handlers, forms, third-party responses, env config); third-party API responses are untrusted; where validation does NOT belong.",
+      "seed_queries": [
+        "input validation at trust boundaries system edges",
+        "zod runtime schema validation TypeScript API boundary"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "additive-evolution-naming",
+      "scope": "Prefer addition over modification (extend interfaces without breaking consumers) and predictable naming conventions (plural nouns, camelCase, is/has/can booleans, UPPER_SNAKE enums).",
+      "seed_queries": [
+        "backward compatible API evolution additive changes only",
+        "REST API naming conventions plural nouns camelCase boolean prefix"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "idempotency-keys",
+      "scope": "Honouring an Idempotency-Key: key from intent not attempt, claim atomically via unique constraint, guard the payload (requestHash), in-flight duplicate strategies (409/wait/202), three outcomes success/failure/unknown, retention from longest retry chain.",
+      "seed_queries": [
+        "Stripe idempotency keys how they work API design",
+        "idempotency key implementation unique constraint race condition TOCTOU"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "rest-resource-design",
+      "scope": "REST resource design: resource-oriented endpoints, sub-resources, pagination envelope, query-parameter filtering, PATCH partial updates.",
+      "seed_queries": [
+        "REST API pagination design offset vs cursor",
+        "PATCH vs PUT partial update REST API design"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "typescript-type-contracts",
+      "scope": "TypeScript interface patterns: discriminated unions for variants with type narrowing, input/output type separation, branded types for IDs.",
+      "seed_queries": [
+        "TypeScript discriminated unions exhaustive narrowing switch",
+        "TypeScript branded types nominal typing for IDs"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "rationalizations-red-flags",
+      "scope": "Common rationalizations vs reality, red flags list, and the post-design verification checklist. Internal-record subtopic grounded in the source doc itself.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "score": 0.96,
+        "probabilities": {
+          "0": 0.37,
+          "1": 0.29,
+          "2": 0.34
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.9,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.08,
+          "2": 0.91
+        },
+        "confidence": 0.85,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.86,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.12,
+          "2": 0.87
+        },
+        "confidence": 0.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.79,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.17,
+          "2": 0.81
+        },
+        "confidence": 0.68,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.15,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.55,
+          "2": 0.3
+        },
+        "confidence": 0.33,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.48,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.48,
+          "2": 0.5
+        },
+        "confidence": 0.22,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0.01,
+          "2": 0.99
+        },
+        "confidence": 0.98,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.82,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.14,
+          "2": 0.84
+        },
+        "confidence": 0.73,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 0.69,
+        "probabilities": {
+          "0": 0.4,
+          "1": 0.51,
+          "2": 0.09
+        },
+        "confidence": 0.27,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1137,
+      "output_tokens": 139,
+      "cost": 0.000095508
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
