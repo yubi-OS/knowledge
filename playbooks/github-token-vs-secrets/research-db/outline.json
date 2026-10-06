@@ -1,0 +1,34 @@
+{
+  "topic": "the yubiOS GitHub token vs secrets playbook",
+  "ground_source": "yubi-OS/yubiOS playbooks/github-token-vs-secrets.md",
+  "subtopics": [
+    {"nn": 1, "slug": "decision-matrix", "scope": "the playbook's core decision rule mapping credential needs to github.token vs named secrets (checkout, REST, push on this repo; cross-repo dispatch; registry login; must outlive the run)", "seed_queries": ["github actions GITHUB_TOKEN vs personal access token when to use", "github actions default GITHUB_TOKEN permissions token capabilities"]},
+    {"nn": 2, "slug": "github-token-mechanics", "scope": "how github.token works: ephemeral per-run credential, bounded by the workflow permissions block, and does not trigger other workflows' on: events", "seed_queries": ["GITHUB_TOKEN does not trigger new workflow runs repository_dispatch", "GITHUB_TOKEN expiration per job github actions ephemeral"]},
+    {"nn": 3, "slug": "workflow-permissions-block", "scope": "declaring permissions: with default posture contents: read, elevating to actions: write or contents: write, per-job vs workflow-level inheritance, and org default workflow permissions", "seed_queries": ["github actions permissions block job level vs workflow level", "github default workflow permissions organization settings"]},
+    {"nn": 4, "slug": "pat-hazards", "scope": "why PATs are unbounded and why yubiOS removed the GH_TK same-repo PAT in favor of the bounded github.token", "seed_queries": ["personal access token over-privileged security risk github actions", "github PAT push triggers workflows cascade token permissions"]},
+    {"nn": 5, "slug": "cross-repo-dispatch-and-registry", "scope": "the two legitimate named-secret uses in yubiOS: secrets.WORKFLOW for cross-repo workflow dispatch in the fetch-* family and secrets.DOCKER for registry login", "seed_queries": ["github actions trigger workflow in another repository PAT workflow_dispatch", "docker login github actions secrets DOCKER_PASSWORD login-action"]},
+    {"nn": 6, "slug": "pr148-gh-tk-removal", "scope": "PR 148 (a49e95db, 2026-07-29) replaced 6 GH_TK references across 3 fetch-*.yml files with github.token, and the GH_TK secret became deletable after merge", "seed_queries": [], "note": "internal-record subtopic, no dig"},
+    {"nn": 7, "slug": "checkout-pin-and-scope-of-claim", "scope": "actions/checkout pinned by SHA (v7.0.1), the real root cause of the chain break being the v6 to v7.0.1 SHA bump in PR 147 proven by smoke run 30484718456, and the hygiene-not-bugfix scoping discipline", "seed_queries": ["actions/checkout pin by SHA version", "github actions checkout token option authentication"]},
+    {"nn": 8, "slug": "failure-modes-and-hygiene-audit", "scope": "403 on callback or push from a missing permissions scope or moved org default, expected push-cascade silence with github.token, the rg audit one-liners, the secrets inventory, and the open no-central-permissions-audit gap", "seed_queries": ["github actions 403 resource not accessible by integration permissions fix", "github actions audit which workflows use secrets token permissions audit"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {"score": 1.95, "probabilities": {"0": 0.02, "1": 0.01, "2": 0.97}, "confidence": 0.92, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.78, "probabilities": {"0": 0.06, "1": 0.1, "2": 0.84}, "confidence": 0.67, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.74, "probabilities": {"0": 0.07, "1": 0.12, "2": 0.81}, "confidence": 0.61, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.73, "probabilities": {"0": 0.08, "1": 0.12, "2": 0.8}, "confidence": 0.59, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 0.95, "probabilities": {"0": 0.39, "1": 0.26, "2": 0.35}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.69, "probabilities": {"0": 0.09, "1": 0.14, "2": 0.77}, "confidence": 0.53, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 0.22, "probabilities": {"0": 0.82, "1": 0.14, "2": 0.04}, "confidence": 0.67, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.62, "probabilities": {"0": 0.08, "1": 0.22, "2": 0.7}, "confidence": 0.44, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1225, "output_tokens": 124},
+    "dropped": [7],
+    "kept": [1, 2, 3, 4, 5, 6, 8],
+    "notes": "t07 dropped (score 0.22, 0.82 padding probability). t05 marginal (0.95): kept because its dig came back strong (2 primary results at 0.88 and 0.72)."
+  }
+}
