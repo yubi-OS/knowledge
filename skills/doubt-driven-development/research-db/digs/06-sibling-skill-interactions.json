@@ -1,0 +1,38 @@
+{
+  "nn": 6,
+  "slug": "sibling-skill-interactions",
+  "scope": "Composition with code-review-and-quality, source-driven-development, test-driven-development (RED step), debugging-and-error-recovery.",
+  "queries_attempted": [
+    {
+      "query": "test driven development failing test red green refactor falsification",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "TDD red green refactor cycle Kent Beck",
+      "attempt": 2,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "test driven development failing test first practice",
+      "attempt": 2,
+      "raw_results": 60,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "no kept result weighted >= 0.5 (thin dig); REDO rule applied with different queries",
+      "new_queries": [
+        "TDD red green refactor cycle Kent Beck",
+        "test driven development failing test first practice"
+      ]
+    }
+  ],
+  "results_kept": [],
+  "outcome": "authored"
+}

@@ -1,0 +1,38 @@
+{
+  "nn": 3,
+  "slug": "five-step-cycle",
+  "scope": "The 5-step doubt cycle: CLAIM, EXTRACT, DOUBT, RECONCILE, STOP; reviewer input isolation; loading constraints; cross-model essentials.",
+  "queries_attempted": [
+    {
+      "query": "Claude Code subagent fresh context adversarial review pattern",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "Claude Code subagents fresh context isolation documentation",
+      "attempt": 2,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "adversarial review LLM critic verifier agent prompt",
+      "attempt": 2,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "no kept result weighted >= 0.5 (thin dig); REDO rule applied with different queries",
+      "new_queries": [
+        "Claude Code subagents fresh context isolation documentation",
+        "adversarial review LLM critic verifier agent prompt"
+      ]
+    }
+  ],
+  "results_kept": [],
+  "outcome": "authored"
+}
