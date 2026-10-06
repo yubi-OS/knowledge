@@ -1,0 +1,36 @@
+{
+ "nn": "09",
+ "slug": "alternatives-considered",
+ "scope": "The six rejected alternatives and why: sparfenyuk mcp-proxy (no inbound auth), punkpeye mcp-proxy (Node dep + X-API-Key), Cloudflare Tunnel + Access (per-call OIDC), mTLS (no cert store in sandbox), adding the sandbox to the tailnet (extra infra, no auth change), Funnel ACL grants (sandbox is not a tailnet user).",
+ "queries_attempted": [
+  {
+   "query": "sparfenyuk mcp-proxy stdio HTTP bridge GitHub",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "cloudflare tunnel access oidc self-hosted app",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/sparfenyuk/mcp-proxy",
+  "https://github.com/iflow-mcp/sparfenyuk-mcp-proxy",
+  "https://numfer.com/sparfenyuk/mcp-proxy",
+  "https://www.flipkart.com/",
+  "https://prismix.dev/mcp/sparfenyuk-mcp-proxy",
+  "https://hysenlabs.com/projects/sparfenyuk-mcp-proxy",
+  "https://www.cloudflare.com/",
+  "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/",
+  "https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/saas-apps/generic-oidc-saas/",
+  "https://en.wikipedia.org/wiki/Cloudflare",
+  "https://github.com/immich-app/immich/discussions/8299",
+  "https://developers.cloudflare.com/cloudflare-one/access-controls/policies/isolate-application/"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "call-shape-argv",
+ "scope": "POST /run request shape: command is a JSON array of argv strings passed to subprocess.run with shell=False; no pipes at the bridge (bash -c via argv is the escape hatch), sudo -n is mandatory, per-call env not supported, cwd field.",
+ "queries_attempted": [
+  {
+   "query": "python subprocess.run argv list shell False command injection",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "subprocess.run timeout capture_output text parameters docs",
+   "attempt": 2,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.python.org/",
+  "https://www.python.org/getit/",
+  "https://docs.python.org/3/library/subprocess.html",
+  "https://pypi.org/",
+  "https://codegym.cc/groups/posts/python-subprocess-shell-commands",
+  "https://downloads.python.org/",
+  "https://docs.python.org/3/library/subprocess.html",
+  "https://www.geeksforgeeks.org/python/python-subprocess-module/",
+  "https://www.ncsecu.org/services/member-access",
+  "https://github.com/apache/dolphinscheduler/releases",
+  "https://stackoverflow.com/questions/68278292/python-create-timeout-for-subprocess",
+  "https://www.ncsecu.org/signin"
+ ],
+ "outcome": "authored"
+}
