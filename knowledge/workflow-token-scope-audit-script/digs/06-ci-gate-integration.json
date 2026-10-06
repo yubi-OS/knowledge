@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "ci-gate-integration",
+  "scope": "Wiring the audit as a CI gate: pull_request path filters, scheduled drift scans, workflow_dispatch inputs, artifact upload of the audit report.",
+  "queries_attempted": [
+    {
+      "query": "GitHub Actions pull_request paths filter trigger workflow files",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "GitHub Actions schedule cron workflow_dispatch inputs choice type artifact upload",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+    "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow",
+    "https://learn.programmingline.com/learn/cicd/cicd-workflow-events-filters",
+    "https://github.com/dorny/paths-filter",
+    "https://github.com/",
+    "https://github.com/getlantern/lantern/pull/9062",
+    "https://stackoverflow.com/questions/72539900/schedule-trigger-github-action-workflow-with-input-parameters",
+    "https://oneuptime.com/blog/post/2025-12-20-scheduled-workflows-cron-github-actions/view",
+    "https://docs.github.com/en/enterprise-cloud@latest/actions/reference/workflows-and-actions/workflow-syntax",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows",
+    "https://cronread.com/blog/github-actions-cron-examples",
+    "https://github.com/"
+  ],
+  "outcome": "authored"
+}
