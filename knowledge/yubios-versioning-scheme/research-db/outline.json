@@ -1,0 +1,198 @@
+{
+ "topic": "versioning schemes for OS projects: formalizing v-prefixed semver release tags, immutable commit-SHA OCI tags, and bump triggers into a codified decision",
+ "source_doc": "session/refs-mint/refs_corpus/yubios-versioning-scheme-2026-08-04.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "semver-spec-mechanics",
+   "scope": "what SemVer 2.0.0 actually mandates for a release tag: the MAJOR.MINOR.PATCH grammar, pre-release and build-metadata suffixes, and where the v prefix comes from.",
+   "seed_queries": [
+    "SemVer 2.0.0 specification pre-release build metadata grammar"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "tag-taxonomy-oci",
+   "scope": "the two-layer tag model where human-facing semver release tags coexist with immutable commit-SHA OCI image tags, and where floating tags fit.",
+   "seed_queries": [
+    "container image tagging immutable commit sha versus mutable latest tag"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "bump-triggers-policy",
+   "scope": "mapping the SemVer increment rules onto an OS image project: protocol breaks, feature additions, pipeline fixes, and the pre-1.0 caveat.",
+   "seed_queries": [
+    "semantic versioning bump rules when to bump major minor patch"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "tag-cut-governance",
+   "scope": "release authority (who is allowed to cut tags), the pre-tag checklist, and post-tag verification.",
+   "seed_queries": [
+    "release management governance who is allowed to cut release tags"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "release-series-boundaries",
+   "scope": "what a minor-version boundary marks, how release series (.x series) are used in OS-style projects, and how cadence is set.",
+   "seed_queries": [
+    "semver minor version release series boundary conventions"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "mutable-tag-ban",
+   "scope": "why mutable tags (latest, branch tags, partial versions) are banned from CI inputs and what to use instead.",
+   "seed_queries": [
+    "docker image tag pinning CI supply chain security mutable latest tag"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "scheme-compliance-audit",
+   "scope": "how to verify a live release history actually follows the versioning scheme: tag-to-commit checks, artifact verification, and compliance drift.",
+   "seed_queries": [
+    "release audit semver compliance verification releases history"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.61,
+    "probabilities": {
+     "0": 0.0775,
+     "1": 0.235,
+     "2": 0.6875
+    },
+    "confidence": 0.3008,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7968,
+    "probabilities": {
+     "0": 0.0343,
+     "1": 0.1345,
+     "2": 0.8312
+    },
+    "confidence": 0.5652,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8912,
+    "probabilities": {
+     "0": 0.0221,
+     "1": 0.0646,
+     "2": 0.9133
+    },
+    "confidence": 0.7582,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.1001,
+    "probabilities": {
+     "0": 0.153,
+     "1": 0.5938,
+     "2": 0.2532
+    },
+    "confidence": 0.1601,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.236,
+    "probabilities": {
+     "0": 0.1854,
+     "1": 0.3932,
+     "2": 0.4214
+    },
+    "confidence": 0.0498,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.5449,
+    "probabilities": {
+     "0": 0.1015,
+     "1": 0.2521,
+     "2": 0.6464
+    },
+    "confidence": 0.2375,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.7758,
+    "probabilities": {
+     "0": 0.3678,
+     "1": 0.4886,
+     "2": 0.1436
+    },
+    "confidence": 0.092,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1097,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   "semver-spec-mechanics",
+   "tag-taxonomy-oci",
+   "bump-triggers-policy",
+   "tag-cut-governance",
+   "release-series-boundaries",
+   "mutable-tag-ban",
+   "scheme-compliance-audit"
+  ]
+ },
+ "jev_probe": {
+  "model": "clef",
+  "answers": {
+   "preflight": {
+    "type": "noul",
+    "noul": 0.5969
+   }
+  },
+  "usage": {
+   "input_tokens": 170,
+   "output_tokens": 0
+  }
+ }
+}
