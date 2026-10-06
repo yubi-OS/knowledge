@@ -1,0 +1,36 @@
+{
+ "nn": "06",
+ "slug": "piv-secure-boot-signing",
+ "scope": "PIV slot 9c signing for Secure Boot (H8, H9): sbsign via libykcs11 PKCS11 signs a UKI, hardware boots with SB enforcing, and a mis-signed or unsigned UKI is rejected.",
+ "queries_attempted": [
+  {
+   "query": "yubikey PIV slot 9c sbsign PKCS11 ykcs11 unified kernel image",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "secure boot UKI sbverify yubikey PIV signing reject",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+  "https://docs.yubico.com/software/yubikey/tools/pivtool/index.html",
+  "https://developers.yubico.com/yubico-piv-tool/YKCS11/",
+  "https://www.encryptionconsulting.com/integration/yubico-yubikey/integration-guide/",
+  "https://www.yubico.com/",
+  "https://developers.yubico.com/PIV/Guides/SSH_with_PIV_and_PKCS11.html",
+  "https://github.com/Foxboron/sbctl",
+  "https://github.com/yubi-OS/knowledge/blob/main/knowledge/yubios/03-boot-chain-and-ukis.md",
+  "https://copyninja.in/blog/enable_secureboot_ukify.html",
+  "https://visitseattle.org/",
+  "https://mylinux.work/guides/secure-boot-uki/",
+  "https://visitseattle.org/tv/"
+ ],
+ "outcome": "authored"
+}

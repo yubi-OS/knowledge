@@ -1,0 +1,36 @@
+{
+ "nn": "05",
+ "slug": "ssh-fido2-resident-keys",
+ "scope": "SSH authentication with FIDO2 resident keys (H7): ssh-keygen ed25519-sk on the YubiKey, authorized_keys, accept with key present and reject when removed.",
+ "queries_attempted": [
+  {
+   "query": "ssh-keygen ed25519-sk resident key yubikey ssh",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "fido2 resident credential ssh authorized_keys sk",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html",
+  "https://gist.github.com/Kranzes/be4fffba5da3799ee93134dc68a4c67b",
+  "https://dev.to/tw3n/using-yubikey-resident-keys-for-git-and-ssh-on-macos-48j7",
+  "https://putty.org/index.html",
+  "https://dev.to/uyriq/a-step-by-step-guide-to-setting-up-ssh-authentication-with-yubikey-57-or-later-version-and-2ll9",
+  "https://github.com/uarlouski/ssh-mcp-server",
+  "https://www.emtec.com/kb/en/2010/ssh-keygen-resident-option-with-yubikey-fido-sk-key",
+  "https://www.systemshardening.com/articles/linux/fido2-ssh/",
+  "https://www.microsoft.com/en-us/security/business/security-101/what-is-fido2?msockid=134a4bc0dabe6d3907225c2adb476c27",
+  "https://support.nitrokey.com/t/using-fido2-ssh-with-nitrokey-3/5810",
+  "https://www.ssh.com/blog/the-path-to-modern-privileged-access-management-ssh",
+  "https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html"
+ ],
+ "outcome": "authored"
+}

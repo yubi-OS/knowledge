@@ -1,0 +1,36 @@
+{
+ "nn": "01",
+ "slug": "luks2-fido2-unlock",
+ "scope": "Fresh bootc install with systemd-cryptenroll FIDO2 enrollment and initrd unlock (scenario H1): the happy-path proof that the enrolled key boots and unlocks.",
+ "queries_attempted": [
+  {
+   "query": "systemd-cryptenroll fido2 LUKS2 unlock initrd boot",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "cryptsetup LUKS2 FIDO2 token unlock yubikey boot",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd-cryptenroll.html",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html",
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://unix.stackexchange.com/questions/751251/fido2-yubikey-to-unlock-luks-from-command-line",
+  "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+  "https://discussion.fedoraproject.org/t/how-to-unlock-luks-volume-with-yubikey-fido2/75847"
+ ],
+ "outcome": "authored"
+}
