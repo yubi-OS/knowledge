@@ -1,0 +1,44 @@
+{
+ "nn": 6,
+ "slug": "log-expiry-and-listing-traps",
+ "scope": "Logs expire at 15-30 min; run listings mislead; report name and path.",
+ "queries_attempted": [
+  {
+   "query": "github actions download logs 404 expired retention api",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": []
+  },
+  {
+   "query": "github actions workflow runs list filter by workflow file name path",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://github.com/dorny/paths-filter"
+   ]
+  },
+  {
+   "query": "docs.github.com download workflow run logs api",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs"
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 log-expiry query returned zero usable results",
+   "new_queries": [
+    "docs.github.com download workflow run logs api"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/dorny/paths-filter",
+  "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs"
+ ],
+ "outcome": "authored"
+}

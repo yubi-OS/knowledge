@@ -1,0 +1,53 @@
+{
+ "nn": 3,
+ "slug": "dispatch-and-duplicate-detection",
+ "scope": "Dispatch once, list immediately, cancel duplicates (202).",
+ "queries_attempted": [
+  {
+   "query": "github actions rest api list workflow runs created at find duplicates",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/rest/actions"
+   ]
+  },
+  {
+   "query": "github actions cancel workflow run rest api 202",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": [
+    "https://www.getorchestra.io/guides/githubaction-cancel-a-workflow-run"
+   ]
+  },
+  {
+   "query": "docs.github.com cancel a workflow run actions api",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": [
+    "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/cancel-a-workflow-run",
+    "https://docs.github.com/en/rest/actions/workflow-runs",
+    "https://github.blog/changelog/2023-09-21-github-actions-force-cancel-workflows/",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-cancellation"
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 queries returned homepage noise; redo with docs.github.com-targeted queries recovered 4 primary results",
+   "new_queries": [
+    "docs.github.com cancel a workflow run actions api"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.github.com/en/rest/actions",
+  "https://www.getorchestra.io/guides/githubaction-cancel-a-workflow-run",
+  "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/cancel-a-workflow-run",
+  "https://docs.github.com/en/rest/actions/workflow-runs",
+  "https://github.blog/changelog/2023-09-21-github-actions-force-cancel-workflows/",
+  "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-cancellation"
+ ],
+ "outcome": "authored"
+}
