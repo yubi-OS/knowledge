@@ -1,0 +1,112 @@
+{
+ "nn": "08",
+ "slug": "pushback-and-discipline",
+ "scope": "pushback section, discipline next steps, and the attestation coverage mechanisms (in-toto, SLSA provenance, Rekor, Sigstore)",
+ "queries_attempted": [
+  {
+   "query": "in-toto attestation SLSA provenance software supply chain",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "GitHub - in-toto/attestation: in-toto Attestation Framework \u00b7 GitHub",
+     "url": "https://github.com/in-toto/attestation",
+     "snippet": "Consumers or users of software can then validate the origins of the software, and establish trust in its supply chain, using in-toto attestations. To get started, check out the overview of the in-toto Attestation Framework.\"Consumers or users of software can then validate the ori"
+    },
+    {
+     "title": "SLSA \u2022 in-toto and SLSA",
+     "url": "https://slsa.dev/blog/2023/05/in-toto-and-slsa",
+     "snippet": "May 2, 2023 \u2014 The in-toto Attestation Framework defines a fixed, lightweight \u201cStatement\u201d that communicates some information about the execution of a software supply chain, such as if the source was reviewed, or if it went through a SLSA conformant build ...\"As an adopter of SLSA,"
+    },
+    {
+     "title": "Provenance | SLSA \u2022 Supply-chain Levels for Software Artifacts",
+     "url": "https://devmoran.github.io/slsa/provenance/v0.2",
+     "snippet": "This predicate follows the in-toto attestation parsing rules.\"This predicate is the recommended way to satisfy the SLSA provenance requirements. Understanding of SLSA Software Attestations and the larger in-toto attestation framework.\"\"To trace software back to the source and def"
+    },
+    {
+     "title": "Provenance - SLSA",
+     "url": "https://slsa.dev/provenance/",
+     "snippet": "On this page In SLSA 'provenance' refers to verifiable information that can be used to track an artifact back, through all the moving parts in a complex supply chain, to where it came from. It's the verifiable information about software artifacts describing where, when, and how s"
+    },
+    {
+     "title": "Understanding Software Provenance Attestation: The Roles of SLSA and in-toto - Opera Omnia",
+     "url": "https://mikael.barbero.tech/blog/post/2023-12-28-slsa-and-in-toto/",
+     "snippet": "SLSA recommends (but does not mandate) ... type. This Provenance predicate aligns with in-toto\u2019s framework: it models the supply chain as a series of steps, with each step generating attestations....\"A software provenance attestation is a signed document that associates metadata "
+    },
+    {
+     "title": "Artifact Provenance and Attestations: From SLSA to in-toto | Secure Pipelines",
+     "url": "https://secure-pipelines.com/ci-cd-security/artifact-provenance-attestations-slsa-in-toto/",
+     "snippet": "July 6, 2026 \u2014 This provenance is expressed as a structured JSON document, specifically as an in-toto attestation \u2014 which brings us to the next section. in-toto is a framework for securing software supply chains through cryptographically signed metadata.\"This provenance is expres"
+    }
+   ],
+   "kept": [
+    "https://github.com/in-toto/attestation",
+    "https://slsa.dev/blog/2023/05/in-toto-and-slsa",
+    "https://devmoran.github.io/slsa/provenance/v0.2",
+    "https://slsa.dev/provenance/",
+    "https://mikael.barbero.tech/blog/post/2023-12-28-slsa-and-in-toto/",
+    "https://secure-pipelines.com/ci-cd-security/artifact-provenance-attestations-slsa-in-toto/"
+   ]
+  },
+  {
+   "query": "Rekor transparency log Sigstore artifact signing verification",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "GitHub - sigstore/rekor: Software Supply Chain Transparency Log \u2026",
+     "url": "https://github.com/sigstore/rekor",
+     "snippet": "A CLI application is available to make and verify entries, query the transparency log for inclusion proof, integrity verification of the transparency log or retrieval of entries by either public key or artifact. Rekor fulfils the signature transparency role of sigstore's software"
+    },
+    {
+     "title": "Rekor - Sigstore",
+     "url": "https://docs.sigstore.dev/logging/overview/",
+     "snippet": "The Rekor project provides a restful API-based server for validation, and a transparency log for storage. A CLI application is available to make and verify entries, query the log for inclusion proof, integrity verification of the log or retrieval of entries (either by a public ke"
+    },
+    {
+     "title": "Signing Artifacts: Sigstore and Transparency Logs - Open Source...",
+     "url": "https://sscsecurity.dev/book2/chapter-17/ch-17.7/",
+     "snippet": "Using Sigstore's keyless signing infrastructure with Fulcio, Rekor, and Cosign for artifact authentication and verification.Using Sigstore's keyless signing infrastructure with Fulcio, Rekor, and Cosign for artifact authentication and verification."
+    },
+    {
+     "title": "Transparency Log - Sigstore",
+     "url": "https://docs.sigstore.dev/logging/",
+     "snippet": "Sigstore Quickstart with Cosign; Sigstore CI Quickstart; OIDC Verification Cheat Sheet; Cosign. Signing. Overview; Signing Containers; Signing Blobs; Git Support ...Sigstore Quickstart with Cosign; Sigstore CI Quickstart; OIDC Verification Cheat Sheet; Cosign. Signing. Overview; "
+    },
+    {
+     "title": "Home \u00b7 Sigstore",
+     "url": "https://www.sigstore.dev/",
+     "snippet": "Sigstore: sign, verify, and protect your software. Transparent ledger technology Sigstore's Rekor provides an immutable, tamper-resistant, transparent ledger of signatures and software metadata. Our public Rekor instance makes it easy to find and verify signatures, and detect cha"
+    },
+    {
+     "title": "Rekor - Transparency Log | sigstore/docs | DeepWiki",
+     "url": "https://deepwiki.com/sigstore/docs/6-rekor-transparency-log",
+     "snippet": "Rekor's Role in Signing and Verification Rekor serves as the transparency and auditability layer in Sigstore. When an artifact is signed using keyless signing, the signature and certificate are logged to Rekor, creating a permanent, auditable record. During verification, Rekor pr"
+    }
+   ],
+   "kept": [
+    "https://github.com/sigstore/rekor",
+    "https://docs.sigstore.dev/logging/overview/",
+    "https://sscsecurity.dev/book2/chapter-17/ch-17.7/",
+    "https://docs.sigstore.dev/logging/",
+    "https://www.sigstore.dev/",
+    "https://deepwiki.com/sigstore/docs/6-rekor-transparency-log"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/in-toto/attestation",
+  "https://slsa.dev/blog/2023/05/in-toto-and-slsa",
+  "https://devmoran.github.io/slsa/provenance/v0.2",
+  "https://slsa.dev/provenance/",
+  "https://mikael.barbero.tech/blog/post/2023-12-28-slsa-and-in-toto/",
+  "https://secure-pipelines.com/ci-cd-security/artifact-provenance-attestations-slsa-in-toto/",
+  "https://github.com/sigstore/rekor",
+  "https://docs.sigstore.dev/logging/overview/",
+  "https://sscsecurity.dev/book2/chapter-17/ch-17.7/",
+  "https://docs.sigstore.dev/logging/",
+  "https://www.sigstore.dev/",
+  "https://deepwiki.com/sigstore/docs/6-rekor-transparency-log"
+ ],
+ "outcome": "authored"
+}

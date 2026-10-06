@@ -1,0 +1,112 @@
+{
+ "nn": "03",
+ "slug": "portraits-shape-and-contract",
+ "scope": "ARCHITECTURE.md as shape (six trust boundaries, YubiKey sole root, verification flow, x86-64 asymmetry) and SPEC.md as contract (RFC 2119 keywords, seven-item conformance checklist)",
+ "queries_attempted": [
+  {
+   "query": "unified kernel image systemd-boot UKI verified boot chain composefs",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "Unified kernel image - ArchWiki",
+     "url": "https://wiki.archlinux.org/title/Unified_kernel_image",
+     "snippet": "1 week ago \u2014 A unified kernel image (UKI) is ... with little or no configuration. It is the combination of a UEFI boot stub program like systemd-stub(7), a Linux kernel image, an initramfs, and further resources in a single UEFI PE file....\"A unified kernel image (UKI) is a singl"
+    },
+    {
+     "title": "How to Build and Verify a Unified Kernel Image for UEFI Linux Boot",
+     "url": "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+     "snippet": "August 9, 2026 \u2014 The UKI specification defines sections such as .linux, .initrd, .cmdline, .osrel, and .uname; systemd-stub consumes them and exposes measured information to the booted system. Distribution tooling may add device trees, splash data, signatures, or policy metadata."
+    },
+    {
+     "title": "Boot signed Linux with no bootloader config: unified kernel images and systemd-boot - Botmonster Tech",
+     "url": "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+     "snippet": "July 15, 2026 \u2014 On a 2026 Arch, Fedora, or Debian system the canonical toolchain is ukify from systemd 256+ to assemble the image, sbctl to enroll Secure Boot keys and sign it, and systemd-boot to auto-discover the signed .efi from /boot/EFI/Linux/. The result is one signed file "
+    },
+    {
+     "title": "Early Boot, UEFI, and Measured Boot | systemd/systemd - DeepWiki",
+     "url": "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+     "snippet": "Boot Flow Overview On a typical UEFI platform, the boot sequence leverages the Trusted Platform Module (TPM2) to extend integrity measurements at multiple stages, establishing a chain of trust from firmware to userspace. The UEFI firmware executes the UEFI boot manager (systemd-b"
+    },
+    {
+     "title": "Sealed Fedora Atomic Desktop bootable container images - Fedora Magazine",
+     "url": "https://fedoramagazine.org/sealed-atomic-desktops-test-images/",
+     "snippet": "May 19, 2026 \u2014 Sealed bootable container images include all the components needed to create a fully verified boot chain, from the firmware to the operating system composefs image. This relies on Secure Boot and thus only supports system booting with UEFI on ...\"Sealed bootable co"
+    },
+    {
+     "title": "Unified Kernel Images (UKIs) and shim replacement in 2026: where the ...",
+     "url": "https://www.bigiron.cc/guides/shim-replacement-and-uki-unified-kernel-images-2026",
+     "snippet": "A walkthrough and concept guide for the 2026 boot-stack direction. Covers what a Unified Kernel Image actually is (kernel + initrd + cmdline in one signed PE binary booted directly by UEFI), why distros are moving away from shim+grub toward systemd-boot+UKIs, per-distro adoption "
+    }
+   ],
+   "kept": [
+    "https://wiki.archlinux.org/title/Unified_kernel_image",
+    "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+    "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+    "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+    "https://fedoramagazine.org/sealed-atomic-desktops-test-images/",
+    "https://www.bigiron.cc/guides/shim-replacement-and-uki-unified-kernel-images-2026"
+   ]
+  },
+  {
+   "query": "RFC 2119 requirement keywords MUST SHOULD specification conformance",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "RfcKeywords - W3C Wiki",
+     "url": "https://www.w3.org/wiki/RfcKeywords",
+     "snippet": "IETF RFC 2119 defines conformance keywords (MUST, SHOULD, ...), that are often used in specifications. There is an open debate on the scope of application of these keywords; is it OK to make requirements on things that cannot be called agents (e.g. a spec) using these keywords?\"A"
+    },
+    {
+     "title": "RFC 2119: Key words for use in RFCs to Indicate Requirement Levels ...",
+     "url": "https://www.rfc-editor.org/info/rfc2119/",
+     "snippet": "In many standards track documents several words are used to signify the requirements in the specification. These words are often capitalized. This document defines these words as they should be interpreted in IETF documents. This document specifies an Internet Best Current Practi"
+    },
+    {
+     "title": "RFC 2119 - Key words for use in RFCs to Indicate Requirement Levels | RFCinfo",
+     "url": "https://rfcinfo.com/rfc-2119/",
+     "snippet": "Authors who follow these guidelines should incorporate this phrase near the beginning of their document: The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this ...\"In many standards track documents "
+    },
+    {
+     "title": "RFC 2119 Vocabulary Space - World Wide Web Consortium (W3C)",
+     "url": "https://www.w3.org/MarkUp/2008/rfc2119-vocab.html",
+     "snippet": "RFC 2119 Vocabulary namespace This is a vocabulary collection utilized by W3C documents to define assertions or other requirements. It is based upon [RFC2119].RFC 2119 Vocabulary namespace This is a vocabulary collection utilized by W3C documents to define assertions or other req"
+    },
+    {
+     "title": "RFC 2119: Key words for use in RFCs to Indicate Requirement Levels",
+     "url": "https://metasystema.org/rfc/2119-key-words-for-use-in-rfcs-to-indicate-requirement-levels",
+     "snippet": "In plain English \u2014 editorial summary, not part of the RFC RFC 2119 defines what the capitalised keywords in a specification actually mean, so \"SHOULD\" and \"MUST\" are not read as English opinion but as precise requirement levels. If a spec says it uses RFC 2119 keywords, every cap"
+    },
+    {
+     "title": "Key words for use in RFCs to Indicate Requirement Levels",
+     "url": "https://www.rfc-editor.org/rfc/rfc2119.html",
+     "snippet": "Authors who follow these guidelines should incorporate this phrase near the beginning of their document: The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as desc"
+    }
+   ],
+   "kept": [
+    "https://www.w3.org/wiki/RfcKeywords",
+    "https://www.rfc-editor.org/info/rfc2119/",
+    "https://rfcinfo.com/rfc-2119/",
+    "https://www.w3.org/MarkUp/2008/rfc2119-vocab.html",
+    "https://metasystema.org/rfc/2119-key-words-for-use-in-rfcs-to-indicate-requirement-levels",
+    "https://www.rfc-editor.org/rfc/rfc2119.html"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Unified_kernel_image",
+  "https://danielcosenza.com/posts/lx-howto-unified-kernel-image/",
+  "https://botmonster.com/self-hosting/unified-kernel-images-systemd-boot-signed-linux/",
+  "https://deepwiki.com/systemd/systemd/4.1-early-boot-uefi-and-measured-boot",
+  "https://fedoramagazine.org/sealed-atomic-desktops-test-images/",
+  "https://www.bigiron.cc/guides/shim-replacement-and-uki-unified-kernel-images-2026",
+  "https://www.w3.org/wiki/RfcKeywords",
+  "https://www.rfc-editor.org/info/rfc2119/",
+  "https://rfcinfo.com/rfc-2119/",
+  "https://www.w3.org/MarkUp/2008/rfc2119-vocab.html",
+  "https://metasystema.org/rfc/2119-key-words-for-use-in-rfcs-to-indicate-requirement-levels",
+  "https://www.rfc-editor.org/rfc/rfc2119.html"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,221 @@
+{
+ "topic": "the yubiOS soul document (yubi-OS/yubiOS docs/SOUL.md): twelve soul-portraits + weave + pushback, drawn from a full reading of the docs/ corpus",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "framing-soul-as-corpus",
+   "scope": "What turning docs/ into a soul means: corpus-as-autobiography, the inference-to-evidence move, why SELF.md v0.1's soul section was weakest",
+   "seed_queries": [
+    "INTERNAL-RECORD subtopic: no dig (grounded in source-doc framing)"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "portraits-purpose-and-fears",
+   "scope": "MISSION.md as purpose (trust nothing, default deny, concentrated power) and THREAT_MODEL.md as codified fears (ten invariants, recovery-path discipline)",
+   "seed_queries": [
+    "YubiKey FIDO2 hmac-secret LUKS2 disk encryption offline recovery key",
+    "dm-verity fail-closed verified boot immutable root filesystem Linux"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "portraits-shape-and-contract",
+   "scope": "ARCHITECTURE.md as shape (six trust boundaries, YubiKey sole root, verification flow) and SPEC.md as contract (RFC 2119, 7-item conformance checklist)",
+   "seed_queries": [
+    "unified kernel image systemd-boot UKI verified boot chain composefs",
+    "RFC 2119 requirement keywords MUST SHOULD specification conformance"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "portraits-decisions-and-defenses",
+   "scope": "ADR.md as decisions (32+ records amended not rewritten) and MITIGATE.md as defenses (attack chain, residual risk, absence-as-defense)",
+   "seed_queries": [
+    "architecture decision record ADR rationale amendment discipline",
+    "YubiKey PIV slot 9c digital signing authentication"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "portraits-testing-and-stewardship",
+   "scope": "CI_MAP.md as testing (22 standalone workflows, verify before claim, reproducibility proofs) and PLAN.md as stewardship (public-first covenant, services-to-subscription)",
+   "seed_queries": [
+    "reproducible builds byte for byte verification deterministic compiler",
+    "open source software public interest business model no telemetry"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "portraits-hopes-failures-progress",
+   "scope": "FUTURE.md as evidence-bound hopes, BLOCKERS.md as failures converted into doctrine, TODO.md as honest unfinished work, MILESTONE.md as auditable progress",
+   "seed_queries": [
+    "INTERNAL-RECORD subtopic: no dig (blocker registers, run IDs, Linear mirror)"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "the-weave",
+   "scope": "How the 12 docs form one coherent whole: why-to-how-to-what ordering and the 4 load-bearing edges",
+   "seed_queries": [
+    "INTERNAL-RECORD subtopic: no dig (grounded in source-doc weave section)"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "pushback-and-discipline",
+   "scope": "The 4 pushbacks, the 3 discipline next steps, and the attestation coverage mechanisms (in-toto, SLSA provenance, Rekor, Sigstore)",
+   "seed_queries": [
+    "in-toto attestation SLSA provenance software supply chain",
+    "Rekor transparency log Sigstore artifact signing verification"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.05,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.41,
+     "1": 0.13,
+     "2": 0.46
+    },
+    "confidence": 0
+   },
+   "t02": {
+    "type": "score",
+    "score": 0.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.59,
+     "1": 0.11,
+     "2": 0.3
+    },
+    "confidence": 0
+   },
+   "t03": {
+    "type": "score",
+    "score": 0.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.53,
+     "1": 0.1,
+     "2": 0.37
+    },
+    "confidence": 0
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.55,
+     "1": 0.17,
+     "2": 0.28
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.51,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.68,
+     "1": 0.13,
+     "2": 0.19
+    },
+    "confidence": 0.24
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.55,
+     "1": 0.09,
+     "2": 0.36
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.89,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.51,
+     "1": 0.08,
+     "2": 0.41
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.72,
+     "1": 0.08,
+     "2": 0.2
+    },
+    "confidence": 0.29
+   }
+  },
+  "usage": {
+   "input_tokens": 1298,
+   "output_tokens": 124
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ],
+  "note": "No subtopic scored 0 so none dropped. Marginal subtopics t05 (0.51) and t08 (0.47) kept because their digs came back strong. t01/t06/t07 are internal-record subtopics (no dig per brief), kept as core content."
+ }
+}
