@@ -1,0 +1,39 @@
+{
+ "nn": 7,
+ "slug": "security-primitive-coverage",
+ "scope": "The five coverage sections: attestation (in-toto, Rekor, SLSA, Sigstore, bootupd, Keylime), trust chain, least privilege, continuous/adaptive detection, cryptographic identity.",
+ "queries_attempted": [
+  {
+   "query": "in-toto SLSA provenance Rekor Sigstore attestation supply chain",
+   "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3Din-toto%20SLSA%20provenance%20Rekor%20Sigstore%20attestation%20supply%20chain",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "Keylime runtime attestation FIDO2 hardware root of trust",
+   "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3DKeylime%20runtime%20attestation%20FIDO2%20hardware%20root%20of%20trust",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://safeguard.sh/resources/blog/software-attestation-framework-comparison",
+  "https://beefed.ai/en/software-provenance-sigstore-in-toto",
+  "https://aquilax.ai/blog/supply-chain-artifact-signing-slsa",
+  "https://www.instagram.com/?hl=en-in",
+  "https://www.asqav.com/docs/executable-hash-and-sbom-provenance",
+  "https://www.iqinfinite.com/articles/software-supply-chain-security-sbom-provenance-signing-2026",
+  "https://keylime.dev/",
+  "https://github.com/keylime/keylime",
+  "https://keylime.readthedocs.io/en/latest/index.html",
+  "https://www.cncf.io/blog/2021/07/06/ibm-implements-remote-attestation-on-linux-with-a-hardware-root-of-trust-using-keylime/",
+  "https://keylime.readthedocs.io/",
+  "https://www.cncf.io/projects/keylime/"
+ ],
+ "outcome": "authored",
+ "note": "dug (web-shaped subtopic)"
+}
