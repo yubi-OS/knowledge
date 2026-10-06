@@ -1,0 +1,298 @@
+{
+  "topic": "curved-corpus-create skill (yubi-OS/yubiOS skills/curved-corpus-create/SKILL.md)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "standard-candle-mission",
+      "scope": "The skill's purpose as the generative inverse of the RSI curve regime: the standard-candle factory, its four jobs (generate planted corpora, matched nulls, calibration pack, IS-THIS-X placement), and the v1.0.0 origin.",
+      "seed_queries": [],
+      "dig": false,
+      "score": 0.95
+    },
+    {
+      "nn": "02",
+      "slug": "when-to-use-and-interfaces",
+      "scope": "When to use vs when NOT to use, trigger phrases, inputs (nothing or an N x d binary matrix JSON), the five subcommands and their outputs, and the hard constraints (LOCAL ONLY, stdlib+numpy, binary matrix format, curveball trade count, --legacy-k).",
+      "seed_queries": [
+        "statistical power versus significance point estimate hypothesis testing",
+        "null hypothesis statistical testing definition false positive rate"
+      ],
+      "dig": true,
+      "score": 1.78
+    },
+    {
+      "nn": "03",
+      "slug": "fibonacci-lattice",
+      "scope": "The frozen Fibonacci golden-angle lattice conventions: z_i and phi_i formulas, i = t (index is the parameter), the real spherical-harmonic basis with explicit Legendre and cos/sin split, L=3 giving 16 functions, and the fixed column order.",
+      "seed_queries": [
+        "Fibonacci lattice golden angle sphere sampling points",
+        "real spherical harmonics basis Legendre functions order l m"
+      ],
+      "dig": true,
+      "score": 0.7
+    },
+    {
+      "nn": "04",
+      "slug": "planted-generation",
+      "scope": "The generate algorithm step by step: evaluating SH channels at lattice points, channel standardization to zero mean unit sd, deterministic column loadings w_kj, logits eta_ij = mu + amplitude*sum, Bernoulli sampling through the logistic link, and what the params field must carry.",
+      "seed_queries": [
+        "logistic model Bernoulli random binary data generation",
+        "planted signal synthetic dataset ground truth detection benchmark"
+      ],
+      "dig": true,
+      "score": 0.55
+    },
+    {
+      "nn": "05",
+      "slug": "measure-statistics",
+      "scope": "Everything the measure subcommand reports: correlation-matrix spectrum, V2, participation ratio, Shannon effective rank, mean off-diagonal rho, row-mass stats and Otsu bimodality, column marginals, PCA top-2 to stereographic lift to S^2, closed-form ridge SH fit, sphere R^2, chordal residuals, design rank/condition, Y_3^3 probe, and per-null dV2z.",
+      "seed_queries": [
+        "participation ratio eigenvalue spectrum effective rank PCA",
+        "Marchenko Pastur random matrix eigenvalue bulk edge"
+      ],
+      "dig": true,
+      "score": 1.04
+    },
+    {
+      "nn": "06",
+      "slug": "null-ensembles",
+      "scope": "The three matched nulls (curveball preserving row and column sums, column-permutation, iid), why curveball is the primary decision null, the N and d matching rule, the V2-null relaxation toward 2/D, and dV2z = (V2 - E0)/SD0 as the primary statistic.",
+      "seed_queries": [
+        "curveball algorithm null model binary matrix Strona",
+        "null models binary incidence matrices permutation ecology"
+      ],
+      "dig": true,
+      "score": 1.42
+    },
+    {
+      "nn": "07",
+      "slug": "calibration-power",
+      "scope": "The calibrate subcommand as lens-format calibration: amplitude sweeps, trials and reps design, power_at_z_3, FPR_at_z_3 and FPR_at_z_2, the YES/PARTIAL/NO verdict rule, detection threshold as smallest swept YES amplitude, and the pre-registration discipline.",
+      "seed_queries": [
+        "statistical power false positive rate simulation calibration experiment",
+        "standard candle astronomy calibration known brightness reference"
+      ],
+      "dig": true,
+      "score": 1.54
+    },
+    {
+      "nn": "08",
+      "slug": "lens-format-patches",
+      "scope": "v1.1.0 lens-format outputs: why the flat table from PR #202 was declined, the guided-curve-ideate new-idea shape (hypothesis, method, parameters, delta, verdict, score, caveat), the lens subcommand output schema, the k/d coverage verdict rule, and place as one lens per class.",
+      "seed_queries": [],
+      "dig": false,
+      "score": 1.67
+    },
+    {
+      "nn": "09",
+      "slug": "guidelines-antipatterns",
+      "scope": "The eleven guidelines (never report a raw number without its null, use curveball for the primary decision, match N and d, pre-register the sweep, report power, i = t, azimuthal claims need a permutation null, seeds are part of the result, lens-format only, three-valued verdict), the anti-pattern list, and the red-flags table.",
+      "seed_queries": [],
+      "dig": false,
+      "score": 1.24
+    },
+    {
+      "nn": "10",
+      "slug": "composition-verification",
+      "scope": "How the skill composes with rsi-phi-skill, guided-curve-ideate, single-action-curve-rsi, the Hodge channel, hyperspherical-harmonic-curve, and curve-compass-skill; plus the --selftest verification contract (seven v1.0.0 blocks plus the v1.1.0 lens assertions) and the changelog.",
+      "seed_queries": [],
+      "dig": false,
+      "score": 1.51
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "model": "typesafe/jev-1.13",
+    "requested_at": "2026-10-06T16:06:00.318Z",
+    "raw": {
+      "model": "typesafe/jev-1.13-20260917",
+      "answers": {
+        "t01": {
+          "type": "score",
+          "score": 0.95,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.42,
+            "1": 0.2,
+            "2": 0.38
+          },
+          "confidence": 0
+        },
+        "t02": {
+          "type": "score",
+          "score": 1.78,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.08,
+            "1": 0.05,
+            "2": 0.87
+          },
+          "confidence": 0.67
+        },
+        "t03": {
+          "type": "score",
+          "score": 0.7,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.54,
+            "1": 0.23,
+            "2": 0.23
+          },
+          "confidence": 0
+        },
+        "t04": {
+          "type": "score",
+          "score": 0.55,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.65,
+            "1": 0.14,
+            "2": 0.21
+          },
+          "confidence": 0.17
+        },
+        "t05": {
+          "type": "score",
+          "score": 1.04,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.28,
+            "1": 0.39,
+            "2": 0.33
+          },
+          "confidence": 0.08
+        },
+        "t06": {
+          "type": "score",
+          "score": 1.42,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.21,
+            "1": 0.15,
+            "2": 0.64
+          },
+          "confidence": 0.13
+        },
+        "t07": {
+          "type": "score",
+          "score": 1.54,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.14,
+            "1": 0.17,
+            "2": 0.68
+          },
+          "confidence": 0.32
+        },
+        "t08": {
+          "type": "score",
+          "score": 1.67,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.11,
+            "1": 0.11,
+            "2": 0.78
+          },
+          "confidence": 0.51
+        },
+        "t09": {
+          "type": "score",
+          "score": 1.24,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.17,
+            "1": 0.41,
+            "2": 0.42
+          },
+          "confidence": 0.12
+        },
+        "t10": {
+          "type": "score",
+          "score": 1.51,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.17,
+            "1": 0.15,
+            "2": 0.68
+          },
+          "confidence": 0.26
+        }
+      },
+      "usage": {
+        "input_tokens": 1348,
+        "output_tokens": 154,
+        "cost": 0.000113232
+      },
+      "id": "gen-dec-1791302761-drSE8zHe2JtkGAuhEE0k",
+      "provider": "TypeSafe",
+      "task_id": "taeaf5c2-06ae-48e2-94d1-d19b52485508",
+      "consumed": "0.000113232"
+    },
+    "usage": {
+      "input_tokens": 1348,
+      "output_tokens": 154,
+      "cost": 0.000113232
+    },
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "dropped": []
+  },
+  "ground_source": {
+    "repo": "yubi-OS/yubiOS",
+    "path": "skills/curved-corpus-create/SKILL.md",
+    "url": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/curved-corpus-create/SKILL.md",
+    "bytes": 18960,
+    "fetched_at": "2026-10-06"
+  }
+}
