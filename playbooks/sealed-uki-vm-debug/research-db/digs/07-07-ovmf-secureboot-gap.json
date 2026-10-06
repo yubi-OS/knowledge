@@ -1,0 +1,112 @@
+{
+ "nn": "07",
+ "slug": "07-ovmf-secureboot-gap",
+ "scope": "Row 8: boot-secure-vm failing at the OVMF level; as of the playbook date neither ci_test_sealed-uki-vm.yml nor ci_test-vgpu-vm.yml provisions OVMF_CODE.fd / OVMF_VARS.fd or enrolls the yubiOS ROTPK into the db, and an OVMF rejection masks that enrollment gap (do not read it as a signing failure); OVMF artifacts come from ci_fork_edk2.yml.",
+ "queries_attempted": [
+  {
+   "query": "OVMF Secure Boot db enrollment custom PK OVMF_VARS.fd provisioning",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "GitHub - rhuefi/qemu-ovmf-secureboot: Script to generate an OVMF vars ...",
+     "url": "https://github.com/rhuefi/qemu-ovmf-secureboot",
+     "snippet": "QEMU, OVMF and Secure Boot. Description. ovmf-vars-generator is a script to generate OVMF variables (\"VARS\") file with default Secure Boot keys enrolled in it. And validate that it works correctly. Pr"
+    },
+    {
+     "title": "Alpaquita Linux: Using Custom Keys in Secure Boot",
+     "url": "https://docs.bell-sw.com/alpaquita-linux/latest/how-to/use-own-keys-in-secureboot/",
+     "snippet": "In the Secure Boot context, it has a platform key (PK) and several SB databases that include the signature database (db), revoked signatures database (dbx), and Key Enrollment Key database (KEK). shim"
+    },
+    {
+     "title": "OVMF PK, KEK and DB Keys and Variables Enrolling",
+     "url": "https://pypi.org/project/ovmfkeyenroll/",
+     "snippet": "Sep 21, 2022 \u00b7 A tool to enroll secure boot keys in OVMF_VARS.fd Build & Install ... Usage You can copy OVMF_VAR.fd to current path. This is to enroll PK, KEK and DB keys and generate OVMF_VAR.sb.fd: "
+    },
+    {
+     "title": "Google Docs: Sign-in",
+     "url": "https://docs.google.com/document/u/1/",
+     "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+     "title": "OVMF Secure Boot variable storage issue",
+     "url": "https://edk2.groups.io/g/devel/message/12291",
+     "snippet": "Likes Search OVMF Secure Boot variable storage issue I'm trying to understand why the secure boot variables (PK, KEK, db, etc) when using the OVMF build \u2026"
+    },
+    {
+     "title": "GitHub - tianocore/tianocore.github.io: Tianocore website",
+     "url": "https://github.com/tianocore/tianocore.github.io/wiki/OVMF",
+     "snippet": "Tianocore website. Contribute to tianocore/tianocore.github.io development by creating an account on GitHub.Tianocore website. Contribute to tianocore/tianocore.github.io development by creating an ac"
+    }
+   ],
+   "kept": [
+    "https://github.com/rhuefi/qemu-ovmf-secureboot",
+    "https://docs.bell-sw.com/alpaquita-linux/latest/how-to/use-own-keys-in-secureboot/",
+    "https://pypi.org/project/ovmfkeyenroll/",
+    "https://docs.google.com/document/u/1/",
+    "https://edk2.groups.io/g/devel/message/12291",
+    "https://github.com/tianocore/tianocore.github.io/wiki/OVMF"
+   ]
+  },
+  {
+   "query": "EDK2 OVMF firmware build artifacts secure boot key enrollment CI",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "GitHub - tianocore/edk2: EDK II",
+     "url": "https://github.com/tianocore/edk2",
+     "snippet": "A modern, feature-rich, cross-platform firmware development environment for the UEFI and PI specifications from www.uefi.org. It is recommended to install this Python version to run the full set of sc"
+    },
+    {
+     "title": "OVMF - TianoCore EDK II Documentation",
+     "url": "https://www.tianocore.org/tianocore-wiki.github.io/platforms-packages/platform-ports/ovmf.html",
+     "snippet": "These images are automatically built and track the latest OVMF code in the EDK II tree. Some of these builds include a seabios CSM and can boot non-UEFI \u201clegacy\u201d operating systems."
+    },
+    {
+     "title": "edk2/OvmfPkg/README at master \u00b7 tianocore/edk2 \u00b7 GitHub",
+     "url": "https://github.com/tianocore/edk2/blob/master/OvmfPkg/README",
+     "snippet": "- Option 1: Use QEMU -pflash parameter. * QEMU/OVMF will use emulated flash, and fully support UEFI variables. * Run qemu with: -pflash path/to/OVMF.fd. * Note that this option is required for running"
+    },
+    {
+     "title": "EDK II Documentation - TianoCore EDK II Documentation",
+     "url": "https://www.tianocore.org/tianocore-wiki.github.io/reference/specs-standards/edk_ii_documentation.html",
+     "snippet": "The EDK II Build Infrastructure supports creation of binary images that comply with Unified EFI (UEFI) 2.5 and UEFI Platform Infrastructure (PI) 1.4 specifications."
+    },
+    {
+     "title": "Releases \u00b7 tianocore/edk2 - GitHub",
+     "url": "https://github.com/tianocore/edk2/releases",
+     "snippet": "EDK II. Contribute to tianocore/edk2 development by creating an account on GitHub.EDK II. Contribute to tianocore/edk2 development by creating an account on GitHub."
+    },
+    {
+     "title": "Firmware (EDK2 / OVMF) - vmw",
+     "url": "https://meowdiocre.github.io/vmw/firmware/",
+     "snippet": "Secure Boot key enrollment build_ovmf () in steps/edk2.py reads this host's own EFI keys from /sys/firmware/efi/efivars/, writes them to JSON, and injects them into a raw .fd with virt-fw-vars --set-j"
+    }
+   ],
+   "kept": [
+    "https://github.com/tianocore/edk2",
+    "https://www.tianocore.org/tianocore-wiki.github.io/platforms-packages/platform-ports/ovmf.html",
+    "https://github.com/tianocore/edk2/blob/master/OvmfPkg/README",
+    "https://www.tianocore.org/tianocore-wiki.github.io/reference/specs-standards/edk_ii_documentation.html",
+    "https://github.com/tianocore/edk2/releases",
+    "https://meowdiocre.github.io/vmw/firmware/"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/rhuefi/qemu-ovmf-secureboot",
+  "https://docs.bell-sw.com/alpaquita-linux/latest/how-to/use-own-keys-in-secureboot/",
+  "https://pypi.org/project/ovmfkeyenroll/",
+  "https://docs.google.com/document/u/1/",
+  "https://edk2.groups.io/g/devel/message/12291",
+  "https://github.com/tianocore/tianocore.github.io/wiki/OVMF",
+  "https://github.com/tianocore/edk2",
+  "https://www.tianocore.org/tianocore-wiki.github.io/platforms-packages/platform-ports/ovmf.html",
+  "https://github.com/tianocore/edk2/blob/master/OvmfPkg/README",
+  "https://www.tianocore.org/tianocore-wiki.github.io/reference/specs-standards/edk_ii_documentation.html",
+  "https://github.com/tianocore/edk2/releases",
+  "https://meowdiocre.github.io/vmw/firmware/"
+ ],
+ "outcome": "authored"
+}

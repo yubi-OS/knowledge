@@ -1,0 +1,112 @@
+{
+ "nn": "03",
+ "slug": "03-yaml-parse-failures",
+ "scope": "Row 0 of the decision tree: conclusion=failure in about 0s with jobs total_count: 0 means the YAML did not parse and no step ran; unquoted colon inside a step name reads as a flow-mapping key under YAML 1.1; PyYAML quirks (on: parsed as True) that must not be 'fixed'.",
+ "queries_attempted": [
+  {
+   "query": "YAML unquoted colon step name parse error GitHub Actions workflow",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "YAML - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/YAML",
+     "snippet": "YAML (/ \u02c8j\u00e6m\u0259l / \u24d8 YAM-\u0259l) is a human-readable data serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. YAML targets many"
+    },
+    {
+     "title": "Fixing \"YAML Parsing Error\" in GitHub Actions Workflows",
+     "url": "https://www.techeia.com/blog/fix-yaml-parsing-error-github-actions",
+     "snippet": "Sep 16, 2026 \u00b7 When the GitHub Actions parser attempts to read your .github/workflows/main.yml file and encounters a structural violation, it aborts the entire run. In this comprehensive guide, we wil"
+    },
+    {
+     "title": "- YAML Ain't Markup Language",
+     "url": "https://yaml.org/",
+     "snippet": "YAML Ain't Markup Language We use cookies to analyze site traffic and improve your experience with Google Analytics.YAML Ain't Markup Language We use cookies to analyze site traffic and improve your e"
+    },
+    {
+     "title": "GitHub Actions workflow YAML parse error: causes and fixes",
+     "url": "https://www.erroratlas.net/errors/github-actions-invalid-workflow-yaml-parse-error",
+     "snippet": "The workflow file contains YAML syntax that prevents the workflow from running. GitHub Actions could not load the workflow because the YAML syntax is invalid, often due to unquoted special characters "
+    },
+    {
+     "title": "GitHub Actions YAML Workflow Debugging: The Top 10 Syntax & Runtime ...",
+     "url": "https://wtool.dev/guides/github-actions-yaml-workflow-debugging",
+     "snippet": "Sep 4, 2026 \u00b7 A comprehensive developer guide to identifying and fixing GitHub Actions YAML syntax errors, matrix build bugs, expression interpolation traps, and concurrency race conditions."
+    },
+    {
+     "title": "What is YAML: Understanding the Basics - GitLab",
+     "url": "https://about.gitlab.com/topics/devops/what-is-yaml/",
+     "snippet": "What is YAML? YAML, which stands for \u201cYAML Ain't Markup Language\u201d (originally \u201cYet Another Markup Language\u201d), is a flexible and accessible data serialization language often used in configuration files"
+    }
+   ],
+   "kept": [
+    "https://en.wikipedia.org/wiki/YAML",
+    "https://www.techeia.com/blog/fix-yaml-parsing-error-github-actions",
+    "https://yaml.org/",
+    "https://www.erroratlas.net/errors/github-actions-invalid-workflow-yaml-parse-error",
+    "https://wtool.dev/guides/github-actions-yaml-workflow-debugging",
+    "https://about.gitlab.com/topics/devops/what-is-yaml/"
+   ]
+  },
+  {
+   "query": "PyYAML YAML 1.1 on key parsed as boolean True safe_load",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "PyYAML Documentation",
+     "url": "https://pyyaml.org/wiki/PyYAMLDocumentation",
+     "snippet": "PyYAML Documentation PyYAML is a YAML parser and emitter for Python. Installation Simple install: pip install pyyaml To install from source, download the source package PyYAML-5.1.tar.gz and unpack it"
+    },
+    {
+     "title": "\"on: true\" gets parsed as \"True: True\" when using safe_load ...",
+     "url": "https://github.com/yaml/pyyaml/issues/807",
+     "snippet": "Jun 6, 2024 \u00b7 PyYAML implements YAML 1.1 currently. In YAML 1.1 on is a boolean. Try yamlcore on top of PyYAML if you want to process YAML 1.2, where on is not a boolean anymore. Also, don't use an im"
+    },
+    {
+     "title": "PyYAML automatically converting certain keys to boolean values",
+     "url": "https://stackoverflow.com/questions/36463531/pyyaml-automatically-converting-certain-keys-to-boolean-values",
+     "snippet": "Apr 7, 2016 \u00b7 PyYAML is YAML 1.1 conformant for parsing and emitting, and for YAML 1.1 this is at least partly documented behavior, so no idiosyncrasy at all, but conscious design. In YAML 1.2 (which "
+    },
+    {
+     "title": "PyYAML \u00b7 PyPI",
+     "url": "https://pypi.org/project/PyYAML/",
+     "snippet": "Pyyaml features a complete YAML 1.1 parser, Unicode support, pickle support, capable extension API, and sensible error messages. Pyyaml supports standard YAML tags and provides Python-specific tags th"
+    },
+    {
+     "title": "Welcome to PyYAML",
+     "url": "https://pyyaml.org/",
+     "snippet": "2008-12-31: PyYAML 3.08 is released (includes Python 3 support). 2008-12-29: PyYAML 3.07 is released. 2008-12-28: LibYAML \u2026"
+    },
+    {
+     "title": "PyYAML Security Guide (2026): yaml.load () CVEs & Safe Use",
+     "url": "https://safeguard.sh/resources/blog/pyyaml-security-guide",
+     "snippet": "Jul 8, 2026 \u00b7 PyYAML is the default YAML parser for Python. If your project reads a .yaml config file, parses a Kubernetes manifest, or ingests YAML from an API, there is a very good chance PyYAML is "
+    }
+   ],
+   "kept": [
+    "https://pyyaml.org/wiki/PyYAMLDocumentation",
+    "https://github.com/yaml/pyyaml/issues/807",
+    "https://stackoverflow.com/questions/36463531/pyyaml-automatically-converting-certain-keys-to-boolean-values",
+    "https://pypi.org/project/PyYAML/",
+    "https://pyyaml.org/",
+    "https://safeguard.sh/resources/blog/pyyaml-security-guide"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/YAML",
+  "https://www.techeia.com/blog/fix-yaml-parsing-error-github-actions",
+  "https://yaml.org/",
+  "https://www.erroratlas.net/errors/github-actions-invalid-workflow-yaml-parse-error",
+  "https://wtool.dev/guides/github-actions-yaml-workflow-debugging",
+  "https://about.gitlab.com/topics/devops/what-is-yaml/",
+  "https://pyyaml.org/wiki/PyYAMLDocumentation",
+  "https://github.com/yaml/pyyaml/issues/807",
+  "https://stackoverflow.com/questions/36463531/pyyaml-automatically-converting-certain-keys-to-boolean-values",
+  "https://pypi.org/project/PyYAML/",
+  "https://pyyaml.org/",
+  "https://safeguard.sh/resources/blog/pyyaml-security-guide"
+ ],
+ "outcome": "authored"
+}

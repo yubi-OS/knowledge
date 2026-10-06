@@ -1,0 +1,252 @@
+{
+ "topic": "yubiOS sealed-UKI VM debug playbook (yubi-OS/yubiOS playbooks/sealed-uki-vm-debug.md)",
+ "source_doc": "yubi-OS/yubiOS playbooks/sealed-uki-vm-debug.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "lane-overview",
+   "scope": "What the sealed-UKI VM lane is: ci_test_sealed-uki-vm.yml builds a PKCS#11-signed UKI (SoftHSM slot emulating PIV 9c), boots it under OVMF Secure Boot, runs negative tamper tests; 3 jobs (build-and-verify-uki, boot-secure-vm, negative-tamper-tests), 6 assertions; canonical pattern ci_mkosi-installer.yml.",
+   "seed_queries": [
+    "systemd UKI unified kernel image ukify secure boot signing",
+    "PKCS#11 OpenSSL 3 provider SoftHSM signing token"
+   ],
+   "validation_score": 1.54,
+   "validation_bucket": 2
+  },
+  {
+   "nn": "02",
+   "slug": "debug-doctrine",
+   "scope": "The playbook's four decision rules: diff against the canonical never improvise, trust nothing in workflow comments, check parse state before step logs, one change per iteration with a verifying step.",
+   "seed_queries": [],
+   "validation_score": 1.35,
+   "validation_bucket": 1
+  },
+  {
+   "nn": "03",
+   "slug": "yaml-parse-failures",
+   "scope": "Row 0 of the decision tree: conclusion=failure in about 0s with jobs total_count: 0 means the YAML did not parse and no step ran; unquoted colon inside a step name reads as a flow-mapping key under YAML 1.1; PyYAML quirks (on: parsed as True) that must not be 'fixed'.",
+   "seed_queries": [
+    "YAML unquoted colon step name parse error GitHub Actions workflow",
+    "PyYAML YAML 1.1 on key parsed as boolean True safe_load"
+   ],
+   "validation_score": 0.53,
+   "validation_bucket": 1
+  },
+  {
+   "nn": "04",
+   "slug": "sbsign-pkcs11-signing",
+   "scope": "Rows 1 and 2: systemd-sbsign ships inside the systemd package at /usr/lib/systemd/systemd-sbsign and is not on PATH (no dnf package exists; 'No match for argument' is expected); each docker run is a fresh ephemeral container so a dnf install in one does not persist; the sign command needs --private-key-source=provider:pkcs11 not engine:pkcs11 (ADR-008 / OMN-116, OpenSSL 3.x deprecates the engine API); the PKCS#11 URI must be single-quoted with the embedded PIN (pin-value) or signing hangs or C_Login fails.",
+   "seed_queries": [
+    "systemd-sbsign ukify binary location PATH systemd package signing",
+    "OpenSSL 3 provider pkcs11 versus engine API deprecated pkcs11 URI pin-value"
+   ],
+   "validation_score": 1.16,
+   "validation_bucket": 1
+  },
+  {
+   "nn": "05",
+   "slug": "container-state-pitfalls",
+   "scope": "Rows 3 to 6: 'cpio: chown failed - No data available' installing softhsm when a host mount shadows the RPM's own file target /var/lib/softhsm (cross-mount to /run/yubios-hsm and point SOFTHSM2_CONF directories.tokendir there, or drop the mount); two docker run invocations with the same -v mount can diverge (cert missing at /output/pki/sb.crt, EISDIR on single-file bind-mounts); cross-version SoftHSM BDB token files (host 2.6.1 vs container 2.7.0) unreadable across versions ('Input/output error'); set -euo pipefail plus a docker run declaring only some -e vars gives 'KEY_P8_B64: unbound variable' with no other output.",
+   "seed_queries": [
+    "SoftHSM2 token BDB database version incompatible cross version error",
+    "docker run environment variables unbound variable set -u bash -c"
+   ],
+   "validation_score": 1.25,
+   "validation_bucket": 1
+  },
+  {
+   "nn": "06",
+   "slug": "softhsm-ecdsa-multipart",
+   "scope": "Row 7: 'EVP_DigestSignUpdate: provider signature failure' (030000EA) on ECDSA is not a workflow bug; SoftHSM 2.7.0 added hashed ECDSA mechanisms but implemented them single-part only while pkcs11-provider streams TBS bytes via C_SignUpdate; upstream SoftHSMv2 issue 842 (open), fix in PR 857 merged to main; pkcs11-provider issue 715 closed won't-fix provider-side; two fixes in order: pin pkcs11-provider >= 1.2.0 (PR 669 softhsm fallback, verify with rpm -q) or swap the CI token to kryoptic (only --module and --token-label change).",
+   "seed_queries": [
+    "SoftHSM 2.7.0 hashed ECDSA single-part C_SignUpdate issue 842",
+    "pkcs11-provider 1.2.0 softhsm fallback PR 669 kryoptic ECDSA"
+   ],
+   "validation_score": 0.29,
+   "validation_bucket": 0
+  },
+  {
+   "nn": "07",
+   "slug": "ovmf-secureboot-gap",
+   "scope": "Row 8: boot-secure-vm failing at the OVMF level; as of the playbook date neither ci_test_sealed-uki-vm.yml nor ci_test-vgpu-vm.yml provisions OVMF_CODE.fd / OVMF_VARS.fd or enrolls the yubiOS ROTPK into the db, and an OVMF rejection masks that enrollment gap (do not read it as a signing failure); OVMF artifacts come from ci_fork_edk2.yml.",
+   "seed_queries": [
+    "OVMF Secure Boot db enrollment custom PK OVMF_VARS.fd provisioning",
+    "EDK2 OVMF firmware build artifacts secure boot key enrollment CI"
+   ],
+   "validation_score": 1.59,
+   "validation_bucket": 2
+  },
+  {
+   "nn": "08",
+   "slug": "failure-timeline-v25-v83",
+   "scope": "The Verified working record: the V25 to V39 failure timeline (runs #33 to #51 with the row each hit), the explicit statement that the lane had not yet produced a green signed-UKI build at 2026-08-01, the PR #154 / PR #155 lane-opening and stub-fill merge, and the later green path: commit 1d0666d77c0b (V83) tuned arm64 boot_timeout 900 to 1200 s to GREEN at run 30652859000.",
+   "seed_queries": [],
+   "validation_score": 0.76,
+   "validation_bucket": 1
+  },
+  {
+   "nn": "09",
+   "slug": "cross-refs-open-gaps",
+   "scope": "Cross-references and open gaps recorded by the playbook: BLOCKERS.md B-BOOTC-SEAL (Phase 1 artifact split shipped in PR #143 / a1940330; Phase 2 install-time BLSConfig wiring plus Secure Boot and negative-tamper evidence still open), Permanent CI-Evidence Patterns, Linear OMN-43 (parent), OMN-52, OMN-47, OMN-53, OMN-150 (Phase 2), OMN-116 (ADR-008), ADR-008 / ADR-022 / ADR-032, sibling refs and playbooks, gaps 1 and 12 (no tests/vm/test-secure-boot-tamper.sh; negatives 2 and 3 TODO-only), and the proposal that a yaml.safe_load pre-dispatch gate would have caught V37/V38 free.",
+   "seed_queries": [],
+   "validation_score": 0.93,
+   "validation_bucket": 1
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.54,
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.1,
+     "2": 0.72
+    },
+    "confidence": 0.32,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.35,
+    "probabilities": {
+     "0": 0.23,
+     "1": 0.19,
+     "2": 0.58
+    },
+    "confidence": 0.02,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.53,
+    "probabilities": {
+     "0": 0.6,
+     "1": 0.27,
+     "2": 0.13
+    },
+    "confidence": 0.21,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.16,
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.32,
+     "2": 0.42
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.25,
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.36,
+     "2": 0.45
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.29,
+    "probabilities": {
+     "0": 0.76,
+     "1": 0.19,
+     "2": 0.05
+    },
+    "confidence": 0.57,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.59,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.18,
+     "2": 0.7
+    },
+    "confidence": 0.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.76,
+    "probabilities": {
+     "0": 0.48,
+     "1": 0.28,
+     "2": 0.24
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.93,
+    "probabilities": {
+     "0": 0.39,
+     "1": 0.28,
+     "2": 0.33
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1474,
+   "output_tokens": 139,
+   "cost": 0.000123816
+  },
+  "dropped": [
+   "06"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "07",
+   "08",
+   "09"
+  ],
+  "notes": "Scores are continuous; mapped to the 0/1/2 legend by rounding. 06 dropped (0.29, bucket 0); its row 7 material folded into doc 04. Marginal internal-record subtopics 08 (0.76) and 09 (0.93) kept: their ground-source record (full run table, cross-ref map) is the strong evidence the criterion asks for, and the mint task requires the V83 test state and cross-refs to be covered."
+ }
+}

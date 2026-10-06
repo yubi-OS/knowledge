@@ -1,0 +1,112 @@
+{
+ "nn": "05",
+ "slug": "05-container-state-pitfalls",
+ "scope": "Rows 3 to 6: 'cpio: chown failed - No data available' installing softhsm when a host mount shadows the RPM's own file target /var/lib/softhsm (cross-mount to /run/yubios-hsm and point SOFTHSM2_CONF directories.tokendir there, or drop the mount); two docker run invocations with the same -v mount can diverge (cert missing at /output/pki/sb.crt, EISDIR on single-file bind-mounts); cross-version SoftHSM BDB token files (host 2.6.1 vs container 2.7.0) unreadable across versions ('Input/output error'); set -euo pipefail plus a docker run declaring only some -e vars gives 'KEY_P8_B64: unbound variable' with no other output.",
+ "queries_attempted": [
+  {
+   "query": "SoftHSM2 token BDB database version incompatible cross version error",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "GitHub - softhsm/SoftHSMv2: SoftHSM version 2 \u00b7 GitHub",
+     "url": "https://github.com/softhsm/SoftHSMv2",
+     "snippet": "SoftHSM version 2. Contribute to softhsm/SoftHSMv2 development by creating an account on GitHub.If you are using Botan, use at least version 2.6.0. This will improve the performance when doing public "
+    },
+    {
+     "title": "GitHub - softhsm/SoftHSMv2: SoftHSM version 2 \u00b7 GitHub",
+     "url": "https://github.com/softhsm/softHSMv2",
+     "snippet": "Once a token has been initialized, more slots will be added automatically with a new uninitialized token. Initialized tokens will be reassigned to another slot (based on the token serial number). It i"
+    },
+    {
+     "title": "pkcs#11 - Error creating token via softhsm2 as... - Stack Overflow",
+     "url": "https://stackoverflow.com/questions/53230852/error-creating-token-via-softhsm2-as-non-root-user-could-not-initialize-the-lib",
+     "snippet": "Changing ownership/permission of /var/lib/softhsm/tokens doesn't solve the problem as we cannot access /etc/softhsm/softhsm2.conf in the first place given the access limitation, so we should be doing "
+    },
+    {
+     "title": "softhsm2-util | softhsm/SoftHSMv2 | DeepWiki",
+     "url": "https://deepwiki.com/softhsm/SoftHSMv2/9.1-softhsm2-util",
+     "snippet": "Feb 3, 2026 \u00b7 The softhsm2-util is a command-line utility that provides token management and object import functionality for SoftHSM2. The utility performs the following operations: A key architectura"
+    },
+    {
+     "title": "SoftHSMv2 \u00b7 Cloudflare SSL/TLS docs",
+     "url": "https://developers.cloudflare.com/ssl/keyless-ssl/hardware-security-modules/softhsmv2/",
+     "snippet": "Minimum TLS Version. Automatic HTTPS Rewrites.First, we install SoftHSMv2 and configure it to store tokens in the default location /var/lib/softhsm/tokens. We also need to give the softhsm group permi"
+    },
+    {
+     "title": "John Mayer - Your Body Is A Wonderland (Official Video)",
+     "url": "https://www.youtube.com/watch?v=N5EnGwXV_Pg",
+     "snippet": "Oct 2, 2009 \u00b7 Official HD Video for \"Your Body Is a Wonderland\" by John Mayer Listen to John Mayer: https://John \u2026"
+    }
+   ],
+   "kept": [
+    "https://github.com/softhsm/SoftHSMv2",
+    "https://github.com/softhsm/softHSMv2",
+    "https://stackoverflow.com/questions/53230852/error-creating-token-via-softhsm2-as-non-root-user-could-not-initialize-the-lib",
+    "https://deepwiki.com/softhsm/SoftHSMv2/9.1-softhsm2-util",
+    "https://developers.cloudflare.com/ssl/keyless-ssl/hardware-security-modules/softhsmv2/",
+    "https://www.youtube.com/watch?v=N5EnGwXV_Pg"
+   ]
+  },
+  {
+   "query": "docker run environment variables unbound variable set -u bash -c",
+   "attempt": 1,
+   "raw_results": [
+    {
+     "title": "Docker | Secure Sandboxes for AI Agents",
+     "url": "https://www.docker.com/",
+     "snippet": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code.Docker is a platform designed to help developer"
+    },
+    {
+     "title": "user unbound variable on docker run - Stack Overflow",
+     "url": "https://stackoverflow.com/questions/44429487/user-unbound-variable-on-docker-run",
+     "snippet": "Jun 8, 2017 \u00b7 Despite the various ONBUILD steps not running yet, the ENTRYPOINT is defined, and the $USER variable is required to run the entrypoint script, hence the error message when trying to run "
+    },
+    {
+     "title": "Docker Desktop: The #1 Containerization Tool for Developers | Docker",
+     "url": "https://www.docker.com/products/docker-desktop/",
+     "snippet": "Docker Desktop is collaborative containerization software for developers. Get started and download Docker Desktop today on Mac, Windows, or Linux.Docker Desktop is collaborative containerization softw"
+    },
+    {
+     "title": "Setting up Environment Variables - GeeksforGeeks",
+     "url": "https://www.geeksforgeeks.org/devops/docker-run-with-environment-variables/",
+     "snippet": "Sep 17, 2026 \u00b7 Environment variables are key-value pairs used to configure applications and control how they behave at runtime. In Docker, they make it easier to manage configuration without changing "
+    },
+    {
+     "title": "How to Run Environment Variables in a Docker Container",
+     "url": "https://spacelift.io/blog/docker-run-environment-variables",
+     "snippet": "Oct 7, 2025 \u00b7 Learn how to set and run Docker environment variables. Passing environment variables examples and best practices."
+    },
+    {
+     "title": "Install Docker Desktop on Windows",
+     "url": "https://docs.docker.com/desktop/setup/install/windows-install/",
+     "snippet": "Get started with Docker for Windows. This guide covers system requirements, where to download, and instructions on how to install and update.Get started with Docker for Windows. This guide covers syst"
+    }
+   ],
+   "kept": [
+    "https://www.docker.com/",
+    "https://stackoverflow.com/questions/44429487/user-unbound-variable-on-docker-run",
+    "https://www.docker.com/products/docker-desktop/",
+    "https://www.geeksforgeeks.org/devops/docker-run-with-environment-variables/",
+    "https://spacelift.io/blog/docker-run-environment-variables",
+    "https://docs.docker.com/desktop/setup/install/windows-install/"
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/softhsm/SoftHSMv2",
+  "https://github.com/softhsm/softHSMv2",
+  "https://stackoverflow.com/questions/53230852/error-creating-token-via-softhsm2-as-non-root-user-could-not-initialize-the-lib",
+  "https://deepwiki.com/softhsm/SoftHSMv2/9.1-softhsm2-util",
+  "https://developers.cloudflare.com/ssl/keyless-ssl/hardware-security-modules/softhsmv2/",
+  "https://www.youtube.com/watch?v=N5EnGwXV_Pg",
+  "https://www.docker.com/",
+  "https://stackoverflow.com/questions/44429487/user-unbound-variable-on-docker-run",
+  "https://www.docker.com/products/docker-desktop/",
+  "https://www.geeksforgeeks.org/devops/docker-run-with-environment-variables/",
+  "https://spacelift.io/blog/docker-run-environment-variables",
+  "https://docs.docker.com/desktop/setup/install/windows-install/"
+ ],
+ "outcome": "authored"
+}
