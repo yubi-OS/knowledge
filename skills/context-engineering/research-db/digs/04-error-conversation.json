@@ -1,0 +1,66 @@
+{
+ "nn": "04",
+ "slug": "error-conversation",
+ "scope": "Level 4 (feeding specific errors back instead of full logs) and level 5 (fresh sessions, progress summaries, deliberate compaction).",
+ "queries_attempted": [
+  {
+   "query": "error-conversation q1",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "error-conversation q2",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "error-conversation q1 (redo 1)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "error-conversation q2 (redo 1)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin on high-weight sources (keyword drift returned off-topic results)",
+   "new_queries": "specific named-source queries (Anthropic docs, MCP spec, session management)"
+  }
+ ],
+ "results_kept": [
+  "https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/",
+  "https://en.m.wikipedia.org/wiki/Large_language_model",
+  "https://freeacademy.ai/blog/what-is-an-llm-beginners-guide-2026",
+  "https://hai.stanford.edu/ai-definitions/what-is-a-llm",
+  "https://www.geeksforgeeks.org/deep-learning/large-language-model-llm-tutorial/",
+  "https://llm-stats.com/",
+  "https://claude.com/",
+  "https://claude.com/download",
+  "https://claude.ai/",
+  "https://platform.claude.com/login",
+  "https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account",
+  "https://academy.claude.com/courses/claude-code-101/context-management",
+  "https://en.wikipedia.org/wiki/Capital_Markets_Union",
+  "https://claudecodeguides.com/claude-code-compact-vs-clear-when-to-use/",
+  "https://claude.com/blog/using-claude-code-session-management-and-1m-context",
+  "https://www.datacamp.com/tutorial/claude-code-best-practices",
+  "https://handwiki.org/wiki/Philosophy:Literacy",
+  "https://claude.ai/?cookie_consent=true",
+  "https://deepwiki.com/automata/aicodeguide/9.1-error-feedback-loop",
+  "https://aiagentskit.com/blog/ralph-wiggum-ai-loop-technique/",
+  "https://www.linkedin.com/top-content/technology/software-testing-best-practices/handling-failing-test-suites-in-software-engineering/",
+  "https://code.org/en-US/students",
+  "https://www.freecodecamp.org/",
+  "https://github.com/anthropics/claude-cookbooks/blob/main/managed_agents/CMA_iterate_fix_failing_tests.ipynb"
+ ],
+ "outcome": "authored"
+}

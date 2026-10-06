@@ -1,0 +1,250 @@
+{
+ "topic": "the context-engineering skill (yubi-OS/yubiOS skills/context-engineering/SKILL.md)",
+ "ground_source": "yubi-OS/yubiOS skills/context-engineering/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "context-hierarchy",
+   "scope": "The 5-level persistence hierarchy from always-loaded rules files down to accumulating conversation history, and why the ordering is the core structural decision.",
+   "seed_queries": [
+    "LLM agent context management hierarchy rules files",
+    "Anthropic effective context engineering for AI agents"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "rules-files",
+   "scope": "Authoring the level 1 rules file: the four sections (Tech Stack, Commands, Code Conventions, Boundaries), the tool-specific equivalents, and content selection rules.",
+   "seed_queries": [
+    "CLAUDE.md best practices project rules file",
+    "AGENTS.md cursorrules windsurfrules copilot-instructions comparison"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "specs-source-files",
+   "scope": "Levels 2 and 3: loading spec sections per feature, the 4-step pre-task context loading routine, and the 3 trust levels for loaded files.",
+   "seed_queries": [
+    "prompt injection indirect untrusted data LLM agent",
+    "read code before editing LLM coding agent best practices"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "error-conversation",
+   "scope": "Level 4 (feeding specific errors back instead of full logs) and level 5 (fresh sessions, progress summaries, deliberate compaction).",
+   "seed_queries": [
+    "LLM agent debugging feed specific error output test failure",
+    "Claude Code compaction long session context management"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "packing-strategies",
+   "scope": "The brain dump, the selective include, and the hierarchical summary project map.",
+   "seed_queries": [
+    "context packing AI agent task relevant files constraints",
+    "project map summary index AI coding agent codebase"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "budget-management",
+   "scope": "Proactive budgeting: trim at 75 percent capacity, what to cut first vs protect until the end, compress before dropping, ordering for recency.",
+   "seed_queries": [
+    "lost in the middle language models long context Liu 2023",
+    "LLM context window attention budget trimming long sessions"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "mcp-integrations",
+   "scope": "MCP servers for richer context: Context7, Chrome DevTools, PostgreSQL, Filesystem, GitHub; what each provides and how it maps onto the hierarchy.",
+   "seed_queries": [
+    "Model Context Protocol MCP servers overview",
+    "Context7 MCP server up-to-date library documentation"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "confusion-planning",
+   "scope": "Surfacing context conflicts and incomplete requirements explicitly instead of guessing, and the inline planning pattern.",
+   "seed_queries": [
+    "LLM agent surface ambiguity ask instead of guessing best practice",
+    "AI agent plan before executing multi-step tasks plan mode"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "anti-patterns-verification",
+   "scope": "Internal-record subtopic, no dig: the skill's own failure taxonomy (7 anti-patterns, 4 rationalizations, 6 red flags) and its 6-item verification checklist.",
+   "seed_queries": [
+    "internal-record subtopic, no dig"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.78,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.04,
+     "2": 0.87
+    },
+    "confidence": 0.68
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.08,
+     "2": 0.87
+    },
+    "confidence": 0.73
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.87,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.04,
+     "2": 0.91
+    },
+    "confidence": 0.8
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.1,
+     "2": 0.85
+    },
+    "confidence": 0.7
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.9,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.03,
+     "2": 0.93
+    },
+    "confidence": 0.85
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.86,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.04,
+     "2": 0.91
+    },
+    "confidence": 0.79
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.59,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.17,
+     "2": 0.71
+    },
+    "confidence": 0.39
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.78,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.08,
+     "2": 0.85
+    },
+    "confidence": 0.67
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.79,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.1,
+     "2": 0.85
+    },
+    "confidence": 0.68
+   }
+  },
+  "usage": {
+   "input_tokens": 1229,
+   "output_tokens": 139,
+   "cost": 0.000103236
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}

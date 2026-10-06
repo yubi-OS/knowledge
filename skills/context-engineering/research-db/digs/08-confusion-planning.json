@@ -1,0 +1,66 @@
+{
+ "nn": "08",
+ "slug": "confusion-planning",
+ "scope": "Surfacing context conflicts and incomplete requirements explicitly instead of guessing, and the inline planning pattern.",
+ "queries_attempted": [
+  {
+   "query": "confusion-planning q1",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "confusion-planning q2",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "confusion-planning q1 (redo 1)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "confusion-planning q2 (redo 1)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin on high-weight sources (keyword drift returned off-topic results)",
+   "new_queries": "specific named-source queries (Anthropic docs, MCP spec, session management)"
+  }
+ ],
+ "results_kept": [
+  "https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/",
+  "https://en.m.wikipedia.org/wiki/Large_language_model",
+  "https://freeacademy.ai/blog/what-is-an-llm-beginners-guide-2026",
+  "https://hai.stanford.edu/ai-definitions/what-is-a-llm",
+  "https://www.geeksforgeeks.org/deep-learning/large-language-model-llm-tutorial/",
+  "https://llm-stats.com/",
+  "https://openai.com/",
+  "https://www.ibm.com/think/topics/artificial-intelligence",
+  "https://gemini.google.com/",
+  "https://aistudio.google.com/",
+  "https://chatgpt.com/",
+  "https://cloud.google.com/learn/what-is-artificial-intelligence",
+  "https://academy.claude.com/courses/claude-code-101/the-explore-plan-code-commit-workflow",
+  "https://code.claude.com/docs/en/common-workflows",
+  "https://gnu.support/",
+  "https://arte.itlibra.com/en/guide/claude-code/daily-workflow",
+  "https://github.com/shanraisshan/claude-code-best-practice",
+  "https://www.shunku.net/blog/claude-code-workflow/",
+  "https://en.wikipedia.org/wiki/Large_language_model",
+  "https://arxiv.org/html/2610.01769",
+  "https://arxiv.org/html/2507.21285v1",
+  "https://www.linkedin.com/top-content/artificial-intelligence/ai-in-coding-and-development/solving-coding-challenges-with-llm-tools/",
+  "https://learn.microsoft.com/en-us/agent-framework/journey/llm-fundamentals",
+  "https://www.linkedin.com/posts/andriyburkov_did-you-notice-that-chat-llms-dont-ask-clarifying-activity-7208241144814563328-vFlp"
+ ],
+ "outcome": "authored"
+}

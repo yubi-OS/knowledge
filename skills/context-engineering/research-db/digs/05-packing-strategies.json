@@ -1,0 +1,95 @@
+{
+ "nn": "05",
+ "slug": "packing-strategies",
+ "scope": "The brain dump, the selective include, and the hierarchical summary project map.",
+ "queries_attempted": [
+  {
+   "query": "packing-strategies q1",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "packing-strategies q2",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "packing-strategies q1 (redo 1)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "packing-strategies q2 (redo 1)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "packing-strategies q1 (redo 2)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  },
+  {
+   "query": "packing-strategies q2 (redo 2)",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 6
+  }
+ ],
+ "redo_count": 4,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-pass dig too thin on high-weight sources (keyword drift returned off-topic results)",
+   "new_queries": "specific named-source queries (Anthropic docs, MCP spec, session management)"
+  },
+  {
+   "attempt": 3,
+   "reason": "redo 1 still returned 0 results with weight >= 0.5",
+   "new_queries": "Anthropic prompting best practices; context window management for coding"
+  }
+ ],
+ "results_kept": [
+  "https://www.merriam-webster.com/dictionary/context",
+  "https://www.contexto.me/",
+  "https://dictionary.cambridge.org/dictionary/english/context",
+  "https://en.wikipedia.org/wiki/Context",
+  "https://openai.com/index/hello-gpt-4o/",
+  "https://gist.github.com/AgentO3/9321cbe3743abbbecd018a66990a201f",
+  "https://support.microsoft.com/en-us/project/install-project",
+  "https://partner.microsoft.com/en-us/solutions/project",
+  "https://project.microsoft.com/msal-redirect2",
+  "https://github.com/kriskimmerle/codemap",
+  "https://www.youtube.com/watch?v=3289vhOUdKA",
+  "https://www.igeo.ai/compare/",
+  "https://parallelcode.app/blog/ai-coding-agent-prompts/",
+  "https://williamspurlock.com/blog/prompt-engineering-for-coding-agents/",
+  "https://agentpatterns.ai/instructions/",
+  "https://aibility.org/coaching",
+  "https://ai.iastate.edu/",
+  "https://agents-ui.com/blog/prompt-engineering-for-ai-coding-agents/",
+  "https://www.reddit.com/r/duckduckgo/top/",
+  "https://www.hontran.dev/blog/codebase-map-ai-coding-agents",
+  "https://www.xmpie.com/products/services/xmpie-mapping-service-xmap/",
+  "https://www.codebase.com/",
+  "https://replit.com/products/agent",
+  "https://www.zhihu.com/topic/19594248/hot",
+  "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+  "https://www.anthropic.com/company",
+  "https://claude.com/resources/articles/best-practices-for-prompt-engineering",
+  "https://generalanalysis.com/guides/anthropic-claude-code-security-best-practices",
+  "https://claude.com/product/overview",
+  "https://academy.claude.com/",
+  "https://dictionary.cambridge.org/dictionary/english/managing",
+  "https://handwiki.org/wiki/Software:Features_new_to_Windows_8",
+  "https://www.ledlightingsupply.com/blog/buyers-guide-to-stadium-lights",
+  "https://vexp.dev/blog/context-window-management-ai-coding",
+  "https://bestremotetools.com/how-to-manage-ai-coding-context-window-to-avoid-hallucinated/",
+  "https://developer.android.com/training/articles/assistant"
+ ],
+ "outcome": "authored"
+}
