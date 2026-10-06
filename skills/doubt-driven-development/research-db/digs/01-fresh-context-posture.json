@@ -1,0 +1,44 @@
+{
+  "nn": 1,
+  "slug": "fresh-context-posture",
+  "scope": "Why a confident answer is not a correct one; long-session context degradation; anchoring; fresh-context disprove-biased reviewer.",
+  "queries_attempted": [
+    {
+      "query": "context rot long session LLM performance degradation",
+      "attempt": 1,
+      "raw_results": 35,
+      "kept": 6
+    },
+    {
+      "query": "anchoring bias LLM sycophancy confirmation bias agreement",
+      "attempt": 1,
+      "raw_results": 66,
+      "kept": 6
+    },
+    {
+      "query": "long context LLM performance degradation study arxiv",
+      "attempt": 2,
+      "raw_results": 53,
+      "kept": 5
+    },
+    {
+      "query": "context window size model accuracy decline needle haystack",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 5
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "no kept result weighted >= 0.5 (thin dig); REDO rule applied with different queries",
+      "new_queries": [
+        "long context LLM performance degradation study arxiv",
+        "context window size model accuracy decline needle haystack"
+      ]
+    }
+  ],
+  "results_kept": [],
+  "outcome": "authored"
+}
