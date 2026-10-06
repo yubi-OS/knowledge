@@ -1,0 +1,223 @@
+{
+  "topic": "workflow token-scope auditing - a re-runnable script that codifies auditing GitHub Actions token usage and scopes after a cleanup, catching over-privileged token references",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "github-actions-token-permissions",
+      "scope": "The GitHub Actions GITHUB_TOKEN permission model: how permissions are declared at workflow and job level, defaults, inheritance, and the semantics that define whether a token is over-scoped.",
+      "seed_queries": [
+        "GitHub Actions GITHUB_TOKEN permissions workflow job level default settings documentation",
+        "GitHub Actions permissions syntax contents write least privilege token inheritance"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "retiring-over-scoped-secrets",
+      "scope": "Why long-lived custom PAT secrets like GH_TK get retired in favor of the auto-injected github.token: the risk profile of over-scoped PATs, secret hygiene, and the cleanup pattern.",
+      "seed_queries": [
+        "replace personal access token secret with GITHUB_TOKEN GitHub Actions security hardening",
+        "GitHub Actions PAT secret risk rotation removal best practices least privilege"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "static-analysis-of-workflow-yaml",
+      "scope": "Parsing and statically analyzing workflow YAML in Python: safe loading, the YAML 1.1 on-key-as-boolean quirk, walking jobs and steps, and scanning for secrets references.",
+      "seed_queries": [
+        "python pyyaml GitHub Actions workflow parse on boolean quirk",
+        "static analysis GitHub Actions workflow files secrets references scanning"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "findings-taxonomy-and-output",
+      "scope": "Designing an audit finding model: severity levels (ERROR WARN INFO), exit-code thresholds for CI, and machine-readable output formats (JSON, SARIF).",
+      "seed_queries": [
+        "SARIF output format static analysis security tools specification",
+        "linter severity levels exit codes CI gate design ERROR WARN INFO"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "secret-existence-validation",
+      "scope": "Verifying that referenced secrets actually exist: the GitHub REST endpoint to list repo secrets, best-effort online mode, and the offline allowlist fallback.",
+      "seed_queries": [
+        "GitHub REST API list repository secrets actions endpoint",
+        "GitHub Actions secrets context undefined secret empty string behavior"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "ci-gate-integration",
+      "scope": "Wiring the audit as a CI gate: pull_request path filters, scheduled drift scans, workflow_dispatch inputs, artifact upload of the audit report.",
+      "seed_queries": [
+        "GitHub Actions pull_request paths filter trigger workflow files",
+        "GitHub Actions schedule cron workflow_dispatch inputs choice type artifact upload"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "least-privilege-tightening",
+      "scope": "The phased migration from audit to enforcement: detecting over-permissioned workflows, tightening WARN findings, and promoting the gate from fail-on-ERROR to fail-on-WARN.",
+      "seed_queries": [
+        "GitHub Actions security hardening GITHUB_TOKEN permissions official documentation",
+        "reduce workflow token permissions migration phased rollout CI enforcement"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "prior-art-and-ecosystem-tooling",
+      "scope": "Existing tooling for auditing GitHub Actions security and token scope: zizmor, actionlint, GHAS secret scanning, and how a purpose-built audit script complements them.",
+      "seed_queries": [
+        "zizmor GitHub Actions security audit tool static analysis",
+        "GitHub Actions workflow security scanners actionlint secret scanning tools comparison"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t1": {
+        "type": "score",
+        "score": 1.9281,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0168,
+          "1": 0.0382,
+          "2": 0.945
+        },
+        "confidence": 0.8421
+      },
+      "t2": {
+        "type": "score",
+        "score": 1.625,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0828,
+          "1": 0.2093,
+          "2": 0.7079
+        },
+        "confidence": 0.3276
+      },
+      "t3": {
+        "type": "score",
+        "score": 1.7138,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.062,
+          "1": 0.1622,
+          "2": 0.7758
+        },
+        "confidence": 0.448
+      },
+      "t4": {
+        "type": "score",
+        "score": 1.5517,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0698,
+          "1": 0.3087,
+          "2": 0.6215
+        },
+        "confidence": 0.2297
+      },
+      "t5": {
+        "type": "score",
+        "score": 1.0797,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2156,
+          "1": 0.4891,
+          "2": 0.2953
+        },
+        "confidence": 0.0593
+      },
+      "t6": {
+        "type": "score",
+        "score": 1.2126,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1346,
+          "1": 0.5182,
+          "2": 0.3472
+        },
+        "confidence": 0.1108
+      },
+      "t7": {
+        "type": "score",
+        "score": 1.6375,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0715,
+          "1": 0.2194,
+          "2": 0.7091
+        },
+        "confidence": 0.334
+      },
+      "t8": {
+        "type": "score",
+        "score": 0.8239,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2664,
+          "1": 0.6433,
+          "2": 0.0903
+        },
+        "confidence": 0.2395
+      }
+    },
+    "usage": {
+      "input_tokens": 1157,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

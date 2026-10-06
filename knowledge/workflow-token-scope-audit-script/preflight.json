@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-05",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": {
+      "query": "GitHub Actions GITHUB_TOKEN permissions documentation",
+      "status": 200,
+      "result_count": 51,
+      "healthy": true,
+      "unresponsive_engines": [
+        [
+          "brave",
+          "too many requests"
+        ],
+        [
+          "duckduckgo",
+          "CAPTCHA"
+        ],
+        [
+          "fastbot",
+          "Suspended: access denied"
+        ],
+        [
+          "fireball",
+          "Suspended: access denied"
+        ],
+        [
+          "gmx",
+          "Suspended: CAPTCHA"
+        ],
+        [
+          "google",
+          "Suspended: access denied"
+        ],
+        [
+          "google cse",
+          "too many requests"
+        ],
+        [
+          "qwant",
+          "CAPTCHA"
+        ],
+        [
+          "resulthunter",
+          "too many requests"
+        ],
+        [
+          "searchmysite",
+          "Suspended: access denied"
+        ],
+        [
+          "seznam",
+          "timeout"
+        ],
+        [
+          "yacy",
+          "timeout"
+        ],
+        [
+          "yep",
+          "Suspended: access denied"
+        ]
+      ]
+    },
+    "unresponsive_engines": [
+      [
+        "brave",
+        "too many requests"
+      ],
+      [
+        "duckduckgo",
+        "CAPTCHA"
+      ],
+      [
+        "fastbot",
+        "Suspended: access denied"
+      ],
+      [
+        "fireball",
+        "Suspended: access denied"
+      ],
+      [
+        "gmx",
+        "Suspended: CAPTCHA"
+      ],
+      [
+        "google",
+        "Suspended: access denied"
+      ],
+      [
+        "google cse",
+        "too many requests"
+      ],
+      [
+        "qwant",
+        "CAPTCHA"
+      ],
+      [
+        "resulthunter",
+        "too many requests"
+      ],
+      [
+        "searchmysite",
+        "Suspended: access denied"
+      ],
+      [
+        "seznam",
+        "timeout"
+      ],
+      [
+        "yacy",
+        "timeout"
+      ],
+      [
+        "yep",
+        "Suspended: access denied"
+      ]
+    ]
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model": "clef",
+    "probe_answer": {
+      "status": 200,
+      "raw": {
+        "type": "score",
+        "score": 1.9433,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0154,
+          "1": 0.0259,
+          "2": 0.9587
+        },
+        "confidence": 0.88
+      },
+      "model": "clef"
+    }
+  }
+}
