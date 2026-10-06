@@ -1,0 +1,275 @@
+{
+ "topic": "the Cloudflare One Zero Trust and SASE skill (yubi-OS/yubiOS skills/cloudflare-one/SKILL.md): Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and the Zero Trust deployment patterns the skill teaches",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "01-workflow-and-api-safety",
+   "scope": "The 5-step workflow (classify, gather, retrieve, inspect, propose) and the retrieval-first API safety rules.",
+   "seed_queries": [
+    "Cloudflare documentation MCP server model context protocol docs",
+    "Cloudflare API schema retrieve current documentation before changes"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "02-assessment-prompts",
+   "scope": "The pre-configuration assessment checklist across architecture, access, tunnels, gateway, CASB and posture, and WAN.",
+   "seed_queries": [
+    "Cloudflare Zero Trust deployment assessment checklist identity provider SCIM device management",
+    "Cloudflare Access choose application type web SSH RDP SaaS"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "03-access-and-saas-federation",
+   "scope": "Access application types, access models, policy mechanics, SaaS SSO federation, and identity guardrails.",
+   "seed_queries": [
+    "Cloudflare Access policy evaluation order selectors service tokens mTLS",
+    "Cloudflare Access SaaS application SAML OIDC federation tenant controls"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "04-tunnel-and-private-networking",
+   "scope": "cloudflared connectors and HA, remotely managed tunnels, virtual networks, private DNS, and off-ramp vs on-ramp.",
+   "seed_queries": [
+    "Cloudflare Tunnel remotely managed token cloudflared connectors high availability",
+    "Cloudflare Tunnel virtual networks split tunnels resolver policies private DNS"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "05-device-client-deployment",
+   "scope": "Device client enrollment rules, device profiles, split tunnel mode selection, MDM overrides, and coexistence.",
+   "seed_queries": [
+    "Cloudflare One device client enrollment rules device profiles warp access application",
+    "Cloudflare WARP split tunnel include exclude mode MDM managed preferences"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "06-gateway-tls-dlp",
+   "scope": "Gateway policy types and order of enforcement, TLS inspection and root CA, Do Not Inspect exceptions, and DLP activation.",
+   "seed_queries": [
+    "Cloudflare Gateway order of enforcement DNS HTTP network egress policies",
+    "Cloudflare TLS decryption root certificate do not inspect DLP profiles"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "07-casb-device-posture-risk",
+   "scope": "CASB out-of-band scanning and remediation, device posture integrations, and user risk scoring.",
+   "seed_queries": [
+    "Cloudflare CASB SaaS integrations findings remediation scan",
+    "Cloudflare device posture integrations EDR MDM user risk score"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "08-infrastructure-access",
+   "scope": "ZTIA for SSH, short-lived certificates, Browser Rendering clientless access, and Audit SSH.",
+   "seed_queries": [
+    "Cloudflare Zero Trust Infrastructure Access SSH short-lived certificates",
+    "Cloudflare Access Browser Rendering clientless SSH RDP VNC session recording"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "09-logs-analytics-dex",
+   "scope": "Gateway and Access logs, shadow IT discovery, Logpush export, and DEX diagnostics.",
+   "seed_queries": [
+    "Cloudflare Gateway activity logs Logpush SIEM export",
+    "Cloudflare DEX digital experience monitoring tests fleet status shadow IT discovery"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "10-cloudflare-wan-and-validation",
+   "scope": "Cloudflare WAN connectivity, Network Firewall, expression syntax boundary, and validation prompts and output defaults.",
+   "seed_queries": [
+    "Cloudflare WAN network firewall BGP static routes IPsec on-ramp",
+    "Cloudflare WAN firewall expressions syntax vs Gateway wirefilter"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 0.51,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.63,
+     "1": 0.23,
+     "2": 0.14
+    },
+    "confidence": 0.23
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.04,
+     "2": 0.88
+    },
+    "confidence": 0.71
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.96,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.94
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.01,
+     "2": 0.96
+    },
+    "confidence": 0.9
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.89,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.04,
+     "2": 0.92
+    },
+    "confidence": 0.83
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.04,
+     "2": 0.9
+    },
+    "confidence": 0.76
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.69,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.16,
+     "2": 0.76
+    },
+    "confidence": 0.54
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.87,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.04,
+     "2": 0.92
+    },
+    "confidence": 0.81
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.1,
+     "2": 0.85
+    },
+    "confidence": 0.7
+   },
+   "t10": {
+    "type": "score",
+    "score": 1.69,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.12,
+     "2": 0.78
+    },
+    "confidence": 0.53
+   }
+  },
+  "usage": {
+   "input_tokens": 1354,
+   "output_tokens": 154,
+   "cost": 0.000113736
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09",
+   "10"
+  ],
+  "note": "t01 scored 0.51 (marginal); kept because its dig returned 8 high-weight primary sources"
+ }
+}
