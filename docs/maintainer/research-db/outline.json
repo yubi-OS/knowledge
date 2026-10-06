@@ -1,0 +1,218 @@
+{
+ "topic": "the yubiOS maintainer guide: the corpus explicates docs/MAINTAINER.md (maintainer responsibilities, review standards, merge and release discipline, governance)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "branch-and-pr-policy",
+   "scope": "docs/research planning branch, work-named implementation branches, no routine branch deletion, the summary/validation/known-inconsistencies PR bar, maintainer merge discipline.",
+   "seed_queries": [
+    "yubiOS branch policy pull request",
+    "github branch naming PR discipline"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "source-of-truth-map",
+   "scope": "PINNED.md, ADR.md, SPEC.md, MITIGATE.md, FUTURE.md, BLOCKERS.md, TODO.md, refs/ as the one-topic-one-file authority hierarchy and the historical-fragment override rule.",
+   "seed_queries": [
+    "yubiOS source of truth files",
+    "documentation authority hierarchy single source"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "research-cycle-checklist",
+   "scope": "The 7-step cycle: read order, primary upstream sources, refs/ records, planning-cycle note naming, doc propagation, inconsistency flagging, PR plus issue outcome.",
+   "seed_queries": [
+    "research cycle documentation checklist",
+    "dated research notes refs directory"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "consistency-flags",
+   "scope": "The four standing corrections: RestrictFileSystems vs v261 RestrictFileSystemAccess, PINNED.md live digests, ARM64 primary, TEST-only image isolation.",
+   "seed_queries": [
+    "systemd RestrictFileSystems directive",
+    "systemd v261 RestrictFileSystemAccess release notes"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "ci-triage-rules",
+   "scope": "Retry only likely-transient failures, deterministic failures become fixes or blockers, old-sha reruns do not validate main, narrow path-scoped trigger edits, outcomes summarized in the motivating issue/PR.",
+   "seed_queries": [
+    "CI triage retry policy",
+    "CI failure triage rules"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "release-hygiene",
+   "scope": "Release provenance citations (branch, commit, workflow run, artifact/tag), digest bumps update PINNED.md with package-floor evidence, production/test classification before publication.",
+   "seed_queries": [
+    "release provenance citation",
+    "digest pinning release hygiene"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "security-primitive-coverage",
+   "scope": "The five coverage sections: attestation (in-toto, Rekor, SLSA, Sigstore, bootupd, Keylime), trust chain, least privilege, continuous/adaptive detection, cryptographic identity.",
+   "seed_queries": [
+    "in-toto SLSA Rekor Sigstore attestation",
+    "Keylime runtime attestation TPM"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "drift-check-governance",
+   "scope": "Dated drift-check entries appended to the doc, additive classification, and the Jenny-merges discipline (agent PRs held, maintainer merges) verified across rounds 9-11.",
+   "seed_queries": [
+    "documentation drift check protocol",
+    "maintainer merge governance"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.66,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.13,
+     "2": 0.76
+    },
+    "confidence": 0.48,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.43,
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.18,
+     "2": 0.63
+    },
+    "confidence": 0.15,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.62,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.11,
+     "2": 0.76
+    },
+    "confidence": 0.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.62,
+    "probabilities": {
+     "0": 0.53,
+     "1": 0.32,
+     "2": 0.15
+    },
+    "confidence": 0.07,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.37,
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.26,
+     "2": 0.56
+    },
+    "confidence": 0.05,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.65,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.1,
+     "2": 0.78
+    },
+    "confidence": 0.48,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.04,
+    "probabilities": {
+     "0": 0.39,
+     "1": 0.18,
+     "2": 0.43
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.22,
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.27,
+     "2": 0.47
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1198,
+   "output_tokens": 124,
+   "cost": 0.000100632
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "raw_response_id": "gen-dec-1791277163-iKKrt1IUg5IOtBkyUs3d"
+ }
+}
