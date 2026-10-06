@@ -1,0 +1,224 @@
+{
+ "topic": "adversarial stress testing of security design claims: separating design claims from demonstrated properties and building the assertion set an external red team would test",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "design-claims-versus-evidence",
+   "scope": "Taxonomy for separating a security design claim (a goal stated in docs) from a demonstrated property (an outcome proven by a run or artifact), and why trust should follow only the latter.",
+   "seed_queries": [
+    "security design claims versus demonstrated properties assurance gap",
+    "verifying security claims with evidence assurance levels"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "falsifiable-assertion-sets",
+   "scope": "How to write a red-team-grade assertion set: falsifiable pass criteria, fail-closed or clean-recovery pass rules, and one row per test.",
+   "seed_queries": [
+    "falsifiable pass criteria security testing assertions",
+    "red team assertion based security invariant testing"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "boot-chain-tamper-tests",
+   "scope": "Tamper-per-link stress tests across the verified boot chain: kernel image, loader config, signing material, digest pin files, root digest.",
+   "seed_queries": [
+    "unified kernel image tampering fail closed verification",
+    "verified boot tamper detection test chain of trust"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "key-loss-recovery-stress",
+   "scope": "Stress of credential-loss paths: hardware token removed, disk unlock, SSH, PAM, backup-key recovery, and the rule that a single unrecoverable token is a fail.",
+   "seed_queries": [
+    "FIDO2 hardware security key loss recovery disk encryption",
+    "recovering from lost YubiKey LUKS full disk encryption"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "enrollment-partial-state",
+   "scope": "Partial-enrollment hazard testing: skipped onboarding steps must auto-recover or block completion, never leave a silently weaker state.",
+   "seed_queries": [
+    "partial enrollment fail safe provisioning security",
+    "PAM FIDO2 enrollment lockout recovery"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "artifact-trust-verification",
+   "scope": "Artifact-trust verification: digest pinning, SLSA provenance, SBOM attestations, and reproducible-build reproduction as the proof for pin-by-digest claims.",
+   "seed_queries": [
+    "SLSA provenance SBOM attestation verification cosign",
+    "reproducible builds verify container image digest"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "platform-trust-matrix",
+   "scope": "Per-platform trust-difference disclosure: what is stronger on ARM64, weaker on x86-64, and where OEM firmware and optional TPM anchors break vendor-independence claims.",
+   "seed_queries": [
+    "x86-64 versus ARM64 secure boot trust root differences",
+    "OEM firmware TPM trust anchor open source OS"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "cicd-runtime-drift-audit",
+   "scope": "Auditing the CI-to-runtime gap: detecting policy, test-only, or best-effort artifacts that leak into production image layers.",
+   "seed_queries": [
+    "container image layer history audit policy artifacts production",
+    "CI production promotion gate supply chain drift"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.8709,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0348,
+     "1": 0.0594,
+     "2": 0.9058
+    },
+    "confidence": 0.7378
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.8606,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.0261,
+     "1": 0.0873,
+     "2": 0.8866
+    },
+    "confidence": 0.6916
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.2147,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1448,
+     "1": 0.4957,
+     "2": 0.3595
+    },
+    "confidence": 0.0939
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.1962,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1894,
+     "1": 0.425,
+     "2": 0.3856
+    },
+    "confidence": 0.0478
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.2447,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1725,
+     "1": 0.4103,
+     "2": 0.4172
+    },
+    "confidence": 0.0583
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.4854,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1204,
+     "1": 0.2737,
+     "2": 0.6059
+    },
+    "confidence": 0.1847
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.2742,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1709,
+     "1": 0.384,
+     "2": 0.4451
+    },
+    "confidence": 0.0622
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.9494,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2882,
+     "1": 0.4743,
+     "2": 0.2375
+    },
+    "confidence": 0.0466
+   }
+  },
+  "usage": {
+   "input_tokens": 1208,
+   "output_tokens": 0
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ "validation_note": "No subtopic scored 0. Subtopic 08 scored 0.9494 (marginal) and was kept conditionally on dig strength; its first dig returned 0 authoritative sources, so it was redone once (attempt 2) and authored with weak-backing labels."
+}
