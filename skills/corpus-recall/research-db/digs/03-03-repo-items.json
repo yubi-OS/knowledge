@@ -1,0 +1,36 @@
+{
+ "nn": "03",
+ "slug": "03-repo-items",
+ "scope": "Path 2: one-call full-text retrieval via POST /api/repo-items on the steady-orbit worker (824 items, full text + paths, ~1s, 7.3 MB response)",
+ "queries_attempted": [
+  {
+   "query": "cloudflare workers.dev subdomain custom api endpoints",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "full text search api endpoint over repository text items",
+   "attempt": 2,
+   "raw_results": 56,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/workers/configuration/routing/workers-dev/",
+  "https://www.cloudflare.com/",
+  "https://docs.dify.ai/en/cloud/use-dify/workspace/api-extension/cloudflare-worker",
+  "https://github.com/bradmca/cloudflare-subdomain-worker",
+  "https://developers.cloudflare.com/workers/configuration/routing/custom-domains/",
+  "https://en.wikipedia.org/wiki/Cloudflare",
+  "https://www.merriam-webster.com/dictionary/full",
+  "https://learn.microsoft.com/en-us/azure/search/search-get-started-text",
+  "https://help.sonatype.com/en/search-api.html",
+  "https://dictionary.cambridge.org/dictionary/english/full",
+  "https://www.thefreedictionary.com/full",
+  "https://handwiki.org/wiki/Document-oriented_database"
+ ],
+ "outcome": "authored"
+}

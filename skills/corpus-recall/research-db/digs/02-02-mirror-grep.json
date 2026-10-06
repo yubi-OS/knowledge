@@ -1,0 +1,36 @@
+{
+ "nn": "02",
+ "slug": "02-mirror-grep",
+ "scope": "Path 1: mirroring the whole repo via the codeload tarball (curl -sL, no API budget, ~1s fetch) and grepping it with rg, including scripts/recall.sh and its index.tsv",
+ "queries_attempted": [
+  {
+   "query": "github codeload tarball download without api rate limits",
+   "attempt": 1,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "ripgrep rg recursive text search repository",
+   "attempt": 2,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://stackoverflow.com/questions/60188254/how-is-codeload-github-com-different-to-api-github-com",
+  "https://github.com/",
+  "https://www.baeldung.com/linux/github-download-tarball",
+  "https://github.blog/",
+  "https://stackoverflow.com/questions/8377081/github-api-download-zip-or-tarball-link",
+  "https://github.com/login",
+  "https://github.com/BurntSushi/ripgrep",
+  "https://github.com/aisyun/-ripgrep",
+  "https://ripgrep.dev/",
+  "https://ripgrep.dev/docs/guide/",
+  "https://aimagazine.com/top10/top-10-customer-service-ai-platforms",
+  "https://zerocontradictions.net/programming/linux-commands-notes"
+ ],
+ "outcome": "authored"
+}
