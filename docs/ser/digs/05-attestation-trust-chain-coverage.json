@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "attestation-trust-chain-coverage",
+  "scope": "The doc's attestation and trust-chain sections: in-toto attestations, Rekor transparency-log entries, SLSA provenance, Sigstore signing config, keylime runtime attestation, bootupd measurement, and the ROT/ROTPK chain.",
+  "queries_attempted": [
+    {
+      "query": "SLSA provenance in-toto attestation Rekor transparency log sigstore",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "Keylime runtime attestation measured boot root of trust ROTPK chain",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://safeguard.sh/resources/blog/software-attestation-framework-comparison",
+    "https://beefed.ai/en/software-provenance-sigstore-in-toto",
+    "https://aquilax.ai/blog/supply-chain-artifact-signing-slsa",
+    "https://safeguard.sh/resources/blog/provenance-attestation-signing-practical-glossary",
+    "https://dev.to/kamal_namdeo/slsa-sigstore-and-provenance-complete-practical-guide-1bl5",
+    "https://tenki.cloud/blog/github-actions-artifact-attestations-slsa",
+    "https://keylime.readthedocs.io/",
+    "https://keylime.dev/",
+    "https://github.com/keylime/keylime",
+    "https://www.intel.com/content/www/us/en/developer/articles/community/runtime-integrity-measure-and-attest-trust-domain.html",
+    "https://deepwiki.com/keylime/keylime/3.3-measured-boot-verification",
+    "https://deepwiki.com/keylime/keylime/4.2-measured-boot-policy"
+  ],
+  "outcome": "authored"
+}
