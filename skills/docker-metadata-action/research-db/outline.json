@@ -1,0 +1,245 @@
+{
+  "topic": "the docker-metadata-action skill: generating OCI-compliant Docker image tags and labels automatically from Git metadata (branch, tag, SHA, PR) in GitHub Actions, and the tag-generation discipline the skill teaches",
+  "ground_source": "yubi-OS/yubiOS skills/docker-metadata-action/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "purpose-and-scope",
+      "scope": "When to use and the frontmatter scope: what docker/metadata-action does (generate image tags and OCI labels from Git ref, SHA, PR number, or semver tags) and the boundary of its job (used before docker/build-push-action to avoid hardcoded tags).",
+      "seed_queries": [
+        "docker metadata-action github actions image tags OCI labels",
+        "docker metadata-action avoid hardcoded image tags github actions"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "02",
+      "slug": "action-reference-inputs",
+      "scope": "The action reference block: docker/metadata-action@v5, the id: meta requirement, the images input (multiple registries like quay.io and ghcr.io at once), and the tags config block.",
+      "seed_queries": [
+        "docker metadata-action images input multiple registries ghcr quay",
+        "docker metadata-action id meta step outputs requirement"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "03",
+      "slug": "tag-types",
+      "scope": "The tag types reference table: type=ref,event=branch, type=ref,event=pr, type=semver patterns, type=sha (short and format=long), type=schedule, and type=raw,value=latest with its use-sparingly caveat.",
+      "seed_queries": [
+        "docker metadata-action tag types reference semver ref sha schedule raw",
+        "docker metadata-action type=semver pattern major minor version tags"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "04",
+      "slug": "outputs-and-build-push",
+      "scope": "The five outputs (tags, labels, version, bake-file, json) and how the build-push-action step consumes them via steps.meta.outputs.tags and steps.meta.outputs.labels.",
+      "seed_queries": [
+        "docker metadata-action outputs tags labels version bake-file json",
+        "docker build-push-action metadata-action tags labels workflow wiring"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "05",
+      "slug": "oci-labels",
+      "scope": "Auto-generated OCI labels from GitHub repo metadata (org.opencontainers.image.title, url, created, revision, version) plus explicit labels like source, description, licenses.",
+      "seed_queries": [
+        "docker metadata-action org.opencontainers.image labels automatic",
+        "OCI image labels opencontainers annotations github source revision"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "06",
+      "slug": "yubios-supply-chain-pattern",
+      "scope": "The yubiOS pattern: type=sha,format=long preferred over :latest for supply chain compliance per yubiOS.rego digest pinning, plus the containers.bootc=1 label for bootc images.",
+      "seed_queries": [
+        "docker metadata-action sha format=long digest pinning supply chain",
+        "containers.bootc=1 label bootc OCI image quay.io"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "07",
+      "slug": "bake-integration",
+      "scope": "The bake-file output and its integration with docker/bake-action for multi-target builds.",
+      "seed_queries": [
+        "docker metadata-action bake-file output docker bake-action",
+        "docker bake-action metadata-action github actions multi-target"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "08",
+      "slug": "primitive-alignment",
+      "scope": "Internal record: the curve-guided-rsi primitive coverage notes on this skill (attestation, continuous/adaptive, least privilege, self-describing, segmentation closure) and how OCI tags/labels place the image in those primitives.",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "09",
+      "slug": "lifecycle-examples-guidelines",
+      "scope": "Internal record: the skill's changelog and cycle 5-7 RSI audit trail, its Examples and Guidelines sections, and the boundary-case routing rule.",
+      "seed_queries": [],
+      "internal_record": true
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "score": 1.97,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0,
+          "2": 0.98
+        },
+        "confidence": 0.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.96,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.97
+        },
+        "confidence": 0.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.96,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.97
+        },
+        "confidence": 0.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.97,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.94,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.95
+        },
+        "confidence": 0.92,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.44,
+        "probabilities": {
+          "0": 0.6,
+          "1": 0.36,
+          "2": 0.04
+        },
+        "confidence": 0.33,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.85,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.59,
+          "2": 0.13
+        },
+        "confidence": 0.38,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.63,
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.26,
+          "2": 0.18
+        },
+        "confidence": 0.05,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 0.79,
+        "probabilities": {
+          "0": 0.45,
+          "1": 0.3,
+          "2": 0.25
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1505,
+      "output_tokens": 139,
+      "cost": 0.00012642
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ],
+    "keep_note": "No subtopic scored 0. Subtopics 06-09 scored marginal (0.44-0.85) but were kept: each maps to a named section of the ground source SKILL.md, which per the mint brief dictates the outline; 08 and 09 are internal-record subtopics whose grounding is the source doc itself."
+  }
+}

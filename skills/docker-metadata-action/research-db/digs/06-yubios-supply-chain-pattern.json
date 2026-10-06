@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "yubios-supply-chain-pattern",
+  "scope": "The yubiOS pattern: type=sha,format=long preferred over :latest for supply chain compliance per yubiOS.rego digest pinning, plus the containers.bootc=1 label for bootc images.",
+  "queries_attempted": [
+    {
+      "query": "docker metadata-action sha format=long digest pinning supply chain",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "containers.bootc=1 label bootc OCI image quay.io",
+      "attempt": 1,
+      "raw_results": 63,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/docker/metadata-action",
+    "https://www.docker.com/",
+    "https://www.docker.com/resources/demystify-secure-supply-chain-metadata-dockercon-2023/",
+    "https://www.docker.com/products/docker-desktop/",
+    "https://docs.docker.com/desktop/setup/install/windows-install/",
+    "https://docs.docker.com/dhi/explore/security-concepts/digests/",
+    "https://www.amazon.com/containers/s?k=containers",
+    "https://docs.fedoraproject.org/en-US/bootc/building-containers/",
+    "https://containerking.com/",
+    "https://crmcontainer.com.br/",
+    "https://github.com/andrew-weida/bootc-container-image-best-practices",
+    "https://docs.fedoraproject.org/en-US/iot/fedora-iot-bootc-quay-example/"
+  ],
+  "outcome": "authored"
+}
