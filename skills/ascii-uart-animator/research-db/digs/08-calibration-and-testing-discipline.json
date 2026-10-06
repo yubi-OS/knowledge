@@ -1,0 +1,68 @@
+{
+ "nn": 8,
+ "slug": "calibration-and-testing-discipline",
+ "scope": "The UART testing discipline: measured calibration values (wire-interval floor, demonstrated 30 fps ceiling, bridge latency bound), the false-positive check for rendered-but-frozen playback, and verifying scripts against the frame table.",
+ "queries_attempted": [
+  {
+   "query": "serial console testing tips stty screen minicom UART debugging",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "embedded UART transmit timing baud rate frame transmission time",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "Linux serial console testing screen minicom stty baud settings",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "measuring serial port transmission time frame size baud calculator",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "UART loopback test serial port debugging null modem",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "picocom minicom screen serial terminal emulator Linux comparison",
+   "attempt": 3,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 returned mostly dictionary and podcast noise; best result 0.30",
+   "new_queries": [
+    "Linux serial console testing screen minicom stty baud settings",
+    "measuring serial port transmission time frame size baud calculator"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "attempt 2 still thin (best 0.42); one more redo permitted by the REDO rule",
+   "new_queries": [
+    "UART loopback test serial port debugging null modem",
+    "picocom minicom screen serial terminal emulator Linux comparison"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter",
+  "https://www.analog.com/en/resources/analog-dialogue/articles/uart-a-hardware-communication-protocol.html",
+  "https://linux.die.net/man/8/picocom"
+ ],
+ "outcome": "authored"
+}
