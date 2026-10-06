@@ -1,0 +1,36 @@
+{
+  "nn": 4,
+  "slug": "04-generating-bundles",
+  "scope": "The evidence-bundle CLI and its 7-step pipeline (hash, Merkle tree, PCR quote, YubiKey PIV 9c signing, Rekor v2 publication)",
+  "queries_attempted": [
+    {
+      "query": "TPM2 PCR quote tpm2_quote attestation PCRs",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "YubiKey PIV slot 9c digital signature signing",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://google.github.io/tpm-js/",
+    "https://en.wikipedia.org/wiki/Trusted_Platform_Module",
+    "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+    "https://www.hopkinslupus.org/lupus-treatment/lupus-medications/antimalarial-drugs/",
+    "https://tpm2-tools.readthedocs.io/en/latest/man/tpm2_quote.1/",
+    "https://awesome.ecosyste.ms/projects/github.com/kioubit/tpm2-quote-attest",
+    "https://developers.yubico.com/PIV/Introduction/Certificate_slots.html",
+    "https://docs.yubico.com/yesdk/users-manual/application-piv/slots.html",
+    "https://developers.yubico.com/yubico-piv-tool/Actions/signing.html",
+    "https://www.yubico.com/",
+    "https://docs.yubico.com/yesdk/yubikey-api/Yubico.YubiKey.Piv.Commands.AuthenticateSignCommand.html",
+    "https://www.cupass.com/en/learn/yubikey-piv-ssh-guide.html"
+  ],
+  "outcome": "authored"
+}
