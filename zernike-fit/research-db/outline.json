@@ -1,0 +1,215 @@
+{
+  "topic": "Zernike polynomials as corpus-audit instruments: where they fit in a curved-corpus program, what they measure, and the audit of whether they appear in the program's papers",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "zernike-basis",
+      "scope": "The Zernike polynomials as an orthogonal system on the unit disk: definition, completeness, Zernike 1934 origin, Noll 1976 indexing and normalization.",
+      "seed_queries": [
+        "Zernike polynomials orthogonal basis unit disk 1934 history",
+        "Noll 1976 Zernike polynomials indexing normalization JOSA"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "aberration-theory",
+      "scope": "Aberration theory and the semantics of the low-order modes (defocus, astigmatism, coma, spherical aberration); the aberrated-lens extension of program slot 1.",
+      "seed_queries": [
+        "Zernike aberration modes defocus astigmatism coma spherical aberration wavefront expansion",
+        "aberration theory optical systems Zernike polynomials Born Wolf principles of optics"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "caustic-classification",
+      "scope": "Catastrophe optics: caustics as catastrophes of the aberration function (Berry and Upstill 1980, Nye 1999); program slot 2 operationalization of Gap E.",
+      "seed_queries": [
+        "catastrophe optics caustics aberration function Berry Upstill",
+        "caustic classification fold cusp umbilic natural focusing of light Nye"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "jacobi-radial",
+      "scope": "Radial polynomial closed forms, recurrences, evaluation practice, and the program's identity-type vs measurement-type split; the Jacobi identification recorded but unconfirmed by this dig.",
+      "seed_queries": [
+        "Zernike radial polynomials Jacobi polynomials closed form recurrence",
+        "Zernike radial polynomial explicit formula binomial coefficients"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "disk-sphere-bases",
+      "scope": "The pre-lift disk basis (Zernike) versus the post-lift sphere basis (spherical harmonics); program slot 3's pre-lift twin of the Parseval shares.",
+      "seed_queries": [
+        "Zernike polynomials relation spherical harmonics disk sphere mapping",
+        "orthogonal basis disk versus sphere spectral expansion point cloud"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "metrology-practice",
+      "scope": "Zernike coefficients in industrial and standards practice: interferometry, optical manufacturing, ANSI Z80.28 reporting.",
+      "seed_queries": [
+        "Zernike coefficients wavefront metrology interferometry adaptive optics",
+        "OSA ANSI standard Zernike indexing optical testing"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "spectral-audit",
+      "scope": "Null-standardized spectral auditing: randomness tests for point patterns (Ripley K), permutation and randomization nulls, the program's curveball-null z>3 admission protocol.",
+      "seed_queries": [
+        "null hypothesis spectral analysis point distribution permutation test",
+        "spherical harmonic spectrum randomness test point cloud statistics"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "terminology-collision",
+      "scope": "The defocus naming collision: optical defocus as deterministic quadratic rephasing versus the program's stochastic heat-flow defocus; the required dictionary flag.",
+      "seed_queries": [
+        "defocus Zernike mode quadratic phase focal shift definition",
+        "heat equation Gaussian blur deterministic versus stochastic diffusion"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.92,
+        "probabilities": {
+          "0": 0.0225,
+          "1": 0.035,
+          "2": 0.9425
+        },
+        "confidence": 0.835,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.6401,
+        "probabilities": {
+          "0": 0.0634,
+          "1": 0.2331,
+          "2": 0.7035
+        },
+        "confidence": 0.3299,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 0.9205,
+        "probabilities": {
+          "0": 0.2522,
+          "1": 0.5751,
+          "2": 0.1727
+        },
+        "confidence": 0.1362,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.8145,
+        "probabilities": {
+          "0": 0.0389,
+          "1": 0.1077,
+          "2": 0.8534
+        },
+        "confidence": 0.612,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.5237,
+        "probabilities": {
+          "0": 0.0962,
+          "1": 0.2839,
+          "2": 0.6199
+        },
+        "confidence": 0.2112,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.374,
+        "probabilities": {
+          "0": 0.1166,
+          "1": 0.3928,
+          "2": 0.4906
+        },
+        "confidence": 0.1128,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.708,
+        "probabilities": {
+          "0": 0.0604,
+          "1": 0.1713,
+          "2": 0.7683
+        },
+        "confidence": 0.435,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.8523,
+        "probabilities": {
+          "0": 0.2748,
+          "1": 0.598,
+          "2": 0.1272
+        },
+        "confidence": 0.1739,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1312,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
