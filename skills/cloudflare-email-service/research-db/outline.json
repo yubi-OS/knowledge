@@ -1,0 +1,238 @@
+{
+  "topic": "Cloudflare Email Service skill (yubi-OS/yubiOS skills/cloudflare-email-service/SKILL.md): sending and receiving transactional emails with Cloudflare Email Service (Email Sending + Email Routing), Workers bindings, Agents SDK email handling, and the email integration patterns the skill teaches.",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "retrieval-over-pretraining",
+      "scope": "Why the skill mandates retrieval-first for every Cloudflare Email Service task and the 4 retrieval sources it names (Cloudflare docs, REST API spec, workers-types, Agents SDK docs).",
+      "seed_queries": [
+        "Cloudflare Email Service documentation email sending routing",
+        "Cloudflare Workers EmailMessage send_email binding types"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "prerequisites-and-onboarding",
+      "scope": "The 3 prerequisite checks (domain onboarded via wrangler email sending list/enable, send_email binding in wrangler.jsonc, postal-mime installed) and how domain onboarding works.",
+      "seed_queries": [
+        "wrangler email sending enable command Cloudflare",
+        "Cloudflare email sending domain onboarding verified domain"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "workers-binding-sending",
+      "scope": "Sending from a Worker via the send_email binding: wrangler.jsonc config, env.EMAIL.send() shape, from-domain requirement, restricted bindings, local testing.",
+      "seed_queries": [
+        "Cloudflare Workers send_email binding env.EMAIL.send example",
+        "Cloudflare send_email binding wrangler.jsonc send email Worker"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "rest-api-sending",
+      "scope": "The Email Sending REST API path: endpoint shape, address vs email, reply_to snake_case, delivered/permanent_bounces/queued response, Bearer token handling.",
+      "seed_queries": [
+        "Cloudflare API email sending send endpoint POST accounts",
+        "Cloudflare Email Sending REST API create send email request"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "agents-sdk-email",
+      "scope": "Email in the Cloudflare Agents SDK: onEmail() and replyToEmail() on the Agent class, agents as email-native channels.",
+      "seed_queries": [
+        "Cloudflare Agents SDK Agent class onEmail replyToEmail",
+        "cloudflare agents SDK email handling documentation"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "cli-mcp-for-coding-agents",
+      "scope": "The coding-agent path: wrangler CLI commands, MCP tools, first-time setup (email sending/routing enable, destination addresses).",
+      "seed_queries": [
+        "Cloudflare email MCP server tools send email coding agent",
+        "wrangler email routing enable commands Cloudflare CLI"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "email-routing-inbound",
+      "scope": "Receiving inbound email: Workers email() handler, forwarding to verified addresses, postal-mime parsing, single-use message.raw.",
+      "seed_queries": [
+        "Cloudflare Email Routing Worker email handler message.forward",
+        "Cloudflare Workers postal-mime parse incoming email raw"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "deliverability",
+      "scope": "SPF, DKIM, DMARC authentication, bounce handling, suppression, the transactional-only scope rule, and content practices.",
+      "seed_queries": [
+        "Cloudflare email sending SPF DKIM DMARC setup",
+        "transactional email deliverability bounce suppression best practices"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "common-mistakes",
+      "scope": "The source doc's 11-row common-mistakes table, restated with fixes and cross-references. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "score": 1.26,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.17,
+          "2": 0.54
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.92,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.95
+        },
+        "confidence": 0.88,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.9,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.93
+        },
+        "confidence": 0.84,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.91,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.93
+        },
+        "confidence": 0.86,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.84,
+        "probabilities": {
+          "0": 0.5,
+          "1": 0.17,
+          "2": 0.33
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.37,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.38,
+          "2": 0.5
+        },
+        "confidence": 0.06,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.93,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.96
+        },
+        "confidence": 0.9,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.96,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.27,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.22,
+          "2": 0.52
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1224,
+      "output_tokens": 139,
+      "cost": 0.000102816
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "note": "No subtopic scored 0. Subtopics 01, 05, 06 scored in the marginal band (0.84-1.37) and were kept because their digs returned strong results; 09 is the source doc's own mistakes table (internal-record, kept on the strength of the source doc)."
+  }
+}
