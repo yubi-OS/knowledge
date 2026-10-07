@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "correlation-and-entry-point",
+  "scope": "Correlation/request IDs generated at the system boundary and attached to every log line, span, and outbound call; entry-point stamping (scheduler vs replay vs CLI) propagated alongside the ID; propagation across HTTP headers and queue metadata.",
+  "queries_attempted": [
+    {
+      "query": "correlation id request id logging propagation best practices",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "W3C trace context propagation HTTP headers message queues",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Correlation",
+    "https://microsoft.github.io/code-with-engineering-playbook/observability/correlation-id/",
+    "https://www.geeksforgeeks.org/data-science/correlation-meaning-significance-types-and-degree-of-correlation/",
+    "https://www.merriam-webster.com/dictionary/correlation",
+    "https://www.simplypsychology.org/correlation.html",
+    "https://kevinmarcondes.online/en/structured-json-logs-request-correlation",
+    "https://www.w3.org/",
+    "https://www.w3schools.com/",
+    "https://validator.w3.org/",
+    "https://en.wikipedia.org/wiki/World_Wide_Web_Consortium",
+    "https://oneuptime.com/blog/post/2026-01-30-trace-context-design/view",
+    "https://beefed.ai/en/w3c-trace-context-propagation"
+  ],
+  "outcome": "authored"
+}
