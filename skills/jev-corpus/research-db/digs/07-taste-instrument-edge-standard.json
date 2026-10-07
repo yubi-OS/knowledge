@@ -1,0 +1,58 @@
+{
+  "nn": "07",
+  "slug": "taste-instrument-edge-standard",
+  "scope": "Taste instrument axes (box-counting D, mirror symmetry, scale coherence), clef batched scoring, edge-standard-v1.",
+  "queries_attempted": [
+    {
+      "query": "box counting method fractal dimension estimation images",
+      "attempt": 1,
+      "raw_results": 63,
+      "kept": 6
+    },
+    {
+      "query": "edge map normalization ink coverage standardized measurement image",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "box counting algorithm fractal dimension estimation digital images",
+      "attempt": 2,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "image processing binarization ink pixel coverage normalization",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig results were off-topic (lexical keyword collisions on multi-word queries); redo with different queries per spec",
+      "new_queries": [
+        "box counting algorithm fractal dimension estimation digital images",
+        "image processing binarization ink pixel coverage normalization"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Box_counting",
+    "http://arxiv.org/abs/nlin/0107023",
+    "https://handwiki.org/wiki/Box_counting",
+    "https://www.sciencedirect.com/science/article/pii/S0031320309000843",
+    "https://paulbourke.net/fractals/fdpoints/",
+    "https://www.academia.edu/49511461/The_box_counting_method_for_evaluate_the_fractal_Di_mension_in_radiographic_images",
+    "https://connor-johnson.com/2014/03/04/fractal-dimension-and-box-counting/",
+    "https://en.wikipedia.org/wiki/Multifractal_system",
+    "https://en.wikipedia.org/wiki/Fractal",
+    "https://www.researchgate.net/publication/377647921_Summary_of_Document_Image_Binarization",
+    "http://www.help.imageanalyst.net/ImageProcessingBasics_Binarization.html",
+    "https://en.wikipedia.org/wiki/Normalization_(image_processing)",
+    "https://artificial-intelligence-wiki.com/computer-vision/image-processing-fundamentals/image-thresholding-and-binarization/"
+  ],
+  "outcome": "authored"
+}

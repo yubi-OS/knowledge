@@ -1,0 +1,55 @@
+{
+  "nn": "03",
+  "slug": "lens-atom-planning",
+  "scope": "Lens format candidates, real vs control pairs, atom DRY-RUN plans, expected_delta geometry, skip-list.",
+  "queries_attempted": [
+    {
+      "query": "paired control candidate experiment design hypothesis method parameters expected effect",
+      "attempt": 1,
+      "raw_results": 68,
+      "kept": 6
+    },
+    {
+      "query": "geodesic distance sparse binary vector ideal point projection",
+      "attempt": 1,
+      "raw_results": 60,
+      "kept": 6
+    },
+    {
+      "query": "hypothesis method parameters expected effect paired control design",
+      "attempt": 2,
+      "raw_results": 59,
+      "kept": 6
+    },
+    {
+      "query": "geodesic distance embedding space nearest ideal point optimization",
+      "attempt": 2,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig results were off-topic (lexical keyword collisions on multi-word queries); redo with different queries per spec",
+      "new_queries": [
+        "hypothesis method parameters expected effect paired control design",
+        "geodesic distance embedding space nearest ideal point optimization"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://mathworld.wolfram.com/Geodesic.html",
+    "https://en.wikipedia.org/wiki/Geodesic",
+    "https://www.britannica.com/science/geodesic",
+    "https://docs.scipy.org/doc/scipy/reference/spatial.distance.html",
+    "https://openreview.net/forum?id=dNJmJ8bh1M",
+    "https://arxiv.org/pdf/2006.16180.pdf",
+    "https://plato.stanford.edu/entries/physics-experiment",
+    "https://www.zubairkhalid.com/blog/guides/matched-pairs-experiment-design-and-analysis",
+    "https://www.simplypsychology.org/experimental-designs.html",
+    "https://www.scribbr.com/methodology/hypothesis/"
+  ],
+  "outcome": "authored"
+}

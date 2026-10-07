@@ -1,0 +1,59 @@
+{
+  "nn": "06",
+  "slug": "scorer-v2-hysteresis",
+  "scope": "Structured-evidence scorer v2: pinned regex extraction, one batched request, threshold jitter, v2.1 hysteresis.",
+  "queries_attempted": [
+    {
+      "query": "structured evidence extraction regex pipeline document scoring",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    },
+    {
+      "query": "hysteresis threshold band eliminate switching noise binary classification",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "regex rule-based extraction structured data from documents",
+      "attempt": 2,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "hysteresis thresholding noise immunity Schmitt trigger binary decisions",
+      "attempt": 2,
+      "raw_results": 44,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig results were off-topic (lexical keyword collisions on multi-word queries); redo with different queries per spec",
+      "new_queries": [
+        "regex rule-based extraction structured data from documents",
+        "hysteresis thresholding noise immunity Schmitt trigger binary decisions"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://docs.unstructured.io/concepts/structured-data-extractor/regex-options",
+    "https://developers.llamaindex.ai/python/framework/understanding/extraction/",
+    "https://parseur.com/blog/extract-structured-data-from-documents-at-scale",
+    "https://scrapingant.com/blog/regex-plus-ml-hybrid-extraction-for-semi-structured",
+    "https://en.wikipedia.org/wiki/Regular_expression",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet",
+    "https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference",
+    "https://dev.to/__c1b9e06dc90a7e0a676b/i-spent-a-month-fighting-llms-to-extract-structured-data-19gp",
+    "https://en.wikipedia.org/wiki/Hysteresis",
+    "https://en.wikipedia.org/wiki/Schmitt_trigger",
+    "https://www.allaboutcircuits.com/technical-articles/what-is-hysteresis-an-introduction-for-electrical-engineers/",
+    "https://www.britannica.com/science/hysteresis",
+    "https://techietory.com/understanding-schmitt-triggers-adding-hysteresis-noise-immunity/",
+    "https://techoverflow.net/2026/05/09/how-to-compute-hysteresis-threshold-ratios-in-python-using-uliengineering/index.html"
+  ],
+  "outcome": "authored"
+}
