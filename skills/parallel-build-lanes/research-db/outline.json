@@ -1,0 +1,254 @@
+{
+  "topic": "Running a full greenfield build the way big builds are expected to run: capability map approved in chat, ideate-solo design pass, formal SPEC doc, parallel implementation subagent lanes with deps-injected modules and self-contained tests, advisor/integrator reconciliation, orchestrator deploy plus live verification.",
+  "ground_source": "yubi-OS/yubiOS skills/parallel-build-lanes/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "capability-map-approval",
+      "scope": "Mapping the architecture to modules with responsibilities, dependencies, and build order, presented in chat and approved BEFORE any spec is written.",
+      "seed_queries": [
+        "software architecture capability map module decomposition responsibilities dependencies build order",
+        "presenting architecture module map for approval before writing specification"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "02",
+      "slug": "ideate-solo-design-pass",
+      "scope": "The ideate-solo one-pager step: 5 to 8 variations across 5 lenses, scored and stress-tested, saved to session/<slug>-solo-YYYY-MM-DD.md before the SPEC. (internal-record subtopic: cites the source doc and the sibling ideate-solo skill, no dig)",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "03",
+      "slug": "formal-spec-contract",
+      "scope": "The formal SPEC doc every lane implements against: invariants up top, endpoint and schema contracts, module file contract with exact export names, testing strategy, boundaries (always / ask-first / never), success criteria.",
+      "seed_queries": [
+        "software specification document invariants endpoint schema contracts testing strategy",
+        "module file contract exact export names implementation boundaries always ask-first never"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "04",
+      "slug": "parallel-implementation-lanes",
+      "scope": "Dispatching parallel implementation subagent lanes in ONE message: type general, model_preset smart for correctness-critical lanes and fast for thinner ones, self-contained lane prompts, RETURN with paths, test counts, and interface summaries.",
+      "seed_queries": [
+        "parallel subagent lanes multi-agent software build orchestration dispatch",
+        "self-contained subagent task prompt deliverables return contract"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "05",
+      "slug": "deps-injection-and-lane-tests",
+      "scope": "Lane rules: deps-injected modules, lane tests import nothing from other lanes (stubs matching documented interfaces), one lane owns the shared data layer, node --test with all passing before return, never weaken a test.",
+      "seed_queries": [
+        "dependency injection module test stubs isolation documented interface",
+        "node test runner node --test passing tests before merge"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "06",
+      "slug": "advisor-integrator-lane",
+      "scope": "The advisor/integrator smart lane: reconciles cross-lane interface mismatches, writes any uncovered module, runs all suites together, adds a full-lifecycle e2e test, produces integration report and deploy checklist.",
+      "seed_queries": [
+        "integration engineer reconciling interface mismatches between parallel components",
+        "end to end test full lifecycle integration checklist before deploy"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "07",
+      "slug": "integration-lessons",
+      "scope": "Integration lessons from the jev builds: test-driver vs real-backend parity, adapters forwarding full context, hash/shape duality, binding-vs-REST response shapes, sequencing at approve/commit points. (internal-record subtopic: jev build history, no dig)",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "08",
+      "slug": "workers-deploy-safety",
+      "scope": "Deploy safety on the Cloudflare Workers modules API: multipart PUT shape, preserving legacy entry modules byte-safe, bindings referencing not-yet-existing Secrets Store secrets failing the deploy, fail-closed invariants.",
+      "seed_queries": [
+        "Cloudflare Workers modules API multipart PUT deploy metadata main_module bindings",
+        "Cloudflare Workers deploy secrets store binding compatibility_date modules upload"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "09",
+      "slug": "deploy-verify-and-reporting",
+      "scope": "Orchestrator deploy plus live verification of every route or leg, todo tracking with per-phase ids, and the single completion report (shipped, live proof points, tests, what is open).",
+      "seed_queries": [
+        "post deploy live verification route by route smoke checks",
+        "engineering task completion report shipped proof points tests open items"
+      ],
+      "internal_record": false
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "endpoint": "https://api.defapi.org/api/v1/decisions (DefAPI direct)",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.54,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.17,
+          "2": 0.68
+        },
+        "confidence": 0.3
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.15,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.31,
+          "2": 0.42
+        },
+        "confidence": 0
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.84,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.04,
+          "2": 0.9
+        },
+        "confidence": 0.76
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.9,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.05,
+          "2": 0.93
+        },
+        "confidence": 0.86
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.89,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.93
+        },
+        "confidence": 0.85
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.7,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.05,
+          "2": 0.83
+        },
+        "confidence": 0.56
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.25,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.41,
+          "2": 0.42
+        },
+        "confidence": 0
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.75,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.48,
+          "1": 0.3,
+          "2": 0.22
+        },
+        "confidence": 0
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.54,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.11,
+          "2": 0.72
+        },
+        "confidence": 0.32
+      }
+    },
+    "usage": {
+      "input_tokens": 1667,
+      "output_tokens": 139,
+      "cost": 0.000140028
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
