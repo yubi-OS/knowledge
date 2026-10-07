@@ -15,8 +15,8 @@ The source doc attributes to SEI's Software Architecture Documentation in Practi
 The dig results ground the arc42 claims:
 
 - The Building Block View shows the static decomposition of the system into building blocks: modules, components, subsystems, and similar units (https://docs.arc42.org/section-5/, weight 0.67).
-- The Runtime View describes concrete behavior and interactions of the system's building blocks in the form of scenarios: how building blocks execute important use cases or features, how they cooperate with users and neighboring systems at critical external interfaces, and their startup, shutdown, and error behavior (https://docs.arc42.org/section-6/, weight 0.49).
-- The full template has 12 sections, each documented on docs.arc42.org (https://arc42.org/overview/, weight 0.46).
+- The Runtime View describes concrete behavior and interactions of the system's building blocks in the form of scenarios: how building blocks execute important use cases or features, how they cooperate with users and neighboring systems at critical external interfaces, and their startup, shutdown, and error behavior (https://docs.arc42.org/section-6/, weight 0.49, weak).
+- The full template has 12 sections, each documented on docs.arc42.org (https://arc42.org/overview/, weight 0.46, weak).
 
 The source doc adds the template mechanics: the Building Block View uses hierarchical black-box and white-box refinement, overall system first, then selected internals, and its black-box template covers purpose and responsibility, interfaces, optional quality characteristics, location, requirements, and risks (source doc). The axis reads arc42 as the precedent for separating the static composition surface (what is composed of what) from the runtime surface (how instances interact), which is exactly the static-import versus runtime-call distinction the axis scores.
 
