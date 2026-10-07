@@ -1,0 +1,203 @@
+{
+ "topic": "Learned-latent curve variant for corpus audit (ground source: yubi-OS/yubiOS skills/learned-latent-curve/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "rsi-discipline-fixpoint",
+   "scope": "The learned-latent curve variant runs the same gap-map to hypothesis to edit to re-map to fixpoint RSI loop as curve-guided-rsi, with a soft 3-cycle cap and a user-override protocol; the Changelog section is the audit trail.",
+   "seed_queries": [
+    "recursive self improvement AI agents fixpoint stopping criterion",
+    "documentation corpus audit gap map hypothesis edit loop"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "learned-latent-basis",
+   "scope": "Replaces hand-engineered binary primitive vectors with latents learned from the corpus: PCA decomposition, PC1+PC2 variance share, holdout R2 as the fit-health readout, fit coordinates per skill.",
+   "seed_queries": [
+    "principal component analysis explained variance ratio how many components",
+    "regression holdout R squared overfitting small sample size"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "warm-start-refit-lifecycle",
+   "scope": "Re-fit cadence, drift signals, warm-start kwargs (prior_f, prior_coefs, prior_bias, prior_t_max) with t-range rescaling, the t-pipeline persistence list and rollback protocol keep cross-corpus re-fits faithful.",
+   "seed_queries": [
+    "warm start machine learning model retraining new data",
+    "concept drift detection thresholds production monitoring"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "coordinate-robustness",
+   "scope": "The 1-D coordinate t from upstream PCA is protected against noise, PC1 sign flips, partial ordering, and domain shift: confidence-weighted regression, canonical sign vector persistence, ridge-residual drift detection.",
+   "seed_queries": [
+    "PCA sign ambiguity eigenvector sign convention fix",
+    "covariate shift detection machine learning methods"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "pre-fit-validation",
+   "scope": "7 pre-fit data pathology checks (NaN and inf in Z and t, duplicate t, shape mismatch, softplus floor frequencies, feature scaling, constant columns) run before the curve fit rather than after it.",
+   "seed_queries": [
+    "data validation checks before model training NaN missing values",
+    "rank deficient design matrix singular least squares"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "changelog-audit-trail",
+   "scope": "Internal record: the Changelog section as per-cycle audit trail, the Result backfill pattern, process-deviation documentation, and edit-induced gap accounting across 12 cycles. No dig.",
+   "seed_queries": []
+  },
+  {
+   "nn": "07",
+   "slug": "composition-with-other-skills",
+   "scope": "Internal record: named pairings (internal-nonlex-tokens downstream, prior-art-search upstream, negative-skill-space re-evaluator, recursive-self-improvement meta) plus consumers single-action-curve-rsi and hyperspherical-harmonic-curve. No dig.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "clef",
+  "answers": {
+   "t01": {
+    "score": 1.57,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.1,
+     "2": 0.74
+    },
+    "confidence": 0.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.08,
+     "2": 0.81
+    },
+    "confidence": 0.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.36,
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.2,
+     "2": 0.58
+    },
+    "confidence": 0.04,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.33,
+    "probabilities": {
+     "0": 0.23,
+     "1": 0.2,
+     "2": 0.57
+    },
+    "confidence": 0.01,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.53,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.21,
+     "2": 0.66
+    },
+    "confidence": 0.3,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.54,
+    "probabilities": {
+     "0": 0.65,
+     "1": 0.17,
+     "2": 0.18
+    },
+    "confidence": 0.2,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.54,
+    "probabilities": {
+     "0": 0.64,
+     "1": 0.17,
+     "2": 0.19
+    },
+    "confidence": 0.17,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.34,
+    "probabilities": {
+     "0": 0.78,
+     "1": 0.1,
+     "2": 0.12
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1455,
+   "output_tokens": 124,
+   "cost": 0.00012222
+  },
+  "dropped": [
+   "08"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07"
+  ],
+  "drop_note": "08 scored 0.34 (nearest the padding criterion). Its content is the primitive-coverage template stubs, one of which the source doc itself removed as unsupported on 2026-09-17. Recorded as a gap/skip rather than authored."
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "nn": "02",
+ "slug": "learned-latent-basis",
+ "scope": "Replaces hand-engineered binary primitive vectors with latents learned from the corpus: PCA decomposition, PC1+PC2 variance share, holdout R2 as the fit-health readout, fit coordinates per skill.",
+ "queries_attempted": [
+  {
+   "query": "principal component analysis explained variance ratio how many components",
+   "attempt": 1,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "regression holdout R squared overfitting small sample size",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "sklearn PCA explained_variance_ratio_ official documentation",
+   "attempt": 2,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "adjusted R squared cross validation model selection university statistics lecture notes",
+   "attempt": 2,
+   "raw_results": 68,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 weighting yielded 0 results at weight >= 0.5 for this subtopic; generic blog queries surfaced aggregators. Redone with documentation-oriented queries.",
+   "new_queries": [
+    "sklearn PCA explained_variance_ratio_ official documentation",
+    "adjusted R squared cross validation model selection university statistics lecture notes"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Principal_component_analysis",
+  "https://towardsdatascience.com/pca-102-should-you-use-pca-how-many-components-to-use-how-to-interpret-them-da0c8e3b11f0/",
+  "https://www.geeksforgeeks.org/data-analysis/principal-component-analysis-pca/",
+  "https://www.baeldung.com/cs/pca",
+  "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html",
+  "https://stackoverflow.com/questions/46516469/principal-component-analysis-how-many-components",
+  "https://statisticsbyjim.com/regression/overfitting-regression-models/",
+  "https://stats.stackexchange.com/questions/425622/does-over-fitting-a-model-affect-r-squared-only-or-adjusted-r-squared-too",
+  "https://www.nature.com/articles/nmeth.3968",
+  "https://arxiv.org/pdf/2305.05792",
+  "https://en.wikipedia.org/wiki/Lupita_Nyong%27o",
+  "https://handwiki.org/wiki/Cross-validation_(statistics)",
+  "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html",
+  "https://stackoverflow.com/questions/32857029/python-scikit-learn-pca-explained-variance-ratio-cutoff",
+  "https://scikit-learn.org/1.0/modules/generated/sklearn.decomposition.PCA.html",
+  "https://sklearn.org/stable/modules/decomposition.html",
+  "https://sklearn.org/stable/api/sklearn.decomposition.html",
+  "https://scikit-learn.org/stable/index.html",
+  "https://pages.stat.wisc.edu/~kdlevin/teaching/Fall2022/STAT340/lecs/L12_CV.html",
+  "https://sebastianraschka.com/pdf/lecture-notes/stat479fs18/10_eval-cv_notes.pdf",
+  "https://harvard-iacs.github.io/2021-CS109A/lectures/lecture05/",
+  "https://www.merriam-webster.com/dictionary/adjusted",
+  "https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/",
+  "https://rressler.quarto.pub/sml-lecture-notes/05_cross_validation.html"
+ ],
+ "outcome": "authored"
+}

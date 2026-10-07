@@ -1,0 +1,69 @@
+{
+ "nn": "03",
+ "slug": "warm-start-refit-lifecycle",
+ "scope": "Re-fit cadence, drift signals, warm-start kwargs (prior_f, prior_coefs, prior_bias, prior_t_max) with t-range rescaling, the t-pipeline persistence list and rollback protocol keep cross-corpus re-fits faithful.",
+ "queries_attempted": [
+  {
+   "query": "warm start machine learning model retraining new data",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "concept drift detection thresholds production monitoring",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "scikit-learn warm_start parameter documentation",
+   "attempt": 2,
+   "raw_results": 58,
+   "kept": 6
+  },
+  {
+   "query": "evidently ai data drift detection documentation threshold",
+   "attempt": 2,
+   "raw_results": 60,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 weighting yielded 0 results at weight >= 0.5 for this subtopic; generic blog queries surfaced aggregators. Redone with documentation-oriented queries.",
+   "new_queries": [
+    "scikit-learn warm_start parameter documentation",
+    "evidently ai data drift detection documentation threshold"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.numberanalytics.com/blog/ultimate-guide-warm-start-machine-learning",
+  "https://stackoverflow.com/questions/42757892/how-to-use-warm-start",
+  "https://stackoverflow.com/questions/53533515/retraining-an-existing-machine-learning-model-with-new-data",
+  "https://www.camwhoreshd.com/search/young-jenny-suck-dog-cock/",
+  "https://emitechlogic.com/retrain-vs-fine-tune-vs-train-from-scratch-a-decision-framework-for-ml-engineers/",
+  "https://sklearner.com/sklearn-randomforestclassifier-warm_start-parameter/",
+  "https://aisecurityandsafety.org/en/guides/model-monitoring-guide/",
+  "https://llmops.report/posts/concept-drift-detection-in-production/",
+  "https://alldaystech.com/guides/artificial-intelligence/model-drift-detection-monitoring-response",
+  "https://www.sciencedirect.com/science/article/pii/S2212827123006789",
+  "https://www.merriam-webster.com/dictionary/concept",
+  "https://handwiki.org/wiki/Physics:T2K_experiment",
+  "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html",
+  "https://stackoverflow.com/questions/45651096/warm-start-parameter-and-its-impact-on-computational-time",
+  "https://scikit-learn.org/stable/developers/develop.html",
+  "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html",
+  "https://stackoverflow.com/questions/44736577/how-does-warm-start-option-in-scikit-learn-work",
+  "https://github.com/scikit-learn/scikit-learn/issues/9508",
+  "https://docs.evidentlyai.com/metrics/preset_data_drift",
+  "https://docs-old.evidentlyai.com/reference/data-drift-algorithm",
+  "https://www.evidentlyai.com/blog/embedding-drift-detection",
+  "https://docs.evidentlyai.com/metrics/explainer_drift",
+  "https://docs-old.evidentlyai.com/presets/data-drift",
+  "https://oleg-dubetcky.medium.com/detecting-data-drift-with-evidently-ai-11bfe378cb00"
+ ],
+ "outcome": "authored"
+}
