@@ -1,0 +1,211 @@
+{
+  "topic": "Assessing whether an idea is novel and non-obvious before expanding it (Graham v. John Deere / MPEP 2141 adapted for engineering judgment, NOVEL/BORDERLINE/NOT-NOVEL verdicts)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "graham-framework",
+      "scope": "The Graham v. John Deere obviousness framework: 35 U.S.C. 103, the four inquiries codified in MPEP 2141, and how they map onto engineering judgment.",
+      "seed_queries": [
+        "Graham v. John Deere obviousness framework four inquiries",
+        "MPEP 2141 obviousness guidelines 35 USC 103"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "ksr-rationales",
+      "scope": "The KSR v. Teleflex rationale catalog (MPEP 2141 III): the six rejection rationales A through F, which are strongest, and how to anticipate a 103 rejection of an engineering idea.",
+      "seed_queries": [
+        "KSR v. Teleflex obviousness rationale combining prior art elements",
+        "MPEP 2141 III KSR rationale obvious to try rejection"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "layer-decomposition",
+      "scope": "Splitting an idea into mechanism / trigger / policy layers: why the combination is what patent law treats as the invention, and how engineering novelty often lives in one layer only.",
+      "seed_queries": [
+        "mechanism trigger policy layer decomposition of a system idea",
+        "separating mechanism from application novelty engineering"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "internal-prior-art",
+      "scope": "Checking the project's own ADRs, PRs, Linear issues, and refs/ docs as the first and highest-signal prior-art source before any external scan.",
+      "seed_queries": [
+        "architecture decision records as internal prior art before building",
+        "checking existing pull requests and issues for duplicate feature work"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "external-prior-art",
+      "scope": "External prior-art scanning for engineering judgment: direct equivalents, failed and abandoned attempts, academic and formal work, adjacent or historical efforts.",
+      "seed_queries": [
+        "prior art search methodology direct equivalents failed attempts",
+        "how to survey existing solutions before building new feature academic and industry"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "phosita-obviousness",
+      "scope": "Level of ordinary skill in the pertinent art (PHOSITA): could a skilled practitioner combine the known elements; the obvious-to-try standard.",
+      "seed_queries": [
+        "person having ordinary skill in the art PHOSITA definition level of skill",
+        "obvious to try standard patent law finite number of predictable solutions"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "secondary-considerations",
+      "scope": "Secondary considerations (objective indicia): long-felt need, failure of others, unexpected results, and why they only count with evidence.",
+      "seed_queries": [
+        "secondary considerations nonobviousness long felt need failure of others",
+        "objective indicia of nonobviousness unexpected results evidence"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "verdict-output",
+      "scope": "The verdict taxonomy (NOVEL / BORDERLINE / NOT-NOVEL), the output document template, anti-patterns, red flags, and the verification checklist. Source-doc-grounded; internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.04,
+          "2": 0.89
+        },
+        "confidence": 0.73
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.68,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.08,
+          "2": 0.8
+        },
+        "confidence": 0.52
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.71,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.12,
+          "2": 0.8
+        },
+        "confidence": 0.58
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.65,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.1,
+          "2": 0.77
+        },
+        "confidence": 0.46
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.86,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.03,
+          "2": 0.91
+        },
+        "confidence": 0.78
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.05,
+          "2": 0.89
+        },
+        "confidence": 0.74
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.65,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.16,
+          "2": 0.75
+        },
+        "confidence": 0.49
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.73,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.04,
+          "2": 0.85
+        },
+        "confidence": 0.61
+      }
+    },
+    "usage": {
+      "input_tokens": 1546,
+      "output_tokens": 124,
+      "cost": 0.000129864
+    }
+  }
+}
