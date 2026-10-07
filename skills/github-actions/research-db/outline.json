@@ -1,0 +1,207 @@
+{
+  "topic": "the github-actions skill: GitHub Actions for the yubi-OS org (workflow structure, triggers, GITHUB_TOKEN permissions, pinned action SHAs, dhi.io container pattern, workflow triggering discipline, BLOCKER-001 workflow scope)",
+  "ground_source": "yubi-OS/yubiOS skills/github-actions/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "orig": "t01",
+      "slug": "yubios-hard-rules-and-approved-actions",
+      "scope": "The four AGENTS.md hard rules for every yubi-OS workflow, the approved action SHA allowlist, and org-level enforcement of pinning and allowlisting.",
+      "seed_queries": [
+        "github actions pin actions to full commit SHA supply chain security best practice",
+        "github actions third-party action allowlist organization policy pinned versions"
+      ]
+    },
+    {
+      "nn": "02",
+      "orig": "t03",
+      "slug": "workflow-file-structure-and-triggers",
+      "scope": "Workflow file anatomy and the on: block: push, pull_request, schedule, workflow_dispatch, plus the mandatory .github/workflows/ location.",
+      "seed_queries": [
+        "github actions workflow syntax on push pull_request schedule workflow_dispatch",
+        "github actions workflow_dispatch inputs manual trigger REST API"
+      ]
+    },
+    {
+      "nn": "03",
+      "orig": "t04",
+      "slug": "github-token-permissions",
+      "scope": "The ephemeral GITHUB_TOKEN, its permission vocabulary, job-level scoping, and org-level default workflow permissions.",
+      "seed_queries": [
+        "GITHUB_TOKEN permissions least privilege github actions contents read",
+        "github actions job level permissions id-token write attestations pages"
+      ]
+    },
+    {
+      "nn": "04",
+      "orig": "t05",
+      "slug": "workflow-scope-blocker-001",
+      "scope": "BLOCKER-001: why .github/workflows writes need workflow scope, GITHUB_TOKEN self-modification block, and the five solutions with the closed status.",
+      "seed_queries": [
+        "github fine-grained PAT workflow permission 404 write .github/workflows",
+        "GITHUB_TOKEN cannot modify workflow files security hardening backdoor"
+      ]
+    },
+    {
+      "nn": "05",
+      "orig": "t06",
+      "slug": "actions-rest-api",
+      "scope": "The Actions REST API surface: list workflows, dispatch runs, poll status, download logs, rerun, cancel, list jobs.",
+      "seed_queries": [
+        "github actions REST API create workflow dispatch event endpoint",
+        "github actions REST API list workflow runs download logs rerun cancel"
+      ]
+    },
+    {
+      "nn": "06",
+      "orig": "t07",
+      "slug": "yubios-ci-yml-template",
+      "scope": "The canonical yubiOS CI workflow template: dhi.io container, shellcheck gate, policy-gated buildx build, artifact upload. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "07",
+      "orig": "t08",
+      "slug": "common-workflow-patterns",
+      "scope": "Conditional steps, matrix builds, secrets usage, and job dependencies as the SKILL.md teaches them.",
+      "seed_queries": [
+        "github actions conditional steps if github.ref github.event_name",
+        "github actions matrix strategy build job dependencies needs secrets"
+      ]
+    }
+  ],
+  "dropped_subtopics": [
+    {
+      "nn": "d02",
+      "orig": "t02",
+      "slug": "approved-container-image-dhi-io",
+      "scope": "The approved dhi.io container image pattern.",
+      "seed_queries": [
+        "dhi.io Docker Hardened Images debian base",
+        "github actions container job image registry credentials example"
+      ],
+      "score": 0.38,
+      "reason": "score 0: padding per jev outline validation; container image content covered inside docs 01 and 06"
+    },
+    {
+      "nn": "d09",
+      "orig": "t09",
+      "slug": "rsi-primitive-coverage",
+      "scope": "Attestation and continuous/adaptive primitive coverage audit-trail entries from curve-guided-rsi cycles 4-7.",
+      "seed_queries": [],
+      "score": 0.01,
+      "reason": "score 0: padding per jev outline validation; pure internal audit-trail"
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "score": 1.18,
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.42,
+          "2": 0.38
+        },
+        "confidence": 0.12
+      },
+      "t02": {
+        "score": 0.38,
+        "probabilities": {
+          "0": 0.66,
+          "1": 0.3,
+          "2": 0.04
+        },
+        "confidence": 0.43
+      },
+      "t03": {
+        "score": 1.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 1
+        },
+        "confidence": 0.99
+      },
+      "t04": {
+        "score": 1.96,
+        "probabilities": {
+          "0": 0,
+          "1": 0.03,
+          "2": 0.97
+        },
+        "confidence": 0.94
+      },
+      "t05": {
+        "score": 1.57,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.3,
+          "2": 0.63
+        },
+        "confidence": 0.36
+      },
+      "t06": {
+        "score": 1.43,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.47,
+          "2": 0.48
+        },
+        "confidence": 0.14
+      },
+      "t07": {
+        "score": 0.83,
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.54,
+          "2": 0.15
+        },
+        "confidence": 0.31
+      },
+      "t08": {
+        "score": 1.99,
+        "probabilities": {
+          "0": 0,
+          "1": 0,
+          "2": 1
+        },
+        "confidence": 0.99
+      },
+      "t09": {
+        "score": 0.01,
+        "probabilities": {
+          "0": 1,
+          "1": 0,
+          "2": 0
+        },
+        "confidence": 0.98
+      }
+    },
+    "usage": {
+      "input_tokens": 1117,
+      "output_tokens": 139,
+      "cost": 9.3828e-05
+    },
+    "dropped": [
+      "t02",
+      "t09"
+    ],
+    "kept": [
+      "t01",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ]
+  }
+}
