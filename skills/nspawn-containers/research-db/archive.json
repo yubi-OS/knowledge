@@ -1,0 +1,2186 @@
+[
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "systemd-nspawn vs QEMU vs podman comparison shared kernel isolation",
+  "title": "Why systemd-nspawn is slower than docker,podman and qemu?! how to Improve nspawn performance? - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/630859/why-systemd-nspawn-is-slower-than-docker-podman-and-qemu-how-to-improve-nspawn",
+  "snippet": "January 25, 2021 \u2014 CPU tasks take twice of the time it takes in docker, podman or qemu ... First I disabled all the spectre/meltdown mitigations in the host kernel (and the qemu guest kernel in the case of qemu benchmark) using:\"Unix & Linux is part of Stack Overflow\u2019s open communities: specialist spaces where curiosity is welcome, knowledge is shared freely, and the best answers rise to the top. ",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.13,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Why systemd-nspawn is slower than docker,podman and qemu?! how to Improve nspawn performance? - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/630859/why-systemd-nspawn-is-slower-than-docker-podman-and-qemu-how-to-improve-nspawn) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "systemd-nspawn vs QEMU vs podman comparison shared kernel isolation",
+  "title": "Improve systemd-nspawn performance \u00b7 Issue #18370 \u00b7 systemd/systemd",
+  "url": "https://github.com/systemd/systemd/issues/18370",
+  "snippet": "January 25, 2021 \u2014 qemu-system-x86_64 -name buster20210121210102 -m 2G -enable-kvm -cpu host -smp cores=4,threads=2,sockets=1 -object iothread,id=myio1 -device virtio-blk-pci,drive=mydisk0,iothread=myio1 -drive file=buster20210121210102.qcow2,if=none,id=mydisk0,format=qcow2,aio=native,cache=none ... # baremetal real 0m12.998s # nspawn real 0m30.777s <==== :( # docker real 0m15.127s #podman real 0m",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.81,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Improve systemd-nspawn performance \u00b7 Issue #18370 \u00b7 systemd/systemd' (https://github.com/systemd/systemd/issues/18370) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.81
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "systemd-nspawn vs QEMU vs podman comparison shared kernel isolation",
+  "title": "Is systemd-nspawn a better alternative to Docker for Linux containers? - Botmonster Tech",
+  "url": "https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/",
+  "snippet": "May 12, 2026 \u2014 Systemd-nspawn is a namespace container tool. It boots a full Linux userspace inside an isolated environment that shares the host kernel. That means init, services, everything. It sits closer to LXC or a light VM than to Docker.\"Systemd-nspawn is a namespace container tool. It boots a full Linux userspace inside an isolated environment that shares the host kernel. That means init, s",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.09,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Is systemd-nspawn a better alternative to Docker for Linux containers? - Botmonster Tech' (https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "systemd-nspawn vs QEMU vs podman comparison shared kernel isolation",
+  "title": "Docker Compose vs Podman Quadlets vs systemd-nspawn",
+  "url": "https://www.bigiron.cc/guides/docker-compose-vs-podman-quadlets-vs-systemd-nspawn",
+  "snippet": "May 10, 2026 \u00b7 Three deals for running services in containers. Docker Compose is what everyone knows; Podman Quadlets is rootless and systemd-native; systemd-nspawn is the OS-level lightweight alternative. Picking right shapes how you'll write configs, do upgrades, and reason about failures for years.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.11,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Docker Compose vs Podman Quadlets vs systemd-nspawn' (https://www.bigiron.cc/guides/docker-compose-vs-podman-quadlets-vs-systemd-nspawn) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.11
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "systemd-nspawn vs QEMU vs podman comparison shared kernel isolation",
+  "title": "Careers at Five Below | Five Below jobs",
+  "url": "https://careers.fivebelow.com/us/en/home",
+  "snippet": "It's more fun with us what it's like to work at Five Below Be the First to Apply Store Asset Protection (Security Guard)",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Careers at Five Below | Five Below jobs' (https://careers.fivebelow.com/us/en/home) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "systemd-nspawn vs QEMU vs podman comparison shared kernel isolation",
+  "title": "LXC and LXD on Shani OS \u2014 Full System Containers \u2014 Shanios Blog",
+  "url": "https://blog.shani.dev/post/lxc-lxd-on-shani-os/",
+  "snippet": "LXC vs LXD vs Distrobox vs Podman vs nspawn vs VMs. Choosing the right container or isolation typeFull VMs. Shares home dir. Yes (by default). No.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.1,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'LXC and LXD on Shani OS \u2014 Full System Containers \u2014 Shanios Blog' (https://blog.shani.dev/post/lxc-lxd-on-shani-os/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "sysext portable services systemd container vs virtual machine boundary",
+  "title": "Portable Services Introduction - systemd",
+  "url": "https://systemd.io/PORTABLE_SERVICES/",
+  "snippet": "Can be run as OS container, using systemd-nspawn, by booting the image with systemd-nspawn -i -b. Can be booted directly as VM image, using a generic VM executor such as virtualbox/qemu/kvm\"The upper sysext images must contain at least one matching unit file each, with the right name prefix and suffix (see above).\"\"Can be run as OS container, using systemd-nspawn, by booting the image with systemd",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.59,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Portable Services Introduction - systemd' (https://systemd.io/PORTABLE_SERVICES/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.59
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "sysext portable services systemd container vs virtual machine boundary",
+  "title": "Portable Services | systemd/systemd | DeepWiki",
+  "url": "https://deepwiki.com/systemd/systemd/5.4-portable-services",
+  "snippet": "1 month ago \u2014 Portable Services is a systemd concept designed to bundle system services and their dependencies into a single image (a \"Portable Image\"). Unlike containers, portable services run directly on the host system, utilizing the host's kernel and ...\"Portable Services is a systemd concept designed to bundle system services and their dependencies into a single image (a \"Portable Image\"). Un",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.13,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Portable Services | systemd/systemd | DeepWiki' (https://deepwiki.com/systemd/systemd/5.4-portable-services) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "sysext portable services systemd container vs virtual machine boundary",
+  "title": "Discord stuck at \"Starting...\" : r/discordapp - Reddit",
+  "url": "https://www.reddit.com/r/discordapp/comments/11g8wry/discord_stuck_at_starting/",
+  "snippet": "Discord stuck at \"Starting...\" I've got Discord and DiscordCanary on my computer and both of them are giving me this issue. I have to \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Discord stuck at \"Starting...\" : r/discordapp - Reddit' (https://www.reddit.com/r/discordapp/comments/11g8wry/discord_stuck_at_starting/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "sysext portable services systemd container vs virtual machine boundary",
+  "title": "ChatGPT: Chat, Work, Create & Code with AI",
+  "url": "https://chatgpt.com/",
+  "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code\u2014all in one place. Get started for free or download the app.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'ChatGPT: Chat, Work, Create & Code with AI' (https://chatgpt.com/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "sysext portable services systemd container vs virtual machine boundary",
+  "title": "Virtu\u00e1ln\u00ed server od 131 K\u010d/m\u011bs - AMD EPYC, NVME SSD, Proxmox VE",
+  "url": "http://www.coolhousing.net/cz/vps-virtualni-privatni-server",
+  "snippet": "Virtu\u00e1ln\u00ed server nov\u00e9 generace provozovan\u00fd v \u010cR v na\u0161em DC.V\u00fdkon, rychlost bez kompromisu",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Virtu\u00e1ln\u00ed server od 131 K\u010d/m\u011bs - AMD EPYC, NVME SSD, Proxmox VE' (http://www.coolhousing.net/cz/vps-virtualni-privatni-server) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "01-isolation-ladder",
+  "slug": "isolation-ladder",
+  "query": "sysext portable services systemd container vs virtual machine boundary",
+  "title": "systemd-stable/docs/PORTABLE_SERVICES.md at v255-stable \u00b7 systemd/systemd-stable",
+  "url": "https://github.com/systemd/systemd-stable/blob/v255-stable/docs/PORTABLE_SERVICES.md",
+  "snippet": "Can be run as OS container, using systemd-nspawn, by booting the image with systemd-nspawn -i -b. Can be booted directly as VM image, using a generic VM executor such as virtualbox/qemu/kvm\"The upper extension images must contain an extension-release file in /usr/lib/extension-release.d/, with an ID= and SYSEXT_LEVEL=/VERSION_ID= matching the base image for sysexts, or /etc/extension-release.d/, w",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.8,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-stable/docs/PORTABLE_SERVICES.md at v255-stable \u00b7 systemd/systemd-stable' (https://github.com/systemd/systemd-stable/blob/v255-stable/docs/PORTABLE_SERVICES.md) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn use cases CI jobs systemd unit testing container",
+  "title": "systemd-nspawn Container Manager | systemd/systemd | DeepWiki",
+  "url": "https://deepwiki.com/systemd/systemd/5.1-systemd-nspawn-container-manager",
+  "snippet": "Purpose and Scope systemd-nspawn is a lightweight container manager utilizing Linux kernel features such as namespaces, cgroups, and capabilities to spawn and manage OS containers. It isolates hostname, filesystems, process trees, users, and network stacks to securely execute commands or fully booted Linux OS instances inside containers.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.17,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn Container Manager | systemd/systemd | DeepWiki' (https://deepwiki.com/systemd/systemd/5.1-systemd-nspawn-container-manager) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn use cases CI jobs systemd unit testing container",
+  "title": "systemd-nspawn - Spawn a namespace container for debugging, testing and building at Linux.org",
+  "url": "https://www.linux.org/docs/man1/systemd-nspawn.html",
+  "snippet": "This option should be enabled when the container runs a full Operating System (more specifically: an init system), and is useful to ensure that the container is accessible via machinectl(1) and shown by tools such as ps(1). If the container does not run an init system, it is recommended to set this option to \"no\". Note that --share-system implies --register=no. --keep-unit Instead of creating a tr",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.55,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - Spawn a namespace container for debugging, testing and building at Linux.org' (https://www.linux.org/docs/man1/systemd-nspawn.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.55
+   },
+   "usage": {
+    "input_tokens": 1632,
+    "output_tokens": 284,
+    "cost": 0.000137088
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn use cases CI jobs systemd unit testing container",
+  "title": "File Descriptor Store",
+  "url": "https://systemd.io/FILE_DESCRIPTOR_STORE/",
+  "snippet": "The primary use-case of this logic is to permit services to restart seamlessly (for example to update them to a newer version), without losing execution context, dropping pinned resources, terminating established connections or even just\u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.57,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'File Descriptor Store' (https://systemd.io/FILE_DESCRIPTOR_STORE/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.57
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn use cases CI jobs systemd unit testing container",
+  "title": "\"Arrow\" Heir to the Demon (TV Episode 2014) - IMDb",
+  "url": "https://www.imdb.com/title/tt3263832/",
+  "snippet": "Heir to the Demon: Directed by Wendey Stanzler. With Stephen Amell, Katie Cassidy, David Ramsey, Willa Holland. As Laurel \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result '\"Arrow\" Heir to the Demon (TV Episode 2014) - IMDb' (https://www.imdb.com/title/tt3263832/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn use cases CI jobs systemd unit testing container",
+  "title": "Stuff Michael Meeks is doing",
+  "url": "https://apple-tree.life/~michael/blog/2011/",
+  "snippet": "Thomas &amp; babes. Amused by E.&#39;s demand that &#34;I&#39;m not Bethan ! I&#39;m Elidabeth !&#34; . Bid &#39;bye to B. and T. in the evening. 2011-12-29: Thursday Up lateish, breakfast, finally got a",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.09,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Stuff Michael Meeks is doing' (https://apple-tree.life/~michael/blog/2011/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn use cases CI jobs systemd unit testing container",
+  "title": "systemd/NEWS at main \u00b7 systemd/systemd \u00b7 GitHub",
+  "url": "https://github.com/systemd/systemd/blob/main/NEWS",
+  "snippet": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub.By use case.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.74,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/NEWS at main \u00b7 systemd/systemd \u00b7 GitHub' (https://github.com/systemd/systemd/blob/main/NEWS) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.74
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn replace docker run dev container same rootfs",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "August 10, 2026 \u2014 Reason: Bind-mounting /proc and /sys with read-write access into unprivileged containers is not secure. (Discuss in Talk:Systemd-nspawn) With recent versions of systemd, you would also need to need the following workaround: ... See [19] for more details. Since overlayfs does not work with user namespaces and is unavailable inside systemd-nspawn, by default, Docker falls back to u",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.48,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - ArchWiki' (https://wiki.archlinux.org/title/Systemd-nspawn) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.48
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn replace docker run dev container same rootfs",
+  "title": "Container Inception: Docker in nspawn Container on Linux",
+  "url": "https://mwalkowski.com/post/container-inception-docker-in-nspawn-container/",
+  "snippet": "In the previous article, I introduced readers to the world of nspawn containers. This article will expand on that introduction to nspawn and focus on a more advanced topic - running the Docker daemon in an nspawn container. I will describe how to prepare the environment and install Docker in an isolated setting. The example presented comes from my project, where the configuration included ...",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.16,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Container Inception: Docker in nspawn Container on Linux' (https://mwalkowski.com/post/container-inception-docker-in-nspawn-container/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn replace docker run dev container same rootfs",
+  "title": "A whirlwind tour of systemd-nspawn containers | Quantum",
+  "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
+  "snippet": "March 22, 2025 \u2014 In this post, I\u2019ll describe the ... some more guidance on setting up Alpine Linux containers. systemd-nspawn, like all containers, requires a separate rootfs in a directory....\"When you would normally use Docker but can\u2019t or don\u2019t want to. For reasons, please see the footnote-turned-blog post. In this post, I\u2019ll describe the process of setting up systemd-nspawn containers and how ",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.15,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'A whirlwind tour of systemd-nspawn containers | Quantum' (https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.15
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn replace docker run dev container same rootfs",
+  "title": "Is systemd-nspawn a better alternative to Docker for Linux containers? - Botmonster Tech",
+  "url": "https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/",
+  "snippet": "May 12, 2026 \u2014 Drop rootfs directories there, and every machinectl command works on them right away. sudo apt install systemd-container debootstrap sudo debootstrap --include=systemd,dbus trixie /var/lib/machines/debian-dev \\ http://deb.debian.org/debian\"The /var/lib/machines/ path is nspawn\u2019s default storage spot. Drop rootfs directories there, and every machinectl command works on them right awa",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.09,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Is systemd-nspawn a better alternative to Docker for Linux containers? - Botmonster Tech' (https://botmonster.com/self-hosting/systemd-nspawn-lightweight-containers-without-docker/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn replace docker run dev container same rootfs",
+  "title": "On Running systemd-nspawn Containers - benjamintoll.com",
+  "url": "https://benjamintoll.com/2022/02/04/on-running-systemd-nspawn-containers/",
+  "snippet": "February 4, 2022 \u2014 To create a container, systemd-nspawn ... Those familiar with tools like runc will be familiar with this requirement. One can use many of the same methods to get a root filesystem (rootfs) as documented in my article on runc....\"There\u2019s no need to install containerd and runc, which Docker needs and installs by default. I don\u2019t have anything against them, mind you, and systemd-ns",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.16,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'On Running systemd-nspawn Containers - benjamintoll.com' (https://benjamintoll.com/2022/02/04/on-running-systemd-nspawn-containers/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "02-when-to-use",
+  "slug": "when-to-use",
+  "query": "systemd-nspawn replace docker run dev container same rootfs",
+  "title": "Running Lightweight Containers with systemd-nspawn",
+  "url": "https://devopsaitoolkit.com/blog/lightweight-containers-with-systemd-nspawn/",
+  "snippet": "Use systemd-nspawn and machinectl to run lightweight OS containers without Docker on Linux.Why nspawn instead of Docker or a VM. systemd-nspawn boots a directory tree as a container using the same kernel namespaces and cgroups that everything else on Linux uses.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.14,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Running Lightweight Containers with systemd-nspawn' (https://devopsaitoolkit.com/blog/lightweight-containers-with-systemd-nspawn/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "systemd-nspawn --private-users --ephemeral --directory options man page",
+  "title": "systemd-nspawn(1) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man1/systemd-nspawn.1.html",
+  "snippet": "As a safety check systemd-nspawn will verify the existence of /usr/lib/os-release or /etc/os-release in the container tree before booting a container (see os-release(5)). It might be necessary to add this file to the container tree manually\u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.75,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn(1) - Linux manual page' (https://man7.org/linux/man-pages/man1/systemd-nspawn.1.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.75
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "systemd-nspawn --private-users --ephemeral --directory options man page",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Default systemd-nspawn options Note that containers started via machinectl or systemd-nspawn@.service use different default options than containers started manually by the systemd-nspawn command. The extra options used by the service are: -b / --boot - Managed containers automatically search for an init program and invoke it as PID 1.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.58,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - ArchWiki' (https://wiki.archlinux.org/title/Systemd-nspawn) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.58
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "systemd-nspawn --private-users --ephemeral --directory options man page",
+  "title": "Used 2011 Toyota RAV4 - Kelley Blue Book",
+  "url": "https://www.kbb.com/toyota/rav4/2011/?msockid=2b76d95fc4a2632704a0ceb4c56a62bd",
+  "snippet": "Get current 2011 RAV4 fair market price, depreciation, trade-in, and resale values from the trusted experts at Kelley Blue Book.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Used 2011 Toyota RAV4 - Kelley Blue Book' (https://www.kbb.com/toyota/rav4/2011/?msockid=2b76d95fc4a2632704a0ceb4c56a62bd) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "systemd-nspawn --private-users --ephemeral --directory options man page",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Its main component is an init system used to bootstrap user space and manage user processes. It also provides various daemons and utilities, including device management, login management, network connection management, and event logging.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.35,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.35
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "systemd-nspawn --private-users --ephemeral --directory options man page",
+  "title": "systemd-nspawn (1) - Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man1/systemd-nspawn.1.html",
+  "snippet": "The --private-users-ownership=auto option is implied if --private-users=pick is used. This option has no effect if user namespacing is not used. systemd-dissect (1) 's --shift switch may be used to shift UID/GID ownership from or to the 0, foreign or specific container UID/GID base outside of any systemd-nspawn invocation.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.84,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn (1) - Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man1/systemd-nspawn.1.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.84
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "systemd-nspawn --private-users --ephemeral --directory options man page",
+  "title": "systemd.nspawn(5) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man5/systemd.nspawn.5.html/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection",
+  "snippet": "PrivateUsers= Configures support for usernamespacing. This is equivalent to the --private-users= command line switch, and takes the same options. This option is privileged (see above). This option is the default if the [email protected] template unit file is used.\"This option is equivalent to the command line switches --overlay= and --overlay-ro=, see systemd-nspawn(1) for details about the specif",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.7,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd.nspawn(5) - Linux manual page' (https://man7.org/linux/man-pages/man5/systemd.nspawn.5.html/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.7
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "machinectl pull-tar import-tar --verify signature systemd machines",
+  "title": "Ubuntu Manpage: machinectl - Control the systemd machine manager",
+  "url": "https://manpages.ubuntu.com/manpages/focal/man1/machinectl.1.html",
+  "snippet": "This command effectively empties /var/lib/machines. Note that commands such as machinectl pull-tar or machinectl pull-raw usually create hidden, read-only, unmodified machine images from the downloaded image first, before cloning a writable working copy of it, in order to avoid duplicate downloads in case of images that are reused multiple times.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.78,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Ubuntu Manpage: machinectl - Control the systemd machine manager' (https://manpages.ubuntu.com/manpages/focal/man1/machinectl.1.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.78
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "machinectl pull-tar import-tar --verify signature systemd machines",
+  "title": "machinectl Command Linux: Complete Guide to Managing systemd Containers ...",
+  "url": "https://codelucky.com/machinectl-command-linux/",
+  "snippet": "Aug 26, 2025 \u00b7 The machinectl command is a powerful utility in Linux systems that provides comprehensive management capabilities for systemd containers and virtual machines. As part of the systemd ecosystem, it offers administrators a unified interface to control, monitor, and interact with various types of isolated environments including containers, VMs, and chroots.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.09,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'machinectl Command Linux: Complete Guide to Managing systemd Containers ...' (https://codelucky.com/machinectl-command-linux/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "machinectl pull-tar import-tar --verify signature systemd machines",
+  "title": "machinectl - Control the systemd machine manager at Linux.org",
+  "url": "https://www.linux.org/docs/man1/machinectl.html",
+  "snippet": "See systemd-nspawn(1) for more information on image formats, in particular it's --directory= and --image= options. EXAMPLES Example 1. Download an Ubuntu image and open a shell in it # machinectl pull-tar https://cloud-images.ubuntu.com/trusty/current/trusty-server-cloudimg-amd64-root.tar.gz # systemd-nspawn -M trusty-server-cloudimg-amd64-root This downloads and verifies the specified .tar image,",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.46,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'machinectl - Control the systemd machine manager at Linux.org' (https://www.linux.org/docs/man1/machinectl.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.46
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "machinectl pull-tar import-tar --verify signature systemd machines",
+  "title": "machinectl - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/latest/machinectl.html",
+  "snippet": "Use machinectl list-images --all to see a list of all machine images, including the hidden ones. When combined with the --all switch removes all images, not just hidden ones. This command effectively empties /var/lib/machines/. Note that commands such as importctl pull-tar or importctl pull-raw usually create hidden, read-only, unmodified machine images from the downloaded image first, before clon",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.87,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'machinectl - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/latest/machinectl.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.87
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "machinectl pull-tar import-tar --verify signature systemd machines",
+  "title": "Playboi Carti Jersey Outfit - Pinterest",
+  "url": "https://www.pinterest.com/ideas/playboi-carti-jersey-outfit/932196176689/",
+  "snippet": "Find and save ideas about playboi carti jersey outfit on Pinterest.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Playboi Carti Jersey Outfit - Pinterest' (https://www.pinterest.com/ideas/playboi-carti-jersey-outfit/932196176689/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "03-invocation-anatomy",
+  "slug": "invocation-anatomy",
+  "query": "machinectl pull-tar import-tar --verify signature systemd machines",
+  "title": "machinectl (1) \u2014 Linux manual page - man7.org",
+  "url": "https://www.man7.org/linux/man-pages/man1/machinectl.1.html",
+  "snippet": "machinectl may be used to introspect and control the state of the systemd (1) virtual machine and container registration manager systemd-machined.service (8). machinectl may be used to execute operations on machines and images.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.8,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'machinectl (1) \u2014 Linux manual page - man7.org' (https://www.man7.org/linux/man-pages/man1/machinectl.1.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.8
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "systemd-nspawn --boot systemd PID 1 inside container",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "Systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC\u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.57,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - ArchWiki' (https://wiki.archlinux.org/title/Systemd-nspawn) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.57
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "systemd-nspawn --boot systemd PID 1 inside container",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Its main component is an init system used to bootstrap user space and manage user processes. It also provides various daemons and utilities, including device management, login management, network connection management, and event logging.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.33,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.33
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "systemd-nspawn --boot systemd PID 1 inside container",
+  "title": "How to Use systemd-nspawn for Lightweight Containers on Ubuntu",
+  "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-use-systemd-nspawn-for-lightweight-containers-on-ubuntu/view",
+  "snippet": "March 2, 2026 \u2014 # Start an interactive shell in ... with full init: # Boot the container with systemd as PID 1 sudo systemd-nspawn -b -D /var/lib/machines/mycontainer # -b boots the container (runs /sbin/init) # You will see a login ...\"# Start an interactive shell in the container sudo systemd-nspawn -D /var/lib/machines/mycontainer # You will get a shell prompt inside the container # The hostnam",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.1,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Use systemd-nspawn for Lightweight Containers on Ubuntu' (https://oneuptime.com/blog/post/2026-03-02-how-to-use-systemd-nspawn-for-lightweight-containers-on-ubuntu/view) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "systemd-nspawn --boot systemd PID 1 inside container",
+  "title": "systemd-nspawn \u2014 containers built... | Stack Harbor Knowledge Base",
+  "url": "https://stackharbor.com/en/knowledge-base/systemd-nspawn-containers/",
+  "snippet": "By default the target\u2019s PID 1 is systemd itself \u2014 your container boots like a real machine, with journal, units, and systemctl working inside. nspawn then proxies the inner journal back to the host so journalctl --machine=mycontainer shows the inner logs.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.12,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn \u2014 containers built... | Stack Harbor Knowledge Base' (https://stackharbor.com/en/knowledge-base/systemd-nspawn-containers/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "systemd-nspawn --boot systemd PID 1 inside container",
+  "title": "systemd-nspawn(1) \u2014 systemd-container \u2014 Debian trixie \u2014 Debian M\u2026",
+  "url": "https://manpages.debian.org/systemd-nspawn.1.html",
+  "snippet": "systemd-nspawn may be used to run a command or OS in a lightweight namespace container. In many ways it is similar to chroot(1), but more powerful since \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.75,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn(1) \u2014 systemd-container \u2014 Debian trixie \u2014 Debian M\u2026' (https://manpages.debian.org/systemd-nspawn.1.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.75
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "systemd-nspawn --boot systemd PID 1 inside container",
+  "title": "Are Grounding Sheets Legit or a Scam? Honest Buyer Verdict",
+  "url": "https://www.mattressnut.com/are-grounding-sheets-legit/",
+  "snippet": "Jul 2, 2026 \u00b7 Which grounding sheet brands are legit and which are Amazon scams? We tested 12 brands and ranked them by \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Are Grounding Sheets Legit or a Scam? Honest Buyer Verdict' (https://www.mattressnut.com/are-grounding-sheets-legit/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1569,
+    "output_tokens": 284,
+    "cost": 0.000131796
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "test systemd services inside nspawn container ephemeral",
+  "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+  "url": "https://www.speedtest.net/",
+  "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Speedtest by Ookla - The Global Broadband Speed Test' (https://www.speedtest.net/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "test systemd services inside nspawn container ephemeral",
+  "title": "systemd-nspawn(1) - Linux manual page",
+  "url": "https://man7.org/linux/man-pages/man1/systemd-nspawn.1.html",
+  "snippet": "As a safety check systemd-nspawn will verify the existence of /usr/lib/os-release or /etc/os-release in the container tree before booting a container (see os-release(5)). It might be necessary to add this file to the container tree manually\u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.76,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn(1) - Linux manual page' (https://man7.org/linux/man-pages/man1/systemd-nspawn.1.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.76
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "test systemd services inside nspawn container ephemeral",
+  "title": "Internet Speed Test | Fast.com",
+  "url": "https://fast.com/",
+  "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Internet Speed Test | Fast.com' (https://fast.com/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "test systemd services inside nspawn container ephemeral",
+  "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+  "url": "https://speed.cloudflare.com/",
+  "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Internet Speed Test - Measure Network Performance | Cloudflare' (https://speed.cloudflare.com/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "test systemd services inside nspawn container ephemeral",
+  "title": "How to run systemd services in Arch Linux Docker container? - Un\u2026",
+  "url": "http://unix.stackexchange.com/a/499585",
+  "snippet": "There seems to be tons of different ways people have been able to run systemd services within Docker containers. The latest example of direct advice I've \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.14,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to run systemd services in Arch Linux Docker container? - Un\u2026' (http://unix.stackexchange.com/a/499585) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "04-boot-in-container",
+  "slug": "boot-in-container",
+  "query": "test systemd services inside nspawn container ephemeral",
+  "title": "Category: projects",
+  "url": "http://0pointer.net/blog/category/projects.html",
+  "snippet": "for Acquiring OCI Containers Post #9: systemd-report and Metrics API Post #10: udev&#39;s tpm2_id built-in and the TPM2 Quirks Database Post #11: Devicetree/CHID Database Post #12: Va",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.43,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Category: projects' (http://0pointer.net/blog/category/projects.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.43
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "[14] The interaction of network options specified in the .nspawn file and on the command line does not work correctly when there is --settings=override (which is specified in the systemd-nspawn@.service file). [15] As a workaround, you need to include the option VirtualEthernet=on, even though the service specifies --network-veth.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.54,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - ArchWiki' (https://wiki.archlinux.org/title/Systemd-nspawn) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.54
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+  "title": "How to Configure Networking for systemd-nspawn Containers on RHEL",
+  "url": "https://oneuptime.com/blog/post/2026-03-04-configure-networking-for-systemd-nspawn-containers-on-rhel/view",
+  "snippet": "March 4, 2026 \u2014 # Boot with an isolated virtual ethernet interface sudo systemd-nspawn -bD /var/lib/machines/mycontainer --network-veth \u00b7 On the host, a new interface named ve-mycontainer appears.\"By default, direct systemd-nspawn invocations share the host network stack, but you can isolate them with virtual ethernet pairs or bridge them to your physical network. When you run systemd-nspawn direc",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.1,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Configure Networking for systemd-nspawn Containers on RHEL' (https://oneuptime.com/blog/post/2026-03-04-configure-networking-for-systemd-nspawn-containers-on-rhel/view) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+  "title": "linux - Accessing host services from systemd-nspawn containers - Server Fault",
+  "url": "https://serverfault.com/questions/867055/accessing-host-services-from-systemd-nspawn-containers",
+  "snippet": "August 5, 2017 \u2014 # /etc/systemd/network/br0.network ... network access for the containers. --network-zone= does the same, but manages the bridge interface automatically....\"I've tried the following most common private network modes of systemd-nspawn: -n, --network-veth creates a pair of connected virtual ethernet adapters per container, one on the host side, another inside the container. Seems lik",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.14,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'linux - Accessing host services from systemd-nspawn containers - Server Fault' (https://serverfault.com/questions/867055/accessing-host-services-from-systemd-nspawn-containers) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+  "title": "systemd-nspawn Container Manager | systemd/systemd | DeepWiki",
+  "url": "https://deepwiki.com/systemd/systemd/5.1-systemd-nspawn-container-manager",
+  "snippet": "Purpose and Scope systemd-nspawn is a lightweight container manager utilizing Linux kernel features such as namespaces, cgroups, and capabilities to spawn and manage OS containers. It isolates hostname, filesystems, process trees, users, and network stacks to securely execute commands or fully booted Linux OS instances inside containers.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.18,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn Container Manager | systemd/systemd | DeepWiki' (https://deepwiki.com/systemd/systemd/5.1-systemd-nspawn-container-manager) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.18
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+  "title": "Windows Live Messenger won't remember me - JLA FORUMS",
+  "url": "http://www.jlaforums.com/viewtopic.php?t=7040304",
+  "snippet": "Mar 17, 2009 \u00b7 FYI: There is a newsgroup specifically for WL Messenger at: microsoft.public.windows.live.messenger Sp2, spyware \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Windows Live Messenger won't remember me - JLA FORUMS' (http://www.jlaforums.com/viewtopic.php?t=7040304) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Its main component is an init system used to bootstrap user space and manage user processes. It also provides various daemons and utilities, including device management, login management, network connection management, and event logging.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.36,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.36
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn private-network container microsegmentation firewall",
+  "title": "How to tell if 2001 BMW 330CI is Sport Package?",
+  "url": "https://www.bimmerforums.com/forum/showthread.php?1711145-How-to-tell-if-2001-BMW-330CI-is-Sport-Package",
+  "snippet": "Sep 8, 2011 \u00b7 Bimmerforums is the preferred online BMW Forum and community for BMW owners. At Bimmerforums, you will find \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to tell if 2001 BMW 330CI is Sport Package?' (https://www.bimmerforums.com/forum/showthread.php?1711145-How-to-tell-if-2001-BMW-330CI-is-Sport-Package) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn private-network container microsegmentation firewall",
+  "title": "How to Use systemd-nspawn for Lightweight System Containers on...",
+  "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-use-systemd-nspawn-for-lightweight-system-containers-on-ubuntu/view",
+  "snippet": "Run lightweight system containers on Ubuntu using systemd-nspawn for process isolation without the overhead of Docker or full VMs, with networking and service management.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.12,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Use systemd-nspawn for Lightweight System Containers on...' (https://oneuptime.com/blog/post/2026-03-02-how-to-use-systemd-nspawn-for-lightweight-system-containers-on-ubuntu/view) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "usage": {
+    "input_tokens": 1535,
+    "output_tokens": 284,
+    "cost": 0.00012894
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn private-network container microsegmentation firewall",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection",
+  "snippet": "August 10, 2026 \u2014 Note that containers started via machinectl or [email protected] use different default options than containers started manually by the systemd-nspawn command. The extra options used by the service are: -b/--boot \u2013 Managed containers automatically search for an init program and invoke it as PID 1. --network-veth which implies --private-network \u2013 Managed containers get a virtual ne",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.46,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - ArchWiki' (https://wiki.archlinux.org/title/Systemd-nspawn/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection/cdn-cgi/l/email-protection) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.46
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn private-network container microsegmentation firewall",
+  "title": "Dokumentace datov\u00fdch s\u00edt\u00ed - networkmap",
+  "url": "https://www.networkmap.cz/",
+  "snippet": "Jednoduch\u00fd software pro kreslen\u00ed a monitoring datov\u00fdch s\u00edt\u00ed.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.04,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Dokumentace datov\u00fdch s\u00edt\u00ed - networkmap' (https://www.networkmap.cz/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn private-network container microsegmentation firewall",
+  "title": "BMW Parts Cross Reference - bimmerforums.com",
+  "url": "https://www.bimmerforums.com/forum/showthread.php?949362-BMW-Parts-Cross-Reference",
+  "snippet": "Mar 2, 2008 \u00b7 Bimmerforums is the preferred online BMW Forum and community for BMW owners. At Bimmerforums, you will find \u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'BMW Parts Cross Reference - bimmerforums.com' (https://www.bimmerforums.com/forum/showthread.php?949362-BMW-Parts-Cross-Reference) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "05-network-modes",
+  "slug": "network-modes",
+  "query": "systemd-nspawn private-network container microsegmentation firewall",
+  "title": "systemd-nspawn \u2014 Shanios Docs",
+  "url": "https://docs.shani.dev/doc/software/systemd-nspawn/",
+  "snippet": "systemd-nspawn is a lightweight container mechanism built directly into systemd.For isolated networking with its own IP: # Start with private networking (one-off) sudo systemd-nspawn --network-veth -D /var/lib/machines/archlinux #.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.1,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn \u2014 Shanios Docs' (https://docs.shani.dev/doc/software/systemd-nspawn/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "systemd portable services portablectl attach documentation",
+  "title": "Portable Services Introduction - systemd",
+  "url": "https://systemd.io/PORTABLE_SERVICES/",
+  "snippet": "Stricter default security policies, i.e. sand-boxing of applications. The primary tool for interacting with Portable Services is portablectl, and they are managed by the systemd-portabled service. systemd-portabled can run as a system or a user service. Portable services don't bring anything inherently new to the table.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.58,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Portable Services Introduction - systemd' (https://systemd.io/PORTABLE_SERVICES/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.58
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "systemd portable services portablectl attach documentation",
+  "title": "systemd/docs/PORTABLE_SERVICES.md at main \u00b7 systemd/systemd",
+  "url": "https://github.com/systemd/systemd/blob/main/docs/PORTABLE_SERVICES.md",
+  "snippet": "Stricter default security policies, i.e. sand-boxing of applications. The primary tool for interacting with Portable Services is portablectl, and they are managed by the systemd-portabled service. systemd-portabled can run as a system or a user service. Portable services don't bring anything inherently new to the table.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.83,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd/docs/PORTABLE_SERVICES.md at main \u00b7 systemd/systemd' (https://github.com/systemd/systemd/blob/main/docs/PORTABLE_SERVICES.md) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.83
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "systemd portable services portablectl attach documentation",
+  "title": "Walkthrough for Portable Services",
+  "url": "https://0pointer.net/blog/walkthrough-for-portable-services.html",
+  "snippet": "June 27, 2018 \u2014 Now that we have a portable service image, let's see how we can attach, enable and start the service included within it. ... # /usr/lib/systemd/portablectl attach ./walkthroughd_1.raw (Matching unit files with prefix 'walkthroughd'.) Created directory /etc/systemd/system/walkthroughd.service.d.\"Of course, as you might notice, OS trees generated from any of today's big distributions",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.63,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Walkthrough for Portable Services' (https://0pointer.net/blog/walkthrough-for-portable-services.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.63
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "systemd portable services portablectl attach documentation",
+  "title": "How to Configure systemd Portable Services on Ubuntu",
+  "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-portable-services-on-ubuntu/view",
+  "snippet": "March 2, 2026 \u2014 # List available portable images in the default search paths portablectl list # Attach the image - this makes the unit files available to the host systemd sudo portablectl attach /var/lib/portables/myapp.raw # With the --now flag, attach and ...\"One or more systemd unit files describing the service ... The portablectl command is used to attach, detach, and inspect these images.\"\"Wh",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.09,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to Configure systemd Portable Services on Ubuntu' (https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-portable-services-on-ubuntu/view) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "systemd portable services portablectl attach documentation",
+  "title": "How to force a web browser NOT to cache images - Stack Overflow",
+  "url": "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+  "snippet": "Spent days trying to get Chromium based app to stop caching images. The ?nocache with time echo solved the issue. Thank you!",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'How to force a web browser NOT to cache images - Stack Overflow' (https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "systemd portable services portablectl attach documentation",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Its main component is an init system used to bootstrap user space and manage user processes. It also provides various daemons and utilities, including device management, login management, network connection management, and event logging.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.32,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.32
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "portable service image systemd unit attach production",
+  "title": "portablectl(1) \u2014 Arch manual pages",
+  "url": "https://man.archlinux.org/man/portablectl.1.en",
+  "snippet": "When a portable service is attached four operations are executed: 1.All unit files of types .service, .socket, .target, .timer and .path which match the indicated unit file name prefix are copied from the image to the host's /etc/systemd/system.attached/ directory (or /run/systemd/system.attached/ \u2014 depending whether --runtime is specified, see below), which is included in the built-in unit search",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.41,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'portablectl(1) \u2014 Arch manual pages' (https://man.archlinux.org/man/portablectl.1.en) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.41
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "portable service image systemd unit attach production",
+  "title": "PortableApps.com - Portable software for USB, portable, and cloud...",
+  "url": "https://portableapps.com/",
+  "snippet": "Just New Apps...",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PortableApps.com - Portable software for USB, portable, and cloud...' (https://portableapps.com/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "portable service image systemd unit attach production",
+  "title": "portablectl - freedesktop.org",
+  "url": "https://www.freedesktop.org/software/systemd/man/portablectl.html",
+  "snippet": "Description \u00b6 portablectl may be used to attach, detach or inspect portable service images. It's primarily a command interfacing with systemd-portabled.service(8). Portable service images contain an OS file system tree along with systemd(1) unit file information. A service image may be \"attached\" to the local system. If attached, a set of unit files are copied from the image to the host, and ...",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.65,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'portablectl - freedesktop.org' (https://www.freedesktop.org/software/systemd/man/portablectl.html) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.65
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "portable service image systemd unit attach production",
+  "title": "systemd Portable Services Are Pretty Good | Rishi Kulkarni | Statistics & Machine Learning",
+  "url": "https://rukulkarni.com/blog/systemd-portable-services/",
+  "snippet": "December 31, 2025 \u2014 It has the standard Linux filesystem ... can dissect this image. When you run portablectl attach, it mounts the image, looks inside, finds the unit files, and installs them as native systemd services....\"It has the standard Linux filesystem layout\u2014/usr/bin for binaries, /usr/lib/systemd/system for unit files, /etc for configuration\u2014but contains only what your application needs.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.14,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd Portable Services Are Pretty Good | Rishi Kulkarni | Statistics & Machine Learning' (https://rukulkarni.com/blog/systemd-portable-services/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "usage": {
+    "input_tokens": 1493,
+    "output_tokens": 284,
+    "cost": 0.000125412
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "portable service image systemd unit attach production",
+  "title": "PORTABLE Definition & Meaning - Merriam-Webster",
+  "url": "https://www.merriam-webster.com/dictionary/portable",
+  "snippet": "5 days ago \u00b7 The meaning of PORTABLE is capable of being carried or moved about. How to use portable in a sentence.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.07,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'PORTABLE Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/portable) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "06-portable-services",
+  "slug": "portable-services",
+  "query": "portable service image systemd unit attach production",
+  "title": "Amazon.com: Portable",
+  "url": "https://www.amazon.com/Portable/s?k=Portable",
+  "snippet": "Equip yourself with versatile portable essentials, from power-packed chargers to compact fans and rugged external drives, to elevate your on-the-go experience.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.01,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Amazon.com: Portable' (https://www.amazon.com/Portable/s?k=Portable) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "systemd-nspawn security limitations isolation weaker than virtual machine",
+  "title": "systemd-nspawn: Lightweight Containers \u2014 Deep Dive | ADHDecode",
+  "url": "https://adhdecode.com/linux/13-systemd/systemd-nspawn-lightweight-containers/",
+  "snippet": "March 19, 2026 \u2014 The lesson: nspawn is a powerful tool for isolating filesystems and processes, but it doesn\u2019t provide the same level of security isolation as technologies that virtualize the kernel.\"The lesson: nspawn is a powerful tool for isolating filesystems and processes, but it doesn\u2019t provide the same level of security isolation as technologies that virtualize the kernel.\"\"The first time I",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.12,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn: Lightweight Containers \u2014 Deep Dive | ADHDecode' (https://adhdecode.com/linux/13-systemd/systemd-nspawn-lightweight-containers/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "systemd-nspawn security limitations isolation weaker than virtual machine",
+  "title": "security - What makes systemd-nspawn still \"unsuitable for secure container setups\"? - Unix & Linux Stack Exchange",
+  "url": "https://unix.stackexchange.com/questions/145739/what-makes-systemd-nspawn-still-unsuitable-for-secure-container-setups",
+  "snippet": "July 21, 2014 \u2014 Note that even though these security precautions are taken systemd-nspawn is not suitable for secure container setups. Many of the security features may be circumvented and are hence primarily useful to avoid accidental changes to the host system ...\"What issues remain at this point and what does for example LXC do in addition to what systemd-nspawn can currently do? ... AF_UNIX ge",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.14,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'security - What makes systemd-nspawn still \"unsuitable for secure container setups\"? - Unix & Linux Stack Exchange' (https://unix.stackexchange.com/questions/145739/what-makes-systemd-nspawn-still-unsuitable-for-secure-container-setups) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "systemd-nspawn security limitations isolation weaker than virtual machine",
+  "title": "System and Service Manager",
+  "url": "https://systemd.io/",
+  "snippet": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount\u2026",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.87,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'System and Service Manager' (https://systemd.io/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.87
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "systemd-nspawn security limitations isolation weaker than virtual machine",
+  "title": "systemd-nspawn - ArchWiki",
+  "url": "https://wiki.archlinux.org/title/Systemd-nspawn",
+  "snippet": "systemd-nspawn is like the chroot command, but it is a chroot on steroids. systemd-nspawn may be used to run a command or operating system in a light-weight namespace container. It is more powerful than chroot since it fully virtualizes the file system hierarchy, as well as the process tree, the various IPC subsystems and the host and domain name. systemd-nspawn limits access to various kernel ...",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.53,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd-nspawn - ArchWiki' (https://wiki.archlinux.org/title/Systemd-nspawn) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.53
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "systemd-nspawn security limitations isolation weaker than virtual machine",
+  "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+  "url": "https://www.google.com/chrome/",
+  "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Google Chrome - The Fast & Secure Web Browser Built to be Yours' (https://www.google.com/chrome/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "systemd-nspawn security limitations isolation weaker than virtual machine",
+  "title": "systemd - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Systemd",
+  "snippet": "Its main component is an init system used to bootstrap user space and manage user processes. It also provides various daemons and utilities, including device management, login management, network connection management, and event logging.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.34,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'systemd - Wikipedia' (https://en.wikipedia.org/wiki/Systemd) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.34
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "nested containers user namespaces docker inside container problems",
+  "title": "NESTED | English meaning - Cambridge Dictionary",
+  "url": "https://dictionary.cambridge.org/dictionary/english/nested",
+  "snippet": "NESTED definition: 1. past simple and past participle of nest 2. to build a nest, or live in a nest: 3. to fit one\u2026. Learn more.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.07,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'NESTED | English meaning - Cambridge Dictionary' (https://dictionary.cambridge.org/dictionary/english/nested) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "nested containers user namespaces docker inside container problems",
+  "title": "Isolate containers with a user namespace | Docker Docs",
+  "url": "https://docs.docker.com/engine/security/userns-remap/",
+  "snippet": "Isolate containers within a user namespace Disable namespace remapping for a container If you enable user namespaces on the daemon, all containers are started with user namespaces enabled by default. In some situations, such as privileged containers, you may need to disable user namespaces for a specific container. See user namespace known limitations for some of these limitations. To disable ...",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.12,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Isolate containers with a user namespace | Docker Docs' (https://docs.docker.com/engine/security/userns-remap/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "nested containers user namespaces docker inside container problems",
+  "title": "NESTED | definition in the Cambridge English Dictionary",
+  "url": "https://dictionary.cambridge.org/us/dictionary/english/nested",
+  "snippet": "Each document has a root element and all elements must be nested within other elements. Text documents often comprise nested regions like lists within lists or procedures within procedures.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.06,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'NESTED | definition in the Cambridge English Dictionary' (https://dictionary.cambridge.org/us/dictionary/english/nested) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.06
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "nested containers user namespaces docker inside container problems",
+  "title": "NESTED Definition & Meaning - Merriam-Webster",
+  "url": "https://www.merriam-webster.com/dictionary/nested",
+  "snippet": "4 days ago \u00b7 Verb Robins nested in the tree. She studied the nesting habits of the turtle. The set of four chairs can nest into one stack. The smaller bowl is designed to nest inside the larger one.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.07,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'NESTED Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/nested) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "nested containers user namespaces docker inside container problems",
+  "title": "Nested Treestand Systems",
+  "url": "https://nestedtreestands.com/",
+  "snippet": "Experience the ultimate in mobile hunting convenience with the Nested Treestand System. The lightweight treestand and purpose built climbing rails nest perfectly onto the core pack making it simple to transport.",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.02,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'Nested Treestand Systems' (https://nestedtreestands.com/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ },
+ {
+  "nn": "07-anti-patterns",
+  "slug": "anti-patterns",
+  "query": "nested containers user namespaces docker inside container problems",
+  "title": "An introduction to Clear Containers [LWN.net]",
+  "url": "https://lwn.net/Articles/644675/",
+  "snippet": "introduction to Clear Containers May 18, 2015 This article was contributed by Arjan van de Ven Containers are hot. Everyone loves them. Developers love the ease of creating a &#34;bun",
+  "collected_at": "2026-10-07T21:18:34Z",
+  "weight": 0.17,
+  "decision": {
+   "type": "noul",
+   "instructions": "Is result 'An introduction to Clear Containers [LWN.net]' (https://lwn.net/Articles/644675/) a high-quality authoritative source worth citing for a corpus on systemd-nspawn for yubiOS? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+   "model": "clef",
+   "answer": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "usage": {
+    "input_tokens": 1435,
+    "output_tokens": 284,
+    "cost": 0.00012054
+   },
+   "requested_at": "2026-10-07T21:18:34Z"
+  },
+  "redo_of": null
+ }
+]

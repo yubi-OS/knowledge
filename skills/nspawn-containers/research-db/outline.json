@@ -1,0 +1,221 @@
+{
+  "topic": "systemd-nspawn for yubiOS: hermetic container dev/test/build environments rooted at signed mkosi images (RootImage=/RootMStack=), user namespaces, network modes, portable-service substitute",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "isolation-ladder",
+      "scope": "The yubiOS decision tree between nspawn, bcvk/QEMU, sysext, portable services, and podman, and the shared-kernel boundary.",
+      "seed_queries": [
+        "systemd-nspawn vs QEMU vs podman comparison shared kernel isolation",
+        "sysext portable services systemd container vs virtual machine boundary"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "when-to-use",
+      "scope": "Concrete yubiOS use cases (CI in image, dev containers, unit testing, cross-distro /usr, docker replacement) and the do-not-use boundaries.",
+      "seed_queries": [
+        "systemd-nspawn use cases CI jobs systemd unit testing container",
+        "systemd-nspawn replace docker run dev container same rootfs"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "invocation-anatomy",
+      "scope": "Flags of the canonical nspawn invocation: --directory vs --image, --ephemeral, --private-users UID ranges, --bind, machinectl pull/import.",
+      "seed_queries": [
+        "systemd-nspawn --private-users --ephemeral --directory options man page",
+        "machinectl pull-tar import-tar --verify signature systemd machines"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "boot-in-container",
+      "scope": "--boot, PID 1 systemd inside the container, the yubiOS test-in-image convention, unit testing without the host.",
+      "seed_queries": [
+        "systemd-nspawn --boot systemd PID 1 inside container",
+        "test systemd services inside nspawn container ephemeral"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "network-modes",
+      "scope": "The four nspawn network namespace modes and the yubiOS microsegmentation mapping of zones to CISA ZTMM stages.",
+      "seed_queries": [
+        "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+        "systemd-nspawn private-network container microsegmentation firewall"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "portable-services",
+      "scope": "portablectl attach, the .service unit shipped with the image, and the production-side use cases.",
+      "seed_queries": [
+        "systemd portable services portablectl attach documentation",
+        "portable service image systemd unit attach production"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "anti-patterns",
+      "scope": "The 6 failure patterns (QEMU substitute, private-users=0, bind=/home, long-running, multi-tenant, nspawn-in-Docker) and why each breaks.",
+      "seed_queries": [
+        "systemd-nspawn security limitations isolation weaker than virtual machine",
+        "nested containers user namespaces docker inside container problems"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "integration-surface",
+      "scope": "Composition with sibling yubiOS skills mkosi-image-builder, bcvk-virtualization, bootc-images, systemd-hardening, and ADR-031.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.12,
+          "2": 0.75
+        },
+        "confidence": 0.43
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.06,
+          "2": 0.87
+        },
+        "confidence": 0.7
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.87,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.05,
+          "2": 0.91
+        },
+        "confidence": 0.8
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.71,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.14,
+          "2": 0.79
+        },
+        "confidence": 0.58
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.61,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.25,
+          "2": 0.68
+        },
+        "confidence": 0.41
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.43,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.3,
+          "2": 0.5700000000000001
+        },
+        "confidence": 0.16
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.57,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.22,
+          "2": 0.67
+        },
+        "confidence": 0.34
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.42,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.33,
+          "2": 0.55
+        },
+        "confidence": 0.14
+      }
+    },
+    "usage": {
+      "input_tokens": 1260,
+      "output_tokens": 124,
+      "cost": 0.00010584
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

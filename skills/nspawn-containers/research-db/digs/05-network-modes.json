@@ -1,0 +1,23 @@
+{
+ "nn": "05",
+ "slug": "network-modes",
+ "scope": "The four nspawn network namespace modes and the yubiOS microsegmentation mapping of zones to CISA ZTMM stages.",
+ "queries_attempted": [
+  {
+   "query": "systemd-nspawn network options --network-veth --network-bridge --network-zone",
+   "attempt": 1,
+   "raw_results": 69,
+   "kept": 6
+  },
+  {
+   "query": "systemd-nspawn private-network container microsegmentation firewall",
+   "attempt": 1,
+   "raw_results": 74,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}
