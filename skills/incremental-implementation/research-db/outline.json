@@ -1,0 +1,214 @@
+{
+  "topic": "Delivering changes incrementally - decomposing multi-file features into ordered shippable steps rather than one large write",
+  "ground_source": "yubi-OS/yubiOS skills/incremental-implementation/SKILL.md",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "increment-cycle",
+      "scope": "The implement, test, verify, commit loop that every increment follows, and why each slice must leave the system working and testable.",
+      "seed_queries": [
+        "iterative and incremental development small increments test after each change",
+        "walking skeleton thin vertical slice end to end implementation"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "slicing-strategies",
+      "scope": "The three slicing patterns from the source doc: vertical slices through the stack, contract-first slicing for parallel backend and frontend work, and risk-first slicing that proves the riskiest piece first.",
+      "seed_queries": [
+        "vertical slice architecture software development benefits",
+        "contract first API development parallel frontend backend teams"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "simplicity-first",
+      "scope": "Rule 0: ask what is the simplest thing that could work, the simplicity checks, and avoiding premature abstraction until the third use case.",
+      "seed_queries": [
+        "rule of three code refactoring premature abstraction",
+        "YAGNI you arent going to need it principle"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "scope-discipline",
+      "scope": "Rule 0.5: touch only what the task requires, the noticed but not touching pattern, and resisting opportunistic cleanup and scope expansion.",
+      "seed_queries": [
+        "scope creep software development definition prevention",
+        "opportunistic refactoring while i am here code changes risks"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "keep-it-compilable",
+      "scope": "Rules 1 and 2: one logical change per increment and never leaving the codebase broken between slices, the always-green discipline.",
+      "seed_queries": [
+        "keep the build green continuous integration discipline",
+        "atomic commits one logical change per commit"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "feature-flags-and-safe-defaults",
+      "scope": "Rules 3 and 4: feature flags to merge incomplete work invisibly, and safe conservative defaults like disabled-by-default behavior.",
+      "seed_queries": [
+        "feature flags trunk based development incomplete features",
+        "safe defaults opt in configuration software design"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "rollback-friendliness",
+      "scope": "Rule 5: each increment independently revertable, additive changes favored, minimal focused modifications, and migrations with rollback counterparts.",
+      "seed_queries": [
+        "expand contract database migration pattern reversible schema changes",
+        "easily revertible changes incremental delivery rollback"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "agent-delegation-and-checklist",
+      "scope": "Internal-record subtopic: directing agents to implement incrementally, the per-increment checklist, final verification, common rationalizations, and red flags. No dig; grounded entirely in the source doc.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "score": 1.98,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.96,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.93,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.04,
+          "2": 0.95
+        },
+        "confidence": 0.89,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.9,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.92
+        },
+        "confidence": 0.85,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.94,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.96
+        },
+        "confidence": 0.91,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.96,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.85,
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.11,
+          "2": 0.87
+        },
+        "confidence": 0.78,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.89,
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.08,
+          "2": 0.91
+        },
+        "confidence": 0.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.78,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.11,
+          "2": 0.84
+        },
+        "confidence": 0.67,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1072,
+      "output_tokens": 124
+    },
+    "dropped": [],
+    "kept": [
+      "01-increment-cycle",
+      "02-slicing-strategies",
+      "03-simplicity-first",
+      "04-scope-discipline",
+      "05-keep-it-compilable",
+      "06-feature-flags-and-safe-defaults",
+      "07-rollback-friendliness",
+      "08-agent-delegation-and-checklist"
+    ]
+  }
+}
