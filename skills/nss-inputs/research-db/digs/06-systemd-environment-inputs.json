@@ -1,0 +1,36 @@
+{
+ "nn": 6,
+ "slug": "systemd-environment-inputs",
+ "scope": "systemd unit inputs: Environment= vs EnvironmentFile= (mode 0600, ownership, daemon-reload not SIGHUP), runtime-surface directives (WorkingDirectory, ExecStart, sandboxing) recorded separately from inputs.",
+ "queries_attempted": [
+  {
+   "query": "systemd Environment EnvironmentFile unit settings daemon-reload documentation",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "systemd EnvironmentFile secrets file permissions 0600 service configuration",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.baeldung.com/linux/systemd-services-environment-variables",
+  "https://phoenixnap.com/kb/systemctl-daemon-reload",
+  "https://serverfault.com/questions/413397/how-to-set-environment-variable-in-systemd-service",
+  "https://www.flatcar.org/docs/latest/os-config/host-config/environment-variables/",
+  "https://linux-audit.com/systemd/faq/how-to-reload-the-systemd-configuration/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-configure-systemd-service-environment-files-on-ubuntu/view",
+  "https://devops.aibit.im/en/article/securely-managing-environment-variables-systemd",
+  "https://flaviocopes.com/courses/systemd/pass-configuration-and-secrets/",
+  "https://pterodactyl.io/tutorials/creating_ssl_certificates.html",
+  "https://dev.to/lyraalishaikh/stop-using-env-for-linux-services-safer-secrets-with-systemd-credentials-5hco",
+  "https://www.systemshardening.com/articles/linux/systemd-credentials-hardening/"
+ ],
+ "outcome": "authored"
+}

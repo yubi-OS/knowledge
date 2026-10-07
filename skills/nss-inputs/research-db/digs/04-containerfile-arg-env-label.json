@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "containerfile-arg-env-label",
+ "scope": "Containerfile inputs: ARG vs ENV vs LABEL, build-time vs runtime visibility, image-history leakage of build args, BuildKit secret/SSH mounts, yubiOS provenance labels.",
+ "queries_attempted": [
+  {
+   "query": "Docker ARG vs ENV build args image history secrets BuildKit mount type secret",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "docker build build-arg LABEL provenance image metadata documentation",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.docker.com/build/building/secrets/",
+  "https://oneuptime.com/blog/post/2026-01-06-docker-build-args-env-variables/view",
+  "https://docs.docker.com/build/building/variables/",
+  "https://outplane.com/blog/docker-secrets",
+  "https://laplusda.com/en/posts/docker-build-secrets-vs-arg/",
+  "https://www.docker.com/",
+  "https://dockerbuild.com/reference/label",
+  "https://docs.docker.com/reference/dockerfile/",
+  "https://docs.docker.com/dhi/explore/security-concepts/provenance/",
+  "https://docs.docker.com/build/concepts/overview",
+  "https://safeguard.sh/resources/blog/docker-oci-image-labels-annotations-best-practices",
+  "https://safeguard.sh/resources/blog/docker-label"
+ ],
+ "outcome": "authored"
+}

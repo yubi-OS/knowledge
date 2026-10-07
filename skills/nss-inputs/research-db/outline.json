@@ -1,0 +1,240 @@
+{
+ "topic": "The NSS Inputs axis: what each file needs (env vars, CLI args, config parameters, file inputs, stdin, request bodies/headers/paths, mounts, secrets, runtime-provided values, plus type/presence/default/precedence/validation/failure behavior)",
+ "ground_source": "yubi-OS/yubiOS skills/nss-inputs/SKILL.md",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "seven-channel-input-taxonomy",
+   "scope": "The seven fixed input channels (CLI / env / config / file / stdin / request / platform), why channel naming is verbatim, and why implicit inputs cause 'I forgot to set X' failures.",
+   "seed_queries": [],
+   "dig": "skip: internal-record subtopic, no dig (taxonomy is defined by the source doc and negative-skill-space)"
+  },
+  {
+   "nn": 2,
+   "slug": "per-input-record-fields",
+   "scope": "The per-input record: name, channel, type, required, default, constraints, precedence, prerequisites, validation, failure behavior, side effects; required-with-default contradiction and no-silent-defaults rules.",
+   "seed_queries": [],
+   "dig": "skip: internal-record subtopic, no dig (record schema is the source doc's own table)"
+  },
+  {
+   "nn": 3,
+   "slug": "three-input-stages-and-schema-first",
+   "scope": "Raw input vs validated input vs effective configuration, the collect->parse->validate->defaults->cross-field->prerequisites->execute pipeline, and schema-first configuration (Pydantic Settings, Zod, JSON Schema, OpenAPI, Twelve-Factor config).",
+   "seed_queries": [
+    "Pydantic Settings env vars precedence schema-first configuration documentation",
+    "JSON Schema OpenAPI config validation Twelve-Factor app configuration environment"
+   ],
+   "dig": "web"
+  },
+  {
+   "nn": 4,
+   "slug": "containerfile-arg-env-label",
+   "scope": "Containerfile inputs: ARG vs ENV vs LABEL, build-time vs runtime visibility, image-history leakage of build args, BuildKit secret/SSH mounts, yubiOS provenance labels.",
+   "seed_queries": [
+    "Docker ARG vs ENV build args image history secrets BuildKit --mount=type=secret",
+    "docker build --build-arg LABEL provenance image metadata documentation"
+   ],
+   "dig": "web"
+  },
+  {
+   "nn": 5,
+   "slug": "mkosi-setting-mapping",
+   "scope": "mkosi inputs: mkosi.conf vs --flag CLI vs env vars, mkosi.conf.d/*.conf lex-sorted last-wins drop-ins, validation of unknown keys and incompatible combinations.",
+   "seed_queries": [
+    "mkosi configuration files mkosi.conf mkosi.conf.d precedence command line settings",
+    "mkosi distribution release architecture output format settings documentation"
+   ],
+   "dig": "web"
+  },
+  {
+   "nn": 6,
+   "slug": "systemd-environment-inputs",
+   "scope": "systemd unit inputs: Environment= vs EnvironmentFile= (mode 0600, ownership, daemon-reload not SIGHUP), runtime-surface directives (WorkingDirectory, ExecStart, sandboxing) recorded separately from inputs.",
+   "seed_queries": [
+    "systemd Environment= EnvironmentFile= unit settings daemon-reload documentation",
+    "systemd EnvironmentFile secrets file permissions 0600 service configuration"
+   ],
+   "dig": "web"
+  },
+  {
+   "nn": 7,
+   "slug": "github-actions-workflow-inputs",
+   "scope": "GitHub Actions inputs: workflow_call vs workflow_dispatch input declarations (description, required, default, type), INPUT_<NAME> env mapping, secrets.* permission gating, precedence of dispatch input over workflow_call default.",
+   "seed_queries": [
+    "GitHub Actions workflow_dispatch workflow_call inputs types boolean number string documentation",
+    "GitHub Actions INPUT_ env vars action inputs secrets context permissions"
+   ],
+   "dig": "web"
+  },
+  {
+   "nn": 8,
+   "slug": "script-argparse-and-secrets",
+   "scope": "Script input surfaces: the yubiOS four-step argparse pattern (CLI flags first, env secondary, config third, secrets last with documented mode), env-in-default trick, secrets-never-echoed doctrine.",
+   "seed_queries": [
+    "argparse defaults environment variables precedence Python CLI configuration",
+    "command line scripts secrets handling never log environment variables Twelve-Factor"
+   ],
+   "dig": "web"
+  },
+  {
+   "nn": 9,
+   "slug": "inputs-audit-and-verification",
+   "scope": "Audit protocol: anti-patterns, red flags, the six verification checks for a cycle-9 Inputs patch, placeholder detection, and when the patch counts as a NO verdict.",
+   "seed_queries": [],
+   "dig": "skip: internal-record subtopic, no dig (audit protocol is the source doc's own verification and red-flags sections)"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t05": {
+    "score": 1.51,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.2,
+     "2": 0.65
+    },
+    "confidence": 0.25,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.65,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.18,
+     "2": 0.74
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.9,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.06,
+     "2": 0.92
+    },
+    "confidence": 0.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.71,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.19,
+     "2": 0.76
+    },
+    "confidence": 0.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t01": {
+    "score": 1.82,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.06,
+     "2": 0.88
+    },
+    "confidence": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.03,
+     "2": 0.93
+    },
+    "confidence": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.36,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.32,
+     "2": 0.52
+    },
+    "confidence": 0.04,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.95,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0,
+     "2": 0.98
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.62,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.19,
+     "2": 0.71
+    },
+    "confidence": 0.41,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1584,
+   "output_tokens": 139
+  },
+  "dropped": [],
+  "kept": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9"
+  ]
+ }
+}
