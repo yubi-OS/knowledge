@@ -1,0 +1,59 @@
+{
+  "nn": "01",
+  "slug": "want-vs-should-gap",
+  "scope": "Why stated requests diverge from actual intent and why pre-plan elicitation is the cheapest moment to close it",
+  "queries_attempted": [
+    {
+      "query": "requirements elicitation what users say they want versus what they actually need",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 0,
+      "note": "run-1 log only; result items not persisted by the dig harness"
+    },
+    {
+      "query": "the Mom Test ask about problems not solutions user research",
+      "attempt": 1,
+      "raw_results": 71,
+      "kept": 0,
+      "note": "run-1 log only; result items not persisted by the dig harness"
+    },
+    {
+      "query": "requirements elicitation what users say versus what they need",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "the Mom Test Rob Fitzpatrick customer development questions",
+      "attempt": 2,
+      "raw_results": 54,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 (same q1, q2='the Mom Test ask about problems not solutions user research') returned heavy noise (Wikipedia 'Requirement' first, 'Mom - YouTube'); q2 reworded and re-run",
+      "new_queries": [
+        "requirements elicitation what users say versus what they need",
+        "the Mom Test Rob Fitzpatrick customer development questions"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Requirement",
+    "https://www.geeksforgeeks.org/software-engineering/software-engineering-requirements-elicitation/",
+    "https://www.merriam-webster.com/dictionary/requirement",
+    "https://bacentric.com/requirements-elicitation/",
+    "https://dictionary.cambridge.org/dictionary/english/requirement",
+    "https://plato.stanford.edu/entries/linguistics",
+    "https://www.momtestbook.com/",
+    "https://www.koji.so/docs/mom-test-user-interviews",
+    "https://en.wikipedia.org/wiki/George_Santos",
+    "https://www.instagram.com/?hl=pt-br",
+    "https://en.wikipedia.org/wiki/Mom_(TV_series)",
+    "https://hailpixel.gumroad.com/l/momtest"
+  ],
+  "outcome": "authored"
+}

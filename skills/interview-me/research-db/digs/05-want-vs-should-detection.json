@@ -1,0 +1,92 @@
+{
+  "nn": "05",
+  "slug": "want-vs-should-detection",
+  "scope": "Detecting sophistication-signaling and convention-deferring answers and the justification-free probe question",
+  "queries_attempted": [
+    {
+      "query": "Rob Fitzpatrick Mom Test key questions people lie about ideas",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 0,
+      "note": "run-1 log only; result items not persisted by the dig harness"
+    },
+    {
+      "query": "stated preferences versus revealed preferences requirements gathering",
+      "attempt": 1,
+      "raw_results": 63,
+      "kept": 0,
+      "note": "run-1 log only; result items not persisted by the dig harness"
+    },
+    {
+      "query": "Mom Test questions examples customer conversations",
+      "attempt": 2,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "user interview probing techniques surface real needs not features",
+      "attempt": 2,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "Mom Test book summary ask about their life not your idea",
+      "attempt": 3,
+      "raw_results": 64,
+      "kept": 6
+    },
+    {
+      "query": "customer discovery interview questions past behavior Steve Blank",
+      "attempt": 3,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 2,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 ('Rob Fitzpatrick Mom Test key questions people lie about ideas' / 'stated preferences versus revealed preferences requirements gathering') returned Roblox and Merriam-Webster noise; both reworded",
+      "new_queries": [
+        "Mom Test questions examples customer conversations",
+        "user interview probing techniques surface real needs not features"
+      ]
+    },
+    {
+      "attempt": 3,
+      "reason": "attempt-2 results for this subtopic contained no primary (>= 0.5) source beyond dictionary noise; redo with different queries",
+      "new_queries": [
+        "Mom Test book summary ask about their life not your idea",
+        "customer discovery interview questions past behavior Steve Blank"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://gonogo.team/the-mom-test/examples",
+    "https://ballotpedia.org/Mayoral_election_in_Boston,_Massachusetts_(September_14,_2021_primary_election)",
+    "https://teslamotorsclub.com/tmc/threads/how-to-power-charge-your-laptop-in-a-tesla-using-usb-c-power.183176/",
+    "http://digitaltumbleweed.com/blog/the-mom-test",
+    "https://en.wikipedia.org/wiki/Mom_(TV_series)",
+    "https://tldv.io/blog/the-mom-test/",
+    "https://www.koji.so/docs/probing-questions-user-interviews",
+    "https://www.merriam-webster.com/dictionary/user",
+    "https://www.xvideos.com/tags/big-fat-ass",
+    "https://www.linkedin.com/top-content/user-experience/designing-for-user-empathy/user-centric-research-methods/",
+    "https://support.microsoft.com/en-us/windows/security/identity-signin/manage-user-accounts-in-windows",
+    "https://www.userintuition.ai/posts/treatment-adherence-research-surface-real-barriers/",
+    "https://durmonski.com/book-summaries/the-mom-test/",
+    "https://www.karthikchidambaram.com/the-mom-test-book-summary/",
+    "https://readingraphics.com/book-summary-the-mom-test/",
+    "https://www.homedepot.com/",
+    "https://xenisa.github.io/kinsella/lffs/legal-foundations-of-a-free-society.html",
+    "https://en.wikipedia.org/wiki/Mom_(TV_series)",
+    "https://en.wikipedia.org/wiki/Customer",
+    "https://www.merriam-webster.com/dictionary/customer",
+    "https://dictionary.cambridge.org/dictionary/english/customer",
+    "https://dictionary.cambridge.org/us/dictionary/english/customer",
+    "https://alexberman.com/customer-discovery",
+    "https://www.koji.so/docs/customer-discovery-interviews"
+  ],
+  "outcome": "authored",
+  "note": "dig ran thin after 2 redos (no >= 0.5 source beyond carry-over Mom Test primary sources from 01); authored on the source-doc spine with weak external backing labeled"
+}
