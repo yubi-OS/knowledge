@@ -1,0 +1,23 @@
+{
+ "nn": 4,
+ "slug": "audit-artifacts",
+ "scope": "PSS admission logs and OPA decision logs as audit artifacts (P6): Kubernetes audit records, OPA decision-log events, Gatekeeper audit results.",
+ "queries_attempted": [
+  {
+   "query": "Kubernetes Pod Security Admission audit violations logs",
+   "attempt": 1,
+   "raw_results": 54,
+   "kept": 6
+  },
+  {
+   "query": "OPA Gatekeeper decision logs audit compliance export",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}

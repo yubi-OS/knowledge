@@ -1,0 +1,218 @@
+{
+ "topic": "Pod Security Standards restricted baseline + OPA Rego policies for least-privilege enforcement on yubiOS, with PSS admission logs and OPA decision logs as audit artifacts",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "pss-restricted-profile",
+   "scope": "The Kubernetes Pod Security Standards restricted profile: three levels, enforce/audit/warn modes, namespace labels, and the pod.spec.os.name relaxation in v1.25.",
+   "seed_queries": [
+    "Kubernetes Pod Security Standards restricted profile controls",
+    "Pod Security Admission enforce audit warn namespace labels"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "opa-rego-least-privilege",
+   "scope": "OPA Rego as the declarative least-privilege policy leg: Gatekeeper admission control, the kubernetes.admission package, deny-rule policy structure.",
+   "seed_queries": [
+    "OPA Gatekeeper Rego policy Kubernetes admission control least privilege",
+    "OPA Rego deny rule admission webhook Kubernetes example"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "lp-keyword-mapping",
+   "scope": "The canonical LP keyword set: 8 keywords mapped onto both PSS and OPA Rego for 16 binding cells, grounded in the NIST least-privilege definition and the Kubernetes security context.",
+   "seed_queries": [
+    "least privilege principle security controls NIST definition",
+    "Kubernetes securityContext capabilities seccomp least privilege best practices"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "audit-artifacts",
+   "scope": "PSS admission logs and OPA decision logs as audit artifacts (P6): Kubernetes audit records, OPA decision-log events, Gatekeeper audit results.",
+   "seed_queries": [
+    "Kubernetes Pod Security Admission audit violations logs",
+    "OPA Gatekeeper decision logs audit compliance export"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "primitive-placement",
+   "scope": "Skill placement on the 10-primitive spine: P2 least privilege (primary), P3 declarative policy, P6 audit/evidence; downstream consumers. Internal-record subtopic, no dig.",
+   "seed_queries": [
+    null
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "complementary-hardening",
+   "scope": "systemd-hardening as the host-level least-privilege complement to pod-level policy; layered defense across host and pod.",
+   "seed_queries": [
+    "systemd service hardening least privilege ProtectSystem NoNewPrivileges",
+    "host hardening versus Kubernetes pod security defense in depth"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917 (clef)",
+  "answers": {
+   "t01": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.49,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.3,
+     "2": 0.59
+    },
+    "confidence": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.13,
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.29,
+     "2": 0.42
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.76,
+    "probabilities": {
+     "0": 0.32,
+     "1": 0.59,
+     "2": 0.09
+    },
+    "confidence": 0.38,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.08,
+     "2": 0.85
+    },
+    "confidence": 0.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.45,
+    "probabilities": {
+     "0": 0.67,
+     "1": 0.2,
+     "2": 0.13
+    },
+    "confidence": 0.31,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.12,
+    "probabilities": {
+     "0": 0.93,
+     "1": 0.02,
+     "2": 0.05
+    },
+    "confidence": 0.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.65,
+    "probabilities": {
+     "0": 0.4,
+     "1": 0.55,
+     "2": 0.05
+    },
+    "confidence": 0.32,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.29,
+    "probabilities": {
+     "0": 0.83,
+     "1": 0.05,
+     "2": 0.12
+    },
+    "confidence": 0.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1242,
+   "output_tokens": 139,
+   "cost": 0.000104328
+  },
+  "dropped": [
+   "t06",
+   "t07",
+   "t09"
+  ],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t08"
+  ],
+  "dropped_reasons": {
+   "t06": "score 0.45 leans drop (P(drop)=0.67); CI admission gate consumption folded into docs 02 and 05 via the source doc",
+   "t07": "score 0.12, drop; corpus-context changelog material carried in the source-doc citations of docs 03 and 05",
+   "t09": "score 0.29, drop; usage and boundary guidance is one routing rule and one guideline, carried by doc 01 and the README"
+  }
+ }
+}
