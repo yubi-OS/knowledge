@@ -1,0 +1,35 @@
+{
+ "nn": 2,
+ "slug": "02-coordination-atoms",
+ "scope": "One DO per coordination atom, deterministic routing, the 3 stub-creation patterns",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Durable Objects getByName idFromName idFromString newUniqueId stub",
+   "attempt": 1,
+   "raw_results": 36,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare Durable Objects per-entity sharding coordination pattern",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://community.cloudflare.com/t/durable-objects-workers-new-getbyname-api-to-access-durable-objects/897001",
+  "https://deepwiki.com/cloudflare/mcp-server-cloudflare/8.5-durable-objects-patterns",
+  "https://developers.cloudflare.com/durable-objects/",
+  "https://developers.cloudflare.com/durable-objects/api/id/",
+  "https://developers.cloudflare.com/durable-objects/api/namespace/",
+  "https://developers.cloudflare.com/reference-architecture/diagrams/storage/durable-object-control-data-plane-pattern/",
+  "https://github.com/dabblewriter/durable-apis",
+  "https://open-compute.dev/docs/durable-objects/",
+  "https://skillselion.com/skills/cloudflare/skills/durable-objects",
+  "https://www.cloudflare.com/",
+  "https://www.cloudflare.com/products/durable-objects/"
+ ],
+ "outcome": "authored"
+}

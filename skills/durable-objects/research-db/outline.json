@@ -1,0 +1,239 @@
+{
+ "topic": "the durable-objects skill (yubi-OS/yubiOS skills/durable-objects/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "01-when-to-use-and-retrieval",
+   "scope": "When DOs are the right primitive, when they are not, and the skill's retrieval-first discipline",
+   "seed_queries": [
+    "Cloudflare Durable Objects when to use use cases coordination",
+    "Cloudflare Durable Objects versus plain Workers when not to use"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "02-coordination-atoms",
+   "scope": "One DO per coordination atom, deterministic routing, the 3 stub-creation patterns",
+   "seed_queries": [
+    "Cloudflare Durable Objects getByName idFromName idFromString newUniqueId stub",
+    "Cloudflare Durable Objects per-entity sharding coordination pattern"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "03-wrangler-migrations",
+   "scope": "wrangler.jsonc bindings, migrations array, new_sqlite_classes, the exports-field drift",
+   "seed_queries": [
+    "wrangler durable_objects bindings migrations new_sqlite_classes",
+    "Cloudflare Durable Objects SQLite backed classes migration wrangler"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "04-sqlite-storage",
+   "scope": "sql.exec synchronous SQL, async KV, constructor init with blockConcurrencyWhile, atomicity rules",
+   "seed_queries": [
+    "Cloudflare Durable Objects SQLite storage api sql.exec cur",
+    "Durable Objects storage KV versus SQL blockConcurrencyWhile initialization"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "05-rpc-methods",
+   "scope": "RPC methods over the fetch handler, DurableObject base class, compatibility-date floor",
+   "seed_queries": [
+    "Cloudflare Durable Objects RPC methods fetch handler compatibility date",
+    "Cloudflare Workers RPC DurableObject base class extends cloudflare:workers"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "06-alarms",
+   "scope": "One alarm per object, at-least-once retries, the alarm-as-batcher pattern, self-rescheduling",
+   "seed_queries": [
+    "Cloudflare Durable Objects alarms setAlarm alarm handler deleteAlarm",
+    "Cloudflare Durable Objects alarm retry reschedule scheduled work"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "07-websockets",
+   "scope": "Persistent connections, the Hibernation WebSocket API as the recommended default",
+   "seed_queries": [
+    "Cloudflare Durable Objects WebSockets hibernation API",
+    "Cloudflare Durable Objects WebSocketPair real-time chat example"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "08-anti-patterns-review",
+   "scope": "The NEVER list, the blockConcurrencyWhile contract, atomicity hazards, the 5-step review pass",
+   "seed_queries": [
+    "Durable Objects anti-patterns single global object bottleneck",
+    "Cloudflare Durable Objects best practices blockConcurrencyWhile review"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "09-testing-vitest",
+   "scope": "@cloudflare/vitest-pool-workers, workerd-faithful tests, alarm testing",
+   "seed_queries": [
+    "cloudflare vitest-pool-workers testing Durable Objects",
+    "cloudflare vitest env testing Durable Objects alarm integration"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.04,
+     "2": 0.92
+    },
+    "confidence": 0.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.04,
+     "2": 0.93
+    },
+    "confidence": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.2,
+     "2": 0.75
+    },
+    "confidence": 0.54,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.04,
+     "2": 0.93
+    },
+    "confidence": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.55,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.2,
+     "2": 0.68
+    },
+    "confidence": 0.32,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.12,
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.53,
+     "2": 0.3
+    },
+    "confidence": 0.3,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.06,
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.58,
+     "2": 0.24
+    },
+    "confidence": 0.36,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.75,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.16,
+     "2": 0.79
+    },
+    "confidence": 0.62,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.89,
+    "probabilities": {
+     "0": 0.23,
+     "1": 0.66,
+     "2": 0.11
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1203,
+   "output_tokens": 139
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ }
+}

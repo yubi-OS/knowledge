@@ -1,0 +1,33 @@
+{
+ "nn": 6,
+ "slug": "06-alarms",
+ "scope": "One alarm per object, at-least-once retries, the alarm-as-batcher pattern, self-rescheduling",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Durable Objects alarms setAlarm alarm handler deleteAlarm",
+   "attempt": 1,
+   "raw_results": 32,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare Durable Objects alarm retry reschedule scheduled work",
+   "attempt": 1,
+   "raw_results": 38,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://blog.cloudflare.com/building-scheduling-system-with-workers-and-durable-objects/",
+  "https://blog.cloudflare.com/durable-objects-alarms/",
+  "https://developers.cloudflare.com/durable-objects/api/alarms/",
+  "https://developers.cloudflare.com/durable-objects/examples/alarms-api/",
+  "https://flaviocopes.com/courses/cloudflare/schedule-per-object-work-with-alarms/",
+  "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/api/alarms.mdx",
+  "https://open-compute.dev/docs/durable-objects/alarms/",
+  "https://www.cloudflare.com/",
+  "https://www.hesham.us/cloudflare-field-manual/cloudflare-durable-object-alarms-are-per-object-timers"
+ ],
+ "outcome": "authored"
+}
