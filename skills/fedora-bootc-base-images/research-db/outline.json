@@ -1,0 +1,245 @@
+{
+ "topic": "fedora-bootc-base-images skill (working with official Fedora and CentOS Stream bootc base images: tiers, source repos, digest pinning, bootc-base-imagectl, upstream tracking)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "source-repositories",
+   "scope": "Where the Fedora and CentOS Stream bootc base images are developed, which branches hold the real image definitions, and which registry references the published images live under.",
+   "seed_queries": [
+    "fedora bootc base images gitlab repository quay.io fedora-bootc",
+    "centos stream bootc containers gitlab c9s c10s quay.io centos-bootc"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "image-tiers",
+   "scope": "The 3 Fedora tier definitions (standard, minimal-plus, minimal), package sets, inheritance, and which tiers are officially published versus dev/testing.",
+   "seed_queries": [
+    "fedora bootc image tiers standard minimal minimal-plus",
+    "bootc-devel registry fedora bootc minimal image variants"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "digest-pinning",
+   "scope": "How yubiOS derives from the Fedora standard bootc image, why digest pinning is mandatory, and the exact commands to pin and verify the base image.",
+   "seed_queries": [
+    "bootc container image digest pinning sha256 FROM fedora-bootc",
+    "skopeo inspect digest pin container image reproducible bootc"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "standard-tier-package-set",
+   "scope": "What the standard tier already ships, what yubiOS should consider removing, and what yubiOS must add in its own layer.",
+   "seed_queries": [
+    "fedora-bootc standard image package set kernel systemd NetworkManager",
+    "fedora bootc base image contents included packages podman bootc"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "repo-structure",
+   "scope": "The files that make up the Fedora base-images repository, what each one controls, and how a consumer should read the repo.",
+   "seed_queries": [
+    "fedora bootc base-images repo Containerfile Justfile treefile standard.yaml",
+    "bootc-base-imagectl rechunk tool fedora"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "local-build-rechunk",
+   "scope": "When and how to build a base image locally with just, how rechunking produces content-based layers, and why the local build is never the source of published images.",
+   "seed_queries": [
+    "just build fedora bootc base images FEDORA_VERSION locally",
+    "bootc-base-imagectl rechunk content based layer splitting"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "upstream-tracking-konflux",
+   "scope": "What to watch in minimal.yaml/standard.yaml for changes that affect yubiOS, the clevis case study, Renovate-driven version movement, and Konflux as the real build pipeline.",
+   "seed_queries": [
+    "clevis-dracut clevis-pin-tpm2 fedora LUKS auto unlock dracut",
+    "konflux tekton fedora bootc base images build pipeline renovate"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "primitive-coverage",
+   "scope": "The primitive-coverage and changelog entries the skill itself carries (immutability, least privilege, segmentation, declarative policy, cycle-7 audit, 2026-09-17 retraction). Internal-record subtopic, no dig.",
+   "seed_queries": []
+  },
+  {
+   "nn": "",
+   "slug": "centos-stream-structure",
+   "scope": "CentOS Stream bootc repo structure: main redirect shell, c9s and c10s branches, stream9/stream10 images, RHEL Image Mode upstream role. DROPPED at validation.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.91,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.03,
+     "2": 0.94
+    },
+    "confidence": 0.87
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.06,
+     "2": 0.89
+    },
+    "confidence": 0.78
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.6,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.2,
+     "2": 0.7
+    },
+    "confidence": 0.4
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.02,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.41,
+     "1": 0.17,
+     "2": 0.42
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.91,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.04,
+     "2": 0.94
+    },
+    "confidence": 0.87
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.78,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.11,
+     "2": 0.84
+    },
+    "confidence": 0.67
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.67,
+     "1": 0.29,
+     "2": 0.04
+    },
+    "confidence": 0.44
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.58,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.22,
+     "2": 0.68
+    },
+    "confidence": 0.38
+   },
+   "t09": {
+    "type": "score",
+    "score": 0.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.59,
+     "1": 0.15,
+     "2": 0.26
+    },
+    "confidence": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1258,
+   "output_tokens": 139,
+   "cost": 0.000105672
+  },
+  "dropped": [
+   "t07"
+  ],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t06",
+   "t08",
+   "t09"
+  ]
+ }
+}
