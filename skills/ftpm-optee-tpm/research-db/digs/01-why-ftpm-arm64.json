@@ -1,0 +1,64 @@
+{
+ "nn": 1,
+ "slug": "why-ftpm-arm64",
+ "scope": "Why yubiOS builds its own fTPM on ARM64: measured boot needs a PCR-holding TPM, the vendor fTPM is a trust anchor yubiOS did not choose, and self-hosting ms-tpm-20-ref in own OP-TEE makes the PCR set and sealing root auditable and reproducible.",
+ "queries_attempted": [
+  {
+   "query": "TPM 2.0 measured boot ARM64 no discrete TPM firmware TPM",
+   "attempt": 1,
+   "raw_results": 36,
+   "kept": 6
+  },
+  {
+   "query": "TCG TPM 2.0 ARM64 firmware TPM PCR measured boot Linux",
+   "attempt": 1,
+   "raw_results": 58,
+   "kept": 6
+  },
+  {
+   "query": "TPM measured boot attestation platform integrity why TPM needed boot security",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "why firmware TPM fTPM secure world OP-TEE measured boot attestation",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first dig produced no source at weight >= 0.5; redo with different queries per REDO rule",
+   "new_queries": [
+    "TPM measured boot attestation platform integrity why TPM needed boot security",
+    "why firmware TPM fTPM secure world OP-TEE measured boot attestation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/ARM-software/arm-trusted-firmware/blob/master/docs/design_documents/measured_boot_poc.rst",
+  "https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/tpm-recommendations",
+  "https://docs.u-boot-project.org/en/latest/usage/measured_boot.html",
+  "https://arxiv.org/abs/2608.14736v1",
+  "https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/7a6acd5d-17d4-4699-a27d-7914c3fdf431",
+  "https://github.com/squarooticus/efi-measured-boot",
+  "https://tianocore-docs.github.io/edk2-TrustedBootChain/release-1.00/3_TCG_Trusted_Boot_Chain_in_EDKII.html",
+  "https://bootlin.com/blog/measured-boot-with-a-tpm-2-0-in-u-boot/",
+  "https://www.tcgplayer.com/",
+  "https://uapi-group.org/specifications/specs/linux_tpm_pcr_registry/",
+  "https://trustedcomputinggroup.org/resource/pc-client-specific-platform-firmware-profile-specification/",
+  "https://medium.com/@dineshmurugesan69/how-tpm-measured-boot-works-from-silicon-to-attestation-0c902404cc96",
+  "https://learn.microsoft.com/en-us/azure/security/fundamentals/measured-boot-host-attestation",
+  "https://learn.microsoft.com/en-us/azure/attestation/tpm-attestation-concepts",
+  "https://d3fend.mitre.org/technique/d3f:TPMBootIntegrity/",
+  "https://en.wikipedia.org/wiki/Next-Generation_Secure_Computing_Base",
+  "https://deepwiki.com/OP-TEE/optee_ftpm/8.1-event-logging-and-measured-boot",
+  "https://deepwiki.com/OP-TEE/optee_ftpm/8-security-features",
+  "https://github.com/10GiC10V38/jetson-ima-attestation"
+ ],
+ "outcome": "authored"
+}

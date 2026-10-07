@@ -1,0 +1,254 @@
+{
+  "topic": "the yubiOS fTPM-on-OP-TEE (ms-tpm-20-ref) skill for ARM64 (ground source: yubi-OS/yubiOS skills/ftpm-optee-tpm/SKILL.md)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "why-ftpm-arm64",
+      "scope": "Why yubiOS builds its own fTPM on ARM64: measured boot needs a PCR-holding TPM, the vendor fTPM is a trust anchor yubiOS did not choose, and self-hosting ms-tpm-20-ref in own OP-TEE makes the PCR set and sealing root auditable and reproducible.",
+      "seed_queries": [
+        "TPM 2.0 measured boot ARM64 no discrete TPM firmware TPM",
+        "TCG TPM 2.0 ARM64 firmware TPM PCR measured boot Linux",
+        "TPM measured boot attestation platform integrity why TPM needed boot security",
+        "why firmware TPM fTPM secure world OP-TEE measured boot attestation"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "optee-ftpm-integration-repo",
+      "scope": "What OP-TEE/optee_ftpm is, how it wraps microsoft/ms-tpm-20-ref at commit 98b60a44, the TA UUID bc50d971-d4c9-42c4-82cb-343fb7f37896, and the NVIDIA BlueField production worked example.",
+      "seed_queries": [
+        "OP-TEE optee_ftpm ms-tpm-20-ref firmware TPM reference implementation",
+        "microsoft ms-tpm-20-ref github TPM 2.0 reference implementation OP-TEE"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "build-the-ftpm-ta",
+      "scope": "The build flow for the fTPM TA against the OP-TEE TA dev kit: TA_DEV_KIT_DIR, CFG_MS_TPM_20_REF, CFG_TA_MEASURED_BOOT, CFG_TA_EVENT_LOG_SIZE, and the emitted UUID-named artifacts.",
+      "seed_queries": [
+        "optee_ftpm build TA CFG_MS_TPM_20_REF build instructions",
+        "OP-TEE trusted application build TA_DEV_KIT_DIR export-ta_arm64"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "early-ta-vs-dynamic-ta",
+      "scope": "Why the fTPM must be an Early TA compiled into .rodata.early_ta via CFG_EARLY_TA=y and EARLY_TA_PATHS, because U-Boot and IMA need the TPM before any rootfs exists.",
+      "seed_queries": [
+        "OP-TEE early TA CFG_EARLY_TA EARLY_TA_PATHS rodata.early_ta",
+        "OP-TEE dynamic TA tee-supplicant optee_armtz load timing"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "rpmb-bootstrap-hazard",
+      "scope": "The RPMB-before-supplicant bootstrap hazard: Early TA initializes before tee-supplicant, early NV writes panic (OP-TEE issue #5766), and the two mitigations (initramfs supplicant, early in-OP-TEE RPMB path).",
+      "seed_queries": [
+        "OP-TEE optee_os issue 5766 fTPM early TA RPMB tee-supplicant",
+        "RPMB tee-supplicant early TA panic OP-TEE fTPM init"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "uboot-linux-handoff",
+      "scope": "U-Boot tpm2_ftpm_tee driver, Linux tpm_ftpm_tee driver, the measured-boot event log handoff via linux,sml-base and linux,sml-size, and the probe-ordering constraint with IMA.",
+      "seed_queries": [
+        "U-Boot tpm2_ftpm_tee driver OP-TEE TPM command",
+        "Linux tpm_ftpm_tee driver linux,sml-base event log handoff measured boot"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "pcr-layout-sealing",
+      "scope": "The yubiOS PCR allocation convention (0/1 firmware, 7 Secure Boot policy, 8/9 kernel-DTB-initramfs, 10 IMA) and the seal-to-PCR-0/1/7 rule.",
+      "seed_queries": [
+        "TCG PC Client platform TPM 2.0 PCR index 0 1 7 measurement definition",
+        "PCR 10 IMA runtime measurement Linux TPM"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "ftpm-vs-yubikey-trust-boundary",
+      "scope": "The fTPM (platform integrity, on-device, secure world) vs YubiKey (user identity, off-device) split, the ADR-003 YubiKey-remains-disk-unlock rule, and the never-sole-gate constraint on the fTPM seal.",
+      "seed_queries": [
+        "FIDO2 hmac-secret LUKS2 disk unlock YubiKey TPM sealing",
+        "TPM sealing PCR policy vs hardware token disk encryption tradeoff",
+        "TPM2 PCR policy LUKS2 clevis sealing systemd disk encryption",
+        "systemd-cryptenroll FIDO2 LUKS2 unlock systemd"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "pinning-supply-chain",
+      "scope": "Pinning optee_ftpm, ms-tpm-20-ref, OP-TEE OS, and TF-A commits; folding into Renovate digest tracking (ADR-015) and the Docker Buildx + OPA/Rego pipeline (ADR-014); tracking upstream ms-tpm-20-ref CVEs.",
+      "seed_queries": [
+        "ms-tpm-20-ref CVE vulnerability firmware TPM supply chain",
+        "NVIDIA BlueField DPU fTPM OP-TEE BSP documentation"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t03": {
+        "type": "score",
+        "score": 1.78,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.06,
+          "2": 0.86
+        },
+        "confidence": 0.67
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.52,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.16,
+          "2": 0.68
+        },
+        "confidence": 0.28
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.54,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.17,
+          "2": 0.6799999999999999
+        },
+        "confidence": 0.31
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.65,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.11,
+          "2": 0.77
+        },
+        "confidence": 0.47
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.37,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.34,
+          "2": 0.52
+        },
+        "confidence": 0.06
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.15,
+          "2": 0.73
+        },
+        "confidence": 0.43
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.47,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.18,
+          "2": 0.64
+        },
+        "confidence": 0.2
+      },
+      "t01": {
+        "type": "score",
+        "score": 1.72,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.05,
+          "2": 0.84
+        },
+        "confidence": 0.58
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.04,
+          "2": 0.88
+        },
+        "confidence": 0.7
+      }
+    },
+    "usage": {
+      "input_tokens": 1614,
+      "output_tokens": 139,
+      "cost": 0.000135576
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "note": "Outline validation re-run 2026-10-07 via DefAPI direct. The prior attempt (closed PR #250, unmerged) ran the original outline score validation (recorded in jev-log.json entry 1) but its raw answer objects were not persisted before the session was killed. Scores here come from the live re-validation run; all 9 subtopics scored in the load-bearing band, consistent with the prior run's keep-all verdicts. No subtopic dropped."
+  }
+}
