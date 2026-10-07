@@ -1,0 +1,183 @@
+{
+  "topic": "LinkedIn browser outreach: sending and reading LinkedIn messages via a live cloud browser session (browser_use) instead of Beeper or the LinkedIn API; credential-safe login flow, thread replying, draft-then-approve rules, human-speed rate limiting",
+  "ground_source": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/linkedin-browser-outreach/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "routing-vs-beeper-connector",
+      "scope": "When to route LinkedIn outreach through a live browser_use session instead of the beeper bridge or the LinkedIn connector, and the tradeoffs of each path.",
+      "seed_queries": [
+        "Beeper LinkedIn messaging bridge desktop app supported platforms",
+        "LinkedIn API messaging scope restrictions developer program access"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "02",
+      "slug": "credential-safe-login-flow",
+      "scope": "The credential-safe login flow: agent types only the email, the human types their own password and 2FA into the live browser view, cookies persist for the session lifetime.",
+      "seed_queries": [
+        "LinkedIn login two-step verification security code prompt",
+        "automation credential handling never ask for password in chat best practice"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "03",
+      "slug": "read-only-network-recon",
+      "scope": "Read-only reconnaissance of My Network connections and the Messaging inbox in list view, and why the full connections graph still requires a LinkedIn data export.",
+      "seed_queries": [
+        "LinkedIn connections data export get a copy of your data settings",
+        "LinkedIn connections graph third party API access restrictions"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "04",
+      "slug": "thread-reply-flow",
+      "scope": "Locating an existing thread by recipient search in Messaging, composing and sending a reply, then verifying by re-reading the thread for the new timestamped message.",
+      "seed_queries": [
+        "LinkedIn messaging search conversations reply compose interface",
+        "LinkedIn sent message status verification read receipt"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "05",
+      "slug": "one-sided-thread-limit",
+      "scope": "The one-sided-thread limitation: LinkedIn hides the compose box entirely until the other party replies to the account owner's first message.",
+      "seed_queries": [
+        "LinkedIn messaging compose box hidden until recipient replies",
+        "LinkedIn InMail messaging rules first message reply requirement"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "06",
+      "slug": "human-speed-rate-limiting",
+      "scope": "Human-speed pacing: one message per browser call, confirm each success, spread batches across sessions instead of one micro-burst.",
+      "seed_queries": [
+        "LinkedIn automation detection account restriction warning signals",
+        "LinkedIn commercial use limit weekly invitation message limits"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "07",
+      "slug": "tos-risk-disclosure",
+      "scope": "Stating the ToS risk plainly before any batch: LinkedIn prohibits automated actions regardless of pacing, restriction is possible, and it is the user's informed choice each time.",
+      "seed_queries": [
+        "LinkedIn User Agreement prohibition automated actions messaging scraping",
+        "LinkedIn account restriction policy automation enforcement news"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "08",
+      "slug": "precedent-and-boundaries",
+      "scope": "Internal-record subtopic: the first-run precedent (2026-07-24, shant@omniteck.com, OMN-90 / OMN-85) and the hard boundaries the skill refuses to cross (no connection discovery, no connection requests, no bulk scraping, not a Beeper replacement).",
+      "seed_queries": [],
+      "internal_record": true
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions (DefAPI direct)",
+    "answer_id": "gen-dec-1791403010-KxSPYh73eeF00kLhOWVC",
+    "answers": {
+      "t01": {
+        "score": 1.39,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.28,
+          "2": 0.55
+        },
+        "confidence": 0.1
+      },
+      "t02": {
+        "score": 1.34,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.33,
+          "2": 0.5
+        },
+        "confidence": 0
+      },
+      "t03": {
+        "score": 1.36,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.47,
+          "2": 0.45
+        },
+        "confidence": 0.2
+      },
+      "t04": {
+        "score": 1.51,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.28,
+          "2": 0.62
+        },
+        "confidence": 0.28
+      },
+      "t05": {
+        "score": 1.59,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.24,
+          "2": 0.67
+        },
+        "confidence": 0.37
+      },
+      "t06": {
+        "score": 1.85,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.08,
+          "2": 0.88
+        },
+        "confidence": 0.76
+      },
+      "t07": {
+        "score": 1.72,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.09,
+          "2": 0.82
+        },
+        "confidence": 0.59
+      },
+      "t08": {
+        "score": 1.64,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.19,
+          "2": 0.72
+        },
+        "confidence": 0.44
+      }
+    },
+    "usage": {
+      "input_tokens": 1210,
+      "output_tokens": 124
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
