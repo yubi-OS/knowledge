@@ -1,0 +1,259 @@
+{
+  "topic": "ideate-solo: the autonomous variant of idea-refine - generates 5-8 variations across 5 lenses, scores on 4 heuristics, converges without a human in the loop",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "philosophy-and-when-to-use",
+      "scope": "Why solo ideation exists (no live human), when to use it and when NOT to (idea-refine, interview-me, idea-kill alternatives)",
+      "seed_queries": [
+        "SCAMPER ideation technique divergent convergent thinking",
+        "autonomous agent ideation without human in the loop"
+      ],
+      "jev_score": 1.88
+    },
+    {
+      "nn": "02",
+      "slug": "process-pipeline",
+      "scope": "The 7-step process: load raw idea, check scope class, generate variations, score, stress-test finalists, converge, produce one-pager",
+      "seed_queries": [
+        "divergent convergent ideation process double diamond",
+        "idea evaluation funnel scoring ranking product ideation process"
+      ],
+      "jev_score": 1.89
+    },
+    {
+      "nn": "03",
+      "slug": "five-lenses",
+      "scope": "The five autonomous lenses: inversion, constraint removal, audience shift, combination, simplification",
+      "seed_queries": [
+        "TRIZ inventive principles inversion creativity technique",
+        "assumption smashing constraint removal creativity method"
+      ],
+      "jev_score": 1.72
+    },
+    {
+      "nn": "04",
+      "slug": "scoring-heuristics",
+      "scope": "The four scoring heuristics: painkiller vs vitamin, switching cost, defensibility, testability; 1-5 scale, 4-20 sum, drop below 8",
+      "seed_queries": [
+        "painkiller versus vitamin product framework",
+        "product idea scoring framework defensibility moat testability"
+      ],
+      "jev_score": 1.36
+    },
+    {
+      "nn": "05",
+      "slug": "stress-test-and-convergence",
+      "scope": "Stress-testing top 2-3 finalists: strongest critique, second-order effects, un-testable bet; convergence tiebreak prefers testability; idea-kill handoff",
+      "seed_queries": [
+        "premortem technique stress test project ideas",
+        "steelmanning critique second order effects product decisions"
+      ],
+      "jev_score": 1.6
+    },
+    {
+      "nn": "06",
+      "slug": "one-pager-output",
+      "scope": "The one-pager output format: problem statement, recommended direction, assumptions to validate, MVP scope, not-doing, open questions, generation log; docs/ideas/ -solo naming",
+      "seed_queries": [
+        "how might we problem statement format design thinking",
+        "product one pager template assumptions to validate MVP scope"
+      ],
+      "jev_score": 1.73
+    },
+    {
+      "nn": "07",
+      "slug": "anti-patterns-and-red-flags",
+      "scope": "Anti-patterns (yes-machining, over-generation, skipping scoring/stress-test, confident scoring without evidence) and the red-flag list + verification checklist",
+      "seed_queries": [
+        "brainstorming failure modes groupthink anchoring bias",
+        "idea evaluation common mistakes confirmation bias innovation"
+      ],
+      "jev_score": 1.79
+    },
+    {
+      "nn": "08",
+      "slug": "skill-composition-and-constraints",
+      "scope": "Interaction with other skills (interview-me upstream, prior-art-search, idea-kill downstream, idea-refine alternative, spec-driven-development) and the loading constraints: solo only, read-only, bounded, stop at one-pager",
+      "seed_queries": [
+        "agent skill composition chaining upstream downstream workflows",
+        "minimal viable product scope constraints idea handoff specification"
+      ],
+      "jev_score": 1.86
+    },
+    {
+      "nn": "09",
+      "slug": "corpus-audit-primitive-coverage",
+      "scope": "The curve-guided-rsi corpus-audit additions to the skill: least-privilege, audit/evidence, segmentation, trust chain, cryptographic identity primitive coverage notes and changelog",
+      "seed_queries": [
+        "internal-record subtopic, no dig",
+        "internal-record subtopic, no dig"
+      ],
+      "jev_score": 0.33
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.88,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.08,
+          "2": 0.9
+        },
+        "confidence": 0.82
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.89,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.04,
+          "2": 0.92
+        },
+        "confidence": 0.83
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.72,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.15,
+          "2": 0.78
+        },
+        "confidence": 0.58
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.36,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.35,
+          "2": 0.5
+        },
+        "confidence": 0.03
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.6,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.22,
+          "2": 0.69
+        },
+        "confidence": 0.4
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.73,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.14,
+          "2": 0.8
+        },
+        "confidence": 0.6
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.79,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.11,
+          "2": 0.84
+        },
+        "confidence": 0.68
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.86,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.9
+        },
+        "confidence": 0.79
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.33,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.71,
+          "1": 0.25,
+          "2": 0.04
+        },
+        "confidence": 0.51
+      }
+    },
+    "usage": {
+      "input_tokens": 1351,
+      "output_tokens": 139,
+      "cost": 0.000113484
+    },
+    "dropped": [
+      "09"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
