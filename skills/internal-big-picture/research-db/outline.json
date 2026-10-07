@@ -1,0 +1,269 @@
+{
+ "topic": "internal-big-picture: the agent's canonical 10-primitive big-picture reference bridging Chronicle security telemetry, HITRUST CSF, CISA Zero Trust, and Poettering image-based OS architecture across yubiOS",
+ "source_doc": "yubi-OS/yubiOS skills/internal-big-picture/SKILL.md",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "four-source-domains",
+   "scope": "The four big-picture domains yubiOS draws from (Chronicle security telemetry, HITRUST CSF, CISA ZTMM, Poettering image-based OS architecture) and what each contributes to the lens.",
+   "seed_queries": [
+    "Google Chronicle Unified Data Model UDM YARA-L detection language documentation",
+    "HITRUST CSF v11.7.0 14 control categories 49 control objectives 156 control specifications"
+   ],
+   "dig": true
+  },
+  {
+   "nn": 2,
+   "slug": "primitive-spine",
+   "scope": "The 10-primitive spine: per-primitive definitions, per-source contributions, and where the four sources diverge.",
+   "seed_queries": [],
+   "dig": false
+  },
+  {
+   "nn": 3,
+   "slug": "version-pinning-cadence",
+   "scope": "Source versions used at fetch date, per-source re-pin cadences, and why blanket calendar re-pinning is wrong.",
+   "seed_queries": [
+    "systemd latest stable release version changelog",
+    "CISA Zero Trust Maturity Model v2.0 April 2023 five pillars cross-cutting capabilities"
+   ],
+   "dig": true
+  },
+  {
+   "nn": 4,
+   "slug": "vocabulary-glossary-traps",
+   "scope": "Per-source canonical vocabulary, NOT-used lists, and the cross-source semantic traps (stage, control, attestation, identity, evidence).",
+   "seed_queries": [],
+   "dig": false
+  },
+  {
+   "nn": 5,
+   "slug": "mapping-table-validation",
+   "scope": "The skills/docs/refs to primitives mapping table plus the 3-check cell validation protocol (definition match, body match, one-line justification) and cadence.",
+   "seed_queries": [],
+   "dig": false
+  },
+  {
+   "nn": 6,
+   "slug": "synthesis-template-example",
+   "scope": "The four-POV how-would-each-source-react synthesis template and the worked remote-attestation-endpoint example.",
+   "seed_queries": [
+    "TPM2 PCR quote remote attestation device identity FIDO2 hardware authenticator",
+    "YARA-L 2.0 rule syntax meta events match outcome condition Chronicle"
+   ],
+   "dig": true
+  },
+  {
+   "nn": 7,
+   "slug": "calibration-gate-loading",
+   "scope": "The 3-question calibration gate, when to use and when not to use, loading order, and the value-add table vs 0pointer-mastery.",
+   "seed_queries": [],
+   "dig": false
+  },
+  {
+   "nn": 8,
+   "slug": "anti-patterns-verification",
+   "scope": "Anti-patterns, red flags, and the 14-point verification checklist that gates a completed lens application.",
+   "seed_queries": [],
+   "dig": false
+  },
+  {
+   "nn": 9,
+   "slug": "operator-experience-gap",
+   "scope": "The operator/practitioner experience gap absent from all four sources and what it means for yubiOS.",
+   "seed_queries": [
+    "security operations analyst fatigue alert overload research usability SOC tools",
+    "compliance audit burden assessors HITRUST certification process experience"
+   ],
+   "dig": true
+  },
+  {
+   "nn": 10,
+   "slug": "rsi-audit-trail",
+   "scope": "The skill's own RSI cycle history (cycles 1-10 plus ship) and its attestation-coverage entry.",
+   "seed_queries": [],
+   "dig": false
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.08,
+     "2": 0.86
+    },
+    "confidence": 0.71
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.15,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.3,
+     "1": 0.25,
+     "2": 0.45
+    },
+    "confidence": 0
+   },
+   "t03": {
+    "type": "score",
+    "score": 0.63,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.5,
+     "1": 0.38,
+     "2": 0.12
+    },
+    "confidence": 0.06
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.13,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.55,
+     "2": 0.29
+    },
+    "confidence": 0.32
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.36,
+     "1": 0.34,
+     "2": 0.3
+    },
+    "confidence": 0
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.31,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.34,
+     "2": 0.49
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "type": "score",
+    "score": 0.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.4,
+     "1": 0.36,
+     "2": 0.24
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.35,
+     "2": 0.5
+    },
+    "confidence": 0.03
+   },
+   "t09": {
+    "type": "score",
+    "score": 0.59,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.55,
+     "1": 0.32,
+     "2": 0.13
+    },
+    "confidence": 0.12
+   },
+   "t10": {
+    "type": "score",
+    "score": 0.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.36,
+     "2": 0.22
+    },
+    "confidence": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1262,
+   "output_tokens": 154,
+   "cost": 0.000106008
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "note": "No subtopic scored 0. Subtopics with score under 1.0 are internal-record sections grounded directly in the source doc (authoritative), so they stay; t09 (operator-experience-gap, 0.59) keeps only if its dig comes back strong."
+ }
+}
