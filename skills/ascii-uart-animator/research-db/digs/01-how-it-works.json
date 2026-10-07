@@ -1,0 +1,23 @@
+{
+ "nn": 1,
+ "slug": "how-it-works",
+ "scope": "The bridge execution model: Python renders per-frame ASCII, wraps each frame in a printf write to /dev/ttyS2, bundles all frames plus sleep pacing into one bash script, and POSTs it to the rock1 Tailscale-Funnel shell bridge where user shant runs it.",
+ "queries_attempted": [
+  {
+   "query": "Tailscale Funnel expose local service public internet",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "Linux ttyS0 serial port device write terminal ttyS",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}

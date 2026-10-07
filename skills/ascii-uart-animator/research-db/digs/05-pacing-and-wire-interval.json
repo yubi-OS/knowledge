@@ -1,0 +1,47 @@
+{
+ "nn": 5,
+ "slug": "pacing-and-wire-interval",
+ "scope": "The knobs (W, TOTAL_FRAMES, FPS_DELAY) and the wire-interval model: actual frame interval is FPS_DELAY plus bytes_per_frame/baud_rate, with 115200 8N1 arithmetic (a 200-byte frame adds about 17 ms).",
+ "queries_attempted": [
+  {
+   "query": "UART 115200 baud throughput bytes per second calculation",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "serial port 8N1 start stop bits framing overhead per byte",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "asynchronous serial frame 10 bits per character start data stop bits",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "UART effective throughput 115200 baud bytes per second",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 returned heavy off-topic noise (dictionaries, a hiking page, homework Q&A); no result above 0.26",
+   "new_queries": [
+    "asynchronous serial frame 10 bits per character start data stop bits",
+    "UART effective throughput 115200 baud bytes per second"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Asynchronous_serial_communication",
+  "https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter"
+ ],
+ "outcome": "authored"
+}

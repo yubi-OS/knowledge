@@ -1,0 +1,183 @@
+{
+ "topic": "the ASCII UART animator skill: sending framed ASCII animations to a UART device over the rock1 shell bridge",
+ "ground_source": "yubi-OS/yubiOS skills/ascii-uart-animator/SKILL.md (https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/ascii-uart-animator/SKILL.md, 8621 bytes)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "how-it-works",
+   "scope": "The bridge execution model: Python renders per-frame ASCII, wraps each frame in a printf write to /dev/ttyS2, bundles all frames plus sleep pacing into one bash script, and POSTs it to the rock1 Tailscale-Funnel shell bridge where user shant runs it.",
+   "seed_queries": [
+    "Tailscale Funnel expose local service public internet",
+    "Linux ttyS0 serial port device write terminal ttyS"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "running-the-skill",
+   "scope": "Invoking the scripts: run_script with the rock1 shell bridge connection passed, self-contained per-animation Python scripts, or inline render_frame logic in a run_script call.",
+   "seed_queries": []
+  },
+  {
+   "nn": 3,
+   "slug": "built-in-animations",
+   "scope": "The five built-ins (bouncing_ball, bouncing_ball_ansi, fish_swim, walking_man, play_all) and the Built-in animations table of frames, FPS and scenes that is the calibration source of truth.",
+   "seed_queries": []
+  },
+  {
+   "nn": 4,
+   "slug": "ansi-rendering-mode",
+   "scope": "Clear-and-redraw versus scroll: the ESC[H ESC[2J escape pair, the bash printf %b directive that turns repr()'s newline escapes into real newlines, and why %s would print them literally.",
+   "seed_queries": [
+    "ANSI escape codes cursor home clear screen ESC[2J VT100",
+    "bash printf %b backslash escape sequences versus %s"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "pacing-and-wire-interval",
+   "scope": "The knobs (W, TOTAL_FRAMES, FPS_DELAY) and the wire-interval model: actual frame interval is FPS_DELAY plus bytes_per_frame/baud_rate, with 115200 8N1 arithmetic (a 200-byte frame adds about 17 ms).",
+   "seed_queries": [
+    "UART 115200 baud throughput bytes per second calculation",
+    "serial port 8N1 start stop bits framing overhead per byte"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "adding-a-new-animation",
+   "scope": "The extension recipe: write render_frame(n, total) returning a newline-joined string, loop frames into the printf+sleep bash script, POST via post_to_bridge.",
+   "seed_queries": []
+  },
+  {
+   "nn": 7,
+   "slug": "bridge-quirks-and-limits",
+   "scope": "Operational quirks: the bridge runs subprocess.run(argv) with no shell interpolation so quoting lives inside the bash -c string; multi-thousand-line scripts take 20+ seconds wall clock.",
+   "seed_queries": []
+  },
+  {
+   "nn": 8,
+   "slug": "calibration-and-testing-discipline",
+   "scope": "The UART testing discipline: measured calibration values (wire-interval floor, demonstrated 30 fps ceiling, bridge latency bound), the false-positive check for rendered-but-frozen playback, and verifying scripts against the frame table.",
+   "seed_queries": [
+    "serial console testing tips stty screen minicom UART debugging",
+    "embedded UART transmit timing baud rate frame transmission time"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "governance-coverage-and-recursion",
+   "scope": "Coverage sections and self-audit: the 2026-09-17 unsupported-claims removal precedent, connection-churn checks before every play, table-vs-scripts audits, re-run triggers, and the Guidelines scope boundary.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.94,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.91
+   },
+   "t02": {
+    "score": 1.88,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.02,
+     "2": 0.93
+    },
+    "confidence": 0.82
+   },
+   "t03": {
+    "score": 1.47,
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.17,
+     "2": 0.65
+    },
+    "confidence": 0.2
+   },
+   "t04": {
+    "score": 1.03,
+    "probabilities": {
+     "0": 0.3,
+     "1": 0.37,
+     "2": 0.33
+    },
+    "confidence": 0.06
+   },
+   "t05": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.09,
+     "2": 0.84
+    },
+    "confidence": 0.67
+   },
+   "t06": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.09,
+     "2": 0.85
+    },
+    "confidence": 0.7
+   },
+   "t07": {
+    "score": 1.6,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.24,
+     "2": 0.68
+    },
+    "confidence": 0.4
+   },
+   "t08": {
+    "score": 1.32,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.4,
+     "2": 0.46
+    },
+    "confidence": 0
+   },
+   "t09": {
+    "score": 0.11,
+    "probabilities": {
+     "0": 0.92,
+     "1": 0.06,
+     "2": 0.02
+    },
+    "confidence": 0.83
+   }
+  },
+  "usage": {
+   "input_tokens": 1139,
+   "output_tokens": 139
+  },
+  "dropped": [
+   9
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "note": "t09 dropped (0.11). t04 (1.03) and t08 (1.32) marginal, kept per dig strength (t04: vt100.net 0.53; t08: Wikipedia UART 0.51 and Analog Devices 0.51 after 2 redos)."
+ }
+}
