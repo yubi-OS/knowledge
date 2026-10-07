@@ -1,0 +1,238 @@
+{
+  "topic": "Hyperspherical-harmonic basis (S2 default, gated S^N) with learned Moebius reparameterization for corpus audit",
+  "ground_source": "yubi-OS/yubiOS skills/hyperspherical-harmonic-curve/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "basis-on-sphere",
+      "scope": "The hyperspherical-harmonic basis on S2 (default) and gated S^N as the replacement representation for corpus structure; orthonormality and the basis-library contract.",
+      "seed_queries": [
+        "spherical harmonics orthonormal basis unit sphere real",
+        "function approximation on the sphere spherical harmonics regression"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "mobius-reparameterization",
+      "scope": "The learned Moebius phi_theta in PSL(2,C) reparameterization: closed-form ridge plus L-BFGS-B fit, ad-bc=+1 normalization, cross-ratio preservation gate.",
+      "seed_queries": [
+        "Mobius transformation cross ratio PSL(2,C) Riemann sphere",
+        "learned reparameterization manifold learning optimization L-BFGS-B"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "ablation-fitness-deltas",
+      "scope": "The matched-parameter ablation against curve-guided-rsi's flat 2-D Fourier at both fitness-test phases; measured deltas, R2 values, and the fallback path.",
+      "seed_queries": [
+        "ablation study matched parameter count machine learning model comparison",
+        "principal component analysis 2D embedding R squared evaluation"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "calibration-gates",
+      "scope": "The verification gates: epsilon_basis orthonormality unit test, spectral-mass gate rho >= 0.10, high-degree mass <= 0.40, holdout R2, threshold calibration.",
+      "seed_queries": [
+        "Gram matrix orthonormality check basis functions numerical",
+        "spectral power distribution spherical harmonic degrees energy"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "sparse-cell-detection",
+      "scope": "Stage-2 sparse-cell measurement: equal-area S2 partition, cKDTree isolated-cell detector with chordal r approx 0.095, measured counts.",
+      "seed_queries": [
+        "equal area partition of the sphere HEALPix sampling",
+        "KDTree nearest neighbor density outlier point cloud"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "corpus-audit-pipeline",
+      "scope": "How corpus items become S2 points (PCA, stereographic lift), the Stage 1/2/3 pipeline, per-file delta readout and cross-cycle comparability.",
+      "seed_queries": [
+        "stereographic projection sphere plane mapping",
+        "dimensionality reduction PCA embedding corpus feature vectors"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "refinement-lifecycle",
+      "scope": "The Moebius refinement strategy and re-fit cadence: two modes, the selection rule, the 25 percent growth trigger, what a re-fit must record.",
+      "seed_queries": [
+        "L-BFGS-B bounded optimizer scipy",
+        "transfer learning freeze pretrained parameters stability"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "prior-art-novelty",
+      "scope": "The prior-art record: arXiv 2601.20528 and the ICLR 2022 generalized Fourier features paper, and the composition-level novelty verdict.",
+      "seed_queries": [
+        "Durastanti spectral Bayesian regression sphere arXiv",
+        "generalized Fourier features coordinate-based learning functions manifolds"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "rsi-discipline-history",
+      "scope": "The bounded RSI discipline the changelog encodes: hypothesis per cycle, fixpoint rule, 3-cycle cap and override, cycles 1-5, 8, 9 history. Internal-record, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "score": 1.73,
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.07,
+          "2": 0.83
+        },
+        "confidence": 0.59,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.33,
+        "probabilities": {
+          "0": 0.28,
+          "1": 0.12,
+          "2": 0.6
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 0.71,
+        "probabilities": {
+          "0": 0.53,
+          "1": 0.23,
+          "2": 0.24
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.15,
+        "probabilities": {
+          "0": 0.4,
+          "1": 0.05,
+          "2": 0.55
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.58,
+        "probabilities": {
+          "0": 0.59,
+          "1": 0.24,
+          "2": 0.17
+        },
+        "confidence": 0.13,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.51,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.13,
+          "2": 0.69
+        },
+        "confidence": 0.27,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.85,
+        "probabilities": {
+          "0": 0.5,
+          "1": 0.14,
+          "2": 0.36
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.2,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.28,
+          "2": 0.46
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 0.14,
+        "probabilities": {
+          "0": 0.91,
+          "1": 0.04,
+          "2": 0.05
+        },
+        "confidence": 0.79,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1740,
+      "output_tokens": 139
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

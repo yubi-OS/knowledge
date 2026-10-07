@@ -1,0 +1,23 @@
+# 06 The corpus-audit pipeline around the fit
+
+Scope: where the sphere fit sits in the corpus-audit pipeline: how corpus items become points on S2, what Stage 1, Stage 2, and Stage 3 each do, and how the per-file deltas are read out and kept comparable across cycles.
+
+## From corpus to sphere points
+
+The source doc (yubi-OS/yubiOS skills/hyperspherical-harmonic-curve/SKILL.md) describes the input transformation only through what it changed: curve-guided-rsi places corpus items via a PCA basis (W2, mu) on a flat [0,1]^2 domain, and this variant moves that domain to the sphere (source doc, cycle 1 and Moebius Refinement Strategy section). The upstream representation is inherited from the curve-guided-rsi family, not redefined here: each corpus item is characterized and reduced to a low-dimensional coordinate, the pair of leading principal components in the flat variant. PCA produces a sequence of unit vectors, the principal components, along which the data varies most (weakly backed: https://handwiki.org/wiki/Principal_component_analysis, jev weight 0.25). A two-dimensional PCA plot is a linear projection onto two orthogonal directions in the original variable space, in contrast to nonlinear embedding methods (weakly backed: https://p-shekhar.github.io/notebooks/lectures/03_ai_machine_learning/01_machine_learning_basics_for_decision_, jev weight 0.09).
+
+The lift from the plane to the sphere is the stereographic step. Stereographic projection maps points on the sphere to a plane by projecting from one pole onto a plane tangent to the other (weakly backed: https://mathworld.wolfram.com/StereographicProjection.html, jev weight 0.45), and it is a way of picturing the sphere as the plane, with inevitable compromises (weakly backed: https://en.wikipedia.org/wiki/Stereographic_projection, jev weight 0.35). It is conformal and invertible except at the projection point, so the corpus's 2-D PCA coordinates can be lifted onto S2 and back without losing information (weakly backed: https://en.wikipedia.org/wiki/Stereographic_map_projection, jev weight 0.32). The Moebius reparameterization of doc 02 then operates in that spherical coordinate system.
+
+## The three stages
+
+Stage 1 is the representation swap itself: replace the flat Fourier surface with the spherical-harmonic basis and fit it (source doc, cycle 1). Stage 2 is the equal-area partition and sparse-cell measurement (doc 05). Stage 3 is the improvement loop: per-cycle atom dispatches that act on individual corpus items and re-read per-file deltas from the fitted curve.
+
+The atom dispatch contract is where composition matters. The source doc states the corpus-level phi_theta is one Moebius transformation applied uniformly to all files, and the atom-bound Composition Rule, imported from single-action-curve-rsi as Lemma 1 through Theorem 1, requires that phi_theta be stable across the per-cycle atom dispatches so the per-file deltas are comparable (source doc, Moebius Refinement Strategy section). If the domain warp moved between cycles, a delta of +0.02 in cycle 3 and a delta of +0.02 in cycle 4 would not measure the same kind of change. The refinement strategy in doc 07 exists precisely to keep that comparability.
+
+## Readout and comparability
+
+The per-file delta is the unit of output the pipeline produces: for each corpus item, how much its position or coverage changed under the current fit, read off the spherical representation. The family relation matters for interpreting it: single-action-curve-rsi defines the atomic unit, one corpus item, one edit, one measurable delta, and this skill supplies the manifold on which those deltas are measured consistently across a whole corpus and across cycles (source doc, Moebius Refinement Strategy section). The freeze discipline (fallback mode, N_items >= 30) is what makes cross-cycle comparison exact rather than approximate: with phi_theta frozen, per-file S2 points share a stable coordinate system across cycles (source doc, Moebius Refinement Strategy section).
+
+## What this skill does not own
+
+The source doc scopes itself narrowly: every use stays inside the frontmatter description's scope, and anything beyond it is a different skill's job (source doc, Guidelines). The corpus item characterization, the primitive-coverage extraction, the atom dispatch mechanics, and the RSI loop discipline that schedules the cycles live in the family skills: curve-guided-rsi for the loop, single-action-curve-rsi for the atom and its composition theorem, negative-skill-space for the gap maps that motivate cycles. This skill owns the geometry: the basis, the domain reparameterization, and the gates that make the geometry trustworthy.
