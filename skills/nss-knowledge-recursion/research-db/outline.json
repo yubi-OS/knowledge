@@ -1,0 +1,273 @@
+{
+ "topic": "NSS knowledge_sources + recursion axes (nss-knowledge-recursion skill): citation patterns, BibTeX/JATS, docs-as-code xrefs, RFC/BCP/STD, reference managers, prior art, provenance/durability, link-rot CI, closed-loop self-improvement, blameless postmortems, learning loops",
+ "ground_source": "yubi-OS/yubiOS skills/nss-knowledge-recursion/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "evidence-graph-and-gates",
+   "scope": "The knowledge_sources unit of evaluation: the evidence graph (claim -> citation -> source -> stable destination), the 12-axis 0-3 rubric, and the four gating rules that stop high averages hiding critical failures",
+   "seed_queries": [
+    "citation quality assessment rubric documentation evidence",
+    "docs-as-code citation claims traceability quality gates"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "02",
+   "slug": "citation-patterns-bibtex-jats",
+   "scope": "Citation conventions in technical docs: IETF RFCXML reference style, BibTeX entry quality, JATS4R structured citations, persistent identifiers (DOI, ORCID)",
+   "seed_queries": [
+    "IETF RFCXML reference style draft-vynne-xml2rfc citations",
+    "JATS4R citations best practices JATS tagging references"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "03",
+   "slug": "docs-as-code-xrefs-integrity",
+   "scope": "Docs-as-code cross-references, xrefcheck and link-rot CI, the DOCER study on outdated code references, freshness gates",
+   "seed_queries": [
+    "xrefcheck documentation cross-references link checker CI",
+    "DOCER study outdated code references GitHub documentation empirical"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "04",
+   "slug": "rfc-standards-citation",
+   "scope": "Citing RFC/BCP/STD correctly: normative vs informative roles, section-level citations, status and obsolescence tracking",
+   "seed_queries": [
+    "IETF normative informative references citing RFC sections",
+    "RFC BCP STD series numbers documentation conventions"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "05",
+   "slug": "reference-manager-interoperability",
+   "scope": "Reference-manager interchange: BibTeX/RIS/CSL round-trips, Zotero export fidelity, Citavi/KBibTeX mappings, preserving identifiers and types",
+   "seed_queries": [
+    "Zotero BibTeX RIS CSL export interoperability citation",
+    "Citavi KBibTeX BibTeX mapping reference manager"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "06",
+   "slug": "prior-art-landscape",
+   "scope": "Prior-art surveys vs see-also: enumerating competing approaches with trade-offs and rejection criteria, lineage and novelty positioning",
+   "seed_queries": [
+    "related work section prior art survey competing approaches trade-offs",
+    "prior art search engineering design rejected alternatives documentation"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "07",
+   "slug": "provenance-authority-durability",
+   "scope": "Provenance and durability: primary vs secondary sources, version and access dates, DOIs, permalinks, archival copies, link rot prevention",
+   "seed_queries": [
+    "citation provenance primary secondary sources authority version",
+    "link rot prevention DOI permalink web archive citation durability"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "08",
+   "slug": "closed-loop-recursion",
+   "scope": "The recursion axis: strange loops (Hofstadter), double-loop learning (Argyris), self-archaeology trajectory notes, explicit state->audit->change->verify->memory chains",
+   "seed_queries": [
+    "Hofstadter strange loop self-referential systems",
+    "Argyris double-loop learning organizational reflective practice"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "09",
+   "slug": "blameless-postmortems-learning-loops",
+   "scope": "Postmortem-to-runbook closure: blameless postmortem culture (Google SRE), verified follow-through, learning-loop triggers/owners/metrics, anti-self-deception metrics",
+   "seed_queries": [
+    "Google SRE blameless postmortem culture learning from incidents",
+    "postmortem action items runbook update verification learning loop"
+   ],
+   "internal_record": false
+  },
+  {
+   "nn": "10",
+   "slug": "yubios-surface-patterns",
+   "scope": "Internal-record subtopic: the yubiOS file-type-aware surface (Containerfile/mkosi, SKILL.md, scripts, GitHub Actions workflows, refs/*.md) and the lens-format cycle-17 patch convention. Internal record, no dig.",
+   "seed_queries": [],
+   "internal_record": true
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.23,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.37,
+     "2": 0.43
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.51,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.28,
+     "2": 0.62
+    },
+    "confidence": 0.28,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.54,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.28,
+     "2": 0.63
+    },
+    "confidence": 0.31,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.59,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.2,
+     "2": 0.7
+    },
+    "confidence": 0.4,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.4,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.34,
+     "2": 0.53
+    },
+    "confidence": 0.1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.42,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.48,
+     "2": 0.47
+    },
+    "confidence": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.66,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.18,
+     "2": 0.74
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.31,
+     "2": 0.62
+    },
+    "confidence": 0.32,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.54,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.31,
+     "2": 0.61
+    },
+    "confidence": 0.3,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.06,
+    "probabilities": {
+     "0": 0.94,
+     "1": 0.05,
+     "2": 0.01
+    },
+    "confidence": 0.9,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1646,
+   "output_tokens": 154,
+   "cost": 0.000138264
+  },
+  "dropped": [
+   "10"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
