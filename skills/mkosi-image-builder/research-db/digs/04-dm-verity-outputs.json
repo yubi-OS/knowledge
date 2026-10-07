@@ -1,0 +1,37 @@
+{
+  "nn": "04",
+  "slug": "dm-verity-outputs",
+  "scope": "dm-verity in mkosi: Verity=yes/signed/hash/defer modes, roothash embedded in UKI kernel cmdline, roothash output file",
+  "queries_attempted": [
+    {
+      "query": "mkosi Verity signed hash defer dm-verity roothash",
+      "attempt": 1,
+      "raw_results": 33,
+      "kept": 6,
+      "error": null
+    },
+    {
+      "query": "mkosi unified kernel image roothash kernel command line verity",
+      "attempt": 2,
+      "raw_results": 51,
+      "kept": 6,
+      "error": null
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://deepwiki.com/systemd/mkosi/8.5-dm-verity-and-integrity-protection",
+    "https://deepwiki.com/systemd/particleos/5.2-dm-verity-and-integrity-protection",
+    "https://www.kernel.org/doc/html/v5.8/admin-guide/device-mapper/verity.html",
+    "https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md",
+    "https://wiki.archlinux.org/title/Dm-verity",
+    "https://cateee.net/lkddb/web-lkddb/DM_VERITY_VERIFY_ROOTHASH_SIG.html",
+    "https://github.com/systemd/mkosi",
+    "https://mkosi.systemd.io/",
+    "https://wiki.archlinux.org/title/Mkosi",
+    "https://www.zhihu.com/question/297551781",
+    "https://man.archlinux.org/man/mkosi.1"
+  ],
+  "outcome": "authored"
+}

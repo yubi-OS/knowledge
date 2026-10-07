@@ -1,0 +1,38 @@
+{
+  "nn": "03",
+  "slug": "piv-pkcs11-uki-signing",
+  "scope": "PIV/PKCS11 UKI signing: SecureBootKey as PKCS11 URI, SecureBootKeySource=engine:pkcs11 via systemd-sbsign, YubiKey PIV slot 9c, libykcs11, SoftHSM CI fallback",
+  "queries_attempted": [
+    {
+      "query": "mkosi SecureBootKeySource engine pkcs11 systemd-sbsign secure boot key",
+      "attempt": 1,
+      "raw_results": 35,
+      "kept": 6,
+      "error": null
+    },
+    {
+      "query": "YubiKey PIV slot 9c PKCS11 signing libykcs11 yubico-piv-tool SoftHSM",
+      "attempt": 2,
+      "raw_results": 41,
+      "kept": 6,
+      "error": null
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/systemd/mkosi/issues/3033",
+    "https://deepwiki.com/systemd/mkosi/5.5-secure-boot-and-signing",
+    "https://deepwiki.com/systemd/mkosi/5.1-bootloader-configuration",
+    "https://www.commandinline.com/linux-secure-boot-uefi-mokutil-key-management/",
+    "https://curvage.org/forum/index.php?/files/file/43692-gentle-weight-loss-sabotage/",
+    "https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11",
+    "https://www.yubico.com/",
+    "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+    "https://www.yubico.com/products/",
+    "https://developers.yubico.com/yubico-piv-tool/YKCS11/",
+    "https://en.wikipedia.org/wiki/YubiKey",
+    "https://github.com/Yubico/yubico-piv-tool"
+  ],
+  "outcome": "authored"
+}
