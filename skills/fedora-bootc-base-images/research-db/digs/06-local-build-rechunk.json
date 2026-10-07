@@ -1,0 +1,72 @@
+{
+ "nn": 6,
+ "slug": "local-build-rechunk",
+ "scope": "When and how to build a base image locally with just, how rechunking produces content-based layers, and why the local build is never the source of published images.",
+ "queries_attempted": [
+  {
+   "query": "just build fedora bootc base images FEDORA_VERSION locally",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6,
+   "note": "thin: dictionary noise, low weights; redone"
+  },
+  {
+   "query": "bootc-base-imagectl rechunk content based layer splitting",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "fedora bootc base-images Justfile just build tier containerfile",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "redo": true
+  },
+  {
+   "query": "hhd-dev rechunk bootc OCI image layer splitting tool",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "redo": true
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 query ('just build fedora bootc base images FEDORA_VERSION locally') returned dictionary-definition noise (weights 0.07 to 0.56), dig too thin to author honestly",
+   "new_queries": [
+    "fedora bootc base-images Justfile just build tier containerfile",
+    "hhd-dev rechunk bootc OCI image layer splitting tool"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.merriam-webster.com/dictionary/just",
+  "https://dictionary.cambridge.org/dictionary/english/just",
+  "https://www.vocabulary.com/dictionary/just",
+  "https://www.dictionary.com/browse/just",
+  "https://www.facebook.com/fedoraplatform/",
+  "https://blue-build.org/",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/generating-a-custom-minimal-base-image",
+  "https://forge.fedoraproject.org/iot/base-images/commit/8362abca256572ee31059fe8bcc5582a7d13b767",
+  "https://github.com/projectbluefin/finpilot",
+  "https://github.com/coreos/chunkah",
+  "https://www.redhat.com/en/blog/image-mode-for-red-hat-enterprise-linux-generally-available",
+  "https://www.youtube.com/watch?v=HVPTpGLTJVw",
+  "https://docs.centos.org/automotive-sig-documentation/building/con_bootc-image-layering/",
+  "https://github.com/lcsvinhas/fedora-bootable-container",
+  "https://github.com/bootc-dev/bootc/blob/main/Justfile",
+  "https://docs-fcb3ff.gitlab.io/bootc/building-containers/",
+  "https://github.com/jtligon/base-images",
+  "https://github.com/Ultramarine-Linux/bootc",
+  "https://www.techtarget.com/searchstorage/definition/hybrid-hard-drive",
+  "https://en.wikipedia.org/wiki/Hybrid_drive",
+  "https://en.wikipedia.org/wiki/HHD",
+  "https://www.computertechreviews.com/definition/hhd/",
+  "https://www.computerhope.com/jargon/h/hybrid-hard-drive.htm",
+  "https://github.com/centos-workstation/hhd-dev-rechunk/"
+ ],
+ "outcome": "authored"
+}

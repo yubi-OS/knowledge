@@ -1,0 +1,36 @@
+{
+ "nn": 4,
+ "slug": "standard-tier-package-set",
+ "scope": "What the standard tier already ships, what yubiOS should consider removing, and what yubiOS must add in its own layer.",
+ "queries_attempted": [
+  {
+   "query": "fedora-bootc standard image package set kernel systemd NetworkManager",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "fedora bootc base image contents included packages podman bootc",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.billdietrich.me/Linux.html",
+  "https://docs.fedoraproject.org/en-US/bootc/sysconfig-network-configuration/",
+  "https://pcbrno.cz/tag/fedora/",
+  "https://docs.fedoraproject.org/en-US/fedora/latest/fedora-downloads-info/",
+  "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_image_mode_for_rhel_to_build_deploy_and_manage_operating_systems/generating-a-custom-minimal-base-image",
+  "https://docs-be743c.gitlab.io/bootc/base-images/",
+  "https://github.com/podman-desktop/extension-bootc",
+  "https://docs.fedoraproject.org/ar/bootc/building-custom-base/",
+  "https://docs-fcb3ff.gitlab.io/bootc/getting-started/",
+  "https://github.com/bootc-dev/bootc/discussions",
+  "https://osbuild.org/docs/bootc/",
+  "https://lwn.net/Articles/1042708/"
+ ],
+ "outcome": "authored"
+}

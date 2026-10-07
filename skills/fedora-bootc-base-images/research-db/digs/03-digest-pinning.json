@@ -1,0 +1,36 @@
+{
+ "nn": 3,
+ "slug": "digest-pinning",
+ "scope": "How yubiOS derives from the Fedora standard bootc image, why digest pinning is mandatory, and the exact commands to pin and verify the base image.",
+ "queries_attempted": [
+  {
+   "query": "bootc container image digest pinning sha256 FROM fedora-bootc",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  },
+  {
+   "query": "skopeo inspect digest pin container image reproducible bootc",
+   "attempt": 1,
+   "raw_results": null,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.fedoraproject.org/en-US/bootc/building-containers/",
+  "https://www.cncf.io/projects/bootc/",
+  "https://jmarrero.github.io/bootc/bootc-install.html",
+  "https://github.com/bootc-dev",
+  "https://docs.fedoraproject.org/en-US/bootc/running-containers/",
+  "https://bootc.dev/bootc/filesystem-storage.html",
+  "https://github.com/podman-container-tools/skopeo",
+  "https://docs.oracle.com/en/operating-systems/oracle-linux/podman/skopeo.html",
+  "https://kubernetes.recipes/recipes/deployments/skopeo-container-image-operations/",
+  "https://www.redhat.com/en/topics/containers/what-is-skopeo",
+  "https://developers.redhat.com/articles/2025/09/24/skopeo-unsung-hero-linux-container-tools",
+  "https://www.geeksforgeeks.org/devops/using-skopeo-for-container-image-inspection-and-transfer/"
+ ],
+ "outcome": "authored"
+}
