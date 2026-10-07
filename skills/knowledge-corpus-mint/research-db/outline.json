@@ -1,0 +1,263 @@
+{
+ "topic": "Minting brand-new knowledge corpora from an input request: jev-validated outline, searXNG digs with per-result quality weighting, parallel author subagents, landing in yubi-OS/knowledge with a typed research DB",
+ "source_doc": "yubi-OS/yubiOS skills/knowledge-corpus-mint/SKILL.md",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "routing-when-to-use",
+   "scope": "When to mint vs route to refs-refresh-sweep, repo-refs-skill, curve-guided-rsi, or parallel-deep-research; the four NOT-to-use cases and their replacements.",
+   "seeds": [],
+   "internal": true
+  },
+  {
+   "nn": 2,
+   "slug": "pipeline-phases",
+   "scope": "The 8-phase pipeline end to end: preflight gate, outline, dig+weight, repo bootstrap, author fan-out, landing, merge, report, and the phase dependencies between them.",
+   "seeds": [],
+   "internal": true
+  },
+  {
+   "nn": 3,
+   "slug": "endpoint-preflight",
+   "scope": "The three backing endpoints (decide model, searXNG proxy, MASTER GIT SU) and the Phase 0 health gate: probe shapes, failure modes (suspended engines, Cloudflare 1010), and the re-mint lesson.",
+   "seeds": [
+    "searXNG self-hosted metasearch engine JSON API",
+    "LLM as judge calibrated decision model API"
+   ],
+   "internal": false
+  },
+  {
+   "nn": 4,
+   "slug": "outline-jev-validation",
+   "scope": "Phase 1: deriving the ref slug, decomposing a request by the domain's own joints, seed queries per subtopic, and the single score-metric outline validation with drop-0 semantics.",
+   "seeds": [
+    "LLM as judge scoring rubric validation",
+    "topic decomposition knowledge base outline planning"
+   ],
+   "internal": false
+  },
+  {
+   "nn": 5,
+   "slug": "dig-and-weighting",
+   "scope": "Phase 2 mechanics: searXNG query shape and pacing, top-6 keeping, noul source-quality weighting, batching, and the decide-failure-means-REDO rule (never ship unweighted).",
+   "seeds": [
+    "searXNG JSON API response format results",
+    "source quality weighting citation reliability research"
+   ],
+   "internal": false
+  },
+  {
+   "nn": 6,
+   "slug": "research-db-schema",
+   "scope": "Research-db schema v2: preflight.json, outline.json, archive.json, digs/, jev-log.json, db.ts; what each file must record and the plain-UTF-8 (never base64) rule.",
+   "seeds": [],
+   "internal": true
+  },
+  {
+   "nn": 7,
+   "slug": "author-fanout-contract",
+   "scope": "Phase 4 parallel authoring: the self-contained subagent prompt, the authoring contract (600-1200 words, every claim sourced and weighted, redo rule, honest cannot-author verdicts), and orchestrator-owned commits.",
+   "seeds": [
+    "multi-agent parallel authoring LLM corpus generation",
+    "orchestrator subagent fan-out pattern git atomic commit"
+   ],
+   "internal": false
+  },
+  {
+   "nn": 8,
+   "slug": "git-data-api-landing",
+   "scope": "Phase 5 landing chain: blobs (utf-8, never base64), trees with base_tree, commits, refs, draft PR; the empty-repo 409 seed; and the two post-push verification checks.",
+   "seeds": [
+    "GitHub Git Data API create blob tree commit branch REST",
+    "GitHub REST API create draft pull request"
+   ],
+   "internal": false
+  },
+  {
+   "nn": 9,
+   "slug": "anti-patterns-history",
+   "scope": "The anti-patterns, red flags, and incident history they encode: PRs #12, #16, #21 base64 and missing-DB failures, the wave-27 phantom-PR lesson, and the verification discipline born from them.",
+   "seeds": [],
+   "internal": true
+  },
+  {
+   "nn": 10,
+   "slug": "merge-and-report",
+   "scope": "Phase 6-7: merging via POST /merges (why PATCH draft:false no-ops), merged=true verification, and the single final report shape with DB stats and spend.",
+   "seeds": [
+    "GitHub merges API POST /repos owner repo merges",
+    "GitHub API draft pull request merge endpoint"
+   ],
+   "internal": false
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 0.99,
+    "probabilities": {
+     "0": 0.35,
+     "1": 0.31,
+     "2": 0.34
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.74,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.04,
+     "2": 0.85
+    },
+    "confidence": 0.61,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.81,
+    "probabilities": {
+     "0": 0.45,
+     "1": 0.28,
+     "2": 0.27
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.67,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.05,
+     "2": 0.81
+    },
+    "confidence": 0.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.82,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.04,
+     "2": 0.89
+    },
+    "confidence": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.74,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.05,
+     "2": 0.85
+    },
+    "confidence": 0.62,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.04,
+    "probabilities": {
+     "0": 0.34,
+     "1": 0.27,
+     "2": 0.39
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.84,
+    "probabilities": {
+     "0": 0.46,
+     "1": 0.24,
+     "2": 0.3
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.61,
+    "probabilities": {
+     "0": 0.43,
+     "1": 0.53,
+     "2": 0.04
+    },
+    "confidence": 0.3,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.04,
+     "2": 0.87
+    },
+    "confidence": 0.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1484,
+   "output_tokens": 154,
+   "cost": 0.000124656
+  }
+ },
+ "dropped": [],
+ "kept": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ]
+}
