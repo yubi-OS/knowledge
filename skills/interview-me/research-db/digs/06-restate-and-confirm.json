@@ -1,0 +1,92 @@
+{
+  "nn": "06",
+  "slug": "restate-and-confirm",
+  "scope": "The six-line restate format including the non-negotiable out-of-scope line and the explicit-yes confirmation gate",
+  "queries_attempted": [
+    {
+      "query": "active listening paraphrasing confirm understanding techniques",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 0,
+      "note": "run-1 log only; result items not persisted by the dig harness"
+    },
+    {
+      "query": "out of scope statement requirements agreement prevent scope creep",
+      "attempt": 1,
+      "raw_results": 65,
+      "kept": 0,
+      "note": "run-1 log only; result items not persisted by the dig harness"
+    },
+    {
+      "query": "active listening paraphrasing confirm understanding techniques",
+      "attempt": 2,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "project charter out of scope statement prevent scope creep",
+      "attempt": 2,
+      "raw_results": 61,
+      "kept": 6
+    },
+    {
+      "query": "paraphrasing and summarizing counseling skills techniques",
+      "attempt": 3,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "scope creep definition causes prevention project management",
+      "attempt": 3,
+      "raw_results": 50,
+      "kept": 6
+    }
+  ],
+  "redo_count": 2,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt 1 ('active listening paraphrasing confirm understanding techniques' / 'out of scope statement requirements agreement prevent scope creep') returned racing-events and Outlook noise; both reworded",
+      "new_queries": [
+        "active listening paraphrasing confirm understanding techniques",
+        "project charter out of scope statement prevent scope creep"
+      ]
+    },
+    {
+      "attempt": 3,
+      "reason": "attempt-2 results for this subtopic contained no primary (>= 0.5) source beyond dictionary noise; redo with different queries",
+      "new_queries": [
+        "paraphrasing and summarizing counseling skills techniques",
+        "scope creep definition causes prevention project management"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.counsellingcentral.com/active-listening-techniques-paraphrasing-summarising-and-reflecting-for-deeper-connection/",
+    "https://conversationpilot.ai/frameworks/active-listening",
+    "https://www.accesstherapy.ca/speaking-with-my-therapist-blog/active-listening-and-paraphrasing",
+    "https://positivepsychology.com/active-listening-techniques/",
+    "https://fourweekmba.com/active-listening/",
+    "https://www.active.com/",
+    "https://support.microsoft.com/en-us/project/install-project",
+    "https://www.projectmanager.com/blog/5-ways-to-avoid-scope-creep",
+    "https://project.microsoft.com/msal-redirect2",
+    "http://www.zentao.pm/blog/causes-of-scope-creep-and-how-to-prevent-scope-creep-875.html",
+    "https://handwiki.org/wiki/Social:Outline_of_project_management",
+    "https://doitify.com/planning/prevent-scope-creep/",
+    "https://ahrefs.com/writing-tools/paraphrasing-tool",
+    "https://www.scribbr.com/paraphrasing-tool/",
+    "https://quillbot.com/paraphrasing-tool?msockid=21897c81e03c639f07156b6ae18562db",
+    "https://www.youtube.com/watch?v=JGMGXtfAX7U",
+    "https://counsellingtutor.com/basic-counselling-skills/reflecting-and-paraphrasing/",
+    "http://nepaliyp.com/paraphrasing-in-counseling",
+    "https://scope.scholastic.com/",
+    "https://asana.com/resources/what-is-scope-creep",
+    "https://en.wikipedia.org/wiki/Scope_creep",
+    "https://www.merriam-webster.com/dictionary/scope",
+    "https://app.scopehealth.com/sign-in",
+    "https://handwiki.org/wiki/Earth:Climate_change_and_invasive_species"
+  ],
+  "outcome": "authored",
+  "note": "dig ran thin after 2 redos (no >= 0.5 source beyond carry-over Mom Test primary sources from 01); authored on the source-doc spine with weak external backing labeled"
+}
