@@ -1,0 +1,32 @@
+{
+ "nn": 3,
+ "slug": "build-the-ftpm-ta",
+ "scope": "The build flow for the fTPM TA against the OP-TEE TA dev kit: TA_DEV_KIT_DIR, CFG_MS_TPM_20_REF, CFG_TA_MEASURED_BOOT, CFG_TA_EVENT_LOG_SIZE, and the emitted UUID-named artifacts.",
+ "queries_attempted": [
+  {
+   "query": "optee_ftpm build TA CFG_MS_TPM_20_REF build instructions",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  },
+  {
+   "query": "OP-TEE trusted application build TA_DEV_KIT_DIR export-ta_arm64",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://deepwiki.com/OP-TEE/optee_ftpm/9.1-build-configuration",
+  "https://android.googlesource.com/platform/external/ms-tpm-20-ref/+show/HEAD/Samples/ARM32-FirmwareTPM/README.md",
+  "https://www.op.gg/?main=index",
+  "https://optee.readthedocs.io/en/latest/building/trusted_applications.html",
+  "https://community.nxp.com/t5/QorIQ/How-to-build-Trusted-Applications-for-the-OP-TEE/m-p/756940",
+  "https://meanary.com/op-meaning-slang/",
+  "https://deepwiki.com/OP-TEE/optee_os/7.2-implementing-a-trusted-application",
+  "https://deepwiki.com/OP-TEE/optee_os/4.2-trusted-application-build"
+ ],
+ "outcome": "authored"
+}

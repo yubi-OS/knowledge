@@ -1,0 +1,36 @@
+{
+ "nn": 7,
+ "slug": "pcr-layout-sealing",
+ "scope": "The yubiOS PCR allocation convention (0/1 firmware, 7 Secure Boot policy, 8/9 kernel-DTB-initramfs, 10 IMA) and the seal-to-PCR-0/1/7 rule.",
+ "queries_attempted": [
+  {
+   "query": "TCG PC Client platform TPM 2.0 PCR index 0 1 7 measurement definition",
+   "attempt": 1,
+   "raw_results": 37,
+   "kept": 6
+  },
+  {
+   "query": "PCR 10 IMA runtime measurement Linux TPM",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://trustedcomputinggroup.org/wp-content/uploads/PC-Client-Specific-Platform-TPM-Profile-for-TPM-2p0-v1p07_rc1_121225.pdf",
+  "https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+  "https://www.commoncriteriaportal.org/nfs/ccpfiles/files/ppfiles/anssi-profil-pp-2021_02en.pdf",
+  "https://trustedcomputinggroup.org/resource/pc-client-platform-tpm-profile-ptp-specification/",
+  "https://www.commoncriteriaportal.org/nfs/ccpfiles/files/ppfiles/EUCC-3090-2026-26-pp.pdf",
+  "https://help.zededa.com/hc/en-us/articles/43295940828827-TPM-PCR-Index-Security-Implications",
+  "https://docs.strongswan.org/docs/latest/tnc/ima.html",
+  "https://stackoverflow.com/questions/79564638/recreating-tpm-trusted-platform-module-pcr-10-from-linux-ima-integrity-measur",
+  "https://www.britannica.com/science/polymerase-chain-reaction",
+  "https://docs.strongswan.org/docs/latest/tnc/imaClient.html",
+  "https://microbenotes.com/pcr-principle-enzymes-steps-types-uses/",
+  "https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-attest-linux-workload"
+ ],
+ "outcome": "authored"
+}

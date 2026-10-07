@@ -1,0 +1,67 @@
+{
+ "nn": 8,
+ "slug": "ftpm-vs-yubikey-trust-boundary",
+ "scope": "The fTPM (platform integrity, on-device, secure world) vs YubiKey (user identity, off-device) split, the ADR-003 YubiKey-remains-disk-unlock rule, and the never-sole-gate constraint on the fTPM seal.",
+ "queries_attempted": [
+  {
+   "query": "FIDO2 hmac-secret LUKS2 disk unlock YubiKey TPM sealing",
+   "attempt": 1,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "TPM sealing PCR policy vs hardware token disk encryption tradeoff",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "TPM2 PCR policy LUKS2 clevis sealing systemd disk encryption",
+   "attempt": 2,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "systemd-cryptenroll FIDO2 LUKS2 unlock systemd",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first dig produced no source at weight >= 0.5; redo with different queries per REDO rule",
+   "new_queries": [
+    "TPM2 PCR policy LUKS2 clevis sealing systemd disk encryption",
+    "systemd-cryptenroll FIDO2 LUKS2 unlock systemd"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.guyrutenberg.com/2022/02/17/unlock-luks-volume-with-a-yubikey/",
+  "https://github.com/nyancient/fido2-luks",
+  "https://piotrnowicki.com/posts/2024-06-17/configuring-luks-to-work-with-yubikey/",
+  "https://docs.yubico.com/yesdk/users-manual/application-fido2/hmac-secret.html",
+  "https://kudelskisecurity.com/research/luks-disk-encryption-with-fido2",
+  "https://unix.stackexchange.com/questions/751251/fido2-yubikey-to-unlock-luks-from-command-line",
+  "https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/tpm-fundamentals",
+  "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+  "https://www.wolfssl.com/tpm-2-0-sealing-policies-with-wolftpm-pcr-policies-policy-authorize-and-nv-storage-for-tpm-2-0-secrets/",
+  "https://community.infineon.com/t5/Blogs/Sealing-and-unsealing-data-in-TPM/ba-p/465547",
+  "https://talkingpointsmemo.com/",
+  "https://linuxjunkies.org/guides/configure-tpm-with-clevis",
+  "https://mtask.github.io/2022/09/19/clevis-luks-bind.html",
+  "https://ubuntu.com/server/docs/how-to/security/tpm-backed-luks-decryption-with-clevis/",
+  "https://fedoramagazine.org/automatically-decrypt-your-disk-using-tpm2/",
+  "https://www.columbiamagazine.com/index.php?sid=65028",
+  "https://wiki.archlinux.org/title/Systemd-cryptenroll",
+  "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+  "https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+  "https://dev.to/lyraalishaikh/stop-typing-luks-passphrases-at-every-boot-practical-systemd-cryptenroll-on-linux-49nm",
+  "https://www.freedesktop.org/software/systemd/man/systemd-cryptenroll.html",
+  "https://www.freedesktop.org/software/systemd/man/251/systemd-cryptenroll.html"
+ ],
+ "outcome": "authored"
+}

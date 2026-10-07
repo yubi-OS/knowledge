@@ -1,0 +1,35 @@
+{
+ "nn": 6,
+ "slug": "uboot-linux-handoff",
+ "scope": "U-Boot tpm2_ftpm_tee driver, Linux tpm_ftpm_tee driver, the measured-boot event log handoff via linux,sml-base and linux,sml-size, and the probe-ordering constraint with IMA.",
+ "queries_attempted": [
+  {
+   "query": "U-Boot tpm2_ftpm_tee driver OP-TEE TPM command",
+   "attempt": 1,
+   "raw_results": 37,
+   "kept": 6
+  },
+  {
+   "query": "Linux tpm_ftpm_tee driver linux,sml-base event log handoff measured boot",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/TexasInstruments/ti-u-boot/blob/ti-u-boot-2026.01/drivers/tpm/tpm2_ftpm_tee.c",
+  "https://elixir.bootlin.com/u-boot/v2022.04/source/drivers/tpm/tpm2_ftpm_tee.c",
+  "https://github.com/frank-w/u-boot/blob/2026-04-bpi/drivers/tpm/tpm2_ftpm_tee.c",
+  "https://qemu.googlesource.com/u-boot/+/refs/heads/WIP/2022-02-08-TI-platform-updates/drivers/tpm/tpm2_ftpm_tee.c",
+  "https://community.nxp.com/t5/i-MX-Processors/How-to-run-OP-TEE-with-U-Boot/m-p/1302350",
+  "https://www.linux.org/pages/download/",
+  "https://docs.kernel.org/6.8/security/tpm/tpm_ftpm_tee.html",
+  "https://www.linux.org/",
+  "https://en.wikipedia.org/wiki/Linux",
+  "https://github.com/torvalds/linux/blob/master/drivers/char/tpm/tpm_ftpm_tee.c",
+  "https://docs.nvidia.com/jetson/archives/r36.4.3/DeveloperGuide/SD/Security/FirmwareTPM.html"
+ ],
+ "outcome": "authored"
+}

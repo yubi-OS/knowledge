@@ -1,0 +1,33 @@
+{
+ "nn": 5,
+ "slug": "rpmb-bootstrap-hazard",
+ "scope": "The RPMB-before-supplicant bootstrap hazard: Early TA initializes before tee-supplicant, early NV writes panic (OP-TEE issue #5766), and the two mitigations (initramfs supplicant, early in-OP-TEE RPMB path).",
+ "queries_attempted": [
+  {
+   "query": "OP-TEE optee_os issue 5766 fTPM early TA RPMB tee-supplicant",
+   "attempt": 1,
+   "raw_results": 33,
+   "kept": 6
+  },
+  {
+   "query": "RPMB tee-supplicant early TA panic OP-TEE fTPM init",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/OP-TEE/optee_os/issues/5766",
+  "https://github.com/OP-TEE/optee_os/issues/7339",
+  "https://networking-docs.nvidia.com/bfswtroubleshooting/op-tee-ftpm",
+  "https://docs.nvidia.com/networking/display/bfswtroubleshooting/OP-TEE/op-tee-ftpm.pdf",
+  "https://www.linaro.org/blog/linaro-enables-op-tee-rpmb-access-directly-from-the-linux-kernel/",
+  "https://docs.nvidia.com/doca/archive/2-9-2/ftpm+over+op-tee/index.html",
+  "https://deepwiki.com/OP-TEE/optee_client/2.2.2-rpmb-storage",
+  "https://support.google.com/youtubetv/?hl=en",
+  "https://en.wikipedia.org/wiki/Replay_Protected_Memory_Block"
+ ],
+ "outcome": "authored"
+}
