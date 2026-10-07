@@ -1,0 +1,242 @@
+{
+  "topic": "The NSS Outputs axis: what each file produces (stdout/stderr contracts, exit codes, structured logs, files, side effects, response payloads, idempotency, determinism, partial-output policy), ground source yubi-OS/yubiOS skills/nss-outputs/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "seven-channel-taxonomy",
+      "scope": "The seven output channels (exit, stdout, stderr, log, file, side-effect, response) and the per-output record fields (on_success, on_failure, idempotency, determinism, schema, retry, redaction).",
+      "seed_queries": [
+        "software output contract exit code stdout stderr response payload documentation best practices",
+        "declared interface contract side effects idempotency determinism output documentation"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "sysexits-exit-codes",
+      "scope": "Exit-code vocabulary: EX_OK through EX_CONFIG, documented deviations, and the failure routing the codes enable.",
+      "seed_queries": [
+        "sysexits.h exit codes BSD meanings EX_USAGE EX_TEMPFAIL",
+        "command line tool exit code best practices distinguishable failure classes"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "stream-ownership",
+      "scope": "stdout and stderr ownership: result vs diagnostics vs logs, framing per stream, quiet-mode conventions.",
+      "seed_queries": [
+        "when to use stdout versus stderr Unix convention",
+        "stdout stderr separation command line interface design principle"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "partial-output-policy",
+      "scope": "Partial-output policy on failure: forbidden / valid_and_marked / resumable and their atomic-write, marker, and checkpoint implementations.",
+      "seed_queries": [
+        "atomic file write temporary file rename POSIX pattern",
+        "partial output on failure CLI contract checkpoint resumable"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "structured-logs",
+      "scope": "Log records: JSONL framing, RFC 5424 syslog, severity mapping, ts and run_id, redaction at the producer.",
+      "seed_queries": [
+        "JSON Lines format specification one object per line",
+        "RFC 5424 syslog structured logging severity levels log redaction secrets"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "idempotency-contract",
+      "scope": "Idempotency contract: inherently_idempotent / key_required / not_supported, the Idempotency-Key header, and the effect boundary. SKIPPED: marginal outline score plus weak dig after redo.",
+      "seed_queries": [
+        "Idempotency-Key HTTP header IETF draft semantics",
+        "idempotent API design Stripe idempotency key retry duplicate"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "determinism-reproducible",
+      "scope": "Determinism classes (logical, byte_identical, reproducible_build), SOURCE_DATE_EPOCH, canonicalization procedures, and two-clean-build verification.",
+      "seed_queries": [
+        "SOURCE_DATE_EPOCH specification reproducible builds",
+        "bit for bit reproducible build canonicalization timestamps locales"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "yubios-file-type-surfaces",
+      "scope": "File-type surfaces: scripts, systemd units, GitHub Actions workflows, Containerfiles, mkosi configs, refs/notes, with each surface's native mechanism vocabulary.",
+      "seed_queries": [
+        "systemd Type=notify sd_notify SuccessExitStatus oneshot service unit output",
+        "GitHub Actions workflow_call outputs mkosi Output manifest checksums OCI image labels reproducible"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "verification-and-rubric",
+      "scope": "Anti-patterns, red flags, and the 9-point cycle-10 verification checklist. Internal-record subtopic: rubric lives in the source doc, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "score": 1.73,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.04,
+          "2": 0.85
+        },
+        "confidence": 0.61,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 0.52,
+        "probabilities": {
+          "0": 0.61,
+          "1": 0.25,
+          "2": 0.14
+        },
+        "confidence": 0.2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.55,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.13,
+          "2": 0.71
+        },
+        "confidence": 0.32,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.33,
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.26,
+          "2": 0.54
+        },
+        "confidence": 0.01,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.13,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.29,
+          "2": 0.42
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.35,
+        "probabilities": {
+          "0": 0.75,
+          "1": 0.15,
+          "2": 0.1
+        },
+        "confidence": 0.47,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.57,
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.14,
+          "2": 0.72
+        },
+        "confidence": 0.37,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.18,
+        "probabilities": {
+          "0": 0.87,
+          "1": 0.09,
+          "2": 0.04
+        },
+        "confidence": 0.74,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.31,
+        "probabilities": {
+          "0": 0.22,
+          "1": 0.25,
+          "2": 0.53
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1103,
+      "output_tokens": 139
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "07",
+      "08",
+      "09"
+    ],
+    "marginal_kept_only_after_strong_dig": [
+      "08"
+    ],
+    "marginal_skipped_after_weak_dig": [
+      "06"
+    ],
+    "note": "Scores are continuous 0-2. No subtopic scored 0. Subtopics below 1.0 were treated as marginal: kept only when their dig came back strong (08: 5/12 high-weight in the original dig), skipped when it did not (06: 0/12 after 1 redo). 02 scored 0.52 marginal but its redo dig returned 4 high-weight primary sources (NetBSD/OpenBSD sysexits man pages), so it was kept."
+  }
+}
