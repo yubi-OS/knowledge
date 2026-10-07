@@ -1,0 +1,58 @@
+{
+ "date": "2026-10-07",
+ "searxng": {
+  "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+  "probe_results": 107,
+  "unresponsive_engines": [
+   [
+    "boardreader",
+    "parsing error"
+   ],
+   [
+    "brave",
+    "Suspended: too many requests"
+   ],
+   [
+    "duckduckgo",
+    "CAPTCHA"
+   ],
+   [
+    "fastbot",
+    "Suspended: access denied"
+   ],
+   [
+    "fireball",
+    "Suspended: access denied"
+   ],
+   [
+    "google",
+    "Suspended: access denied"
+   ],
+   [
+    "privacywall",
+    "Suspended: access denied"
+   ],
+   [
+    "qwant",
+    "CAPTCHA"
+   ],
+   [
+    "searchmysite",
+    "Suspended: access denied"
+   ],
+   [
+    "yacy",
+    "timeout"
+   ],
+   [
+    "yep",
+    "Suspended: access denied"
+   ]
+  ]
+ },
+ "decide": {
+  "url": "https://api.defapi.org/api/v1/decisions",
+  "model": "typesafe/jev-1.13-20260917",
+  "note": "campaign preflight (orchestrator); agent-side probe skipped per docs-mint speed optimization; DefAPI direct"
+ }
+}

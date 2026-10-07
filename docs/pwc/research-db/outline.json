@@ -1,0 +1,275 @@
+{
+ "topic": "the yubiOS PWC doctrine document (yubi-OS/yubiOS docs/PWC.md): program without control, the inverse of program-and-control (PAC), and the three controller-free control mechanisms",
+ "ground_source": "yubi-OS/yubiOS docs/PWC.md (9182 B fetched 2026-10-07 from raw.githubusercontent.com/yubi-OS/yubiOS/main/docs/PWC.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "program-and-control",
+   "scope": "The inherited PAC model: a program plus a separate control plane that watches and intervenes (init supervisors, IAM, host agents, policy engines, PR review); the three structural costs (the controller is itself a program and a privileged target, the controller only sees its own vantage, and the controller converts a property into a procedure).",
+   "seed_queries": [
+    "trusted computing base minimization operating systems",
+    "separation of policy and mechanism operating systems Saltzer"
+   ],
+   "score": 1.99,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 1
+   },
+   "verdict": "load-bearing"
+  },
+  {
+   "nn": "02",
+   "slug": "control-by-construction",
+   "scope": "The strongest PWC mechanism: the unsafe state does not exist to be reached (immutability, capability narrowing, no mutable alias); control by construction has no runtime dependency on any process behaving.",
+   "seed_queries": [
+    "capability based security object capabilities principle",
+    "immutable infrastructure eliminate drift by construction"
+   ],
+   "score": 2,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 1
+   },
+   "verdict": "load-bearing"
+  },
+  {
+   "nn": "03",
+   "slug": "verification-at-use",
+   "scope": "The check and the use are the same act: dm-verity in the read path, verified boot chains, TOCTOU elimination; a poisoned byte fails to read rather than being quarantined after the fact.",
+   "seed_queries": [
+    "time of check time of use TOCTOU vulnerability class",
+    "dm-verity verified read path design Linux"
+   ],
+   "score": 2,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 1
+   },
+   "verdict": "load-bearing"
+  },
+  {
+   "nn": "04",
+   "slug": "control-by-record",
+   "scope": "Append-only evidence as the controller-free alarm: audit ledgers, attestation, transparency logs; falsifiability without a gatekeeper, and its limits versus prevention.",
+   "seed_queries": [
+    "append only audit log tamper evidence design",
+    "sigstore transparency log tamper evident record"
+   ],
+   "score": 1.99,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 1
+   },
+   "verdict": "load-bearing"
+  },
+  {
+   "nn": "05",
+   "slug": "pwc-in-yubios",
+   "scope": "Mapping the doctrine to the yubiOS implementation: dm-verity on /usr, composefs signed catalog, atomic A/B updates, LUKS2-FIDO2 hmac-secret binding vs TPM-PCR as PAC, the Rego build gate as admission filter. Internal-record: grounded in the source doc and the repo docs it cites.",
+   "seed_queries": [],
+   "dig": "skipped: internal-record subtopic, no dig; grounded in the source doc",
+   "score": 1.99,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 1
+   },
+   "verdict": "load-bearing"
+  },
+  {
+   "nn": "06",
+   "slug": "where-pac-stays",
+   "scope": "The boundary: PWC dissolves the controller only where the controller would be a program. Physical presence, irreversible operations, recovery paths stay PAC with the owner as controller, on purpose. Internal-record.",
+   "seed_queries": [],
+   "dig": "skipped: internal-record subtopic, no dig; grounded in the source doc",
+   "score": 1.99,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 1
+   },
+   "verdict": "load-bearing"
+  },
+  {
+   "nn": "07",
+   "slug": "evidence-and-pinned-assumptions",
+   "scope": "The mandatory second half of PWC: evidence as the alarm that replaces the watcher, pinned assumptions (kernel floors, signer behavior, format stability), honest scope (a PWC claim names the mechanism that replaced the watcher). Internal-record.",
+   "seed_queries": [],
+   "dig": "skipped: internal-record subtopic, no dig; grounded in the source doc",
+   "score": 1.99,
+   "probabilities": {
+    "0": 0,
+    "1": 0,
+    "2": 1
+   },
+   "verdict": "load-bearing"
+  },
+  {
+   "nn": "08",
+   "slug": "related-doctrines",
+   "scope": "Prior art and adjacent doctrines: capability security (Dennis and Van Horn, Levy), Saltzer-Schroeder complete mediation, self-stabilizing systems, formal verification (seL4), zero trust contrast; what each shares with and misses from PWC.",
+   "seed_queries": [
+    "Saltzer Schroeder complete mediation protection principles",
+    "self stabilizing systems Dijkstra distributed computing"
+   ],
+   "score": 1.55,
+   "probabilities": {
+    "0": 0.05,
+    "1": 0.35,
+    "2": 0.6
+   },
+   "verdict": "load-bearing"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.99,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   },
+   "t02": {
+    "score": 2,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   },
+   "t03": {
+    "score": 2,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   },
+   "t04": {
+    "score": 1.99,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   },
+   "t05": {
+    "score": 1.99,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   },
+   "t06": {
+    "score": 1.99,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   },
+   "t07": {
+    "score": 1.99,
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   },
+   "t08": {
+    "score": 1.55,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.35,
+     "2": 0.6
+    },
+    "confidence": 0.33,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "verdict": "load-bearing"
+   }
+  },
+  "usage": {
+   "input_tokens": 3471,
+   "output_tokens": 124
+  },
+  "dropped": [],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t06",
+   "t07",
+   "t08"
+  ],
+  "note": "docs-mint variant of yubi-OS/yubiOS docs/PWC.md"
+ }
+}
