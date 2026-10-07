@@ -1,0 +1,68 @@
+{
+ "nn": "04",
+ "slug": "coordinate-robustness",
+ "scope": "The 1-D coordinate t from upstream PCA is protected against noise, PC1 sign flips, partial ordering, and domain shift: confidence-weighted regression, canonical sign vector persistence, ridge-residual drift detection.",
+ "queries_attempted": [
+  {
+   "query": "PCA sign ambiguity eigenvector sign convention fix",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "covariate shift detection machine learning methods",
+   "attempt": 1,
+   "raw_results": 58,
+   "kept": 6
+  },
+  {
+   "query": "PCA sign indeterminacy bro 1998 sign convention eigenvectors",
+   "attempt": 2,
+   "raw_results": 57,
+   "kept": 6
+  },
+  {
+   "query": "nannyml univariate multivariate drift detection documentation",
+   "attempt": 2,
+   "raw_results": 59,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 weighting yielded 0 results at weight >= 0.5 for this subtopic; generic blog queries surfaced aggregators. Redone with documentation-oriented queries.",
+   "new_queries": [
+    "PCA sign indeterminacy bro 1998 sign convention eigenvectors",
+    "nannyml univariate multivariate drift detection documentation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://stackoverflow.com/questions/52958436/eigenvector-ambiguity-how-to-enforce-a-specific-sign-convention",
+  "https://math.stackexchange.com/questions/2359992/how-to-resolve-the-sign-issue-in-a-svd-problem",
+  "https://www.mathworks.com/matlabcentral/fileexchange/22118-sign-correction-in-svd-and-pca",
+  "https://www.pca.org/",
+  "https://discourse.julialang.org/t/resolve-sign-ambiguity-in-svd-and-eigendecomposition/61484",
+  "https://diogoribeiro7.github.io/machine-learning/covariate_shift/",
+  "https://www.nannyml.com/blog/detecting-covariate-shift-multivariate-approach",
+  "https://www.numberanalytics.com/blog/mastering-covariate-shift-in-ml",
+  "https://blog.dailydoseofds.com/p/how-to-detect-multivariate-covariate",
+  "https://www.statology.org/covariate/",
+  "https://handwiki.org/wiki/Feature_scaling",
+  "https://www.researchgate.net/publication/227677444_Resolving_the_sign_ambiguity_in_the_singular_value_decomposition",
+  "https://en.wikipedia.org/wiki/Principal_component_analysis",
+  "https://www.pca.org/",
+  "https://www.academia.edu/32203078/Resolving_the_sign_ambiguity_in_the_singular_value_decomposition",
+  "https://www.baseball-reference.com/players/c/crowape01.shtml",
+  "https://en.wikipedia.org/wiki/Pete_Crow-Armstrong",
+  "https://nannyml.readthedocs.io/en/stable/how_it_works/multivariate_drift.html",
+  "https://www.nannyml.com/",
+  "https://www.nannyml.com/library",
+  "https://nannyml.readthedocs.io/en/stable/tutorials/detecting_data_drift/univariate_drift_detection.html",
+  "https://github.com/NannyML/nannyml/blob/main/docs/tutorials/detecting_data_drift/univariate_drift_detection.rst",
+  "https://www.youtube.com/@nannyml"
+ ],
+ "outcome": "authored"
+}

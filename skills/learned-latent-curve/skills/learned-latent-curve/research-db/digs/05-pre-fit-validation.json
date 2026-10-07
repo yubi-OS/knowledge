@@ -1,0 +1,69 @@
+{
+ "nn": "05",
+ "slug": "pre-fit-validation",
+ "scope": "7 pre-fit data pathology checks (NaN and inf in Z and t, duplicate t, shape mismatch, softplus floor frequencies, feature scaling, constant columns) run before the curve fit rather than after it.",
+ "queries_attempted": [
+  {
+   "query": "data validation checks before model training NaN missing values",
+   "attempt": 1,
+   "raw_results": 49,
+   "kept": 6
+  },
+  {
+   "query": "rank deficient design matrix singular least squares",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "tensorflow data validation anomalies statistics documentation",
+   "attempt": 2,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "numpy linalg lstsq rank deficient least squares documentation",
+   "attempt": 2,
+   "raw_results": 56,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 weighting yielded 0 results at weight >= 0.5 for this subtopic; generic blog queries surfaced aggregators. Redone with documentation-oriented queries.",
+   "new_queries": [
+    "tensorflow data validation anomalies statistics documentation",
+    "numpy linalg lstsq rank deficient least squares documentation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.geeksforgeeks.org/data-analysis/handling-missing-values-machine-learning/",
+  "https://medium.com/@vinodkumargr/12-handling-missing-values-in-machine-learning-different-missing-values-handling-methods-in-24b4ce55fe70",
+  "https://en.wikipedia.org/wiki/Data",
+  "https://handwiki.org/wiki/PHP",
+  "https://repost.aws/questions/QUVbl-po8iR0yQFxVyI_t4gQ/batch-prediction-fails-with-training-dataset-on-canvas-w-data-contains-infinite-or-nan-values",
+  "https://docs.cloud.google.com/financial-services/anti-money-laundering/docs/reference/data-validation-errors",
+  "https://tiermaker.com/",
+  "https://www.merriam-webster.com/dictionary/rank",
+  "https://dictionary.cambridge.org/dictionary/english/rank",
+  "http://www.mathematik.uni-ulm.de/~lehn/FLENS/flens/examples/lapack-gelsy.html",
+  "https://www.vocabulary.com/dictionary/rank",
+  "https://knowledge.deck.no/mathematics/linear-algebra/rank-of-a-matrix/rank-deficiency",
+  "https://www.tensorflow.org/tfx/guide/tfdv",
+  "https://www.tensorflow.org/tfx/data_validation/get_started",
+  "https://www.tensorflow.org/tfx/data_validation/anomalies",
+  "https://github.com/tensorflow/data-validation",
+  "https://pypi.org/project/tensorflow-data-validation/",
+  "https://www.tensorflow.org/tfx/tutorials/data_validation/tfdv_basic",
+  "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
+  "https://www.askpython.com/python-modules/numpy/numpy-linalg-lstsq",
+  "https://numpy.org/doc/1.20/reference/generated/numpy.linalg.lstsq.html",
+  "https://numpy.org/doc/2.1/reference/generated/numpy.linalg.lstsq.html",
+  "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lstsq.html",
+  "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.linalg.lstsq.html"
+ ],
+ "outcome": "authored"
+}
