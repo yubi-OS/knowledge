@@ -1,0 +1,35 @@
+# 07 - The taste instrument and edge standardization
+
+Scope: the nature-based taste instrument riding the corpus engine, its three deterministic extraction axes, clef scoring with hysteresis, the honest-not-admitted trial, and the edge-standard-v1 pipeline that closed the comparability blocker.
+
+## What the instrument is
+
+Source doc (2026-10-05, taste-v1): the taste instrument rides the same steady-orbit worker. `POST /api/jev/corpus/taste/score` performs deterministic extraction via `jev-taste-math.js` (box-counting fractal dimension, mirror symmetry, scale coherence, plus caller-supplied measurements), then makes ONE batched clef call over 8 nature-law axes with the measured number embedded in each instruction. The scoring uses 0.45/0.55 hysteresis and an `order_seed` position-bias control. Run rows land with kinds `taste` and `taste-matrix`.
+
+The primary extracted number is a fractal dimension measured by box counting. Box counting overlays boxes of decreasing size on a pattern and counts how many boxes contain part of the object; plotted on log-log axes, the count's scaling slope gives the box-counting dimension (Wikipedia, https://en.wikipedia.org/wiki/Box_counting, jev weight 0.53; HandWiki describes the same scale-breaking procedure, https://handwiki.org/wiki/Box_counting, jev weight 0.07 - weak backing). The method is widely used for image fractal dimension estimation, with known sensitivity to box-size parameters (Pattern Recognition paper on an improved box-counting method, https://www.sciencedirect.com/science/article/pii/S0031320309000843, jev weight 0.81). Known limitations travel with it: pseudofractals (sets of Hausdorff-Besicovitch dimension 0) can defeat the algorithm (arXiv nlin/0107023, http://arxiv.org/abs/nlin/0107023, jev weight 0.71), and point-cloud variants need careful sampling density (Paul Bourke's box-counting estimate for 3D point datasets, https://paulbourke.net/fractals/fdpoints/, jev weight 0.08 - weak backing). A single fractal dimension is not always sufficient; multifractal systems need a spectrum of exponents (Wikipedia, https://en.wikipedia.org/wiki/Multifractal_system, jev weight 0.46 - weak backing), which is why the instrument pairs the D measurement with symmetry and scale-coherence axes rather than resting on one number.
+
+## The batched clef call
+
+One batched clef call covers all 8 nature-law axes, with the measured number embedded in each instruction (source doc). Two deploy lessons hardened the call format: clef `choice` questions take a `criteria` object (option-to-description), not a `choices` array; and bare integer scores like "1" confused the symmetry band question until numbers were rendered with decimals ("1.000"), so measured numbers in clef instructions must always carry decimal formatting (source doc).
+
+Calibration results from the source doc addendum: sweeps show clef reads stated thresholds exactly (0.6 step, 0.3-0.95 window, 0.5 step); family choice answers are echoed with choice, probabilities, and confidence; clef jitter sd = 0 across 24 re-calls.
+
+## Never a composite beauty number
+
+Source doc: "The instrument never awards itself a quality score: it returns a vector + probabilities, never a composite beauty number." This is the taste-engine equivalent of the corpus engine's "the math never authorizes anything" rule. The output is a measurement vector plus the decision model's probabilities per axis; any judgment about beauty happens outside the instrument.
+
+## The honest NOT-ADMITTED verdict
+
+Source doc, 2026-10-05 addendum: the 18-image real-photo trial returned an honest NOT-ADMITTED verdict for the fractal_band axis. The classifier was faithful to the measured D everywhere, but photo edge maps read D in the 1.5-1.6 range, which is pipeline-dependent. The axis stayed unadmitted rather than being force-admitted with a broken band. The validation record (`refs/natural-taste-engine-2026-10-05.md` on yubi-OS/yubiOS) shows 24/24 gold-set separation versus measured D.
+
+This is the interesting kind of instrument failure: the classifier worked, the measurement pipeline produced a systematically different regime on real photos than on synthetic fixtures, and the admission gate refused to bless the mismatch. Compare the box-counting literature's known parameter sensitivity (box-size choice significantly influences the estimated dimension, https://www.academia.edu/49511461/The_box_counting_method_for_evaluate_the_fractal_Di_mension_in_radiographic_images, jev weight 0.05 - weak backing): an unstandardized edge pipeline is exactly such a parameter.
+
+## edge-standard-v1: closing the comparability blocker
+
+Source doc, addendum 2: the standardized edge pipeline shipped as `POST /api/jev/corpus/taste/edge-standard`, taking `gray_b64` in and producing an ink-normalized 1-px contour bitmap plus features (edge-standard-v1), with IBSI-style fixtures and cross-implementation parity at maximum dD 4.4e-16; Python source of record plus JS port. Trial-2 on the same 18 real photos moved measured D from the 1.5-1.6 regime to 1.11-1.40 at pinned roughly 6 percent ink coverage, with 8 of 18 in-band. The measurement-comparability blocker is closed; the axis remains unadmitted pending a human-rated real-photo gold set under the matched-triad protocol (corpus doc 07 of the taste corpus).
+
+The standardization steps map onto standard image-processing primitives. Normalization adjusts pixel intensity values to a defined range, classically contrast stretching (Wikipedia, https://en.wikipedia.org/wiki/Normalization_(image_processing), jev weight 0.51). Binarization converts a grayscale image to black-and-white via thresholding, setting pixels to foreground when the gray value meets the threshold (image processing principles, http://www.help.imageanalyst.net/ImageProcessingBasics_Binarization.html, jev weight 0.03 - weak backing; the AI wiki's thresholding and binarization guide, https://artificial-intelligence-wiki.com/computer-vision/image-processing-fundamentals/image-thresholding-and-binarization/, jev weight 0.03 - weak backing). Document image binarization is its own research area because degraded inputs shift the effective threshold (ResearchGate summary, https://www.researchgate.net/publication/377647921_Summary_of_Document_Image_Binarization, jev weight 0.06 - weak backing). Pinning ink coverage is the binarization analog of pinning box sizes: it removes a free parameter that would otherwise move D between trials.
+
+## Status and discipline
+
+Per the source doc, the taste routes live under `/api/jev/corpus/taste/*` with a selftest at 13/13 checks, both caller-features and bitmap image paths verdicting correctly, cost about 0.0002 dollars per score, and consumed = 0 under the clef plan billing. The axis admission protocol (jitter tests, threshold calibration, gold-set cross-validation, rayleigh-pattern admission) is the taste-engine skill's domain; this corpus records the corpus-engine surface: score, matrix, selftest, and edge-standard endpoints, their inputs, and the measured behaviors above. Every use stays inside the frontmatter description's scope (source doc closing line).

@@ -1,0 +1,55 @@
+{
+  "nn": "04",
+  "slug": "sign-gate-level-dbc",
+  "scope": "level_dbc = 20*log10(|z|) gate convention vs audit dbc field, sign gate, bearing reading, nulls 400.",
+  "queries_attempted": [
+    {
+      "query": "decibel scale logarithmic ratio 20 log10 amplitude measurement",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "pre-registered direction of effect success criterion sign gate",
+      "attempt": 1,
+      "raw_results": 60,
+      "kept": 6
+    },
+    {
+      "query": "decibel 20 log10 ratio formula reference",
+      "attempt": 2,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "direction of effect pre-registered statistical testing",
+      "attempt": 2,
+      "raw_results": 76,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig results were off-topic (lexical keyword collisions on multi-word queries); redo with different queries per spec",
+      "new_queries": [
+        "decibel 20 log10 ratio formula reference",
+        "direction of effect pre-registered statistical testing"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Decibel",
+    "https://www.britannica.com/science/decibel",
+    "https://ocw.mit.edu/courses/2-004-dynamics-and-control-ii-spring-2008/f8706caa7aecebcc533553fb154778d0_lecture_33.pdf",
+    "https://electricalflux.com/learn-components/formula-to-calculate-decibels-worked-examples",
+    "https://handwiki.org/wiki/Physics:Decibel",
+    "https://physics.stackexchange.com/questions/6588/why-is-the-decibel-scale-logarithmic",
+    "https://en.wikipedia.org/wiki/Logarithm",
+    "https://psicostat.github.io/4ms-winter-school/slides/Lakens-4M-18-2-2025-Preregistration.pdf",
+    "https://reinholtzresearch.com/files/Andre_&_Reinholtz_2024.pdf",
+    "https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1458"
+  ],
+  "outcome": "authored"
+}

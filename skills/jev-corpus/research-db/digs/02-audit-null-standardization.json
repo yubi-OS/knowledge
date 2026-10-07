@@ -1,0 +1,59 @@
+{
+  "nn": "02",
+  "slug": "audit-null-standardization",
+  "scope": "/audit V2 share, curveball null, z, dBc, verdicts, idempotency, Decision-B multipass.",
+  "queries_attempted": [
+    {
+      "query": "curveball null model bipartite random graph null distribution",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    },
+    {
+      "query": "z score standardization against Monte Carlo null distribution",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "curveball swap algorithm fixed degree sequence graph null model",
+      "attempt": 2,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "null model hypothesis testing standardized effect size z statistic",
+      "attempt": 2,
+      "raw_results": 58,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-pass dig results were off-topic (lexical keyword collisions on multi-word queries); redo with different queries per spec",
+      "new_queries": [
+        "curveball swap algorithm fixed degree sequence graph null model",
+        "null model hypothesis testing standardized effect size z statistic"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://arxiv.org/html/1609.05137v2",
+    "https://arxiv.org/abs/1609.05137v2",
+    "https://www.researchgate.net/publication/308265708_Curveball_a_new_generation_of_sampling_algorithms_for_graphs_with_fixed_degree_sequence",
+    "https://cran.r-project.org/web/packages/nullcat/refman/nullcat.html",
+    "https://arxiv.org/pdf/1904.03836",
+    "https://www.emergentmind.com/topics/margin-preserving-curveball-null",
+    "https://rdrr.io/cran/bipartite/man/nullmodel.html",
+    "https://en.wikipedia.org/wiki/Maximum-entropy_random_graph_model",
+    "https://art.torvergata.it/retrieve/e291c0da-0674-cddb-e053-3a05fe0aa144/s42005-022-00856-9.pdf",
+    "https://arxiv.org/html/2607.29242v1",
+    "https://en.wikipedia.org/wiki/Effect_size",
+    "https://en.wikipedia.org/wiki/Z-test",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5635437/",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.monte_carlo_test.html"
+  ],
+  "outcome": "authored"
+}
