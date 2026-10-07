@@ -1,0 +1,203 @@
+{
+ "topic": "The ask-vs-infer discipline (human-for-feasibility): default to inference when the choice is documented anywhere; ask only when undocumented AND the cost of being wrong exceeds the cost of interrupting",
+ "source_doc": "yubi-OS/yubiOS skills/human-for-feasibility/SKILL.md (18,570 B fetched 2026-10-07)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "cost-of-asking",
+   "scope": "The economics of the question: every prompt is an interruption, the polite-yes failure mode, why the right default is inference, and the cost of inferring wrong.",
+   "queries": [
+    "polite yes sycophancy AI assistant users agree to questions",
+    "cost of interruption context switching knowledge workers research"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "when-to-use-triggers",
+   "scope": "When the discipline applies explicitly (low tolerance signals, non-interactive contexts, ship-mode) and when it must NOT be applied (explicit consultation, irreversible severe decisions, genuinely unclear intent).",
+   "queries": [
+    "AI agent autonomous decision making when to ask human permission",
+    "levels of human oversight AI agents autonomy"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "documented-anywhere",
+   "scope": "The evidence ladder: user's latest message, prior turns, memory, loaded skills, workspace artifacts, prior sessions; implicit answers count as documented.",
+   "queries": [
+    "LLM agent check context memory before asking user clarification",
+    "agent retrieve conversation history memory before question"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "convention-defaults",
+   "scope": "Sensible defaults from engineering, project, and industry convention and the skill ecosystem when no explicit documentation exists.",
+   "queries": [
+    "principle of least astonishment software defaults conventions",
+    "sensible defaults design principle software engineering"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "reversibility-cost-tiers",
+   "scope": "Classifying decisions by cost of being wrong: trivially reversible, reversible low cost, reversible high cost, irreversible; the ask threshold per tier.",
+   "queries": [
+    "type 1 type 2 decisions two way door reversible irreversible",
+    "irreversible production operations guardrails blast radius"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "value-laden-asking",
+   "scope": "Taste, politics, strategy: the user is the source of value; ask with a single concrete recommendation attached, never an open-ended what-do-you-want.",
+   "queries": [
+    "AI agent subjective preference taste decisions defer to user",
+    "recommendation attached question preference elicitation conversational"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "inference-audit",
+   "scope": "The Inference Audit artifact: inferred, asked, and not-surfaced sections; source cited per inference; cost and reversal path; the review surface that replaces upfront asking.",
+   "queries": [
+    "AI agent decision audit trail user review transparency",
+    "agent decisions explainability log surfaced inferences"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "anti-patterns",
+   "scope": "Lazy asking, lazy inference, batched questions, asking without a guess, treating vague answers as confirmation, silent high-cost inferences, infinite inference.",
+   "queries": [
+    "chatbot question fatigue over-asking users friction",
+    "LLM agent overconfidence wrong assumptions rework cost"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "skill-ecosystem-adjacency",
+   "scope": "How the discipline composes with interview-me (inverse), ideate-solo, idea-kill, prior-art-search, negative-skill-space, spec-driven-development, doubt-driven-development, novelty-indication.",
+   "queries": [
+    "ask versus infer agent design interview user intent elicitation",
+    "human in the loop escalation policy agentic systems"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "endpoint": "https://api.defapi.org/api/v1/decisions (DefAPI direct)",
+  "answers": {
+   "t01": {
+    "score": 1.31,
+    "probabilities": {
+     "0": 0.25,
+     "1": 0.2,
+     "2": 0.55
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.12,
+    "probabilities": {
+     "0": 0.32,
+     "1": 0.24,
+     "2": 0.44
+    },
+    "confidence": 0
+   },
+   "t03": {
+    "score": 0.96,
+    "probabilities": {
+     "0": 0.41,
+     "1": 0.22,
+     "2": 0.37
+    },
+    "confidence": 0
+   },
+   "t04": {
+    "score": 0.9,
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.27,
+     "2": 0.31
+    },
+    "confidence": 0
+   },
+   "t05": {
+    "score": 0.73,
+    "probabilities": {
+     "0": 0.48,
+     "1": 0.31,
+     "2": 0.21
+    },
+    "confidence": 0
+   },
+   "t06": {
+    "score": 0.86,
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.31,
+     "2": 0.27
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "score": 0.91,
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.25,
+     "2": 0.33
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "score": 0.96,
+    "probabilities": {
+     "0": 0.32,
+     "1": 0.41,
+     "2": 0.27
+    },
+    "confidence": 0.12
+   },
+   "t09": {
+    "score": 0.77,
+    "probabilities": {
+     "0": 0.4,
+     "1": 0.43,
+     "2": 0.17
+    },
+    "confidence": 0.14
+   }
+  },
+  "usage": {
+   "input_tokens": 1172,
+   "output_tokens": 139,
+   "cost": 0.000098448
+  },
+  "request_id": "gen-dec-1791341948-bTqJ4ueBHnyc341S9VUF",
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}
