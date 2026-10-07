@@ -1,0 +1,44 @@
+{
+ "nn": 6,
+ "slug": "complementary-hardening",
+ "scope": "systemd-hardening as the host-level least-privilege complement to pod-level policy; layered defense across host and pod.",
+ "queries_attempted": [
+  {
+   "query": "systemd service hardening least privilege ProtectSystem NoNewPrivileges",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "host hardening versus Kubernetes pod security defense in depth",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "systemd-analyze security sandboxing directives documentation systemd.exec",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "defense in depth layered security model operating system containers",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "first-attempt dig came back weak (all 12 weights below 0.25); redone with official-source-focused queries which returned systemd.io (0.61) and github.com/systemd (0.55)",
+   "new_queries": [
+    "systemd-analyze security sandboxing directives documentation systemd.exec",
+    "defense in depth layered security model operating system containers"
+   ]
+  }
+ ],
+ "results_kept": [],
+ "outcome": "authored"
+}
