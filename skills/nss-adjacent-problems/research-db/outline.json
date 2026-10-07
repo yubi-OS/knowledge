@@ -1,0 +1,274 @@
+{
+  "topic": "the Adjacent-problems axis of the negative-skill-space (NSS) sweep, as defined by the yubiOS skill nss-adjacent-problems",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "axis-scope-and-use",
+      "web": true,
+      "scope": "What the Adjacent-problems axis scores (the breadth AND correctness of a file's relationship map: related issues, alternative solutions, problem-family taxonomy, prior-art cross-references), its trigger phrases, and the when-to-use / when-not-to-use boundaries inside the 12-axis negative-skill-space sweep.",
+      "seed_queries": [
+        "writing related work section guidelines computer science",
+        "related work section purpose literature review best practices"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "coverage-rubric",
+      "web": true,
+      "scope": "The 0-5 Adjacent-problems coverage levels, from Absent through Exemplary, and what each level requires a file to evidence about its relationship map.",
+      "seed_queries": [
+        "analytic scoring rubric design performance levels",
+        "rubric design five level scale reliability validity"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "scoring-dimensions",
+      "web": false,
+      "scope": "The ten binary 0-2 scoring dimensions, the 20-point maximum, and the label conversion bands Narrow, Emerging, Useful, Strong, Comprehensive. Internal-record subtopic grounded in the source doc's rubric.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "relation-taxonomy",
+      "web": true,
+      "scope": "The fixed seven-relation taxonomy (intersection, analogy, abstraction, substitution, alternative, prior-art, extension) and the Springer typology of related-work relationships the source doc cites as its derivation.",
+      "seed_queries": [
+        "Springer typology related work relationships citation semantics",
+        "citation types classification scholarly references typology"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "key-distinctions",
+      "web": false,
+      "scope": "The six important distinctions the skill draws: related problem vs alternative solution, prior art vs alternative solution, sibling tool vs problem family, see-also vs relation type, RFC number without context, family boundary vs adjacency. Internal-record subtopic.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "prior-art-practice",
+      "web": true,
+      "scope": "Prior-art cross-referencing practice behind the rubric: USPTO MPEP 904 analogous-art search, citing prior art with enough context to be findable, and the prior-art-search skill convention the source doc names.",
+      "seed_queries": [
+        "MPEP 904 analogous art of reference patent examination",
+        "analogous art doctrine patent scope prior art"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "lens-format",
+      "web": false,
+      "scope": "The cycle-13 lens-format patch generator: one lens per file with hypothesis, method, parameters, delta, verdict, score, caveat; the lens-is-the-patch rule and the degenerate-experiment red flags. Internal-record subtopic.",
+      "seed_queries": []
+    },
+    {
+      "nn": "08",
+      "slug": "secondary-research",
+      "web": true,
+      "scope": "The ACM secondary-research typology the source doc cites as grounding: systematic mapping, scoping review, and citation snowballing, plus the SE taxonomy-mapping study.",
+      "seed_queries": [
+        "citation snowballing systematic literature review method",
+        "systematic mapping study scoping review software engineering"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "cross-reference-conventions",
+      "web": true,
+      "scope": "Cross-reference and link-integrity conventions: Google developer documentation style on cross-references and links, and the RFC 2119 / RFC 8174 normative-keyword practice the source doc cites.",
+      "seed_queries": [
+        "Google developer documentation style guide cross-references links",
+        "RFC 2119 RFC 8174 normative keywords must should"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "composition-and-antipatterns",
+      "web": false,
+      "scope": "How the axis composes with negative-skill-space, curve-compass-skill, prior-art-search, documentation-and-adrs, recursive-self-improvement, and context-isolation; the anti-pattern list and red-flag table. Internal-record subtopic.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.67,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.04,
+          "2": 0.81
+        },
+        "confidence": 0.52
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.26,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.09,
+          "2": 0.58
+        },
+        "confidence": 0
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.33,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3,
+          "1": 0.07,
+          "2": 0.63
+        },
+        "confidence": 0
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.17,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.34,
+          "1": 0.16,
+          "2": 0.5
+        },
+        "confidence": 0
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.68,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.08,
+          "2": 0.8
+        },
+        "confidence": 0.52
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.68,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.58,
+          "1": 0.17,
+          "2": 0.25
+        },
+        "confidence": 0
+      },
+      "t07": {
+        "type": "score",
+        "score": 0.7,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.59,
+          "1": 0.13,
+          "2": 0.28
+        },
+        "confidence": 0
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.9,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.25,
+          "2": 0.33
+        },
+        "confidence": 0
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.42,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.65,
+          "1": 0.28,
+          "2": 0.07
+        },
+        "confidence": 0.37
+      },
+      "t10": {
+        "type": "score",
+        "score": 1.48,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.15,
+          "2": 0.67
+        },
+        "confidence": 0.23
+      }
+    },
+    "usage": {
+      "input_tokens": 1978,
+      "output_tokens": 154,
+      "cost": 0.000166152
+    },
+    "dropped": [
+      "09"
+    ],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "10"
+    ]
+  }
+}
