@@ -1,0 +1,221 @@
+{
+  "nn": "06",
+  "slug": "v0-scope-enforcement",
+  "scope": "Section 4 (continued): enforcement bottoming out in real Linux primitives (drm_sched_stop fencing, IOMMU domain detach/invalidate, driver reset) and the recommended v0 scope ordering: kernel accounting first, SMC escalation second.",
+  "queries_attempted": [
+    {
+      "query": "drm_sched_stop DRM scheduler fence GPU context stop",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Digital rights management - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Digital_rights_management",
+          "content": "DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of systems that enforce these policies within devices. [3] DRM technologies [4] include licensing agreements [5] and encryption. [6]"
+        },
+        {
+          "title": "Command Submission, Fences, and the GPU Scheduler",
+          "url": "https://kernel-internals.org/drm/command-submission/",
+          "content": "Command submission — a driver-specific ioctl that turns a userspace-built command buffer into a kernel-tracked job. struct dma_fence — the one-shot completion primitive every wait in the GPU stack reduces to. GEM and dma-buf introduced it as the thing stored in a buffer's dma_resv; here we go into how a fence actually gets signaled. drm_sched — the shared GPU scheduler in drivers/gpu/drm ..."
+        },
+        {
+          "title": "What Is DRM? Digital Rights Management Explained | Fortinet",
+          "url": "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+          "content": "Digital rights management (DRM) is the use of technology to control and manage access to copyrighted material. DRM aims to protect the rights of copyright holders and prevent content from unauthorized distribution and modification."
+        },
+        {
+          "title": "How to Enable DRM in Chrome, Firefox, and Edge - PCrisk",
+          "url": "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+          "content": "Jul 28, 2023 · If you’re having playback issues due to Digital Rights Management (DRM) in your browser, you must enable DRM to play protected content. This article will provide more information about this issue and show you how to enable DRM in Chrome."
+        },
+        {
+          "title": "gpu_scheduler.h source code [linux/include/drm/gpu_scheduler.h ...",
+          "url": "https://codebrowser.dev/linux/linux/include/drm/gpu_scheduler.h.html",
+          "content": "* &drm_sched_fence.scheduled uses the fence_context but.* @DRM_GPU_SCHED_STAT_ENODEV: Error: Device is not available anymore. 396. * @DRM_GPU_SCHED_STAT_NO_HANG: Contrary to scheduler's assumption, the GPU."
+        },
+        {
+          "title": "DRM GPU Scheduler | armbian/linux-rockchip | DeepWiki",
+          "url": "https://deepwiki.com/armbian/linux-rockchip/2-drm-gpu-scheduler",
+          "content": "The DRM GPU Scheduler is a core component of the Linux DRM (Direct Rendering Manager) subsystem that manages the execution of GPU jobs. It provides a framework for submitting, scheduling, and tracking GPU workloads across various hardware architectures."
+        }
+      ],
+      "kept": [
+        "https://en.wikipedia.org/wiki/Digital_rights_management",
+        "https://kernel-internals.org/drm/command-submission/",
+        "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+        "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+        "https://codebrowser.dev/linux/linux/include/drm/gpu_scheduler.h.html",
+        "https://deepwiki.com/armbian/linux-rockchip/2-drm-gpu-scheduler"
+      ]
+    },
+    {
+      "query": "Linux IOMMU domain detach invalidate DMA mapping revocation",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Download Linux | Linux.org",
+          "url": "https://www.linux.org/pages/download/",
+          "content": "24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options.24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options."
+        },
+        {
+          "title": "Linux.org",
+          "url": "https://www.linux.org/",
+          "content": "Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux.Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux."
+        },
+        {
+          "title": "Linux - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Linux",
+          "content": "Linux (/ ˈlɪnʊks / LIN-uuks) [12] is a family of free and open-source software Unix-like operating systems based on the Linux kernel, [13][14] which was first released on 17 September 1991 by Linus Torvalds. [15][16] Some members of the family are typically packaged as a distribution (a.k.a. distro), which includes the kernel alongside supporting system software and libraries developed by ..."
+        },
+        {
+          "title": "What is Linux? - Linux.com",
+          "url": "https://www.linux.com/what-is-linux/",
+          "content": "Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course.Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course."
+        },
+        {
+          "title": "Download - Get Ubuntu",
+          "url": "https://ubuntu.com/download",
+          "content": "Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download and use, and you’re welcome to share the official, unmodified Ubuntu installer images.Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download and use, and you’re welcome to share the official, unmodified Ubuntu installer images."
+        },
+        {
+          "title": "Best Linux Distros for Every Use Case in 2026 | Linuxize",
+          "url": "https://linuxize.com/post/best-linux-distros/",
+          "content": "Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first.Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first."
+        }
+      ],
+      "kept": [
+        "https://www.linux.org/pages/download/",
+        "https://www.linux.org/",
+        "https://en.wikipedia.org/wiki/Linux",
+        "https://www.linux.com/what-is-linux/",
+        "https://ubuntu.com/download",
+        "https://linuxize.com/post/best-linux-distros/"
+      ]
+    },
+    {
+      "query": "IOMMU domain detach Linux kernel API documentation",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "IOMMUFD — The Linux Kernel documentation",
+          "url": "https://www.kernel.org/doc/html/latest/userspace-api/iommufd.html",
+          "content": "IOMMUFD ¶ Author: Jason Gunthorpe Author: Kevin Tian Overview ¶ IOMMUFD is the user API to control the IOMMU subsystem as it relates to managing IO page tables from userspace using file descriptors. It intends to be general and consumable by any driver that wants to expose DMA to userspace."
+        },
+        {
+          "title": "IOMMU Userspace API — The Linux Kernel documentation",
+          "url": "https://docs.kernel.org/next/userspace-api/iommu.html",
+          "content": "IOMMU Userspace API ¶ IOMMU UAPI is used for virtualization cases where communications are needed between physical and virtual IOMMU drivers. For baremetal usage, the IOMMU is a system device which does not need to communicate with userspace directly. The primary use cases are guest Shared Virtual Address (SVA) and guest IO virtual address (IOVA), wherein the vIOMMU implementation relies on ..."
+        },
+        {
+          "title": "IOMMU Architecture - Linux Kernel Internals",
+          "url": "https://kernel-internals.org/iommu/iommu-arch/",
+          "content": "The IOMMU subsystem The kernel abstracts both implementations behind a common API in drivers/iommu/. struct iommu_domain An iommu_domain represents an isolated address space. One or more devices are attached to a domain; they share the same IOVA→PA translation."
+        },
+        {
+          "title": "16. x86 IOMMU Support — The Linux Kernel documentation",
+          "url": "https://www.kernel.org/doc/html/latest/arch/x86/iommu.html",
+          "content": "16. x86 IOMMU Support ¶ The architecture specs can be obtained from the vendor websites. Search for the following documents to obtain the latest versions: Intel: Intel Virtualization Technology for Directed I/O Architecture Specification (ID: D51397) AMD: AMD I/O Virtualization Technology (IOMMU) Specification (ID: 48882) This guide gives a quick cheat sheet for some basic understanding. 16.1 ..."
+        },
+        {
+          "title": "What is IOMMU and how can I enable it? - epicgames.com",
+          "url": "https://www.epicgames.com/help/c-34254770/c-45529661/a17757744",
+          "content": "What is IOMMU and how can I enable it? IOMMU is a hardware-level security feature that helps your operating system control how …"
+        },
+        {
+          "title": "linux/Documentation/userspace-api/iommufd.rst at master - GitHub",
+          "url": "https://github.com/torvalds/linux/blob/master/Documentation/userspace-api/iommufd.rst",
+          "content": "It also indicates that it is backed by an iommu_domain with __IOMMU_DOMAIN_PAGING feature flag. This can be either an UNMANAGED stage-1 domain for a device running in the user space, or a nesting parent stage-2 domain for mappings from guest-level physical addresses to host-level physical addresses."
+        }
+      ],
+      "kept": [
+        "https://www.kernel.org/doc/html/latest/userspace-api/iommufd.html",
+        "https://docs.kernel.org/next/userspace-api/iommu.html",
+        "https://kernel-internals.org/iommu/iommu-arch/",
+        "https://www.kernel.org/doc/html/latest/arch/x86/iommu.html",
+        "https://www.epicgames.com/help/c-34254770/c-45529661/a17757744",
+        "https://github.com/torvalds/linux/blob/master/Documentation/userspace-api/iommufd.rst"
+      ]
+    },
+    {
+      "query": "drm_sched_stop GPU scheduler stop kernel documentation",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "DRM Memory Management — The Linux Kernel documentation",
+          "url": "https://www.kernel.org/doc/html/v5.2/gpu/drm-mm.html",
+          "content": "stop the scheduler. Parameters. struct drm_gpu_scheduler * sched.Refer to drm_sched_entity_push_job() documentation for locking considerations. Returns 0 for success, negative error code otherwise."
+        },
+        {
+          "title": "linux/drivers/gpu/drm/scheduler/sched_main.c at master - GitHub",
+          "url": "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/scheduler/sched_main.c",
+          "content": "Linux kernel source tree. Contribute to torvalds/linux development by creating an account on GitHub."
+        },
+        {
+          "title": "Digital rights management - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Digital_rights_management",
+          "content": "DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of …"
+        },
+        {
+          "title": "GPU Driver Developer’s Guide — The Linux Kernel documentation",
+          "url": "https://docs.kernel.org/gpu/index.html",
+          "content": "Provide a universal successor for drm_sched_resubmit_jobs () Add locking for runqueues Replace the lockless queue with a locked list Convert fbdev drivers to DRM GPU RFC Section GPU SVM Section I915 DG1/LMEM RFC Section I915 GuC Submission/DRM Scheduler Section I915 Small BAR RFC Section I915 VM_BIND feature design and use cases Linux Color ..."
+        },
+        {
+          "title": "DRM Memory Management — The Linux Kernel documentation",
+          "url": "https://docs.kernel.org/gpu/drm-mm.html",
+          "content": "DRM Execution context GPU Scheduler Overview Flow Control Scheduler Function References The Translation Table Manager (TTM) ¶ TTM is a memory manager for accelerator devices with dedicated memory. The basic idea is that resources are grouped together in buffer objects of certain size and TTM handles lifetime, movement and CPU mappings of those ..."
+        },
+        {
+          "title": "Scheduler — The Linux Kernel documentation",
+          "url": "https://origin.kernel.org/doc/html/latest/scheduler/",
+          "content": "CPU Scheduler implementation hints for architecture specific code"
+        }
+      ],
+      "kept": [
+        "https://www.kernel.org/doc/html/v5.2/gpu/drm-mm.html",
+        "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/scheduler/sched_main.c",
+        "https://en.wikipedia.org/wiki/Digital_rights_management",
+        "https://docs.kernel.org/gpu/index.html",
+        "https://docs.kernel.org/gpu/drm-mm.html",
+        "https://origin.kernel.org/doc/html/latest/scheduler/"
+      ]
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt-1 dig too thin to author honestly (results off-topic: dictionary/company pages, max weight 0.11-0.51)",
+      "new_queries": [
+        "IOMMU domain detach Linux kernel API documentation",
+        "drm_sched_stop GPU scheduler stop kernel documentation"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Digital_rights_management",
+    "https://kernel-internals.org/drm/command-submission/",
+    "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+    "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+    "https://codebrowser.dev/linux/linux/include/drm/gpu_scheduler.h.html",
+    "https://deepwiki.com/armbian/linux-rockchip/2-drm-gpu-scheduler",
+    "https://www.linux.org/pages/download/",
+    "https://www.linux.org/",
+    "https://en.wikipedia.org/wiki/Linux",
+    "https://www.linux.com/what-is-linux/",
+    "https://ubuntu.com/download",
+    "https://linuxize.com/post/best-linux-distros/",
+    "https://www.kernel.org/doc/html/latest/userspace-api/iommufd.html",
+    "https://docs.kernel.org/next/userspace-api/iommu.html",
+    "https://kernel-internals.org/iommu/iommu-arch/",
+    "https://www.kernel.org/doc/html/latest/arch/x86/iommu.html",
+    "https://www.epicgames.com/help/c-34254770/c-45529661/a17757744",
+    "https://github.com/torvalds/linux/blob/master/Documentation/userspace-api/iommufd.rst",
+    "https://www.kernel.org/doc/html/v5.2/gpu/drm-mm.html",
+    "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/scheduler/sched_main.c",
+    "https://en.wikipedia.org/wiki/Digital_rights_management",
+    "https://docs.kernel.org/gpu/index.html",
+    "https://docs.kernel.org/gpu/drm-mm.html",
+    "https://origin.kernel.org/doc/html/latest/scheduler/"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,112 @@
+{
+  "nn": "03",
+  "slug": "panfrost-hook-points",
+  "scope": "Section 2: verified Panfrost hook points, panfrost_ioctl_create_bo as the allocation-time charge point, panfrost_lookup_bos as the submit-time guard, and panfrost_gem_free_object for the free-path uncharge.",
+  "queries_attempted": [
+    {
+      "query": "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "linux/drivers/gpu/drm/panfrost/panfrost_drv.c at master · torvalds/linux",
+          "url": "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_drv.c",
+          "content": "Linux kernel source tree. Contribute to torvalds/linux development by creating an account on GitHub.Makefile. TODO. panfrost_devfreq.c."
+        },
+        {
+          "title": "Panfrost — The Mesa 3D Graphics Library latest documentation",
+          "url": "https://docs.mesa3d.org/drivers/panfrost.html",
+          "content": "The Panfrost driver stack includes an OpenGL ES implementation for Arm Mali GPUs based on the Midgard and Bifrost microarchitectures. It is conformant on Mali-G52, Mali-G57 and Mali-G610, but non-conformant on other GPUs."
+        },
+        {
+          "title": "How to force a web browser NOT to cache images - Stack Overflow",
+          "url": "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+          "content": "Spent days trying to get Chromium based app to stop caching images. The ?nocache with time echo solved the issue. Thank you!"
+        },
+        {
+          "title": "Starbucks Coffee Company",
+          "url": "https://www.starbucks.com/",
+          "content": "Explore our menu of handcrafted drinks, order ahead, sign up for Starbucks® Rewards, manage your gift card and more.Explore our menu of handcrafted drinks, order ahead, sign up for Starbucks® Rewards, manage your gift card and more."
+        },
+        {
+          "title": "Panfrost",
+          "url": "https://xdc2018.x.org/slides/Panfrost-XDC_2018.pdf",
+          "content": "– Panwrap: provides userspace tracing/recording/replay"
+        },
+        {
+          "title": "PDF The Panfrost Driver - FreeBSD Foundation",
+          "url": "https://freebsdfoundation.org/wp-content/uploads/2021/08/The-Panfrost-Driver.pdf",
+          "content": "This is needed for the cases where multiple processes are rendering to a BO and you want to wait for all rendering to be completed. 3.panfrost_ioctl_create_bo - creates Panfrost BO. 4.panfrost_ioctl_mmap_bo - used to map Panfrost BOs to userspace. This doesn't per- form anymmap but returns an offset to use in anmmap on the DRM device node."
+        }
+      ],
+      "kept": [
+        "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_drv.c",
+        "https://docs.mesa3d.org/drivers/panfrost.html",
+        "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+        "https://www.starbucks.com/",
+        "https://xdc2018.x.org/slides/Panfrost-XDC_2018.pdf",
+        "https://freebsdfoundation.org/wp-content/uploads/2021/08/The-Panfrost-Driver.pdf"
+      ]
+    },
+    {
+      "query": "panfrost_gem_free_object panfrost_gem.c GEM shmem free",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "nocache - npm",
+          "url": "https://www.npmjs.com/package/nocache",
+          "content": "Middleware to destroy caching. Latest version: 4.0.0, last published: 3 years ago. Start using nocache in your project by running …"
+        },
+        {
+          "title": "וואלה חדשות. ספורט. סלבס. אוכל - עדכונים ודיווחים שוטפים",
+          "url": "https://www.walla.co.il/",
+          "content": "וואלה אתר חדשות מוביל בישראל עם עדכונים ותכנים מגוונים בתחומים כמו חדשות, ספורט, תרבות, אוכל ועוד.וואלה אתר חדשות מוביל בישראל עם עדכונים ותכנים מגוונים בתחומים כמו חדשות, ספורט, תרבות, אוכל ועוד."
+        },
+        {
+          "title": "Panfrost — The Mesa 3D Graphics Library latest documentation",
+          "url": "https://docs.mesa3d.org/drivers/panfrost.html",
+          "content": "The Panfrost driver stack includes an OpenGL ES implementation for Arm Mali GPUs based on the Midgard and Bifrost microarchitectures. It is conformant on Mali-G52, Mali-G57 and Mali-G610, but non-conformant on other GPUs."
+        },
+        {
+          "title": "drm/panfrost: Add initial panfrost driver [LWN.net]",
+          "url": "https://lwn.net/Articles/782655/",
+          "content": "panfrost_lookup_bos() - Sets up job->bo[] with the GEM objects + * referenced by the job. + * @dev: DRM device + * @file_priv: DRM file for this fd + * @args: IOCTL args + * @job: job being set up + * + *. Resolve handles from userspace to BOs and attach them to job. + * + *"
+        },
+        {
+          "title": "linux/drivers/gpu/drm/panfrost/panfrost_gem.c at master - GitHub",
+          "url": "https://github.com/gregkh/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_gem.c",
+          "content": "Linux kernel stable tree mirror. Contribute to gregkh/linux development by creating an account on GitHub."
+        },
+        {
+          "title": "Panfrost update: A new kernel driver",
+          "url": "https://www.collabora.com/news-and-blog/blog/2019/03/04/panfrost-update-new-kernel-driver/",
+          "content": "Following two months of work to develop a new kernel driver for Midgard and Bifrost GPUs, the kernel side of Panfrost is now in a form close to be acceptable in the mainline Linux kernel."
+        }
+      ],
+      "kept": [
+        "https://www.npmjs.com/package/nocache",
+        "https://www.walla.co.il/",
+        "https://docs.mesa3d.org/drivers/panfrost.html",
+        "https://lwn.net/Articles/782655/",
+        "https://github.com/gregkh/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_gem.c",
+        "https://www.collabora.com/news-and-blog/blog/2019/03/04/panfrost-update-new-kernel-driver/"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_drv.c",
+    "https://docs.mesa3d.org/drivers/panfrost.html",
+    "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+    "https://www.starbucks.com/",
+    "https://xdc2018.x.org/slides/Panfrost-XDC_2018.pdf",
+    "https://freebsdfoundation.org/wp-content/uploads/2021/08/The-Panfrost-Driver.pdf",
+    "https://www.npmjs.com/package/nocache",
+    "https://www.walla.co.il/",
+    "https://docs.mesa3d.org/drivers/panfrost.html",
+    "https://lwn.net/Articles/782655/",
+    "https://github.com/gregkh/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_gem.c",
+    "https://www.collabora.com/news-and-blog/blog/2019/03/04/panfrost-update-new-kernel-driver/"
+  ],
+  "outcome": "authored"
+}

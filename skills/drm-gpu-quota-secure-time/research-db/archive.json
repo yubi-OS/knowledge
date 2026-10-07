@@ -1,0 +1,2486 @@
+[
+  {
+    "query": "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+    "title": "[PATCH 1/7] kernel/cgroup: Add \"dev\" memory accounting cgroup",
+    "url": "https://lists.freedesktop.org/archives/dri-devel/2024-November/477635.html",
+    "snippet": "There are several possible approach, all with >>> their >>> +advantages and drawbacks. >>> + >>> +The first approach you will likely try is to pin all buffers used by >>> compute. >>> +This guarantees that the job will run uninterrupted, but also allows >>> a very >>> +denial of service attack by pinning as much memory as possible, >>> hogging the >>> +all GPU memory, and possibly a huge chunk of CPU memory. >>> + >>> +A second approach that will work slightly better on its own is >>> adding an ",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.29,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '[PATCH 1/7] kernel/cgroup: Add \"dev\" memory accounting cgroup' (https://lists.freedesktop.org/archives/dri-devel/2024-November/477635.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.29
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+    "title": "kernel/cgroups: Add \"dev\" memory accounting cgroup. - lwn.net",
+    "url": "https://lwn.net/Articles/995312/",
+    "snippet": "Maarten Lankhorst (5): kernel/cgroup: Add \"dev\" memory accounting cgroup drm/ttm: Handle cgroup based eviction in TTM drm/xe: Implement cgroup for vram drm/amdgpu: Add cgroups implementation [HACK] drm/xe: Hack to test with mapped pages instead of vram. Maxime Ripard (2): drm/drv: Add drmm cgroup registration for dev cgroups.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.19,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'kernel/cgroups: Add \"dev\" memory accounting cgroup. - lwn.net' (https://lwn.net/Articles/995312/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.19
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+    "title": "DRI Development - Patchwork",
+    "url": "https://patchwork.kernel.org/project/dri-devel/list/?series=902097",
+    "snippet": "Show patches with: Series = kernel/cgroups: Add \"dev\" memory accounting cgroup. | State = Action Required | Archived = No | 7 patches Series Submitter State any Action Required New Under Review Accepted Rejected RFC Not Applicable Changes Requested Awaiting Upstream Superseded Deferred Mainlined Queued Needs ACK Handled Elsewhere In Next Search Archived NoYesBoth Delegate ------ Nobody ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.5,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'DRI Development - Patchwork' (https://patchwork.kernel.org/project/dri-devel/list/?series=902097) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.5
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+    "title": "[PATCH 0/7] kernel/cgroups: Add \"dev\" memory accounting cgroup.",
+    "url": "https://lists.freedesktop.org/archives/dri-devel/2024-October/475286.html",
+    "snippet": "Hello, On Wed, Oct 23, 2024 at 09:52:53AM +0200, Maarten Lankhorst wrote: > New submission! > I've added documentation for each call, and integrated the renaming from > drm cgroup to dev cgroup, based on maxime ripard's work. > > Maxime has been testing this with dma-buf heaps and v4l2 too, and it seems to work. > In the initial submission, I've decided to only add the smallest enablement ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.24,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '[PATCH 0/7] kernel/cgroups: Add \"dev\" memory accounting cgroup.' (https://lists.freedesktop.org/archives/dri-devel/2024-October/475286.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.24
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+    "title": "[PATCH 0/7] kernel/cgroups: Add \"dev\" memory accounting cgroup.",
+    "url": "https://lkml.rescloud.iu.edu/2410.2/10382.html",
+    "snippet": "drm cgroup to dev cgroup, based on maxime ripard's work. Maxime has been testing this with dma-buf heaps and v4l2 too, and it seems to work.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.17,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '[PATCH 0/7] kernel/cgroups: Add \"dev\" memory accounting cgroup.' (https://lkml.rescloud.iu.edu/2410.2/10382.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.17
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+    "title": "Re: [PATCH 1/7] kernel/cgroup: Add \"dev\" memory accounting cgroup",
+    "url": "https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg517166.html",
+    "snippet": "The initial version was based roughly on the rdma and misc cgroup controllers, with a lot of the accounting code borrowed from rdma. The current version is a complete rewrite with page counter; it uses the same min/low/max semantics as the memory cgroup as a result. There's a small mismatch as TTM uses u64, and page_counter long pages. In practice it's not a problem. 32-bits systems don't ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.29,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Re: [PATCH 1/7] kernel/cgroup: Add \"dev\" memory accounting cgroup' (https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg517166.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.29
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC",
+    "title": "Digital rights management - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Digital_rights_management",
+    "snippet": "DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of systems that enforce these policies within devices. [3] DRM technologies [4] include licensing agreements [5] and encryption. [6]",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.07,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Digital rights management - Wikipedia' (https://en.wikipedia.org/wiki/Digital_rights_management) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC",
+    "title": "DRM cgroup controller with scheduling control and memory stats",
+    "url": "https://lwn.net/Articles/937991/",
+    "snippet": "From: Tvrtko Ursulin <tvrtko.ursulin@intel.com> This series contains a proposal for a DRM cgroup controller which implements a weight based hierarchical GPU usage budget based controller similar in concept to some of the existing controllers and also exposes GPU memory usage as a read- only field. Motivation mostly comes from my earlier proposal where I identified that GPU scheduling lags ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.31,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'DRM cgroup controller with scheduling control and memory stats' (https://lwn.net/Articles/937991/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC",
+    "title": "What Is DRM? Digital Rights Management Explained | Fortinet",
+    "url": "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+    "snippet": "Digital rights management (DRM) is the use of technology to control and manage access to copyrighted material. DRM aims to protect the rights of copyright holders and prevent content from unauthorized distribution and modification.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.04,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What Is DRM? Digital Rights Management Explained | Fortinet' (https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC",
+    "title": "How to Enable DRM in Chrome, Firefox, and Edge - PCrisk",
+    "url": "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+    "snippet": "Jul 28, 2023 · If you’re having playback issues due to Digital Rights Management (DRM) in your browser, you must enable DRM to play protected content. This article will provide more information about this issue and show you how to enable DRM in Chrome.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to Enable DRM in Chrome, Firefox, and Edge - PCrisk' (https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC",
+    "title": "Digital rights management (DRM): What it is, how it works, and why it ...",
+    "url": "https://business.adobe.com/blog/basics/digital-rights-management",
+    "snippet": "Oct 17, 2025 · Digital rights management (DRM) refers to the policies, processes, and technologies used to control access to digital content. DRM ensures that only authorized users can view, share, or modify protected assets — in accordance with licensing terms or copyright laws.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.04,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Digital rights management (DRM): What it is, how it works, and why it ...' (https://business.adobe.com/blog/basics/digital-rights-management) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC",
+    "title": "LKML: Tvrtko Ursulin: [RFC v2 00/13] DRM scheduling cgroup controller",
+    "url": "https://lkml.org/lkml/2022/11/9/819",
+    "snippet": "From: Tvrtko Ursulin <tvrtko.ursulin@intel.com> This series contains a proposal for a DRM scheduling cgroup controller which implements a weight based hierarchical GPU usage budget based controller similar in concept to some of the existing controllers. Motivation mostly comes from my earlier proposal where I identified that GPU scheduling lags significantly behind what is available for CPU ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.48,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'LKML: Tvrtko Ursulin: [RFC v2 00/13] DRM scheduling cgroup controller' (https://lkml.org/lkml/2022/11/9/819) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+    "title": "linux/drivers/gpu/drm/panfrost/panfrost_drv.c at master · torvalds/linux",
+    "url": "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_drv.c",
+    "snippet": "Linux kernel source tree. Contribute to torvalds/linux development by creating an account on GitHub.Makefile. TODO. panfrost_devfreq.c.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.64,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'linux/drivers/gpu/drm/panfrost/panfrost_drv.c at master · torvalds/linux' (https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_drv.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.64
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+    "title": "Panfrost — The Mesa 3D Graphics Library latest documentation",
+    "url": "https://docs.mesa3d.org/drivers/panfrost.html",
+    "snippet": "The Panfrost driver stack includes an OpenGL ES implementation for Arm Mali GPUs based on the Midgard and Bifrost microarchitectures. It is conformant on Mali-G52, Mali-G57 and Mali-G610, but non-conformant on other GPUs.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.38,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Panfrost — The Mesa 3D Graphics Library latest documentation' (https://docs.mesa3d.org/drivers/panfrost.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+    "title": "How to force a web browser NOT to cache images - Stack Overflow",
+    "url": "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+    "snippet": "Spent days trying to get Chromium based app to stop caching images. The ?nocache with time echo solved the issue. Thank you!",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to force a web browser NOT to cache images - Stack Overflow' (https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+    "title": "Starbucks Coffee Company",
+    "url": "https://www.starbucks.com/",
+    "snippet": "Explore our menu of handcrafted drinks, order ahead, sign up for Starbucks® Rewards, manage your gift card and more.Explore our menu of handcrafted drinks, order ahead, sign up for Starbucks® Rewards, manage your gift card and more.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Starbucks Coffee Company' (https://www.starbucks.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+    "title": "Panfrost",
+    "url": "https://xdc2018.x.org/slides/Panfrost-XDC_2018.pdf",
+    "snippet": "– Panwrap: provides userspace tracing/recording/replay",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.2,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Panfrost' (https://xdc2018.x.org/slides/Panfrost-XDC_2018.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.2
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+    "title": "PDF The Panfrost Driver - FreeBSD Foundation",
+    "url": "https://freebsdfoundation.org/wp-content/uploads/2021/08/The-Panfrost-Driver.pdf",
+    "snippet": "This is needed for the cases where multiple processes are rendering to a BO and you want to wait for all rendering to be completed. 3.panfrost_ioctl_create_bo - creates Panfrost BO. 4.panfrost_ioctl_mmap_bo - used to map Panfrost BOs to userspace. This doesn't per- form anymmap but returns an offset to use in anmmap on the DRM device node.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.28,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'PDF The Panfrost Driver - FreeBSD Foundation' (https://freebsdfoundation.org/wp-content/uploads/2021/08/The-Panfrost-Driver.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.28
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_gem_free_object panfrost_gem.c GEM shmem free",
+    "title": "nocache - npm",
+    "url": "https://www.npmjs.com/package/nocache",
+    "snippet": "Middleware to destroy caching. Latest version: 4.0.0, last published: 3 years ago. Start using nocache in your project by running …",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'nocache - npm' (https://www.npmjs.com/package/nocache) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_gem_free_object panfrost_gem.c GEM shmem free",
+    "title": "וואלה חדשות. ספורט. סלבס. אוכל - עדכונים ודיווחים שוטפים",
+    "url": "https://www.walla.co.il/",
+    "snippet": "וואלה אתר חדשות מוביל בישראל עם עדכונים ותכנים מגוונים בתחומים כמו חדשות, ספורט, תרבות, אוכל ועוד.וואלה אתר חדשות מוביל בישראל עם עדכונים ותכנים מגוונים בתחומים כמו חדשות, ספורט, תרבות, אוכל ועוד.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'וואלה חדשות. ספורט. סלבס. אוכל - עדכונים ודיווחים שוטפים' (https://www.walla.co.il/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_gem_free_object panfrost_gem.c GEM shmem free",
+    "title": "Panfrost — The Mesa 3D Graphics Library latest documentation",
+    "url": "https://docs.mesa3d.org/drivers/panfrost.html",
+    "snippet": "The Panfrost driver stack includes an OpenGL ES implementation for Arm Mali GPUs based on the Midgard and Bifrost microarchitectures. It is conformant on Mali-G52, Mali-G57 and Mali-G610, but non-conformant on other GPUs.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.38,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Panfrost — The Mesa 3D Graphics Library latest documentation' (https://docs.mesa3d.org/drivers/panfrost.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_gem_free_object panfrost_gem.c GEM shmem free",
+    "title": "drm/panfrost: Add initial panfrost driver [LWN.net]",
+    "url": "https://lwn.net/Articles/782655/",
+    "snippet": "panfrost_lookup_bos() - Sets up job->bo[] with the GEM objects + * referenced by the job. + * @dev: DRM device + * @file_priv: DRM file for this fd + * @args: IOCTL args + * @job: job being set up + * + *. Resolve handles from userspace to BOs and attach them to job. + * + *",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.21,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'drm/panfrost: Add initial panfrost driver [LWN.net]' (https://lwn.net/Articles/782655/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.21
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_gem_free_object panfrost_gem.c GEM shmem free",
+    "title": "linux/drivers/gpu/drm/panfrost/panfrost_gem.c at master - GitHub",
+    "url": "https://github.com/gregkh/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_gem.c",
+    "snippet": "Linux kernel stable tree mirror. Contribute to gregkh/linux development by creating an account on GitHub.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.6,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'linux/drivers/gpu/drm/panfrost/panfrost_gem.c at master - GitHub' (https://github.com/gregkh/linux/blob/master/drivers/gpu/drm/panfrost/panfrost_gem.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "panfrost_gem_free_object panfrost_gem.c GEM shmem free",
+    "title": "Panfrost update: A new kernel driver",
+    "url": "https://www.collabora.com/news-and-blog/blog/2019/03/04/panfrost-update-new-kernel-driver/",
+    "snippet": "Following two months of work to develop a new kernel driver for Midgard and Bifrost GPUs, the kernel side of Panfrost is now in a form close to be acceptable in the mainline Linux kernel.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.27,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Panfrost update: A new kernel driver' (https://www.collabora.com/news-and-blog/blog/2019/03/04/panfrost-update-new-kernel-driver/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.27
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+    "title": "Control Group v2 — The Linux Kernel documentation",
+    "url": "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+    "snippet": "What is cgroup? ¶ cgroup is a mechanism to organize processes hierarchically and distribute system resources along the hierarchy in a controlled and configurable manner. cgroup is largely composed of two parts - the core and controllers. cgroup core is primarily responsible for hierarchically organizing processes.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.38,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Control Group v2 — The Linux Kernel documentation' (https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+    "title": "Duck Duck Go Sucks! : r/unpopularopinion - Reddit",
+    "url": "https://www.reddit.com/r/unpopularopinion/comments/sism44/duck_duck_go_sucks/",
+    "snippet": "Feb 2, 2022 · And DuckDuckGo is like the organic off-brand cereal they sell at those wholesome grocery stores. It sucks! Sure, it's …",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Duck Duck Go Sucks! : r/unpopularopinion - Reddit' (https://www.reddit.com/r/unpopularopinion/comments/sism44/duck_duck_go_sucks/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+    "title": "Best Chocolate Chip Cookies Recipe (with Video)",
+    "url": "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
+    "snippet": "This classic chocolate chip cookie recipe makes deliciously buttery cookies with crisp edges, chewy middles, and gooey chocolate chips in every bite.This classic chocolate chip cookie recipe makes deliciously buttery cookies with crisp edges, chewy middles, and gooey chocolate chips in every bite.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Best Chocolate Chip Cookies Recipe (with Video)' (https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+    "title": "cgroups - Wikipedia",
+    "url": "https://en.m.wikipedia.org/wiki/Cgroups",
+    "snippet": "cgroups (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, etc.) [1]: § Controllers of a collection of processes. Engineers at Google started the work on this feature in 2006 under the name \"process containers\". [2] In late 2007, the nomenclature changed to \"control groups\" to avoid confusion caused by ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.19,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'cgroups - Wikipedia' (https://en.m.wikipedia.org/wiki/Cgroups) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.19
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+    "title": "linux/include/linux/cgroup.h at master · torvalds/linux · GitHub",
+    "url": "https://github.com/torvalds/linux/blob/master/include/linux/cgroup.h",
+    "snippet": "bool cgroup_on_dfl(const struct cgroup *cgrp); bool css_has_online_children(struct cgroup_subsys_state *css)* synchronization rules are the same as task_css_set_check().",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.38,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'linux/include/linux/cgroup.h at master · torvalds/linux · GitHub' (https://github.com/torvalds/linux/blob/master/include/linux/cgroup.h) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.38
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+    "title": "cgroups (7) — Linux manual page",
+    "url": "https://www.man7.org/linux/man-pages/man7/cgroups.7.html",
+    "snippet": "Cgroups v2 cgroup.events file Each nonroot cgroup in the v2 hierarchy contains a read-only file, cgroup.events, whose contents are key-value pairs (delimited by newline characters, with the key and value separated by spaces) providing state information about the cgroup: $ cat mygrp/cgroup.events populated 1 frozen 0 The following keys may ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.34,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'cgroups (7) — Linux manual page' (https://www.man7.org/linux/man-pages/man7/cgroups.7.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.34
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux kernel per-cgroup memory accounting GPU driver design",
+    "title": "Download Linux | Linux.org",
+    "url": "https://www.linux.org/pages/download/",
+    "snippet": "24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options.24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.04,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Download Linux | Linux.org' (https://www.linux.org/pages/download/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux kernel per-cgroup memory accounting GPU driver design",
+    "title": "Linux.org",
+    "url": "https://www.linux.org/",
+    "snippet": "Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux.Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.06,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Linux.org' (https://www.linux.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux kernel per-cgroup memory accounting GPU driver design",
+    "title": "Linux - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Linux",
+    "snippet": "Linux (/ ˈlɪnʊks / LIN-uuks) [12] is a family of free and open-source software Unix-like operating systems based on the Linux kernel, [13][14] which was first released on 17 September 1991 by Linus Torvalds. [15][16] Some members of the family are typically packaged as a distribution (a.k.a. distro), which includes the kernel alongside supporting system software and libraries developed by ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.05,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Linux - Wikipedia' (https://en.wikipedia.org/wiki/Linux) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux kernel per-cgroup memory accounting GPU driver design",
+    "title": "What is Linux? - Linux.com",
+    "url": "https://www.linux.com/what-is-linux/",
+    "snippet": "Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course.Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.03,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What is Linux? - Linux.com' (https://www.linux.com/what-is-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux kernel per-cgroup memory accounting GPU driver design",
+    "title": "Download - Get Ubuntu",
+    "url": "https://ubuntu.com/download",
+    "snippet": "Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download and use, and you’re welcome to share the official, unmodified Ubuntu installer images.Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download an",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.03,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Download - Get Ubuntu' (https://ubuntu.com/download) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux kernel per-cgroup memory accounting GPU driver design",
+    "title": "Best Linux Distros for Every Use Case in 2026 | Linuxize",
+    "url": "https://linuxize.com/post/best-linux-distros/",
+    "snippet": "Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first.Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.03,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Best Linux Distros for Every Use Case in 2026 | Linuxize' (https://linuxize.com/post/best-linux-distros/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "ARM SMC Calling Convention SiP service range function ID ownership entities",
+    "title": "Where intelligence goes next – Arm®",
+    "url": "https://www.arm.com/",
+    "snippet": "From cloud to edge, Arm provides the compute platforms behind today’s most advanced AI, trusted by innovators worldwide.From cloud to edge, Arm provides the compute platforms behind today’s most advanced AI, trusted by innovators worldwide.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.1,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Where intelligence goes next – Arm®' (https://www.arm.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "ARM SMC Calling Convention SiP service range function ID ownership entities",
+    "title": "ARM architecture family - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/ARM_architecture_family",
+    "snippet": "ARM (stylised in lowercase as arm) [a] is a family of RISC instruction set architectures for computer processors. Arm Holdings develops the instruction set architecture and licenses it to other companies, who build the physical devices that use the instruction set.ARM (stylised in lowercase as arm) [a] is a family of RISC instruction set architectures for computer processors. Arm Holdings develops the instruction set architecture and licenses it to other companies, who build the physical devices",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.08,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'ARM architecture family - Wikipedia' (https://en.wikipedia.org/wiki/ARM_architecture_family) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "ARM SMC Calling Convention SiP service range function ID ownership entities",
+    "title": "About Arm, company value and history",
+    "url": "https://www.arm.com/company",
+    "snippet": "Arm powers the compute foundation of modern life, with more than 350 billion Arm-based chips shipped to date. The world’s most innovative companies, including AWS, Microsoft, Google, Meta, NVIDIA, and Samsung, build on Arm to meet the growing compute demand that drives the AI era.Arm powers the compute foundation of modern life, with more than 350 billion Arm-based chips shipped to date. The world’s most innovative companies, including AWS, Microsoft, Google, Meta, NVIDIA, and Samsung, build on ",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.06,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'About Arm, company value and history' (https://www.arm.com/company) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "ARM SMC Calling Convention SiP service range function ID ownership entities",
+    "title": "Arm Holdings plc (ARM) Stock Price, News, Quote & History - Yahoo Finance",
+    "url": "https://finance.yahoo.com/quote/ARM/",
+    "snippet": "Find the latest Arm Holdings plc (ARM) stock quote, history, news and other vital information to help you with your stock trading and investing.Find the latest Arm Holdings plc (ARM) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Arm Holdings plc (ARM) Stock Price, News, Quote & History - Yahoo Finance' (https://finance.yahoo.com/quote/ARM/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "ARM SMC Calling Convention SiP service range function ID ownership entities",
+    "title": "Arm Holdings - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/ARM_Holdings",
+    "snippet": "Arm Holdings plc is a British semiconductor and software design company headquartered in Cambridge, England, whose primary business is the design of central processing unit (CPU) cores that implement the ARM architecture family of instruction sets.Arm Holdings plc is a British semiconductor and software design company headquartered in Cambridge, England, whose primary business is the design of central processing unit (CPU) cores that implement the ARM architecture family of instruction sets.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.07,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Arm Holdings - Wikipedia' (https://en.wikipedia.org/wiki/ARM_Holdings) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "ARM SMC Calling Convention SiP service range function ID ownership entities",
+    "title": "IvyOnline - Ivy Tech Community College",
+    "url": "https://www.ivytech.edu/programs/ivyonline/",
+    "snippet": "Ivy Tech Community College offers online courses, degrees, and certificates that are 100% online through IvyOnline. Find a course that meets your needs.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'IvyOnline - Ivy Tech Community College' (https://www.ivytech.edu/programs/ivyonline/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A BL31 SMC dispatch runtime services SiP custom service",
+    "title": "Trusted Health — Get matched to flexible jobs",
+    "url": "https://www.trustedhealth.com/",
+    "snippet": "You work at the facility, but Trusted is your employer. We handle paperwork, benefits, and payroll, and support you the whole way.You work at the facility, but Trusted is your employer. We handle paperwork, benefits, and payroll, and support you the whole way.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Health — Get matched to flexible jobs' (https://www.trustedhealth.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A BL31 SMC dispatch runtime services SiP custom service",
+    "title": "TRUSTED Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/trusted",
+    "snippet": "In these spaces, trust is earned through consistent care, advanced technology, transparent communication, and real patient outcomes.In these spaces, trust is earned through consistent care, advanced technology, transparent communication, and real patient outcomes.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TRUSTED Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/trusted) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A BL31 SMC dispatch runtime services SiP custom service",
+    "title": "TRUSTED | English meaning - Cambridge Dictionary",
+    "url": "https://dictionary.cambridge.org/dictionary/english/trusted",
+    "snippet": "TRUSTED definition: 1. deserving of trust, or able to be depended on : 2. deserving of trust, or able to be depended…. Learn more.TRUSTED definition: 1. deserving of trust, or able to be depended on : 2. deserving of trust, or able to be depended…. Learn more.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TRUSTED | English meaning - Cambridge Dictionary' (https://dictionary.cambridge.org/dictionary/english/trusted) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A BL31 SMC dispatch runtime services SiP custom service",
+    "title": "TRUSTED | definition in the Cambridge English Dictionary",
+    "url": "https://dictionary.cambridge.org/us/dictionary/english/trusted",
+    "snippet": "TRUSTED meaning: 1. deserving of trust, or able to be depended on : 2. deserving of trust, or able to be depended…. Learn more.TRUSTED meaning: 1. deserving of trust, or able to be depended on : 2. deserving of trust, or able to be depended…. Learn more.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TRUSTED | definition in the Cambridge English Dictionary' (https://dictionary.cambridge.org/us/dictionary/english/trusted) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A BL31 SMC dispatch runtime services SiP custom service",
+    "title": "Official Trusted Traveler Program Website | Department of Homeland …",
+    "url": "https://ttp.dhs.gov/%C2%A0",
+    "snippet": "This is the official U.S. Customs and Border Protection (CBP) website for international travelers to apply for Trusted Traveler Programs (TTP) to expedite arrival processing into the United States.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Official Trusted Traveler Program Website | Department of Homeland …' (https://ttp.dhs.gov/%C2%A0) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A BL31 SMC dispatch runtime services SiP custom service",
+    "title": "Trusted - definition of trusted by The Free Dictionary",
+    "url": "https://www.thefreedictionary.com/trusted",
+    "snippet": "To have or place confidence in; depend on: only trusted his friends; did not trust the strength of the thin rope; could not be trusted to oversee so much money.To have or place confidence in; depend on: only trusted his friends; did not trust the strength of the thin rope; could not be trusted to oversee so much money.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.03,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted - definition of trusted by The Free Dictionary' (https://www.thefreedictionary.com/trusted) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop DRM scheduler fence GPU context stop",
+    "title": "Digital rights management - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Digital_rights_management",
+    "snippet": "DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of systems that enforce these policies within devices. [3] DRM technologies [4] include licensing agreements [5] and encryption. [6]",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.07,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Digital rights management - Wikipedia' (https://en.wikipedia.org/wiki/Digital_rights_management) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop DRM scheduler fence GPU context stop",
+    "title": "Command Submission, Fences, and the GPU Scheduler",
+    "url": "https://kernel-internals.org/drm/command-submission/",
+    "snippet": "Command submission — a driver-specific ioctl that turns a userspace-built command buffer into a kernel-tracked job. struct dma_fence — the one-shot completion primitive every wait in the GPU stack reduces to. GEM and dma-buf introduced it as the thing stored in a buffer's dma_resv; here we go into how a fence actually gets signaled. drm_sched — the shared GPU scheduler in drivers/gpu/drm ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.15,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Command Submission, Fences, and the GPU Scheduler' (https://kernel-internals.org/drm/command-submission/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.15
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop DRM scheduler fence GPU context stop",
+    "title": "What Is DRM? Digital Rights Management Explained | Fortinet",
+    "url": "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+    "snippet": "Digital rights management (DRM) is the use of technology to control and manage access to copyrighted material. DRM aims to protect the rights of copyright holders and prevent content from unauthorized distribution and modification.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.04,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What Is DRM? Digital Rights Management Explained | Fortinet' (https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop DRM scheduler fence GPU context stop",
+    "title": "How to Enable DRM in Chrome, Firefox, and Edge - PCrisk",
+    "url": "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+    "snippet": "Jul 28, 2023 · If you’re having playback issues due to Digital Rights Management (DRM) in your browser, you must enable DRM to play protected content. This article will provide more information about this issue and show you how to enable DRM in Chrome.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'How to Enable DRM in Chrome, Firefox, and Edge - PCrisk' (https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1990,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop DRM scheduler fence GPU context stop",
+    "title": "gpu_scheduler.h source code [linux/include/drm/gpu_scheduler.h ...",
+    "url": "https://codebrowser.dev/linux/linux/include/drm/gpu_scheduler.h.html",
+    "snippet": "* &drm_sched_fence.scheduled uses the fence_context but.* @DRM_GPU_SCHED_STAT_ENODEV: Error: Device is not available anymore. 396. * @DRM_GPU_SCHED_STAT_NO_HANG: Contrary to scheduler's assumption, the GPU.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.43,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'gpu_scheduler.h source code [linux/include/drm/gpu_scheduler.h ...' (https://codebrowser.dev/linux/linux/include/drm/gpu_scheduler.h.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop DRM scheduler fence GPU context stop",
+    "title": "DRM GPU Scheduler | armbian/linux-rockchip | DeepWiki",
+    "url": "https://deepwiki.com/armbian/linux-rockchip/2-drm-gpu-scheduler",
+    "snippet": "The DRM GPU Scheduler is a core component of the Linux DRM (Direct Rendering Manager) subsystem that manages the execution of GPU jobs. It provides a framework for submitting, scheduling, and tracking GPU workloads across various hardware architectures.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.12,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'DRM GPU Scheduler | armbian/linux-rockchip | DeepWiki' (https://deepwiki.com/armbian/linux-rockchip/2-drm-gpu-scheduler) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux IOMMU domain detach invalidate DMA mapping revocation",
+    "title": "Download Linux | Linux.org",
+    "url": "https://www.linux.org/pages/download/",
+    "snippet": "24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options.24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.04,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Download Linux | Linux.org' (https://www.linux.org/pages/download/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "usage": {
+        "input_tokens": 1884,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux IOMMU domain detach invalidate DMA mapping revocation",
+    "title": "Linux.org",
+    "url": "https://www.linux.org/",
+    "snippet": "Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux.Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.06,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Linux.org' (https://www.linux.org/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux IOMMU domain detach invalidate DMA mapping revocation",
+    "title": "Linux - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Linux",
+    "snippet": "Linux (/ ˈlɪnʊks / LIN-uuks) [12] is a family of free and open-source software Unix-like operating systems based on the Linux kernel, [13][14] which was first released on 17 September 1991 by Linus Torvalds. [15][16] Some members of the family are typically packaged as a distribution (a.k.a. distro), which includes the kernel alongside supporting system software and libraries developed by ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.05,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Linux - Wikipedia' (https://en.wikipedia.org/wiki/Linux) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux IOMMU domain detach invalidate DMA mapping revocation",
+    "title": "What is Linux? - Linux.com",
+    "url": "https://www.linux.com/what-is-linux/",
+    "snippet": "Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course.Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.03,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What is Linux? - Linux.com' (https://www.linux.com/what-is-linux/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux IOMMU domain detach invalidate DMA mapping revocation",
+    "title": "Download - Get Ubuntu",
+    "url": "https://ubuntu.com/download",
+    "snippet": "Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download and use, and you’re welcome to share the official, unmodified Ubuntu installer images.Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download an",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.03,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Download - Get Ubuntu' (https://ubuntu.com/download) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "Linux IOMMU domain detach invalidate DMA mapping revocation",
+    "title": "Best Linux Distros for Every Use Case in 2026 | Linuxize",
+    "url": "https://linuxize.com/post/best-linux-distros/",
+    "snippet": "Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first.Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.03,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Best Linux Distros for Every Use Case in 2026 | Linuxize' (https://linuxize.com/post/best-linux-distros/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "usage": {
+        "input_tokens": 1717,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "CFG_SECURE_TIME_SOURCE_CNTPCT optee_os plat-rockchip conf.mk",
+    "title": "CFG Bank",
+    "url": "https://www.cfg.bank/",
+    "snippet": "“What stands out most about CFG is the consistency and expertise of their team. Everyone I interact with has been there for years and possesses a deep understanding of my businesses and their financial needs. CFG truly serves as a great one-stop shop that I trust completely for all my banking needs.” ClimateCare HVAC Services",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'CFG Bank' (https://www.cfg.bank/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "CFG_SECURE_TIME_SOURCE_CNTPCT optee_os plat-rockchip conf.mk",
+    "title": "optee_os — OP-TEE documentation documentation",
+    "url": "https://optee.readthedocs.io/en/latest/building/gits/optee_os.html",
+    "snippet": "The build system in optee_os consists of a main Makefile in the root of the project together with sub.mk files in all source directories. In addition, some supporting files are used to recursively process all sub.mk files and generate the build rules.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.49,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'optee_os — OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/building/gits/optee_os.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "CFG_SECURE_TIME_SOURCE_CNTPCT optee_os plat-rockchip conf.mk",
+    "title": "CFG | Faucets, Shower, Parts, Accessories for Bathroom, Kitchen & more",
+    "url": "https://www.cfgonline.com/",
+    "snippet": "As a brand dedicated to serving the needs of the multi-family market, CFG (Cleveland Faucet Group) delivers real value in kitchen and bathroom faucets, showerheads and in-wall valves, with a strong foundation in design, distribution and service.As a brand dedicated to serving the needs of the multi-family market, CFG (Cleveland Faucet Group) delivers real value in kitchen and bathroom faucets, showerheads and in-wall valves, with a strong foundation in design, distribution and service.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'CFG | Faucets, Shower, Parts, Accessories for Bathroom, Kitchen & more' (https://www.cfgonline.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "CFG_SECURE_TIME_SOURCE_CNTPCT optee_os plat-rockchip conf.mk",
+    "title": "Personal Deposit Rates - CFG Bank",
+    "url": "https://www.cfg.bank/personal-banking/personal-deposit-rates/",
+    "snippet": "Personal deposit rates We are committed to consistently offering some of the most competitive CD and Money Market rates in the country. Grow your money with CFG when you choose one of our favorable savings options. Rates offered do not apply to business accounts. Rates are accurate as of 9/18/2026.Personal deposit rates We are committed to consistently offering some of the most competitive CD and Money Market rates in the country. Grow your money with CFG when you choose one of our favorable sav",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Personal Deposit Rates - CFG Bank' (https://www.cfg.bank/personal-banking/personal-deposit-rates/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "CFG_SECURE_TIME_SOURCE_CNTPCT optee_os plat-rockchip conf.mk",
+    "title": "Login · CFG Bank",
+    "url": "https://my.cfg.bank/login",
+    "snippet": "Username Forgot? First time user? Enroll now.Username Forgot? First time user? Enroll now.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Login · CFG Bank' (https://my.cfg.bank/login) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "CFG_SECURE_TIME_SOURCE_CNTPCT optee_os plat-rockchip conf.mk",
+    "title": "Citizens Financial Group, Inc. (CFG) - Yahoo Finance",
+    "url": "https://finance.yahoo.com/quote/CFG/?fr=sycsrp_catchall",
+    "snippet": "Find the latest Citizens Financial Group, Inc. (CFG) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Citizens Financial Group, Inc. (CFG) - Yahoo Finance' (https://finance.yahoo.com/quote/CFG/?fr=sycsrp_catchall) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "OP-TEE TEE_GetSystemTime CNTPCT secure time protectionLevel 1000",
+    "title": "OP.GG",
+    "url": "https://www.op.gg/?main=index",
+    "snippet": "We would like to show you a description here but the site won’t allow us.We would like to show you a description here but the site won’t allow us.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'OP.GG' (https://www.op.gg/?main=index) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "OP-TEE TEE_GetSystemTime CNTPCT secure time protectionLevel 1000",
+    "title": "TEE_GetSystemTime (...) not compliant with TEE core API spec.",
+    "url": "https://github.com/OP-TEE/optee_os/issues/5973",
+    "snippet": "A secure RTC would definitly help but I think we also need to have another look at required relationship between time and secure storage from GP TEE spec view. Reading again (and again and again) the GP spec, this issue affects both protection levels 100 and 1000, so I think downgrading it for arm_cntpct_time_source is not relevant here ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.44,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TEE_GetSystemTime (...) not compliant with TEE core API spec.' (https://github.com/OP-TEE/optee_os/issues/5973) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "OP-TEE TEE_GetSystemTime CNTPCT secure time protectionLevel 1000",
+    "title": "OP Meaning Slang Explained: What “OP” Really Means in Text ...",
+    "url": "https://meanary.com/op-meaning-slang/",
+    "snippet": "In this guide, we’ll break down the OP meaning slang, explain how it’s used in texting, gaming, social media, and professional spaces, and show you how to respond correctly without sounding awkward.In this guide, we’ll break down the OP meaning slang, explain how it’s used in texting, gaming, social media, and professional spaces, and show you how to respond correctly without sounding awkward.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'OP Meaning Slang Explained: What “OP” Really Means in Text ...' (https://meanary.com/op-meaning-slang/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "OP-TEE TEE_GetSystemTime CNTPCT secure time protectionLevel 1000",
+    "title": "'OP' meaning: There's more than one definition for slang term",
+    "url": "https://www.usatoday.com/story/tech/2023/07/22/op-slang-term-meaning-definition-uses/70358863007/",
+    "snippet": "First is \"OP\" means \"original poster.\" This usage comes from chat forums. It refers to the initial person who made a post or started a thread, such as on Reddit.First is \"OP\" means \"original poster.\" This usage comes from chat forums. It refers to the initial person who made a post or started a thread, such as on Reddit.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result ''OP' meaning: There's more than one definition for slang term' (https://www.usatoday.com/story/tech/2023/07/22/op-slang-term-meaning-definition-uses/70358863007/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1828,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "OP-TEE TEE_GetSystemTime CNTPCT secure time protectionLevel 1000",
+    "title": "OP - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/OP",
+    "snippet": "Original pronunciation, the phonology of Early Modern English, as used in William Shakespeare's time, specifically when used to perform his works in modern times. This disambiguation page lists articles associated with the title OP.Original pronunciation, the phonology of Early Modern English, as used in William Shakespeare's time, specifically when used to perform his works in modern times. This disambiguation page lists articles associated with the title OP.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'OP - Wikipedia' (https://en.wikipedia.org/wiki/OP) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 485,
+        "output_tokens": 40
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "OP-TEE TEE_GetSystemTime CNTPCT secure time protectionLevel 1000",
+    "title": "What Is OP in Slang? 5 Essential Brilliant Facts in 2026",
+    "url": "https://www.slangsphere.com/what-is-op-in-slang-5-essential-brilliant-facts-in-2026/",
+    "snippet": "What is op in slang explained: learn the three main meanings—original poster, overpowered, and opponent—with real examples and context in this clear guide.What is op in slang explained: learn the three main meanings—original poster, overpowered, and opponent—with real examples and context in this clear guide.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What Is OP in Slang? 5 Essential Brilliant Facts in 2026' (https://www.slangsphere.com/what-is-op-in-slang-5-essential-brilliant-facts-in-2026/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 485,
+        "output_tokens": 40
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "SMC Calling Convention SIP service calls identifier 0xC2000000 OEM",
+    "title": "Air Cylinders, Solenoid Valves and Pneumatics | SMC Corporation of …",
+    "url": "https://www.smcusa.com/",
+    "snippet": "SMC Corporation of America, a subsidiary of SMC Corporation in Japan headquartered in Noblesville, IN, is a comprehensive manufacturer of components for the Automation, Controls, and Process industries.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Air Cylinders, Solenoid Valves and Pneumatics | SMC Corporation of …' (https://www.smcusa.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "SMC Calling Convention SIP service calls identifier 0xC2000000 OEM",
+    "title": "SMC Pneumatic Cylinders, Fittings, Valves, and More. - SMC...",
+    "url": "https://www.smcpneumatics.com/",
+    "snippet": "SMC is the world's largest manufacturer of pneumatic automation products. Terms potentially extended to customers purchasing over $2,000 annually. Built to be the fastest multi-function database in the world. Ex: MXS6-30, MXQ-10, ITV2050-013BN4. EVERYTHING YOU NEED ON 1 PAGE!",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'SMC Pneumatic Cylinders, Fittings, Valves, and More. - SMC...' (https://www.smcpneumatics.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "SMC Calling Convention SIP service calls identifier 0xC2000000 OEM",
+    "title": "Product & CAD Models",
+    "url": "https://www.smcusa.com/products/",
+    "snippet": "Directional control valves are essential components in pneumatic systems, designed to manage the flow and direction of compressed air or fluid to control actuator movement.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Product & CAD Models' (https://www.smcusa.com/products/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "SMC Calling Convention SIP service calls identifier 0xC2000000 OEM",
+    "title": "Home | Southwestern Michigan College",
+    "url": "https://www.swmich.edu/",
+    "snippet": "For more than 60 years, Southwestern Michigan College has dedicated itself to helping students achieve their dreams. Our 240-acre …",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Home | Southwestern Michigan College' (https://www.swmich.edu/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "SMC Calling Convention SIP service calls identifier 0xC2000000 OEM",
+    "title": "SMC Calling Convention",
+    "url": "https://chasinglulu.github.io/downloads/ARM_DEN0028B_SMC_Calling_Convention.pdf",
+    "snippet": "SiP Service Calls.This calling convention cannot be used by code executing in AArch32 state. • Any SMC64/HVC64 call from AArch32 state receives the “Unknown Function Identifier” result, see section 5.2.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.4,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'SMC Calling Convention' (https://chasinglulu.github.io/downloads/ARM_DEN0028B_SMC_Calling_Convention.pdf) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "SMC Calling Convention SIP service calls identifier 0xC2000000 OEM",
+    "title": "ARM SiP Service - chromium.googlesource.com",
+    "url": "https://chromium.googlesource.com/external/github.com/ARM-software/arm-trusted-firmware/+/63634800fcd82c3395959bcc88328427f6c06308/docs/arm-sip-service.md",
+    "snippet": "Follow SMC Calling Convention; Use SMC function IDs that fall in the SiP range, which are 0xc2000000 - 0xc200ffff for 64-bit calls, and 0x82000000 - 0x8200ffff for 32-bit calls.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.4,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'ARM SiP Service - chromium.googlesource.com' (https://chromium.googlesource.com/external/github.com/ARM-software/arm-trusted-firmware/+/63634800fcd82c3395959bcc88328427f6c06308/docs/arm-sip-service.md) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.4
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A runtime service SMC function id SiP range documentation",
+    "title": "Trusted Health — Get matched to flexible jobs",
+    "url": "https://www.trustedhealth.com/",
+    "snippet": "2 days ago · You work at the facility, but Trusted is your employer. We handle paperwork, benefits, and payroll, and support you the whole way.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Health — Get matched to flexible jobs' (https://www.trustedhealth.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A runtime service SMC function id SiP range documentation",
+    "title": "TRUSTED Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/trusted",
+    "snippet": "5 days ago · In these spaces, trust is earned through consistent care, advanced technology, transparent communication, and real patient outcomes.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TRUSTED Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/trusted) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A runtime service SMC function id SiP range documentation",
+    "title": "Official Trusted Traveler Program Website | Department of Homeland …",
+    "url": "https://ttp.dhs.gov/%C2%A0",
+    "snippet": "This is the official U.S. Customs and Border Protection (CBP) website for international travelers to apply for Trusted Traveler Programs (TTP) to expedite arrival processing into the United States.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Official Trusted Traveler Program Website | Department of Homeland …' (https://ttp.dhs.gov/%C2%A0) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A runtime service SMC function id SiP range documentation",
+    "title": "Trusted Firmware-A Documentation — Trusted...",
+    "url": "https://trustedfirmware-a.readthedocs.io/",
+    "snippet": "7.48.8. SMC function IDs for SiP Service queries.Trusted Firmware-A (TF-A) provides a reference implementation of secure world software for Armv7-A and Armv8-A, including a Secure Monitor executing at Exception Level 3 (EL3).",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.26,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Trusted Firmware-A Documentation — Trusted...' (https://trustedfirmware-a.readthedocs.io/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.26
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A runtime service SMC function id SiP range documentation",
+    "title": "2.9. EL3 Runtime Service Writer's Guide — Trusted Firmware-A 2.15.0 ...",
+    "url": "https://tf-a.docs.trustedfirmware.org/en/latest/getting_started/rt-svc-writers-guide.html",
+    "snippet": "This simplifies the integration of common software from Arm to support PSCI, Secure Monitor for a Trusted OS and SoC specific software. The common runtime services framework ensures that SMC Functions are dispatched to their respective service implementation - the Firmware Design document provides details of how this is achieved.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.3,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '2.9. EL3 Runtime Service Writer's Guide — Trusted Firmware-A 2.15.0 ...' (https://tf-a.docs.trustedfirmware.org/en/latest/getting_started/rt-svc-writers-guide.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "trusted firmware A runtime service SMC function id SiP range documentation",
+    "title": "Access Control Service Description | University IT",
+    "url": "https://uit.stanford.edu/service/accesscontrol/description",
+    "snippet": "OverviewUniversity IT provides access control for exterior and interior doors. Services available include planning, installation, and maintenance for all related hardware and software.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Access Control Service Description | University IT' (https://uit.stanford.edu/service/accesscontrol/description) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU domain detach Linux kernel API documentation",
+    "title": "IOMMUFD — The Linux Kernel documentation",
+    "url": "https://www.kernel.org/doc/html/latest/userspace-api/iommufd.html",
+    "snippet": "IOMMUFD ¶ Author: Jason Gunthorpe Author: Kevin Tian Overview ¶ IOMMUFD is the user API to control the IOMMU subsystem as it relates to managing IO page tables from userspace using file descriptors. It intends to be general and consumable by any driver that wants to expose DMA to userspace.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.34,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'IOMMUFD — The Linux Kernel documentation' (https://www.kernel.org/doc/html/latest/userspace-api/iommufd.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.34
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU domain detach Linux kernel API documentation",
+    "title": "IOMMU Userspace API — The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/next/userspace-api/iommu.html",
+    "snippet": "IOMMU Userspace API ¶ IOMMU UAPI is used for virtualization cases where communications are needed between physical and virtual IOMMU drivers. For baremetal usage, the IOMMU is a system device which does not need to communicate with userspace directly. The primary use cases are guest Shared Virtual Address (SVA) and guest IO virtual address (IOVA), wherein the vIOMMU implementation relies on ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.31,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'IOMMU Userspace API — The Linux Kernel documentation' (https://docs.kernel.org/next/userspace-api/iommu.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU domain detach Linux kernel API documentation",
+    "title": "IOMMU Architecture - Linux Kernel Internals",
+    "url": "https://kernel-internals.org/iommu/iommu-arch/",
+    "snippet": "The IOMMU subsystem The kernel abstracts both implementations behind a common API in drivers/iommu/. struct iommu_domain An iommu_domain represents an isolated address space. One or more devices are attached to a domain; they share the same IOVA→PA translation.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.1,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'IOMMU Architecture - Linux Kernel Internals' (https://kernel-internals.org/iommu/iommu-arch/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.1
+      },
+      "usage": {
+        "input_tokens": 1871,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU domain detach Linux kernel API documentation",
+    "title": "16. x86 IOMMU Support — The Linux Kernel documentation",
+    "url": "https://www.kernel.org/doc/html/latest/arch/x86/iommu.html",
+    "snippet": "16. x86 IOMMU Support ¶ The architecture specs can be obtained from the vendor websites. Search for the following documents to obtain the latest versions: Intel: Intel Virtualization Technology for Directed I/O Architecture Specification (ID: D51397) AMD: AMD I/O Virtualization Technology (IOMMU) Specification (ID: 48882) This guide gives a quick cheat sheet for some basic understanding. 16.1 ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.16,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result '16. x86 IOMMU Support — The Linux Kernel documentation' (https://www.kernel.org/doc/html/latest/arch/x86/iommu.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.16
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU domain detach Linux kernel API documentation",
+    "title": "What is IOMMU and how can I enable it? - epicgames.com",
+    "url": "https://www.epicgames.com/help/c-34254770/c-45529661/a17757744",
+    "snippet": "What is IOMMU and how can I enable it? IOMMU is a hardware-level security feature that helps your operating system control how …",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What is IOMMU and how can I enable it? - epicgames.com' (https://www.epicgames.com/help/c-34254770/c-45529661/a17757744) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "IOMMU domain detach Linux kernel API documentation",
+    "title": "linux/Documentation/userspace-api/iommufd.rst at master - GitHub",
+    "url": "https://github.com/torvalds/linux/blob/master/Documentation/userspace-api/iommufd.rst",
+    "snippet": "It also indicates that it is backed by an iommu_domain with __IOMMU_DOMAIN_PAGING feature flag. This can be either an UNMANAGED stage-1 domain for a device running in the user space, or a nesting parent stage-2 domain for mappings from guest-level physical addresses to host-level physical addresses.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.31,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'linux/Documentation/userspace-api/iommufd.rst at master - GitHub' (https://github.com/torvalds/linux/blob/master/Documentation/userspace-api/iommufd.rst) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.31
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop GPU scheduler stop kernel documentation",
+    "title": "DRM Memory Management — The Linux Kernel documentation",
+    "url": "https://www.kernel.org/doc/html/v5.2/gpu/drm-mm.html",
+    "snippet": "stop the scheduler. Parameters. struct drm_gpu_scheduler * sched.Refer to drm_sched_entity_push_job() documentation for locking considerations. Returns 0 for success, negative error code otherwise.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.42,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'DRM Memory Management — The Linux Kernel documentation' (https://www.kernel.org/doc/html/v5.2/gpu/drm-mm.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.42
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop GPU scheduler stop kernel documentation",
+    "title": "linux/drivers/gpu/drm/scheduler/sched_main.c at master - GitHub",
+    "url": "https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/scheduler/sched_main.c",
+    "snippet": "Linux kernel source tree. Contribute to torvalds/linux development by creating an account on GitHub.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.45,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'linux/drivers/gpu/drm/scheduler/sched_main.c at master - GitHub' (https://github.com/torvalds/linux/blob/master/drivers/gpu/drm/scheduler/sched_main.c) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.45
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop GPU scheduler stop kernel documentation",
+    "title": "Digital rights management - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Digital_rights_management",
+    "snippet": "DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of …",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.08,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Digital rights management - Wikipedia' (https://en.wikipedia.org/wiki/Digital_rights_management) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop GPU scheduler stop kernel documentation",
+    "title": "GPU Driver Developer’s Guide — The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/gpu/index.html",
+    "snippet": "Provide a universal successor for drm_sched_resubmit_jobs () Add locking for runqueues Replace the lockless queue with a locked list Convert fbdev drivers to DRM GPU RFC Section GPU SVM Section I915 DG1/LMEM RFC Section I915 GuC Submission/DRM Scheduler Section I915 Small BAR RFC Section I915 VM_BIND feature design and use cases Linux Color ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.54,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'GPU Driver Developer’s Guide — The Linux Kernel documentation' (https://docs.kernel.org/gpu/index.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.54
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop GPU scheduler stop kernel documentation",
+    "title": "DRM Memory Management — The Linux Kernel documentation",
+    "url": "https://docs.kernel.org/gpu/drm-mm.html",
+    "snippet": "DRM Execution context GPU Scheduler Overview Flow Control Scheduler Function References The Translation Table Manager (TTM) ¶ TTM is a memory manager for accelerator devices with dedicated memory. The basic idea is that resources are grouped together in buffer objects of certain size and TTM handles lifetime, movement and CPU mappings of those ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.48,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'DRM Memory Management — The Linux Kernel documentation' (https://docs.kernel.org/gpu/drm-mm.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "drm_sched_stop GPU scheduler stop kernel documentation",
+    "title": "Scheduler — The Linux Kernel documentation",
+    "url": "https://origin.kernel.org/doc/html/latest/scheduler/",
+    "snippet": "CPU Scheduler implementation hints for architecture specific code",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.14,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Scheduler — The Linux Kernel documentation' (https://origin.kernel.org/doc/html/latest/scheduler/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.14
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "optee_os core tee time CNTPCT secure time source",
+    "title": "core broken when CFG_SECURE_TIME_SOURCE_REE=y since commit 82f97f19",
+    "url": "https://github.com/OP-TEE/optee_os/issues/1371",
+    "snippet": "Since commit 82f97f1, tee_ltc_prng_init () injects entropy from secure time value during the service initcalls, at early OP-TEE boot. When CFG_SECURE_TIME_SOURCE_REE=y, the not-so-secure time is retrieved from non-secure world through RPC.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.56,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'core broken when CFG_SECURE_TIME_SOURCE_REE=y since commit 82f97f19' (https://github.com/OP-TEE/optee_os/issues/1371) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "optee_os core tee time CNTPCT secure time source",
+    "title": "Core — OP-TEE documentation documentation",
+    "url": "https://optee.readthedocs.io/en/latest/architecture/core.html",
+    "snippet": "Core Interrupt handling This section describes how optee_os handles switches of world execution context based on SMC exceptions and interrupt notifications. Interrupt notifications are IRQ/FIQ exceptions which may also imply switching of world execution context: normal world to secure world, or secure world to normal world. Use cases of world context switch This section lists all the cases ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.53,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Core — OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/architecture/core.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.53
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "optee_os core tee time CNTPCT secure time source",
+    "title": "TEE_GetSystemTime (...) not compliant with TEE core API spec.",
+    "url": "https://github.com/OP-TEE/optee_os/issues/5973",
+    "snippet": "A secure RTC would definitly help but I think we also need to have another look at required relationship between time and secure storage from GP TEE spec view. Reading again (and again and again) the GP spec, this issue affects both protection levels 100 and 1000, so I think downgrading it for arm_cntpct_time_source is not relevant here ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.42,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'TEE_GetSystemTime (...) not compliant with TEE core API spec.' (https://github.com/OP-TEE/optee_os/issues/5973) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.44
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "optee_os core tee time CNTPCT secure time source",
+    "title": "Reddit - The heart of the internet",
+    "url": "https://www.reddit.com/r/MortalKombat/",
+    "snippet": "Apr 15, 2010 · Screenshots & Clips All Video and Screenshot Content must be posted adhering to all other Subreddit Rules. Non …",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Reddit - The heart of the internet' (https://www.reddit.com/r/MortalKombat/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "optee_os core tee time CNTPCT secure time source",
+    "title": "Core — OP-TEE documentation documentation",
+    "url": "https://optee.readthedocs.io/en/3.12.0/architecture/core.html",
+    "snippet": "Core ¶ Interrupt handling ¶ This section describes how optee_os handles switches of world execution context based on SMC exceptions and interrupt notifications. Interrupt notifications are IRQ/FIQ exceptions which may also imply switching of world execution context: normal world to secure world, or secure world to normal world.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.56,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Core — OP-TEE documentation documentation' (https://optee.readthedocs.io/en/3.12.0/architecture/core.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.56
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "optee_os core tee time CNTPCT secure time source",
+    "title": "Question: Measuring time taken by TEE_MemMove · Issue #4029...",
+    "url": "https://github.com/OP-TEE/optee_os/issues/4029",
+    "snippet": "My platform sets CFG_SECURE_TIME_SOURCE_CNTPCT=y. So, TEE_GetSystemTime() in my case is using the OPTEE secure timer instead of the REE timer. All reactions. Sorry, something went wrong.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.3,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Question: Measuring time taken by TEE_MemMove · Issue #4029...' (https://github.com/OP-TEE/optee_os/issues/4029) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.3
+      },
+      "usage": {
+        "input_tokens": 1897,
+        "output_tokens": 274
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "plat-rockchip conf.mk optee_os github rockchip platform",
+    "title": "optee_os/core/arch/arm/plat-rockchip/conf.mk at master · OP ... - GitHub",
+    "url": "https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/plat-rockchip/conf.mk",
+    "snippet": "Trusted side of the TEE. Contribute to OP-TEE/optee_os development by creating an account on GitHub.Enterprise platformAI-powered developer platform.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.57,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'optee_os/core/arch/arm/plat-rockchip/conf.mk at master · OP ... - GitHub' (https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/plat-rockchip/conf.mk) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.57
+      },
+      "usage": {
+        "input_tokens": 904,
+        "output_tokens": 112
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "plat-rockchip conf.mk optee_os github rockchip platform",
+    "title": "PLAT Definition & Meaning - Merriam-Webster",
+    "url": "https://www.merriam-webster.com/dictionary/plat",
+    "snippet": "The meaning of PLAT is plait. The plaintiff’s petition, filed in Lake Superior Court, seeks injunctive relief over procedural matters involving the city’s plat and zoning approval process. Jim Masters, Chicago Tribune, 27 Sep. 2026 The Project Ember site plan closely aligns with the location of a 153-acre plat that was conditionally approved by the Fort Worth City Planning Commission in ...",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'PLAT Definition & Meaning - Merriam-Webster' (https://www.merriam-webster.com/dictionary/plat) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 904,
+        "output_tokens": 112
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "plat-rockchip conf.mk optee_os github rockchip platform",
+    "title": "Platt Electric Supply | Wholesale Electrical Supply Distributor for ...",
+    "url": "https://www.platt.com/",
+    "snippet": "Buy Electrical Supplies Online at Platt Electric Supply. Wholesale electrical, industrial, lighting, tools, control and automation products. We are a value added wholesale distribution company that supplies products and services to the electrical, construction, commercial, industrial, utility and datacomm markets.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Platt Electric Supply | Wholesale Electrical Supply Distributor for ...' (https://www.platt.com/) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 904,
+        "output_tokens": 112
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "plat-rockchip conf.mk optee_os github rockchip platform",
+    "title": "optee_os — OP-TEE documentation documentation",
+    "url": "https://optee.readthedocs.io/en/latest/building/gits/optee_os.html",
+    "snippet": "The build system in optee_os consists of a main Makefile in the root of the project together with sub.mk files in all source directories. In addition, some supporting files are used to recursively process all sub.mk files and generate the build rules.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.48,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'optee_os — OP-TEE documentation documentation' (https://optee.readthedocs.io/en/latest/building/gits/optee_os.html) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.49
+      },
+      "usage": {
+        "input_tokens": 904,
+        "output_tokens": 112
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "plat-rockchip conf.mk optee_os github rockchip platform",
+    "title": "What Is a Plat? Plat Definition, Types & How Platting Works · Platineer",
+    "url": "https://platineer.com/guides/what-is-a-plat",
+    "snippet": "Jun 11, 2026 · A plat is a public legal document that divides a parcel of land into individually-numbered lots, blocks, easements, and rights-of-way. It is filed with a local planning authority — usually a city or county planning commission — and is recorded with the county clerk after approval.",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.01,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'What Is a Plat? Plat Definition, Types & How Platting Works · Platineer' (https://platineer.com/guides/what-is-a-plat) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.01
+      },
+      "usage": {
+        "input_tokens": 904,
+        "output_tokens": 112
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  },
+  {
+    "query": "plat-rockchip conf.mk optee_os github rockchip platform",
+    "title": "Plat - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Plat",
+    "snippet": "A plat of consolidation or plan of consolidation originates when a landowner takes over several adjacent parcels of land and …",
+    "collected_at": "2026-10-07T01:42:36.064Z",
+    "weight": 0.02,
+    "decision": {
+      "type": "noul",
+      "instructions": "Is result 'Plat - Wikipedia' (https://en.wikipedia.org/wiki/Plat) a high-quality authoritative source worth citing? true = primary/official source, false = aggregator, forum, marketing page, dead link, or off-topic.",
+      "model": "clef",
+      "answer": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "usage": {
+        "input_tokens": 904,
+        "output_tokens": 112
+      },
+      "requested_at": "2026-10-07T01:42:36.064Z"
+    },
+    "redo_of": null
+  }
+]

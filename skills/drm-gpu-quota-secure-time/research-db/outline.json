@@ -1,0 +1,222 @@
+{
+  "topic": "drm-gpu-quota-secure-time",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "anti-hallucination-verification",
+      "scope": "Why this skill exists: the discipline of verifying kernel and OP-TEE symbol names against elixir.bootlin.com or the actual repo instead of copying them from LLM chat transcripts.",
+      "seed_queries": [
+        "elixir.bootlin.com Linux kernel source cross-reference symbol verification",
+        "LLM hallucinated function names software supply chain verification research"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "dev-cgroup-upstream-state",
+      "scope": "Section 1: the real upstream DRM device-memory cgroup effort, the generic dev (devcg) controller, its dev.region.max/current/capacity interface shape, the abandoned 2021-2023 drmcg RFC, and the parallel DRM scheduling cgroup RFC.",
+      "seed_queries": [
+        "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+        "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "panfrost-hook-points",
+      "scope": "Section 2: verified Panfrost hook points, panfrost_ioctl_create_bo as the allocation-time charge point, panfrost_lookup_bos as the submit-time guard, and panfrost_gem_free_object for the free-path uncharge.",
+      "seed_queries": [
+        "panfrost_ioctl_create_bo panfrost_lookup_bos panfrost_drv.c",
+        "panfrost_gem_free_object panfrost_gem.c GEM shmem free"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "cgroup-identity-apis",
+      "scope": "Section 3: real cgroup v2 identity APIs (task_css_set, task_dfl_cgrp, cgroup_id, cgroup_get/put), the invented task_cgroup/get_cgroup symbols to avoid, and the gpu_cg_quota accounting shape keyed off cgroup_id().",
+      "seed_queries": [
+        "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+        "Linux kernel per-cgroup memory accounting GPU driver design"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "smc-hard-lockout-design",
+      "scope": "Section 4: the SMC-based hard lockout as a custom mechanism, SMCCC SiP service range ownership rules, TF-A BL31 dispatch wiring, and why GPU_LOCKOUT_SMC/gpu_lockout_msg are proposals not citations.",
+      "seed_queries": [
+        "ARM SMC Calling Convention SiP service range function ID ownership entities",
+        "trusted firmware A BL31 SMC dispatch runtime services SiP custom service"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "v0-scope-enforcement",
+      "scope": "Section 4 (continued): enforcement bottoming out in real Linux primitives (drm_sched_stop fencing, IOMMU domain detach/invalidate, driver reset) and the recommended v0 scope ordering: kernel accounting first, SMC escalation second.",
+      "seed_queries": [
+        "drm_sched_stop DRM scheduler fence GPU context stop",
+        "Linux IOMMU domain detach invalidate DMA mapping revocation"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "optee-secure-time-rockchip",
+      "scope": "Section 5: CFG_SECURE_TIME_SOURCE_CNTPCT forced on in plat-rockchip conf.mk, CNTPCT_EL0 as the secure time source, TEE_GetSystemTime / tee_time_get_sys_time, protectionLevel 1000, and the RK3399/RK3588 coverage.",
+      "seed_queries": [
+        "CFG_SECURE_TIME_SOURCE_CNTPCT optee_os plat-rockchip conf.mk",
+        "OP-TEE TEE_GetSystemTime CNTPCT secure time protectionLevel 1000"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "yubios-integration-primitive-coverage",
+      "scope": "yubiOS placement: pairing with ftpm-optee-tpm and arm-trusted-firmware-optee, fTPM NV counter replay windows and measured-boot timestamping use cases, and the primitive-coverage entries (least privilege, immutability, cryptographic identity, declarative policy).",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 0.18,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.86,
+          "1": 0.1,
+          "2": 0.04
+        },
+        "confidence": 0.73
+      },
+      "t02": {
+        "type": "score",
+        "score": 0.91,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.31,
+          "1": 0.47,
+          "2": 0.22
+        },
+        "confidence": 0.2
+      },
+      "t03": {
+        "type": "score",
+        "score": 0.77,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.42,
+          "1": 0.39,
+          "2": 0.19
+        },
+        "confidence": 0
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.18,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.42,
+          "2": 0.38
+        },
+        "confidence": 0.13
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.41,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.26,
+          "2": 0.57
+        },
+        "confidence": 0.11
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.21,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.25,
+          "2": 0.48
+        },
+        "confidence": 0
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.7,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.15,
+          "2": 0.77
+        },
+        "confidence": 0.55
+      },
+      "t08": {
+        "type": "score",
+        "score": 0.77,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.47,
+          "1": 0.3,
+          "2": 0.23
+        },
+        "confidence": 0
+      }
+    },
+    "usage": {
+      "input_tokens": 1205,
+      "output_tokens": 124,
+      "cost": 0.00010122
+    },
+    "dropped": [
+      "01"
+    ],
+    "kept": [
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
