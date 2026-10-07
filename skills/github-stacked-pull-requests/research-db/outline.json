@@ -1,0 +1,240 @@
+{
+  "topic": "GitHub Stacked PRs workflow (public preview 2026-07-30, gh-stack CLI extension): layering large changes into ordered independently-reviewable PRs, stacking against in-flight base branches, merge-queue integration",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "what-it-is",
+      "scope": "What stacked PRs are: ordered PR chains where each layer targets the layer below, one-click landing, the stack map UI, and the preview-to-GA timeline",
+      "seed_queries": [
+        "GitHub stacked pull requests public preview announcement",
+        "GitHub changelog stacked pull requests July 2026"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "when-to-use",
+      "scope": "When to use and when not to use stacked PRs: the five use criteria, five counter-cases, size thresholds, and the stacked-diffs practice behind the feature",
+      "seed_queries": [
+        "stacked pull requests vs large pull requests code review",
+        "stacked diffs benefits best practices engineering"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "mechanics",
+      "scope": "Branch topology, the stack map, full and partial merge semantics with auto rebase and retarget, per-PR branch protections, and merge queue integration",
+      "seed_queries": [
+        "GitHub stacked pull requests merge queue auto rebase retarget",
+        "GitHub stacked PRs branch protection required checks per PR"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "gh-stack-cli",
+      "scope": "The github/gh-stack CLI extension: install, create, branch, ls, log, status, submit, merge, sync, submit versus sync per GitHub Docs, and agent exposure",
+      "seed_queries": [
+        "github gh-stack CLI extension install commands",
+        "gh stack create submit merge sync command reference"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "yubios-mapping",
+      "scope": "The yubiOS mapping: fork repos and yubios branches, PINNED.md pinning, the cross-fork stacking pattern, and the github-api Git Data write path",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "06",
+      "slug": "branch-hygiene",
+      "scope": "Branch hygiene inherited from git-workflow-and-versioning: atomic commits per layer, no long-lived stacks, per-layer CI, and the Jenny merges doctrine",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "07",
+      "slug": "anti-patterns",
+      "scope": "The five anti-patterns: oversized stacks, broken bottom layers, forcing linear history, stacks as a scope workaround, skipped inner-layer review",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "08",
+      "slug": "red-flags",
+      "scope": "The six red flags: non-descriptive names, scope slip, wrong base wiring, stale top PRs, missing context links, and stale-base merges",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "09",
+      "slug": "verification",
+      "scope": "The three verification checklists: before opening a stack, before merging, and after merging",
+      "seed_queries": [],
+      "internal_record": true
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.99
+        },
+        "confidence": 0.96
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.93,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.95
+        },
+        "confidence": 0.9
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.97
+        },
+        "confidence": 0.92
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.84,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.05,
+          "2": 0.9
+        },
+        "confidence": 0.77
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.55,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.63,
+          "1": 0.19,
+          "2": 0.18
+        },
+        "confidence": 0.18
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.93,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.94
+        },
+        "confidence": 0.89
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.13,
+          "2": 0.84
+        },
+        "confidence": 0.7
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.1,
+          "2": 0.86
+        },
+        "confidence": 0.75
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.64,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.24,
+          "2": 0.7
+        },
+        "confidence": 0.46
+      }
+    },
+    "usage": {
+      "input_tokens": 1342,
+      "output_tokens": 139
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ],
+    "note": "t05 scored 0.55 (padding probability 0.63); kept per the score-0-only drop rule and recorded as marginal. It is an internal-record subtopic grounded in the source doc."
+  }
+}
