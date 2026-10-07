@@ -1,0 +1,244 @@
+{
+ "topic": "av-composer - knowledge corpus explicating the av-composer skill (zero-external-calls local AV pipeline)",
+ "ground_source": "yubi-OS/yubiOS skills/av-composer/SKILL.md",
+ "variant": "MINT-BRIEF-SKILLS.md (skills-variant, one corpus per yubiOS skills/ SKILL.md)",
+ "date": "2026-10-07",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "zero-external-calls-contract",
+   "scope": "The hard rule that every dependency is local: bundled GSAP, local fonts, local audio/images, no runtime fetches, local capture browser.",
+   "seed_queries": [],
+   "score": 0.84,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 2,
+   "slug": "plan-and-storyboard",
+   "scope": "Plan-time discipline: the 15-25s envelope, scene storyboard, reading floors, and the creative laws carried from the brag contract.",
+   "seed_queries": [],
+   "score": 1.82,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 3,
+   "slug": "composition-contract",
+   "scope": "The single-file HTML+GSAP composition: paused timeline, seek-only motion, no CSS keyframes, declarative audio, seeded procedural imagery, beat locks.",
+   "seed_queries": [
+    "GSAP timeline seek paused deterministic animation",
+    "GSAP timeline control API documentation"
+   ],
+   "score": 1.74,
+   "verdict": "kept",
+   "dig": "searxng"
+  },
+  {
+   "nn": 4,
+   "slug": "capture-pipeline",
+   "scope": "Frame capture with chrome-headless-shell + puppeteer-core: seek per frame, rAF flush, JPEG screenshots, font-readiness gate, resumable frame skips.",
+   "seed_queries": [
+    "chrome headless shell puppeteer screenshot frame capture",
+    "puppeteer screenshot determinism device scale factor"
+   ],
+   "score": 1.3,
+   "verdict": "kept",
+   "dig": "searxng"
+  },
+  {
+   "nn": 5,
+   "slug": "ffmpeg-assembly",
+   "scope": "ffmpeg assembly: libx264 from JPEG frame sequence, declarative audio mix, poster baked as frame 0, aac output.",
+   "seed_queries": [
+    "ffmpeg filter_complex adelay amix audio mixing",
+    "ffmpeg image sequence to mp4 libx264"
+   ],
+   "score": 1.5,
+   "verdict": "kept",
+   "dig": "searxng"
+  },
+  {
+   "nn": 6,
+   "slug": "bundled-assets-and-cues",
+   "scope": "The bundled CC0 music tracks with cue presets and the curated SFX subset; how cue metadata biases timing.",
+   "seed_queries": [],
+   "score": 1.36,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 7,
+   "slug": "failure-lessons",
+   "scope": "The runbook of validated failure modes: CDN GSAP freeze, disk gates, restart wipes, text-on-bright collisions, wrap control.",
+   "seed_queries": [],
+   "score": 1.34,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  },
+  {
+   "nn": 8,
+   "slug": "verify-and-deliver",
+   "scope": "Visual verification of the actual mp4 stills, ffprobe checks, deliverable set.",
+   "seed_queries": [],
+   "score": 1.68,
+   "verdict": "kept",
+   "dig": "internal-record, no dig"
+  }
+ ],
+ "score_validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "model": "typesafe/jev-1.13",
+  "answers_in_full": {
+   "outline_01": {
+    "type": "score",
+    "score": 0.84,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.32,
+     "2": 0.26
+    },
+    "confidence": 0
+   },
+   "outline_02": {
+    "type": "score",
+    "score": 1.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.05,
+     "2": 0.89
+    },
+    "confidence": 0.74
+   },
+   "outline_03": {
+    "type": "score",
+    "score": 1.74,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.08,
+     "2": 0.83
+    },
+    "confidence": 0.61
+   },
+   "outline_04": {
+    "type": "score",
+    "score": 1.3,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.29,
+     "2": 0.51
+    },
+    "confidence": 0
+   },
+   "outline_05": {
+    "type": "score",
+    "score": 1.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.22,
+     "2": 0.64
+    },
+    "confidence": 0.25
+   },
+   "outline_06": {
+    "type": "score",
+    "score": 1.36,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.39,
+     "2": 0.49
+    },
+    "confidence": 0.05
+   },
+   "outline_07": {
+    "type": "score",
+    "score": 1.34,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.36,
+     "2": 0.49
+    },
+    "confidence": 0.01
+   },
+   "outline_08": {
+    "type": "score",
+    "score": 1.68,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.13,
+     "2": 0.78
+    },
+    "confidence": 0.53
+   }
+  },
+  "model_meta": {
+   "model": "typesafe/jev-1.13-20260917",
+   "usage": {
+    "input_tokens": 1190,
+    "output_tokens": 132,
+    "cost": 9.996e-05
+   },
+   "id": "gen-dec-1791409996-tuMkBD9GvEXJLoTAsxww",
+   "provider": "TypeSafe",
+   "task_id": "ta2d6552-8ec3-4249-8cea-36f7901cb37c",
+   "consumed": "0.00009996"
+  },
+  "kept": [
+   "zero-external-calls-contract",
+   "plan-and-storyboard",
+   "composition-contract",
+   "capture-pipeline",
+   "ffmpeg-assembly",
+   "bundled-assets-and-cues",
+   "failure-lessons",
+   "verify-and-deliver"
+  ],
+  "dropped": []
+ }
+}
