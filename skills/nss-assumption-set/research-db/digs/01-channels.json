@@ -1,0 +1,105 @@
+{
+ "nn": 1,
+ "slug": "channels",
+ "scope": "The eight-channel assumption taxonomy (caller, runtime invariant, environment, transitive dependency, system trust, configuration prerequisite, domain, toolchain) and the 12-field assumption record for the nss-assumption-set knowledge corpus",
+ "queries_attempted": [
+  {
+   "query": "design by contract preconditions postconditions class invariants Eiffel",
+   "attempt": 1,
+   "raw_results": 55,
+   "kept": [
+    "https://en.wikipedia.org/wiki/Eiffel_(programming_language)",
+    "https://designer.microsoft.com/",
+    "https://en.wikipedia.org/wiki/Design",
+    "https://www.design.com/?msockid=307566863eaf693f0af1716d3fd5685d",
+    "https://www.design.com/",
+    "https://codefarm.in/guides/lld/01-oop-foundations-solid/design-by-contract-invariants"
+   ]
+  },
+  {
+   "query": "implicit environment assumptions \"works on my machine\" software documentation",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": [
+    "https://www.merriam-webster.com/dictionary/implicit",
+    "https://dictionary.cambridge.org/dictionary/english/implicit",
+    "https://www.vocabulary.com/dictionary/implicit",
+    "https://www.dictionary.com/browse/implicit",
+    "https://smolthots.neocities.org/",
+    "https://arxiv.org/pdf/2607.08348"
+   ]
+  },
+  {
+   "query": "Bertrand Meyer Object-Oriented Software Construction design by contract",
+   "attempt": 2,
+   "raw_results": 65,
+   "kept": [
+    "https://en.wikipedia.org/wiki/Object-Oriented_Software_Construction",
+    "https://en.wikipedia.org/wiki/Design_by_contract",
+    "https://www.bertrand.pt/",
+    "http://www.sigsoft.org/dissertations.html",
+    "https://archive.eiffel.com/doc/manuals/technology/contract/",
+    "https://bertrandmeyer.com/books/"
+   ]
+  },
+  {
+   "query": "software preconditions caller obligations contract documentation quality",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": [
+    "https://en.wikipedia.org/wiki/Software",
+    "https://www.britannica.com/technology/software",
+    "https://softwarepatternslexicon.com/cpp/principles-of-c-programming/design-by-contract-and-defensive-programming/",
+    "https://softwarepatternslexicon.com/object-oriented/best-practices-and-advanced-topics/design-by-contract/",
+    "https://sourceforge.net/software/construction-contract-management/",
+    "https://www.geeksforgeeks.org/computer-science-fundamentals/software-and-its-types/"
+   ]
+  },
+  {
+   "query": "hidden dependencies environment assumptions deployment software failures documentation",
+   "attempt": 1,
+   "raw_results": 56,
+   "kept": [
+    "https://hidden.com/explore",
+    "https://en.m.wikipedia.org/wiki/Hidden_(2015_film)",
+    "https://www.merriam-webster.com/dictionary/hidden",
+    "https://smartitstack.com/hidden-dependencies-the-real-enemy-of-safe-automation/",
+    "https://ewontfix.com/",
+    "https://www.imdb.com/Title/tt2131532/"
+   ]
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 results all weighted below 0.5 (top 0.29); dig too thin to author honestly",
+   "new_queries": [
+    "Bertrand Meyer Object-Oriented Software Construction design by contract",
+    "software preconditions caller obligations contract documentation quality"
+   ]
+  },
+  {
+   "attempt": 3,
+   "reason": "attempt-2 q1 redo (01ch1r) still thin (top weight 0.18); second redo on the implicit-assumptions angle only",
+   "new_queries": [
+    "hidden dependencies environment assumptions deployment software failures documentation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Object-Oriented_Software_Construction",
+  "https://en.wikipedia.org/wiki/Design_by_contract",
+  "https://www.bertrand.pt/",
+  "http://www.sigsoft.org/dissertations.html",
+  "https://archive.eiffel.com/doc/manuals/technology/contract/",
+  "https://bertrandmeyer.com/books/",
+  "https://hidden.com/explore",
+  "https://en.m.wikipedia.org/wiki/Hidden_(2015_film)",
+  "https://www.merriam-webster.com/dictionary/hidden",
+  "https://smartitstack.com/hidden-dependencies-the-real-enemy-of-safe-automation/",
+  "https://ewontfix.com/",
+  "https://www.imdb.com/Title/tt2131532/"
+ ],
+ "outcome": "authored"
+}

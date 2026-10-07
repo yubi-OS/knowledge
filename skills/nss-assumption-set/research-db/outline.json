@@ -1,0 +1,191 @@
+{
+ "topic": "nss-assumption-set",
+ "source_doc": "yubi-OS/yubiOS skills/nss-assumption-set/SKILL.md",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "channels",
+   "scope": "The eight-channel assumption taxonomy (caller, runtime invariant, environment, transitive dependency, system trust, configuration prerequisite, domain, toolchain) and the 12-field assumption record for the nss-assumption-set knowledge corpus",
+   "seed_queries": [
+    "design by contract preconditions postconditions class invariants Eiffel",
+    "implicit environment assumptions \"works on my machine\" software documentation"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "prior-frames",
+   "scope": "The four prior-work frames: Design by Contract (Eiffel/Meyer), SPARK Ada GNATprove contracts, rely/guarantee reasoning (Cliff Jones), and requirements engineering (Parnas/Clements, NASA SWE-050/SWE-184, ISO/IEC/IEEE 29148)",
+   "seed_queries": [
+    "SPARK Ada GNATprove preconditions postconditions contracts verification",
+    "rely guarantee reasoning Cliff Jones concurrent programs interference"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "manifests",
+   "scope": "Dependency manifests as machine-readable assumption sets: package.json os/cpu/engine, Cargo.toml features and SemVer platform requirements, pyproject.toml markers, requirements.txt vs pylock.toml, Containerfile ARG/ENV/LABEL and BuildKit secrets, mkosi.conf, systemd EnvironmentFile, GitHub Actions workflow_call inputs",
+   "seed_queries": [
+    "package.json engines os cpu fields npm platform requirements",
+    "systemd unit EnvironmentFile Environment variable reload semantics"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "ledger",
+   "scope": "The assumption ledger operational model (one row per independently testable proposition) and the 10-step gap-finding procedure, plus related frameworks: assumption/RAID logs, ADRs, problem frames, ISO 29148/15289",
+   "seed_queries": [
+    "assumption log RAID log assumption register owner status evidence",
+    "ISO IEC IEEE 29148 requirements engineering assumptions constraints"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "yubios-surface",
+   "scope": "Assumption sets on the yubiOS surface: Containerfile FROM digest pinning and staleness indicators, mkosi.conf.d lex-sorted drop-ins, systemd unit types and EnvironmentFile semantics, GitHub Actions runner and workflow_call assumptions, Python script preconditions, refs/*.md research-note invocation assumptions",
+   "seed_queries": [
+    "Containerfile ARG vs ENV vs LABEL docker build secret mount type=secret",
+    "systemd drop-in conf.d override file naming order lex sort"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "anti-patterns",
+   "scope": "Guidelines, constraints, anti-patterns, and red flags: channel discipline, atomicity, required-vs-default contradiction, stale indicators, caller-obligation vs artifact-guarantee, domain-vs-environment conflation, secrets in ENV/ARG, cross-channel aliasing (internal-record subtopic)",
+   "seed_queries": [
+    "n/a-internal-record-1"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "composition",
+   "scope": "Composition with the NSS skill family (negative-skill-space, nss-inputs, nss-outputs, nss-mode, nss-audience, curve-compass-skill) and the 8-point verification checklist for cycle-12 patches (internal-record subtopic)",
+   "seed_queries": [
+    "n/a-internal-record-2"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.79,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.03,
+     "2": 0.88
+    },
+    "confidence": 0.69,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.66,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.17,
+     "2": 0.74
+    },
+    "confidence": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.07,
+     "2": 0.87
+    },
+    "confidence": 0.71,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.69,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.14,
+     "2": 0.77
+    },
+    "confidence": 0.52,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.14,
+     "2": 0.71
+    },
+    "confidence": 0.34,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.03,
+     "2": 0.92
+    },
+    "confidence": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.62,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.12,
+     "2": 0.75
+    },
+    "confidence": 0.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1579,
+   "output_tokens": 109
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ]
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "nn": 5,
+ "slug": "yubios-surface",
+ "scope": "Assumption sets on the yubiOS surface: Containerfile FROM digest pinning and staleness indicators, mkosi.conf.d lex-sorted drop-ins, systemd unit types and EnvironmentFile semantics, GitHub Actions runner and workflow_call assumptions, Python script preconditions, refs/*.md research-note invocation assumptions",
+ "queries_attempted": [
+  {
+   "query": "Containerfile ARG vs ENV vs LABEL docker build secret mount type=secret",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": [
+    "https://www.redhat.com/en/blog/write-your-first-containerfile-podman",
+    "https://github.com/containers/common/blob/main/docs/Containerfile.5.md",
+    "https://docs.podman.io/en/latest/markdown/podman-build.1.html",
+    "https://www.golinuxcloud.com/podman-containerfile/",
+    "https://docs.docker.com/reference/dockerfile/",
+    "https://docs.docker.com/build/building/secrets/"
+   ]
+  },
+  {
+   "query": "systemd drop-in conf.d override file naming order lex sort",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": [
+    "https://dev.to/redrum_yot/understanding-drop-in-overrides-in-systemd-when-parameters-accumulate-vs-override-3noi",
+    "https://www.xvideos.com/tags/creampie",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://www.flatcar.org/docs/latest/os-config/host-config/drop-in-units/",
+    "https://oneuptime.com/blog/post/2026-03-02-how-to-override-systemd-service-parameters-with-drop-in-files-on-ubuntu/view",
+    "https://systemd.io/FILE_DESCRIPTOR_STORE/"
+   ]
+  },
+  {
+   "query": "Containerfile LABEL ENV ARG semantics image metadata official",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": [
+    "https://www.redhat.com/en/blog/write-your-first-containerfile-podman",
+    "https://github.com/containers/common/blob/main/docs/Containerfile.5.md",
+    "https://www.golinuxcloud.com/podman-containerfile/",
+    "https://dev.to/omkara18/container-files-and-dockerfiles-a-comprehensive-guide-478a",
+    "https://docs.podman.io/en/latest/markdown/podman-build.1.html",
+    "https://www.mankier.com/5/Containerfile"
+   ]
+  },
+  {
+   "query": "systemd unit drop-in files order of application conf.d",
+   "attempt": 2,
+   "raw_results": 60,
+   "kept": [
+    "https://www.uhcprovider.com/portal",
+    "http://0pointer.net/blog/category/projects.html",
+    "https://dev.to/__3381495fd2b/systemctl-daemon-reload-when-to-run-it-and-what-it-doesnt-do-14p6",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://oneuptime.com/blog/post/2026-03-02-how-to-override-systemd-service-parameters-with-drop-in-files-on-ubuntu/view",
+    "https://www.flatcar.org/docs/latest/os-config/host-config/drop-in-units/"
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt-1 results all weighted below 0.5 (top 0.42); dig too thin to author honestly",
+   "new_queries": [
+    "Containerfile LABEL ENV ARG semantics image metadata official",
+    "systemd unit drop-in files order of application conf.d"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.redhat.com/en/blog/write-your-first-containerfile-podman",
+  "https://github.com/containers/common/blob/main/docs/Containerfile.5.md",
+  "https://www.golinuxcloud.com/podman-containerfile/",
+  "https://dev.to/omkara18/container-files-and-dockerfiles-a-comprehensive-guide-478a",
+  "https://docs.podman.io/en/latest/markdown/podman-build.1.html",
+  "https://www.mankier.com/5/Containerfile",
+  "https://www.uhcprovider.com/portal",
+  "http://0pointer.net/blog/category/projects.html",
+  "https://dev.to/__3381495fd2b/systemctl-daemon-reload-when-to-run-it-and-what-it-doesnt-do-14p6",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-override-systemd-service-parameters-with-drop-in-files-on-ubuntu/view",
+  "https://www.flatcar.org/docs/latest/os-config/host-config/drop-in-units/"
+ ],
+ "outcome": "authored"
+}

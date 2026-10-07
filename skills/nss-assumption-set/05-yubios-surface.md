@@ -1,0 +1,29 @@
+# 05 - Assumption sets on the yubiOS surface
+
+Scope: the file-type-specific patterns the source doc prescribes for yubiOS artifacts: Containerfile, mkosi.conf, systemd units, GitHub Actions workflows, scripts, and refs notes. Where each kind of file records its assumption set, and which external sources ground each mechanism.
+
+## Containerfile (ARG / ENV / LABEL / FROM)
+
+The source doc sets the yubiOS rules: ARG is a build-time parameter and must be used only for selecting versions or build behavior; ENV persists in the image and is available to every process, so it is only for safe runtime defaults; LABEL is image metadata, not an application contract; secrets always flow through BuildKit --mount=type=secret, never ARG SECRET or ENV SECRET (source doc: yubi-OS/yubiOS skills/nss-assumption-set/SKILL.md). The containers/common specification defines the Containerfile as the configuration file container engines (Podman, Buildah, Docker) read to automate image builds (https://github.com/containers/common/blob/main/docs/Containerfile.5.md, jev weight 0.54), and Podman's build documentation confirms Containerfile and Dockerfile share the same internal syntax (https://docs.podman.io/en/latest/markdown/podman-build.1.html, jev weight 0.65). The man page reference records the CONT_* variable conventions and build flow for the same semantics (https://www.mankier.com/5/Containerfile, jev weight 0.52). Docker's BuildKit secrets guide documents the --secret flag as the pass-a-secret-to-a-build mechanism (https://docs.docker.com/build/building/secrets/, jev weight 0.28, weak backing).
+
+The FROM line is the single largest assumption in a Containerfile: a pin to `quay.io/fedora/fedora-bootc:45@sha256:X` claims both that the digest resolves and that it produces a working yubiOS. quay.io has rotated these digests multiple times in a single week in recent history, so the stale indicator is "any 422 or 404 from quay.io on this exact digest" (source doc). yubiOS labels every image io.yubios.commit, io.yubios.build-ts (rfc3339), and io.yubios.source-date-epoch (unix-ts) (source doc).
+
+## mkosi.conf
+
+mkosi exposes every setting in three places: config file, CLI --some-setting, and a few environment variables. The mapping is part of the assumption set; "where does this value come from?" must be answered for every setting (source doc). mkosi.conf.d snippets are lex-sorted, last-wins on duplicate keys. The source doc records the concrete yubiOS failure: a drop-in named 53-... lex-sorts before an upstream file named static-... because "53" (0x35) sorts before "s" (0x73) in ASCII, so the override fires first and the upstream re-creates the device last, silently negating the override. The convention is a prefix that lex-sorts after upstream package files, such as yubiOS- (source doc).
+
+## systemd units
+
+Environment=KEY=VAL declares variables directly in the unit, visible via systemctl show; EnvironmentFile=/path reads key/value pairs from a file with mode 0600 expected, and reload requires systemctl daemon-reload plus unit restart, not a SIGHUP (source doc). The Flatcar documentation demonstrates the same daemon-reload plus restart sequence for applying environment changes to a running unit (https://www.flatcar.org/docs/latest/os-config/host-config/environment-variables/, jev weight 0.19, weak backing). Runtime-surface configuration keys (WorkingDirectory=, User=, ExecStart=, CapabilityBoundingSet=, ReadOnlyPaths=, ProtectSystem=) are recorded next to assumptions, separately, because they are not assumptions in the NSS sense (source doc).
+
+Unit types encode lifecycle assumptions: Type=oneshot runs to completion; Type=notify waits for sd_notify(READY=1); Type=simple runs in foreground; Type=forking expects fork-and-detach. Each type carries different preconditions, such as Type=notify requiring the unit to call sd_notify before a timeout (source doc). On drop-ins specifically, Flatcar's guide describes both override methods, copying the unit or adding a .conf drop-in under a name like 10-restart_60s.conf inside a <unit>.d/ directory (https://www.flatcar.org/docs/latest/os-config/host-config/drop-in-units/, jev weight 0.76), and systemd.io documents the file-descriptor store as an example of service runtime behavior that drop-in configuration must not contradict (https://systemd.io/FILE_DESCRIPTOR_STORE/, jev weight 0.30, weak backing).
+
+## GitHub Actions workflows
+
+For reusable workflows, declare each input's description, required, default, and type (boolean, number, string; types only supported on workflow_call). GitHub maps action inputs to INPUT_<NAME> env vars inside the action container. The yubiOS pattern: pass only secrets via secrets:, never via workflow_call.inputs; declare permissions: explicitly at workflow level; declare a concurrency: group for cancellation (source doc). A workflow's assumption set also includes the runner itself: hosted versus self-hosted, OS version, available tooling, network egress, secret availability. runs-on: ubuntu-24.04 assumes that image exists with the declared tools (source doc).
+
+## Scripts and refs notes
+
+Python scripts declare Python version (sys.version_info), required third-party packages, and OS-level packages the wrapper calls (mkosi, bootc, systemctl). The argparse pattern in scripts/*.py follows parse_args, collect, validate, execute; precedence is CLI > env > config > default (source doc). Shell scripts put CLI flags first, env vars second with documented precedence, config files third, secrets last with a documented mode and an explicit never-echoed rule (source doc).
+
+A refs/*.md research note has no runtime assumptions but has invocation assumptions: a prerequisite list with explicit "read these first, in this order" wording, the commit hash the note was written against, any ADR referenced inline, and a 30-day staleness rule on the commit frontmatter (source doc).
