@@ -1,0 +1,69 @@
+{
+  "nn": 4,
+  "slug": "validate-at-boundaries",
+  "scope": "Validate at boundaries: trust internal code, validate system edges (API handlers, forms, third-party responses, env config); third-party API responses are untrusted; where validation does NOT belong.",
+  "queries_attempted": [
+    {
+      "query": "input validation at trust boundaries system edges",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "zod runtime schema validation TypeScript API boundary",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "OWASP input validation cheat sheet",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "trust boundary data validation microservices design",
+      "attempt": 2,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first dig returned few on-topic sources for the trust-boundary claim",
+      "new_queries": [
+        "OWASP input validation cheat sheet",
+        "trust boundary data validation microservices design"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input",
+    "https://zod.dev/api",
+    "https://github.com/apache/dubbo/blob/3.3/docs/threat-model.md",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet",
+    "https://wiki.owasp.org/index.php/Input_Validation_Cheat_Sheet",
+    "https://zod.dev/",
+    "https://owasp.org/",
+    "https://www.merriam-webster.com/dictionary/input",
+    "https://dictionary.cambridge.org/dictionary/english/input",
+    "https://github.com/colinhacks/zod",
+    "https://www.merriam-webster.com/dictionary/trust",
+    "https://www.npmjs.com/package/zod",
+    "https://weather.com/weather/tenday/l/d004f730ea5bd6236bb447a3435e41c41557d4aeb45ed82a5df9362daa7e87ab",
+    "https://www.investopedia.com/terms/t/trust.asp",
+    "https://www.google.com/inputtools/",
+    "https://en.wikipedia.org/wiki/General_Zod",
+    "https://securecodingpractices.com/data-flow-diagrams-trust-boundaries/",
+    "https://securecodingpractices.com/validating-data-trust-boundaries/",
+    "https://www.w3schools.com/tags/tag_input.asp",
+    "https://stacknotice.com/blog/zod-complete-guide-2026",
+    "https://attackvector.uk/cheat-sheet-series-input-validation/",
+    "https://www.vocabulary.com/dictionary/input",
+    "https://stackoverflow.com/questions/48838101/how-to-perform-validation-across-services-in-microservices"
+  ],
+  "outcome": "authored"
+}

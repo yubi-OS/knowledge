@@ -1,0 +1,36 @@
+{
+  "nn": 6,
+  "slug": "idempotency-keys",
+  "scope": "Honouring an Idempotency-Key: key from intent not attempt, claim atomically via unique constraint, guard the payload (requestHash), in-flight duplicate strategies (409/wait/202), three outcomes success/failure/unknown, retention from longest retry chain.",
+  "queries_attempted": [
+    {
+      "query": "Stripe idempotency keys how they work API design",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "idempotency key implementation unique constraint race condition TOCTOU",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.stripe.com/api/idempotent_requests",
+    "https://stripe.com/blog/idempotency",
+    "https://cloud.google.com/discover/idempotency",
+    "https://dashboard.stripe.com/register",
+    "https://en.m.wikipedia.org/wiki/Idempotence",
+    "https://stripe.com/",
+    "https://dashboard.stripe.com/",
+    "https://en.wikipedia.org/wiki/Idempotence",
+    "https://www.freecodecamp.org/news/idempotence-explained",
+    "https://www.geeksforgeeks.org/javascript/what-is-an-idempotent-rest-api/",
+    "https://windshock.github.io/en/post/2026-08-25-race-condition-toctou-mitigation/",
+    "https://clixo.sh/blog/stripe-idempotency-keys-deep-dive"
+  ],
+  "outcome": "authored"
+}
