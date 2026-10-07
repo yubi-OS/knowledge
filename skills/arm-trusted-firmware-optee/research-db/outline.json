@@ -1,0 +1,258 @@
+{
+ "topic": "ARM Trusted Firmware / OP-TEE: the ARM64 secure boot firmware stack for yubiOS (TF-A staging, TBB with FIP, OP-TEE as BL32, U-Boot as BL33, firmware measured boot)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "boot-chain-staging",
+   "scope": "The five TF-A boot stages (BL1/BL2/BL31/BL32/BL33), exception levels, and the ROTPK anchor.",
+   "seed_queries": [
+    "ARM Trusted Firmware boot stages BL1 BL2 BL31 BL32 BL33 exception levels",
+    "TF-A BL31 secure monitor EL3 PSCI SMC routing documentation"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "trusted-board-boot-fip",
+   "scope": "Trusted Board Boot, FIP packaging with fiptool, the X.509 cert chain walk, and the build flags that enable TBB.",
+   "seed_queries": [
+    "Trusted Board Boot TF-A chain of trust FIP fiptool ROTPK certificate",
+    "TF-A TRUSTED_BOARD_BOOT GENERATE_COT ROT_KEY build flags mbedtls"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "optee-bl32-secure-world",
+   "scope": "OP-TEE OS as BL32: SPD=opteed dispatch, SMC routing, tee-*_v2.bin artifacts, RPMB secure storage, early TAs.",
+   "seed_queries": [
+    "OP-TEE OS BL32 TF-A SPD opteed tee-header_v2 tee-pager integration",
+    "OP-TEE RPMB secure storage CFG_RPMB_FS tee-supplicant early TA"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "uboot-bl33-measured-boot",
+   "scope": "U-Boot as BL33: Kconfig block, fTPM driver, tpm2 command flow, and event log handoff to Linux.",
+   "seed_queries": [
+    "U-Boot OP-TEE driver CONFIG_TEE CONFIG_OPTEE fTPM tpm2_ftpm_tee",
+    "U-Boot measured boot TPM2 event log linux sml-base chosen node"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "uboot-uefi-firmware",
+   "scope": "U-Boot as UEFI firmware: EFI_LOADER, PK/KEK/db/dbx secure boot, TCG2 protocol, capsule updates.",
+   "seed_queries": [
+    "U-Boot EFI_LOADER UEFI boot services BootOrder PE COFF efi bootmgr",
+    "U-Boot EFI_SECURE_BOOT PK KEK db dbx EFI_TCG2_PROTOCOL capsule update"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "protected-uefi-variables-stmm",
+   "scope": "EDK2 StandaloneMM as an OP-TEE module with RPMB backing for protected UEFI variables.",
+   "seed_queries": [
+    "EDK2 StandaloneMM OP-TEE StMM variable service BL32_AP_MM",
+    "U-Boot EFI_MM_COMM_TEE OP-TEE RPMB secure boot variables"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "provisioning-paths-root-of-trust",
+   "scope": "Path A (fuse-enforced) vs Path B (measured plus attested) provisioning of the root of trust.",
+   "seed_queries": [
+    "ARM SoC OTP eFuse root of trust public key hash fuse provisioning secure boot",
+    "measured boot vs verified boot attestation enforcement comparison"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "measured-boot-event-log-handoff",
+   "scope": "Who measures what, the TCG2 event log, and Firmware Handoff Transfer List handoff between TF-A, U-Boot and Linux.",
+   "seed_queries": [
+    "Firmware Handoff transfer list TPM event log BLOBLISTT_TPM_EVLOG TF-A U-Boot",
+    "TCG2 event log TCG EFI platform measured boot PCR extend firmware handoff"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "rpi5-otp-secure-boot",
+   "scope": "Raspberry Pi 5 BCM2712 OTP layout, EEPROM bootloader chain, and rpifwcrypto device key.",
+   "seed_queries": []
+  },
+  {
+   "nn": 10,
+   "slug": "yubios-integration-gotchas",
+   "scope": "yubiOS integration notes and common gotchas (SPD requirement, silent TBB no-op, event log size mismatch).",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.01,
+     "2": 0.96
+    },
+    "confidence": 0.87,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.75,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.11,
+     "2": 0.82
+    },
+    "confidence": 0.62,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.93,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.03,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.57,
+     "2": 0.23
+    },
+    "confidence": 0.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.89,
+    "probabilities": {
+     "0": 0.24,
+     "1": 0.64,
+     "2": 0.12
+    },
+    "confidence": 0.46,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.81,
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.61,
+     "2": 0.1
+    },
+    "confidence": 0.42,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.42,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.37,
+     "2": 0.53
+    },
+    "confidence": 0.13,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.55,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.27,
+     "2": 0.64
+    },
+    "confidence": 0.32,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.46,
+    "probabilities": {
+     "0": 0.58,
+     "1": 0.39,
+     "2": 0.03
+    },
+    "confidence": 0.32,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.34,
+    "probabilities": {
+     "0": 0.71,
+     "1": 0.24,
+     "2": 0.05
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1280,
+   "output_tokens": 154
+  },
+  "dropped": [
+   9,
+   10
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ }
+}
