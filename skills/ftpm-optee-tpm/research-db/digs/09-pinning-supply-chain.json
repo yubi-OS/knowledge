@@ -1,0 +1,36 @@
+{
+ "nn": 9,
+ "slug": "pinning-supply-chain",
+ "scope": "Pinning optee_ftpm, ms-tpm-20-ref, OP-TEE OS, and TF-A commits; folding into Renovate digest tracking (ADR-015) and the Docker Buildx + OPA/Rego pipeline (ADR-014); tracking upstream ms-tpm-20-ref CVEs.",
+ "queries_attempted": [
+  {
+   "query": "ms-tpm-20-ref CVE vulnerability firmware TPM supply chain",
+   "attempt": 1,
+   "raw_results": 39,
+   "kept": 6
+  },
+  {
+   "query": "NVIDIA BlueField DPU fTPM OP-TEE BSP documentation",
+   "attempt": 1,
+   "raw_results": 61,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.penligent.ai/hackinglabs/cve-2026-6726/",
+  "https://support.lenovo.com/us/en/product_security/ps500722",
+  "https://windowsforum.com/news/cve-2025-2884-tpm-2-0-oob-read-in-crypthmacsign-and-supply-chain-risk.384772/",
+  "https://www.sentinelone.com/vulnerability-database/cve-2026-6726/",
+  "https://kb.cert.org/vuls/id/431093",
+  "https://windowsforum.com/news/cve-2026-6727-tpm-flaw-has-no-windows-fix-or-vendor-list.442498/",
+  "https://docs.nvidia.com/nvidia-bluefield-dpu-bsp-v4-7-0-documentation.pdf",
+  "https://networking-docs.nvidia.com/bsp/453/ftpm-over-op-tee",
+  "https://docs.nvidia.com/networking/display/bluefieldbsp480/ftpm-over-op-tee.pdf",
+  "https://www.manualslib.com/manual/3653394/Nvidia-Bluefield-Dpu-Bsp-V4-5-3-Lts.html",
+  "http://www.nvidia.com/page/home.html",
+  "https://docs.nvidia.com/networking/display/bluefieldbsp491"
+ ],
+ "outcome": "authored"
+}
