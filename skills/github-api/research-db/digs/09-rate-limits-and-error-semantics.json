@@ -1,0 +1,69 @@
+{
+ "nn": 9,
+ "slug": "rate-limits-and-error-semantics",
+ "scope": "rate_limit endpoint, 5000 req/hr PAT budget, 404/409/422 error table",
+ "queries_attempted": [
+  {
+   "query": "GitHub API rate limit 5000 requests per hour rate_limit endpoint",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "GitHub API error codes 409 conflict 422 validation meaning",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "GitHub REST API status codes 409 422 documentation client errors",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "GitHub REST API resource conflicts error responses documentation",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig grounded only the rate-limits page; the error-semantics side was thin; REDO with different queries",
+   "new_queries": [
+    "GitHub REST API status codes 409 422 documentation client errors",
+    "GitHub REST API resource conflicts error responses documentation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://sbulav.github.io/monitoring/monitoring-github-rate-limits/",
+  "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://http.dev/409",
+  "https://stackoverflow.com/questions/78876325/github-api-409-conflict-when-adding-or-updating-repository-content",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://docs.github.com/en/rest",
+  "https://x.com/github",
+  "https://http.dev/409",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://www.billdietrich.me/PenetrationTestingAndBugBountyHunting.html",
+  "https://docs.github.com/en/enterprise-server@3.22/rest/using-the-rest-api/getting-started-with-the-rest-api?tool=javascript"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,257 @@
+{
+ "topic": "GitHub REST API patterns for the yubi-OS org - Git Data API commit chain, Contents API reads/writes, Issues/PRs/Labels, forks and branch SHAs (ground source: yubi-OS/yubiOS skills/github-api/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "auth-and-token-scopes",
+   "scope": "PAT Bearer auth, fixed header set, fine-grained PAT permissions, single-credential discipline",
+   "seed_queries": [
+    "GitHub fine-grained personal access token permissions scopes REST API",
+    "GitHub REST API authentication personal access token 2026"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "git-data-api-commit-chain",
+   "scope": "blob, tree, commit, ref chain for committing files without cloning",
+   "seed_queries": [
+    "GitHub REST API git data blobs trees commits create commit without cloning",
+    "GitHub API create tree base_tree update branch ref REST"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "contents-api-single-file-ops",
+   "scope": "single-file read/write via base64, blob SHA requirement, branch-scoped reads",
+   "seed_queries": [
+    "GitHub contents API PUT update file sha base64 REST",
+    "GitHub contents API get file contents ref branch"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "contents-vs-git-data-decision",
+   "scope": "choosing Contents API vs Git Data API by file count and atomicity",
+   "seed_queries": [
+    "GitHub contents API versus git data API multi file commit",
+    "GitHub API atomic commit multiple files best practice"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "issues-and-labels",
+   "scope": "creating issues with labels, commenting, listing, label creation with 422 convention",
+   "seed_queries": [
+    "GitHub issues API create issue labels comments REST",
+    "GitHub labels API create label 422 already exists"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "pull-requests-draft-workflow",
+   "scope": "creating draft PRs and listing open PRs",
+   "seed_queries": [
+    "GitHub pull request API create draft PR REST",
+    "GitHub API list pull requests head branch filter"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "forks-and-org-repos",
+   "scope": "forking upstream repos into the org with full history, listing org repos with fork provenance",
+   "seed_queries": [
+    "GitHub forks API create organization fork REST",
+    "GitHub orgs list repositories API type all"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "history-and-branch-inspection",
+   "scope": "commit history for a specific file via commits?path=",
+   "seed_queries": [
+    "GitHub commits API list commits path filter per_page",
+    "GitHub API file history commit list path parameter"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "rate-limits-and-error-semantics",
+   "scope": "rate_limit endpoint, 5000 req/hr PAT budget, 404/409/422 error table",
+   "seed_queries": [
+    "GitHub API rate limit 5000 requests per hour rate_limit endpoint",
+    "GitHub API error codes 409 conflict 422 validation meaning"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.83,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.05,
+     "2": 0.89
+    },
+    "confidence": 0.75,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.43,
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.2,
+     "2": 0.61
+    },
+    "confidence": 0.14,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.44,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.27,
+     "2": 0.58
+    },
+    "confidence": 0.16,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.18,
+    "probabilities": {
+     "0": 0.27,
+     "1": 0.28,
+     "2": 0.45
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.66,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.18,
+     "2": 0.74
+    },
+    "confidence": 0.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.27,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.42,
+     "2": 0.42
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.04,
+    "probabilities": {
+     "0": 0.27,
+     "1": 0.41,
+     "2": 0.32
+    },
+    "confidence": 0.12,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.11,
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.46,
+     "2": 0.32
+    },
+    "confidence": 0.19,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.27,
+     "2": 0.64
+    },
+    "confidence": 0.33,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 0.27,
+    "probabilities": {
+     "0": 0.82,
+     "1": 0.09,
+     "2": 0.09
+    },
+    "confidence": 0.6,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1123,
+   "output_tokens": 154,
+   "cost": 9.4332e-05
+  },
+  "dropped": [
+   10
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "note": "t10 (primitive-coverage-notes) scored 0.27 (probabilities 0.82 padding) and was dropped; its content is internal-record RSI coverage notes already carried verbatim in the source doc"
+ }
+}

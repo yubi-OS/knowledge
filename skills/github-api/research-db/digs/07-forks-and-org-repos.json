@@ -1,0 +1,69 @@
+{
+ "nn": 7,
+ "slug": "forks-and-org-repos",
+ "scope": "forking upstream repos into the org with full history, listing org repos with fork provenance",
+ "queries_attempted": [
+  {
+   "query": "GitHub forks API create organization fork REST",
+   "attempt": 1,
+   "raw_results": 58,
+   "kept": 6
+  },
+  {
+   "query": "GitHub orgs list repositories API type all",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "GitHub organizations list repositories REST API documentation",
+   "attempt": 2,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "GitHub REST API orgs endpoint repositories type all documentation",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig grounded only the forks endpoint; the org-repos side had no authoritative result; REDO with different queries",
+   "new_queries": [
+    "GitHub organizations list repositories REST API documentation",
+    "GitHub REST API orgs endpoint repositories type all documentation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://docs.github.com/en/rest/repos/forks",
+  "https://x.com/github",
+  "https://www.linkedin.com/company/github",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://www.linkedin.com/company/github",
+  "https://desktop.github.com/download/",
+  "https://github.com/",
+  "https://docs.github.com/en/rest/repos",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://benhoyt.com/writings/the-small-web-is-beautiful/",
+  "https://github.com/",
+  "https://docs.github.com/en/rest/orgs/orgs",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://docs.github.com/en/rest/repos"
+ ],
+ "outcome": "authored"
+}
