@@ -1,0 +1,216 @@
+{
+ "topic": "The Audience axis of the 12-axis negative-skill-space sweep: classifying every file by WHO it is for (role, proximity, interaction, Diataxis-style mode), audience-gap detection, the audience x job x artifact matrix, and doc-as-code audience enforcement. Ground source: yubi-OS/yubiOS skills/nss-audience/SKILL.md.",
+ "subtopics": [
+  {
+   "nn": "t01",
+   "slug": "audience-model",
+   "scope": "The four-dimension audience model (role, proximity, interaction, mode) and the controlled vocabulary that enforces it",
+   "seed_queries": [
+    "Diataxis framework documentation modes tutorials how-to reference explanation",
+    "DITA audience metadata element experiencelevel classification"
+   ]
+  },
+  {
+   "nn": "t02",
+   "slug": "audience-inventory",
+   "scope": "Audience signal inventory: one evidence-backed row per file with explicit_audience, inferred_roles, primary_role, experience, interaction, mode, jobs, confidence",
+   "seed_queries": [
+    "docs as code audience metadata frontmatter classification",
+    "technical writing persona documentation audience analysis methods"
+   ]
+  },
+  {
+   "nn": "t03",
+   "slug": "audience-matrix",
+   "scope": "The audience x job x artifact coverage matrix: served, partial, gap, n/a cells scored by importance x task-risk x evidence-of-demand x (1 - coverage)",
+   "seed_queries": [
+    "documentation coverage matrix persona jobs-to-be-done audit",
+    "technical documentation gap analysis persona task coverage matrix"
+   ]
+  },
+  {
+   "nn": "t04",
+   "slug": "audience-patch",
+   "scope": "Audience gap patches: targeted Audience blocks and machine-readable front matter that declare role, job, prerequisites, and out-of-scope boundaries",
+   "seed_queries": [
+    "GitHub Docs YAML front matter audience metadata standard",
+    "Docusaurus tags front matter documentation metadata validation"
+   ]
+  },
+  {
+   "nn": "t05",
+   "slug": "negative-space",
+   "scope": "Negative-space findings: missing arrival paths, missing prerequisites, missing exit codes, missing rollback sections flagged as partial or gap cells",
+   "seed_queries": [
+    "documentation negative space missing pages audit",
+    "runbook recovery documentation incident response prerequisites"
+   ]
+  },
+  {
+   "nn": "t06",
+   "slug": "doc-as-code-enforcement",
+   "scope": "Doc-as-code enforcement: CI checks that validate audience vocabulary, primary audience per page, executable examples, and owner and review_after for high-risk cells",
+   "seed_queries": [
+    "docs as code CI documentation linter audience validation",
+    "documentation testing continuous integration doc linting"
+   ]
+  },
+  {
+   "nn": "t07",
+   "slug": "anti-patterns",
+   "scope": "Anti-patterns and misclassification traps: folder-name classification, role collapse, header-only analysis, CI-as-developer, partial-as-served, author-bias inference",
+   "seed_queries": [
+    "common documentation audience mistakes anti-patterns",
+    "technical writing anti-patterns documentation failures"
+   ]
+  },
+  {
+   "nn": "t08",
+   "slug": "verification-composition",
+   "scope": "Verification checklist and composition: vocabulary enforcement, js-yaml parseability, mixed-audience per-section notes, and how the Audience axis pairs with negative-skill-space",
+   "seed_queries": [
+    "MADR architecture decision record template audience field",
+    "Google technical writing course audience model"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13 (DefAPI direct)",
+  "answers": {
+   "t01": {
+    "score": 1.67,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.11,
+     "2": 0.78
+    },
+    "confidence": 0.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.8,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.04,
+     "2": 0.88
+    },
+    "confidence": 0.7,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.07,
+     "2": 0.86
+    },
+    "confidence": 0.68,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.82,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.06,
+     "2": 0.88
+    },
+    "confidence": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.57,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.15,
+     "2": 0.71
+    },
+    "confidence": 0.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.31,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.41,
+     "2": 0.45
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.73,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.13,
+     "2": 0.8
+    },
+    "confidence": 0.59,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.62,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.16,
+     "2": 0.73
+    },
+    "confidence": 0.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1374,
+   "output_tokens": 124,
+   "cost": 0.000115416
+  },
+  "dropped": [],
+  "kept": [
+   "t01",
+   "t02",
+   "t03",
+   "t04",
+   "t05",
+   "t06",
+   "t07",
+   "t08"
+  ]
+ }
+}

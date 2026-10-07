@@ -1,0 +1,191 @@
+{
+ "nn": "t06",
+ "slug": "doc-as-code-enforcement",
+ "scope": "Doc-as-code enforcement: CI checks that validate audience vocabulary, primary audience per page, executable examples, and owner and review_after for high-risk cells",
+ "queries_attempted": [
+  {
+   "query": "docs as code CI documentation linter audience validation",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": [
+    {
+     "title": "GitHub - dataliquid/asciidoc-linter: A powerful and configurable linter ...",
+     "url": "https://github.com/dataliquid/asciidoc-linter",
+     "content": "AsciiDoc Linter is a powerful and configurable validation tool for AsciiDoc documents, designed to ensure document quality and consistency across your documentation projects."
+    },
+    {
+     "title": "GitHub - ravitalabhakt/asciidoc-linter: An AI-assisted AsciiDoc quality ...",
+     "url": "https://github.com/ravitalabhakt/asciidoc-linter",
+     "content": "The original analyzer selected an OpenAI or Azure OpenAI client and produced an improved copy of the source. This version adds a deterministic first pass, line-level findings, Markdown and JSON reports, CI-friendly exit codes, tests, and safer credential handling. It leaves the source unchanged by default."
+    },
+    {
+     "title": "Docs Linting Guide - January 2026 | Fern",
+     "url": "https://buildwithfern.com/post/docs-linting-guide",
+     "content": "Jan 17, 2026 · Treating documentation with the same engineering rigor as application code requires automating docs linting within your continuous integration (CI) pipeline. When a pull request opens, the CI system triggers validation tools alongside standard unit tests."
+    },
+    {
+     "title": "Google Docs",
+     "url": "https://docs.google.com/",
+     "content": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+     "title": "Treat Documentation Defects Like Bugs... | Darlo Technical Writing",
+     "url": "https://darlotechnicalwriting.com/blog/understanding-and-managing-software-bugs",
+     "content": "Linters and Automated Quality GatesTriaging and Prioritizing Documentation BugsDocs-as-Code: CI Pipelines That Catch Defects"
+    },
+    {
+     "title": "Docs as Code - Write the Docs",
+     "url": "https://www.writethedocs.org/guide/docs-as-code/",
+     "content": "Docs as Code ¶ author: Eric Holscher & the Write the Docs community Documentation as Code (Docs as Code) refers to a philosophy that you should be writing documentation with the same tools as code: Issue Trackers Version Control (Git) Plain Text Markup (Markdown, reStructuredText, Asciidoc) Code Reviews Automated Tests This means following the same workflows as development teams, and being ..."
+    }
+   ]
+  },
+  {
+   "query": "documentation testing continuous integration doc linting",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": [
+    {
+     "title": "Docs Linting Guide - January 2026 | Fern",
+     "url": "https://buildwithfern.com/post/docs-linting-guide",
+     "content": "Jan 17, 2026 · Treating documentation with the same engineering rigor as application code requires automating docs linting within your continuous integration (CI) pipeline. When a pull request opens, the CI system triggers validation tools alongside standard unit tests."
+    },
+    {
+     "title": "How to Test Your Documentation Like You Test Your Code",
+     "url": "https://www.boringdocs.com/blog/how-to-test-your-documentation",
+     "content": "May 20, 2026 · Documentation doesn't have a compiler. But it can have a test suite. A practical guide to testing docs — from linting to integration tests to continuous validation."
+    },
+    {
+     "title": "A Key to High-Quality Documentation: Docs Linting in CI/CD",
+     "url": "https://www.netlify.com/blog/a-key-to-high-quality-documentation-docs-linting-in-ci-cd/",
+     "content": "In this blog post, we explore the vital role of docs linting in CI/CD automation, and how it can help maintain documentation quality. What is docs linting? Docs linting, like code linting, is a process that scans the documentation files for potential issues that can be helpful in your devops automation pipeline."
+    },
+    {
+     "title": "Documentation testing | GitLab Docs",
+     "url": "https://docs.gitlab.com/development/documentation/testing/",
+     "content": "Tests for translated documentation To ensure quality across all our translated content, we've implemented testing for our documentation in multiple languages. These tests mirror those used for the English version, but run on internationalized content in the /doc-locale/ or /docs-locale/ directories. General translation linting"
+    },
+    {
+     "title": "Testing your documentation - Write the Docs",
+     "url": "https://www.writethedocs.org/guide/tools/testing/",
+     "content": "Testing your documentation ¶ Testing your documentation allows you to make sure it is in a consistent state. Doing this gives your users a better experience, and reduces stress around common issues as a writer. This article by Anne Gentle is a good place to start to understand this concept. Continuous integration ¶ The most useful tests are run on each commit of your project. This is called ..."
+    },
+    {
+     "title": "Documentation - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Documentation",
+     "content": "Contemporary documentation is often distributed through websites, software products, and other online applications. Documentation, …"
+    }
+   ]
+  },
+  {
+   "query": "vale linter documentation CI style checks",
+   "attempt": 2,
+   "raw_results": 55,
+   "kept": [
+    {
+     "title": "Vale: Your style, our editor",
+     "url": "https://vale.sh/",
+     "content": "Vale sees a document. # Check the writing in context. Target a heading, a comment, or a description, while leaving the code around it alone.Apply different checks to headings, lists, and table cells. Vale parses the markup first, so code blocks and link URLs stay out of the way."
+    },
+    {
+     "title": "Vale Linter: The Complete Guide for Docs Teams in 2026 | Docsio",
+     "url": "https://docsio.co/blog/vale-linter",
+     "content": "May 14, 2026 — Vocabulary files are plain text lists at .vale/styles/config/vocabularies/MyProduct/accept.txt (terms to accept as correctly spelled) and reject.txt (terms to flag as incorrect). They prevent Vale from yelling at you about your own product names. Once Vale runs cleanly on your laptop, push it into CI so every pull request gets the same checks.\"If you write documentation and you don'"
+    },
+    {
+     "title": "GitHub - vale-cli/vale: :pencil: A markup-aware linter for prose built with speed and extensibility in mind. · GitHub",
+     "url": "https://github.com/vale-cli/vale",
+     "content": "2 weeks ago — Turn your team's writing guidelines into checks that run in your editor, in CI, and alongside your code—on macOS, Windows, and Linux, entirely offline. Docs · Quickstart · Package Explorer · Vale CMS · Blog · Discord · Vale doesn't ship opinions of its own. It's a framework for enforcing your style: a published guide like Microsoft's or Google's, an in-house set of terms, or both...\""
+    },
+    {
+     "title": "CI checks - Mintlify",
+     "url": "https://www.mintlify.com/docs/deploy/ci",
+     "content": "2 weeks ago — Vale is an open source rule-based prose linter which supports a range of document types, including Markdown and MDX. Use Vale to check for consistency of style and tone in your documentation. Mintlify supports automatically running Vale in a ...\"Automate documentation quality checks in your CI/CD pipeline with broken link detection, linting, grammar validation, and build previews.\"\"I"
+    },
+    {
+     "title": "Documentation Checks in CI: Links, Prose, Freshness (2026)",
+     "url": "https://datadef.io/guides/en/docs-checks-in-ci",
+     "content": "Documentation checks in CI: link checkers, prose linters, freshness gates, and rules that demand doc updates.Prose linters check style, not correctness. A fluent, well-formed page describing a deleted service passes both tools. That gap is what the next two checks exist for."
+    },
+    {
+     "title": "Home - Vale",
+     "url": "https://www.vale.com/",
+     "content": "Vale is a global mining company that operates with a focus on safety and sustainability. It produces iron ore and minerals critical to …"
+    }
+   ]
+  },
+  {
+   "query": "documentation front matter validation schema continuous integration",
+   "attempt": 2,
+   "raw_results": 65,
+   "kept": [
+    {
+     "title": "GitHub - JulianCataldo/remark-lint-frontmatter-schema: Validate your Markdown frontmatter data against a JSON schema — remark-lint rule plugin",
+     "url": "https://github.com/JulianCataldo/remark-lint-frontmatter-schema",
+     "content": "Schema association can be done directly inside the frontmatter of the Markdown file, relative to project root, thanks to the '$schema' key:\"Validate Markdown frontmatter YAML against an associated JSON schema with this remark-lint rule plugin.\"\"That way, it will integrate easier with your own business logic and existing pipelines. I found that static linting (during editing) / and runtime validati"
+    },
+    {
+     "title": "Config-Driven Frontmatter Validation | zer0-mistakes",
+     "url": "https://zer0-mistakes.com/docs/development/frontmatter-validation/",
+     "content": "Sep 19, 2026 · The zer0-mistakes theme ships with a schema-driven frontmatter validation system. It catches missing required fields, invalid date formats, and unknown layout references before Jekyll even starts its build, saving time in CI and preventing silent content errors."
+    },
+    {
+     "title": "GitHub - iwe-org/schematter: Validator for document-schema ...",
+     "url": "https://github.com/iwe-org/schematter",
+     "content": "Give it a document and a schema and it returns a list of violations. Think JSON Schema, but for the structure of a markdown page rather than the structure of a JSON value."
+    },
+    {
+     "title": "List of computing and IT abbreviations",
+     "url": "https://handwiki.org/wiki/List_of_computing_and_IT_abbreviations",
+     "content": "This is a list of computing and IT acronyms and abbreviations. Wikipedia is not a collection of links and should not be used for advertising"
+    },
+    {
+     "title": "Documentation - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Documentation",
+     "content": "Contemporary documentation is often distributed through websites, software products, and other online applications. Documentation, …"
+    },
+    {
+     "title": "Notes - Seirdy",
+     "url": "https://seirdy.one/notes/",
+     "content": "Schema.org and Google’s documentation only documenting RDFa-Lite markup worsens the confusion. Update 2024-12-16 : Sarven   Capadisli has clarified on the Fediverse that this"
+    }
+   ]
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 only 1 result above 0.5 (GitLab 0.52); linter/CI landscape under-covered",
+   "new_queries": [
+    "vale linter documentation CI style checks",
+    "documentation front matter validation schema continuous integration"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://buildwithfern.com/post/docs-linting-guide",
+  "https://darlotechnicalwriting.com/blog/understanding-and-managing-software-bugs",
+  "https://datadef.io/guides/en/docs-checks-in-ci",
+  "https://docs.gitlab.com/development/documentation/testing/",
+  "https://docs.google.com/",
+  "https://docsio.co/blog/vale-linter",
+  "https://en.wikipedia.org/wiki/Documentation",
+  "https://github.com/JulianCataldo/remark-lint-frontmatter-schema",
+  "https://github.com/dataliquid/asciidoc-linter",
+  "https://github.com/iwe-org/schematter",
+  "https://github.com/ravitalabhakt/asciidoc-linter",
+  "https://github.com/vale-cli/vale",
+  "https://handwiki.org/wiki/List_of_computing_and_IT_abbreviations",
+  "https://seirdy.one/notes/",
+  "https://vale.sh/",
+  "https://www.boringdocs.com/blog/how-to-test-your-documentation",
+  "https://www.mintlify.com/docs/deploy/ci",
+  "https://www.netlify.com/blog/a-key-to-high-quality-documentation-docs-linting-in-ci-cd/",
+  "https://www.vale.com/",
+  "https://www.writethedocs.org/guide/docs-as-code/",
+  "https://www.writethedocs.org/guide/tools/testing/",
+  "https://zer0-mistakes.com/docs/development/frontmatter-validation/"
+ ],
+ "outcome": "authored"
+}
