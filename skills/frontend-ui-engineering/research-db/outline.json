@@ -1,0 +1,179 @@
+{
+ "topic": "the frontend-ui-engineering skill",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "skill-scope-and-when-to-use",
+   "scope": "What the skill is for: production-quality UI that is accessible, performant, and visually polished, and the trigger conditions (new components, modified interfaces, responsive layouts, interactivity, visual or UX fixes).",
+   "seed_queries": [
+    "internal-record subtopic, no dig"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "component-architecture",
+   "scope": "Colocated component folders, composition over configuration, focused components, and separating data fetching from presentation.",
+   "seed_queries": [
+    "react component colocation file structure best practices",
+    "composition over configuration react components container presentational pattern"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "state-management",
+   "scope": "The state ladder from local useState through lifted state, context, URL state, server state (React Query, SWR), and global stores (Zustand, Redux), plus the 3-level prop drilling rule.",
+   "seed_queries": [
+    "react state management when to use context vs zustand",
+    "react query server state url search params ui state best practices"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "design-system-adherence",
+   "scope": "Semantic color tokens, spacing scale, type hierarchy, contrast requirements, and the AI-aesthetic anti-pattern table.",
+   "seed_queries": [
+    "design tokens semantic color tokens css design system",
+    "AI generated UI purple gradient generic aesthetic avoid design"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "accessibility-wcag-aa",
+   "scope": "WCAG 2.1 AA obligations per component: keyboard navigation, ARIA labels, focus management in dialogs, and meaningful empty and error states.",
+   "seed_queries": [
+    "WCAG 2.1 AA keyboard navigation focus trap dialog best practices",
+    "aria-label best practices axe-core accessibility testing react"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "responsive-design",
+   "scope": "Mobile-first CSS with Tailwind breakpoint strategy and testing at 320px, 768px, 1024px, and 1440px.",
+   "seed_queries": [
+    "mobile first responsive design css breakpoints best practices",
+    "tailwind css responsive breakpoint strategy sm md lg"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "loading-and-transitions",
+   "scope": "Skeleton loaders over spinners for content (with aria-busy) and optimistic updates with React Query mutation rollback.",
+   "seed_queries": [
+    "skeleton loading screen vs spinner UX best practices aria-busy",
+    "react query optimistic update useMutation onMutate rollback pattern"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "verification-and-rationalizations",
+   "scope": "The post-build verification checklist, axe-core, the 200-line component limit, red flags, and the common rationalizations table.",
+   "seed_queries": [
+    "axe-core accessibility testing devtools automated checks",
+    "code review checklist red flags react component too large split"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.94,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.02,
+     "2": 0.96
+    },
+    "confidence": 0.91
+   },
+   "t02": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.03,
+     "2": 0.96
+    },
+    "confidence": 0.94
+   },
+   "t03": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.95
+   },
+   "t04": {
+    "score": 1.68,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.25,
+     "2": 0.72
+    },
+    "confidence": 0.53
+   },
+   "t05": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.1,
+     "2": 0.89
+    },
+    "confidence": 0.8
+   },
+   "t06": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.95
+   },
+   "t07": {
+    "score": 1.64,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.32,
+     "2": 0.66
+    },
+    "confidence": 0.45
+   },
+   "t08": {
+    "score": 1.63,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.28,
+     "2": 0.67
+    },
+    "confidence": 0.44
+   }
+  },
+  "usage": {
+   "input_tokens": 1078,
+   "output_tokens": 124
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "legend": {
+   "0": "padding: drop",
+   "1": "marginal: keep only if the dig comes back strong",
+   "2": "load-bearing: core subtopic"
+  }
+ }
+}
