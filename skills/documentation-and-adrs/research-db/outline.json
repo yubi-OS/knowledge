@@ -1,0 +1,264 @@
+{
+  "topic": "documentation-and-adrs",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "documenting-decisions",
+      "scope": "The core thesis: document decisions, not just code. Why context, constraints, and trade-offs are the highest-value documentation; the six trigger conditions (architectural decision, competing approaches, public API change, user-facing feature, onboarding, repeated explanations) and the anti-triggers (self-evident code, restating comments, throwaway prototypes).",
+      "seed_queries": [
+        "documenting architectural decisions why not what software engineering",
+        "when to document code decisions trade-offs future engineers"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "adr-when-to-write",
+      "scope": "When an ADR is warranted: framework and dependency choices, data model and schema design, authentication strategy, API architecture (REST vs GraphQL vs tRPC), build tooling and hosting infrastructure, and any decision that would be expensive to reverse.",
+      "seed_queries": [
+        "when to write an architecture decision record",
+        "irreversible decisions software architecture documentation"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "adr-template-and-lifecycle",
+      "scope": "The ADR template in docs/decisions/ with sequential numbering: Status, Date, Context, Decision, Alternatives Considered, Consequences. The lifecycle PROPOSED to ACCEPTED to SUPERSEDED or DEPRECATED, never deleting old ADRs, and superseding decisions with new ADRs. Comparison with community standards like MADR.",
+      "seed_queries": [
+        "architecture decision record template status context decision consequences",
+        "ADR lifecycle superseded deprecated MADR format"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "inline-comments-why-not-what",
+      "scope": "Inline documentation discipline: comment the why not the what; the sliding-window rate-limit comment example; do not comment self-evident code; no TODO-instead-of-do-it; no commented-out code because git has history; documenting known gotchas with JSDoc blocks that link to ADRs.",
+      "seed_queries": [
+        "code comments explain why not what best practice",
+        "commented out code delete git history TODO comments anti-pattern"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "api-documentation",
+      "scope": "API documentation for public surfaces: inline types with TSDoc for TypeScript (params, returns, throws, examples) as the preferred form, and OpenAPI/Swagger specs for REST endpoints with schemas and response codes.",
+      "seed_queries": [
+        "TypeScript API documentation TSDoc JSDoc public functions",
+        "OpenAPI Swagger REST API documentation best practices"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "readme-structure",
+      "scope": "README structure every project should have: one-paragraph description, quick start steps, commands table, architecture overview that links to ADRs, and a contributing section.",
+      "seed_queries": [
+        "README structure quick start commands architecture section",
+        "how to write a good README open source sections"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "changelog-maintenance",
+      "scope": "Changelog maintenance for shipped features: version-dated entries with Added, Fixed, and Changed sections, issue references, and the Keep a Changelog convention behind that format.",
+      "seed_queries": [
+        "keep a changelog format added fixed changed",
+        "changelog best practices semantic versioning entries"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "docs-for-agents",
+      "scope": "Documentation written for AI agents: CLAUDE.md and rules files to encode project conventions, keeping spec files updated so agents build the right thing, ADRs to prevent agents re-deciding settled questions, and inline gotchas to keep agents out of known traps.",
+      "seed_queries": [
+        "CLAUDE.md AGENTS.md AI coding agent project conventions documentation",
+        "documentation for AI coding assistants codebase context"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "rationalizations-and-red-flags",
+      "scope": "INTERNAL-RECORD subtopic, no dig. The common rationalizations table (code is self-documenting, docs after API stabilizes, nobody reads docs, ADRs are overhead, comments get outdated) with their realities, the seven red flags, and the six-item post-documentation verification checklist, all sourced from the ground doc.",
+      "seed_queries": []
+    },
+    {
+      "nn": "10",
+      "slug": "primitive-coverage-and-audit",
+      "scope": "INTERNAL-RECORD subtopic, no dig. The skill's declared position in the yubiOS 10-primitive model: least privilege contributor, audit/evidence contribution, the cycle-5 segmentation keyword closure (namespace, nspawn, cgroup), cycle-6 cryptographic identity and cycle-7 trust chain closure references, the 2026-09-17 removal of unsupported primitive-coverage template paragraphs, and how the corpus audit consumes this skill.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "01": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0,
+          "2": 0.99
+        },
+        "confidence": 0.96
+      },
+      "02": {
+        "type": "score",
+        "score": 1.89,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.07,
+          "2": 0.91
+        },
+        "confidence": 0.83
+      },
+      "03": {
+        "type": "score",
+        "score": 1.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.96
+        },
+        "confidence": 0.92
+      },
+      "04": {
+        "type": "score",
+        "score": 1.11,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.6,
+          "2": 0.26
+        },
+        "confidence": 0.4
+      },
+      "05": {
+        "type": "score",
+        "score": 1.64,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.28,
+          "2": 0.68
+        },
+        "confidence": 0.47
+      },
+      "06": {
+        "type": "score",
+        "score": 1.53,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.39,
+          "2": 0.57
+        },
+        "confidence": 0.3
+      },
+      "07": {
+        "type": "score",
+        "score": 1.4,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.49,
+          "2": 0.46
+        },
+        "confidence": 0.23
+      },
+      "08": {
+        "type": "score",
+        "score": 1.55,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.34,
+          "2": 0.6
+        },
+        "confidence": 0.32
+      },
+      "09": {
+        "type": "score",
+        "score": 1.38,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.39,
+          "2": 0.49
+        },
+        "confidence": 0.07
+      },
+      "10": {
+        "type": "score",
+        "score": 0.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.35,
+          "1": 0.5,
+          "2": 0.15
+        },
+        "confidence": 0.25
+      }
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  },
+  "jev_requests": 13
+}

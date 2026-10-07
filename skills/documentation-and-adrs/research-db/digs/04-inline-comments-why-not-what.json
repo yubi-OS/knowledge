@@ -1,0 +1,71 @@
+{
+  "nn": "04",
+  "slug": "inline-comments-why-not-what",
+  "scope": "Inline documentation discipline: comment the why not the what; the sliding-window rate-limit comment example; do not comment self-evident code; no TODO-instead-of-do-it; no commented-out code because git has history; documenting known gotchas with JSDoc blocks that link to ADRs.",
+  "queries_attempted": [
+    {
+      "query": "code comments explain why not what best practice",
+      "attempt": 1,
+      "raw_results": 63,
+      "kept": 6
+    },
+    {
+      "query": "commented out code delete git history TODO comments anti-pattern",
+      "attempt": 2,
+      "raw_results": 64,
+      "kept": 6
+    },
+    {
+      "query": "code comments should explain why not what",
+      "attempt": 2,
+      "raw_results": 78,
+      "kept": 6,
+      "redo": true
+    },
+    {
+      "query": "commented out code should be deleted version control history",
+      "attempt": 2,
+      "raw_results": 79,
+      "kept": 6,
+      "redo": true
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "first-pass dig polluted with off-topic junk results (dictionary entries, news sites, unrelated products); re-dug with sharper queries",
+      "new_queries": [
+        "code comments should explain why not what",
+        "commented out code should be deleted version control history"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://code.org/",
+    "https://code.visualstudio.com/",
+    "https://courseinfo.code.org/curricula/",
+    "https://studio.code.org/home/",
+    "https://code.org/en-US/students",
+    "https://code.visualstudio.com/download",
+    "https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github",
+    "https://www.elitebabes.com/",
+    "https://dictionary.cambridge.org/dictionary/english/commented",
+    "https://www.tiktok.com/",
+    "https://softwareengineering.stackexchange.com/questions/377186/why-is-it-wrong-to-comment-out-code-and-then-gradually-remove-it-to-keep-track-o",
+    "https://forum.doom9.org/showthread.php?t=104058",
+    "https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/",
+    "https://studio.code.org/home/",
+    "https://code.org/",
+    "https://methodnotfound.com/blog-post-2.html",
+    "https://code.visualstudio.com/",
+    "http://www.hillelwayne.com/post/what-comments/",
+    "https://dictionary.cambridge.org/dictionary/english/commented",
+    "https://www.aikido.dev/code-quality/rules/why-you-should-remove-commented-out-code-from-your-codebase",
+    "https://www.merriam-webster.com/dictionary/commented",
+    "https://justhandledlabs.com/guides/remove-commented-out-code-safely/",
+    "https://stackoverflow.com/questions/758279/checking-in-of-commented-out-code",
+    "https://www.thefreedictionary.com/commented"
+  ],
+  "outcome": "authored"
+}

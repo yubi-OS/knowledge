@@ -1,0 +1,71 @@
+{
+  "nn": "08",
+  "slug": "docs-for-agents",
+  "scope": "Documentation written for AI agents: CLAUDE.md and rules files to encode project conventions, keeping spec files updated so agents build the right thing, ADRs to prevent agents re-deciding settled questions, and inline gotchas to keep agents out of known traps.",
+  "queries_attempted": [
+    {
+      "query": "CLAUDE.md AGENTS.md AI coding agent project conventions documentation",
+      "attempt": 1,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "documentation for AI coding assistants codebase context",
+      "attempt": 2,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "AGENTS.md file repository instructions for coding agents",
+      "attempt": 2,
+      "raw_results": 72,
+      "kept": 6,
+      "redo": true
+    },
+    {
+      "query": "CLAUDE.md project memory file conventions coding agents",
+      "attempt": 2,
+      "raw_results": 66,
+      "kept": 6,
+      "redo": true
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 1,
+      "reason": "first-pass dig polluted with off-topic junk results (dictionary entries, news sites, unrelated products); re-dug with sharper queries",
+      "new_queries": [
+        "AGENTS.md file repository instructions for coding agents",
+        "CLAUDE.md project memory file conventions coding agents"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://claude.com/",
+    "https://claude.ai/",
+    "https://claude.com/download",
+    "https://modern-css.com/ai/",
+    "https://mjtsai.com/blog/",
+    "https://dredyson.com/fix-how-are-people-handling-context-across-different-ai-coding-tools-in-under-5-minutes-actually-works-a-beginners-step-by-step-guide-to-unified-context-management-across-claude-code-cursor-co/",
+    "https://en.wikipedia.org/wiki/Documentation",
+    "https://www.merriam-webster.com/dictionary/documentation",
+    "https://scribe.com/library/what-is-documentation",
+    "https://dictionary.cambridge.org/dictionary/english/documentation",
+    "http://blarg.ca/rss/",
+    "https://arxiv.org/abs/2609.21020",
+    "https://agents.md/",
+    "https://www.merriam-webster.com/dictionary/agent",
+    "https://github.com/agentsmd/agents.md",
+    "https://cloud.google.com/discover/what-are-ai-agents",
+    "https://systemd.io/",
+    "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions",
+    "https://code.claude.com/docs/en/memory",
+    "https://claude.com/",
+    "https://claude.ai/",
+    "https://hackernoon.com/the-complete-guide-to-ai-agent-memory-files-claudemd-agentsmd-and-beyond",
+    "https://claude.com/download",
+    "https://www.anthropic.com/"
+  ],
+  "outcome": "authored"
+}
