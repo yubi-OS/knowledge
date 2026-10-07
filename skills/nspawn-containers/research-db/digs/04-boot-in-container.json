@@ -1,0 +1,23 @@
+{
+ "nn": "04",
+ "slug": "boot-in-container",
+ "scope": "--boot, PID 1 systemd inside the container, the yubiOS test-in-image convention, unit testing without the host.",
+ "queries_attempted": [
+  {
+   "query": "systemd-nspawn --boot systemd PID 1 inside container",
+   "attempt": 1,
+   "raw_results": 71,
+   "kept": 6
+  },
+  {
+   "query": "test systemd services inside nspawn container ephemeral",
+   "attempt": 1,
+   "raw_results": 73,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}

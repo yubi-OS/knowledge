@@ -1,0 +1,23 @@
+{
+ "nn": "03",
+ "slug": "invocation-anatomy",
+ "scope": "Flags of the canonical nspawn invocation: --directory vs --image, --ephemeral, --private-users UID ranges, --bind, machinectl pull/import.",
+ "queries_attempted": [
+  {
+   "query": "systemd-nspawn --private-users --ephemeral --directory options man page",
+   "attempt": 1,
+   "raw_results": 72,
+   "kept": 6
+  },
+  {
+   "query": "machinectl pull-tar import-tar --verify signature systemd machines",
+   "attempt": 1,
+   "raw_results": 66,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [],
+ "outcome": "authored"
+}
