@@ -1,0 +1,141 @@
+{
+  "topic": "Building OS images with mkosi for yubiOS - OCI containers, UKIs, disk images with dm-verity and Secure Boot, PIV/PKCS11 UKI signing, FinalizeScripts",
+  "ground_source": "yubi-OS/yubiOS skills/mkosi-image-builder/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "mkosi-overview-commands",
+      "scope": "mkosi overview and key commands: what mkosi is, build/boot/shell/summary/clean, multi-image builds with -i",
+      "seed_queries": [
+        "mkosi systemd image builder build boot shell commands",
+        "mkosi image builder overview multi-image builds mkosi -i"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "mkosi-conf-reference",
+      "scope": "mkosi.conf reference: Distribution, Output (Format, ImageId/Version), Build, Content (Packages), Validation (SecureBoot, Verity), Host sections",
+      "seed_queries": [
+        "mkosi.conf sections Distribution Output Build Content Validation Host reference",
+        "mkosi configuration ImageId ImageVersion OutputDirectory Format disk uki oci"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "piv-pkcs11-uki-signing",
+      "scope": "PIV/PKCS11 UKI signing: SecureBootKey as PKCS11 URI, SecureBootKeySource=engine:pkcs11 via systemd-sbsign, YubiKey PIV slot 9c, libykcs11, SoftHSM CI fallback",
+      "seed_queries": [
+        "mkosi SecureBootKeySource engine pkcs11 systemd-sbsign secure boot key",
+        "YubiKey PIV slot 9c PKCS11 signing libykcs11 yubico-piv-tool SoftHSM"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "dm-verity-outputs",
+      "scope": "dm-verity in mkosi: Verity=yes/signed/hash/defer modes, roothash embedded in UKI kernel cmdline, roothash output file",
+      "seed_queries": [
+        "mkosi Verity signed hash defer dm-verity roothash",
+        "mkosi unified kernel image roothash kernel command line verity"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "profiles-dropins",
+      "scope": "Profiles and mkosi.conf.d dropins: [Match] Profile selector, per-profile Distribution/Content/KernelCommandLine, mkosi --profile build",
+      "seed_queries": [
+        "mkosi profiles mkosi.conf.d [Match] Profile dropin configuration",
+        "mkosi --profile option per-profile packages kernel command line"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "finalize-scripts",
+      "scope": "FinalizeScripts: mkosi.finalize and numbered finalize-scripts, BUILDROOT env, post-package-install pre-seal hooks like FIDO2 LUKS enrollment",
+      "seed_queries": [
+        "mkosi FinalizeScripts mkosi.finalize BUILDROOT script",
+        "mkosi finalize script systemd-cryptenroll FIDO2 LUKS enroll"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "oci-pipeline",
+      "scope": "OCI output pipeline: Format=oci, OutputDirectory, skopeo copy to registry, digest pinning after push",
+      "seed_queries": [
+        "mkosi Format=oci output container image build",
+        "skopeo copy oci image docker registry digest pin inspect"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "upstream-validation-attribution",
+      "scope": "Upstream mkosi validation workflow from AGENTS.md: mypy, ruff format/check, pytest; and the Co-Authored-By AI attribution rule",
+      "seed_queries": [
+        "mkosi AGENTS.md mypy ruff pytest validation",
+        "mkosi contributing guidelines commit messages co-authored-by"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13 (DefAPI direct, response model typesafe/jev-1.13-20260917)",
+    "answers": {
+      "t01": {
+        "score": 1.91,
+        "probabilities": { "0": 0.03, "1": 0.02, "2": 0.95 },
+        "confidence": 0.88,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      },
+      "t02": {
+        "score": 1.87,
+        "probabilities": { "0": 0.05, "1": 0.02, "2": 0.93 },
+        "confidence": 0.82,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      },
+      "t03": {
+        "score": 1.48,
+        "probabilities": { "0": 0.16, "1": 0.21, "2": 0.63 },
+        "confidence": 0.2,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      },
+      "t04": {
+        "score": 1.63,
+        "probabilities": { "0": 0.13, "1": 0.11, "2": 0.76 },
+        "confidence": 0.44,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      },
+      "t05": {
+        "score": 1.56,
+        "probabilities": { "0": 0.09, "1": 0.27, "2": 0.64 },
+        "confidence": 0.32,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      },
+      "t06": {
+        "score": 1.74,
+        "probabilities": { "0": 0.09, "1": 0.07, "2": 0.84 },
+        "confidence": 0.62,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      },
+      "t07": {
+        "score": 1.57,
+        "probabilities": { "0": 0.09, "1": 0.24, "2": 0.67 },
+        "confidence": 0.37,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      },
+      "t08": {
+        "score": 0.63,
+        "probabilities": { "0": 0.43, "1": 0.51, "2": 0.06 },
+        "confidence": 0.27,
+        "legend": { "0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic" }
+      }
+    },
+    "usage": { "input_tokens": 1565, "output_tokens": 124 },
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08"],
+    "notes": "No subtopic scored 0. t08 (score 0.63) is marginal per the criteria; it was kept because its dig returned the primary AGENTS.md at weight 0.81, satisfying 'keep only if the dig comes back strong'."
+  }
+}

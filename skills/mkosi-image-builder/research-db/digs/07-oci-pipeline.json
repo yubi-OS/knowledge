@@ -1,0 +1,38 @@
+{
+  "nn": "07",
+  "slug": "oci-pipeline",
+  "scope": "OCI output pipeline: Format=oci, OutputDirectory, skopeo copy to registry, digest pinning after push",
+  "queries_attempted": [
+    {
+      "query": "mkosi Format=oci output container image build",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6,
+      "error": null
+    },
+    {
+      "query": "skopeo copy oci image docker registry digest pin inspect",
+      "attempt": 2,
+      "raw_results": 38,
+      "kept": 6,
+      "error": null
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://deepwiki.com/systemd/mkosi/6.3-container-and-archive-formats",
+    "https://github.com/systemd/mkosi",
+    "https://streetslang.com/glossary/plap/",
+    "http://0pointer.net/blog/category/projects.html",
+    "https://openbuildservice.org/help/manuals/obs-user-guide/cha-obs-package-formats",
+    "https://wiki.archlinux.org/title/Mkosi",
+    "https://dev.to/lyraalishaikh/stop-pulling-containers-just-to-mirror-them-practical-skopeo-for-safer-image-promotion-1kf3",
+    "https://github.com/podman-container-tools/skopeo",
+    "https://www.redhat.com/en/topics/containers/what-is-skopeo",
+    "https://stackharbor.com/en/knowledge-base/skopeo-image-inspection-copy/",
+    "https://docs.oracle.com/en/operating-systems/oracle-linux/podman/skopeo.html",
+    "https://deepwiki.com/containers/skopeo/3.2-inspect-command"
+  ],
+  "outcome": "authored"
+}
