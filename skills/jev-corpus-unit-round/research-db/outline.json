@@ -1,0 +1,259 @@
+{
+  "topic": "The 13-step unit roundflow for the jev-corpus RSI chain on the steady-orbit worker: pin, frozen baseline check, one atomic change, hysteresis re-score, level_dbc gate, taskcheck-gated commit/revert, round record on a draft PR.",
+  "source_doc": "yubi-OS/yubiOS skills/jev-corpus-unit-round/SKILL.md (ground source, 12071 bytes fetched 2026-10-06)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "setup-and-source-of-truth",
+      "scope": "AGENT.md as source of truth (fetch first or stop), required connections (Steady Orbit jev operator, MASTER GIT SU), User-Agent header discipline against Cloudflare 1010 and GitHub 403, selftest all-pass gate before trusting any result, stop-don't-guess rule.",
+      "seed_queries": [],
+      "internal": true
+    },
+    {
+      "nn": "02",
+      "slug": "pin-and-matrix-scoring",
+      "scope": "Pin the main branch SHA, pull the corpus fresh from codeload (never a stale mirror), count docs each round, per-doc scorer at concurrency 12 (measured sweet spot), resumable JSONL keyed by doc name.",
+      "seed_queries": [
+        "codeload.github.com tarball download repository archive API",
+        "HTTP API client concurrency tuning throughput sweet spot"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "frozen-baseline-check",
+      "scope": "Audit with nulls 400 and the level_dbc = 20*log10(|z|) gate statistic, the /api/map frozen frame (d:9, seed:20260906, median, K:40, T:0.05), control/admission/azimuth/axis-redundancy verdicts, lens snapshot, and the 3-phase concurrent fetch plan.",
+      "seed_queries": [
+        "permutation null distribution hypothesis testing statistics",
+        "decibel formula 20 log10 amplitude ratio"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "candidates-and-rung-joins",
+      "scope": "Skip-list derived from the outcomes ledger (declined, reverted, neutral pairs), ladder_candidates.rungs from GET /api/maps/:id, rung JOINS preferred over create-isolate, the lens demoted to a pre-flight detectability filter, caller-proposed adds 0/5.",
+      "seed_queries": [],
+      "internal": true
+    },
+    {
+      "nn": "05",
+      "slug": "atomic-change-and-preregistration",
+      "scope": "One atomic change (one section appended to one doc, or one new doc), authored content rules C5/C6/C7 and TASKCHECK_OVERRIDE, pre-register via POST /api/outcomes with an object target, preview must alter exactly one name, post-keep previews run against the remapped map.",
+      "seed_queries": [
+        "preregistering hypotheses before data collection open science",
+        "atomic commit one logical change per commit best practice"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "hysteresis-and-gate-audit",
+      "scope": "Mandatory hysteresis re-score (low 0.45, high 0.55, pre_row) on every edited row, the marginal-bit and wrong-sign failure modes it prevents, gate-grade audit rebuilt at nulls 400 (never 100), realized delta as level_dbc(after) - level_dbc(before).",
+      "seed_queries": [
+        "hysteresis Schmitt trigger threshold noise prevention",
+        "sample size statistical power null hypothesis test reliability"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "bearing-snapback-keep-revert",
+      "scope": "Reading (predicted, realized) as a direction in the level convention (aligned+meaningful keep, aligned+tiny small-but-real, inverted, zero no-flip), the snapback cumulative series, keep rule (realized delta > 0 AND snapback not halted), taskcheck C1-C7 subsets, the Git Data API commit chain, revert verdicts.",
+      "seed_queries": [
+        "GitHub Git Data API create commit tree base_tree blobs",
+        "GraphQL API convert draft pull request ready for review"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "realized-row-remap-rollups",
+      "scope": "Realized row BEFORE remap ordering, the supersedes contract (shares baseline_id AND target, pre-rows carry the current map id), visco rollups (hysteresis supersedes-chain, prony, mobility), the round record file, draft PR mechanics, steps log as deliverable.",
+      "seed_queries": [
+        "Prony series viscoelasticity model characterization",
+        "learning curve saturation plateau model"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "failure-lessons-and-examples",
+      "scope": "Nine rounds of harness lessons (dbc vs level_dbc, nulls=100 noise, axis-fill closed class, supersedes contract, stale worker deploys, draft PR GraphQL path), the three worked examples (change refs7, add refs9, revert refs7 cycles 2-3), and the six guidelines including honest abstention.",
+      "seed_queries": [
+        "bounded recursive self improvement loop artificial intelligence",
+        "reproducible research computational logging provenance"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "model": "typesafe/jev-1.13-20260917",
+      "answers": {
+        "t01": {
+          "type": "score",
+          "score": 1.8,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.08,
+            "1": 0.03,
+            "2": 0.89
+          },
+          "confidence": 0.71
+        },
+        "t02": {
+          "type": "score",
+          "score": 1.87,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.05,
+            "1": 0.03,
+            "2": 0.92
+          },
+          "confidence": 0.81
+        },
+        "t03": {
+          "type": "score",
+          "score": 1.63,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.13,
+            "1": 0.11,
+            "2": 0.76
+          },
+          "confidence": 0.44
+        },
+        "t04": {
+          "type": "score",
+          "score": 1.21,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.2,
+            "1": 0.38,
+            "2": 0.42
+          },
+          "confidence": 0
+        },
+        "t05": {
+          "type": "score",
+          "score": 1.9,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.04,
+            "1": 0.02,
+            "2": 0.94
+          },
+          "confidence": 0.85
+        },
+        "t06": {
+          "type": "score",
+          "score": 1.89,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.04,
+            "1": 0.02,
+            "2": 0.94
+          },
+          "confidence": 0.84
+        },
+        "t07": {
+          "type": "score",
+          "score": 1.8,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.09,
+            "1": 0.03,
+            "2": 0.88
+          },
+          "confidence": 0.7
+        },
+        "t08": {
+          "type": "score",
+          "score": 1.65,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.13,
+            "1": 0.09,
+            "2": 0.78
+          },
+          "confidence": 0.47
+        },
+        "t09": {
+          "type": "score",
+          "score": 1.78,
+          "legend": {
+            "0": "padding: drop",
+            "1": "marginal: keep only if the dig comes back strong",
+            "2": "load-bearing: core subtopic"
+          },
+          "probabilities": {
+            "0": 0.08,
+            "1": 0.06,
+            "2": 0.86
+          },
+          "confidence": 0.67
+        }
+      },
+      "usage": {
+        "input_tokens": 2095,
+        "output_tokens": 139,
+        "cost": 0.00017598
+      },
+      "id": "gen-dec-1791344859-dPGFqFciQ3bHqUznCFET",
+      "provider": "TypeSafe",
+      "task_id": "ta9bc361-98fc-47b1-99d7-e8f8bf6ab1e4",
+      "consumed": "0.00017598"
+    },
+    "usage": {
+      "input_tokens": 2095,
+      "output_tokens": 139,
+      "cost": 0.00017598
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

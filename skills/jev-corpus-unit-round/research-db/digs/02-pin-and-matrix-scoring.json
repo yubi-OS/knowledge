@@ -1,0 +1,36 @@
+{
+  "nn": "02",
+  "slug": "pin-and-matrix-scoring",
+  "scope": "Pin the main branch SHA, pull the corpus fresh from codeload (never a stale mirror), count docs each round, per-doc scorer at concurrency 12 (measured sweet spot), resumable JSONL keyed by doc name.",
+  "queries_attempted": [
+    {
+      "query": "codeload.github.com tarball download repository archive API",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "HTTP API client concurrency tuning throughput sweet spot",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://stackoverflow.com/questions/5205923/facebook-common-url-format-for-accessing-objects-and-their-comments-from-a-brow",
+    "https://community.quicken.com/discussion/7972307/pnc-bank-ol-297-a-error-not-able-to-connect-or-download-quicken-direct-connect",
+    "https://github.com/Flowseal",
+    "https://en.wikipedia.org/wiki/Madagascar_%282005_film%29",
+    "https://stackoverflow.com/questions/8377081/github-api-download-zip-or-tarball-link",
+    "https://stackoverflow.com/questions/22077743/facebook-showing-page-not-found-when-sharing-link",
+    "https://en.wikipedia.org/wiki/HTTP",
+    "https://www.geeksforgeeks.org/html/what-is-http/",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+    "https://csv2geo.com/blog/concurrency-tuning-geocoding-sweet-spot",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+    "https://www.google.com/"
+  ],
+  "outcome": "authored"
+}
