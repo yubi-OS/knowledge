@@ -1,0 +1,69 @@
+{
+ "nn": "05",
+ "slug": "token-format-serialization",
+ "scope": "The canonical JSON token envelopes per class, the versioning rule (compare valid only within one model_version), the serialization rule (unknown fields preserved on round-trip), and the three inline test vectors.",
+ "queries_attempted": [
+  {
+   "query": "base64 float32 vector serialization JSON wire format",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "embedding model versioning backward compatibility migration",
+   "attempt": 1,
+   "raw_results": 56,
+   "kept": 6
+  },
+  {
+   "query": "JSON schema embedding vector format OpenAI embeddings API response",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "numpy float32 array bytes serialization little endian",
+   "attempt": 2,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig returned 0 results with weight >= 0.5 (all 12 scored < 0.5); dig judged too thin on authoritative backing",
+   "new_queries": [
+    "JSON schema embedding vector format OpenAI embeddings API response",
+    "numpy float32 array bytes serialization little endian"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.base64decode.org/",
+  "https://en.wikipedia.org/wiki/Base64",
+  "https://www.w3schools.com/tools/tool_base64.php",
+  "https://bonsai.io/blog/float-bloat/",
+  "https://emn178.github.io/online-tools/base64_decode.html",
+  "https://www.calculator.net/base64-encode-decode.html",
+  "https://en.wikipedia.org/wiki/Embedding",
+  "https://www.geeksforgeeks.org/machine-learning/what-are-embeddings-in-machine-learning-2/",
+  "https://www.ibm.com/think/topics/embedding",
+  "https://en.wikipedia.org/wiki/Embedding_(machine_learning)",
+  "https://scienceinsights.org/scalp-dermatomyositis-symptoms-itch-and-hair-loss/",
+  "https://distilledpatterns.org/patterns/metric-learning/",
+  "https://developers.openai.com/api/docs/guides/embeddings",
+  "https://www.json.org/json-en.html",
+  "https://stackoverflow.com/questions/76617192/openai-embeddings-api-how-do-i-extract-the-embedding-vector-from-the-response",
+  "https://www.w3schools.com/whatis/whatis_json.asp",
+  "https://en.wikipedia.org/wiki/JSON",
+  "https://www.geeksforgeeks.org/javascript/json/",
+  "https://numpy.org/",
+  "https://numpy.org/install/",
+  "https://www.w3schools.com/python/numpy/numpy_intro.asp",
+  "https://numpy.org/doc/stable/user/basics.types.html",
+  "https://stackoverflow.com/questions/58813707/converting-python-float-to-bytes",
+  "https://github.com/ijl/orjson"
+ ],
+ "outcome": "authored"
+}

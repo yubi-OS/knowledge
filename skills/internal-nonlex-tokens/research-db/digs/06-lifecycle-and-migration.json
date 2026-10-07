@@ -1,0 +1,69 @@
+{
+ "nn": "06",
+ "slug": "lifecycle-and-migration",
+ "scope": "The four migration cases (substrate version envelope, embedding model swap, hash algorithm swap, serialization format change), legacy flags, explicit re-fingerprinting discipline, and the Phase 2 migrate() note.",
+ "queries_attempted": [
+  {
+   "query": "semver 2.0.0 major version compatibility rules",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "migrating hash algorithms sha256 to blake3 rehash",
+   "attempt": 1,
+   "raw_results": 55,
+   "kept": 6
+  },
+  {
+   "query": "hash algorithm deprecation migration sha-1 deprecation git",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "model upgrade rebuild embedding index backward compatibility",
+   "attempt": 2,
+   "raw_results": 52,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig returned 0 results with weight >= 0.5 (all 12 scored < 0.5); dig judged too thin on authoritative backing",
+   "new_queries": [
+    "hash algorithm deprecation migration sha-1 deprecation git",
+    "model upgrade rebuild embedding index backward compatibility"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://semver.org/",
+  "https://semantic-versioning.org/",
+  "https://www.npmjs.com/package/semver",
+  "https://github.com/semver/semver",
+  "https://www.geeksforgeeks.org/software-engineering/introduction-semantic-versioning/",
+  "https://en.wikipedia.org/wiki/Software_versioning",
+  "https://emn178.github.io/online-tools/sha256.html",
+  "https://www.stormbowling.com/",
+  "http://sf.net/p/rehash/",
+  "https://www.merriam-webster.com/dictionary/migrate",
+  "https://www.thesslstore.com/blog/difference-sha-1-sha-2-sha-256-hash-algorithms/",
+  "https://devtoolspro.org/articles/sha256-alternatives-2026-guide/",
+  "https://en.wikipedia.org/wiki/Hash_function",
+  "https://hashgenerator.co/",
+  "https://hashauctions.com/",
+  "https://www.avenuesrecovery.com/understanding-addiction/marijuana-addiction/what-is-hash/",
+  "http://lwn.net/Articles/811517/",
+  "https://openillumi.com/en/en-fix-github-ssh-rsa-sha1-deprecated/",
+  "https://www.merriam-webster.com/dictionary/model",
+  "https://en.wikipedia.org/wiki/Model_(person)",
+  "https://models.com/",
+  "https://en.wikipedia.org/wiki/Model",
+  "https://www.tamurajones.net/index.xhtml",
+  "https://sketchfab.com/3d-models/popular"
+ ],
+ "outcome": "authored"
+}
