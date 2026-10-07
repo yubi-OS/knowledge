@@ -1,0 +1,112 @@
+{
+  "nn": "02",
+  "slug": "dev-cgroup-upstream-state",
+  "scope": "Section 1: the real upstream DRM device-memory cgroup effort, the generic dev (devcg) controller, its dev.region.max/current/capacity interface shape, the abandoned 2021-2023 drmcg RFC, and the parallel DRM scheduling cgroup RFC.",
+  "queries_attempted": [
+    {
+      "query": "kernel cgroup dev memory accounting cgroup dri-devel patchset",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "[PATCH 1/7] kernel/cgroup: Add \"dev\" memory accounting cgroup",
+          "url": "https://lists.freedesktop.org/archives/dri-devel/2024-November/477635.html",
+          "content": "There are several possible approach, all with >>> their >>> +advantages and drawbacks. >>> + >>> +The first approach you will likely try is to pin all buffers used by >>> compute. >>> +This guarantees that the job will run uninterrupted, but also allows >>> a very >>> +denial of service attack by pinning as much memory as possible, >>> hogging the >>> +all GPU memory, and possibly a huge chunk of CPU memory. >>> + >>> +A second approach that will work slightly better on its own is >>> adding an option >>> +not to evict when creating a new job (any kind)."
+        },
+        {
+          "title": "kernel/cgroups: Add \"dev\" memory accounting cgroup. - lwn.net",
+          "url": "https://lwn.net/Articles/995312/",
+          "content": "Maarten Lankhorst (5): kernel/cgroup: Add \"dev\" memory accounting cgroup drm/ttm: Handle cgroup based eviction in TTM drm/xe: Implement cgroup for vram drm/amdgpu: Add cgroups implementation [HACK] drm/xe: Hack to test with mapped pages instead of vram. Maxime Ripard (2): drm/drv: Add drmm cgroup registration for dev cgroups."
+        },
+        {
+          "title": "DRI Development - Patchwork",
+          "url": "https://patchwork.kernel.org/project/dri-devel/list/?series=902097",
+          "content": "Show patches with: Series = kernel/cgroups: Add \"dev\" memory accounting cgroup. | State = Action Required | Archived = No | 7 patches Series Submitter State any Action Required New Under Review Accepted Rejected RFC Not Applicable Changes Requested Awaiting Upstream Superseded Deferred Mainlined Queued Needs ACK Handled Elsewhere In Next Search Archived NoYesBoth Delegate ------ Nobody ..."
+        },
+        {
+          "title": "[PATCH 0/7] kernel/cgroups: Add \"dev\" memory accounting cgroup.",
+          "url": "https://lists.freedesktop.org/archives/dri-devel/2024-October/475286.html",
+          "content": "Hello, On Wed, Oct 23, 2024 at 09:52:53AM +0200, Maarten Lankhorst wrote: > New submission! > I've added documentation for each call, and integrated the renaming from > drm cgroup to dev cgroup, based on maxime ripard's work. > > Maxime has been testing this with dma-buf heaps and v4l2 too, and it seems to work. > In the initial submission, I've decided to only add the smallest enablement ..."
+        },
+        {
+          "title": "[PATCH 0/7] kernel/cgroups: Add \"dev\" memory accounting cgroup.",
+          "url": "https://lkml.rescloud.iu.edu/2410.2/10382.html",
+          "content": "drm cgroup to dev cgroup, based on maxime ripard's work. Maxime has been testing this with dma-buf heaps and v4l2 too, and it seems to work."
+        },
+        {
+          "title": "Re: [PATCH 1/7] kernel/cgroup: Add \"dev\" memory accounting cgroup",
+          "url": "https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg517166.html",
+          "content": "The initial version was based roughly on the rdma and misc cgroup controllers, with a lot of the accounting code borrowed from rdma. The current version is a complete rewrite with page counter; it uses the same min/low/max semantics as the memory cgroup as a result. There's a small mismatch as TTM uses u64, and page_counter long pages. In practice it's not a problem. 32-bits systems don't ..."
+        }
+      ],
+      "kept": [
+        "https://lists.freedesktop.org/archives/dri-devel/2024-November/477635.html",
+        "https://lwn.net/Articles/995312/",
+        "https://patchwork.kernel.org/project/dri-devel/list/?series=902097",
+        "https://lists.freedesktop.org/archives/dri-devel/2024-October/475286.html",
+        "https://lkml.rescloud.iu.edu/2410.2/10382.html",
+        "https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg517166.html"
+      ]
+    },
+    {
+      "query": "drm device memory cgroup Tvrtko Ursulin GPU scheduling cgroup RFC",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Digital rights management - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Digital_rights_management",
+          "content": "DRM technologies govern the use, modification and distribution of copyrighted works (e.g. software, multimedia content) and of systems that enforce these policies within devices. [3] DRM technologies [4] include licensing agreements [5] and encryption. [6]"
+        },
+        {
+          "title": "DRM cgroup controller with scheduling control and memory stats",
+          "url": "https://lwn.net/Articles/937991/",
+          "content": "From: Tvrtko Ursulin <tvrtko.ursulin@intel.com> This series contains a proposal for a DRM cgroup controller which implements a weight based hierarchical GPU usage budget based controller similar in concept to some of the existing controllers and also exposes GPU memory usage as a read- only field. Motivation mostly comes from my earlier proposal where I identified that GPU scheduling lags ..."
+        },
+        {
+          "title": "What Is DRM? Digital Rights Management Explained | Fortinet",
+          "url": "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+          "content": "Digital rights management (DRM) is the use of technology to control and manage access to copyrighted material. DRM aims to protect the rights of copyright holders and prevent content from unauthorized distribution and modification."
+        },
+        {
+          "title": "How to Enable DRM in Chrome, Firefox, and Edge - PCrisk",
+          "url": "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+          "content": "Jul 28, 2023 · If you’re having playback issues due to Digital Rights Management (DRM) in your browser, you must enable DRM to play protected content. This article will provide more information about this issue and show you how to enable DRM in Chrome."
+        },
+        {
+          "title": "Digital rights management (DRM): What it is, how it works, and why it ...",
+          "url": "https://business.adobe.com/blog/basics/digital-rights-management",
+          "content": "Oct 17, 2025 · Digital rights management (DRM) refers to the policies, processes, and technologies used to control access to digital content. DRM ensures that only authorized users can view, share, or modify protected assets — in accordance with licensing terms or copyright laws."
+        },
+        {
+          "title": "LKML: Tvrtko Ursulin: [RFC v2 00/13] DRM scheduling cgroup controller",
+          "url": "https://lkml.org/lkml/2022/11/9/819",
+          "content": "From: Tvrtko Ursulin <tvrtko.ursulin@intel.com> This series contains a proposal for a DRM scheduling cgroup controller which implements a weight based hierarchical GPU usage budget based controller similar in concept to some of the existing controllers. Motivation mostly comes from my earlier proposal where I identified that GPU scheduling lags significantly behind what is available for CPU ..."
+        }
+      ],
+      "kept": [
+        "https://en.wikipedia.org/wiki/Digital_rights_management",
+        "https://lwn.net/Articles/937991/",
+        "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+        "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+        "https://business.adobe.com/blog/basics/digital-rights-management",
+        "https://lkml.org/lkml/2022/11/9/819"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://lists.freedesktop.org/archives/dri-devel/2024-November/477635.html",
+    "https://lwn.net/Articles/995312/",
+    "https://patchwork.kernel.org/project/dri-devel/list/?series=902097",
+    "https://lists.freedesktop.org/archives/dri-devel/2024-October/475286.html",
+    "https://lkml.rescloud.iu.edu/2410.2/10382.html",
+    "https://www.mail-archive.com/dri-devel@lists.freedesktop.org/msg517166.html",
+    "https://en.wikipedia.org/wiki/Digital_rights_management",
+    "https://lwn.net/Articles/937991/",
+    "https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm",
+    "https://www.pcrisk.com/blog/windows/13771-how-to-enable-drm",
+    "https://business.adobe.com/blog/basics/digital-rights-management",
+    "https://lkml.org/lkml/2022/11/9/819"
+  ],
+  "outcome": "authored"
+}

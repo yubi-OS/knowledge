@@ -1,0 +1,112 @@
+{
+  "nn": "04",
+  "slug": "cgroup-identity-apis",
+  "scope": "Section 3: real cgroup v2 identity APIs (task_css_set, task_dfl_cgrp, cgroup_id, cgroup_get/put), the invented task_cgroup/get_cgroup symbols to avoid, and the gpu_cg_quota accounting shape keyed off cgroup_id().",
+  "queries_attempted": [
+    {
+      "query": "cgroup v2 kernel API task_css_set task_dfl_cgrp cgroup_id include/linux/cgroup.h",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Control Group v2 — The Linux Kernel documentation",
+          "url": "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+          "content": "What is cgroup? ¶ cgroup is a mechanism to organize processes hierarchically and distribute system resources along the hierarchy in a controlled and configurable manner. cgroup is largely composed of two parts - the core and controllers. cgroup core is primarily responsible for hierarchically organizing processes."
+        },
+        {
+          "title": "Duck Duck Go Sucks! : r/unpopularopinion - Reddit",
+          "url": "https://www.reddit.com/r/unpopularopinion/comments/sism44/duck_duck_go_sucks/",
+          "content": "Feb 2, 2022 · And DuckDuckGo is like the organic off-brand cereal they sell at those wholesome grocery stores. It sucks! Sure, it's …"
+        },
+        {
+          "title": "Best Chocolate Chip Cookies Recipe (with Video)",
+          "url": "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
+          "content": "This classic chocolate chip cookie recipe makes deliciously buttery cookies with crisp edges, chewy middles, and gooey chocolate chips in every bite.This classic chocolate chip cookie recipe makes deliciously buttery cookies with crisp edges, chewy middles, and gooey chocolate chips in every bite."
+        },
+        {
+          "title": "cgroups - Wikipedia",
+          "url": "https://en.m.wikipedia.org/wiki/Cgroups",
+          "content": "cgroups (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, etc.) [1]: § Controllers of a collection of processes. Engineers at Google started the work on this feature in 2006 under the name \"process containers\". [2] In late 2007, the nomenclature changed to \"control groups\" to avoid confusion caused by ..."
+        },
+        {
+          "title": "linux/include/linux/cgroup.h at master · torvalds/linux · GitHub",
+          "url": "https://github.com/torvalds/linux/blob/master/include/linux/cgroup.h",
+          "content": "bool cgroup_on_dfl(const struct cgroup *cgrp); bool css_has_online_children(struct cgroup_subsys_state *css)* synchronization rules are the same as task_css_set_check()."
+        },
+        {
+          "title": "cgroups (7) — Linux manual page",
+          "url": "https://www.man7.org/linux/man-pages/man7/cgroups.7.html",
+          "content": "Cgroups v2 cgroup.events file Each nonroot cgroup in the v2 hierarchy contains a read-only file, cgroup.events, whose contents are key-value pairs (delimited by newline characters, with the key and value separated by spaces) providing state information about the cgroup: $ cat mygrp/cgroup.events populated 1 frozen 0 The following keys may ..."
+        }
+      ],
+      "kept": [
+        "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+        "https://www.reddit.com/r/unpopularopinion/comments/sism44/duck_duck_go_sucks/",
+        "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
+        "https://en.m.wikipedia.org/wiki/Cgroups",
+        "https://github.com/torvalds/linux/blob/master/include/linux/cgroup.h",
+        "https://www.man7.org/linux/man-pages/man7/cgroups.7.html"
+      ]
+    },
+    {
+      "query": "Linux kernel per-cgroup memory accounting GPU driver design",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Download Linux | Linux.org",
+          "url": "https://www.linux.org/pages/download/",
+          "content": "24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options.24 Popular Linux Distributions Explore different Linux distributions and find the one that fits your needs. Try distrowatch.com for more options."
+        },
+        {
+          "title": "Linux.org",
+          "url": "https://www.linux.org/",
+          "content": "Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux.Of course, many companies may need an Operating System (OS) other than Linux, such as Windows. So, the setup is not a simple, straightforward installation like Linux."
+        },
+        {
+          "title": "Linux - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Linux",
+          "content": "Linux (/ ˈlɪnʊks / LIN-uuks) [12] is a family of free and open-source software Unix-like operating systems based on the Linux kernel, [13][14] which was first released on 17 September 1991 by Linus Torvalds. [15][16] Some members of the family are typically packaged as a distribution (a.k.a. distro), which includes the kernel alongside supporting system software and libraries developed by ..."
+        },
+        {
+          "title": "What is Linux? - Linux.com",
+          "url": "https://www.linux.com/what-is-linux/",
+          "content": "Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course.Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation’s Intro to Linux online course."
+        },
+        {
+          "title": "Download - Get Ubuntu",
+          "url": "https://ubuntu.com/download",
+          "content": "Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download and use, and you’re welcome to share the official, unmodified Ubuntu installer images.Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with five years of free security updates. Ubuntu is always free to download and use, and you’re welcome to share the official, unmodified Ubuntu installer images."
+        },
+        {
+          "title": "Best Linux Distros for Every Use Case in 2026 | Linuxize",
+          "url": "https://linuxize.com/post/best-linux-distros/",
+          "content": "Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first.Compare the best Linux distros for beginners, gaming, servers, and security testing, with current versions and a straight answer on which one to install first."
+        }
+      ],
+      "kept": [
+        "https://www.linux.org/pages/download/",
+        "https://www.linux.org/",
+        "https://en.wikipedia.org/wiki/Linux",
+        "https://www.linux.com/what-is-linux/",
+        "https://ubuntu.com/download",
+        "https://linuxize.com/post/best-linux-distros/"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+    "https://www.reddit.com/r/unpopularopinion/comments/sism44/duck_duck_go_sucks/",
+    "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
+    "https://en.m.wikipedia.org/wiki/Cgroups",
+    "https://github.com/torvalds/linux/blob/master/include/linux/cgroup.h",
+    "https://www.man7.org/linux/man-pages/man7/cgroups.7.html",
+    "https://www.linux.org/pages/download/",
+    "https://www.linux.org/",
+    "https://en.wikipedia.org/wiki/Linux",
+    "https://www.linux.com/what-is-linux/",
+    "https://ubuntu.com/download",
+    "https://linuxize.com/post/best-linux-distros/"
+  ],
+  "outcome": "authored"
+}
