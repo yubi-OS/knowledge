@@ -1,0 +1,32 @@
+# 06. File-type-aware composition block templates
+
+Ground source: yubi-OS/yubiOS skills/nss-composition/SKILL.md (source doc). The template set is embedded in the source doc; the external mechanisms the templates encode (systemd dependency options, GitHub Actions reusable workflows) are grounded by dig results below.
+
+## Scope
+
+The source doc ships 9 composition block templates, one per file type, so that a cycle-16 patch lands in the file's own syntax (source doc):
+
+1. Markdown / docs/*.md / SKILL.md: a `## Composition -- cycle 16` section with position in the corpus, callers and consumers, callees and referenced artifacts, sibling files, module boundary, edge type distribution (static / runtime / config counts), and ownership with refresh cadence.
+2. Containerfile / mkosi / Dockerfile: comment block with FROM-source marked as a static reference, build callers (invoking workflows), build callees (RUN-time tools), sibling artifacts (Containerfile, Containerfile.dev, Containerfile.uki), integration points, module boundary (the FROM line is the public base), edge type distribution, and ownership.
+3. Shell / Python / Ruby script: callers with workflow paths, callees with rationale, integration points (stdout contract, exit codes), sibling files, module boundary (CLI surface public, env-var convention private), edge type distribution, ownership.
+4. GitHub Actions workflow: workflow_call callers, workflow_dispatch callers, schedule callers, reusable workflows invoked via uses:, actions invoked with version pin, integration points (GITHUB_TOKEN, upload-artifact, github-script), sibling workflows, module boundary (workflow_call.outputs are the public API, the matrix is private, permissions is a hard boundary), edge type distribution, ownership.
+5. systemd unit / drop-in: callers (units that Wants=, Requires=, Before= this unit), callees (units it Wants=, Requires=, After=), ExecStart binary and its callees, integration points (sd_notify, D-Bus, socket activation, EnvironmentFile=), sibling units, module boundary (EnvironmentFile= public configuration, ExecStart= chain private), Type=, edge type distribution, ownership.
+6. udev / modprobe / dracut / tmpfiles.d rule: trigger source, callers, integration points, sibling rules, module boundary (the KEY= match is public, the RUN+= chain is private), lex-sort position, edge type distribution, ownership.
+7. YAML / TOML / JSON config: schema (for example mkosi 24.x, cosign signing-config.json), callers (tools that read the file), callees (URLs, registries, keys, paths), integration points, sibling configs, module boundary, edge type distribution, ownership.
+8. refs/*.md research note: position in the corpus, callers (downstream ADRs, playbooks, CI tests, PRs), callees (cited papers, ADRs, vendor docs), file impact (the files that change if the note is accepted), sibling notes, module boundary (Conclusions and File impact public, Methodology private), edge type distribution, ownership.
+
+## The systemd mechanism the template encodes
+
+The systemd template scores a file on its Wants= / Requires= / After= / Before= edges. The dig results ground the semantics. The freedesktop.org systemd.unit man page documents the common pattern of including a unit name in both After= and Wants=, in which case the listed unit is started before the unit configured with these options (https://www.freedesktop.org/software/systemd/man/systemd.unit.html, weight 0.54). Target units complement all configured Wants= or Requires= dependencies with After= dependencies through DefaultDependencies= (https://www.mankier.com/5/systemd.unit, weight 0.37, weak). The systemd manager's D-Bus interface org.freedesktop.systemd1 is documented on the man7.org pages (https://man7.org/linux/man-pages/man5/org.freedesktop.systemd1.5.html, weight 0.40, weak). These distinctions matter to the axis because they are exactly the configuration-discovered edges a static-import scan never sees (source doc).
+
+## The GitHub Actions mechanism the template encodes
+
+The workflow template scores a file on workflow_call, workflow_dispatch, and schedule callers. GitHub's documentation specifies that a reusable workflow is called with the uses keyword directly within a job, not from within a job step, and reusable workflow files are referenced with repository-qualified syntax such as octo-org/example-repo/.github/workflows/reusable-workflow.yml@main (https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/reuse-automations/reuse-workflows, weight 0.72). Workflows that call reusable workflows in the same organization or enterprise can use the inherit keyword to implicitly pass secrets (https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows, weight 0.12, weak; the same fact carries weight 0.66 on the reference page https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations?ref=frenck.dev). Events triggered by the repository's GITHUB_TOKEN do not create new workflow runs, with workflow_dispatch and repository_dispatch as documented exceptions (https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow, weight 0.03, weak). GitHub maintains a learning repository for creating and calling reusable workflows (https://github.com/skills/reusable-workflows, weight 0.52). The template turns these mechanics into a scoring surface: outputs are the public API, permissions is a hard boundary, and the matrix is private (source doc).
+
+## yubiOS-specific patterns
+
+The source doc's yubiOS patterns section fixes the composition vocabulary per file type (source doc): Containerfiles distinguish the FROM line as the only inherited public edge from build-time runtime calls (RUN curl) and build-time config (ARG); scripts distinguish the shebang as a static interpreter reference, jq as a runtime call, and ${VAR:-default} as a config reference; workflows distinguish pinned actions as static references, ${{ github.* }} as config references, and run: lines as runtime calls; drop-ins follow the lex-sort rule from playbooks/drop-in-override-naming.md, sorting AFTER upstream package files with a vfio-yubiOS-* or yubiOS-* prefix.
+
+## Why per-file-type templates
+
+Guideline 5 requires documenting the module boundary because a file with no public/private distinction has no composition contract (source doc). Each template expresses that contract in the file's native syntax so the composition block is reviewable in the same diff as the code it describes.
