@@ -1,0 +1,68 @@
+{
+ "nn": "01",
+ "slug": "philosophy-and-three-failure-modes",
+ "scope": "Why non-lexical processing exists: the three recurring failure modes (context bloat, token cost, surface area), the flipped default (token at intake, opt-in reading), and the inspirational lineage patterns (content-addressed storage, vector databases, ZK proofs, SimHash/MinHash/Bloom) explicitly marked not-implemented in v1.",
+ "queries_attempted": [
+  {
+   "query": "content-addressed storage Git IPFS content defines identity",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "SimHash MinHash Bloom filter similarity without reading content",
+   "attempt": 1,
+   "raw_results": 68,
+   "kept": 6
+  },
+  {
+   "query": "Bloom filter probabilistic membership hash function explained",
+   "attempt": 2,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "zero knowledge proof commit without reveal cryptography explained",
+   "attempt": 2,
+   "raw_results": 55,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig returned 0 results with weight >= 0.5 (all 12 scored < 0.5); dig judged too thin on authoritative backing",
+   "new_queries": [
+    "Bloom filter probabilistic membership hash function explained",
+    "zero knowledge proof commit without reveal cryptography explained"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.merriam-webster.com/dictionary/content",
+  "https://dictionary.cambridge.org/dictionary/english/content",
+  "https://www.vocabulary.com/dictionary/content",
+  "https://www.dictionary.com/browse/content",
+  "https://usdictionary.com/definitions/content/",
+  "https://dictionary.cambridge.org/us/dictionary/english/content",
+  "https://www.reddit.com/r/Teachers/comments/15y9ppe/sharing_seating_charts_in_infinite_campus/",
+  "https://www.newgrounds.com/portal/view/978104",
+  "https://itexamanswers.net/4-3-4-4-packet-tracer-troubleshoot-hsrp-answers.html",
+  "https://spotintelligence.com/2023/01/02/minhash/",
+  "https://simhash.db7.co/",
+  "https://en.wikipedia.org/wiki/Bloom_filter",
+  "https://bloomnu.com/",
+  "https://bloomnu.com/products/sparkling-energy",
+  "https://generalistprogrammer.com/tutorials/bloom-filter-complete-guide",
+  "https://codelucky.com/bloom-filter-probabilistic-set-membership/",
+  "https://stackoverflow.com/a/7611231",
+  "https://handwiki.org/wiki/Secure_multi-party_computation",
+  "https://www.instagram.com/",
+  "https://www.mlb.com/orioles",
+  "https://z.cash/learn/",
+  "https://stealthcloud.ai/cryptography/zero-knowledge-proofs-explained/",
+  "https://www.infisign.ai/blog/what-is-zero-knowledge-proof-zkp"
+ ],
+ "outcome": "authored"
+}

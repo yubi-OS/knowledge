@@ -1,0 +1,69 @@
+{
+ "nn": "02",
+ "slug": "when-to-use-and-not-use",
+ "scope": "The seven apply conditions (already-known, sensitive, large, comparison/routing, semantic search, content-addressed output, trigger phrases) and the five do-not-use conditions (comprehension, small content, textual fidelity, substrate debugging, existing vector store).",
+ "queries_attempted": [
+  {
+   "query": "semantic search vs exact match tradeoffs vector database",
+   "attempt": 1,
+   "raw_results": 53,
+   "kept": 6
+  },
+  {
+   "query": "near-duplicate detection deduplication pipeline comparison",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  },
+  {
+   "query": "vector database semantic search use cases production",
+   "attempt": 2,
+   "raw_results": 65,
+   "kept": 6
+  },
+  {
+   "query": "when to use embeddings versus keyword search retrieval",
+   "attempt": 2,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig returned 0 results with weight >= 0.5 (all 12 scored < 0.5); dig judged too thin on authoritative backing",
+   "new_queries": [
+    "vector database semantic search use cases production",
+    "when to use embeddings versus keyword search retrieval"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.merriam-webster.com/dictionary/semantic",
+  "https://webjuicemedia.com/blog/semantic-search-vs-vector-search-practical-comparison/",
+  "https://dictionary.cambridge.org/dictionary/english/semantic",
+  "https://www.semanticscholar.org/",
+  "https://en.wikipedia.org/wiki/Semantics",
+  "https://plato.stanford.edu/entries/chaos",
+  "https://www.merriam-webster.com/dictionary/near",
+  "https://mbrenndoerfer.com/writing/deduplication-exact-near-duplicate-jaccard-similarity-suffix-arrays",
+  "https://dictionary.cambridge.org/dictionary/english/near",
+  "https://www.thefreedictionary.com/near",
+  "https://coinmarketcap.com/cmc-ai/near-protocol/what-is/",
+  "https://www.dictionary.com/browse/near",
+  "https://www.vectorsolutions.com/login/",
+  "https://www.vector.com/en/",
+  "https://www.vecteezy.com/",
+  "https://gnu.support/",
+  "https://zilliz.com/vector-database-use-cases/semantic-search",
+  "https://redis.io/blog/vector-database-use-cases/",
+  "https://www.merriam-webster.com/dictionary/use",
+  "https://vibeengines.com/handbook/embeddings-vs-keyword-search",
+  "https://dictionary.cambridge.org/dictionary/english/use",
+  "https://www.dictionary.com/browse/use",
+  "https://fastcrw.com/blog/vector-embeddings-vs-keyword-search",
+  "https://en.wikipedia.org/wiki/Deep_learning"
+ ],
+ "outcome": "authored"
+}

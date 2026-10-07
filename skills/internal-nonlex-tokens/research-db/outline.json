@@ -1,0 +1,265 @@
+{
+ "topic": "Processing tokens non-lexically: representing content as fingerprints, embeddings, hashes, and byte compounds, then routing, comparing, and recalling them without reading the source text",
+ "ground_source": "yubi-OS/yubiOS skills/internal-nonlex-tokens/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "philosophy-and-three-failure-modes",
+   "scope": "Why non-lexical processing exists: the three recurring failure modes (context bloat, token cost, surface area), the flipped default (token at intake, opt-in reading), and the inspirational lineage patterns (content-addressed storage, vector databases, ZK proofs, SimHash/MinHash/Bloom) explicitly marked not-implemented in v1.",
+   "seed_queries": [
+    "content-addressed storage Git IPFS content defines identity",
+    "SimHash MinHash Bloom filter similarity without reading content"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "when-to-use-and-not-use",
+   "scope": "The seven apply conditions (already-known, sensitive, large, comparison/routing, semantic search, content-addressed output, trigger phrases) and the five do-not-use conditions (comprehension, small content, textual fidelity, substrate debugging, existing vector store).",
+   "seed_queries": [
+    "semantic search vs exact match tradeoffs vector database",
+    "near-duplicate detection deduplication pipeline comparison"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "five-operations-two-invariants",
+   "scope": "The substrate API surface: fingerprint, compare, recall, route, transform (inputs, outputs, when to use) plus the two invariants (no lexical decode by default; content-addressed recall).",
+   "seed_queries": [
+    "content addressing hash based deduplication routing operations",
+    "embedding similarity search without reading document content"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "token-classes",
+   "scope": "Hash tokens (cheap, deterministic, exact) vs embedding tokens (semantic, lossy) vs hybrid tokens (identity plus similarity), and how to pick the class per content type.",
+   "seed_queries": [
+    "sha256 blake3 hash function comparison speed collision resistance",
+    "sentence transformers all-MiniLM-L6-v2 384 dimensions model card"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "token-format-serialization",
+   "scope": "The canonical JSON token envelopes per class, the versioning rule (compare valid only within one model_version), the serialization rule (unknown fields preserved on round-trip), and the three inline test vectors.",
+   "seed_queries": [
+    "base64 float32 vector serialization JSON wire format",
+    "embedding model versioning backward compatibility migration"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "lifecycle-and-migration",
+   "scope": "The four migration cases (substrate version envelope, embedding model swap, hash algorithm swap, serialization format change), legacy flags, explicit re-fingerprinting discipline, and the Phase 2 migrate() note.",
+   "seed_queries": [
+    "semver 2.0.0 major version compatibility rules",
+    "migrating hash algorithms sha256 to blake3 rehash"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "process-and-guidelines",
+   "scope": "The 5-step usage process (identify constraint, pick operation class, pick token type, document, recall only when needed) and the 10 guidelines including constraint-first selection, compare-vs-lexical-diff, and single-tool-call skip.",
+   "seed_queries": [
+    "semantic similarity cosine distance versus lexical diff",
+    "audit trail discipline logging operations software"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "calibration-and-audit-trail",
+   "scope": "Per-operation calibration: the 8-field log template, the three calibration gates (log exists, constraint real, reconstruction path documented), the worked example, and the doubt-driven-development pairing.",
+   "seed_queries": [
+    "structured logging jsonl audit trail best practices",
+    "observability per-operation instrumentation log schema"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "anti-patterns-and-red-flags",
+   "scope": "The nine anti-patterns (reading when fingerprinting suffices, fingerprinting when reading is required, compression without reconstruction plan, hybrid by default, lexical leaks, vector-store confusion, skipping audit trail, verbatim code, anti-lexical confusion) and the ten red-flag signals.",
+   "seed_queries": [
+    "SimHash MinHash near duplicate detection libraries",
+    "embedding false positives lossy retrieval similarity errors"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "integration-knowledge-sources-rsi-history",
+   "scope": "The pairing map across ten skills (token-efficiency, context-engineering, context-isolation, self-archaeology, security-and-hardening, negative-skill-space, recursive-self-improvement, ideate-solo, doubt-driven-development, source-driven-development), the version-pinned knowledge sources, and the 10-cycle RSI changelog ending at fixpoint v1.10.",
+   "seed_queries": [
+    "Git internals content addressed objects SHA-1 SHA-256",
+    "IPFS CIDv1 multihash multicodec specification"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.67,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.17,
+     "2": 0.75
+    },
+    "confidence": 0.51,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.79,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.07,
+     "2": 0.86
+    },
+    "confidence": 0.69,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.03,
+     "2": 0.92
+    },
+    "confidence": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.65,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.15,
+     "2": 0.75
+    },
+    "confidence": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.71,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.1,
+     "2": 0.81
+    },
+    "confidence": 0.57,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.22,
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.33,
+     "2": 0.45
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.6,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.25,
+     "2": 0.67
+    },
+    "confidence": 0.4,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.63,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.14,
+     "2": 0.74
+    },
+    "confidence": 0.44,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.02,
+     "2": 0.95
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.68,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.15,
+     "2": 0.77
+    },
+    "confidence": 0.52,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1371,
+   "output_tokens": 154,
+   "cost": 0.000115164
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09",
+   "10"
+  ]
+ }
+}

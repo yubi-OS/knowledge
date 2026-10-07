@@ -1,0 +1,68 @@
+{
+ "nn": "03",
+ "slug": "five-operations-two-invariants",
+ "scope": "The substrate API surface: fingerprint, compare, recall, route, transform (inputs, outputs, when to use) plus the two invariants (no lexical decode by default; content-addressed recall).",
+ "queries_attempted": [
+  {
+   "query": "content addressing hash based deduplication routing operations",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "embedding similarity search without reading document content",
+   "attempt": 1,
+   "raw_results": 71,
+   "kept": 6
+  },
+  {
+   "query": "how git hash object stores content addressed objects tutorial",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "text embeddings semantic similarity comparison tutorial",
+   "attempt": 2,
+   "raw_results": 60,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig returned 0 results with weight >= 0.5 (all 12 scored < 0.5); dig judged too thin on authoritative backing",
+   "new_queries": [
+    "how git hash object stores content addressed objects tutorial",
+    "text embeddings semantic similarity comparison tutorial"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.merriam-webster.com/dictionary/content",
+  "https://dictionary.cambridge.org/dictionary/english/content",
+  "https://www.vocabulary.com/dictionary/content",
+  "https://www.dictionary.com/browse/content",
+  "https://usdictionary.com/definitions/content/",
+  "https://dictionary.cambridge.org/us/dictionary/english/content",
+  "https://en.wikipedia.org/wiki/Embedding",
+  "https://www.ibm.com/think/topics/embedding",
+  "https://www.geeksforgeeks.org/machine-learning/what-are-embeddings-in-machine-learning-2/",
+  "https://en.wikipedia.org/wiki/Embedding_(machine_learning)",
+  "https://gnu.support/",
+  "https://www.pornhub.com/",
+  "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+  "https://git-scm.com/",
+  "https://en.wikipedia.org/wiki/Git",
+  "https://git-scm.com/install/",
+  "https://github.com/git-guides",
+  "https://git-scm.com/book/id/v2/Git-Internals-Git-Objects.html",
+  "https://www.textnow.com/",
+  "https://handwiki.org/wiki/Computational_linguistics",
+  "https://decider.com/article/hulu-netflix-disney-plus-best-streaming-deals/",
+  "https://deepwiki.com/pixegami/langchain-rag-tutorial/4.1-comparing-embeddings",
+  "https://www.anaconda.com/docs/anaconda-desktop/tutorials/embedding-tutorial"
+ ],
+ "outcome": "authored"
+}
