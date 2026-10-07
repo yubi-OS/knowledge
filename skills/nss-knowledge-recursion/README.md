@@ -19,8 +19,8 @@ Minted 2026-10-06 from the yubiOS ground source `yubi-OS/yubiOS skills/nss-knowl
 ## Research summary
 
 - Results collected: 120 (108 from 18 attempt-1 queries across 9 subtopics, 12 from the subtopic 06 redo)
-- Weight split: 50 high (>= 0.5) / 70 low (< 0.5) via the noul metric
-- Jev requests: 11 (1 outline score validation + 10 noul weighting batches), usage 12,151 input / 2,394 output tokens
+- Weight split: 52 high (>= 0.5) / 68 low (< 0.5) via the noul metric
+- Jev requests: 11 (1 outline score validation + 10 noul weighting batches), usage 13,387 input / 2,594 output tokens
 - Redo counts: 1 (subtopic 06 prior-art-landscape, attempt-1 dig too thin for the corpus angle)
 - Skipped docs: none. The outline candidate 10 (yubios-surface-patterns) was an internal-record subtopic scored 0.06 by the outline validation and dropped as padding before digging.
 
