@@ -1,0 +1,106 @@
+{
+ "nn": 4,
+ "slug": "contents-vs-git-data-decision",
+ "scope": "choosing Contents API vs Git Data API by file count and atomicity",
+ "queries_attempted": [
+  {
+   "query": "GitHub contents API versus git data API multi file commit",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "GitHub API atomic commit multiple files best practice",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "GitHub contents API update file versus create git tree commit",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "GitHub API modify several files single commit contents api limits",
+   "attempt": 1,
+   "raw_results": 52,
+   "kept": 6
+  },
+  {
+   "query": "GitHub contents api one file per request limitation",
+   "attempt": 1,
+   "raw_results": 60,
+   "kept": 6
+  },
+  {
+   "query": "GitHub API create or update file contents endpoint documentation",
+   "attempt": 2,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "GitHub Git database API create commit multiple files documentation",
+   "attempt": 2,
+   "raw_results": 58,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig returned zero results at weight >= 0.5 (homepage and social noise only); REDO with different queries per spec",
+   "new_queries": [
+    "GitHub API create or update file contents endpoint documentation",
+    "GitHub Git database API create commit multiple files documentation"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://www.linkedin.com/company/github",
+  "https://desktop.github.com/download/",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://www.linkedin.com/company/github",
+  "https://desktop.github.com/download/",
+  "https://github.com/",
+  "https://docs.github.com/en/rest/git/trees",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://www.billdietrich.me/DevelopApplication.html",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://sysprog21.github.io/lkmpg/",
+  "https://handwiki.org/wiki/Software:GPT-3",
+  "https://github.com/",
+  "https://docs.github.com/en/rest/repos/contents",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://docs.github.com/en/rest/repos/contents",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://www.linkedin.com/company/github",
+  "https://github.com/",
+  "https://github.blog/",
+  "https://docs.github.com/en/rest/git",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://gnu.support/"
+ ],
+ "outcome": "authored",
+ "note": "no dedicated external comparison source exists on the searched surface after 2 redo rounds; comparison claims attributed to the source doc, endpoint mechanics grounded by official docs at weights 0.96 to 0.97"
+}
