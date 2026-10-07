@@ -1,0 +1,214 @@
+{
+ "topic": "Gated, verifiable, human-approvable automations through the Jev orchestration API on the steady-orbit worker",
+ "ground_source": "yubi-OS/yubiOS skills/jev-orchestrator/SKILL.md (15475 bytes fetched 2026-10-07)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "what-and-when",
+   "scope": "What Jev is (operations controller, not chat model), the 4 use triggers, the 2 negative cases, and the task pipeline map.",
+   "seed_queries": []
+  },
+  {
+   "nn": "02",
+   "slug": "policy-gate",
+   "scope": "Deterministic fail-closed gate, 3 outcomes, block reasons, approval bindings (actor/target/payload/limits/expiry/policy version), policy-version invalidation.",
+   "seed_queries": []
+  },
+  {
+   "nn": "03",
+   "slug": "task-lifecycle",
+   "scope": "Caller flow: create with idempotency key, read back, approvals queue, dispatch with pause re-check, verify, continue, pause/resume.",
+   "seed_queries": []
+  },
+  {
+   "nn": "04",
+   "slug": "verification-reconcile",
+   "scope": "Expected predicates, verify verdicts (verified_success/confirmed_failure/unknown), retry within limits, reconcile-before-repeat on unknown.",
+   "seed_queries": []
+  },
+  {
+   "nn": "05",
+   "slug": "terminal-states-audit",
+   "scope": "6 distinct terminal states, append-only events log as system of record, cost_usd accounting, polling discipline.",
+   "seed_queries": []
+  },
+  {
+   "nn": "06",
+   "slug": "llm-integration",
+   "scope": "jev-1.13 advisory layer, LLMs hold no credentials, header allowlist, model routes classify/draft/guard, below-floor gating, degrade behavior.",
+   "seed_queries": []
+  },
+  {
+   "nn": "07",
+   "slug": "automations",
+   "scope": "Versioned D1 automation templates, stage pipelines, interval scheduler with CAS fires, def shape validation, stage budgets, lead machine suite.",
+   "seed_queries": []
+  },
+  {
+   "nn": "08",
+   "slug": "hierarchy-router",
+   "scope": "Measurement-gated routing, edge-standard-v1 D, policy routing bands, route.dispatch builtin, router verify semantics, calibration, caller caveats.",
+   "seed_queries": []
+  },
+  {
+   "nn": "09",
+   "slug": "production-patterns",
+   "scope": "Proven contracts: Contents PUT, fresh blob sha, approve auto-dispatch, sweep fire uniqueness, resend.send validator, below-floor gating, guidelines.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t08": {
+    "score": 1.43,
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.13,
+     "2": 0.65
+    },
+    "confidence": 0.15,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.9,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.01,
+     "2": 0.95
+    },
+    "confidence": 0.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.63,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.06,
+     "2": 0.79
+    },
+    "confidence": 0.45,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.58,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.12,
+     "2": 0.73
+    },
+    "confidence": 0.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.82,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.02,
+     "2": 0.9
+    },
+    "confidence": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.67,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.04,
+     "2": 0.81
+    },
+    "confidence": 0.5,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t01": {
+    "score": 1.53,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.08,
+     "2": 0.72
+    },
+    "confidence": 0.29,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.52,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.08,
+     "2": 0.72
+    },
+    "confidence": 0.28,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.44,
+    "probabilities": {
+     "0": 0.2,
+     "1": 0.16,
+     "2": 0.64
+    },
+    "confidence": 0.16,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1307,
+   "output_tokens": 139,
+   "cost": 0.000109788
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}

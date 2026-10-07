@@ -1,0 +1,38 @@
+{
+ "nn": "09",
+ "slug": "production-patterns",
+ "scope": "Proven contracts: Contents PUT, fresh blob sha, approve auto-dispatch, sweep fire uniqueness, resend.send validator, below-floor gating, guidelines.",
+ "queries_attempted": [
+  {
+   "query": "GitHub Contents API PUT update file blob sha",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 0
+  },
+  {
+   "query": "GitHub REST API contents update file PUT conflict",
+   "attempt": 2,
+   "raw_results": 56,
+   "kept": 0
+  },
+  {
+   "query": "Resend send email API reference body schema",
+   "attempt": 2,
+   "raw_results": 50,
+   "kept": 0
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig returned mostly off-topic noise (dictionary entries, unrelated pages); too few usable results to author honestly",
+   "new_queries": [
+    "GitHub REST API contents update file PUT conflict",
+    "Resend send email API reference body schema"
+   ]
+  }
+ ],
+ "results_kept": [],
+ "outcome": "authored"
+}
