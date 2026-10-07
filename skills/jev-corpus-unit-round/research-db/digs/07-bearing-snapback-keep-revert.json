@@ -1,0 +1,36 @@
+{
+  "nn": "07",
+  "slug": "bearing-snapback-keep-revert",
+  "scope": "Reading (predicted, realized) as a direction in the level convention, the snapback cumulative series, keep rule (realized delta > 0 AND snapback not halted), taskcheck C1-C7 subsets, the Git Data API commit chain, revert verdicts.",
+  "queries_attempted": [
+    {
+      "query": "GitHub Git Data API create commit tree base_tree blobs",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "GraphQL API convert draft pull request ready for review",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/",
+    "https://github.blog/",
+    "https://github.com/login",
+    "https://github.com/creationix/js-github",
+    "https://x.com/github",
+    "https://www.linkedin.com/company/github",
+    "https://graphql.org/",
+    "https://graphql.org/learn/",
+    "https://www.geeksforgeeks.org/graphql/graphql-tutorial/",
+    "https://graphql.com/",
+    "https://www.geeksforgeeks.org/graphql/what-is-graphql/",
+    "https://hygraph.com/learn/graphql"
+  ],
+  "outcome": "authored"
+}
