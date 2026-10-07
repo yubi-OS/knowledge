@@ -1,0 +1,34 @@
+{
+ "nn": "03",
+ "slug": "verification-at-use",
+ "scope": "The check and the use are the same act: dm-verity in the read path, verified boot chains, TOCTOU elimination; a poisoned byte fails to read rather than being quarantined after the fact.",
+ "queries_attempted": [
+  {
+   "query": "time of check time of use TOCTOU vulnerability class",
+   "attempt": 1,
+   "raw_results": 70,
+   "kept": 0,
+   "note": "fetched; results discarded by the 8-per-subtopic collection cap"
+  },
+  {
+   "query": "dm-verity verified read path design Linux",
+   "attempt": 1,
+   "raw_results": 74,
+   "kept": 0,
+   "note": "fetched; results discarded by the 8-per-subtopic collection cap"
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use",
+  "https://cwe.mitre.org/data/definitions/367.html",
+  "https://www.learnsecuritymanagement.com/cissp-toctou-time-of-check-time-of-use",
+  "https://safeguard.sh/resources/blog/toctou-time-of-check-to-time-of-use",
+  "https://natalieagus.github.io/50005/labs/02-toctou",
+  "https://time.is/",
+  "https://www.edkedris.com/research/blogs/time-of-check-time-of-use-toctou-vulnerability-in-ai-systems",
+  "https://www.systemshardening.com/articles/cross-cutting/toctou-vulnerability-defences/"
+ ],
+ "outcome": "authored"
+}
