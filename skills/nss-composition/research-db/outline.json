@@ -1,0 +1,251 @@
+{
+ "topic": "The ninth NSS axis: composition coverage (how a file composes with others: dependencies, callers/callees, integration points, module boundaries, static-import vs runtime-call vs config-discovered edges, fan-in/fan-out)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "axis-scope-and-use",
+   "scope": "What the ninth NSS Composition axis scores, its four reader questions, the edge-mechanism family, cycle-16 sweep context, when to use and when not to use.",
+   "seed_queries": []
+  },
+  {
+   "nn": "02",
+   "slug": "coverage-rubric",
+   "scope": "The 0 to 5 coverage levels (Absent to Exemplary), the 0 to 20 label conversion bands, and the source doc's 4 worked examples.",
+   "seed_queries": []
+  },
+  {
+   "nn": "03",
+   "slug": "scoring-dimensions",
+   "scope": "The 10 scoring dimensions (0 to 2 each, max 20) and the coupling, instability, fan-in and fan-out metrics behind dimension 8.",
+   "seed_queries": [
+    "instability metric fan in fan out afferent efferent coupling software modules",
+    "coupling and cohesion software metrics module assessment"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "edge-type-distinctions",
+   "scope": "Static import vs runtime call vs configuration-discovered edges, the 9 important distinctions, and Kythe call-graph over-approximation evidence.",
+   "seed_queries": [
+    "Kythe callgraph over-approximation dynamic dispatch cross-language",
+    "static import versus runtime call versus configuration discovered dependency graph software"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "lens-format-patches",
+   "scope": "The cycle-16 lens schema, its machine-checkable invariants, verdict semantics, and degenerate-experiment red flags.",
+   "seed_queries": []
+  },
+  {
+   "nn": "06",
+   "slug": "file-type-templates",
+   "scope": "The 9 file-type composition block templates and the external mechanisms they encode (systemd dependency options, GitHub Actions reusable workflows).",
+   "seed_queries": [
+    "systemd unit Wants Requires After Before dependency semantics documentation",
+    "GitHub Actions reusable workflow_call workflow_dispatch triggers documentation"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "architecture-standards",
+   "scope": "Parnas and SEI structures, the arc42 Building Block View and Runtime View, C4 abstraction levels, and multi-graph decomposition.",
+   "seed_queries": [
+    "arc42 building block view runtime view documentation template",
+    "C4 model system context container component code diagram rules"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "composition-tooling-principles",
+   "scope": "dependency-cruiser executable composition rules and the REP/CCP/CRP/ADP/SDP/SAP package principles for modular monolith boundaries.",
+   "seed_queries": [
+    "dependency-cruiser validate dependency rules visualization documentation",
+    "REP CCP CRP ADP SDP SAP package design principles"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "measurement-framework",
+   "scope": "The 7 evidence layers, the composition indicator list, and the signals-not-thresholds discipline, grounded in DSM and package-metric research.",
+   "seed_queries": [
+    "software architecture metrics fan-in fan-out instability afferent efferent coupling measure",
+    "module co-change coupling measurement static analysis evidence architecture"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "skill-composition-relationships",
+   "scope": "How nss-composition composes with the other yubiOS skills, its self-containment contract, and its verification commands.",
+   "seed_queries": []
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.71,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.08,
+     "2": 0.8099999999999999
+    },
+    "confidence": 0.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.3,
+    "probabilities": {
+     "0": 0.23,
+     "1": 0.24,
+     "2": 0.53
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.2,
+    "probabilities": {
+     "0": 0.31,
+     "1": 0.17,
+     "2": 0.52
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.91,
+    "probabilities": {
+     "0": 0.43,
+     "1": 0.24,
+     "2": 0.33
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.55,
+    "probabilities": {
+     "0": 0.66,
+     "1": 0.13,
+     "2": 0.21
+    },
+    "confidence": 0.17,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.55,
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.12,
+     "2": 0.71
+    },
+    "confidence": 0.31,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.75,
+    "probabilities": {
+     "0": 0.48,
+     "1": 0.3,
+     "2": 0.22
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.04,
+    "probabilities": {
+     "0": 0.37,
+     "1": 0.23,
+     "2": 0.39999999999999997
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.11,
+     "2": 0.73
+    },
+    "confidence": 0.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.73,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.12,
+     "2": 0.8
+    },
+    "confidence": 0.58,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1331,
+   "output_tokens": 154
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09",
+   "10"
+  ]
+ }
+}
