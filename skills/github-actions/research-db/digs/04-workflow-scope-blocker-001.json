@@ -1,0 +1,36 @@
+{
+  "nn": "04",
+  "slug": "workflow-scope-blocker-001",
+  "scope": "BLOCKER-001: why .github/workflows writes need workflow scope, GITHUB_TOKEN self-modification block, and the five solutions with the closed status.",
+  "queries_attempted": [
+    {
+      "query": "github fine-grained PAT workflow permission 404 write .github/workflows",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "GITHUB_TOKEN cannot modify workflow files security hardening backdoor",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://stackoverflow.com/questions/79442837/github-pat-cannot-modify-workflow-files",
+    "https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens",
+    "https://docs.github.com/en/rest/actions/permissions",
+    "https://www.getorchestra.io/guides/githubaction-permissions-required-for-finegrained-",
+    "https://stackoverflow.com/questions/74740868/permission-denied-to-github-actionsbot-despite-having-pat",
+    "https://github.com/orgs/community/discussions/120232",
+    "https://safeguard.sh/resources/blog/github-actions-security-hardening",
+    "https://docs.github.com/en/enterprise-server@latest/actions/security-guides/security-hardening-for-github-actions",
+    "https://stackoverflow.com/questions/79442837/github-pat-cannot-modify-workflow-files",
+    "https://cyberreplay.com/blog/github-actions-secret-hardening-practical-steps-prevent-token-leaks-workflow-hijacks/",
+    "https://securityboulevard.com/2026/08/hardening-github-actions-against-pwn-requests-and-token-theft/",
+    "https://github.com/orgs/community/discussions/120676"
+  ],
+  "outcome": "authored"
+}
