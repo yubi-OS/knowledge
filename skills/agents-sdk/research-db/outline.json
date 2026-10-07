@@ -1,0 +1,239 @@
+{
+ "topic": "Cloudflare Agents SDK skill (yubi-OS/yubiOS skills/agents-sdk/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "01-setup-and-configuration",
+   "scope": "Installation verification, npm packages, wrangler.jsonc, DO bindings and migrations, and the configuration gotchas.",
+   "seed_queries": [
+    "Cloudflare Agents SDK wrangler.jsonc configuration durable objects migration",
+    "cloudflare agents npm install agents package setup quick start"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "02-agent-class-core",
+   "scope": "The Agent class, lifecycle hooks (initialState, onStateUpdate), the Counter example, and the core API surface.",
+   "seed_queries": [
+    "Cloudflare Agents SDK Agent class API reference lifecycle",
+    "cloudflare agents SDK onStateUpdate initialState Agents API"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "03-state-management",
+   "scope": "setState, validateStateChange, SQLite storage via this.sql, and automatic state sync to connected clients.",
+   "seed_queries": [
+    "Cloudflare Agents SDK setState validateStateChange store sync state",
+    "cloudflare agents sqlite this.sql state persistence"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "04-routing",
+   "scope": "URL routing /agents/{agent}/{instance}, routeAgentRequest, getAgentByName, and custom routing.",
+   "seed_queries": [
+    "Cloudflare Agents SDK routeAgentRequest routing URL patterns",
+    "cloudflare agents getAgentByName custom routing"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "05-callable-rpc",
+   "scope": "Callable RPC methods, the @callable decorator, streaming callables, timeouts, and WebSocket invocation.",
+   "seed_queries": [
+    "Cloudflare Agents SDK callable methods RPC streaming",
+    "cloudflare agents callable decorator timeout WebSocket"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "06-scheduling-background",
+   "scope": "schedule, scheduleEvery, cron, AgentWorkflow, runFiber, built-in queue, and retry with backoff.",
+   "seed_queries": [
+    "Cloudflare Agents SDK schedule scheduleEvery cron tasks",
+    "cloudflare AgentWorkflow runFiber queue retry durable execution"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "07-chat-and-client",
+   "scope": "AIChatAgent, resumable streaming, tools, useAgent and useAgentChat React hooks, and server-driven messages.",
+   "seed_queries": [
+    "Cloudflare Agents SDK AIChatAgent useAgentChat streaming chat",
+    "cloudflare agents resumable streaming saveMessages useAgent React hooks"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "08-mcp-integration",
+   "scope": "MCP client API, McpAgent server class, transports (Streamable HTTP, SSE, RPC), and securing MCP servers.",
+   "seed_queries": [
+    "Cloudflare Agents SDK McpAgent MCP server build",
+    "cloudflare agents MCP client transports streamable HTTP securing"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "09-integrations-experimental",
+   "scope": "Email handling, webhooks, push notifications, observability, cross-domain auth, and the experimental voice, browser-tools, and think surfaces.",
+   "seed_queries": [
+    "Cloudflare Agents SDK email routing webhooks push notifications",
+    "cloudflare agents observability voice browser tools think experimental"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "01-setup-and-configuration": {
+    "score": 1.93,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.03,
+     "2": 0.95
+    },
+    "confidence": 0.9,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "02-agent-class-core": {
+    "score": 1.92,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.01,
+     "2": 0.96
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "03-state-management": {
+    "score": 1.5,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.23,
+     "2": 0.64
+    },
+    "confidence": 0.25,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "04-routing": {
+    "score": 1.65,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.16,
+     "2": 0.74
+    },
+    "confidence": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "05-callable-rpc": {
+    "score": 1.57,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.21,
+     "2": 0.68
+    },
+    "confidence": 0.36,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "06-scheduling-background": {
+    "score": 1.58,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.25,
+     "2": 0.66
+    },
+    "confidence": 0.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "07-chat-and-client": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.03,
+     "2": 0.93
+    },
+    "confidence": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "08-mcp-integration": {
+    "score": 1.65,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.13,
+     "2": 0.76
+    },
+    "confidence": 0.48,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "09-integrations-experimental": {
+    "score": 1.68,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.18,
+     "2": 0.75
+    },
+    "confidence": 0.52,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1161,
+   "output_tokens": 139
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ]
+ }
+}

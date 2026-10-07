@@ -1,0 +1,27 @@
+# 08 MCP integration: client, server, transports, security
+
+Scope: connecting agents to external MCP servers, building MCP servers with the SDK, transport options, and securing MCP deployments, including a dated correction about McpAgent's status.
+
+Grounding note: the source doc is yubi-OS/yubiOS skills/agents-sdk/SKILL.md, cited as "source doc". Other claims cite their dig source URL plus the jev weight.
+
+## MCP client
+
+Every agent carries `this.mcp`, an `MCPClientManager`, for connecting to external MCP servers (https://developers.cloudflare.com/agents/runtime/communication/websockets/, jev 0.90). The agent-level methods are `addMcpServer()`, `removeMcpServer()`, and `getMcpServers()` (source doc; https://developers.cloudflare.com/agents/runtime/agents-api/, jev 0.90). On the chat side, `this.mcp.getAITools()` converts connected MCP servers into AI SDK tools, and `this.mcp.waitForConnections()` lets `onChatMessage` wait until servers are connected after hibernation (https://developers.cloudflare.com/agents/communication-channels/chat/chat-agents/, jev 0.87). The source doc's capability line is "Connect to MCP servers or build your own with McpAgent" (source doc).
+
+## Building an MCP server
+
+The source doc points to `McpAgent` for building MCP servers (source doc). The class lives in `agents/mcp`: subclass it, assign `server = new McpServer({ name, version })` from `@modelcontextprotocol/sdk`, register tools in `init()` with zod input schemas, and export the handler with `export default MyMCP.serve("/mcp")` (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86). Each McpAgent instance is a Durable Object with its own SQL database, so stateful servers can remember previous tool calls or cache external API state across calls (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86).
+
+Dated correction, recorded 2026-10-06: the McpAgent page now marks the class deprecated and feature-frozen, retained only for legacy servers while they migrate; the guidance is to migrate to `createMcpHandler` at the earliest convenience, with a staged rollout for servers that depend on session state, RPC, pushed requests, streams, or replay (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86). The remote MCP server guide's approach table confirms it: `createMcpHandler()` for new stateless servers, `createLegacyMcpHandler()` optionally, McpAgent listed as deprecated, and raw SDK transports for custom transport ownership (https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/, jev 0.91). The source doc predates this drift, so corpus users should treat McpAgent as legacy and createMcpHandler as the new path.
+
+## Transports
+
+The remote MCP server guide deploys over Streamable HTTP transport (https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/, jev 0.91). Streamable HTTP is the MCP specification's transport that replaces the older HTTP+SSE pair, with servers managing their own session lifecycle (https://modelcontextprotocol.io/specification/draft/basic/transports/streamable-http, jev 0.70, weak: the MCP project itself grades this spec page as draft). On the McpAgent side, the serve() handler handles Streamable HTTP automatically, and stream resumability survives the Cloudflare edge idle-stream watchdog: standalone GET listeners keep alive with a comment frame every 25 seconds without an EventStore, POST tool-response streams always keep alive, and both can be resumed with Last-Event-ID when an EventStore such as `DurableObjectEventStore` is configured (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86).
+
+## Securing MCP servers
+
+Authentication composes with the OAuth Provider Library: wrap the handler as `new OAuthProvider({ apiHandlers: { "/mcp": MyMCP.serve("/mcp") }, authorizeEndpoint: "/authorize", tokenEndpoint: "/token", clientRegistrationEndpoint: "/register", defaultHandler })` (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86). The guide covers two provider routes: Cloudflare Access as an identity aggregator over existing IdPs, or any OAuth 2.0 provider such as GitHub, Google, Slack, Stytch, Auth0, or WorkOS (https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/, jev 0.91). After authentication, user identity and tokens arrive through the `props` parameter for permission checks and user-specific behavior (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86).
+
+McpAgent also supports data jurisdiction for compliance: `MyMCP.serve("/mcp", { jurisdiction: "eu" })` keeps session data, tool processing, and stored state in the EU, with "eu" and "fedramp" as the documented options (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86). Hibernation is enabled by default so inactive stateful servers stop consuming compute while preserving state (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86).
+
+One state caveat: each client session is backed by its own McpAgent instance, so when the same client reconnects it starts a new session and state resets; servers needing durable cross-session state should design for that explicitly (https://developers.cloudflare.com/agents/model-context-protocol/apis/agent-api/, jev 0.86).
