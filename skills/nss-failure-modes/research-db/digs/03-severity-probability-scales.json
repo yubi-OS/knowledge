@@ -1,0 +1,60 @@
+{
+ "nn": 3,
+ "slug": "severity-probability-scales",
+ "scope": "Local severity/probability scales, AIAG-VDA AP vs RPN.",
+ "queries_attempted": [
+  {
+   "query": "AIAG VDA FMEA action priority 2019",
+   "attempt": 0,
+   "raw_results": 35,
+   "kept": 6
+  },
+  {
+   "query": "risk priority number RPN FMEA criticism action priority",
+   "attempt": 0,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "FMEA handbook AIAG VDA action priority replaces risk priority number",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "FMEA severity occurrence detection rating tables automotive standard",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "AIAG VDA FMEA handbook 2019 action priority table High Medium Low",
+   "attempt": 2,
+   "raw_results": 33,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "initial dig thin: only 1 result weighted >= 0.5 (aiag.org); aggregator pages dominated",
+   "new_queries": [
+    "FMEA handbook AIAG VDA action priority replaces risk priority number",
+    "FMEA severity occurrence detection rating tables automotive standard"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "redo attempt 1 still thin on AP specifics (only ASQ reached 0.84); targeted the AP table directly",
+   "new_queries": [
+    "AIAG VDA FMEA handbook 2019 action priority table High Medium Low"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://asq.org/quality-resources/fmea",
+  "https://www.aiag.org/"
+ ],
+ "outcome": "authored"
+}

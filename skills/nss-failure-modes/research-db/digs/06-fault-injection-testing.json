@@ -1,0 +1,71 @@
+{
+ "nn": 6,
+ "slug": "fault-injection-testing",
+ "scope": "Fault injection, negative testing, chaos and Jepsen verification.",
+ "queries_attempted": [
+  {
+   "query": "fault injection testing error paths SIGTERM ENOSPC",
+   "attempt": 0,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "chaos engineering negative testing idempotency retry duplicates",
+   "attempt": 0,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "linux fault injection framework disk full EIO signal testing",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "testing idempotency retry semantics duplicate side effects software",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "Netflix Chaos Monkey principles chaos engineering verification",
+   "attempt": 2,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "Jepsen testing distributed systems fault injection correctness",
+   "attempt": 2,
+   "raw_results": 34,
+   "kept": 6
+  }
+ ],
+ "redo_count": 2,
+ "redo_log": [
+  {
+   "attempt": 1,
+   "reason": "initial dig thin: zero primary-weight results on the mechanisms (best was a geology page at 0.52)",
+   "new_queries": [
+    "linux fault injection framework disk full EIO signal testing",
+    "testing idempotency retry semantics duplicate side effects software"
+   ]
+  },
+  {
+   "attempt": 2,
+   "reason": "redo attempt 1 landed AWS idempotency (0.88) but nothing on chaos/Jepsen fault injection; targeted those frameworks",
+   "new_queries": [
+    "Netflix Chaos Monkey principles chaos engineering verification",
+    "Jepsen testing distributed systems fault injection correctness"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://docs.aws.amazon.com/durable-execution/patterns/best-practices/idempotency/",
+  "https://github.com/Netflix/chaosmonkey",
+  "https://netflix.github.io/chaosmonkey/",
+  "https://github.com/jepsen-io/jepsen",
+  "https://jepsen.io/",
+  "http://www.consul.io/docs/internals/jepsen.html"
+ ],
+ "outcome": "authored"
+}
