@@ -1,0 +1,36 @@
+{
+  "nn": 6,
+  "slug": "failure-modes",
+  "scope": "The four cult.sh error classes and their recovery branches: worklock BUSY (stale vs fresh lock), claim race (bounded retry, never manual N), checkin silent no-op (GTW, path, writability verification), out-of-order report (re-acquire lock first).",
+  "queries_attempted": [
+    {
+      "query": "flock lockfile stale lock detection mtime timeout",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "bash script silent failure detection exit code idempotency",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.flocksafety.com/",
+    "https://www.flocksafety.com/industries/law-enforcement",
+    "https://en.wikipedia.org/wiki/Flock_Safety",
+    "https://www.commandinline.com/shell-script-lock-file-flock/",
+    "https://www.baeldung.com/linux/bash-ensure-instance-running",
+    "https://www.man7.org/linux/man-pages/man1/flock.1.html",
+    "https://www.gnu.org/software/bash/",
+    "https://www.geeksforgeeks.org/linux-unix/how-to-exit-when-errors-occur-in-bash-scripts/",
+    "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
+    "https://www.w3schools.com/bash/",
+    "https://dredyson.com/building-a-fintech-app-with-test-runner-failed-on-coderoad-in-learn-bash-scripting-by-building-five-programs-a-technical-deep-dive-the-hidden-truth-about-bash-scripting-in-fintech-development-and-w/",
+    "https://www.gnu.org/software/bash/manual/bash.html"
+  ],
+  "outcome": "authored"
+}

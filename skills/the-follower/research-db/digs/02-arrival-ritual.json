@@ -1,0 +1,56 @@
+{
+  "nn": 2,
+  "slug": "arrival-ritual",
+  "scope": "The ordered startup sequence: init, atomic claim of the lowest free FOLLOWER_N, reading the PULPIT, first check-in inside the 5-minute gather window, and inbox polling for orders.",
+  "queries_attempted": [
+    {
+      "query": "atomic file creation claim lowest free slot race condition O_EXCL",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "multi-agent startup check-in barrier pattern orchestration",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "atomic file creation O_EXCL exclusive create POSIX semantics",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-attempt query 1 ('atomic file creation claim lowest free slot race condition O_EXCL') returned off-topic results (ski retail, dictionaries); re-dug with 'atomic file creation O_EXCL exclusive create POSIX semantics'",
+      "new_queries": [
+        "atomic file creation O_EXCL exclusive create POSIX semantics"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.atomic.com/en-us",
+    "https://www.atomic.com/en-us/collections/ato-featured-bestseller-boots",
+    "https://www.merriam-webster.com/dictionary/atomic",
+    "https://atomicmail.io/",
+    "https://stackoverflow.com/questions/230062/whats-the-best-way-to-check-if-a-file-exists-in-c",
+    "https://runebook.dev/en/docs/python/library/os/os.O_EXCL",
+    "https://getmulti.ai/",
+    "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/multi-agent-patterns",
+    "https://www.merriam-webster.com/dictionary/multi-",
+    "https://dictionary.cambridge.org/us/dictionary/english/multi",
+    "https://dictionary.cambridge.org/dictionary/english/multi",
+    "https://openai.github.io/openai-agents-python/multi_agent/",
+    "https://linuxvox.com/blog/atomic-create-file-if-not-exists-from-bash-script/",
+    "https://www.atomic.com/en-us",
+    "https://runebook.dev/en/docs/python/library/os/os.O_EXCL",
+    "https://www.m1sport.cz/atomic",
+    "https://stackoverflow.com/questions/167414/is-an-atomic-file-rename-with-overwrite-possible-on-windows",
+    "https://www.atomic.com/en-us/collections/ato-featured-bestseller-boots"
+  ],
+  "outcome": "authored"
+}

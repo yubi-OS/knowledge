@@ -1,0 +1,69 @@
+{
+  "nn": 7,
+  "slug": "recovery-respawn",
+  "scope": "Crash and context-loss protocol: file-system-read-first rule, the three respawn branches (context restored, context lost with DONE/mid-task/BLOCKED outbox endings, new slot), and slot-abandonment handoff on reassign.",
+  "queries_attempted": [
+    {
+      "query": "crash recovery checkpoint replay idempotent task processing",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "LLM agent session continuity durable state files",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "durable execution checkpoint replay workflow engine",
+      "attempt": 2,
+      "raw_results": 44,
+      "kept": 6
+    },
+    {
+      "query": "agent crash recovery resume from checkpoint state machine",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "both first-attempt queries returned topical but low-weight results only (no high-weight source); re-dug with 'durable execution checkpoint replay workflow engine' and 'agent crash recovery resume from checkpoint state machine'",
+      "new_queries": [
+        "durable execution checkpoint replay workflow engine",
+        "agent crash recovery resume from checkpoint state machine"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Crash_(2004_film)",
+    "https://en.m.wikipedia.org/wiki/Crash_(2004_film)",
+    "https://codefarm.in/guides/system-design/04-core-algorithms/write-ahead-log",
+    "https://zylos.ai/research/2026-04-24-durable-execution-agent-runtimes/",
+    "https://access.recoverytoolbox.com/",
+    "https://www.merriam-webster.com/dictionary/crash",
+    "https://en.wikipedia.org/wiki/Large_language_model",
+    "https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/",
+    "https://github.com/ahoward/bunny/issues/13",
+    "https://understandingdata.com/posts/agent-memory-patterns/",
+    "https://oh-bug.com/posts/llm-agent-durable-workflow-production-guide/",
+    "https://freeacademy.ai/blog/what-is-an-llm-beginners-guide-2026",
+    "https://www.durable.com/",
+    "https://github.com/meirwah/awesome-workflow-engines",
+    "https://letsbuildsolutions.com/blog/system-design/designing-a-durable-execution-engine-workflow-replay-checkpointing-and-failure-recovery-for-long-running-distributed-processes/",
+    "https://github.com/topics/durable-execution?l=rust",
+    "https://hatchet.run/platform/durable-execution",
+    "https://www.durable.com/ai-website-builder",
+    "https://learn.microsoft.com/en-us/microsoft-agent-365/overview",
+    "https://dev.to/mukundakatta/durable-agent-state-checkpoints-resume-where-you-left-off-when-the-run-crashes-4f7i",
+    "https://learn.microsoft.com/en-us/agents/",
+    "https://github.com/AxmeAI/ai-agent-checkpoint-and-resume",
+    "https://support.microsoft.com/en-us/microsoft-365-copilot/agents-built-by-microsoft",
+    "https://support.microsoft.com/en-us/windows/ai/ai-features/experimental-agentic-features"
+  ],
+  "outcome": "authored"
+}
