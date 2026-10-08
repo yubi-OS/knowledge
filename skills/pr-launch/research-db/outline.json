@@ -1,0 +1,33 @@
+{
+  "topic": "Planning and executing product launch PR for technical open-source projects - bifurcated messaging, asset creation (press release, pitches, README, social), channel targeting, launch sequencing, post-launch tracking",
+  "ground_source": "yubi-OS/yubiOS skills/pr-launch/SKILL.md",
+  "subtopics": [
+    {"nn": 1, "slug": "bifurcated-messaging", "scope": "Two-audience message frameworks: separate technical and general stories for the same project", "seed_queries": ["developer marketing messaging how to communicate with technical audience open source", "how to explain a technical product to a non-technical audience marketing"]},
+    {"nn": 2, "slug": "launch-phases", "scope": "The 4-phase launch timeline (pre-launch prep, launch day, press follow-up, sustained momentum)", "seed_queries": ["open source project launch checklist pre-launch preparation", "developer product launch phases timeline announcement"]},
+    {"nn": 3, "slug": "channel-targeting", "scope": "Channel targeting across HN, Lobste.rs, Reddit subreddits, and tech press", "seed_queries": ["Show HN best practices tips launch timing Hacker News", "where to announce an open source project Hacker News Lobsters Reddit tech press"]},
+    {"nn": 4, "slug": "asset-templates", "scope": "Launch asset templates (Show HN post, subreddit seed posts, press pitch, social thread)", "seed_queries": ["Show HN post format guidelines what to include", "tech press pitch email example open source project journalist"]},
+    {"nn": 5, "slug": "readme-audit", "scope": "README audit: the 4 first-reader questions (what it does, why it exists, how to try it, why trust it)", "seed_queries": ["what makes a good open source README first time user questions", "README trust signals credibility open source project quickstart"]},
+    {"nn": 6, "slug": "anti-patterns", "scope": "Launch anti-patterns (cross-posting spam, feature-first framing, disappearing after posting, hype language)", "seed_queries": ["reddit self promotion rules subreddit spam guidelines 9:1", "Hacker News self promotion guidelines Show HN rules moderation"]},
+    {"nn": 7, "slug": "output-artifacts", "scope": "Output artifacts and the pre-launch verification checklist (internal-record subtopic, no dig)", "seed_queries": []},
+    {"nn": 8, "slug": "post-launch-tracking", "scope": "Post-launch tracking and sustained momentum (comment engagement windows, coverage capture, deep-dives, newsletters)", "seed_queries": ["Hacker News launch first hours comments engagement tips", "developer newsletters submit project TLDR Console Changelog how to get featured"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {"score": 1.9, "probabilities": {"0": 0.02, "1": 0.07, "2": 0.91}, "confidence": 0.83, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.94, "probabilities": {"0": 0.02, "1": 0.02, "2": 0.96}, "confidence": 0.91, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.9, "probabilities": {"0": 0.02, "1": 0.06, "2": 0.92}, "confidence": 0.85, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.95, "probabilities": {"0": 0.01, "1": 0.03, "2": 0.96}, "confidence": 0.93, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.72, "probabilities": {"0": 0.05, "1": 0.18, "2": 0.77}, "confidence": 0.58, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.88, "probabilities": {"0": 0.02, "1": 0.08, "2": 0.9}, "confidence": 0.82, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 1.87, "probabilities": {"0": 0.04, "1": 0.05, "2": 0.91}, "confidence": 0.8, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.8, "probabilities": {"0": 0.03, "1": 0.13, "2": 0.84}, "confidence": 0.71, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1020, "output_tokens": 124},
+    "dropped": [],
+    "kept": [1, 2, 3, 4, 5, 6, 7, 8]
+  }
+}
