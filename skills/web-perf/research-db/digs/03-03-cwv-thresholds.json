@@ -1,0 +1,56 @@
+{
+ "nn": "03",
+ "slug": "03-cwv-thresholds",
+ "scope": "Core Web Vitals and lab metric thresholds (TTFB, FCP, LCP, INP, TBT, CLS, Speed Index) and their origin",
+ "queries_attempted": [
+  {
+   "query": "core web vitals thresholds LCP INP CLS 2025",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "TTFB FCP TBT Speed Index thresholds good needs improvement poor",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "web.dev core web vitals thresholds LCP 2.5s INP 200ms CLS 0.1",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  },
+  {
+   "query": "Lighthouse performance scoring TBT 200ms FCP 1.8s Speed Index 3.4s",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 results heavily polluted with off-topic hits (browser download pages, dictionaries, unrelated sites); re-dug with sharper technical queries",
+   "new_queries": [
+    "web.dev core web vitals thresholds LCP 2.5s INP 200ms CLS 0.1",
+    "Lighthouse performance scoring TBT 200ms FCP 1.8s Speed Index 3.4s"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://web.dev/articles/defining-core-web-vitals-thresholds",
+  "https://www.corewebvitals.io/core-web-vitals",
+  "https://llmranks.io/learn/core-web-vitals",
+  "https://www.lighthouse-aimetrics.com/blog/lighthouse-metrics",
+  "https://www.webyes.com/features/core-web-vitals/",
+  "https://yusmpgroup.com/blog/web-app-performance-core-web-vitals-2026",
+  "https://prooflytics.io/blog/core-web-vitals-thresholds-2026-lcp-inp-cls",
+  "https://developer.chrome.com/docs/lighthouse/",
+  "https://unlighthouse.dev/tools/lighthouse-score-calculator"
+ ],
+ "outcome": "authored"
+}

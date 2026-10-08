@@ -1,0 +1,54 @@
+{
+ "nn": "04",
+ "slug": "04-insight-analysis",
+ "scope": "Phase 2 insight analysis via performance_analyze_insight: insight catalog, naming drift, insightSetId discovery",
+ "queries_attempted": [
+  {
+   "query": "chrome devtools performance insights LCPBreakdown CLSCulprits",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "chrome devtools performance panel insights render blocking document latency",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "developer.chrome.com performance insights CLS culprits render blocking LCP breakdown",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  },
+  {
+   "query": "chrome devtools performance insight document latency network dependency tree",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 results heavily polluted with off-topic hits (browser download pages, dictionaries, unrelated sites); re-dug with sharper technical queries",
+   "new_queries": [
+    "developer.chrome.com performance insights CLS culprits render blocking LCP breakdown",
+    "chrome devtools performance insight document latency network dependency tree"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://developer.chrome.com/docs/performance/insights",
+  "https://developer.chrome.com/docs/performance/insights/lcp-breakdown",
+  "https://developer.chrome.com/docs/performance/insights/document-latency",
+  "https://developer.chrome.com/docs/performance/insights/render-blocking",
+  "https://developer.chrome.com/docs/performance/insights/network-dependency-tree",
+  "https://learn.microsoft.com/en-us/microsoft-edge/devtools/performance/reference",
+  "https://developer.chrome.com/docs/crux/guides/pagespeed-insights"
+ ],
+ "outcome": "authored"
+}

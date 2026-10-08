@@ -1,0 +1,57 @@
+{
+ "nn": "07",
+ "slug": "07-codebase-analysis",
+ "scope": "Phase 5 codebase analysis: framework and bundler detection, tree-shaking, unused JS/CSS, polyfills, compression and minification",
+ "queries_attempted": [
+  {
+   "query": "webpack tree shaking sideEffects usedExports lodash barrel files",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "purgecss tailwind unused css brotli compression core-js polyfill bundle size",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "webpack tree shaking sideEffects false package.json usedExports guide",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  },
+  {
+   "query": "web.dev reduce unused JavaScript code splitting purgecss brotli compression",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 results heavily polluted with off-topic hits (browser download pages, dictionaries, unrelated sites); re-dug with sharper technical queries",
+   "new_queries": [
+    "webpack tree shaking sideEffects false package.json usedExports guide",
+    "web.dev reduce unused JavaScript code splitting purgecss brotli compression"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://webpack.js.org/guides/tree-shaking/",
+  "https://dev.to/fogel/tree-shaking-in-webpack-5apj",
+  "https://webpack.js.org/",
+  "https://stevekinney.com/courses/react-performance/tree-shaking-optimization",
+  "https://purgecss.com/",
+  "https://v2.tailwindcss.com/docs/optimizing-for-production",
+  "https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking",
+  "https://blog.saeloun.com/2022/11/24/tree-shaking-in-webpack-5/",
+  "https://web.dev/articles/reduce-javascript-payloads-with-code-splitting",
+  "https://polytraffic.com/articles/remove-unused-css-javascript"
+ ],
+ "outcome": "authored"
+}
