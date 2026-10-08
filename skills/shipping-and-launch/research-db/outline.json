@@ -1,0 +1,217 @@
+{
+  "topic": "Preparing production launches: pre-launch checklist, monitoring setup, staged rollout planning, and rollback strategy (yubiOS skill shipping-and-launch ground source)",
+  "ground_source": "yubi-OS/yubiOS skills/shipping-and-launch/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "pre-launch-checklist",
+      "scope": "The six-section pre-launch checklist (code quality, security, performance, accessibility, infrastructure, documentation) as a hard launch gate, including the external standards it invokes.",
+      "seed_queries": [
+        "production launch readiness checklist best practices",
+        "release readiness review checklist software engineering"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "feature-flag-strategy",
+      "scope": "Decoupling deployment from release with feature flags: the flag lifecycle (deploy off, enable team, gradual rollout, monitor, clean up) and the ownership, expiry, and nesting rules.",
+      "seed_queries": [
+        "feature flag best practices lifecycle cleanup expiration",
+        "feature flags progressive delivery kill switch best practices"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "staged-rollout",
+      "scope": "The six-step rollout sequence from staging to full rollout: staging tests, deploy with flag off, team enablement, canary at 5 percent, gradual 25/50/100, full rollout with a 1 week monitor.",
+      "seed_queries": [
+        "canary deployment gradual rollout best practices",
+        "progressive rollout stages staging production canary percentage"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "rollout-thresholds",
+      "scope": "The advance, hold, and roll back decision thresholds (error rate, P95 latency, client JS errors, business metrics) and the immediate roll back triggers.",
+      "seed_queries": [
+        "canary analysis metric thresholds automated rollback",
+        "error rate latency rollback criteria production deployment"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "monitoring-observability",
+      "scope": "What to monitor at launch (application, infrastructure, client metrics), error reporting setup on client and server, and the post-launch verification routine for the first hour.",
+      "seed_queries": [
+        "production monitoring golden signals observability launch",
+        "error monitoring reporting post-deploy verification best practices"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "error-budget-gate",
+      "scope": "Using the SLO error budget as an objective release gate: the 20 percent remaining, 0 to 20 percent, and exhausted bands, and burn rate as a hold signal during canary.",
+      "seed_queries": [
+        "SRE error budget policy release gate",
+        "error budget burn rate SLO best practices"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "rollback-strategy",
+      "scope": "The rollback plan document: trigger conditions, rollback steps (flag off vs revert), database migration considerations, and time to rollback targets.",
+      "seed_queries": [
+        "rollback strategy database migration expand contract compatibility",
+        "deployment rollback plan runbook best practices"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "launch-discipline",
+      "scope": "The cultural layer: common rationalizations (works in staging, monitoring is overhead, rolling back is failure), red flags such as big bang releases and Friday deploys, and the before and after verification checklists.",
+      "seed_queries": [
+        "why not deploy on friday incident risk",
+        "launch failure postmortem engineering culture checklist"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "score": 1.61,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.08,
+          "2": 0.76
+        },
+        "confidence": 0.41,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.37,
+        "probabilities": {
+          "0": 0.21,
+          "1": 0.22,
+          "2": 0.57
+        },
+        "confidence": 0.06,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.56,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.15,
+          "2": 0.7
+        },
+        "confidence": 0.34,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.56,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.15,
+          "2": 0.7
+        },
+        "confidence": 0.33,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.55,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.07,
+          "2": 0.74
+        },
+        "confidence": 0.33,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.09,
+        "probabilities": {
+          "0": 0.3,
+          "1": 0.3,
+          "2": 0.4
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.6,
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.12,
+          "2": 0.74
+        },
+        "confidence": 0.41,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.69,
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.09,
+          "2": 0.8
+        },
+        "confidence": 0.53,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 852,
+      "output_tokens": 124,
+      "cost": 7.1568e-05
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}

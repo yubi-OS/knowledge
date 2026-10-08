@@ -1,0 +1,77 @@
+{
+  "nn": "03",
+  "slug": "staged-rollout",
+  "scope": "The six-step rollout sequence from staging to full rollout: staging tests, deploy with flag off, team enablement, canary at 5 percent, gradual 25/50/100, full rollout with a 1 week monitor.",
+  "queries_attempted": [
+    {
+      "query": "canary deployment gradual rollout best practices",
+      "attempt": 1,
+      "raw_results": 59,
+      "kept": 6
+    },
+    {
+      "query": "progressive rollout stages staging production canary percentage",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    },
+    {
+      "query": "canary release martin fowler definition",
+      "attempt": 2,
+      "raw_results": 51,
+      "kept": 6
+    },
+    {
+      "query": "kubernetes canary deployment strategy percentage rollout",
+      "attempt": 2,
+      "raw_results": 59,
+      "kept": 6
+    }
+  ],
+  "redo_count": 2,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-round dig too thin or noisy (dictionary entries, off-topic results dominated)",
+      "new_queries": [
+        "canary release martin fowler definition",
+        "kubernetes canary deployment strategy percentage rollout"
+      ]
+    },
+    {
+      "attempt": 2,
+      "reason": "first-round dig too thin or noisy (dictionary entries, off-topic results dominated)",
+      "new_queries": [
+        "canary release martin fowler definition",
+        "kubernetes canary deployment strategy percentage rollout"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.canarytechnologies.com/login/",
+    "https://en.wikipedia.org/wiki/Domestic_canary",
+    "https://www.canarytechnologies.com/",
+    "https://canary.is/",
+    "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Ontario",
+    "https://rays-js-course.netlify.app/13week/canary_releases_setup",
+    "https://www.progressive.com/",
+    "https://donnuab.com/blog/en/progressive-rollouts-canary-releases/",
+    "https://www.progressive.com/manage-policy/",
+    "https://app.progressive.com/",
+    "https://sfg.progressive.com/",
+    "https://beefed.ai/en/progressive-delivery-canary-percentage-rollouts",
+    "https://www.canarytechnologies.com/login/",
+    "https://martinfowler.com/bliki/CanaryRelease.html",
+    "https://en.wikipedia.org/wiki/Domestic_canary",
+    "https://www.canarytechnologies.com/",
+    "https://canary.is/",
+    "https://en.wikipedia.org/wiki/London",
+    "https://earthly.dev/blog/canary-deployment-in-k8s/",
+    "https://kubernetes.io/",
+    "https://developers.redhat.com/articles/2024/05/01/canary-deployment-strategy-argo-rollouts",
+    "https://learn.microsoft.com/en-us/azure/aks/get-started-kubernetes",
+    "https://kubernetes.io/docs/tutorials/stateless-application/canary-deployment/",
+    "https://www.netdata.cloud/academy/canary-deployment/"
+  ],
+  "outcome": "authored"
+}

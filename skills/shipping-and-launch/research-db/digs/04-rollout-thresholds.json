@@ -1,0 +1,77 @@
+{
+  "nn": "04",
+  "slug": "rollout-thresholds",
+  "scope": "The advance, hold, and roll back decision thresholds (error rate, P95 latency, client JS errors, business metrics) and the immediate roll back triggers.",
+  "queries_attempted": [
+    {
+      "query": "canary analysis metric thresholds automated rollback",
+      "attempt": 1,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "error rate latency rollback criteria production deployment",
+      "attempt": 1,
+      "raw_results": 57,
+      "kept": 6
+    },
+    {
+      "query": "kayenta automated canary analysis metric comparison",
+      "attempt": 2,
+      "raw_results": 52,
+      "kept": 6
+    },
+    {
+      "query": "google sre gradual rollout release criteria metrics",
+      "attempt": 2,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 2,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-round dig too thin or noisy (dictionary entries, off-topic results dominated)",
+      "new_queries": [
+        "kayenta automated canary analysis metric comparison",
+        "google sre gradual rollout release criteria metrics"
+      ]
+    },
+    {
+      "attempt": 2,
+      "reason": "first-round dig too thin or noisy (dictionary entries, off-topic results dominated)",
+      "new_queries": [
+        "kayenta automated canary analysis metric comparison",
+        "google sre gradual rollout release criteria metrics"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.canarytechnologies.com/login/",
+    "https://www.kbytechnologies.com/devops-automation/mitigating-canary-analysis-flapping-at-scale",
+    "https://helpmetest.com/blog/canary-release-automated-rollback-testing/",
+    "https://en.wikipedia.org/wiki/Domestic_canary",
+    "https://www.canarytechnologies.com/",
+    "https://canary.is/",
+    "https://support.xbox.com/en-US/help/errors/error-code-search-guide",
+    "https://www.merriam-webster.com/dictionary/error",
+    "https://qaskills.sh/blog/testing-in-production-shift-right-guide",
+    "https://aitechmodel.com/ai-rollback-triggers-how-much-quality-regression-should-stop-a-model-upgrade/",
+    "https://ml-ops.org/content/mlops-principles",
+    "https://whychose.com/blog/progressive-delivery-decision-record",
+    "https://cloud.google.com/blog/products/gcp/introducing-kayenta-an-open-automated-canary-analysis-tool-from-google-and-netflix",
+    "https://khimananda.com/blog/canary-analysis-with-metrics",
+    "https://www.amazon.com/",
+    "https://medium.com/@NetflixTechBlog/3260bc7acc69",
+    "https://kratom.org/strains/best-for-anxiety/",
+    "https://netflixtechblog.com/automated-canary-analysis-at-netflix-with-kayenta-3260bc7acc69?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.google.com/",
+    "https://sre.google/sre-book/reliable-product-launches/",
+    "https://search.google/",
+    "https://en.wikipedia.org/wiki/Google",
+    "http://workspaceupdates.googleblog.com/2015/03/?hl=hr",
+    "https://about.google/"
+  ],
+  "outcome": "authored"
+}
