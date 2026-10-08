@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-08",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng",
+    "probe_results": "campaign preflight healthy (orchestrator)",
+    "unresponsive_engines": []
+  },
+  "decide": {
+    "url": "https://api.defapi.org/api/v1/decisions",
+    "model": "typesafe/jev-1.13",
+    "probe_answer": "campaign preflight run orchestrator-side; agent-side probe skipped for speed per skills-variant brief",
+    "endpoint_note": "DefAPI direct used for both score (outline validation) and noul (weighting) metrics; worker relay https://steady-orbit.systems-a.workers.dev/api/decide held as fallback and not needed"
+  }
+}
