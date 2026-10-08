@@ -1,0 +1,33 @@
+{
+  "nn": "05",
+  "slug": "opa-rego-build-policies",
+  "scope": "Docker Build Policies: OPA/Rego policy schema for buildx --policy (input object fields, allow rules, strict/reset/log-level flags, debug via --progress=plain)",
+  "queries_attempted": [
+    {
+      "query": "docker buildx build --policy OPA rego build policies",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "docker build policy input.image.isCanonical hasProvenance rego",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.docker.com/",
+    "https://www.docker.com/products/docker-desktop/",
+    "https://docs.docker.com/desktop/setup/install/windows-install/",
+    "https://docs.docker.com/",
+    "https://docs.docker.com/build/policies/validate-images.md",
+    "https://docs.docker.com/build/policies/",
+    "https://docs.docker.com/build/policies/validate-images/",
+    "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+    "https://github.com/docker"
+  ],
+  "outcome": "authored"
+}
