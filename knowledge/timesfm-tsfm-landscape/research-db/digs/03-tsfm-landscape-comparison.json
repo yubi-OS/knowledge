@@ -1,0 +1,319 @@
+{
+  "nn": "03",
+  "slug": "tsfm-landscape-comparison",
+  "scope": "TimesFM vs Chronos, Moirai 2.0, Lag-Llama and TTM: tokenization vs patching, sizes, probabilistic outputs, and where each sits on GIFT-Eval.",
+  "queries_attempted": [
+    {
+      "query": "Chronos Moirai Lag-Llama time series foundation model comparison",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Chronos - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chronos",
+          "snippet": "Chronos (/ ˈkroʊnɒs, - oʊs /; Ancient Greek: Χρόνος, romanized: Khronos, lit. 'Time'; [kʰrónos], Modern Greek: ['xronos]), also spelled Chronus, is a personification of time in Greek mythology, who is also discussed in pre-Socratic philosophy and later literature. [2]"
+        },
+        {
+          "title": "Deploy Time Series Foundation Models on GPU Cloud: Chronos, Moirai, TimesFM, and Lag-Llama Production Setup Guide (2026) | Spheron Blog",
+          "url": "https://www.spheron.network/blog/deploy-time-series-foundation-models-gpu-cloud/",
+          "snippet": "May 11, 2026 — Covariate handling: Chronos and Lag-Llama are univariate-only. Each series is predicted independently with no external regressors. Moirai supports covariates via its patch encoder.\"Covariate handling: Chronos and Lag-Llama are univariate-only. Each series is predicted independently with no external regressors. Moirai supports covariates via its patch encoder.\"\"Do not deploy Moirai i"
+        },
+        {
+          "title": "Best time series foundation models in 2026 - TSFM.ai",
+          "url": "https://tsfm.ai/compare/best-time-series-foundation-models",
+          "snippet": "Moirai is the only model in this group that natively handles past and future covariates. If your forecast accuracy depends on external signals — promotions, weather, holidays — it has a structural advantage over univariate-only models. Chronos offers mini through large variants so you can ...\"curl https://api.tsfm.ai/v1/models \\ -H \"Authorization: Bearer $TSFM_API_KEY\" | jq . # Returns: chronos-bo"
+        },
+        {
+          "title": "Lag-Llama: The Open-Source Time Series Foundation Model — TSFM…",
+          "url": "https://tsfm.ai/blog/lag-llama-open-source-tsfm",
+          "snippet": "The explosion of foundation models in time series has produced a spectrum of architectural approaches: patching and binning in Chronos, masked encoding in Moirai, residual patching in TimesFM."
+        },
+        {
+          "title": "Time Series Forecasting: Classical vs Transformers vs Foundation Models | 2026 | CodeSOTA",
+          "url": "https://www.codesota.com/guides/time-series-forecasting",
+          "snippet": "April 27, 2026 — Domain-specific architectures with domain-specific training data win on domain-specific tasks. “Bigger model = better forecast.” Chronos-Large (710M) does not consistently beat Chronos-Base (200M).\"Find current state-of-the-art AI models by task, benchmark, metric, source, and snapshot date. Human-readable pages and callable JSON for agents.\"\"Nine forecasters across three canonica"
+        },
+        {
+          "title": "The 2026 Time Series Toolkit: 5 Foundation Models for Autonomous Forecasting - MachineLearningMastery.com",
+          "url": "https://machinelearningmastery.com/the-2026-time-series-toolkit-5-foundation-models-for-autonomous-forecasting/",
+          "snippet": "January 22, 2026 — Chronos-2 offers production maturity, MOIRAI-2 handles complex multivariate data, Lag-Llama provides probabilistic outputs, Time-LLM leverages existing LLM infrastructure, and TimesFM delivers enterprise reliability.\"Foundation models transform time series forecasting from a model training problem into a model selection challenge. Chronos-2 offers production maturity, MOIRAI-2 h"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "time series foundation models zero-shot forecasting landscape 2025",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Time.is - exact time, any time zone",
+          "url": "https://time.is/",
+          "snippet": "1 day ago · Time.is Your clock is 0.2 seconds behind. Accuracy of synchronization was ±0.633 seconds."
+        },
+        {
+          "title": "Benchmarking Foundation Models for Time-Series Forecasting: Zero-Shot, Few-Shot, and Full-Shot Evaluations",
+          "url": "https://www.mdpi.com/2813-0324/11/1/32",
+          "snippet": "September 8, 2025 — (This article belongs to the ... Forecasting) ... Recently, time-series forecasting foundation models trained on large, diverse datasets have demonstrated robust zero-shot and few-shot capabilities....\"Recently, time-series forecasting foundation models trained on large, diverse datasets have demonstrated robust zero-shot and few-shot capabilities. Given the ubiquity of time-se"
+        },
+        {
+          "title": "timeanddate.com",
+          "url": "https://www.timeanddate.com/",
+          "snippet": "Welcome to the world's top site for time, time zones, and astronomy. Organize your life with free online info and tools you can rely on. No sign-up needed."
+        },
+        {
+          "title": "National Institute of Standards and Technology | NIST",
+          "url": "https://www.time.gov/",
+          "snippet": "OFFICIAL U.S. TIME Non-Contiguous U.S. and Territories Alaska DAYLIGHT Time AK D T (UTC- 8) 11:30:58 P.M."
+        },
+        {
+          "title": "Online Clock — Full Screen Digital Clock with Seconds - time.now",
+          "url": "https://time.now/clock/",
+          "snippet": "A free online clock with seconds, full-screen digital display, custom themes, and any time zone. Use it in the browser as a desk clock, classroom clock, or screensaver."
+        },
+        {
+          "title": "[2607.02623] Evaluating Time Series Foundation Models for Electr…",
+          "url": "http://arxiv.org/abs/2607.02623",
+          "snippet": "View a PDF of the paper titled Evaluating Time Series Foundation Models for Electricity Price Forecasting: Contamination Risk, Distributional Shifts, and…"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Chronos Amazon time series foundation model T5 tokenization",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models for Time Series Forecasting · GitHub",
+          "url": "https://github.com/amazon-science/chronos-forecasting",
+          "snippet": "Chronos: The original Chronos family which is based on language model architectures. A time series is transformed into a sequence of tokens via scaling and quantization, and a language model is trained on these tokens using the cross-entropy loss.\"Chronos: The original Chronos family which is based on language model architectures. A time series is transformed into a sequence of tokens via scaling "
+        },
+        {
+          "title": "amazon/chronos-t5-large · Hugging Face",
+          "url": "https://huggingface.co/amazon/chronos-t5-large",
+          "snippet": "March 12, 2024 — The models in this repository are based on the T5 architecture. The only difference is in the vocabulary size: Chronos-T5 models use 4096 different tokens, compared to 32128 of the original T5 models, resulting in fewer parameters.\"Chronos is a family of pretrained time series forecasting models based on language model architectures. A time series is transformed into a sequence of"
+        },
+        {
+          "title": "[2403.07815] Chronos: Learning the Language of Time Series",
+          "url": "https://arxiv.org/abs/2403.07815",
+          "snippet": "November 4, 2024 — Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss.\"We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quan"
+        },
+        {
+          "title": "Chronos: Learning the Language of Time Series - arXiv.org",
+          "url": "https://arxiv.org/html/2403.07815v1",
+          "snippet": "March 12, 2024 — Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to ...\"Chronos tokenizes time series values using scaling and quantization into a fixed vocabul"
+        },
+        {
+          "title": "Chronos: Adapting language model architectures for time series forecasting - Amazon Science",
+          "url": "https://www.amazon.science/blog/adapting-language-model-architectures-for-time-series-forecasting",
+          "snippet": "March 26, 2024 — In addition to these bin tokens, we add two special tokens, PAD and EOS, to denote padding/missing values and end-of-sequence, respectively. We can then train standard language models like T5 on such a \"language of time series\" using the conventional cross-entropy loss function, with no changes to the model architecture itself. High-level depiction of Chronos.\"In addition to these"
+        },
+        {
+          "title": "Chronos: Learning the language of time series - Amazon Science",
+          "url": "https://www.amazon.science/code-and-datasets/chronos-learning-the-language-of-time-series",
+          "snippet": "Chronos is a family of pretrained ... architectures. A time series is transformed into a sequence of tokens via scaling and quantization, and a language model is trained on these tokens using the cross-entropy loss....\"Chronos is a family of pretrained time series forecasting models based on language model architectures. A time series is transformed into a sequence of tokens via scaling and quanti"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Moirai Salesforce universal forecasting transformer any-frequency",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "Moirai: A Time Series Foundation Model for Universal Forecasting",
+          "url": "https://www.salesforce.com/blog/moirai/",
+          "snippet": "November 13, 2024 — LOTSA is the largest collection of open data for pre-training time series forecasting models. Moirai addresses key challenges of universal forecasting to support various domains, multiple frequencies, and any-variate in a zero-shot manner.\"Moirai is designed to achieve universal forecasting with masked encoder-based time series transformers. LOTSA is the largest collection of o"
+        },
+        {
+          "title": "Moirai: Salesforce's Universal Forecasting Transformer - tsfm.ai",
+          "url": "https://tsfm.ai/blog/moirai-salesforce-model",
+          "snippet": "Jul 22, 2024 · Moirai from Salesforce introduces a universal forecasting transformer that handles variable frequencies, prediction lengths, and multivariate inputs. When Salesforce AI Research released Moirai in early 2024, it marked a significant step toward truly universal time series forecasting."
+        },
+        {
+          "title": "[2402.02592] Unified Training of Universal Time Series Forecasting Transformers",
+          "url": "https://arxiv.org/abs/2402.02592",
+          "snippet": "May 22, 2024 — However, constructing such a model poses unique challenges specific to time series data: i) cross-frequency learning, ii) accommodating an arbitrary number of variates for multivariate time series, and iii) addressing the varying distributional properties inherent in large-scale data. To address these challenges, we present novel enhancements to the conventional time series Transfor"
+        },
+        {
+          "title": "MOIRAI: Building a Universal Forecaster for Time Series Data | by Dong-Keon Kim | Medium",
+          "url": "https://medium.com/@kdk199604/moirai-building-a-universal-forecaster-for-time-series-data-c959b3b35174",
+          "snippet": "June 15, 2026 — Its main strategy is to handle ... This design enables a single pre-trained model to perform zero-shot forecasting across different frequencies, variable dimensions, domains, and distribution types....\"MOIRAI: Building a Universal Forecaster for Time Series Data How a masked encoder Transformer competes with full-shot forecasting models Introduction About The authors introduced MOI"
+        },
+        {
+          "title": "Salesforce/moirai-1.0-R-large · Hugging Face",
+          "url": "https://huggingface.co/Salesforce/moirai-1.0-R-large",
+          "snippet": "February 4, 2024 — Moirai, the Masked Encoder-based Universal Time Series Forecasting Transformer is a Large Time Series Model pre-trained on LOTSA data.\"Moirai, the Masked Encoder-based Universal Time Series Forecasting Transformer is a Large Time Series Model pre-trained on LOTSA data.\"\"1: Overall architecture of Moirai. Visualized is a 3-variate time series, where variates 0 and 1 are target va"
+        },
+        {
+          "title": "MOIRAI: Universal Time Series Forecasting Transformer",
+          "url": "https://adityalab.github.io/SamayDocs/models/moirai/",
+          "snippet": "Overview MOIRAI is a universal time-series forecasting transformer developed by Salesforce Research. It's trained on a massive collection of diverse time-series data and supports various frequencies, context lengths, and prediction horizons out-of-the-box. Paper Unified Training of Universal Time Series Forecasting Transformers Key Features Universal architecture for diverse datasets Multiple ..."
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "reason": "attempt-1 results failed jev quality weighting (all weights < 0.5)",
+      "at": "2026-10-08T14:52:50.291Z"
+    }
+  ],
+  "results_kept": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Chronos",
+      "title": "Chronos - Wikipedia",
+      "weight": 0.19,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.spheron.network/blog/deploy-time-series-foundation-models-gpu-cloud/",
+      "title": "Deploy Time Series Foundation Models on GPU Cloud: Chronos, Moirai, TimesFM, and Lag-Llama Production Setup Guide (2026) | Spheron Blog",
+      "weight": 0.1,
+      "redo_of": null
+    },
+    {
+      "url": "https://tsfm.ai/compare/best-time-series-foundation-models",
+      "title": "Best time series foundation models in 2026 - TSFM.ai",
+      "weight": 0.1,
+      "redo_of": null
+    },
+    {
+      "url": "https://tsfm.ai/blog/lag-llama-open-source-tsfm",
+      "title": "Lag-Llama: The Open-Source Time Series Foundation Model — TSFM…",
+      "weight": 0.09,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.codesota.com/guides/time-series-forecasting",
+      "title": "Time Series Forecasting: Classical vs Transformers vs Foundation Models | 2026 | CodeSOTA",
+      "weight": 0.1,
+      "redo_of": null
+    },
+    {
+      "url": "https://machinelearningmastery.com/the-2026-time-series-toolkit-5-foundation-models-for-autonomous-forecasting/",
+      "title": "The 2026 Time Series Toolkit: 5 Foundation Models for Autonomous Forecasting - MachineLearningMastery.com",
+      "weight": 0.11,
+      "redo_of": null
+    },
+    {
+      "url": "https://time.is/",
+      "title": "Time.is - exact time, any time zone",
+      "weight": 0.34,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.mdpi.com/2813-0324/11/1/32",
+      "title": "Benchmarking Foundation Models for Time-Series Forecasting: Zero-Shot, Few-Shot, and Full-Shot Evaluations",
+      "weight": 0.33,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.timeanddate.com/",
+      "title": "timeanddate.com",
+      "weight": 0.37,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.time.gov/",
+      "title": "National Institute of Standards and Technology | NIST",
+      "weight": 0.37,
+      "redo_of": null
+    },
+    {
+      "url": "https://time.now/clock/",
+      "title": "Online Clock — Full Screen Digital Clock with Seconds - time.now",
+      "weight": 0.36,
+      "redo_of": null
+    },
+    {
+      "url": "http://arxiv.org/abs/2607.02623",
+      "title": "[2607.02623] Evaluating Time Series Foundation Models for Electr…",
+      "weight": 0.27,
+      "redo_of": null
+    },
+    {
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models for Time Series Forecasting · GitHub",
+      "weight": 0.43,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://huggingface.co/amazon/chronos-t5-large",
+      "title": "amazon/chronos-t5-large · Hugging Face",
+      "weight": 0.81,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2403.07815",
+      "title": "[2403.07815] Chronos: Learning the Language of Time Series",
+      "weight": 0.81,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/html/2403.07815v1",
+      "title": "Chronos: Learning the Language of Time Series - arXiv.org",
+      "weight": 0.83,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.amazon.science/blog/adapting-language-model-architectures-for-time-series-forecasting",
+      "title": "Chronos: Adapting language model architectures for time series forecasting - Amazon Science",
+      "weight": 0.82,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.amazon.science/code-and-datasets/chronos-learning-the-language-of-time-series",
+      "title": "Chronos: Learning the language of time series - Amazon Science",
+      "weight": 0.81,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.salesforce.com/blog/moirai/",
+      "title": "Moirai: A Time Series Foundation Model for Universal Forecasting",
+      "weight": 0.43,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://tsfm.ai/blog/moirai-salesforce-model",
+      "title": "Moirai: Salesforce's Universal Forecasting Transformer - tsfm.ai",
+      "weight": 0.44,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2402.02592",
+      "title": "[2402.02592] Unified Training of Universal Time Series Forecasting Transformers",
+      "weight": 0.43,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://medium.com/@kdk199604/moirai-building-a-universal-forecaster-for-time-series-data-c959b3b35174",
+      "title": "MOIRAI: Building a Universal Forecaster for Time Series Data | by Dong-Keon Kim | Medium",
+      "weight": 0.43,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://huggingface.co/Salesforce/moirai-1.0-R-large",
+      "title": "Salesforce/moirai-1.0-R-large · Hugging Face",
+      "weight": 0.44,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://adityalab.github.io/SamayDocs/models/moirai/",
+      "title": "MOIRAI: Universal Time Series Forecasting Transformer",
+      "weight": 0.34,
+      "redo_of": "attempt-1"
+    }
+  ],
+  "high_weight_results": 5,
+  "outcome": "authored",
+  "jev_weights_summary": {
+    "total": 24,
+    "high": 5,
+    "max": 0.83
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "nn": "06",
+  "slug": "workers-analytics-engine-time-series-storage",
+  "scope": "Cloudflare Workers Analytics Engine as the storage tier: writeDataPoint schema (blobs/doubles/index), dataset binding, sampling, SQL API, and 3-month retention.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Workers Analytics Engine writeDataPoint blobs doubles index",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+          "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+          "snippet": "July 15, 2026 — Once a binding is declared in Wrangler, ... variable has a method, writeDataPoint(). A “data point” is a structured event which consists of a vector of blobs and a vector of doubles....\"Once a binding is declared in Wrangler, you get a new environment variable in the Workers runtime that represents your Analytics Engine. This variable has a method, writeDataPoint(). A “data point” "
+        },
+        {
+          "title": "Cloudflare: Build for the agent era",
+          "url": "https://www.cloudflare.com/",
+          "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for free — no credit card required."
+        },
+        {
+          "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+          "snippet": "Send and query unlimited-cardinality analytics from Workers."
+        },
+        {
+          "title": "Get started with Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/get-started/",
+          "snippet": "April 23, 2026 — [[analytics_engine_datasets]] binding = \"<BINDING_NAME>\" dataset = \"<DATASET_NAME>\" You can write data points to your Worker by calling the writeDataPoint() method that is exposed on the binding that you just created. async fetch(request, env) { env.WEATHER.writeDataPoint({ 'blobs': [\"Seattle\", \"USA\", \"pro_sensor_9000\"], // City, State 'doubles': [25, 0.5], 'indexes': [\"a3cd45\"] }"
+        },
+        {
+          "title": "Cloudflare - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cloudflare",
+          "snippet": "Cloudflare, Inc., is an American technology company headquartered in San Francisco, California, that provides a range of internet services, including content delivery network (CDN) services, cloud cybersecurity, DDoS mitigation, and ICANN -accredited domain registration. [4]"
+        },
+        {
+          "title": "Cloudflare Dashboard | Manage Your Account",
+          "url": "https://dash.cloudflare.com/login",
+          "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer platform."
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Cloudflare Analytics Engine SQL API sampling retention 3 months",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+          "snippet": "April 23, 2026 — Workers Analytics Engine provides unlimited-cardinality analytics at scale, via a built-in API to write data points from Workers, and a SQL API to query that data.\"Workers Analytics Engine provides unlimited-cardinality analytics at scale, via a built-in API to write data points from Workers, and a SQL API to query that data.\""
+        },
+        {
+          "title": "Cloudflare: Build for the agent era",
+          "url": "https://www.cloudflare.com/",
+          "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for free — no credit card required."
+        },
+        {
+          "title": "Workers Analytics Engine SQL API · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/sql-api/",
+          "snippet": "6 days ago — Refer to the Workers Analytics Engine SQL reference, for the full supported query syntax. A new table will automatically be created for each dataset once you start writing events to it from your worker. ... At very high volumes of data, Analytics Engine will downsample data in order to be able to maintain performance. Sampling can occur on write and on read.\"Refer to the Workers Analy"
+        },
+        {
+          "title": "How Cloudflare instruments services using Workers Analytics Engine",
+          "url": "https://blog.cloudflare.com/using-analytics-engine-to-improve-analytics-engine/",
+          "snippet": "April 22, 2026 — We’ve recently extended our retention from 31 to 92 days, and we will keep an eye on this to see if we should offer further extension. We saw lots of errors related to common mistakes or misunderstandings of proper SQL syntax.\"As you can see, the 99% percentile (corresponding to the 1% most complex queries to execute) sometimes spikes up to about 300ms. But on average our backend "
+        },
+        {
+          "title": "Cloudflare Dashboard | Manage Your Account",
+          "url": "https://dash.cloudflare.com/login",
+          "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer platform."
+        },
+        {
+          "title": "Cloudflare - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cloudflare",
+          "snippet": "Cloudflare, Inc., is an American technology company headquartered in San Francisco, California, that provides a range of internet services, including content delivery network (CDN) services, cloud cybersecurity, DDoS mitigation, and ICANN -accredited domain registration. [4]"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Workers Analytics Engine writeDataPoint blobs doubles index SQL",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "Write to Analytics Engine · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/examples/analytics-engine/",
+          "snippet": "April 23, 2026 — interface Env { ANALYTICS: AnalyticsEngineDataset; } export default { async fetch(request: Request, env: Env): Promise<Response> { const url = new URL(request.url); // Write a page view event env.ANALYTICS.writeDataPoint({ blobs: [ url.pathname, request.headers.get(\"cf-connecting-country\") ?? \"unknown\", ], doubles: [1], // Count indexes: [url.hostname], // Sampling key }); // Writ"
+        },
+        {
+          "title": "Get started with Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/get-started/",
+          "snippet": "April 23, 2026 — async fetch(request, env) { env.WEATHER.writeDataPoint({ 'blobs': [\"Seattle\", \"USA\", \"pro_sensor_9000\"], // City, State 'doubles': [25, 0.5], 'indexes': [\"a3cd45\"] }); return new Response(\"OK!\"); }\"You do not need to await writeDataPoint() — it will return immediately, and the Workers runtime handles writing your data in the background. A data point is a structured event that cons"
+        },
+        {
+          "title": "Workers Analytics Engine SQL API · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/sql-api/",
+          "snippet": "6 days ago — Column aliases can be used in queries to give names to the blobs and doubles in your dataset:\"SELECT timestamp, blob1 AS location_id, double1 AS inside_temp, double2 AS outside_temp FROM temperatures WHERE timestamp > NOW() - INTERVAL '1' DAY · Calculate number of readings taken at each location in the last 7 days. In this case, we are grouping by the index field so an exact count can"
+        },
+        {
+          "title": "Workers Analytics Engine — Limits · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/limits/",
+          "snippet": "April 23, 2026 — Analytics Engine will accept up to twenty blobs, twenty doubles, and one index per call to writeDataPoint.\"Review GraphQL Analytics API query limits.\""
+        },
+        {
+          "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+          "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+          "snippet": "July 15, 2026 — Doubles might include numbers like the temperature or air pressure reading. The blobs could include the location of the sensor and the hardware identifier of the sensor. ... async fetch(request: Request, env) { env.WEATHER.writeDataPoint({ blobs: ...\"To query your data, Cloudflare provides a rich SQL API. For example: SELECT blob_1 as city, avg(doubles_2) as avg_humidity FROM WEATH"
+        },
+        {
+          "title": "Cloudflare Analytics Engine: store and query metrics",
+          "url": "https://flaviocopes.com/cloudflare-analytics-engine/",
+          "snippet": "June 29, 2026 — env.ANALYTICS.writeDataPoint({ blobs: ['form-submission'], doubles: [1], indexes: [tenantId], }) Then at the end of the month, one SQL query tells me how much each tenant used.\"blobs are strings. The text you want to store: an event name, a page, a country. doubles are numbers. Things you’ll add up or average, like a count or a duration. indexes is the value you’ll group and filter"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Cloudflare Analytics Engine sampling adaptive sample interval",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "Sampling with Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/sampling/",
+          "snippet": "April 23, 2026 — Workers Analytics Engine offers the ability to write an extensive amount of data and retrieve it quickly, at minimal or no cost. To facilitate writing large amounts of data at a reasonable cost, Workers Analytics Engine employs weighted adaptive sampling ↗.\"How data written to Workers Analytics Engine is automatically sampled at scale\"\"Cloudflare Analytics: The sample interval of "
+        },
+        {
+          "title": "Sampling · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/graphql-api/sampling/",
+          "snippet": "April 23, 2026 — Without sampling, it might take ... almost always uses adaptive sampling, which means the sample rate fluctuates depending on the volume of data ingested or queried....\"For example, suppose that during an attack the sampling rate is 10% and 5,000 events are sampled. Cloudflare will estimate 50,000 total events (5,000 × 10) and report this value in Analytics. Cloudflare GraphQL API"
+        },
+        {
+          "title": "Analytics engine sampling and some more - Cloudflare Workers - Cloudflare Community",
+          "url": "https://community.cloudflare.com/t/analytics-engine-sampling-and-some-more/498207",
+          "snippet": "April 17, 2023 — I’m trying to better understand how sampling of Workers analytics work. I’ve read [the docs](Workers Analytics Engine SQL API · Cloudflare Analytics docs], and I understand that at high rates not all events will be stored for a given index key. I have a few questions: What is considered “high rate”? What happens to all the blobs and doubles when data is sampled?\"I’m trying to bett"
+        },
+        {
+          "title": "Don't roll your own high cardinality analytics, use Workers Analytics Engine",
+          "url": "https://blog.cloudflare.com/analytics-engine-open-beta/",
+          "snippet": "April 18, 2026 — To account for the different resolutions of data, each event carries with it information about the resolution of data that the event comes from. This information is encoded in the _sample_interval column.\"For the open beta, we are exposing _sample_interval directly to developers. In the future, we’ll make it easier to work with this field by providing convenience functions which a"
+        },
+        {
+          "title": "Understanding sampling in Cloudflare Analytics · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/sampling/",
+          "snippet": "April 23, 2026 — This document provides a comprehensive overview of how sampling works, why it is used, and its impact on analytics across different Cloudflare tools. We use a sampling method called Adaptive Bit Rate (ABR) ↗︎ to ensure that queries complete quickly, even when working with large datasets.\"This document provides a comprehensive overview of how sampling works, why it is used, and its"
+        },
+        {
+          "title": "How Cloudflare instruments services using Workers Analytics Engine",
+          "url": "https://blog.cloudflare.com/using-analytics-engine-to-improve-analytics-engine/",
+          "snippet": "April 22, 2026 — In order to accomplish this, we have implemented a sampling method called Adaptive Bit Rate (ABR). With ABR, if you have large amounts of data, your queries may be returned sampled events in order to respond in reasonable time. If you have more typical amounts of data, Analytics Engine will query all your data.\"In order to accomplish this, we have implemented a sampling method cal"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "reason": "attempt-1 results failed jev quality weighting (all weights < 0.5)",
+      "at": "2026-10-08T14:53:31.755Z"
+    }
+  ],
+  "results_kept": [
+    {
+      "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+      "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+      "weight": 0.52,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.cloudflare.com/",
+      "title": "Cloudflare: Build for the agent era",
+      "weight": 0.52,
+      "redo_of": null
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+      "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.52,
+      "redo_of": null
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/get-started/",
+      "title": "Get started with Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.51,
+      "redo_of": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cloudflare",
+      "title": "Cloudflare - Wikipedia",
+      "weight": 0.51,
+      "redo_of": null
+    },
+    {
+      "url": "https://dash.cloudflare.com/login",
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "weight": 0.49,
+      "redo_of": null
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+      "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.47,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.cloudflare.com/",
+      "title": "Cloudflare: Build for the agent era",
+      "weight": 0.47,
+      "redo_of": null
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/sql-api/",
+      "title": "Workers Analytics Engine SQL API · Cloudflare Analytics docs",
+      "weight": 0.47,
+      "redo_of": null
+    },
+    {
+      "url": "https://blog.cloudflare.com/using-analytics-engine-to-improve-analytics-engine/",
+      "title": "How Cloudflare instruments services using Workers Analytics Engine",
+      "weight": 0.48,
+      "redo_of": null
+    },
+    {
+      "url": "https://dash.cloudflare.com/login",
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "weight": 0.12,
+      "redo_of": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cloudflare",
+      "title": "Cloudflare - Wikipedia",
+      "weight": 0.12,
+      "redo_of": null
+    },
+    {
+      "url": "https://developers.cloudflare.com/workers/examples/analytics-engine/",
+      "title": "Write to Analytics Engine · Cloudflare Workers docs",
+      "weight": 0.55,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/get-started/",
+      "title": "Get started with Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.59,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/sql-api/",
+      "title": "Workers Analytics Engine SQL API · Cloudflare Analytics docs",
+      "weight": 0.59,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/limits/",
+      "title": "Workers Analytics Engine — Limits · Cloudflare Analytics docs",
+      "weight": 0.57,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+      "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+      "weight": 0.59,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://flaviocopes.com/cloudflare-analytics-engine/",
+      "title": "Cloudflare Analytics Engine: store and query metrics",
+      "weight": 0.33,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/sampling/",
+      "title": "Sampling with Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.35,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/graphql-api/sampling/",
+      "title": "Sampling · Cloudflare Analytics docs",
+      "weight": 0.34,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://community.cloudflare.com/t/analytics-engine-sampling-and-some-more/498207",
+      "title": "Analytics engine sampling and some more - Cloudflare Workers - Cloudflare Community",
+      "weight": 0.34,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://blog.cloudflare.com/analytics-engine-open-beta/",
+      "title": "Don't roll your own high cardinality analytics, use Workers Analytics Engine",
+      "weight": 0.35,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/sampling/",
+      "title": "Understanding sampling in Cloudflare Analytics · Cloudflare Analytics docs",
+      "weight": 0.63,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://blog.cloudflare.com/using-analytics-engine-to-improve-analytics-engine/",
+      "title": "How Cloudflare instruments services using Workers Analytics Engine",
+      "weight": 0.63,
+      "redo_of": "attempt-1"
+    }
+  ],
+  "high_weight_results": 12,
+  "outcome": "authored",
+  "jev_weights_summary": {
+    "total": 24,
+    "high": 12,
+    "max": 0.63
+  }
+}

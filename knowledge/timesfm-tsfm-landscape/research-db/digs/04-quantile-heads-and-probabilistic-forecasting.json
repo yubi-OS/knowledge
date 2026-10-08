@@ -1,0 +1,319 @@
+{
+  "nn": "04",
+  "slug": "quantile-heads-and-probabilistic-forecasting",
+  "scope": "Quantile heads and probabilistic forecasting in TSFMs: TimesFM 2.5 continuous quantile head, Chronos sample-based quantiles, Lag-Llama Student-t decoding, quantile crossing.",
+  "queries_attempted": [
+    {
+      "query": "TimesFM quantile head probabilistic forecasting",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "TimesFM 2.5 Quantile Forecasting for Inventory Planning | by Philippe Dagher | Medium",
+          "url": "https://medium.com/@nasdag/timesfm-2-5-quantile-forecasting-for-inventory-planning-2500c93de050",
+          "snippet": "October 6, 2025 — TimesFM 2.5 is a pretrained time-series ... key upgrade in version 2.5 is its optional quantile forecasting head, which enables native probabilistic outputs....\"The quantile head is an additional ~30M parameter component that can produce continuous quantile forecasts over long horizons (up to ~1,000 steps) on top of the base decoder-only model. The intent is production‑readiness:"
+        },
+        {
+          "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+          "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+          "snippet": "2 weeks ago — The model predicts 9 quantiles (from the 10th to the 90th percentile) for each target time series at every horizon step, providing a full probabilistic view of the forecast uncertainty.\"The model predicts 9 quantiles (from the 10th to the 90th percentile) for each target time series at every horizon step, providing a full probabilistic view of the forecast uncertainty. Let’s revisit "
+        },
+        {
+          "title": "[2310.03339] Probabilistic Forecasting of Day-Ahead Electricity …",
+          "url": "https://arxiv.org/abs/2310.03339",
+          "snippet": "Abstract:Accurate forecasts of electricity prices are crucial for the management of electric power systems and the development of smart applications. Eur…"
+        },
+        {
+          "title": "Stream live news 24/7, including NBC News NOW, Sky News, …",
+          "url": "https://www.nbcnews.com/watch",
+          "snippet": "Stream live news 24/7, including NBC News NOW, Sky News, Dateline, Noticias, TODAY All Day, and more. Choose your local …"
+        },
+        {
+          "title": "Manson Killer Patricia Krenwinkel Granted Parole Again",
+          "url": "https://lamag.com/crimeinla/manson-killer-patricia-krenwinkel-granted-parole-again/",
+          "snippet": "1 day ago · Manson Family killer Patricia Krenwinkel, California’s longest-serving female inmate, has been granted parole for the third time."
+        },
+        {
+          "title": "Google TimesFM 2.5: Zero-Shot Time Series AI... | WOWHOW",
+          "url": "https://wowhow.cloud/blogs/google-timesfm-2-5-zero-shot-time-series-forecasting-guide-2026",
+          "snippet": "Google TimesFM 2.5 forecasts any time series zero-shot. 200M params, 16K context, quantile outputs.Optional 30M quantile head for probabilistic forecasting. The 2.0 release produced point estimates only — a single predicted value per future time-step."
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "quantile forecasting time series foundation model CRPS",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Forecasting Time Series Data With Prophet I & II - Nextjournal",
+          "url": "http://nextjournal.com/eric-brown/forecasting-with-prophet",
+          "snippet": "Forecasting Time Series Data With Prophet I & II Introduction A lot of what I do in my data analytics work is understanding time series data, modeling th…"
+        },
+        {
+          "title": "MarketWatch: Stock Market News - Financial News",
+          "url": "https://www.marketwatch.com/",
+          "snippet": "MarketWatch provides the latest stock market, financial and business news. Get stock market quotes, personal finance advice, …"
+        },
+        {
+          "title": "Quantile - Wikipedia",
+          "url": "https://en.m.wikipedia.org/wiki/Quantile",
+          "snippet": "As in the computation of, for example, standard deviation, the estimation of a quantile depends upon whether one is operating with a statistical population or with a sample drawn from it. For a population, of discrete values or for a continuous population density, the k -th q -quantile is the data value where the cumulative distribution function crosses k/q. That is, x is a k -th q -quantile ..."
+        },
+        {
+          "title": "metrics - Skforecast Docs",
+          "url": "https://skforecast.org/latest/api/metrics",
+          "snippet": "Python library for time series forecasting using scikit-learn compatible models, statistical methods, and foundation models."
+        },
+        {
+          "title": "Conversational Time Series Foundation Models: Towards Explainable and ...",
+          "url": "https://arxiv.org/pdf/2512.16022",
+          "snippet": "Our model significantly outperformed the best time series foundation models on both CRPS and MASE metrics, establishing new state-of-the-art results across diverse forecasting tasks."
+        },
+        {
+          "title": "Foundation Model Forecasts: Form and Function",
+          "url": "https://arxiv.org/html/2510.19345v1",
+          "snippet": "October 22, 2025 — Proper scoring rules assess the ... losses across multiple quantile levels to provide an aggregate measure of interval quality [18]. The Continuous Ranked Probability Score (CRPS) [40] generalizes MAE to full predictive distributions:...\"A marginal forecaster with excellent CRPS cannot reliably estimate first-passage times without validated dependence modeling. A trajectory ense"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "TimesFM 2.5 continuous quantile head fix quantile crossing",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "google/timesfm-2.5-200m-pytorch · Hugging Face",
+          "url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch",
+          "snippet": "October 14, 2023 — import numpy as np import timesfm model = timesfm.TimesFM_2p5_200M_torch.from_pretrained(\"google/timesfm-2.5-200m-pytorch\", torch_compile=True) model.compile( timesfm.ForecastConfig( max_context=1024, max_horizon=256, normalize_inputs=True, use_continuous_quantile_head=True, force_flip_invariance=True, infer_is_positive=True, fix_quantile_crossing=True, ) ) point_forecast, quant"
+        },
+        {
+          "title": "TimesFM: Google's Foundation Model for Time Series, Explained for ...",
+          "url": "https://dev.to/arshtechpro/timesfm-googles-foundation-model-for-time-series-explained-for-developers-3jf9",
+          "snippet": "use_continuous_quantile_head=TrueTimesFM 3.0 landed in late August 2026, and it is a bigger jump than the version number suggests. Every checkpoint through 2.5 was strictly univariate."
+        },
+        {
+          "title": "TimesFM 2.5 Quantile Forecasting for Inventory Planning | by Philippe Dagher | Medium",
+          "url": "https://medium.com/@nasdag/timesfm-2-5-quantile-forecasting-for-inventory-planning-2500c93de050",
+          "snippet": "October 6, 2025 — The quantile head is an additional ~30M parameter component that can produce continuous quantile forecasts over long horizons (up to ~1,000 steps) on top of the base decoder-only model.\"The quantile head is an additional ~30M parameter component that can produce continuous quantile forecasts over long horizons (up to ~1,000 steps) on top of the base decoder-only model. The intent"
+        },
+        {
+          "title": "Model Module and Decoding (2.5 torch) | google-research/timesfm | DeepWiki",
+          "url": "https://deepwiki.com/google-research/timesfm/4.3.2-model-module-and-decoding-(2.5-torch)",
+          "snippet": "Sep 16, 2026 · It covers the core neural network forward pass, prefill phase, autoregressive decoding loop, checkpoint loading, and post-processing features including force flip invariance, continuous quantile head handling, and quantile crossing fixes."
+        },
+        {
+          "title": "timesfm/timesfm-forecasting/references/api_reference.md at master ...",
+          "url": "https://github.com/google-research/timesfm/blob/master/timesfm-forecasting/references/api_reference.md",
+          "snippet": "use_continuous_quantile_head (bool, default=False) Use the 30M-parameter continuous quantile head for better interval calibration. True (RECOMMENDED): More accurate prediction intervals, especially for longer horizons False: Uses fixed quantile buckets (faster but less accurate intervals)"
+        },
+        {
+          "title": "timesfm/src/timesfm/configs.py at master · google-research/timesfm · GitHub",
+          "url": "https://github.com/google-research/timesfm/blob/master/src/timesfm/configs.py",
+          "snippet": "head to avoid quantile collapsing. force_flip_invariance: Whether to force flip invariance. TimesFM guarantees that TimesFM (aX + b) = a * TimesFM (x) + b for a >= 0 by default. This flag extends it to a < 0 as well."
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Lag-Llama Student-t probabilistic forecasting quantiles",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "[2310.08278] Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting",
+          "url": "https://arxiv.org/abs/2310.08278",
+          "snippet": "February 8, 2024 — We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates.\"Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the "
+        },
+        {
+          "title": "GitHub - time-series-foundation-models/lag-llama: Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting · GitHub",
+          "url": "https://github.com/time-series-foundation-models/lag-llama",
+          "snippet": "Lag-Llama is a probabilistic forecasting model trained to output a probability distribution for each timestep to be predicted. For your own specific use-case, we would recommend benchmarking the zero-shot performance of the model on your data ...\"Lag-Llama is a probabilistic forecasting model trained to output a probability distribution for each timestep to be predicted. For your own specific use-"
+        },
+        {
+          "title": "Lag-Llama: Towards Foundation Models for Probabilistic Time Series ...",
+          "url": "https://arxiv.org/html/2310.08278",
+          "snippet": "We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates."
+        },
+        {
+          "title": "Time Series Forecasting with Lag-Llama - IBM",
+          "url": "https://www.ibm.com/think/tutorials/lag-llama",
+          "snippet": "July 17, 2026 — Foundation models have been built ... Lag-Llama is a general-purpose open source foundation model for probabilistic time series forecasting on univariate datasets that uses a transformer architecture....\"Foundation models for time series data are similar to other forms of generative AI that are trained on large-scale time series datasets and can output either deterministic or proba"
+        },
+        {
+          "title": "LAG Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lag",
+          "snippet": "3 days ago · The meaning of LAG is a falling or staying behind : the act or the condition of lagging. How to use lag in a sentence. …"
+        },
+        {
+          "title": "Probabilistic Time Series Forecasting",
+          "url": "https://www.emergentmind.com/topics/probabilistic-forecasting-for-time-series",
+          "snippet": "February 8, 2026 — Foundation models: Lag-Llama ... (Rasul et al., 2023). The model parameterizes predictive Student's t distributions and achieves state-of-the-art CRPS under both transfer and fine-tuned regimes....\"Metrics for empirical evaluation and comparison include Continuous Ranked Probability Score (CRPS), weighted quantile loss (wQL), mean/normalized absolute error (MAE/NMAE), mean absol"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "reason": "attempt-1 results failed jev quality weighting (all weights < 0.5)",
+      "at": "2026-10-08T14:53:04.047Z"
+    }
+  ],
+  "results_kept": [
+    {
+      "url": "https://medium.com/@nasdag/timesfm-2-5-quantile-forecasting-for-inventory-planning-2500c93de050",
+      "title": "TimesFM 2.5 Quantile Forecasting for Inventory Planning | by Philippe Dagher | Medium",
+      "weight": 0.27,
+      "redo_of": null
+    },
+    {
+      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+      "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+      "weight": 0.28,
+      "redo_of": null
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.03339",
+      "title": "[2310.03339] Probabilistic Forecasting of Day-Ahead Electricity …",
+      "weight": 0.27,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.nbcnews.com/watch",
+      "title": "Stream live news 24/7, including NBC News NOW, Sky News, …",
+      "weight": 0.28,
+      "redo_of": null
+    },
+    {
+      "url": "https://lamag.com/crimeinla/manson-killer-patricia-krenwinkel-granted-parole-again/",
+      "title": "Manson Killer Patricia Krenwinkel Granted Parole Again",
+      "weight": 0.15,
+      "redo_of": null
+    },
+    {
+      "url": "https://wowhow.cloud/blogs/google-timesfm-2-5-zero-shot-time-series-forecasting-guide-2026",
+      "title": "Google TimesFM 2.5: Zero-Shot Time Series AI... | WOWHOW",
+      "weight": 0.14,
+      "redo_of": null
+    },
+    {
+      "url": "http://nextjournal.com/eric-brown/forecasting-with-prophet",
+      "title": "Forecasting Time Series Data With Prophet I & II - Nextjournal",
+      "weight": 0.14,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.marketwatch.com/",
+      "title": "MarketWatch: Stock Market News - Financial News",
+      "weight": 0.15,
+      "redo_of": null
+    },
+    {
+      "url": "https://en.m.wikipedia.org/wiki/Quantile",
+      "title": "Quantile - Wikipedia",
+      "weight": 0.15,
+      "redo_of": null
+    },
+    {
+      "url": "https://skforecast.org/latest/api/metrics",
+      "title": "metrics - Skforecast Docs",
+      "weight": 0.35,
+      "redo_of": null
+    },
+    {
+      "url": "https://arxiv.org/pdf/2512.16022",
+      "title": "Conversational Time Series Foundation Models: Towards Explainable and ...",
+      "weight": 0.35,
+      "redo_of": null
+    },
+    {
+      "url": "https://arxiv.org/html/2510.19345v1",
+      "title": "Foundation Model Forecasts: Form and Function",
+      "weight": 0.34,
+      "redo_of": null
+    },
+    {
+      "url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch",
+      "title": "google/timesfm-2.5-200m-pytorch · Hugging Face",
+      "weight": 0.33,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://dev.to/arshtechpro/timesfm-googles-foundation-model-for-time-series-explained-for-developers-3jf9",
+      "title": "TimesFM: Google's Foundation Model for Time Series, Explained for ...",
+      "weight": 0.33,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://medium.com/@nasdag/timesfm-2-5-quantile-forecasting-for-inventory-planning-2500c93de050",
+      "title": "TimesFM 2.5 Quantile Forecasting for Inventory Planning | by Philippe Dagher | Medium",
+      "weight": 0.35,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://deepwiki.com/google-research/timesfm/4.3.2-model-module-and-decoding-(2.5-torch)",
+      "title": "Model Module and Decoding (2.5 torch) | google-research/timesfm | DeepWiki",
+      "weight": 0.34,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://github.com/google-research/timesfm/blob/master/timesfm-forecasting/references/api_reference.md",
+      "title": "timesfm/timesfm-forecasting/references/api_reference.md at master ...",
+      "weight": 0.82,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://github.com/google-research/timesfm/blob/master/src/timesfm/configs.py",
+      "title": "timesfm/src/timesfm/configs.py at master · google-research/timesfm · GitHub",
+      "weight": 0.81,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.08278",
+      "title": "[2310.08278] Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting",
+      "weight": 0.82,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://github.com/time-series-foundation-models/lag-llama",
+      "title": "GitHub - time-series-foundation-models/lag-llama: Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting · GitHub",
+      "weight": 0.81,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/html/2310.08278",
+      "title": "Lag-Llama: Towards Foundation Models for Probabilistic Time Series ...",
+      "weight": 0.83,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.ibm.com/think/tutorials/lag-llama",
+      "title": "Time Series Forecasting with Lag-Llama - IBM",
+      "weight": 0.27,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/lag",
+      "title": "LAG Definition & Meaning - Merriam-Webster",
+      "weight": 0.28,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.emergentmind.com/topics/probabilistic-forecasting-for-time-series",
+      "title": "Probabilistic Time Series Forecasting",
+      "weight": 0.28,
+      "redo_of": "attempt-1"
+    }
+  ],
+  "high_weight_results": 5,
+  "outcome": "authored",
+  "jev_weights_summary": {
+    "total": 24,
+    "high": 5,
+    "max": 0.83
+  }
+}

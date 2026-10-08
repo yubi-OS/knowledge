@@ -1,0 +1,209 @@
+{
+  "ref": "timesfm-tsfm-landscape",
+  "topic": "TimesFM and the time-series foundation-model landscape, plus the storage layer",
+  "schema_version": 2,
+  "created_at": "2026-10-08T14:35:10.443Z",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "timesfm-lineage",
+      "score": 1.9167,
+      "verdict": "load-bearing",
+      "scope": "TimesFM v1 (2023, ICML 2024) through 2.0, 2.5 and 3.0: checkpoints, parameter counts, context lengths, pretraining data, and the license boundary at 3.0."
+    },
+    {
+      "nn": "02",
+      "slug": "patched-decoder-architecture",
+      "score": 1.797,
+      "verdict": "load-bearing",
+      "scope": "The patched-decoder architecture: input/output patching, patch lengths, autoregressive decoding, positional embeddings, and what changes across versions."
+    },
+    {
+      "nn": "03",
+      "slug": "tsfm-landscape-comparison",
+      "score": 1.7681,
+      "verdict": "load-bearing",
+      "scope": "TimesFM vs Chronos, Moirai 2.0, Lag-Llama and TTM: tokenization vs patching, sizes, probabilistic outputs, and where each sits on GIFT-Eval."
+    },
+    {
+      "nn": "04",
+      "slug": "quantile-heads-and-probabilistic-forecasting",
+      "score": 1.5207,
+      "verdict": "marginal: keep only if the dig comes back strong",
+      "scope": "Quantile heads and probabilistic forecasting in TSFMs: TimesFM 2.5 continuous quantile head, Chronos sample-based quantiles, Lag-Llama Student-t decoding, quantile crossing."
+    },
+    {
+      "nn": "05",
+      "slug": "gift-eval-benchmark-protocol",
+      "score": 1.6154,
+      "verdict": "load-bearing",
+      "scope": "The GIFT-Eval benchmark protocol: 23 datasets, 7 domains, frequency and horizon ranges, metrics (CRPS, MASE, MSE), model types, leakage tracking, submission mechanics."
+    },
+    {
+      "nn": "06",
+      "slug": "workers-analytics-engine-time-series-storage",
+      "score": 1.7621,
+      "verdict": "load-bearing",
+      "scope": "Cloudflare Workers Analytics Engine as the storage tier: writeDataPoint schema (blobs/doubles/index), dataset binding, sampling, SQL API, and 3-month retention."
+    },
+    {
+      "nn": "07",
+      "slug": "jev-integration-design",
+      "score": 1.9317,
+      "verdict": "load-bearing",
+      "scope": "How the pieces compose for jev-timeseries: deterministic ETS in the worker, offline TimesFM 2.5 via a box-side bridge, WAE as trajectory tier, D1 as append-only system of record."
+    }
+  ],
+  "outline_score_validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "drop_rule": "score 0 (padding) drops",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "model_returned": "clef",
+    "batches": [
+      {
+        "requested_at": "2026-10-08T14:35:05.594Z",
+        "status": 200,
+        "model": "clef",
+        "usage": {
+          "input_tokens": 926,
+          "output_tokens": 0
+        },
+        "answers": {
+          "doc_01": {
+            "type": "score",
+            "score": 1.9167,
+            "legend": {
+              "0": "padding: drop",
+              "1": "marginal: keep only if the dig comes back strong",
+              "2": "load-bearing: core subtopic"
+            },
+            "probabilities": {
+              "0": 0.0214,
+              "1": 0.0406,
+              "2": 0.938
+            },
+            "confidence": 0.8231
+          },
+          "doc_02": {
+            "type": "score",
+            "score": 1.797,
+            "legend": {
+              "0": "padding: drop",
+              "1": "marginal: keep only if the dig comes back strong",
+              "2": "load-bearing: core subtopic"
+            },
+            "probabilities": {
+              "0": 0.0363,
+              "1": 0.1303,
+              "2": 0.8334
+            },
+            "confidence": 0.5692
+          },
+          "doc_03": {
+            "type": "score",
+            "score": 1.7681,
+            "legend": {
+              "0": "padding: drop",
+              "1": "marginal: keep only if the dig comes back strong",
+              "2": "load-bearing: core subtopic"
+            },
+            "probabilities": {
+              "0": 0.0544,
+              "1": 0.1232,
+              "2": 0.8224
+            },
+            "confidence": 0.5418
+          },
+          "doc_04": {
+            "type": "score",
+            "score": 1.5207,
+            "legend": {
+              "0": "padding: drop",
+              "1": "marginal: keep only if the dig comes back strong",
+              "2": "load-bearing: core subtopic"
+            },
+            "probabilities": {
+              "0": 0.0855,
+              "1": 0.3084,
+              "2": 0.6061
+            },
+            "confidence": 0.2047
+          },
+          "doc_05": {
+            "type": "score",
+            "score": 1.6154,
+            "legend": {
+              "0": "padding: drop",
+              "1": "marginal: keep only if the dig comes back strong",
+              "2": "load-bearing: core subtopic"
+            },
+            "probabilities": {
+              "0": 0.0839,
+              "1": 0.2168,
+              "2": 0.6993
+            },
+            "confidence": 0.3146
+          }
+        },
+        "legend": null
+      },
+      {
+        "requested_at": "2026-10-08T14:35:08.942Z",
+        "status": 200,
+        "model": "clef",
+        "usage": {
+          "input_tokens": 420,
+          "output_tokens": 0
+        },
+        "answers": {
+          "doc_06": {
+            "type": "score",
+            "score": 1.7621,
+            "legend": {
+              "0": "padding: drop",
+              "1": "marginal: keep only if the dig comes back strong",
+              "2": "load-bearing: core subtopic"
+            },
+            "probabilities": {
+              "0": 0.0505,
+              "1": 0.1369,
+              "2": 0.8126
+            },
+            "confidence": 0.5224
+          },
+          "doc_07": {
+            "type": "score",
+            "score": 1.9317,
+            "legend": {
+              "0": "padding: drop",
+              "1": "marginal: keep only if the dig comes back strong",
+              "2": "load-bearing: core subtopic"
+            },
+            "probabilities": {
+              "0": 0.0166,
+              "1": 0.0351,
+              "2": 0.9483
+            },
+            "confidence": 0.8512
+          }
+        },
+        "legend": null
+      }
+    ],
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07"
+    ]
+  }
+}

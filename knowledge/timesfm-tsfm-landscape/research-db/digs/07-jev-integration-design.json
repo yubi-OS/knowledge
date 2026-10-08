@@ -1,0 +1,319 @@
+{
+  "nn": "07",
+  "slug": "jev-integration-design",
+  "scope": "How the pieces compose for jev-timeseries: deterministic ETS in the worker, offline TimesFM 2.5 via a box-side bridge, WAE as trajectory tier, D1 as append-only system of record.",
+  "queries_attempted": [
+    {
+      "query": "append-only event log time series telemetry advisory forecast design",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Append-only Log | QuestDB",
+          "url": "https://questdb.com/glossary/append-only-log/",
+          "snippet": "Append-only logs add records only at the end, never editing or deleting them, giving time-series databases and event streams durable, ordered data.\"An append-only log is a data structure that only allows new records to be added to the end of the sequence, never modified or deleted. This immutable design pattern is fundamental to time-series databases, event sourcing systems, and distributed data p"
+        },
+        {
+          "title": "APPEND Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/append",
+          "snippet": "2 days ago · The meaning of APPEND is attach, affix. How to use append in a sentence. Add <span …"
+        },
+        {
+          "title": "Recover TextNow Account Without Email | Expert Q&A - JustAnswer",
+          "url": "https://www.justanswer.com/email/ge78b-can-t-remember-email-used-textnow-acct.html",
+          "snippet": "To recover your TextNow email, start by using the phone number linked to your account on the TextNow login page. Select 'Forgot Email' or 'Forgot Password' options to receive recovery links via SMS. Check all your email inboxes for any TextNow-related messages."
+        },
+        {
+          "title": "Data Base Software: Best Picks (2026)",
+          "url": "https://wifitalents.com/best/data-base-software/",
+          "snippet": "+Time-series storage tuned for high-ingest telemetry workloads+Flux and InfluxQL support flexible query and aggregation pathsRedis Streams supports append-only event logs with consumer groups, which supports..."
+        },
+        {
+          "title": "GitHub - kraayenjon/awesome-typesafe-jev: Awesome Jev: a source-backed field guide to TypeSafe's System One model, with SDKs, live demos, agent tools, and independent evaluations. · GitHub",
+          "url": "https://github.com/kraayenjon/awesome-typesafe-jev",
+          "snippet": "Canny — Claude Code and Codex hooks that record edits and checks in an append-only ledger, flag a \"done\" claim without a passing check after the last code edit, and use optional Jev Noul judgments for advisory rule checks or to recognize a non-completion message; its default gate allows a repeated stop after warning, the author has not measured project-wide quality gains, and enabling Jev sends cl"
+        },
+        {
+          "title": "All content Archive | October 2024 | TechRadar",
+          "url": "https://www.techradar.com/archive/2024/10",
+          "snippet": "World's most powerful desktop PC has 256 EPYC Genoa cores, 6TB (yes TB) RAM and costs only $120,000 — but you will have to bring your own Windows 11 Pro for Workstations OS"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Workers Analytics Engine D1 system of record worker telemetry",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "WORKERS Definition & Meaning - Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/workers",
+          "snippet": "2 days ago · The meaning of WORKER is one that works especially at manual or industrial labor or with a particular material —often used in combination. How to use worker in a sentence."
+        },
+        {
+          "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+          "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+          "snippet": "July 15, 2026 — Workers Analytics Engine is a new way to get telemetry about anything using Cloudflare Workers. Workers Analytics Engine provides time series analytics built for the serverless era\"Today we’re excited to introduce Workers Analytics Engine, a new way to get telemetry about anything using Cloudflare Workers.\"\"Workers Analytics Engine can be used to get telemetry about just about anyt"
+        },
+        {
+          "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+          "snippet": "April 23, 2026 — Send and query unlimited-cardinality analytics from Workers."
+        },
+        {
+          "title": "WORKERS | English meaning - Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/workers",
+          "snippet": "WORKERS definition: 1. members of the working class (= a social group that consists of people who own little or no…. Learn more."
+        },
+        {
+          "title": "Workers' Compensation - TN.gov",
+          "url": "https://www.tn.gov/workforce/divisions/workerscompensation.html",
+          "snippet": "Workers’ compensation is designed to protect employees and employers from the negative consequences associated with a work …"
+        },
+        {
+          "title": "Workers | U.S. Department of Labor",
+          "url": "https://beta.dol.gov/workers",
+          "snippet": "Whether you’re starting out, changing careers, or re-entering the workforce, we’re here to help. Explore job openings, get expert tips on resumes and interviews, and connect with training and support services tailored to your goals."
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "Cloudflare Workers analytics data time series storage design",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "Choosing a data or storage product. · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/storage-options/",
+          "snippet": "3 days ago — Analytics Engine is Cloudflare's time-series and metrics database that allows you to write unlimited-cardinality analytics at scale using a built-in API to write data points from Workers and query that data using SQL directly.\"Analytics Engine is Cloudflare's time-series and metrics database that allows you to write unlimited-cardinality analytics at scale using a built-in API to writ"
+        },
+        {
+          "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+          "snippet": "April 23, 2026 — Workers Analytics Engine provides unlimited-cardinality analytics at scale, via a built-in API to write data points from Workers, and a SQL API to query that data.\"Workers Analytics Engine provides unlimited-cardinality analytics at scale, via a built-in API to write data points from Workers, and a SQL API to query that data.\""
+        },
+        {
+          "title": "Get started with Workers Analytics Engine · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/analytics-engine/get-started/",
+          "snippet": "April 23, 2026 — curl \"https://api.cloudflare.c... SQL functionality. Workers Analytics Engine is optimized for powering time series analytics that can be visualized using tools like Grafana....\"Add the following to your Wrangler configuration file to create a binding to a Workers Analytics Engine dataset.\"\"This query first rounds the timestamp field to the nearest five minutes. Then, it groups by"
+        },
+        {
+          "title": "Analytics · Cloudflare Analytics docs",
+          "url": "https://developers.cloudflare.com/analytics/",
+          "snippet": "1 week ago — Refer to Types of analytics for more information about the various types of analytics and where they exist in the dashboard. ... Send unlimited-cardinality data from your Worker to a time-series database.\"Cloudflare visualizes the metadata collected by our products in the Cloudflare dashboard. Refer to Types of analytics for more information about the various types of analytics and wh"
+        },
+        {
+          "title": "Using Workers to store time-series data - Cloudflare Workers - Cloudflare Community",
+          "url": "https://community.cloudflare.com/t/using-workers-to-store-time-series-data/342579",
+          "snippet": "January 5, 2022 — Hey guys, This is quite an open-ended question, but I’m looking to store time-series data within Workers KV. Now, I realise that KV is adapted for a high amount of reads, but not all at once. One possible solution that has been suggested to me is the use of entry metadata — this means that when I call /list on the KV namespace all this metadata is returned to me at once.\"Hey guys"
+        },
+        {
+          "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+          "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+          "snippet": "July 15, 2026 — Workers Analytics Engine is optimized for powering time series analytics that can be visualized using tools like Grafana. Every event written from the runtime is automatically populated with a timestamp field.\"We could easily add another series here by just “grouping” on another field like “city”. Data can also be queried using our GraphQL API. At this time, the GraphQL API only su"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "append-only database event sourcing forecasting system design",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "Event Sourcing with SQLite: Append-Only Design",
+          "url": "https://www.sqliteforum.com/p/event-sourcing-with-sqlite",
+          "snippet": "March 17, 2026 — The current state of the system is reconstructed by replaying those events. SQLite works well for event sourcing because it provides: ... The focus is practical implementation. ... Updates overwrite state. ... The balance is derived by replaying events. ... The database becomes a log of events instead of mutable state.\"Learn how to implement event sourcing with SQLite using append"
+        },
+        {
+          "title": "Event Sourcing and Append-Only Files: Simplifying Database Persistence in Domain-Driven Design | by Heber Senger | Medium",
+          "url": "https://medium.com/@hesenger/event-sourcing-and-append-only-files-simplifying-database-persistence-in-domain-driven-design-10ca394a0223",
+          "snippet": "December 16, 2023 — The append-only method, however, provides a more straightforward option. In this case, new records are appended to an existing table with each modification of the state, reflecting events that signify changes in the state.\"In the software development world, Domain-Driven Design (DDD) and Event Sourcing have become rather popular because they provide effective…\"\"In the software "
+        },
+        {
+          "title": "Event Sourcing Pattern - Azure Architecture Center | Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+          "snippet": "Instead of storing only the current state of the data in a relational database, store the full series of actions taken on an object in an append-only store. The store acts as the system of record that you can use to materialize the domain objects.\"Instead of storing only the current state of the data in a relational database, store the full series of actions taken on an object in an append-only st"
+        },
+        {
+          "title": "Event Sourcing with a Single Database Table A Simplified Approach | Leapcell",
+          "url": "https://leapcell.io/blog/event-sourcing-with-a-single-database-table-a-simplified-approach",
+          "snippet": "November 4, 2025 — There are two primary operations in an Event Sourced system: Appending Events: When a business operation occurs, new events are generated and appended to the event log.\"There are two primary operations in an Event Sourced system: Appending Events: When a business operation occurs, new events are generated and appended to the event log.\"\"In the evolving landscape of modern softwa"
+        },
+        {
+          "title": "Event Sourcing in Practice: Building an Append-Only Event Store with Projections and Snapshots — Let's Build",
+          "url": "https://letsbuildsolutions.com/blog/system-design/event-sourcing-in-practice-building-an-append-only-event-store-with-projections-and-snapshots/",
+          "snippet": "March 12, 2026 — A deep technical guide to event sourcing: why CRUD loses business history, how to build an append-only event store in TypeScript with Postgres, projections for read models, snapshots for performance, and the real production tradeoffs around schema evolution, eventual consistency, and debugging.\"Accept the lag and design the UI around it (optimistic updates, “processing” states). E"
+        },
+        {
+          "title": "29. Event Sourcing: The Append-Only Truth - by Rohit",
+          "url": "https://systemdesignplaybook.substack.com/p/29-event-sourcing-the-append-only",
+          "snippet": "July 30, 2026 — This is event sourcing: store events, not state. State is derived from events. Events are append-only. You never update. You never delete. You only add. Traditional databases store current state.\"Simple CRUD: Basic create/read/update/delete No audit needs Current state sufficient Event sourcing adds complexity without benefit Extreme write rates with hot aggregates: If many writes "
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "reason": "attempt-1 results failed jev quality weighting (all weights < 0.5)",
+      "at": "2026-10-08T14:53:45.739Z"
+    }
+  ],
+  "results_kept": [
+    {
+      "url": "https://questdb.com/glossary/append-only-log/",
+      "title": "Append-only Log | QuestDB",
+      "weight": 0.12,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/append",
+      "title": "APPEND Definition & Meaning - Merriam-Webster",
+      "weight": 0.13,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.justanswer.com/email/ge78b-can-t-remember-email-used-textnow-acct.html",
+      "title": "Recover TextNow Account Without Email | Expert Q&A - JustAnswer",
+      "weight": 0.12,
+      "redo_of": null
+    },
+    {
+      "url": "https://wifitalents.com/best/data-base-software/",
+      "title": "Data Base Software: Best Picks (2026)",
+      "weight": 0.18,
+      "redo_of": null
+    },
+    {
+      "url": "https://github.com/kraayenjon/awesome-typesafe-jev",
+      "title": "GitHub - kraayenjon/awesome-typesafe-jev: Awesome Jev: a source-backed field guide to TypeSafe's System One model, with SDKs, live demos, agent tools, and independent evaluations. · GitHub",
+      "weight": 0.18,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.techradar.com/archive/2024/10",
+      "title": "All content Archive | October 2024 | TechRadar",
+      "weight": 0.17,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/workers",
+      "title": "WORKERS Definition & Meaning - Merriam-Webster",
+      "weight": 0.18,
+      "redo_of": null
+    },
+    {
+      "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+      "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+      "weight": 0.18,
+      "redo_of": null
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+      "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.11,
+      "redo_of": null
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/workers",
+      "title": "WORKERS | English meaning - Cambridge Dictionary",
+      "weight": 0.1,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.tn.gov/workforce/divisions/workerscompensation.html",
+      "title": "Workers' Compensation - TN.gov",
+      "weight": 0.1,
+      "redo_of": null
+    },
+    {
+      "url": "https://beta.dol.gov/workers",
+      "title": "Workers | U.S. Department of Labor",
+      "weight": 0.11,
+      "redo_of": null
+    },
+    {
+      "url": "https://developers.cloudflare.com/workers/platform/storage-options/",
+      "title": "Choosing a data or storage product. · Cloudflare Workers docs",
+      "weight": 0.63,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/",
+      "title": "Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.64,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/analytics-engine/get-started/",
+      "title": "Get started with Workers Analytics Engine · Cloudflare Analytics docs",
+      "weight": 0.62,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://developers.cloudflare.com/analytics/",
+      "title": "Analytics · Cloudflare Analytics docs",
+      "weight": 0.23,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://community.cloudflare.com/t/using-workers-to-store-time-series-data/342579",
+      "title": "Using Workers to store time-series data - Cloudflare Workers - Cloudflare Community",
+      "weight": 0.23,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://blog.cloudflare.com/workers-analytics-engine/",
+      "title": "Introducing Workers Analytics Engine | Cloudflare Blog",
+      "weight": 0.23,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.sqliteforum.com/p/event-sourcing-with-sqlite",
+      "title": "Event Sourcing with SQLite: Append-Only Design",
+      "weight": 0.22,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://medium.com/@hesenger/event-sourcing-and-append-only-files-simplifying-database-persistence-in-domain-driven-design-10ca394a0223",
+      "title": "Event Sourcing and Append-Only Files: Simplifying Database Persistence in Domain-Driven Design | by Heber Senger | Medium",
+      "weight": 0.22,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+      "title": "Event Sourcing Pattern - Azure Architecture Center | Microsoft Learn",
+      "weight": 0.04,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://leapcell.io/blog/event-sourcing-with-a-single-database-table-a-simplified-approach",
+      "title": "Event Sourcing with a Single Database Table A Simplified Approach | Leapcell",
+      "weight": 0.05,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://letsbuildsolutions.com/blog/system-design/event-sourcing-in-practice-building-an-append-only-event-store-with-projections-and-snapshots/",
+      "title": "Event Sourcing in Practice: Building an Append-Only Event Store with Projections and Snapshots — Let's Build",
+      "weight": 0.05,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://systemdesignplaybook.substack.com/p/29-event-sourcing-the-append-only",
+      "title": "29. Event Sourcing: The Append-Only Truth - by Rohit",
+      "weight": 0.05,
+      "redo_of": "attempt-1"
+    }
+  ],
+  "high_weight_results": 3,
+  "outcome": "authored",
+  "jev_weights_summary": {
+    "total": 24,
+    "high": 3,
+    "max": 0.64
+  }
+}
