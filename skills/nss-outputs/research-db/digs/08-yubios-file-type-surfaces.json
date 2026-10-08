@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "yubios-file-type-surfaces",
+  "scope": "File-type surfaces: scripts, systemd units, GitHub Actions workflows, Containerfiles, mkosi configs, refs/notes, with each surface's native mechanism vocabulary.",
+  "queries_attempted": [
+    {
+      "query": "systemd Type=notify sd_notify SuccessExitStatus oneshot service unit output",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 6
+    },
+    {
+      "query": "GitHub Actions workflow_call outputs mkosi Output manifest checksums OCI image labels reproducible",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/",
+    "https://www.baeldung.com/linux/systemd-notify",
+    "https://github.com/systemd/systemd",
+    "https://man7.org/linux/man-pages/man5/systemd.service.5.html",
+    "https://www.freedesktop.org/software/systemd/man/latest/sd_notify.html",
+    "https://github.com/",
+    "https://github.blog/",
+    "https://github.com/login",
+    "https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows",
+    "https://x.com/github",
+    "https://github.com/systemd/mkosi/blob/main/mkosi/resources/man/mkosi.1.md"
+  ],
+  "outcome": "authored"
+}

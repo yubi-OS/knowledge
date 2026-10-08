@@ -1,0 +1,70 @@
+{
+  "nn": "06",
+  "slug": "idempotency-contract",
+  "scope": "Idempotency contract: inherently_idempotent / key_required / not_supported, the Idempotency-Key header, and the effect boundary. SKIPPED: marginal outline score plus weak dig after redo.",
+  "queries_attempted": [
+    {
+      "query": "Idempotency-Key HTTP header IETF draft semantics",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 6
+    },
+    {
+      "query": "idempotent API design Stripe idempotency key retry duplicate",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 6
+    },
+    {
+      "query": "draft-ietf-httpapi-idempotency-key IETF datatracker",
+      "attempt": 2,
+      "raw_results": 0,
+      "kept": 6
+    },
+    {
+      "query": "Stripe API idempotency keys documentation safe retries POST",
+      "attempt": 2,
+      "raw_results": 0,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "original dig weak (0/12 high-weight results); marginal outline score 0.35 requires a strong dig",
+      "new_queries": [
+        "draft-ietf-httpapi-idempotency-key IETF datatracker",
+        "Stripe API idempotency keys documentation safe retries POST"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://datatracker.ietf.org/doc/draft-ietf-httpapi-idempotency-key-header/",
+    "https://www.freecodecamp.org/news/idempotence-explained",
+    "https://cloud.google.com/discover/idempotency",
+    "https://www.geeksforgeeks.org/javascript/what-is-an-idempotent-rest-api/",
+    "https://en.wikipedia.org/wiki/Idempotence",
+    "https://en.m.wikipedia.org/wiki/Idempotence",
+    "https://docs.stripe.com/api/idempotent_requests",
+    "https://en.wikipedia.org/wiki/Idempotence",
+    "https://cloud.google.com/discover/idempotency",
+    "https://www.geeksforgeeks.org/javascript/what-is-an-idempotent-rest-api/",
+    "https://www.freecodecamp.org/news/idempotence-explained",
+    "https://www.merriam-webster.com/dictionary/idempotent",
+    "https://datatracker.ietf.org/doc/draft-ietf-httpapi-idempotency-key-header/",
+    "https://www.nfl.com/draft",
+    "https://www.cnn.com/2026/04/09/politics/us-military-draft-registration-2026",
+    "https://usmilitary.com/military-draft-for-selective-service-to-begin/",
+    "https://datatracker.ietf.org/wg/",
+    "https://datatracker.ietf.org/d",
+    "https://dashboard.stripe.com/",
+    "https://docs.stripe.com/api/idempotent_requests",
+    "https://docs.stripe.com/keys",
+    "https://stripe.com/",
+    "https://stripe.com/payments",
+    "http://simonwillison.net/tags/idempotency/"
+  ],
+  "outcome": "skipped",
+  "skip_reason": "marginal subtopic (score 0.35, drop probability 0.75) and dig still weak after 1 redo with different queries: 0 high-weight results in 24 (best: IETF datatracker draft 0.41, Stripe docs 0.31, both below 0.5). Per parent brief Step 5 and the skills-variant marginal rule the doc is skipped and recorded as a gap. Do not pad with unweighted claims."
+}

@@ -1,0 +1,70 @@
+{
+  "nn": "02",
+  "slug": "sysexits-exit-codes",
+  "scope": "Exit-code vocabulary: EX_OK through EX_CONFIG, documented deviations, and the failure routing the codes enable.",
+  "queries_attempted": [
+    {
+      "query": "sysexits.h exit codes BSD meanings EX_USAGE EX_TEMPFAIL",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 6
+    },
+    {
+      "query": "command line tool exit code best practices distinguishable failure classes",
+      "attempt": 1,
+      "raw_results": 0,
+      "kept": 6
+    },
+    {
+      "query": "sysexits 3 man page exit codes OpenBSD NetBSD documentation",
+      "attempt": 2,
+      "raw_results": 0,
+      "kept": 6
+    },
+    {
+      "query": "EX_TEMPFAIL EX_USAGE EX_DATAERR exit code semantics official documentation",
+      "attempt": 2,
+      "raw_results": 0,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "original dig weak (1/12 high-weight results); marginal outline score 0.52 requires a strong dig",
+      "new_queries": [
+        "sysexits 3 man page exit codes OpenBSD NetBSD documentation",
+        "EX_TEMPFAIL EX_USAGE EX_DATAERR exit code semantics official documentation"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://manpages.ubuntu.com/manpages/noble/man3/sysexits.h.3head.html",
+    "https://man.openbsd.org/sysexits",
+    "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+    "https://www.autotrader.com/cars-for-sale/diesel/chevrolet/silverado-1500",
+    "https://www.gsp.com/cgi-bin/man.cgi?section=3&topic=sysexits",
+    "https://geratools.com/exit-codes-reference",
+    "https://www.lifewire.com/how-to-open-command-prompt-2618089",
+    "https://console.command.kw.com/command",
+    "https://www.merriam-webster.com/dictionary/command",
+    "https://www.lifewire.com/list-of-command-prompt-commands-4092302",
+    "https://pubs-opengroup-org.nproxy.org/onlinepubs/9699919799/utilities/xargs.html",
+    "https://pocketcmds.com/rules/clitools/clitools-exit-codes",
+    "https://man.netbsd.org/sysexits.3",
+    "https://www.fueleconomy.gov/feg/bymodel/2008_Honda_Fit.shtml",
+    "https://techbaked.com/bing-ai-writing/",
+    "https://man.openbsd.org/OpenBSD-5.3/sysexits.3",
+    "https://man.openbsd.org/sysexits",
+    "https://man.openbsd.org/exit.3",
+    "https://man7.org/linux/man-pages/man3/sysexits.h.3head.html",
+    "https://www.merriam-webster.com/dictionary/ex",
+    "https://runebook.dev/en/docs/python/library/os/os.EX_TEMPFAIL",
+    "https://www.youtube.com/watch?v=WUcB9k-1Qrk",
+    "https://blog.prepscholar.com/ie-vs-eg-vs-ex-definition",
+    "https://www.expedia.com/?msockid=227d2f78c94c6dad375f3893c8e26cf3"
+  ],
+  "outcome": "authored",
+  "redo_outcome": "strong after redo: 4 high-weight primary sources (NetBSD sysexits(3) 0.78, OpenBSD sysexits(3) 0.73/0.70, OpenBSD exit(3) 0.68); doc authored"
+}
