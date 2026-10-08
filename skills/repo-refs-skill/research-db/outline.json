@@ -1,0 +1,189 @@
+{
+ "topic": "Refreshable deep-archival routine for a repo's refs/ directory (repo-refs-skill): enumerate refs/*.md, fit a hyper-sphere RSI curve on 9-D primitive coverage, run the bounded RSI loop on the archive, dispatch parallel deep-research subagents per cycle to fill sparse cells.",
+ "source_doc": "yubi-OS/yubiOS skills/repo-refs-skill/SKILL.md (45,767 B)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "when-to-use-routing",
+   "scope": "When to Use / When NOT to Use triggers and the sibling-skill routing map.",
+   "seed_queries": [],
+   "note": "internal-record subtopic, no dig"
+  },
+  {
+   "nn": 2,
+   "slug": "substrate-refs-api",
+   "scope": "The refs/*.md substrate: Contents API listing, pagination, per-file fetch, size weight, naming convention.",
+   "seed_queries": [
+    "GitHub Contents API get repository contents pagination per_page",
+    "GitHub REST API rate limit 5000 requests per hour authenticated core limit"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "nine-d-primitive-basis",
+   "scope": "The 9-D binary primitive coverage basis, detection regexes, cycle-0 validation, near-constant filter.",
+   "seed_queries": [
+    "regex pattern detection binary feature extraction text documents",
+    "PCA on binary data SVD principal component analysis sparse boolean matrix"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "five-stage-pipeline",
+   "scope": "Stage 1 refresh + lift, Stage 2 sparse-cell detection, Stage 3 RSI dispatch, Stage 4 bounded RSI loop, Stage 5 verification.",
+   "seed_queries": []
+  },
+  {
+   "nn": 5,
+   "slug": "refreshable-incremental-cache",
+   "scope": "Incremental --since refresh, session cache with last_run_timestamp, 7-day TTL, refresh cadence.",
+   "seed_queries": [
+    "GitHub API list commits since parameter path filter repository",
+    "incremental sync cache invalidation timestamp delta pattern software"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "deep-research-hook",
+   "scope": "The 3-stream parallel subagent intake and write-through push to refs/.",
+   "seed_queries": [
+    "parallel LLM subagents multi-stream deep research synthesis",
+    "multi-agent AI research workflow parallel streams prior art survey"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "operating-modes-granularity",
+   "scope": "Operating Modes A-D, the granularity rule, scale considerations.",
+   "seed_queries": [
+    "scipy cKDTree nearest neighbor point cloud sparse detection",
+    "stereographic projection sphere Mobius transformation cross ratio"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "anti-patterns-red-flags",
+   "scope": "Anti-patterns, red flags, verification checklist.",
+   "seed_queries": [],
+   "note": "internal-record subtopic, no dig"
+  },
+  {
+   "nn": 9,
+   "slug": "skill-interaction-assumptions",
+   "scope": "Interaction map, the 10 key assumptions, lifecycle.",
+   "seed_queries": [],
+   "note": "internal-record subtopic, no dig"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 0.82,
+    "probabilities": {
+     "0": 0.39,
+     "1": 0.39,
+     "2": 0.22
+    },
+    "confidence": 0
+   },
+   "t02": {
+    "score": 1.67,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.12,
+     "2": 0.77
+    },
+    "confidence": 0.49
+   },
+   "t03": {
+    "score": 0.84,
+    "probabilities": {
+     "0": 0.48,
+     "1": 0.21,
+     "2": 0.31
+    },
+    "confidence": 0
+   },
+   "t04": {
+    "score": 0.2,
+    "probabilities": {
+     "0": 0.87,
+     "1": 0.06,
+     "2": 0.07
+    },
+    "confidence": 0.7
+   },
+   "t05": {
+    "score": 0.73,
+    "probabilities": {
+     "0": 0.47,
+     "1": 0.32,
+     "2": 0.21
+    },
+    "confidence": 0
+   },
+   "t06": {
+    "score": 0.82,
+    "probabilities": {
+     "0": 0.49,
+     "1": 0.21,
+     "2": 0.3
+    },
+    "confidence": 0
+   },
+   "t07": {
+    "score": 0.8,
+    "probabilities": {
+     "0": 0.43,
+     "1": 0.34,
+     "2": 0.23
+    },
+    "confidence": 0
+   },
+   "t08": {
+    "score": 1.36,
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.3,
+     "2": 0.53
+    },
+    "confidence": 0.04
+   },
+   "t09": {
+    "score": 1.4,
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.21,
+     "2": 0.6
+    },
+    "confidence": 0.11
+   }
+  },
+  "usage": {
+   "input_tokens": 1450,
+   "output_tokens": 139
+  },
+  "dropped": [
+   4
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "note": "drop rule applied as score < 0.5 (t04 = 0.20, P(padding) = 0.87). Scores are the model's continuous 0-2 scale."
+ }
+}

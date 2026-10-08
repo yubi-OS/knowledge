@@ -1,0 +1,36 @@
+{
+ "nn": 5,
+ "slug": "05-refreshable-incremental-cache",
+ "scope": "Incremental --since refresh, session cache with last_run_timestamp, 7-day TTL, refresh cadence.",
+ "queries_attempted": [
+  {
+   "query": "GitHub API list commits since parameter path filter repository",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "incremental sync cache invalidation timestamp delta pattern software",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.github.com/en/rest/commits/commits",
+  "https://docs.github.com/en/rest/commits",
+  "https://stackoverflow.com/questions/70331141/get-commits-for-a-repository-with-date-filter-using-gh-api",
+  "https://docs.github.com/en/pull-requests/reference/commits",
+  "https://shields.io/badges/git-hub-commits-since-latest-release",
+  "https://stackoverflow.com/questions/9179828/github-api-retrieve-all-commits-for-all-branches-for-a-repo",
+  "https://www.techinterview.org/post/3233468501/lld-cursor-based-sync/",
+  "https://imrizwan.com/blog/microsoft-graph-delta-query-incremental-sync-2026",
+  "https://softwarepatternslexicon.com/caching-patterns-and-invalidation/",
+  "https://github.com/jadenfix/beater/issues/319",
+  "https://www.merriam-webster.com/dictionary/incremental",
+  "https://nextjs.org/docs/app/api-reference/config/next-config-js/cacheHandlers"
+ ],
+ "outcome": "authored"
+}
