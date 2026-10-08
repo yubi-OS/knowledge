@@ -1,0 +1,66 @@
+{
+ "nn": "06",
+ "slug": "multi-key-quorum",
+ "scope": "Multi-key quorum patterns (2-of-3, 3-of-5) for owner-held root-of-trust: physical distribution and app-layer composition since YubiKeys lack native quorum.",
+ "queries_attempted": [
+  {
+   "query": "YubiKey backup key best practices multiple hardware keys",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "hardware security key recovery quorum multiple keys different locations",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "YubiKey primary backup recovery key setup strategy Yubico support",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 4
+  },
+  {
+   "query": "security key lost or stolen recovery plan account lockout backup hardware token",
+   "attempt": 2,
+   "raw_results": 6,
+   "kept": 5
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "initial dig too thin and mostly off-topic (2 usable authoritative results); REDO per brief rule with different queries",
+   "new_queries": [
+    "YubiKey primary backup recovery key setup strategy Yubico support",
+    "security key lost or stolen recovery plan account lockout backup hardware token"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.yubico.com/",
+  "https://www.yubico.com/products/spare/",
+  "https://www.pwdfortress.com/en/blog/backup-yubikey-second-security-key-2026",
+  "https://undercodetesting.com/how-to-use-multiple-yubikeys-for-maximum-security-step-by-step/",
+  "https://www.yubico.com/products/",
+  "https://www.youtube.com/watch?v=0iq0BgiKlWM",
+  "https://en.wikipedia.org/wiki/Computer_hardware",
+  "https://www.acehardware.com/",
+  "https://www.unchained.com/blog/why-2-of-3-multisig",
+  "https://learn.microsoft.com/en-us/answers/questions/896531/why-are-there-multiple-recovery-keys",
+  "https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/security-domain",
+  "https://developer.android.com/about/versions/pie/security/ckv-whitepaper",
+  "https://www.yubico.com/blog/backup-recovery-plan/",
+  "https://docs.yubico.com/hardware/yubihsm-2/hsm-2-user-guide/hsm2-backup-restore.html",
+  "https://www.youtube.com/watch?v=ZCcy8wL3X08",
+  "https://www.youtube.com/watch?v=o2FW4vYmh3E",
+  "https://vucense.com/tech-guides/identity-authentication/lost-2fa-device-account-recovery-2026/",
+  "https://support.office.com/en-us/article/Go-to-the-Office-365-Security-Compliance-Center-7e696a40-b86b-4a20-afcc-559218b7b1b8",
+  "https://en.m.wikipedia.org/wiki/Security",
+  "https://support.google.com/accounts/answer/185834?hl=en",
+  "https://www.pcmag.com/picks/best-hardware-security-keys"
+ ],
+ "outcome": "authored"
+}
