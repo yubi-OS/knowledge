@@ -1,0 +1,35 @@
+{
+  "topic": "How to work with the Resend transactional-email connection effectively (send-only API key, POST /emails shape, restricted-key error signatures)",
+  "ground_source": "yubi-OS/yubiOS skills/resend-connection/SKILL.md",
+  "subtopics": [
+    {"nn": 1, "slug": "connection-identity", "scope": "The conn_YBJp6OTaZ8ZX row, what a send-only Resend connection is, and the Stable Orbit transactional-email use case.", "seed_queries": [], "dig": "internal-record subtopic, no dig"},
+    {"nn": 2, "slug": "restricted-api-key-error", "scope": "Why read endpoints return 401 restricted_api_key, which endpoints trigger it, and official corroboration of the signature.", "seed_queries": ["Resend API restricted_api_key error send emails only scope", "Resend API key permissions restricted sending domain access"]},
+    {"nn": 3, "slug": "401-health-check", "scope": "Why restricted_api_key proves the proxy injected the credential and Resend authenticated it, versus genuinely bad key errors.", "seed_queries": ["Resend API 401 authentication error message missing_scope invalid key", "Resend API key Authorization Bearer header error response"]},
+    {"nn": 4, "slug": "post-emails-shape", "scope": "POST https://api.resend.com/emails: JSON fields from/to/subject/html, to as string or array, and the id-on-success response.", "seed_queries": ["Resend send email API POST /emails request body parameters", "Resend API send email to field string array html subject"]},
+    {"nn": 5, "slug": "from-domain-verification", "scope": "How a failed from address surfaces in the send error, why the key cannot list verified domains, and the human confirmation step before the first send.", "seed_queries": ["Resend domain verification from address not verified error", "Resend add custom domain DNS verification sending"]},
+    {"nn": 6, "slug": "connection-passthrough", "scope": "Passing connections [{id, name}] on every call so the proxy injects the credential, and the missing-key 401 when you forget.", "seed_queries": [], "dig": "internal-record subtopic, no dig"},
+    {"nn": 7, "slug": "no-read-surface", "scope": "Why this connection is not a connection-sweep surface and has no inbox or send-history read path.", "seed_queries": [], "dig": "internal-record subtopic, no dig"},
+    {"nn": 8, "slug": "error-signature-reference", "scope": "Consolidated table of restricted_api_key, missing or invalid token, domain verification failure, and 429 signatures.", "seed_queries": ["Resend API error codes reference documentation", "Resend error types validation_error rate_limit_error"]}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {"score": 1.5, "probabilities": {"0": 0.16, "1": 0.19, "2": 0.65}, "confidence": 0.23, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.16, "probabilities": {"0": 0.3, "1": 0.24, "2": 0.46}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 0.53, "probabilities": {"0": 0.55, "1": 0.38, "2": 0.07}, "confidence": 0.22, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.4, "probabilities": {"0": 0.25, "1": 0.1, "2": 0.65}, "confidence": 0.1, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.18, "probabilities": {"0": 0.28, "1": 0.27, "2": 0.45}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 0.65, "probabilities": {"0": 0.56, "1": 0.22, "2": 0.22}, "confidence": 0.01, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 0.82, "probabilities": {"0": 0.42, "1": 0.34, "2": 0.24}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.06, "probabilities": {"0": 0.29, "1": 0.36, "2": 0.35}, "confidence": 0.04, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1111, "output_tokens": 124},
+    "requested_at": "2026-10-08T02:09:50Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "dropped": [],
+    "kept": [1, 2, 3, 4, 5, 6, 7, 8],
+    "notes": "No subtopic scored 0. t03 (0.53), t06 (0.65), t07 (0.82) kept conditionally: t03 required a strong dig (redo rule applied, dig came back strong); t06 and t07 are internal-record subtopics grounded directly in the source doc where the dig criterion does not apply."
+  }
+}
