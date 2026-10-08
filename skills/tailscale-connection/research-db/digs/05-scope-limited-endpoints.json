@@ -1,0 +1,54 @@
+{
+  "nn": "05",
+  "slug": "scope-limited-endpoints",
+  "scope": "Dead ends verified on this connection: unscoped GET /tailnet/- returns 405 method_not_allowed; acls, routes, keyexpiry, tags, invites return 404/ERR under an API key; OAuth clients or differently scoped keys needed for the ACL surface.",
+  "queries_attempted": [
+    {
+      "query": "Tailscale API key scopes which endpoints allowed 404",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": [
+        "https://tailscale.com/docs/reference/tailscale-api",
+        "https://tailscale.com/docs/features/oauth-clients",
+        "https://github.com/sandraschi/documentation-mcp/blob/main/docs/integrations/tailscale/API_REFERENCE.md",
+        "http://api.tailscale.com/",
+        "https://tailscale.com/",
+        "https://github.com/YawLabs/tailscale-mcp"
+      ],
+      "http": 200,
+      "error": null
+    },
+    {
+      "query": "Tailscale OAuth client scopes vs API key capabilities ACL",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": [
+        "https://tailscale.com/blog/oauth",
+        "https://tailscale.com/docs/features/oauth-clients",
+        "https://binadit.com/tutorials/implement-tailscale-oauth-integration-with-identity-providers",
+        "https://registry.terraform.io/providers/tailscale/tailscale/latest/docs/resources/oauth_client",
+        "https://tailscale.com/s/oauth-clients/",
+        "https://tailscale.com/"
+      ],
+      "http": 200,
+      "error": null
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://tailscale.com/docs/reference/tailscale-api",
+    "https://tailscale.com/docs/features/oauth-clients",
+    "https://github.com/sandraschi/documentation-mcp/blob/main/docs/integrations/tailscale/API_REFERENCE.md",
+    "http://api.tailscale.com/",
+    "https://tailscale.com/",
+    "https://github.com/YawLabs/tailscale-mcp",
+    "https://tailscale.com/blog/oauth",
+    "https://tailscale.com/docs/features/oauth-clients",
+    "https://binadit.com/tutorials/implement-tailscale-oauth-integration-with-identity-providers",
+    "https://registry.terraform.io/providers/tailscale/tailscale/latest/docs/resources/oauth_client",
+    "https://tailscale.com/s/oauth-clients/",
+    "https://tailscale.com/"
+  ],
+  "outcome": "authored"
+}
