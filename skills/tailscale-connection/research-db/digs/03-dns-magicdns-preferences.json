@@ -1,0 +1,54 @@
+{
+  "nn": "03",
+  "slug": "dns-magicdns-preferences",
+  "scope": "DNS read endpoints: /tailnet/-/dns/preferences (magicDNS flag) and /tailnet/-/dns/nameservers; MagicDNS behavior.",
+  "queries_attempted": [
+    {
+      "query": "Tailscale API v2 DNS preferences magicDNS endpoint",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": [
+        "https://tailscale.com/docs/features/magicdns",
+        "https://tailscale.com/docs/reference/dns-in-tailscale",
+        "https://deepwiki.com/tailscale/tailscale/7.1-dns-resolution-and-magicdns",
+        "https://tailscale.com/",
+        "https://github.com/pleme-io/tailscale-terraform-resources/blob/main/resources/dns/dns_preferences.toml",
+        "http://api.tailscale.com/"
+      ],
+      "http": 200,
+      "error": null
+    },
+    {
+      "query": "Tailscale API nameservers endpoint tailnet dns configuration",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": [
+        "https://tailscale.com/docs/reference/dns-in-tailscale",
+        "https://tailscale.com/docs/reference/tailscale-api",
+        "https://docs.tailscale.com/",
+        "https://garrido.io/notes/tailscale-nextdns-custom-domains/",
+        "https://tailscale.com/",
+        "https://tailscale.com/docs/kubernetes-operator/api-server-access"
+      ],
+      "http": 200,
+      "error": null
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://tailscale.com/docs/features/magicdns",
+    "https://tailscale.com/docs/reference/dns-in-tailscale",
+    "https://deepwiki.com/tailscale/tailscale/7.1-dns-resolution-and-magicdns",
+    "https://tailscale.com/",
+    "https://github.com/pleme-io/tailscale-terraform-resources/blob/main/resources/dns/dns_preferences.toml",
+    "http://api.tailscale.com/",
+    "https://tailscale.com/docs/reference/dns-in-tailscale",
+    "https://tailscale.com/docs/reference/tailscale-api",
+    "https://docs.tailscale.com/",
+    "https://garrido.io/notes/tailscale-nextdns-custom-domains/",
+    "https://tailscale.com/",
+    "https://tailscale.com/docs/kubernetes-operator/api-server-access"
+  ],
+  "outcome": "authored"
+}

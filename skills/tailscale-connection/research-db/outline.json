@@ -1,0 +1,216 @@
+{
+  "topic": "How to work with the Tailscale API connection effectively: device listing, DNS preferences, scope-limited endpoints, API key expiry handling",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "connection-credential-injection",
+      "scope": "How the Sauna Tailscale API connection authenticates: api_key connection, proxy Bearer injection of the tskey-api token, the connections parameter on run_script/bash calls.",
+      "seed_queries": [
+        "Tailscale API authentication Bearer token api.tailscale.com",
+        "Tailscale API access token tskey-api Authorization header"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "device-listing-endpoint",
+      "scope": "GET /api/v2/tailnet/-/devices as the main surface: device object fields (name, addresses, os, clientVersion, created, lastSeen, connectedToControl, authorized, expires, keyExpiryDisabled, updateAvailable, blocksIncomingConnections, tailnetLockError).",
+      "seed_queries": [
+        "Tailscale API v2 list tailnet devices endpoint documentation",
+        "Tailscale API device object fields lastSeen clientVersion authorized expires"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "dns-magicdns-preferences",
+      "scope": "DNS read endpoints: /tailnet/-/dns/preferences (magicDNS flag) and /tailnet/-/dns/nameservers; MagicDNS behavior.",
+      "seed_queries": [
+        "Tailscale API v2 DNS preferences magicDNS endpoint",
+        "Tailscale API nameservers endpoint tailnet dns configuration"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "users-and-roles",
+      "scope": "GET /tailnet/-/users: login identities, role (owner), displayName; how user identity maps to tailnet administration.",
+      "seed_queries": [
+        "Tailscale API v2 users endpoint roles owner",
+        "Tailscale API list users displayName role documentation"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "scope-limited-endpoints",
+      "scope": "Dead ends verified on this connection: unscoped GET /tailnet/- returns 405 method_not_allowed; acls, routes, keyexpiry, tags, invites return 404/ERR under an API key; OAuth clients or differently scoped keys needed for the ACL surface.",
+      "seed_queries": [
+        "Tailscale API key scopes which endpoints allowed 404",
+        "Tailscale OAuth client scopes vs API key capabilities ACL"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "credential-traps-token-types",
+      "scope": "tskey-api (user API access token, works as Bearer) vs tskey-client (OAuth client secret, 401 as Bearer, must POST /api/v2/oauth/token for 1-hour access tokens); diagnosing sudden 401s by key prefix.",
+      "seed_queries": [
+        "Tailscale OAuth client credentials exchange access token api/v2/oauth/token",
+        "Tailscale API token invalid 401 client secret tskey-client"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "api-key-expiry-rotation",
+      "scope": "Tailscale API keys max out at 90-day expiry; rotation cadence; auth keys vs API keys; planning for dead connections and prompting rotation.",
+      "seed_queries": [
+        "Tailscale API key 90 day expiry maximum",
+        "Tailscale key rotation auth key expiry policy 90 days"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "tailnet-state-node-key-expiry",
+      "scope": "Tailnet operational facts as standing context: device inventory, node key expiry (rock1 2027-01-27) as a failure mode, Tailscale Funnel exposure of the shell bridge, connection to the debug-with-cli skill.",
+      "seed_queries": [
+        "Tailscale node key expiry reauthentication behavior",
+        "Tailscale Funnel HTTPS custom domain how it works"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "score": 1.01,
+        "probabilities": {
+          "0": 0.33,
+          "1": 0.33,
+          "2": 0.34
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.41,
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.31,
+          "2": 0.55
+        },
+        "confidence": 0.11,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.02,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.6,
+          "2": 0.21
+        },
+        "confidence": 0.4,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.46,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.31,
+          "2": 0.57
+        },
+        "confidence": 0.17,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.26,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.41,
+          "2": 0.43
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.28,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.34,
+          "2": 0.47
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.09,
+        "probabilities": {
+          "0": 0.21,
+          "1": 0.49,
+          "2": 0.3
+        },
+        "confidence": 0.23,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.11,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.54,
+          "2": 0.28
+        },
+        "confidence": 0.31,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 917,
+      "output_tokens": 124,
+      "cost": 0.000077028
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
