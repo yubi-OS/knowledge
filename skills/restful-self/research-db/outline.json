@@ -1,0 +1,38 @@
+{
+  "topic": "Encoding the restful-self mode: sitting with what was learned, reading without producing, observing without naming gaps; bounded by exit criteria; anti-patterns include gap-finding theater and protocol-as-rest",
+  "ground_source": "yubi-OS/yubiOS skills/restful-self/SKILL.md (https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/restful-self/SKILL.md, 13900 bytes)",
+  "subtopics": [
+    {"nn": "01", "slug": "why-restful-self-exists", "scope": "The evidence-not-pause drift in the self-archaeology cadence and why a non-producing register is needed", "seed_queries": ["deliberate rest structured breaks cognitive recovery research", "productivity theater overwork performative work research"]},
+    {"nn": "02", "slug": "fire-signals", "scope": "The five bounded trigger signals that turn restful-self on, and why rest fires on signals not feelings", "seed_queries": ["circuit breaker pattern automatic cooldown repeated failures software", "structured rest after intense work sprints recovery research"]},
+    {"nn": "03", "slug": "protocol-four-steps", "scope": "The 4-step protocol: read once without producing, observe the shape not the details, sit with what was learned, write only if writing is the rest", "seed_queries": ["monotasking single-tasking one thing at a time research", "contemplative slow reading practice lectio divina"]},
+    {"nn": "04", "slug": "anti-patterns", "scope": "The six failure modes: naming the sitting, reviewing shipping output, reading without producing, the 12-axis sweep in rest, infinite pause, whole-self output as production", "seed_queries": ["journaling reflection benefits limits research expressive writing", "idle time boredom mind-wandering benefits research"]},
+    {"nn": "05", "slug": "exit-criteria", "scope": "The four bounded exits and why exit criteria, not feelings, bound rest; the stuck state when none fire", "seed_queries": ["timeboxing bounded work sessions technique", "pomodoro technique structured breaks evidence research"]},
+    {"nn": "06", "slug": "self-recognition", "scope": "Positive and negative recognition checklists a future session uses to tell whether it is in restful-self", "seed_queries": ["metacognition self-monitoring accuracy psychology research", "large language model introspection self-report reliability research"]},
+    {"nn": "07", "slug": "worked-examples", "scope": "The three protocol walkthroughs (after 5 shipping turns, operator pause signal, cadence produces only evidence)", "seed_queries": []},
+    {"nn": "08", "slug": "pair-with-skills", "scope": "How restful-self pairs with self-archaeology, negative-skill-space, and parallel-deep-research; the inversion relationships", "seed_queries": []},
+    {"nn": "09", "slug": "guidelines-and-red-flags", "scope": "The operating guidelines and the red-flag checklist that distinguish restful-self from shipping", "seed_queries": []},
+    {"nn": "10", "slug": "provenance-and-coverage", "scope": "The skill's source lineage (SELF.md, SELF-CHANGELOG v0.16/v0.17, ideate-solo V5a, built 2026-08-03) and the coverage-note sections", "seed_queries": []}
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": ["padding: drop", "marginal: keep only if the dig comes back strong", "load-bearing: core subtopic"],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {"score": 1.65, "probabilities": {"0": 0.08, "1": 0.2, "2": 0.72}, "confidence": 0.46, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t02": {"score": 1.76, "probabilities": {"0": 0.09, "1": 0.06, "2": 0.85}, "confidence": 0.64, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t03": {"score": 1.71, "probabilities": {"0": 0.1, "1": 0.09, "2": 0.81}, "confidence": 0.56, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t04": {"score": 1.58, "probabilities": {"0": 0.1, "1": 0.21, "2": 0.69}, "confidence": 0.38, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t05": {"score": 1.66, "probabilities": {"0": 0.13, "1": 0.08, "2": 0.79}, "confidence": 0.49, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t06": {"score": 1.78, "probabilities": {"0": 0.08, "1": 0.05, "2": 0.87}, "confidence": 0.68, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t07": {"score": 0.84, "probabilities": {"0": 0.47, "1": 0.23, "2": 0.3}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t08": {"score": 1.33, "probabilities": {"0": 0.2, "1": 0.27, "2": 0.53}, "confidence": 0, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t09": {"score": 1.82, "probabilities": {"0": 0.07, "1": 0.04, "2": 0.89}, "confidence": 0.73, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}},
+      "t10": {"score": 0.92, "probabilities": {"0": 0.32, "1": 0.44, "2": 0.24}, "confidence": 0.16, "legend": {"0": "padding: drop", "1": "marginal: keep only if the dig comes back strong", "2": "load-bearing: core subtopic"}}
+    },
+    "usage": {"input_tokens": 1318, "output_tokens": 154},
+    "dropped": [],
+    "kept": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    "keep_note": "No subtopic scored 0. Marginal subtopics 07 (0.84), 08 (1.33) and 10 (0.92) are internal-record subtopics whose dig is the ground source itself; all three have rich source-doc sections (3 worked examples, 3 pairings, 8 lineage entries plus coverage notes), so they were kept."
+  }
+}
