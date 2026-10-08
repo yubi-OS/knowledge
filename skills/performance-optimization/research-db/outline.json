@@ -1,0 +1,273 @@
+{
+  "topic": "Optimizing application performance - when performance requirements exist, profiling bottlenecks, regression detection, and Core Web Vitals improvement",
+  "ground_source": "yubi-OS/yubiOS skills/performance-optimization/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "measure-first-discipline",
+      "scope": "When to optimize and when not to: measurement-before-change discipline, the cost of premature optimization, and the trigger conditions from the skill's When to Use section.",
+      "seed_queries": [
+        "performance optimization methodology measure before optimizing profile first",
+        "cost of premature optimization software engineering evidence"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "web-vitals-metrics",
+      "scope": "Core Web Vitals definitions and thresholds: LCP, INP, CLS good/needs-improvement/poor bands and how INP replaced FID.",
+      "seed_queries": [
+        "Core Web Vitals thresholds LCP INP CLS good poor scores",
+        "INP interaction to next paint replaced FID March 2024 Core Web Vitals"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "measurement-tooling",
+      "scope": "Synthetic vs RUM measurement: Lighthouse and DevTools performance profiling, the web-vitals JavaScript library, and CrUX field data.",
+      "seed_queries": [
+        "web-vitals JavaScript library onLCP onINP onCLS send to analytics",
+        "CrUX field data vs Lighthouse lab data differences"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "bottleneck-triage",
+      "scope": "Symptom-driven bottleneck identification: the where-to-start decision tree (slow load vs sluggish interaction vs backend) and frontend/backend symptom tables.",
+      "seed_queries": [
+        "diagnose slow web page TTFB network waterfall long tasks main thread",
+        "application performance bottleneck identification database CPU memory methodology"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "data-access-anti-patterns",
+      "scope": "Backend data-access fixes: N+1 queries, unbounded fetching and pagination, composite index design with EXPLAIN ANALYZE, and connection pool exhaustion.",
+      "seed_queries": [
+        "N+1 query problem detection fix eager loading join",
+        "PostgreSQL EXPLAIN ANALYZE composite index column order equality range sort"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "frontend-anti-patterns",
+      "scope": "Frontend fixes: responsive image optimization (srcset, sizes, art direction, AVIF/WebP), React re-render control, and bundle size with code splitting and lazy loading.",
+      "seed_queries": [
+        "responsive images srcset sizes art direction picture element AVIF WebP fetchpriority",
+        "React unnecessary re-renders memo useMemo bundle size code splitting lazy loading"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "caching-strategy",
+      "scope": "Caching decisions: layer selection (in-process, shared, edge), cache key design for correctness, invalidation strategies, stampede prevention, and what not to cache.",
+      "seed_queries": [
+        "cache invalidation strategies TTL event based versioned keys tradeoffs",
+        "cache stampede thundering herd prevention stale-while-revalidate request coalescing"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "verify-or-revert",
+      "scope": "Step 4 verification discipline: re-measuring under baseline conditions, beating run-to-run variance, neutral-is-a-revert, correctness gates, and the performance ledger for reverted attempts.",
+      "seed_queries": [
+        "benchmark noise run-to-run variance statistical significance performance regression testing",
+        "documenting reverted performance experiments optimization ledger"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "regression-guards",
+      "scope": "Step 5 regression prevention: performance budgets (bundle, image, API p95), synthetic CI gates with bundlesize and Lighthouse CI, and p75 RUM field monitoring with CrUX lag.",
+      "seed_queries": [
+        "performance budgets CI enforcement Lighthouse CI bundlesize regression gate",
+        "Core Web Vitals field monitoring alerting p75 RUM web-vitals attribution"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "verification-checklist",
+      "scope": "Internal-record subtopic: the skill's own verification checklist, common rationalizations table, and red flags, grounded only in the source SKILL.md.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.96
+        },
+        "confidence": 0.91
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.96
+        },
+        "confidence": 0.93
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.95
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.95
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.96,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.97
+        },
+        "confidence": 0.94
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.92,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.94
+        },
+        "confidence": 0.88
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.93,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.05,
+          "2": 0.94
+        },
+        "confidence": 0.9
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.93,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.96
+        },
+        "confidence": 0.91
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.91,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.94
+        },
+        "confidence": 0.86
+      },
+      "t10": {
+        "type": "score",
+        "score": 1.15,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.25,
+          "1": 0.34,
+          "2": 0.41000000000000003
+        },
+        "confidence": 0
+      }
+    },
+    "usage": {
+      "input_tokens": 1589,
+      "output_tokens": 154,
+      "cost": 0.000133476
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ]
+  }
+}
