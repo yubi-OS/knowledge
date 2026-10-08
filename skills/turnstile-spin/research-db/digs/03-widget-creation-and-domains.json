@@ -1,0 +1,136 @@
+{
+  "nn": "03",
+  "slug": "widget-creation-and-domains",
+  "scope": "Widget creation via the wrangler turnstile widget subcommand or scripts/widget-create.sh, managed mode, domain registration including the localhost and 127.0.0.1 rule, capturing sitekey and secret with jq, and the no-fallback-after-auth-failure rule.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "wrangler turnstile widget create command domains",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/turnstile/get-started/",
+    "https://dash.cloudflare.com/login",
+    "https://developers.cloudflare.com/turnstile/get-started/widget-management/api/",
+    "https://developers.cloudflare.com/turnstile/concepts/widget/",
+    "https://wpmetadata.com/wordpress/cloudflare-turnstile-sitekey-secret-key-setup/",
+    "https://developers.cloudflare.com/turnstile/spin/",
+    "https://developers.cloudflare.com/turnstile/spin/index.md",
+    "https://www.amazon.com/stores/Wrangler%C2%AE/page/447486A1-7264-4DFF-9C66-7F69EB4AA55B",
+    "https://www.wrangler.com/?msockid=1e4670fa4e39615303ab67164f69603b",
+    "https://www.wrangler.com/",
+    "https://en.wikipedia.org/wiki/Wrangler_(brand)"
+  ],
+  "outcome": "authored",
+  "q1_results": [
+    {
+      "query": "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+      "title": "Cloudflare: Build for the agent era",
+      "url": "https://www.cloudflare.com/",
+      "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for free \u2014 no credit card required.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.26
+    },
+    {
+      "query": "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+      "title": "Get started \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/get-started/",
+      "snippet": "A Turnstile widget is an instance of Turnstile embedded on your webpage. Each widget has a sitekey. (a public identifier you place in your HTML) and a secret key (a private credential your server uses to validate tokens).Mode, hostnames, appearance settings, and other options.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.95
+    },
+    {
+      "query": "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/login",
+      "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer platform.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.47
+    },
+    {
+      "query": "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+      "title": "Create and manage widgets using Cloudflare API",
+      "url": "https://developers.cloudflare.com/turnstile/get-started/widget-management/api/",
+      "snippet": "Required API token permissions At least one of the following is required: Turnstile Sites Write Account Settings Write Create a Turnstile Widget bash",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.91
+    },
+    {
+      "query": "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+      "title": "Turnstile widgets \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/concepts/widget/",
+      "snippet": "Turnstile widget modes, sizes, and rendering behavior.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.94
+    },
+    {
+      "query": "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+      "title": "How to Get Cloudflare Turnstile Sitekey and Secret Key",
+      "url": "https://wpmetadata.com/wordpress/cloudflare-turnstile-sitekey-secret-key-setup/",
+      "snippet": "I use the domain name for both fields but feel free to use anything to identify your widget. The \"Managed\" option for \"Widget Mode\" should be good for most users. Step 5 - Copy the Site Key and Secret Key After successfully adding your site to Turnstile, you will get the following message: \"Successfully created Turnstile widget!\"",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.13
+    }
+  ],
+  "q2_results": [
+    {
+      "query": "wrangler turnstile widget create command domains",
+      "title": "Turnstile Spin \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/spin/",
+      "snippet": "Run wrangler turnstile widget create to create the widget from your terminal. Wrangler prints the sitekey and secret; you wire the widget and siteverify by hand. From your AI coding agent. Paste a single prompt into Claude Code, Cursor, Codex, OpenCode, or GitHub Copilot Chat.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.71
+    },
+    {
+      "query": "wrangler turnstile widget create command domains",
+      "title": "developers.cloudflare.com/turnstile/spin/index.md",
+      "url": "https://developers.cloudflare.com/turnstile/spin/index.md",
+      "snippet": "Run `wrangler turnstile widget create` to create the widget from your terminal.The flow validates the exact sitekey, expected domains, clearance level, and a non-whitespace secret. Do not print the response or include it in command arguments, temporary files, logs, or chat. #",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.73
+    },
+    {
+      "query": "wrangler turnstile widget create command domains",
+      "title": "Amazon.com: Wrangler\u00ae",
+      "url": "https://www.amazon.com/stores/Wrangler%C2%AE/page/447486A1-7264-4DFF-9C66-7F69EB4AA55B",
+      "snippet": "For nearly 70 years, Wrangler has staked its claim as a global leader in jeans and denim wear, casual clothing and fashionable styles. Shop Wrangler on Amazon for authentic clothes built upon American heritage.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.01
+    },
+    {
+      "query": "wrangler turnstile widget create command domains",
+      "title": "Wrangler\u00ae | Official Site | Jeans and Apparel Since 1947",
+      "url": "https://www.wrangler.com/?msockid=1e4670fa4e39615303ab67164f69603b",
+      "snippet": "Since 1947, Wrangler has been the genuine source for comfortable jeans and western apparel. Explore our extensive collections of \u2026",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.02
+    },
+    {
+      "query": "wrangler turnstile widget create command domains",
+      "title": "Wrangler\u00ae | Official Site | Jeans and Apparel Since 1947",
+      "url": "https://www.wrangler.com/",
+      "snippet": "Since 1947, Wrangler has been the genuine source for comfortable jeans and western apparel. Explore our extensive collections of western clothing, including Wrangler jeans, jackets and other western wear.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.02
+    },
+    {
+      "query": "wrangler turnstile widget create command domains",
+      "title": "Wrangler (brand) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wrangler_(brand)",
+      "snippet": "Wrangler is an American manufacturer of jeans and other clothing items, particularly workwear. The brand is owned by Kontoor Brands, which also owns Lee. Its headquarters is in downtown Greensboro, North Carolina, with production plants located throughout the world.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.02
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "topic": "Setting up Cloudflare Turnstile end-to-end: codebase scan, widget creation via the Cloudflare API, embedding where bot verification is needed, canonical server-side siteverify wiring, validation, and skill persistence (yubiOS turnstile-spin skill)",
+  "ground_source": "yubi-OS/yubiOS skills/turnstile-spin/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "scope-and-triggers",
+      "scope": "When the skill loads: trigger vocabulary (Turnstile, CAPTCHA, siteverify, cf-turnstile-response, protect-this-form phrasing), flow selection between the creation wizard and the existing-widget flow, and the frontmatter scope boundary.",
+      "seed_queries": [],
+      "internal_record": true
+    },
+    {
+      "nn": "02",
+      "slug": "auth-and-account-probe",
+      "scope": "Cloudflare API token creation with Account.Turnstile:Edit scope, the auth-probe statuses (ok, missing_token, missing_scope, network_failure, upstream_failure, multiple_accounts, account_mismatch), approved canonical WRANGLER_BIN constraints, and token handoff without chat.",
+      "seed_queries": [
+        "Cloudflare API token custom token Turnstile edit permission account resources",
+        "CLOUDFLARE_API_TOKEN environment variable wrangler whoami api token"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "03",
+      "slug": "widget-creation-and-domains",
+      "scope": "Widget creation via the wrangler turnstile widget subcommand or scripts/widget-create.sh, managed mode, domain registration including the localhost and 127.0.0.1 rule, capturing sitekey and secret with jq, and the no-fallback-after-auth-failure rule.",
+      "seed_queries": [
+        "Cloudflare Turnstile create widget API managed mode sitekey secret key",
+        "wrangler turnstile widget create command domains"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "04",
+      "slug": "codebase-scan-and-insertion-plan",
+      "scope": "Silent detection of frontend framework, backend handler location, and existing CAPTCHA during the codebase scan; the insertion plan with recommended and skip-by-default markers; stable action assignment (1 to 32 chars, letters numbers underscores hyphens) and action-to-handler mapping.",
+      "seed_queries": [
+        "cf-turnstile widget embed data-sitekey data-action form",
+        "cloudflare turnstile action parameter siteverify action validation"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "05",
+      "slug": "frontend-embed-and-token-lifecycle",
+      "scope": "The frontend-edit contract (gate, don't replace): api.js script tag, implicit rendering via the cf-turnstile class, explicit render and widget ID retention, single-use token lifecycle, and window.turnstile.reset after failed or retried submissions.",
+      "seed_queries": [
+        "Cloudflare Turnstile client side render explicit render reset widget javascript",
+        "turnstile token single use expire siteverify retry reset"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "06",
+      "slug": "canonical-siteverify",
+      "scope": "Canonical server-side siteverify: POST to challenges.cloudflare.com/turnstile/v0/siteverify with form-urlencoded secret, response, remoteip; response fields success, action, hostname; fail-closed error handling; expected action and hostname allowlist checks; browser never calls siteverify directly.",
+      "seed_queries": [
+        "cloudflare turnstile siteverify endpoint request parameters response fields",
+        "turnstile siteverify action hostname validation server side"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "07",
+      "slug": "secret-handling-and-guarded-retrieval",
+      "scope": "Secret hygiene: TURNSTILE_SECRET in the user's env or secret store, git check-ignore before env writes, wrangler secret put for Workers, and the existing-widget guarded retrieval flow (widget get, jq metadata validation, dummy-probe validation before the sink, secret list re-check).",
+      "seed_queries": [
+        "wrangler secret put workers secret management",
+        "git check-ignore env file secrets gitignore best practices"
+      ],
+      "internal_record": false
+    },
+    {
+      "nn": "08",
+      "slug": "validation-migration-and-edge-cases",
+      "scope": "Validation with the dummy probe token (invalid-input-response means the secret is valid) plus real end-to-end token and replay rejection; migration from reCAPTCHA and hCaptcha (detection signals, substitution table, v3 score caveat, Enterprise pointer); edge cases (Pages plugin, PUT vs PATCH 10405, invalid-input-secret remediation).",
+      "seed_queries": [
+        "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+        "migrate recaptcha hcaptcha to cloudflare turnstile"
+      ],
+      "internal_record": false
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "score": 1.64,
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.09,
+          "2": 0.77
+        },
+        "confidence": 0.44
+      },
+      "t02": {
+        "score": 1.57,
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.1,
+          "2": 0.73
+        },
+        "confidence": 0.34
+      },
+      "t03": {
+        "score": 1.6,
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.1,
+          "2": 0.75
+        },
+        "confidence": 0.4
+      },
+      "t04": {
+        "score": 1.33,
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.13,
+          "2": 0.6
+        },
+        "confidence": 0
+      },
+      "t05": {
+        "score": 1.76,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.05,
+          "2": 0.86
+        },
+        "confidence": 0.66
+      },
+      "t06": {
+        "score": 1.82,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.03,
+          "2": 0.89
+        },
+        "confidence": 0.71
+      },
+      "t07": {
+        "score": 1.69,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.06,
+          "2": 0.81
+        },
+        "confidence": 0.52
+      },
+      "t08": {
+        "score": 1.68,
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.07,
+          "2": 0.8
+        },
+        "confidence": 0.5
+      }
+    },
+    "usage": {
+      "input_tokens": 1448,
+      "output_tokens": 124
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
