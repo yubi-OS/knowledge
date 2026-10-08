@@ -1,0 +1,77 @@
+{
+  "nn": "02",
+  "slug": "feature-flag-strategy",
+  "scope": "Decoupling deployment from release with feature flags: the flag lifecycle (deploy off, enable team, gradual rollout, monitor, clean up) and the ownership, expiry, and nesting rules.",
+  "queries_attempted": [
+    {
+      "query": "feature flag best practices lifecycle cleanup expiration",
+      "attempt": 1,
+      "raw_results": 61,
+      "kept": 6
+    },
+    {
+      "query": "feature flags progressive delivery kill switch best practices",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "martin fowler feature toggles categories",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    },
+    {
+      "query": "feature flag technical debt cleanup lifecycle best practices",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 2,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-round dig too thin or noisy (dictionary entries, off-topic results dominated)",
+      "new_queries": [
+        "martin fowler feature toggles categories",
+        "feature flag technical debt cleanup lifecycle best practices"
+      ]
+    },
+    {
+      "attempt": 2,
+      "reason": "first-round dig too thin or noisy (dictionary entries, off-topic results dominated)",
+      "new_queries": [
+        "martin fowler feature toggles categories",
+        "feature flag technical debt cleanup lifecycle best practices"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://feature.com/",
+    "https://www.merriam-webster.com/dictionary/feature",
+    "https://feature.com/collections/clothing",
+    "https://dictionary.cambridge.org/dictionary/english/feature",
+    "https://www.cloudbees.com/blog/feature-flag-best-practices",
+    "https://featureflip.io/blog/feature-flag-best-practices/",
+    "https://pritcloud.com/blog/devsecops/feature-flags-progressive-delivery",
+    "https://ruchitsuthar.com/blog/software-architecture/feature-flags-progressive-delivery/",
+    "https://www.askantech.com/feature-flags-production-progressive-delivery-implementation-guide/",
+    "https://acquriotech.com/blog/feature-flags-progressive-delivery",
+    "https://www.getunleash.io/blog/kill-switch-vs-progressive-delivery",
+    "https://www.conservapedia.com/NATO_war_in_Ukraine",
+    "https://www.martinguitar.com/",
+    "https://martinfowler.com/articles/feature-toggles.html",
+    "https://github.com/thiagolunardi/FeatureToggle",
+    "https://www.martinguitar.com/guitars/",
+    "https://dzone.com/articles/feature-toggles-are-one-worst",
+    "https://www.martinfowler.com/articles/feature-toggles.html",
+    "https://feature.com/",
+    "https://www.getunleash.io/blog/using-feature-flags-to-manage-technical-debt",
+    "https://www.merriam-webster.com/dictionary/feature",
+    "https://feature.com/collections/clothing",
+    "https://flagshark.com/blog/feature-flag-technical-debt-guide/",
+    "https://dictionary.cambridge.org/dictionary/english/feature"
+  ],
+  "outcome": "authored"
+}
