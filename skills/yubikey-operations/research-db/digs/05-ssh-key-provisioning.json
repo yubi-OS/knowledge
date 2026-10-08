@@ -1,0 +1,30 @@
+{
+ "nn": "05",
+ "slug": "ssh-key-provisioning",
+ "scope": "SSH key provisioning from PIV slot 9a via PKCS#11 and from FIDO2 (ed25519-sk, ecdsa-sk, resident keys), plus the yubiOS keyfile naming convention.",
+ "queries_attempted": [
+  {
+   "query": "OpenSC PKCS#11 YubiKey PIV SSH agent authorized_keys",
+   "attempt": 1,
+   "raw_results": 0,
+   "kept": 0
+  },
+  {
+   "query": "ssh-keygen ed25519-sk ecdsa-sk resident key YubiKey verify-required",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html",
+  "https://www.openssh.org/",
+  "https://gist.github.com/Kranzes/be4fffba5da3799ee93134dc68a4c67b",
+  "https://en.wikipedia.org/wiki/Secure_Shell",
+  "https://www.ssh.com/academy/ssh",
+  "https://developers.yubico.com/SSH/"
+ ],
+ "outcome": "authored"
+}

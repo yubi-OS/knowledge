@@ -1,0 +1,216 @@
+{
+ "topic": "YubiKey-specific identity operations for yubiOS: FIDO2 enrollment (hmac-secret, passkey, PRF), PIV slot management (9c signing, 9a auth), ssh-key provisioning from PIV and FIDO2, attestation certificate extraction, multi-key quorum patterns for owner-held root-of-trust, and the yubiOS backup/restore discipline.",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "identity-root-model",
+   "scope": "The yubiOS YubiKey vs fTPM split: owner-held cryptographic identity vs platform-bound attestation, and what the YubiKey is used for.",
+   "seed_queries": [
+    "FIDO2 vs TPM platform bound identity hardware security key difference",
+    "YubiKey user held identity root of trust SSH git signing"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "piv-slot-conventions",
+   "scope": "PIV applet slot map (9a auth, 9c signature, 9d key mgmt, 9e card auth, 82-95 retired keys) and the yubiOS slot conventions including generation history.",
+   "seed_queries": [
+    "Yubico PIV certificate slots 9a 9c 9d 9e reference",
+    "YubiKey PIV retired key management slots 82-95 rotation"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "fido2-hmac-secret",
+   "scope": "The FIDO2 hmac-secret extension: how it derives symmetric secrets and its yubiOS consumers (systemd-cryptenroll LUKS2, systemd-homed, age-plugin-yubikey).",
+   "seed_queries": [
+    "FIDO2 hmac-secret extension YubiKey systemd-cryptenroll LUKS2",
+    "systemd-cryptenroll fido2 device YubiKey home unlock"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "prf-and-passkeys",
+   "scope": "FIDO2 PRF extension (hmac-secret v2) and passkey / discoverable credential posture: YubiKey as primary webauthn credential.",
+   "seed_queries": [
+    "FIDO2 PRF extension hmac secret v2 YubiKey deterministic secret",
+    "YubiKey passkey discoverable credential webauthn portable"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "ssh-key-provisioning",
+   "scope": "SSH key provisioning from PIV slot 9a via PKCS#11 and from FIDO2 (ed25519-sk, ecdsa-sk, resident keys), plus the yubiOS keyfile naming convention.",
+   "seed_queries": [
+    "OpenSC PKCS#11 YubiKey PIV SSH agent authorized_keys",
+    "ssh-keygen ed25519-sk ecdsa-sk resident key YubiKey verify-required"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "multi-key-quorum",
+   "scope": "Multi-key quorum patterns (2-of-3, 3-of-5) for owner-held root-of-trust: physical distribution and app-layer composition since YubiKeys lack native quorum.",
+   "seed_queries": [
+    "YubiKey backup key best practices multiple hardware keys",
+    "hardware security key recovery quorum multiple keys different locations"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "backup-restore-discipline",
+   "scope": "Treating enrollment as destructive: pre-enroll attestation export, dual-enrollment window, post-enroll verification, re-signing artifacts, and retired-key 90 day convention.",
+   "seed_queries": [
+    "ykman piv export certificate backup before regenerate",
+    "YubiKey PIV key rotation old key retired slot migration"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "attestation-extraction",
+   "scope": "Extracting FIDO2/PIV attestation certificates (slot 9c cert, device cert via credential management) for audit and device inventory.",
+   "seed_queries": [
+    "YubiKey attestation certificate extract PIV slot audit",
+    "Yubico FIDO2 attestation certificate device inventory"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.5,
+    "probabilities": {
+     "0": 0.15,
+     "1": 0.19,
+     "2": 0.66
+    },
+    "confidence": 0.27,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.25,
+     "2": 0.66
+    },
+    "confidence": 0.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.83,
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.59,
+     "2": 0.12
+    },
+    "confidence": 0.39,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.25,
+    "probabilities": {
+     "0": 0.21,
+     "1": 0.33,
+     "2": 0.46
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.83,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.12,
+     "2": 0.86
+    },
+    "confidence": 0.76,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.96,
+    "probabilities": {
+     "0": 0.21,
+     "1": 0.62,
+     "2": 0.17
+    },
+    "confidence": 0.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.13,
+     "2": 0.82
+    },
+    "confidence": 0.66,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.44,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.48,
+     "2": 0.48
+    },
+    "confidence": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1141,
+   "output_tokens": 124,
+   "cost": 0.000095844
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}

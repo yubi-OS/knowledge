@@ -1,0 +1,35 @@
+{
+ "nn": "07",
+ "slug": "backup-restore-discipline",
+ "scope": "Treating enrollment as destructive: pre-enroll attestation export, dual-enrollment window, post-enroll verification, re-signing artifacts, and retired-key 90 day convention.",
+ "queries_attempted": [
+  {
+   "query": "ykman piv export certificate backup before regenerate",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "YubiKey PIV key rotation old key retired slot migration",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 5
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.yubico.com/software/yubikey/tools/ykman/PIV_Commands.html",
+  "https://docs.yubico.com/software/yubikey/tools/ykman/",
+  "https://www.ssl.com/how-to/key-generation-and-attestation-with-yubikey/",
+  "https://developers.yubico.com/yubikey-manager/API_Documentation/autoapi/ykman/piv/index.html",
+  "https://www.yubico.com/support/download/yubikey-manager/",
+  "https://github.com/arekinath/pivy",
+  "https://stackoverflow.com/questions/55267070/how-to-move-a-key-to-a-retired-slot-on-yubikey-piv",
+  "https://www.yubico.com/",
+  "https://www.yubico.com/products/",
+  "https://developers.yubico.com/yubico-piv-tool/Actions/key_move.html",
+  "https://security.stackexchange.com/questions/258518/using-retired-extra-slots-82-95-on-yubikey"
+ ],
+ "outcome": "authored"
+}
