@@ -1,0 +1,224 @@
+{
+ "topic": "Minimizing tokens spent per unit of useful signal (grep/glob before whole-file reads, targeted line ranges, batched independent tool calls, no re-reading content already in context, matching model tier to task size)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "01-search-before-read",
+   "scope": "Search before you read: grep and glob to locate the right file and line before any full-file read.",
+   "seed_queries": [
+    "grep before reading whole file LLM agent context token efficiency",
+    "ripgrep search first targeted read AI coding agents best practices"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "02-targeted-reads",
+   "scope": "Read narrow: targeted offset and limit line ranges instead of whole-file reads on large files.",
+   "seed_queries": [
+    "offset limit partial file reading tool LLM large files",
+    "context window cost large file reads chunking best practices"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "03-batched-tool-calls",
+   "scope": "Batch independent tool calls in one block, with the dependency test that decides which calls batch.",
+   "seed_queries": [
+    "parallel tool calls LLM agents batching independent",
+    "reduce latency batching multiple function calls AI agent orchestration"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "04-context-reuse-no-restatement",
+   "scope": "Context reuse and no restatement: never re-fetch or echo content already in context; reuse provider prompt caching.",
+   "seed_queries": [
+    "prompt caching reuse context LLM cost savings",
+    "LLM wasted tokens repetition context window deduplication"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "05-script-offloading-bulk-transforms",
+   "scope": "Offload bulk transforms to scripts and summarize large blobs instead of pasting raw output.",
+   "seed_queries": [
+    "code interpreter bulk data transformation instead of model processing tokens",
+    "summarize large API responses LLM instead of pasting raw JSON"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "06-tier-matching",
+   "scope": "Match tool and model tier to task size: cheap models for lookups and menial subtasks, strong tiers only when needed.",
+   "seed_queries": [
+    "model routing cascade cheap model easy tasks LLM cost",
+    "route queries smaller model larger model cost efficiency production"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "07-load-order-protocol",
+   "scope": "Load-order protocol: read the domain skill before external API calls to avoid schema-shape retry loops.",
+   "seed_queries": [
+    "GraphQL schema first query avoid validation errors API",
+    "reading API documentation before integration avoids errors rework"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "08-verification-and-failure-modes",
+   "scope": "Verification checklist (8 items) and failure modes (6 red flags) plus the skill's own RSI improvement history.",
+   "seed_queries": [
+    "LLM agent checklist self-verification tool use quality",
+    "over-summarization losing information LLM agent risk"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.63,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.25,
+     "2": 0.69
+    },
+    "confidence": 0.44
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.75,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.17,
+     "2": 0.79
+    },
+    "confidence": 0.62
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.71,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.2,
+     "2": 0.76
+    },
+    "confidence": 0.58
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.01,
+     "2": 0.97
+    },
+    "confidence": 0.93
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.08,
+     "2": 0.89
+    },
+    "confidence": 0.79
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.94
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.54,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.32,
+     "2": 0.61
+    },
+    "confidence": 0.31
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.09,
+     "2": 0.86
+    },
+    "confidence": 0.71
+   }
+  },
+  "usage": {
+   "input_tokens": 998,
+   "output_tokens": 124,
+   "cost": 8.3832e-05
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ }
+}
