@@ -1,0 +1,250 @@
+{
+  "topic": "Actually searching for prior attempts at similar engineering problems: software projects, technical ideas, adoption history; generating queries, running web searches, synthesizing a cited prior-art report",
+  "ground_source": "yubi-OS/yubiOS skills/prior-art-search/SKILL.md",
+  "ground_source_url": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/prior-art-search/SKILL.md",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "scope-and-triggers",
+      "scope": "Engineering vs patent prior-art disambiguation, trigger phrases, and the apply/do-not-use boundaries from the source doc's When to Use section.",
+      "seed_queries": [
+        "engineering prior art competitive landscape software existing solutions",
+        "patent prior art vs technical prior art distinction"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "search-anchor-and-topic-framing",
+      "scope": "Restating a raw idea or question as a one-sentence search anchor; framing the topic so searches answer something concrete.",
+      "seed_queries": [
+        "writing effective search queries product competitive research",
+        "search query formulation information retrieval precision"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "query-generation-four-angles",
+      "scope": "Generating 3 to 5 concrete queries across four angles: direct competitors, failed attempts, academic or formal, adjacent or historical; specificity over abstraction.",
+      "seed_queries": [
+        "competitive landscape search queries alternatives comparison best practices",
+        "searching for failed startups postmortems why products failed"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "bounded-search-and-fetch-budget",
+      "scope": "The bounded search protocol: 3-5 searches, 2-3 fetches, one pass, no recursion; domain diversity; logging query text and top hits.",
+      "seed_queries": [
+        "token budget web research agent search limits",
+        "agentic web search recursion budget control research agents"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "synthesis-and-report-format",
+      "scope": "The prior-art report template: four categories (competitors, failed attempts, academic, adjacent/historical), per-entry fields (name, description, source URL, key observation), Sources section.",
+      "seed_queries": [
+        "technology landscape report structure competitive analysis document",
+        "market research report format cited sources sections"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "what-this-means-translation",
+      "scope": "The What-this-means section: competitive landscape, why previous attempts failed, why no one has tried this, open opportunity; translating research into judgment about the idea.",
+      "seed_queries": [
+        "postmortem failed products lessons learned product decisions",
+        "competitive analysis white space market gap opportunity assessment"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "selection-bias-and-anti-patterns",
+      "scope": "Selection bias as the defining failure mode: surfacing only successful prior art, single-domain results, fabricated findings, uncited claims, skipping fetches, missing translation, recursion without bound; red flags list.",
+      "seed_queries": [
+        "survivorship bias startup failure research selection bias",
+        "search result bias domain diversity web research methodology"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "citation-discipline-and-honest-gaps",
+      "scope": "Every claim carries a URL; honest reporting of empty queries ('no prior art found for this angle'); no invented prior art; weak claims labeled.",
+      "seed_queries": [
+        "citation practice research reports source attribution web claims",
+        "LLM hallucination citations verify sources research agent"
+      ]
+    },
+    {
+      "nn": 9,
+      "slug": "skill-ecosystem-interactions",
+      "scope": "How prior-art-search composes with idea-refine, ideate-solo, idea-kill, negative-skill-space, source-driven-development, novelty-indication, and the websearch/webfetch tools. Internal-record subtopic.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13 via DefAPI direct (api.defapi.org)",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "requested_at": "2026-10-08T01:49:23.079581Z",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.05,
+          "2": 0.89
+        },
+        "confidence": 0.74
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.9,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.02,
+          "2": 0.94
+        },
+        "confidence": 0.85
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.96
+        },
+        "confidence": 0.91
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.77,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.12,
+          "2": 0.83
+        },
+        "confidence": 0.67
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.75,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.15,
+          "2": 0.8
+        },
+        "confidence": 0.62
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.78,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.5,
+          "1": 0.23,
+          "2": 0.27
+        },
+        "confidence": 0
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.66,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.25,
+          "2": 0.71
+        },
+        "confidence": 0.5
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.24,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.45,
+          "2": 0.39
+        },
+        "confidence": 0.17
+      },
+      "t09": {
+        "type": "score",
+        "score": 0.86,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.38,
+          "1": 0.38,
+          "2": 0.24
+        },
+        "confidence": 0
+      }
+    },
+    "usage": {
+      "input_tokens": 1233,
+      "output_tokens": 139,
+      "cost": 0.000103572
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
