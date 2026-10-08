@@ -1,0 +1,29 @@
+{
+ "nn": "05",
+ "slug": "post-deploy-verify-schedules-etag",
+ "scope": "Post-deploy verification of schedules, bindings, etag and live routes",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Workers cron schedules API scripts schedules endpoint",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare Workers deployment versions etag verify deploy",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/workers/configuration/cron-triggers/",
+  "https://developers.cloudflare.com/workers/runtime-apis/handlers/scheduled/",
+  "https://developers.cloudflare.com/workers/versions-and-deployments/",
+  "https://developers.cloudflare.com/workers/versions-and-deployments/deployment-management/",
+  "https://developers.cloudflare.com/workers/"
+ ],
+ "outcome": "authored"
+}

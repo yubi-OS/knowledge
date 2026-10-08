@@ -1,0 +1,25 @@
+{
+ "nn": "06",
+ "slug": "kv-updates-raw-bytes",
+ "scope": "KV updates after deploy: raw bytes PUT and byte-compare verification",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Workers KV put value raw text namespace REST API",
+   "attempt": 1,
+   "raw_results": 34,
+   "kept": 6
+  },
+  {
+   "query": "curl --data-binary versus -d difference CRLF stripped",
+   "attempt": 1,
+   "raw_results": 36,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/kv/"
+ ],
+ "outcome": "authored"
+}
