@@ -1,0 +1,36 @@
+{
+  "nn": 7,
+  "slug": "mixer-control-and-persistence",
+  "scope": "Forcing mixer state with set_mixer.py (un-mute Left/Right Headphone Mixer DAC, set Headphone/Headphone Mixer/DAC to 100 percent, re-verify by re-reading) and persisting state across reboots with alsactl store.",
+  "queries_attempted": [
+    {
+      "query": "alsactl store asound.state persist ALSA mixer settings across reboot",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "snd_mixer_selem_set_playback_volume_all snd_mixer_selem_set_playback_switch_all ALSA",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://askubuntu.com/questions/50067/how-to-save-alsamixer-settings",
+    "https://dev.to/luisabianca/fix-alsactl-store-that-does-not-save-alsamixer-settings-130i",
+    "https://linux.die.net/man/1/alsactl",
+    "https://web.whatsapp.com/",
+    "https://www.geeksforgeeks.org/linux-unix/alsactl-command-in-linux-with-examples/",
+    "https://askubuntu.com/questions/541847/is-there-any-way-to-save-alsamixer-settings-other-than-alsactl-store",
+    "https://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html",
+    "https://stackoverflow.com/questions/19489343/set-alsa-master-volume-in-db-from-c-code",
+    "https://www.alsa-project.org/alsa-doc/alsa-lib/mixer_2simple_8c.html",
+    "https://vovkos.github.io/doxyrest/samples/alsa/group_SimpleMixer.html",
+    "https://snd.org/",
+    "https://github.com/alsa-project/alsa-lib/blob/master/src/mixer/simple.c"
+  ],
+  "outcome": "authored"
+}

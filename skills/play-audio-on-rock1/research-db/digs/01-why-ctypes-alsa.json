@@ -1,0 +1,35 @@
+{
+  "nn": 1,
+  "slug": "why-ctypes-alsa",
+  "scope": "Why the skill avoids apt-installed audio tools and uses a pure-stdlib ctypes binding to libasound.so.2 for playback, plus the end-to-end pipeline shape from ElevenLabs generation to 3.5mm output.",
+  "queries_attempted": [
+    {
+      "query": "Python ctypes libasound.so.2 snd_pcm_open play PCM example",
+      "attempt": 1,
+      "raw_results": 37,
+      "kept": 6
+    },
+    {
+      "query": "play raw PCM audio from Python without aplay ALSA ctypes",
+      "attempt": 1,
+      "raw_results": 34,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://gist.github.com/ghedo/963382/815c98d1ba0eda1b486eb9d80d9a91a81d995283",
+    "https://stackoverflow.com/questions/7088672/pyaudio-working-but-spits-out-error-messages-each-time",
+    "https://github.com/larsimmisch/pyalsaaudio/",
+    "https://picovoice.ai/blog/how-to-play-audio-in-python/",
+    "https://alexvia.com/post/003_alsa_playback/",
+    "https://stackoverflow.com/questions/27053373/raspberry-alsa-sound-output-input-slave",
+    "https://stackoverflow.com/questions/43737015/play-raw-audio-file-in-python-in-realtime",
+    "https://github.com/Ox0400/play-audio-stream",
+    "https://stackoverflow.com/questions/260738/play-audio-with-python",
+    "https://python-sounddevice.readthedocs.io/",
+    "https://www.geeksforgeeks.org/python/play-sound-in-python/"
+  ],
+  "outcome": "authored"
+}

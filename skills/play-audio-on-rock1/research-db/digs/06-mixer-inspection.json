@@ -1,0 +1,36 @@
+{
+  "nn": 6,
+  "slug": "mixer-inspection",
+  "scope": "Inspecting ALSA devices and mixer state with inspect.py: card enumeration from /sys/class/sound, PCM streams from /proc/asound/pcm, and a ctypes loop over mixer controls reading playback volume, mute, and capture.",
+  "queries_attempted": [
+    {
+      "query": "ALSA mixer snd_mixer_selem_get_playback_volume snd_mixer_selem_get_playback_switch C API",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    },
+    {
+      "query": "/proc/asound/pcm file format contents streams",
+      "attempt": 1,
+      "raw_results": 53,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html",
+    "https://vovkos.github.io/doxyrest/samples/alsa/group_SimpleMixer.html",
+    "https://pubchem.ncbi.nlm.nih.gov/compound/3S_-2_3-Diiodobutane",
+    "https://github.com/alsa-project/alsa-lib/blob/master/src/mixer/simple.c",
+    "https://www.planeo.cz/mixery",
+    "https://deepwiki.com/alsa-project/alsa-lib/5.2-mixer-api",
+    "https://alsa.opensrc.org/Proc_asound_documentation/",
+    "https://www.kernel.org/doc/html/v4.17/sound/designs/procfile.html",
+    "http://ufoai.org/wiki/Mapping/map_file_file_format",
+    "https://www.kernel.org/doc/html/latest/filesystems/proc.html",
+    "https://people.freedesktop.org/~narmstrong/meson_drm_doc/sound/designs/procfile.html",
+    "https://www.ffmpeg.org/doxygen/3.4/group__lavc__core.html"
+  ],
+  "outcome": "authored"
+}

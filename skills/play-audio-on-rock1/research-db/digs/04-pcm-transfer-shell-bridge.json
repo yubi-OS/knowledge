@@ -1,0 +1,36 @@
+{
+  "nn": 4,
+  "slug": "pcm-transfer-shell-bridge",
+  "scope": "Moving the clip and player scripts to rock1 over the shell bridge: base64 encoding, ~60KB chunk sizes, tee to truncate-or-create then tee -a to append, and the argv/POST-body size limits that force chunking.",
+  "queries_attempted": [
+    {
+      "query": "Linux ARG_MAX command line argument length limit getconf",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "base64 command decode chunked file transfer printf tee append",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.in-ulm.de/~mascheck/various/argmax/",
+    "https://www.cyberciti.biz/faq/linux-unix-arg_max-maximum-length-of-arguments/",
+    "https://unix.stackexchange.com/questions/120642/what-defines-the-maximum-size-for-a-command-single-argument",
+    "http://www.gnu.org/software/hello/manual/automake/Length-Limitations.html",
+    "https://www.linux.org/pages/download/",
+    "https://oneuptime.com/blog/post/2026-01-24-fix-argument-list-too-long/view",
+    "https://www.base64decode.org/",
+    "https://www.baeldung.com/linux/cli-base64-encode-decode",
+    "https://www.glukhov.org/developer-tools/cheatsheets/base64/",
+    "https://en.wikipedia.org/wiki/Base64",
+    "https://techearl.com/base64-encode-file-command-line",
+    "https://askubuntu.com/questions/178521/how-can-i-decode-a-base64-string-from-the-command-line"
+  ],
+  "outcome": "authored"
+}
