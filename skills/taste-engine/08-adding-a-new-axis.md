@@ -1,0 +1,33 @@
+# 08 - Adding a new taste axis
+
+## Scope
+
+This doc covers the workflow for extending the taste engine with a new axis: extending the axis dictionary with an extractor plus a clef question template carrying a measured number, adding fixture parity, running the jitter test and calibration sweep, and recording the admission decision in refs/. Grounding spine: the source doc (yubi-OS/yubiOS skills/taste-engine/SKILL.md); the dug sources cover the validation tradition the workflow follows.
+
+## The workflow in order
+
+The source doc's example states the sequence: extend the axis dictionary (extractor plus clef question template with the measured number embedded), add fixture parity, run the jitter test plus calibration sweep, then record the admission decision in refs/, and never flip `admitted` from a single response (source doc). Each step maps to a mechanism documented elsewhere in this corpus: the axis dictionary extension follows the route contract in doc 02; fixture parity follows the selftest mechanics in doc 03; the jitter test and calibration sweep are steps 1 and 2 of doc 05; the admission record is step 4 of doc 05. This doc treats the sequence as one procedure and covers the parts that are easy to get wrong.
+
+## Step 1: extend the axis dictionary
+
+An axis is two things. First, a deterministic extractor: given the image path's inputs, it computes the axis's numeric feature (the way the extractor computes fractal_band {D, r2}, symmetry_present, and scale_coherence, stamping `source: "extractor"`). Second, a clef question template: a noul question whose instruction embeds the measured number, formatted as a measurement (doc 07, lesson 2). If the axis is a choice axis rather than an on/off axis, the template is a clef `choice` question with a `criteria` object mapping each option to its description (doc 07, lesson 1); the family axis in doc 02 is the existing example of that shape, including its `no_answer` verdict convention.
+
+The extractor must be deterministic and pure: the same input must produce the same feature every time, and it must not reach for the decision model itself. That purity is what makes the selftest's fixture checks meaningful and what made lesson 3's failure mode invisible to `node --check` (doc 07): extraction code is exercised by the selftest, while the question-template path is exercised only on a live call, so a new module must wire its imports correctly and then be live-verified.
+
+## Step 2: add fixture parity
+
+New axes join the selftest's parity regime: the fixture set covers the math interface, the line and blob fixtures, the hysteresis table, question shapes, and permutation determinism, with 6-fixture parity against the Python source of record at max |dD| 4.4e-16 (source doc, doc 03). For a new axis, this means adding a fixture whose expected feature value and response shape are pinned, so the selftest catches drift in the new axis's extraction the same way it catches drift in the existing axes. Guideline 8 applies from the first measurement: changes to pinned parameters are major version bumps, and prior measurements keep their version stamp (source doc). If you tune an extractor constant after shipping, you have shipped a new major version and old runs are stamped with the old one.
+
+## Step 3: jitter test and calibration sweep
+
+Run the jitter test first: same instruction, N re-calls, measure the spread. The existing record is sd 0.0000 across 24 clef re-calls (source doc). Then the calibration sweep: sweep the axis's numeric feature across its full range in 21 points, one clef call per point, and check the response curve against the stated semantics (source doc). The existing sweeps found sharp step edges at exactly 0.6 for symmetry_present, exactly 0.5 for complexity_economy, and a full 0.3-0.95 window that rejects 1.0 for symmetry_variation (source doc). A new axis must produce a curve that matches its own stated semantics; if the intended band is 0.4 to 0.8 and the measured step edge lands at 0.55, either the question template or the documented semantics is wrong, and the measured curve wins.
+
+## Step 4: record the admission decision
+
+`admitted` stays false until a multi-class trial with human preference data evidences it, and the decision is recorded in refs/ following the rayleigh pattern: per-frame criteria, never a flipped flag (source doc). The band location must be tested on our scale, not assumed, and contour-class peaks may sit below 1.3 (source doc). In other words: run the axis across more than one artifact class, with human preference data in the loop, write the trial and its criteria down in refs/, and only then does the axis become admitted.
+
+The traditions behind this sequence are explicit in the dug sources. Scale development and validation in the health and social sciences runs in phases: item development (identify definition, generate items), scale construction, and scale evaluation, with content validity assessed before anything else (source: https://pmc.ncbi.nlm.nih.gov/articles/PMC6004510/, jev weight 0.79). A 6-step tutorial protocol covers structural validity and internal consistency diagnosis for a new scale (source: https://pmc.ncbi.nlm.nih.gov/articles/PMC8133536/, jev weight 0.75), and practitioner guidelines frame development and validation as a mixed-method process (source: https://onlinelibrary.wiley.com/doi/full/10.1002/cb.70096, jev weight 0.52). Laboratory science makes the verification-versus-validation distinction directly: verification confirms the procedure meets predefined criteria under current conditions, while validation establishes it for its intended use, and analytical procedure validation runs against predefined performance criteria (source: https://database.ich.org/sites/default/files/ICH_Q2%28R2%29_Guideline_2023_1130.pdf, jev weight 0.94, and source: https://aphl.org/docs/default-source/technical/QSA-VV-Toolkit-Quantitative.pdf, jev weight 0.86). The taste engine's admission protocol is a compact version of the same discipline: a single good response is neither verification nor validation, and the recorded multi-class trial is what stands in for co-validation across conditions.
+
+## What not to do
+
+Four anti-patterns come directly from the source doc's own lessons: do not write free-prose classification questions (guideline 1); do not tune an extractor parameter after seeing results without a major version bump (guideline 8); do not flip `admitted` based on a single response (example 4); and do not assume the preference band location from another instrument's scale (validation step 4). Every use of a new axis stays inside the frontmatter description's scope; anything beyond it is a different skill's job (source doc, closing line).
