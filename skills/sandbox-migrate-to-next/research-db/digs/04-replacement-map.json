@@ -1,0 +1,38 @@
+{
+  "nn": "04",
+  "slug": "replacement-map",
+  "scope": "Row-by-row stable to @next API deltas from the replacement map: transport removal (RPC only), buffered exec becomes handle plus output/waits, execStream/startProcess unified into one process handle with logs/waitFor/kill, sessions removed in favor of per-launch cwd/env, terminal API change (createTerminal, terminal.connect, terminalId), interpreter moved to withInterpreter, gitCheckout replaced by argv git via exec, string kill signals now numeric only, and the mostly-unchanged areas (files, mounts, backups, ports, tunnels, proxyToSandbox).",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Sandbox 1.0 preview processes API exec output",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "Cloudflare Sandbox createTerminal terminal.connect terminalId",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/sandbox/1-0-preview/processes/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/api/processes/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/",
+    "https://github.com/cloudflare/sandbox-sdk",
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/sandbox/",
+    "https://developers.cloudflare.com/sandbox/api/terminal/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/api/terminals/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/terminals/",
+    "https://community.cloudflare.com/t/agents-interactive-browser-terminals-in-sandboxes/890622",
+    "https://www.cloudflare.com/",
+    "https://community.cloudflare.com/t/agents-interactive-browser-terminals-in-sandboxes/896723"
+  ],
+  "outcome": "authored"
+}

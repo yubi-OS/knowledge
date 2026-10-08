@@ -1,0 +1,38 @@
+{
+  "nn": "03",
+  "slug": "hard-rules",
+  "scope": "The migration's hard invariants: Worker package and container image on the same @next line, immediate container rollout because control protocols are incompatible both ways, await sandbox.exec means process started not finished, argv as-is with no implicit shell, process handles have no stdin, timeout/AbortSignal cancels the wait only, no single retry loop for every error, self-deployed bridge stays on stable.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Sandbox exec process handle output waitForExit",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "Cloudflare Containers rollout active grace period immediate rollout",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/sandbox/1-0-preview/processes/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/api/processes/",
+    "https://deepwiki.com/cloudflare/sandbox-sdk/3.1-executing-commands",
+    "https://www.cloudflare.com/",
+    "https://github.com/cloudflare/sandbox-sdk/blob/main/docs/SESSION_EXECUTION.md",
+    "https://blog.cloudflare.com/sandbox-ga/",
+    "https://developers.cloudflare.com/containers/configuration/rollouts/",
+    "https://developers.cloudflare.com/containers/configuration/rollouts/index.md",
+    "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/containers/configuration/rollouts.mdx",
+    "https://www.cloudflare.com/",
+    "https://github.com/cloudflare/containers/issues/233",
+    "https://developers.cloudflare.com/containers/platform-details/rollouts/"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,38 @@
+{
+  "nn": "06",
+  "slug": "clarify-user-decisions",
+  "scope": "The clarify step's four user questions: consent to cut production with --containers-rollout=immediate knowing live processes/terminals/streams may stop, whether a self-deployed bridge is in use (leave on stable), whether the Python interpreter needs the -python image variant, and call sites not covered by the replacement map.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Sandbox python image variant sandbox next-python",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "Cloudflare Containers immediate rollout live processes impact",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/sandbox/configuration/dockerfile/",
+    "https://github.com/cloudflare/sandbox-sdk",
+    "https://hub.docker.com/r/cloudflare/sandbox/tags",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/migrate/",
+    "https://developers.cloudflare.com/sandbox/sdk/configuration/dockerfile/",
+    "https://deepwiki.com/cloudflare/sandbox-sdk/6.3-docker-images-and-variants",
+    "https://developers.cloudflare.com/containers/configuration/rollouts/",
+    "https://developers.cloudflare.com/containers/configuration/rollouts/index.md",
+    "https://www.cloudflare.com/products/containers/",
+    "https://developers.cloudflare.com/containers/",
+    "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/containers/configuration/rollouts.mdx",
+    "https://www.cloudflare.com/"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,38 @@
+{
+  "nn": "09",
+  "slug": "validation-red-flags",
+  "scope": "The 8-point validation checklist (lockfile and Dockerfile on same @next line, typecheck against @next, smoke argv exec plus output utf8, smoke long process/terminal/interpreter, distinguish error classes: unavailable vs interrupted RPC vs stale vs local wait, no live secrets in sandbox env, grep again for removed APIs, production used immediate rollout), the red flags list that means stop and fix, and the handoff to sandbox-next for day-to-day work.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Sandbox errors unavailable interrupted RPC stale",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "Cloudflare Sandbox setEnvVars secrets environment",
+      "attempt": 1,
+      "raw_results": 40,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/sandbox/1-0-preview/api/errors/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/errors/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/migrate/",
+    "https://www.cloudflarestatus.com/",
+    "https://github.com/cloudflare/skills/blob/main/skills/sandbox-migrate-to-next/SKILL.md",
+    "https://github.com/withastro/flue/issues/497",
+    "https://developers.cloudflare.com/sandbox/configuration/environment-variables/",
+    "https://developers.cloudflare.com/sandbox/sdk/configuration/environment-variables/",
+    "https://www.cloudflare.com/products/sandboxes/",
+    "https://www.seekrit.dev/docs/guides/sandboxes/cloudflare-sandbox",
+    "https://github.com/cloudflare/sandbox-sdk",
+    "https://www.cloudflare.com/"
+  ],
+  "outcome": "authored"
+}
