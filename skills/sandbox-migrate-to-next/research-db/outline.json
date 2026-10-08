@@ -1,0 +1,394 @@
+{
+  "topic": "Porting a Cloudflare Sandbox app from stable @cloudflare/sandbox to @cloudflare/sandbox@next (Sandbox SDK 1.0 preview) - API deltas, migration steps, pitfalls",
+  "source_doc": "yubi-OS/yubiOS skills/sandbox-migrate-to-next/SKILL.md (https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/sandbox-migrate-to-next/SKILL.md)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "scope-and-triggers",
+      "scope": "When to use the migration skill vs sibling skills (sandbox-stable for day-to-day stable work, sandbox-next for new @next apps), the 2026 deprecation guide as optional prerequisite, the 'migrate when you can, do not force production cutover' stance, and the human guide links (Migrate page, 1.0 preview page).",
+      "seed_queries": [
+        "Cloudflare Sandbox SDK 1.0 preview @cloudflare/sandbox@next",
+        "Cloudflare Sandbox 2026 deprecation guide API changes"
+      ],
+      "score": 1.6,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.6,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.16,
+          "2": 0.72
+        },
+        "confidence": 0.4
+      }
+    },
+    {
+      "nn": "02",
+      "slug": "migration-workflow",
+      "scope": "The skill's 5-step workflow (review hard rules, audit the codebase, clarify with the user, upgrade package/image/code, validate), the stop-after-user-decision points, and the rule to prefer installed @next types and the migrate doc over memory.",
+      "seed_queries": [
+        "Cloudflare Sandbox 1.0 preview migrate guide steps",
+        "developers.cloudflare.com sandbox 1-0-preview migrate"
+      ],
+      "score": 1.95,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.97
+        },
+        "confidence": 0.93
+      }
+    },
+    {
+      "nn": "03",
+      "slug": "hard-rules",
+      "scope": "The migration's hard invariants: Worker package and container image on the same @next line, immediate container rollout because control protocols are incompatible both ways, await sandbox.exec means process started not finished, argv as-is with no implicit shell, process handles have no stdin, timeout/AbortSignal cancels the wait only, no single retry loop for every error, self-deployed bridge stays on stable.",
+      "seed_queries": [
+        "Cloudflare Sandbox exec process handle output waitForExit",
+        "Cloudflare Containers rollout active grace period immediate rollout"
+      ],
+      "score": 1.29,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.29,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.23,
+          "2": 0.53
+        },
+        "confidence": 0
+      }
+    },
+    {
+      "nn": "04",
+      "slug": "replacement-map",
+      "scope": "Row-by-row stable to @next API deltas from the replacement map: transport removal (RPC only), buffered exec becomes handle plus output/waits, execStream/startProcess unified into one process handle with logs/waitFor/kill, sessions removed in favor of per-launch cwd/env, terminal API change (createTerminal, terminal.connect, terminalId), interpreter moved to withInterpreter, gitCheckout replaced by argv git via exec, string kill signals now numeric only, and the mostly-unchanged areas (files, mounts, backups, ports, tunnels, proxyToSandbox).",
+      "seed_queries": [
+        "Cloudflare Sandbox 1.0 preview processes API exec output",
+        "Cloudflare Sandbox createTerminal terminal.connect terminalId"
+      ],
+      "score": 1.55,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.55,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.16,
+          "2": 0.69
+        },
+        "confidence": 0.32
+      }
+    },
+    {
+      "nn": "05",
+      "slug": "audit-call-sites",
+      "scope": "The audit step: the rg grep command and its full pattern list (SANDBOX_TRANSPORT, transport:, setTransport, enableDefaultSession, createSession, getSession, deleteSession, execStream, startProcess, killProcess, sandbox.terminal, sessionId, gitCheckout, SandboxTransport, ExecutionSession), plus the manual checks for string exec(, cd-then-later-exec persistence assumptions, and bare createCodeContext/runCode on Sandbox.",
+      "seed_queries": [
+        "Cloudflare Sandbox stable deprecated APIs createSession enableDefaultSession",
+        "Cloudflare Sandbox setTransport SANDBOX_TRANSPORT removed RPC"
+      ],
+      "score": 1.67,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.67,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.15,
+          "2": 0.76
+        },
+        "confidence": 0.5
+      }
+    },
+    {
+      "nn": "06",
+      "slug": "clarify-user-decisions",
+      "scope": "The clarify step's four user questions: consent to cut production with --containers-rollout=immediate knowing live processes/terminals/streams may stop, whether a self-deployed bridge is in use (leave on stable), whether the Python interpreter needs the -python image variant, and call sites not covered by the replacement map.",
+      "seed_queries": [
+        "Cloudflare Sandbox python image variant sandbox next-python",
+        "Cloudflare Containers immediate rollout live processes impact"
+      ],
+      "score": 1.02,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.02,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.4,
+          "2": 0.31
+        },
+        "confidence": 0.11
+      }
+    },
+    {
+      "nn": "07",
+      "slug": "upgrade-package-image-code",
+      "scope": "Upgrade mechanics: npm install @cloudflare/sandbox@next, Dockerfile FROM cloudflare/sandbox:next with the next-python variant for Python, keeping the same prerelease tag on Worker and image when not on floating next, per-area code changes with the doc-backed shapes (commands/handles/waits, cwd/env and outbound traffic, dropping sessions, terminals, interpreter wiring via withInterpreter, error handling), the code examples (exec argv + output, waitForPort, kill default 15, createTerminal/getTerminal/connect, interpreter subclass, git clone via exec argv), and isolating users with separate sandbox IDs.",
+      "seed_queries": [
+        "cloudflare/sandbox:next docker image tag",
+        "Cloudflare Sandbox withInterpreter interpreter subpath export"
+      ],
+      "score": 1.62,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.15,
+          "2": 0.73
+        },
+        "confidence": 0.43
+      }
+    },
+    {
+      "nn": "08",
+      "slug": "deploy-cutover",
+      "scope": "Deploy cutover: stage/branch first, production is one deploy of matching Worker plus image with npx wrangler deploy --containers-rollout=immediate, leave rollout_active_grace_period at default 0, and the fact that pre-deploy process and terminal IDs become invalid after cutover.",
+      "seed_queries": [
+        "wrangler deploy containers-rollout immediate flag",
+        "Cloudflare Containers platform rollouts documentation"
+      ],
+      "score": 1.27,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.27,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.43,
+          "2": 0.42
+        },
+        "confidence": 0.14
+      }
+    },
+    {
+      "nn": "09",
+      "slug": "validation-red-flags",
+      "scope": "The 8-point validation checklist (lockfile and Dockerfile on same @next line, typecheck against @next, smoke argv exec plus output utf8, smoke long process/terminal/interpreter, distinguish error classes: unavailable vs interrupted RPC vs stale vs local wait, no live secrets in sandbox env, grep again for removed APIs, production used immediate rollout), the red flags list that means stop and fix, and the handoff to sandbox-next for day-to-day work.",
+      "seed_queries": [
+        "Cloudflare Sandbox errors unavailable interrupted RPC stale",
+        "Cloudflare Sandbox setEnvVars secrets environment"
+      ],
+      "score": 1.27,
+      "raw_answer": {
+        "type": "score",
+        "score": 1.27,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.45,
+          "2": 0.41
+        },
+        "confidence": 0.19
+      }
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.16,
+          "2": 0.72
+        },
+        "confidence": 0.4
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.97
+        },
+        "confidence": 0.93
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.29,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.23,
+          "2": 0.53
+        },
+        "confidence": 0
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.55,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.16,
+          "2": 0.69
+        },
+        "confidence": 0.32
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.67,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.15,
+          "2": 0.76
+        },
+        "confidence": 0.5
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.02,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.4,
+          "2": 0.31
+        },
+        "confidence": 0.11
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.15,
+          "2": 0.73
+        },
+        "confidence": 0.43
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.27,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.43,
+          "2": 0.42
+        },
+        "confidence": 0.14
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.27,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.45,
+          "2": 0.41
+        },
+        "confidence": 0.19
+      }
+    },
+    "usage": {
+      "input_tokens": 1336,
+      "output_tokens": 139,
+      "cost": 0.000112224
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}
