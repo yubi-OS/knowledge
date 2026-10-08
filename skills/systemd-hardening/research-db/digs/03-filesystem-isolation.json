@@ -1,0 +1,60 @@
+{
+ "nn": "03",
+ "slug": "filesystem-isolation",
+ "scope": "Filesystem sandbox directives: PrivateTmp, ProtectSystem=strict, ProtectHome, ReadOnlyPaths, ReadWritePaths allowlist model and interactions",
+ "queries_attempted": [
+  {
+   "query": "systemd ProtectSystem strict PrivateTmp ProtectHome explained",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "systemd ReadWritePaths ReadOnlyPaths interplay ProtectSystem",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  },
+  {
+   "query": "systemd.exec ProtectSystem=strict read only filesystem man page",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": 2
+  },
+  {
+   "query": "systemd PrivateTmp ProtectHome hardening tutorial real world",
+   "attempt": 2,
+   "raw_results": 42,
+   "kept": 3
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "dig returned 0 high-weight sources; redone with different queries",
+   "new_queries": [
+    "systemd.exec ProtectSystem=strict read only filesystem man page",
+    "systemd PrivateTmp ProtectHome hardening tutorial real world"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://linuxjunkies.org/guides/lock-down-systemd-services",
+  "https://oneuptime.com/blog/post/2026-03-02-use-systemd-protectsystem-protecthome-directives-ubuntu/view",
+  "https://www.systemshardening.com/articles/linux/systemd-unit-hardening/",
+  "https://linux-audit.com/systemd/settings/units/protectsystem/",
+  "https://linux-audit.com/systemd/settings/units/protecthome/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://linux-audit.com/systemd/settings/units/readwritepaths/",
+  "https://unix.stackexchange.com/questions/305586/how-to-whitelist-directories-for-units-in-systemd",
+  "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+  "https://bbs.archlinux.org/viewtopic.php?id=271956",
+  "https://man7.org/linux/man-pages/man5/systemd.exec.5.html",
+  "https://www.freedesktop.org/software/systemd/man/systemd.exec.html",
+  "https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/",
+  "https://mylinux.work/guides/systemd-hardening/",
+  "https://www.ctrl.blog/entry/systemd-service-hardening/"
+ ],
+ "outcome": "authored"
+}

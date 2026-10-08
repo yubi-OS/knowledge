@@ -1,0 +1,35 @@
+{
+ "nn": "02",
+ "slug": "hardened-unit-template",
+ "scope": "The full hardened service unit template: Type=notify, watchdog, Restart, DynamicUser, directory directives (StateDirectory/RuntimeDirectory/ConfigurationDirectory), Install section",
+ "queries_attempted": [
+  {
+   "query": "systemd unit Type=notify WatchdogSec NotifyAccess best practices",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "systemd StateDirectory RuntimeDirectory ConfigurationDirectory semantics",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.man7.org/linux/man-pages/man1/systemd-notify.1.html",
+  "https://docs.rs/systemd_unit/latest/systemd_unit/service/enum.NotifyAccess.html",
+  "https://systemd.io/",
+  "https://stackoverflow.com/questions/75147973/systemd-ignores-a-systemd-notify-call-that-a-service-is-sending",
+  "https://hanneseichblatt.de/posts/systemd-watchdog/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://www.freedesktop.org/software/systemd/man/systemd.exec.html",
+  "https://www.redhat.com/en/blog/systemd-secure-services",
+  "https://www.man7.org/linux/man-pages/man7/systemd.directives.7.html",
+  "https://linux-audit.com/systemd/settings/units/runtimedirectorymode/",
+  "https://manpages.debian.org/buster/systemd/systemd.exec.5.en.html"
+ ],
+ "outcome": "authored"
+}

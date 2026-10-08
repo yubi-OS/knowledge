@@ -1,0 +1,33 @@
+{
+ "nn": "01",
+ "slug": "security-audit-workflow",
+ "scope": "systemd-analyze security exposure scoring: 0.0-10.0 scale, per-unit audits, --no-pager top unset directives, thresholds (7.0 warrant hardening, target <4.0), audit-first workflow",
+ "queries_attempted": [
+  {
+   "query": "systemd-analyze security exposure score explained",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "systemd-analyze security worst offenders audit workflow",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.ctrl.blog/entry/systemd-service-hardening/",
+  "https://dev.to/lyraalishaikh/harden-linux-services-with-systemd-analyze-security-from-score-to-enforceable-policy-5415",
+  "https://secure-os.org/articles/systemd-service-hardening/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/get-machine-group-exposure-score?view=o365-worldwide",
+  "https://mylinux.work/guides/systemd-hardening/",
+  "https://kalexnolasco.github.io/systemd-client/guide/analyze/",
+  "https://runbook.academy/courses/linux/lessons/linux-systemd-analyze-and-blame/",
+  "https://boycottsystemd.org/how-to-audit-systemd-service-security-with-systemd-analyze-security/"
+ ],
+ "outcome": "authored"
+}
