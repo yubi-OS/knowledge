@@ -1,0 +1,294 @@
+{
+ "topic": "Continuous radio-style music queue on rock1 (yubiOS skills/radio-queue/SKILL.md): on-device yt-dlp + ffmpeg downloads, queue.txt append interface, daemon transcoding to stereo 44.1 kHz PCM, ES8316 mixer locked at 100 percent per song, and a background prequeue worker that eliminates inter-track gaps.",
+ "ground_source": "yubi-OS/yubiOS skills/radio-queue/SKILL.md (22,508 bytes fetched 2026-10-08 from https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/radio-queue/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "why-bridge-offload",
+   "scope": "Why the queue exists: moving downloads off the Sauna-to-rock1 shell bridge, the per-song Tailscale Funnel round-trip problem of the parent play-audio-on-rock1 skill, and the user-driven design directives.",
+   "dig_mode": "web",
+   "seed_queries": [
+    "Tailscale Funnel expose local service to the public internet how it works",
+    "base64 encoding transfer size overhead efficiency"
+   ],
+   "score": 1.42,
+   "padding_probability": 0.21
+  },
+  {
+   "nn": 2,
+   "slug": "architecture-and-artifacts",
+   "scope": "The /tmp/audio/queue/ directory layout, the current.* foreground and next.* background pipelines, the daemon's three per-song phases, and the five-step per-track pipeline.",
+   "dig_mode": "internal",
+   "seed_queries": [],
+   "score": 1.6,
+   "padding_probability": 0.16,
+   "note": "internal-record subtopic, no dig"
+  },
+  {
+   "nn": 3,
+   "slug": "ondevice-toolchain",
+   "scope": "yt-dlp and ffmpeg on-device: format selection (-f bestaudio, -x --audio-format mp3), --no-check-certificates, zipapp vs standalone binary install and the Python 3.10+ shebang rewrite, plus YouTube bot-detection workarounds (folded from the dropped bot-detection subtopic).",
+   "dig_mode": "web",
+   "seed_queries": [
+    "yt-dlp format selection bestaudio extract audio flags documentation",
+    "yt-dlp installation standalone binary zipapp python options",
+    "yt-dlp youtube Sign in to confirm you are not a bot fix player_client"
+   ],
+   "score": 0.8,
+   "padding_probability": 0.45999999999999996
+  },
+  {
+   "nn": 4,
+   "slug": "pcm-alsa-es8316",
+   "scope": "ffmpeg transcode to raw PCM s16le stereo 44100 Hz (CD quality), playback through ALSA device hw:1,0, and the ES8316 codec mixer locked at 100 percent before every song.",
+   "dig_mode": "web",
+   "seed_queries": [
+    "ffmpeg convert audio raw pcm s16le 44100 stereo output format",
+    "ES8316 codec Linux ALSA Rockchip audio mixer amixer"
+   ],
+   "score": 0.54,
+   "padding_probability": 0.61
+  },
+  {
+   "nn": 5,
+   "slug": "prequeue-worker",
+   "scope": "The background prequeue worker pattern: overlapping the next track's download/transcode with current playback, the prequeue.lock single-worker guard, the atomic next.* to current.* swap, and fallback to cold download on failure.",
+   "dig_mode": "web",
+   "seed_queries": [
+    "gapless playback preload next track background worker design pattern",
+    "prefetch pipeline overlap download processing latency queue producer consumer"
+   ],
+   "score": 1.54,
+   "padding_probability": 0.16
+  },
+  {
+   "nn": 6,
+   "slug": "queue-operations",
+   "scope": "The queue.txt append interface, per-line clip args |start=N|duration=M, the queue.sh helper verbs (add/list/clear/status/skip/stop), and one-shot deployment of install.sh and the daemon.",
+   "dig_mode": "internal",
+   "seed_queries": [],
+   "score": 1.86,
+   "padding_probability": 0.06,
+   "note": "internal-record subtopic, no dig"
+  },
+  {
+   "nn": 7,
+   "slug": "url-verification",
+   "scope": "Probing URLs with yt-dlp --skip-download --dump-single-json before queueing, the Video unavailable failure mode (burned queue slots, polluted logs, forced cold downloads), and the verified example playlists.",
+   "dig_mode": "web",
+   "seed_queries": [
+    "yt-dlp dump-single-json skip-download get video metadata",
+    "yt-dlp youtube Video unavailable error video removed region locked"
+   ],
+   "score": 1.28,
+   "padding_probability": 0.23
+  },
+  {
+   "nn": 8,
+   "slug": "clean-stop-lifecycle",
+   "scope": "Stopping cleanly when play2.py runs as root: the sudo /proc walk to find surviving PIDs, the pkill -f self-match hazard, daemon error resilience, the 5-second idle poll, and queue.log truncation at 200 KB.",
+   "dig_mode": "web",
+   "seed_queries": [
+    "pkill -f matches own process command line self kill gotcha",
+    "kill process running as root permission denied sudo sudoers NOPASSWD"
+   ],
+   "score": 1.01,
+   "padding_probability": 0.36
+  },
+  {
+   "nn": 9,
+   "slug": "example-playlists",
+   "scope": "The shipped example playlists (classic-rock, upbeat-verified, jacob-collier, lofi-verified, samplman full-channel dump archetype), their yt-dlp verification discipline, and the file inventory of the skill.",
+   "dig_mode": "internal",
+   "seed_queries": [],
+   "score": 1.04,
+   "padding_probability": 0.28,
+   "note": "internal-record subtopic, no dig"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "model": "typesafe/jev-1.13",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "state": "radio-queue",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.42,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.21,
+     "1": 0.15,
+     "2": 0.64
+    },
+    "confidence": 0.15
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.6,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.08,
+     "2": 0.76
+    },
+    "confidence": 0.4
+   },
+   "t03": {
+    "type": "score",
+    "score": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.45999999999999996,
+     "1": 0.27,
+     "2": 0.27
+    },
+    "confidence": 0
+   },
+   "t04": {
+    "type": "score",
+    "score": 0.54,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.61,
+     "1": 0.23,
+     "2": 0.16
+    },
+    "confidence": 0.17
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.54,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.14,
+     "2": 0.7
+    },
+    "confidence": 0.31
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.86,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.02,
+     "2": 0.92
+    },
+    "confidence": 0.79
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.28,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.23,
+     "1": 0.26,
+     "2": 0.51
+    },
+    "confidence": 0
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.36,
+     "1": 0.27,
+     "2": 0.37
+    },
+    "confidence": 0
+   },
+   "t10": {
+    "type": "score",
+    "score": 1.04,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.28,
+     "1": 0.41,
+     "2": 0.31
+    },
+    "confidence": 0.11
+   }
+  },
+  "usage": {
+   "input_tokens": 1499,
+   "output_tokens": 154,
+   "cost": 0.000125916
+  },
+  "dropped": [
+   {
+    "nn": "between 07 and 08 (renumbered as folded sub-claim of 03)",
+    "slug": "bot-detection",
+    "t": "t08",
+    "score": 0.24,
+    "reason": "padding-dominant (score 0.24, padding probability 0.81). Content folded into nn 03 ondevice-toolchain as a sub-claim with dig citations."
+   }
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "answer_keys": {
+   "t01": "nn01 why-bridge-offload",
+   "t02": "nn02 architecture-and-artifacts",
+   "t03": "nn03 ondevice-toolchain",
+   "t04": "nn04 pcm-alsa-es8316",
+   "t05": "nn05 prequeue-worker",
+   "t06": "nn06 queue-operations",
+   "t07": "nn07 url-verification",
+   "t09": "nn08 clean-stop-lifecycle",
+   "t10": "nn09 example-playlists",
+   "t08": "DROPPED bot-detection (score 0.24, folded into nn03)"
+  }
+ }
+}

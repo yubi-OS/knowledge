@@ -1,0 +1,38 @@
+{
+ "nn": 7,
+ "slug": "url-verification",
+ "scope": "Probing URLs with yt-dlp --skip-download --dump-single-json before queueing, the Video unavailable failure mode (burned queue slots, polluted logs, forced cold downloads), and the verified example playlists.",
+ "queries_attempted": [
+  {
+   "query": "yt-dlp dump-single-json skip-download get video metadata",
+   "attempt": 1,
+   "raw_results": 51,
+   "kept": 6
+  },
+  {
+   "query": "yt-dlp youtube Video unavailable error video removed region locked",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/yt-dlp/yt-dlp",
+  "https://github.com/yt-dlp/yt-dlp/issues/5701",
+  "https://gist.github.com/hed0rah/e93339f87ea05bac297c8164a9ebcf9e",
+  "https://ytdlp.org/guides/get-video-metadata",
+  "https://www.youtube.com/",
+  "https://cooltrainer.org/a-freebsd-desktop-howto/",
+  "https://github.com/yt-dlp/yt-dlp/issues/3641",
+  "https://github.com/yt-dlp/yt-dlp/issues/7831",
+  "https://deepwiki.com/yt-dlp/yt-dlp-wiki/4-troubleshooting",
+  "https://www.youtube.com/",
+  "http://blog.greggant.com/posts/2025/03/18/the-definitive-guide-to-ios-emulation.html#legal-considerations",
+  "https://github.com/yt-dlp/yt-dlp/issues"
+ ],
+ "outcome": "authored",
+ "results_weighted_high": 2,
+ "results_weighted_low": 10
+}
