@@ -1,0 +1,180 @@
+{
+  "topic": "File-based multi-agent orchestration for yubiOS work - the cult leader orchestrator gathers arriving agents, reads the roster, and hands out tasks through plain files in the GET_TO_WORK folder.",
+  "ground_source": "yubi-OS/yubiOS skills/the-cult/SKILL.md (fetched 2026-10-08, 17171 bytes)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "01-meeting-ground",
+      "scope": "The GET_TO_WORK meeting ground: folder layout and roles of CULT_LEADER.md, FOLLOWER_N.md, .checkin_board, .last_checkin and .pulpit.lock; relation to blackboard and stigmergy patterns.",
+      "seed_queries": [
+        "file-based multi-agent coordination shared workspace blackboard pattern",
+        "blackboard architecture multi agent system shared memory coordination"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "03-sermon-flow",
+      "scope": "Running a sermon: the step-by-step leader loop from trigger, begin, gather, clear-board, assign, poll, re-gather.",
+      "seed_queries": [
+        "orchestrator worker pattern LLM agents task assignment",
+        "multi agent orchestration fan out fan in work distribution pattern"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "04-when-not-to-use",
+      "scope": "When NOT to use: stale PULPIT verification, no solo runs, no scheduled variant.",
+      "seed_queries": []
+    },
+    {
+      "nn": 8,
+      "slug": "08-follower-contract",
+      "scope": "The follower contract: slot claiming, 5-minute check-ins, outbox reports, skill-load order in inbox entries.",
+      "seed_queries": [
+        "agent heartbeat check-in protocol liveness detection design",
+        "inbox outbox message passing pattern agent coordination"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "score": 1.54,
+        "probabilities": {
+          "0": 0.19,
+          "1": 0.08,
+          "2": 0.73
+        },
+        "confidence": 0.31,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 0.48,
+        "probabilities": {
+          "0": 0.67,
+          "1": 0.19,
+          "2": 0.14
+        },
+        "confidence": 0.29,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.03,
+        "probabilities": {
+          "0": 0.4,
+          "1": 0.16,
+          "2": 0.44
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 0.81,
+        "probabilities": {
+          "0": 0.45,
+          "1": 0.3,
+          "2": 0.25
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 0.49,
+        "probabilities": {
+          "0": 0.66,
+          "1": 0.18,
+          "2": 0.16
+        },
+        "confidence": 0.25,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 0.41,
+        "probabilities": {
+          "0": 0.74,
+          "1": 0.1,
+          "2": 0.16
+        },
+        "confidence": 0.37,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.25,
+        "probabilities": {
+          "0": 0.84,
+          "1": 0.08,
+          "2": 0.08
+        },
+        "confidence": 0.64,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.84,
+        "probabilities": {
+          "0": 0.49,
+          "1": 0.19,
+          "2": 0.32
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1052,
+      "output_tokens": 124,
+      "cost": 8.8368e-05
+    },
+    "dropped": [
+      "02-lockfile-method",
+      "05-ending-protocol",
+      "06-cosmic-duties",
+      "07-primitive-history"
+    ],
+    "kept": [
+      "01-meeting-ground",
+      "03-sermon-flow",
+      "04-when-not-to-use",
+      "08-follower-contract"
+    ]
+  }
+}

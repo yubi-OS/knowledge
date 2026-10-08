@@ -1,0 +1,69 @@
+{
+  "nn": 8,
+  "slug": "08-follower-contract",
+  "scope": "The follower contract: slot claiming, 5-minute check-ins, outbox reports, skill-load order in inbox entries.",
+  "queries_attempted": [
+    {
+      "query": "agent heartbeat check-in protocol liveness detection design",
+      "attempt": 1,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "inbox outbox message passing pattern agent coordination",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    },
+    {
+      "query": "transactional inbox outbox pattern distributed systems",
+      "attempt": 2,
+      "raw_results": 41,
+      "kept": 6
+    },
+    {
+      "query": "agent to agent communication protocol A2A design",
+      "attempt": 2,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "attempt-1 queries returned off-topic results (file manager sites, LMS logins, mail clients, dictionaries); dig too thin on-topic",
+      "new_queries": [
+        "transactional inbox outbox pattern distributed systems",
+        "agent to agent communication protocol A2A design"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://aeron.io/docs/distributed-systems-basics/liveness-detection/",
+    "https://www.liveness.com/",
+    "https://www.merriam-webster.com/dictionary/agent",
+    "https://learn.microsoft.com/en-us/microsoft-agent-365/overview",
+    "https://www.youtube.com/watch?v=Kd17uo6kZAw",
+    "https://agentstamp.org/",
+    "https://mail.google.com/mail/inbox",
+    "https://outlook.office.com/mail/inbox",
+    "https://accounts.google.com/InteractiveLogin?dsh=3635059975292276217&service=mail",
+    "https://outlook.office.com/mail?ui=en-US&rs=US",
+    "https://www.conservapedia.com/Obamagate_timeline",
+    "https://dragons-dispatch.beehiiv.com/p/dragon-s-dispatch-38c1",
+    "https://www.dictionary.com/browse/transactional",
+    "https://bool.dev/blog/detail/inbox-and-outbox-patterns",
+    "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+    "https://www.merriam-webster.com/dictionary/transactional",
+    "https://softwaremill.com/microservices-101/",
+    "https://dictionary.cambridge.org/dictionary/english/transactional",
+    "https://learn.microsoft.com/en-us/microsoft-agent-365/overview",
+    "https://learn.microsoft.com/en-us/agents/",
+    "https://a2a-protocol.org/latest/",
+    "https://support.microsoft.com/en-us/microsoft-365-copilot/agents-built-by-microsoft",
+    "https://support.microsoft.com/en-us/windows/ai/ai-features/experimental-agentic-features",
+    "https://zapier.com/blog/a2a-protocol/"
+  ],
+  "outcome": "authored"
+}
