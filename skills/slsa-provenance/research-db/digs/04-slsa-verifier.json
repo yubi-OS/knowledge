@@ -1,0 +1,37 @@
+{
+  "nn": 4,
+  "slug": "slsa-verifier",
+  "doc": "04-slsa-verifier.md",
+  "scope": "Verification with slsa-verifier: verify-artifact, --provenance-path, --source-uri, --builder-id, and use as a CI gate",
+  "queries_attempted": [
+    {
+      "query": "slsa-verifier verify-artifact flags source-uri builder-id",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "slsa-verifier GitHub Actions verify provenance CI",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/slsa-framework/slsa-verifier",
+    "https://github.com/carabiner-labs/slsa-verifier",
+    "https://deepwiki.com/slsa-framework/slsa-verifier/3.1-verify-artifact",
+    "https://m.imdb.com/name/nm1102140/",
+    "https://slsa.dev/spec/v1.0/verifying-artifacts",
+    "https://slsa.dev/spec/v1.2/verifying-artifacts",
+    "https://github.com/slsa-framework/slsa-verifier",
+    "https://github.com/slsa-framework/slsa-github-generator",
+    "https://github.com/slsa-framework/verifier",
+    "https://cilock.dev/tutorials/github-actions-pipeline/",
+    "https://leakgallery.com/ily.brenduh/All/MostRecent",
+    "https://dev.to/kanywst/slsa-provenance-hands-on-generate-with-github-actions-verify-with-slsa-verifier-56ka"
+  ],
+  "outcome": "authored"
+}
