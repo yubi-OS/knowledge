@@ -1,0 +1,136 @@
+{
+  "nn": "04",
+  "slug": "codebase-scan-and-insertion-plan",
+  "scope": "Silent detection of frontend framework, backend handler location, and existing CAPTCHA during the codebase scan; the insertion plan with recommended and skip-by-default markers; stable action assignment (1 to 32 chars, letters numbers underscores hyphens) and action-to-handler mapping.",
+  "queries_attempted": [
+    {
+      "query": "cf-turnstile widget embed data-sitekey data-action form",
+      "attempt": 1,
+      "raw_results": 57,
+      "kept": 6
+    },
+    {
+      "query": "cloudflare turnstile action parameter siteverify action validation",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+    "https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/",
+    "https://en.wikipedia.org/wiki/Cf.",
+    "https://www.cf.edu/",
+    "https://developers.cloudflare.com/turnstile/spin/",
+    "https://en.wikipedia.org/wiki/Cystic_fibrosis",
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/turnstile/get-started/server-side-validation/",
+    "https://dash.cloudflare.com/login",
+    "https://capmonster.cloud/en/cloudflare-turnstile/",
+    "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/",
+    "https://en.wikipedia.org/wiki/Cloudflare"
+  ],
+  "outcome": "authored",
+  "q1_results": [
+    {
+      "query": "cf-turnstile widget embed data-sitekey data-action form",
+      "title": "Cystic fibrosis - Symptoms and causes - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+      "snippet": "Dec 7, 2024 \u00b7 Cystic fibrosis (CF) is a condition passed down in families that causes damage to the lungs, digestive system and other organs in the body. CF affects the cells that make mucus, sweat and digestive juices.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.01
+    },
+    {
+      "query": "cf-turnstile widget embed data-sitekey data-action form",
+      "title": "Embed the widget \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/",
+      "snippet": "When you embed a Turnstile widget inside a <form> element, an invisible input field with the name cf-turnstile-response is automatically created. This field contains the verification token and gets submitted with your other form data.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.93
+    },
+    {
+      "query": "cf-turnstile widget embed data-sitekey data-action form",
+      "title": "Cf. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cf.",
+      "snippet": "The abbreviation cf. (for Latin confer or conferatur, both meaning 'compare') [1] is generally used in writing to refer the reader to other material to make a comparison with the topic being discussed.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.07
+    },
+    {
+      "query": "cf-turnstile widget embed data-sitekey data-action form",
+      "title": "Home < College Of Central Florida",
+      "url": "https://www.cf.edu/",
+      "snippet": "Earn your bachelor\u2019s degree at CF or start here and then transfer to one of Florida\u2019s top universities! Our short-term workforce programs are designed to get you into your career as quickly as possible. See our entire catalog of degrees, programs, and certifications offered at our campuses.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.08
+    },
+    {
+      "query": "cf-turnstile widget embed data-sitekey data-action form",
+      "title": "Turnstile Spin \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/spin/",
+      "snippet": "It creates the widget for you, then provides the sitekey, secret, and a curated prompt to embed the widget on the right forms and wire canonical server-side siteverify into your existing backend.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.71
+    },
+    {
+      "query": "cf-turnstile widget embed data-sitekey data-action form",
+      "title": "Cystic fibrosis - Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Cystic_fibrosis",
+      "snippet": "Cystic fibrosis (also known as CF or mucoviscidosis) is an autosomal recessive genetic disorder affecting most critically the lungs, and also the pancreas, liver, and intestine.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.03
+    }
+  ],
+  "q2_results": [
+    {
+      "query": "cloudflare turnstile action parameter siteverify action validation",
+      "title": "Cloudflare: Build for the agent era",
+      "url": "https://www.cloudflare.com/",
+      "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for free \u2014 no credit card required.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.26
+    },
+    {
+      "query": "cloudflare turnstile action parameter siteverify action validation",
+      "title": "Validate the token \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/get-started/server-side-validation/",
+      "snippet": "Validate Turnstile tokens on your server with the siteverify API.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.94
+    },
+    {
+      "query": "cloudflare turnstile action parameter siteverify action validation",
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/login",
+      "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer platform.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.47
+    },
+    {
+      "query": "cloudflare turnstile action parameter siteverify action validation",
+      "title": "Cloudflare Turnstile Solver | CapMonster Cloud",
+      "url": "https://capmonster.cloud/en/cloudflare-turnstile/",
+      "snippet": "Cloudflare Turnstile is a modern CAPTCHA from Cloudflare that protects websites from automated actions.The request to solve Cloudflare Turnstile must specify the following parameters: type - TurnstileTask; websiteURL - address of the page where the CAPTCHA is being solved",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.07
+    },
+    {
+      "query": "cloudflare turnstile action parameter siteverify action validation",
+      "title": "Download Cloudflare One Client stable releases",
+      "url": "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/",
+      "snippet": "Sep 28, 2026 \u00b7 We recommend using stable releases for production environments. You can download stable releases from the links below after checking requirements. Cloudflare also offers an unstable beta release track with the latest features and improvements, and an LTS release track with extended support durations.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.24
+    },
+    {
+      "query": "cloudflare turnstile action parameter siteverify action validation",
+      "title": "Cloudflare - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cloudflare",
+      "snippet": "Cloudflare has since expanded its offerings to include edge computing through its Workers platform, a public DNS resolver (1.1.1.1), and a VPN -like service known as WARP.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.13
+    }
+  ]
+}

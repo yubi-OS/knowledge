@@ -1,0 +1,136 @@
+{
+  "nn": "08",
+  "slug": "validation-migration-and-edge-cases",
+  "scope": "Validation with the dummy probe token (invalid-input-response means the secret is valid) plus real end-to-end token and replay rejection; migration from reCAPTCHA and hCaptcha (detection signals, substitution table, v3 score caveat, Enterprise pointer); edge cases (Pages plugin, PUT vs PATCH 10405, invalid-input-secret remediation).",
+  "queries_attempted": [
+    {
+      "query": "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+      "attempt": 1,
+      "raw_results": 37,
+      "kept": 6
+    },
+    {
+      "query": "migrate recaptcha hcaptcha to cloudflare turnstile",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://nslsolver.com/blog/cf-turnstile-response-invalid",
+    "https://solvegate.io/turnstile-errors",
+    "https://zerocaptcha.io/blog/cloudflare-turnstile-siteverify-errors",
+    "https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/",
+    "https://community.cloudflare.com/t/i-keep-receiving-invalid-input-response-when-doing-server-side-validation/736552",
+    "https://developers.cloudflare.com/turnstile/get-started/server-side-validation/",
+    "https://developers.cloudflare.com/turnstile/migration/hcaptcha/",
+    "https://www.merriam-webster.com/dictionary/migrate",
+    "https://dictionary.cambridge.org/dictionary/english/migrate",
+    "https://migratemate.co/",
+    "https://uxqode.co/blogs/captcha",
+    "https://www.dictionary.com/browse/migrate"
+  ],
+  "outcome": "authored",
+  "q1_results": [
+    {
+      "query": "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+      "title": "cf-turnstile-response invalid: Fix Guide \u2014 NSLSolver",
+      "url": "https://nslsolver.com/blog/cf-turnstile-response-invalid",
+      "snippet": "invalid-input-secret / missing-input-secret -> wrong or absent secret. Re-copy the secret for the matching widget. Client shows 600010 -> environment/config issue (wrong key for the domain, domain not allowed, blocked by an extension).",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.13
+    },
+    {
+      "query": "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+      "title": "Cloudflare Turnstile Error Codes \u2014 the current list, dated",
+      "url": "https://solvegate.io/turnstile-errors",
+      "snippet": "Several of the strings are identical. invalid-input-response, invalid-input-secret, missing-input-response and timeout-or-duplicate are returned by both products, which is why a search for one of them surfaces reCAPTCHA answers.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.09
+    },
+    {
+      "query": "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+      "title": "Cloudflare Turnstile Siteverify Errors: Why a Token Is Rejected",
+      "url": "https://zerocaptcha.io/blog/cloudflare-turnstile-siteverify-errors",
+      "snippet": "invalid-input-response, \u201cToken is invalid, malformed, or expired\u201d, covers a token that was cut short or altered on its way to the site.Every Cloudflare Turnstile siteverify error code. Why a token is rejected when you automate a form. When the site is yours.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.13
+    },
+    {
+      "query": "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+      "title": "Error codes \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/",
+      "snippet": "Error codes returned by Turnstile widgets and their meanings.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.92
+    },
+    {
+      "query": "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+      "title": "I keep receiving \"invalid-input-response\" when doing server side ...",
+      "url": "https://community.cloudflare.com/t/i-keep-receiving-invalid-input-response-when-doing-server-side-validation/736552",
+      "snippet": "Error codes: invalid-input-response\u201d and according to the turnstile doc, it means: The response parameter (token) is invalid or has expired. Most of the time, this means a fake token has been used. If the error persists, contact customer support.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.07
+    },
+    {
+      "query": "turnstile siteverify error-codes invalid-input-response invalid-input-secret timeout-duplicate",
+      "title": "Validate the token \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/get-started/server-side-validation/",
+      "snippet": "Validate Turnstile tokens on your server with the siteverify API.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.94
+    }
+  ],
+  "q2_results": [
+    {
+      "query": "migrate recaptcha hcaptcha to cloudflare turnstile",
+      "title": "Migrate from hCaptcha \u00b7 Cloudflare Turnstile docs",
+      "url": "https://developers.cloudflare.com/turnstile/migration/hcaptcha/",
+      "snippet": "Migrate from reCAPTCHA.If you are using hCaptcha today, you can switch seamlessly to Cloudflare Turnstile by following the step-by-step guide below to assist with the upgrade process. To complete the migration, you must obtain the sitekey and secret key.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.89
+    },
+    {
+      "query": "migrate recaptcha hcaptcha to cloudflare turnstile",
+      "title": "MIGRATE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/migrate",
+      "snippet": "6 days ago \u00b7 The meaning of MIGRATE is to move from one country, place, or locality to another. How to use migrate in a sentence.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.02
+    },
+    {
+      "query": "migrate recaptcha hcaptcha to cloudflare turnstile",
+      "title": "MIGRATE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/migrate",
+      "snippet": "Jul 27, 2011 \u00b7 MIGRATE definition: 1. When an animal migrates, it travels to a different place, usually when the season changes: 2\u2026. Learn more.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.04
+    },
+    {
+      "query": "migrate recaptcha hcaptcha to cloudflare turnstile",
+      "title": "Migrate Mate | Land your dream job in the US",
+      "url": "https://migratemate.co/",
+      "snippet": "Access 500,000+ verified U.S. jobs with visa sponsorship. Find H-1B, H-2A, H-2B, Green Card, E-3, TN, CPT/OPT, H-1B1, and J-1 friendly roles. Start your search today.",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.03
+    },
+    {
+      "query": "migrate recaptcha hcaptcha to cloudflare turnstile",
+      "title": "Why We Migrated from Google reCAPTCHA to Cloudflare Turnstile",
+      "url": "https://uxqode.co/blogs/captcha",
+      "snippet": "This article summarizes our experience with three popular CAPTCHA providers: \u00b7 Google reCAPTCHA v3 \u00b7 hCaptcha \u00b7 Cloudflare Turnstile 1. Google reCAPTCHA v3 We initially implemented Google reCAPTCHA v3 because of its seamless user experience. Unlike traditional CAPTCHA systems, reCAPTCHA v3 operates in the background and assigns a risk score to user interactions without requiring explicit ...",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.15
+    },
+    {
+      "query": "migrate recaptcha hcaptcha to cloudflare turnstile",
+      "title": "MIGRATE Definition & Meaning | Dictionary.com",
+      "url": "https://www.dictionary.com/browse/migrate",
+      "snippet": "Sep 8, 2011 \u00b7 Migrate, emigrate, immigrate are used of changing one's abode from one country or part of a country to another. To \u2026",
+      "collected_at": "2026-10-08T04:20:00Z",
+      "weight": 0.02
+    }
+  ]
+}
