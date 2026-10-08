@@ -1,0 +1,254 @@
+{
+ "topic": "Authoring, teaching, and verifying Strudel live-coding music patterns: REPL mechanics, Mini-Notation, sounds/banks, notes/scales, effects, signals, pattern stacks, canonical example tunes. Ground source: yubi-OS/yubiOS skills/strudel-live-coding/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "what-strudel-is",
+   "scope": "What Strudel is: browser-based TidalCycles port to JavaScript, strudel.cc REPL, workshop ladder, uses (live coded music, teaching, MIDI/OSC sequencer), canonical home on Codeberg",
+   "seed_queries": [
+    "tidalcycles strudel codeberg repository moved 2025"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "repl-mechanics",
+   "scope": "REPL mechanics: Ctrl+Enter play/update, Ctrl+. stop, comments, $: parallel stacks, _$: muting, .hush() per-layer stop, on-demand sample loading",
+   "seed_queries": [
+    "strudel REPL hush mute pattern stack $: first-sounds tutorial"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "mini-notation",
+   "scope": "Mini-Notation rhythm language: sequence, sample number, rest, alternate, subsequence, nesting, speed up, slow down, parallel, elongate, replicate; cycle-squish mental model",
+   "seed_queries": [
+    "strudel mini-notation asterisk slash elongate replicate operators"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "sounds-drums-banks",
+   "scope": "Sounds, drums, banks: named unpitched samples, drum letter codes, .bank() drum machine swap list, s() alias for sound()",
+   "seed_queries": [
+    "strudel sample number hh:0 bank switching drum machine"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "notes-scales-tempo",
+   "scope": "Notes, scales, tempo: MIDI numbers vs note letters, pitched sound choices, melodic slowing, scale degrees with .scale(), setcpm tempo math",
+   "seed_queries": [
+    "strudel setcpm cycles per minute tempo default cycle seconds"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "audio-effects",
+   "scope": "Audio effects: lpf, vowel, gain, delay extended form, room, pan, speed, ADSR envelope, fast/slow outside Mini-Notation, patterning effects without changing rhythm",
+   "seed_queries": [
+    "strudel pattern effect parameters mini notation filter tutorial"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "signals",
+   "scope": "Signals (continuous modulation): sine/saw/square/tri/rand/perlin, 0-1 default range, .range() rescaling, .slow() modulation speed, .segment() discretization",
+   "seed_queries": [
+    "strudel continuous pattern signals .range .slow modulation speed"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "pattern-effects",
+   "scope": "Pattern effects (Tidal-specific toolbox): rev, jux, add, ply, off with transforms, multi-tempo .slow()",
+   "seed_queries": [
+    "tidalcycles jux ply off pattern transformations strudel"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "motors-beyond-audio",
+   "scope": "Motors and beyond audio: patterning hardware via MQTT, move/motor/robot, servo ranges, .segment() limits for microcontrollers",
+   "seed_queries": [
+    "strudel hardware pattern Pimoroni Inventor 2040W servo"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "tunes-and-teaching",
+   "scope": "Canonical full tunes (verified workshop examples) plus the build-from-scratch teaching path and verify/debug checklist",
+   "seed_queries": [],
+   "note": "internal-record subtopic, no dig"
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.88,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.04,
+     "2": 0.92
+    },
+    "confidence": 0.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.05,
+     "2": 0.91
+    },
+    "confidence": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.9,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.04,
+     "2": 0.93
+    },
+    "confidence": 0.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.81,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.12,
+     "2": 0.85
+    },
+    "confidence": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.07,
+     "2": 0.9
+    },
+    "confidence": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.2,
+     "2": 0.75
+    },
+    "confidence": 0.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.81,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.13,
+     "2": 0.84
+    },
+    "confidence": 0.71,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.15,
+     "2": 0.77
+    },
+    "confidence": 0.53,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.08,
+    "probabilities": {
+     "0": 0.92,
+     "1": 0.08,
+     "2": 0
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.77,
+    "probabilities": {
+     "0": 0.09,
+     "1": 0.05,
+     "2": 0.86
+    },
+    "confidence": 0.66,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1772,
+   "output_tokens": 154,
+   "cost": 0.000148848
+  },
+  "dropped": [
+   "09"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "10"
+  ]
+ }
+}
