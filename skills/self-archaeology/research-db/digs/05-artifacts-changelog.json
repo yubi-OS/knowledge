@@ -1,0 +1,34 @@
+{
+  "nn": "05",
+  "slug": "artifacts-changelog",
+  "scope": "the three artifacts: SELF.md, append-only SELF-CHANGELOG entry, fixpoint verdict",
+  "queries_attempted": [
+    {
+      "query": "append-only changelog audit trail software practice",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "keep a changelog convention evidence trail",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://nabhpatodi.com/blog/your-audit-log-is-not-an-audit-trail/",
+    "https://nhimg.org/glossary/append-only-audit-logging/",
+    "https://keepachangelog.com/en/1.0.0/",
+    "https://www.launchnotes.com/release-notes/changelog",
+    "https://common-changelog.org/"
+  ],
+  "outcome": "authored",
+  "pre_weight_filter": {
+    "collected": 12,
+    "weighted": 5,
+    "note": "top 6 per query kept by the dig runner; generic homepages, dictionaries, and off-topic results were not sent to the decision model for weighting"
+  }
+}

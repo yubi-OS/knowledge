@@ -1,0 +1,34 @@
+{
+  "nn": "04",
+  "slug": "bounded-rsi-self",
+  "scope": "the RSI loop retargeted at SELF.md, the 3-cycle bound, fresh-context subagents",
+  "queries_attempted": [
+    {
+      "query": "recursive self improvement LLM agent bounded loop",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "self evaluation bias LLM judge same author",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Recursive_self-improvement",
+    "https://saulius.io/blog/recursive-self-improvement-llm-trading",
+    "https://arxiv.org/pdf/2607.07663",
+    "https://www.azoai.com/news/20251110/Study-Finds-Hidden-Bias-in-AI-Text-Evaluation-When-Author-Identity-is-Revealed.aspx",
+    "https://arxiv.org/abs/2410.21819"
+  ],
+  "outcome": "authored",
+  "pre_weight_filter": {
+    "collected": 12,
+    "weighted": 5,
+    "note": "top 6 per query kept by the dig runner; generic homepages, dictionaries, and off-topic results were not sent to the decision model for weighting"
+  }
+}

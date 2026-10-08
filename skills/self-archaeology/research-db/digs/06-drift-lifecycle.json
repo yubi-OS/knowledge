@@ -1,0 +1,33 @@
+{
+  "nn": "06",
+  "slug": "drift-lifecycle",
+  "scope": "drift detection across sessions, lifecycle axis 8, calibration axis 11",
+  "queries_attempted": [
+    {
+      "query": "LLM agent memory drift consistency across sessions",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    },
+    {
+      "query": "AI agent persistent memory identity consistency",
+      "attempt": 1,
+      "raw_results": 6,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/requie/LLMSecurityGuide",
+    "https://arxiv.org/html/2601.04170",
+    "https://insiderllm.com/blog/teaching-ai-to-accept-help-monica-day4/",
+    "https://arxiv.org/html/2604.09588"
+  ],
+  "outcome": "authored",
+  "pre_weight_filter": {
+    "collected": 12,
+    "weighted": 4,
+    "note": "top 6 per query kept by the dig runner; generic homepages, dictionaries, and off-topic results were not sent to the decision model for weighting"
+  }
+}

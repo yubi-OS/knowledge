@@ -1,0 +1,258 @@
+[
+  {
+    "requested_at": null,
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide -> superseded; first attempt went to DefAPI direct https://api.defapi.org/api/v1/decisions",
+    "state": "skills-self-archaeology",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 9,
+    "question_names": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ],
+    "metric_types": [
+      "score"
+    ],
+    "usage": {
+      "input_tokens": 1407,
+      "output_tokens": 124
+    },
+    "superseded": true,
+    "note": "first outline validation pass; response captured but requested_at not recorded; superseded by the re-run at 2026-10-08T03:16:38.698Z"
+  },
+  {
+    "requested_at": null,
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "skills-self-archaeology",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 14,
+    "question_names": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05",
+      "r06",
+      "r07",
+      "r08",
+      "r09",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": null,
+    "superseded": true,
+    "note": "first weighting batch 1; usage captured only as aggregate (4000 in / 552 out across the 3 first-attempt batches), so per-request usage is null here"
+  },
+  {
+    "requested_at": null,
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "skills-self-archaeology",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 14,
+    "question_names": [
+      "r15",
+      "r16",
+      "r17",
+      "r18",
+      "r19",
+      "r20",
+      "r21",
+      "r22",
+      "r23",
+      "r24",
+      "r25",
+      "r26",
+      "r27",
+      "r28"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": null,
+    "superseded": true,
+    "note": "first weighting batch 2; see aggregate note"
+  },
+  {
+    "requested_at": null,
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "skills-self-archaeology",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 2,
+    "question_names": [
+      "r29",
+      "r30"
+    ],
+    "metric_types": [
+      "noul",
+      "noul"
+    ],
+    "usage": null,
+    "superseded": true,
+    "note": "first weighting batch 3; see aggregate note"
+  },
+  {
+    "requested_at": "2026-10-08T03:13:28.833Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "skills-self-archaeology",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05",
+      "r06",
+      "r07",
+      "r08",
+      "r09",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14",
+      "r15"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1885,
+      "output_tokens": 274
+    },
+    "superseded": false,
+    "note": "final weighting batch 1 (per-request usage captured); these answers are the shipped weights for r01-r15"
+  },
+  {
+    "requested_at": "2026-10-08T03:13:30.330Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "skills-self-archaeology",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 15,
+    "question_names": [
+      "r16",
+      "r17",
+      "r18",
+      "r19",
+      "r20",
+      "r21",
+      "r22",
+      "r23",
+      "r24",
+      "r25",
+      "r26",
+      "r27",
+      "r28",
+      "r29",
+      "r30"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1850,
+      "output_tokens": 274
+    },
+    "superseded": false,
+    "note": "final weighting batch 2 (per-request usage captured); these answers are the shipped weights for r16-r30"
+  },
+  {
+    "requested_at": "2026-10-08T03:16:38.698Z",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "state": "skills-self-archaeology",
+    "model": "typesafe/jev-1.13",
+    "n_questions": 9,
+    "question_names": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08"
+    ],
+    "metric_types": [
+      "score",
+      "score",
+      "score",
+      "score",
+      "score",
+      "score",
+      "score",
+      "score",
+      "score"
+    ],
+    "usage": {
+      "input_tokens": 1442,
+      "output_tokens": 124
+    },
+    "superseded": false,
+    "note": "final outline validation pass; these answers are the shipped outline validation"
+  }
+]
