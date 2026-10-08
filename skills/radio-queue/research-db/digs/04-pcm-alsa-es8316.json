@@ -1,0 +1,38 @@
+{
+ "nn": 4,
+ "slug": "pcm-alsa-es8316",
+ "scope": "ffmpeg transcode to raw PCM s16le stereo 44100 Hz (CD quality), playback through ALSA device hw:1,0, and the ES8316 codec mixer locked at 100 percent before every song.",
+ "queries_attempted": [
+  {
+   "query": "ffmpeg convert audio raw pcm s16le 44100 stereo output format",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "ES8316 codec Linux ALSA Rockchip audio mixer amixer",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://trac.ffmpeg.org/wiki/audio%20types",
+  "https://stackoverflow.com/questions/11986279/can-ffmpeg-convert-audio-from-raw-pcm-to-wav",
+  "https://salivity.github.io/ffmpeg/article/how-to-use-f-fmpeg-f-parameter-for-raw-audio",
+  "https://ffmpeg.org/ffmpeg.html",
+  "https://ffmpeg.org/",
+  "https://github.com/laurentvv/generator-assets",
+  "https://github.com/alsa-project/alsa-ucm-conf/blob/master/ucm2/Rockchip/es8316/es8316.conf",
+  "https://github.com/Xilinx/linux-xlnx/blob/master/sound/soc/codecs/es8316.c",
+  "https://deepwiki.com/rockchip-android/hardware-rockchip-audio/5.5-everest-semiconductor-codec-configurations",
+  "https://www.charlesgabusford.com/used-vehicles/",
+  "https://www.alsa-project.org/db/?f=2ee16ee9ef98af91d6efcb262fb0acd46cde773f",
+  "https://www.geeksforgeeks.org/linux-unix/amixer-command-in-linux-with-examples/"
+ ],
+ "outcome": "authored",
+ "results_weighted_high": 5,
+ "results_weighted_low": 7
+}

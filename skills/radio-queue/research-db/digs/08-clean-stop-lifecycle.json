@@ -1,0 +1,38 @@
+{
+ "nn": 8,
+ "slug": "clean-stop-lifecycle",
+ "scope": "Stopping cleanly when play2.py runs as root: the sudo /proc walk to find surviving PIDs, the pkill -f self-match hazard, daemon error resilience, the 5-second idle poll, and queue.log truncation at 200 KB.",
+ "queries_attempted": [
+  {
+   "query": "pkill -f matches own process command line self kill gotcha",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "kill process running as root permission denied sudo sudoers NOPASSWD",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Machu_Picchu",
+  "https://manpages.ubuntu.com/manpages/xenial/man1/pkill.1.html",
+  "https://linuxize.com/cheatsheet/pkill/",
+  "https://ss64.com/mac/pkill.html",
+  "https://linuxize.com/post/pkill-command-in-linux/",
+  "https://www.britannica.com/place/Machu-Picchu",
+  "https://stackoverflow.com/questions/56459443/sudo-kill-results-in-permission-denied",
+  "https://serverfault.com/questions/1107295/permission-denied-when-using-kill-as-root",
+  "https://unix.stackexchange.com/questions/89316/how-to-kill-a-process-that-says-operation-not-permitted-when-attempted",
+  "https://www.merriam-webster.com/dictionary/kill",
+  "https://askubuntu.com/questions/100051/why-is-sudoers-nopasswd-option-not-working",
+  "https://unix.stackexchange.com/questions/21258/terminate-root-processes"
+ ],
+ "outcome": "authored",
+ "results_weighted_high": 4,
+ "results_weighted_low": 8
+}
