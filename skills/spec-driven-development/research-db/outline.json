@@ -1,0 +1,235 @@
+{
+ "topic": "Creating specs before coding - decomposing requirements that span several independently testable capabilities into a capability map of modules before specifying",
+ "ground_source": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/spec-driven-development/SKILL.md",
+ "ground_source_path": "yubi-OS/yubiOS skills/spec-driven-development/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "when-to-use",
+   "scope": "Activation triggers (new project, ambiguous requirements, multi-module change, architectural decision, over 30 minutes) and the explicit when-not-to-use list; single-capability requests skip Phase 0.",
+   "seed_queries": [
+    "when to write a specification before coding software project",
+    "spec-driven development when documentation upfront is needed"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "capability-map",
+   "scope": "Phase 0 scope check: detecting bundled capabilities, proposing a capability map (module table, stable kebab-case ids, dependency direction without cycles, build order), gating the map, then recursing per module with SPEC-<id>.md files.",
+   "seed_queries": [
+    "decompose requirements into modules capability map software design",
+    "module decomposition dependency direction build order software architecture"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "specify-assumptions",
+   "scope": "Phase 1 specify: surfacing assumptions immediately before writing spec content, asking the human clarifying questions, never silently filling ambiguous requirements.",
+   "seed_queries": [
+    "surfacing assumptions in software requirements gathering",
+    "clarifying questions before writing software specification"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "spec-document-six-areas",
+   "scope": "The six core spec areas (objective, commands, project structure, code style, testing strategy, boundaries with Always/Ask first/Never) and the full spec template including tech stack, success criteria and open questions.",
+   "seed_queries": [
+    "software specification document template sections testing strategy boundaries",
+    "project specification document tech stack commands code style structure"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "success-criteria-reframing",
+   "scope": "Reframing vague requirements as concrete, testable success criteria so loops and retries target a measurable goal.",
+   "seed_queries": [
+    "writing testable acceptance criteria from vague requirements",
+    "measurable success criteria software specification"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "plan-and-tasks",
+   "scope": "Phase 2 plan (components, dependencies, implementation order, risks, parallelism, verification checkpoints, tasks/plan.md) and Phase 3 tasks (session-sized, acceptance criteria, verification steps, dependency order, 5-file cap, task template).",
+   "seed_queries": [
+    "software implementation plan dependency ordered task breakdown",
+    "vertical slicing task decomposition acceptance criteria"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "implement-and-companion-skills",
+   "scope": "Phase 4 implement one task at a time via incremental-implementation and test-driven-development, loading spec sections on demand with context-engineering; the canonical-source relationship with planning-and-task-breakdown and the api-and-interface-design boundary.",
+   "seed_queries": [
+    "test driven development incremental implementation workflow",
+    "context engineering loading relevant code sections AI agent"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "spec-alive-and-rationalizations",
+   "scope": "Keeping the spec alive (update on decision or scope change, commit it, reference it in PRs), the seven common rationalizations, the red flags list, and the pre-implementation verification checklist.",
+   "seed_queries": [
+    "living specification document version control keep updated",
+    "specification first development anti-patterns rationalizations"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.23,
+     "2": 0.74
+    },
+    "confidence": 0.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.34,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.42,
+     "2": 0.46
+    },
+    "confidence": 0.01,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.85,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.1,
+     "2": 0.88
+    },
+    "confidence": 0.79,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.95,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.02,
+     "2": 0.97
+    },
+    "confidence": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.97,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.62,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.24,
+     "2": 0.69
+    },
+    "confidence": 0.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.07,
+     "2": 0.91
+    },
+    "confidence": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.93,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.04,
+     "2": 0.95
+    },
+    "confidence": 0.91,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 0.07,
+    "probabilities": {
+     "0": 0.94,
+     "1": 0.05,
+     "2": 0.01
+    },
+    "confidence": 0.9,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1121,
+   "output_tokens": 139
+  },
+  "dropped": [
+   "09"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ },
+ "ground_source_bytes": 18203
+}
