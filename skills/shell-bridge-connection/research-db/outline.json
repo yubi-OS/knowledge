@@ -1,0 +1,217 @@
+{
+ "topic": "How to work with the shell-bridge connections (rock1 + ubuntu boxes) effectively: Tailscale Funnel Bearer-auth bridges, /run argv-array contract, known failure signatures",
+ "ground_source": "yubi-OS/yubiOS skills/shell-bridge-connection/SKILL.md",
+ "ground_source_url": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/shell-bridge-connection/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "run-contract",
+   "scope": "The POST /run call shape: curl form, connections param for Bearer injection, command as argv array with bash -lc for compound shell, subprocess.run verbatim semantics, {stdout,stderr,returncode} response, GET /run returns 501, head/tail outputs.",
+   "seed_queries": [
+    "python subprocess.run list argv no shell injection best practice",
+    "HTTP POST endpoint run bash -lc argv array JSON response stdout stderr returncode"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "the-boxes",
+   "scope": "Box profiles: ubuntu (X1E80100 laptop, 62GB, primary ARM64 Actions runner agentId 22, KVM/libvirt imaging station) and rock1 (original SBC, UART/audio, restored 2026-09-24, runner agentId 23). Internal-record subtopic, no dig.",
+   "seed_queries": []
+  },
+  {
+   "nn": "03",
+   "slug": "funnel-bearer-pattern",
+   "scope": "Tailscale Funnel exposure plus a ~50 LOC stdlib Python bearer-auth bridge, the debug-with-cli pattern, and how the Sauna proxy injects the Bearer token when the connection is passed.",
+   "seed_queries": [
+    "Tailscale Funnel expose local HTTPS service public hostname",
+    "minimal python http.server bearer token authentication endpoint"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "auth-diagnostics",
+   "scope": "Read the status code first: 401 with Python http.server error page (token mismatch), 502 error code 502 (bridge process dead, origin-unreachable), 501 as auth-independent liveness control, and the direct-token test with X-Sauna-Connection-Id none.",
+   "seed_queries": [
+    "tailscale funnel 502 error code 502 origin unreachable service down",
+    "http server 401 unauthorized error page token mismatch debugging"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "token-config-locations",
+   "scope": "Where tokens and config live: /etc/rock1-shell.env (ROCK1_SHELL_TOKEN, same filename both boxes), /home/ubuntu/bear shared-token copy, shell-bridge-bootstrap.sh rollout script, actions-runner sidecar token files, shell-bridge.service unit names.",
+   "seed_queries": []
+  },
+  {
+   "nn": "07",
+   "slug": "operational-lessons",
+   "scope": "Field lessons: uptime is not tailnet age (13 days uptime at join), ping with a 1-byte echo alive POST before long pushes, and runner-host sweep lines (/var/run/reboot-required, apt list --upgradable).",
+   "seed_queries": []
+  },
+  {
+   "nn": "08",
+   "slug": "security-hardening",
+   "scope": "Token hygiene risks recorded in the source doc: /home/ubuntu/bear world-readable 0644 (hardening target 0600), sidecar token files leaking into .bash_history, never printing the token, bridge running as root with ~ = /root.",
+   "seed_queries": [
+    "environment file permissions 0600 secrets best practice chmod",
+    "api token leaked into bash_history cleanup prevention"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.74,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.09,
+     "2": 0.83
+    },
+    "confidence": 0.61
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.32,
+     "1": 0.35000000000000003,
+     "2": 0.33
+    },
+    "confidence": 0.02
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.43,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.2,
+     "2": 0.61
+    },
+    "confidence": 0.15
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.6,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.25,
+     "2": 0.67
+    },
+    "confidence": 0.4
+   },
+   "t05": {
+    "type": "score",
+    "score": 0.19,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.86,
+     "1": 0.09,
+     "2": 0.05
+    },
+    "confidence": 0.72
+   },
+   "t06": {
+    "type": "score",
+    "score": 1.09,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.47,
+     "2": 0.31
+    },
+    "confidence": 0.21
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.27,
+     "2": 0.54
+    },
+    "confidence": 0.03
+   },
+   "t08": {
+    "type": "score",
+    "score": 1.61,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.25,
+     "2": 0.68
+    },
+    "confidence": 0.42
+   }
+  },
+  "usage": {
+   "input_tokens": 1139,
+   "output_tokens": 124,
+   "cost": 9.5676e-05
+  },
+  "dropped": [
+   "05"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "06",
+   "07",
+   "08"
+  ],
+  "dropped_detail": [
+   {
+    "nn": "05",
+    "slug": "zombie-401-saga",
+    "score": 0.19,
+    "reason": "dropped by the drop-0 outline rule; its content remains inside 04-auth-diagnostics"
+   }
+  ]
+ }
+}
