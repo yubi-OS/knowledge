@@ -1,0 +1,54 @@
+{
+ "nn": "05",
+ "slug": "05-network-analysis",
+ "scope": "Phase 3 network analysis: render-blocking resources, dependency chains, preloads, caching headers, payloads, preconnects",
+ "queries_attempted": [
+  {
+   "query": "render blocking CSS JS async defer preload optimization",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "unused preconnect cache-control headers performance audit",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "web.dev render blocking resources defer non-critical CSS guide",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  },
+  {
+   "query": "web.dev preload preconnect early establish network connections fonts",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 results heavily polluted with off-topic hits (browser download pages, dictionaries, unrelated sites); re-dug with sharper technical queries",
+   "new_queries": [
+    "web.dev render blocking resources defer non-critical CSS guide",
+    "web.dev preload preconnect early establish network connections fonts"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://web.dev/articles/defer-non-critical-css",
+  "https://blog.logrocket.com/eliminate-render-blocking-resources-css-javascript/",
+  "https://github.com/GoogleChrome/web.dev/blob/main/src/site/content/en/fast/defer-non-critical-css/index.md",
+  "https://web.dev/learn/performance/resource-hints",
+  "https://web.dev/articles/preconnect-and-dns-prefetch",
+  "https://css-tricks.com/using-relpreconnect-to-establish-network-connections-early-and-increase-performance/",
+  "https://a2z.tools/preload-preconnect-builder"
+ ],
+ "outcome": "authored"
+}

@@ -1,0 +1,52 @@
+{
+ "nn": "02",
+ "slug": "02-trace-capture",
+ "scope": "Phase 1 performance trace capture: navigate_page plus performance_start_trace(autoStop, reload) and trace troubleshooting",
+ "queries_attempted": [
+  {
+   "query": "chrome devtools mcp performance_start_trace autoStop reload",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "chrome devtools mcp navigate_page page load performance trace",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "chrome-devtools-mcp performance_start_trace reload autoStop trace insights response",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  },
+  {
+   "query": "Chrome DevTools MCP blog performance debugging AI agent tools list",
+   "attempt": 2,
+   "raw_results": null,
+   "kept": 6,
+   "note": "only the top 6 results per query were retained post-hoc; raw count not recorded at collection time"
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 results heavily polluted with off-topic hits (browser download pages, dictionaries, unrelated sites); re-dug with sharper technical queries",
+   "new_queries": [
+    "chrome-devtools-mcp performance_start_trace reload autoStop trace insights response",
+    "Chrome DevTools MCP blog performance debugging AI agent tools list"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://developer.chrome.com/blog/chrome-devtools-mcp",
+  "https://jangwook.net/en/blog/en/chrome-devtools-mcp-performance/",
+  "https://deepwiki.com/ChromeDevTools/chrome-devtools-mcp/4.5-performance-analysis-tools",
+  "http://addyosmani.com/blog/puppeteer-recipes/",
+  "https://ai.plainenglish.io/give-your-ai-eyes-introducing-chrome-devtools-mcp-b377f0f22467"
+ ],
+ "outcome": "authored"
+}
