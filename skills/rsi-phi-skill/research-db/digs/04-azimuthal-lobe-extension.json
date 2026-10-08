@@ -1,0 +1,57 @@
+{
+ "nn": 4,
+ "slug": "azimuthal-lobe-extension",
+ "scope": "Extension from the native lobe to 384 azimuthal lobes: m = 3k for k=1..128, (l=128,m=256) vs (l=256,m=128) dual parameterization, PCA top-2 PC1+PC2 gate, coverage delta as the interesting primitive",
+ "queries_attempted": [
+  {
+   "query": "spherical harmonic degree order tradeoff high l high m basis selection",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "384 fold azimuthal symmetry cos m phi spherical harmonic lobes",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 dig returned mostly off-topic results for the degree/order tradeoff and lobe enumeration (dictionary pages, unrelated '384' pages); subtopic is marginal-scored (0.69) so a strong dig is required",
+   "new_queries": [
+    "spherical harmonic azimuthal order angular resolution degree lmax",
+    "PCA top principal components spherical harmonic coefficients reduction"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Spherical_harmonics",
+  "https://www.merriam-webster.com/dictionary/spherical",
+  "https://mrtrix.readthedocs.io/en/latest/concepts/sh_basis_lmax.html",
+  "https://dictionary.cambridge.org/dictionary/english/spherical",
+  "https://www.dictionary.com/browse/spherical",
+  "https://mathworld.wolfram.com/SphericalHarmonic.html",
+  "https://mathworld.wolfram.com/SphericalHarmonic.html",
+  "https://www.calculator.net/basic-calculator.html",
+  "https://en.wikipedia.org/wiki/384_(number)",
+  "https://www.law.cornell.edu/uscode/text/26/384",
+  "https://www.pacebus.com/route/384",
+  "https://maps.google.com/",
+  "https://en.wikipedia.org/wiki/Spherical_harmonics",
+  "https://www.merriam-webster.com/dictionary/spherical",
+  "https://mrtrix.readthedocs.io/en/latest/concepts/sh_basis_lmax.html",
+  "https://dictionary.cambridge.org/dictionary/english/spherical",
+  "https://www.dictionary.com/browse/spherical",
+  "https://mathworld.wolfram.com/SphericalHarmonic.html",
+  "https://en.wikipedia.org/wiki/Principal_component_analysis",
+  "https://www.geeksforgeeks.org/data-analysis/principal-component-analysis-pca/",
+  "https://www.pca.org/",
+  "https://arxiv.org/pdf/1903.06877.pdf",
+  "https://builtin.com/data-science/step-step-explanation-principal-component-analysis",
+  "https://www.primarycareak.com/"
+ ],
+ "outcome": "authored"
+}
