@@ -1,0 +1,36 @@
+{
+ "nn": 2,
+ "slug": "cross-corpus-join",
+ "scope": "The three join keys: OMN regex on PR body, merge_commit_sha on the PR to commit SHA, and the 40-hex SHA regex on bodies. Covers why title joins and 7-char SHAs fail and why the full PR body must be fetched individually.",
+ "queries_attempted": [
+  {
+   "query": "GitHub pull request merge_commit_sha squash merge commit semantics",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  },
+  {
+   "query": "GitHub REST API pull request body truncated list endpoint full body fetch",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://docs.github.com/en/pull-requests/reference/pull-request-merges",
+  "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github",
+  "https://learn.programmingline.com/learn/git/github-merge-strategies",
+  "https://github.com/",
+  "https://gist.github.com/eduardosilvacodurance/c003aed1f2e88f7fe1f2659b8609cfca",
+  "https://github.com/ridedott/merge-me-action",
+  "https://docs.github.com/en/rest/pulls",
+  "https://docs.github.com/en/rest/pulls/pulls",
+  "https://techtoaster.io/github-api-curl-only-returns-a-subset-of-an-entire-list/",
+  "https://github.com/",
+  "https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28",
+  "https://github.com/github/docs/blob/main/content/rest/pulls/pulls.md"
+ ],
+ "outcome": "authored"
+}
