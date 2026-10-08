@@ -1,0 +1,22 @@
+{
+  "probed_at": "2026-10-08T14:31:00Z",
+  "searxng": {
+    "url": "https://p01--n8n-service--mcx7zcrbvdyt.code.run/webhook/searxng?endpoint=search&qs=q%3Dsystemd",
+    "http_status": 200,
+    "result_count": 89,
+    "unresponsive_engines_count": 14,
+    "has_suspended": false,
+    "ok": true
+  },
+  "decide": {
+    "url": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "http_status": 200,
+    "has_answers": true,
+    "model": "clef",
+    "probe_noul": 0.9836,
+    "task_id": null,
+    "ok": true
+  },
+  "post_preflight_note": "steady-orbit /api/decide later returned HTTP 502 on every multi-question batch during the weighting window; batches were rerouted to api.defapi.org (typesafe/jev-1.13) and recorded in jev-log.json",
+  "gate_passed": true
+}

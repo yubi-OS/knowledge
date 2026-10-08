@@ -1,0 +1,319 @@
+{
+  "nn": "02",
+  "slug": "patched-decoder-architecture",
+  "scope": "The patched-decoder architecture: input/output patching, patch lengths, autoregressive decoding, positional embeddings, and what changes across versions.",
+  "queries_attempted": [
+    {
+      "query": "TimesFM patched decoder input output patch architecture",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Can we talk about Mike's Weather Page for a minute?",
+          "url": "https://www.reddit.com/r/TropicalWeather/comments/9hgnw6/can_we_talk_about_mikes_weather_page_for_a_minute/",
+          "snippet": "When I first started viewing Mike's weather page I wonder the same thing what was his credentials? and then I started to realize that …"
+        },
+        {
+          "title": "47 Homemade Pizza Recipes That Are Faster Than Delivery",
+          "url": "https://www.tasteofhome.com/collection/easy-pizza-recipes/",
+          "snippet": "Mar 17, 2025 · Skip delivery and whip up these homemade pizza recipes instead! We have everything from classic slices to breakfast pizzas and creative pies."
+        },
+        {
+          "title": "timesfm/v1/src/timesfm/pytorch_patched_decoder.py at master · google ...",
+          "url": "https://github.com/google-research/timesfm/blob/master/v1/src/timesfm/pytorch_patched_decoder.py",
+          "snippet": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. - google-research/timesfm"
+        },
+        {
+          "title": "An implementation of transformer-based patched time-series forecasting ...",
+          "url": "https://simonhalvdansson.github.io/posts/time-series-transformer/",
+          "snippet": "Figure: Illustration of the main components of TimesFM; patching of input data, residual encoding blocks to tokenization, additive positional encodings, causal self-attention transformer layers to residual decoding blocks. Image taken from original TimesFM paper."
+        },
+        {
+          "title": "TimesFM · Hugging Face",
+          "url": "https://huggingface.co/docs/transformers/model_doc/timesfm",
+          "snippet": "TimesFM (Time Series Foundation ... a decoder only model that uses non-overlapping patches of time-series data as input and outputs some output patch length prediction in an autoregressive fashion....\"TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model proposed in A decoder-only foundation model for time-series forecasting by Abhimanyu Das, Weihao Kong, Rajat Sen, a"
+        },
+        {
+          "title": "TimesFM: Google's Approach to Time Series Foundation... — TSFM.ai",
+          "url": "https://tsfm.ai/blog/timesfm-google-overview",
+          "snippet": "#Architecture: Decoder-Only with Patching. TimesFM uses a decoder-only transformer, meaning it processes the input sequence causally (left-to-right) and generates outputs autoregressively.The key architectural innovation is input and output patching."
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "decoder-only time series foundation model patching autoregressive",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Multi Decoder - CacheSleuth",
+          "url": "https://www.cachesleuth.com/multidecoder/",
+          "snippet": "Paste a cipher or coded message below and the Multi Decoder will run it through 250+ codes and ciphers, then flag any decoded outputs that contain real words or valid coordinates."
+        },
+        {
+          "title": "A DECODER-ONLY FOUNDATION MODEL FOR TIME-SERIES FORECASTING A PREPRINT",
+          "url": "https://arxiv.org/pdf/2310.10688",
+          "snippet": "April 17, 2024 — For a foundation model, the horizon ... possible for very long horizons. However, as mentioned · earlier, by keeping the output_patch_len longer than input_patch_len one can ensure fewer autoregressive steps....\"For a foundation model, the horizon length of the task is not known · before inference time, therefore one-shot decoding might not be possible for very long horizons. Howe"
+        },
+        {
+          "title": "TimesFM: Time Series Foundation Model for time-series forecastin…",
+          "url": "https://news.ycombinator.com/item?id=40297946",
+          "snippet": "I'm curious why we seem convinced that this is a task that is possible or something worthy of investigation. I've worked on language models since 2018, ev…"
+        },
+        {
+          "title": "Base64 Decode and Encode - Online",
+          "url": "https://www.base64decode.org/",
+          "snippet": "Meet Base64 Decode and Encode, a simple online tool that does exactly what it says: decodes from Base64 encoding as well as encodes into it quickly and easily. Base64 encode your data without hassles or decode it into a human-readable format."
+        },
+        {
+          "title": "DenCode | Encoding & Decoding Online Tools",
+          "url": "https://dencode.com/en/",
+          "snippet": "Encoding and Decoding site. e.g. HTML Escape / URL Encoding / Base64 / MD5 / SHA-1 / CRC32 / and many other String, Number, DateTime, Color, Hash formats!"
+        },
+        {
+          "title": "A decoder-only foundation model for time-series forecasting",
+          "url": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+          "snippet": "We see that TimesFM not only surpasses the performance of llmtime(ZS) but also matches that of the supervised PatchTST model explicitly trained on the respective datasets. We train a decoder-only foundation model for time-series forecasting using a large pretraining corpus of 100B real world time-points, the majority of which was search interest time-series data derived from Google Trends and page"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "TimesFM patch length 32 decoder-only transformer time series",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "A decoder-only foundation model for time-series forecasting",
+          "url": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+          "snippet": "Secondly, at the other end, an ... length can be larger than the input patch length. Consider a time-series of length 512 time-points being used to train a TimesFM model with input patch length 32 and output patch length ...\"Secondly, at the other end, an output token from the stacked transformer can be used to predict a longer length of subsequent time-points than the input patch length, i.e., th"
+        },
+        {
+          "title": "GitHub - google-research/timesfm: TimesFM (Time Series Foundation Model ...",
+          "url": "https://github.com/google-research/timesfm/",
+          "snippet": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. Paper: A decoder-only foundation model for time-series forecasting, ICML 2024. (NEW!) TimesFM 3.0 Checkpoint: google/timesfm-3.-pytorch. Checkpoints (up to 2.5): TimesFM Hugging Face Collection. Google Research blog (New blog post for TimesFM 3.0 coming ..."
+        },
+        {
+          "title": "[2310.10688] A decoder-only foundation model for time-series ...",
+          "url": "https://arxiv.org/abs/2310.10688",
+          "snippet": "Oct 14, 2023 · Our model is based on pretraining a patched-decoder style attention model on a large time-series corpus, and can work well across different forecasting history lengths, prediction lengths and temporal granularities."
+        },
+        {
+          "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+          "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+          "snippet": "2 weeks ago — TimesFM-3 builds on the proven decoder-only transformer architecture of its predecessors. As in previous versions, we process time series efficiently by grouping contiguous data points into patches of 32 time steps.\"However, for past-future covariates, TimesFM-3 employs a clever \"lookahead\" strategy: each token concatenates the current patch with future patches, allowing the model to"
+        },
+        {
+          "title": "TimesFM: Google's Approach to Time Series Foundation Models — TSFM.ai",
+          "url": "https://tsfm.ai/blog/timesfm-google-overview",
+          "snippet": "May 20, 2024 — With a patch size of 32, this corresponds to a maximum lookback of 16,384 time steps — substantially longer effective context than most competing models. One notable design choice in the original TimesFM line is that it produces point forecasts ...\"Each input patch is a contiguous subsequence of the time series (e.g., 32 time steps), which is projected into the model's hidden dimens"
+        },
+        {
+          "title": "A DECODER-ONLY FOUNDATION MODEL FOR TIME-SERIES FORECASTING A PREPRINT",
+          "url": "https://arxiv.org/pdf/2310.10688",
+          "snippet": "April 17, 2024 — TimesFM model. We denote it as PatchTST(ZS). The two models share the same hyperparameters of the transformer · stack. For PatchTST(ZS) we use the same input patch length = 32, and a stride of length half of input patch size (i.e.\"For our main 200M model we use 16 attention heads, 20 layers, a input patch length of 32 and output patch · length of 128. The model dimension is set to"
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    },
+    {
+      "query": "decoder-only foundation model time-series forecasting ICML 2024 Das Kong Sen Zhou",
+      "attempt": 2,
+      "raw_results": [
+        {
+          "title": "[2310.10688] A decoder-only foundation model for time-series forecasting",
+          "url": "https://arxiv.org/abs/2310.10688",
+          "snippet": "April 17, 2024 — [Submitted on 14 Oct 2023 (v1), ... whose out-of-the-box zero-shot performance on a variety of public datasets comes close to the accuracy of state-of-the-art supervised forecasting models for each individual dataset...\"[Submitted on 14 Oct 2023 (v1), last revised 17 Apr 2024 (this version, v4)] Authors:Abhimanyu Das, Weihao Kong, Rajat Sen, Yichen Zhou · View a PDF of the paper t"
+        },
+        {
+          "title": "A decoder-only foundation model for time-series forecasting",
+          "url": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+          "snippet": "To that end, in “A decoder-only foundation model for time-series forecasting”, accepted at ICML 2024, we introduce TimesFM, a single forecasting model pre-trained on a large time-series corpus of 100 billion real world time-points.\"This work is the result of a collaboration between several individuals across Google Research and Google Cloud, including (in alphabetical order): Abhimanyu Das, Weihao"
+        },
+        {
+          "title": "A decoder-only foundation model for time-series forecasting",
+          "url": "https://proceedings.mlr.press/v235/das24c.html",
+          "snippet": "July 8, 2024 — Das, A., Kong, W., Sen, R. & Zhou, Y.. (2024). A decoder-only foundation model for time-series forecasting. Proceedings of the 41st International Conference on Machine Learning, in Proceedings of Machine Learning Research 235:10148-10167 Available from https://proceedings.mlr.press/v235/das24c.html.\"%0 Conference Paper %T A decoder-only foundation model for time-series forecasting %"
+        },
+        {
+          "title": "ICML Poster A decoder-only foundation model for time-series forecasting",
+          "url": "https://icml.cc/virtual/2024/poster/33288",
+          "snippet": "April 15, 2026 — Abhimanyu Das ⋅ Weihao Kong ⋅ ... model for forecasting whose out-of-the-box zero-shot performance on a variety of public datasets comes close to the accuracy of state-of-the-art supervised forecasting models for each individual dataset....\"Abhimanyu Das ⋅ Weihao Kong ⋅ Rajat Sen ⋅ Yichen Zhou · 2024 Poster · Project Page Paper PDF · Motivated by recent advances in large language "
+        },
+        {
+          "title": "Multi Decoder - CacheSleuth",
+          "url": "https://www.cachesleuth.com/multidecoder/",
+          "snippet": "Paste a cipher or coded message below and the Multi Decoder will run it through 250+ codes and ciphers, then flag any decoded …"
+        },
+        {
+          "title": "Foundation Models and Fine-Tuning: Toward a New Generation of...",
+          "url": "https://arxiv.org/pdf/2607.23146",
+          "snippet": "Das, Kong, Sen and Zhou (2024) applied this idea in the TimesFM (200M parameters) model, based on a decoder-only Transformer architecture (Figure 2(b); in this case, the decoder is a Transformer)."
+        }
+      ],
+      "kept": 6,
+      "http_status": 200
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "reason": "attempt-1 results failed jev quality weighting (all weights < 0.5)",
+      "at": "2026-10-08T14:52:30.638Z"
+    }
+  ],
+  "results_kept": [
+    {
+      "url": "https://www.reddit.com/r/TropicalWeather/comments/9hgnw6/can_we_talk_about_mikes_weather_page_for_a_minute/",
+      "title": "Can we talk about Mike's Weather Page for a minute?",
+      "weight": 0.53,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.tasteofhome.com/collection/easy-pizza-recipes/",
+      "title": "47 Homemade Pizza Recipes That Are Faster Than Delivery",
+      "weight": 0.53,
+      "redo_of": null
+    },
+    {
+      "url": "https://github.com/google-research/timesfm/blob/master/v1/src/timesfm/pytorch_patched_decoder.py",
+      "title": "timesfm/v1/src/timesfm/pytorch_patched_decoder.py at master · google ...",
+      "weight": 0.54,
+      "redo_of": null
+    },
+    {
+      "url": "https://simonhalvdansson.github.io/posts/time-series-transformer/",
+      "title": "An implementation of transformer-based patched time-series forecasting ...",
+      "weight": 0.43,
+      "redo_of": null
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/model_doc/timesfm",
+      "title": "TimesFM · Hugging Face",
+      "weight": 0.42,
+      "redo_of": null
+    },
+    {
+      "url": "https://tsfm.ai/blog/timesfm-google-overview",
+      "title": "TimesFM: Google's Approach to Time Series Foundation... — TSFM.ai",
+      "weight": 0.44,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.cachesleuth.com/multidecoder/",
+      "title": "Multi Decoder - CacheSleuth",
+      "weight": 0.43,
+      "redo_of": null
+    },
+    {
+      "url": "https://arxiv.org/pdf/2310.10688",
+      "title": "A DECODER-ONLY FOUNDATION MODEL FOR TIME-SERIES FORECASTING A PREPRINT",
+      "weight": 0.43,
+      "redo_of": null
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=40297946",
+      "title": "TimesFM: Time Series Foundation Model for time-series forecastin…",
+      "weight": 0.19,
+      "redo_of": null
+    },
+    {
+      "url": "https://www.base64decode.org/",
+      "title": "Base64 Decode and Encode - Online",
+      "weight": 0.2,
+      "redo_of": null
+    },
+    {
+      "url": "https://dencode.com/en/",
+      "title": "DenCode | Encoding & Decoding Online Tools",
+      "weight": 0.2,
+      "redo_of": null
+    },
+    {
+      "url": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "weight": 0.19,
+      "redo_of": null
+    },
+    {
+      "url": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "weight": 0.63,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://github.com/google-research/timesfm/",
+      "title": "GitHub - google-research/timesfm: TimesFM (Time Series Foundation Model ...",
+      "weight": 0.63,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.10688",
+      "title": "[2310.10688] A decoder-only foundation model for time-series ...",
+      "weight": 0.62,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+      "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+      "weight": 0.59,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://tsfm.ai/blog/timesfm-google-overview",
+      "title": "TimesFM: Google's Approach to Time Series Foundation Models — TSFM.ai",
+      "weight": 0.59,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2310.10688",
+      "title": "A DECODER-ONLY FOUNDATION MODEL FOR TIME-SERIES FORECASTING A PREPRINT",
+      "weight": 0.59,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.10688",
+      "title": "[2310.10688] A decoder-only foundation model for time-series forecasting",
+      "weight": 0.6,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "weight": 0.6,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v235/das24c.html",
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "weight": 0.45,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://icml.cc/virtual/2024/poster/33288",
+      "title": "ICML Poster A decoder-only foundation model for time-series forecasting",
+      "weight": 0.44,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://www.cachesleuth.com/multidecoder/",
+      "title": "Multi Decoder - CacheSleuth",
+      "weight": 0.44,
+      "redo_of": "attempt-1"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2607.23146",
+      "title": "Foundation Models and Fine-Tuning: Toward a New Generation of...",
+      "weight": 0.44,
+      "redo_of": "attempt-1"
+    }
+  ],
+  "high_weight_results": 11,
+  "outcome": "authored",
+  "jev_weights_summary": {
+    "total": 24,
+    "high": 11,
+    "max": 0.63
+  }
+}

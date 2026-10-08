@@ -1,0 +1,786 @@
+{
+  "note": "One entry per jev HTTP request during this mint. All weighted-batch requests went to the DefAPI endpoint because steady-orbit /api/decide returned HTTP 502 on every multi-question batch during the weighting window (single-question probes returned 200 earlier); per the mint contract the failure was treated as a reroute, never as an unweighted degrade.",
+  "preflight_decide_502_storm": "2026-10-08T14:36Z-14:47Z, HTTP 502 on multi-question batches via steady-orbit",
+  "entries": [
+    {
+      "timestamp": "2026-10-08T14:49:06.267Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta301967-0ff4-4b36-b58a-25e40cb7cf36",
+      "consumed": "0.000126084",
+      "usage": {
+        "input_tokens": 1501,
+        "output_tokens": 149,
+        "cost": 0.000126084
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_01-timesfm-lineage:q1-r1",
+        "q_01-timesfm-lineage:q1-r2",
+        "q_01-timesfm-lineage:q1-r3",
+        "q_01-timesfm-lineage:q1-r4",
+        "q_01-timesfm-lineage:q1-r5"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:12.673Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta8e3459-06c9-43d3-948a-095352cd2ce1",
+      "consumed": "0.00012222",
+      "usage": {
+        "input_tokens": 1455,
+        "output_tokens": 149,
+        "cost": 0.00012222
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_01-timesfm-lineage:q1-r6",
+        "q_01-timesfm-lineage:q2-r1",
+        "q_01-timesfm-lineage:q2-r2",
+        "q_01-timesfm-lineage:q2-r3",
+        "q_01-timesfm-lineage:q2-r4"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:19.909Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta2325c8-924e-48f3-94cd-ff57baeb560e",
+      "consumed": "0.00011256",
+      "usage": {
+        "input_tokens": 1340,
+        "output_tokens": 161,
+        "cost": 0.00011256
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_01-timesfm-lineage:q2-r5",
+        "q_01-timesfm-lineage:q2-r6",
+        "q_02-patched-decoder-architecture:q1-r1",
+        "q_02-patched-decoder-architecture:q1-r2",
+        "q_02-patched-decoder-architecture:q1-r3"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:26.025Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta5c58f6-1661-45fc-a161-edfea1de966a",
+      "consumed": "0.000117348",
+      "usage": {
+        "input_tokens": 1397,
+        "output_tokens": 169,
+        "cost": 0.000117348
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_02-patched-decoder-architecture:q1-r4",
+        "q_02-patched-decoder-architecture:q1-r5",
+        "q_02-patched-decoder-architecture:q1-r6",
+        "q_02-patched-decoder-architecture:q2-r1",
+        "q_02-patched-decoder-architecture:q2-r2"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:32.332Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "tacf7e70-3816-45bc-83e6-b0d5c2b8ea52",
+      "consumed": "0.000116844",
+      "usage": {
+        "input_tokens": 1391,
+        "output_tokens": 168,
+        "cost": 0.000116844
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_02-patched-decoder-architecture:q2-r3",
+        "q_02-patched-decoder-architecture:q2-r4",
+        "q_02-patched-decoder-architecture:q2-r5",
+        "q_02-patched-decoder-architecture:q2-r6",
+        "q_03-tsfm-landscape-comparison:q1-r1"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:38.437Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta686e7c-c407-45c5-b12f-103351b26104",
+      "consumed": "0.000128268",
+      "usage": {
+        "input_tokens": 1527,
+        "output_tokens": 164,
+        "cost": 0.000128268
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_03-tsfm-landscape-comparison:q1-r2",
+        "q_03-tsfm-landscape-comparison:q1-r3",
+        "q_03-tsfm-landscape-comparison:q1-r4",
+        "q_03-tsfm-landscape-comparison:q1-r5",
+        "q_03-tsfm-landscape-comparison:q1-r6"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:44.433Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta97c45f-efa6-4766-9996-134f8d58aa30",
+      "consumed": "0.000108864",
+      "usage": {
+        "input_tokens": 1296,
+        "output_tokens": 164,
+        "cost": 0.000108864
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_03-tsfm-landscape-comparison:q2-r1",
+        "q_03-tsfm-landscape-comparison:q2-r2",
+        "q_03-tsfm-landscape-comparison:q2-r3",
+        "q_03-tsfm-landscape-comparison:q2-r4",
+        "q_03-tsfm-landscape-comparison:q2-r5"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:50.709Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta859005-ef54-4a1d-89c9-711f17d75469",
+      "consumed": "0.0001218",
+      "usage": {
+        "input_tokens": 1450,
+        "output_tokens": 184,
+        "cost": 0.0001218
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_03-tsfm-landscape-comparison:q2-r6",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q1-r1",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q1-r2",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q1-r3",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q1-r4"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:49:57.027Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta331cf5-4155-44ac-9bbd-dda427efaab7",
+      "consumed": "0.000115584",
+      "usage": {
+        "input_tokens": 1376,
+        "output_tokens": 189,
+        "cost": 0.000115584
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_04-quantile-heads-and-probabilistic-forecasting:q1-r5",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q1-r6",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q2-r1",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q2-r2",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q2-r3"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:50:22.775Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta5b89ad-d891-430d-a624-c9d0512f17cb",
+      "consumed": "0.000114156",
+      "usage": {
+        "input_tokens": 1359,
+        "output_tokens": 181,
+        "cost": 0.000114156
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_04-quantile-heads-and-probabilistic-forecasting:q2-r4",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q2-r5",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q2-r6",
+        "q_05-gift-eval-benchmark-protocol:q1-r1",
+        "q_05-gift-eval-benchmark-protocol:q1-r2"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:50:28.998Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta16da5b-6560-4972-acd5-32d99af7a90b",
+      "consumed": "0.000121128",
+      "usage": {
+        "input_tokens": 1442,
+        "output_tokens": 169,
+        "cost": 0.000121128
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_05-gift-eval-benchmark-protocol:q1-r3",
+        "q_05-gift-eval-benchmark-protocol:q1-r4",
+        "q_05-gift-eval-benchmark-protocol:q1-r5",
+        "q_05-gift-eval-benchmark-protocol:q1-r6",
+        "q_05-gift-eval-benchmark-protocol:q2-r1"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:50:35.357Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta9fb31a-b19a-439c-8f72-804f764d8b28",
+      "consumed": "0.000116172",
+      "usage": {
+        "input_tokens": 1383,
+        "output_tokens": 169,
+        "cost": 0.000116172
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_05-gift-eval-benchmark-protocol:q2-r2",
+        "q_05-gift-eval-benchmark-protocol:q2-r3",
+        "q_05-gift-eval-benchmark-protocol:q2-r4",
+        "q_05-gift-eval-benchmark-protocol:q2-r5",
+        "q_05-gift-eval-benchmark-protocol:q2-r6"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:50:41.864Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta47b426-d8ef-4d46-8066-698c388d8972",
+      "consumed": "0.000112644",
+      "usage": {
+        "input_tokens": 1341,
+        "output_tokens": 159,
+        "cost": 0.000112644
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_06-workers-analytics-engine-time-series-storage:q1-r1",
+        "q_06-workers-analytics-engine-time-series-storage:q1-r2",
+        "q_06-workers-analytics-engine-time-series-storage:q1-r3",
+        "q_06-workers-analytics-engine-time-series-storage:q1-r4",
+        "q_06-workers-analytics-engine-time-series-storage:q1-r5"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:50:48.469Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "tae2bc54-7a99-41ec-9ce5-ab18c53f5da6",
+      "consumed": "0.0001134",
+      "usage": {
+        "input_tokens": 1350,
+        "output_tokens": 159,
+        "cost": 0.0001134
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_06-workers-analytics-engine-time-series-storage:q1-r6",
+        "q_06-workers-analytics-engine-time-series-storage:q2-r1",
+        "q_06-workers-analytics-engine-time-series-storage:q2-r2",
+        "q_06-workers-analytics-engine-time-series-storage:q2-r3",
+        "q_06-workers-analytics-engine-time-series-storage:q2-r4"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:50:54.654Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta51d7bf-914d-4243-a6b1-ccdd8ae879de",
+      "consumed": "0.000110628",
+      "usage": {
+        "input_tokens": 1317,
+        "output_tokens": 153,
+        "cost": 0.000110628
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_06-workers-analytics-engine-time-series-storage:q2-r5",
+        "q_06-workers-analytics-engine-time-series-storage:q2-r6",
+        "q_07-jev-integration-design:q1-r1",
+        "q_07-jev-integration-design:q1-r2",
+        "q_07-jev-integration-design:q1-r3"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:51:00.689Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "tacc2083-6eb3-409a-948a-9f1b5f5382b2",
+      "consumed": "0.000118188",
+      "usage": {
+        "input_tokens": 1407,
+        "output_tokens": 149,
+        "cost": 0.000118188
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_07-jev-integration-design:q1-r4",
+        "q_07-jev-integration-design:q1-r5",
+        "q_07-jev-integration-design:q1-r6",
+        "q_07-jev-integration-design:q2-r1",
+        "q_07-jev-integration-design:q2-r2"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:51:07.103Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "tad6f5bb-0ea5-4302-ae01-7384733af899",
+      "consumed": "0.000086604",
+      "usage": {
+        "input_tokens": 1031,
+        "output_tokens": 120,
+        "cost": 0.000086604
+      },
+      "n_questions": 4,
+      "question_names": [
+        "q_07-jev-integration-design:q2-r3",
+        "q_07-jev-integration-design:q2-r4",
+        "q_07-jev-integration-design:q2-r5",
+        "q_07-jev-integration-design:q2-r6"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:54:08.915Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "taa74843-e7a0-441a-a3b1-870f2b3e190f",
+      "consumed": "0.000126",
+      "usage": {
+        "input_tokens": 1500,
+        "output_tokens": 149,
+        "cost": 0.000126
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_01-timesfm-lineage:q3-r1",
+        "q_01-timesfm-lineage:q3-r2",
+        "q_01-timesfm-lineage:q3-r3",
+        "q_01-timesfm-lineage:q3-r4",
+        "q_01-timesfm-lineage:q3-r5"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:54:15.073Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta4b0851-6a7a-48fc-b694-5bcf7f465dcc",
+      "consumed": "0.00011718",
+      "usage": {
+        "input_tokens": 1395,
+        "output_tokens": 149,
+        "cost": 0.00011718
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_01-timesfm-lineage:q3-r6",
+        "q_01-timesfm-lineage:q4-r1",
+        "q_01-timesfm-lineage:q4-r2",
+        "q_01-timesfm-lineage:q4-r3",
+        "q_01-timesfm-lineage:q4-r4"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:54:21.731Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta928eec-9a81-4340-8953-4da9f847228e",
+      "consumed": "0.000125244",
+      "usage": {
+        "input_tokens": 1491,
+        "output_tokens": 161,
+        "cost": 0.000125244
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_01-timesfm-lineage:q4-r5",
+        "q_01-timesfm-lineage:q4-r6",
+        "q_02-patched-decoder-architecture:q3-r1",
+        "q_02-patched-decoder-architecture:q3-r2",
+        "q_02-patched-decoder-architecture:q3-r3"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:54:27.823Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta14c79e-d59f-4df9-80a2-b0e40a3ca016",
+      "consumed": "0.000130452",
+      "usage": {
+        "input_tokens": 1553,
+        "output_tokens": 169,
+        "cost": 0.000130452
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_02-patched-decoder-architecture:q3-r4",
+        "q_02-patched-decoder-architecture:q3-r5",
+        "q_02-patched-decoder-architecture:q3-r6",
+        "q_02-patched-decoder-architecture:q4-r1",
+        "q_02-patched-decoder-architecture:q4-r2"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:54:34.155Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta50d3e3-df6e-4d25-85f2-5fb6fbcdf736",
+      "consumed": "0.000122388",
+      "usage": {
+        "input_tokens": 1457,
+        "output_tokens": 168,
+        "cost": 0.000122388
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_02-patched-decoder-architecture:q4-r3",
+        "q_02-patched-decoder-architecture:q4-r4",
+        "q_02-patched-decoder-architecture:q4-r5",
+        "q_02-patched-decoder-architecture:q4-r6",
+        "q_03-tsfm-landscape-comparison:q3-r1"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:54:40.190Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta3d7eb4-8d85-4fda-8843-f81cd1e7843f",
+      "consumed": "0.000125916",
+      "usage": {
+        "input_tokens": 1499,
+        "output_tokens": 164,
+        "cost": 0.000125916
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_03-tsfm-landscape-comparison:q3-r2",
+        "q_03-tsfm-landscape-comparison:q3-r3",
+        "q_03-tsfm-landscape-comparison:q3-r4",
+        "q_03-tsfm-landscape-comparison:q3-r5",
+        "q_03-tsfm-landscape-comparison:q3-r6"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:07.867Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta0f9217-13b0-47d5-a83c-6b0d21089db8",
+      "consumed": "0.000124908",
+      "usage": {
+        "input_tokens": 1487,
+        "output_tokens": 164,
+        "cost": 0.000124908
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_03-tsfm-landscape-comparison:q4-r1",
+        "q_03-tsfm-landscape-comparison:q4-r2",
+        "q_03-tsfm-landscape-comparison:q4-r3",
+        "q_03-tsfm-landscape-comparison:q4-r4",
+        "q_03-tsfm-landscape-comparison:q4-r5"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:14.090Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "taefec49-19bb-4fc0-a492-08556ad33a13",
+      "consumed": "0.000131712",
+      "usage": {
+        "input_tokens": 1568,
+        "output_tokens": 184,
+        "cost": 0.000131712
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_03-tsfm-landscape-comparison:q4-r6",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q3-r1",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q3-r2",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q3-r3",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q3-r4"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:20.272Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "taf9c81d-f871-4b08-a62d-de18685da6b0",
+      "consumed": "0.00012684",
+      "usage": {
+        "input_tokens": 1510,
+        "output_tokens": 189,
+        "cost": 0.00012684
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_04-quantile-heads-and-probabilistic-forecasting:q3-r5",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q3-r6",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q4-r1",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q4-r2",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q4-r3"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:26.306Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "tac12176-779f-46a9-875c-c0c04a8207a0",
+      "consumed": "0.0001197",
+      "usage": {
+        "input_tokens": 1425,
+        "output_tokens": 181,
+        "cost": 0.0001197
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_04-quantile-heads-and-probabilistic-forecasting:q4-r4",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q4-r5",
+        "q_04-quantile-heads-and-probabilistic-forecasting:q4-r6",
+        "q_05-gift-eval-benchmark-protocol:q3-r1",
+        "q_05-gift-eval-benchmark-protocol:q3-r2"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:32.775Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta97f450-b3ac-4718-b719-0e2760ee2c6a",
+      "consumed": "0.000120708",
+      "usage": {
+        "input_tokens": 1437,
+        "output_tokens": 169,
+        "cost": 0.000120708
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_05-gift-eval-benchmark-protocol:q3-r3",
+        "q_05-gift-eval-benchmark-protocol:q3-r4",
+        "q_05-gift-eval-benchmark-protocol:q3-r5",
+        "q_05-gift-eval-benchmark-protocol:q3-r6",
+        "q_05-gift-eval-benchmark-protocol:q4-r1"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:38.859Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta8c59c1-9991-4eef-bb40-85c956d63841",
+      "consumed": "0.00012348",
+      "usage": {
+        "input_tokens": 1470,
+        "output_tokens": 169,
+        "cost": 0.00012348
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_05-gift-eval-benchmark-protocol:q4-r2",
+        "q_05-gift-eval-benchmark-protocol:q4-r3",
+        "q_05-gift-eval-benchmark-protocol:q4-r4",
+        "q_05-gift-eval-benchmark-protocol:q4-r5",
+        "q_05-gift-eval-benchmark-protocol:q4-r6"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:44.868Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta4bbe58-edf9-446d-a613-edf26108bc8f",
+      "consumed": "0.000124824",
+      "usage": {
+        "input_tokens": 1486,
+        "output_tokens": 159,
+        "cost": 0.000124824
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_06-workers-analytics-engine-time-series-storage:q3-r1",
+        "q_06-workers-analytics-engine-time-series-storage:q3-r2",
+        "q_06-workers-analytics-engine-time-series-storage:q3-r3",
+        "q_06-workers-analytics-engine-time-series-storage:q3-r4",
+        "q_06-workers-analytics-engine-time-series-storage:q3-r5"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:50.735Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta9d9352-9354-4c9d-8da5-a0ad1070dfee",
+      "consumed": "0.000124824",
+      "usage": {
+        "input_tokens": 1486,
+        "output_tokens": 159,
+        "cost": 0.000124824
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_06-workers-analytics-engine-time-series-storage:q3-r6",
+        "q_06-workers-analytics-engine-time-series-storage:q4-r1",
+        "q_06-workers-analytics-engine-time-series-storage:q4-r2",
+        "q_06-workers-analytics-engine-time-series-storage:q4-r3",
+        "q_06-workers-analytics-engine-time-series-storage:q4-r4"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:55:57.112Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "taf5cdfb-2211-4c44-8ae8-4138e053bff3",
+      "consumed": "0.000120372",
+      "usage": {
+        "input_tokens": 1433,
+        "output_tokens": 153,
+        "cost": 0.000120372
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_06-workers-analytics-engine-time-series-storage:q4-r5",
+        "q_06-workers-analytics-engine-time-series-storage:q4-r6",
+        "q_07-jev-integration-design:q3-r1",
+        "q_07-jev-integration-design:q3-r2",
+        "q_07-jev-integration-design:q3-r3"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:56:03.172Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta1951d2-178c-402e-92a9-822da3d9c392",
+      "consumed": "0.000123648",
+      "usage": {
+        "input_tokens": 1472,
+        "output_tokens": 149,
+        "cost": 0.000123648
+      },
+      "n_questions": 5,
+      "question_names": [
+        "q_07-jev-integration-design:q3-r4",
+        "q_07-jev-integration-design:q3-r5",
+        "q_07-jev-integration-design:q3-r6",
+        "q_07-jev-integration-design:q4-r1",
+        "q_07-jev-integration-design:q4-r2"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    },
+    {
+      "timestamp": "2026-10-08T14:56:09.428Z",
+      "endpoint": "https://api.defapi.org/api/v1/decisions",
+      "model": "typesafe/jev-1.13-20260917",
+      "task_id": "ta7e039f-7c55-4079-bc4e-04bbe4d97e02",
+      "consumed": "0.000105756",
+      "usage": {
+        "input_tokens": 1259,
+        "output_tokens": 120,
+        "cost": 0.000105756
+      },
+      "n_questions": 4,
+      "question_names": [
+        "q_07-jev-integration-design:q4-r3",
+        "q_07-jev-integration-design:q4-r4",
+        "q_07-jev-integration-design:q4-r5",
+        "q_07-jev-integration-design:q4-r6"
+      ],
+      "metric_types": [
+        "noul"
+      ]
+    }
+  ]
+}
