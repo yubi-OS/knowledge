@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "workers-deploy-safety",
+  "scope": "Deploy safety on the Cloudflare Workers modules API: multipart PUT shape, preserving legacy entry modules byte-safe, bindings referencing not-yet-existing Secrets Store secrets failing the deploy, fail-closed invariants.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Workers modules API multipart PUT deploy metadata main_module bindings",
+      "attempt": 1,
+      "raw_results": 62,
+      "kept": 6
+    },
+    {
+      "query": "Cloudflare Workers deploy secrets store binding compatibility_date modules upload",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/",
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/reference/platform-examples/",
+    "https://developers.cloudflare.com/workers/platform/infrastructure-as-code/",
+    "https://dash.cloudflare.com/login",
+    "https://en.wikipedia.org/wiki/Cloudflare",
+    "https://www.cloudflare.com/",
+    "https://dash.cloudflare.com/login",
+    "https://en.wikipedia.org/wiki/Cloudflare",
+    "https://www.cloudflare.com/en-gb/",
+    "https://developers.cloudflare.com/workers/",
+    "https://developers.cloudflare.com/workers/configuration/secrets/"
+  ],
+  "outcome": "authored"
+}
