@@ -1,0 +1,37 @@
+{
+  "nn": 6,
+  "slug": "build-policy",
+  "doc": "06-build-policy.md",
+  "scope": "Docker Buildx Build Policy integration: OPA/Rego policy enforcing input.image.hasProvenance and isCanonical at build time",
+  "queries_attempted": [
+    {
+      "query": "docker buildx build policy OPA rego provenance gate",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "docker buildx --policy input.image.isCanonical hasProvenance",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.docker.com/build/policies/",
+    "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+    "https://docs.docker.com/build/policies/usage/",
+    "https://www.docker.com/",
+    "https://azure.github.io/containerization-assist/",
+    "https://www.openpolicyagent.org/docs/deploy/docker",
+    "https://www.docker.com/",
+    "https://www.docker.com/products/docker-desktop/",
+    "https://docs.docker.com/desktop/setup/install/windows-install/",
+    "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+    "https://docs.docker.com/",
+    "https://docs.docker.com/build/policies/debugging/"
+  ],
+  "outcome": "authored"
+}

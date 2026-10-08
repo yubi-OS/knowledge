@@ -1,0 +1,37 @@
+{
+  "nn": 3,
+  "slug": "provenance-format",
+  "doc": "03-provenance-format.md",
+  "scope": "Provenance format: in-toto Statement v1, DSSE envelope, slsa.dev/provenance/v1 predicate with buildDefinition and runDetails, versus the v0.2 shape",
+  "queries_attempted": [
+    {
+      "query": "SLSA provenance v1 predicate buildDefinition runDetails schema",
+      "attempt": 1,
+      "raw_results": 37,
+      "kept": 6
+    },
+    {
+      "query": "in-toto Statement v1 DSSE envelope provenance attestation format",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://slsa.dev/spec/v1.0/provenance",
+    "https://deepwiki.com/slsa-framework/slsa-github-generator/10-slsa-provenance-format",
+    "https://deepwiki.com/slsa-framework/slsa/3.1-provenance-format",
+    "https://docs.gitlab.com/ci/pipeline_security/slsa/level_3/provenance_v1/",
+    "https://github.com/slsa-framework/slsa/blob/main/spec/build-provenance.md",
+    "https://slsa.dev/spec/draft/build-provenance",
+    "https://github.com/in-toto/attestation/blob/main/spec/v1/envelope.md",
+    "https://safeguard.sh/resources/blog/in-toto-attestation-formats-review",
+    "https://docs.cimon.build/provenance/supported-formats",
+    "https://nono.sh/docs/cli/internals/signing",
+    "https://www.instagram.com/?hl=en-in",
+    "https://www.linkedin.com/pulse/slsa-devops-engineers-practical-guide-build-provenance-puneet-singh-lrwsc"
+  ],
+  "outcome": "authored"
+}

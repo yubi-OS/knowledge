@@ -1,0 +1,37 @@
+{
+  "nn": 2,
+  "slug": "github-generator-workflows",
+  "doc": "02-github-generator-workflows.md",
+  "scope": "slsa-framework/slsa-github-generator reusable workflows: generator_container_slsa3.yml and generator_generic_slsa3.yml, isolated runners, id-token permissions, subjects inputs",
+  "queries_attempted": [
+    {
+      "query": "slsa-github-generator reusable workflow generator_generic_slsa3 usage",
+      "attempt": 1,
+      "raw_results": 38,
+      "kept": 6
+    },
+    {
+      "query": "slsa-github-generator container provenance generator_container_slsa3 inputs",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/slsa-framework/slsa-github-generator",
+    "https://slsa.dev/blog/2022/08/slsa-github-workflows-generic-ga",
+    "https://github.com/slsa-framework/slsa-github-generator/blob/main/internal/builders/generic/README.md",
+    "https://slsa.dev/blog/2023/08/bring-your-own-builder-github",
+    "https://www.onceuponachef.com/recipes/chocolate-tart.html",
+    "https://deepwiki.com/slsa-framework/slsa-github-generator/7.1-reusable-workflows-reference",
+    "https://github.com/slsa-framework/slsa-github-generator",
+    "https://slsa.dev/blog/2023/02/slsa-github-workflows-container-ga",
+    "https://deepwiki.com/slsa-framework/slsa-github-generator/3.2-container-generator",
+    "https://secure-pipelines.com/ci-cd-security/lab-generating-verifying-slsa-provenance-container-images/",
+    "https://www.patheos.com/blogs/voxnova/2009/10/18/quote-of-the-day-fr-ghislain-lafont-on-the-pathology-of-the-truth/",
+    "https://slsa.dev/blog/2023/08/bring-your-own-builder-github"
+  ],
+  "outcome": "authored"
+}
