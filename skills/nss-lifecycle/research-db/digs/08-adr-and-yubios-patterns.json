@@ -1,0 +1,92 @@
+{
+  "nn": "08",
+  "slug": "adr-and-yubios-patterns",
+  "scope": "ADR-driven lifecycle decisions (Nygard format, immutable accepted ADRs, supersedes chains, back-links from affected files) plus the yubiOS per-file-type Lifecycle block patterns for Markdown, Containerfile/mkosi/systemd, shell, GitHub Actions, and refs, with the cycle-15 verification checklist.",
+  "queries_attempted": [
+    {
+      "query": "architecture decision records Nygard format supersedes immutable accepted",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": [
+        "https://en.wikipedia.org/wiki/Architecture",
+        "https://www.archdaily.com/",
+        "https://www.catio.tech/blog/architecture-decision-record",
+        "https://docs.arc42.org/examples/decision-use-adrs/",
+        "https://www.cavaro.io/templates/architecture-decision-record-adr",
+        "https://www.architecturecourses.org/learn/introduction-architecture"
+      ]
+    },
+    {
+      "query": "architecture decision record lifecycle status supersedes template Michael Nygard",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": [
+        "https://en.wikipedia.org/wiki/Architecture",
+        "https://www.cavaro.io/templates/architecture-decision-record-adr",
+        "https://www.archdaily.com/",
+        "https://github.com/gregoryscode/adr-template",
+        "https://github.com/jamesmh/architecture_decision_record/blob/master/adr_template_by_michael_nygard.md",
+        "https://www.architecturecourses.org/learn/introduction-architecture"
+      ]
+    },
+    {
+      "query": "adr.github.io architecture decision records document scaffolding",
+      "attempt": 2,
+      "raw_results": 36,
+      "kept": [
+        "https://adr.github.io/",
+        "https://github.com/architecture-decision-record/architecture-decision-record",
+        "https://www.adr.org/",
+        "https://github.com/adr",
+        "https://www.investopedia.com/terms/a/adr.asp",
+        "https://go-micro.dev/docs/architecture/"
+      ]
+    },
+    {
+      "query": "Joel Parker Henderson architecture decision record examples template",
+      "attempt": 2,
+      "raw_results": 36,
+      "kept": [
+        "https://github.com/architecture-decision-record/architecture-decision-record",
+        "https://github.com/joelparkerhenderson",
+        "https://deepwiki.com/joelparkerhenderson/architecture-decision-record/2-adr-templates",
+        "https://aleburrascano.github.io/software-architecture-design/wiki/sources/Architecture-Decision-Record---joelparkerhenderson",
+        "https://www.sharpcarpetcleaningomaha.com/blog/joel-celebrates-5-years-at-sharp/",
+        "https://en.wikipedia.org/wiki/William_Cecil,_1st_Baron_Burghley"
+      ]
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "only one result at weight >= 0.5 in attempt 1; need the canonical ADR sites",
+      "new_queries": [
+        "adr.github.io architecture decision records document scaffolding",
+        "Joel Parker Henderson architecture decision record examples template"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Architecture",
+    "https://www.archdaily.com/",
+    "https://www.catio.tech/blog/architecture-decision-record",
+    "https://docs.arc42.org/examples/decision-use-adrs/",
+    "https://www.cavaro.io/templates/architecture-decision-record-adr",
+    "https://www.architecturecourses.org/learn/introduction-architecture",
+    "https://github.com/gregoryscode/adr-template",
+    "https://github.com/jamesmh/architecture_decision_record/blob/master/adr_template_by_michael_nygard.md",
+    "https://adr.github.io/",
+    "https://github.com/architecture-decision-record/architecture-decision-record",
+    "https://www.adr.org/",
+    "https://github.com/adr",
+    "https://www.investopedia.com/terms/a/adr.asp",
+    "https://go-micro.dev/docs/architecture/",
+    "https://github.com/joelparkerhenderson",
+    "https://deepwiki.com/joelparkerhenderson/architecture-decision-record/2-adr-templates",
+    "https://aleburrascano.github.io/software-architecture-design/wiki/sources/Architecture-Decision-Record---joelparkerhenderson",
+    "https://www.sharpcarpetcleaningomaha.com/blog/joel-celebrates-5-years-at-sharp/",
+    "https://en.wikipedia.org/wiki/William_Cecil,_1st_Baron_Burghley"
+  ],
+  "outcome": "authored"
+}

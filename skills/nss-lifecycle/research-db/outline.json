@@ -1,0 +1,225 @@
+{
+  "topic": "The NSS Lifecycle axis: how files evolve (versioning, changelogs, deprecation state, migration guides, feature-flag lifecycle, SBOM evidence, ADR-driven decisions, negative states)",
+  "ground_source": "yubi-OS/yubiOS skills/nss-lifecycle/SKILL.md (38324 bytes fetched 2026-10-07)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "state-machine",
+      "scope": "The eight-stage lifecycle state machine (experimental/beta/stable/deprecated/removed/archived/cancelled/unknown), per-transition entry and exit criteria, compatibility promises, the yubiOS stage-semantics table, and alignment with Kubernetes, Google, and Square notice policies.",
+      "seed_queries": [
+        "Kubernetes API deprecation policy notice period beta stable",
+        "API lifecycle stages experimental beta stable deprecated removed archived policy"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "semver-versioning",
+      "scope": "SemVer 2.0.0 as the compatibility rule rather than the lifecycle model: MAJOR.MINOR.PATCH increment semantics, the version coordinates introduced_in/last_changed_in/deprecated_in/removed_in/current_version, and why a version number cannot express stage obligations.",
+      "seed_queries": [
+        "SemVer 2.0.0 specification semantic versioning MAJOR MINOR PATCH rules",
+        "semver deprecation minor release removal major release backward compatibility"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "changelog-conventional-commits",
+      "scope": "Keep a Changelog 1.1.0 categories (Added/Changed/Deprecated/Removed/Fixed/Security) and what makes a good deprecation entry, Conventional Commits 1.0.0 type-to-increment mapping, and Release Drafter automation consuming explicit lifecycle metadata.",
+      "seed_queries": [
+        "Keep a Changelog 1.1.0 categories Added Changed Deprecated Removed Fixed Security",
+        "Conventional Commits 1.0.0 spec feat fix BREAKING CHANGE versioning release drafter"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "http-deprecation-headers",
+      "scope": "RFC 8594 Sunset versus RFC 9745 Deprecation headers for HTTP APIs, the deprecation link relation, the ordering rule that Sunset must not precede deprecation, and notice periods as policy choices (180 days, Google, Square).",
+      "seed_queries": [
+        "RFC 9745 Deprecation HTTP response header link relation",
+        "RFC 8594 Sunset HTTP header field API deprecation"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "migration-guides",
+      "scope": "Migration-guide composition: replacement symbol or endpoint, codemod availability, upgrade-helper, manual steps, and validation procedure, grounded in real codemod practice such as Next.js codemods and Node.js userland migrations.",
+      "seed_queries": [
+        "Next.js codemods upgrade helper migration scripts",
+        "API migration guide codemod deprecation best practices software upgrade"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "feature-flag-lifecycle",
+      "scope": "Per-flag lifecycle records (purpose, owner, temporary/permanent, expiry, environments, variations, code references, removal PR, archive date), LaunchDarkly flag lifecycle statuses, and OpenFeature provider-state observability.",
+      "seed_queries": [
+        "LaunchDarkly feature flag lifecycle statuses Ready for code removal archive",
+        "OpenFeature provider lifecycle states ready error stale reconciling"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "sbom-evidence-lifecycle",
+      "scope": "SBOMs as versioned evidence artifacts per the 2026 CISA minimum elements: format and schema version, generation phase, tool version, VEX status, per-release association, superseded SBOMs, and retention/decommissioning policy.",
+      "seed_queries": [
+        "CISA SBOM minimum elements software bill of materials",
+        "SBOM retention policy versioned evidence artifact lifecycle"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "adr-and-yubios-patterns",
+      "scope": "ADR-driven lifecycle decisions (Nygard format, immutable accepted ADRs, supersedes chains, back-links from affected files) plus the yubiOS per-file-type Lifecycle block patterns for Markdown, Containerfile/mkosi/systemd, shell, GitHub Actions, and refs, with the cycle-15 verification checklist.",
+      "seed_queries": [
+        "architecture decision records Nygard format supersedes immutable accepted",
+        "architecture decision record lifecycle status supersedes template Michael Nygard"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.51,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.28,
+          "2": 0.62
+        },
+        "confidence": 0.28
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.79,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.12,
+          "2": 0.83
+        },
+        "confidence": 0.67
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.53,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.36,
+          "2": 0.58
+        },
+        "confidence": 0.28
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.07,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.57,
+          "2": 0.25
+        },
+        "confidence": 0.35
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.87,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.07,
+          "2": 0.9
+        },
+        "confidence": 0.8
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.45,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.42,
+          "2": 0.51
+        },
+        "confidence": 0.16
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.56,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.35,
+          "2": 0.61
+        },
+        "confidence": 0.35
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.64,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.19,
+          "2": 0.72
+        },
+        "confidence": 0.44
+      }
+    },
+    "usage": {
+      "input_tokens": 1125,
+      "output_tokens": 124,
+      "cost": 0.0000945
+    },
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ],
+    "dropped": []
+  }
+}
