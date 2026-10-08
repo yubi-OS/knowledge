@@ -1,0 +1,240 @@
+{
+ "topic": "sandbox-stable",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "gate-package-line",
+   "scope": "Confirm the app is on the default stable @cloudflare/sandbox package with the matching stable container image, and route to sandbox-next or sandbox-migrate-to-next when the ask is 1.0/new-work/port; never mix package and image lines.",
+   "seed_queries": [
+    "Cloudflare Sandbox SDK stable @cloudflare/sandbox package documentation",
+    "Cloudflare Sandbox SDK 1.0 preview @next package migration sandbox-next"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "command-contract",
+   "scope": "The stable command contract: sandbox.exec takes a command string and resolves on finish with buffered stdout/stderr/exitCode; long-running and streaming work use stable startProcess and execStream, not @next single-handle output() APIs.",
+   "seed_queries": [
+    "Cloudflare Sandbox commands API exec startProcess execStream documentation",
+    "Cloudflare Sandbox background processes streaming output guide"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "sessions-state",
+   "scope": "Sessions preserve working directory and environment across commands: default session / enableDefaultSession and createSession, when state must carry across calls.",
+   "seed_queries": [
+    "Cloudflare Sandbox sessions concept enableDefaultSession createSession",
+    "Cloudflare Sandbox sessions API documentation"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "files-storage-backups",
+   "scope": "Filesystem surfaces: Files API (readFile/writeFile/readDir), file watching, Storage API and mounted buckets, plus Backups API for snapshot and restore.",
+   "seed_queries": [
+    "Cloudflare Sandbox files API readFile writeFile readDir documentation",
+    "Cloudflare Sandbox storage API mount buckets backups API"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "ports-tunnels-proxy",
+   "scope": "Exposing work: Ports API, expose services and preview URLs, Tunnels API, and proxying requests from the Worker to the sandbox (proxyToSandbox, Workers connections), including production preview hostname wildcard DNS.",
+   "seed_queries": [
+    "Cloudflare Sandbox ports API expose services preview URL",
+    "Cloudflare Sandbox tunnels API proxy requests workers connections"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "terminals-interpreter",
+   "scope": "Interactive and compute surfaces: sandbox.terminal(request) browser terminals with session/xterm helpers, the code Interpreter API, git workflows in the sandbox, and Docker-in-Docker.",
+   "seed_queries": [
+    "Cloudflare Sandbox terminal API browser terminal xterm",
+    "Cloudflare Sandbox code interpreter API git workflows docker-in-docker"
+   ]
+  },
+  {
+   "nn": 7,
+   "slug": "secrets-egress-config",
+   "scope": "Configuration and secrets discipline: non-secret config in sandbox env vars, live credentials stay in the Worker, outbound traffic handlers when sandbox processes call external APIs.",
+   "seed_queries": [
+    "Cloudflare Sandbox environment variables configuration secrets",
+    "Cloudflare Sandbox outbound traffic egress handlers guide"
+   ]
+  },
+  {
+   "nn": 8,
+   "slug": "deprecated-api-cleanup",
+   "scope": "Cleaning deprecated stable APIs while staying on stable (2026 deprecation guide): HTTP/WebSocket transport to RPC, exposePort, execStream/readFileStream/writeFileStream and enableDefaultSession surface changes; update package plus matching image first.",
+   "seed_queries": [
+    "Cloudflare Sandbox 2026 deprecation guide HTTP WebSocket transport RPC migration",
+    "Cloudflare Sandbox deprecated APIs exposePort readFileStream writeFileStream enableDefaultSession"
+   ]
+  },
+  {
+   "nn": 9,
+   "slug": "production-ship-checklist",
+   "scope": "Production readiness: same-line package and image, typecheck against installed stable types, no live secrets in sandbox env, lifecycle options (getSandbox options, sleep, destroy), wildcard DNS for preview hostnames, and the self-deployed bridge on stable.",
+   "seed_queries": [
+    "Cloudflare Sandbox production deployment guide getSandbox lifecycle sleep destroy",
+    "Cloudflare Sandbox bridge self-deploy custom domain wildcard DNS preview hostnames"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.02,
+     "2": 0.93
+    },
+    "confidence": 0.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.84,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.04,
+     "2": 0.9
+    },
+    "confidence": 0.76,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.64,
+    "probabilities": {
+     "0": 0.54,
+     "1": 0.28,
+     "2": 0.18
+    },
+    "confidence": 0.04,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.09,
+    "probabilities": {
+     "0": 0.25,
+     "1": 0.41,
+     "2": 0.34
+    },
+    "confidence": 0.11,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.58,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.2,
+     "2": 0.69
+    },
+    "confidence": 0.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.59,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.22,
+     "2": 0.6799999999999999
+    },
+    "confidence": 0.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.47,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.34,
+     "2": 0.5599999999999999
+    },
+    "confidence": 0.19,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.45,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.29,
+     "2": 0.58
+    },
+    "confidence": 0.17,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.08,
+     "2": 0.85
+    },
+    "confidence": 0.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1615,
+   "output_tokens": 139,
+   "cost": 0.00013566
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ }
+}
