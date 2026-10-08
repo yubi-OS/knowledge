@@ -1,0 +1,221 @@
+{
+ "nn": 5,
+ "slug": "rekor-v2-anchoring",
+ "scope": "Sigstore Rekor v2 tile-backed transparency log and cosign verify-attestation as the anchoring component of the evidence shape.",
+ "queries_attempted": [
+  {
+   "query": "Sigstore Rekor v2 tiles transparency log sharded",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": [
+    {
+     "title": "GitHub - sigstore/rekor-tiles: Signature Transparency Log designed for ...",
+     "url": "https://github.com/sigstore/rekor-tiles",
+     "snippet": "Rekor v2, aka rekor-tiles or Rekor on Tiles, is a redesigned and modernized Rekor, Sigstore's signature transparency log, transitioning its backend to a modern, tile-backed transparency log implementation to simplify maintenance and lower operational costs. More information (documents are shared with sigstore-dev, join the group to get access, please don't request access): Proposal Design doc"
+    },
+    {
+     "title": "Rekor v2 GA - Cheaper to run, simpler to maintain - Sigstore Blog",
+     "url": "https://blog.sigstore.dev/rekor-v2-ga/",
+     "snippet": "Rekor v2 is a redesigned and modernized Rekor, Sigstore\u2019s signature transparency log, transitioning its backend to a tile-backed transparency log implementation to simplify maintenance and lower operational costs."
+    },
+    {
+     "title": "Rekor v2 - Cheaper to run, simpler to maintain - Sigstore Blog",
+     "url": "https://blog.sigstore.dev/rekor-v2-alpha/",
+     "snippet": "Apr 17, 2025 \u00b7 We are very excited to announce the alpha release of Rekor v2! Rekor v2 is a redesigned and modernized Rekor, Sigstore\u2019s signature transparency log, transitioning its backend to a modern, tile-backed transparency log implementation to simplify maintenance and lower operational costs."
+    },
+    {
+     "title": "Transparency Log - Sigstore",
+     "url": "https://docs.sigstore.dev/logging/",
+     "snippet": "Documentation for Rekor"
+    },
+    {
+     "title": "GitHub - sigstore/rekor: Software Supply Chain Transparency Log \u2026",
+     "url": "https://github.com/sigstore/rekor",
+     "snippet": "Rekor v1 is in maintenance mode. We are actively developing a new version of Rekor designed to be easy to maintain and cheaper to operate. Building on the active development in the Certificate Transparency ecosystem, Rekor v2 will be backed by a tile-based log and will use a modernized version of Trillian, Trillian-Tessera. Follow its progress on the rekor-tiles repo, and learn more about ..."
+    },
+    {
+     "title": "Sharding - Sigstore",
+     "url": "https://docs.sigstore.dev/logging/sharding/",
+     "snippet": "This document covers what Rekor log sharding is and how to shard the log. What is sharding? # When Rekor is started for the first time, its backend is a transparency log built on a single Merkle Tree. This log can grow indefinitely as entries are added, which can present issues over time. To resolve some of these issues the log can be \"sharded\" into multiple Merkle Trees. Why do we shard ..."
+    }
+   ],
+   "http": 200,
+   "elapsed_s": 8.76,
+   "unresponsive_engines": [
+    [
+     "boardreader",
+     "parsing error"
+    ],
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "privacywall",
+     "Suspended: access denied"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "cosign verify-attestation rekor-tiles bundle",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": [
+    {
+     "title": "GitHub - sigstore/cosign: Code signing and transparency for containers ...",
+     "url": "https://github.com/sigstore/cosign",
+     "snippet": "This bundle annotation is always included by default for keyless signing, so the default cosign sign functionality will include all materials needed for offline verification. To verify an image in an air-gapped environment, the image and signatures must be available locally on the filesystem."
+    },
+    {
+     "title": "cosign/doc/cosign_verify-attestation.md at main \u00b7 sigstore ...",
+     "url": "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-attestation.md",
+     "snippet": "--allow-certificate-chain allow X.509 certificate chains in bundle verification material for v0.3+ bundles. --allow-http-registry whether to allow using HTTP protocol while connecting to registries. Don't use this for anything but testing."
+    },
+    {
+     "title": "Verifying Signatures - Sigstore",
+     "url": "https://docs.sigstore.dev/cosign/verifying/verify/",
+     "snippet": "When an artifact, blob, or container image is verified, the full potential of Sigstore to secure the software supply chain is achieved. Note: To verify a signed artifact or blob, first install Cosign, then follow the instructions below. The general verification format with the cosign verify command is as follows. cosign verify [--key <key path>|<key url>|<kms uri>] <image uri> Keyless ..."
+    },
+    {
+     "title": "Cosign 2.0 Released! - Sigstore Blog",
+     "url": "https://blog.sigstore.dev/cosign-2-0-released/",
+     "snippet": "Blob attestation and verification is now supported with cosign attest-blob and cosign verify-blob-attestation. You can now set flags via environment variables, for example instead of --certificate-identity=email, you can set an environment variable for COSIGN_CERTIFICATE_IDENTITY=email."
+    },
+    {
+     "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
+     "url": "https://www.rentwithcosign.com/",
+     "snippet": "Whether you\u2019re a renter trying to qualify for an apartment or a landlord seeking reliable tenants, Cosign bridges the gap to make \u2026"
+    },
+    {
+     "title": "Sign and Attest Artifacts with Cosign - beefed.ai",
+     "url": "https://beefed.ai/en/cosign-sigstore-signing-attestation",
+     "snippet": "Attestation verification: cosign verify-attestation and cosign verify-attestation --policy policy.rego to validate predicate contents against Rego. 6 (sigstore.dev) Rekor transparency and auditing Every keyless signing event (and by default most keyed events) is recorded in Rekor \u2014 an append\u2011only transparency log."
+    }
+   ],
+   "http": 200,
+   "elapsed_s": 2.97,
+   "unresponsive_engines": [
+    [
+     "boardreader",
+     "parsing error"
+    ],
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "Suspended: timeout"
+    ],
+    [
+     "privacywall",
+     "Suspended: access denied"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/sigstore/rekor-tiles",
+  "https://blog.sigstore.dev/rekor-v2-ga/",
+  "https://blog.sigstore.dev/rekor-v2-alpha/",
+  "https://docs.sigstore.dev/logging/",
+  "https://github.com/sigstore/rekor",
+  "https://docs.sigstore.dev/logging/sharding/",
+  "https://github.com/sigstore/cosign",
+  "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-attestation.md",
+  "https://docs.sigstore.dev/cosign/verifying/verify/",
+  "https://blog.sigstore.dev/cosign-2-0-released/"
+ ],
+ "outcome": "authored",
+ "note": "all results weighted; weak (< 0.5) results excluded from claim support in the doc"
+}

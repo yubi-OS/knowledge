@@ -1,0 +1,218 @@
+{
+ "nn": 9,
+ "slug": "measured-boot-ima-integration",
+ "scope": "How the runtime leg composes with measured boot and IMA in an image-based OS: PCR state, IMA measurement log, appraisal, and the quote-to-log binding.",
+ "queries_attempted": [
+  {
+   "query": "TPM measured boot PCR IMA attestation Linux",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": [
+    {
+     "title": "Attest a Linux workload with dm-verity and IMA... | Microsoft Learn",
+     "url": "https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-attest-linux-workload",
+     "snippet": "4 days ago \u00b7 Learn how to measure a read-only workload image with dm-verity and Linux IMA and use confidential VM attestation to verify the measurements."
+    },
+    {
+     "title": "IMA and EVM Concepts \u2014 IMA 1.0 documentation - Read the Docs",
+     "url": "https://ima-doc.readthedocs.io/en/latest/ima-concepts.html",
+     "snippet": "The measurement feature requires both a TPM and an independent verifier. Measurement is similar to the pre-OS trusted boot concept. The first measurement is the boot aggregate, which is a hash of TPM PCR 0-9. IMA keeps a table of the measured hash values. If the hash is seen again, the contents are not re-measured again."
+    },
+    {
+     "title": "TPM 2.0: Understanding Platform Configuration Registers - SysTutorials",
+     "url": "https://www.systutorials.com/understanding-tpm-2-0-and-platform-configuration-registers-pcrs/",
+     "snippet": "Use tpm2_eventlog to correlate changes. Modern Linux distributions (RHEL 9+, Ubuntu 22.04+, Fedora 37+) ship with TPM support enabled by default. For maximum security, pair TPM 2.0 with Secure Boot, UEFI Capsule updates, and measured boot attestation in your infrastructure tooling."
+    },
+    {
+     "title": "GitHub - 10GiC10V38/jetson-ima-attestation: Why Linux IMA can't\u2026",
+     "url": "https://github.com/10GiC10V38/jetson-ima-attestation",
+     "snippet": "Why Linux IMA can't extend TPM PCR[10] on Nvidia Jetson AGX Orin \u2014 the fTPM is userspace/RPMB-gated (a known OP-TEE limitation, fixed in Linux 6.12). Root-cause analysis, evidence, and a TA-signed IMA-log attestation approach. - 10GiC10V38\u2026"
+    },
+    {
+     "title": "How TPM Measured Boot Works \u2014 From Silicon to Attestation",
+     "url": "https://medium.com/@dineshmurugesan69/how-tpm-measured-boot-works-from-silicon-to-attestation-0c902404cc96",
+     "snippet": "To deepen my understanding of TPM, Measured Boot, PCR extensions, and attestation concepts, I built a TPM Measured Boot Simulator that models firmware measurements, PCR chaining, and event logging."
+    },
+    {
+     "title": "Enable TPM 2.0 on your PC | Microsoft Support",
+     "url": "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+     "snippet": "Oct 14, 2025 \u00b7 Learn how to check if your PC is capable of running TPM 2.0 or how to enable TPM 2.0 to upgrade to Windows 11."
+    }
+   ],
+   "http": 200,
+   "elapsed_s": 8.8,
+   "unresponsive_engines": [
+    [
+     "boardreader",
+     "parsing error"
+    ],
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "privacywall",
+     "Suspended: access denied"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "Keylime IMA appraisal allowlist measured boot",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": [
+    {
+     "title": "Runtime Integrity Monitoring \u2014 Keylime Documentation 7.14.3 documentation",
+     "url": "https://keylime.readthedocs.io/en/latest/user_guide/runtime_ima.html",
+     "snippet": "Keylime supports the verification of IMA file signatures, which also helps to detect modifications on immutable files and can be used to complement or even replace the allowlist of hashes in the runtime policy if all relevant executables and libraries are signed."
+    },
+    {
+     "title": "Measured Boot Policy | keylime/keylime | DeepWiki",
+     "url": "https://deepwiki.com/keylime/keylime/4.2-measured-boot-policy",
+     "snippet": "Jan 15, 2026 \u00b7 The integration of measured boot attestation with IMA runtime attestation provides a comprehensive integrity verification solution that covers both the boot process and runtime state of remote systems, offering strong security guarantees for distributed and cloud environments."
+    },
+    {
+     "title": "Keylime",
+     "url": "https://keylime.dev/blog/2019/04/02/running-IMA-on-keylime.html",
+     "snippet": "So with the CRTM based boot process measured and IMA measured files (including runtime access of said files), we have a full attested boot state and runtime integrity environment."
+    },
+    {
+     "title": "Cars, SUVs, Electric Vehicles & Crossovers | Mitsubishi Motors",
+     "url": "https://www.mitsubishicars.com/",
+     "snippet": "Explore Mitsubishi cars, SUVs, crossovers, sedans, hatchbacks and electric vehicles. Build & price your vehicle, see offers, and find \u2026"
+    },
+    {
+     "title": "Keylime Documentation Documentation",
+     "url": "https://keylime.readthedocs.io/_/downloads/en/v6.5.2/pdf/",
+     "snippet": "Keylime IMA allowlists. Generate an allowlist. Excludes List.Keylime can make use of this new capability in a very flexible manner. A \u201cmeasured boot reference state\u201d or mb_refstate for short can be specified by the keylime operator (i.e. the tenant)."
+    },
+    {
+     "title": "keylime-docs/docs/user_guide/use_measured_boot.rst at master \u00b7 keylime ...",
+     "url": "https://github.com/keylime/keylime-docs/blob/master/docs/user_guide/use_measured_boot.rst",
+     "snippet": "Implementation Keylime can make use of this new capability in a very flexible manner. A \"measured boot reference state\" or mb_refstate for short can be specified by the keylime operator (i.e. the tenant). This operator-provided piece of information is used, in a fashion similar to the \"IMA policy\" (previously known as \"allowlist\"), by the keylime_verifier, to compare the contents of the ..."
+    }
+   ],
+   "http": 200,
+   "elapsed_s": 2.81,
+   "unresponsive_engines": [
+    [
+     "boardreader",
+     "parsing error"
+    ],
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "Suspended: timeout"
+    ],
+    [
+     "privacywall",
+     "Suspended: access denied"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://learn.microsoft.com/en-us/azure/confidential-computing/how-to-attest-linux-workload",
+  "https://ima-doc.readthedocs.io/en/latest/ima-concepts.html",
+  "https://support.microsoft.com/en-us/windows/security/devicesecurity/enable-tpm-2-0-on-your-pc",
+  "https://keylime.readthedocs.io/en/latest/user_guide/runtime_ima.html",
+  "https://keylime.dev/blog/2019/04/02/running-IMA-on-keylime.html",
+  "https://keylime.readthedocs.io/_/downloads/en/v6.5.2/pdf/",
+  "https://github.com/keylime/keylime-docs/blob/master/docs/user_guide/use_measured_boot.rst"
+ ],
+ "outcome": "authored",
+ "note": "all results weighted; weak (< 0.5) results excluded from claim support in the doc"
+}
