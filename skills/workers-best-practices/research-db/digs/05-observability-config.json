@@ -1,0 +1,30 @@
+{
+ "nn": "05",
+ "slug": "observability-config",
+ "scope": "Observability: enable observability in wrangler.jsonc with head_sampling_rate, structured JSON logging, Workers logs and traces",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Workers observability head_sampling_rate wrangler config",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare Workers structured JSON logging tail workers logs",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/workers/wrangler/configuration/",
+  "https://developers.cloudflare.com/workers/observability/",
+  "https://developers.cloudflare.com/dynamic-workers/usage/observability/",
+  "https://developers.cloudflare.com/workers/observability/logs/workers-logs/",
+  "https://developers.cloudflare.com/workers/runtime-apis/handlers/tail/",
+  "https://developers.cloudflare.com/workers/observability/logs/tail-workers/"
+ ],
+ "outcome": "authored"
+}

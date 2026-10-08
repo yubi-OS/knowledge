@@ -1,0 +1,29 @@
+{
+ "nn": "03",
+ "slug": "request-response-streaming",
+ "scope": "Request and response handling: streaming large or unbounded payloads, never await response.text() on unbounded data, ctx.waitUntil for post-response work, no ctx destructuring",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Workers stream response body memory limit await response.text",
+   "attempt": 1,
+   "raw_results": 50,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare Workers ctx.waitUntil post-response background work",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/workers/platform/limits/",
+  "https://developers.cloudflare.com/workers/",
+  "https://developers.cloudflare.com/workers/best-practices/workers-best-practices/",
+  "https://developers.cloudflare.com/workers/runtime-apis/context/",
+  "https://dash.cloudflare.com/"
+ ],
+ "outcome": "authored"
+}
