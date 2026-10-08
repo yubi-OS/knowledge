@@ -1,0 +1,272 @@
+{
+  "topic": "Building or changing Cloudflare Sandbox apps on @cloudflare/sandbox@next (Sandbox SDK 1.0 preview)",
+  "source_doc": "yubi-OS/yubiOS skills/sandbox-next/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "package-line-gate",
+      "scope": "Confirming the @next package line before any code: npm dependency and container image alignment, routing to sandbox-stable or sandbox-migrate-to-next, bridge status on the preview line.",
+      "seed_queries": [
+        "cloudflare sandbox sdk 1.0 preview @cloudflare/sandbox next npm package",
+        "cloudflare sandbox containers next image stable preview difference"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "exec-contract",
+      "scope": "sandbox.exec argv contract and process handles: output, logs, waitForExit, waitForPort, waitForLog, kill; no implicit shell; per-launch independence.",
+      "seed_queries": [
+        "cloudflare sandbox exec process handle waitForExit output logs",
+        "cloudflare sandbox 1.0 preview processes documentation"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "lifecycle",
+      "scope": "Sandbox ID vs container instance, sleep and destroy, ID durability across replaces, getter null semantics, storing full jobs not just ids.",
+      "seed_queries": [
+        "cloudflare sandbox lifecycle sleep destroy container",
+        "cloudflare sandbox getSandbox instance lifecycle documentation"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "environment",
+      "scope": "cwd, env per launch, setEnvVars, keeping live credentials in the Worker, outbound handlers for external API calls.",
+      "seed_queries": [
+        "cloudflare sandbox setEnvVars environment variables",
+        "cloudflare sandbox outbound traffic guide secrets"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "terminals",
+      "scope": "Interactive PTY via createTerminal plus connect, why process handles have no stdin, terminals API and browser terminal.",
+      "seed_queries": [
+        "cloudflare sandbox terminals createTerminal connect",
+        "cloudflare sandbox interactive terminal websocket docs"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "interpreter",
+      "scope": "Python and JS code interpreter surfaces for AI runners and agentic code execution.",
+      "seed_queries": [
+        "cloudflare sandbox interpreter python code execution AI",
+        "cloudflare sandbox interpreter api documentation"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "shared-surfaces",
+      "scope": "Files, storage and mounts, ports, tunnels, backups, proxyToSandbox, preview URLs, exposing services.",
+      "seed_queries": [
+        "cloudflare sandbox files mounts proxyToSandbox ports tunnels",
+        "cloudflare sandbox backups expose services preview URLs"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "errors",
+      "scope": "Error classes and recovery patterns, why one retry loop for every error is wrong, troubleshooting common failures.",
+      "seed_queries": [
+        "cloudflare sandbox errors error classes recovery",
+        "cloudflare sandbox troubleshooting common failures"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "ship-checklist",
+      "scope": "Pre-ship checks: lockfile and Dockerfile on the same @next line, typecheck against installed types, wildcard DNS for preview hostnames, production deployment guidance.",
+      "seed_queries": [
+        "cloudflare sandbox production deployment wildcard dns",
+        "cloudflare sandbox wrangler dockerfile deploy containers"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "skill-boundaries",
+      "scope": "Routing to sibling skills (sandbox-stable, sandbox-migrate-to-next), boundary cases, in-repo touchpoints. Internal-record subtopic, no dig; cites the source doc.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.76,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1,
+          "1": 0.05,
+          "2": 0.85
+        },
+        "confidence": 0.62
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.58,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.17,
+          "1": 0.08,
+          "2": 0.75
+        },
+        "confidence": 0.37
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.15,
+          "1": 0.07,
+          "2": 0.78
+        },
+        "confidence": 0.44
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.69,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.09,
+          "2": 0.8
+        },
+        "confidence": 0.53
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.09,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.27,
+          "1": 0.38,
+          "2": 0.35
+        },
+        "confidence": 0.07
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.24,
+          "1": 0.33,
+          "2": 0.43
+        },
+        "confidence": 0
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.63,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.09,
+          "2": 0.77
+        },
+        "confidence": 0.44
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.49,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.26,
+          "2": 0.61
+        },
+        "confidence": 0.22
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.62,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.15,
+          "2": 0.73
+        },
+        "confidence": 0.41
+      },
+      "t10": {
+        "type": "score",
+        "score": 1.29,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2,
+          "1": 0.31,
+          "2": 0.49
+        },
+        "confidence": 0
+      }
+    },
+    "usage": {
+      "input_tokens": 1579,
+      "output_tokens": 154,
+      "cost": 0.000132636
+    },
+    "dropped": [],
+    "kept": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06",
+      "t07",
+      "t08",
+      "t09",
+      "t10"
+    ]
+  }
+}

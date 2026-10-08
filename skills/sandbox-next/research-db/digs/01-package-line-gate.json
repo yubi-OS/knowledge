@@ -1,0 +1,36 @@
+{
+  "nn": "01",
+  "slug": "package-line-gate",
+  "scope": "Confirming the @next package line before any code: npm dependency and container image alignment, routing to sandbox-stable or sandbox-migrate-to-next, bridge status on the preview line.",
+  "queries_attempted": [
+    {
+      "query": "cloudflare sandbox sdk 1.0 preview @cloudflare/sandbox next npm package",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "cloudflare sandbox containers next image stable preview difference",
+      "attempt": 1,
+      "raw_results": 60,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/cloudflare/sandbox-sdk",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/",
+    "https://sandbox.cloudflare.com/",
+    "https://community.cloudflare.com/t/sandbox-sdk-sandbox-sdk-1-0-preview-on-next/947721",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/index.md",
+    "https://www.npmjs.com/package/@cloudflare/sandbox",
+    "https://developers.cloudflare.com/sandbox/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/migrate/",
+    "https://blog.cloudflare.com/faster-agent-sandboxes/",
+    "https://developers.cloudflare.com/sandbox/concepts/containers/",
+    "https://www.cloudflare.com/",
+    "https://community.cloudflare.com/t/sandboxes-deprecating-sandbox-sdk-features/933294"
+  ],
+  "outcome": "authored"
+}
