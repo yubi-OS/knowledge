@@ -1,0 +1,152 @@
+{
+  "nn": "01",
+  "slug": "homed-model-and-user-records",
+  "scope": "The systemd-homed model: portable self-contained homes, the embedded JSON user record, NSS user synthesis, and the absence of /etc/passwd.",
+  "queries_attempted": [
+    {
+      "query": "systemd-homed user record JSON NSS model",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "JSON User Records - systemd",
+          "url": "https://systemd.io/USER_RECORD/",
+          "content": "JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd are able to provide and consume records in a more extensible format of a dictionary of key/value pairs, encoded as JSON. Specifically: systemd-homed.service manages human user home directories and embeds these JSON records directly in the home ..."
+        },
+        {
+          "title": "systemd-homed and JSON User/Group Record Support in Desktop Environments",
+          "url": "https://systemd.io/USERDB_AND_DESKTOPS/",
+          "content": "The rich user/group records userdb and systemd-homed support carry various fields of relevance to UIs that manage the local user database or parts thereof. In particular, most of the metadata accounts-daemon (also see below) supports is directly available in these JSON records."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "JSON User Records - third-party-mirror.googlesource.com",
+          "url": "https://third-party-mirror.googlesource.com/systemd/+/refs/heads/master/docs/USER_RECORD.md",
+          "content": "This allows setting global limits on resource consumption by a specific user. nss-systemd is a glibc NSS module that synthesizes classic NSS records from these JSON records, providing full backwards compatibility with the classic UNIX APIs both for look-up and enumeration."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "JSON User Records",
+          "url": "https://systemd.io/USER_RECORD",
+          "content": "JSON User Records systemd optionally processes user records that go beyond the classic UNIX (or glibc NSS) struct passwd. Various components of systemd a…"
+        },
+        {
+          "title": "bootloader/targets/systemd/systemd_backup/docs/USER_RECORD.md at main ...",
+          "url": "https://github.com/wjqsec/bootloader/blob/main/targets/systemd/systemd_backup/docs/USER_RECORD.md",
+          "content": "This allows setting global limits on resource consumption by a specific user. nss-systemd is a glibc NSS module that synthesizes classic NSS records from these JSON records, providing full backwards compatibility with the classic UNIX APIs both for look-up and enumeration."
+        },
+        {
+          "title": "nss-systemd (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man8/nss-systemd.8.html",
+          "content": "NAME top nss-systemd, libnss_systemd.so.2 - UNIX user and group name resolution for user/group lookup via Varlink SYNOPSIS top libnss_systemd.so.2 DESCRIPTION top nss-systemd is a plug-in module for the GNU Name Service Switch (NSS) functionality of the GNU C Library (glibc), providing UNIX user and group name resolution for services implementing the User/Group Record Lookup API via Varlink [1 ..."
+        },
+        {
+          "title": "nss-systemd - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/latest/nss-systemd.html",
+          "content": "Description ¶ nss-systemd is a plug-in module for the GNU Name Service Switch (NSS) functionality of the GNU C Library (glibc), providing UNIX user and group name resolution for services implementing the User/Group Record Lookup API via Varlink, such as the system and service manager systemd(1) (for its DynamicUser= feature, see systemd.exec(5) for details), systemd-homed.service(8), or ..."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "System and Service Manager systemd is a suite of basic building blocks for a Linux system. It provides a system and service …"
+        }
+      ],
+      "kept": [
+        "https://systemd.io/USER_RECORD/",
+        "https://systemd.io/USERDB_AND_DESKTOPS/",
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://third-party-mirror.googlesource.com/systemd/+/refs/heads/master/docs/USER_RECORD.md",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://systemd.io/USER_RECORD"
+      ]
+    },
+    {
+      "query": "systemd-homed portable self-contained home directory design",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "systemd-homed: Portable Encrypted Home Directories",
+          "url": "https://sumguy.com/systemd-homed-portable-homes/",
+          "content": "systemd-homed is the answer to all of that, and honestly it's one of the more interesting things to come out of the systemd project in years. The idea: your home directory isn't a folder on the machine anymore, it's a self-contained LUKS-encrypted blob that travels with you and gets unlocked at login. What Actually Changes With homed"
+        },
+        {
+          "title": "Practical Encrypted Home Directories with systemd-homed on Linux",
+          "url": "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+          "content": "Jul 1, 2026 · systemd-homed solves this by managing self-contained user accounts. Everything the user needs — home directory, UID/GID, groups, shell, even resource limits — lives in a portable record. Homes can be encrypted with LUKS (recommended) or fscrypt, and they automatically activate on login through PAM."
+        },
+        {
+          "title": "Home Directories - systemd",
+          "url": "https://systemd.io/HOME_DIRECTORY/",
+          "content": "Home Directories systemd-homed.service (8) manages home directories of regular (\"human\") users. Each directory it manages encapsulates both the data store and the user record of the user, so that it comprehensively describes the user account, and is thus naturally portable between systems without any further, external metadata. This document describes the format used by these home ..."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "Systemd records initialization instructions for each daemon in a configuration file (referred to as a \"unit file\") that uses a declarative language, replacing the traditionally used per-daemon startup shell scripts."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount…"
+        },
+        {
+          "title": "systemd-homed: portable, encrypted home directories",
+          "url": "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+          "content": "systemd-homed: portable, encrypted home directories systemd-homed treats a user's home directory as a self-contained, encrypted unit. /home/amir isn't a regular directory; it's a LUKS-encrypted image (or a btrfs subvolume, or a directory with fscrypt) decrypted on login."
+        },
+        {
+          "title": "Home Directory Management with systemd-homed - deepwiki.com",
+          "url": "https://deepwiki.com/systemd/systemd/6.2-home-directory-management-with-systemd-homed",
+          "content": "The systemd-homed subsystem provides a modern, self-contained approach to managing human user home directories. Unlike classic UNIX accounts defined in /etc/passwd, systemd-homed encapsulates user metadata and data within the home directory itself, facilitating portability across systems and providing robust encryption options. 1."
+        },
+        {
+          "title": "Athena&#39;s blog - Athena&#39;s Site",
+          "url": "https://www.alm.website/blog/",
+          "content": "Athena&#39;s Site About me About this site Fiction writing Humor Blog Athena&#39;s blog This is a blog that serves the dual purposes of the site blog , describing events in the history of"
+        },
+        {
+          "title": "systemd-homed \"Activation failed\", \"incomplete mode\", need to…",
+          "url": "https://github.com/systemd/systemd/issues/33541",
+          "content": "29. 6. 2024Systemd version the issue has been seen with 256 Used distribution Arch Linux Linux kernel version used 6.9.6-arch1-1 CPU architectures issue was seen on x86_64 Component homectl Expected behaviour you didn't see Log in, all of my user s."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://sumguy.com/systemd-homed-portable-homes/",
+        "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+        "https://systemd.io/HOME_DIRECTORY/",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://systemd.io/"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://systemd.io/USER_RECORD/",
+    "https://systemd.io/USERDB_AND_DESKTOPS/",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://third-party-mirror.googlesource.com/systemd/+/refs/heads/master/docs/USER_RECORD.md",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/USER_RECORD",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://sumguy.com/systemd-homed-portable-homes/",
+    "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+    "https://systemd.io/HOME_DIRECTORY/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/"
+  ],
+  "outcome": "authored"
+}

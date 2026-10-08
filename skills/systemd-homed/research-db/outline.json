@@ -1,0 +1,312 @@
+{
+  "topic": "Creating, managing, and migrating systemd-homed home directories for yubiOS (LUKS2 homes, YubiKey FIDO2/PKCS#11 enrollment, PAM wiring, suspend/resume key protection, portable homes)",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "homed-model-and-user-records",
+      "scope": "The systemd-homed model: portable self-contained homes, the embedded JSON user record, NSS user synthesis, and the absence of /etc/passwd.",
+      "seed_queries": [
+        "systemd-homed user record JSON NSS model",
+        "systemd-homed portable self-contained home directory design"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "create-luks2-home-fido2",
+      "scope": "Creating a LUKS2 home with FIDO2 unlock: homectl create flags, btrfs filesystem, recovery key ordering, and the FIDO2 client PIN plus user-presence requirements.",
+      "seed_queries": [
+        "homectl create luks btrfs fido2-device options",
+        "systemd-homed recovery key FIDO2 client pin user presence"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "enroll-fido2-existing-home",
+      "scope": "Enrolling FIDO2 on an existing home via homectl authenticate, and updating or replacing the recovery key on v259+.",
+      "seed_queries": [
+        "homectl authenticate fido2-device enroll existing home",
+        "systemd-homed update recovery key v259"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "pkcs11-piv-yubikey",
+      "scope": "PKCS#11 / PIV unlocking with YubiKey slot 9c: token enumeration, auto selection, explicit PKCS#11 URIs, and the PIV advantage of token identity visible before auth.",
+      "seed_queries": [
+        "systemd-homed pkcs11-token-uri YubiKey PIV",
+        "homectl YubiKey PIV slot 9c pkcs11 uri"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "inspect-and-manage-homes",
+      "scope": "Everyday home management: homectl inspect and list, JSON record inspection, passwd re-keying, resize, and auxiliary group membership updates.",
+      "seed_queries": [
+        "homectl inspect list passwd resize commands",
+        "systemd-homed resize luks volume member-of groups"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "migration-between-machines",
+      "scope": "Moving a home between machines: public key exchange, copying the .home file, rescan via SIGUSR1 since v258, activation, and re-signing with the target host key.",
+      "seed_queries": [
+        "systemd-homed migrate home directory another machine local.public",
+        "systemd-homed SIGUSR1 rescan homed v258 re-sign home record"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "pam-configuration",
+      "scope": "PAM wiring for homed users: pam_systemd_home.so across auth, account, password, and session stacks, control-flag semantics, and suspend=1 key erasure on suspend.",
+      "seed_queries": [
+        "pam_systemd_home.so PAM configuration stacks",
+        "pam_systemd_home suspend=1 forget key material suspend"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "homed-conf-and-defaults",
+      "scope": "homed.conf and drop-ins: DefaultStorage=luks and DefaultFileSystemType=btrfs defaults for yubiOS.",
+      "seed_queries": [
+        "homed.conf DefaultStorage DefaultFileSystemType",
+        "systemd homed.conf.d drop-in configuration"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "home-areas-v258",
+      "scope": "Home areas since v258: secondary $HOME subdirectories, %area login syntax, run0 --area, and --default-area in the user record.",
+      "seed_queries": [
+        "systemd v258 home areas homectl default-area",
+        "systemd home areas run0 area login username percent sign"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "signing-keys-and-trust",
+      "scope": "Home record signing keys: local.private and local.public under /var/lib/systemd/home, trusted remote public keys, and v258+ D-Bus signing-key management.",
+      "seed_queries": [
+        "systemd-homed local.private local.public signing keys",
+        "homectl list-signing-keys add-signing-key v258"
+      ]
+    },
+    {
+      "nn": "11",
+      "slug": "yubios-deployment-checklist",
+      "scope": "The yubiOS deployment checklist: systemd-homed.service enabled in the image, homed.conf defaults, four-stack PAM wiring, suspend=1 on graphical sessions, and key backup discipline.",
+      "seed_queries": [
+        "systemd-homed.service enable image deployment",
+        "systemd-homed backup local.private signing key"
+      ]
+    },
+    {
+      "nn": "12",
+      "slug": "yubios-primitive-integration",
+      "scope": "How the skill maps onto the yubiOS 10-primitive model: trust-chain anchor via YubiKey FIDO2 unlock, segmentation, declarative policy, least privilege, and the cycle 5 to 7 RSI audit trail.",
+      "seed_queries": [
+        "yubiOS 10 primitive model trust chain systemd-homed",
+        "systemd-homed segmentation namespace least privilege"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "score": 1.91,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.02,
+          "2": 0.95
+        },
+        "confidence": 0.88,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.81,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.04,
+          "2": 0.88
+        },
+        "confidence": 0.7,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.71,
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.2,
+          "2": 0.75
+        },
+        "confidence": 0.55,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.51,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.32,
+          "2": 0.59
+        },
+        "confidence": 0.25,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.88,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.06,
+          "2": 0.91
+        },
+        "confidence": 0.82,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.81,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.1,
+          "2": 0.86
+        },
+        "confidence": 0.73,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 1.88,
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.03,
+          "2": 0.93
+        },
+        "confidence": 0.83,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 1.6,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.28,
+          "2": 0.66
+        },
+        "confidence": 0.4,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.34,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.47,
+          "2": 0.44
+        },
+        "confidence": 0.2,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t10": {
+        "score": 1.58,
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.3,
+          "2": 0.64
+        },
+        "confidence": 0.37,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t11": {
+        "score": 1.81,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.04,
+          "2": 0.89
+        },
+        "confidence": 0.73,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t12": {
+        "score": 1.45,
+        "probabilities": {
+          "0": 0.18,
+          "1": 0.19,
+          "2": 0.63
+        },
+        "confidence": 0.17,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 2083,
+      "output_tokens": 184,
+      "cost": 0.000174972
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12"
+    ]
+  }
+}

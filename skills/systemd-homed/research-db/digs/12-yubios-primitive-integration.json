@@ -1,0 +1,152 @@
+{
+  "nn": "12",
+  "slug": "yubios-primitive-integration",
+  "scope": "How the skill maps onto the yubiOS 10-primitive model: trust-chain anchor via YubiKey FIDO2 unlock, segmentation, declarative policy, least privilege, and the cycle 5 to 7 RSI audit trail.",
+  "queries_attempted": [
+    {
+      "query": "yubiOS 10 primitive model trust chain systemd-homed",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "HTML edition of the yubiOS README",
+          "url": "https://yubi-os.github.io/",
+          "content": "systemd image model. Fitting Everything Together. DPS partitions, systemd-repart first boot, A/B sysupdate, systemd-homed.Prepare and mount the target filesystems first, for example with systemd-repart or another installer that creates the yubiOS DPS layout."
+        },
+        {
+          "title": "systemd-homed | yubi-OS/yubiOS Agent Skill | SkillsMP",
+          "url": "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+          "content": "Creates, manages, and migrates systemd-homed home directories for yubiOS. Use when creating LUKS2-encrypted homes, enrolling YubiKey FIDO2 or PKCS#11/PIV authentication, configuring PAM for homed users, managing home migration between machines, or wiring suspend/resume key protection."
+        },
+        {
+          "title": "GitHub - yubi-OS/yubiOS: FIDO2-first immutable OS — HSM/U2F ...",
+          "url": "https://github.com/yubi-OS/yubiOS",
+          "content": "The \"Fitting Everything Together\" essay at 0pointer.net is the primary design reference for yubiOS — hermetic /usr, DPS partitions, systemd-repart first-boot, A/B sysupdate, systemd-homed per-user encryption, and UKI + dm-verity trust chain."
+        },
+        {
+          "title": "Xhamster ad revenue worth it? : r/SexWorkers - Reddit",
+          "url": "https://www.reddit.com/r/SexWorkers/comments/hwdhzd/xhamster_ad_revenue_worth_it/",
+          "content": "Jul 23, 2020 · We have stayed away from and kept everything else separate from our xhamster account. We hadn't logged on for …"
+        },
+        {
+          "title": "yubiOS - GitHub",
+          "url": "https://github.com/yubi-OS",
+          "content": "The \"Fitting Everything Together\" essay at 0pointer.net is the primary design reference for yubiOS — hermetic /usr, DPS partitions, systemd-repart first-boot, A/B sysupdate, systemd-homed per-user encryption, and UKI + dm-verity trust chain."
+        },
+        {
+          "title": "Oral-B iO Series 10 - Nazuby.eu",
+          "url": "https://www.nazuby.eu/series-10",
+          "content": "Kefka má vstavaný gyroskop, ktorý v aplikácii v telefóne rozdelí chrup do 16 zón a zobrazí, či ste si správne čistili všetky plochy."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "Home Directories - systemd",
+          "url": "https://systemd.io/HOME_DIRECTORY/",
+          "content": "Home Directories systemd-homed.service (8) manages home directories of regular (\"human\") users. Each directory it manages encapsulates both the data store and the user record of the user, so that it comprehensively describes the user account, and is thus naturally portable between systems without any further, external metadata."
+        },
+        {
+          "title": "Home Directory Management with systemd-homed - deepwiki.com",
+          "url": "https://deepwiki.com/systemd/systemd/6.2-home-directory-management-with-systemd-homed",
+          "content": "The systemd-homed subsystem provides a modern, self-contained approach to managing human user home directories. Unlike classic UNIX accounts defined in /etc/passwd, systemd-homed encapsulates user metadata and data within the home directory itself, facilitating portability across systems and providing robust encryption options. 1."
+        },
+        {
+          "title": "What happened to xHamster? : r/OutOfTheLoop - Reddit",
+          "url": "https://www.reddit.com/r/OutOfTheLoop/comments/56pdfn/what_happened_to_xhamster/",
+          "content": "true A subreddit to help you keep up to date with what's going on with reddit and other stuff."
+        }
+      ],
+      "kept": [
+        "https://yubi-os.github.io/",
+        "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+        "https://github.com/yubi-OS/yubiOS",
+        "https://www.reddit.com/r/SexWorkers/comments/hwdhzd/xhamster_ad_revenue_worth_it/",
+        "https://github.com/yubi-OS",
+        "https://www.nazuby.eu/series-10"
+      ]
+    },
+    {
+      "query": "systemd-homed segmentation namespace least privilege",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "Linux Server Hardening: Systemd Service Sandboxing & Least Privilege ...",
+          "url": "https://robertscreations.com/linux-server-hardening-systemd-isolation-and-least-privilege",
+          "content": "Secure production Linux servers: Systemd service sandboxing, UFW ingress rules, SSH key enforcement, and least-privilege user execution for Node.js daemons."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "Systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
+        },
+        {
+          "title": "Hardening a Linux Service the Boring Way: systemd Sandboxing and Least ...",
+          "url": "https://michalkanas.com/blog/hardening-linux-service-systemd-sandboxing-least-privilege",
+          "content": "Most real-world security lives in unglamorous configuration, not clever tooling. Here is a practical, defence-in-depth pass on a single Linux service using systemd sandboxing, least privilege, and the surrounding host basics."
+        },
+        {
+          "title": "systemd – Gentoo Wiki",
+          "url": "https://wiki.gentoo.org/wiki/Systemd",
+          "content": "Systemd is a modern SysV-style init and rc replacement for Linux systems. It is supported in Gentoo as an alternative init system."
+        },
+        {
+          "title": "systemd - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd",
+          "content": "The syntax of systemd's unit files (systemd.unit(5)) is inspired by XDG Desktop Entry Specification.desktop files, which are in turn inspired by Microsoft Windows.ini files."
+        },
+        {
+          "title": "Options for hardening systemd service units · GitHub",
+          "url": "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+          "content": "If this mode is enabled, all unit processes are run without privileges in the host user namespace (regardless if the unit's own user/group is \"root\" or not). Specifically this means that the process will have zero process capabilities on the host's user namespace, but full capabilities within the service's user namespace."
+        },
+        {
+          "title": "Sandboxing and Security | systemd/systemd-stable | DeepWiki",
+          "url": "https://deepwiki.com/systemd/systemd-stable/2.5-sandboxing-and-security",
+          "content": "Relevant source files This document covers systemd's security and sandboxing features that isolate and restrict service processes. These mechanisms are applied when spawning services to limit their access to system resources, capabilities, and namespaces. For information about the overall process execution pipeline, see Process Execution Pipeline."
+        },
+        {
+          "title": "Process Sandboxing and Isolation | systemd/systemd | DeepWiki",
+          "url": "https://deepwiki.com/systemd/systemd/8.2-process-sandboxing-and-isolation",
+          "content": "Process Sandboxing and Isolation Relevant source files This page documents systemd's comprehensive security and isolation mechanisms for spawned processes. These features restrict what services can access and modify, providing defense-in-depth through Linux kernel features like namespaces, mount restrictions, seccomp filters, capability dropping, BPF-based security policies, and resource ..."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://robertscreations.com/linux-server-hardening-systemd-isolation-and-least-privilege",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://systemd.io/",
+        "https://michalkanas.com/blog/hardening-linux-service-systemd-sandboxing-least-privilege",
+        "https://wiki.gentoo.org/wiki/Systemd"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://yubi-os.github.io/",
+    "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+    "https://github.com/yubi-OS/yubiOS",
+    "https://www.reddit.com/r/SexWorkers/comments/hwdhzd/xhamster_ad_revenue_worth_it/",
+    "https://github.com/yubi-OS",
+    "https://www.nazuby.eu/series-10",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://robertscreations.com/linux-server-hardening-systemd-isolation-and-least-privilege",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://systemd.io/",
+    "https://michalkanas.com/blog/hardening-linux-service-systemd-sandboxing-least-privilege",
+    "https://wiki.gentoo.org/wiki/Systemd"
+  ],
+  "outcome": "authored"
+}

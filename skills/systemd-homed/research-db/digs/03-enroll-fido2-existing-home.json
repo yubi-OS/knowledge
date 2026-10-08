@@ -1,0 +1,152 @@
+{
+  "nn": "03",
+  "slug": "enroll-fido2-existing-home",
+  "scope": "Enrolling FIDO2 on an existing home via homectl authenticate, and updating or replacing the recovery key on v259+.",
+  "queries_attempted": [
+    {
+      "query": "homectl authenticate fido2-device enroll existing home",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "homectl (1) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+          "content": "Set up authentication with a FIDO2 security token: # Allow a FIDO2 security token to unlock the account of user 'nihilbaxter'. homectl update nihilbaxter --fido2-device=auto Example 6. Add a recovery key to an existing user account: # Generate and add a recovery key for user 'emily'. homectl update emily --recovery-key=yes SEE ALSO top"
+        },
+        {
+          "title": "pam - systemd-homed with FIDO2 - Login from tty still possible with ...",
+          "url": "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only",
+          "content": "Oct 23, 2021 · I recently tried out systemd-homed and doing that I enrolled my Yubikey as FIDO2 device. When i try to authenticate against the created home via homectl authenticate it correctly activates the Yubikey, asks for the PIN and waits for a touch then, followed by the usual password prompt."
+        },
+        {
+          "title": "How to Set Up systemd-homed for Modern User Management on Ubuntu",
+          "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-systemd-homed-for-modern-user-management-on-ubuntu/view",
+          "content": "homed supports FIDO2 hardware security keys for home directory unlock# Enroll a FIDO2 token for an existing user sudo homectl update alice --fido2-device=auto #. The user's password is still the fallback # On login, the FIDO2 token is checked first #."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is: # homectl create username This command will create a user with the specified username, a free UID in range 60001-60513, create a group with the same name ..."
+        },
+        {
+          "title": "Fix FIDO2 login for homed users · Issue #409 · starlit-os/krytis",
+          "url": "https://github.com/starlit-os/krytis/issues/409",
+          "content": "Jul 31, 2026 · Teach mise fido2:enroll to detect a homed user and enroll the login credential with homed itself (homectl update --fido2-device=auto, rp_id io.systemd.home), in addition to the pamu2fcfg credential that keeps sudo/polkit working (home is mounted by then). Surface homed FIDO2 slots in mise fido2:status."
+        },
+        {
+          "title": "Play the Official Tetris Game for Free",
+          "url": "https://play.tetris.com/",
+          "content": "The Tetris® brand is one of the leading and most distinctive video game brands and franchises in the world."
+        },
+        {
+          "title": "FIDO2 Hardware Authenticators and Operating System Logins - SSE…",
+          "url": "https://www.systemsecurity.com/publications/fido2-hardware-authenticators-and-operating-system-logins",
+          "content": "SSE – Security made by experts. With a passion for IT security, we tailor novel and established approaches to individual project requirements to sustainably improve the security of businesses."
+        },
+        {
+          "title": "Problems with homectl and PKCS#11 (Yubikey 5)",
+          "url": "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071/3",
+          "content": "I would like to create a new user with an encrypted home via homectl. I would like to be able to authenticate with this user via PKCS#11 using my Yubikey and also decrypt the home directory with it. I have executed the following command: sudo homectl create user \\ --member-of=wheel \\ --pkcs11-&hellip;"
+        },
+        {
+          "title": "homectl - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/249/homectl.html",
+          "content": "Description ¶ homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service which manages home directories of users. Home directories managed by systemd-homed.service are self-contained, and thus include the user's full metadata record in the home's data storage itself, making them easy to migrate between ..."
+        },
+        {
+          "title": "systemd/systemd-homed — Gentoo Wiki",
+          "url": "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+          "content": "Converting traditional home directories to systemd homed Backup important data in /home As mentioned in the warning above, all important data in existing /home directories should have at least one, but preferably two local copies of the data in order to be well protected against the case of accidental data loss."
+        }
+      ],
+      "kept": [
+        "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+        "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only",
+        "https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-systemd-homed-for-modern-user-management-on-ubuntu/view",
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://github.com/starlit-os/krytis/issues/409",
+        "https://play.tetris.com/"
+      ]
+    },
+    {
+      "query": "systemd-homed update recovery key v259",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "Systemd records initialization instructions for each daemon in a configuration file (referred to as a \"unit file\") that uses a declarative language, replacing the traditionally used per-daemon startup shell scripts."
+        },
+        {
+          "title": "Releases · systemd/systemd - GitHub",
+          "url": "https://github.com/systemd/systemd/releases",
+          "content": "clients should directly talk to systemd-sysupdate (i.e. the backend. of \"systemd-sysupdated\") via Varlink IPC. The \"updatectl\" tool will. be reworked along these lines. * DNS-SD services registered via systemd-resolved's D-Bus method. org.freedesktop.resolve1.Manager.RegisterService() are now."
+        },
+        {
+          "title": "Known Environment Variables",
+          "url": "https://systemd.io/ENVIRONMENT/",
+          "content": "$Systemd_HOME_DRY_RUN – if set to “1” will make homectl create and homectl update operate in a “dry-run” mode: the new user record is assembled, and displayed in JSON format, but not actually passed to systemd-homed for execution of the…"
+        },
+        {
+          "title": "Systemd v259 released - lwn.net",
+          "url": "https://lwn.net/Articles/1051163/",
+          "content": "Dec 18, 2025 · Systemd v259 has been released. Notable changes include a new \" --empower \" option for run0 that provides elevated privileges to a user without switching to root, ability to propagate a user's home directory into a VM with systemd-vmspawn, and more."
+        },
+        {
+          "title": "Feature/homectl recovery key update by gvenugo3 · Pull ... - LinkedIn",
+          "url": "https://www.linkedin.com/posts/govindven_featurehomectl-recovery-key-update-by-gvenugo3-activity-7383896776568676352-4ern",
+          "content": "Thrilled to share that my recent contribution to systemd has been merged 🎉 🧩 Problem: Until now, homectl only allowed setting a recovery key when creating a user. There was no way to add or ..."
+        },
+        {
+          "title": "systemd-homed: How to update the signature of the user record?",
+          "url": "https://www.reddit.com/r/systemd/comments/mgw2xs/systemdhomed_how_to_update_the_signature_of_the/",
+          "content": "Hi, after re-installing my computer I cannot login with my homed user anymore (which is on a second ssd). I get the error: User record is not signed by any known key, refusing."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "System and Service Manager systemd is a suite of basic building blocks for a Linux system. It provides a system and service …"
+        },
+        {
+          "title": "Find your BitLocker recovery key | Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/windows/security/encryption/find-your-bitlocker-recovery-key",
+          "content": "A BitLocker recovery key is needed when BitLocker can’t automatically unlock an encrypted drive in Windows. This is a 48‑digit number that lets you regain access to your drive. You might be prompted for the BitLocker recovery key during startup, due to a security risk or hardware change"
+        },
+        {
+          "title": "systemd/src/home/homectl-recovery-key.c at main - GitHub",
+          "url": "https://github.com/systemd/systemd/blob/master/src/home/homectl-recovery-key.c",
+          "content": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://github.com/systemd/systemd/releases",
+        "https://systemd.io/ENVIRONMENT/",
+        "https://lwn.net/Articles/1051163/",
+        "https://www.linkedin.com/posts/govindven_featurehomectl-recovery-key-update-by-gvenugo3-activity-7383896776568676352-4ern"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+    "https://unix.stackexchange.com/questions/674453/systemd-homed-with-fido2-login-from-tty-still-possible-with-password-only",
+    "https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-systemd-homed-for-modern-user-management-on-ubuntu/view",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://github.com/starlit-os/krytis/issues/409",
+    "https://play.tetris.com/",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://github.com/systemd/systemd/releases",
+    "https://systemd.io/ENVIRONMENT/",
+    "https://lwn.net/Articles/1051163/",
+    "https://www.linkedin.com/posts/govindven_featurehomectl-recovery-key-update-by-gvenugo3-activity-7383896776568676352-4ern"
+  ],
+  "outcome": "authored"
+}
