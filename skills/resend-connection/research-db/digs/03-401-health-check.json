@@ -1,0 +1,32 @@
+{
+  "nn": 3,
+  "slug": "401-health-check",
+  "scope": "Why restricted_api_key proves the proxy injected the credential and Resend authenticated it, versus genuinely bad key errors.",
+  "queries_attempted": [
+    {"query": "Resend API 401 authentication error message missing_scope invalid key", "attempt": 1, "raw_results": 6, "kept": 2},
+    {"query": "Resend API key Authorization Bearer header error response", "attempt": 1, "raw_results": 6, "kept": 2},
+    {"query": "resend api reference errors 401 missing api key authorization header restricted", "attempt": 2, "raw_results": 6, "kept": 1},
+    {"query": "resend send email api key sending access 401 what does restricted mean troubleshooting", "attempt": 2, "raw_results": 6, "kept": 1}
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "subtopic scored marginal (0.53) at outline validation, so it stays only if the dig comes back strong; attempt 1 returned only 2 relevant results among 12 (the rest were the resend.com homepage, pricing, a webflow mirror, a dictionary entry, and off-topic OpenAI/Anthropic error pages), which is too thin to author honestly",
+      "new_queries": [
+        "resend api reference errors 401 missing api key authorization header restricted",
+        "resend send email api key sending access 401 what does restricted mean troubleshooting"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://markaicode.com/errors/anthropic-api-authentication-failed-fix/",
+    "https://markaicode.com/errors/openai-api-api-key-invalid-fix/",
+    "https://resend.com/docs/api-reference/introduction",
+    "https://docs.getmany.com/api-reference/introduction",
+    "https://resend.com/docs/llms-full.txt",
+    "https://genace.ai/errors/missing-api-key"
+  ],
+  "outcome": "authored",
+  "note": "The redo dig came back strong (the Resend llms-full docs export and a missing-key error taxonomy joined the already-archived official introduction and errors pages), so the doc was authored per the REDO rule. The doc also cites the official errors page and create-api-key reference archived under the t02 dig."
+}
