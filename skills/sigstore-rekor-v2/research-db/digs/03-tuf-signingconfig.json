@@ -1,0 +1,32 @@
+{
+  "nn": 3,
+  "slug": "tuf-signingconfig",
+  "scope": "TUF SigningConfig endpoint discovery and key rotation: runtime discovery of tile server URL and witness quorum config, 6-month rotation, 7-day metadata timestamp, cached-metadata failures.",
+  "queries_attempted": [
+    {
+      "query": "Sigstore TUF signing config endpoint discovery",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "cosign TUF metadata key rotation signing config",
+      "attempt": 1,
+      "raw_results": 47,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://blog.sigstore.dev/sigstore-bring-your-own-stuf-with-tuf-40febfd2badd/",
+    "https://deepwiki.com/repository-service-tuf/repository-service-tuf/6.2-metadata-updates-and-signing",
+    "https://docs.sigstore.dev/cosign/system_config/custom_components/",
+    "https://github.com/sigstore/root-signing",
+    "https://kyverno.io/blog/2026/08/12/pr-16591/",
+    "https://mitchdenny.github.io/sigstore-dotnet/api/Sigstore.SigningConfig.html",
+    "https://tuf-repo-cdn.sigstore.dev/",
+    "https://www.devopsroles.com/sigstore-tuf-root-rotation/"
+  ],
+  "outcome": "authored"
+}

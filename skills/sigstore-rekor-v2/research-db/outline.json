@@ -1,0 +1,209 @@
+{
+  "topic": "Sigstore Rekor v2 transparency log: tile-backed hash-only log with sharded inclusion proofs, TUF SigningConfig, witness co-signing, v1-to-v2 differences, cosign integration path",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "tile-architecture",
+      "scope": "Tile-based log architecture: Merkle tree tiles, per-tile checkpoints, tile size, witness-backed tile roots, why the tile model replaced the single-tree design.",
+      "seed_queries": [
+        "Sigstore Rekor v2 tile-based transparency log architecture",
+        "sigstore rekor-tiles specification Merkle tree tiles"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "sharded-inclusion-proofs",
+      "scope": "Sharded inclusion proofs and the entry verification flow: tile-scoped Merkle path, tile chain, the 5-step consumer verification, failure modes.",
+      "seed_queries": [
+        "Rekor v2 sharded inclusion proof tile checkpoint verification",
+        "cosign verify Rekor v2 tile inclusion proof flow"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "tuf-signingconfig",
+      "scope": "TUF SigningConfig endpoint discovery and key rotation: runtime discovery of tile server URL and witness quorum config, 6-month rotation, 7-day metadata timestamp, cached-metadata failures.",
+      "seed_queries": [
+        "Sigstore TUF signing config endpoint discovery",
+        "cosign TUF metadata key rotation signing config"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "witness-quorum",
+      "scope": "Witness co-signing and quorum design: independent witnesses, 2-of-3 public default vs 3-of-5 private recommendation, diverse trust infrastructure, witness rotation.",
+      "seed_queries": [
+        "Rekor v2 witness cosigning checkpoint quorum",
+        "transparency log witness deployment quorum Sigstore"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "v1-vs-v2",
+      "scope": "Rekor v1 vs Rekor v2 differences and the migration path: single global checkpoint vs tiles, maintenance mode vs GA, unchanged in-toto format, forward-only migration.",
+      "seed_queries": [
+        "Sigstore Rekor v2 GA announcement",
+        "Rekor v1 vs v2 differences migration"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "cosign-integration",
+      "scope": "Cosign integration path: sign-attestation publishing to tiles, verify-attestation through TUF-discovered endpoints, debugging transparency-log errors, anti-patterns.",
+      "seed_queries": [
+        "cosign verify-attestation rekor-tiles",
+        "cosign sign-attestation Rekor v2 tile"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "offline-signing-migration",
+      "scope": "yubiOS offline signing config migration: cosign --signing-config with rekorTlogUrls removed, OMN-157 record, --tlog-upload deprecation. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": 8,
+      "slug": "yubios-touchpoints",
+      "scope": "yubiOS integration touchpoints and related skills: slsa-provenance, audit-evidence-packaging, Fulcio boundary, 10-primitive mapping. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "answers": {
+      "t01": {
+        "score": 1.74,
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.09,
+          "2": 0.82
+        },
+        "confidence": 0.59,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 1.9,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.94
+        },
+        "confidence": 0.86,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 0.58,
+        "probabilities": {
+          "0": 0.51,
+          "1": 0.39,
+          "2": 0.1
+        },
+        "confidence": 0.11,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 0.93,
+        "probabilities": {
+          "0": 0.39,
+          "1": 0.3,
+          "2": 0.31
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.9,
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.93
+        },
+        "confidence": 0.85,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.59,
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.25,
+          "2": 0.67
+        },
+        "confidence": 0.38,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.62,
+        "probabilities": {
+          "0": 0.44,
+          "1": 0.5,
+          "2": 0.06
+        },
+        "confidence": 0.25,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.6,
+        "probabilities": {
+          "0": 0.44,
+          "1": 0.52,
+          "2": 0.04
+        },
+        "confidence": 0.28,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1104,
+      "output_tokens": 124
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}
