@@ -1,0 +1,248 @@
+{
+ "topic": "Runtime attestation for yubiOS using Keylime, in-toto, and confidential-containers - the 4-component evidence shape (quote / measurement / evidence bundle / Rekor v2 anchor) shared across the three frameworks",
+ "ground_source": "yubi-OS/yubiOS skills/runtime-attestation-keylime/SKILL.md",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "keylime-tpm2-attestation",
+   "scope": "Keylime architecture (verifier, agent, registrar) and how TPM2 quotes flow into runtime attestation decisions.",
+   "dig": true,
+   "seed_queries": [
+    "Keylime TPM 2.0 remote attestation architecture verifier agent registrar",
+    "Keylime attestation IMA measurement policy"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "evidence-shape",
+   "scope": "The canonical 4-component evidence shape (quote / measurement / evidence bundle / Rekor v2 anchor) the source doc declares as shared across Keylime, in-toto, and confidential-containers.",
+   "dig": false,
+   "seed_queries": []
+  },
+  {
+   "nn": 3,
+   "slug": "intoto-slsa-attestations",
+   "scope": "in-toto link attestations and SLSA L3 provenance as the supply-chain leg of the evidence shape.",
+   "dig": true,
+   "seed_queries": [
+    "in-toto attestation format SLSA provenance link",
+    "SLSA level 3 requirements build provenance attestation"
+   ]
+  },
+  {
+   "nn": 4,
+   "slug": "confidential-containers-attestation",
+   "scope": "Confidential computing attestation for Intel TDX, AMD SEV-SNP, and NVIDIA H100 CC, and the CoCo attestation-agent evidence path.",
+   "dig": true,
+   "seed_queries": [
+    "Intel TDX AMD SEV-SNP confidential computing attestation evidence",
+    "confidential containers CoCo attestation agent remote evidence"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "rekor-v2-anchoring",
+   "scope": "Sigstore Rekor v2 tile-backed transparency log and cosign verify-attestation as the anchoring component of the evidence shape.",
+   "dig": true,
+   "seed_queries": [
+    "Sigstore Rekor v2 tiles transparency log sharded",
+    "cosign verify-attestation rekor-tiles bundle"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "primitive-mapping",
+   "scope": "Placement on the yubiOS 10-primitive map: P0 attestation primary, P3 declarative policy (the attestation policy itself), P6 audit/evidence (the bundle as audit artifact).",
+   "dig": false,
+   "seed_queries": []
+  },
+  {
+   "nn": 7,
+   "slug": "downstream-consumers",
+   "scope": "Downstream yubiOS surfaces that consume this skill: the CI attestations gate (cosign verify-attestation against Rekor v2 per sigstore-rekor-v2), the audit-evidence rollup (audit-evidence-packaging), and the internal-big-picture 10-primitive map.",
+   "dig": false,
+   "seed_queries": []
+  },
+  {
+   "nn": 8,
+   "slug": "cycle9-provenance",
+   "scope": "Cycle-9 corpus-enrichment provenance: the 8 attestation closure cells, the 70-to-75 corpus growth below the 25 percent re-fit trigger, K_kept=2, and where attestation gaps are tracked.",
+   "dig": false,
+   "seed_queries": []
+  },
+  {
+   "nn": 9,
+   "slug": "measured-boot-ima-integration",
+   "scope": "How the runtime leg composes with measured boot and IMA in an image-based OS: PCR state, IMA measurement log, appraisal, and the quote-to-log binding.",
+   "dig": true,
+   "seed_queries": [
+    "TPM measured boot PCR IMA attestation Linux",
+    "Keylime IMA appraisal allowlist measured boot"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "type": "score",
+    "score": 1.81,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.07,
+     "2": 0.87
+    },
+    "confidence": 0.71
+   },
+   "t02": {
+    "type": "score",
+    "score": 1.45,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.21,
+     "1": 0.13,
+     "2": 0.66
+    },
+    "confidence": 0.17
+   },
+   "t03": {
+    "type": "score",
+    "score": 1.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.14,
+     "2": 0.67
+    },
+    "confidence": 0.22
+   },
+   "t04": {
+    "type": "score",
+    "score": 1.57,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.14,
+     "2": 0.72
+    },
+    "confidence": 0.37
+   },
+   "t05": {
+    "type": "score",
+    "score": 1.37,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.18,
+     "1": 0.26,
+     "2": 0.56
+    },
+    "confidence": 0.07
+   },
+   "t06": {
+    "type": "score",
+    "score": 0.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.5599999999999999,
+     "1": 0.31,
+     "2": 0.13
+    },
+    "confidence": 0.14
+   },
+   "t07": {
+    "type": "score",
+    "score": 1.05,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.28,
+     "1": 0.39,
+     "2": 0.33
+    },
+    "confidence": 0.08
+   },
+   "t08": {
+    "type": "score",
+    "score": 0.94,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.42,
+     "1": 0.22,
+     "2": 0.36
+    },
+    "confidence": 0
+   },
+   "t09": {
+    "type": "score",
+    "score": 1.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    },
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.12,
+     "2": 0.72
+    },
+    "confidence": 0.34
+   }
+  },
+  "usage": {
+   "input_tokens": 1273,
+   "output_tokens": 139,
+   "cost": 0.000106932
+  },
+  "dropped": [
+   6
+  ],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9
+  ]
+ }
+}

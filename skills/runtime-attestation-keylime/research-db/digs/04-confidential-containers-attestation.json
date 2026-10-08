@@ -1,0 +1,221 @@
+{
+ "nn": 4,
+ "slug": "confidential-containers-attestation",
+ "scope": "Confidential computing attestation for Intel TDX, AMD SEV-SNP, and NVIDIA H100 CC, and the CoCo attestation-agent evidence path.",
+ "queries_attempted": [
+  {
+   "query": "Intel TDX AMD SEV-SNP confidential computing attestation evidence",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": [
+    {
+     "title": "Attestation evidence - Privatemode",
+     "url": "https://docs.privatemode.ai/security/attestation/attestation-evidence/",
+     "snippet": "For the underlying mechanism, see the Contrast attestation documentation. Privatemode runs on AMD SEV-SNP and Intel TDX-capable CPUs, with confidential-computing-enabled NVIDIA GPUs. Each hardware type produces evidence in its own format. CPU evidence A confidential VM requests a signed attestation report from the CPU."
+    },
+    {
+     "title": "Confidential VMs Explained: An Empirical Analysis of AMD SEV-SNP and ...",
+     "url": "https://dl.acm.org/doi/10.1145/3700418",
+     "snippet": "This paper presents a detailed empirical analysis of two leading CVM technologies: AMD Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) and Intel Trust Domain Extensions (TDX). We review their microarchitectural components and conduct a thorough performance evaluation across various aspects, including memory management, computational performance, storage and network stacks, and ..."
+    },
+    {
+     "title": "Confidential VMs Explained: An Empirical Analysis of AMD SEV-SNP and ...",
+     "url": "https://dl.acm.org/doi/10.1145/3744970.3727280",
+     "snippet": "This work presents a detailed empirical analysis of two leading CVM technologies: AMD Secure Encrypted Virtualization--Secure Nested Paging (SEV-SNP) and Intel Trust Domain Extensions (TDX). We review their microarchitectural components and conduct a thorough performance evaluation across various aspects, including memory management, computational and I/O performance, and attestation ..."
+    },
+    {
+     "title": "Intel Inside - Built for AI",
+     "url": "https://www.intel.com/content/www/us/en/homepage.html",
+     "snippet": "We break barriers so builders can move faster, from prototype to global scale. That\u2019s the power of Intel Inside\u00ae"
+    },
+    {
+     "title": "Intel TDX vs AMD SEV-SNP for Confidential AI... | VoltageGPU Blog",
+     "url": "https://voltagegpu.com/blog/tdx-vs-sev-snp-confidential-ai-2026",
+     "snippet": "TDX and SEV-SNP solve the same problem. They are not equivalent for confidential AI in 2026. TDX has the documented NVIDIA confidential-GPU integration, the more mature attestation-verification ecosystem, and the path of least resistance through regulator review."
+    },
+    {
+     "title": "Confidential Computing: Intel TDX, AMD SEV, and the",
+     "url": "https://stealthcloud.ai/cloud-paradigms/confidential-computing-deep-dive/",
+     "snippet": "May 18, 2026 \u00b7 A technical deep dive into confidential computing hardware, covering Intel TDX, AMD SEV-SNP, ARM CCA, attestation protocols, and the Confidential Computing Consortium's work to standardize hardware-enforced data protection."
+    }
+   ],
+   "http": 200,
+   "elapsed_s": 2.91,
+   "unresponsive_engines": [
+    [
+     "boardreader",
+     "parsing error"
+    ],
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "Suspended: timeout"
+    ],
+    [
+     "privacywall",
+     "Suspended: access denied"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  },
+  {
+   "query": "confidential containers CoCo attestation agent remote evidence",
+   "attempt": 2,
+   "raw_results": 44,
+   "kept": [
+    {
+     "title": "Understanding the Confidential Containers Attestation Flow",
+     "url": "https://www.redhat.com/en/blog/understanding-confidential-containers-attestation-flow",
+     "snippet": "Attestation is a confidential computing keystone. With attestation, workload owners can fully assert the trustworthiness of the hardware and software environment their workload is running in, regardless of the security posture of the underlying infrastructure provider. This article describes the hardware-based attestation flows and processes that t..."
+    },
+    {
+     "title": "Get Attestation | Confidential Containers",
+     "url": "https://confidentialcontainers.org/docs/features/get-attestation/",
+     "snippet": "The runtime data will be included in the report. Typically this is used to bind a nonce or the hash of a key to the evidence. Security Enabling this feature can make your workload vulnerable to so-called \"evidence factory\" attacks. By default, different CoCo workloads can have the same TCB, even if they use different container images."
+    },
+    {
+     "title": "CoCo Setup | Confidential Containers",
+     "url": "https://confidentialcontainers.org/docs/attestation/coco-setup/",
+     "snippet": "Setting up attestation with CoCo If you are using Trustee with Confidential Containers, you'll need to point your CoCo workload to your Trustee. You can do this with an annotation on your workload, or via init-data. Annotation In your pod definition, add the following annotation."
+    },
+    {
+     "title": "CONFIDENTIAL Definition & Meaning - Merriam-Webster",
+     "url": "https://www.merriam-webster.com/dictionary/confidential",
+     "snippet": "The meaning of CONFIDENTIAL is intended for or restricted to the use of a particular person, group, or class : private, secret. How \u2026"
+    },
+    {
+     "title": "GitHub - confidential-filesystems/coco-attestation-service: Generic ...",
+     "url": "https://github.com/confidential-filesystems/coco-attestation-service",
+     "snippet": "With remote attestation, Attesters (e.g. the Attestation Agent) running on the guest node will request a resource (e.g. a container image decryption key) from the Key Broker Service (KBS)). The KBS receives the attestation evidence from the client in TEE and forwards it to the Attestation Service (AS)."
+    },
+    {
+     "title": "OpenShift Sandboxed Containers 1.13: Confidential AI, Attestation and ...",
+     "url": "https://pronteff.com/openshift-sandboxed-containers-1-13-confidential-ai-attestation-and-agent-sandboxing/",
+     "snippet": "3 days ago \u00b7 The platform operator needs to run the system without becoming a privileged path to the workload\u2019s contents. OpenShift sandboxed containers 1.13 combines hardware-backed confidential containers with remote attestation and, separately, introduces Red Hat\u2019s build of Agent Sandbox as a Technology Preview for isolated AI-agent workloads."
+    }
+   ],
+   "http": 200,
+   "elapsed_s": 2.79,
+   "unresponsive_engines": [
+    [
+     "boardreader",
+     "parsing error"
+    ],
+    [
+     "brave",
+     "Suspended: too many requests"
+    ],
+    [
+     "duckduckgo",
+     "Suspended: access denied"
+    ],
+    [
+     "fastbot",
+     "Suspended: access denied"
+    ],
+    [
+     "fireball",
+     "Suspended: access denied"
+    ],
+    [
+     "gmx",
+     "Suspended: CAPTCHA"
+    ],
+    [
+     "google",
+     "Suspended: access denied"
+    ],
+    [
+     "google cse",
+     "Suspended: too many requests"
+    ],
+    [
+     "mwmbl",
+     "Suspended: timeout"
+    ],
+    [
+     "privacywall",
+     "Suspended: access denied"
+    ],
+    [
+     "qwant",
+     "CAPTCHA"
+    ],
+    [
+     "resulthunter",
+     "Suspended: too many requests"
+    ],
+    [
+     "searchmysite",
+     "Suspended: access denied"
+    ],
+    [
+     "yacy",
+     "Suspended: timeout"
+    ],
+    [
+     "yep",
+     "Suspended: access denied"
+    ]
+   ]
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://dl.acm.org/doi/10.1145/3700418",
+  "https://dl.acm.org/doi/10.1145/3744970.3727280",
+  "https://www.redhat.com/en/blog/understanding-confidential-containers-attestation-flow",
+  "https://confidentialcontainers.org/docs/features/get-attestation/",
+  "https://confidentialcontainers.org/docs/attestation/coco-setup/",
+  "https://www.merriam-webster.com/dictionary/confidential"
+ ],
+ "outcome": "authored",
+ "note": "all results weighted; weak (< 0.5) results excluded from claim support in the doc"
+}
