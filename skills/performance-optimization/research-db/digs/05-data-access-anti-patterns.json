@@ -1,0 +1,36 @@
+{
+  "nn": "05",
+  "slug": "data-access-anti-patterns",
+  "scope": "Backend data-access fixes: N+1 queries, unbounded fetching and pagination, composite index design with EXPLAIN ANALYZE, and connection pool exhaustion.",
+  "queries_attempted": [
+    {
+      "query": "N+1 query problem detection fix eager loading join",
+      "attempt": 1,
+      "raw_results": 62,
+      "kept": 6
+    },
+    {
+      "query": "PostgreSQL EXPLAIN ANALYZE composite index column order equality range sort",
+      "attempt": 1,
+      "raw_results": 66,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.manageengine.com/it-operations-management/application-observability/fix-nplus1-query-problem.html",
+    "https://blog.openreplay.com/n-1-query-problem/",
+    "https://kindatechnical.com/database/n-plus-1-query-problem-eager-loading.html",
+    "https://www.peal.dev/blog/n-plus-one-query-problem-orm-fix-eager-loading",
+    "https://joptimize.io/blog/spring-boot-n-plus-one-queries-lazy-loading",
+    "https://news.railstutorial.org/eager-loading",
+    "https://www.postgresql.org/",
+    "https://milanjovanovic.tech/blog/how-to-design-the-right-sql-index",
+    "https://www.postgresql.org/download/",
+    "https://dev.to/arnavsharma2711/composite-indexes-explained-why-column-order-is-the-whole-game-11o0",
+    "https://en.wikipedia.org/wiki/PostgreSQL",
+    "https://www.w3schools.com/postgresql/index.php"
+  ],
+  "outcome": "authored"
+}
