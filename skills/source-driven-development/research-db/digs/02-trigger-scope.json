@@ -1,0 +1,68 @@
+{
+ "nn": "02",
+ "slug": "trigger-scope",
+ "scope": "When to use and when not to use source-driven development: the 6 triggers, 3 exclusions, and the version-dependence boundary.",
+ "queries_attempted": [
+  {
+   "query": "when to consult official documentation software development correctness",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "retrieval augmented generation coding assistant best practices 2026",
+   "attempt": 1,
+   "raw_results": 6,
+   "kept": 6
+  },
+  {
+   "query": "software documentation types reference tutorial authoritative source developer",
+   "attempt": 2,
+   "raw_results": 8,
+   "kept": 5
+  },
+  {
+   "query": "developer documentation single source of truth framework reference docs",
+   "attempt": 2,
+   "raw_results": 8,
+   "kept": 6
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "attempt 1 kept only 1 authoritative result (NIST FIPS 105, weight 0.81); the rest of the top-6 set scored below 0.5, too thin to author honestly with primary backing",
+   "new_queries": [
+    "software documentation types reference tutorial authoritative source developer",
+    "developer documentation single source of truth framework reference docs"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub105.pdf",
+  "https://www.cflowapps.com/technical-documentation-review-process/",
+  "https://www.atlassian.com/blog/loom/software-documentation-best-practices",
+  "https://www.merriam-webster.com/dictionary/consult",
+  "https://triptico.com/links/",
+  "https://www.d.umn.edu/~gshute/softeng/values.html",
+  "https://lushbinary.com/blog/rag-retrieval-augmented-generation-production-guide/",
+  "https://aidiscoverydigest.com/tutorials/retrieval-augmented-generation-what-changed-and-what-works/",
+  "https://huzaifatahir.com/blog/rag-complete-guide",
+  "https://www.merriam-webster.com/dictionary/retrieval",
+  "https://aimultiple.com/retrieval-augmented-generation",
+  "https://rcnguide.com/complete-rag-guide/",
+  "https://questsys.com/app-dev-blog/software-documentation-types-and-best-practices/",
+  "https://scribe.com/library/software-documentation",
+  "https://intersect-training.org/Documentation/types.html",
+  "https://en.wikipedia.org/wiki/Software",
+  "https://en.wikipedia.org/wiki/CSS",
+  "https://developer.microsoft.com/en-us/",
+  "https://developer.android.com/",
+  "https://developer.apple.com/",
+  "https://www.skyhunter.com/marcs/ewalnut.html",
+  "https://teamorouter.cn/blogs/deepseek-harness-paper-explained",
+  "https://discord.com/developers/home"
+ ],
+ "outcome": "authored"
+}
