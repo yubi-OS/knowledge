@@ -1,0 +1,36 @@
+{
+ "nn": 8,
+ "slug": "verification-gates-scale",
+ "scope": "The fit-quality gates (unit norm 1.0, PC1+PC2 >= 0.40, c.sum range 0 to 9, finite sparse cells), the red flags that trigger re-derivation or freezing, scale considerations up to 100k items, and the GitHub 5000 per hour and Linear 1500 per hour rate-limit guards.",
+ "queries_attempted": [
+  {
+   "query": "PCA explained variance ratio first two components cumulative threshold",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "GitHub API rate limit 5000 requests per hour authenticated",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://en.wikipedia.org/wiki/Principal_component_analysis",
+  "https://towardsdatascience.com/pca-102-should-you-use-pca-how-many-components-to-use-how-to-interpret-them-da0c8e3b11f0/",
+  "https://www.r-bloggers.com/2026/06/pca-in-r-principal-component-analysis-step-by-step-prcomp-ggplot2/",
+  "https://stackoverflow.com/questions/32857029/python-scikit-learn-pca-explained-variance-ratio-cutoff",
+  "https://www.pca.org/",
+  "https://www.geeksforgeeks.org/data-analysis/principal-component-analysis-pca/",
+  "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+  "https://docs.github.com/enterprise-cloud@latest/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+  "https://github.com/orgs/community/discussions/163553",
+  "https://dev.to/mehmetakar/api-rate-limit-exceeded-github-how-to-fix-4h6n",
+  "https://github.com/",
+  "http://stackoverflow.com/q/43960813"
+ ],
+ "outcome": "authored"
+}

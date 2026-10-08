@@ -1,0 +1,208 @@
+{
+ "topic": "Refreshable deep-archival routine for repo history (git + Linear joined corpus) with hyper-sphere RSI curve fitting and bounded recursive self improvement",
+ "ground_source": "yubi-OS/yubiOS skills/repo-history-skill/SKILL.md",
+ "subtopics": [
+  {
+   "nn": 1,
+   "slug": "two-substrates",
+   "scope": "The five sub-corpora the archive is built from: four git sub-corpora via GitHub REST (pulls, issues, commits, releases) with their field sets, plus the Linear GraphQL sub-corpus (team key OMN, not the display name). Covers the truncated-list-body caveat and pull_request-key filtering.",
+   "seed_queries": [
+    "GitHub REST API list pull requests issues commits releases pagination per_page 100",
+    "Linear GraphQL API issues filter team key first orderBy updatedAt example"
+   ]
+  },
+  {
+   "nn": 2,
+   "slug": "cross-corpus-join",
+   "scope": "The three join keys: OMN regex on PR body, merge_commit_sha on the PR to commit SHA, and the 40-hex SHA regex on bodies. Covers why title joins and 7-char SHAs fail and why the full PR body must be fetched individually.",
+   "seed_queries": [
+    "GitHub pull request merge_commit_sha squash merge commit semantics",
+    "GitHub REST API pull request body truncated list endpoint full body fetch"
+   ]
+  },
+  {
+   "nn": 3,
+   "slug": "primitive-basis-detection",
+   "scope": "The 9-D binary primitive basis (p0 has_purpose through p8 has_temporal_anchor), its detection regexes, the near-constant filter that drops primitives above 90 percent or below 10 percent coverage, and the cycle-0 vs cycle-1 coverage measurements.",
+   "seed_queries": []
+  },
+  {
+   "nn": 4,
+   "slug": "hypersphere-lift",
+   "scope": "The Stage 1 lift: 9-D binary coverage to PCA top-2 right singular vectors to stereographic projection from the south pole onto S2, with Mobius reparameterization at identity init and the L-BFGS-B refine gate at N>=30 with cross-ratio preservation.",
+   "seed_queries": [
+    "stereographic projection sphere to plane from south pole formula",
+    "Mobius transformation cross ratio invariant preservation"
+   ]
+  },
+  {
+   "nn": 5,
+   "slug": "sparse-cell-partition",
+   "scope": "Stage 2 and the granularity rule: equal-area S2 partition, cKDTree with chordal radius about 0.095 to find isolated items, the sparse-cell list as the cycle priority queue, and the N<20 state-progression snapshot decomposition.",
+   "seed_queries": [
+    "equal area partition of sphere into equal area cells points",
+    "scipy spatial cKDTree nearest neighbor chordal distance"
+   ]
+  },
+  {
+   "nn": 6,
+   "slug": "rsi-loop-fixpoint",
+   "scope": "The bounded recursive-self-improvement loop applied to the archive itself: cycle cap 3 with user override, the four edit types, the fixpoint rule (no new gaps, old gaps closed, no new anti-patterns), and the single-action-curve-rsi atom for Mode D.",
+   "seed_queries": []
+  },
+  {
+   "nn": 7,
+   "slug": "operating-modes-deep-research",
+   "scope": "Modes A through D (cold-start, incremental refresh, deep-research cycle, target-file RSI), the incremental refresh with --since and 7-day cache TTL warning, the deep-research hook dispatching 3 parallel streams, and the local plus pushed output artifacts.",
+   "seed_queries": []
+  },
+  {
+   "nn": 8,
+   "slug": "verification-gates-scale",
+   "scope": "The fit-quality gates (unit norm 1.0, PC1+PC2 >= 0.40, c.sum range 0 to 9, finite sparse cells), the red flags that trigger re-derivation or freezing, scale considerations up to 100k items, and the GitHub 5000 per hour and Linear 1500 per hour rate-limit guards.",
+   "seed_queries": [
+    "PCA explained variance ratio first two components cumulative threshold",
+    "GitHub API rate limit 5000 requests per hour authenticated"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 0.84,
+    "probabilities": {
+     "0": 0.45,
+     "1": 0.27,
+     "2": 0.28
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.49,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.24,
+     "2": 0.62
+    },
+    "confidence": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 0.61,
+    "probabilities": {
+     "0": 0.58,
+     "1": 0.24,
+     "2": 0.18
+    },
+    "confidence": 0.1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.72,
+    "probabilities": {
+     "0": 0.57,
+     "1": 0.13,
+     "2": 0.3
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.61,
+    "probabilities": {
+     "0": 0.56,
+     "1": 0.27,
+     "2": 0.17
+    },
+    "confidence": 0.08,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.97,
+    "probabilities": {
+     "0": 0.38,
+     "1": 0.28,
+     "2": 0.34
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.01,
+    "probabilities": {
+     "0": 0.3,
+     "1": 0.38,
+     "2": 0.32
+    },
+    "confidence": 0.07,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.95,
+    "probabilities": {
+     "0": 0.27,
+     "1": 0.51,
+     "2": 0.22
+    },
+    "confidence": 0.27,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1033,
+   "output_tokens": 124,
+   "cost": 8.6772e-05
+  },
+  "dropped": [],
+  "kept": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ }
+}

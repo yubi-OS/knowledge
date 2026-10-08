@@ -1,0 +1,36 @@
+{
+ "nn": 1,
+ "slug": "two-substrates",
+ "scope": "The five sub-corpora the archive is built from: four git sub-corpora via GitHub REST (pulls, issues, commits, releases) with their field sets, plus the Linear GraphQL sub-corpus (team key OMN, not the display name). Covers the truncated-list-body caveat and pull_request-key filtering.",
+ "queries_attempted": [
+  {
+   "query": "GitHub REST API list pull requests issues commits releases pagination per_page 100",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "Linear GraphQL API issues filter team key first orderBy updatedAt example",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://github.com/",
+  "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api",
+  "https://github.blog/",
+  "https://github.com/login",
+  "https://x.com/github",
+  "https://docs.github.com/en/rest",
+  "https://linear.app/developers/filtering",
+  "https://linear.app/developers",
+  "https://linear.app/",
+  "https://tonsofskills.com/skills/linear-hello-world/",
+  "https://github.com/qf-studio/studio-sdk/issues/85",
+  "https://thegraph.com/docs/en/subgraphs/querying/graphql-api/"
+ ],
+ "outcome": "authored"
+}
