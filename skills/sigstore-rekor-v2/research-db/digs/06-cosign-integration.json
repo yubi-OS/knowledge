@@ -1,0 +1,28 @@
+{
+  "nn": 6,
+  "slug": "cosign-integration",
+  "scope": "Cosign integration path: sign-attestation publishing to tiles, verify-attestation through TUF-discovered endpoints, debugging transparency-log errors, anti-patterns.",
+  "queries_attempted": [
+    {
+      "query": "cosign verify-attestation rekor-tiles",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    },
+    {
+      "query": "cosign sign-attestation Rekor v2 tile",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://blog.sigstore.dev/cosign-2-0-released/",
+    "https://docs.sigstore.dev/cosign/verifying/attestation/",
+    "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-attestation.md",
+    "https://www.rentwithcosign.com/"
+  ],
+  "outcome": "authored"
+}
