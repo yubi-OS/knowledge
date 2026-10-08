@@ -1,0 +1,299 @@
+{
+ "topic": "Running and extending the nature-based taste engine on the steady-orbit worker: /taste/score (8 nature-law axes), /taste/matrix, /taste/selftest, edge-standard-v1 standardized edge-map pipeline, and the validation discipline (jitter tests, calibration sweeps, gold-set cross-validation, rayleigh admission).",
+ "ground_source": "yubi-OS/yubiOS skills/taste-engine/SKILL.md (11,533 bytes fetched 2026-10-08)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "instrument-design-doctrine",
+   "scope": "The taste engine's three-stage design (deterministic extraction, one batched clef call with measured numbers, 0.45/0.55 hysteresis verdicts), the no-composite-score doctrine, and the admitted:false default.",
+   "seed_queries": [
+    "LLM as judge evaluation deterministic scoring hysteresis thresholds",
+    "evidence based AI evaluation measured features versus free prose judgments"
+   ],
+   "score": 1.4,
+   "probabilities": {
+    "0": 0.25,
+    "1": 0.11,
+    "2": 0.64
+   }
+  },
+  {
+   "nn": "02",
+   "slug": "score-route-contract",
+   "scope": "POST /api/jev/corpus/taste/score: request/response shapes, image vs features paths and source stamps, verdict rules, the r2 low_confidence gate, the family choice axis, and order_seed position-bias control.",
+   "seed_queries": [
+    "position bias question order large language model evaluation randomization",
+    "double threshold hysteresis binary classification decision stability"
+   ],
+   "score": 1.78,
+   "probabilities": {
+    "0": 0.08,
+    "1": 0.06,
+    "2": 0.86
+   }
+  },
+  {
+   "nn": "03",
+   "slug": "batch-selftest-routes",
+   "scope": "POST /taste/matrix paced fail-closed batching (1..20 items, one taste-matrix run row) and GET /taste/selftest 13 checks with 6-fixture Python parity at 4.4e-16.",
+   "seed_queries": [
+    "golden master testing numerical parity cross language implementation",
+    "batch API validation fail closed all-or-nothing request validation"
+   ],
+   "score": 1.56,
+   "probabilities": {
+    "0": 0.12,
+    "1": 0.2,
+    "2": 0.68
+   }
+  },
+  {
+   "nn": "04",
+   "slug": "edge-standard-pipeline",
+   "scope": "Edge-standard-v1: ink-normalization threshold (argmin |coverage - 0.06|), 4-connected components, Moore outer-boundary tracing with 12-px minimum, pinned box-counting window 4..64 with r2 gate, and the major-version-bump rule.",
+   "seed_queries": [
+    "Moore neighborhood boundary tracing contour extraction algorithm",
+    "box counting method fractal dimension estimation image regression r squared"
+   ],
+   "score": 1.55,
+   "probabilities": {
+    "0": 0.17,
+    "1": 0.11,
+    "2": 0.72
+   }
+  },
+  {
+   "nn": "05",
+   "slug": "validation-discipline",
+   "scope": "The four validation steps: jitter tests (sd 0.0000 across 24 re-calls), 21-point calibration sweeps (step edges at 0.6 and 0.5), gold-set cross-validation against Viengkham and Spehar 2018, and the rayleigh-pattern admission protocol.",
+   "seed_queries": [
+    "Viengkham Spehar 2018 fractal dimension preference paintings",
+    "classifier calibration sweep threshold reliability test retest jitter"
+   ],
+   "score": 1.22,
+   "probabilities": {
+    "0": 0.29,
+    "1": 0.2,
+    "2": 0.51
+   }
+  },
+  {
+   "nn": "06",
+   "slug": "falsification-corpus",
+   "scope": "The CI-guarded falsification corpus for edge-standard-v1: gen_v2.py anchors (Sierpinski 1.5968 vs 1.585), the five deploy-lesson rules, the supersolid real-data record, and the v3 matched-extent control.",
+   "seed_queries": [
+    "Sierpinski gasket fractal dimension 1.585 box counting validation",
+    "supersolid exciton polariton density wave transition experiment 2021"
+   ],
+   "score": 1.62,
+   "probabilities": {
+    "0": 0.15,
+    "1": 0.08,
+    "2": 0.77
+   }
+  },
+  {
+   "nn": "07",
+   "slug": "deploy-lessons",
+   "scope": "The six deploy lessons, each cost a fix cycle: clef choice criteria object (5012), decimal rendering of measured numbers, the missing-import selftest gap, path-qualified fixture parts (CF 10021), live route verification, and jev/tasks method+url.",
+   "seed_queries": [
+    "Cloudflare Workers modules upload error 10021 multiple scripts",
+    "JSON schema strict validation extra inputs are not permitted fix"
+   ],
+   "score": 1.26,
+   "probabilities": {
+    "0": 0.26,
+    "1": 0.21,
+    "2": 0.53
+   }
+  },
+  {
+   "nn": "08",
+   "slug": "adding-a-new-axis",
+   "scope": "The axis-extension workflow: axis dictionary (extractor + question template with embedded measured number), fixture parity, jitter plus calibration before admission, and the refs-recorded multi-class admission trial.",
+   "seed_queries": [
+    "psychometric scale development validation steps content validity",
+    "adding measurement axis automated instrument validation procedure"
+   ],
+   "score": 1.86,
+   "probabilities": {
+    "0": 0.05,
+    "1": 0.04,
+    "2": 0.91
+   }
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.4,
+    "probabilities": {
+     "0": 0.25,
+     "1": 0.11,
+     "2": 0.64
+    },
+    "confidence": 0.08,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.78,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.06,
+     "2": 0.86
+    },
+    "confidence": 0.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.56,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.2,
+     "2": 0.68
+    },
+    "confidence": 0.34,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 0.52,
+    "probabilities": {
+     "0": 0.65,
+     "1": 0.18,
+     "2": 0.17
+    },
+    "confidence": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.22,
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.2,
+     "2": 0.51
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.63,
+    "probabilities": {
+     "0": 0.6,
+     "1": 0.17,
+     "2": 0.23
+    },
+    "confidence": 0.05,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.26,
+    "probabilities": {
+     "0": 0.26,
+     "1": 0.21,
+     "2": 0.53
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.86,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.04,
+     "2": 0.91
+    },
+    "confidence": 0.79,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "revalidation": {
+   "reason": "first pass returned padding-majority for t04 (edge-standard pipeline) and t06 (falsification corpus), contradicting the source doc where both are dedicated sections; re-validated with instructions tied to the source doc's own section structure",
+   "answers": {
+    "t04": {
+     "score": 1.55,
+     "probabilities": {
+      "0": 0.17,
+      "1": 0.11,
+      "2": 0.72
+     },
+     "confidence": 0.32,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     }
+    },
+    "t06": {
+     "score": 1.62,
+     "probabilities": {
+      "0": 0.15,
+      "1": 0.08,
+      "2": 0.77
+     },
+     "confidence": 0.43,
+     "legend": {
+      "0": "padding: drop",
+      "1": "marginal: keep only if the dig comes back strong",
+      "2": "load-bearing: core subtopic"
+     }
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1194,
+   "output_tokens": 124,
+   "cost": 0.000100296
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
