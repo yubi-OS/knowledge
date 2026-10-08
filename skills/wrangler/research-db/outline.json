@@ -1,0 +1,215 @@
+{
+ "topic": "The Cloudflare Wrangler CLI for deploying and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store.",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "retrieval-first-discipline",
+   "scope": "Retrieval-first discipline: prefer current Cloudflare docs over pre-trained knowledge, the 3 retrieval sources, version check and install path, wrangler init.",
+   "seed_queries": [
+    "Cloudflare Wrangler CLI documentation commands reference latest",
+    "wrangler latest version changelog Cloudflare Workers CLI 2026"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "wrangler-jsonc-config",
+   "scope": "wrangler.jsonc configuration: config schema, compatibility_date and flags, binding shapes, environments, wrangler types.",
+   "seed_queries": [
+    "wrangler.jsonc configuration compatibility_date compatibility_flags documentation",
+    "wrangler types command worker-configuration.d.ts generate TypeScript"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "local-development",
+   "scope": "Local development: wrangler dev modes, remote bindings, .dev.vars, --test-scheduled.",
+   "seed_queries": [
+    "wrangler dev local development server remote bindings Cloudflare Workers",
+    "wrangler .dev.vars local secrets development environment"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "deployment-secrets-versions",
+   "scope": "Deployment, secrets, versions and rollback: wrangler deploy flags, secret management, versions and rollback.",
+   "seed_queries": [
+    "wrangler deploy command flags keep-vars dry-run minify documentation",
+    "wrangler secret put bulk versions rollback Cloudflare Workers"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "storage-and-data-services",
+   "scope": "Storage and data services via CLI: KV, R2, D1, Vectorize, Hyperdrive.",
+   "seed_queries": [
+    "wrangler kv namespace r2 bucket d1 execute commands reference",
+    "wrangler vectorize create index hyperdrive configuration commands"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "event-compute-platform",
+   "scope": "Event, compute and platform services via CLI: Workers AI, Queues, Containers, Workflows, Pipelines, Secrets Store, Pages.",
+   "seed_queries": [
+    "wrangler queues create consumer workflows trigger containers build commands",
+    "wrangler secrets-store pipelines pages deploy Workers AI models"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "observability-and-testing",
+   "scope": "Observability and testing: wrangler tail, observability config, check startup, vitest-pool-workers.",
+   "seed_queries": [
+    "wrangler tail logs observability head sampling Cloudflare Workers",
+    "vitest-pool-workers Cloudflare Workers testing wrangler config"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "troubleshooting-best-practices",
+   "scope": "Troubleshooting and best practices: common issues, debug commands, the 9 best practices.",
+   "seed_queries": [
+    "wrangler troubleshooting common errors login whoami startup time limit",
+    "wrangler best practices compatibility date update CI types check"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "t01": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.06,
+     "2": 0.82
+    },
+    "confidence": 0.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.64,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.07,
+     "2": 0.79
+    },
+    "confidence": 0.47,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.72,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.12,
+     "2": 0.8
+    },
+    "confidence": 0.58,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.1,
+     "1": 0.11,
+     "2": 0.79
+    },
+    "confidence": 0.53,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.07,
+     "2": 0.81
+    },
+    "confidence": 0.56,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.83,
+    "probabilities": {
+     "0": 0.07,
+     "1": 0.04,
+     "2": 0.89
+    },
+    "confidence": 0.73,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.49,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.35,
+     "2": 0.57
+    },
+    "confidence": 0.23,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.84,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.05,
+     "2": 0.89
+    },
+    "confidence": 0.74,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1095,
+   "output_tokens": 124
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
