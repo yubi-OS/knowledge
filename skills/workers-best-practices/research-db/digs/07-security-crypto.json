@@ -1,0 +1,30 @@
+{
+ "nn": "07",
+ "slug": "security-crypto",
+ "scope": "Security: crypto.randomUUID and crypto.getRandomValues over Math.random, crypto.subtle.timingSafeEqual for secret comparison, no passThroughOnException as error handling, secrets not in source or config",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Workers crypto.randomUUID timingSafeEqual Math.random security",
+   "attempt": 1,
+   "raw_results": 48,
+   "kept": 6
+  },
+  {
+   "query": "Cloudflare Workers passThroughOnException error handling anti-pattern",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://developers.cloudflare.com/workers/runtime-apis/web-crypto/",
+  "https://developers.cloudflare.com/workers/examples/protect-against-timing-attacks/",
+  "https://developers.cloudflare.com/workers/best-practices/workers-best-practices/",
+  "https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID",
+  "https://developers.cloudflare.com/workers/observability/errors/",
+  "https://github.com/cloudflare/skills/blob/main/skills/workers-best-practices/references/runtime-patterns.md"
+ ],
+ "outcome": "authored"
+}

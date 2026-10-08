@@ -1,0 +1,31 @@
+{
+ "nn": "01",
+ "slug": "retrieval-first-types",
+ "scope": "Retrieval-first discipline: fetch latest @cloudflare/workers-types via npm pack, wrangler types for Env, wrangler config-schema.json, and the Cloudflare best-practices page before writing or reviewing any Workers code",
+ "queries_attempted": [
+  {
+   "query": "Cloudflare Workers @cloudflare/workers-types npm install latest types",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "wrangler types command generate Env bindings Cloudflare",
+   "attempt": 1,
+   "raw_results": 47,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.npmjs.com/package/@cloudflare/workers-types",
+  "https://developers.cloudflare.com/workers/languages/typescript/",
+  "https://hono.dev/docs/getting-started/cloudflare-workers",
+  "https://github.com/cloudflare/workers-types",
+  "https://developers.cloudflare.com/workers/wrangler/configuration/",
+  "https://developers.cloudflare.com/changelog/post/2026-01-13-wrangler-types-multi-environment/",
+  "https://blog.cloudflare.com/webassembly-on-cloudflare-workers/"
+ ],
+ "outcome": "authored"
+}

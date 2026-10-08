@@ -1,0 +1,216 @@
+{
+ "topic": "Reviewing and authoring Cloudflare Workers code against production best practices: streaming, floating promises, global state, secrets, observability, and common Workers anti-patterns.",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "retrieval-first-types",
+   "scope": "Retrieval-first discipline: fetch latest @cloudflare/workers-types via npm pack, wrangler types for Env, wrangler config-schema.json, and the Cloudflare best-practices page before writing or reviewing any Workers code",
+   "seed_queries": [
+    "Cloudflare Workers @cloudflare/workers-types npm install latest types",
+    "wrangler types command generate Env bindings Cloudflare"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "configuration-rules",
+   "scope": "Configuration rules: compatibility_date freshness, nodejs_compat flag, wrangler types Env generation, wrangler secret put, wrangler.jsonc over wrangler.toml",
+   "seed_queries": [
+    "Cloudflare Workers compatibility_date nodejs_compat wrangler.jsonc best practices",
+    "wrangler secret put secrets environment variables Cloudflare Workers"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "request-response-streaming",
+   "scope": "Request and response handling: streaming large or unbounded payloads, never await response.text() on unbounded data, ctx.waitUntil for post-response work, no ctx destructuring",
+   "seed_queries": [
+    "Cloudflare Workers stream response body memory limit await response.text",
+    "Cloudflare Workers ctx.waitUntil post-response background work"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "architecture-bindings",
+   "scope": "Architecture: in-process bindings (KV, R2, D1, Queues) over the Cloudflare REST API, service bindings for Worker-to-Worker calls, Queues and Workflows off the critical path, Hyperdrive for external PostgreSQL and MySQL",
+   "seed_queries": [
+    "Cloudflare Workers bindings KV R2 D1 instead of REST API best practice",
+    "Cloudflare Hyperdrive PostgreSQL service bindings Workers Queues"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "observability-config",
+   "scope": "Observability: enable observability in wrangler.jsonc with head_sampling_rate, structured JSON logging, Workers logs and traces",
+   "seed_queries": [
+    "Cloudflare Workers observability head_sampling_rate wrangler config",
+    "Cloudflare Workers structured JSON logging tail workers logs"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "code-patterns-async",
+   "scope": "Code patterns: no module-level mutable request state, every Promise awaited, returned, voided, or passed to ctx.waitUntil (floating promises)",
+   "seed_queries": [
+    "Cloudflare Workers floating promises anti-pattern await",
+    "Cloudflare Workers global state module scope request isolation anti-pattern"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "security-crypto",
+   "scope": "Security: crypto.randomUUID and crypto.getRandomValues over Math.random, crypto.subtle.timingSafeEqual for secret comparison, no passThroughOnException as error handling, secrets not in source or config",
+   "seed_queries": [
+    "Cloudflare Workers crypto.randomUUID timingSafeEqual Math.random security",
+    "Cloudflare Workers passThroughOnException error handling anti-pattern"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "review-workflow",
+   "scope": "The 8-step review workflow: retrieve, read full files, check types, check config, check patterns, check security, validate with tsc --noEmit and no-floating-promises lint, reference rules",
+   "seed_queries": [
+    "TypeScript no-floating-promises eslint workers code review checklist",
+    "wrangler config-schema.json validate wrangler.jsonc CI"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.76,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.13,
+     "2": 0.81
+    },
+    "confidence": 0.66,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.2,
+     "2": 0.75
+    },
+    "confidence": 0.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.84,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.11,
+     "2": 0.86
+    },
+    "confidence": 0.74,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.06,
+     "2": 0.9
+    },
+    "confidence": 0.79,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.77,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.16,
+     "2": 0.81
+    },
+    "confidence": 0.67,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.88,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.07,
+     "2": 0.9
+    },
+    "confidence": 0.8,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 1.87,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.08,
+     "2": 0.89
+    },
+    "confidence": 0.79,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.88,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.05,
+     "2": 0.92
+    },
+    "confidence": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1258,
+   "output_tokens": 124
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08"
+  ]
+ }
+}
