@@ -1,0 +1,36 @@
+{
+  "nn": "06",
+  "slug": "metrics-red-use-cardinality",
+  "scope": "RED on every endpoint and external dependency, USE on resources; histograms not averages, p50/p95/p99; cardinality as the failure mode; bounded label sets; prom-client and OpenTelemetry metrics API.",
+  "queries_attempted": [
+    {
+      "query": "RED method monitoring rate errors duration",
+      "attempt": 1,
+      "raw_results": 71,
+      "kept": 6
+    },
+    {
+      "query": "Prometheus cardinality labels best practices percentiles histogram",
+      "attempt": 1,
+      "raw_results": 52,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.splunk.com/en_us/blog/learn/red-monitoring.html",
+    "https://www.reddit.com/r/reddit/wiki/index/",
+    "https://en.wikipedia.org/wiki/Red",
+    "https://www.theaiops.com/red-method-rate-errors-duration/",
+    "https://betterstack.com/community/guides/monitoring/red-use-metrics/",
+    "https://red-madison.com/",
+    "https://www.geeksforgeeks.org/devops/what-is-cardinality-in-prometheus/",
+    "https://kaidalov.com/posts/2025/09/prometheus-optimization/",
+    "https://www.groundcover.com/learn/observability/prometheus-cardinality",
+    "https://blog.teliaz.com/2026/08/30/prometheus-cardinality-the-label-decisions-that-decide-whether-your-monitoring-survives/",
+    "https://prometheus.io/",
+    "https://www.robustperception.io/cardinality-is-key/"
+  ],
+  "outcome": "authored"
+}

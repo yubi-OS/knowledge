@@ -1,0 +1,273 @@
+{
+  "topic": "Instrumenting code so production behavior is visible and diagnosable - logging, metrics, tracing, alerting, and evidence-that-it-works discipline",
+  "ground_source": "yubi-OS/yubiOS skills/observability-and-instrumentation/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "define-working-questions",
+      "scope": "Writing down the 2 to 4 questions an on-call engineer will ask about a feature before adding any signal; telemetry without a question is noise.",
+      "seed_queries": [
+        "observability define questions before instrumentation on-call",
+        "telemetry without purpose noise SLO questions"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "signal-selection-cost-model",
+      "scope": "Choosing between logs, metrics, and traces per question; cost profiles per-event vs fixed-per-series vs sampled; metrics tell you that, traces where, logs why.",
+      "seed_queries": [
+        "logs metrics traces three pillars when to use each",
+        "observability signal cost profile logs metrics traces"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "structured-logging",
+      "scope": "Log events not prose: JSON objects with stable event names and machine-readable fields; log level semantics error warn info debug and the on-call action each implies.",
+      "seed_queries": [
+        "structured logging best practices JSON event names",
+        "log level semantics error warn info debug production"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "correlation-and-entry-point",
+      "scope": "Correlation/request IDs generated at the system boundary and attached to every log line, span, and outbound call; entry-point stamping (scheduler vs replay vs CLI) propagated alongside the ID; propagation across HTTP headers and queue metadata.",
+      "seed_queries": [
+        "correlation id request id logging propagation best practices",
+        "W3C trace context propagation HTTP headers message queues"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "secrets-and-pii-in-logs",
+      "scope": "Never log secrets, tokens, passwords, or full PII; allowlist fields rather than blocklist; telemetry pipelines as a classic data-leak path.",
+      "seed_queries": [
+        "OWASP logging cheat sheet sensitive data logging",
+        "PII logging GDPR redaction log scrubbing"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "metrics-red-use-cardinality",
+      "scope": "RED on every endpoint and external dependency, USE on resources; histograms not averages, p50/p95/p99; cardinality as the failure mode; bounded label sets; prom-client and OpenTelemetry metrics API.",
+      "seed_queries": [
+        "RED method monitoring rate errors duration",
+        "Prometheus cardinality labels best practices percentiles histogram"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "distributed-tracing-otel",
+      "scope": "OpenTelemetry as the vendor-neutral standard; auto-instrumentation for HTTP, gRPC, DB clients; manual spans around meaningful units of work; attributes on-call filters by; head vs tail sampling.",
+      "seed_queries": [
+        "OpenTelemetry Node.js auto instrumentation getting started",
+        "distributed tracing sampling head-based tail-based errors"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "symptom-based-alerting",
+      "scope": "Alert on symptoms users feel not causes; every alert actionable with a runbook; thresholds justified by SLO or history; two severities only (page and ticket).",
+      "seed_queries": [
+        "Google SRE alerting on symptoms my philosophy on alerting",
+        "actionable alerts runbook page ticket severity"
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "verify-telemetry-works",
+      "scope": "Instrumentation is code and can be wrong: force an error in staging and find it by requestId, send test traffic for metrics, follow one request across services, fire each new alert once.",
+      "seed_queries": [
+        "testing observability instrumentation staging verify",
+        "alert testing fire drill on-call verify paging"
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "red-flags-rationalizations",
+      "scope": "The source skill's own anti-pattern catalog: common rationalizations, red flags in review, and the pre-launch verification checklist. Internal-record subtopic.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.91,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.03,
+          "2": 0.94
+        },
+        "confidence": 0.86
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.92,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.03,
+          "2": 0.95
+        },
+        "confidence": 0.9
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.03,
+          "2": 0.96
+        },
+        "confidence": 0.93
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.91,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.93
+        },
+        "confidence": 0.85
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.12,
+          "2": 0.84
+        },
+        "confidence": 0.7
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.89,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.03,
+          "2": 0.93
+        },
+        "confidence": 0.83
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.85,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.06,
+          "2": 0.9
+        },
+        "confidence": 0.79
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.66,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.19,
+          "2": 0.74
+        },
+        "confidence": 0.5
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.95
+      },
+      "t10": {
+        "type": "score",
+        "score": 1.02,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.32,
+          "1": 0.34,
+          "2": 0.34
+        },
+        "confidence": 0.01
+      }
+    },
+    "usage": {
+      "input_tokens": 1535,
+      "output_tokens": 154,
+      "cost": 0.00012894
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "notes": "No subtopic scored 0. t10 (red-flags-rationalizations) scored 1.02 at confidence 0.01 (near-uniform probabilities); kept as an internal-record subtopic per the skills-variant rule that internal-record subtopics skip searXNG, with its content drawn solely from the source doc."
+  }
+}

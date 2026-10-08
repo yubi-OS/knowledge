@@ -1,0 +1,36 @@
+{
+  "nn": "09",
+  "slug": "verify-telemetry-works",
+  "scope": "Instrumentation is code and can be wrong: force an error in staging and find it by requestId, send test traffic for metrics, follow one request across services, fire each new alert once.",
+  "queries_attempted": [
+    {
+      "query": "testing observability instrumentation staging verify",
+      "attempt": 1,
+      "raw_results": 46,
+      "kept": 6
+    },
+    {
+      "query": "alert testing fire drill on-call verify paging",
+      "attempt": 1,
+      "raw_results": 56,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Software_testing",
+    "https://www.geeksforgeeks.org/software-testing/software-testing-basics/",
+    "https://www.ibm.com/think/topics/software-testing",
+    "https://www.guru99.com/software-testing.html",
+    "https://www.servicenow.com/products/it-operations-management/what-is-observability.html",
+    "https://martinfowler.com/articles/domain-oriented-observability.html",
+    "https://www.merriam-webster.com/dictionary/alert",
+    "https://www.youtube.com/watch?v=U5FP0aIGfzM",
+    "https://learn.microsoft.com/en-us/answers/questions/5845986/how-do-i-remove-a-persistent-fake-virus-alert-popu",
+    "https://www.bigiron.cc/guides/fire-drill-your-paging-pipeline-the-monthly-test",
+    "https://wiki.fireport.net/%D0%A8%D0%B2%D0%B8%D0%B4%D0%BA%D0%B8%D0%B9_%D0%B2%D0%B8%D0%BA%D0%BB%D0%B8%D0%BA_%D0%BF%D1%96%D0%B4%D1%80%D0%BE%D0%B7%D0%B4%D1%96%D0%BB%D1%83_(call-in)",
+    "https://www.alerrt.org/"
+  ],
+  "outcome": "authored"
+}
