@@ -1,0 +1,36 @@
+{
+  "nn": "08",
+  "slug": "pinned-base-digests",
+  "scope": "Pinned base images by digest: why mutable tags are supply-chain risk, digest retrieval with podman inspect and skopeo inspect",
+  "queries_attempted": [
+    {
+      "query": "docker pin base image digest supply chain attack mutable tag",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "skopeo inspect digest pin container image",
+      "attempt": 1,
+      "raw_results": 35,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.docker.com/",
+    "https://www.sourcery.ai/vulnerabilities/docker-unpinned-image-tags",
+    "https://www.docker.com/products/docker-desktop/",
+    "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+    "https://docs.docker.com/desktop/setup/install/windows-install/",
+    "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+    "https://github.com/podman-container-tools/skopeo",
+    "https://www.redhat.com/en/topics/containers/what-is-skopeo",
+    "https://docs.oracle.com/en/operating-systems/oracle-linux/podman/skopeo.html",
+    "https://dev.to/lyraalishaikh/stop-pulling-containers-just-to-mirror-them-practical-skopeo-for-safer-image-promotion-1kf3",
+    "https://www.geeksforgeeks.org/devops/using-skopeo-for-container-image-inspection-and-transfer/",
+    "https://kubernetes.recipes/recipes/deployments/skopeo-container-image-operations/"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,916 @@
+{
+  "topic": "Rootless container builds with Docker Buildx (yubiOS primary per ADR-014) and podman/buildah, supply-chain hardening via OPA/Rego Build Policies, cosign signing, pinned digests",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "rootless-security-model",
+      "scope": "Rootless container security model: how user namespaces map container root to unprivileged host UIDs (100000+) and eliminate the root daemon attack surface",
+      "seed_queries": [
+        "how rootless containers user namespace UID mapping security",
+        "rootless container threat model root daemon attack surface"
+      ],
+      "kept_results": [
+        {
+          "query": "how rootless containers user namespace UID mapping security",
+          "title": "Faux Trees That Make Rooms Feel Finished | Rootless Plants",
+          "url": "https://rootlessplants.com/",
+          "content": "Not sure which tree fits your space? 60 seconds. We match you to the species, size, and planter your room actually wants. Side by side. The choice is obvious. *Pricing current as of Spring 2026. Competitor data collected from public websites. Comparison reflects flagship olive/ficus trees at the 5\u20137ft size range."
+        },
+        {
+          "query": "how rootless containers user namespace UID mapping security",
+          "title": "User Namespaces | Rootless Containers",
+          "url": "https://rootlesscontaine.rs/how-it-works/userns/",
+          "content": "User Namespaces Rootless containers uses user_namespaces (7) (UserNS) for emulating fake privileges that are enough to create containers. e.g. map UID 1000 to pseudo-root UID 0 in the UserNS:"
+        },
+        {
+          "query": "how rootless containers user namespace UID mapping security",
+          "title": "How to Run Rootless Containers with Podman - oneuptime.com",
+          "url": "https://oneuptime.com/blog/post/2026-01-27-podman-rootless/view",
+          "content": "A comprehensive guide to running rootless containers with Podman, covering user namespace configuration, storage setup, and the security benefits of unprivileged container execution."
+        },
+        {
+          "query": "how rootless containers user namespace UID mapping security",
+          "title": "Shop Faux Trees That Look Real | Rootless Plants",
+          "url": "https://rootlessplants.com/collections/frontpage",
+          "content": "Hand-crafted faux trees with real bark texture, silk-touch leaves, and premium planters. Looks real. Zero maintenance. Ships free. Real Customers. Real Rooms. Watch how our trees transform actual spaces. 5ft and 7ft options that fill real rooms the way real trees do. Not the 3-foot table toppers you see elsewhere."
+        },
+        {
+          "query": "how rootless containers user namespace UID mapping security",
+          "title": "Understanding user namespaces with rootless containers - Red\u2026",
+          "url": "https://access.redhat.com/articles/5946151",
+          "content": "Here we seek to understand how user and group ID's work when using rootless containerization technologies such as podman, buildah, and skopeo."
+        },
+        {
+          "query": "how rootless containers user namespace UID mapping security",
+          "title": "Rootless",
+          "url": "https://getrootless.com/",
+          "content": "Rootless provides a convenient and delicious way to incorporate more fiber, omega-3 fatty acids, and a variety of minerals into your diet. These ingredients can improve energy, metabolism, and skin health \u2013 areas that are often affected during menopause."
+        },
+        {
+          "query": "rootless container threat model root daemon attack surface",
+          "title": "Faux Trees That Make Rooms Feel Finished | Rootless Plants",
+          "url": "https://rootlessplants.com/",
+          "content": "Not sure which tree fits your space? 60 seconds. We match you to the species, size, and planter your room actually wants. Side by side. The choice is obvious. *Pricing current as of Spring 2026. Competitor data collected from public websites. Comparison reflects flagship olive/ficus trees at the 5\u20137ft size range."
+        },
+        {
+          "query": "rootless container threat model root daemon attack surface",
+          "title": "Shop Faux Trees That Look Real | Rootless Plants",
+          "url": "https://rootlessplants.com/collections/frontpage",
+          "content": "Hand-crafted faux trees with real bark texture, silk-touch leaves, and premium planters. Looks real. Zero maintenance. Ships free. Real Customers. Real Rooms. Watch how our trees transform actual spaces. 5ft and 7ft options that fill real rooms the way real trees do. Not the 3-foot table toppers you see elsewhere."
+        },
+        {
+          "query": "rootless container threat model root daemon attack surface",
+          "title": "Rootless",
+          "url": "https://getrootless.com/",
+          "content": "Rootless provides a convenient and delicious way to incorporate more fiber, omega-3 fatty acids, and a variety of minerals into your diet. These ingredients can improve energy, metabolism, and skin health \u2013 areas that are often affected during menopause."
+        },
+        {
+          "query": "rootless container threat model root daemon attack surface",
+          "title": "Rootless mode | Docker Docs",
+          "url": "https://docs.docker.com/engine/security/rootless/",
+          "content": "This is similar to userns-remap mode, except that with userns-remap mode, the daemon itself is running with root privileges, whereas in rootless mode, both the daemon and the container are running without root privileges. The two modes also differ in how they map container UIDs and GIDs to the host: see UID/GID mapping for details ..."
+        },
+        {
+          "query": "rootless container threat model root daemon attack surface",
+          "title": "Solene&#39;%",
+          "url": "https://dataswamp.org/~solene/index-full.html",
+          "content": "prefer to use it in a container version for sandboxing reasons. Generate the swarm.key with this code: echo -e &#34;/key/swarm/psk/1.0.0/\\n/base16/\\n$(openssl rand -hex 32)&#34;"
+        },
+        {
+          "query": "rootless container threat model root daemon attack surface",
+          "title": "Podman vs Docker: Rootless Security or Ecosystem... | Markaicode",
+          "url": "https://markaicode.com/vs/podman-vs-docker/",
+          "content": "Root-privileged daemon by default; rootless mode available but opt-in. Native systemd integration.Podman's rootless-by-default model removes the root daemon attack surface entirely. Team has to learn user-namespace concepts and debug UID-mapping issues on bind mounts."
+        }
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "rootless-podman-setup",
+      "scope": "Rootless podman setup: subuid/subgid allocation, fuse-overlayfs storage driver configuration, and rootless verification",
+      "seed_queries": [
+        "podman rootless tutorial subuid subgid fuse-overlayfs",
+        "rootless podman storage.conf fuse-overlayfs driver config"
+      ],
+      "kept_results": [
+        {
+          "query": "podman rootless tutorial subuid subgid fuse-overlayfs",
+          "title": "Podman",
+          "url": "https://podman.io/",
+          "content": "Have fun coloring and learn about Podman! A decentralized team of open source container tool superheroes comes to the rescue when an asteroid storm threatens the planet."
+        },
+        {
+          "query": "podman rootless tutorial subuid subgid fuse-overlayfs",
+          "title": "podman/docs/tutorials/rootless_tutorial.md at main \u00b7 podman\u2026",
+          "url": "https://github.com/podman-container-tools/podman/blob/main/docs/tutorials/rootless_tutorial.md",
+          "content": "The majority of the work necessary to run Podman in a rootless environment is on the shoulders of the machine's administrator. Once the Administrator has completed the setup on the machine and then the configurations for the user in /etc/subuid and /etc/subgid, the user can just start using any Podman command that they wish."
+        },
+        {
+          "query": "podman rootless tutorial subuid subgid fuse-overlayfs",
+          "title": "Rootless Podman Setup: subuid, subgid & Common Errors",
+          "url": "https://www.golinuxcloud.com/rootless-podman/",
+          "content": "Rootless Podman does not always require fuse-overlayfs . Check newuidmap and newgidmap.Why podman system migrate matters after subuid/subgid changes. Rootless Podman keeps a pause process alive to hold the user's unprivileged namespaces open."
+        },
+        {
+          "query": "podman rootless tutorial subuid subgid fuse-overlayfs",
+          "title": "Podman Installation | Podman",
+          "url": "https://podman.io/docs/installation",
+          "content": "While \"containers are Linux,\" Podman also runs on Mac and Windows, where it provides a native podman CLI and embeds a guest Linux system to launch your containers. This guest is referred to as a Podman machine and is managed with the podman machine command."
+        },
+        {
+          "query": "podman rootless tutorial subuid subgid fuse-overlayfs",
+          "title": "Podman - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Podman",
+          "content": "Podman lets containers run without root privileges (rootless), meaning they can be created, run, and managed by regular users without administrator rights by using Linux namespaces."
+        },
+        {
+          "query": "podman rootless tutorial subuid subgid fuse-overlayfs",
+          "title": "Podman: A tool for managing OCI containers and pods - GitHub",
+          "url": "https://github.com/podman-container-tools/podman",
+          "content": "Podman (the POD MANager) is a tool for managing containers and images, volumes mounted into those containers, and pods made from groups of containers. Podman runs containers on Linux, but can also be used on Mac and Windows systems using a Podman-managed virtual machine."
+        },
+        {
+          "query": "rootless podman storage.conf fuse-overlayfs driver config",
+          "title": "Faux Trees That Make Rooms Feel Finished | Rootless Plants",
+          "url": "https://rootlessplants.com/",
+          "content": "Not sure which tree fits your space? 60 seconds. We match you to the species, size, and planter your room actually wants. Side by side. The choice is obvious. *Pricing current as of Spring 2026. Competitor data collected from public websites. Comparison reflects flagship olive/ficus trees at the 5\u20137ft size range."
+        },
+        {
+          "query": "rootless podman storage.conf fuse-overlayfs driver config",
+          "title": "Shop Faux Trees That Look Real | Rootless Plants",
+          "url": "https://rootlessplants.com/collections/frontpage",
+          "content": "Hand-crafted faux trees with real bark texture, silk-touch leaves, and premium planters. Looks real. Zero maintenance. Ships free. Real Customers. Real Rooms. Watch how our trees transform actual spaces. 5ft and 7ft options that fill real rooms the way real trees do. Not the 3-foot table toppers you see elsewhere."
+        },
+        {
+          "query": "rootless podman storage.conf fuse-overlayfs driver config",
+          "title": "Rootless",
+          "url": "https://getrootless.com/",
+          "content": "Rootless provides a convenient and delicious way to incorporate more fiber, omega-3 fatty acids, and a variety of minerals into your diet. These ingredients can improve energy, metabolism, and skin health \u2013 areas that are often affected during menopause."
+        },
+        {
+          "query": "rootless podman storage.conf fuse-overlayfs driver config",
+          "title": "Enabling fuse-overlayfs with a Configmap :: Eclipse Che Document\u2026",
+          "url": "https://www.eclipse.org/che/docs/stable/end-user-guide/enabling-overlay-with-a-configmap/",
+          "content": "Enabling fuse-overlayfs with a Configmap You can define the storage driver for Podman and Buildah in the ~/.config/containers/storage.conf file. Here are\u2026"
+        },
+        {
+          "query": "rootless podman storage.conf fuse-overlayfs driver config",
+          "title": "How to Use Overlay Storage Driver for Best Performance in Podman",
+          "url": "https://oneuptime.com/blog/post/2026-03-18-use-overlay-storage-driver-podman/view",
+          "content": "The storage driver determines how Podman manages image layers and container filesystems. It affects every operation from pulling images to reading files inside a running container."
+        },
+        {
+          "query": "rootless podman storage.conf fuse-overlayfs driver config",
+          "title": "How to Use Podman with FUSE Filesystems - oneuptime.com",
+          "url": "https://oneuptime.com/blog/post/2026-03-18-use-podman-fuse-filesystems/view",
+          "content": "A practical guide to using FUSE filesystems with Podman containers, including fuse-overlayfs for rootless containers, SSHFS mounts, and custom FUSE filesystem integration."
+        }
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "rootless-builds-podman-buildah",
+      "scope": "Building images with rootless podman and buildah: hardened build flags (--security-opt no-new-privileges, --cap-drop ALL), push, and digest retrieval",
+      "seed_queries": [
+        "buildah podman build no-new-privileges cap-drop security flags",
+        "podman buildah rootless container build push digest"
+      ],
+      "kept_results": [
+        {
+          "query": "buildah podman build no-new-privileges cap-drop security flags",
+          "title": "podman-build \u2014 Podman documentation",
+          "url": "https://docs.podman.io/en/latest/markdown/podman-build.1.html",
+          "content": "NOTE: podman build uses code sourced from the Buildah project to build container images. This Buildah code creates Buildah containers for the RUN options in container storage."
+        },
+        {
+          "query": "buildah podman build no-new-privileges cap-drop security flags",
+          "title": "Puzzlewood | Days Out with the Kids | Places to Visit Forest of Dean ...",
+          "url": "https://puzzlewood.net/",
+          "content": "Explore Puzzlewood, a magical ancient woodland attraction for all ages in the Forest of Dean, Gloucestershire. Popular TV & film \u2026"
+        },
+        {
+          "query": "buildah podman build no-new-privileges cap-drop security flags",
+          "title": "hardcore pnp Gay Porn - Popular Videos | Gay.Bingo",
+          "url": "https://gay.bingo/search/hardcore%20pnp",
+          "content": "Looking for hardcore pnp Gay porn? Here you can find popular hardcore pnp porn for hot gays. Free daily updates at Gay.Bingo"
+        },
+        {
+          "query": "buildah podman build no-new-privileges cap-drop security flags",
+          "title": "How to Use No-New-Privileges with Podman - oneuptime.com",
+          "url": "https://oneuptime.com/blog/post/2026-03-18-use-no-new-privileges-podman/view",
+          "content": "Learn how to use the no-new-privileges flag in Podman to prevent container processes from gaining additional privileges through setuid binaries or other escalation mechanisms."
+        },
+        {
+          "query": "buildah podman build no-new-privileges cap-drop security flags",
+          "title": "FAQs - Puzzlewood | Things to Do in the Forest of Dean",
+          "url": "https://www.puzzlewood.net/index.php/frequently-asked-questions/frequently-asked-questions",
+          "content": "More information on visiting Puzzlewood \u2013 a magical attraction for all ages in the Forest of Dean, Gloucestershire. Perfect for days \u2026"
+        },
+        {
+          "query": "buildah podman build no-new-privileges cap-drop security flags",
+          "title": "Balls Deep, Raw, Wrecked Hole, Party + Play Cloudy Fuck.pnp Party...",
+          "url": "https://cockdude.com/35162-balls-deep-raw-wrecked-hole-party-play-cloudy-fuck-pnp-party-couple/",
+          "content": "Balls Deep, Raw, Wrecked Hole, Party + Play Cloudy Fuck.pnp Party Couple gay porn video. Perfect Bareback, Big Dick video with hot guys. Check thousands of gay porn videos in categories like Deepthroat, Anal or Bareback."
+        },
+        {
+          "query": "podman buildah rootless container build push digest",
+          "title": "Podman",
+          "url": "https://podman.io/",
+          "content": "Have fun coloring and learn about Podman! A decentralized team of open source container tool superheroes comes to the rescue when an asteroid storm threatens the planet."
+        },
+        {
+          "query": "podman buildah rootless container build push digest",
+          "title": "Learn how to use Buildah with Podman for building and running...",
+          "url": "https://oneuptime.com/blog/post/2026-02-02-buildah-podman-integration/view",
+          "content": "Building container images without Docker daemon dependency has become essential for modern CI/CD pipelines. Buildah and Podman together provide a complete container workflow that runs rootless and daemonless, making them ideal for security-conscious environments. Container images built with Buildah work seamlessly with Podman for running ..."
+        },
+        {
+          "query": "podman buildah rootless container build push digest",
+          "title": "podman-build \u2014 Podman documentation",
+          "url": "https://docs.podman.io/en/latest/markdown/podman-build.1.html",
+          "content": "NAME\u00b6. podman-build - Build a container image using a Containerfile.NOTE: podman build uses code sourced from the Buildah project to build container images. This Buildah code creates Buildah containers for the RUN options in container storage."
+        },
+        {
+          "query": "podman buildah rootless container build push digest",
+          "title": "Podman Installation | Podman",
+          "url": "https://podman.io/docs/installation",
+          "content": "While \"containers are Linux,\" Podman also runs on Mac and Windows, where it provides a native podman CLI and embeds a guest Linux system to launch your containers. This guest is referred to as a Podman machine and is managed with the podman machine command."
+        },
+        {
+          "query": "podman buildah rootless container build push digest",
+          "title": "How rootless Buildah works: Building containers... | Opensource.com",
+          "url": "https://opensource.com/article/19/3/tips-tricks-rootless-buildah",
+          "content": "In previous articles, including How does rootless Podman work?, I talked about Podman, a tool that enables users to manage pods, containers, and container images. Buildah is a tool and library for building Open Container Initiative (OCI) container images that is complementary to Podman. (Both projects are maintained by the containers organization, of which I'm a member.) In this article, I ..."
+        },
+        {
+          "query": "podman buildah rootless container build push digest",
+          "title": "Podman - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Podman",
+          "content": "Podman lets containers run without root privileges (rootless), meaning they can be created, run, and managed by regular users without administrator rights by using Linux namespaces."
+        }
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "rootless-buildkit-buildx",
+      "scope": "Rootless Docker BuildKit and Buildx: kernel user-namespace prerequisites, containerized rootless buildkitd, and the ADR-014 decision making Buildx the canonical yubiOS build tool",
+      "seed_queries": [
+        "moby buildkit rootless docker buildx setup",
+        "dockerd-rootless-setuptool.sh install buildkit userns"
+      ],
+      "kept_results": [
+        {
+          "query": "moby buildkit rootless docker buildx setup",
+          "title": "moby/buildkit - Docker Image",
+          "url": "https://hub.docker.com/r/moby/buildkit",
+          "content": "moby/buildkit repository overview. Docker Build Cloud is now available! Our new cloud-based build accelerates builds with native multi-arch support and a shared team cache. Try it for free\u2060.docker buildx create --driver-opt image=moby/buildkit:master --use. Copy. \u2060 Rootless."
+        },
+        {
+          "query": "moby buildkit rootless docker buildx setup",
+          "title": "GitHub - moby/buildkit: concurrent, cache-efficient, and...",
+          "url": "https://github.com/moby/buildkit",
+          "content": "docker build uses Buildx and BuildKit by default since Docker Engine 23.0. You don't need to read this document unless you want to use the full-featured standalone version of BuildKit. Used by. Quick start. Linux Setup."
+        },
+        {
+          "query": "moby buildkit rootless docker buildx setup",
+          "title": "buildkit/docs/rootless.md at master \u00b7 moby/buildkit \u00b7 GitHub",
+          "url": "https://github.com/moby/buildkit/blob/master/docs/rootless.md",
+          "content": "Running BuildKit in Rootless mode (containerd worker) RootlessKit needs to be installed. Run containerd in rootless mode using rootlesskit following containerd's document."
+        },
+        {
+          "query": "moby buildkit rootless docker buildx setup",
+          "title": "Build Docker images with BuildKit | GitLab Docs",
+          "url": "https://docs.gitlab.com/ci/docker/using_buildkit/",
+          "content": "Prerequisites GitLab Runner with Docker executor Docker 19.03 or later to use Docker Buildx A project with a Dockerfile BuildKit rootless BuildKit in standalone mode provides rootless image builds without Docker daemon dependency. This method eliminates privileged containers entirely and provides a direct replacement for Kaniko builds."
+        },
+        {
+          "query": "moby buildkit rootless docker buildx setup",
+          "title": "Moby - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moby",
+          "content": "Richard Melville Hall (born September 11, 1965), known professionally as Moby, is an American musician, songwriter and animal \u2026"
+        },
+        {
+          "query": "moby buildkit rootless docker buildx setup",
+          "title": "moby x\u24cbx (@moby) \u2022 Instagram photos and videos",
+          "url": "https://www.instagram.com/moby/",
+          "content": "2M Followers, 2,490 Following, 8,421 Posts - moby x\u24cbx (@moby) on Instagram: \"Vegan for Life.\""
+        },
+        {
+          "query": "dockerd-rootless-setuptool.sh install buildkit userns",
+          "title": "Run the Docker daemon as a non-root user (Rootless mode)",
+          "url": "https://docs.docker.com/engine/security/rootless/",
+          "content": "The dockerd-rootless-setuptool.sh install script (see following) automatically shows help when the prerequisites are not satisfied.If dockerd-rootless-setuptool.sh is not present, you may need to install the docker-ce-rootless-extras package manually, e.g."
+        },
+        {
+          "query": "dockerd-rootless-setuptool.sh install buildkit userns",
+          "title": "buildkit/docs/rootless.md at master \u00b7 moby/buildkit \u00b7 GitHub",
+          "url": "https://github.com/moby/buildkit/blob/master/docs/rootless.md",
+          "content": "CONTAINERD_NAMESPACE=default containerd-rootless-setuptool.sh install-buildkit-containerd. Advanced guide. Alternatively, you can specify the full command line flags as follows: containerd-rootless.sh --config /path/to/config.toml."
+        },
+        {
+          "query": "dockerd-rootless-setuptool.sh install buildkit userns",
+          "title": "Steak & Seafood Restaurant Lake of the Ozarks | JB Hooks",
+          "url": "https://jbhooks.com/",
+          "content": "Jul 15, 2020 \u00b7 Panoramic Views & Fine Dining at Lake of the Ozarks Legendary Steaks, Seafood, and Views MAKE A \u2026"
+        },
+        {
+          "query": "dockerd-rootless-setuptool.sh install buildkit userns",
+          "title": "Pizza Delivery & Carryout, Pasta, Chicken & More | Domino's",
+          "url": "https://www.dominos.com/en",
+          "content": "Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino's. View menu, find locations, track orders. Sign up for Domino's email & text offers to get great deals on your next order."
+        },
+        {
+          "query": "dockerd-rootless-setuptool.sh install buildkit userns",
+          "title": "Rootless mode | Docker Docs",
+          "url": "https://docs.docker.com/engine/security/rootless",
+          "content": "$ dockerd-rootless-setuptool.sh install [INFO] Creating /home/testuser/.config/systemd/user/docker.service... [INFO] Installed docker.service successfully. [INFO] To control docker.service, run: `systemctl --user (start|stop|restart) docker\u2026"
+        },
+        {
+          "query": "dockerd-rootless-setuptool.sh install buildkit userns",
+          "title": "Make a Reservation at JB Hooks - JB Hooks Lake of the Ozarks",
+          "url": "https://jbhooks.com/menu.html",
+          "content": "The FDA advises consuming raw or under cooked meats, poultry, seafood, or eggs increases your risk of food borne illness. J.B. \u2026"
+        }
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "opa-rego-build-policies",
+      "scope": "Docker Build Policies: OPA/Rego policy schema for buildx --policy (input object fields, allow rules, strict/reset/log-level flags, debug via --progress=plain)",
+      "seed_queries": [
+        "docker buildx build --policy OPA rego build policies",
+        "docker build policy input.image.isCanonical hasProvenance rego"
+      ],
+      "kept_results": [
+        {
+          "query": "docker buildx build --policy OPA rego build policies",
+          "title": "Docker | Secure Sandboxes for AI Agents",
+          "url": "https://www.docker.com/",
+          "content": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code."
+        },
+        {
+          "query": "docker buildx build --policy OPA rego build policies",
+          "title": "Docker Desktop: The #1 Containerization Tool for Developers | Docker",
+          "url": "https://www.docker.com/products/docker-desktop/",
+          "content": "Docker Desktop is collaborative containerization software for developers. Get started and download Docker Desktop today on Mac, Windows, or Linux."
+        },
+        {
+          "query": "docker buildx build --policy OPA rego build policies",
+          "title": "Install Docker Desktop on Windows",
+          "url": "https://docs.docker.com/desktop/setup/install/windows-install/",
+          "content": "Get started with Docker for Windows. This guide covers system requirements, where to download, and instructions on how to install and update."
+        },
+        {
+          "query": "docker buildx build --policy OPA rego build policies",
+          "title": "Docker Docs",
+          "url": "https://docs.docker.com/",
+          "content": "Sep 7, 2026 \u00b7 Docker Documentation is the official Docker library of resources, manuals, and guides to help you containerize applications."
+        },
+        {
+          "query": "docker buildx build --policy OPA rego build policies",
+          "title": "docs.docker.com/build/policies/validate-images.md",
+          "url": "https://docs.docker.com/build/policies/validate-images.md",
+          "content": "Validating these images protects your build supply chain from compromised registries, unexpected updates, and unauthorized base images.This works with Docker's automatic platform selection - policies validate what Buildx resolves, not what you specify. #"
+        },
+        {
+          "query": "docker buildx build --policy OPA rego build policies",
+          "title": "Validating build inputs with policies | Docker Docs",
+          "url": "https://docs.docker.com/build/policies/",
+          "content": "How policies work When you run docker buildx build, Buildx: Resolves all build inputs (images, Git repos, HTTP downloads) Looks for a policy file matching your Dockerfile name (e.g., Dockerfile.rego) Evaluates each input against the policy before the build starts Allows the build to proceed only if all inputs pass the policy Policies are written in Rego (Open Policy Agent's policy language ..."
+        },
+        {
+          "query": "docker build policy input.image.isCanonical hasProvenance rego",
+          "title": "Docker | Secure Sandboxes for AI Agents",
+          "url": "https://www.docker.com/",
+          "content": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code."
+        },
+        {
+          "query": "docker build policy input.image.isCanonical hasProvenance rego",
+          "title": "Validating image inputs | Docker Docs",
+          "url": "https://docs.docker.com/build/policies/validate-images/",
+          "content": "The simplest image policy restricts which repositories can be used. This prevents developers from using arbitrary images that haven't been vetted. Create a policy that only allows Alpine: Dockerfile.rego. package docker."
+        },
+        {
+          "query": "docker build policy input.image.isCanonical hasProvenance rego",
+          "title": "Docker Desktop: The #1 Containerization Tool for Developers | Docker",
+          "url": "https://www.docker.com/products/docker-desktop/",
+          "content": "Docker Desktop is collaborative containerization software for developers. Get started and download Docker Desktop today on Mac, Windows, or Linux."
+        },
+        {
+          "query": "docker build policy input.image.isCanonical hasProvenance rego",
+          "title": "Validating Docker Builds with .rego Policies: Because \"It Works on My ...",
+          "url": "https://xor22h.dev/validating-docker-builds-with-rego-policies-because-it-works-on-my-machine-isnt-a-security-strategy/",
+          "content": "Docker build policies are declarative rules written in Rego (the policy language from Open Policy Agent) that validate your build inputs before the build runs. When you kick off docker buildx build, Buildx resolves all inputs \u2014 base images from FROM, files from ADD or COPY, Git repositories \u2014 and evaluates them against your policy."
+        },
+        {
+          "query": "docker build policy input.image.isCanonical hasProvenance rego",
+          "title": "Docker - GitHub",
+          "url": "https://github.com/docker",
+          "content": "Docker helps developers build, share, run, and verify applications anywhere \u2014 without tedious environment configuration or management. This GitHub organization is home to many of the open source tools that power the Docker experience. Whether you're using Docker for local development, CI automation, or building secure software supply chains \u2014 we're glad you're here."
+        },
+        {
+          "query": "docker build policy input.image.isCanonical hasProvenance rego",
+          "title": "Install Docker Desktop on Windows",
+          "url": "https://docs.docker.com/desktop/setup/install/windows-install/",
+          "content": "Get started with Docker for Windows. This guide covers system requirements, where to download, and instructions on how to install and update."
+        }
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "podman-policy-json",
+      "scope": "Podman containers-policy.json pull-time enforcement: reject-by-default, sigstoreSigned policy, keyPath, and signedIdentity matchRepository",
+      "seed_queries": [
+        "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+        "containers policy.json transports docker signedIdentity matchRepository"
+      ],
+      "kept_results": [
+        {
+          "query": "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+          "title": "Podman",
+          "url": "https://podman.io/",
+          "content": "Have fun coloring and learn about Podman! A decentralized team of open source container tool superheroes comes to the rescue when an asteroid storm threatens the planet."
+        },
+        {
+          "query": "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+          "title": "image/docs/containers-policy.json.5.md at main \u00b7 containers/image",
+          "url": "https://github.com/containers/image/blob/main/docs/containers-policy.json.5.md",
+          "content": "% CONTAINERS-POLICY.JSON 5 policy.json Man Page % Miloslav Trma\u010d % September 2016.Note that some tools like Podman and Buildah hard-code overrides of the signature verification policy for \u201cpush\u201d operations, allowing these operations regardless of configuration in policy.json."
+        },
+        {
+          "query": "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+          "title": "Podman Image Signing: policy.json, signedBy & sigstoreSigned",
+          "url": "https://www.golinuxcloud.com/podman-image-signing/",
+          "content": "Configure Podman image trust with policy.json and podman image trust \u2014 accept, reject, signedBy, and sigstoreSigned scopes, GPG signing with podman image sign, registries.d sigstore paths, pull-time verification on Podman 5.8.2, and the Podman 6 --signature-policy change."
+        },
+        {
+          "query": "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+          "title": "Verifying cosign signatures when using podman - (not) my ideas",
+          "url": "https://notmyidea.org/verifying-cosign-signatures-when-using-podman.html",
+          "content": "$ podman pull ghcr.io/freedomofpress/dangerzone/v1 Trying to pull ghcr.io/freedomofpress/dangerzone/v1:latest... Getting image source signatures Checking if image destination supports signatures Copying blob 89b08d9231ff done | Copying\u2026"
+        },
+        {
+          "query": "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+          "title": "Podman Installation | Podman",
+          "url": "https://podman.io/docs/installation",
+          "content": "While \"containers are Linux,\" Podman also runs on Mac and Windows, where it provides a native podman CLI and embeds a guest Linux system to launch your containers. This guest is referred to as a Podman machine and is managed with the podman machine command."
+        },
+        {
+          "query": "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+          "title": "Podman - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Podman",
+          "content": "Podman lets containers run without root privileges (rootless), meaning they can be created, run, and managed by regular users without administrator rights by using Linux namespaces."
+        },
+        {
+          "query": "containers policy.json transports docker signedIdentity matchRepository",
+          "title": "image/docs/containers-policy.json.5.md at main \u00b7 containers/image",
+          "url": "https://github.com/containers/image/blob/main/docs/containers-policy.json.5.md",
+          "content": "containers-policy.json - syntax for the signature verification policy file. DESCRIPTION. Signature verification policy files are used to specify policy, e.g. trusted keys, applicable when deciding whether to accept an image, or individual signatures of that image, as valid."
+        },
+        {
+          "query": "containers policy.json transports docker signedIdentity matchRepository",
+          "title": "Amazon.com: Containers",
+          "url": "https://www.amazon.com/containers/s?k=containers",
+          "content": "Explore a range of high-quality, leak-proof containers to store food, craft supplies, and household items. Enjoy clear visibility and space-saving designs."
+        },
+        {
+          "query": "containers policy.json transports docker signedIdentity matchRepository",
+          "title": "Storage Containers and Bins for Organizing Spaces",
+          "url": "https://www.walmart.com/browse/home/storage-containers/4044_90828_1230056",
+          "content": "Shop storage containers with lids to organize closets, homes, and offices. Find stackable bins, totes, and latching boxes."
+        },
+        {
+          "query": "containers policy.json transports docker signedIdentity matchRepository",
+          "title": "containers-policy.json (5) \u2014 Arch manual pages",
+          "url": "https://man.archlinux.org/man/containers-policy.json.5.en",
+          "content": "If the signedIdentity field is missing, it is treated as matchRepoDigestOrExact. Note: matchExact, matchRepoDigestOrExact and matchRepository can be only used if a Docker-like image identity is provided by the transport. In particular, the dir: and oci: transports can be only used with exactReference or exactRepository. sigstoreSigned"
+        },
+        {
+          "query": "containers policy.json transports docker signedIdentity matchRepository",
+          "title": "Verifying Container Image Signatures Within CRI Runtimes | Kubernetes",
+          "url": "https://kubernetes.io/blog/2023/06/29/container-image-signature-verification/",
+          "content": "The Kubernetes community has been signing their container image-based artifacts since release v1.24. While the graduation of the corresponding enhancement from alpha to beta in v1.26 introduced signatures for the binary artifacts..."
+        },
+        {
+          "query": "containers policy.json transports docker signedIdentity matchRepository",
+          "title": "Image Verification | SUSE Linux BCI Documentation",
+          "url": "https://opensource.suse.com/bci-docs/guides/image-verification/",
+          "content": "{ \"default\": [ { \"type\": \"insecureAcceptAnything\"}] \"transports\": { \"docker-daemon\": { \"\": [ { \"type\": \"insecureAcceptAnything\"}] \"docker\": { \"registry.suse.com\": [ { \"type\": \"sigstoreSigned\", \"keyPath\": \"/usr/share/pki/containers/suse\u2026"
+        }
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "cosign-signing-attestation",
+      "scope": "Cosign image signing and verification: generate-key-pair, key-based signing, keyless OIDC signing in CI, SBOM attestation attach, and verify",
+      "seed_queries": [
+        "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+        "cosign generate-key-pair cosign attest --type spdxjson"
+      ],
+      "kept_results": [
+        {
+          "query": "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+          "title": "Attestation | Anchore Open Source",
+          "url": "https://oss.anchore.com/docs/guides/sbom/attestation/",
+          "content": "TL;DR Sign SBOMs: syft attest --output cyclonedx-json <image> (keyless via OIDC) Or with keys: syft attest --key cosign.key --output spdx-json <image> Requires cosign \u2265 v1.12. and registry write access Verify: cosign verify-attestation Attestations attach to images in OCI registries"
+        },
+        {
+          "query": "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+          "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
+          "url": "https://www.rentwithcosign.com/",
+          "content": "Whether you\u2019re a renter trying to qualify for an apartment or a landlord seeking reliable tenants, Cosign bridges the gap to make renting easier for everyone. Add Cosign as a tool for your leasing team at no cost. We verify applicants, saving you time and ensuring reliable renters."
+        },
+        {
+          "query": "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+          "title": "Renters - Cosign",
+          "url": "https://www.rentwithcosign.com/renters",
+          "content": "If credit, income, or past rental history has held you back, Cosign steps in as your cosigner\u2014so you can get approved and move into your new home with confidence."
+        },
+        {
+          "query": "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+          "title": "Believe in someone, first.",
+          "url": "https://cosign.co/",
+          "content": "Believe in someone, first. Cosign is a curated professional network for the people and companies that drive the startup ecosystem."
+        },
+        {
+          "query": "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+          "title": "Cosign",
+          "url": "https://www.cosign.page/",
+          "content": "Recommendations from the friends you trust \u2014 and a private engine that learns whose taste matches yours. Anyone can ask to join. The first time, Google will ask you to authorize Cosign \u2014 that's normal and safe to accept. A private, invite-only recommendation app for small friend groups."
+        },
+        {
+          "query": "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+          "title": "How to Verify Docker Image Signatures with Cosign",
+          "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-verify-docker-image-signatures-with-cosign/view",
+          "content": "Cosign supports two signing modes: Key-based signing: You generate a key pair and manage the private key yourself. Keyless signing: Uses short-lived certificates tied to an OIDC identity (GitHub, Google, etc.) through the Sigstore public good instance."
+        },
+        {
+          "query": "cosign generate-key-pair cosign attest --type spdxjson",
+          "title": "cosign/doc/cosign_generate-key-pair.md at main \u00b7 sigstore ...",
+          "url": "https://github.com/sigstore/cosign/blob/main/doc/cosign_generate-key-pair.md",
+          "content": "Generates a key-pair for signing. cosign generate-key-pair [--kms KMSPATH] # generate key-pair and write to cosign.key and cosign.pub files. cosign generate-key-pair. # generate key-pair and write to custom named my-name.key and my-name.pub files. cosign generate-key-pair --output-key-prefix my-name. # generate a key-pair in Azure Key Vault."
+        },
+        {
+          "query": "cosign generate-key-pair cosign attest --type spdxjson",
+          "title": "Cosign - Sigstore",
+          "url": "https://docs.sigstore.dev/cosign/",
+          "content": "Sigstore empowers software developers to securely sign software artifacts and record signatures in a tamper-resistant public log."
+        },
+        {
+          "query": "cosign generate-key-pair cosign attest --type spdxjson",
+          "title": "Attestation | Anchore Open Source",
+          "url": "https://oss.anchore.com/docs/guides/sbom/attestation/",
+          "content": "Sep 29, 2026 \u00b7 Generate cryptographically signed SBOM attestations using in-toto and Sigstore to create, verify, and attach attestations to container images for supply chain security. This feature is experimental and may change in future releases. An attestation is cryptographic proof that you created a specific SBOM for a container image."
+        },
+        {
+          "query": "cosign generate-key-pair cosign attest --type spdxjson",
+          "title": "cosign/doc/cosign_attest.md at main \u00b7 sigstore/cosign \u00b7 GitHub",
+          "url": "https://github.com/sigstore/cosign/blob/main/doc/cosign_attest.md",
+          "content": "# attach an attestation to a container image with a local key pair file. cosign attest --predicate --type --key cosign.key # attach an attestation to a container image with a key pair stored in Azure Key Vault. cosign attest --predicate --type --key azurekms://[VAULT_NAME][VAULT_URI]/[KEY]"
+        },
+        {
+          "query": "cosign generate-key-pair cosign attest --type spdxjson",
+          "title": "Cosign Image Signing [Key-Based and Keyless Verification]",
+          "url": "https://www.golinuxcloud.com/cosign-sign-verify-container-images/",
+          "content": "Jul 28, 2026 \u00b7 Cosign attest and verify-attestation both support spdxjson as a recognized predicate type. Use separate attestations for vulnerability scan reports and SLSA provenance rather than mixing predicate types in one file."
+        },
+        {
+          "query": "cosign generate-key-pair cosign attest --type spdxjson",
+          "title": "Signing with Self-Managed Keys - Sigstore",
+          "url": "https://docs.sigstore.dev/cosign/key_management/signing_with_self-managed_keys/",
+          "content": "To generate a key pair in Cosign, run cosign generate-key-pair. You\u2019ll be interactively prompted to provide a password. ... Alternatively, you can use the COSIGN_PASSWORD environment variable to provide one. Note: Cosign supports RSA, ECDSA, and ED25519 keys. For RSA, Cosign only supports RSA PKCS#1.5 padded keys. Key generation and management #"
+        }
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "pinned-base-digests",
+      "scope": "Pinned base images by digest: why mutable tags are supply-chain risk, digest retrieval with podman inspect and skopeo inspect",
+      "seed_queries": [
+        "docker pin base image digest supply chain attack mutable tag",
+        "skopeo inspect digest pin container image"
+      ],
+      "kept_results": [
+        {
+          "query": "docker pin base image digest supply chain attack mutable tag",
+          "title": "Docker | Secure Sandboxes for AI Agents",
+          "url": "https://www.docker.com/",
+          "content": "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code."
+        },
+        {
+          "query": "docker pin base image digest supply chain attack mutable tag",
+          "title": "Supply chain attack risk from unpinned Docker image tags | Sourcery",
+          "url": "https://www.sourcery.ai/vulnerabilities/docker-unpinned-image-tags",
+          "content": "\ud83d\udca1 Why This Fix Works The vulnerable configurations use mutable tags like 'latest' or omit tags entirely, allowing the pulled image to change over time without explicit updates. This creates non-deterministic builds vulnerable to supply chain attacks. The secure versions pin images to specific versions with SHA256 digests, ensuring reproducible builds and preventing unexpected image changes ..."
+        },
+        {
+          "query": "docker pin base image digest supply chain attack mutable tag",
+          "title": "Docker Desktop: The #1 Containerization Tool for Developers | Docker",
+          "url": "https://www.docker.com/products/docker-desktop/",
+          "content": "Docker Desktop is collaborative containerization software for developers. Get started and download Docker Desktop today on Mac, Windows, or Linux."
+        },
+        {
+          "query": "docker pin base image digest supply chain attack mutable tag",
+          "title": "Safely update Docker base images with Dependabot: tag following, digest ...",
+          "url": "https://tomodahinata.com/en/blog/dependabot-docker-base-image-digest-pinning-updates-guide",
+          "content": "An implementation guide to keep Dockerfile / Docker Compose base images safely updated with Dependabot. Faithful to the official documentation (as of June 2026), it explains, with copy-paste real code: the docker / docker-compose ecosystem configuration, the difference between tag updates and digest pinning (image:tag@sha256:...), countermeasures for CVEs accumulated by silent rebuilds, multi ..."
+        },
+        {
+          "query": "docker pin base image digest supply chain attack mutable tag",
+          "title": "Install Docker Desktop on Windows",
+          "url": "https://docs.docker.com/desktop/setup/install/windows-install/",
+          "content": "Get started with Docker for Windows. This guide covers system requirements, where to download, and instructions on how to install and update."
+        },
+        {
+          "query": "docker pin base image digest supply chain attack mutable tag",
+          "title": "Base Image Pinning by Digest - Containers SME Cookbook",
+          "url": "https://containers.codeguides.io/image-policy-vulnerabilities/base-image-pinning-by-digest/",
+          "content": "Highlights / Base Image Pinning by DigestA digest is an immutable content hash, unlike a mutable tagResolve tags to digests using docker inspect"
+        },
+        {
+          "query": "skopeo inspect digest pin container image",
+          "title": "GitHub - podman-container-tools/skopeo: Work with remote images ...",
+          "url": "https://github.com/podman-container-tools/skopeo",
+          "content": "skopeo is able to inspect a repository on a container registry and fetch images layers. The inspect command fetches the repository's manifest and it is able to show you a docker inspect -like json output about a whole repository or a tag. This tool, in contrast to docker inspect, helps you gather useful information about a repository or a tag before pulling it (using disk space). The inspect ..."
+        },
+        {
+          "query": "skopeo inspect digest pin container image",
+          "title": "What is Skopeo? - Red Hat",
+          "url": "https://www.redhat.com/en/topics/containers/what-is-skopeo",
+          "content": "Jul 18, 2022 \u00b7 Skopeo is a tool for manipulating, inspecting, signing, and transferring container images and image repositories on Linux systems, Windows and MacOS."
+        },
+        {
+          "query": "skopeo inspect digest pin container image",
+          "title": "Skopeo",
+          "url": "https://docs.oracle.com/en/operating-systems/oracle-linux/podman/skopeo.html",
+          "content": "Skopeo is an optional utility that you can install in addition to Podman to inspect images in remote registries, and copy images between different types of Open Container Initiative compatible container storage. Skopeo doesn't require a running daemon to function."
+        },
+        {
+          "query": "skopeo inspect digest pin container image",
+          "title": "Stop Pulling Containers Just to Mirror Them: Practical `skopeo` for ...",
+          "url": "https://dev.to/lyraalishaikh/stop-pulling-containers-just-to-mirror-them-practical-skopeo-for-safer-image-promotion-1kf3",
+          "content": "May 13, 2026 \u00b7 A practical Linux guide to inspecting, pinning, copying, and syncing container images with skopeo without a daemon, plus digest-safe workflows for CI and air-gapped environments."
+        },
+        {
+          "query": "skopeo inspect digest pin container image",
+          "title": "Using Skopeo for Container Image Inspection and... - GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/devops/using-skopeo-for-container-image-inspection-and-transfer/",
+          "content": "Jul 23, 2025 \u00b7 Skopeo is an open-source container management tool that helps in inspecting docker images, transferring or copying over images' manifest files, and interacting with container registries in a stateless manner. Unlike podman, and docker, skopeo doesn't require a full container runtime to run. In this article, we will learn how to use Skopeo for container image inspection and transfer."
+        },
+        {
+          "query": "skopeo inspect digest pin container image",
+          "title": "Skopeo Container Image Operations | K8s Recipes",
+          "url": "https://kubernetes.recipes/recipes/deployments/skopeo-container-image-operations/",
+          "content": "Use skopeo inspect before copy \u2014 verify source exists and check digest Always use --all for multi-arch \u2014 especially for OpenShift release images Pin by digest for production \u2014 tags are mutable, digests are not Use YAML sync files \u2014 document exactly which images you're mirroring Prefer skopeo over docker pull/push \u2014 no daemon needed, no local storage consumed Use skopeo copy for ..."
+        }
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "rootless-ci-and-checklist",
+      "scope": "Rootless GitHub Actions build-and-sign workflow (pinned container image, id-token write, digest capture, cosign sign) and the end-to-end hardening checklist incl. Trivy gate",
+      "seed_queries": [
+        "cosign keyless signing github actions id-token SBOM trivy container scan",
+        "container build supply chain hardening checklist trivy cosign SBOM"
+      ],
+      "kept_results": [
+        {
+          "query": "cosign keyless signing github actions id-token SBOM trivy container scan",
+          "title": "Cosign | The Modern Cosigner Alternative for Renters and Landlords",
+          "url": "https://www.rentwithcosign.com/",
+          "content": "Whether you\u2019re a renter trying to qualify for an apartment or a landlord seeking reliable tenants, Cosign bridges the gap to make renting easier for everyone. Add Cosign as a tool for your leasing team at no cost. We verify applicants, saving you time and ensuring reliable renters."
+        },
+        {
+          "query": "cosign keyless signing github actions id-token SBOM trivy container scan",
+          "title": "GitHub - sigstore/cosign: Code signing and transparency for containers ...",
+          "url": "https://github.com/sigstore/cosign",
+          "content": "Signing OCI containers (and other artifacts) using Sigstore! Cosign aims to make signatures invisible infrastructure. Cosign supports: \"Keyless signing\" with the Sigstore public good Fulcio certificate authority and Rekor transparency log (default) Hardware and KMS signing Signing with a cosign generated encrypted private/public keypair Container Signing, Verification and Storage in an OCI ..."
+        },
+        {
+          "query": "cosign keyless signing github actions id-token SBOM trivy container scan",
+          "title": "Renters - Cosign",
+          "url": "https://www.rentwithcosign.com/renters",
+          "content": "If credit, income, or past rental history has held you back, Cosign steps in as your cosigner\u2014so you can get approved and move into your new home with confidence."
+        },
+        {
+          "query": "cosign keyless signing github actions id-token SBOM trivy container scan",
+          "title": "Believe in someone, first.",
+          "url": "https://cosign.co/",
+          "content": "Believe in someone, first. Cosign is a curated professional network for the people and companies that drive the startup ecosystem."
+        },
+        {
+          "query": "cosign keyless signing github actions id-token SBOM trivy container scan",
+          "title": "Cosign for Container Image Signing and Verification... | CubePath",
+          "url": "https://cubepath.com/docs/container-security/cosign-container-image-signing",
+          "content": "GitHub Actions with keyless signing: # .github/workflows/build-and-sign.yml name: Build, Push, and Sign.permissions: contents: read packages: write id-token: write # Required for keyless signing (OIDC token). jobs: build-and-sign: runs-on: ubuntu-latest steps: - name: Checkout."
+        },
+        {
+          "query": "cosign keyless signing github actions id-token SBOM trivy container scan",
+          "title": "Cosign",
+          "url": "https://www.cosign.page/",
+          "content": "Recommendations from the friends you trust \u2014 and a private engine that learns whose taste matches yours. Anyone can ask to join. The first time, Google will ask you to authorize Cosign \u2014 that's normal and safe to accept. A private, invite-only recommendation app for small friend groups."
+        },
+        {
+          "query": "container build supply chain hardening checklist trivy cosign SBOM",
+          "title": "What is a Container? | Docker",
+          "url": "https://www.docker.com/resources/what-container/",
+          "content": "A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another."
+        },
+        {
+          "query": "container build supply chain hardening checklist trivy cosign SBOM",
+          "title": "Buy New & Used Storage Containers For Sale & Get Top Prices Now",
+          "url": "https://containerone.net/collections/shipping-containers-for-sale",
+          "content": "Shop new & used shipping containers for sale at Container One. Find durable storage containers in multiple sizes with fast delivery & transparent pricing. Shop now!"
+        },
+        {
+          "query": "container build supply chain hardening checklist trivy cosign SBOM",
+          "title": "The Container Store | Organize Your Home with Storage & Closet \u2026",
+          "url": "https://www.containerstore.com/welcome.htm?msockid=314e20babe7e680506dc3756bf5169fa",
+          "content": "Storage & Organization Solutions! Shop for kitchen, closet, travel & home decor at The Container Store. Explore Custom Spaces and \u2026"
+        },
+        {
+          "query": "container build supply chain hardening checklist trivy cosign SBOM",
+          "title": "The Container Store | Organize Your Home with Storage & Closet...",
+          "url": "https://www.containerstore.com/welcome.htm",
+          "content": "Storage & Organization Solutions! Shop for kitchen, closet, travel & home decor at The Container Store. Explore Custom Spaces and contact a designer today."
+        },
+        {
+          "query": "container build supply chain hardening checklist trivy cosign SBOM",
+          "title": "Container Image Security: Trivy, Cosign, and Supply Chain...",
+          "url": "https://codingprotocols.com/blog/container-image-security-supply-chain",
+          "content": "How to secure the container image supply chain \u2014 distroless base images, Trivy vulnerability scanning in CI, Cosign image signing with Sigstore, and Kyverno admission policies that enforce signing."
+        },
+        {
+          "query": "container build supply chain hardening checklist trivy cosign SBOM",
+          "title": "Container Security & Supply Chain 2026 \u2014 SBOM, Cosign, SLSA, Trivy for ...",
+          "url": "https://anhtu.dev/container-security-supply-chain-2026-sbom-cosign-slsa-trivy-devsecops-1141",
+          "content": "Deep-dive container supply chain security 2026: SBOM (CycloneDX, SPDX) with Trivy and Docker Scout, keyless signing Sigstore/Cosign, SLSA L3 provenance GitHub Actions, vulnerability scanning pipeline, Kyverno policy enforcement Kubernetes, chiseled .NET 10 images, EU Cyber Resilience Act compliance."
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.9,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.06,
+          "2": 0.92
+        },
+        "confidence": 0.85
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.85,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.09,
+          "2": 0.88
+        },
+        "confidence": 0.78
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.81,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.09,
+          "2": 0.86
+        },
+        "confidence": 0.71
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.74,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.11,
+          "2": 0.82
+        },
+        "confidence": 0.62
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.37,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.36,
+          "2": 0.5
+        },
+        "confidence": 0.04
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.63,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.24,
+          "2": 0.7
+        },
+        "confidence": 0.46
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.41,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.14,
+          "1": 0.31,
+          "2": 0.55
+        },
+        "confidence": 0.11
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.72,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.15,
+          "2": 0.78
+        },
+        "confidence": 0.56
+      },
+      "t09": {
+        "type": "score",
+        "score": 1.7,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.12,
+          "2": 0.79
+        },
+        "confidence": 0.55
+      }
+    },
+    "usage": {
+      "input_tokens": 1613,
+      "output_tokens": 139,
+      "cost": 0.000135492
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09"
+    ]
+  }
+}

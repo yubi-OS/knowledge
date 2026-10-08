@@ -1,0 +1,36 @@
+{
+  "nn": "09",
+  "slug": "rootless-ci-and-checklist",
+  "scope": "Rootless GitHub Actions build-and-sign workflow (pinned container image, id-token write, digest capture, cosign sign) and the end-to-end hardening checklist incl. Trivy gate",
+  "queries_attempted": [
+    {
+      "query": "cosign keyless signing github actions id-token SBOM trivy container scan",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6
+    },
+    {
+      "query": "container build supply chain hardening checklist trivy cosign SBOM",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.rentwithcosign.com/",
+    "https://github.com/sigstore/cosign",
+    "https://www.rentwithcosign.com/renters",
+    "https://cosign.co/",
+    "https://cubepath.com/docs/container-security/cosign-container-image-signing",
+    "https://www.cosign.page/",
+    "https://www.docker.com/resources/what-container/",
+    "https://containerone.net/collections/shipping-containers-for-sale",
+    "https://www.containerstore.com/welcome.htm?msockid=314e20babe7e680506dc3756bf5169fa",
+    "https://www.containerstore.com/welcome.htm",
+    "https://codingprotocols.com/blog/container-image-security-supply-chain",
+    "https://anhtu.dev/container-security-supply-chain-2026-sbom-cosign-slsa-trivy-devsecops-1141"
+  ],
+  "outcome": "authored"
+}

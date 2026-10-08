@@ -1,0 +1,35 @@
+{
+  "nn": "07",
+  "slug": "cosign-signing-attestation",
+  "scope": "Cosign image signing and verification: generate-key-pair, key-based signing, keyless OIDC signing in CI, SBOM attestation attach, and verify",
+  "queries_attempted": [
+    {
+      "query": "cosign sign keyless OIDC SBOM attestation spdxjson verify",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "cosign generate-key-pair cosign attest --type spdxjson",
+      "attempt": 1,
+      "raw_results": 41,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://oss.anchore.com/docs/guides/sbom/attestation/",
+    "https://www.rentwithcosign.com/",
+    "https://www.rentwithcosign.com/renters",
+    "https://cosign.co/",
+    "https://www.cosign.page/",
+    "https://oneuptime.com/blog/post/2026-02-08-how-to-verify-docker-image-signatures-with-cosign/view",
+    "https://github.com/sigstore/cosign/blob/main/doc/cosign_generate-key-pair.md",
+    "https://docs.sigstore.dev/cosign/",
+    "https://github.com/sigstore/cosign/blob/main/doc/cosign_attest.md",
+    "https://www.golinuxcloud.com/cosign-sign-verify-container-images/",
+    "https://docs.sigstore.dev/cosign/key_management/signing_with_self-managed_keys/"
+  ],
+  "outcome": "authored"
+}

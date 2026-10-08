@@ -1,0 +1,35 @@
+{
+  "nn": "06",
+  "slug": "podman-policy-json",
+  "scope": "Podman containers-policy.json pull-time enforcement: reject-by-default, sigstoreSigned policy, keyPath, and signedIdentity matchRepository",
+  "queries_attempted": [
+    {
+      "query": "podman containers policy.json sigstoreSigned keyPath signedIdentity",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    },
+    {
+      "query": "containers policy.json transports docker signedIdentity matchRepository",
+      "attempt": 1,
+      "raw_results": 49,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://podman.io/",
+    "https://github.com/containers/image/blob/main/docs/containers-policy.json.5.md",
+    "https://www.golinuxcloud.com/podman-image-signing/",
+    "https://notmyidea.org/verifying-cosign-signatures-when-using-podman.html",
+    "https://podman.io/docs/installation",
+    "https://en.wikipedia.org/wiki/Podman",
+    "https://www.amazon.com/containers/s?k=containers",
+    "https://www.walmart.com/browse/home/storage-containers/4044_90828_1230056",
+    "https://man.archlinux.org/man/containers-policy.json.5.en",
+    "https://kubernetes.io/blog/2023/06/29/container-image-signature-verification/",
+    "https://opensource.suse.com/bci-docs/guides/image-verification/"
+  ],
+  "outcome": "authored"
+}
