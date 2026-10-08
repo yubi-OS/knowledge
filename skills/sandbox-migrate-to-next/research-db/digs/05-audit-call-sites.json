@@ -1,0 +1,38 @@
+{
+  "nn": "05",
+  "slug": "audit-call-sites",
+  "scope": "The audit step: the rg grep command and its full pattern list (SANDBOX_TRANSPORT, transport:, setTransport, enableDefaultSession, createSession, getSession, deleteSession, execStream, startProcess, killProcess, sandbox.terminal, sessionId, gitCheckout, SandboxTransport, ExecutionSession), plus the manual checks for string exec(, cd-then-later-exec persistence assumptions, and bare createCodeContext/runCode on Sandbox.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Sandbox stable deprecated APIs createSession enableDefaultSession",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "Cloudflare Sandbox setTransport SANDBOX_TRANSPORT removed RPC",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/sandbox/guides/2026-deprecation/",
+    "https://community.cloudflare.com/t/sandboxes-deprecating-sandbox-sdk-features/933294",
+    "https://developers.cloudflare.com/sandbox/api/sessions/",
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/sandbox/guides/2026-deprecation/index.md",
+    "https://github.com/cloudflare/cloudflare-docs/blob/production/public/sandbox/guides/2026-deprecation/SKILL.md",
+    "https://developers.cloudflare.com/sandbox/configuration/transport/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/migrate/",
+    "https://developers.cloudflare.com/sandbox/sdk/configuration/transport/",
+    "https://community.cloudflare.com/t/sandboxes-deprecating-sandbox-sdk-features/933294",
+    "https://www.cloudflare.com/",
+    "https://community.cloudflare.com/t/sandbox-sdk-sandbox-sdk-1-0-preview-on-next/947721"
+  ],
+  "outcome": "authored"
+}

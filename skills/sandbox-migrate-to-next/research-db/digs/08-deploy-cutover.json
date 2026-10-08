@@ -1,0 +1,38 @@
+{
+  "nn": "08",
+  "slug": "deploy-cutover",
+  "scope": "Deploy cutover: stage/branch first, production is one deploy of matching Worker plus image with npx wrangler deploy --containers-rollout=immediate, leave rollout_active_grace_period at default 0, and the fact that pre-deploy process and terminal IDs become invalid after cutover.",
+  "queries_attempted": [
+    {
+      "query": "wrangler deploy containers-rollout immediate flag",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "Cloudflare Containers platform rollouts documentation",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/containers/configuration/rollouts/",
+    "https://developers.cloudflare.com/containers/guides/deploy/",
+    "https://developers.cloudflare.com/workers/ci-cd/builds/configuration/",
+    "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/containers/configuration/rollouts.mdx",
+    "https://www.wrangler.com/?msockid=323c1d92b79e6fdb2f3a0a7eb6436e1a",
+    "https://github.com/cloudflare/containers/issues/233",
+    "https://developers.cloudflare.com/containers/configuration/rollouts/",
+    "https://developers.cloudflare.com/containers/",
+    "https://www.cloudflare.com/products/containers/",
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/containers/platform-details/rollouts/",
+    "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/containers/configuration/rollouts.mdx"
+  ],
+  "outcome": "authored"
+}

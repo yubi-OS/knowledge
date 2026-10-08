@@ -1,0 +1,38 @@
+{
+  "nn": "07",
+  "slug": "upgrade-package-image-code",
+  "scope": "Upgrade mechanics: npm install @cloudflare/sandbox@next, Dockerfile FROM cloudflare/sandbox:next with the next-python variant for Python, keeping the same prerelease tag on Worker and image when not on floating next, per-area code changes with the doc-backed shapes (commands/handles/waits, cwd/env and outbound traffic, dropping sessions, terminals, interpreter wiring via withInterpreter, error handling), the code examples (exec argv + output, waitForPort, kill default 15, createTerminal/getTerminal/connect, interpreter subclass, git clone via exec argv), and isolating users with separate sandbox IDs.",
+  "queries_attempted": [
+    {
+      "query": "cloudflare/sandbox:next docker image tag",
+      "attempt": 1,
+      "raw_results": 44,
+      "kept": 6,
+      "status": 200
+    },
+    {
+      "query": "Cloudflare Sandbox withInterpreter interpreter subpath export",
+      "attempt": 1,
+      "raw_results": 43,
+      "kept": 6,
+      "status": 200
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/sandbox/configuration/dockerfile/",
+    "https://hub.docker.com/r/cloudflare/sandbox/tags",
+    "https://sandbox.cloudflare.com/",
+    "https://developers.cloudflare.com/sandbox/sdk/configuration/dockerfile/",
+    "https://docs.docker.com/reference/cli/docker/image/tag/",
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/interpreter/",
+    "https://www.cloudflare.com/products/sandboxes/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/api/interpreter/",
+    "https://www.cloudflare.com/",
+    "https://developers.cloudflare.com/sandbox/1-0-preview/migrate/",
+    "https://github.com/cloudflare/sandbox-sdk"
+  ],
+  "outcome": "authored"
+}
