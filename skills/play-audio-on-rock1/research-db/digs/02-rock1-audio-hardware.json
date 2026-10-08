@@ -1,0 +1,36 @@
+{
+  "nn": 2,
+  "slug": "rock1-audio-hardware",
+  "scope": "The audio hardware map on the Pine64 RockPro64: HDMI I2S card (hw:0,0, hdmisound, no mixer) versus the ES8316 codec Analog card (hw:1,0, 35 mixer elements), and why hw:1,0 is the typical target.",
+  "queries_attempted": [
+    {
+      "query": "RockPro64 ES8316 codec ALSA analog headphone jack Linux",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "RockPro64 HDMI audio ALSA card hdmisound hw device",
+      "attempt": 1,
+      "raw_results": 42,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://forum.pine64.org/showthread.php?pid=42789",
+    "https://github.com/analogdevicesinc/linux/blob/master/sound/soc/codecs/es8316.c",
+    "https://pine64.org/documentation/ROCKPro64/Board/Layout/",
+    "https://www.mycarforum.com/forums/topic/2697173-toyota-mark-x-maintenance-and-servicing/",
+    "https://www.linuxquestions.org/questions/slackware-arm-108/bluetooth-hijacks-audio-4175722950-print/",
+    "https://github.com/Xilinx/linux-xlnx/blob/master/sound/soc/codecs/es8316.c",
+    "https://forum.armbian.com/topic/20220-rockpro64-hdmi-no-sound-clean-setup/",
+    "https://dietpi.com/forum/t/rockpro64-audio-jack-anyone-got-this-to-work/20925",
+    "https://forum.libreelec.tv/thread/30352-rockpro64-images-no-proper-hdmi-sound/",
+    "https://www.speedtest.net/",
+    "https://galexander.org/rockpro64.html",
+    "https://www.alza.cz/bezdratove-hdmi/18921161.htm"
+  ],
+  "outcome": "authored"
+}

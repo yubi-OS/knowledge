@@ -1,0 +1,36 @@
+{
+  "nn": 8,
+  "slug": "quirks-and-anti-patterns",
+  "scope": "The ES8316 quirks and pitfalls: DAC at 0 percent but audio plays, in-memory mixer state, mono-rejected device and mono-to-stereo expansion, sudo versus audio-group membership, snd_mixer_selem_get_name return semantics, idx=0 cosmetic quirk, printf percent-s versus percent-b, and the anti-pattern list.",
+  "queries_attempted": [
+    {
+      "query": "sudo audio group aplay permission denied snd_pcm_open CAP_DAC_OVERRIDE",
+      "attempt": 1,
+      "raw_results": 45,
+      "kept": 6
+    },
+    {
+      "query": "snd_mixer_selem_get_name return const char ALSA C API",
+      "attempt": 1,
+      "raw_results": 50,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://stackoverflow.com/questions/3570132/aplay-alsaplayer-sound-not-working-for-normal-user",
+    "https://github.com/alsa-project/alsa-lib/issues/426",
+    "https://bbs.archlinux.org/viewtopic.php?id=250969",
+    "https://en.wikipedia.org/wiki/Sudo",
+    "https://www.linuxquestions.org/questions/slackware-14/sound-permissions-for-users-slack-9-1-a-193856/",
+    "https://stackoverflow.com/questions/8168696/alsa-open-a-pcm-device-in-shared-mode",
+    "https://www.alsa-project.org/alsa-doc/alsa-lib/group___simple_mixer.html",
+    "https://www.alsa-project.org/alsa-doc/alsa-lib/simple_8c.html",
+    "https://github.com/alsa-project/alsa-lib/blob/master/src/mixer/simple.c",
+    "https://vovkos.github.io/doxyrest/samples/alsa/group_SimpleMixer.html",
+    "https://repo.or.cz/git.git/rss?f=diff.c",
+    "https://snd.org/"
+  ],
+  "outcome": "authored"
+}

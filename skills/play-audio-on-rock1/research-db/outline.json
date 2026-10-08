@@ -1,0 +1,223 @@
+{
+  "topic": "Generating short audio clips via ElevenLabs and playing them on rock1's audio outputs through the shell bridge: pure-stdlib ctypes-to-ALSA player, one-shot and loop playback, mixer inspection and control, UART banner tee",
+  "ground_source": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/play-audio-on-rock1/SKILL.md",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "why-ctypes-alsa",
+      "scope": "Why the skill avoids apt-installed audio tools and uses a pure-stdlib ctypes binding to libasound.so.2 for playback, plus the end-to-end pipeline shape from ElevenLabs generation to 3.5mm output.",
+      "seed_queries": [
+        "Python ctypes libasound.so.2 snd_pcm_open play PCM example",
+        "play raw PCM audio from Python without aplay ALSA ctypes"
+      ]
+    },
+    {
+      "nn": 2,
+      "slug": "rock1-audio-hardware",
+      "scope": "The audio hardware map on the Pine64 RockPro64: HDMI I2S card (hw:0,0, hdmisound, no mixer) versus the ES8316 codec Analog card (hw:1,0, 35 mixer elements), and why hw:1,0 is the typical target.",
+      "seed_queries": [
+        "RockPro64 ES8316 codec ALSA analog headphone jack Linux",
+        "RockPro64 HDMI audio ALSA card hdmisound hw device"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "elevenlabs-sound-generation",
+      "scope": "Sauna-side clip generation with the ElevenLabs sound-generation endpoint: raw PCM S16LE mono output format pcm_22050, duration_seconds, and why raw PCM avoids MP3 decoding on both sides.",
+      "seed_queries": [
+        "ElevenLabs sound generation API endpoint output_format pcm_22050",
+        "ElevenLabs text to sound effects API duration_seconds raw PCM"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "pcm-transfer-shell-bridge",
+      "scope": "Moving the clip and player scripts to rock1 over the shell bridge: base64 encoding, ~60KB chunk sizes, tee to truncate-or-create then tee -a to append, and the argv/POST-body size limits that force chunking.",
+      "seed_queries": [
+        "Linux ARG_MAX command line argument length limit getconf",
+        "base64 command decode chunked file transfer printf tee append"
+      ]
+    },
+    {
+      "nn": 5,
+      "slug": "playback-recipes",
+      "scope": "The one-shot and loop-N playback recipes: sudo -n python3 play.py, PIPESTATUS for per-iteration return codes, and /dev/ttyS2 banner tee for live observability. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": 6,
+      "slug": "mixer-inspection",
+      "scope": "Inspecting ALSA devices and mixer state with inspect.py: card enumeration from /sys/class/sound, PCM streams from /proc/asound/pcm, and a ctypes loop over mixer controls reading playback volume, mute, and capture.",
+      "seed_queries": [
+        "ALSA mixer snd_mixer_selem_get_playback_volume snd_mixer_selem_get_playback_switch C API",
+        "/proc/asound/pcm file format contents streams"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "mixer-control-and-persistence",
+      "scope": "Forcing mixer state with set_mixer.py (un-mute Left/Right Headphone Mixer DAC, set Headphone/Headphone Mixer/DAC to 100 percent, re-verify by re-reading) and persisting state across reboots with alsactl store.",
+      "seed_queries": [
+        "alsactl store asound.state persist ALSA mixer settings across reboot",
+        "snd_mixer_selem_set_playback_volume_all snd_mixer_selem_set_playback_switch_all ALSA"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "quirks-and-anti-patterns",
+      "scope": "The ES8316 quirks and pitfalls: DAC at 0 percent but audio plays, in-memory mixer state, mono-rejected device and mono-to-stereo expansion, sudo versus audio-group membership, snd_mixer_selem_get_name return semantics, idx=0 cosmetic quirk, printf percent-s versus percent-b, and the anti-pattern list.",
+      "seed_queries": [
+        "sudo audio group aplay permission denied snd_pcm_open CAP_DAC_OVERRIDE",
+        "snd_mixer_selem_get_name return const char ALSA C API"
+      ]
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.09,
+          "2": 0.86
+        },
+        "confidence": 0.71
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.82,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.1,
+          "2": 0.86
+        },
+        "confidence": 0.73
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.5,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.13,
+          "1": 0.25,
+          "2": 0.62
+        },
+        "confidence": 0.23
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.76,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.09,
+          "2": 0.83
+        },
+        "confidence": 0.62
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.58,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.2,
+          "2": 0.69
+        },
+        "confidence": 0.37
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.42,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.4,
+          "2": 0.51
+        },
+        "confidence": 0.13
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.54,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.08,
+          "1": 0.31,
+          "2": 0.61
+        },
+        "confidence": 0.3
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.43,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.35,
+          "2": 0.54
+        },
+        "confidence": 0.15
+      }
+    },
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 124,
+      "cost": 0.000142716
+    },
+    "dropped": [],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}
