@@ -1,0 +1,152 @@
+{
+  "nn": "10",
+  "slug": "signing-keys-and-trust",
+  "scope": "Home record signing keys: local.private and local.public under /var/lib/systemd/home, trusted remote public keys, and v258+ D-Bus signing-key management.",
+  "queries_attempted": [
+    {
+      "query": "systemd-homed local.private local.public signing keys",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "support multiple user recording signing keys in systemd-homed #25103",
+          "url": "https://github.com/systemd/systemd/issues/25103",
+          "content": "Oct 23, 2022 · Copy /var/lib/systemd/home/local.private and /var/lib/systemd/home/local.public to new machine as LOL.private, LOL.public - everything just works as if migrated users were created locally on new machine with homectl."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "Systemd-timedated is a daemon that can be used to control time-related settings, such as the system time, system time zone, or selection between UTC and local time-zone system clock."
+        },
+        {
+          "title": "systemd/systemd: The systemd System and Service Manager - GitHub",
+          "url": "https://github.com/systemd/systemd",
+          "content": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "Category: projects",
+          "url": "http://0pointer.net/blog/category/projects.html",
+          "content": "Consent in systemd-homed Post #36: DNR DHCP Support Post #37: Name Based AF_VSOCK ssh Access I intend to do a similar series of serieses of posts for the next systemd release (v25"
+        },
+        {
+          "title": "systemd-homed.service(8) - Linux manual page",
+          "url": "https://man7.org/linux/man-pages/man8/systemd-homed.8.html",
+          "content": "var/lib/systemd/home/local.private. The private key of the public/private key pair used for local.var/lib/systemd/home/local.private need to be copied from. \"foobar\" to \"quux\", and placed under the identical paths there, as. currently only a single private key is supported per host. Note of."
+        },
+        {
+          "title": "eSignature FAQ",
+          "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/880312429/eSignature+FAQ",
+          "content": "When signing a document, a pair of keys might be needed (i.e. when the signature relies on the use of public-key infrastructure), namely a ‘public key’ and a ‘private key’. The public key can be publicly shared while the private key shall…"
+        },
+        {
+          "title": "Ubuntu Manpage: systemd-homed.service, systemd-homed - Home Area/User ...",
+          "url": "https://manpages.ubuntu.com/manpages/noble/man8/systemd-homed.service.8.html",
+          "content": "For a user to be permitted to log in locally the public key matching the signature of their user record must be installed. For a user record to be modified locally the private key matching the signature must be installed locally, too."
+        },
+        {
+          "title": "Home Directories - systemd",
+          "url": "https://systemd.io/HOME_DIRECTORY/",
+          "content": "Home Directories systemd-homed.service (8) manages home directories of regular (\"human\") users. Each directory it manages encapsulates both the data store and the user record of the user, so that it comprehensively describes the user account, and is thus naturally portable between systems without any further, external metadata. This document describes the format used by these home ..."
+        },
+        {
+          "title": "systemd-homed.service - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/259/systemd-homed.service.html",
+          "content": "Description ¶ systemd-homed is a system service that may be used to create, remove, change or inspect home areas (directories and network mounts and real or loopback block devices with a filesystem, optionally encrypted). Most of systemd-homed 's functionality is accessible through the homectl(1) command."
+        }
+      ],
+      "kept": [
+        "https://github.com/systemd/systemd/issues/25103",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://github.com/systemd/systemd",
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "http://0pointer.net/blog/category/projects.html",
+        "https://man7.org/linux/man-pages/man8/systemd-homed.8.html"
+      ]
+    },
+    {
+      "query": "homectl list-signing-keys add-signing-key v258",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "homectl (1) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+          "content": "Add public key (s) from the specified PEM key file (s) to the list of keys that home areas have to be signed by to be permitted for local login. If a path of \"-\" is specified, or if no file is specified at all, the key will be read from standard input."
+        },
+        {
+          "title": "homectl - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/250/homectl.html",
+          "content": "The key is generated and shown on screen, and should be printed or otherwise transferred to a secure location. A recovery key may be entered instead of a regular password to unlock the account."
+        },
+        {
+          "title": "XDA Forums",
+          "url": "https://forum.xda-developers.com/posts/74755817",
+          "content": "We would like to show you a description here but the site won’t allow us."
+        },
+        {
+          "title": "Category: projects",
+          "url": "http://0pointer.net/blog/category/projects.html",
+          "content": "chid Post #38: homectl list-signing-keys/get-signing-key/add-signing-key/remove-signing-key Post #39: DDI Image Filters Post #40: Android USB Debugging udev rules Post #41: system"
+        },
+        {
+          "title": "Posts and writings by Lennart Poettering",
+          "url": "https://0pointer.net/blog/",
+          "content": "Post #38: homectl list-signing-keys/get-signing-key/add-signing-key/remove-signing-key. Post #39: DDI Image Filters.To sign any generated UKIs for secure boot, put your secure boot key and certificate in mkosi.key and mkosi.crt and enable the SecureBoot= setting."
+        },
+        {
+          "title": "Lennart Poettering: \"\"homectl get-signing-key\" allo…\" - Mastodon",
+          "url": "https://mastodon.social/@pid_eins/115025566613475212",
+          "content": "Example use: homectl get-signing-key local.public | ssh targetsystem homectl add-signing-key --key-name=foobar.public This gets the public part of the local key pair, and installs it on a remote system, renaming it to \"foobar\" on the fly (because that target system of course already has a local key, which is distinct, and we don't want to override). And with that and user/home dir created ..."
+        },
+        {
+          "title": "homectl - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/262/homectl.html",
+          "content": "When used with the add-signing-key command, specify or override the name under which to store the public key being added. The specified name can be chosen freely, but must be suffixed with \".public \"."
+        },
+        {
+          "title": "List Signing Keys",
+          "url": "https://developers.onelogin.com/openid-connect/api/list-keys",
+          "content": "The endpoint is for Signing Key administration and should not be used when extracting keys for OIDC token validation. For token validation use the https://subdomain}.onelogin.com/oidc/2/certs endpoint to get keys."
+        },
+        {
+          "title": "Lennart Poettering: \"4️⃣7️⃣ Here's the 47th post hi…\" - Mastodon",
+          "url": "https://mastodon.social/@pid_eins/115099443130286999",
+          "content": "4️⃣7️⃣ Here's the 47th post highlighting key new features of the upcoming v258 release of systemd. #systemd258 In episode 38 of this series we talked about homectl's new commands to manage signing keys for user accounts. There are two other new commands homectl gained in v258. First of all there's \"homectl adopt\". You just pass a path to an existing *.home LUKS disk image, or a ..."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is: # homectl create username This command will create a user with the specified username, a free UID in range 60001-60513, create a group with the same name ..."
+        }
+      ],
+      "kept": [
+        "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+        "https://www.freedesktop.org/software/systemd/man/250/homectl.html",
+        "https://forum.xda-developers.com/posts/74755817",
+        "http://0pointer.net/blog/category/projects.html",
+        "https://0pointer.net/blog/",
+        "https://mastodon.social/@pid_eins/115025566613475212"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://github.com/systemd/systemd/issues/25103",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://github.com/systemd/systemd",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "http://0pointer.net/blog/category/projects.html",
+    "https://man7.org/linux/man-pages/man8/systemd-homed.8.html",
+    "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+    "https://www.freedesktop.org/software/systemd/man/250/homectl.html",
+    "https://forum.xda-developers.com/posts/74755817",
+    "http://0pointer.net/blog/category/projects.html",
+    "https://0pointer.net/blog/",
+    "https://mastodon.social/@pid_eins/115025566613475212"
+  ],
+  "outcome": "authored"
+}

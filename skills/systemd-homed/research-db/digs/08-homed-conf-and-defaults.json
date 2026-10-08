@@ -1,0 +1,152 @@
+{
+  "nn": "08",
+  "slug": "homed-conf-and-defaults",
+  "scope": "homed.conf and drop-ins: DefaultStorage=luks and DefaultFileSystemType=btrfs defaults for yubiOS.",
+  "queries_attempted": [
+    {
+      "query": "homed.conf DefaultStorage DefaultFileSystemType",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "homed.conf (5) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man5/homed.conf.5.html",
+          "content": "DefaultFileSystemType= When using \"luks\" as storage (see above), selects the default file system to use inside the user's LUKS volume. Takes one of \"btrfs\", \"ext4\" or \"xfs\". If not specified, defaults to \"btrfs\". This setting has no effect if a different storage mechanism is used."
+        },
+        {
+          "title": "homed.conf(5) — Arch manual pages",
+          "url": "https://man.archlinux.org/man/core/systemd/homed.conf.5.en",
+          "content": "CONFIGURATION DIRECTORIES AND PRECEDENCE. The default configuration is set during compilation, so configuration is only needed when it is necessary to deviate from those defaults."
+        },
+        {
+          "title": "The Home Depot",
+          "url": "https://www.homedepot.com/",
+          "content": "Shop online for all your home improvement needs: appliances, bathroom decorating ideas, kitchen remodeling, patio furniture, power …"
+        },
+        {
+          "title": "Linux Manpages Online - man.cx manual pages",
+          "url": "https://man.cx/homed.conf(5)",
+          "content": "homed.conf, homed.conf.d - Home area/user account manager configuration files.These configuration files control default parameters for home areas/user accounts created and managed by systemd-homed.service(8)."
+        },
+        {
+          "title": "systemd.directives(7) - Linux manual page",
+          "url": "https://man7.org/linux/man-pages/man7/systemd.directives.7.html",
+          "content": "Directives for configuring home areas and user accounts via systemd-homed.service(8). DefaultFileSystemType= homed.conf(5) DefaultStorage= homed.conf(5)"
+        },
+        {
+          "title": "homed.conf (5) — systemd-homed — Debian testing — Debian Manpages",
+          "url": "https://manpages.debian.org/testing/systemd-homed/homed.conf.5.en.html",
+          "content": "DESCRIPTION ¶ These configuration files control default parameters for home areas/user accounts created and managed by systemd-homed.service (8). CONFIGURATION DIRECTORIES AND PRECEDENCE ¶ The default configuration is set during compilation, so configuration is only needed when it is necessary to deviate from those defaults. The main configuration file is loaded from one of the listed ..."
+        },
+        {
+          "title": "homed.conf - manned.org",
+          "url": "https://manned.org/man.5878af69/arch/homed.conf.5",
+          "content": "Files in the *.conf.d/ configuration subdirectories are sorted by their filename in lexicographic order, regardless of in which of the subdirectories they reside. When multiple files specify the same option, for options which accept just a single value, the entry in the file with the lexicographically latest name takes precedence."
+        },
+        {
+          "title": "homed.conf (5) — systemd-homed",
+          "url": "https://manpages.opensuse.org/Tumbleweed/systemd-homed/homed.conf.5.en.html",
+          "content": "Those drop-ins have higher precedence and override the main configuration file. Files in the *.conf.d/ configuration subdirectories are sorted by their filename in lexicographic order, regardless of in which of the subdirectories they reside."
+        },
+        {
+          "title": "HOMED Definition & Meaning | Dictionary.com",
+          "url": "https://www.dictionary.com/browse/homed",
+          "content": "Sep 18, 2026 · HOMED definition: past participle of home. and past tense form of home. See examples of homed used in a sentence."
+        },
+        {
+          "title": "homed.conf(5) - f39",
+          "url": "https://manpath.be/f39/5/homed.conf",
+          "content": "6 homed.conf, homed.conf.d - Home area/user account manager configuration 7 files 8.57 The following options are available in the [Home] section: 58 59 DefaultStorage= 60 The default storage to use for home areas. Takes one of \"luks\", 61 \"fscrypt\", \"directory\", \"subvolume\", \"cifs\"."
+        }
+      ],
+      "kept": [
+        "https://www.man7.org/linux/man-pages/man5/homed.conf.5.html",
+        "https://man.archlinux.org/man/core/systemd/homed.conf.5.en",
+        "https://www.homedepot.com/",
+        "https://man.cx/homed.conf(5)",
+        "https://man7.org/linux/man-pages/man7/systemd.directives.7.html",
+        "https://manpages.debian.org/testing/systemd-homed/homed.conf.5.en.html"
+      ]
+    },
+    {
+      "query": "systemd homed.conf.d drop-in configuration",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "homed.conf (5) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man5/homed.conf.5.html",
+          "content": "In addition to the main configuration file, drop-in configuration snippets are read from /usr/lib/systemd/*.conf.d/, /usr/local/lib/systemd/*.conf.d/, and /etc/systemd/*.conf.d/. Those drop-ins have higher precedence and override the main configuration file."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "Homed is a daemon that provides portable human-user accounts that are independent of current system configuration. homed moves various pieces of data such as UID/GID from various places across the filesystem into one file, ~/.identity."
+        },
+        {
+          "title": "homed.conf - freedesktop.org",
+          "url": "https://freedesktop.org/software/systemd/man/homed.conf.html",
+          "content": "In addition to the main configuration file, drop-in configuration snippets are read from /usr/lib/systemd/*.conf.d/, /usr/local/lib/systemd/*.conf.d/, and /etc/systemd/*.conf.d/. Those drop-ins have higher precedence and override the main configuration file."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "Systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount…"
+        },
+        {
+          "title": "Category: projects",
+          "url": "http://0pointer.net/blog/category/projects.html",
+          "content": "DumpDNSConfiguration() IPC Call Post #25: DHCP Server EmitDomain= &#43; Domain= I intend to do a similar series of serieses of posts for the next systemd release (v260), hence if you"
+        },
+        {
+          "title": "homed.conf",
+          "url": "https://www.freedesktop.org/software/systemd/man/255/homed.conf.d.html",
+          "content": "homed.conf, homed.conf.d — Home area/user account manager configuration files. Synopsis.These configuration files control default parameters for home areas/user accounts created and managed by systemd-homed.service(8)."
+        },
+        {
+          "title": "homed.conf (5) — systemd-homed — Debian testing — Debian Manpages",
+          "url": "https://manpages.debian.org/testing/systemd-homed/homed.conf.5.en.html",
+          "content": "DESCRIPTION ¶ These configuration files control default parameters for home areas/user accounts created and managed by systemd-homed.service (8). CONFIGURATION DIRECTORIES AND PRECEDENCE ¶ The default configuration is set during compilation, so configuration is only needed when it is necessary to deviate from those defaults. The main configuration file is loaded from one of the listed ..."
+        },
+        {
+          "title": "systemd – Gentoo Wiki",
+          "url": "https://wiki.gentoo.org/wiki/Systemd",
+          "content": "If systemd is being unwantedly pulled in as a dependency, see Gentoo without systemd."
+        },
+        {
+          "title": "homed.conf (5) — systemd-homed — Debian bookworm — Debian Manpages",
+          "url": "https://manpages.debian.org/bookworm/systemd-homed/homed.conf.5.en.html",
+          "content": "CONFIGURATION DIRECTORIES AND PRECEDENCE ¶ The default configuration is set during compilation, so configuration is only needed when it is necessary to deviate from those defaults. Initially, the main configuration file in /etc/systemd/ contains commented out entries showing the defaults as a guide to the administrator. Local overrides can be created by editing this file or by creating drop ..."
+        },
+        {
+          "title": "homed.conf (5) — systemd-homed",
+          "url": "https://manpages.opensuse.org/Leap-15.6/systemd-homed/homed.conf.5.en.html",
+          "content": "Drop-ins have to be used to override package drop-ins, since the main configuration file has lower precedence. It is recommended to prefix all filenames in those subdirectories with a two-digit number and a dash, to simplify the ordering of the files."
+        }
+      ],
+      "kept": [
+        "https://www.man7.org/linux/man-pages/man5/homed.conf.5.html",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://freedesktop.org/software/systemd/man/homed.conf.html",
+        "https://systemd.io/",
+        "http://0pointer.net/blog/category/projects.html",
+        "https://www.freedesktop.org/software/systemd/man/255/homed.conf.d.html"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.man7.org/linux/man-pages/man5/homed.conf.5.html",
+    "https://man.archlinux.org/man/core/systemd/homed.conf.5.en",
+    "https://www.homedepot.com/",
+    "https://man.cx/homed.conf(5)",
+    "https://man7.org/linux/man-pages/man7/systemd.directives.7.html",
+    "https://manpages.debian.org/testing/systemd-homed/homed.conf.5.en.html",
+    "https://www.man7.org/linux/man-pages/man5/homed.conf.5.html",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://freedesktop.org/software/systemd/man/homed.conf.html",
+    "https://systemd.io/",
+    "http://0pointer.net/blog/category/projects.html",
+    "https://www.freedesktop.org/software/systemd/man/255/homed.conf.d.html"
+  ],
+  "outcome": "authored"
+}

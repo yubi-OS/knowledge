@@ -1,0 +1,152 @@
+{
+  "nn": "11",
+  "slug": "yubios-deployment-checklist",
+  "scope": "The yubiOS deployment checklist: systemd-homed.service enabled in the image, homed.conf defaults, four-stack PAM wiring, suspend=1 on graphical sessions, and key backup discipline.",
+  "queries_attempted": [
+    {
+      "query": "systemd-homed.service enable image deployment",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "systemd-homed.service (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+          "content": "See the Home Directories [1] documentation for details about the format and design of home areas managed by systemd-homed.service. Each home directory managed by systemd-homed.service synthesizes a local user and group."
+        },
+        {
+          "title": "Finally systemd-homed gets commands to use home directories/images",
+          "url": "https://discussion.fedoraproject.org/t/finally-systemd-homed-gets-commands-to-use-home-directories-images/173556",
+          "content": "The thing is, if you aren't using systemd-homed to \"manage\" your home directory and username/UID, it shouldn't affect you. If you are using it, then the id-mapping etc.. it does might affect you. But you mentioned that you can disable it and still login, that implies that you don't use it."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "blog of stigok",
+          "url": "https://blog.stigok.com/",
+          "content": "Pi using I2C 12 Oct Enable SSH server sshd on raspbian 03 Oct life tips 03 Oct gulp generate pug templates from JSON array 02 Oct gulp pug with template filename as local data at"
+        },
+        {
+          "title": "systemd-homed.service - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/257/systemd-homed.html",
+          "content": "Description ¶ systemd-homed is a system service that may be used to create, remove, change or inspect home areas (directories and network mounts and real or loopback block devices with a filesystem, optionally encrypted)."
+        },
+        {
+          "title": "Home Directories",
+          "url": "https://systemd.io/HOME_DIRECTORY/",
+          "content": "Systemd-homed.service(8) manages home directories of regular (“human”) users. Each directory it manages encapsulates both the data store and the user record of the user, so that it comprehensively describes the user account, and is thus…"
+        },
+        {
+          "title": "systemd-homed.service (8) — systemd-homed — Debian bookworm ...",
+          "url": "https://manpages.debian.org/bookworm/systemd-homed/systemd-homed.service.8.en.html",
+          "content": "Most of systemd-homed 's functionality is accessible through the homectl (1) command. See the Home Directories [1] documentation for details about the format and design of home areas managed by systemd-homed.service. Each home directory managed by systemd-homed.service synthesizes a local user and group."
+        },
+        {
+          "title": "How to deploy .NET applications with systemd and Podman",
+          "url": "https://developers.redhat.com/articles/2026/01/09/how-deploy-net-applications-systemd-and-podman",
+          "content": "Normally using systemctl enable/disable can enable and disable systemd services. These commands applies the [Install] section from the unit file which is commonly used to start the service at boot. Because Podman services are transient, the generated services can not be enabled through systemctl enable."
+        },
+        {
+          "title": "How to Manage User Home Directories with systemd-homed on RHEL",
+          "url": "https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view",
+          "content": "systemd-homed is a service that manages user accounts and home directories as self-contained, portable, and optionally encrypted units. Unlike traditional user management with useradd, homed stores the user record with the home directory itself, making accounts easier to move between machines that trust the record's signing key."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+        "https://discussion.fedoraproject.org/t/finally-systemd-homed-gets-commands-to-use-home-directories-images/173556",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://blog.stigok.com/",
+        "https://www.freedesktop.org/software/systemd/man/257/systemd-homed.html"
+      ]
+    },
+    {
+      "query": "systemd-homed backup local.private signing key",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "systemd-homed.service (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+          "content": "User records are cryptographically signed with a public/private key pair (the signature is part of the JSON record itself). For a user to be permitted to log in locally the public key matching the signature of their user record must be installed."
+        },
+        {
+          "title": "Practical Encrypted Home Directories with systemd-homed on Linux",
+          "url": "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+          "content": "Jul 1, 2026 · Use systemd-homed for portable, per-user LUKS-encrypted home directories on Linux. Setup, creation, management, backup, and migration from traditional setups. Tagged with linux, systemd, security, devops."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "Stuff Michael Meeks is doing",
+          "url": "https://apple-tree.life/~michael/blog/2011/",
+          "content": "scanner to ignore backup files - avoiding some really odd behaviour. Nearly killed by laughter reading Michael Stahl&#39;s cultural protection request Misc. patch review / merge. Suff"
+        },
+        {
+          "title": "Ubuntu Manpage: systemd-homed.service, systemd-homed - Home Area/User ...",
+          "url": "https://manpages.ubuntu.com/manpages/noble/man8/systemd-homed.service.8.html",
+          "content": "Most of systemd-homed 's functionality is accessible through the homectl (1) command. See the Home Directories [1] documentation for details about the format and design of home areas managed by systemd-homed.service. Each home directory managed by systemd-homed.service synthesizes a local user and group."
+        },
+        {
+          "title": "Home Directories - systemd",
+          "url": "https://systemd.io/HOME_DIRECTORY/",
+          "content": "Since the user record data is cryptographically signed and user records not signed with a recognized private key are not accepted, a minimal level of trust between the system and the home directory image is established."
+        },
+        {
+          "title": "GitHub - wickedhardflip/replexon: Self-hosted Plex backup…",
+          "url": "https://github.com/wickedhardflip/replexon",
+          "content": "Self-hosted Plex backup system + monitoring dashboard. Rsync to NAS/Synology with daily mirrors, weekly snapshots, size charts, email alerts. FastAPI + HTMX, no npm. - wickedhardflip/replexon"
+        },
+        {
+          "title": "How to Manage User Home Directories with systemd-homed on RHEL",
+          "url": "https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view",
+          "content": "How systemd-homed Works Step 1: Enable systemd-homed Step 2: Create a User with homectl Step 3: Manage Users Step 4: Activate and Deactivate Home Directories Step 5: Portability Step 6: Remove a User Comparison with Traditional User Management Summary."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "System and Service Manager systemd is a suite of basic building blocks for a Linux system. It provides a system and service …"
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+        "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://apple-tree.life/~michael/blog/2011/",
+        "https://manpages.ubuntu.com/manpages/noble/man8/systemd-homed.service.8.html"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+    "https://discussion.fedoraproject.org/t/finally-systemd-homed-gets-commands-to-use-home-directories-images/173556",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://blog.stigok.com/",
+    "https://www.freedesktop.org/software/systemd/man/257/systemd-homed.html",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+    "https://dev.to/lyraalishaikh/practical-encrypted-home-directories-with-systemd-homed-on-linux-bhp",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://apple-tree.life/~michael/blog/2011/",
+    "https://manpages.ubuntu.com/manpages/noble/man8/systemd-homed.service.8.html"
+  ],
+  "outcome": "authored"
+}

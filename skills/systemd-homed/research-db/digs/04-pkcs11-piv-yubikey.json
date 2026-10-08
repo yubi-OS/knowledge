@@ -1,0 +1,152 @@
+{
+  "nn": "04",
+  "slug": "pkcs11-piv-yubikey",
+  "scope": "PKCS#11 / PIV unlocking with YubiKey slot 9c: token enumeration, auto selection, explicit PKCS#11 URIs, and the PIV advantage of token identity visible before auth.",
+  "queries_attempted": [
+    {
+      "query": "systemd-homed pkcs11-token-uri YubiKey PIV",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "Its main component is an init system used to bootstrap user space and manage user processes. It also provides various daemons and utilities, including device management, login management, network connection management, and event logging."
+        },
+        {
+          "title": "YKCS11 - Yubico",
+          "url": "https://developers.yubico.com/yubico-piv-tool/YKCS11/",
+          "content": "Software Projects. Home. yubico-piv-tool. YKCS11.The module provides access to all 25 keys that can be stored on the YubiKey PIV application. These keys correspond to the keys in the PIV slots as described in PIV Certificate Slots and are accessible through yubico-piv-tool."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
+        },
+        {
+          "title": "systemd/systemd: The systemd System and Service Manager - GitHub",
+          "url": "https://github.com/systemd/systemd",
+          "content": "Most documentation is available on systemd's website. Assorted, older, general information about systemd can be found in the systemd Wiki. Information about build requirements is provided in the README file. Consult our NEWS file for information about what's new in the most recent systemd versions."
+        },
+        {
+          "title": "Unlocking LUKS2 volumes with TPM2, FIDO2, PKCS#11 Security Hardware on systemd 248",
+          "url": "http://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+          "content": "# systemd-cryptenroll --pkcs11-token-uri = auto /dev/sda5 Just like the same command&#39;s invocation in the FIDO2 case this enrolls the security token as an additional way to unlock"
+        },
+        {
+          "title": "PIV YKCS11 Module — YubiKey PIV Tool User Guide documentation",
+          "url": "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+          "content": "PIV YKCS11 Module Yubico YKCS11 is a PKCS#11 module that allows external applications to communicate with the PIV application running on a YubiKey. This module is based on version 2.40 of the PKCS#11 (Cryptoki) specifications. The complete specifications are available at oasis-open.org > PKCS #11 Cryptographic Token Interface Base Specification Version 2.40."
+        },
+        {
+          "title": "SSH with PIV and PKCS11",
+          "url": "https://developers.yubico.com/PIV/Guides/SSH_with_PIV_and_PKCS11.html",
+          "content": "This is a step-by-step guide on setting up a YubiKey with PIV to work for public-key authentication with OpenSSH through PKCS #11."
+        },
+        {
+          "title": "Mastering Systemd in Linux: A Comprehensive Guide",
+          "url": "https://linuxvox.com/blog/systemd-in-linux/",
+          "content": "Sep 9, 2026 · Systemd is a powerful and versatile system and service manager in Linux. It provides a modern approach to managing system resources, offering features like faster boot times, better parallelization, and advanced dependency management."
+        },
+        {
+          "title": "systemd (1) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man1/systemd.1.html",
+          "content": "systemd is a system and service manager for Linux operating systems. When run as first process on boot (as PID 1), it acts as init system that brings up and maintains userspace services."
+        },
+        {
+          "title": "Systemd and its Components in Linux - GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/linux-unix/linux-systemd-and-its-components/",
+          "content": "May 11, 2026 · Systemd is a system and service manager for modern Linux operating systems. It initializes the system, manages services, and controls system resources during startup and runtime."
+        }
+      ],
+      "kept": [
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://developers.yubico.com/yubico-piv-tool/YKCS11/",
+        "https://systemd.io/",
+        "https://github.com/systemd/systemd",
+        "http://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+        "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html"
+      ]
+    },
+    {
+      "query": "homectl YubiKey PIV slot 9c pkcs11 uri",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Problems with homectl and PKCS#11 (Yubikey 5)",
+          "url": "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071/2",
+          "content": "I have tried a simple homectl command and still can't get any further: $ sudo homectl create user --pkcs11-token-uri=auto 🔐 Please enter PIN for security token 'user-9d' in order to unlock home directory operation: •••••••• Successfully logged into security token 'user-9d'. Object field 'perMachine' has wrong type null, expected array. JSON field 'perMachine' is not an ..."
+        },
+        {
+          "title": "yubico-piv-tool",
+          "url": "https://developers.yubico.com/yubico-piv-tool/",
+          "content": "The Yubico PIV tool is used for interacting with the Personal Identity Verification (PIV) application on a YubiKey.Set a random chuid, import a key and import a certificate from a PKCS12 file, into slot 9c: yubico-piv-tool -s9c -itest.pfx -KPKCS12 -aset-chuid -aimport-key \\ -aimport-cert."
+        },
+        {
+          "title": "PIV YKCS11 Module — YubiKey PIV Tool User Guide documentation",
+          "url": "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+          "content": "Yubico YKCS11 is a PKCS#11 module that allows external applications to communicate with the PIV application running on a YubiKey. This module is based on version 2.40 of the PKCS#11 (Cryptoki) specifications."
+        },
+        {
+          "title": "SSH with PIV and PKCS11 - Yubico",
+          "url": "https://developers.yubico.com/PIV/Guides/SSH_with_PIV_and_PKCS11.html",
+          "content": "Using PIV for SSH through PKCS #11 This is a step-by-step guide on setting up a YubiKey with PIV to work for public-key authentication with OpenSSH through PKCS #11. These instructions apply primarily to macOS and Linux systems."
+        },
+        {
+          "title": "YubiKey PIV for SSH Authentication — Setup Walkthrough",
+          "url": "https://www.cupass.com/en/learn/yubikey-piv-ssh-guide.html",
+          "content": "Sep 29, 2026 · YubiKey PIV SSH setup guide: generate PIV key pairs, configure PIN, PUK, management key, export certificates, and set up ssh-agent with PKCS#11 or ykcs11 for SSH."
+        },
+        {
+          "title": "Ohio Game Fishing",
+          "url": "https://www.ohiogamefishing.com/threads/need-a-lead-mold-to-make-erie-dearie-spinner-baits-please.123450/",
+          "content": ""
+        },
+        {
+          "title": "Yubikey PIV Certificate Slot Configuration",
+          "url": "https://www.securew2.com/blog/yubikey-piv-certificate-slot-configuration/",
+          "content": "Yubikey PIV Certificate Slot Configuration What are Certificate Slots? Physical security tokens like the Yubikey have smartcards that can be configured t…"
+        },
+        {
+          "title": "PIV slots - Yubico",
+          "url": "https://docs.yubico.com/yesdk/users-manual/application-piv/slots.html",
+          "content": "Depending on the firmware version of the YubiKey, its PIV application will have 5, 25, 26, or 28 slots. The table below lists all the slots and the firmware version it is first supported."
+        },
+        {
+          "title": "Problems with homectl and PKCS#11 (Yubikey 5) - Fedora Discussion",
+          "url": "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071",
+          "content": "Which PIV slot do I need for homectl, is it 9a or 9d?I just tried to create the user normally and add the PIV afterwards, but that doesn’t work either, even though the Yubikey is in the computer all the time. $ sudo homectl update user --pkcs11-token-uri=auto."
+        },
+        {
+          "title": "YKCS11 - Yubico",
+          "url": "https://developers.yubico.com/yubico-piv-tool/YKCS11/",
+          "content": "The module provides access to all 25 keys that can be stored on the YubiKey PIV application. These keys correspond to the keys in the PIV slots as described in PIV Certificate Slots and are accessible through yubico-piv-tool."
+        }
+      ],
+      "kept": [
+        "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071/2",
+        "https://developers.yubico.com/yubico-piv-tool/",
+        "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+        "https://developers.yubico.com/PIV/Guides/SSH_with_PIV_and_PKCS11.html",
+        "https://www.cupass.com/en/learn/yubikey-piv-ssh-guide.html",
+        "https://www.ohiogamefishing.com/threads/need-a-lead-mold-to-make-erie-dearie-spinner-baits-please.123450/"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://developers.yubico.com/yubico-piv-tool/YKCS11/",
+    "https://systemd.io/",
+    "https://github.com/systemd/systemd",
+    "http://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html",
+    "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+    "https://discussion.fedoraproject.org/t/problems-with-homectl-and-pkcs-11-yubikey-5/177071/2",
+    "https://developers.yubico.com/yubico-piv-tool/",
+    "https://docs.yubico.com/software/yubikey/tools/pivtool/piv-tool-ykcs11.html",
+    "https://developers.yubico.com/PIV/Guides/SSH_with_PIV_and_PKCS11.html",
+    "https://www.cupass.com/en/learn/yubikey-piv-ssh-guide.html",
+    "https://www.ohiogamefishing.com/threads/need-a-lead-mold-to-make-erie-dearie-spinner-baits-please.123450/"
+  ],
+  "outcome": "authored"
+}

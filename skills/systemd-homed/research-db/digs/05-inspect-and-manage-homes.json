@@ -1,0 +1,152 @@
+{
+  "nn": "05",
+  "slug": "inspect-and-manage-homes",
+  "scope": "Everyday home management: homectl inspect and list, JSON record inspection, passwd re-keying, resize, and auxiliary group membership updates.",
+  "queries_attempted": [
+    {
+      "query": "homectl inspect list passwd resize commands",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Create, remove, change or inspect home directories - homectl",
+          "url": "https://community.webminal.org/t/create-remove-change-or-inspect-home-directories-homectl/7466",
+          "content": "sudo homectl passwd {{username}}. Run a shell or a command with access to a specific home directorysudo homectl {{lock|unlock}} {{username}}. Change the disk space assigned to a specific home directory to 100 GiB"
+        },
+        {
+          "title": "homectl command — examples & options | commands.sh",
+          "url": "https://www.commands.sh/homectl",
+          "content": "Create, remove, change, or inspect home directories using the systemd-homed service."
+        },
+        {
+          "title": "homectl: Create, remove, change or inspect home directories | Man Page ...",
+          "url": "https://www.mankier.com/1/homectl",
+          "content": "homectl may be used to create, remove, change or inspect a user's home directory . It's primarily a command interfacing with systemd-homed.service (8) which manages home directories of users ."
+        },
+        {
+          "title": "homectl Command: Examples, Options, and Usage - Linux Command Search",
+          "url": "https://linuxlearncmd.com/commands/homectl/",
+          "content": "FAQ What is the homectl command used for? homectl manages user accounts and home directories via systemd-homed, a systemd service that provides portable, encrypted home directories. systemd-homed stores user accounts as self-contained records with their home directories."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is: # homectl create username This command will create a user with the specified username, a free UID in range 60001-60513, create a group with the same name ..."
+        },
+        {
+          "title": "The Art of Handcrafted Luxury and Performance - Bentley Motors",
+          "url": "https://www.bentleymotors.com/en.html",
+          "content": "Experience the Bentley lifestyle and explore our range of luxury SUVs, convertibles and saloons."
+        },
+        {
+          "title": "What is a Password Manager CLI? - Passwd - team password…",
+          "url": "https://passwd.team/blog/what-is-password-manager-cli/",
+          "content": "A password manager CLI lets you retrieve credentials, generate TOTP codes, and inject secrets into commands directly from the terminal. Here's how it works and why developers use it."
+        },
+        {
+          "title": "homectl - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/250/homectl.html",
+          "content": "Description ¶ homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service(8) which manages home directories of users."
+        },
+        {
+          "title": "Bentley models: the world’s widest range of handcrafted cars",
+          "url": "https://www.bentleymotors.com/en/models.html",
+          "content": "The complete Bentley Motors range, including the Bentayga Extended Wheelbase, Bentayga, Flying Spur, Continental GT and …"
+        },
+        {
+          "title": "Ubuntu Manpage: homectl - Create, remove, change or inspect home...",
+          "url": "https://manpages.ubuntu.com/manpages/noble/man1/homectl.1.html",
+          "content": "homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service(8) which manages home directories of users."
+        }
+      ],
+      "kept": [
+        "https://community.webminal.org/t/create-remove-change-or-inspect-home-directories-homectl/7466",
+        "https://www.commands.sh/homectl",
+        "https://www.mankier.com/1/homectl",
+        "https://linuxlearncmd.com/commands/homectl/",
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://www.bentleymotors.com/en.html"
+      ]
+    },
+    {
+      "query": "systemd-homed resize luks volume member-of groups",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "The image path for the LUKS mechanism is set to /home/ username.home. The directory path for the directory mechanism is set to /home/ username.homedir. Note homectl does not manage group creation or deletion other than those matching the name and ID of users managed by systemd-homed."
+        },
+        {
+          "title": "arch linux - Resize LUKS Volume(s) - Unix & Linux Stack Exchange",
+          "url": "https://unix.stackexchange.com/questions/505241/resize-luks-volumes",
+          "content": "clarify terminology Firstly, your rootfs, home, and swap are on logical volumes not partitions. I'm bringing this up because logical volumes and partitions are different animals. The instructions for one do no necessarily apply to the other. In addition, your volume group is inside a LUKS container. This is an advanced Arch configuration, but luckily the steps for what you want to accomplish ..."
+        },
+        {
+          "title": "systemd-homed: LUKS image too large; partition inside too small",
+          "url": "https://github.com/systemd/systemd/issues/26796",
+          "content": "Mar 13, 2023 · After logging out, the LUKS image was automatically resized to fill the entire /home partition. It now takes up 600 GiB of space. Meanwhile, the encrypted partition inside the LUKS image is less than 30 GiB in size. I tried to resize it to make it larger but the homectl resize command further shrinks it. Logs are attached below."
+        },
+        {
+          "title": "systemd-homed resize (out of space) - eldon.me",
+          "url": "https://eldon.me/systemd-homed-resize-out-of-space-2/",
+          "content": "You are using systemd-homed to manage a .home image. The image uses LUKS encryption and a Btrfs filesystem. The image is too large to be resized in-place on the local machine, requiring a transfer to another machine. You utilize nested Btrfs subvolumes within your home directory (e.g., ~/.cache)."
+        },
+        {
+          "title": "systemd-homed resize (out of space)",
+          "url": "https://eldon.me/systemd-homed-resize-out-of-space/",
+          "content": "Resizing a systemd-homed Btrfs Image & Fixing Slow LUKS Logins.This started as a seemingly straightforward task: resizing my systemd-homed LUKS-encrypted Btrfs home directory. However, my laptop drive didn't have enough free space to handle the resize operation locally."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "Home Directories",
+          "url": "https://systemd.io/HOME_DIRECTORY/",
+          "content": "The LUKS2 volume must contain a LUKS2 token field of type systemd-homed. The JSON data of this token must have a record field, containing a string with base64-encoded data."
+        },
+        {
+          "title": "Converting Existing Users to systemd-homed",
+          "url": "https://systemd.io/CONVERTING_TO_HOMED/",
+          "content": "With the advent of systemd-homed it might be desirable to convert an existing, traditional user account to a systemd-homed managed one. Below is a brief guide how to do that."
+        },
+        {
+          "title": "resize LUKS volume / Newbie Corner / Arch Linux Forums",
+          "url": "https://bbs.archlinux.org/viewtopic.php?id=307634",
+          "content": "ArchinstallVg-home 254:2 0 1.8T 0 lvm /home nvme0n1 259:0 0 1.8T 0 disk nvme0n1p1 259:1 0 1.2G 0 part /boot nvme0n1p2 259:2 0 1.8T 0 part after that i boot into a live iso of ubuntu [i'd use the arch live iso but it was already on my usb key] to open up the luks volume i execute \"cryptsetup luksOpen /dev/nvme0n1p2 cryptdisk\" and enter the password."
+        },
+        {
+          "title": "homectl (1) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+          "content": "Note that systemd-homed does not manage any groups besides a group matching the user in name and numeric UID/GID. Thus any groups listed here must be registered independently, for example with groupadd (8)."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://unix.stackexchange.com/questions/505241/resize-luks-volumes",
+        "https://github.com/systemd/systemd/issues/26796",
+        "https://eldon.me/systemd-homed-resize-out-of-space-2/",
+        "https://eldon.me/systemd-homed-resize-out-of-space/",
+        "https://en.wikipedia.org/wiki/Systemd"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://community.webminal.org/t/create-remove-change-or-inspect-home-directories-homectl/7466",
+    "https://www.commands.sh/homectl",
+    "https://www.mankier.com/1/homectl",
+    "https://linuxlearncmd.com/commands/homectl/",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://www.bentleymotors.com/en.html",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://unix.stackexchange.com/questions/505241/resize-luks-volumes",
+    "https://github.com/systemd/systemd/issues/26796",
+    "https://eldon.me/systemd-homed-resize-out-of-space-2/",
+    "https://eldon.me/systemd-homed-resize-out-of-space/",
+    "https://en.wikipedia.org/wiki/Systemd"
+  ],
+  "outcome": "authored"
+}

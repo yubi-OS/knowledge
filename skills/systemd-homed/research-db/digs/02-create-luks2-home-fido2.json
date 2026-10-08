@@ -1,0 +1,152 @@
+{
+  "nn": "02",
+  "slug": "create-luks2-home-fido2",
+  "scope": "Creating a LUKS2 home with FIDO2 unlock: homectl create flags, btrfs filesystem, recovery key ordering, and the FIDO2 client PIN plus user-presence requirements.",
+  "queries_attempted": [
+    {
+      "query": "homectl create luks btrfs fido2-device options",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "Storage mechanism LUKS home directory This article or section needs expansion. Reason: It does not have to be removable media. homectl create wipes the partition table of the block device specified by --image-path, i.e. when an empty device is available it can be used. [1] ( Discuss in Talk:Systemd-homed)"
+        },
+        {
+          "title": "homectl (1) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+          "content": "Set up authentication with a FIDO2 security token: # Allow a FIDO2 security token to unlock the account of user 'nihilbaxter'. homectl update nihilbaxter --fido2-device=auto Example 6. Add a recovery key to an existing user account: # Generate and add a recovery key for user 'emily'. homectl update emily --recovery-key=yes SEE ALSO top"
+        },
+        {
+          "title": "Secure Encrypted Storage Setup with LUKS2, TPM2, FIDO2, and Btrfs",
+          "url": "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+          "content": "FIDO2 Tokens: Offers flexible access across different systems. Btrfs Filesystem: Utilizes modern filesystem features like compression and checksumming. This setup balances security with convenience, allowing for seamless access on trusted devices while maintaining strong protection for your data at rest."
+        },
+        {
+          "title": "What colleges or universities accept ashworth college credits?",
+          "url": "https://www.answers.com/education/What_colleges_or_universities_accept_ashworth_college_credits",
+          "content": "Oct 10, 2023 · found this posted hope this helps Augusta Technical College Augusta, GA Alaska Pacific University Anchorage, AK …"
+        },
+        {
+          "title": "Category: projects",
+          "url": "http://0pointer.net/blog/category/projects.html",
+          "content": "chid Post #38: homectl list-signing-keys/get-signing-key/add-signing-key/remove-signing-key Post #39: DDI Image Filters Post #40: Android USB Debugging udev rules Post #41: system"
+        },
+        {
+          "title": "Secure Encrypted Storage Setup with LUKS2, TPM2, FIDO2, and Btrfs",
+          "url": "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef/706d30dcef88145f04fdaaabec2ed7d7ac50b1f6",
+          "content": "Secure Encrypted Storage Setup with LUKS2, TPM2, FIDO2, and Btrfs Disclaimer: Use this guide at your own discretion. The author is not responsible for any data loss or security breaches that may occur. Always ensure you understand each step and its implications before proceeding."
+        },
+        {
+          "title": "GitHub - line/line-fido2-server: FIDO2(WebAuthn) server…",
+          "url": "https://github.com/line/line-fido2-server",
+          "content": "FIDO2(WebAuthn) server officially certified by FIDO Alliance and Relying Party examples. - line/line-fido2-server"
+        },
+        {
+          "title": "User:ZachHilman/Installation - Btrfs + LUKS2 + Secure Boot ...",
+          "url": "https://wiki.archlinux.org/title/User:ZachHilman/Installation_-_Btrfs_%2B_LUKS2_%2B_Secure_Boot",
+          "content": "Btrfs Create the filesystem ... Mount at root ... Create the root subvolume (this will be '/' on the final system) ... Create the home directory subvolume (this will hold all user data) ... Create a subvolume for snapshot storage ... Unmount root so we can change mount options ... Remount the root subvolume with options."
+        },
+        {
+          "title": "systemd-homed: portable, encrypted home directories - Amir ...",
+          "url": "https://amireslampanah.com/tutorials/systemd-homed-portable-home-dirs.html",
+          "content": "Jan 6, 2023 · User home directories as encrypted LUKS images or btrfs subvolumes that can be picked up and moved between machines. Per-user encryption, GPG-card / FIDO2 auth, and the user record carrying its own metadata."
+        },
+        {
+          "title": "homectl - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/249/homectl.html",
+          "content": "This option is useful for copying an existing user record to a different system in order to create a similar user there with the same settings. Specifically: homectl inspect -EE | ssh root@othersystem homectl create -i- may be used as simple command line for replicating a user on another host."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+        "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+        "https://www.answers.com/education/What_colleges_or_universities_accept_ashworth_college_credits",
+        "http://0pointer.net/blog/category/projects.html",
+        "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef/706d30dcef88145f04fdaaabec2ed7d7ac50b1f6"
+      ]
+    },
+    {
+      "query": "systemd-homed recovery key FIDO2 client pin user presence",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "# homectl create username --storage=fscrypt --fido2-device=auto --fido2-with-client-pin=yes --fido2-with-user-presence=no --recovery-key=yes. Setting up a recovery key is recommended in case the device is lost or broken."
+        },
+        {
+          "title": "FIDO2 with systemd-homed · Issue #27909 - GitHub",
+          "url": "https://github.com/systemd/systemd/issues/27909",
+          "content": "Jun 3, 2023 · Systemd-homed user configured with password and with --fido2-with-user-presence (Solo 2 key): When the token is not inserted, GDM prints the relevant message, and unlocking works with password as expected. When the token is inserted, GDM systematically rejects the password twice before accepting it."
+        },
+        {
+          "title": "JSON User Records",
+          "url": "https://systemd.io/USER_RECORD/",
+          "content": "When a local client enquires about a user record managed by systemd-homed the service will add in some additional information about the user and home directory in the status section — this version is only transferred via IPC and never…"
+        },
+        {
+          "title": "cryptenroll/homed - never prompts for FIDO2 client pin - FIDO ...",
+          "url": "https://github.com/systemd/systemd/issues/28675",
+          "content": "Initializing FIDO2 credential on security token. 👆 (Hint: This might require confirmation of user presence on security token.) Generating secret key on FIDO2 security token. 👆 In order to allow secret key generation, please confirm presence on security token. Failed to ask token for assertion: FIDO_ERR_PIN_AUTH_INVALID"
+        },
+        {
+          "title": "systemd-cryptenroll: Unlock LUKS2 with TPM2, FIDO2, Recovery Key",
+          "url": "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+          "content": "Jul 4, 2026 · Use systemd-cryptenroll on LUKS2 volumes to add TPM2, FIDO2, PKCS#11, and recovery-key unlock methods, store token metadata in the LUKS2 JSON area, and wire boot unlock through crypttab."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "systemd/TODO.md at main · systemd/systemd · GitHub",
+          "url": "https://github.com/systemd/systemd/blob/main/TODO.md",
+          "content": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub."
+        },
+        {
+          "title": "systemd-homed | yubi-OS/yubiOS Agent Skill | SkillsMP",
+          "url": "https://skillsmp.com/creators/yubi-os/yubios/skills-systemd-homed",
+          "content": "Creates, manages, and migrates systemd-homed home directories for yubiOS. Use when creating LUKS2-encrypted homes, enrolling YubiKey FIDO2 or PKCS#11/PIV authentication, configuring PAM for homed users, managing home migration between machines, or wiring suspend/resume key protection."
+        },
+        {
+          "title": "FIDO2 user presence required : r/yubikey - Reddit",
+          "url": "https://www.reddit.com/r/yubikey/comments/15vdmaj/fido2_user_presence_required/",
+          "content": "I'm trying to setup systemd-cryptenroll to allow me to automatically decrypt my drive while I'm away for remote access, and I have everything setup except for the fact that my yubikey is mandating user presence. To be clear, I'm referring to fido2, not the OTP slots. (I'm clarifying this because I know there is a toggle for user-presence in the OTP slots, but there is no such toggle for FIDO2 ..."
+        },
+        {
+          "title": "User Presence vs User Verification - Yubico",
+          "url": "https://developers.yubico.com/WebAuthn/WebAuthn_Developer_Guide/User_Presence_vs_User_Verification.html",
+          "content": "User presence - this most basic configuration is nothing more than a FIDO2 call that prompts the user to touch the security key or interact in some way with the authenticator. User verification - a FIDO2 call where the authenticator verifies that the user is authorized to use the authenticator, and signals to the RP whether user verification was successful."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://github.com/systemd/systemd/issues/27909",
+        "https://systemd.io/USER_RECORD/",
+        "https://github.com/systemd/systemd/issues/28675",
+        "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+        "https://en.wikipedia.org/wiki/Systemd"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://www.man7.org/linux/man-pages/man1/homectl.1.html",
+    "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef",
+    "https://www.answers.com/education/What_colleges_or_universities_accept_ashworth_college_credits",
+    "http://0pointer.net/blog/category/projects.html",
+    "https://gist.github.com/Syderitic/23b9c22cb772e1b0e674ed4bb5a3abef/706d30dcef88145f04fdaaabec2ed7d7ac50b1f6",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://github.com/systemd/systemd/issues/27909",
+    "https://systemd.io/USER_RECORD/",
+    "https://github.com/systemd/systemd/issues/28675",
+    "https://www.golinuxcloud.com/systemd-cryptenroll-luks2-tpm2-fido2-linux/",
+    "https://en.wikipedia.org/wiki/Systemd"
+  ],
+  "outcome": "authored"
+}

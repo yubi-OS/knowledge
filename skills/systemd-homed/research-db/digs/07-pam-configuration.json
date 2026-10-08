@@ -1,0 +1,152 @@
+{
+  "nn": "07",
+  "slug": "pam-configuration",
+  "scope": "PAM wiring for homed users: pam_systemd_home.so across auth, account, password, and session stacks, control-flag semantics, and suspend=1 key erasure on suspend.",
+  "queries_attempted": [
+    {
+      "query": "pam_systemd_home.so PAM configuration stacks",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "10.2. About PAM Configuration Files | System-Level ... - Red Hat",
+          "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system-level_authentication_guide/pam_configuration_files",
+          "content": "Each PAM-aware application or service has a file in the /etc/pam.d/ directory. Each file in this directory has the same name as the service to which it controls access. For example, the login program defines its service name as login and installs the /etc/pam.d/login PAM configuration file."
+        },
+        {
+          "title": "pam_systemd_home - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/249/pam_systemd_home.html",
+          "content": "Description ¶ pam_systemd_home ensures that home directories managed by systemd-homed.service are automatically activated (mounted) on user login, and are deactivated (unmounted) when the last session of the user ends."
+        },
+        {
+          "title": "PAM - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/PAM",
+          "content": "The PAM package manual pages pam (8) and pam.d (5) describe the standardized content of the configuration files. In particular, they explain the four PAM groups: account, authentication, password, and session management, as well as the control values that may be used to configure stacking and behavior of the modules."
+        },
+        {
+          "title": "pam_systemd_home - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/257/pam_systemd_home.html",
+          "content": "Description ¶ pam_systemd_home ensures that home directories managed by systemd-homed.service(8) are automatically activated (mounted) on user login, and are deactivated (unmounted) when the last session of the user ends. For such users, it also provides authentication (when per-user disk encryption is used, the disk encryption key is derived from the authentication credential supplied at ..."
+        },
+        {
+          "title": "pam_systemd(8) - Linux manual page",
+          "url": "https://man7.org/linux/man-pages/man8/pam_systemd.8.html",
+          "content": "pam_systemd - Register user sessions in the systemd login manager.Here's an example PAM configuration fragment that allows users. sessions to be managed by systemd-logind.service"
+        },
+        {
+          "title": "Acute Care Hospitals & Outpatient Therapy | PAM Health",
+          "url": "https://pamhealth.com/",
+          "content": "PAM Health is committed to providing patients with the best care and outcomes. We offer both inpatient and outpatient therapy. Find …"
+        },
+        {
+          "title": "pam_systemd(8) — Arch manual pages",
+          "url": "https://man.archlinux.org/man/pam_systemd.8",
+          "content": "pam_systemd registers user sessions with the systemd login manager systemd-logind.service(8), and hence the systemd control group hierarchy.Here's an example PAM configuration fragment that allows users sessions to be managed by systemd-logind.service"
+        },
+        {
+          "title": "pam_systemd_home(8) - Linux manual page",
+          "url": "https://man7.org/linux/man-pages/man8/pam_systemd_home.8.html",
+          "content": "Pam_systemd_home ensures that home directories managed by systemd-homed.service(8) are automatically activated (mounted) on user login, and are deactivated (unmounted) when the last session of the user ends."
+        },
+        {
+          "title": "pam_systemd_home (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux//man-pages/man8/pam_systemd_home.8.html",
+          "content": "Here's an example PAM configuration fragment that permits users managed by systemd-homed.service to log in: #%PAM-1.0 -auth [success=done authtok_err=bad perm_denied=bad maxtries=bad default=ignore] pam_systemd_home.so auth sufficient pam_unix.so auth required pam_deny.so account required pam_nologin.so -account [success=done authtok_expired ..."
+        },
+        {
+          "title": "Anatomy of a Linux Pluggable Authentication Modules (PAM) configuration ...",
+          "url": "https://www.redhat.com/en/blog/pam-configuration-file",
+          "content": "Jul 29, 2020 · In a previous article, I described the flow of an application calling PAM libraries for authentication at a very high level. In this article, we will walk through the configuration files for a local sudo command. When using sudo, we switch users and do something."
+        }
+      ],
+      "kept": [
+        "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system-level_authentication_guide/pam_configuration_files",
+        "https://www.freedesktop.org/software/systemd/man/249/pam_systemd_home.html",
+        "https://wiki.archlinux.org/title/PAM",
+        "https://www.freedesktop.org/software/systemd/man/257/pam_systemd_home.html",
+        "https://man7.org/linux/man-pages/man8/pam_systemd.8.html",
+        "https://pamhealth.com/"
+      ]
+    },
+    {
+      "query": "pam_systemd_home suspend=1 forget key material suspend",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Plasma session: forget key on suspend - Help - KDE Discuss",
+          "url": "https://discuss.kde.org/t/plasma-session-forget-key-on-suspend/12282",
+          "content": "Hi everyone, I have a laptop with a LUKS-encrypted home partition, which I unlock on login using PAM. I usually just suspend to RAM by closing the lid - ideally, I would like the session then to forget my key so my data stays protected. I always thought this was impossible under Linux. However, recently I came across the following statement in the systemd-homed arch wiki page: \"The suspend ..."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "3.2 Forget key on suspend.systemd-homed is part of and packaged with systemd. The pambase package since version 20200721.1-2 comes with the necessary PAM configuration to allow systemd-homed user sessions. Usage. Start/enable the systemd-homed.service service."
+        },
+        {
+          "title": "[Question] Support for systemd-homed's \"forget key on suspend\" #176",
+          "url": "https://github.com/Vladimir-csp/uwsm/issues/176",
+          "content": "Oct 30, 2025 · systemd comes with a PAM module pam_systemd_homed that handles things like XDG_AREAs and other systemd-homed features. The most interesting is suspend=on, which removes the user home directory’s decryption key from memory before suspending the user session along with the system."
+        },
+        {
+          "title": "pam_systemd_home (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux//man-pages/man8/pam_systemd_home.8.html",
+          "content": "Automatic suspending of the home directory improves security substantially as secret key material is automatically removed from memory before the system is put to sleep and must be re-acquired (through user re-authentication) when coming back from suspend."
+        },
+        {
+          "title": "pam_systemd_home - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/latest/pam_systemd_home.html",
+          "content": "If true, the home directory of the user will be suspended automatically during system suspend; if false it will remain active. Automatic suspending of the home directory improves security substantially as secret key material is automatically removed from memory before the system is put to sleep and must be re-acquired (through user re ..."
+        },
+        {
+          "title": "Acute Care Hospitals & Outpatient Therapy | PAM Health",
+          "url": "https://pamhealth.com/",
+          "content": "PAM Health is committed to providing patients with the best care and outcomes. We offer both inpatient and outpatient therapy. Find …"
+        },
+        {
+          "title": "Auto Pause Inactive Tabs - Internetový obchod Chrome",
+          "url": "https://chromewebstore.google.com/detail/auto-pause-inactive-tabs/ldcefodplnldkahefhopnafhefnmdadb",
+          "content": "Easily suspend inactive tabs and save up memory for your browser."
+        },
+        {
+          "title": "pam_systemd_home (8) — systemd-homed",
+          "url": "https://manpages.opensuse.org/Leap-15.6/systemd-homed/pam_systemd_home.8.en.html",
+          "content": "Automatic suspending of the home directory improves security substantially as secret key material is automatically removed from memory before the system is put to sleep and must be re-acquired (through user re-authentication) when coming back from suspend."
+        },
+        {
+          "title": "pam_systemd_home (8) — systemd-homed — Debian testing — Debian Manpages",
+          "url": "https://manpages.debian.org/testing/systemd-homed/pam_systemd_home.8.en.html",
+          "content": "Jul 13, 2026 · Automatic suspending of the home directory improves security substantially as secret key material is automatically removed from memory before the system is put to sleep and must be re-acquired (through user re-authentication) when coming back from suspend."
+        },
+        {
+          "title": "What is Privileged Access Management (PAM) | Microsoft Security",
+          "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-privileged-access-management-pam?msockid=073838818fa763de24212f6d8ee5622c",
+          "content": "Privileged access management (PAM) is an identity security solution that helps protect organizations against cyberthreats by …"
+        }
+      ],
+      "kept": [
+        "https://discuss.kde.org/t/plasma-session-forget-key-on-suspend/12282",
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://github.com/Vladimir-csp/uwsm/issues/176",
+        "https://www.man7.org/linux//man-pages/man8/pam_systemd_home.8.html",
+        "https://www.freedesktop.org/software/systemd/man/latest/pam_systemd_home.html",
+        "https://pamhealth.com/"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/system-level_authentication_guide/pam_configuration_files",
+    "https://www.freedesktop.org/software/systemd/man/249/pam_systemd_home.html",
+    "https://wiki.archlinux.org/title/PAM",
+    "https://www.freedesktop.org/software/systemd/man/257/pam_systemd_home.html",
+    "https://man7.org/linux/man-pages/man8/pam_systemd.8.html",
+    "https://pamhealth.com/",
+    "https://discuss.kde.org/t/plasma-session-forget-key-on-suspend/12282",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://github.com/Vladimir-csp/uwsm/issues/176",
+    "https://www.man7.org/linux//man-pages/man8/pam_systemd_home.8.html",
+    "https://www.freedesktop.org/software/systemd/man/latest/pam_systemd_home.html",
+    "https://pamhealth.com/"
+  ],
+  "outcome": "authored"
+}

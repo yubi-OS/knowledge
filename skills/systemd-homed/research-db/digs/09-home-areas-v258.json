@@ -1,0 +1,152 @@
+{
+  "nn": "09",
+  "slug": "home-areas-v258",
+  "scope": "Home areas since v258: secondary $HOME subdirectories, %area login syntax, run0 --area, and --default-area in the user record.",
+  "queries_attempted": [
+    {
+      "query": "systemd v258 home areas homectl default-area",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed.service (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man8/systemd-homed.service.8.html",
+          "content": "systemd-homed is a system service that may be used to create, remove, change or inspect home areas (directories and network mounts and real or loopback block devices with a filesystem, optionally encrypted). Most of systemd-homed 's functionality is accessible through the homectl (1) command."
+        },
+        {
+          "title": "homectl - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/249/homectl.html",
+          "content": "Description ¶ homectl may be used to create, remove, change or inspect a user's home directory. It's primarily a command interfacing with systemd-homed.service which manages home directories of users. Home directories managed by systemd-homed.service are self-contained, and thus include the user's full metadata record in the home's data storage itself, making them easy to migrate between ..."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "Category: projects",
+          "url": "http://0pointer.net/blog/category/projects.html",
+          "content": "レナート ﻟﻴﻨﺎﺭﺕ Mastodon systemd Imprint Category: projects Mastodon Stories for systemd v261 On June 19 we released systemd v261 into the wild . In the weeks leading up to that relea"
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "Utilities homectl homectl is the main utility you will use for homed. With it, you can create, update, and inspect users; their home directories; and their ~/.identity files controlled by the systemd-homed (8) service. The simplest usage of homectl (1) is:"
+        },
+        {
+          "title": "Highlights from systemd v258: part one [LWN.net]",
+          "url": "https://lwn.net/Articles/1028275/",
+          "content": "Each home area is maintained in a subdirectory, under /home/user/Areas, of the user's regular home directory.The addition of the areas feature comes with a new \"defaultArea\" user record field, which (as the name suggests) can be used to specify a default home area."
+        },
+        {
+          "title": "Known Environment Variables",
+          "url": "https://systemd.io/ENVIRONMENT/",
+          "content": "$Systemd_HOME_Mount_Options_Btrfs, $Systemd_HOME_Mount_Options_EXT4, $Systemd_HOME_Mount_Options_XFS – configure the default mount options to use for LUKS home directories, overriding the built-in default mount options."
+        },
+        {
+          "title": "homectl (1) — Arch manual pages",
+          "url": "https://man.archlinux.org/man/homectl.1.en",
+          "content": "It's primarily a command interfacing with systemd-homed.service (8) which manages home directories of users. Home directories managed by systemd-homed.service are self-contained, and thus include the user's full metadata record in the home's data storage itself, making them easy to migrate between machines."
+        },
+        {
+          "title": "homed.conf (5) — Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man5/homed.conf.d.5.html",
+          "content": "These configuration files control default parameters for home areas/user accounts created and managed by systemd-homed.service (8). The default configuration is set during compilation, so configuration is only needed when it is necessary to deviate from those defaults."
+        },
+        {
+          "title": "systemd-homed (8) — Arch manual pages",
+          "url": "https://man.archlinux.org/man/core/systemd/systemd-homed.8.en",
+          "content": "Most of systemd-homed 's functionality is accessible through the homectl (1) command. See the Home Directories [1] documentation for details about the format and design of home areas managed by systemd-homed.service. Each home directory managed by systemd-homed.service synthesizes a local user and group."
+        }
+      ],
+      "kept": [
+        "https://www.man7.org/linux/man-pages/man8/systemd-homed.service.8.html",
+        "https://www.freedesktop.org/software/systemd/man/249/homectl.html",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "http://0pointer.net/blog/category/projects.html",
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://lwn.net/Articles/1028275/"
+      ]
+    },
+    {
+      "query": "systemd home areas run0 area login username percent sign",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd/run0 - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd/run0",
+          "content": "Jun 13, 2026 · run0 is a privilege elevation tool introduced with systemd v256. It is implemented as an alternative invocation mode of systemd-run (1). run0 provides a safer and more robust alternative to the sudo mechanism, without relying on suid binaries. It uses polkit for authentication."
+        },
+        {
+          "title": "run0 (1) — systemd — Debian testing — Debian Manpages",
+          "url": "https://manpages.debian.org/testing/systemd/run0.1",
+          "content": "Runs the invoked session with the specified working directory. If not specified defaults to the client's current working directory if switching to the root user, or the target user's home directory otherwise. Added in version 256. --via-shell Invokes the target user's login shell and runs the specified command (if any) via it. Added in version ..."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "Systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "Run0: introduction and usage - Linux Audit",
+          "url": "https://linux-audit.com/systemd/run0-introduction-and-usage/",
+          "content": "Jun 19, 2024 · Learn how to use the run0 command part of systemd, its purpose, and how to use it for elevating privileges to run privileged tasks."
+        },
+        {
+          "title": "pam_systemd_home(8) — Arch manual pages",
+          "url": "https://man.archlinux.org/man/pam_systemd_home.8",
+          "content": "pam_systemd_home ensures that home directories managed by systemd-homed.service(8) are automatically activated (mounted) on user login, and are deactivated (unmounted) when the last session of the user ends.lennart@zeta$ run0 --area=versuch1."
+        },
+        {
+          "title": "Administration sign-in",
+          "url": "https://md.gov.cz/cmspages/logon.aspx?returnurl=%2FUzitecne-odkazy%2FPovoleni-pro-nadmerne-naklady",
+          "content": "Sign-in troubleshooting | Forgotten password | Select language"
+        },
+        {
+          "title": "run0 (1) — Arch manual pages",
+          "url": "https://man.archlinux.org/man/core/systemd/run0.1.en",
+          "content": "Runs the invoked session with the specified working directory. If not specified defaults to the client's current working directory if switching to the root user, or the target user's home directory otherwise. Added in version 256. --via-shell Invokes the target user's login shell and runs the specified command (if any) via it. Added in version ..."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "run0 - freedesktop.org",
+          "url": "https://www.freedesktop.org/software/systemd/man/258/run0.html",
+          "content": "Controls the \"area\" of the target account to log into. Areas are secondary home directories within the primary home directory of the target user, i.e. logging into area \" foobar \" of an account translates to $HOME being set to ~/Areas/foobar on login."
+        }
+      ],
+      "kept": [
+        "https://wiki.archlinux.org/title/Systemd/run0",
+        "https://manpages.debian.org/testing/systemd/run0.1",
+        "https://systemd.io/",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://linux-audit.com/systemd/run0-introduction-and-usage/",
+        "https://man.archlinux.org/man/pam_systemd_home.8"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.man7.org/linux/man-pages/man8/systemd-homed.service.8.html",
+    "https://www.freedesktop.org/software/systemd/man/249/homectl.html",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "http://0pointer.net/blog/category/projects.html",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://lwn.net/Articles/1028275/",
+    "https://wiki.archlinux.org/title/Systemd/run0",
+    "https://manpages.debian.org/testing/systemd/run0.1",
+    "https://systemd.io/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://linux-audit.com/systemd/run0-introduction-and-usage/",
+    "https://man.archlinux.org/man/pam_systemd_home.8"
+  ],
+  "outcome": "authored"
+}

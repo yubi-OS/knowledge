@@ -1,0 +1,152 @@
+{
+  "nn": "06",
+  "slug": "migration-between-machines",
+  "scope": "Moving a home between machines: public key exchange, copying the .home file, rescan via SIGUSR1 since v258, activation, and re-signing with the target host key.",
+  "queries_attempted": [
+    {
+      "query": "systemd-homed migrate home directory another machine local.public",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "Converting Existing Users to systemd-homed",
+          "url": "https://systemd.io/CONVERTING_TO_HOMED/",
+          "content": "Preparations: make sure you run a distribution that has systemd-homed enabled and properly set up, including the necessary PAM and NSS configuration updates. Make sure you have enough disk space in /home/ for a (temporary) second copy of your home directory. Make sure to backup your home directory. Make sure to log out of your user account fully."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "In July 2014, systemd version 215 was released, adding new features such as a DHCP server for IPv4 hosts, and Vxlan support. networkctl may be used to review the state of the network links as seen by systemd-networkd."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed is part of and packaged with systemd. The pambase package since version 20200721.1-2 comes with the necessary PAM configurationto allow systemd-homed user sessions."
+        },
+        {
+          "title": "systemd/systemd: The systemd System and Service Manager - GitHub",
+          "url": "https://github.com/systemd/systemd",
+          "content": "The systemd System and Service Manager . Contribute to systemd/systemd development by creating an account on GitHub."
+        },
+        {
+          "title": "How to Manage User Home Directories with systemd-homed on RHEL",
+          "url": "https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view",
+          "content": "systemd-homed is a service that manages user accounts and home directories as self-contained, portable, and optionally encrypted units. Unlike traditional user management with useradd, homed stores the user record with the home directory itself, making accounts easier to move between machines that trust the record's signing key."
+        },
+        {
+          "title": "migrating systemd-homed users on removable drive to different machine ...",
+          "url": "https://bbs.archlinux.org/viewtopic.php?id=304411",
+          "content": "In the process, I got too hooked and migrated all of my non-system users to systemd-homed. I recently got a new machine and decided to migrate my systemd-homed users onto it but I could not figure out from the man pages how to migrate my existing users to the new machine."
+        },
+        {
+          "title": "Your Personal Web Site",
+          "url": "https://www.billdietrich.me/YourPersonalWebSite.html",
+          "content": "snap or gohugoio / hugo Migrate existing site to Hugo Hugo&#39;s &#34;Migrate to Hugo&#34; But nothing for HTML to Hugo. By default, in Hugo your page content is written in Markdown. HTML is"
+        },
+        {
+          "title": "linux - Mount systemd-homed user directory in another machine",
+          "url": "https://superuser.com/questions/1576974/mount-systemd-homed-user-directory-in-another-machine",
+          "content": "I got a definitive answer from GaKu999 at Arch Linux forums. To mount a systemd-homed home directory in another machine without booting to that disk, run the following commands: First, use losetup to setup a loopback device to the home directory file: $ sudo losetup -f -P <username>.home Then, use cryptsetup to open the encrypted LUKS volume."
+        },
+        {
+          "title": "systemd-homed.service (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+          "content": "Each home directory managed by systemd-homed.service synthesizes a local user and group. These are made available to the system using the User/Group Record Lookup API via Varlink [2], and thus may be browsed with userdbctl (1). systemd-homed.service also manages blob directories for each home directory it manages."
+        },
+        {
+          "title": "systemd/systemd-homed - Gentoo Wiki",
+          "url": "https://wiki.gentoo.org/wiki/Systemd/systemd-homed",
+          "content": "Copy the home directory file from the homed directory location (/home by default) on the old system to the homed directory location on the new system. Copy the private.local and public.local files found under the /var/lib/systemd/home directory on the old system to the new system."
+        }
+      ],
+      "kept": [
+        "https://systemd.io/CONVERTING_TO_HOMED/",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://wiki.archlinux.org/title/Systemd-homed",
+        "https://github.com/systemd/systemd",
+        "https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view",
+        "https://bbs.archlinux.org/viewtopic.php?id=304411"
+      ]
+    },
+    {
+      "query": "systemd-homed SIGUSR1 rescan homed v258 re-sign home record",
+      "attempt": 1,
+      "raw_results": [
+        {
+          "title": "systemd-homed.service (8) - Linux manual page - man7.org",
+          "url": "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+          "content": "SIGNALS top SIGUSR1 Upon reception of the SIGUSR1 process signal systemd-homed will reestablish its file watches on /home/ and rescan the directory for home directories. Added in version 258. SEE ALSO top systemd (1), homed.conf (5), homectl (1), pam_systemd_home (8), userdbctl (1), org.freedesktop.home1 (5) NOTES top 1."
+        },
+        {
+          "title": "systemd-homed: local privilege escalation via missing home-record ...",
+          "url": "https://github.com/systemd/systemd/security/advisories/GHSA-jm29-p7hh-vjhv",
+          "content": "Impact systemd-homed contains a local privilege escalation bug via arbitrary system group addition to a local, logged in, homed-managed user Patches v262 (0755bb1 + 765dc96) v261.2 (d392d17 + a7bce5b) v260.4 (0fb35a3 + b7addfc) v259.8 (4365d4a + 7de1a48) v258.10 (8735bb6 + 04cba0a) Workarounds Remove privileged system groups from the system (e.g.: sudo, wheel) References Original report ..."
+        },
+        {
+          "title": "systemd - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Systemd",
+          "content": "systemd is a software suite for system and service management on Linux [7] built to unify service configuration and behavior across …"
+        },
+        {
+          "title": "systemd-homed (8) — systemd-homed — Debian testing — Debian Manpages",
+          "url": "https://manpages.debian.org/testing/systemd-homed/systemd-homed.8.en.html",
+          "content": "Upon reception of the SIGUSR1 process signal systemd-homed will reestablish its file watches on /home/ and rescan the directory for home directories. Added in version 258."
+        },
+        {
+          "title": "Ubuntu Manpage: systemd-homed.service, systemd-homed - Home...",
+          "url": "https://manpages.ubuntu.com/manpages/stonking/man8/systemd-homed.service.8.html",
+          "content": "systemd-homed.service, systemd-homed. Home Area/User Account Manager. Provided by: systemd-homed (Version: 259.5-0ubuntu3)./var/lib/systemd/home/local.private. The private key of the public/private key pair used for local records."
+        },
+        {
+          "title": "DS-KP8200-HE1 | Express Alarm",
+          "url": "https://www.expressalarm.cz/ds-kp8200-he1/",
+          "content": "Hikvision DS-KP8200-HE1 - Vnitřní SIP telefon s 4,3 palcovým displejem a PoE napájením"
+        },
+        {
+          "title": "systemd-homed (8) — Arch manual pages",
+          "url": "https://man.archlinux.org/man/core/systemd/systemd-homed.8.en",
+          "content": "Upon reception of the SIGUSR1 process signal systemd-homed will reestablish its file watches on /home/ and rescan the directory for home directories. Added in version 258."
+        },
+        {
+          "title": "systemd-homed - ArchWiki",
+          "url": "https://wiki.archlinux.org/title/Systemd-homed",
+          "content": "systemd-homed (8) is a systemd service providing portable human-user accounts that are not dependent on current system configuration. It achieves portability by moving all user-related information into a storage medium, optionally encrypted, and creating an ~/.identity file that contains signed information about the user, password, what groups they belong to, UID/GID and other information that ..."
+        },
+        {
+          "title": "System and Service Manager",
+          "url": "https://systemd.io/",
+          "content": "System and Service Manager systemd is a suite of basic building blocks for a Linux system. It provides a system and service …"
+        },
+        {
+          "title": "systemd-homed.service(8) - Linux manual page",
+          "url": "https://kerrisk.com/linux/man-pages/man8/systemd-homed.8.html",
+          "content": "systemd-homed.service, systemd-homed - Home Area/User Account. Manager. SYNOPSIS top.systemd-homed.service also manages blob directories for each home. directory it manages. See User Record Blob Directories[3] for more. details. KEY MANAGEMENT top."
+        }
+      ],
+      "kept": [
+        "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+        "https://github.com/systemd/systemd/security/advisories/GHSA-jm29-p7hh-vjhv",
+        "https://en.wikipedia.org/wiki/Systemd",
+        "https://manpages.debian.org/testing/systemd-homed/systemd-homed.8.en.html",
+        "https://manpages.ubuntu.com/manpages/stonking/man8/systemd-homed.service.8.html",
+        "https://www.expressalarm.cz/ds-kp8200-he1/"
+      ]
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://systemd.io/CONVERTING_TO_HOMED/",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://wiki.archlinux.org/title/Systemd-homed",
+    "https://github.com/systemd/systemd",
+    "https://oneuptime.com/blog/post/2026-03-04-systemd-homed-user-home-directories-rhel-9/view",
+    "https://bbs.archlinux.org/viewtopic.php?id=304411",
+    "https://www.man7.org/linux/man-pages/man8/systemd-homed.8.html",
+    "https://github.com/systemd/systemd/security/advisories/GHSA-jm29-p7hh-vjhv",
+    "https://en.wikipedia.org/wiki/Systemd",
+    "https://manpages.debian.org/testing/systemd-homed/systemd-homed.8.en.html",
+    "https://manpages.ubuntu.com/manpages/stonking/man8/systemd-homed.service.8.html",
+    "https://www.expressalarm.cz/ds-kp8200-he1/"
+  ],
+  "outcome": "authored"
+}
