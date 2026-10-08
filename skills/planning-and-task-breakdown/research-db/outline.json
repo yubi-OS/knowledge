@@ -1,0 +1,223 @@
+{
+  "topic": "Breaking work into ordered tasks from a spec: estimating scope, decomposing large work, ordering implementable steps, and identifying parallelizable parts",
+  "ground_source": "https://raw.githubusercontent.com/yubi-OS/yubiOS/main/skills/planning-and-task-breakdown/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "plan-mode-first",
+      "scope": "Enter read-only plan mode before writing code; the plan document is the output of planning.",
+      "seed_queries": [
+        "AI agent plan mode read-only planning before coding",
+        "plan before implementation agent workflow planning phase best practices"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "dependency-graph-and-ordering",
+      "scope": "Map what depends on what and order implementation bottom-up so foundations are built first.",
+      "seed_queries": [
+        "software task dependency graph implementation order bottom-up",
+        "dependency-aware task ordering software engineering plan"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "vertical-slicing",
+      "scope": "Slice work vertically: one complete feature path at a time, not layer by layer.",
+      "seed_queries": [
+        "vertical slicing user stories walking skeleton agile",
+        "vertical slice architecture versus horizontal layering anti-pattern"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "task-structure-and-acceptance-criteria",
+      "scope": "Every task carries description, testable acceptance criteria, verification commands, dependencies, files, scope.",
+      "seed_queries": [
+        "writing acceptance criteria tasks INVEST user story criteria",
+        "definition of done acceptance criteria software tasks"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "task-sizing-and-scope-estimation",
+      "scope": "Size tasks XS through XL by files touched; break down anything L or larger.",
+      "seed_queries": [
+        "task sizing estimation software engineering small batches",
+        "scope estimation breakdown large tasks into small"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "output-files-and-task-list-target",
+      "scope": "Where plans live: plan.md, the task list target, and the never-overwrite rule.",
+      "seed_queries": [
+        "markdown todo task list for AI coding agents",
+        "issue tracker integration Linear Jira GitHub issues task tracking agents"
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "parallelization-strategy",
+      "scope": "Safe to parallelize, must be sequential, needs coordination.",
+      "seed_queries": [
+        "parallelizing software development tasks multiple agents safe concurrency",
+        "when to parallelize feature work coordination shared contracts"
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "anti-patterns-and-verification",
+      "scope": "Common rationalizations, red flags, and the pre-implementation checklist. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.89,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.04,
+          "2": 0.93
+        },
+        "confidence": 0.85
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.97,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.98
+        },
+        "confidence": 0.95
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.86,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.11,
+          "2": 0.87
+        },
+        "confidence": 0.78
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.94,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.02,
+          "2": 0.96
+        },
+        "confidence": 0.91
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.95,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.01,
+          "2": 0.97
+        },
+        "confidence": 0.93
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.73,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.17,
+          "2": 0.78
+        },
+        "confidence": 0.59
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.91,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.04,
+          "2": 0.94
+        },
+        "confidence": 0.88
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.42,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.35,
+          "2": 0.53
+        },
+        "confidence": 0.11
+      }
+    },
+    "usage": {
+      "input_tokens": 1405,
+      "output_tokens": 124,
+      "cost": 0.00011802
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  }
+}
