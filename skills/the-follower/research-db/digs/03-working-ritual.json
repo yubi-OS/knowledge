@@ -1,0 +1,56 @@
+{
+  "nn": 3,
+  "slug": "working-ritual",
+  "scope": "The per-task loop: worklock before ACK, outbox dedupe, ACK, skill-grounded execution, 5-minute heartbeat, DONE/BLOCKED report with evidence, workunlock, one-shot cross-talk posts, loop until dismissed.",
+  "queries_attempted": [
+    {
+      "query": "idempotent cron job lock prevent double execution",
+      "attempt": 1,
+      "raw_results": 48,
+      "kept": 6
+    },
+    {
+      "query": "heartbeat pattern long running agent progress reporting",
+      "attempt": 1,
+      "raw_results": 60,
+      "kept": 6
+    },
+    {
+      "query": "heartbeat lease mechanism distributed system liveness detection",
+      "attempt": 2,
+      "raw_results": 45,
+      "kept": 6
+    }
+  ],
+  "redo_count": 1,
+  "redo_log": [
+    {
+      "attempt": 2,
+      "reason": "first-attempt query 2 ('heartbeat pattern long running agent progress reporting') returned mostly off-topic results; re-dug with 'heartbeat lease mechanism distributed system liveness detection'",
+      "new_queries": [
+        "heartbeat lease mechanism distributed system liveness detection"
+      ]
+    }
+  ],
+  "results_kept": [
+    "https://www.freecodecamp.org/news/idempotence-explained",
+    "https://cloud.google.com/discover/idempotency",
+    "https://www.merriam-webster.com/dictionary/idempotent",
+    "https://en.m.wikipedia.org/wiki/Idempotence",
+    "https://www.geeksforgeeks.org/javascript/what-is-an-idempotent-rest-api/",
+    "https://dailymanuallab.com/posts/workers-cron-trigger-overlap-prevention/",
+    "https://www.heartbeat.chat/",
+    "https://axme.ai/blog/ai-agent-heartbeat-monitoring/",
+    "https://docs.temporal.io/design-patterns/long-running-activity",
+    "https://handwiki.org/wiki/Medicine:Alcoholism",
+    "https://www.progress-cz.cz/novinky-2",
+    "https://www.imdb.com/title/tt0101114/",
+    "https://www.heartbeat.chat/",
+    "https://simplifycpp.org/books/Go_Volume_6_Applied_Large_Scale_Systems_Engineering.pdf?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://wiki.wikantik.com/wiki/HeartbeatAndLeasePatterns",
+    "https://arpitbhayani.me/blogs/heartbeats-in-distributed-systems/",
+    "https://m.imdb.com/title/tt0101114/",
+    "https://github.com/cockroachdb/cockroach/blob/master/docs/RFCS/20160210_range_leases.md"
+  ],
+  "outcome": "authored"
+}

@@ -1,0 +1,230 @@
+{
+  "topic": "the-follower - the worker side of the-cult multi-agent orchestration (yubiOS skill)",
+  "subtopics": [
+    {
+      "nn": 1,
+      "slug": "get-to-work-layout",
+      "scope": "The GET_TO_WORK folder contract: CULT_LEADER.md pulpit, FOLLOWER_N.md inbox/outbox files, the shared scripts/cult.sh engine, and the GTW path variable.",
+      "seed_queries": []
+    },
+    {
+      "nn": 2,
+      "slug": "arrival-ritual",
+      "scope": "The ordered startup sequence: init, atomic claim of the lowest free FOLLOWER_N, reading the PULPIT, first check-in inside the 5-minute gather window, and inbox polling for orders.",
+      "seed_queries": [
+        "atomic file creation claim lowest free slot race condition O_EXCL",
+        "multi-agent startup check-in barrier pattern orchestration"
+      ]
+    },
+    {
+      "nn": 3,
+      "slug": "working-ritual",
+      "scope": "The per-task loop: worklock before ACK, outbox dedupe, ACK, skill-grounded execution, 5-minute heartbeat, DONE/BLOCKED report with evidence, workunlock, one-shot cross-talk posts, loop until dismissed.",
+      "seed_queries": [
+        "idempotent cron job lock prevent double execution",
+        "heartbeat pattern long running agent progress reporting"
+      ]
+    },
+    {
+      "nn": 4,
+      "slug": "follower-vows",
+      "scope": "The seven standing vows: obey pulpit doctrine, CI only when explicitly assigned by the pulpit, never merge to main, hands off decimal repos, stay in lane, honesty over fake DONE, faithful check-in.",
+      "seed_queries": []
+    },
+    {
+      "nn": 5,
+      "slug": "anti-patterns-and-red-flags",
+      "scope": "The behavioral taxonomy: leader-role drift, worklock skipping, cross-talk re-posting, merges, invented facts, skipped heartbeats, plus the six situational red-flag branches (stale peer, doctrine conflict, scope creep, under-specified task, silent leader, failed checkin).",
+      "seed_queries": [
+        "stale heartbeat detection distributed agents timeout threshold",
+        "multi-agent orchestration failure modes duplicate work spam"
+      ]
+    },
+    {
+      "nn": 6,
+      "slug": "failure-modes",
+      "scope": "The four cult.sh error classes and their recovery branches: worklock BUSY (stale vs fresh lock), claim race (bounded retry, never manual N), checkin silent no-op (GTW, path, writability verification), out-of-order report (re-acquire lock first).",
+      "seed_queries": [
+        "flock lockfile stale lock detection mtime timeout",
+        "bash script silent failure detection exit code idempotency"
+      ]
+    },
+    {
+      "nn": 7,
+      "slug": "recovery-respawn",
+      "scope": "Crash and context-loss protocol: file-system-read-first rule, the three respawn branches (context restored, context lost with DONE/mid-task/BLOCKED outbox endings, new slot), and slot-abandonment handoff on reassign.",
+      "seed_queries": [
+        "crash recovery checkpoint replay idempotent task processing",
+        "LLM agent session continuity durable state files"
+      ]
+    },
+    {
+      "nn": 8,
+      "slug": "end-of-sermon-idle",
+      "scope": "Lifecycle end-state: sermon-ended detection via the CULT_LEADER.md marker, the final terminal report, idle polling at 1-minute cadence with the 15-minute standby threshold, and the orchestrator preconditions acknowledged to the-cult.",
+      "seed_queries": []
+    },
+    {
+      "nn": 9,
+      "slug": "verification-checklist",
+      "scope": "The seven pre-DONE gates: worklock lifecycle, inbox checkbox flip, evidence-in-message, doctrine observance, outbox written, heartbeat recency, skill load order.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "typesafe/jev-1.13-20260917",
+    "endpoint": "https://api.defapi.org/api/v1/decisions",
+    "answers": {
+      "t01": {
+        "score": 1.18,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.3,
+          "2": 0.44
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t02": {
+        "score": 0.76,
+        "probabilities": {
+          "0": 0.4,
+          "1": 0.44,
+          "2": 0.16
+        },
+        "confidence": 0.16,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t03": {
+        "score": 1.43,
+        "probabilities": {
+          "0": 0.16,
+          "1": 0.26,
+          "2": 0.58
+        },
+        "confidence": 0.13,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t04": {
+        "score": 1.2,
+        "probabilities": {
+          "0": 0.26,
+          "1": 0.28,
+          "2": 0.46
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t05": {
+        "score": 1.7,
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.16,
+          "2": 0.77
+        },
+        "confidence": 0.55,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t06": {
+        "score": 1.46,
+        "probabilities": {
+          "0": 0.12,
+          "1": 0.31,
+          "2": 0.57
+        },
+        "confidence": 0.17,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t07": {
+        "score": 0.93,
+        "probabilities": {
+          "0": 0.37,
+          "1": 0.34,
+          "2": 0.29
+        },
+        "confidence": 0,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t08": {
+        "score": 0.32,
+        "probabilities": {
+          "0": 0.74,
+          "1": 0.2,
+          "2": 0.06
+        },
+        "confidence": 0.52,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      },
+      "t09": {
+        "score": 1.05,
+        "probabilities": {
+          "0": 0.29,
+          "1": 0.38,
+          "2": 0.33
+        },
+        "confidence": 0.07,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1117,
+      "output_tokens": 139
+    },
+    "requested_at": "2026-10-08T04:17:19Z",
+    "dropped": [
+      8
+    ],
+    "kept": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+    ]
+  }
+}
