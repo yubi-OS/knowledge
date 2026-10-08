@@ -1,0 +1,237 @@
+{
+ "topic": "Full-corpus deep-research refresh sweep for a repo documentation corpus (yubiOS skill refs-refresh-sweep)",
+ "source_doc": "yubi-OS/yubiOS skills/refs-refresh-sweep/SKILL.md",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "01-scope-and-boundaries",
+   "scope": "When to run a full-corpus refresh sweep vs single-doc refresh, corpus-structure audit, and event history; the anonymous-HTTP dig constraint",
+   "seed_queries": []
+  },
+  {
+   "nn": "02",
+   "slug": "02-endpoints-and-preflight",
+   "scope": "The 3 backing endpoints (decision model, searXNG search proxy, repo writes) and the Phase 0 preflight health gate including the unresponsive-engines blind spot",
+   "seed_queries": [
+    "searXNG metasearch engine JSON API format results documentation",
+    "n8n webhook node proxy GET query parameters forwarding"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "03-enumeration-and-signals",
+   "scope": "Phase 1 corpus enumeration: Contents API listing, raw body fetch concurrency, per-doc staleness signals, incremental persistence",
+   "seed_queries": [
+    "GitHub REST API contents directory listing pagination per_page",
+    "raw.githubusercontent.com rate limits abuse IP address"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "04-jev-triage-and-batching",
+   "scope": "Phase 2 jev triage: per-doc state shape, 5-doc noul batching, 15 req/min/IP cap, per-batch persistence and kill-resilience logging",
+   "seed_queries": [
+    "DefAPI typesafe decision model API structured answers",
+    "LLM as judge binary classification calibrated probabilities reliability"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "05-ranking-and-dig-strategy",
+   "scope": "Phase 3 ranking: the 0.7 jev + 0.3 age blended rank, top-N bounding, dig query shape, SearXNG engine suspension mechanics and fallback",
+   "seed_queries": [
+    "searXNG unresponsive engines suspended error handling",
+    "recency weighted ranking stale documentation refresh prioritize"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "06-quality-weighting",
+   "scope": "Phase 4 collection-quality weighting: noul question shape, batch-as-they-land weighting, measured weight separation, limits of the metric",
+   "seed_queries": [
+    "evaluating source quality primary source vs aggregator websites",
+    "LLM based search result relevance weighting citation quality"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "07-research-db-persistence",
+   "scope": "Phase 5 research DB: archive.json, digs/*.json, typed db.ts index, plan doc, in-repo on a PR branch, auditability contract",
+   "seed_queries": []
+  },
+  {
+   "nn": "08",
+   "slug": "08-subagent-fan-out-and-merge",
+   "scope": "Phase 6 parallel subagent fan-out: self-contained prompts, append-only refresh edits, honest no-change verdicts, POST /merges orchestration",
+   "seed_queries": [
+    "GitHub API draft pull request PATCH draft false merge endpoint",
+    "parallel subagent fan-out orchestration LLM agents pattern"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "09-failure-modes-and-verification",
+   "scope": "Operational traps (UA 1010, unbatched calls, /tmp wipes, draft-PATCH no-op), the 5 red flags, and the verification checklist",
+   "seed_queries": [
+    "Cloudflare error 1010 access denied browser integrity user agent",
+    "append-only audit log incremental persistence crash recovery design"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13-20260917",
+  "endpoint": "https://api.defapi.org/api/v1/decisions",
+  "answers": {
+   "t01": {
+    "score": 1.88,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.04,
+     "2": 0.92
+    },
+    "confidence": 0.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.65,
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.08,
+     "2": 0.79
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.84,
+    "probabilities": {
+     "0": 0.06,
+     "1": 0.03,
+     "2": 0.91
+    },
+    "confidence": 0.78,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.1,
+    "probabilities": {
+     "0": 0.36,
+     "1": 0.18,
+     "2": 0.46
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 0.84,
+    "probabilities": {
+     "0": 0.54,
+     "1": 0.08,
+     "2": 0.38
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 0.53,
+    "probabilities": {
+     "0": 0.63,
+     "1": 0.21,
+     "2": 0.16
+    },
+    "confidence": 0.2,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.85,
+    "probabilities": {
+     "0": 0.47,
+     "1": 0.2,
+     "2": 0.33
+    },
+    "confidence": 0,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 1.58,
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.09,
+     "2": 0.74
+    },
+    "confidence": 0.35,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.5,
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.15,
+     "2": 0.68
+    },
+    "confidence": 0.27,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1267,
+   "output_tokens": 139,
+   "cost": 0.000106428
+  },
+  "dropped": [],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "07",
+   "08",
+   "09"
+  ],
+  "notes": "No score-0 subtopics. t04 (1.10), t05 (0.84), t06 (0.53) scored marginal and were kept because their digs came back strong (54/45, 42/45, 47/47 raw results). t07 (0.85) scored marginal and is an internal-record subtopic per the skills-variant brief (schema defined by source doc and mint brief); kept as core schema documentation."
+ }
+}
