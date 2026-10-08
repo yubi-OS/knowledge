@@ -1,0 +1,35 @@
+{
+ "nn": "09",
+ "slug": "yubios-boot-filesystem-directives",
+ "scope": "ConditionSecurity=measured-os (v261) unit gating on OS PCR measurements, RestrictFileSystems= (v250) LSM eBPF hook, allow/deny lists, predefined sets, CONFIG_BPF_LSM verification",
+ "queries_attempted": [
+  {
+   "query": "systemd ConditionSecurity measured-os systemd.unit",
+   "attempt": 1,
+   "raw_results": 45,
+   "kept": 6
+  },
+  {
+   "query": "systemd RestrictFileSystems BPF LSM systemd-analyze filesystems",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://www.man7.org/linux/man-pages/man7/systemd.directives.7.html",
+  "https://www.man7.org/linux/man-pages/man5/systemd.unit.5.html",
+  "https://systemd.io/",
+  "https://www.freedesktop.org/software/systemd/man/latest/systemd.directives.html",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://man7.org/linux/man-pages/man5/systemd.unit.5.html",
+  "https://kinvolk.io/blog/2021/02/extending-systemd-security-features-with-ebpf",
+  "https://deepwiki.com/systemd/systemd/8.2-process-sandboxing-and-isolation",
+  "https://docs.kernel.org/bpf/prog_lsm.html",
+  "https://github.com/systemd/systemd/issues/31549",
+  "https://systemd.io/FILE_DESCRIPTOR_STORE/"
+ ],
+ "outcome": "authored"
+}

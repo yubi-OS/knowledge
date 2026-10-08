@@ -1,0 +1,35 @@
+{
+ "nn": "05",
+ "slug": "kernel-syscall-filtering",
+ "scope": "Kernel and syscall hardening: ProtectKernel* directives, seccomp SystemCallFilter groups, SystemCallArchitectures, MemoryDenyWriteExecute, RestrictAddressFamilies, RestrictNamespaces, RestrictRealtime, RestrictSUIDSGID, LockPersonality",
+ "queries_attempted": [
+  {
+   "query": "systemd SystemCallFilter @system-service seccomp groups reference",
+   "attempt": 1,
+   "raw_results": 41,
+   "kept": 6
+  },
+  {
+   "query": "systemd MemoryDenyWriteExecute ProtectKernelTunables RestrictAddressFamilies",
+   "attempt": 1,
+   "raw_results": 42,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://linux-audit.com/systemd/settings/units/systemcallfilter/",
+  "https://linux-audit.com/systemd/systemd-syscall-filtering/",
+  "https://www.systemshardening.com/articles/linux/seccomp-bpf-non-container/",
+  "https://linuxjunkies.org/guides/seccomp-bpf-filters",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-use-seccomp-to-restrict-system-calls-on-ubuntu/view",
+  "https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04",
+  "https://systemd.io/",
+  "https://github.com/systemd/systemd",
+  "https://linuxjunkies.org/guides/lock-down-systemd-services",
+  "https://www.freedesktop.org/software/systemd/man/systemd.exec.html"
+ ],
+ "outcome": "authored"
+}

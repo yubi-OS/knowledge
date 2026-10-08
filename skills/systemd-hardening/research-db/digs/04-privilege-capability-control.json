@@ -1,0 +1,36 @@
+{
+ "nn": "04",
+ "slug": "privilege-capability-control",
+ "scope": "Privilege controls: NoNewPrivileges, CapabilityBoundingSet/AmbientCapabilities, DynamicUser, RemoveIPC, PrivateDevices, capability reference",
+ "queries_attempted": [
+  {
+   "query": "systemd CapabilityBoundingSet AmbientCapabilities NoNewPrivileges guide",
+   "attempt": 1,
+   "raw_results": 44,
+   "kept": 6
+  },
+  {
+   "query": "systemd DynamicUser RemoveIPC PrivateDevices security",
+   "attempt": 1,
+   "raw_results": 40,
+   "kept": 6
+  }
+ ],
+ "redo_count": 0,
+ "redo_log": [],
+ "results_kept": [
+  "https://wiki.archlinux.org/title/Systemd/Sandboxing",
+  "https://dev.to/boyeolowoyeye/linux-capabilities-use-cases-systemd-2n8n",
+  "https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/",
+  "https://linux-audit.com/systemd/settings/units/capabilityboundingset/",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://linuxjunkies.org/guides/lock-down-systemd-services",
+  "https://linux-audit.com/systemd/settings/units/removeipc/",
+  "https://linux-audit.com/systemd/settings/units/privatedevices/",
+  "https://systemd.io/",
+  "https://unix.stackexchange.com/questions/635027/systemd-dynamicuser-vs-user",
+  "https://linuxconfig.org/how-to-increase-the-security-of-systemd-services",
+  "https://0pointer.net/blog/dynamic-users-with-systemd.html"
+ ],
+ "outcome": "authored"
+}

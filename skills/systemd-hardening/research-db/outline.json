@@ -1,0 +1,266 @@
+{
+ "topic": "Writing hardened systemd service units for yubiOS - systemd-analyze security scores, sandbox directives, FIDO2/PAM auth, drop-in overrides (ground source: yubi-OS/yubiOS skills/systemd-hardening/SKILL.md)",
+ "subtopics": [
+  {
+   "nn": "01",
+   "slug": "security-audit-workflow",
+   "scope": "systemd-analyze security exposure scoring: 0.0-10.0 scale, per-unit audits, --no-pager top unset directives, thresholds (7.0 warrant hardening, target <4.0), audit-first workflow",
+   "seed_queries": [
+    "systemd-analyze security exposure score explained",
+    "systemd-analyze security worst offenders audit workflow"
+   ]
+  },
+  {
+   "nn": "02",
+   "slug": "hardened-unit-template",
+   "scope": "The full hardened service unit template: Type=notify, watchdog, Restart, DynamicUser, directory directives (StateDirectory/RuntimeDirectory/ConfigurationDirectory), Install section",
+   "seed_queries": [
+    "systemd unit Type=notify WatchdogSec NotifyAccess best practices",
+    "systemd StateDirectory RuntimeDirectory ConfigurationDirectory semantics"
+   ]
+  },
+  {
+   "nn": "03",
+   "slug": "filesystem-isolation",
+   "scope": "Filesystem sandbox directives: PrivateTmp, ProtectSystem=strict, ProtectHome, ReadOnlyPaths, ReadWritePaths allowlist model and interactions",
+   "seed_queries": [
+    "systemd ProtectSystem strict PrivateTmp ProtectHome explained",
+    "systemd ReadWritePaths ReadOnlyPaths interplay ProtectSystem"
+   ]
+  },
+  {
+   "nn": "04",
+   "slug": "privilege-capability-control",
+   "scope": "Privilege controls: NoNewPrivileges, CapabilityBoundingSet/AmbientCapabilities, DynamicUser, RemoveIPC, PrivateDevices, capability reference",
+   "seed_queries": [
+    "systemd CapabilityBoundingSet AmbientCapabilities NoNewPrivileges guide",
+    "systemd DynamicUser RemoveIPC PrivateDevices security"
+   ]
+  },
+  {
+   "nn": "05",
+   "slug": "kernel-syscall-filtering",
+   "scope": "Kernel and syscall hardening: ProtectKernel* directives, seccomp SystemCallFilter groups, SystemCallArchitectures, MemoryDenyWriteExecute, RestrictAddressFamilies, RestrictNamespaces, RestrictRealtime, RestrictSUIDSGID, LockPersonality",
+   "seed_queries": [
+    "systemd SystemCallFilter @system-service seccomp groups reference",
+    "systemd MemoryDenyWriteExecute ProtectKernelTunables RestrictAddressFamilies"
+   ]
+  },
+  {
+   "nn": "06",
+   "slug": "incremental-hardening-dropins",
+   "scope": "Phase approach to applying directives plus drop-in overrides via systemctl edit, daemon-reload, restart, rescore",
+   "seed_queries": [
+    "systemd systemctl edit drop-in override.conf workflow",
+    "systemd incremental service hardening testing strategy"
+   ]
+  },
+  {
+   "nn": "07",
+   "slug": "fido2-pam-u2f",
+   "scope": "pam-u2f FIDO2 second factor: pamu2fcfg registration, u2f_keys, PAM config for sshd and sudo",
+   "seed_queries": [
+    "pam-u2f configuration u2f_keys pamu2fcfg guide",
+    "pam_u2f sshd sudo PAM setup Yubico docs"
+   ]
+  },
+  {
+   "nn": "08",
+   "slug": "systemd-homed-fido2",
+   "scope": "systemd-homed with YubiKey FIDO2: homectl create --storage=luks --fido2-device, PAM ordering with pam_systemd_home.so",
+   "seed_queries": [
+    "systemd-homed homectl fido2-device luks create user",
+    "pam_systemd_home PAM ordering sufficient required"
+   ]
+  },
+  {
+   "nn": "09",
+   "slug": "yubios-boot-filesystem-directives",
+   "scope": "ConditionSecurity=measured-os (v261) unit gating on OS PCR measurements, RestrictFileSystems= (v250) LSM eBPF hook, allow/deny lists, predefined sets, CONFIG_BPF_LSM verification",
+   "seed_queries": [
+    "systemd ConditionSecurity measured-os systemd.unit",
+    "systemd RestrictFileSystems BPF LSM systemd-analyze filesystems"
+   ]
+  },
+  {
+   "nn": "10",
+   "slug": "primitive-placement",
+   "scope": "Internal-record subtopic: the skill's 10-primitive placement and RSI cycle-4 to 7 audit-trail entries; cites the source doc only",
+   "seed_queries": [
+    "internal-record subtopic no dig",
+    "internal-record subtopic no dig"
+   ]
+  }
+ ],
+ "validation": {
+  "metric": "score",
+  "criteria": [
+   "padding: drop",
+   "marginal: keep only if the dig comes back strong",
+   "load-bearing: core subtopic"
+  ],
+  "model": "typesafe/jev-1.13",
+  "answers": {
+   "t01": {
+    "score": 1.7,
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.14,
+     "2": 0.78
+    },
+    "confidence": 0.55,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t02": {
+    "score": 1.93,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.02,
+     "2": 0.95
+    },
+    "confidence": 0.88,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t03": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.05,
+     "2": 0.92
+    },
+    "confidence": 0.83,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t04": {
+    "score": 1.96,
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.01,
+     "2": 0.98
+    },
+    "confidence": 0.95,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t05": {
+    "score": 1.89,
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.04,
+     "2": 0.92
+    },
+    "confidence": 0.82,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t06": {
+    "score": 1.9,
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.04,
+     "2": 0.93
+    },
+    "confidence": 0.85,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t07": {
+    "score": 0.38,
+    "probabilities": {
+     "0": 0.65,
+     "1": 0.31,
+     "2": 0.04
+    },
+    "confidence": 0.41,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t08": {
+    "score": 0.34,
+    "probabilities": {
+     "0": 0.69,
+     "1": 0.28,
+     "2": 0.03
+    },
+    "confidence": 0.49,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t09": {
+    "score": 1.48,
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.24,
+     "2": 0.62
+    },
+    "confidence": 0.22,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   },
+   "t10": {
+    "score": 1.39,
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.16,
+     "2": 0.62
+    },
+    "confidence": 0.1,
+    "legend": {
+     "0": "padding: drop",
+     "1": "marginal: keep only if the dig comes back strong",
+     "2": "load-bearing: core subtopic"
+    }
+   }
+  },
+  "usage": {
+   "input_tokens": 1692,
+   "output_tokens": 154,
+   "cost": 0.000142128
+  },
+  "dropped": [
+   "07",
+   "08"
+  ],
+  "kept": [
+   "01",
+   "02",
+   "03",
+   "04",
+   "05",
+   "06",
+   "09",
+   "10"
+  ],
+  "dropped_note": "scores 0.38 and 0.34 respectively; nearest legend bucket is padding: drop"
+ }
+}

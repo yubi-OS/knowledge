@@ -1,0 +1,64 @@
+{
+ "nn": "06",
+ "slug": "incremental-hardening-dropins",
+ "scope": "Phase approach to applying directives plus drop-in overrides via systemctl edit, daemon-reload, restart, rescore",
+ "queries_attempted": [
+  {
+   "query": "systemd systemctl edit drop-in override.conf workflow",
+   "attempt": 1,
+   "raw_results": 43,
+   "kept": 6
+  },
+  {
+   "query": "systemd incremental service hardening testing strategy",
+   "attempt": 1,
+   "raw_results": 46,
+   "kept": 6
+  },
+  {
+   "query": "systemd drop-in override.d best practice daemon-reload",
+   "attempt": 2,
+   "raw_results": 41,
+   "kept": 4
+  },
+  {
+   "query": "systemd service hardening checklist phase by phase",
+   "attempt": 2,
+   "raw_results": 43,
+   "kept": 4
+  }
+ ],
+ "redo_count": 1,
+ "redo_log": [
+  {
+   "attempt": 2,
+   "reason": "only 1 high-weight source in first dig; redone with different queries",
+   "new_queries": [
+    "systemd drop-in override.d best practice daemon-reload",
+    "systemd service hardening checklist phase by phase"
+   ]
+  }
+ ],
+ "results_kept": [
+  "https://www.baeldung.com/linux/systemd-modify-config",
+  "https://laptopjudge.com/systemctl-edit-service/",
+  "https://oneuptime.com/blog/post/2026-03-02-how-to-override-systemd-service-parameters-with-drop-in-files-on-ubuntu/view",
+  "https://www.simplified.guide/systemd/unit-edit-override",
+  "https://en.wikipedia.org/wiki/Systemd",
+  "https://linuxjunkies.org/guides/debugging-systemd-units",
+  "https://mylinux.work/guides/systemd-hardening/",
+  "https://mylinux.work/guides/systemd-service-hardening/",
+  "https://stackharbor.com/en/knowledge-base/systemd-service-sandboxing-hardening/",
+  "https://systemd.io/",
+  "https://blog.gntech.me/posts/2026-05-24-systemd-service-hardening-linux/",
+  "https://www.funwithlinux.net/systemd-service-management/how-to-override-systemd-service-defaults-a-practical-guide/",
+  "https://how2.sh/posts/how-to-manage-systemd-services-with-drop-in-overrides/",
+  "https://www.devopsness.com/blog/systemd-drop-in-overrides-for-vendor-services-the-supportable-linux-ops-pattern-2026-03-24",
+  "https://www.flatcar.org/docs/latest/os-config/host-config/drop-in-units/",
+  "https://hostperl.com/blog/systemd-service-hardening-checklist-for-vps-2026",
+  "https://askio.cloud/blog/linux-systemd-service-hardening-audit-checklist",
+  "https://www.ctrl.blog/entry/systemd-service-hardening/",
+  "https://linux-audit.com/systemd/how-to-harden-a-systemd-service-unit/"
+ ],
+ "outcome": "authored"
+}
