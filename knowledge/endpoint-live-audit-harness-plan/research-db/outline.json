@@ -1,0 +1,163 @@
+{
+  "topic": "Live endpoint audit + falsification-harness improvement plan",
+  "source_doc": "yubi-OS/yubiOS refs/endpoint-live-audit-harness-plan-2026-10-08.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "method",
+      "scope": "Method: detailed analysis grounded in yubi-OS/yubiOS refs/endpoint-live-audit-harness-plan-2026-10-08.md.",
+      "seed_queries": [
+        "REST API live contract auditing bearer authentication",
+        "Cloudflare Workers D1 Vectorize eventual consistency"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "results-by-section",
+      "scope": "Results by section: detailed analysis grounded in yubi-OS/yubiOS refs/endpoint-live-audit-harness-plan-2026-10-08.md.",
+      "seed_queries": [
+        "in-memory test driver SQL parity unit testing",
+        "HTTP 422 validation error vs 500 stack trace security"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "live-findings",
+      "scope": "Live findings: detailed analysis grounded in yubi-OS/yubiOS refs/endpoint-live-audit-harness-plan-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "load-bearing-sections-without-a-selftest-or-fals",
+      "scope": "Load-bearing sections without a selftest or falsification harness: detailed analysis grounded in yubi-OS/yubiOS refs/endpoint-live-audit-harness-plan-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "improvement-plan",
+      "scope": "Improvement plan: detailed analysis grounded in yubi-OS/yubiOS refs/endpoint-live-audit-harness-plan-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "what-passed-clean",
+      "scope": "What passed clean: detailed analysis grounded in yubi-OS/yubiOS refs/endpoint-live-audit-harness-plan-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.7481,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0635,
+          "1": 0.1249,
+          "2": 0.8116
+        },
+        "confidence": 0.5174
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.4135,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1451,
+          "1": 0.2963,
+          "2": 0.5586
+        },
+        "confidence": 0.1313
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.6869,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0929,
+          "1": 0.1273,
+          "2": 0.7798
+        },
+        "confidence": 0.4494
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8612,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0378,
+          "1": 0.0632,
+          "2": 0.899
+        },
+        "confidence": 0.7204
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8807,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0383,
+          "1": 0.0428,
+          "2": 0.9189
+        },
+        "confidence": 0.7716
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.8477,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3306,
+          "1": 0.491,
+          "2": 0.1784
+        },
+        "confidence": 0.0733
+      }
+    },
+    "usage": {
+      "input_tokens": 1080,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
