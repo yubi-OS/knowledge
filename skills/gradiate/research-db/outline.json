@@ -1,0 +1,166 @@
+{
+  "topic": "yubiOS gradiate Skill: Layered CSS Background Gradients and Agent Prompts via the Steady Orbit Gradient Designer",
+  "source_doc": "yubi-OS/yubiOS skills/gradiate/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "runtime-designer-ingestion-and-radiant-endpoint",
+      "scope": "Fetching the live Steady Orbit Gradient Designer at steadyorbitsystems.com/radiant/ (and workers.dev/radiant/, while /gradiant/ 404s) to execute its own buildCss and buildPrompt functions. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "02",
+      "slug": "layered-linear-gradient-composition-and-center-fade",
+      "scope": "Composing 2-4 token colors into stacked horizontal (90deg) and vertical (180deg) linear-gradient layers with alpha at 0%/100% and 0 alpha at 50% to frame content and fade toward the center.",
+      "seed_queries": [
+        "CSS multiple stacked linear-gradient background-image alpha transparency",
+        "CSS linear-gradient color stops 8-digit hex alpha"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "edge-alpha-contrast-and-wcag-readability",
+      "scope": "Keeping edge alpha low (0.4 vs 0.85-0.9) so foreground text (#E7EAF6 over #0B1026) maintains >= 4.5:1 contrast (~5.7:1 on 0.4 cyan edge), and lowering alpha before altering text color.",
+      "seed_queries": [
+        "WCAG 2.1 contrast ratio text over CSS gradient background",
+        "relative luminance alpha compositing contrast calculation"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "scrolling-page-seams-and-background-sizing",
+      "scope": "Preventing viewport-height tiling seams on scrolling pages with background-repeat: no-repeat and background-size: 100% 100%, and avoiding unrequested background-attachment: fixed.",
+      "seed_queries": [
+        "CSS linear-gradient repeating seam scrolling page background-repeat no-repeat",
+        "CSS background-attachment fixed repaint performance mobile"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "browser-computed-style-and-bounding-rect-verification",
+      "scope": "Verifying getComputedStyle(el).backgroundImage !== 'none' (catching silent dropped declarations from missing semicolons), measuring controls with getBoundingClientRect(), and hiding fixed overlays. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "cli-workflow-edge-fade-example-and-guidelines",
+      "scope": "Running scripts/gradiate.mjs with examples/edge-fade.json, --sel, --out, and --sample, and enforcing the 6 operational guidelines. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.4191,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1831,
+          "1": 0.2147,
+          "2": 0.6022
+        },
+        "confidence": 0.1634
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8642,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0331,
+          "1": 0.0695,
+          "2": 0.8974
+        },
+        "confidence": 0.7169
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.5482,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0978,
+          "1": 0.2562,
+          "2": 0.646
+        },
+        "confidence": 0.2388
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.5454,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0852,
+          "1": 0.2842,
+          "2": 0.6306
+        },
+        "confidence": 0.2285
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.8371,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3561,
+          "1": 0.4507,
+          "2": 0.1932
+        },
+        "confidence": 0.0509
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.5435,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0978,
+          "1": 0.2609,
+          "2": 0.6413
+        },
+        "confidence": 0.2334
+      }
+    },
+    "usage": {
+      "input_tokens": 1253,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}

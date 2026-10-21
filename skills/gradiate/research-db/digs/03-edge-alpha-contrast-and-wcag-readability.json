@@ -1,0 +1,27 @@
+{
+  "nn": "03",
+  "slug": "edge-alpha-contrast-and-wcag-readability",
+  "scope": "Keeping edge alpha low (0.4 vs 0.85-0.9) so foreground text (#E7EAF6 over #0B1026) maintains >= 4.5:1 contrast (~5.7:1 on 0.4 cyan edge), and lowering alpha before altering text color.",
+  "queries_attempted": [
+    {
+      "query": "WCAG 2.1 contrast ratio text over CSS gradient background",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    },
+    {
+      "query": "relative luminance alpha compositing contrast calculation",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://www.w3.org/WAI/standards-guidelines/wcag/",
+    "https://www.accessibility-developer-guide.com/knowledge/colours-and-contrast/how-to-calculate/",
+    "yubi-OS/yubiOS skills/gradiate/SKILL.md"
+  ],
+  "outcome": "authored"
+}
