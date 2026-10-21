@@ -1,0 +1,163 @@
+{
+  "topic": "Hierarchy-detector routing regime [SOLO]",
+  "source_doc": "yubi-OS/yubiOS refs/hierarchy-router-solo-2026-10-06.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "problem-statement",
+      "scope": "Problem Statement: detailed analysis grounded in yubi-OS/yubiOS refs/hierarchy-router-solo-2026-10-06.md.",
+      "seed_queries": [
+        "multi-model orchestration routing threshold calibration",
+        "deterministic policy gate vs probabilistic routing LLM"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "grounding-what-exists",
+      "scope": "Grounding (what exists): detailed analysis grounded in yubi-OS/yubiOS refs/hierarchy-router-solo-2026-10-06.md.",
+      "seed_queries": [
+        "fractal dimension threshold classifier calibration",
+        "human-in-the-loop approval expiry policy version"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "recommended-direction",
+      "scope": "Recommended Direction: detailed analysis grounded in yubi-OS/yubiOS refs/hierarchy-router-solo-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "key-assumptions-to-validate",
+      "scope": "Key Assumptions to Validate: detailed analysis grounded in yubi-OS/yubiOS refs/hierarchy-router-solo-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "mvp-scope-one-atomic-loop",
+      "scope": "MVP Scope (one atomic loop): detailed analysis grounded in yubi-OS/yubiOS refs/hierarchy-router-solo-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "not-doing-and-why",
+      "scope": "Not Doing (and Why): detailed analysis grounded in yubi-OS/yubiOS refs/hierarchy-router-solo-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6799,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0921,
+          "1": 0.1359,
+          "2": 0.772
+        },
+        "confidence": 0.4344
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.7412,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0569,
+          "1": 0.1451,
+          "2": 0.798
+        },
+        "confidence": 0.4918
+      },
+      "t03": {
+        "type": "score",
+        "score": 0.9171,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3858,
+          "1": 0.3113,
+          "2": 0.3029
+        },
+        "confidence": 0.0062
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.3075,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1358,
+          "1": 0.4209,
+          "2": 0.4433
+        },
+        "confidence": 0.0881
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.3505,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1622,
+          "1": 0.3251,
+          "2": 0.5127
+        },
+        "confidence": 0.0923
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.0682,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2826,
+          "1": 0.3666,
+          "2": 0.3508
+        },
+        "confidence": 0.006
+      }
+    },
+    "usage": {
+      "input_tokens": 1061,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
