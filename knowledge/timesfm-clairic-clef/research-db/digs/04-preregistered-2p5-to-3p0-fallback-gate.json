@@ -1,0 +1,28 @@
+{
+  "nn": "04",
+  "slug": "preregistered-2p5-to-3p0-fallback-gate",
+  "scope": "Rolling-origin evaluation against seasonal naive and damped-Holt ETS baselines; the 4 Clef-weighted fallback triggers (MASE, PICP_80 coverage, covariate R2, horizon > 128).",
+  "queries_attempted": [
+    {
+      "query": "rolling origin evaluation MASE pinball loss time series",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 2
+    },
+    {
+      "query": "GIFT-Eval FEV-Bench TimesFM foundation model benchmark",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://openforecast.org/adam/rollingOrigin.html",
+    "https://robjhyndman.com/hyndsight/rolling_mase.html",
+    "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+    "yubi-OS/yubiOS refs/timesfm-clairic-clef-2026-10-21.md"
+  ],
+  "outcome": "authored"
+}
