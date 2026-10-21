@@ -1,0 +1,166 @@
+{
+  "topic": "yubiOS jev-timeseries Skill: Workers Analytics Engine Trajectory Tier, Damped-Trend Holt ETS, and 3-Stage TimesFM+Clairic+Clef Cascade",
+  "source_doc": "yubi-OS/yubiOS skills/jev-timeseries/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "wae-trajectory-tier-and-series-schema",
+      "scope": "Workers Analytics Engine dataset jev schema (index1, blob1..3, double1..2), fire-and-forget tsWrite with isolate-local tsWriteStats(), and D1 vs WAE separation.",
+      "seed_queries": [
+        "Cloudflare Workers Analytics Engine writeDataPoint SQL API",
+        "Cloudflare Analytics Engine index1 blob1 double1 schema"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "bearer-gated-timeseries-and-forecast-routes",
+      "scope": "Route contracts for GET /api/jev/timeseries/selftest, /series, /export, GET /api/jev/forecast/:series, and POST /api/jev/forecast/:series. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "03",
+      "slug": "ets-forecaster-contract-and-honest-g2-failure",
+      "scope": "jev-forecast-math.js damped-trend Holt ETS (19x19 alpha/beta grid, phi=0.98), G1-G6 falsification gates, and why G2/NEG_G2 ship failing honestly with quality.calibrated=false.",
+      "seed_queries": [
+        "Holt damped trend exponential smoothing forecasting phi",
+        "prediction interval undercoverage small sample time series"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "hybrid-cascade-engine-clairic-timesfm-clef",
+      "scope": "jev-cascade-forecast.js (?engine=cascade and POST): Stage 1 Clairic intake, Stage 2 TimesFM 2.5->3.0 conformal fallback, Stage 3 Clef decision + outcomes pre-registration. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "wae-sql-and-worker-deploy-lessons",
+      "scope": "Five production deploy lessons: secret_text plain-string shape vs .get(), timestamp in SELECT for ORDER BY, curl -F metadata framing, WAE SQL lag, and X-Sauna-Connection-Id: none.",
+      "seed_queries": [
+        "Cloudflare Workers Analytics Engine SQL ORDER BY timestamp",
+        "Cloudflare Workers multipart script upload metadata bindings"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "jev-console-forecast-card-and-guidelines",
+      "scope": "The /jev/ Corpus tab Forecast card (jevfc-*, Engine selector cascade vs ets, Live Clairic checkbox, 8 stat tiles) and the 4 operational guidelines. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8713,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0336,
+          "1": 0.0615,
+          "2": 0.9049
+        },
+        "confidence": 0.7356
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.5462,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1101,
+          "1": 0.2335,
+          "2": 0.6564
+        },
+        "confidence": 0.2462
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.944,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0159,
+          "1": 0.0241,
+          "2": 0.96
+        },
+        "confidence": 0.8836
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.848,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0351,
+          "1": 0.0818,
+          "2": 0.8831
+        },
+        "confidence": 0.6817
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.2738,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1438,
+          "1": 0.4386,
+          "2": 0.4176
+        },
+        "confidence": 0.0812
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.9279,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2638,
+          "1": 0.5445,
+          "2": 0.1917
+        },
+        "confidence": 0.1042
+      }
+    },
+    "usage": {
+      "input_tokens": 1341,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
