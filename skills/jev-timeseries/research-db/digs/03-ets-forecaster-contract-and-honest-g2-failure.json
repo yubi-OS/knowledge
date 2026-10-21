@@ -1,0 +1,28 @@
+{
+  "nn": "03",
+  "slug": "ets-forecaster-contract-and-honest-g2-failure",
+  "scope": "jev-forecast-math.js damped-trend Holt ETS (19x19 alpha/beta grid, phi=0.98), G1-G6 falsification gates, and why G2/NEG_G2 ship failing honestly with quality.calibrated=false.",
+  "queries_attempted": [
+    {
+      "query": "Holt damped trend exponential smoothing forecasting phi",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 2
+    },
+    {
+      "query": "prediction interval undercoverage small sample time series",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://otexts.com/fpp2/holt.html",
+    "https://www.stat.berkeley.edu/~ryantibs/timeseries-f23/lectures/ets.pdf",
+    "https://arxiv.org/pdf/2309.07435v1",
+    "yubi-OS/yubiOS skills/jev-timeseries/SKILL.md"
+  ],
+  "outcome": "authored"
+}
