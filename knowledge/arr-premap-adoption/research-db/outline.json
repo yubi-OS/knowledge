@@ -1,0 +1,163 @@
+{
+  "topic": "Adoption record: exact-predicate Delaunay for the steady-orbit walk graph (2026-10-16)",
+  "source_doc": "yubi-OS/yubiOS refs/arr-premap-adoption-2026-10-16.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "what-shipped",
+      "scope": "What shipped: detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-adoption-2026-10-16.md.",
+      "seed_queries": [
+        "Bowyer-Watson Delaunay triangulation degenerate cocircular points",
+        "Shewchuk exact geometric predicates orient2d incircle"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "verification-live-after-the-25-second-stale-wind",
+      "scope": "Verification (live, after the 25 second stale window): detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-adoption-2026-10-16.md.",
+      "seed_queries": [
+        "planar Delaunay graph degree distribution random walk",
+        "floating point robustness computational geometry"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "what-changed-for-consumers",
+      "scope": "What changed for consumers: detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-adoption-2026-10-16.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "open-items-not-done-in-this-deploy",
+      "scope": "Open items (not done in this deploy): detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-adoption-2026-10-16.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "provenance",
+      "scope": "Provenance: detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-adoption-2026-10-16.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "integration-and-operational-governance",
+      "scope": "Integration with yubiOS and Steady Orbit /jev/ endpoints, policy versioning, and audit trail. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6703,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0862,
+          "1": 0.1573,
+          "2": 0.7565
+        },
+        "confidence": 0.4067
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.5381,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0895,
+          "1": 0.2829,
+          "2": 0.6276
+        },
+        "confidence": 0.2229
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.6348,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0906,
+          "1": 0.184,
+          "2": 0.7254
+        },
+        "confidence": 0.3524
+      },
+      "t04": {
+        "type": "score",
+        "score": 0.9574,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2437,
+          "1": 0.5552,
+          "2": 0.2011
+        },
+        "confidence": 0.1121
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.8604,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3767,
+          "1": 0.3863,
+          "2": 0.237
+        },
+        "confidence": 0.0209
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.7404,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0494,
+          "1": 0.1608,
+          "2": 0.7898
+        },
+        "confidence": 0.4782
+      }
+    },
+    "usage": {
+      "input_tokens": 1203,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
