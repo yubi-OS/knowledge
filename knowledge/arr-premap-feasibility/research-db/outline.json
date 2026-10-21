@@ -1,0 +1,163 @@
+{
+  "topic": "Feasibility check: arrangement response and hierarchy premap (2026-10-16)",
+  "source_doc": "yubi-OS/yubiOS refs/arr-premap-feasibility-2026-10-16.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "0-verdict",
+      "scope": "0. Verdict: detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-feasibility-2026-10-16.md.",
+      "seed_queries": [
+        "bi-Lipschitz invariance Hausdorff box-counting dimension affine transformation",
+        "anisotropic scaling random walk mean squared displacement"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "1-what-the-live-surface-offers-read-only",
+      "scope": "1. What the live surface offers (read only): detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-feasibility-2026-10-16.md.",
+      "seed_queries": [
+        "Delaunay triangulation stability under vertex perturbation",
+        "rasterization aliasing disk lattice digital geometry"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "2-source-of-record-reproduction-python-sandbox",
+      "scope": "2. Source-of-record reproduction (Python, sandbox): detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-feasibility-2026-10-16.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "3-js-port-against-the-source-of-record-node-24-s",
+      "scope": "3. JS port against the source of record (Node 24, sandbox): detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-feasibility-2026-10-16.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "4-the-js-renderer-cannot-draw-warped-centers",
+      "scope": "4. The JS renderer cannot draw warped centers: detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-feasibility-2026-10-16.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "5-gasket-depth-ladder-premap-feasibility",
+      "scope": "5. Gasket depth ladder (premap feasibility): detailed analysis grounded in yubi-OS/yubiOS refs/arr-premap-feasibility-2026-10-16.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8065,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0663,
+          "1": 0.0608,
+          "2": 0.8729
+        },
+        "confidence": 0.655
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.4912,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1173,
+          "1": 0.2742,
+          "2": 0.6085
+        },
+        "confidence": 0.1888
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.4955,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1263,
+          "1": 0.2519,
+          "2": 0.6218
+        },
+        "confidence": 0.199
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.6361,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0804,
+          "1": 0.203,
+          "2": 0.7166
+        },
+        "confidence": 0.3417
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.6469,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0889,
+          "1": 0.1753,
+          "2": 0.7358
+        },
+        "confidence": 0.3701
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.6548,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0912,
+          "1": 0.1628,
+          "2": 0.746
+        },
+        "confidence": 0.387
+      }
+    },
+    "usage": {
+      "input_tokens": 1235,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
