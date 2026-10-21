@@ -1,0 +1,166 @@
+{
+  "topic": "yubiOS cf-deployment-backup Skill: Full Cloudflare Account Deployment Backup & Restore Zip Workflow",
+  "source_doc": "yubi-OS/yubiOS skills/cf-deployment-backup/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "backup-scope-inclusions-and-exclusions",
+      "scope": "Default backup scope (worker bundles, settings, schedules, subdomains, KV, Vectorize, Analytics Engine snapshot, Secrets Store names) and default exclusions (D1 data, write-only secret values).",
+      "seed_queries": [
+        "Cloudflare Workers REST API get script multipart bundle settings schedules",
+        "Cloudflare Secrets Store write-only secret values API"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "preflight-inventory-and-multipart-bundle-parsing",
+      "scope": "Live account inventory pass across Workers, Domains, KV, Vectorize, R2 (10042), D1, Hyperdrive, Durable Objects, and parsing multipart Worker bundles by Content-Type boundary. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "03",
+      "slug": "kv-namespace-pagination-and-concurrent-dump",
+      "scope": "Paginating KV keys (limit=1000 + cursor), concurrent value downloads with URL-encoding and retry backoff, md5 value filenames, and kv-keymap.json sha256 manifest.",
+      "seed_queries": [
+        "Cloudflare KV REST API list keys cursor pagination bulk read",
+        "Cloudflare Workers KV eventual consistency read propagation"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "vectorize-v2-cursor-enumeration-and-ndjson-export",
+      "scope": "Enumerating Vectorize v2 indexes via GET /vectorize/v2/indexes/{name}/list?count=1000 + nextCursor (since list-vectors 404s) and fetching vectors via POST /get_by_ids in batches of 20.",
+      "seed_queries": [
+        "Cloudflare Vectorize v2 API list vectors get_by_ids nextCursor",
+        "Cloudflare Vectorize index dimensions cosine NDJSON upsert"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "analytics-engine-snapshot-and-zip-integrity-gates",
+      "scope": "Analytics Engine SQL snapshot (SELECT * FROM dataset), SHA256SUMS.txt, zipfile.ZIP_DEFLATED level 9 testzip() verification, zero-error gate, and the single-pass run_script sandbox lesson. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "restore-checklist-and-validated-backup-runs",
+      "scope": "RESTORE.md checklist (multipart Worker PUT, schedules, raw-byte KV PUT, Vectorize recreate+upsert, Secrets Store re-entry) and the 3 validated runs (2026-09-26, 2026-10-06, 2026-10-10). Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8979,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0298,
+          "1": 0.0425,
+          "2": 0.9277
+        },
+        "confidence": 0.795
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8572,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.038,
+          "1": 0.0669,
+          "2": 0.8951
+        },
+        "confidence": 0.7108
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.887,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0247,
+          "1": 0.0637,
+          "2": 0.9116
+        },
+        "confidence": 0.7537
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.7085,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0637,
+          "1": 0.1641,
+          "2": 0.7722
+        },
+        "confidence": 0.441
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.8383,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.04,
+          "1": 0.0817,
+          "2": 0.8783
+        },
+        "confidence": 0.6695
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.8992,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0258,
+          "1": 0.0492,
+          "2": 0.925
+        },
+        "confidence": 0.7881
+      }
+    },
+    "usage": {
+      "input_tokens": 1250,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
