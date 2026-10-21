@@ -1,0 +1,163 @@
+{
+  "topic": "Autoinstall spec notes — 2026-10-07",
+  "source_doc": "yubi-OS/yubiOS refs/2026-10-07_Autoinstall_Spec_Notes.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "status-of-our-seed-files",
+      "scope": "Status of our seed files: detailed analysis grounded in yubi-OS/yubiOS refs/2026-10-07_Autoinstall_Spec_Notes.md.",
+      "seed_queries": [
+        "Ubuntu Subiquity autoinstall user-data cloud-init schema",
+        "curtin storage layout netplan autoinstall Ubuntu 26.04"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "new-fields-in-the-autoinstall-format-since-our-f",
+      "scope": "New fields in the autoinstall format since our file was generated: detailed analysis grounded in yubi-OS/yubiOS refs/2026-10-07_Autoinstall_Spec_Notes.md.",
+      "seed_queries": [
+        "jsonschema validation YAML null ubuntu-pro autoinstall",
+        "apt GPG key dearmored sources.list.d cloud-init"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "adjacent-flags-content-not-spec",
+      "scope": "Adjacent flags (content, not spec): detailed analysis grounded in yubi-OS/yubiOS refs/2026-10-07_Autoinstall_Spec_Notes.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "falsification-gates-and-empirical-results",
+      "scope": "Pre-registered gates, measured empirical numbers, and verification verdicts. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "failure-modes-and-scope-boundaries",
+      "scope": "Documented failure modes, negative results, and explicit non-claims. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "integration-and-operational-governance",
+      "scope": "Integration with yubiOS and Steady Orbit /jev/ endpoints, policy versioning, and audit trail. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.567,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1072,
+          "1": 0.2186,
+          "2": 0.6742
+        },
+        "confidence": 0.2707
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.7393,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0423,
+          "1": 0.176,
+          "2": 0.7817
+        },
+        "confidence": 0.4656
+      },
+      "t03": {
+        "type": "score",
+        "score": 0.4537,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.654,
+          "1": 0.2383,
+          "2": 0.1077
+        },
+        "confidence": 0.2442
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.3156,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.172,
+          "1": 0.3405,
+          "2": 0.4875
+        },
+        "confidence": 0.0748
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5416,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0854,
+          "1": 0.2877,
+          "2": 0.6269
+        },
+        "confidence": 0.2246
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.4584,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0943,
+          "1": 0.353,
+          "2": 0.5527
+        },
+        "confidence": 0.1585
+      }
+    },
+    "usage": {
+      "input_tokens": 1090,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
