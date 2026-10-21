@@ -1,0 +1,179 @@
+[
+  {
+    "requested_at": "2026-10-21T12:08:57.871Z",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "state": "skills/rockchip-sd-flash: outline validation",
+    "model": "clef",
+    "n_questions": 6,
+    "question_names": [
+      "t01",
+      "t02",
+      "t03",
+      "t04",
+      "t05",
+      "t06"
+    ],
+    "metric_types": [
+      "score",
+      "score",
+      "score",
+      "score",
+      "score",
+      "score"
+    ],
+    "usage": {
+      "input_tokens": 1390,
+      "output_tokens": 0
+    }
+  },
+  {
+    "requested_at": "2026-10-21T12:09:03.872Z",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "state": "skills/rockchip-sd-flash/01-rockchip-bootrom-sector-64-and-fit-offset-layout: Rockchip U-Boot u-boot-rockchip.bin sector 64 16384 idbloader u-boot.itb",
+    "model": "clef",
+    "n_questions": 5,
+    "question_names": [
+      "r_01_0",
+      "r_01_1",
+      "r_01_2",
+      "r_01_3",
+      "r_01_4"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1648,
+      "output_tokens": 0
+    }
+  },
+  {
+    "requested_at": "2026-10-21T12:09:07.016Z",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "state": "skills/rockchip-sd-flash/01-rockchip-bootrom-sector-64-and-fit-offset-layout: Rockchip BootROM RKNS header magic 0x8000 SPI NOR vs SDMMC",
+    "model": "clef",
+    "n_questions": 5,
+    "question_names": [
+      "r_01_0",
+      "r_01_1",
+      "r_01_2",
+      "r_01_3",
+      "r_01_4"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1665,
+      "output_tokens": 0
+    }
+  },
+  {
+    "requested_at": "2026-10-21T12:09:10.468Z",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "state": "skills/rockchip-sd-flash/04-sector-64-dd-write-and-readback-verification: dd seek=64 bs=512 conv=fsync notrunc u-boot-rockchip.bin",
+    "model": "clef",
+    "n_questions": 5,
+    "question_names": [
+      "r_04_0",
+      "r_04_1",
+      "r_04_2",
+      "r_04_3",
+      "r_04_4"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1450,
+      "output_tokens": 0
+    }
+  },
+  {
+    "requested_at": "2026-10-21T12:09:16.496Z",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "state": "skills/rockchip-sd-flash/04-sector-64-dd-write-and-readback-verification: Linux block device dd readback sha256 verification",
+    "model": "clef",
+    "n_questions": 5,
+    "question_names": [
+      "r_04_0",
+      "r_04_1",
+      "r_04_2",
+      "r_04_3",
+      "r_04_4"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1470,
+      "output_tokens": 0
+    }
+  },
+  {
+    "requested_at": "2026-10-21T12:09:19.696Z",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "state": "skills/rockchip-sd-flash/05-board-side-uart-loop-and-u-boot-shell-commands: U-Boot shell commands dm tree bdinfo fdt print firmware",
+    "model": "clef",
+    "n_questions": 5,
+    "question_names": [
+      "r_05_0",
+      "r_05_1",
+      "r_05_2",
+      "r_05_3",
+      "r_05_4"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1529,
+      "output_tokens": 0
+    }
+  },
+  {
+    "requested_at": "2026-10-21T12:09:22.620Z",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "state": "skills/rockchip-sd-flash/05-board-side-uart-loop-and-u-boot-shell-commands: Rockchip RK3588 U-Boot serial console 1500000 baud MMC2",
+    "model": "clef",
+    "n_questions": 5,
+    "question_names": [
+      "r_05_0",
+      "r_05_1",
+      "r_05_2",
+      "r_05_3",
+      "r_05_4"
+    ],
+    "metric_types": [
+      "noul",
+      "noul",
+      "noul",
+      "noul",
+      "noul"
+    ],
+    "usage": {
+      "input_tokens": 1595,
+      "output_tokens": 0
+    }
+  }
+]

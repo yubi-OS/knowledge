@@ -1,0 +1,26 @@
+{
+  "nn": "01",
+  "slug": "rockchip-bootrom-sector-64-and-fit-offset-layout",
+  "scope": "Why u-boot-rockchip.bin writes at sector 64: idbloader (TPL+SPL, RKNS magic 52 4b 4e 53) at offset 0 and u-boot.itb (BL31+TEE+U-Boot+FDT) at byte offset 8,355,840 (sector 16384), vs SPI NOR layout.",
+  "queries_attempted": [
+    {
+      "query": "Rockchip U-Boot u-boot-rockchip.bin sector 64 16384 idbloader u-boot.itb",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 0
+    },
+    {
+      "query": "Rockchip BootROM RKNS header magic 0x8000 SPI NOR vs SDMMC",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://rock-chip.com/guides",
+    "yubi-OS/yubiOS skills/rockchip-sd-flash/SKILL.md"
+  ],
+  "outcome": "authored"
+}

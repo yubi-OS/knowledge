@@ -1,0 +1,29 @@
+{
+  "nn": "05",
+  "slug": "board-side-uart-loop-and-u-boot-shell-commands",
+  "scope": "Booting the target board (ROCK 5B RK3588, PineTab2 RK3566) from MMC2, reading the 1500000 8N1 UART console, and using pipe-free U-Boot commands (dm tree, bdinfo, fdt addr/print).",
+  "queries_attempted": [
+    {
+      "query": "U-Boot shell commands dm tree bdinfo fdt print firmware",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 3
+    },
+    {
+      "query": "Rockchip RK3588 U-Boot serial console 1500000 baud MMC2",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://docs.u-boot-project.org/en/stable/usage/index.html",
+    "https://docs.u-boot.org/en/v2023.04/usage/cmd/bdinfo.html",
+    "https://docs.u-boot-project.org/en/v2023.10/usage/index.html",
+    "https://github.com/VaillerTeeter/Rockchip-RK3588-u-boot/blob/next-dev/doc/README.console",
+    "yubi-OS/yubiOS skills/rockchip-sd-flash/SKILL.md"
+  ],
+  "outcome": "authored"
+}
