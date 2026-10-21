@@ -1,0 +1,172 @@
+{
+  "topic": "Hybrid TimesFM (2.5 -> 3.0 Fallback) + Cloudflare Clairic + Clef Forecasting and Decision Cascade",
+  "source_doc": "yubi-OS/yubiOS refs/timesfm-clairic-clef-2026-10-21.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "clairic-system-one-extraction-and-density",
+      "scope": "Cloudflare Clairic (@cf/cloudflare/clairic) single-pass prefill extraction, character-offset spans, p_null, and 99-quantile short-horizon density forecasting vs LLMTime.",
+      "seed_queries": [
+        "Cloudflare Clairic extraction model forecast estimate",
+        "LLMTime Revisiting LLMs Zero-Shot Time Series Forecasters"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "timesfm-2p5-patched-decoder-and-conformal-bands",
+      "scope": "Google Research TimesFM 2.5 (200M, Apache-2.0, 16k context, 32-step input patch, 30M quantile head p10..p90) and split-conformal residual calibration solving ETS G2 shrinkage.",
+      "seed_queries": [
+        "TimesFM 2.5 200M Apache 2.0 quantile head google-research",
+        "conformal prediction quantile calibration time series forecasting intervals"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "timesfm-3p0-multivariate-and-covariate-architecture",
+      "scope": "TimesFM 3.0 (330M, non-autoregressive contiguous patch masking, alternating 2D temporal+variate attention, lookahead covariates, non-commercial weight boundary).",
+      "seed_queries": [
+        "TimesFM-3 zero-shot foundation model multivariate forecasting",
+        "google-research timesfm covariates quantiles 3.0"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "preregistered-2p5-to-3p0-fallback-gate",
+      "scope": "Rolling-origin evaluation against seasonal naive and damped-Holt ETS baselines; the 4 Clef-weighted fallback triggers (MASE, PICP_80 coverage, covariate R2, horizon > 128).",
+      "seed_queries": [
+        "rolling origin evaluation MASE pinball loss time series",
+        "GIFT-Eval FEV-Bench TimesFM foundation model benchmark"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "clef-bounded-decision-and-outcomes-ledger",
+      "scope": "Cloudflare Clef (@cf/cloudflare/clef) choice/noul/score decision routing, the AGENT.md fail-closed gate invariant, and /api/jev/map/outcomes pre-registration.",
+      "seed_queries": [
+        "Cloudflare Clef decision model noul choice score",
+        "forecast-then-optimize decision-focused learning time series"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "falsification-harness-g1-to-g8-and-worker-parity",
+      "scope": "The 8 pre-registered falsification gates G1..G8 in tools/timesfm-clairic-clef/timesfm_clairic_clef.py and bit-exact parity with jev-cascade-forecast.js on steady-orbit.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8059,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0535,
+          "1": 0.0871,
+          "2": 0.8594
+        },
+        "confidence": 0.6236
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.9417,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0148,
+          "1": 0.0288,
+          "2": 0.9564
+        },
+        "confidence": 0.8738
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.9074,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0216,
+          "1": 0.0495,
+          "2": 0.9289
+        },
+        "confidence": 0.7988
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.9269,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0222,
+          "1": 0.0286,
+          "2": 0.9492
+        },
+        "confidence": 0.8533
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.9374,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0194,
+          "1": 0.0238,
+          "2": 0.9568
+        },
+        "confidence": 0.8747
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.6526,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0883,
+          "1": 0.1708,
+          "2": 0.7409
+        },
+        "confidence": 0.3788
+      }
+    },
+    "usage": {
+      "input_tokens": 1286,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
