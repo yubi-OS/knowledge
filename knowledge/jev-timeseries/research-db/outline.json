@@ -1,0 +1,163 @@
+{
+  "topic": "jev-timeseries — time-series storage + forecasting for /jev/ (2026-10-08)",
+  "source_doc": "yubi-OS/yubiOS refs/jev-timeseries-2026-10-08.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "what-shipped",
+      "scope": "What shipped: detailed analysis grounded in yubi-OS/yubiOS refs/jev-timeseries-2026-10-08.md.",
+      "seed_queries": [
+        "Google Research TimesFM patched decoder time series foundation model",
+        "Cloudflare Workers Analytics Engine SQL API writeDataPoint"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "falsification-record",
+      "scope": "Falsification record: detailed analysis grounded in yubi-OS/yubiOS refs/jev-timeseries-2026-10-08.md.",
+      "seed_queries": [
+        "Holt damped trend exponential smoothing forecasting phi",
+        "prediction interval coverage calibration small sample"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "deploy-chain-live-bugs-caught-etag-7f8fa641-dda2",
+      "scope": "Deploy chain + live bugs caught (etag 7f8fa641 → dda2f487 → f0c6d7c7 → f2313fa6): detailed analysis grounded in yubi-OS/yubiOS refs/jev-timeseries-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "concurrency-handling",
+      "scope": "Concurrency handling: detailed analysis grounded in yubi-OS/yubiOS refs/jev-timeseries-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "live-verification-final-etag-f2313fa6",
+      "scope": "Live verification (final etag f2313fa6): detailed analysis grounded in yubi-OS/yubiOS refs/jev-timeseries-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "phase-roadmap-from-the-ideate-solo",
+      "scope": "Phase roadmap (from the ideate-solo): detailed analysis grounded in yubi-OS/yubiOS refs/jev-timeseries-2026-10-08.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.7788,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0537,
+          "1": 0.1137,
+          "2": 0.8326
+        },
+        "confidence": 0.5634
+      },
+      "t02": {
+        "type": "score",
+        "score": 0.8473,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3457,
+          "1": 0.4613,
+          "2": 0.193
+        },
+        "confidence": 0.0543
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.0203,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2963,
+          "1": 0.3871,
+          "2": 0.3166
+        },
+        "confidence": 0.0068
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.5997,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0871,
+          "1": 0.2261,
+          "2": 0.6868
+        },
+        "confidence": 0.2956
+      },
+      "t05": {
+        "type": "score",
+        "score": 0.6651,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.4428,
+          "1": 0.4493,
+          "2": 0.1079
+        },
+        "confidence": 0.1144
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.0828,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2041,
+          "1": 0.509,
+          "2": 0.2869
+        },
+        "confidence": 0.0745
+      }
+    },
+    "usage": {
+      "input_tokens": 1235,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
