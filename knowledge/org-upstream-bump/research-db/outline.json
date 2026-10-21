@@ -1,0 +1,163 @@
+{
+  "topic": "Org-wide upstream bump (2026-10-17)",
+  "source_doc": "yubi-OS/yubiOS refs/org-upstream-bump-2026-10-17.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "inventory-and-decisions",
+      "scope": "Inventory and decisions: detailed analysis grounded in yubi-OS/yubiOS refs/org-upstream-bump-2026-10-17.md.",
+      "seed_queries": [
+        "OP-TEE OS 4.11 fTPM reference implementation ARM Trusted Firmware",
+        "git rebase upstream release tag supply chain pinning"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "rules-every-lane-follows",
+      "scope": "Rules every lane follows: detailed analysis grounded in yubi-OS/yubiOS refs/org-upstream-bump-2026-10-17.md.",
+      "seed_queries": [
+        "bootc mkosi systemd immutable OS upstream tracking",
+        "reproducible firmware build commit SHA pinning"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "acceptance",
+      "scope": "Acceptance: detailed analysis grounded in yubi-OS/yubiOS refs/org-upstream-bump-2026-10-17.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "falsification-gates-and-empirical-results",
+      "scope": "Pre-registered gates, measured empirical numbers, and verification verdicts. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "failure-modes-and-scope-boundaries",
+      "scope": "Documented failure modes, negative results, and explicit non-claims. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "integration-and-operational-governance",
+      "scope": "Integration with yubiOS and Steady Orbit /jev/ endpoints, policy versioning, and audit trail. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.2761,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2346,
+          "1": 0.2547,
+          "2": 0.5107
+        },
+        "confidence": 0.0711
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.7814,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0525,
+          "1": 0.1136,
+          "2": 0.8339
+        },
+        "confidence": 0.5665
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.0064,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3684,
+          "1": 0.2568,
+          "2": 0.3748
+        },
+        "confidence": 0.0132
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.6146,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1054,
+          "1": 0.1746,
+          "2": 0.72
+        },
+        "confidence": 0.34
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.2966,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1398,
+          "1": 0.4237,
+          "2": 0.4365
+        },
+        "confidence": 0.0844
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.5666,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1127,
+          "1": 0.208,
+          "2": 0.6793
+        },
+        "confidence": 0.2762
+      }
+    },
+    "usage": {
+      "input_tokens": 1051,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
