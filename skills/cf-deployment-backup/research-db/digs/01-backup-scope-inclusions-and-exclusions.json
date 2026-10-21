@@ -1,0 +1,26 @@
+{
+  "nn": "01",
+  "slug": "backup-scope-inclusions-and-exclusions",
+  "scope": "Default backup scope (worker bundles, settings, schedules, subdomains, KV, Vectorize, Analytics Engine snapshot, Secrets Store names) and default exclusions (D1 data, write-only secret values).",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Workers REST API get script multipart bundle settings schedules",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 0
+    },
+    {
+      "query": "Cloudflare Secrets Store write-only secret values API",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/workers/configuration/secrets/",
+    "yubi-OS/yubiOS skills/cf-deployment-backup/SKILL.md"
+  ],
+  "outcome": "authored"
+}

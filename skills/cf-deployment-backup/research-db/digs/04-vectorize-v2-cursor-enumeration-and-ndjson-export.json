@@ -1,0 +1,28 @@
+{
+  "nn": "04",
+  "slug": "vectorize-v2-cursor-enumeration-and-ndjson-export",
+  "scope": "Enumerating Vectorize v2 indexes via GET /vectorize/v2/indexes/{name}/list?count=1000 + nextCursor (since list-vectors 404s) and fetching vectors via POST /get_by_ids in batches of 20.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare Vectorize v2 API list vectors get_by_ids nextCursor",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 3
+    },
+    {
+      "query": "Cloudflare Vectorize index dimensions cosine NDJSON upsert",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 0
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/vectorize/reference/client-api/",
+    "https://developers.cloudflare.com/api/resources/vectorize/",
+    "https://github.com/cloudflare/cloudflare-go/blob/main/vectorize/api.md",
+    "yubi-OS/yubiOS skills/cf-deployment-backup/SKILL.md"
+  ],
+  "outcome": "authored"
+}

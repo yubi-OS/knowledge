@@ -1,0 +1,28 @@
+{
+  "nn": "03",
+  "slug": "kv-namespace-pagination-and-concurrent-dump",
+  "scope": "Paginating KV keys (limit=1000 + cursor), concurrent value downloads with URL-encoding and retry backoff, md5 value filenames, and kv-keymap.json sha256 manifest.",
+  "queries_attempted": [
+    {
+      "query": "Cloudflare KV REST API list keys cursor pagination bulk read",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 2
+    },
+    {
+      "query": "Cloudflare Workers KV eventual consistency read propagation",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://developers.cloudflare.com/kv/api/list-keys/",
+    "https://developers.cloudflare.com/kv/api/",
+    "https://developers.cloudflare.com/kv/",
+    "yubi-OS/yubiOS skills/cf-deployment-backup/SKILL.md"
+  ],
+  "outcome": "authored"
+}
