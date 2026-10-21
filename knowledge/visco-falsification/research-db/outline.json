@@ -1,0 +1,163 @@
+{
+  "topic": "Round record — visco falsification fixtures (snapback + hysteresis)",
+  "source_doc": "yubi-OS/yubiOS refs/visco-falsification-2026-10-06.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "verdict-both-endpoints-pass-their-pre-registered",
+      "scope": "Verdict: BOTH ENDPOINTS PASS THEIR PRE-REGISTERED FALSIFICATION GATES: detailed analysis grounded in yubi-OS/yubiOS refs/visco-falsification-2026-10-06.md.",
+      "seed_queries": [
+        "Prony series viscoelastic relaxation exponential sum fitting",
+        "hysteresis loop energy dissipation cyclic loading"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "1-pre-registration-written-before-any-corpus-run",
+      "scope": "1. Pre-registration (written before any corpus run): detailed analysis grounded in yubi-OS/yubiOS refs/visco-falsification-2026-10-06.md.",
+      "seed_queries": [
+        "non-negative least squares NNLS time-constant grid",
+        "run-length sign inversion detection time series"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "2-snapback-corpus-results",
+      "scope": "2. Snapback corpus + results: detailed analysis grounded in yubi-OS/yubiOS refs/visco-falsification-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "3-hysteresis-reference-fixtures-live-contract",
+      "scope": "3. Hysteresis reference + fixtures + live contract: detailed analysis grounded in yubi-OS/yubiOS refs/visco-falsification-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "4-amendments-all-pre-gate-dated-in-amendments-md",
+      "scope": "4. Amendments (all pre-gate, dated, in `amendments.md`): detailed analysis grounded in yubi-OS/yubiOS refs/visco-falsification-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "5-live-endpoint-surprises-schema-behavior-notes",
+      "scope": "5. Live-endpoint surprises (schema/behavior notes): detailed analysis grounded in yubi-OS/yubiOS refs/visco-falsification-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8308,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.049,
+          "1": 0.0712,
+          "2": 0.8798
+        },
+        "confidence": 0.6722
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8246,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0278,
+          "1": 0.1198,
+          "2": 0.8524
+        },
+        "confidence": 0.6126
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.8679,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0352,
+          "1": 0.0616,
+          "2": 0.9032
+        },
+        "confidence": 0.731
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8994,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0232,
+          "1": 0.0541,
+          "2": 0.9227
+        },
+        "confidence": 0.7822
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.0302,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1669,
+          "1": 0.636,
+          "2": 0.1971
+        },
+        "confidence": 0.2069
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.1371,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1608,
+          "1": 0.5413,
+          "2": 0.2979
+        },
+        "confidence": 0.1114
+      }
+    },
+    "usage": {
+      "input_tokens": 1205,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
