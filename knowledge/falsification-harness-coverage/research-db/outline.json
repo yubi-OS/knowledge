@@ -1,0 +1,163 @@
+{
+  "topic": "Falsification harness coverage: endpoints that can use one effectively",
+  "source_doc": "yubi-OS/yubiOS refs/falsification-harness-coverage-2026-10-06.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "tier-1-already-harness-backed-the-pattern-setter",
+      "scope": "Tier 1 - already harness-backed (the pattern-setters): detailed analysis grounded in yubi-OS/yubiOS refs/falsification-harness-coverage-2026-10-06.md.",
+      "seed_queries": [
+        "software falsification testing known-answer synthetic benchmark",
+        "property-based testing deterministic PRNG mulberry32"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "tier-2-high-value-candidates-with-a-concrete-fal",
+      "scope": "Tier 2 - high-value candidates with a concrete falsification design: detailed analysis grounded in yubi-OS/yubiOS refs/falsification-harness-coverage-2026-10-06.md.",
+      "seed_queries": [
+        "API contract testing fail-closed HTTP status codes",
+        "statistical power false positive rate Monte Carlo null"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "tier-3-poor-fit-for-falsification-contract-tests",
+      "scope": "Tier 3 - poor fit for falsification (contract tests, not corpora): detailed analysis grounded in yubi-OS/yubiOS refs/falsification-harness-coverage-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "build-order-recommendation",
+      "scope": "Build-order recommendation: detailed analysis grounded in yubi-OS/yubiOS refs/falsification-harness-coverage-2026-10-06.md. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "failure-modes-and-scope-boundaries",
+      "scope": "Documented failure modes, negative results, and explicit non-claims. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "integration-and-operational-governance",
+      "scope": "Integration with yubiOS and Steady Orbit /jev/ endpoints, policy versioning, and audit trail. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.7766,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0482,
+          "1": 0.127,
+          "2": 0.8248
+        },
+        "confidence": 0.5481
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8484,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0253,
+          "1": 0.101,
+          "2": 0.8737
+        },
+        "confidence": 0.6613
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.1319,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.233,
+          "1": 0.4021,
+          "2": 0.3649
+        },
+        "confidence": 0.0237
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.032,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2578,
+          "1": 0.4525,
+          "2": 0.2897
+        },
+        "confidence": 0.0327
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.1356,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1867,
+          "1": 0.4909,
+          "2": 0.3224
+        },
+        "confidence": 0.0697
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.0251,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2495,
+          "1": 0.4759,
+          "2": 0.2746
+        },
+        "confidence": 0.0462
+      }
+    },
+    "usage": {
+      "input_tokens": 1110,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
