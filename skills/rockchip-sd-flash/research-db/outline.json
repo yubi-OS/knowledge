@@ -1,0 +1,166 @@
+{
+  "topic": "yubiOS rockchip-sd-flash Skill: Flashing Rockchip U-Boot Loaders (u-boot-rockchip.bin) to SD Cards via rock1",
+  "source_doc": "yubi-OS/yubiOS skills/rockchip-sd-flash/SKILL.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "rockchip-bootrom-sector-64-and-fit-offset-layout",
+      "scope": "Why u-boot-rockchip.bin writes at sector 64: idbloader (TPL+SPL, RKNS magic 52 4b 4e 53) at offset 0 and u-boot.itb (BL31+TEE+U-Boot+FDT) at byte offset 8,355,840 (sector 16384), vs SPI NOR layout.",
+      "seed_queries": [
+        "Rockchip U-Boot u-boot-rockchip.bin sector 64 16384 idbloader u-boot.itb",
+        "Rockchip BootROM RKNS header magic 0x8000 SPI NOR vs SDMMC"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "on-device-digest-pinned-podman-extraction-and-sha256",
+      "scope": "Sourcing u-boot-rockchip.bin directly on rock1 via podman pull docker.io/0mniteck/yubios@sha256:<digest> + podman export to avoid 11MB bridge chunk transfers, and cross-verifying sha256 against the CI artifact. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "03",
+      "slug": "target-device-guards-and-mmcblk0-protection",
+      "scope": "Pre-write guards on /dev/mmcblk1 (expected 59.5G size, 0 mounts, exact 512-byte sector multiple, ABORT_* markers) and never touching rock1's OS eMMC (/dev/mmcblk0). Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "04",
+      "slug": "sector-64-dd-write-and-readback-verification",
+      "scope": "Destructive-op preflight chat echo, /dev/ttyS2 banner tee, conv=fsync,notrunc dd at seek=64, and exact byte-count readback sha256 verification.",
+      "seed_queries": [
+        "dd seek=64 bs=512 conv=fsync notrunc u-boot-rockchip.bin",
+        "Linux block device dd readback sha256 verification"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "board-side-uart-loop-and-u-boot-shell-commands",
+      "scope": "Booting the target board (ROCK 5B RK3588, PineTab2 RK3566) from MMC2, reading the 1500000 8N1 UART console, and using pipe-free U-Boot commands (dm tree, bdinfo, fdt addr/print).",
+      "seed_queries": [
+        "U-Boot shell commands dm tree bdinfo fdt print firmware",
+        "Rockchip RK3588 U-Boot serial console 1500000 baud MMC2"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "qemu-virt-dt-divergence-and-proxy-cut-reconciliation",
+      "scope": "Why QEMU virt,secure=on cannot reproduce board-specific OP-TEE/fTPM DT failures, and reconciling proxy-cut bridge calls before retrying. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.3915,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1345,
+          "1": 0.3395,
+          "2": 0.526
+        },
+        "confidence": 0.115
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.3754,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1539,
+          "1": 0.3168,
+          "2": 0.5293
+        },
+        "confidence": 0.1063
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.7882,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0556,
+          "1": 0.1006,
+          "2": 0.8438
+        },
+        "confidence": 0.5878
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8686,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0363,
+          "1": 0.0587,
+          "2": 0.905
+        },
+        "confidence": 0.7356
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.5221,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.103,
+          "1": 0.2719,
+          "2": 0.6251
+        },
+        "confidence": 0.2129
+      },
+      "t06": {
+        "type": "score",
+        "score": 0.4626,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.5901,
+          "1": 0.3572,
+          "2": 0.0527
+        },
+        "confidence": 0.2179
+      }
+    },
+    "usage": {
+      "input_tokens": 1390,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}

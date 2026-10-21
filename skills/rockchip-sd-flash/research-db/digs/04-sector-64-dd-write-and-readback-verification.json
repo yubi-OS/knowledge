@@ -1,0 +1,25 @@
+{
+  "nn": "04",
+  "slug": "sector-64-dd-write-and-readback-verification",
+  "scope": "Destructive-op preflight chat echo, /dev/ttyS2 banner tee, conv=fsync,notrunc dd at seek=64, and exact byte-count readback sha256 verification.",
+  "queries_attempted": [
+    {
+      "query": "dd seek=64 bs=512 conv=fsync notrunc u-boot-rockchip.bin",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 0
+    },
+    {
+      "query": "Linux block device dd readback sha256 verification",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 0
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "yubi-OS/yubiOS skills/rockchip-sd-flash/SKILL.md"
+  ],
+  "outcome": "authored"
+}
