@@ -1,0 +1,28 @@
+{
+  "nn": "02",
+  "slug": "new-fields-in-the-autoinstall-format-since-our-f",
+  "scope": "New fields in the autoinstall format since our file was generated: detailed analysis grounded in yubi-OS/yubiOS refs/2026-10-07_Autoinstall_Spec_Notes.md.",
+  "queries_attempted": [
+    {
+      "query": "jsonschema validation YAML null ubuntu-pro autoinstall",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 2
+    },
+    {
+      "query": "apt GPG key dearmored sources.list.d cloud-init",
+      "attempt": 1,
+      "raw_results": 5,
+      "kept": 1
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": [
+    "https://canonical-subiquity.readthedocs-hosted.com/en/latest/howto/autoinstall-validation.html",
+    "https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html",
+    "https://docs.cloud-init.io/en/latest/reference/yaml_examples/apt.html",
+    "yubi-OS/yubiOS refs/2026-10-07_Autoinstall_Spec_Notes.md"
+  ],
+  "outcome": "authored"
+}
