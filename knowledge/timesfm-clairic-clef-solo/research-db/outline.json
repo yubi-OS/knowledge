@@ -1,0 +1,163 @@
+{
+  "topic": "Autonomous Ideation (ideate-solo) of the Hybrid TimesFM 2.5->3.0 + Clairic + Clef Cascade (Variations V1-V6, Heuristic & Clef Scoring, Stress-Test)",
+  "source_doc": "yubi-OS/yubiOS refs/timesfm-clairic-clef-solo-2026-10-21.md",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "problem-framing-and-system-one-taxonomy",
+      "scope": "Problem statement and dual-process System One (Clairic extract, Clef decide) vs System Two (LLM) vs Patched TSFM (TimesFM 2.5/3.0) division of labor.",
+      "seed_queries": [
+        "Cloudflare System One Clef Clairic prefill",
+        "decoder-only foundation model time-series forecasting Das"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "five-lens-variation-generation-v1-to-v6",
+      "scope": "Divergent variation generation across Inversion (V1), Constraint Removal (V2), Audience Shift (V3), Combination (V4), Simplification (V5), and Unified Cascade (V6). Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "03",
+      "slug": "clef-and-heuristic-convergence-scoring",
+      "scope": "Four-heuristic scoring (Painkiller, Switching, Defensibility, Testability) paired with live Clef /api/decide scoring (V6 2.8804/3.0, choice p=0.9598; V2 rejected at 0.4433).",
+      "seed_queries": [
+        "Cloudflare Clef decision models Brier loss calibration",
+        "multi-criteria decision analysis model selection forecasting"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "finalist-stress-testing-and-untestable-bets",
+      "scope": "Adversarial stress-test of finalists V6, V5, and V4: conformal window breakdown under abrupt regime shifts, non-commercial 3.0 weight governance, and wire-schema drift. Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "05",
+      "slug": "validated-assumptions-a1-to-a4",
+      "scope": "Empirical validation of assumptions A1 (Clairic live schema & spans), A2 (conformal G2 80/100 fix), A3 (2.5->3.0 MASE 1.0827->0.0545), and A4 (Clef risk separation). Internal-record subtopic, no dig.",
+      "seed_queries": []
+    },
+    {
+      "nn": "06",
+      "slug": "mvp-scope-and-explicit-non-goals",
+      "scope": "MVP scope in tools/timesfm-clairic-clef/ and explicit Not-Doing boundaries (no unconditional 3.0 ensemble, no LLMTime string rollouts, no gate bypass). Internal-record subtopic, no dig.",
+      "seed_queries": []
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "endpoint": "https://steady-orbit.systems-a.workers.dev/api/decide",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.6959,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0978,
+          "1": 0.1085,
+          "2": 0.7937
+        },
+        "confidence": 0.477
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.8971,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0295,
+          "1": 0.0438,
+          "2": 0.9267
+        },
+        "confidence": 0.7922
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.9308,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0207,
+          "1": 0.0277,
+          "2": 0.9516
+        },
+        "confidence": 0.86
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8305,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0412,
+          "1": 0.0871,
+          "2": 0.8717
+        },
+        "confidence": 0.6537
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.7685,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0644,
+          "1": 0.1027,
+          "2": 0.8329
+        },
+        "confidence": 0.5626
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.5684,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1105,
+          "1": 0.2106,
+          "2": 0.6789
+        },
+        "confidence": 0.2762
+      }
+    },
+    "usage": {
+      "input_tokens": 1457,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  }
+}
