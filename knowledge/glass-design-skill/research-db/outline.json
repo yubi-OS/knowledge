@@ -1,0 +1,169 @@
+{
+  "topic": "glass-design-skill: Physically-based Liquid Glass UI design system (CSS + SVG refraction, Fresnel specular rims, dual-theme WCAG 2.2 AA contrast, tactile component primitives, dynamic & custom backdrops)",
+  "ref": "glass-design-skill",
+  "created_at": "2026-10-29T18:23:00.028Z",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "optical-refraction-and-svg-displacement",
+      "scope": "Physically-based optical refraction in CSS and SVG using feDisplacementMap, signed distance field lens maps, sRGB interpolation, and chromatic dispersion.",
+      "seed_queries": [
+        "liquid glass CSS SVG feDisplacementMap refraction lens",
+        "SVG feDisplacementMap backdrop-filter chromatic aberration glass"
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "fresnel-specular-rims-and-caustic-lighting",
+      "scope": "Asymmetric Fresnel rim lighting via multi-layer inset box-shadow stacks, diagonal specular sheen overlays, and pointer-tracked caustic highlights.",
+      "seed_queries": [
+        "liquid glass CSS specular rim inset box-shadow highlight",
+        "glassmorphism Fresnel border specular lighting CSS gradient"
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "backdrop-filter-compositing-and-gpu-budget",
+      "scope": "Multi-stage backdrop-filter pipelines (blur, saturate, brightness, contrast), GPU compositing layer budgets, overdraw avoidance, and cross-browser @supports fallbacks.",
+      "seed_queries": [
+        "CSS backdrop-filter blur saturate performance GPU compositing glassmorphism",
+        "liquid glass CSS @supports backdrop-filter Safari Firefox fallback"
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "dual-theme-luminance-and-wcag-contrast",
+      "scope": "Adaptive Liquid Glass material tokens across Dark Mode and Light Mode that preserve WCAG 2.2 AA 4.5:1 text contrast and 3:1 non-text UI contrast over arbitrary backgrounds.",
+      "seed_queries": [
+        "glassmorphism accessibility WCAG 2.2 contrast ratio light dark mode",
+        "Apple Liquid Glass legibility contrast dark mode light mode tint"
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "tactile-component-primitives",
+      "scope": "Lifting cards, drawers, buttons, switches, segmented tabs, menus, dialogs, and inputs into a 5-tier Liquid Glass elevation hierarchy with spring micro-interactions.",
+      "seed_queries": [
+        "liquid glass UI components buttons switches tabs cards design system",
+        "Apple WWDC25 Liquid Glass controls navigation bars switches buttons"
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "dynamic-textured-and-custom-backdrops",
+      "scope": "Dynamic procedural caustic/mesh backgrounds and user-uploaded full-bleed cover wallpapers that showcase optical refraction without sacrificing foreground legibility.",
+      "seed_queries": [
+        "glassmorphism dynamic mesh gradient background texture CSS",
+        "liquid glass wallpaper background refraction contrast scrim CSS"
+      ]
+    }
+  ],
+  "validation": {
+    "model": "clef",
+    "answers": {
+      "sub_01": {
+        "type": "score",
+        "score": 1.7882,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0475,
+          "1": 0.1169,
+          "2": 0.8356
+        },
+        "confidence": 0.5713
+      },
+      "sub_02": {
+        "type": "score",
+        "score": 1.7739,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0409,
+          "1": 0.1443,
+          "2": 0.8148
+        },
+        "confidence": 0.5296
+      },
+      "sub_03": {
+        "type": "score",
+        "score": 1.8725,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.033,
+          "1": 0.0615,
+          "2": 0.9055
+        },
+        "confidence": 0.7373
+      },
+      "sub_04": {
+        "type": "score",
+        "score": 1.8579,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0353,
+          "1": 0.0715,
+          "2": 0.8932
+        },
+        "confidence": 0.7063
+      },
+      "sub_05": {
+        "type": "score",
+        "score": 1.7775,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0497,
+          "1": 0.123,
+          "2": 0.8273
+        },
+        "confidence": 0.553
+      },
+      "sub_06": {
+        "type": "score",
+        "score": 1.2561,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1345,
+          "1": 0.4749,
+          "2": 0.3906
+        },
+        "confidence": 0.0943
+      }
+    },
+    "usage": {
+      "input_tokens": 1268,
+      "output_tokens": 0
+    }
+  },
+  "kept": [
+    "01-optical-refraction-and-svg-displacement",
+    "02-fresnel-specular-rims-and-caustic-lighting",
+    "03-backdrop-filter-compositing-and-gpu-budget",
+    "04-dual-theme-luminance-and-wcag-contrast",
+    "05-tactile-component-primitives",
+    "06-dynamic-textured-and-custom-backdrops"
+  ],
+  "dropped": []
+}
