@@ -1,0 +1,2697 @@
+{
+  "topic": "tpm2-tools: Complete 103-command TPM 2.0 TSS2 CLI reference and yubiOS fTPM/measured-boot operational corpus (one doc per subcommand)",
+  "ref": "tpm2-tools",
+  "created_at": "2026-11-15T10:04:58.009Z",
+  "subtopics": [
+    {
+      "nn": "001",
+      "slug": "tpm2",
+      "cmd": "tpm2",
+      "scope": "tpm2(1): A single small executable that combines the various tpm2-tools much like a BusyBox that provides a fairly complete environment for any small or embedded system.",
+      "seed_queries": [
+        "tpm2 tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2 TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "002",
+      "slug": "tpm2-activatecredential",
+      "cmd": "tpm2_activatecredential",
+      "scope": "tpm2_activatecredential(1): Enables access to the credential qualifier to recover the credential secret.",
+      "seed_queries": [
+        "tpm2_activatecredential tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_activatecredential TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "003",
+      "slug": "tpm2-certify",
+      "cmd": "tpm2_certify",
+      "scope": "tpm2_certify(1): Prove that an object is loaded in the TPM.",
+      "seed_queries": [
+        "tpm2_certify tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_certify TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "004",
+      "slug": "tpm2-certifyx509certutil",
+      "cmd": "tpm2_certifyX509certutil",
+      "scope": "tpm2_certifyX509certutil(1): Generate partial X509 certificate.",
+      "seed_queries": [
+        "tpm2_certifyX509certutil tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_certifyX509certutil TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "005",
+      "slug": "tpm2-certifycreation",
+      "cmd": "tpm2_certifycreation",
+      "scope": "tpm2_certifycreation(1): Attest the association between a loaded public area and the provided hash of the creation data.",
+      "seed_queries": [
+        "tpm2_certifycreation tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_certifycreation TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "006",
+      "slug": "tpm2-changeauth",
+      "cmd": "tpm2_changeauth",
+      "scope": "tpm2_changeauth(1): Changes authorization values for TPM objects.",
+      "seed_queries": [
+        "tpm2_changeauth tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_changeauth TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "007",
+      "slug": "tpm2-changeeps",
+      "cmd": "tpm2_changeeps",
+      "scope": "tpm2_changeeps(1): Replaces the active endorsement primary seed with a new one generated off the TPM2 RNG.",
+      "seed_queries": [
+        "tpm2_changeeps tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_changeeps TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "008",
+      "slug": "tpm2-changepps",
+      "cmd": "tpm2_changepps",
+      "scope": "tpm2_changepps(1): Replaces the active platform primary seed with a new one generated off the TPM2 RNG.",
+      "seed_queries": [
+        "tpm2_changepps tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_changepps TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "009",
+      "slug": "tpm2-checkquote",
+      "cmd": "tpm2_checkquote",
+      "scope": "tpm2_checkquote(1): Validates a quote provided by a TPM.",
+      "seed_queries": [
+        "tpm2_checkquote tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_checkquote TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "010",
+      "slug": "tpm2-clear",
+      "cmd": "tpm2_clear",
+      "scope": "tpm2_clear(1): Clears lockout, endorsement and owner hierarchy authorization values and other TPM data.",
+      "seed_queries": [
+        "tpm2_clear tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_clear TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "011",
+      "slug": "tpm2-clearcontrol",
+      "cmd": "tpm2_clearcontrol",
+      "scope": "tpm2_clearcontrol(1): Set/ Clear TPMA_PERMANENT.disableClear attribute to effectively block/ unblock lockout authorization handle for issuing TPM clear.",
+      "seed_queries": [
+        "tpm2_clearcontrol tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_clearcontrol TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "012",
+      "slug": "tpm2-clockrateadjust",
+      "cmd": "tpm2_clockrateadjust",
+      "scope": "tpm2_clockrateadjust(1): Sets the clock rate period on the TPM.",
+      "seed_queries": [
+        "tpm2_clockrateadjust tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_clockrateadjust TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "013",
+      "slug": "tpm2-commit",
+      "cmd": "tpm2_commit",
+      "scope": "tpm2_commit(1): Performs the first part of an ECC anonymous signing operation.",
+      "seed_queries": [
+        "tpm2_commit tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_commit TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "014",
+      "slug": "tpm2-create",
+      "cmd": "tpm2_create",
+      "scope": "tpm2_create(1): Create a child object.",
+      "seed_queries": [
+        "tpm2_create tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_create TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "015",
+      "slug": "tpm2-createak",
+      "cmd": "tpm2_createak",
+      "scope": "tpm2_createak(1): Generate attestation key with given algorithm under the endorsement hierarchy.",
+      "seed_queries": [
+        "tpm2_createak tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_createak TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "016",
+      "slug": "tpm2-createek",
+      "cmd": "tpm2_createek",
+      "scope": "tpm2_createek(1): Generate TCG profile compliant endorsement key.",
+      "seed_queries": [
+        "tpm2_createek tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_createek TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "017",
+      "slug": "tpm2-createpolicy",
+      "cmd": "tpm2_createpolicy",
+      "scope": "tpm2_createpolicy(1): Creates simple assertion authorization policies based on multiple PCR indices values across multiple enabled banks.",
+      "seed_queries": [
+        "tpm2_createpolicy tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_createpolicy TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "018",
+      "slug": "tpm2-createprimary",
+      "cmd": "tpm2_createprimary",
+      "scope": "tpm2_createprimary(1): Create a primary key.",
+      "seed_queries": [
+        "tpm2_createprimary tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_createprimary TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "019",
+      "slug": "tpm2-dictionarylockout",
+      "cmd": "tpm2_dictionarylockout",
+      "scope": "tpm2_dictionarylockout(1): Setup or clear dictionary-attack-lockout parameters.",
+      "seed_queries": [
+        "tpm2_dictionarylockout tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_dictionarylockout TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "020",
+      "slug": "tpm2-duplicate",
+      "cmd": "tpm2_duplicate",
+      "scope": "tpm2_duplicate(1): Duplicates a loaded object so that it may be used in a different hierarchy.",
+      "seed_queries": [
+        "tpm2_duplicate tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_duplicate TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "021",
+      "slug": "tpm2-ecdhkeygen",
+      "cmd": "tpm2_ecdhkeygen",
+      "scope": "tpm2_ecdhkeygen(1): Creates an ephemeral key and uses it to generate the shared secret value using the parameters from a ECC public key.",
+      "seed_queries": [
+        "tpm2_ecdhkeygen tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_ecdhkeygen TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "022",
+      "slug": "tpm2-ecdhzgen",
+      "cmd": "tpm2_ecdhzgen",
+      "scope": "tpm2_ecdhzgen(1): Recovers the shared secret value (Z) from a public point and a specified private key.",
+      "seed_queries": [
+        "tpm2_ecdhzgen tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_ecdhzgen TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "023",
+      "slug": "tpm2-ecephemeral",
+      "cmd": "tpm2_ecephemeral",
+      "scope": "tpm2_ecephemeral(1): Creates an ephemeral key for use in a two-phase key exchange protocol.",
+      "seed_queries": [
+        "tpm2_ecephemeral tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_ecephemeral TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "024",
+      "slug": "tpm2-encodeobject",
+      "cmd": "tpm2_encodeobject",
+      "scope": "tpm2_encodeobject(1): Encode an object into a combined PEM format.",
+      "seed_queries": [
+        "tpm2_encodeobject tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_encodeobject TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "025",
+      "slug": "tpm2-encryptdecrypt",
+      "cmd": "tpm2_encryptdecrypt",
+      "scope": "tpm2_encryptdecrypt(1): Performs symmetric encryption or decryption.",
+      "seed_queries": [
+        "tpm2_encryptdecrypt tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_encryptdecrypt TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "026",
+      "slug": "tpm2-eventlog",
+      "cmd": "tpm2_eventlog",
+      "scope": "tpm2_eventlog(1): Display tpm2 event log.",
+      "seed_queries": [
+        "tpm2_eventlog tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_eventlog TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "027",
+      "slug": "tpm2-evictcontrol",
+      "cmd": "tpm2_evictcontrol",
+      "scope": "tpm2_evictcontrol(1): Make a transient object persistent or evict a persistent object.",
+      "seed_queries": [
+        "tpm2_evictcontrol tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_evictcontrol TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "028",
+      "slug": "tpm2-flushcontext",
+      "cmd": "tpm2_flushcontext",
+      "scope": "tpm2_flushcontext(1): Remove a specified handle, or all contexts associated with a transient object, loaded session or saved session from the TPM.",
+      "seed_queries": [
+        "tpm2_flushcontext tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_flushcontext TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "029",
+      "slug": "tpm2-getcap",
+      "cmd": "tpm2_getcap",
+      "scope": "tpm2_getcap(1): Display TPM capabilities in a human readable form.",
+      "seed_queries": [
+        "tpm2_getcap tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_getcap TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "030",
+      "slug": "tpm2-getcommandauditdigest",
+      "cmd": "tpm2_getcommandauditdigest",
+      "scope": "tpm2_getcommandauditdigest(1): Retrieve the command audit attestation data from the TPM.",
+      "seed_queries": [
+        "tpm2_getcommandauditdigest tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_getcommandauditdigest TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "031",
+      "slug": "tpm2-geteccparameters",
+      "cmd": "tpm2_geteccparameters",
+      "scope": "tpm2_geteccparameters(1): Retrieves the parameters of an ECC curve identified by its TCG-assigned curveID.",
+      "seed_queries": [
+        "tpm2_geteccparameters tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_geteccparameters TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "032",
+      "slug": "tpm2-getekcertificate",
+      "cmd": "tpm2_getekcertificate",
+      "scope": "tpm2_getekcertificate(1): Retrieve the Endorsement key Certificate.",
+      "seed_queries": [
+        "tpm2_getekcertificate tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_getekcertificate TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "033",
+      "slug": "tpm2-getpolicydigest",
+      "cmd": "tpm2_getpolicydigest",
+      "scope": "tpm2_getpolicydigest(1): Retrieves the policy digest from session.",
+      "seed_queries": [
+        "tpm2_getpolicydigest tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_getpolicydigest TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "034",
+      "slug": "tpm2-getrandom",
+      "cmd": "tpm2_getrandom",
+      "scope": "tpm2_getrandom(1): Retrieves random bytes from the TPM.",
+      "seed_queries": [
+        "tpm2_getrandom tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_getrandom TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "035",
+      "slug": "tpm2-getsessionauditdigest",
+      "cmd": "tpm2_getsessionauditdigest",
+      "scope": "tpm2_getsessionauditdigest(1): Retrieve the command audit attestation data from the TPM.",
+      "seed_queries": [
+        "tpm2_getsessionauditdigest tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_getsessionauditdigest TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "036",
+      "slug": "tpm2-gettestresult",
+      "cmd": "tpm2_gettestresult",
+      "scope": "tpm2_gettestresult(1): Get the result of tests performed by the TPM",
+      "seed_queries": [
+        "tpm2_gettestresult tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_gettestresult TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "037",
+      "slug": "tpm2-gettime",
+      "cmd": "tpm2_gettime",
+      "scope": "tpm2_gettime(1): Get the current time and clock from the TPM in a signed form.",
+      "seed_queries": [
+        "tpm2_gettime tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_gettime TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "038",
+      "slug": "tpm2-hash",
+      "cmd": "tpm2_hash",
+      "scope": "tpm2_hash(1): Performs a hash operation with the TPM.",
+      "seed_queries": [
+        "tpm2_hash tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_hash TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "039",
+      "slug": "tpm2-hierarchycontrol",
+      "cmd": "tpm2_hierarchycontrol",
+      "scope": "tpm2_hierarchycontrol(1): Enable and disable use of a hierarchy and its associated NV storage.",
+      "seed_queries": [
+        "tpm2_hierarchycontrol tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_hierarchycontrol TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "040",
+      "slug": "tpm2-hmac",
+      "cmd": "tpm2_hmac",
+      "scope": "tpm2_hmac(1): Performs an HMAC operation with the TPM.",
+      "seed_queries": [
+        "tpm2_hmac tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_hmac TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "041",
+      "slug": "tpm2-import",
+      "cmd": "tpm2_import",
+      "scope": "tpm2_import(1): Imports an external key into the tpm as a TPM managed key object.",
+      "seed_queries": [
+        "tpm2_import tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_import TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "042",
+      "slug": "tpm2-incrementalselftest",
+      "cmd": "tpm2_incrementalselftest",
+      "scope": "tpm2_incrementalselftest(1): Request testing of specified algorithm list",
+      "seed_queries": [
+        "tpm2_incrementalselftest tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_incrementalselftest TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "043",
+      "slug": "tpm2-load",
+      "cmd": "tpm2_load",
+      "scope": "tpm2_load(1): Load an object into the TPM.",
+      "seed_queries": [
+        "tpm2_load tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_load TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "044",
+      "slug": "tpm2-loadexternal",
+      "cmd": "tpm2_loadexternal",
+      "scope": "tpm2_loadexternal(1): Load an external object into the TPM.",
+      "seed_queries": [
+        "tpm2_loadexternal tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_loadexternal TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "045",
+      "slug": "tpm2-makecredential",
+      "cmd": "tpm2_makecredential",
+      "scope": "tpm2_makecredential(1): Generate the encrypted-user-chosen-data and the wrapped-secret-data-encryption-key for the privacy-sensitive credentialing process of a TPM object.",
+      "seed_queries": [
+        "tpm2_makecredential tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_makecredential TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "046",
+      "slug": "tpm2-nvcertify",
+      "cmd": "tpm2_nvcertify",
+      "scope": "tpm2_nvcertify(1): Provides attestation of the contents of an NV index.",
+      "seed_queries": [
+        "tpm2_nvcertify tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvcertify TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "047",
+      "slug": "tpm2-nvdefine",
+      "cmd": "tpm2_nvdefine",
+      "scope": "tpm2_nvdefine(1): Define a TPM Non-Volatile (NV) index.",
+      "seed_queries": [
+        "tpm2_nvdefine tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvdefine TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "048",
+      "slug": "tpm2-nvextend",
+      "cmd": "tpm2_nvextend",
+      "scope": "tpm2_nvextend(1): Extend an Non-Volatile (NV) index like it was a PCR.",
+      "seed_queries": [
+        "tpm2_nvextend tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvextend TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "049",
+      "slug": "tpm2-nvincrement",
+      "cmd": "tpm2_nvincrement",
+      "scope": "tpm2_nvincrement(1): Increment counter in a Non-Volatile (NV) index.",
+      "seed_queries": [
+        "tpm2_nvincrement tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvincrement TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "050",
+      "slug": "tpm2-nvread",
+      "cmd": "tpm2_nvread",
+      "scope": "tpm2_nvread(1): Read the data stored in a Non-Volatile (NV)s index.",
+      "seed_queries": [
+        "tpm2_nvread tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvread TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "051",
+      "slug": "tpm2-nvreadlock",
+      "cmd": "tpm2_nvreadlock",
+      "scope": "tpm2_nvreadlock(1): Lock the Non-Volatile (NV) index for further reads.",
+      "seed_queries": [
+        "tpm2_nvreadlock tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvreadlock TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "052",
+      "slug": "tpm2-nvreadpublic",
+      "cmd": "tpm2_nvreadpublic",
+      "scope": "tpm2_nvreadpublic(1): Display all defined Non-Volatile (NV)s indices.",
+      "seed_queries": [
+        "tpm2_nvreadpublic tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvreadpublic TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "053",
+      "slug": "tpm2-nvsetbits",
+      "cmd": "tpm2_nvsetbits",
+      "scope": "tpm2_nvsetbits(1): Bitwise OR bits into a Non-Volatile (NV).",
+      "seed_queries": [
+        "tpm2_nvsetbits tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvsetbits TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "054",
+      "slug": "tpm2-nvundefine",
+      "cmd": "tpm2_nvundefine",
+      "scope": "tpm2_nvundefine(1): Delete a Non-Volatile (NV) index.",
+      "seed_queries": [
+        "tpm2_nvundefine tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvundefine TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "055",
+      "slug": "tpm2-nvwrite",
+      "cmd": "tpm2_nvwrite",
+      "scope": "tpm2_nvwrite(1): Write data to a Non-Volatile (NV) index.",
+      "seed_queries": [
+        "tpm2_nvwrite tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvwrite TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "056",
+      "slug": "tpm2-nvwritelock",
+      "cmd": "tpm2_nvwritelock",
+      "scope": "tpm2_nvwritelock(1): Lock the Non-Volatile (NV) index for further writes.",
+      "seed_queries": [
+        "tpm2_nvwritelock tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_nvwritelock TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "057",
+      "slug": "tpm2-pcrallocate",
+      "cmd": "tpm2_pcrallocate",
+      "scope": "tpm2_pcrallocate(1): Configure PCRs and bank algorithms.",
+      "seed_queries": [
+        "tpm2_pcrallocate tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_pcrallocate TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "058",
+      "slug": "tpm2-pcrevent",
+      "cmd": "tpm2_pcrevent",
+      "scope": "tpm2_pcrevent(1): Hashes a file and optionally extends a pcr.",
+      "seed_queries": [
+        "tpm2_pcrevent tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_pcrevent TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "059",
+      "slug": "tpm2-pcrextend",
+      "cmd": "tpm2_pcrextend",
+      "scope": "tpm2_pcrextend(1): Extends a PCR.",
+      "seed_queries": [
+        "tpm2_pcrextend tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_pcrextend TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "060",
+      "slug": "tpm2-pcrread",
+      "cmd": "tpm2_pcrread",
+      "scope": "tpm2_pcrread(1): List PCR values.",
+      "seed_queries": [
+        "tpm2_pcrread tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_pcrread TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "061",
+      "slug": "tpm2-pcrreset",
+      "cmd": "tpm2_pcrreset",
+      "scope": "tpm2_pcrreset(1): Reset one or more PCR banks",
+      "seed_queries": [
+        "tpm2_pcrreset tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_pcrreset TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "062",
+      "slug": "tpm2-policyauthorize",
+      "cmd": "tpm2_policyauthorize",
+      "scope": "tpm2_policyauthorize(1): Allows for mutable policies by tethering to a signing authority.",
+      "seed_queries": [
+        "tpm2_policyauthorize tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policyauthorize TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "063",
+      "slug": "tpm2-policyauthorizenv",
+      "cmd": "tpm2_policyauthorizenv",
+      "scope": "tpm2_policyauthorizenv(1): Allows for mutable policies by referencing to a policy from an NV index.",
+      "seed_queries": [
+        "tpm2_policyauthorizenv tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policyauthorizenv TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "064",
+      "slug": "tpm2-policyauthvalue",
+      "cmd": "tpm2_policyauthvalue",
+      "scope": "tpm2_policyauthvalue(1): Enables binding a policy to the authorization value of the authorized TPM object.",
+      "seed_queries": [
+        "tpm2_policyauthvalue tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policyauthvalue TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "065",
+      "slug": "tpm2-policycommandcode",
+      "cmd": "tpm2_policycommandcode",
+      "scope": "tpm2_policycommandcode(1): Restrict TPM object authorization to specific TPM commands.",
+      "seed_queries": [
+        "tpm2_policycommandcode tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policycommandcode TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "066",
+      "slug": "tpm2-policycountertimer",
+      "cmd": "tpm2_policycountertimer",
+      "scope": "tpm2_policycountertimer(1): Enables policy authorization by evaluating the comparison operation on the TPM parameters time, clock, reset count, restart count and TPM clock safe flag.",
+      "seed_queries": [
+        "tpm2_policycountertimer tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policycountertimer TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "067",
+      "slug": "tpm2-policycphash",
+      "cmd": "tpm2_policycphash",
+      "scope": "tpm2_policycphash(1): Couples a policy with command parameters of the command.",
+      "seed_queries": [
+        "tpm2_policycphash tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policycphash TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "068",
+      "slug": "tpm2-policyduplicationselect",
+      "cmd": "tpm2_policyduplicationselect",
+      "scope": "tpm2_policyduplicationselect(1): Restricts duplication to a specific new parent.",
+      "seed_queries": [
+        "tpm2_policyduplicationselect tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policyduplicationselect TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "069",
+      "slug": "tpm2-policylocality",
+      "cmd": "tpm2_policylocality",
+      "scope": "tpm2_policylocality(1): Restrict TPM object authorization to specific localities.",
+      "seed_queries": [
+        "tpm2_policylocality tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policylocality TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "070",
+      "slug": "tpm2-policynamehash",
+      "cmd": "tpm2_policynamehash",
+      "scope": "tpm2_policynamehash(1): Couples a policy with names of specific objects.",
+      "seed_queries": [
+        "tpm2_policynamehash tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policynamehash TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "071",
+      "slug": "tpm2-policynv",
+      "cmd": "tpm2_policynv",
+      "scope": "tpm2_policynv(1): Evaluates policy authorization by comparing a specified value against the contents in the specified NV Index.",
+      "seed_queries": [
+        "tpm2_policynv tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policynv TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "072",
+      "slug": "tpm2-policynvwritten",
+      "cmd": "tpm2_policynvwritten",
+      "scope": "tpm2_policynvwritten(1): Restrict TPM object authorization to the written state of an NV index.",
+      "seed_queries": [
+        "tpm2_policynvwritten tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policynvwritten TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "073",
+      "slug": "tpm2-policyor",
+      "cmd": "tpm2_policyor",
+      "scope": "tpm2_policyor(1): logically OR's two policies together.",
+      "seed_queries": [
+        "tpm2_policyor tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policyor TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "074",
+      "slug": "tpm2-policypassword",
+      "cmd": "tpm2_policypassword",
+      "scope": "tpm2_policypassword(1): Enables binding a policy to the authorization value of the authorized TPM object.",
+      "seed_queries": [
+        "tpm2_policypassword tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policypassword TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "075",
+      "slug": "tpm2-policypcr",
+      "cmd": "tpm2_policypcr",
+      "scope": "tpm2_policypcr(1): Create a policy that includes specific PCR values.",
+      "seed_queries": [
+        "tpm2_policypcr tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policypcr TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "076",
+      "slug": "tpm2-policyrestart",
+      "cmd": "tpm2_policyrestart",
+      "scope": "tpm2_policyrestart(1): Restart an existing session with the TPM.",
+      "seed_queries": [
+        "tpm2_policyrestart tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policyrestart TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "077",
+      "slug": "tpm2-policysecret",
+      "cmd": "tpm2_policysecret",
+      "scope": "tpm2_policysecret(1): Couples the authorization of an object to that of an existing object.",
+      "seed_queries": [
+        "tpm2_policysecret tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policysecret TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "078",
+      "slug": "tpm2-policysigned",
+      "cmd": "tpm2_policysigned",
+      "scope": "tpm2_policysigned(1): Enables policy authorization by verifying signature of optional TPM2 parameters. The signature is generated by a signing authority.",
+      "seed_queries": [
+        "tpm2_policysigned tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policysigned TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "079",
+      "slug": "tpm2-policytemplate",
+      "cmd": "tpm2_policytemplate",
+      "scope": "tpm2_policytemplate(1): Couples a policy with public template data digest of an object.",
+      "seed_queries": [
+        "tpm2_policytemplate tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policytemplate TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "080",
+      "slug": "tpm2-policyticket",
+      "cmd": "tpm2_policyticket",
+      "scope": "tpm2_policyticket(1): Enables policy authorization by verifying a ticket that represents a validated authorization that had an expiration time associated with it.",
+      "seed_queries": [
+        "tpm2_policyticket tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_policyticket TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "081",
+      "slug": "tpm2-print",
+      "cmd": "tpm2_print",
+      "scope": "tpm2_print(1): Prints TPM data structures",
+      "seed_queries": [
+        "tpm2_print tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_print TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "082",
+      "slug": "tpm2-quote",
+      "cmd": "tpm2_quote",
+      "scope": "tpm2_quote(1): Provide a quote and signature from the TPM.",
+      "seed_queries": [
+        "tpm2_quote tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_quote TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "083",
+      "slug": "tpm2-rc-decode",
+      "cmd": "tpm2_rc_decode",
+      "scope": "tpm2_rc_decode(1): Decode TPM2 error codes to a human readable format.",
+      "seed_queries": [
+        "tpm2_rc_decode tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_rc_decode TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "084",
+      "slug": "tpm2-readclock",
+      "cmd": "tpm2_readclock",
+      "scope": "tpm2_readclock(1): Retrieves the time information from the TPM.",
+      "seed_queries": [
+        "tpm2_readclock tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_readclock TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "085",
+      "slug": "tpm2-readpublic",
+      "cmd": "tpm2_readpublic",
+      "scope": "tpm2_readpublic(1): Read the public area of a loaded object.",
+      "seed_queries": [
+        "tpm2_readpublic tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_readpublic TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "086",
+      "slug": "tpm2-rsadecrypt",
+      "cmd": "tpm2_rsadecrypt",
+      "scope": "tpm2_rsadecrypt(1): Performs an RSA decryption operation using the TPM.",
+      "seed_queries": [
+        "tpm2_rsadecrypt tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_rsadecrypt TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "087",
+      "slug": "tpm2-rsaencrypt",
+      "cmd": "tpm2_rsaencrypt",
+      "scope": "tpm2_rsaencrypt(1): Performs an RSA encryption operation using the TPM.",
+      "seed_queries": [
+        "tpm2_rsaencrypt tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_rsaencrypt TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "088",
+      "slug": "tpm2-selftest",
+      "cmd": "tpm2_selftest",
+      "scope": "tpm2_selftest(1): Run TPM's self-test internal routines",
+      "seed_queries": [
+        "tpm2_selftest tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_selftest TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "089",
+      "slug": "tpm2-send",
+      "cmd": "tpm2_send",
+      "scope": "tpm2_send(1): Send a raw command buffer to the TPM.",
+      "seed_queries": [
+        "tpm2_send tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_send TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "090",
+      "slug": "tpm2-sessionconfig",
+      "cmd": "tpm2_sessionconfig",
+      "scope": "tpm2_sessionconfig(1): Configure session attributes and print session info from a session file.",
+      "seed_queries": [
+        "tpm2_sessionconfig tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_sessionconfig TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "091",
+      "slug": "tpm2-setclock",
+      "cmd": "tpm2_setclock",
+      "scope": "tpm2_setclock(1): Sets the time on the TPM.",
+      "seed_queries": [
+        "tpm2_setclock tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_setclock TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "092",
+      "slug": "tpm2-setcommandauditstatus",
+      "cmd": "tpm2_setcommandauditstatus",
+      "scope": "tpm2_setcommandauditstatus(1): Add or remove TPM2 commands to the audited commands list.",
+      "seed_queries": [
+        "tpm2_setcommandauditstatus tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_setcommandauditstatus TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "093",
+      "slug": "tpm2-setprimarypolicy",
+      "cmd": "tpm2_setprimarypolicy",
+      "scope": "tpm2_setprimarypolicy(1): Sets the authorization policy for the lockout (lockoutPolicy), the platform hierarchy (platformPolicy), the storage hierarchy (ownerPolicy), and the endorsement hierarchy (endorsementPolicy).",
+      "seed_queries": [
+        "tpm2_setprimarypolicy tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_setprimarypolicy TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "094",
+      "slug": "tpm2-shutdown",
+      "cmd": "tpm2_shutdown",
+      "scope": "tpm2_shutdown(1): Send a shutdown command to the TPM.",
+      "seed_queries": [
+        "tpm2_shutdown tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_shutdown TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "095",
+      "slug": "tpm2-sign",
+      "cmd": "tpm2_sign",
+      "scope": "tpm2_sign(1): Sign a hash or message using the TPM.",
+      "seed_queries": [
+        "tpm2_sign tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_sign TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "096",
+      "slug": "tpm2-startauthsession",
+      "cmd": "tpm2_startauthsession",
+      "scope": "tpm2_startauthsession(1): Start a session with the TPM.",
+      "seed_queries": [
+        "tpm2_startauthsession tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_startauthsession TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "097",
+      "slug": "tpm2-startup",
+      "cmd": "tpm2_startup",
+      "scope": "tpm2_startup(1): Send a startup command to the TPM.",
+      "seed_queries": [
+        "tpm2_startup tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_startup TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "098",
+      "slug": "tpm2-stirrandom",
+      "cmd": "tpm2_stirrandom",
+      "scope": "tpm2_stirrandom(1): Add \"additional information\" into TPM RNG state.",
+      "seed_queries": [
+        "tpm2_stirrandom tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_stirrandom TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "099",
+      "slug": "tpm2-testparms",
+      "cmd": "tpm2_testparms",
+      "scope": "tpm2_testparms(1): Verify that specified algorithm suite is supported by TPM",
+      "seed_queries": [
+        "tpm2_testparms tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_testparms TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "100",
+      "slug": "tpm2-tr-encode",
+      "cmd": "tpm2_tr_encode",
+      "scope": "tpm2_tr_encode(1): Encodes a peristent handle and `TPM2B_NAME` as a serialized `ESYS_TR` as output.",
+      "seed_queries": [
+        "tpm2_tr_encode tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_tr_encode TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "101",
+      "slug": "tpm2-unseal",
+      "cmd": "tpm2_unseal",
+      "scope": "tpm2_unseal(1): Returns a data blob in a loaded TPM object. The data blob is returned in clear.",
+      "seed_queries": [
+        "tpm2_unseal tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_unseal TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "102",
+      "slug": "tpm2-verifysignature",
+      "cmd": "tpm2_verifysignature",
+      "scope": "tpm2_verifysignature(1): Validates a signature using the TPM.",
+      "seed_queries": [
+        "tpm2_verifysignature tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_verifysignature TPM 2.0 command"
+      ]
+    },
+    {
+      "nn": "103",
+      "slug": "tpm2-zgen2phase",
+      "cmd": "tpm2_zgen2phase",
+      "scope": "tpm2_zgen2phase(1): Command to enable the TPM to combine data from the other party with the ephemeral key generated in the first phase of two-phase key exchange protocols.",
+      "seed_queries": [
+        "tpm2_zgen2phase tpm2-tools man page options examples",
+        "tpm2-software tpm2-tools tpm2_zgen2phase TPM 2.0 command"
+      ]
+    }
+  ],
+  "validation": {
+    "model": "clef",
+    "answers": {
+      "sub_001": {
+        "type": "score",
+        "score": 1.6236,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0733,
+          "1": 0.2299,
+          "2": 0.6968
+        },
+        "confidence": 0.3157
+      },
+      "sub_002": {
+        "type": "score",
+        "score": 1.3522,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0776,
+          "1": 0.4926,
+          "2": 0.4298
+        },
+        "confidence": 0.1501
+      },
+      "sub_003": {
+        "type": "score",
+        "score": 1.8667,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0164,
+          "1": 0.1005,
+          "2": 0.8831
+        },
+        "confidence": 0.6854
+      },
+      "sub_004": {
+        "type": "score",
+        "score": 1.0337,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1575,
+          "1": 0.6512,
+          "2": 0.1913
+        },
+        "confidence": 0.2282
+      },
+      "sub_005": {
+        "type": "score",
+        "score": 1.0571,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1668,
+          "1": 0.6094,
+          "2": 0.2238
+        },
+        "confidence": 0.1739
+      },
+      "sub_006": {
+        "type": "score",
+        "score": 1.8706,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0248,
+          "1": 0.0798,
+          "2": 0.8954
+        },
+        "confidence": 0.7132
+      },
+      "sub_007": {
+        "type": "score",
+        "score": 0.8473,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2678,
+          "1": 0.6172,
+          "2": 0.115
+        },
+        "confidence": 0.1989
+      },
+      "sub_008": {
+        "type": "score",
+        "score": 0.7737,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3055,
+          "1": 0.6153,
+          "2": 0.0792
+        },
+        "confidence": 0.2173
+      },
+      "sub_009": {
+        "type": "score",
+        "score": 1.7514,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.05,
+          "1": 0.1486,
+          "2": 0.8014
+        },
+        "confidence": 0.5002
+      },
+      "sub_010": {
+        "type": "score",
+        "score": 1.8929,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0299,
+          "1": 0.0474,
+          "2": 0.9227
+        },
+        "confidence": 0.7818
+      },
+      "sub_011": {
+        "type": "score",
+        "score": 0.7732,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2823,
+          "1": 0.6622,
+          "2": 0.0555
+        },
+        "confidence": 0.2819
+      },
+      "sub_012": {
+        "type": "score",
+        "score": 0.5666,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.459,
+          "1": 0.5154,
+          "2": 0.0256
+        },
+        "confidence": 0.2155
+      },
+      "sub_013": {
+        "type": "score",
+        "score": 0.8297,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2216,
+          "1": 0.7271,
+          "2": 0.0513
+        },
+        "confidence": 0.3706
+      },
+      "sub_014": {
+        "type": "score",
+        "score": 1.9634,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0113,
+          "1": 0.0141,
+          "2": 0.9746
+        },
+        "confidence": 0.9254
+      },
+      "sub_015": {
+        "type": "score",
+        "score": 1.6666,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.073,
+          "1": 0.1873,
+          "2": 0.7397
+        },
+        "confidence": 0.3813
+      },
+      "sub_016": {
+        "type": "score",
+        "score": 1.7898,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0534,
+          "1": 0.1033,
+          "2": 0.8433
+        },
+        "confidence": 0.5869
+      },
+      "sub_017": {
+        "type": "score",
+        "score": 1.8577,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0216,
+          "1": 0.0991,
+          "2": 0.8793
+        },
+        "confidence": 0.6751
+      },
+      "sub_018": {
+        "type": "score",
+        "score": 1.927,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0158,
+          "1": 0.0414,
+          "2": 0.9428
+        },
+        "confidence": 0.8363
+      },
+      "sub_019": {
+        "type": "score",
+        "score": 0.8363,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2237,
+          "1": 0.7163,
+          "2": 0.06
+        },
+        "confidence": 0.3501
+      },
+      "sub_020": {
+        "type": "score",
+        "score": 1.4671,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.3929,
+          "2": 0.5371
+        },
+        "confidence": 0.1716
+      },
+      "sub_021": {
+        "type": "score",
+        "score": 0.9129,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1695,
+          "1": 0.7481,
+          "2": 0.0824
+        },
+        "confidence": 0.3927
+      },
+      "sub_022": {
+        "type": "score",
+        "score": 0.9116,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1875,
+          "1": 0.7133,
+          "2": 0.0992
+        },
+        "confidence": 0.3307
+      },
+      "sub_023": {
+        "type": "score",
+        "score": 0.832,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2634,
+          "1": 0.6413,
+          "2": 0.0953
+        },
+        "confidence": 0.2345
+      },
+      "sub_024": {
+        "type": "score",
+        "score": 1.1502,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1598,
+          "1": 0.5302,
+          "2": 0.31
+        },
+        "confidence": 0.1042
+      },
+      "sub_025": {
+        "type": "score",
+        "score": 1.5301,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0913,
+          "1": 0.2873,
+          "2": 0.6214
+        },
+        "confidence": 0.2156
+      },
+      "sub_026": {
+        "type": "score",
+        "score": 1.6146,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0693,
+          "1": 0.2468,
+          "2": 0.6839
+        },
+        "confidence": 0.3001
+      },
+      "sub_027": {
+        "type": "score",
+        "score": 1.8369,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0365,
+          "1": 0.0902,
+          "2": 0.8733
+        },
+        "confidence": 0.6582
+      },
+      "sub_028": {
+        "type": "score",
+        "score": 1.256,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1777,
+          "1": 0.3886,
+          "2": 0.4337
+        },
+        "confidence": 0.056
+      },
+      "sub_029": {
+        "type": "score",
+        "score": 1.5075,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.09,
+          "1": 0.3125,
+          "2": 0.5975
+        },
+        "confidence": 0.1941
+      },
+      "sub_030": {
+        "type": "score",
+        "score": 0.8592,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2494,
+          "1": 0.642,
+          "2": 0.1086
+        },
+        "confidence": 0.2293
+      },
+      "sub_031": {
+        "type": "score",
+        "score": 1.0187,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2666,
+          "1": 0.4482,
+          "2": 0.2852
+        },
+        "confidence": 0.0299
+      },
+      "sub_032": {
+        "type": "score",
+        "score": 1.4076,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1016,
+          "1": 0.3892,
+          "2": 0.5092
+        },
+        "confidence": 0.1316
+      },
+      "sub_033": {
+        "type": "score",
+        "score": 1.287,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0951,
+          "1": 0.5228,
+          "2": 0.3821
+        },
+        "confidence": 0.1425
+      },
+      "sub_034": {
+        "type": "score",
+        "score": 1.6638,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.058,
+          "1": 0.2202,
+          "2": 0.7218
+        },
+        "confidence": 0.3593
+      },
+      "sub_035": {
+        "type": "score",
+        "score": 1.0599,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1407,
+          "1": 0.6587,
+          "2": 0.2006
+        },
+        "confidence": 0.2409
+      },
+      "sub_036": {
+        "type": "score",
+        "score": 0.7807,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3179,
+          "1": 0.5835,
+          "2": 0.0986
+        },
+        "confidence": 0.1769
+      },
+      "sub_037": {
+        "type": "score",
+        "score": 1.4566,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0725,
+          "1": 0.3985,
+          "2": 0.529
+        },
+        "confidence": 0.1659
+      },
+      "sub_038": {
+        "type": "score",
+        "score": 1.9492,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0121,
+          "1": 0.0266,
+          "2": 0.9613
+        },
+        "confidence": 0.8875
+      },
+      "sub_039": {
+        "type": "score",
+        "score": 1.6463,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0563,
+          "1": 0.2411,
+          "2": 0.7026
+        },
+        "confidence": 0.3325
+      },
+      "sub_040": {
+        "type": "score",
+        "score": 1.3664,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1272,
+          "1": 0.3792,
+          "2": 0.4936
+        },
+        "confidence": 0.1054
+      },
+      "sub_041": {
+        "type": "score",
+        "score": 1.9262,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0159,
+          "1": 0.0419,
+          "2": 0.9422
+        },
+        "confidence": 0.8345
+      },
+      "sub_042": {
+        "type": "score",
+        "score": 0.7707,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2766,
+          "1": 0.6762,
+          "2": 0.0472
+        },
+        "confidence": 0.3039
+      },
+      "sub_043": {
+        "type": "score",
+        "score": 1.9689,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0117,
+          "1": 0.0078,
+          "2": 0.9805
+        },
+        "confidence": 0.9425
+      },
+      "sub_044": {
+        "type": "score",
+        "score": 1.5808,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0958,
+          "1": 0.2276,
+          "2": 0.6766
+        },
+        "confidence": 0.2782
+      },
+      "sub_045": {
+        "type": "score",
+        "score": 1.3974,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1095,
+          "1": 0.3837,
+          "2": 0.5068
+        },
+        "confidence": 0.1241
+      },
+      "sub_046": {
+        "type": "score",
+        "score": 1.428,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1058,
+          "1": 0.3605,
+          "2": 0.5337
+        },
+        "confidence": 0.139
+      },
+      "sub_047": {
+        "type": "score",
+        "score": 1.9357,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0154,
+          "1": 0.0335,
+          "2": 0.9511
+        },
+        "confidence": 0.859
+      },
+      "sub_048": {
+        "type": "score",
+        "score": 1.2504,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0962,
+          "1": 0.5572,
+          "2": 0.3466
+        },
+        "confidence": 0.1598
+      },
+      "sub_049": {
+        "type": "score",
+        "score": 0.9093,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1982,
+          "1": 0.6943,
+          "2": 0.1075
+        },
+        "confidence": 0.2992
+      },
+      "sub_050": {
+        "type": "score",
+        "score": 1.9231,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0179,
+          "1": 0.041,
+          "2": 0.9411
+        },
+        "confidence": 0.8314
+      },
+      "sub_051": {
+        "type": "score",
+        "score": 0.7736,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3197,
+          "1": 0.5869,
+          "2": 0.0934
+        },
+        "confidence": 0.1831
+      },
+      "sub_052": {
+        "type": "score",
+        "score": 1.5205,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0873,
+          "1": 0.305,
+          "2": 0.6077
+        },
+        "confidence": 0.205
+      },
+      "sub_053": {
+        "type": "score",
+        "score": 0.7531,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3251,
+          "1": 0.5968,
+          "2": 0.0781
+        },
+        "confidence": 0.2019
+      },
+      "sub_054": {
+        "type": "score",
+        "score": 1.5356,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1194,
+          "1": 0.2255,
+          "2": 0.6551
+        },
+        "confidence": 0.2413
+      },
+      "sub_055": {
+        "type": "score",
+        "score": 1.9163,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0246,
+          "1": 0.0345,
+          "2": 0.9409
+        },
+        "confidence": 0.8306
+      },
+      "sub_056": {
+        "type": "score",
+        "score": 0.9256,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2163,
+          "1": 0.6418,
+          "2": 0.1419
+        },
+        "confidence": 0.2182
+      },
+      "sub_057": {
+        "type": "score",
+        "score": 1.12,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1561,
+          "1": 0.5678,
+          "2": 0.2761
+        },
+        "confidence": 0.1345
+      },
+      "sub_058": {
+        "type": "score",
+        "score": 1.3677,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1163,
+          "1": 0.3998,
+          "2": 0.4839
+        },
+        "confidence": 0.1113
+      },
+      "sub_059": {
+        "type": "score",
+        "score": 1.7943,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0497,
+          "1": 0.1063,
+          "2": 0.844
+        },
+        "confidence": 0.5891
+      },
+      "sub_060": {
+        "type": "score",
+        "score": 1.8795,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0267,
+          "1": 0.067,
+          "2": 0.9063
+        },
+        "confidence": 0.7398
+      },
+      "sub_061": {
+        "type": "score",
+        "score": 1.4394,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1086,
+          "1": 0.3435,
+          "2": 0.5479
+        },
+        "confidence": 0.145
+      },
+      "sub_062": {
+        "type": "score",
+        "score": 1.6488,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0437,
+          "1": 0.2637,
+          "2": 0.6926
+        },
+        "confidence": 0.3266
+      },
+      "sub_063": {
+        "type": "score",
+        "score": 1.132,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0841,
+          "1": 0.6998,
+          "2": 0.2161
+        },
+        "confidence": 0.3153
+      },
+      "sub_064": {
+        "type": "score",
+        "score": 1.0121,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1725,
+          "1": 0.6429,
+          "2": 0.1846
+        },
+        "confidence": 0.2158
+      },
+      "sub_065": {
+        "type": "score",
+        "score": 1.0285,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1581,
+          "1": 0.6554,
+          "2": 0.1865
+        },
+        "confidence": 0.234
+      },
+      "sub_066": {
+        "type": "score",
+        "score": 1.2338,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0964,
+          "1": 0.5734,
+          "2": 0.3302
+        },
+        "confidence": 0.1707
+      },
+      "sub_067": {
+        "type": "score",
+        "score": 0.98,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2077,
+          "1": 0.6045,
+          "2": 0.1878
+        },
+        "confidence": 0.1658
+      },
+      "sub_068": {
+        "type": "score",
+        "score": 0.9234,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1583,
+          "1": 0.76,
+          "2": 0.0817
+        },
+        "confidence": 0.4139
+      },
+      "sub_069": {
+        "type": "score",
+        "score": 1.5748,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0751,
+          "1": 0.2749,
+          "2": 0.65
+        },
+        "confidence": 0.2555
+      },
+      "sub_070": {
+        "type": "score",
+        "score": 1.0009,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1861,
+          "1": 0.6269,
+          "2": 0.187
+        },
+        "confidence": 0.1939
+      },
+      "sub_071": {
+        "type": "score",
+        "score": 1.7513,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0535,
+          "1": 0.1416,
+          "2": 0.8049
+        },
+        "confidence": 0.5061
+      },
+      "sub_072": {
+        "type": "score",
+        "score": 0.9705,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1599,
+          "1": 0.7097,
+          "2": 0.1304
+        },
+        "confidence": 0.3194
+      },
+      "sub_073": {
+        "type": "score",
+        "score": 1.8126,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0359,
+          "1": 0.1156,
+          "2": 0.8485
+        },
+        "confidence": 0.6019
+      },
+      "sub_074": {
+        "type": "score",
+        "score": 1.3325,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1498,
+          "1": 0.3678,
+          "2": 0.4824
+        },
+        "confidence": 0.0856
+      },
+      "sub_075": {
+        "type": "score",
+        "score": 1.9388,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0184,
+          "1": 0.0245,
+          "2": 0.9571
+        },
+        "confidence": 0.8755
+      },
+      "sub_076": {
+        "type": "score",
+        "score": 1.4933,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0979,
+          "1": 0.3109,
+          "2": 0.5912
+        },
+        "confidence": 0.1837
+      },
+      "sub_077": {
+        "type": "score",
+        "score": 1.7379,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0351,
+          "1": 0.1919,
+          "2": 0.773
+        },
+        "confidence": 0.4534
+      },
+      "sub_078": {
+        "type": "score",
+        "score": 1.6755,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0333,
+          "1": 0.2578,
+          "2": 0.7089
+        },
+        "confidence": 0.3551
+      },
+      "sub_079": {
+        "type": "score",
+        "score": 0.8557,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2564,
+          "1": 0.6316,
+          "2": 0.112
+        },
+        "confidence": 0.2158
+      },
+      "sub_080": {
+        "type": "score",
+        "score": 0.9782,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2008,
+          "1": 0.6202,
+          "2": 0.179
+        },
+        "confidence": 0.1855
+      },
+      "sub_081": {
+        "type": "score",
+        "score": 1.6187,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0801,
+          "1": 0.2211,
+          "2": 0.6988
+        },
+        "confidence": 0.3154
+      },
+      "sub_082": {
+        "type": "score",
+        "score": 1.9182,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0192,
+          "1": 0.0434,
+          "2": 0.9374
+        },
+        "confidence": 0.8214
+      },
+      "sub_083": {
+        "type": "score",
+        "score": 1.086,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1822,
+          "1": 0.5496,
+          "2": 0.2682
+        },
+        "confidence": 0.1107
+      },
+      "sub_084": {
+        "type": "score",
+        "score": 0.8513,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.229,
+          "1": 0.6906,
+          "2": 0.0804
+        },
+        "confidence": 0.3037
+      },
+      "sub_085": {
+        "type": "score",
+        "score": 1.894,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0217,
+          "1": 0.0627,
+          "2": 0.9156
+        },
+        "confidence": 0.7642
+      },
+      "sub_086": {
+        "type": "score",
+        "score": 1.2057,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1619,
+          "1": 0.4706,
+          "2": 0.3675
+        },
+        "confidence": 0.0741
+      },
+      "sub_087": {
+        "type": "score",
+        "score": 1.1275,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1644,
+          "1": 0.5437,
+          "2": 0.2919
+        },
+        "confidence": 0.1117
+      },
+      "sub_088": {
+        "type": "score",
+        "score": 0.8813,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2118,
+          "1": 0.695,
+          "2": 0.0932
+        },
+        "confidence": 0.3049
+      },
+      "sub_089": {
+        "type": "score",
+        "score": 0.8932,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2062,
+          "1": 0.6943,
+          "2": 0.0995
+        },
+        "confidence": 0.3017
+      },
+      "sub_090": {
+        "type": "score",
+        "score": 1.2062,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1299,
+          "1": 0.5341,
+          "2": 0.336
+        },
+        "confidence": 0.1226
+      },
+      "sub_091": {
+        "type": "score",
+        "score": 0.948,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2074,
+          "1": 0.6371,
+          "2": 0.1555
+        },
+        "confidence": 0.2096
+      },
+      "sub_092": {
+        "type": "score",
+        "score": 1.0932,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1242,
+          "1": 0.6585,
+          "2": 0.2173
+        },
+        "confidence": 0.2445
+      },
+      "sub_093": {
+        "type": "score",
+        "score": 1.3166,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1094,
+          "1": 0.4646,
+          "2": 0.426
+        },
+        "confidence": 0.1139
+      },
+      "sub_094": {
+        "type": "score",
+        "score": 1.2103,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1091,
+          "1": 0.5715,
+          "2": 0.3194
+        },
+        "confidence": 0.1608
+      },
+      "sub_095": {
+        "type": "score",
+        "score": 1.9517,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0141,
+          "1": 0.0202,
+          "2": 0.9657
+        },
+        "confidence": 0.8999
+      },
+      "sub_096": {
+        "type": "score",
+        "score": 1.8647,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.037,
+          "1": 0.0613,
+          "2": 0.9017
+        },
+        "confidence": 0.7272
+      },
+      "sub_097": {
+        "type": "score",
+        "score": 1.6725,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0718,
+          "1": 0.1839,
+          "2": 0.7443
+        },
+        "confidence": 0.3894
+      },
+      "sub_098": {
+        "type": "score",
+        "score": 0.7485,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.3041,
+          "1": 0.6432,
+          "2": 0.0527
+        },
+        "confidence": 0.2634
+      },
+      "sub_099": {
+        "type": "score",
+        "score": 1.0223,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.1561,
+          "1": 0.6656,
+          "2": 0.1783
+        },
+        "confidence": 0.2488
+      },
+      "sub_100": {
+        "type": "score",
+        "score": 0.9959,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.198,
+          "1": 0.6081,
+          "2": 0.1939
+        },
+        "confidence": 0.1699
+      },
+      "sub_101": {
+        "type": "score",
+        "score": 1.8805,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0325,
+          "1": 0.0545,
+          "2": 0.913
+        },
+        "confidence": 0.7563
+      },
+      "sub_102": {
+        "type": "score",
+        "score": 1.7701,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0519,
+          "1": 0.1262,
+          "2": 0.8219
+        },
+        "confidence": 0.5413
+      },
+      "sub_103": {
+        "type": "score",
+        "score": 0.8528,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.2004,
+          "1": 0.7463,
+          "2": 0.0533
+        },
+        "confidence": 0.3999
+      }
+    },
+    "usage": {
+      "input_tokens": 22459,
+      "output_tokens": 0
+    }
+  },
+  "kept": [
+    "001-tpm2",
+    "002-tpm2-activatecredential",
+    "003-tpm2-certify",
+    "004-tpm2-certifyx509certutil",
+    "005-tpm2-certifycreation",
+    "006-tpm2-changeauth",
+    "007-tpm2-changeeps",
+    "008-tpm2-changepps",
+    "009-tpm2-checkquote",
+    "010-tpm2-clear",
+    "011-tpm2-clearcontrol",
+    "012-tpm2-clockrateadjust",
+    "013-tpm2-commit",
+    "014-tpm2-create",
+    "015-tpm2-createak",
+    "016-tpm2-createek",
+    "017-tpm2-createpolicy",
+    "018-tpm2-createprimary",
+    "019-tpm2-dictionarylockout",
+    "020-tpm2-duplicate",
+    "021-tpm2-ecdhkeygen",
+    "022-tpm2-ecdhzgen",
+    "023-tpm2-ecephemeral",
+    "024-tpm2-encodeobject",
+    "025-tpm2-encryptdecrypt",
+    "026-tpm2-eventlog",
+    "027-tpm2-evictcontrol",
+    "028-tpm2-flushcontext",
+    "029-tpm2-getcap",
+    "030-tpm2-getcommandauditdigest",
+    "031-tpm2-geteccparameters",
+    "032-tpm2-getekcertificate",
+    "033-tpm2-getpolicydigest",
+    "034-tpm2-getrandom",
+    "035-tpm2-getsessionauditdigest",
+    "036-tpm2-gettestresult",
+    "037-tpm2-gettime",
+    "038-tpm2-hash",
+    "039-tpm2-hierarchycontrol",
+    "040-tpm2-hmac",
+    "041-tpm2-import",
+    "042-tpm2-incrementalselftest",
+    "043-tpm2-load",
+    "044-tpm2-loadexternal",
+    "045-tpm2-makecredential",
+    "046-tpm2-nvcertify",
+    "047-tpm2-nvdefine",
+    "048-tpm2-nvextend",
+    "049-tpm2-nvincrement",
+    "050-tpm2-nvread",
+    "051-tpm2-nvreadlock",
+    "052-tpm2-nvreadpublic",
+    "053-tpm2-nvsetbits",
+    "054-tpm2-nvundefine",
+    "055-tpm2-nvwrite",
+    "056-tpm2-nvwritelock",
+    "057-tpm2-pcrallocate",
+    "058-tpm2-pcrevent",
+    "059-tpm2-pcrextend",
+    "060-tpm2-pcrread",
+    "061-tpm2-pcrreset",
+    "062-tpm2-policyauthorize",
+    "063-tpm2-policyauthorizenv",
+    "064-tpm2-policyauthvalue",
+    "065-tpm2-policycommandcode",
+    "066-tpm2-policycountertimer",
+    "067-tpm2-policycphash",
+    "068-tpm2-policyduplicationselect",
+    "069-tpm2-policylocality",
+    "070-tpm2-policynamehash",
+    "071-tpm2-policynv",
+    "072-tpm2-policynvwritten",
+    "073-tpm2-policyor",
+    "074-tpm2-policypassword",
+    "075-tpm2-policypcr",
+    "076-tpm2-policyrestart",
+    "077-tpm2-policysecret",
+    "078-tpm2-policysigned",
+    "079-tpm2-policytemplate",
+    "080-tpm2-policyticket",
+    "081-tpm2-print",
+    "082-tpm2-quote",
+    "083-tpm2-rc-decode",
+    "084-tpm2-readclock",
+    "085-tpm2-readpublic",
+    "086-tpm2-rsadecrypt",
+    "087-tpm2-rsaencrypt",
+    "088-tpm2-selftest",
+    "089-tpm2-send",
+    "090-tpm2-sessionconfig",
+    "091-tpm2-setclock",
+    "092-tpm2-setcommandauditstatus",
+    "093-tpm2-setprimarypolicy",
+    "094-tpm2-shutdown",
+    "095-tpm2-sign",
+    "096-tpm2-startauthsession",
+    "097-tpm2-startup",
+    "098-tpm2-stirrandom",
+    "099-tpm2-testparms",
+    "100-tpm2-tr-encode",
+    "101-tpm2-unseal",
+    "102-tpm2-verifysignature",
+    "103-tpm2-zgen2phase"
+  ],
+  "dropped": []
+}
