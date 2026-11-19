@@ -1,0 +1,303 @@
+{
+  "nn": "01",
+  "slug": "tlaplus-temporal-logic-and-spec-structure",
+  "title": "TLA+ Temporal Logic of Actions, State Machines & Spec Structure",
+  "scope": "Core TLA+ mathematical foundations: state predicates, action formulas (primed variables x', UNCHANGED), box/diamond temporal operators, fairness (WF_vars, SF_vars), Spec = Init /\\ [][Next]_vars /\\ Liveness, and module/EXTENDS/INSTANCE composition.",
+  "queries_attempted": [
+    {
+      "query": "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+      "attempt": 1,
+      "raw_results": 58,
+      "kept": 6
+    },
+    {
+      "query": "TLA+ specification structure Init Next WF SF fairness temporal formulas",
+      "attempt": 1,
+      "raw_results": 61,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": 12,
+  "high_weight_count": 8,
+  "results": [
+    {
+      "query": "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+      "title": "PDF The Temporal Logic of Actions - lamport.azurewebsites.net",
+      "url": "https://lamport.azurewebsites.net/pubs/lamport-actions.pdf",
+      "snippet": "The temporal logic of actions (TLA) is a logic for specifying and reasoning about concurrent systems. Systems and their properties are represented in the same logic, so the assertion that a system meets its specification and the assertion that one system implements another are both expressed by logical implication. TLA is very simple; its syntax and complete formal semantics are summarized in ...",
+      "collected_at": "2026-11-19T08:24:03.088Z",
+      "weight": 0.9843,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"PDF The Temporal Logic of Actions - lamport.azurewebsites.net\" — https://lamport.azurewebsites.net/pubs/lamport-actions.pdf) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9843
+        },
+        "usage": {
+          "input_tokens": 1616,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:10.801Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+      "title": "Temporal logic of actions - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Temporal_logic_of_actions",
+      "snippet": "Temporal logic of actions (TLA) is a logic developed by Leslie Lamport, which combines temporal logic with a logic of actions. It is used to describe behaviours of concurrent and distributed systems. It is the logic underlying the specification language TLA+.",
+      "collected_at": "2026-11-19T08:24:03.088Z",
+      "weight": 0.4869,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"Temporal logic of actions - Wikipedia\" — https://en.wikipedia.org/wiki/Temporal_logic_of_actions) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.4869
+        },
+        "usage": {
+          "input_tokens": 1616,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:10.801Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+      "title": "Specifying Systems - lamport.azurewebsites.net",
+      "url": "https://lamport.azurewebsites.net/tla/book.html",
+      "snippet": "Jan 16, 2022 · The book Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers has been published by Addison-Wesley Professional, a division of Pearson Education.",
+      "collected_at": "2026-11-19T08:24:03.088Z",
+      "weight": 0.9861,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #2 (\"Specifying Systems - lamport.azurewebsites.net\" — https://lamport.azurewebsites.net/tla/book.html) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9861
+        },
+        "usage": {
+          "input_tokens": 1616,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:10.801Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+      "title": "The temporal logic of actions - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/10.1145/177492.177726",
+      "snippet": "May 1, 1994 · The temporal logic of actions (TLA) is a logic for specifying and reasoning about concurrent systems. Systems and their properties are represented in the same logic, so the assertion that a system meets its specification and the assertion that one system ...",
+      "collected_at": "2026-11-19T08:24:03.088Z",
+      "weight": 0.9873,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #3 (\"The temporal logic of actions - ACM Digital Library\" — https://dl.acm.org/doi/10.1145/177492.177726) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9873
+        },
+        "usage": {
+          "input_tokens": 1616,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:10.801Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+      "title": "TLA+ - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/TLA%2B",
+      "snippet": "TLA+ is a formal specification language developed by Leslie Lamport. It is used for designing, modelling, documentation, and verification of programs, especially concurrent systems and distributed systems. TLA + is considered to be exhaustively-testable pseudocode, [4] and its use likened to drawing blueprints for software systems; [5] TLA is an acronym for Temporal Logic of Actions. For ...",
+      "collected_at": "2026-11-19T08:24:03.088Z",
+      "weight": 0.409,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #4 (\"TLA+ - Wikipedia\" — https://en.wikipedia.org/wiki/TLA%2B) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.409
+        },
+        "usage": {
+          "input_tokens": 1616,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:10.801Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+      "title": "The Temporal Logic of Actions - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/publication/the-temporal-logic-of-actions/",
+      "snippet": "This paper introduces TLA, which I now believe is the best general formalism for describing and reasoning about concurrent systems. The new idea in TLA is that one can use actions–formulas with primed and unprimed variables–in temporal formulas. An action describes a state-transition relation. For example, the action x’=x+1 means approximately the same thing as […]",
+      "collected_at": "2026-11-19T08:24:03.088Z",
+      "weight": 0.9814,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"The Temporal Logic of Actions - Microsoft Research\" — https://www.microsoft.com/en-us/research/publication/the-temporal-logic-of-actions/) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9814
+        },
+        "usage": {
+          "input_tokens": 1632,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:13.132Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ specification structure Init Next WF SF fairness temporal formulas",
+      "title": "PDF Safety, Liveness, and Fairness - lamport.azurewebsites.net",
+      "url": "https://lamport.azurewebsites.net/tla/safety-liveness.pdf",
+      "snippet": "Two equivalent TLA+ formulas can look like specifications of systems with different numbers of processes [4]. The only definition of fairness I can think of that encompasses all the uses of the term I have seen is the following: L is a fairness property for S iff S,L is machine closed.",
+      "collected_at": "2026-11-19T08:24:09.082Z",
+      "weight": 0.9865,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"PDF Safety, Liveness, and Fairness - lamport.azurewebsites.net\" — https://lamport.azurewebsites.net/tla/safety-liveness.pdf) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9865
+        },
+        "usage": {
+          "input_tokens": 1632,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:13.132Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ specification structure Init Next WF SF fairness temporal formulas",
+      "title": "playground/tla-temporal-actions-tutorial.md at main · BRMatt ...",
+      "url": "https://github.com/BRMatt/playground/blob/main/tla-temporal-actions-tutorial.md",
+      "snippet": "The key insight of TLA+ (Leslie Lamport's \"Temporal Logic of Actions\") is that both the static structure and the dynamic behavior of a system are expressed in one logic. Predicates describe states; actions describe steps; temporal formulas describe whole behaviors.",
+      "collected_at": "2026-11-19T08:24:09.082Z",
+      "weight": 0.6036,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #2 (\"playground/tla-temporal-actions-tutorial.md at main · BRMatt ...\" — https://github.com/BRMatt/playground/blob/main/tla-temporal-actions-tutorial.md) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.6036
+        },
+        "usage": {
+          "input_tokens": 1632,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:13.132Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ specification structure Init Next WF SF fairness temporal formulas",
+      "title": "Liveness and Fairness in TLA+ - will62794.github.io",
+      "url": "https://will62794.github.io/my-notes/notes/Liveness_and_Fairness_in_TLA+/Liveness_and_Fairness_in_TLA+.html",
+      "snippet": "In order to specify the latter, we also need to specify a liveness condition: $\\begin{array}{r}Spec\\triangleq Init\\wedge [Next{]}_{vars}\\wedge Liveness\\end{array}$ Remember that in TLA+, though, there is no fundamental difference between a specification and a property. They are both defined as temporal logic formulas.",
+      "collected_at": "2026-11-19T08:24:09.082Z",
+      "weight": 0.4672,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #3 (\"Liveness and Fairness in TLA+ - will62794.github.io\" — https://will62794.github.io/my-notes/notes/Liveness_and_Fairness_in_TLA+/Liveness_and_Fairness_in_TLA+.html) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.4672
+        },
+        "usage": {
+          "input_tokens": 1632,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:13.132Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ specification structure Init Next WF SF fairness temporal formulas",
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you.",
+      "collected_at": "2026-11-19T08:24:09.082Z",
+      "weight": 0.0189,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #4 (\"Instagram\" — https://www.instagram.com/) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.0189
+        },
+        "usage": {
+          "input_tokens": 1632,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:13.132Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ specification structure Init Next WF SF fairness temporal formulas",
+      "title": "Specifying Systems - Leslie Lamport",
+      "url": "https://lamport.azurewebsites.net/tla/book-21-07-04.pdf",
+      "snippet": "Jul 4, 2021 ... The specification Spec equals Init ∧ 2[Next]... ; changing the way we structure the definition of Next doesn't change its meaning. If a ...",
+      "collected_at": "2026-11-19T08:24:09.082Z",
+      "weight": 0.9887,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"Specifying Systems - Leslie Lamport\" — https://lamport.azurewebsites.net/tla/book-21-07-04.pdf) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9887
+        },
+        "usage": {
+          "input_tokens": 666,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:15.074Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ specification structure Init Next WF SF fairness temporal formulas",
+      "title": "lamport.azurewebsites.net/tla/Consensus.tla",
+      "url": "https://lamport.azurewebsites.net/tla/Consensus.tla",
+      "snippet": "The formula Spec is the TLA+ specification described by the algorithm's code. For now, you should just understand its two subformulas Init and Next. Formula Init is the initial predicate and describes all possible initial states of an execution.",
+      "collected_at": "2026-11-19T08:24:09.082Z",
+      "weight": 0.9874,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"lamport.azurewebsites.net/tla/Consensus.tla\" — https://lamport.azurewebsites.net/tla/Consensus.tla) a high-quality authoritative source worth citing for TLA+ Temporal Logic of Actions, State Machines & Spec Structure?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9874
+        },
+        "usage": {
+          "input_tokens": 666,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:15.074Z"
+      },
+      "redo_of": null
+    }
+  ],
+  "outcome": "authored"
+}

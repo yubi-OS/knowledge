@@ -1,0 +1,280 @@
+{
+  "nn": "05",
+  "slug": "safety-invariants-liveness-and-refinement-mappings",
+  "title": "Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings",
+  "scope": "Designing TypeOK and domain safety invariants, action properties [][A]_v, liveness properties with leads-to (P ~> Q) and weak/strong fairness, stuttering-insensitive refinement mappings (INSTANCE ... WITH), and auxiliary history/prophecy variables.",
+  "queries_attempted": [
+    {
+      "query": "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+      "attempt": 1,
+      "raw_results": 55,
+      "kept": 6
+    },
+    {
+      "query": "TLA+ TypeOK safety invariant liveness fairness counterexample trace",
+      "attempt": 1,
+      "raw_results": 57,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": 11,
+  "high_weight_count": 10,
+  "results": [
+    {
+      "query": "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+      "title": "Stuttering Steps and Temporal Formulas in TLA+ - GitHub Pages",
+      "url": "https://rdivyanshu.github.io/posts/2023/08/stuttering-steps-in-tla.html",
+      "snippet": "TLA+ model checker validates refinement as success. Part of why refinement worked out without any ceremony is TLA+ insisted about stuttering steps in high level specification.",
+      "collected_at": "2026-11-19T08:25:00.433Z",
+      "weight": 0.836,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"Stuttering Steps and Temporal Formulas in TLA+ - GitHub Pages\" — https://rdivyanshu.github.io/posts/2023/08/stuttering-steps-in-tla.html) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.836
+        },
+        "usage": {
+          "input_tokens": 1658,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:03.424Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+      "title": "Safety, Liveness, and Fairness - Leslie Lamport",
+      "url": "https://lamport.azurewebsites.net/tla/safety-liveness.pdf",
+      "snippet": "The terms safety, liveness, and fairness are used informally throughout the TLA+ documentation—including in the TLA+ Video Course. I assume you can understand a simple TLA+ specification, so you probably have some idea what these terms mean.",
+      "collected_at": "2026-11-19T08:25:00.433Z",
+      "weight": 0.9885,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"Safety, Liveness, and Fairness - Leslie Lamport\" — https://lamport.azurewebsites.net/tla/safety-liveness.pdf) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9885
+        },
+        "usage": {
+          "input_tokens": 1658,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:03.424Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+      "title": "Specifying Liveness in TLA+ — CS5232 2026",
+      "url": "https://ilyasergey.net/CS5232/week-06-tla.html",
+      "snippet": "Temporal Reasoning, Stuttering, Liveness, and Fairness TLA+ utilises temporal specifications for checking that an implementation (a low-level specification) implements a (high-level) specification. Make sure to check the Lecture 8 of TLA+ video course for details on how to define those.",
+      "collected_at": "2026-11-19T08:25:00.433Z",
+      "weight": 0.8077,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #2 (\"Specifying Liveness in TLA+ — CS5232 2026\" — https://ilyasergey.net/CS5232/week-06-tla.html) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.8077
+        },
+        "usage": {
+          "input_tokens": 1658,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:03.424Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+      "title": "Temporal Properties — Learn TLA+",
+      "url": "https://www.learntla.com/core/temporal-logic.html",
+      "snippet": "All invariants are safety properties, and all liveness properties are temporal properties. All TLA+ specs are “stutter-invariant”, meaning they can crash at any time. A “weakly fair” process is guaranteed to “not crash”, though it can spinlock.",
+      "collected_at": "2026-11-19T08:25:00.433Z",
+      "weight": 0.7798,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #3 (\"Temporal Properties — Learn TLA+\" — https://www.learntla.com/core/temporal-logic.html) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.7798
+        },
+        "usage": {
+          "input_tokens": 1658,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:03.424Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+      "title": "Specifying Liveness in TLA+ — PFM 2024 - Ilya Sergey",
+      "url": "https://ilyasergey.net/PFM24/week-06-tla.html",
+      "snippet": "Temporal Reasoning, Stuttering, Liveness, and Fairness TLA+ utilises temporal specifications for checking that an implementation (a low-level specification) implements a (high-level) specification. Make sure to check the Lecture 8 of TLA+ video course for details on how to define those.",
+      "collected_at": "2026-11-19T08:25:00.433Z",
+      "weight": 0.547,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #4 (\"Specifying Liveness in TLA+ — PFM 2024 - Ilya Sergey\" — https://ilyasergey.net/PFM24/week-06-tla.html) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.547
+        },
+        "usage": {
+          "input_tokens": 1658,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:03.424Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+      "title": "Liveness and Fairness in TLA+ - will62794.github.io",
+      "url": "https://will62794.github.io/my-notes/notes/Liveness_and_Fairness_in_TLA+/Liveness_and_Fairness_in_TLA+.html",
+      "snippet": "The naive definition of a TLA+ spec by default allows for stuttering steps i.e. steps that don’t change any variables. Of course, a spec that takes an infinite amount of stuttering steps (never changes any variables), will always trivially satisfy any safety properties.",
+      "collected_at": "2026-11-19T08:25:00.433Z",
+      "weight": 0.7143,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"Liveness and Fairness in TLA+ - will62794.github.io\" — https://will62794.github.io/my-notes/notes/Liveness_and_Fairness_in_TLA+/Liveness_and_Fairness_in_TLA+.html) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.7143
+        },
+        "usage": {
+          "input_tokens": 1604,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:04.851Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TypeOK safety invariant liveness fairness counterexample trace",
+      "title": "creating:safety - TLA+ Wiki",
+      "url": "https://docs.tlapl.us/creating:safety",
+      "snippet": "A counterexample to something good eventually happening is a state trace ending in an infinite loop, showing it is possible for the system to run forever without ever satisfying the liveness property. Liveness properties (and how to check them) are a fascinating topic, but beyond the scope of this chapter.",
+      "collected_at": "2026-11-19T08:25:02.201Z",
+      "weight": 0.9505,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"creating:safety - TLA+ Wiki\" — https://docs.tlapl.us/creating:safety) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9505
+        },
+        "usage": {
+          "input_tokens": 1604,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:04.851Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TypeOK safety invariant liveness fairness counterexample trace",
+      "title": "AI Mode - Bing",
+      "url": "https://www.bing.com/ai",
+      "snippet": "Learn how Bing works. AI Mode delivers AI-powered insights, helping you explore topics, uncover relevant instant answers, and …",
+      "collected_at": "2026-11-19T08:25:02.201Z",
+      "weight": 0.0338,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #2 (\"AI Mode - Bing\" — https://www.bing.com/ai) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.0338
+        },
+        "usage": {
+          "input_tokens": 1604,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:04.851Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TypeOK safety invariant liveness fairness counterexample trace",
+      "title": "Generating and Solving Temporal Proof Obligations with LLM Agents",
+      "url": "https://arxiv.org/html/2610.14923",
+      "snippet": "Oct 15, 2026 ... Merz (2010) Verifying safety properties with the TLA+ ... safety, 50, 630. TypeOK, 858, 2,286. invariance, 3,440, 7,993. liveness, 809, 1,443.",
+      "collected_at": "2026-11-19T08:25:02.201Z",
+      "weight": 0.8876,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #3 (\"Generating and Solving Temporal Proof Obligations with LLM Agents\" — https://arxiv.org/html/2610.14923) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.8876
+        },
+        "usage": {
+          "input_tokens": 1604,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:04.851Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TypeOK safety invariant liveness fairness counterexample trace",
+      "title": "GitHub - tlaplus/Examples: A collection of TLA⁺ specifications of ...",
+      "url": "https://github.com/tlaplus/Examples",
+      "snippet": "Specs intended for trace generation (generate), simulate, or checked symbolically with Apalache (symbolic) Models failing in interesting ways, like deadlock failure, safety failure, liveness failure, or assumption failure",
+      "collected_at": "2026-11-19T08:25:02.201Z",
+      "weight": 0.9686,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #4 (\"GitHub - tlaplus/Examples: A collection of TLA⁺ specifications of ...\" — https://github.com/tlaplus/Examples) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9686
+        },
+        "usage": {
+          "input_tokens": 1604,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:04.851Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TypeOK safety invariant liveness fairness counterexample trace",
+      "title": "PlusCal Tutorial - Session 9",
+      "url": "https://lamport.azurewebsites.net/tla/tutorial/session9.html",
+      "snippet": "Aug 19, 2024 · 1 Safety versus Liveness Invariance of MutualExclusion is trivially satisfied by an algorithm in which no process ever enters its critical section. Invariance belongs to a class of properties called safety properties.",
+      "collected_at": "2026-11-19T08:25:02.201Z",
+      "weight": 0.981,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"PlusCal Tutorial - Session 9\" — https://lamport.azurewebsites.net/tla/tutorial/session9.html) a high-quality authoritative source worth citing for Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.981
+        },
+        "usage": {
+          "input_tokens": 374,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:25:06.583Z"
+      },
+      "redo_of": null
+    }
+  ],
+  "outcome": "authored"
+}
