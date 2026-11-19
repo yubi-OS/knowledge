@@ -1,4 +1,4 @@
-# TLA+ Formal Specification, Model Checking & Trace-Driven Testing Corpus (`knowledge/tlaplus/`)
+# TLA+ Formal Specification, Model Checking & Trace-Driven Testing Corpus (`skills/tlaplus/`)
 
 - **Ref**: `tlaplus`
 - **Minted**: `2026-11-19`
