@@ -1,0 +1,303 @@
+{
+  "nn": "03",
+  "slug": "tlc-explicit-state-model-checker-and-cfg",
+  "title": "TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction",
+  "scope": "Running the TLC explicit-state model checker via CLI (tlc2.TLC), authoring .cfg files (SPECIFICATION, INVARIANT, PROPERTY, CONSTANTS, SYMMETRY, CONSTRAINT, VIEW, ALIAS), deadlock detection, simulation mode, and taming state-space explosion.",
+  "queries_attempted": [
+    {
+      "query": "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+      "attempt": 1,
+      "raw_results": 54,
+      "kept": 6
+    },
+    {
+      "query": "TLA+ TLC model checker state space explosion symmetry reduction simulation mode",
+      "attempt": 1,
+      "raw_results": 64,
+      "kept": 6
+    }
+  ],
+  "redo_count": 0,
+  "redo_log": [],
+  "results_kept": 12,
+  "high_weight_count": 9,
+  "results": [
+    {
+      "query": "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+      "title": "using:tlc:config_file - TLA+ Wiki",
+      "url": "https://docs.tlapl.us/using:tlc:config_file",
+      "snippet": "Sep 28, 2024 · The config files are used for TLC model checking. The possible contents of the config file itself are presented below. The config file has .cfg extension, and usually has the same name of your spec (.tla file). TODO: values supported in config files. Typed model values. At the bare minimum a SPECIFICATION should be provided.",
+      "collected_at": "2026-11-19T08:24:34.094Z",
+      "weight": 0.9448,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"using:tlc:config_file - TLA+ Wiki\" — https://docs.tlapl.us/using:tlc:config_file) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9448
+        },
+        "usage": {
+          "input_tokens": 1713,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:38.102Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+      "title": "vscode-tlaplus/resources/knowledgebase/tlc-config-files.md at master ...",
+      "url": "https://github.com/tlaplus/vscode-tlaplus/blob/master/resources/knowledgebase/tlc-config-files.md",
+      "snippet": "A TLC configuration file (.cfg) specifies how the TLC model checker should check a TLA+ specification (.tla file). The config file defines what to check (the specification or behavior), what values to use for constants, and what properties to verify.",
+      "collected_at": "2026-11-19T08:24:34.094Z",
+      "weight": 0.9049,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"vscode-tlaplus/resources/knowledgebase/tlc-config-files.md at master ...\" — https://github.com/tlaplus/vscode-tlaplus/blob/master/resources/knowledgebase/tlc-config-files.md) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9049
+        },
+        "usage": {
+          "input_tokens": 1713,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:38.102Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+      "title": "TLC Configuration - TLA+ By Example",
+      "url": "https://learning.tlapl.us/intro/tlc-config/",
+      "snippet": "TLC does not verify that assumption, and symmetry should not be used for liveness checking. CHECK_DEADLOCK By default, TLC checks for deadlocks (states with no successor). You can disable this: ... This is a built-in check, not an invariant named NoDeadlock. Disable it only when terminal states are intentional; it does not make an infinite ...",
+      "collected_at": "2026-11-19T08:24:34.094Z",
+      "weight": 0.896,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #2 (\"TLC Configuration - TLA+ By Example\" — https://learning.tlapl.us/intro/tlc-config/) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.896
+        },
+        "usage": {
+          "input_tokens": 1713,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:38.102Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+      "title": "TLC Configuration Files - Apalache Documentation",
+      "url": "https://apalache-mc.org/docs/apalache/tlc-config.html",
+      "snippet": "Syntax of TLC Configuration Files Author: Igor Konnov, 2020 To see how Apalache can use TLC configuration files, check the page on Specification Parameters and Running the Tool. TLC configuration is distinct from Apalache's JSON application configuration. Files passed with --config may use the conventional .cfg extension. Note: The option --config will be renamed to --config-tlc, see #3407 ...",
+      "collected_at": "2026-11-19T08:24:34.094Z",
+      "weight": 0.9528,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #3 (\"TLC Configuration Files - Apalache Documentation\" — https://apalache-mc.org/docs/apalache/tlc-config.html) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9528
+        },
+        "usage": {
+          "input_tokens": 1713,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:38.102Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+      "title": "How do I lower other server’a soundboards? : r/discordapp - Reddit",
+      "url": "https://www.reddit.com/r/discordapp/comments/136afjt/how_do_i_lower_other_servera_soundboards/",
+      "snippet": "May 3, 2023 · You can lower the general volume with a right click on the the soundboard button.",
+      "collected_at": "2026-11-19T08:24:34.094Z",
+      "weight": 0.0287,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #4 (\"How do I lower other server’a soundboards? : r/discordapp - Reddit\" — https://www.reddit.com/r/discordapp/comments/136afjt/how_do_i_lower_other_servera_soundboards/) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.0287
+        },
+        "usage": {
+          "input_tokens": 1713,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:38.102Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+      "title": "tlacli - A script for running TLA+/TLC from the command line - GitHub",
+      "url": "https://github.com/hwayne/tlacli",
+      "snippet": "tlacli is a tool for running the TLC model checker from the command line. You can already run TLC from the command line, anyway, using tlc2.TLC , and tlacli ...",
+      "collected_at": "2026-11-19T08:24:34.094Z",
+      "weight": 0.7612,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"tlacli - A script for running TLA+/TLC from the command line - GitHub\" — https://github.com/hwayne/tlacli) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.7612
+        },
+        "usage": {
+          "input_tokens": 1672,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:39.871Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TLC model checker state space explosion symmetry reduction simulation mode",
+      "title": "TLC: The TLA+ Model Checker | tlaplus/tlaplus | DeepWiki",
+      "url": "https://deepwiki.com/tlaplus/tlaplus/2-tlc:-the-tla+-model-checker",
+      "snippet": "Aug 21, 2026 · Execution Entry Point: The TLC Class The tlc2.TLC class is the main entry point for running TLC. It parses command-line arguments, configures runtime parameters, and determines the main mode of execution: model checking or simulation. RunMode selection: TLC supports two primary modes: MODEL_CHECK for exhaustive state space exploration. SIMULATE for generating random execution traces. Parameter ...",
+      "collected_at": "2026-11-19T08:24:36.923Z",
+      "weight": 0.7615,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"TLC: The TLA+ Model Checker | tlaplus/tlaplus | DeepWiki\" — https://deepwiki.com/tlaplus/tlaplus/2-tlc:-the-tla+-model-checker) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.7615
+        },
+        "usage": {
+          "input_tokens": 1672,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:39.871Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TLC model checker state space explosion symmetry reduction simulation mode",
+      "title": "TLC Performance and State Space Management: Every Optimization ...",
+      "url": "https://sunhick.github.io/posts/tla-plus-perf-state-mgmt/",
+      "snippet": "May 17, 2026 · TLC is an explicit-state model checker — it enumerates every reachable state. The state space grows exponentially with variables, constants, and interleavings. At some point, every TLA+ practitioner hits the wall where TLC runs out of memory or time. This is the complete guide to keeping it tractable.",
+      "collected_at": "2026-11-19T08:24:36.923Z",
+      "weight": 0.6027,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #2 (\"TLC Performance and State Space Management: Every Optimization ...\" — https://sunhick.github.io/posts/tla-plus-perf-state-mgmt/) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.6027
+        },
+        "usage": {
+          "input_tokens": 1672,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:39.871Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TLC model checker state space explosion symmetry reduction simulation mode",
+      "title": "GitHub - tlaplus/tlaplus: TLC is a model checker for specifications ...",
+      "url": "https://github.com/tlaplus/tlaplus",
+      "snippet": "TLC is a model checker for specifications written in TLA+. The TLA+Toolbox is an IDE for TLA+. - GitHub - tlaplus/tlaplus: TLC is a model checker for specifications written in TLA+. The TLA+Toolbox is an IDE for TLA+.",
+      "collected_at": "2026-11-19T08:24:36.923Z",
+      "weight": 0.9779,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #3 (\"GitHub - tlaplus/tlaplus: TLC is a model checker for specifications ...\" — https://github.com/tlaplus/tlaplus) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.9779
+        },
+        "usage": {
+          "input_tokens": 1672,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:39.871Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TLC model checker state space explosion symmetry reduction simulation mode",
+      "title": "北极狐包脏了怎么洗? - 知乎",
+      "url": "https://www.zhihu.com/question/28470564",
+      "snippet": "北极狐布料不算厚，不到半天就干了！ ！ 开心 （晾之前是酱紫↓） 缝合处有一点点白，不明显，洗的时候换了四五次水，几乎看不出 …",
+      "collected_at": "2026-11-19T08:24:36.923Z",
+      "weight": 0.0214,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #4 (\"北极狐包脏了怎么洗? - 知乎\" — https://www.zhihu.com/question/28470564) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.0214
+        },
+        "usage": {
+          "input_tokens": 1672,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:39.871Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TLC model checker state space explosion symmetry reduction simulation mode",
+      "title": "Performance Optimization | kingbootoshi/tla-precheck | DeepWiki",
+      "url": "https://deepwiki.com/kingbootoshi/tla-precheck/10.2-performance-optimization",
+      "snippet": "Mar 16, 2026 · Relevant source files This page covers strategies for optimizing TLA PreCheck verification performance by managing state space explosion, configuring proof tiers, and using symmetry reduction. Performance optimization is primarily about reducing the state space that TLC must exhaustively explore while still finding critical bugs.",
+      "collected_at": "2026-11-19T08:24:36.923Z",
+      "weight": 0.8466,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #0 (\"Performance Optimization | kingbootoshi/tla-precheck | DeepWiki\" — https://deepwiki.com/kingbootoshi/tla-precheck/10.2-performance-optimization) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.8466
+        },
+        "usage": {
+          "input_tokens": 722,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:41.296Z"
+      },
+      "redo_of": null
+    },
+    {
+      "query": "TLA+ TLC model checker state space explosion symmetry reduction simulation mode",
+      "title": "Motiv High-speed Wireless Metropolitan Area Networks (MAN) poised...",
+      "url": "https://users.cs.northwestern.edu/~ychen/Presentations/NPSec06.ppt",
+      "snippet": "Then weaken the Model Chec TLC is a model checker for TLA+ Has both simulation mode and model checking mode We run simulations before a Model Checki Challenge: State space explosions Our Solutions Combine similar states without loss of functionality into one...",
+      "collected_at": "2026-11-19T08:24:36.923Z",
+      "weight": 0.3181,
+      "decision": {
+        "type": "noul",
+        "instructions": "Is result #1 (\"Motiv High-speed Wireless Metropolitan Area Networks (MAN) poised...\" — https://users.cs.northwestern.edu/~ychen/Presentations/NPSec06.ppt) a high-quality authoritative source worth citing for TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction?",
+        "model": "clef",
+        "answer": {
+          "type": "noul",
+          "noul": 0.3181
+        },
+        "usage": {
+          "input_tokens": 722,
+          "output_tokens": 0
+        },
+        "requested_at": "2026-11-19T08:24:41.296Z"
+      },
+      "redo_of": null
+    }
+  ],
+  "outcome": "authored"
+}

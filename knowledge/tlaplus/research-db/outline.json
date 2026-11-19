@@ -1,0 +1,353 @@
+{
+  "ref": "tlaplus",
+  "topic": "TLA+ Formal Specification, Model Checking, Model-Based Testing & Trace Validation",
+  "created_at": "2026-11-19T08:23:59.361Z",
+  "model": "clef",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "tlaplus-temporal-logic-and-spec-structure",
+      "title": "TLA+ Temporal Logic of Actions, State Machines & Spec Structure",
+      "scope": "Core TLA+ mathematical foundations: state predicates, action formulas (primed variables x', UNCHANGED), box/diamond temporal operators, fairness (WF_vars, SF_vars), Spec = Init /\\ [][Next]_vars /\\ Liveness, and module/EXTENDS/INSTANCE composition.",
+      "seed_queries": [
+        "TLA+ Specifying Systems Leslie Lamport temporal logic of actions Next UNCHANGED",
+        "TLA+ specification structure Init Next WF SF fairness temporal formulas"
+      ],
+      "clef_score": 1.9482,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.9482,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.0161,
+          "1": 0.0196,
+          "2": 0.9643
+        },
+        "confidence": 0.8958
+      }
+    },
+    {
+      "nn": "02",
+      "slug": "pluscal-algorithm-language-and-translation",
+      "title": "PlusCal Algorithm Language, Processes, Labels & TLA+ Translation",
+      "scope": "Writing concurrent and sequential state machines in PlusCal (--algorithm / --fair algorithm), atomic grain via labels, await/when guards, process sets, procedures, macros, and automatic translation to TLA+ pc/stack state machines.",
+      "seed_queries": [
+        "PlusCal algorithm language TLA+ translator processes labels await fairness",
+        "PlusCal tutorial concurrent algorithms TLA+ translation pc state machine"
+      ],
+      "clef_score": 1.85,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.85,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.0346,
+          "1": 0.0808,
+          "2": 0.8846
+        },
+        "confidence": 0.6854
+      }
+    },
+    {
+      "nn": "03",
+      "slug": "tlc-explicit-state-model-checker-and-cfg",
+      "title": "TLC Explicit-State Model Checker, .cfg Files, Symmetry & State-Space Reduction",
+      "scope": "Running the TLC explicit-state model checker via CLI (tlc2.TLC), authoring .cfg files (SPECIFICATION, INVARIANT, PROPERTY, CONSTANTS, SYMMETRY, CONSTRAINT, VIEW, ALIAS), deadlock detection, simulation mode, and taming state-space explosion.",
+      "seed_queries": [
+        "tlc2.TLC command line model checker cfg INVARIANT PROPERTY SYMMETRY CONSTRAINT",
+        "TLA+ TLC model checker state space explosion symmetry reduction simulation mode"
+      ],
+      "clef_score": 1.951,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.951,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.0159,
+          "1": 0.0171,
+          "2": 0.967
+        },
+        "confidence": 0.9033
+      }
+    },
+    {
+      "nn": "04",
+      "slug": "apalache-symbolic-model-checking-and-snowcat",
+      "title": "Apalache Symbolic Model Checker (Z3 SMT), Snowcat Type Checker & Inductive Invariants",
+      "scope": "Bounded symbolic model checking of TLA+ with Apalache and Z3 SMT constraints, Snowcat @type annotations, checking inductive invariants (IndInv /\\ Next => IndInv'), and comparing explicit-state TLC vs symbolic Apalache.",
+      "seed_queries": [
+        "Apalache symbolic model checker TLA+ Z3 SMT Snowcat type annotations",
+        "TLA+ inductive invariant checking Apalache TLC IndInv"
+      ],
+      "clef_score": 1.5643,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.5643,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.0958,
+          "1": 0.2442,
+          "2": 0.66
+        },
+        "confidence": 0.2566
+      }
+    },
+    {
+      "nn": "05",
+      "slug": "safety-invariants-liveness-and-refinement-mappings",
+      "title": "Safety Invariants, Liveness / Leads-To (~>) & Refinement Mappings",
+      "scope": "Designing TypeOK and domain safety invariants, action properties [][A]_v, liveness properties with leads-to (P ~> Q) and weak/strong fairness, stuttering-insensitive refinement mappings (INSTANCE ... WITH), and auxiliary history/prophecy variables.",
+      "seed_queries": [
+        "TLA+ refinement mapping INSTANCE WITH stuttering safety liveness leads to",
+        "TLA+ TypeOK safety invariant liveness fairness counterexample trace"
+      ],
+      "clef_score": 1.8184,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.8184,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.0404,
+          "1": 0.1009,
+          "2": 0.8587
+        },
+        "confidence": 0.6238
+      }
+    },
+    {
+      "nn": "06",
+      "slug": "model-based-testing-and-counterexample-trace-generation",
+      "title": "Model-Based Testing (MBT) from TLA+ Specs & Counterexample Trace Generation",
+      "scope": "Generating high-coverage test suites and multi-step interaction sequences from TLA+/PlusCal specifications by negating target reachability predicates (~CanCompleteTask) in TLC/Apalache and driving automated test harnesses from counterexample traces.",
+      "seed_queries": [
+        "model-based testing TLA+ TLC counterexample trace test generation",
+        "TLA+ Apalache test generation negated invariant trace-driven testing"
+      ],
+      "clef_score": 1.7768,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.7768,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.0503,
+          "1": 0.1227,
+          "2": 0.827
+        },
+        "confidence": 0.5524
+      }
+    },
+    {
+      "nn": "07",
+      "slug": "implementation-trace-validation-and-conformance",
+      "title": "Implementation Trace Validation: Checking Live System Logs Against TLA+ Specs",
+      "scope": "Validating real runtime execution logs (NDJSON/JSON event traces, D1 jev_chat_logs, postMessage bridge transcripts) against a TLA+ specification using trace specs (Trace.tla), TLC -Continue/-dumpTrace, and deterministic state-transition conformance.",
+      "seed_queries": [
+        "TLA+ trace validation checking implementation logs against TLA+ specification",
+        "TLA+ trace validation NDJSON TLC Trace.tla conformance testing distributed systems"
+      ],
+      "clef_score": 1.78,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.78,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.0517,
+          "1": 0.1167,
+          "2": 0.8316
+        },
+        "confidence": 0.5618
+      }
+    },
+    {
+      "nn": "08",
+      "slug": "agentic-workbench-and-yubios-ci-tla-workflows",
+      "title": "TLA+ in Agentic Workbench Testing Cycles & yubiOS Security State Machines",
+      "scope": "Applying TLA+ to replace ad-hoc UI/API testing cycles: formalizing the /jev/ Coding & Design Workbench state machines (in-place file rewrite vs new-file creation, Universal Bridge load-hold queue & revision-acked save gate, mode/close resets) and yubiOS enrollment/boot gates in CI.",
+      "seed_queries": [
+        "TLA+ formal verification state machine protocol AWS eXtreme Modelling CI",
+        "Use of Formal Methods at Amazon Web Services TLA+ TLC production bugs"
+      ],
+      "clef_score": 1.2375,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.2375,
+        "legend": {
+          "0": "padding: drop from the corpus",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+        },
+        "probabilities": {
+          "0": 0.1667,
+          "1": 0.429,
+          "2": 0.4043
+        },
+        "confidence": 0.0629
+      }
+    }
+  ],
+  "kept": [
+    "01-tlaplus-temporal-logic-and-spec-structure",
+    "02-pluscal-algorithm-language-and-translation",
+    "03-tlc-explicit-state-model-checker-and-cfg",
+    "04-apalache-symbolic-model-checking-and-snowcat",
+    "05-safety-invariants-liveness-and-refinement-mappings",
+    "06-model-based-testing-and-counterexample-trace-generation",
+    "07-implementation-trace-validation-and-conformance",
+    "08-agentic-workbench-and-yubios-ci-tla-workflows"
+  ],
+  "dropped": [],
+  "raw_answers": {
+    "sub_01": {
+      "type": "score",
+      "score": 1.9482,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.0161,
+        "1": 0.0196,
+        "2": 0.9643
+      },
+      "confidence": 0.8958
+    },
+    "sub_02": {
+      "type": "score",
+      "score": 1.85,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.0346,
+        "1": 0.0808,
+        "2": 0.8846
+      },
+      "confidence": 0.6854
+    },
+    "sub_03": {
+      "type": "score",
+      "score": 1.951,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.0159,
+        "1": 0.0171,
+        "2": 0.967
+      },
+      "confidence": 0.9033
+    },
+    "sub_04": {
+      "type": "score",
+      "score": 1.5643,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.0958,
+        "1": 0.2442,
+        "2": 0.66
+      },
+      "confidence": 0.2566
+    },
+    "sub_05": {
+      "type": "score",
+      "score": 1.8184,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.0404,
+        "1": 0.1009,
+        "2": 0.8587
+      },
+      "confidence": 0.6238
+    },
+    "sub_06": {
+      "type": "score",
+      "score": 1.7768,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.0503,
+        "1": 0.1227,
+        "2": 0.827
+      },
+      "confidence": 0.5524
+    },
+    "sub_07": {
+      "type": "score",
+      "score": 1.78,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.0517,
+        "1": 0.1167,
+        "2": 0.8316
+      },
+      "confidence": 0.5618
+    },
+    "sub_08": {
+      "type": "score",
+      "score": 1.2375,
+      "legend": {
+        "0": "padding: drop from the corpus",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic essential to TLA+ specification and testing cycles"
+      },
+      "probabilities": {
+        "0": 0.1667,
+        "1": 0.429,
+        "2": 0.4043
+      },
+      "confidence": 0.0629
+    }
+  },
+  "usage": {
+    "input_tokens": 2767,
+    "output_tokens": 0
+  }
+}
