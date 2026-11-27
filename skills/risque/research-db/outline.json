@@ -1,0 +1,499 @@
+{
+  "ref": "risque",
+  "topic": "Risqué (risque): Study of Risk Analysis and Risk Science",
+  "created_at": "2026-11-27T15:59:29.318Z",
+  "model": "clef",
+  "subtopics": [
+    {
+      "nn": "01",
+      "slug": "foundations-of-risk-science-and-sra-ontology",
+      "title": "Foundations of Risk Science & SRA Ontology",
+      "scope": "Formal definitions of risk from the Society for Risk Analysis (SRA), Kaplan and Garrick's quantitative risk triplet R = {<s_i, p_i, x_i>}, Terje Aven's (C, U | K) consequence-uncertainty-knowledge formulation, aleatory vs. epistemic uncertainty, and black-swan / deep-uncertainty taxonomy.",
+      "seed_queries": [
+        "Society for Risk Analysis glossary Terje Aven risk science foundations",
+        "Kaplan and Garrick quantitative definition of risk triplets scenarios probability consequences"
+      ],
+      "clef_score": 1.8858,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.8858,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0302,
+          "1": 0.0538,
+          "2": 0.916
+        },
+        "confidence": 0.7642
+      }
+    },
+    {
+      "nn": "02",
+      "slug": "probabilistic-risk-assessment-fault-and-event-trees",
+      "title": "Probabilistic Risk Assessment (PRA), Fault Trees & Event Trees",
+      "scope": "Classical Probabilistic Risk Assessment (PRA/QRA) mechanics: Fault Tree Analysis (FTA), Event Tree Analysis (ETA), Minimal Cut Sets (MCS), Boolean structure functions, Bow-Tie barrier models, and component importance metrics (Birnbaum, Fussel-Vesely, Risk Achievement Worth RAW, Risk Reduction Worth RRW).",
+      "seed_queries": [
+        "Probabilistic Risk Assessment Fault Tree Analysis Minimal Cut Sets Birnbaum Fussel-Vesely",
+        "Event Tree Analysis Bow-Tie quantitative risk assessment importance measures RAW RRW"
+      ],
+      "clef_score": 1.9158,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.9158,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0206,
+          "1": 0.043,
+          "2": 0.9364
+        },
+        "confidence": 0.8187
+      }
+    },
+    {
+      "nn": "03",
+      "slug": "systems-theoretic-and-human-reliability-risk-models",
+      "title": "Systems-Theoretic (STAMP/STPA), FMECA/HAZOP & Human Reliability Analysis",
+      "scope": "Control-theoretic hazard analysis via Nancy Leveson's STAMP and STPA (control structures, Unsafe Control Actions, causal scenarios), FMECA and RPN pathology vs. Action Priority, HAZOP guideword matrices, and Human Reliability Analysis (THERP, SPAR-H, CREAM performance shaping factors).",
+      "seed_queries": [
+        "STPA STAMP Leveson unsafe control actions systems-theoretic hazard analysis",
+        "FMECA HAZOP Human Reliability Analysis SPAR-H THERP risk assessment"
+      ],
+      "clef_score": 1.8883,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.8883,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0267,
+          "1": 0.0584,
+          "2": 0.9149
+        },
+        "confidence": 0.7618
+      }
+    },
+    {
+      "nn": "04",
+      "slug": "bayesian-inference-monte-carlo-and-uncertainty-propagation",
+      "title": "Bayesian Risk Inference, Value of Information & Uncertainty Propagation",
+      "scope": "Bayesian risk updating with sparse/zero-failure operational data (Beta-Binomial, Gamma-Poisson, hierarchical priors), Preposterior decision analysis and Value of Information (EVPI, EVSI), Monte Carlo and Latin Hypercube Sampling (LHS) propagation, and variance-based global sensitivity analysis (Sobol indices).",
+      "seed_queries": [
+        "Bayesian risk analysis Value of Information EVPI EVSI sparse failure data",
+        "Monte Carlo Latin Hypercube uncertainty propagation Sobol sensitivity indices risk assessment"
+      ],
+      "clef_score": 1.8541,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.8541,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0288,
+          "1": 0.0883,
+          "2": 0.8829
+        },
+        "confidence": 0.6822
+      }
+    },
+    {
+      "nn": "05",
+      "slug": "extreme-value-theory-tail-risk-and-coherent-measures",
+      "title": "Extreme Value Theory (EVT), Heavy Tails & Coherent Risk Measures",
+      "scope": "Mathematical tail-risk modeling: Fisher-Tippett-Gnedenko Generalized Extreme Value (GEV) distributions, Pickands-Balkema-de Haan Generalized Pareto Distribution (GPD) Peaks-Over-Threshold, power-law tail exponents, Artzner et al. axioms of coherent risk measures (subadditivity failure of VaR vs. CVaR / Expected Shortfall), and Kelly/ruin thresholds.",
+      "seed_queries": [
+        "Extreme Value Theory Generalized Pareto Distribution Peaks Over Threshold tail risk",
+        "coherent risk measures Artzner Expected Shortfall CVaR subadditivity"
+      ],
+      "clef_score": 1.7229,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.7229,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0589,
+          "1": 0.1594,
+          "2": 0.7817
+        },
+        "confidence": 0.46
+      }
+    },
+    {
+      "nn": "06",
+      "slug": "cyber-and-operational-risk-quantification-fair-nist-iso",
+      "title": "Cyber & Operational Risk Quantification (FAIR, ISO 31000, NIST & Risk Matrix Critique)",
+      "scope": "Quantitative cyber/operational risk decomposition via Factor Analysis of Information Risk (FAIR: Loss Event Frequency = Threat Event Frequency x Vulnerability; Primary and Secondary Loss Magnitude), ISO 31000:2018 & IEC 31010 tool selection, NIST SP 800-30, and Tony Cox's mathematical theorem on risk scoring matrix failures (rank reversal, range compression).",
+      "seed_queries": [
+        "Factor Analysis of Information Risk FAIR Loss Event Frequency Threat Event Frequency",
+        "Risk matrices Tony Cox rank reversal ISO 31000 IEC 31010 NIST 800-30"
+      ],
+      "clef_score": 1.5853,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.5853,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0943,
+          "1": 0.226,
+          "2": 0.6797
+        },
+        "confidence": 0.2829
+      }
+    },
+    {
+      "nn": "07",
+      "slug": "decision-analysis-risk-appetite-and-alarp-governance",
+      "title": "Risk-Informed Decision Analysis, ALARP, Societal F-N Curves & IRGC Governance",
+      "scope": "Normative vs. descriptive risk decision theory: expected utility vs. cumulative prospect theory, ALARP (As Low As Reasonably Practicable) and cost-benefit disproportion factors, societal risk F-N curves and risk-aversion slopes, precautionary principle vs. expected-value governance, and the IRGC Risk Governance Framework.",
+      "seed_queries": [
+        "ALARP F-N curve Risk-Informed Decision Making societal risk acceptability criteria",
+        "IRGC risk governance prospect theory precautionary principle risk decision analysis"
+      ],
+      "clef_score": 1.8211,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.8211,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0389,
+          "1": 0.1011,
+          "2": 0.86
+        },
+        "confidence": 0.627
+      }
+    },
+    {
+      "nn": "08",
+      "slug": "systemic-cascading-and-ai-autonomy-risk-engineering",
+      "title": "Systemic Cascading Risk, Normal Accidents & AI/Autonomy Safety Envelopes",
+      "scope": "Systemic and cascading risk in tightly coupled complex systems: Charles Perrow's Normal Accident Theory (interactive complexity x tight coupling), network contagion and percolation thresholds, High-Reliability Organization (HRO) principles, and AI/autonomous-agent risk engineering (NIST AI RMF, fail-closed gating, epistemic abstention, pre-mortem falsification).",
+      "seed_queries": [
+        "Normal Accident Theory Perrow tight coupling interactive complexity cascading systemic risk",
+        "AI Risk Management Framework NIST autonomous systems safety envelope fail-closed risk gates"
+      ],
+      "clef_score": 1.6678,
+      "clef_answer": {
+        "type": "score",
+        "score": 1.6678,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0749,
+          "1": 0.1824,
+          "2": 0.7427
+        },
+        "confidence": 0.3857
+      }
+    }
+  ],
+  "validation": {
+    "metric": "score",
+    "criteria": [
+      "padding: drop",
+      "marginal: keep only if the dig comes back strong",
+      "load-bearing: core subtopic"
+    ],
+    "model": "clef",
+    "answers": {
+      "t01": {
+        "type": "score",
+        "score": 1.8858,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0302,
+          "1": 0.0538,
+          "2": 0.916
+        },
+        "confidence": 0.7642
+      },
+      "t02": {
+        "type": "score",
+        "score": 1.9158,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0206,
+          "1": 0.043,
+          "2": 0.9364
+        },
+        "confidence": 0.8187
+      },
+      "t03": {
+        "type": "score",
+        "score": 1.8883,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0267,
+          "1": 0.0584,
+          "2": 0.9149
+        },
+        "confidence": 0.7618
+      },
+      "t04": {
+        "type": "score",
+        "score": 1.8541,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0288,
+          "1": 0.0883,
+          "2": 0.8829
+        },
+        "confidence": 0.6822
+      },
+      "t05": {
+        "type": "score",
+        "score": 1.7229,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0589,
+          "1": 0.1594,
+          "2": 0.7817
+        },
+        "confidence": 0.46
+      },
+      "t06": {
+        "type": "score",
+        "score": 1.5853,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0943,
+          "1": 0.226,
+          "2": 0.6797
+        },
+        "confidence": 0.2829
+      },
+      "t07": {
+        "type": "score",
+        "score": 1.8211,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0389,
+          "1": 0.1011,
+          "2": 0.86
+        },
+        "confidence": 0.627
+      },
+      "t08": {
+        "type": "score",
+        "score": 1.6678,
+        "legend": {
+          "0": "padding: drop",
+          "1": "marginal: keep only if the dig comes back strong",
+          "2": "load-bearing: core subtopic"
+        },
+        "probabilities": {
+          "0": 0.0749,
+          "1": 0.1824,
+          "2": 0.7427
+        },
+        "confidence": 0.3857
+      }
+    },
+    "usage": {
+      "input_tokens": 1824,
+      "output_tokens": 0
+    },
+    "dropped": [],
+    "kept": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08"
+    ]
+  },
+  "kept": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "dropped": [],
+  "raw_answers": {
+    "t01": {
+      "type": "score",
+      "score": 1.8858,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0302,
+        "1": 0.0538,
+        "2": 0.916
+      },
+      "confidence": 0.7642
+    },
+    "t02": {
+      "type": "score",
+      "score": 1.9158,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0206,
+        "1": 0.043,
+        "2": 0.9364
+      },
+      "confidence": 0.8187
+    },
+    "t03": {
+      "type": "score",
+      "score": 1.8883,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0267,
+        "1": 0.0584,
+        "2": 0.9149
+      },
+      "confidence": 0.7618
+    },
+    "t04": {
+      "type": "score",
+      "score": 1.8541,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0288,
+        "1": 0.0883,
+        "2": 0.8829
+      },
+      "confidence": 0.6822
+    },
+    "t05": {
+      "type": "score",
+      "score": 1.7229,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0589,
+        "1": 0.1594,
+        "2": 0.7817
+      },
+      "confidence": 0.46
+    },
+    "t06": {
+      "type": "score",
+      "score": 1.5853,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0943,
+        "1": 0.226,
+        "2": 0.6797
+      },
+      "confidence": 0.2829
+    },
+    "t07": {
+      "type": "score",
+      "score": 1.8211,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0389,
+        "1": 0.1011,
+        "2": 0.86
+      },
+      "confidence": 0.627
+    },
+    "t08": {
+      "type": "score",
+      "score": 1.6678,
+      "legend": {
+        "0": "padding: drop",
+        "1": "marginal: keep only if the dig comes back strong",
+        "2": "load-bearing: core subtopic"
+      },
+      "probabilities": {
+        "0": 0.0749,
+        "1": 0.1824,
+        "2": 0.7427
+      },
+      "confidence": 0.3857
+    }
+  },
+  "usage": {
+    "input_tokens": 1824,
+    "output_tokens": 0
+  }
+}
